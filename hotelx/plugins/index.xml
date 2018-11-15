@@ -55,7 +55,7 @@ Entity Maps File Format The file should be in the following format:</description
       <description>Aggregation plugins extends HotelX allowing filtering Supplier options and responses using different business rules.
 KeyFilter Filters Supplier options based on field keys applying a selector function over field values.
 It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
- Field Keys as a combination of:  SupplierCode  HotelCode BoardCode RoomCode Refundable Market PaymentType Promotion Supplement Surcharges Rate rules    Parameters    key value type condition description     primaryKey string mandatory is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:</description>
+ Field Keys as a combination of:  SupplierCode  HotelCode BoardCode RoomCode Refundable Market PaymentType Promotion Supplement Surcharges Rate rules    Parameters    key value type condition description     primaryKey string mandatory It is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:</description>
     </item>
     
     <item>

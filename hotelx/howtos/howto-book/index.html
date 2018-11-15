@@ -3258,7 +3258,7 @@
 
 <h2 id="hotelx-settings">HotelX Settings</h2>
 
-<p>In <a href="/hotelx/">HotelX</a> we have different configuration level settings for a request. With settings, you can configure some aspect of the request:</p>
+<p>In <a href="/hotelx/">HotelX</a> there are different configuration level settings for a request. With these settings, you can configure some aspect of the request:</p>
 
 <table>
 <thead>
@@ -3276,7 +3276,7 @@
 
 <tr>
 <td>Timeout</td>
-<td>It sets request timeout in the differents query and mutation types:* search * quote * book (includes book, cancel and booking) </td>
+<td>It sets the requested timeout in the different query and mutation types:* search * quote * book (includes cancel and booking) </td>
 </tr>
 
 <tr>
@@ -3286,22 +3286,22 @@
 
 <tr>
 <td>Currency</td>
-<td>It indicates the currency you are going to send to the suppliers.</td>
+<td>It indicates the currency you are going to send to the supplier or suppliers.</td>
 </tr>
 
 <tr>
 <td>Nationality</td>
-<td>It indicates the nationality to send to the suppliers.</td>
+<td>It indicates the nationality you are going to send to the supplier or suppliers.</td>
 </tr>
 
 <tr>
 <td>Market</td>
-<td>It indicates the market to send to the suppliers.</td>
+<td>It indicates the market you are going to send to the supplier or suppliers.</td>
 </tr>
 
 <tr>
 <td>Business Rules</td>
-<td>These rules are sent directly via the integration, and affect the supplier&rsquo;s response.<br>* Options Quota: number of options returned via the integration.<br>* Type: Choose priority of product</td>
+<td>These rules are sent directly via the integration, and they affect the supplier&rsquo;s response.<br>* Options Quota: number of options returned via the integration.<br>* Type: Choose priority of product</td>
 </tr>
 </tbody>
 </table>
@@ -3316,21 +3316,21 @@
 
 <p>You must have permission to overwrite <a href="/hotelx/concepts/settings/">settings</a>, if you don&rsquo;t have this permission you won&rsquo;t be able to change the configuration on runtime, that is, to each request.</p>
 
-<p>These fields are the same in the three levels, only that the information is overwritten in lower levels. So, request <a href="/hotelx/concepts/settings/">settings</a> overwrite all other settings.</p>
+<p>These fields are the same in the three levels, only that the information is overwritten in lower levels. So, the request <a href="/hotelx/concepts/settings/">settings</a> overwrite all other settings.</p>
 
 <h3 id="settings-per-client">Settings per client</h3>
 
-<p>The <a href="/hotelx/concepts/settings/">settings</a> in this level are used when you don’t overwrite settings to request level.</p>
+<p>The <a href="/hotelx/concepts/settings/">settings</a> in this level are used when you don’t overwrite settings to the request level.</p>
 
 <p>However, if you have the same client in different groups, you can set different settings to each one. In this case, you should specify which group you want to use in the request, in order to choose which configuration to use.</p>
 
 <h3 id="settings-per-hotelx">Settings per HotelX</h3>
 
-<p>And the last one, settings per <a href="/hotelx/">HotelX</a> instance. These settings are in the higher level, in the case that you don&rsquo;t have client&rsquo;s <a href="/hotelx/concepts/settings/">settings</a> and you don&rsquo;t specify them in the request, settings are got from HotelX instance, this setting is mandatory.</p>
+<p>And the last one, settings per <a href="/hotelx/">HotelX</a> instance. These settings are in the highest level, in the case that you don&rsquo;t have the client&rsquo;s <a href="/hotelx/concepts/settings/">settings</a> and you don&rsquo;t specify them in the request, settings are obtained from HotelX instance, this setting is mandatory.</p>
 
 <h2 id="how-to-execute-a-plugin">How to execute a plugin</h2>
 
-<p>A <a href="/hotelx/plugins/">plugin</a> execution can be specified in any request’s HotelSettingsInput and it must specify in which step it has to be executed. The plugin type and name are mandatory in order to identify a plugin instance.</p>
+<p>A <a href="/hotelx/plugins/">plugin</a> execution can be specified in any request’s HotelSettingsInput and it must specify in which step it should be executed. The plugin type and name are mandatory in order to identify a plugin instance.</p>
 
 <pre><code>&quot;plugins&quot;: {
 
