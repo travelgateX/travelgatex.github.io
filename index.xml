@@ -6417,7 +6417,7 @@ File Format The file should be in the below format:
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>It makes it easier for users and contributors to see the most notable changes that have been made on HotelX product.
-All notable changes on our platform will be documented on this page. 2018-11-08  Fix blacklist (by supplier) plugin   2018-11-02  Fix price discrepancy between Quote and Book   2018-10-02  Allow relay at the query hotel Count field in HotelConnection to retrieve the number of HotelEdges that match the filter, pagination doesn&amp;rsquo;t affect Count.</description>
+All notable changes on our platform will be documented on this page. 2018-11-19  Fix Stats Fix Hotels requested stats in Access and Transaction spans where the count wasn&amp;rsquo;t correct in some cases    Margin plugin compares net commission in order to decide discarding or mantaining an option.</description>
     </item>
     
     <item>
