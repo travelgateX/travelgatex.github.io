@@ -28,7 +28,7 @@ The Project has a few columns that act as the status whereas cards are the items
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page. 2018-11-07  GraphQL Schema updated.   2018-10-28  GraphQL Schema updated.    New field Geoname in Hotels query, which provides hotel&amp;rsquo;s geographical information   2018-10-18  GraphQL Schema updated.    Profile type    Supplier, Client and Access entities resources content.</description>
+All notable changes on TravelgateX platform will be documented in this page.2018-11-20  GraphQL Schema updated.    Refresh token funcition. Create Organization. Errors description. Update group    Entities call when move folder and change members refresh token position.    Useless folders from create folder template   2018-11-07  GraphQL Schema updated.</description>
     </item>
     
     <item>
@@ -39,10 +39,9 @@ All notable changes on TravelgateX platform will be documented in this page. 201
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-11-07 🛑 Field asserts was removed from object type StatsInfo
-🛑 Type StatsAssert was removed
-✅ Field assets was added to object type StatsInfo
-✅ Type StatsAsset was added</description>
+2018-11-20 ✅ Input field CreateOrganizationInput.organization changed type from ID! to ID
+✅ Field country was added to object type GeonameData
+2018-11-07 🛑 Field asserts was removed from object type StatsInfo</description>
     </item>
     
     <item>
@@ -51,7 +50,7 @@ Check out this list of new releases and changes applied on the TravelgateX Graph
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced Unreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of error from Operation.</description>
+      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of error from Organization. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.To be removed soon. Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.To be removed soon. Removal of error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22.To be removed soon. Removal of error from Operation.</description>
     </item>
     
   </channel>

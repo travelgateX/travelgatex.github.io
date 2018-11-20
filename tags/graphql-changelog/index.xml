@@ -18,7 +18,7 @@
       <guid>/hotelx/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the HotelX GraphQL API.
-Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
     </item>
     
     <item>
@@ -29,10 +29,9 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2018-11-07 🛑 Field asserts was removed from object type StatsInfo
-🛑 Type StatsAssert was removed
-✅ Field assets was added to object type StatsInfo
-✅ Type StatsAsset was added</description>
+2018-11-20 ✅ Input field CreateOrganizationInput.organization changed type from ID! to ID
+✅ Field country was added to object type GeonameData
+2018-11-07 🛑 Field asserts was removed from object type StatsInfo</description>
     </item>
     
   </channel>
