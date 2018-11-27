@@ -48,7 +48,7 @@ Advanced criteria It explains different parameters that can be set up in the req
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/howtos/bookingflow/book/</guid>
-      <description>const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;;const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;;$(document).ready(main);function main() {const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/31d4d32ea8e8bc8ab5d7bc3910df72c0\/raw\x22,\x22divname\x22:\x22div_booking\x22}]&#39;;const queries = JSON.parse(q);for (const q of queries) {iterateQueries(q)}}function iterateQueries(q) {if(!q.gist.includes(&#39;http&#39;)) return;$.get(q.gist, function (data) {q.data = data;renderGist(q);});}function renderGist(q) {var fetchURL = &#39;https://api.travelgatex.com&#39;;var search = window.location.search;var parameters = {};search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) {var eq = entry.indexOf(&#39;=&#39;);if (eq = 0) {parameters[decodeURIComponent(entry.</description>
+      <description>const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/31d4d32ea8e8bc8ab5d7bc3910df72c0\/raw\x22,\x22divname\x22:\x22div_booking\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.</description>
     </item>
     
     <item>
@@ -59,7 +59,7 @@ Advanced criteria It explains different parameters that can be set up in the req
       <guid>/hotelx/howtos/bookingflow/booklist/</guid>
       <description>The Booking operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator. The most important information returned for each booking in the list is: - Booking reference - Booking holder - Booking pax - Hotel, rooms and boards confirmed - Booking rates
 Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)
-How to request a5b25332a7a5683d602efeb87233a9c7 You can ask for bookings by client reference (XTG-XXXXXX) or by supplier reference.</description>
+How to request     a5b25332a7a5683d602efeb87233a9c7 You can ask for bookings by client reference (XTG-XXXXXX) or by supplier reference.</description>
     </item>
     
     <item>
@@ -68,7 +68,7 @@ How to request a5b25332a7a5683d602efeb87233a9c7 You can ask for bookings by 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/howtos/bookingflow/cancellation/</guid>
-      <description>const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;;const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;;$(document).ready(main);function main() {const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/1b160cfcf47b1c4d1deada1a18ae98b6\/raw\x22,\x22divname\x22:\x22div_cancellation\x22}]&#39;;const queries = JSON.parse(q);for (const q of queries) {iterateQueries(q)}}function iterateQueries(q) {if(!q.gist.includes(&#39;http&#39;)) return;$.get(q.gist, function (data) {q.data = data;renderGist(q);});}function renderGist(q) {var fetchURL = &#39;https://api.travelgatex.com&#39;;var search = window.location.search;var parameters = {};search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) {var eq = entry.indexOf(&#39;=&#39;);if (eq = 0) {parameters[decodeURIComponent(entry.</description>
+      <description>const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/1b160cfcf47b1c4d1deada1a18ae98b6\/raw\x22,\x22divname\x22:\x22div_cancellation\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.</description>
     </item>
     
   </channel>

@@ -28,7 +28,7 @@ The Project has a few columns that act as the status whereas cards are the items
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>It makes it easier for users and contributors to see the most notable changes that have been made on HotelX product.
-All notable changes on our platform will be documented on this page.2018-11-20  Added geonames in Hotel-List Added access code in book log in some special cases of commission    Partially synchronous resource caches in Hotel-Quote, Hotel-Book, Hotel-Cancel, Hotel-Booking   2018-11-19  Fix Stats Fix Hotels requested stats in Access and Transaction spans where the count wasn&amp;rsquo;t correct in some cases    Margin plugin compares net commission in order to decide discarding or mantaining an option.</description>
+All notable changes on our platform will be documented on this page. 2018-11-27  Ambiguous warning message in Book when supplier has not returned price Removed error nodes from Groups and Organization nodes Removed log if amount is 0 in Fees node   2018-11-20  Added geonames in Hotel-List Added access code in book log in some special cases of commission    Partially synchronous resource caches in Hotel-Quote, Hotel-Book, Hotel-Cancel, Hotel-Booking   2018-11-19  Fix Stats Fix Hotels requested stats in Access and Transaction spans where the count wasn&amp;rsquo;t correct in some cases    Margin plugin compares net commission in order to decide discarding or mantaining an option.</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@ All notable changes on our platform will be documented on this page.2018-11-20 
       <guid>/hotelx/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the HotelX GraphQL API.
-Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ Under construction!We have logged this resource on our roadmap and we are curre
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announcedUnreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon.   2018-07-26  Removed useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12 . Removed connectUser from HotelSettingsInput.</description>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon.   2018-07-26  Removed useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12 . Removed connectUser from HotelSettingsInput.</description>
     </item>
     
   </channel>
