@@ -3269,9 +3269,9 @@
 <h3 id="goals">Goals</h3>
 
 <p>This plugin receives an Option by parameter and returns an Option with all the prices with net value. <strong>This plugin reads information of commissions from ftp</strong>. It is mandatory to load at least supplier&rsquo;s commission file. Depending of the files in ftp, <strong>this plugin can apply two different commission values over prices</strong>.
-Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to the specific hotel’s price. In the one hand, if no hotels commission file is loaded in ftp, it&rsquo;s applied the net price with the commission specified in commissions supplier&rsquo;s file. In other hand, if the hotel&rsquo;s commission file is loaded, this has preference over the supplier&rsquo;s file. These files have to meet the requirements listed below. In other cases, an error will be returned.</p>
+Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to the specific hotel’s price. On the one hand, if no hotels commission file is loaded in the ftp, the net price with the commission specified in commissions supplier&rsquo;s file will be applied. On other hand, if the hotel&rsquo;s commission file is loaded, this has preference over the supplier&rsquo;s file. These files have to meet the requirements listed below. In other cases, an error will be returned.</p>
 
-<h2 id="files-needed-to-use-this-plugin">Files needed to use this plugin</h2>
+<h2 id="required-files-to-use-this-plugin">Required files to use this plugin</h2>
 
 <ul>
 <li><p><a href="/hotelx/plugins/format-files/commission_supplier/"><strong>Commission supplier file format</strong></a> (<strong>Mandatory</strong>)</p></li>
@@ -3281,7 +3281,7 @@ Suppliers commission file specifies the commission applied to supplier’s price
 
 <h3 id="execution-example">Execution example</h3>
 
-<p>It is not necessaty to specify it in Query (Settings-&gt;Plugins)</p>
+<p>It is not necessary to specify it in Query (Settings-&gt;Plugins)</p>
 
 <h2 id="commissionX">CommissionX</h2>
 
@@ -3294,7 +3294,7 @@ This plugin defines the contracted / expected commission in cases where the supp
 
 <p>Although the group file is optional if this file is informed before the commission file the values will be used from the group file.</p>
 
-<h3 id="files-needed-to-use-this-plugin-1">Files needed to use this plugin</h3>
+<h3 id="files-needed-to-use-this-plugin">Files needed to use this plugin</h3>
 
 <ul>
 <li><p><a href="/hotelx/plugins/format-files/commission/"><strong>Sequential Commission file format</strong></a> (<strong>Mandatory</strong>). If the columns <strong>chainCodes,destinationCodes</strong> are informed then it is mandatory to upload group file.</p></li>
@@ -3395,14 +3395,14 @@ This plugin defines the contracted / expected commission in cases where the supp
 <ul>
 <li><a href="#goals">Goals</a></li>
 </ul></li>
-<li><a href="#files-needed-to-use-this-plugin">Files needed to use this plugin</a>
+<li><a href="#required-files-to-use-this-plugin">Required files to use this plugin</a>
 <ul>
 <li><a href="#execution-example">Execution example</a></li>
 </ul></li>
 <li><a href="#commissionX">CommissionX</a>
 <ul>
 <li><a href="#goals-1">Goals</a></li>
-<li><a href="#files-needed-to-use-this-plugin-1">Files needed to use this plugin</a></li>
+<li><a href="#files-needed-to-use-this-plugin">Files needed to use this plugin</a></li>
 <li><a href="#how-we-make-it">How we make it</a>
 <ul>
 <li><a href="#entitygroup"><strong>Possible values entity filename</strong></a></li>
