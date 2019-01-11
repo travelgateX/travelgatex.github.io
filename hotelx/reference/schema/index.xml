@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/reference/schema/query/</guid>
-      <description>GraphQL schema definition type HotelXQuery {  boards( criteria: HotelXBoardQueryInput!, relay: RelayInput!, ): BoardConnection!    categories( criteria: HotelXCategoryQueryInput!, relay: RelayInput!, ): CategoryConnection!    hotels(    criteria: HotelXHotelListInput!,     relay: RelayInput!,     token: String,     filter: HotelXHotelFilterInput,     ): HotelConnection!    rooms(    criteria: HotelXRoomQueryInput!,     relay: RelayInput!</description>
+      <description>GraphQL schema definition type HotelXQuery {  hotelConfigurationStatusService: ServiceStatus!    defaultSettings( group: ID!, clientName: ID, ): HotelXDefaultSettings    commonSettings(    group: ID!,     access: ID,     supplier: ID,     ): HotelXCommonSettings    boards( criteria: HotelXBoardQueryInput!, relay: RelayInput!, ): BoardConnection!    categories( criteria: HotelXCategoryQueryInput!, relay: RelayInput!, ): CategoryConnection!    hotels(    criteria: HotelXHotelListInput!</description>
     </item>
     
     <item>
@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/reference/schema/mutation/</guid>
-      <description>GraphQL schema definition type HotelXMutation {  book( input: HotelBookInput!, settings: HotelSettingsInput, ): HotelBookPayload    cancel( input: HotelCancelInput!, settings: HotelSettingsInput, ): HotelCancelPayload   Show deprecated fields   loadFile( input: String!, ): String!    }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields book(HotelBookPayload): Creates a new hotel booking consisting of an option of 1 or more rooms.</description>
+      <description>GraphQL schema definition type HotelXMutation {  createDefaultSettings(    group: ID!,     clientName: ID,     settings: HotelXDefaultSettingsDataInput!,     ): HotelXDefaultSettings    updateDefaultSettings(    group: ID!,     clientName: ID,     settings: HotelXDefaultSettingsDataInput!,     ): HotelXDefaultSettings    updateStatus(    group: ID!,     access: ID,     supplier: ID,     clientName: ID,     isActive: Boolean!</description>
     </item>
     
   </channel>
