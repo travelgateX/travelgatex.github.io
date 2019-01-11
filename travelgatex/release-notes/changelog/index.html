@@ -3264,6 +3264,152 @@ alert-info"
 role="alert">All notable changes on TravelgateX platform will be documented in this page.</div>
 
 
+<h2 id="2019-01-11">2019-01-11</h2>
+
+<div class="release-types type-c">
+        <ul>
+<li>The DEFAULT_TEMPLATE option has been modified.The permissions given to the owner were :
+<strong>iam:all:viewer</strong>
+Now:
+<strong>all:all:1a</strong> <code>This is for future updates. Ignore it for the time being.</code>
+The owner of the organization now has an admin permission all across the
+apis:
+<strong>org:api:rsc:crud1xaf.</strong></li>
+<li>Intern members (@xmltravelgate.com, @travelgatex.com) only can be added to TEAM type groups.</li>
+<li>Operations now does not check permissions. All operations listed.</li>
+</ul>
+
+</div>
+
+<div class="release-types type-a">
+        <ul>
+<li>deleteApi function implemented.</li>
+<li>Api-key can be added to more than one product on the same folder.</li>
+<li>Group query can now be filtered by parent.</li>
+</ul>
+
+</div>
+
+<div class="release-types type-f">
+        <ul>
+<li>Fixed error when adding apis to TEAM type groups.</li>
+<li>Fixed. When creating new member used to always return &ldquo;Auth0 connection error&rdquo;</li>
+<li>Some errors description have been improved.</li>
+</ul>
+
+</div>
+
+<h2 id="2019-01-09">2019-01-09</h2>
+
+<div class="release-types type-f">
+        <ul>
+<li>Endpoint error messages</li>
+</ul>
+
+</div>
+
+<div class="release-types type-a">
+        <ul>
+<li>Launch patch with new patch file</li>
+<li>New patch fixing write headers</li>
+</ul>
+
+</div>
+
+<div class="release-types type-r">
+        <ul>
+<li>Headers patch</li>
+</ul>
+
+</div>
+
+<h2 id="2018-12-19">2018-12-19</h2>
+
+<div class="release-types type-c">
+        <ul>
+<li>New implement of cache</li>
+<li>Use gzip to unzip respone instead of delegate to request module</li>
+</ul>
+
+</div>
+
+<div class="release-types type-a">
+        <ul>
+<li>Two cache, one for apikeys and other for redirect endpoint</li>
+<li>Implement case not zipped</li>
+<li>Implement cache for rewrite endpoint</li>
+</ul>
+
+</div>
+
+<div class="release-types type-f">
+        <ul>
+<li>Timming</li>
+</ul>
+
+</div>
+
+<h2 id="2018-12-17">2018-12-17</h2>
+
+<div class="release-types type-r">
+        <ul>
+<li>Worker</li>
+</ul>
+
+</div>
+
+<h2 id="2018-12-14">2018-12-14</h2>
+
+<div class="release-types type-c">
+        <ul>
+<li><a href="/travelgatex/release-notes/graphql-schema-changes/#2018-12-13">GraphQL Schema updated.</a></li>
+</ul>
+
+</div>
+
+<div class="release-types type-a">
+        <ul>
+<li>Use worker and main thread to stats depends search, and calculate</li>
+<li>Send stringify of body_worker</li>
+<li>Protect Buffer</li>
+</ul>
+
+</div>
+
+<div class="release-types type-f">
+        <ul>
+<li>ElapsedTime when error, and fix jsonstringify</li>
+<li>Timming</li>
+</ul>
+
+</div>
+
+<div class="release-types type-r">
+        <ul>
+<li>Tracing from worker (detail)</li>
+<li>Tracing from utils2 (detail)</li>
+</ul>
+
+</div>
+
+<h2 id="2018-12-13">2018-12-13</h2>
+
+<div class="release-types type-c">
+        <ul>
+<li><a href="/travelgatex/release-notes/graphql-schema-changes/#2018-12-13">GraphQL Schema updated.</a></li>
+</ul>
+
+</div>
+
+<div class="release-types type-f">
+        <ul>
+<li>Timming and use workers for stats.</li>
+<li>Status code when endpoint fails</li>
+<li>Worker</li>
+</ul>
+
+</div>
+
 <h2 id="2018-11-20">2018-11-20</h2>
 
 <div class="release-types type-c">
@@ -3668,6 +3814,12 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 <ul>
 <li>
 <ul>
+<li><a href="#2019-01-11">2019-01-11</a></li>
+<li><a href="#2019-01-09">2019-01-09</a></li>
+<li><a href="#2018-12-19">2018-12-19</a></li>
+<li><a href="#2018-12-17">2018-12-17</a></li>
+<li><a href="#2018-12-14">2018-12-14</a></li>
+<li><a href="#2018-12-13">2018-12-13</a></li>
 <li><a href="#2018-11-20">2018-11-20</a></li>
 <li><a href="#2018-11-07">2018-11-07</a></li>
 <li><a href="#2018-10-28">2018-10-28</a></li>
