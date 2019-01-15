@@ -294,25 +294,11 @@
 	"content": " The admin query root of TravelgateX\u0026rsquo;s GraphQL interface.\nGraphQL schema definition type AdminQuery {  jwt: JWT    accesses(    first: Int,     last: Int,     before: String,     after: String,     filter: AccessFilter,     ): AccessConnection    suppliers(    first: Int,     last: Int,     before: String,     after: String,     filter: SupplierFilter,     ): SupplierConnection    clients(    first: Int,     last: Int,     before: String,     after: String,     filter: ClientFilter,     ): ClientConnection    serviceApi( filter: ServiceApiFilter, ): ServiceApi    pointsOfSale( filter: PointOfSaleFilter, ): PointOfSaleConnection    profiles( filter: ProfileFilter, ): ProfileConnection    entities( filter: EntityFilter, ): EntityConnection    organizations(    codes: [ID!],     domains: [DomainName!],     first: Int,     last: Int,     before: String,     after: String,     ): OrganizationConnection!    products(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): ProductConnection!    members(    codes: [ID!],     type: MemberType,     first: Int,     last: Int,     before: String,     after: String,     ): MemberConnection!    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection!    apis(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): APIConnection!    resources(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): ResourceConnection!    roles(    codes: [ID!],     type: RoleType,     first: Int,     last: Int,     before: String,     after: String,     ): RoleConnection!    operations(    codes: [ID!],     type: OperationType,     first: Int,     last: Int,     before: String,     after: String,     ): OperationConnection!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields jwt(JWT): Get JSON Web Token (JWT) linked to Member  accesses(AccessConnection): Obtain a list of accesses for a filter  suppliers(SupplierConnection): Obtain all suppliers for a filter.  clients(ClientConnection): Obtain all clients for a filter.  serviceApi(ServiceApi): Obtain a ServiceAPI  pointsOfSale(PointOfSaleConnection): Obtain all Points of Sale for the filters  profiles(ProfileConnection): Obtain all Profiles for the filters  entities(EntityConnection): Obtain a set of entities  organizations(OrganizationConnection!): Organizations list; specify organization codes to filter organizations  products(ProductConnection!): Product catalog; specify products codes to filter   members(MemberConnection!): Members list; specify member codes to filter members.  groups(GroupConnection!): Groups list; specify group codes to filter groups.  apis(APIConnection!): Apis list; specify api codes to filter apis.  resources(ResourceConnection!): Resources list; specify resource codes to filter resources.  roles(RoleConnection!): Roles list; specify role codes to filter roles.  operations(OperationConnection!): Operations list; specify operations codes to filter operations.  \nRequired by Query:  The query root of TravelgateX\u0026#39;s GraphQL interface.  \n"
 },
 {
-	"uri": "/hotelx/reference/interfaces/advisemessage/",
-	"title": "AdviseMessage",
-	"tags": [],
-	"description": "",
-	"content": " List of advise messages.\nGraphQL schema definition interface AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): AM code: The following codes can be returned:  type(String!): Error type: The following types are valid:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.  correlationID(ID!): Identifier to be able to investigate the cause of the error  \n"
-},
-{
 	"uri": "/hotelx/reference/objects/advisemessage/",
 	"title": "AdviseMessage",
 	"tags": [],
 	"description": "",
 	"content": " List of advise messages.\nGraphQL schema definition type AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): AM code: The following codes can be returned:  type(String!): Error type: The following types are valid:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.  correlationID(ID!): Identifier to be able to investigate the cause of the error  \n"
-},
-{
-	"uri": "/mappea/reference/interfaces/advisemessage/",
-	"title": "AdviseMessage",
-	"tags": [],
-	"description": "",
-	"content": " List of advise messages.\nGraphQL schema definition interface AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): AM code: The following codes can be returned:  type(String!): Error type: The following types are valid:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.  correlationID(ID!): Identifier to be able to investigate the cause of the error  \n"
 },
 {
 	"uri": "/mappea/reference/objects/advisemessage/",
@@ -322,13 +308,6 @@
 	"content": " List of advise messages.\nGraphQL schema definition type AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): AM code: The following codes can be returned:  type(String!): Error type: The following types are valid:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.  correlationID(ID!): Identifier to be able to investigate the cause of the error  \n"
 },
 {
-	"uri": "/paymentx/reference/interfaces/advisemessage/",
-	"title": "AdviseMessage",
-	"tags": [],
-	"description": "",
-	"content": " List of advise messages.\nGraphQL schema definition interface AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): AM code: The following codes can be returned:  type(String!): Error type: The following types are valid:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.  correlationID(ID!): Identifier to be able to investigate the cause of the error  \n"
-},
-{
 	"uri": "/paymentx/reference/objects/advisemessage/",
 	"title": "AdviseMessage",
 	"tags": [],
@@ -336,25 +315,11 @@
 	"content": " List of advise messages.\nGraphQL schema definition type AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): AM code: The following codes can be returned:  type(String!): Error type: The following types are valid:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.  correlationID(ID!): Identifier to be able to investigate the cause of the error  \nRequired by PaymentXQuery:    \n"
 },
 {
-	"uri": "/stats/reference/interfaces/advisemessage/",
-	"title": "AdviseMessage",
-	"tags": [],
-	"description": "",
-	"content": " List of advise messages.\nGraphQL schema definition interface AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): AM code: The following codes can be returned:  type(String!): Error type: The following types are valid:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.  correlationID(ID!): Identifier to be able to investigate the cause of the error  \n"
-},
-{
 	"uri": "/stats/reference/objects/advisemessage/",
 	"title": "AdviseMessage",
 	"tags": [],
 	"description": "",
 	"content": " List of advise messages.\nGraphQL schema definition type AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): AM code: The following codes can be returned:  type(String!): Error type: The following types are valid:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.  correlationID(ID!): Identifier to be able to investigate the cause of the error  \n"
-},
-{
-	"uri": "/travelgatex/reference/interfaces/advisemessage/",
-	"title": "AdviseMessage",
-	"tags": [],
-	"description": "",
-	"content": " List of advise messages.\nGraphQL schema definition interface AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): AM code: The following codes can be returned:  type(String!): Error type: The following types are valid:  description(String!): Error description  level(AdviseMessageLevel!): Indicates the level of importance of the message: Posible values ERROR WARN INFO  external(ExternalMessage): Specify the external message.  correlationID(ID!): Identifier to be able to investigate the cause of the error  \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/advisemessage/",
@@ -1552,20 +1517,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Provides information about the currency of original, and its rate applied over the results returned by the Supplier.\nGraphQL schema definition type Exchange {  currency: Currency!    rate: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields currency(Currency!): Provide information about the currency of origin  rate(Float!): Provides information about the rate applied over results  \nRequired by Price:  Price indicates the value of the room/option. Supplements and/or surcharges can be included into the price, and will be verified with nodes Supplements/Surcharges.  Markup:  Informs markup applied over supplier price.  Priceable:    \n"
-},
-{
-	"uri": "/paymentx/reference/objects/expiredate/",
-	"title": "ExpireDate",
-	"tags": [],
-	"description": "",
-	"content": " The card expiration date\nGraphQL schema definition type ExpireDate {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields month(Int!): Month MM  year(Int!): Year yy  \nRequired by PaymentCard:  Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information  \n"
-},
-{
-	"uri": "/travelgatex/reference/objects/expiredate/",
-	"title": "ExpireDate",
-	"tags": [],
-	"description": "",
-	"content": " The card expiration date\nGraphQL schema definition type ExpireDate {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields month(Int!): Month MM  year(Int!): Year yy  \nRequired by PaymentCard:  Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information  \n"
 },
 {
 	"uri": "/hotelx/reference/inputobjects/expiredateinput/",
@@ -3787,32 +3738,11 @@
 	"content": " Pax object that contains the pax age.\nGraphQL schema definition type PaxInput {  age: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields age(Int!): Pax age.  \n"
 },
 {
-	"uri": "/paymentx/reference/objects/paymentcard/",
-	"title": "PaymentCard",
-	"tags": [],
-	"description": "",
-	"content": " Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information\nGraphQL schema definition type PaymentCard {  cardType: String!    holder: Holder!    number: CardNumber!    CVC: CVC!    expire: ExpireDate!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields cardType(String!): Indicates the card type.  holder(Holder!): Contains owner\u0026#39;s name  number(CardNumber!): Card Number (16 digits typically)  CVC(CVC!): Contains credit card CVC  expire(ExpireDate!): Contains credit card expiration date  \nRequired by StoredCardData:    \n"
-},
-{
-	"uri": "/travelgatex/reference/objects/paymentcard/",
-	"title": "PaymentCard",
-	"tags": [],
-	"description": "",
-	"content": " Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information\nGraphQL schema definition type PaymentCard {  cardType: String!    holder: Holder!    number: CardNumber!    CVC: CVC!    expire: ExpireDate!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields cardType(String!): Indicates the card type.  holder(Holder!): Contains owner\u0026#39;s name  number(CardNumber!): Card Number (16 digits typically)  CVC(CVC!): Contains credit card CVC  expire(ExpireDate!): Contains credit card expiration date  \nRequired by StoredCardData:    \n"
-},
-{
 	"uri": "/hotelx/reference/inputobjects/paymentcardinput/",
 	"title": "PaymentCardInput",
 	"tags": [],
 	"description": "",
 	"content": " Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information\nGraphQL schema definition type PaymentCardInput {  cardType: String!    holder: HolderInput!    number: String!    CVC: String!    expire: ExpireDateInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields cardType(String!): Indicates the card type.  holder(HolderInput!): Contains owner\u0026#39;s name  number(String!): Contains credit card number  CVC(String!): Contains credit card CVC  expire(ExpireDateInput!): Contains credit card expiration date  \nRequired by HotelBookInput:  Criteria of book.  \n"
-},
-{
-	"uri": "/paymentx/reference/inputobjects/paymentcardinput/",
-	"title": "PaymentCardInput",
-	"tags": [],
-	"description": "",
-	"content": " Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information\nGraphQL schema definition type PaymentCardInput {  cardType: String!    holder: HolderInput!    number: String!    CVC: String!    expire: ExpireDateInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields cardType(String!): Indicates the card type.  holder(HolderInput!): Contains owner\u0026#39;s name  number(String!): Contains credit card number  CVC(String!): Contains credit card CVC  expire(ExpireDateInput!): Contains credit card expiration date  \nRequired by PaymentXStoreCardInput:    \n"
 },
 {
 	"uri": "/travelgatex/reference/inputobjects/paymentcardinput/",
@@ -3834,76 +3764,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Options payment type\nGraphQL schema definition  enum PaymentType{   MERCHANT,    DIRECT,    CARD_BOOKING,    CARD_CHECK_IN,   }   Required by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description  \n"
-},
-{
-	"uri": "/paymentx/reference/objects/paymentxbookinginfo/",
-	"title": "PaymentXBookingInfo",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXBookingInfo {  organization: String!    pointOfSale: PointOfSale!    bookingReference: String!    checkOut: Date!    checkIn: Date!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.  pointOfSale(PointOfSale!):   bookingReference(String!): Indicates the referece of the booking  checkOut(Date!): Check-out, booking date Format: YYYY-MM-DD  checkIn(Date!): Check-in, booking date Format: YYYY-MM-DD  \nRequired by StoredCardData:    \n"
-},
-{
-	"uri": "/travelgatex/reference/objects/paymentxbookinginfo/",
-	"title": "PaymentXBookingInfo",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXBookingInfo {  organization: String!    pointOfSale: PointOfSale!    bookingReference: String!    checkOut: Date!    checkIn: Date!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.  pointOfSale(PointOfSale!):   bookingReference(String!): Indicates the referece of the booking  checkOut(Date!): Check-out, booking date Format: YYYY-MM-DD  checkIn(Date!): Check-in, booking date Format: YYYY-MM-DD  \nRequired by StoredCardData:    \n"
-},
-{
-	"uri": "/paymentx/reference/inputobjects/paymentxbookinginfocriteriainput/",
-	"title": "PaymentXBookingInfoCriteriaInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXBookingInfoCriteriaInput {  organization: String!    pointOfSaleCode: ID    bookingReference: String    holder: HolderInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.  pointOfSaleCode(ID): Indicates the code of the booked property  bookingReference(String): Indicates the referece of the booking  holder(HolderInput): Contains owner\u0026#39;s name  \n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/",
-	"title": "PaymentXBookingInfoCriteriaInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXBookingInfoCriteriaInput {  organization: String!    pointOfSaleCode: ID    bookingReference: String    holder: HolderInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.  pointOfSaleCode(ID): Indicates the code of the booked property  bookingReference(String): Indicates the referece of the booking  holder(HolderInput): Contains owner\u0026#39;s name  \n"
-},
-{
-	"uri": "/paymentx/reference/inputobjects/paymentxbookinginfodeleteinput/",
-	"title": "PaymentXBookingInfoDeleteInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXBookingInfoDeleteInput {  organization: String!    pointOfSaleCode: ID!    bookingReference: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.  pointOfSaleCode(ID!): Indicates the code of the booked property  bookingReference(String!): Indicates the referece of the booking  \n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/",
-	"title": "PaymentXBookingInfoDeleteInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXBookingInfoDeleteInput {  organization: String!    pointOfSaleCode: ID!    bookingReference: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.  pointOfSaleCode(ID!): Indicates the code of the booked property  bookingReference(String!): Indicates the referece of the booking  \n"
-},
-{
-	"uri": "/paymentx/reference/inputobjects/paymentxbookinginfofilterinput/",
-	"title": "PaymentXBookingInfoFilterInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXBookingInfoFilterInput {  AND: [PaymentXBookingInfoFilterInput!]    OR: [PaymentXBookingInfoFilterInput!]    checkIn_in: [DateTime!]    checkIn_not_in: [DateTime!]    checkIn_lt: DateTime    checkIn_lte: DateTime    checkIn_gt: DateTime    checkIn_gte: DateTime    checkOut_in: [DateTime!]    checkOut_not_in: [DateTime!]    checkOut_lt: DateTime    checkOut_lte: DateTime    checkOut_gt: DateTime    checkOut_gte: DateTime   Show deprecated fields   organization: : String // Responsible organization of the booked property. @deprecated(reason: \u0026#34;deprecated from 2018-08-03 Please use PaymentXBookingInfoCriteriaInput\u0026#34;)     pointOfSaleCode: : ID // Indicates the code of the booked property. @deprecated(reason: \u0026#34;deprecated from 2018-08-03 Please use PaymentXBookingInfoCriteriaInput\u0026#34;)     bookingReference: : String // Indicates the referece of the booking. @deprecated(reason: \u0026#34;deprecated from 2018-08-03 Please use PaymentXBookingInfoCriteriaInput\u0026#34;)     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields organization(String): Responsible organization of the booked property. @deprecated(reason: \u0026#34;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput\u0026#34;)  pointOfSaleCode(ID): Indicates the code of the booked property. @deprecated(reason: \u0026#34;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput\u0026#34;)  bookingReference(String): Indicates the referece of the booking. @deprecated(reason: \u0026#34;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput\u0026#34;)  AND([PaymentXBookingInfoFilterInput!]): Logical AND on all given filters.  OR([PaymentXBookingInfoFilterInput!]): Logical OR on all given filters.  checkIn_in([DateTime!]): All values that are contained in given list.  checkIn_not_in([DateTime!]): All values that are not contained in given list.  checkIn_lt(DateTime): All values less than the given value.  checkIn_lte(DateTime): All values less than or equal the given value.  checkIn_gt(DateTime): All values greater than the given value.  checkIn_gte(DateTime): All values greater than or equal the given value.  checkOut_in([DateTime!]): All values that are contained in given list.  checkOut_not_in([DateTime!]): All values that are not contained in given list.  checkOut_lt(DateTime): All values less than the given value.  checkOut_lte(DateTime): All values less than or equal the given value.  checkOut_gt(DateTime): All values greater than the given value.  checkOut_gte(DateTime): All values greater than or equal the given value.  \n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/paymentxbookinginfofilterinput/",
-	"title": "PaymentXBookingInfoFilterInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXBookingInfoFilterInput {  AND: [PaymentXBookingInfoFilterInput!]    OR: [PaymentXBookingInfoFilterInput!]    checkIn_in: [DateTime!]    checkIn_not_in: [DateTime!]    checkIn_lt: DateTime    checkIn_lte: DateTime    checkIn_gt: DateTime    checkIn_gte: DateTime    checkOut_in: [DateTime!]    checkOut_not_in: [DateTime!]    checkOut_lt: DateTime    checkOut_lte: DateTime    checkOut_gt: DateTime    checkOut_gte: DateTime   Show deprecated fields   organization: : String // Responsible organization of the booked property. @deprecated(reason: \u0026#34;deprecated from 2018-08-03 Please use PaymentXBookingInfoCriteriaInput\u0026#34;)     pointOfSaleCode: : ID // Indicates the code of the booked property. @deprecated(reason: \u0026#34;deprecated from 2018-08-03 Please use PaymentXBookingInfoCriteriaInput\u0026#34;)     bookingReference: : String // Indicates the referece of the booking. @deprecated(reason: \u0026#34;deprecated from 2018-08-03 Please use PaymentXBookingInfoCriteriaInput\u0026#34;)     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields organization(String): Responsible organization of the booked property. @deprecated(reason: \u0026#34;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput\u0026#34;)  pointOfSaleCode(ID): Indicates the code of the booked property. @deprecated(reason: \u0026#34;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput\u0026#34;)  bookingReference(String): Indicates the referece of the booking. @deprecated(reason: \u0026#34;deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput\u0026#34;)  AND([PaymentXBookingInfoFilterInput!]): Logical AND on all given filters.  OR([PaymentXBookingInfoFilterInput!]): Logical OR on all given filters.  checkIn_in([DateTime!]): All values that are contained in given list.  checkIn_not_in([DateTime!]): All values that are not contained in given list.  checkIn_lt(DateTime): All values less than the given value.  checkIn_lte(DateTime): All values less than or equal the given value.  checkIn_gt(DateTime): All values greater than the given value.  checkIn_gte(DateTime): All values greater than or equal the given value.  checkOut_in([DateTime!]): All values that are contained in given list.  checkOut_not_in([DateTime!]): All values that are not contained in given list.  checkOut_lt(DateTime): All values less than the given value.  checkOut_lte(DateTime): All values less than or equal the given value.  checkOut_gt(DateTime): All values greater than the given value.  checkOut_gte(DateTime): All values greater than or equal the given value.  \n"
-},
-{
-	"uri": "/paymentx/reference/inputobjects/paymentxbookinginfoinput/",
-	"title": "PaymentXBookingInfoInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXBookingInfoInput {  organization: String!    pointOfSale: PointOfSaleInput!    bookingReference: String!    checkOut: Date!    checkIn: Date!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.  pointOfSale(PointOfSaleInput!): Indicates the code of the booked property  bookingReference(String!): Indicates the referece of the booking  checkOut(Date!): Check-out, booking date Format: YYYY-MM-DD  checkIn(Date!): Check-in, booking date Format: YYYY-MM-DD  \nRequired by PaymentXStoreCardInput:    \n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/paymentxbookinginfoinput/",
-	"title": "PaymentXBookingInfoInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXBookingInfoInput {  organization: String!    pointOfSale: PointOfSaleInput!    bookingReference: String!    checkOut: Date!    checkIn: Date!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.  pointOfSale(PointOfSaleInput!): Indicates the code of the booked property  bookingReference(String!): Indicates the referece of the booking  checkOut(Date!): Check-out, booking date Format: YYYY-MM-DD  checkIn(Date!): Check-in, booking date Format: YYYY-MM-DD  \nRequired by PaymentXStoreCardInput:    \n"
 },
 {
 	"uri": "/paymentx/reference/objects/paymentxexpiredate/",
@@ -3939,20 +3799,6 @@
 	"tags": [],
 	"description": "",
 	"content": " GraphQL schema definition type PaymentXQuery {  vaultStatusService: AdviseMessage!    allStoredCards( filter: PaymentXStoredCardFilterInput!, instanceCode: String!, ): PaymentXStoredCardConnection!    storedCard( criteria: PaymentXStoredCardIDInput!, ): PaymentXStoredCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields vaultStatusService(AdviseMessage!): Returns status of the vault service.  allStoredCards(PaymentXStoredCardConnection!): Returns the stored card list. For security, this query never will return clear card information.   storedCard(PaymentXStoredCard!): Returns a stored card information.   \nRequired by Query:  The query root of TravelgateX\u0026#39;s GraphQL interface.  \n"
-},
-{
-	"uri": "/paymentx/reference/inputobjects/paymentxstorecardinput/",
-	"title": "PaymentXStoreCardInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXStoreCardInput {  bookingInfo: PaymentXBookingInfoInput!    card: PaymentCardInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields bookingInfo(PaymentXBookingInfoInput!):   card(PaymentCardInput!):   \n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/paymentxstorecardinput/",
-	"title": "PaymentXStoreCardInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PaymentXStoreCardInput {  bookingInfo: PaymentXBookingInfoInput!    card: PaymentCardInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields bookingInfo(PaymentXBookingInfoInput!):   card(PaymentCardInput!):   \n"
 },
 {
 	"uri": "/paymentx/reference/objects/paymentxstoredcard/",
@@ -4156,20 +4002,6 @@
 	"tags": [],
 	"description": "",
 	"content": " GraphQL schema definition type PointOfSaleFilter {  code: [ID]    groupID: [ID]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code([ID]):   groupID([ID]):   owner([ID!]):   \n"
-},
-{
-	"uri": "/paymentx/reference/inputobjects/pointofsaleinput/",
-	"title": "PointOfSaleInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PointOfSaleInput {  code: ID!    name: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): POS Identifier  name(String!): POS Name  \nRequired by PaymentXBookingInfoInput:    \n"
-},
-{
-	"uri": "/travelgatex/reference/inputobjects/pointofsaleinput/",
-	"title": "PointOfSaleInput",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type PointOfSaleInput {  code: ID!    name: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!): POS Identifier  name(String!): POS Name  \nRequired by PaymentXBookingInfoInput:    \n"
 },
 {
 	"uri": "/hotelx/reference/objects/price/",
@@ -5054,13 +4886,6 @@
 	"content": " Indicates the status of the service\nGraphQL schema definition type ServiceStatus {  code: String    type: String    description: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(String): Status code  type(String): Status type  description(String): Status description  \nRequired by HotelXQuery:    \n"
 },
 {
-	"uri": "/paymentx/reference/objects/servicestatus/",
-	"title": "ServiceStatus",
-	"tags": [],
-	"description": "",
-	"content": " Indicates the status of the service\nGraphQL schema definition type ServiceStatus {  code: String    type: String    description: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(String): Status code  type(String): Status type  description(String): Status description  \nRequired by PaymentXQuery:    \n"
-},
-{
 	"uri": "/travelgatex/reference/objects/servicestatus/",
 	"title": "ServiceStatus",
 	"tags": [],
@@ -5157,20 +4982,6 @@
 	"tags": [],
 	"description": "",
 	"content": " The service used to access the stats of every connection that uses the HUB\nGraphQL schema definition type Stats {  code: ID!    statsData: StatsData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!):   statsData(StatsData): The data returned by a Stats query.  adviseMessage([AdviseMessage!]): List of advise messages.  createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date  \nRequired by StatsEdge:    \n"
-},
-{
-	"uri": "/stats/reference/objects/statsassert/",
-	"title": "StatsAssert",
-	"tags": [],
-	"description": "",
-	"content": " Assert of an specific error\nGraphQL schema definition type StatsAssert {  startTime: DateTime!    execTime: Int!    url: URI!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields startTime(DateTime!): Start time of the request  execTime(Int!): Execution time of the request  url(URI!): Endpoint to download the full XML of the request with its response  \n"
-},
-{
-	"uri": "/travelgatex/reference/objects/statsassert/",
-	"title": "StatsAssert",
-	"tags": [],
-	"description": "",
-	"content": " Assert of an specific error\nGraphQL schema definition type StatsAssert {  startTime: DateTime!    execTime: Int!    url: URI!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields startTime(DateTime!): Start time of the request  execTime(Int!): Execution time of the request  url(URI!): Endpoint to download the full XML of the request with its response  \n"
 },
 {
 	"uri": "/stats/reference/objects/statsasset/",
@@ -5311,62 +5122,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Indicartes options status\nGraphQL schema definition  enum StatusType{   OK,    RQ,   }   Required by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description  HotelOptionQuote:  Contains information about quote(s)  \n"
-},
-{
-	"uri": "/paymentx/reference/objects/storedcard/",
-	"title": "StoredCard",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type StoredCard {  code: ID!    storedCardData: StoredCardData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!):   storedCardData(StoredCardData):   createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date  adviseMessage([AdviseMessage!]): List of messages  \nRequired by StoredCardEdge:    PaymentXMutation:    \n"
-},
-{
-	"uri": "/travelgatex/reference/objects/storedcard/",
-	"title": "StoredCard",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type StoredCard {  code: ID!    storedCardData: StoredCardData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!):   storedCardData(StoredCardData):   createdAt(DateTime!): Create date  updatedAt(DateTime!): Update date  adviseMessage([AdviseMessage!]): List of messages  \nRequired by StoredCardEdge:    PaymentXMutation:    \n"
-},
-{
-	"uri": "/paymentx/reference/objects/storedcardconnection/",
-	"title": "StoredCardConnection",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type StoredCardConnection {  edges: [StoredCardEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields edges([StoredCardEdge]):   pageInfo(PageInfo!):   \nRequired by PaymentXQuery:    \n"
-},
-{
-	"uri": "/travelgatex/reference/objects/storedcardconnection/",
-	"title": "StoredCardConnection",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type StoredCardConnection {  edges: [StoredCardEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields edges([StoredCardEdge]):   pageInfo(PageInfo!):   \nRequired by PaymentXQuery:    \n"
-},
-{
-	"uri": "/paymentx/reference/objects/storedcarddata/",
-	"title": "StoredCardData",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type StoredCardData {  bookingInfo: PaymentXBookingInfo!    card: PaymentCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields bookingInfo(PaymentXBookingInfo!):   card(PaymentCard!):   \nRequired by StoredCard:    \n"
-},
-{
-	"uri": "/travelgatex/reference/objects/storedcarddata/",
-	"title": "StoredCardData",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type StoredCardData {  bookingInfo: PaymentXBookingInfo!    card: PaymentCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields bookingInfo(PaymentXBookingInfo!):   card(PaymentCard!):   \nRequired by StoredCard:    \n"
-},
-{
-	"uri": "/paymentx/reference/objects/storedcardedge/",
-	"title": "StoredCardEdge",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type StoredCardEdge {  cursor: String!    node: StoredCard   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields cursor(String!):   node(StoredCard):   \nRequired by StoredCardConnection:    \n"
-},
-{
-	"uri": "/travelgatex/reference/objects/storedcardedge/",
-	"title": "StoredCardEdge",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition type StoredCardEdge {  cursor: String!    node: StoredCard   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields cursor(String!):   node(StoredCard):   \nRequired by StoredCardConnection:    \n"
 },
 {
 	"uri": "/hotelx/reference/scalars/string/",
@@ -5607,25 +5362,11 @@
 	"content": " GraphQL schema definition  enum Template{   FOLDER_DEFAULT,   }   Required by CreateGroupInput:    \n"
 },
 {
-	"uri": "/hotelx/reference/interfaces/text/",
-	"title": "Text",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition interface Text {  text: String!    language: Language!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields text(String!):   language(Language!):   \n"
-},
-{
 	"uri": "/hotelx/reference/objects/text/",
 	"title": "Text",
 	"tags": [],
 	"description": "",
 	"content": " GraphQL schema definition type Text {  text: String!    language: Language!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields text(String!):   language(Language!):   \n"
-},
-{
-	"uri": "/travelgatex/reference/interfaces/text/",
-	"title": "Text",
-	"tags": [],
-	"description": "",
-	"content": " GraphQL schema definition interface Text {  text: String!    language: Language!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields text(String!):   language(Language!):   \n"
 },
 {
 	"uri": "/travelgatex/reference/objects/text/",
@@ -6451,7 +6192,7 @@
 	"title": "GraphQL Schema breaking changes",
 	"tags": ["breaking-changes"],
 	"description": "Changes history of deprecated notes previously announced",
-	"content": " Changes history of deprecated notes previously announced Unreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon.   2019-01-11  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Product. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Resource. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Role. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01 .   2018-08-22  Removed organization from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 . Removed pointOfSaleCode from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 . Removed bookingReference from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 .    Deprecated error from API. Reason: Sustituted by adviseMessage. Finally removed on 2019-01-11 . Deprecated error from Member. Reason: Sustituted by adviseMessage. Finally removed on 2019-01-11 . Deprecated error from Operation. Reason: Sustituted by adviseMessage. Finally removed on 2019-01-11 . Deprecated error from Organization. Reason: Sustituted by adviseMessage. Finally removed on 2019-01-11 . Deprecated error from Product. Reason: Sustituted by adviseMessage. Finally removed on 2019-01-11 . Deprecated error from Resource. Reason: Sustituted by adviseMessage. Finally removed on 2019-01-11 . Deprecated error from Role. Reason: Sustituted by adviseMessage. Finally removed on 2019-01-11 .  \n2018-08-03  Deprecated organization from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-08-22 . Deprecated pointOfSaleCode from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-08-22 . Deprecated bookingReference from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-08-22 .  \n2018-08-01  Deprecated error from Group. Reason: Sustituted by adviseMessage. Finally removed on 2019-01-11 .   2018-07-31  Removed hotel from Booking. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 . Removed hotel from Quote. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 . Removed hotel from Search. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 . Removed useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12 . Removed connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19 .   2018-05-21  Deprecated distribute from AddOns. Reason: You can find it in distribution AddOn. Expected removal on 2018-08-19 .   2018-03-19  Deprecated connectUser from HotelSettingsInput. Reason: Redundant.. Finally removed on 2018-07-31 .   2017-12-12  Deprecated useContext from HotelSettingsInput. Reason: Redundant.. Finally removed on 2018-07-31 .   2017-11-21  Deprecated hotel from Booking. Reason: You can find it in query at HotelX. Finally removed on 2018-07-31 . Deprecated hotel from Quote. Reason: You can find it in query at HotelX. Finally removed on 2018-07-31 . Deprecated hotel from Search. Reason: You can find it in query at HotelX. Finally removed on 2018-07-31 .   "
+	"content": " Changes history of deprecated notes previously announced Unreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon.   2019-01-15  Removed error from Group. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-01 .   2018-10-02  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Product. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Resource. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Role. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 .   2018-09-14  Removed organization from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 . Removed pointOfSaleCode from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 . Removed bookingReference from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 .   2018-08-22  Deprecated error from API. Reason: Sustituted by adviseMessage. Finally removed on 2018-10-02 . Deprecated error from Member. Reason: Sustituted by adviseMessage. Finally removed on 2018-10-02 . Deprecated error from Operation. Reason: Sustituted by adviseMessage. Finally removed on 2018-10-02 . Deprecated error from Organization. Reason: Sustituted by adviseMessage. Finally removed on 2018-10-02 . Deprecated error from Product. Reason: Sustituted by adviseMessage. Finally removed on 2018-10-02 . Deprecated error from Resource. Reason: Sustituted by adviseMessage. Finally removed on 2018-10-02 . Deprecated error from Role. Reason: Sustituted by adviseMessage. Finally removed on 2018-10-02 .   2018-08-03  Deprecated organization from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-09-14 . Deprecated pointOfSaleCode from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-09-14 . Deprecated bookingReference from PaymentXBookingInfoFilterInput. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-09-14 .  \n2018-08-01  Deprecated error from Group. Reason: Sustituted by adviseMessage. Finally removed on 2019-01-15 .   2018-07-31  Removed hotel from Booking. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 . Removed hotel from Quote. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 . Removed hotel from Search. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 . Removed useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12 . Removed connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19 .   2018-05-21  Deprecated distribute from AddOns. Reason: You can find it in distribution AddOn. Expected removal on 2018-08-19 .   2018-03-19  Deprecated connectUser from HotelSettingsInput. Reason: Redundant.. Finally removed on 2018-07-31 .   2017-12-12  Deprecated useContext from HotelSettingsInput. Reason: Redundant.. Finally removed on 2018-07-31 .   2017-11-21  Deprecated hotel from Booking. Reason: You can find it in query at HotelX. Finally removed on 2018-07-31 . Deprecated hotel from Quote. Reason: You can find it in query at HotelX. Finally removed on 2018-07-31 . Deprecated hotel from Search. Reason: You can find it in query at HotelX. Finally removed on 2018-07-31 .   "
 },
 {
 	"uri": "/hotelx/plugins/format-files/group/",

@@ -166,17 +166,6 @@ GraphQL schema definition type Error {  code: String!    type: String!    descri
     </item>
     
     <item>
-      <title>ExpireDate</title>
-      <link>/paymentx/reference/objects/expiredate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/paymentx/reference/objects/expiredate/</guid>
-      <description>The card expiration date
-GraphQL schema definition type ExpireDate {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields month(Int!): Month MM  year(Int!): Year yy  
-Required by PaymentCard:  Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information</description>
-    </item>
-    
-    <item>
       <title>ExternalMessage</title>
       <link>/paymentx/reference/objects/externalmessage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -390,25 +379,6 @@ GraphQL schema definition type Parameter {  key: ID!    value: String!   Show de
     </item>
     
     <item>
-      <title>PaymentCard</title>
-      <link>/paymentx/reference/objects/paymentcard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/paymentx/reference/objects/paymentcard/</guid>
-      <description>Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information
-GraphQL schema definition type PaymentCard {  cardType: String!    holder: Holder!    number: CardNumber!    CVC: CVC!    expire: ExpireDate!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.</description>
-    </item>
-    
-    <item>
-      <title>PaymentXBookingInfo</title>
-      <link>/paymentx/reference/objects/paymentxbookinginfo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/paymentx/reference/objects/paymentxbookinginfo/</guid>
-      <description>GraphQL schema definition type PaymentXBookingInfo {  organization: String!    pointOfSale: PointOfSale!    bookingReference: String!    checkOut: Date!    checkIn: Date!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.</description>
-    </item>
-    
-    <item>
       <title>PaymentXExpireDate</title>
       <link>/paymentx/reference/objects/paymentxexpiredate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -601,55 +571,6 @@ Required by GroupData:    MemberData:    ResourceData:</description>
       <guid>/paymentx/reference/objects/roleedge/</guid>
       <description>GraphQL schema definition type RoleEdge {  node: Role    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Role):   cursor(String!):   
 Required by RoleConnection:</description>
-    </item>
-    
-    <item>
-      <title>ServiceStatus</title>
-      <link>/paymentx/reference/objects/servicestatus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/paymentx/reference/objects/servicestatus/</guid>
-      <description>Indicates the status of the service
-GraphQL schema definition type ServiceStatus {  code: String    type: String    description: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String): Status code  type(String): Status type  description(String): Status description</description>
-    </item>
-    
-    <item>
-      <title>StoredCard</title>
-      <link>/paymentx/reference/objects/storedcard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/paymentx/reference/objects/storedcard/</guid>
-      <description>GraphQL schema definition type StoredCard {  code: ID!    storedCardData: StoredCardData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   storedCardData(StoredCardData):   createdAt(DateTime!</description>
-    </item>
-    
-    <item>
-      <title>StoredCardConnection</title>
-      <link>/paymentx/reference/objects/storedcardconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/paymentx/reference/objects/storedcardconnection/</guid>
-      <description>GraphQL schema definition type StoredCardConnection {  edges: [StoredCardEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([StoredCardEdge]):   pageInfo(PageInfo!):   
-Required by PaymentXQuery:</description>
-    </item>
-    
-    <item>
-      <title>StoredCardData</title>
-      <link>/paymentx/reference/objects/storedcarddata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/paymentx/reference/objects/storedcarddata/</guid>
-      <description>GraphQL schema definition type StoredCardData {  bookingInfo: PaymentXBookingInfo!    card: PaymentCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields bookingInfo(PaymentXBookingInfo!):   card(PaymentCard!):   
-Required by StoredCard:</description>
-    </item>
-    
-    <item>
-      <title>StoredCardEdge</title>
-      <link>/paymentx/reference/objects/storedcardedge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/paymentx/reference/objects/storedcardedge/</guid>
-      <description>GraphQL schema definition type StoredCardEdge {  cursor: String!    node: StoredCard   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields cursor(String!):   node(StoredCard):   
-Required by StoredCardConnection:</description>
     </item>
     
     <item>

@@ -509,17 +509,6 @@ GraphQL schema definition type Exchange {  currency: Currency!    rate: Float!  
     </item>
     
     <item>
-      <title>ExpireDate</title>
-      <link>/travelgatex/reference/objects/expiredate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/objects/expiredate/</guid>
-      <description>The card expiration date
-GraphQL schema definition type ExpireDate {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields month(Int!): Month MM  year(Int!): Year yy  
-Required by PaymentCard:  Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information</description>
-    </item>
-    
-    <item>
       <title>ExternalMessage</title>
       <link>/travelgatex/reference/objects/externalmessage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1219,25 +1208,6 @@ GraphQL schema definition type Pax {  age: Int!   Show deprecated fields   }    
     </item>
     
     <item>
-      <title>PaymentCard</title>
-      <link>/travelgatex/reference/objects/paymentcard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/objects/paymentcard/</guid>
-      <description>Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information
-GraphQL schema definition type PaymentCard {  cardType: String!    holder: Holder!    number: CardNumber!    CVC: CVC!    expire: ExpireDate!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.</description>
-    </item>
-    
-    <item>
-      <title>PaymentXBookingInfo</title>
-      <link>/travelgatex/reference/objects/paymentxbookinginfo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/objects/paymentxbookinginfo/</guid>
-      <description>GraphQL schema definition type PaymentXBookingInfo {  organization: String!    pointOfSale: PointOfSale!    bookingReference: String!    checkOut: Date!    checkIn: Date!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.</description>
-    </item>
-    
-    <item>
       <title>PaymentXExpireDate</title>
       <link>/travelgatex/reference/objects/paymentxexpiredate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1751,16 +1721,6 @@ GraphQL schema definition type Stats {  code: ID!    statsData: StatsData    adv
     </item>
     
     <item>
-      <title>StatsAssert</title>
-      <link>/travelgatex/reference/objects/statsassert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/objects/statsassert/</guid>
-      <description>Assert of an specific error
-GraphQL schema definition type StatsAssert {  startTime: DateTime!    execTime: Int!    url: URI!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields startTime(DateTime!): Start time of the request  execTime(Int!): Execution time of the request  url(URI!</description>
-    </item>
-    
-    <item>
       <title>StatsAsset</title>
       <link>/travelgatex/reference/objects/statsasset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1826,45 +1786,6 @@ GraphQL schema definition type StatsInfo {  code: ID!    type: StatsInfoTypes!  
       <guid>/travelgatex/reference/objects/statsrequest/</guid>
       <description>Contains internal information.
 GraphQL schema definition type StatsRequest {  total: Stat!    validation: Stat!    process: Stat!    configuration: Stat!    request: Stat!    response: Stat!    requestPlugin: StatPlugin    responsePlugin: StatPlugin    hotels: Int!    zones: Int!    cities: Int!    dockerID: String!    Accesses: [StatAccess!</description>
-    </item>
-    
-    <item>
-      <title>StoredCard</title>
-      <link>/travelgatex/reference/objects/storedcard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/objects/storedcard/</guid>
-      <description>GraphQL schema definition type StoredCard {  code: ID!    storedCardData: StoredCardData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   storedCardData(StoredCardData):   createdAt(DateTime!</description>
-    </item>
-    
-    <item>
-      <title>StoredCardConnection</title>
-      <link>/travelgatex/reference/objects/storedcardconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/objects/storedcardconnection/</guid>
-      <description>GraphQL schema definition type StoredCardConnection {  edges: [StoredCardEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([StoredCardEdge]):   pageInfo(PageInfo!):   
-Required by PaymentXQuery:</description>
-    </item>
-    
-    <item>
-      <title>StoredCardData</title>
-      <link>/travelgatex/reference/objects/storedcarddata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/objects/storedcarddata/</guid>
-      <description>GraphQL schema definition type StoredCardData {  bookingInfo: PaymentXBookingInfo!    card: PaymentCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields bookingInfo(PaymentXBookingInfo!):   card(PaymentCard!):   
-Required by StoredCard:</description>
-    </item>
-    
-    <item>
-      <title>StoredCardEdge</title>
-      <link>/travelgatex/reference/objects/storedcardedge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/objects/storedcardedge/</guid>
-      <description>GraphQL schema definition type StoredCardEdge {  cursor: String!    node: StoredCard   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields cursor(String!):   node(StoredCard):   
-Required by StoredCardConnection:</description>
     </item>
     
     <item>
