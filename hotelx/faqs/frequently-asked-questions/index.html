@@ -3686,6 +3686,46 @@
 
 <p>No, the time out will be applied to all providers, using the parameter setting: timeout.</p>
 
+<h2 id="multi-room-in-search-requests">Multi-room in Search Requests</h2>
+
+<p><strong>How to structure a multi-room in HotelX</strong></p>
+
+<p>In order to avoid errors in your Query Search of more than 1 room, please, find below a sample structure of a multi-room:</p>
+
+<pre><code class="language-json">&quot;occupancies&quot;:[  
+   {  
+      &quot;paxes&quot;:[  
+         {  
+            &quot;age&quot;:30
+         },
+         {  
+            &quot;age&quot;:30
+         }
+      ]
+   },
+   {  
+      &quot;paxes&quot;:[  
+         {  
+            &quot;age&quot;:30
+         },
+         {  
+            &quot;age&quot;:30
+         }
+      ]
+   },
+   {  
+      &quot;paxes&quot;:[  
+         {  
+            &quot;age&quot;:30
+         },
+         {  
+            &quot;age&quot;:30
+         }
+      ]
+   }
+],
+</code></pre>
+
 <h2 id="content">Content</h2>
 
 <p><strong>How to Manage HotelX Content</strong></p>
@@ -3759,6 +3799,7 @@
 <li><a href="#cancellation-costs">Cancellation costs</a></li>
 <li><a href="#response-time">Response time</a></li>
 <li><a href="#time-out">Time out</a></li>
+<li><a href="#multi-room-in-search-requests">Multi-room in Search Requests</a></li>
 <li><a href="#content">Content</a></li>
 </ul></li>
 </ul>
