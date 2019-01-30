@@ -26,7 +26,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/cvc/</guid>
-      <description>GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
+      <description> GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/cardnumber/</guid>
-      <description>GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
+      <description> GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
     </item>
     
     <item>
@@ -86,6 +86,16 @@ GraphQL schema definition scalar ID   Required by AdviseMessage:  List of advise
       <guid>/paymentx/reference/scalars/int/</guid>
       <description> The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
 GraphQL schema definition scalar Int   Required by PaymentXExpireDate:  The card expiration date  GroupData:    SupplierData:    ExpireDateInput:  The card expiration date   </description>
+    </item>
+    
+    <item>
+      <title>JWT</title>
+      <link>/paymentx/reference/scalars/jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/scalars/jwt/</guid>
+      <description> JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
+GraphQL schema definition scalar JWT   Required by MemberData:     </description>
     </item>
     
     <item>
