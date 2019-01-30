@@ -64,10 +64,8 @@ It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/net-price/</guid>
-      <description>Net Price is an optional plugin and allows to net all the prices in an option.
- NetpriceX
- CommissionX (NetpriceX Extended funcionality)
-  NetPriceX Goals This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. It is mandatory to load at least supplier&amp;rsquo;s commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices.</description>
+      <description>CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration.
+ CommissionX (NetpriceX Extended funcionality)  CommissionX Goals CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier.</description>
     </item>
     
     <item>

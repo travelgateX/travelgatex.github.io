@@ -3576,43 +3576,17 @@
               
 
 
-<p>Net Price is an optional plugin and allows to net all the prices in an option.</p>
+<p>CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration.</p>
 
 <ul>
-<li><p><a href="/hotelx/plugins/net-price#netpricex"><strong>NetpriceX</strong></a></p></li>
-
-<li><p><a href="/hotelx/plugins/net-price#commissionX"><strong>CommissionX</strong></a> (NetpriceX Extended funcionality)</p></li>
+<li><a href="/hotelx/plugins/net-price#commissionX"><strong>CommissionX</strong></a> (NetpriceX Extended funcionality)</li>
 </ul>
-
-<h2 id="netpricex">NetPriceX</h2>
-
-<h3 id="goals">Goals</h3>
-
-<p>This plugin receives an Option by parameter and returns an Option with all the prices with net value. <strong>This plugin reads information of commissions from ftp</strong>. It is mandatory to load at least supplier&rsquo;s commission file. Depending of the files in ftp, <strong>this plugin can apply two different commission values over prices</strong>.
-Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to the specific hotel’s price. On the one hand, if no hotels commission file is loaded in the ftp, the net price with the commission specified in commissions supplier&rsquo;s file will be applied. On other hand, if the hotel&rsquo;s commission file is loaded, this has preference over the supplier&rsquo;s file. These files have to meet the requirements listed below. In other cases, an error will be returned.</p>
-
-<h2 id="required-files-to-use-this-plugin">Required files to use this plugin</h2>
-
-<ul>
-<li><p><a href="/hotelx/plugins/format-files/commission_supplier/"><strong>Commission supplier file format</strong></a> (<strong>Mandatory</strong>)</p></li>
-
-<li><p><a href="/hotelx/plugins/format-files/commission_netprice/"><strong>Commision hotel file format</strong></a> (<strong>Optional</strong>)</p></li>
-</ul>
-
-<h3 id="execution-example">Execution example</h3>
-
-<p>It is not necessary to specify it in Query (Settings-&gt;Plugins)</p>
 
 <h2 id="commissionX">CommissionX</h2>
 
-<h3 id="goals-1">Goals</h3>
+<h3 id="goals">Goals</h3>
 
-<p>CommissionX is a plugin with an extended funcionality over <strong>net price plugin</strong> that allows to apply more complex bussines rules.
-This plugin defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier. Different commissions can be applied according to the different rules depending on the format that we will described next. The commission that is loaded in the FTP is interpreted like a <strong>Gross</strong> commission, that is, the commission or profit is included in the price.</p>
-
-<p><strong>Observation</strong></p>
-
-<p>Although the group file is optional if this file is informed before the commission file the values will be used from the group file.</p>
+<p>CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier. Different commissions can be applied according to the different rules depending on the format that we will described next. The commission that is loaded in the FTP is interpreted like a <strong>Gross</strong> commission, that is, the commission or profit is included in the price.</p>
 
 <h3 id="files-needed-to-use-this-plugin">Files needed to use this plugin</h3>
 
@@ -3625,6 +3599,10 @@ This plugin defines the contracted / expected commission in cases where the supp
 <li>This file will be necessary in case you want to apply rules depending on a grouping of codes that depend on a <a href="/hotelx/concepts/accesses-supplier-context/#context"><strong>context</strong></a>. For this case, it is necessary that you pass with the <a href="/hotelx/plugins/entity_table_file/"><strong>entity</strong></a>.</li>
 </ul></li>
 </ul>
+
+<p><strong>Observation</strong></p>
+
+<p>Although the group file is optional if this file is informed before the commission file the values will be used from the group file.</p>
 
 <h3 id="how-we-make-it">How we make it</h3>
 
@@ -3659,30 +3637,9 @@ This plugin defines the contracted / expected commission in cases where the supp
 </tbody>
 </table>
 
-<h3 id="execution-example-1">Execution example</h3>
+<h3 id="execution-example">Execution example</h3>
 
-<pre><code>{
-
-    &quot;plugins&quot;: {
-
-        &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
-
-        &quot;pluginsType&quot;: [
-
-            {
-
-                &quot;type&quot;: &quot;NET_PRICE&quot;,
-
-                &quot;name&quot;: &quot;commission&quot;
-
-            }
-
-        ]
-
-    }
-
-}
-</code></pre>
+<p>It is not necessary to specify it in Query (Settings-&gt;Plugins)</p>
 
 <hr/>
 <h2>Comments</h2>
@@ -3711,23 +3668,15 @@ This plugin defines the contracted / expected commission in cases where the supp
 <ul>
 <li>
 <ul>
-<li><a href="#netpricex">NetPriceX</a>
-<ul>
-<li><a href="#goals">Goals</a></li>
-</ul></li>
-<li><a href="#required-files-to-use-this-plugin">Required files to use this plugin</a>
-<ul>
-<li><a href="#execution-example">Execution example</a></li>
-</ul></li>
 <li><a href="#commissionX">CommissionX</a>
 <ul>
-<li><a href="#goals-1">Goals</a></li>
+<li><a href="#goals">Goals</a></li>
 <li><a href="#files-needed-to-use-this-plugin">Files needed to use this plugin</a></li>
 <li><a href="#how-we-make-it">How we make it</a>
 <ul>
 <li><a href="#entitygroup"><strong>Possible values entity filename</strong></a></li>
 </ul></li>
-<li><a href="#execution-example-1">Execution example</a></li>
+<li><a href="#execution-example">Execution example</a></li>
 </ul></li>
 </ul></li>
 </ul>
