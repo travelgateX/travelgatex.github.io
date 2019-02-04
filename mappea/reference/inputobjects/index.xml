@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/inputobjects/mappeaconfirmuploadinput/</guid>
-      <description> ConfirmUpload GraphQL schema definition type MappeaConfirmUploadInput {  fileId: Int!    suppliers: [MappeaSupplierConfirmedInput!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields fileId(Int!):   suppliers([MappeaSupplierConfirmedInput!]!):    </description>
+      <description>ConfirmUpload GraphQL schema definition type MappeaConfirmUploadInput {  fileId: Int!    suppliers: [MappeaSupplierConfirmedInput!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields fileId(Int!):   suppliers([MappeaSupplierConfirmedInput!]!):</description>
     </item>
     
     <item>
@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/inputobjects/mappeagetmappeastatsinput/</guid>
-      <description> GetMappeaStats GraphQL schema definition type MappeaGetMappeaStatsInput {  organizationName: String!    supplierMapped: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields organizationName(String!):   supplierMapped(String):    </description>
+      <description>GetMappeaStats GraphQL schema definition type MappeaGetMappeaStatsInput {  organizationName: String!    supplierMapped: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields organizationName(String!):   supplierMapped(String):</description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/inputobjects/mappeamapsupplierinput/</guid>
-      <description> MapSupplier GraphQL schema definition type MappeaMapSupplierInput {  requestId: ID!    access: ID!    fileId: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields requestId(ID!):   access(ID!):   fileId(Int!):    </description>
+      <description>MapSupplier GraphQL schema definition type MappeaMapSupplierInput {  requestId: ID!    access: ID!    fileId: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields requestId(ID!):   access(ID!):   fileId(Int!):</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/inputobjects/mappeasupplierconfirmedinput/</guid>
-      <description> GraphQL schema definition type MappeaSupplierConfirmedInput {  code: ID!    supplier: ID!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   supplier(ID!):    </description>
+      <description>GraphQL schema definition type MappeaSupplierConfirmedInput {  code: ID!    supplier: ID!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   supplier(ID!):</description>
     </item>
     
     <item>
