@@ -4999,7 +4999,10 @@ Flows HotelX query or mutation determine what flow is executed. Plugins can be e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/insights/overview/</guid>
-      <description>This page shows you how to perform basic hotel book using GraphQL Playground.</description>
+      <description>The Insights-X is a solution that will let you improve your connection performance throught travelgate and expand your business.
+Using Insights-X, you can improve your hotel search response times and their accuracy to avoid unnecessary searches and moreover find new market&amp;rsquo;s spots where expand your business.
+The below map shows how you can access to all this data.
+  Each connection described in the this figure is explained as follows:</description>
     </item>
     
     <item>
@@ -8245,6 +8248,18 @@ Advanced criteria It explains different parameters that can be set up in the req
       
       <guid>/hotelx/concepts/content/</guid>
       <description>const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aeb082e484710ebf6b7a4ec5173064cc\/raw\x22,\x22divname\x22:\x22div_hotels\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/4737228c495b09566474fa2db38fc72d\/raw\x22,\x22divname\x22:\x22div_destinations\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/519b4223de8b44cb20c5c33212c62654\/raw\x22,\x22divname\x22:\x22div_boards\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/0815561e9c25ce49bc416dbc73f36388\/raw\x22,\x22divname\x22:\x22div_rooms\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aa1be23b8c9229c8363c142036afb1f5\/raw\x22,\x22divname\x22:\x22div_categories\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.</description>
+    </item>
+    
+    <item>
+      <title>Dataset</title>
+      <link>/insights/dataset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights/dataset/</guid>
+      <description>On this page you will learn how the data is stored in datasets.
+Tables Data is stored in multiple tables depending the kind of info that want to be queried. Below are described each table and their fields.
+daily_insights This table contains info of searches, quotes and bookings aggregated by day.
+fields - client_id (STRING). Client unique ID. - provider_id (STRING). Provider unique ID. - cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).</description>
     </item>
     
     <item>
