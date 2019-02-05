@@ -8063,7 +8063,7 @@ In the API Playground, as you start to type the query, it will autocomplete with
       
       <guid>/hotelx/plugins/preference/</guid>
       <description>Preference is an optional plugin and allows to offer options preferentially in relation to the rules informed by the client.
-Preference Goals The preference plugin offers those options that match with rule preferences reported. By doing this, the options will be returned in a preferential way.
+Preference Goals The preference plugin Give preference to the options that match the preference rules By doing this, the options will be returned in a preferential way.
 Sequentially, the rules will be evaluated until a match is found, upon finding it, the process will be stopped and the preference will be evaluated.</description>
     </item>
     
