@@ -1893,11 +1893,6 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/travelgatex/data-automation/uploading-strategies/" class="dd-item">
-            <a href="/travelgatex/data-automation/uploading-strategies/">
-              <span style="padding-left: 8px;">Uploading Strategies</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/tutorials/" class="dd-item">
@@ -3587,161 +3582,698 @@ Below are described each table and their fields.</p>
 
 <p>This table contains info of searches, quotes and bookings aggregated by day.</p>
 
-<p><strong>fields</strong>
-* client_id (STRING). Client unique ID.
-* provider_id (STRING). Provider unique ID.
-* cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).
-* search_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
-* check_in (TIMESTAMP). Check in date in UTC (format: YYYY-MM-DD hh:mm:ss).
-* nights (NUMBER). Length of stay.
-* nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when client don&rsquo;t send this field.
-* num_rooms (NUMBER). Quantity of rooms.
-* adults (NUMBER). Quantity pax older than 12 years (12 is not included).
-* children (NUMBER). Quantity pax between 2 and 12 (both included).
-* infants (NUMBER). Quantity pax younger than 2 years (2 is not included).
-* search_ok (NUMBER). Quantity of searches that returned any available hotel for above key (search_date, check_in&hellip;).
-* search_nok (NUMBER). Quantity of searches that didn&rsquo;t return any available hotel for above key.
-* quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key.
-* quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key.
-* booking_ok (NUMBER). Quantity of confirmed bookings for above key.
-* booking_nok (NUMBER). Quantity of failed bookings for above key.
-* amount (NUMBER). Total amount of confirmed bookings for above key.
-* hotels (STRUCT). Repeated field that contains info about hotels for above key.
-    * code (STRING). Hotel unique ID.
-    * search_ok (NUMBER). Quantity of searches with available options for above key and hotel.
-    * search_nok (NUMBER). Quantity of searches without available options for above key and hotel.
-    * quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key and hotel.
-    * quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key and hotel.
-    * booking_ok (NUMBER). Quantity of confirmed bookings for above key and hotel.
-    * booking_nok (NUMBER). Quantity of failed bookings for above key and hotel.
-    * amount (NUMBER). Total amount of confirmed bookings for above key and hotel.</p>
+<p><strong>fields</strong></p>
 
-<p><strong>Preview</strong>
- | client_id | provider_id | cache | search_date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | check_in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | nights | nationality | num_rooms | adults | children | infants | search_ok | search_nok | quote_ok | quote_nok | booking_ok | booking_nok | amount | hotels.code | hotels.search_ok | hotels.search_nok | hotels.quote_ok | hotels.quote_nok | hotels.booking_ok | hotels.booking_nok | hotels.amount |
-| :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- |
-| client A | provider X | false | 2019-01-13 00:00:00 UTC | 2019-01-19 00:00:00 UTC | 4 | SE | 1 | 1 | 0 | 0 | 13 | 11 | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | 641443 | 13 | 0 | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em>
-| | | | | | | | | | | | | | | | | | | 551568 | 0 | 11 | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em>  |
-| client B | provider Y | false | 2019-01-13 00:00:00 UTC | 2019-01-19 00:00:00 UTC | 2 | CN | 1 | 2 | 0 | 0 | 6 | 1 | 3 | 0 | 1 | 0 | 398.84 | 299 | 0 | 1 | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> |
-| | | | | | | | | | | | | | | | | | | 927 | 5 | 0 | 3 | 0 | 1 | 0 | 398.84 |
-| | | | | | | | | | | | | | | | | | | 203 | 1 | 0 | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> |</p>
+<ul>
+<li>client_id (STRING). Client unique ID.</li>
+<li>provider_id (STRING). Provider unique ID.</li>
+<li>cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).</li>
+<li>search_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
+<li>check_in (TIMESTAMP). Check in date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
+<li>nights (NUMBER). Length of stay.</li>
+<li>nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when client don&rsquo;t send this field.</li>
+<li>num_rooms (NUMBER). Quantity of rooms.</li>
+<li>adults (NUMBER). Quantity pax older than 12 years (12 is not included).</li>
+<li>children (NUMBER). Quantity pax between 2 and 12 (both included).</li>
+<li>infants (NUMBER). Quantity pax younger than 2 years (2 is not included).</li>
+<li>search_ok (NUMBER). Quantity of searches that returned any available hotel for above key (search_date, check_in&hellip;).</li>
+<li>search_nok (NUMBER). Quantity of searches that didn&rsquo;t return any available hotel for above key.</li>
+<li>quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key.</li>
+<li>quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key.</li>
+<li>booking_ok (NUMBER). Quantity of confirmed bookings for above key.</li>
+<li>booking_nok (NUMBER). Quantity of failed bookings for above key.</li>
+<li>amount (NUMBER). Total amount of confirmed bookings for above key.</li>
+<li>hotels (STRUCT). Repeated field that contains info about hotels for above key.
+
+<ul>
+<li>code (STRING). Hotel unique ID.</li>
+<li>search_ok (NUMBER). Quantity of searches with available options for above key and hotel.</li>
+<li>search_nok (NUMBER). Quantity of searches without available options for above key and hotel.</li>
+<li>quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key and hotel.</li>
+<li>quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key and hotel.</li>
+<li>booking_ok (NUMBER). Quantity of confirmed bookings for above key and hotel.</li>
+<li>booking_nok (NUMBER). Quantity of failed bookings for above key and hotel.</li>
+<li>amount (NUMBER). Total amount of confirmed bookings for above key and hotel.
+
+<br /></li>
+</ul></li>
+</ul>
+
+<p><strong>Preview</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">client_id</th>
+<th align="left">provider_id</th>
+<th align="left">cache</th>
+<th align="left">search_date</th>
+<th align="left">check_in</th>
+<th align="left">nights</th>
+<th align="left">nationality</th>
+<th align="left">num_rooms</th>
+<th align="left">adults</th>
+<th align="left">children</th>
+<th align="left">infants</th>
+<th align="left">search_ok</th>
+<th align="left">search_nok</th>
+<th align="left">quote_ok</th>
+<th align="left">quote_nok</th>
+<th align="left">booking_ok</th>
+<th align="left">booking_nok</th>
+<th align="left">amount</th>
+<th align="left">hotels.code</th>
+<th align="left">hotels.search_ok</th>
+<th align="left">hotels.search_nok</th>
+<th align="left">hotels.quote_ok</th>
+<th align="left">hotels.quote_nok</th>
+<th align="left">hotels.booking_ok</th>
+<th align="left">hotels.booking_nok</th>
+<th align="left">hotels.amount</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">client A</td>
+<td align="left">provider X</td>
+<td align="left">false</td>
+<td align="left">2019-01-13 00:00:00 UTC</td>
+<td align="left">2019-01-19 00:00:00 UTC</td>
+<td align="left">4</td>
+<td align="left">SE</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">13</td>
+<td align="left">11</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left">641443</td>
+<td align="left">13</td>
+<td align="left">0</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">551568</td>
+<td align="left">0</td>
+<td align="left">11</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+</tr>
+
+<tr>
+<td align="left">client B</td>
+<td align="left">provider Y</td>
+<td align="left">false</td>
+<td align="left">2019-01-13 00:00:00 UTC</td>
+<td align="left">2019-01-19 00:00:00 UTC</td>
+<td align="left">2</td>
+<td align="left">CN</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">6</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">398.84</td>
+<td align="left">299</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">927</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">398.84</td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">203</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="daily-insights-client-daily-insights-provider">daily_insights_client / daily_insights_provider</h2>
 
 <p>This table contains info similar to _daily<em>insights</em> but with a bigger aggregation. The fields <em>check_in</em>, <em>adults</em>, <em>children</em> and <em>infants</em> have dissapeared.</p>
 
-<p><strong>fields</strong>
-* client_id    (STRING). Client unique ID.
-* provider_id (STRING). Provider unique ID.
-* cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).
-* search_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
-* <strong>booking_window</strong> (NUMBER). It is an enumeration to describe how far away is check in date.
-    * <strong>1</strong> = Last second (0-1 day).
-    * <strong>2</strong> = Last minute (2-3 days).
-    * <strong>3</strong> = About 1 week (4-7 days).
-    * <strong>4</strong> = About 2 weeks (8-14 days).
-    * <strong>5</strong> = About 1 month (15-30 days)
-    * <strong>6</strong> = About 2 months (31-60 days).
-    * <strong>7</strong> = About 3 months (61-90 days).
-    * <strong>8</strong> = More than 3 month (90+ days ).
-* nights (NUMBER). Length of stay.
-* nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when client don&rsquo;t send this field.
-* num_rooms (NUMBER). Quantity of rooms.
-* <strong>pax_type</strong> (NUMBER). It is an enumeration to describe a combination of paxs (adults + children + infants).
-    * <strong>1</strong> = Solo (Adults = 1, children = 0 and infants = 0).
-    * <strong>2</strong> = Couple (Adults = 2, children = 0 and infants = 0).
-    * <strong>3</strong> = Family (Adults = 2, children + infants &gt; 0).
-    * <strong>4</strong> = Group (Adults &gt; 2).
-    * <strong>5</strong> = Other.
-* search_ok (NUMBER). Quantity of searches that returned any available hotel for above key (search_date, check_in&hellip;).
-* search_nok (NUMBER). Quantity of searches that didn&rsquo;t return any available hotel for above key.
-* quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key.
-* quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key.
-* booking_ok (NUMBER). Quantity of confirmed bookings for above key.
-* booking_nok (NUMBER). Quantity of failed bookings for above key.
-* amount (NUMBER). Total amount of confirmed bookings for above key.
-* hotels (STRUCT). Repeated field that contains info about hotels for above key.
-    * code (STRING). Hotel unique ID.
-    * search_ok (NUMBER). Quantity of searches with available options for above key and hotel.
-    * search_nok (NUMBER). Quantity of searches without available options for above key and hotel.
-    * quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key and hotel.
-    * quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key and hotel.
-    * booking_ok (NUMBER). Quantity of confirmed bookings for above key and hotel.
-    * booking_nok (NUMBER). Quantity of failed bookings for above key and hotel.
-    * amount (NUMBER). Total amount of confirmed bookings for above key and hotel.</p>
+<p><strong>fields</strong></p>
 
-<p><strong>Preview</strong>
-| client_id | provider_id | cache | search_date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | booking_window | nights | nationality | num_rooms | pax_type | search_ok | search_nok | quote_ok | quote_nok | booking_ok | booking_nok | amount | hotels.code | hotels.search_ok | hotels.search_nok | hotels.quote_ok | hotels.quote_nok | hotels.booking_ok | hotels.booking_nok | hotels.amount |
-| :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- |
-| client A | provider X | false | 2019-01-13 00:00:00 UTC | 3 | 4 | SE | 1 | 1 | 13 | 11 | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | 641443 | 13 | 0 | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em>
-| | | | | | | | | | | | | | | | | | | 551568 | 0 | 11 | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em>  |
-| client B | provider Y | false | 2019-01-13 00:00:00 UTC | 3 | 2 | CN | 1 | 2 | 6 | 1 | 3 | 0 | 1 | 0 | 398.84 | 299 | 0 | 1 | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em>|
-| | | | | | | | | | | | | | | | | | | 927 | 5 | 0 | 3 | 0 | 1 | 0 | 398.84 |
-| | | | | | | | | | | | | | | | | | | 203 | 1 | 0 | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> | <em>null</em> |</p>
+<ul>
+<li>client_id    (STRING). Client unique ID.</li>
+<li>provider_id (STRING). Provider unique ID.</li>
+<li>cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).</li>
+<li>search_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
+<li><strong>booking_window</strong> (NUMBER). It is an enumeration to describe how far away is check in date.
+
+<ul>
+<li><strong>1</strong> = Last second (0-1 day).</li>
+<li><strong>2</strong> = Last minute (2-3 days).</li>
+<li><strong>3</strong> = About 1 week (4-7 days).</li>
+<li><strong>4</strong> = About 2 weeks (8-14 days).</li>
+<li><strong>5</strong> = About 1 month (15-30 days)</li>
+<li><strong>6</strong> = About 2 months (31-60 days).</li>
+<li><strong>7</strong> = About 3 months (61-90 days).</li>
+<li><strong>8</strong> = More than 3 month (90+ days ).</li>
+</ul></li>
+<li>nights (NUMBER). Length of stay.</li>
+<li>nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when client don&rsquo;t send this field.</li>
+<li>num_rooms (NUMBER). Quantity of rooms.</li>
+<li><strong>pax_type</strong> (NUMBER). It is an enumeration to describe a combination of paxs (adults + children + infants).
+
+<ul>
+<li><strong>1</strong> = Solo (Adults = 1, children = 0 and infants = 0).</li>
+<li><strong>2</strong> = Couple (Adults = 2, children = 0 and infants = 0).</li>
+<li><strong>3</strong> = Family (Adults = 2, children + infants &gt; 0).</li>
+<li><strong>4</strong> = Group (Adults &gt; 2).</li>
+<li><strong>5</strong> = Other.</li>
+</ul></li>
+<li>search_ok (NUMBER). Quantity of searches that returned any available hotel for above key (search_date, check_in&hellip;).</li>
+<li>search_nok (NUMBER). Quantity of searches that didn&rsquo;t return any available hotel for above key.</li>
+<li>quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key.</li>
+<li>quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key.</li>
+<li>booking_ok (NUMBER). Quantity of confirmed bookings for above key.</li>
+<li>booking_nok (NUMBER). Quantity of failed bookings for above key.</li>
+<li>amount (NUMBER). Total amount of confirmed bookings for above key.</li>
+<li>hotels (STRUCT). Repeated field that contains info about hotels for above key.
+
+<ul>
+<li>code (STRING). Hotel unique ID.</li>
+<li>search_ok (NUMBER). Quantity of searches with available options for above key and hotel.</li>
+<li>search_nok (NUMBER). Quantity of searches without available options for above key and hotel.</li>
+<li>quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key and hotel.</li>
+<li>quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key and hotel.</li>
+<li>booking_ok (NUMBER). Quantity of confirmed bookings for above key and hotel.</li>
+<li>booking_nok (NUMBER). Quantity of failed bookings for above key and hotel.</li>
+<li>amount (NUMBER). Total amount of confirmed bookings for above key and hotel.</li>
+</ul></li>
+</ul>
+
+<p><strong>Preview</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">client_id</th>
+<th align="left">provider_id</th>
+<th align="left">cache</th>
+<th align="left">search_date</th>
+<th align="left">booking_window</th>
+<th align="left">nights</th>
+<th align="left">nationality</th>
+<th align="left">num_rooms</th>
+<th align="left">pax_type</th>
+<th align="left">search_ok</th>
+<th align="left">search_nok</th>
+<th align="left">quote_ok</th>
+<th align="left">quote_nok</th>
+<th align="left">booking_ok</th>
+<th align="left">booking_nok</th>
+<th align="left">amount</th>
+<th align="left">hotels.code</th>
+<th align="left">hotels.search_ok</th>
+<th align="left">hotels.search_nok</th>
+<th align="left">hotels.quote_ok</th>
+<th align="left">hotels.quote_nok</th>
+<th align="left">hotels.booking_ok</th>
+<th align="left">hotels.booking_nok</th>
+<th align="left">hotels.amount</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">client A</td>
+<td align="left">provider X</td>
+<td align="left">false</td>
+<td align="left">2019-01-13 00:00:00 UTC</td>
+<td align="left">3</td>
+<td align="left">4</td>
+<td align="left">SE</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">13</td>
+<td align="left">11</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left">641443</td>
+<td align="left">13</td>
+<td align="left">0</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">551568</td>
+<td align="left">0</td>
+<td align="left">11</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+</tr>
+
+<tr>
+<td align="left">client B</td>
+<td align="left">provider Y</td>
+<td align="left">false</td>
+<td align="left">2019-01-13 00:00:00 UTC</td>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">CN</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">6</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">398.84</td>
+<td align="left">299</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">927</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">1</td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">203</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="daily-portfolio-seller">daily_portfolio_seller</h2>
 
 <p>This table is used to know which hotels over supplier&rsquo;s portfolio are being queried by the clients. This can be helpful to know which percentage over portfolio is mapped by the client.</p>
 
-<p><strong>fields</strong>
-* client_id    (STRING). Client unique ID.
-* provider_id (STRING). Provider unique ID.
-* hotel (STRING). Hotel unique ID.
-* hotel_name_portfolio (STRING). Hotel name.
-* hotel_country_portfolio (STRING). Hotel Country Code (ISO Alpha-2 code)
-* status. It is an enumeration to describe the status of the hotel.
-    * 0 = Hotel code queried but it doesn&rsquo;t appear in provider&rsquo;s portfolio. Can be due to a wrong mapping in client&rsquo;s system.
-    * 1 = Hotel code not queried but it appears in provider&rsquo;s portfolio. Can be due to a miss mapping in client&rsquo;s system.
-    * 2 = Hotel code queried and it appears in provider&rsquo;s portfolio.</p>
+<p><strong>fields</strong></p>
 
-<p><strong>Preview</strong>
-| client_id | provider_id | hotel | hotel_name_portfolio | hotel_country_portfolio | status |
-| :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- |
-| client A | provider X | 1 | hotel_1 | ES | 1 |
-| client A | provider X | 2 | hotel_2 | IT | 2 |
-| client A | provider X | V | <em>null</em> | <em>null</em> | 0 |
-| client B | provider Y | 1 | hotel_1 | FR | 1 |</p>
+<ul>
+<li>client_id    (STRING). Client unique ID.</li>
+<li>provider_id (STRING). Provider unique ID.</li>
+<li>hotel (STRING). Hotel unique ID.</li>
+<li>hotel_name_portfolio (STRING). Hotel name.</li>
+<li>hotel_country_portfolio (STRING). Hotel Country Code (ISO Alpha-2 code)</li>
+<li>status. It is an enumeration to describe the status of the hotel.
+
+<ul>
+<li>0 = Hotel code queried but it doesn&rsquo;t appear in provider&rsquo;s portfolio. Can be due to a wrong mapping in client&rsquo;s system.</li>
+<li>1 = Hotel code not queried but it appears in provider&rsquo;s portfolio. Can be due to a miss mapping in client&rsquo;s system.</li>
+<li>2 = Hotel code queried and it appears in provider&rsquo;s portfolio.</li>
+</ul></li>
+</ul>
+
+<p><strong>Preview</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">client_id</th>
+<th align="left">provider_id</th>
+<th align="left">hotel</th>
+<th align="left">hotel_name_portfolio</th>
+<th align="left">hotel_country_portfolio</th>
+<th align="left">status</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">client A</td>
+<td align="left">provider X</td>
+<td align="left">1</td>
+<td align="left">hotel_1</td>
+<td align="left">ES</td>
+<td align="left">1</td>
+</tr>
+
+<tr>
+<td align="left">client A</td>
+<td align="left">provider X</td>
+<td align="left">2</td>
+<td align="left">hotel_2</td>
+<td align="left">IT</td>
+<td align="left">2</td>
+</tr>
+
+<tr>
+<td align="left">client A</td>
+<td align="left">provider X</td>
+<td align="left">V</td>
+<td align="left"><em>null</em></td>
+<td align="left"><em>null</em></td>
+<td align="left">0</td>
+</tr>
+
+<tr>
+<td align="left">client B</td>
+<td align="left">provider Y</td>
+<td align="left">1</td>
+<td align="left">hotel_1</td>
+<td align="left">FR</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="daily-stats">daily_stats</h2>
 
 <p>This table contains transactional info (response status, response time&hellip;) of requests between clients and providers.</p>
 
-<p><strong>fields</strong>
-* st_date (TIMESTAMP) Search date in UTC (format: YYYY-MM-DD hh:mm:ss)
-* client_id (STRING) Client unique ID
-* provider_id (STRING) Provider unique ID
-* speed (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).
-* avail_ok (NUMBER). Quantity of searches with available results.
-* avail_nok_results (NUMBER). Quantity of searches without available results.
-* avail_nok_provider (NUMBER). Quantity of searches with generic error from provider.
-* avail_nok_bad_request (NUMBER). Quantity of searches with error due a wrong request.
-* avail_nok_integration (NUMBER). Quantity of searches with error due a failure in the connector.
-* avail_nok_communication (NUMBER). Quantity of searches with error due a timeout.
-* avail_nok_others (NUMBER). Quantity of searches with errors different to aboves.
-* avail_time (NUMBER). Total response time (in milliseconds) for all searches.
-* quote_ok (NUMBER). Quantity of quotes with available result.
-* quote_nok_results (NUMBER). Quantity of quotes without available results.
-* quote_nok_provider (NUMBER). Quantity of quotes with generic error from provider.
-* quote_nok_bad_request. Quantity of quotes with error due a wrong request.
-* quote_nok_integration. Quantity of quotes with error due a failure in the connector.
-* quote_nok_communication (NUMBER). Quantity of quotes with error due a timeout.
-* quote_nok_others (NUMBER). Quantity of quotes with errors different to aboves.
-* quote_time (NUMBER). Total response time (in milliseconds) for all quotes.
-* book_ok (NUMBER). Quantity of correct bookings.
-* book_nok (NUMBER). Quantity of bookings with an error.
-* book_time (NUMBER. Total response time (in milliseconds) for bookings.
-* cancel_ok (NUMBER). Quantity of correct cancellations.
-* cancel_nok (NUMBER). Quantity of cancellations with an error.
-* cancel_time (NUMBER). Total response time (in milliseconds) for cancellations.
-* other_ok (NUMBER). Quantity of transactions that cannot be included in one of above groups and didn&rsquo;t get an error.
-* other_nok (NUMBER). Quantity of other transactions with an error.
-* other_time (NUMBER). Total response time (in milliseconds) for other transactions.</p>
+<p><strong>fields</strong></p>
 
-<p><strong>Preview</strong>
-| st_date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | client_id | provider_id | speed | avail_ok | avail_nok_results | avail_nok_provider | avail_nok_bad_request | avail_nok_integration | avail_nok_communication | avail_nok_others | avail_time | quote_ok | quote_nok_results | quote_nok_provider | quote_nok_bad_request | quote_nok_integration | quote_nok_communication | quote_nok_others | quote_time | book_ok | book_nok | book_time | cancel_ok | cancel_nok | cancel_time | other_ok | other_nok | other_time  |
-| :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- |
-| 2018-03-28 12:00:00 UTC | client 1 | provider 1 | false | 372408 | 159272 | 571 | 30093 | 0 | 40 | 0 | 206883360 | 182 | 0 | 0 | 0 | 0 | 0 | 0 | 38166 | 3 | 0 | 31848 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 2018-03-28 12:00:00 UTC | client 1 | provider 2 | false | 50 | 10 | 0 | 0 | 0 | 0 | 0 | 48754 | 419 | 6 | 0 | 0 | 0 | 4 | 0 | 374301 | 5 | 0 | 41257 | 1 | 0 | 6080 | 172 | 0 | 5116 |
-| 2018-03-28 12:00:00 UTC | client 2 | provider 1 | false | 548214 | 0 | 577 | 0 | 714 | 0 | 0 | 47457579 | 3719 | 32 | 0 | 0 | 0 | 0 | 0 | 327425 | 18 | 0 | 81757 | 6 | 4 | 31803 | 230 | 0 | 42614 |</p>
+<ul>
+<li>st_date (TIMESTAMP) Search date in UTC (format: YYYY-MM-DD hh:mm:ss)</li>
+<li>client_id (STRING) Client unique ID</li>
+<li>provider_id (STRING) Provider unique ID</li>
+<li>speed (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).</li>
+<li>avail_ok (NUMBER). Quantity of searches with available results.</li>
+<li>avail_nok_results (NUMBER). Quantity of searches without available results.</li>
+<li>avail_nok_provider (NUMBER). Quantity of searches with generic error from provider.</li>
+<li>avail_nok_bad_request (NUMBER). Quantity of searches with error due a wrong request.</li>
+<li>avail_nok_integration (NUMBER). Quantity of searches with error due a failure in the connector.</li>
+<li>avail_nok_communication (NUMBER). Quantity of searches with error due a timeout.</li>
+<li>avail_nok_others (NUMBER). Quantity of searches with errors different to aboves.</li>
+<li>avail_time (NUMBER). Total response time (in milliseconds) for all searches.</li>
+<li>quote_ok (NUMBER). Quantity of quotes with available result.</li>
+<li>quote_nok_results (NUMBER). Quantity of quotes without available results.</li>
+<li>quote_nok_provider (NUMBER). Quantity of quotes with generic error from provider.</li>
+<li>quote_nok_bad_request. Quantity of quotes with error due a wrong request.</li>
+<li>quote_nok_integration. Quantity of quotes with error due a failure in the connector.</li>
+<li>quote_nok_communication (NUMBER). Quantity of quotes with error due a timeout.</li>
+<li>quote_nok_others (NUMBER). Quantity of quotes with errors different to aboves.</li>
+<li>quote_time (NUMBER). Total response time (in milliseconds) for all quotes.</li>
+<li>book_ok (NUMBER). Quantity of correct bookings.</li>
+<li>book_nok (NUMBER). Quantity of bookings with an error.</li>
+<li>book_time (NUMBER. Total response time (in milliseconds) for bookings.</li>
+<li>cancel_ok (NUMBER). Quantity of correct cancellations.</li>
+<li>cancel_nok (NUMBER). Quantity of cancellations with an error.</li>
+<li>cancel_time (NUMBER). Total response time (in milliseconds) for cancellations.</li>
+<li>other_ok (NUMBER). Quantity of transactions that cannot be included in one of above groups and didn&rsquo;t get an error.</li>
+<li>other_nok (NUMBER). Quantity of other transactions with an error.</li>
+<li>other_time (NUMBER). Total response time (in milliseconds) for other transactions.</li>
+</ul>
+
+<p><strong>Preview</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">st_date</th>
+<th align="left">client_id</th>
+<th align="left">provider_id</th>
+<th align="left">speed</th>
+<th align="left">avail_ok</th>
+<th align="left">avail_nok_results</th>
+<th align="left">avail_nok_provider</th>
+<th align="left">avail_nok_bad_request</th>
+<th align="left">avail_nok_integration</th>
+<th align="left">avail_nok_communication</th>
+<th align="left">avail_nok_others</th>
+<th align="left">avail_time</th>
+<th align="left">quote_ok</th>
+<th align="left">quote_nok_results</th>
+<th align="left">quote_nok_provider</th>
+<th align="left">quote_nok_bad_request</th>
+<th align="left">quote_nok_integration</th>
+<th align="left">quote_nok_communication</th>
+<th align="left">quote_nok_others</th>
+<th align="left">quote_time</th>
+<th align="left">book_ok</th>
+<th align="left">book_nok</th>
+<th align="left">book_time</th>
+<th align="left">cancel_ok</th>
+<th align="left">cancel_nok</th>
+<th align="left">cancel_time</th>
+<th align="left">other_ok</th>
+<th align="left">other_nok</th>
+<th align="left">other_time</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">2018-03-28 12:00:00 UTC</td>
+<td align="left">client 1</td>
+<td align="left">provider 1</td>
+<td align="left">false</td>
+<td align="left">372408</td>
+<td align="left">159272</td>
+<td align="left">571</td>
+<td align="left">30093</td>
+<td align="left">0</td>
+<td align="left">40</td>
+<td align="left">0</td>
+<td align="left">206883360</td>
+<td align="left">182</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">38166</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">31848</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+
+<tr>
+<td align="left">2018-03-28 12:00:00 UTC</td>
+<td align="left">client 1</td>
+<td align="left">provider 2</td>
+<td align="left">false</td>
+<td align="left">50</td>
+<td align="left">10</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">48754</td>
+<td align="left">419</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">374301</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">41257</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">6080</td>
+<td align="left">172</td>
+<td align="left">0</td>
+<td align="left">5116</td>
+</tr>
+
+<tr>
+<td align="left">2018-03-28 12:00:00 UTC</td>
+<td align="left">client 2</td>
+<td align="left">provider 1</td>
+<td align="left">false</td>
+<td align="left">548214</td>
+<td align="left">0</td>
+<td align="left">577</td>
+<td align="left">0</td>
+<td align="left">714</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">47457579</td>
+<td align="left">3719</td>
+<td align="left">32</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">327425</td>
+<td align="left">18</td>
+<td align="left">0</td>
+<td align="left">81757</td>
+<td align="left">6</td>
+<td align="left">4</td>
+<td align="left">31803</td>
+<td align="left">230</td>
+<td align="left">0</td>
+<td align="left">42614</td>
+</tr>
+</tbody>
+</table>
 
 <hr/>
 <h2>Comments</h2>
