@@ -57,7 +57,7 @@ GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:  S
       
       <guid>/hotelx/reference/scalars/datetime/</guid>
       <description>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
-GraphQL schema definition scalar DateTime   Required by HotelXHotelFilterInput:  By default: Logical AND on all given filters.  HotelRuntimeConfiguration:    Board:  Board type.  Node:    Category:  Category Type  Hotel:  Hotel Type  Media:  Contains media information.</description>
+GraphQL schema definition scalar DateTime   Required by HotelXHotelFilterInput:  By default: Logical AND on all given filters.  HotelRuntimeConfiguration:    Board:  Board type.  Node:    Category:  Category Type  Hotel:  Hotel Type  GiataData:  Hotel data obtained from Giata System.</description>
     </item>
     
     <item>
@@ -126,8 +126,8 @@ GraphQL schema definition scalar String   Required by ServiceStatus:  Indicates 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/reference/scalars/uri/</guid>
-      <description> The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
-GraphQL schema definition scalar URI   Required by Contact:  Contact Data.  Media:  Contains media information.  UrlsInput:  URLs Input   </description>
+      <description>The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
+GraphQL schema definition scalar URI   Required by GiataData:  Hotel data obtained from Giata System.  Contact:  Contact Data.  Media:  Contains media information.</description>
     </item>
     
   </channel>

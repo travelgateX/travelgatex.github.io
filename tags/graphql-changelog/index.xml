@@ -29,9 +29,9 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2019-01-30 🛑 Input field audit was removed from input object type HotelXCommonSettingsDataInput
-🛑 Input field clientName was removed from input object type HotelXDefaultSettingsDataInput
-🛑 Field audit was removed from object type HotelXCommonSettingsData</description>
+2019-02-07 ✅ Deprecation reason on field HotelOptionSearch.token has changed from `todeprecated from 2019-02-05.`
+✅ Field giataData was added to object type HotelData
+✅ Type GiataData was added</description>
     </item>
     
   </channel>
