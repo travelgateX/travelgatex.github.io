@@ -29,8 +29,8 @@ The below map shows how you can access to all this data.
       
       <guid>/insights/dataset/</guid>
       <description>On this page you will learn how the data is stored in datasets.
-Tables Data is stored in multiple tables depending the kind of info that want to be queried. Below are described each table and their fields.
-daily_insights This table contains info of searches, quotes and bookings aggregated by day.
+Tables Data is stored in multiple tables depending on the kind of info that wants to be queried. Below are described each table and their fields.
+daily_insights This table contains info from searches, quotes and bookings aggregated by day.
 fields
  client_id (STRING). Client unique ID. provider_id (STRING). Provider unique ID. cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).</description>
     </item>

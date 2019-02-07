@@ -30,13 +30,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Learn about how is stored the info in our datasets.">
+<meta name="description" content="Learn about how the information is stored in our datasets.">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
     
-    <meta name="description" content="Learn about how is stored the info in our datasets.">
+    <meta name="description" content="Learn about how the information is stored in our datasets.">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -3580,12 +3580,12 @@
 
 <h1 id="tables">Tables</h1>
 
-<p>Data is stored in multiple tables depending the kind of info that want to be queried.
+<p>Data is stored in multiple tables depending on the kind of info that wants to be queried.
 Below are described each table and their fields.</p>
 
 <h2 id="daily-insights">daily_insights</h2>
 
-<p>This table contains info of searches, quotes and bookings aggregated by day.</p>
+<p>This table contains info from searches, quotes and bookings aggregated by day.</p>
 
 <p><strong>fields</strong></p>
 
@@ -3596,7 +3596,7 @@ Below are described each table and their fields.</p>
 <li>search_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
 <li>check_in (TIMESTAMP). Check in date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
 <li>nights (NUMBER). Length of stay.</li>
-<li>nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when client don&rsquo;t send this field.</li>
+<li>nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when clients don&rsquo;t send this field.</li>
 <li>num_rooms (NUMBER). Quantity of rooms.</li>
 <li>adults (NUMBER). Quantity pax older than 12 years (12 is not included).</li>
 <li>children (NUMBER). Quantity pax between 2 and 12 (both included).</li>
@@ -3817,7 +3817,7 @@ Below are described each table and their fields.</p>
 <li>provider_id (STRING). Provider unique ID.</li>
 <li>cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).</li>
 <li>search_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
-<li><strong>booking_window</strong> (NUMBER). It is an enumeration to describe how far away is check in date.
+<li><strong>booking_window</strong> (NUMBER). It is an enumeration to describe how far away is the check-in date.
 
 <ul>
 <li><strong>1</strong> = Last second (0-1 day).</li>
@@ -3827,12 +3827,12 @@ Below are described each table and their fields.</p>
 <li><strong>5</strong> = About 1 month (15-30 days)</li>
 <li><strong>6</strong> = About 2 months (31-60 days).</li>
 <li><strong>7</strong> = About 3 months (61-90 days).</li>
-<li><strong>8</strong> = More than 3 month (90+ days ).</li>
+<li><strong>8</strong> = More than 3 months (90+ days).</li>
 </ul></li>
 <li>nights (NUMBER). Length of stay.</li>
-<li>nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when client don&rsquo;t send this field.</li>
+<li>nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when clients don&rsquo;t send this field.</li>
 <li>num_rooms (NUMBER). Quantity of rooms.</li>
-<li><strong>pax_type</strong> (NUMBER). It is an enumeration to describe a combination of paxs (adults + children + infants).
+<li><strong>pax_type</strong> (NUMBER). It is an enumeration to describe a combination of paxes (adults + children + infants).
 
 <ul>
 <li><strong>1</strong> = Solo (Adults = 1, children = 0 and infants = 0).</li>
@@ -3842,7 +3842,7 @@ Below are described each table and their fields.</p>
 <li><strong>5</strong> = Other.</li>
 </ul></li>
 <li>search_ok (NUMBER). Quantity of searches that returned any available hotel for above key (search_date, check_in&hellip;).</li>
-<li>search_nok (NUMBER). Quantity of searches that didn&rsquo;t return any available hotel for above key.</li>
+<li>search_nok (NUMBER). Quantity of searches that didn&rsquo;t return any available hotels for above key.</li>
 <li>quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key.</li>
 <li>quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key.</li>
 <li>booking_ok (NUMBER). Quantity of confirmed bookings for above key.</li>
@@ -4047,8 +4047,8 @@ Below are described each table and their fields.</p>
 <li>status. It is an enumeration to describe the status of the hotel.
 
 <ul>
-<li>0 = Hotel code queried but it doesn&rsquo;t appear in provider&rsquo;s portfolio. Can be due to a wrong mapping in client&rsquo;s system.</li>
-<li>1 = Hotel code not queried but it appears in provider&rsquo;s portfolio. Can be due to a miss mapping in client&rsquo;s system.</li>
+<li>0 = Hotel code queried but it doesn&rsquo;t appear in provider&rsquo;s portfolio. It can be due to a wrong mapping in client&rsquo;s system.</li>
+<li>1 = Hotel code not queried but it appears in provider&rsquo;s portfolio. It can be due to a mismapping in client&rsquo;s system.</li>
 <li>2 = Hotel code queried and it appears in provider&rsquo;s portfolio.</li>
 </ul></li>
 </ul>
@@ -4123,15 +4123,15 @@ Below are described each table and their fields.</p>
 <li>avail_nok_bad_request (NUMBER). Quantity of searches with error due a wrong request.</li>
 <li>avail_nok_integration (NUMBER). Quantity of searches with error due a failure in the connector.</li>
 <li>avail_nok_communication (NUMBER). Quantity of searches with error due a timeout.</li>
-<li>avail_nok_others (NUMBER). Quantity of searches with errors different to aboves.</li>
+<li>avail_nok_others (NUMBER). Quantity of searches with errors different to those above.</li>
 <li>avail_time (NUMBER). Total response time (in milliseconds) for all searches.</li>
-<li>quote_ok (NUMBER). Quantity of quotes with available result.</li>
+<li>quote_ok (NUMBER). Quantity of quotes with available results.</li>
 <li>quote_nok_results (NUMBER). Quantity of quotes without available results.</li>
 <li>quote_nok_provider (NUMBER). Quantity of quotes with generic error from provider.</li>
-<li>quote_nok_bad_request. Quantity of quotes with error due a wrong request.</li>
+<li>quote_nok_bad_request. Quantity of quotes with error due to a wrong request.</li>
 <li>quote_nok_integration. Quantity of quotes with error due a failure in the connector.</li>
-<li>quote_nok_communication (NUMBER). Quantity of quotes with error due a timeout.</li>
-<li>quote_nok_others (NUMBER). Quantity of quotes with errors different to aboves.</li>
+<li>quote_nok_communication (NUMBER). Quantity of quotes with error due to a timeout.</li>
+<li>quote_nok_others (NUMBER). Quantity of quotes with errors different to those above.</li>
 <li>quote_time (NUMBER). Total response time (in milliseconds) for all quotes.</li>
 <li>book_ok (NUMBER). Quantity of correct bookings.</li>
 <li>book_nok (NUMBER). Quantity of bookings with an error.</li>
