@@ -29,10 +29,10 @@ BigQuery Datasets are multi-terabyte datasets hosted on Google’s servers.</des
       
       <guid>/insights-x/datasets/dataset-reference/</guid>
       <description>On this page you will learn how the data is stored in datasets.
-Tables Data is stored in multiple tables depending on the kind of info that wants to be queried. Below are described each table and their fields.
+Tables Data is stored in multiple tables depending on the kind of info that wants to be queried. Descriptions of each table and their correspondent fields are found below:
 daily_insights This table contains info from searches, quotes and bookings aggregated by day.
 fields
- client_id (STRING). Client unique ID. provider_id (STRING). Provider unique ID. cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).</description>
+ client_id (STRING). Client unique ID. provider_id (STRING). Provider unique ID. cache (BOOLEAN). It indicates if the source of request was the client or Speed-X on behalf of the client (0=Client, 1=Speed-X).</description>
     </item>
     
     <item>
@@ -42,8 +42,8 @@ fields
       
       <guid>/insights-x/datasets/dataset-tooling/</guid>
       <description>On this page you&amp;rsquo;ll find what free tools can you use to analyze our datasets.
-Template reportings If you don&amp;rsquo;t use an own reporting tool as Tableau or PowerBI, the easiest way to interact with Insights-X datasets is via our free Google Data Studio Templates.
-Every Insights-X Dataset has a free template to explore it:
+Template reportings If you don&amp;rsquo;t have your own reporting tool as Tableau or PowerBI, the easiest way to interact with Insights-X datasets is via our free Google Data Studio Templates.
+We offer free GDS templates to explore our Datasets.
    Dataset Version GDS Template     Partner buyer 1.0    Partner seller 1.</description>
     </item>
     
