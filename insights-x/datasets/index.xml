@@ -35,5 +35,17 @@ fields
  client_id (STRING). Client unique ID. provider_id (STRING). Provider unique ID. cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).</description>
     </item>
     
+    <item>
+      <title>Datasets tooling</title>
+      <link>/insights-x/datasets/dataset-tooling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights-x/datasets/dataset-tooling/</guid>
+      <description>On this page you&amp;rsquo;ll find what free tools can you use to analyze our datasets.
+Template reportings If you don&amp;rsquo;t use an own reporting tool as Tableau or PowerBI, the easiest way to interact with Insights-X datasets is via our free Google Data Studio Templates.
+Every Insights-X Dataset has a free template to explore it:
+   Dataset Version GDS Template     Partner buyer 1.0    Partner seller 1.</description>
+    </item>
+    
   </channel>
 </rss>
