@@ -30,13 +30,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Insights-X Types of Datasets">
+<meta name="description" content="Learn about what Dataset types can you use">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
     
-    <meta name="description" content="Insights-X Types of Datasets">
+    <meta name="description" content="Learn about what Dataset types can you use">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -3414,12 +3414,12 @@
         </li>
           <li data-nav-id="/insights-x/datasets/dataset-reference/" class="dd-item">
             <a href="/insights-x/datasets/dataset-reference/">
-              <span style="padding-left: 8px;">Dataset Reference</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Reference</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/insights-x/datasets/dataset-tooling/" class="dd-item">
             <a href="/insights-x/datasets/dataset-tooling/">
-              <span style="padding-left: 8px;">Datasets tooling</span><i class="fa fa-circle-thin read-icon"></i>
+              <span style="padding-left: 8px;">Tooling</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -3651,16 +3651,33 @@
 
 <p>Up to 1 GB of table data can be exported into a single file.</p>
 
-<p>When exported data is in JSON format, INT64 (integer) data types are encoded as JSON strings to preserve 64-bit precision when the data is read by other systems.</p>
-
 <h2 id="csvs">CSVs</h2>
 
 <p>The simplest file type available on Insights-X is the “Comma-Separated List”, or CSV, for tabular data. A CSV representation of a booking list with a header row, for example, looks like this:</p>
 
-<p>| client_id  | provider_id  | check_in                 |
-| :&mdash;&mdash;&mdash;  | :&mdash;&mdash;&mdash;&ndash;  | :&mdash;&mdash;&ndash;                 |
-| clientA     | providerX     | 2019-01-13 00:00:00 UTC   |
-| clientB     | providerX     | 2019-01-15 00:00:00 UTC   |</p>
+<table>
+<thead>
+<tr>
+<th>client_id</th>
+<th align="center">provider_id</th>
+<th align="right">check_in</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>clientA</td>
+<td align="center">providerX</td>
+<td align="right">2019-01-13 00:00:00 UTC</td>
+</tr>
+
+<tr>
+<td>clientB</td>
+<td align="center">providerX</td>
+<td align="right">providerX</td>
+</tr>
+</tbody>
+</table>
 
 <p>CSV format does not support nested and repeated data.</p>
 
@@ -3683,6 +3700,8 @@
        ]
 }
 </code></pre>
+
+<p>When exported data is in JSON format, INT64 (integer) data types are encoded as JSON strings to preserve 64-bit precision when the data is read by other systems.</p>
 
 <p>JSON format supports nested and repeated data.</p>
 
@@ -3742,7 +3761,7 @@
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/insights-x/datasets/" title="Go to previous page | Datasets"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Datasets</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/insights-x/datasets/dataset-reference/" title="Go to next page | Dataset Reference" style="margin-right: 0px;">Dataset Reference<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/insights-x/datasets/dataset-reference/" title="Go to next page | Reference" style="margin-right: 0px;">Reference<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

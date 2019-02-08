@@ -7875,19 +7875,6 @@ Distribution will be made through 2 different channels, end users will use org_t
     </item>
     
     <item>
-      <title>Dataset Reference</title>
-      <link>/insights-x/datasets/dataset-reference/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/insights-x/datasets/dataset-reference/</guid>
-      <description>On this page you will learn how the data is stored in datasets.
-Tables Data is stored in multiple tables depending on the kind of info that wants to be queried. Descriptions of each table and their correspondent fields are found below:
-daily_insights This table contains info from searches, quotes and bookings aggregated by day.
-fields
- client_id (STRING). Client unique ID. provider_id (STRING). Provider unique ID. cache (BOOLEAN). It indicates if the source of request was the client or Speed-X on behalf of the client (0=Client, 1=Speed-X).</description>
-    </item>
-    
-    <item>
       <title>FlightsX</title>
       <link>/travelgatex/release-notes/products-changelogs/changelog-flightsx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8000,6 +7987,19 @@ GraphQL schema definition type Mutation {  admin: AdminMutation    hotelX: Hotel
     </item>
     
     <item>
+      <title>Reference</title>
+      <link>/insights-x/datasets/dataset-reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights-x/datasets/dataset-reference/</guid>
+      <description>On this page you will learn how the data is stored in datasets.
+Tables Data is stored in multiple tables depending on the kind of info that wants to be queried. Descriptions of each table and their correspondent fields are found below:
+daily_insights This table contains info from searches, quotes and bookings aggregated by day.
+fields
+ client_id (STRING). Client unique ID. provider_id (STRING). Provider unique ID. cache (BOOLEAN). It indicates if the source of request was the client or Speed-X on behalf of the client (0=Client, 1=Speed-X).</description>
+    </item>
+    
+    <item>
       <title>Aggregation</title>
       <link>/hotelx/plugins/aggregation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8062,18 +8062,6 @@ Commission supplier File Format The file should be in the below format:
       <description>The TravelgateX platform and APIs all use a consistent set of basic concepts so that whatever API you use on our platform, you can be confident that it will work with the same definitions as all of the others you are familiar with.
 Here is an overview of the key concepts of our platform.
 Access An Access is a set of credentials and the authentication configuration that enables a Buyer to access a Supplier.</description>
-    </item>
-    
-    <item>
-      <title>Datasets tooling</title>
-      <link>/insights-x/datasets/dataset-tooling/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/insights-x/datasets/dataset-tooling/</guid>
-      <description>On this page you&amp;rsquo;ll find what free tools can you use to analyze our datasets.
-Template reportings If you don&amp;rsquo;t have your own reporting tool as Tableau or PowerBI, the easiest way to interact with Insights-X datasets is via our free Google Data Studio Templates.
-We offer free GDS templates to explore our Datasets.
-   Dataset Version GDS Template     Partner buyer 1.0    Partner seller 1.</description>
     </item>
     
     <item>
@@ -8203,6 +8191,18 @@ Search Single Mode This mode is used when the client only wants to get options f
       <guid>/hotelx/concepts/search-single-mode/</guid>
       <description>On this page you will learn about Transactional Booking Flow to Search, quote and confirm a reservation. You will also see the difference between the Search Single Mode VS Search Multi Mode.
 Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use.</description>
+    </item>
+    
+    <item>
+      <title>Tooling</title>
+      <link>/insights-x/datasets/dataset-tooling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights-x/datasets/dataset-tooling/</guid>
+      <description>On this page you&amp;rsquo;ll find what free tools can you use to analyze our datasets.
+Template reportings If you don&amp;rsquo;t have your own reporting tool as Tableau or PowerBI, the easiest way to interact with Insights-X datasets is via our free Google Data Studio Templates.
+We offer free GDS templates to explore our Datasets.
+   Dataset Version GDS Template     Partner buyer 1.0    Partner seller 1.</description>
     </item>
     
     <item>
