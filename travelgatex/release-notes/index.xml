@@ -28,7 +28,7 @@ The Project has a few columns that act as the status whereas cards are the items
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page. 2019-02-07  GraphQL Schema updated.    Response header. Content-type   2019-01-30  GraphQL Schema updated.    Entities resolvers   2019-01-11  The DEFAULT_TEMPLATE option has been modified.The permissions given to the owner were : iam:all:viewer Now: all:all:1a This is for future updates.</description>
+All notable changes on TravelgateX platform will be documented in this page. 2019-02-11  GraphQL Schema updated.    Audit deprecated loadFile query   2019-02-07  GraphQL Schema updated.    Response header. Content-type   2019-01-30  GraphQL Schema updated.    Entities resolvers   2019-01-11  The DEFAULT_TEMPLATE option has been modified.</description>
     </item>
     
     <item>
@@ -39,9 +39,10 @@ All notable changes on TravelgateX platform will be documented in this page. 201
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2019-02-07 ✅ Deprecation reason on field HotelOptionSearch.token has changed from `todeprecated from 2019-02-05.`
-✅ Field giataData was added to object type HotelData
-✅ Type GiataData was added</description>
+2019-02-11 🛑 Type Search was removed
+🛑 Type Quote was removed
+🛑 Type Booking was removed
+2019-02-07 ✅ Deprecation reason on field HotelOptionSearch.token has changed from `todeprecated from 2019-02-05.</description>
     </item>
     
     <item>
