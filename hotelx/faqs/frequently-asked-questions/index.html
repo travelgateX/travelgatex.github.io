@@ -3633,15 +3633,15 @@
 
 <p><strong>Do I have access to all the hotels in the test environment?</strong></p>
 
-<p>No, we use a test supplier, so there is a limited number of hotels in the database to be used.</p>
+<p>No, since we use a test supplier, there is a limited number of hotels in the database to be used.</p>
 
 <h2 id="languages-allowed">Languages allowed</h2>
 
 <p><strong>Which are the languages allowed in HotelX?</strong></p>
 
-<p>The new aggregator allows every language, it will depend from each supplier.</p>
+<p>The new aggregator allows every language, but the languages for the results to be returned will depend on the information returned from each supplier.</p>
 
-<h2 id="maximum-hotels-code">Maximum hotels code</h2>
+<h2 id="maximum-hotel-codes">Maximum hotel codes</h2>
 
 <p><strong>How many hotels code are allowed to be requested at the same time?</strong></p>
 
@@ -3651,7 +3651,7 @@
 
 <p><strong>Are there any restrictions to the client&rsquo;s nationality?</strong></p>
 
-<p>It depends on the supplier</p>
+<p>This depends on the restrictions defined by each supplier.</p>
 
 <p><strong>Does the client&rsquo;s nationality affect the price? - For instance, same Search criteria with different client nationality</strong></p>
 
@@ -3661,13 +3661,13 @@
 
 <p><strong>How can we differentiate a child from an infant? What is the age range of each of them?</strong></p>
 
-<p>Each supplier has their own restrictions, so it will depend on each supplier.</p>
+<p>Each supplier has their own restrictions, so the age range for children or infants will depend on the definition of each supplier.</p>
 
 <h2 id="search-request-filters">Search request filters</h2>
 
 <p><strong>What is the function of an accessCode?</strong></p>
 
-<p>Every time you activate a supplier, you receive an access code. This access code is used to differentiate between suppliers and also to filter between the same supplier&rsquo;s different credentials and configurations.</p>
+<p>Every time you activate a supplier, you receive an access code. This access code is used to differentiate between suppliers and also to filter between the same supplier&rsquo;s different credentials and configurations. This allows you for instance to diffentiate between B2B or B2C requests, or search availability only for certain suppliers.</p>
 
 <p><strong>Which are the possible filters in the Search Request?</strong></p>
 
@@ -3697,7 +3697,7 @@
 
 <p><strong>Can I get Daily-prices in Search Response?</strong></p>
 
-<p>It will depend if the supplier offers the information. In case that the information is returned by the supplier, you will find it through the Roomprice string&ndash;&gt;PriceBreakdown.</p>
+<p>We will return this information if the supplier can provide this. In case that the information is returned by the supplier, you will find it in the Roomprice string&ndash;&gt;PriceBreakdown.</p>
 
 <h2 id="currency-in-search-requests">Currency in Search Requests</h2>
 
@@ -3707,7 +3707,7 @@
 
 <ul>
 <li>If you don&rsquo;t include any currency, then the settings&rsquo; default currency configuration will be used</li>
-<li>If you don&rsquo;t configure a currency conversion plugin, then default supplier currency is returned. Some suppliers accept currency parameter and others will return their currency depending on your account as client with them.</li>
+<li>If you don&rsquo;t configure a currency conversion plugin, then default supplier currency is returned. Some suppliers accept the currency parameter and others will return their currency depending on your account as client with them.</li>
 </ul>
 
 <h2 id="currency-not-supported">Currency not supported</h2>
@@ -3725,7 +3725,7 @@
 
 <p><strong>Is it possible to perform a cancellation as a query to just retrieve the cancellation costs, but not to cancel the booked item itself?</strong></p>
 
-<p>You will be able to check the booking information (cancel policies included) with the <a href="/travelgatex/reference/objects/hotelbooking"><code>HotelBooking</code></a> query.</p>
+<p>No, but you can retrieve the cancellation policies where this information is included. You can check the booking information (cancel policies included) with the <a href="/travelgatex/reference/objects/hotelbooking"><code>HotelBooking</code></a> query.</p>
 
 <h2 id="response-time">Response time</h2>
 
@@ -3840,7 +3840,7 @@
 <ul>
 <li><a href="#hotels-in-test">Hotels in test</a></li>
 <li><a href="#languages-allowed">Languages allowed</a></li>
-<li><a href="#maximum-hotels-code">Maximum hotels code</a></li>
+<li><a href="#maximum-hotel-codes">Maximum hotel codes</a></li>
 <li><a href="#client-nationality">Client Nationality</a></li>
 <li><a href="#age-range-of-children-infants">Age Range of Children - Infants</a></li>
 <li><a href="#search-request-filters">Search request filters</a></li>
@@ -3869,9 +3869,9 @@
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/travelgatex/frequently-asked-questions/">TravelgateX Frequently Asked Questions</a></li>
-		
 		<li><a href="/hotelx/faqs/common-errors/">HotelX Common Errors</a></li>
+		
+		<li><a href="/travelgatex/frequently-asked-questions/">TravelgateX Frequently Asked Questions</a></li>
 		
 	</ul>
 </div>
