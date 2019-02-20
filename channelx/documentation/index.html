@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FlightsX | TravelgateX Documentation</title>
+    <title>Documentation | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.40.1" />
-<title>FlightsX :: TravelgateX Documentation</title>
+<title>Documentation :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -30,13 +30,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Contains a curated, chronologically ordered list of notable changes">
+<meta name="description" content="Guide to ChannelX">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
     
-    <meta name="description" content="Contains a curated, chronologically ordered list of notable changes">
+    <meta name="description" content="Guide to ChannelX">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.js"></script>
   </head>
-  <body data-url="/travelgatex/release-notes/products-changelogs/changelog-flightsx/">
+  <body data-url="/channelx/documentation/">
 
     <div class="mo-header fixed-top">
     <div class="top-header">
@@ -101,12 +101,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/" class="dd-item">
 
             <a href="/travelgatex/" class="">
        
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
                 TravelgateX
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -1927,12 +1926,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/release-notes/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/release-notes/" class="dd-item">
 
             <a href="/travelgatex/release-notes/" class="">
        
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
                 Release Notes
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -1957,12 +1955,11 @@
               <span style="padding-left: 8px;">GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-        <li data-nav-id="/travelgatex/release-notes/products-changelogs/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/release-notes/products-changelogs/" class="dd-item">
 
             <a href="/travelgatex/release-notes/products-changelogs/" class="">
        
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
                 Products changelogs
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -1972,7 +1969,7 @@
               <span style="padding-left: 8px;">ChannelX</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-flightsx/" class="dd-item active">
+          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-flightsx/" class="dd-item">
             <a href="/travelgatex/release-notes/products-changelogs/changelog-flightsx/">
               <span style="padding-left: 8px;">FlightsX</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
@@ -3613,7 +3610,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">FlightsX changelog</h1>
+              <h1 class="pageTitle">ChannelX API</h1>
 
               
                 
@@ -3622,47 +3619,1701 @@
                 
                 
               <div id="top-github-link">
-                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/travelgatex/release-notes/products-changelogs/changelog-flightsx.md" target="blank">
+                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/channelx/documentation/_index.md" target="blank">
                   <i class="fa fa-code-fork"></i>
                   Edit page
                 </a>
               </div>
               
-<p>To make it easier for users and contributors to see precisely what notable changes have been made on the product.</p>
 
-<p><a href="https://www.travelgatex.com/products/flightsx" target="_blank">Product Page Link</a></p>
+	
 
-<div class="alert 
-alert-info"
- 
-role="alert">All notable changes to this product will be documented in this page.</div>
+<p>The API described in this document is used to transmit rate, availability and inventory, data between ChannelX and a partner system. A full implementation of this API requires that the partner system provides a service endpoint that accepts requests from ChannelX of the following types: <em>HotelRatePlanInventoryNotif</em>, <em>HotelRatePlanNotif</em>, <em>HotelAvailNotif</em>.</p>
 
 
-<p><strong>Under construction!</strong>
-We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</p>
-<ul>
-<li>Join us on <a href="https://slack.travelgatex.com/">Slack</a> and let us know what resources you need us to prirotize</li>
-<li>Send us a <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira service desk request</a></li>
-<li>Log an <a href="https://github.com/travelgateX/Issue-tracker">issues request</a> with us</li>
-<li>Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the  <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Edit page</code>  button and issue a Pull Request via GitHub with your suggested edits.</li>
-</ul>
+
+<div class="flex">
+		
+	<a href="/channelx/documentation/codelists/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-book"></div>
+			<div>
+				<h3 class="text-headline">Code Lists</h3>
+					<p>Static InventoryX information</p>
+			</div>
+		</div>
+	</a>
+	<a href="/channelx/documentation/pricetut/" class="card">
+		<div class="inner-card">
+				<div class="material-icons fa fa-money"></div>
+			<div>
+				<h3 class="text-headline">Price Use Cases</h3>
+					<p>Some examples on how to operate prices</p>
+			</div>
+		</div>
+	</a>
+</div>
 
 
-<hr/>
-<h2>Comments</h2>
 
-<div id='discourse-comments'></div>
 
-<script type="text/javascript">
-  DiscourseEmbed = { discourseUrl: 'https://community.travelgatex.com/',
-                     discourseEmbedUrl: window.location.href };
+<h2 id="hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</h2>
 
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
-</script>
+<p>Sets up inventory information that should be followed with the structure Hotel &gt; Rate &gt; Room.</p>
+
+<pre><code class="language-xml">&lt;HotelRatePlanInventoryNotif xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
+    &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;&gt;
+        &lt;RatePlans HotelCode = &quot;1&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+            &lt;RatePlan Duration = &quot;0&quot; CurrencyCode = &quot;EUR&quot; RatePlanCode = &quot;BAR&quot; RatePlanStatusType = &quot;Active&quot; RatePlanNotifType = &quot;New&quot;&gt;
+                &lt;BookingRules&gt;
+                    &lt;BookingRule&gt;
+                        &lt;CancelPenalties&gt;
+                            &lt;CancelPenalty&gt;
+                                &lt;Deadline OffsetTimeUnit = &quot;Day&quot; OffsetUnitMultiplier = &quot;20&quot; OffsetDropTime = &quot;BeforeArrival&quot;/&gt;
+                                &lt;AmountPercent NmbrOfNights = &quot;3&quot;/&gt;
+                            &lt;/CancelPenalty&gt;
+                            &lt;CancelPenalty Start = &quot;2018-03-01&quot; End = &quot;2018-03-06&quot;&gt;
+                                &lt;Deadline OffsetTimeUnit = &quot;Day&quot; OffsetUnitMultiplier = &quot;10&quot; OffsetDropTime = &quot;BeforeArrival&quot;/&gt;
+                                &lt;AmountPercent Amount = &quot;10&quot;/&gt;
+                            &lt;/CancelPenalty&gt;
+                            &lt;CancelPenalty NonRefundable = &quot;true&quot; Start = &quot;2018-03-13&quot; End = &quot;2018-03-15&quot;/&gt;
+                        &lt;/CancelPenalties&gt;
+                    &lt;/BookingRule&gt;
+                    &lt;BookingRule&gt;
+                        &lt;Viewerships&gt;
+                            &lt;Viewership&gt;
+                                &lt;LocationCodes LocationCodesInclusive = &quot;true&quot;&gt;
+                                    &lt;LocationCode CountryCode = &quot;ES&quot;/&gt;
+                                &lt;/LocationCodes&gt;
+                            &lt;/Viewership&gt;
+                            &lt;Viewership&gt;
+                                &lt;LocationCodes LocationCodesInclusive = &quot;false&quot;/&gt;
+                            &lt;/Viewership&gt;
+                        &lt;/Viewerships&gt;
+                    &lt;/BookingRule&gt;
+                &lt;/BookingRules&gt;
+                &lt;Rates&gt;
+                    &lt;Rate&gt;
+                        &lt;AdditionalGuestAmounts&gt;
+                            &lt;AdditionalGuestAmount AgeQualifyingCode = &quot;8&quot; MaxAge = &quot;12&quot;/&gt;
+                            &lt;AdditionalGuestAmount AgeQualifyingCode = &quot;7&quot; MaxAge = &quot;2&quot;/&gt;
+                        &lt;/AdditionalGuestAmounts&gt;
+                        &lt;PaymentPolicies&gt;
+                            &lt;GuaranteePayment PaymentCode = &quot;BookingDatePayment&quot;&gt;
+                                &lt;AcceptedPayments&gt;
+                                    &lt;AcceptedPayment&gt;
+                                        &lt;PaymentCard CardCode = &quot;VI&quot;/&gt;
+                                    &lt;/AcceptedPayment&gt;
+                                    &lt;AcceptedPayment&gt;
+                                        &lt;PaymentCard CardCode = &quot;AX&quot;/&gt;
+                                    &lt;/AcceptedPayment&gt;
+                                &lt;/AcceptedPayments&gt;
+                            &lt;/GuaranteePayment&gt;
+                        &lt;/PaymentPolicies&gt;
+                        &lt;MealsIncluded MealPlanCodes = &quot;14&quot;/&gt;
+                    &lt;/Rate&gt;
+                &lt;/Rates&gt;
+                &lt;SellableProducts&gt;
+                    &lt;SellableProduct InvCode = &quot;STD&quot; InvType = &quot;ROOM&quot; InvStatusType = &quot;Active&quot; InvNotifType = &quot;New&quot;&gt;
+                        &lt;GuestRoom&gt;
+                            &lt;Quantities StandardNumBeds = &quot;2&quot;/&gt;
+                            &lt;Occupancy MinOccupancy = &quot;2&quot; MaxOccupancy = &quot;2&quot; AgeQualifyingCode = &quot;10&quot;/&gt;
+                            &lt;Room RoomTypeCode = &quot;STD&quot; RoomID = &quot;1&quot;/&gt;
+                            &lt;Description&gt;
+                                &lt;Text&gt;Standard&lt;/Text&gt;
+                            &lt;/Description&gt;
+                        &lt;/GuestRoom&gt;
+                    &lt;/SellableProduct&gt;
+                    &lt;SellableProduct InvCode = &quot;STD&quot; InvType = &quot;ROOM&quot; InvStatusType = &quot;Active&quot; InvNotifType = &quot;New&quot;&gt;
+                        &lt;GuestRoom&gt;
+                            &lt;Quantities StandardNumBeds = &quot;2&quot;/&gt;
+                            &lt;Occupancy MinOccupancy = &quot;1&quot; MaxOccupancy = &quot;1&quot; AgeQualifyingCode = &quot;10&quot;/&gt;
+                            &lt;Occupancy MinOccupancy = &quot;1&quot; MaxOccupancy = &quot;1&quot; AgeQualifyingCode = &quot;8&quot;/&gt;
+                            &lt;Occupancy MinOccupancy = &quot;1&quot; MaxOccupancy = &quot;1&quot; AgeQualifyingCode = &quot;7&quot;/&gt;
+                            &lt;Room RoomTypeCode = &quot;STD&quot; RoomID = &quot;1&quot;/&gt;
+                            &lt;Description&gt;
+                                &lt;Text&gt;Standard&lt;/Text&gt;
+                            &lt;/Description&gt;
+                        &lt;/GuestRoom&gt;
+                    &lt;/SellableProduct&gt;
+                &lt;/SellableProducts&gt;
+                &lt;Taxes&gt;
+                    &lt;Tax Amount = &quot;20&quot; ChargeFrequency = &quot;true&quot;&gt;
+                        &lt;TaxDescription&gt;
+                            &lt;Text&gt;city&lt;/Text&gt;
+                        &lt;/TaxDescription&gt;
+                    &lt;/Tax&gt;
+                &lt;/Taxes&gt;
+                &lt;Description&gt;
+                    &lt;Text&gt;bb&lt;/Text&gt;
+                &lt;/Description&gt;
+            &lt;/RatePlan&gt;
+        &lt;/RatePlans&gt;
+        &lt;TPA_Extensions xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+            &lt;Attribute key = &quot;HotelNotifType&quot; value = &quot;New&quot;/&gt;
+        &lt;/TPA_Extensions&gt;
+    &lt;/request&gt;
+&lt;/HotelRatePlanInventoryNotif&gt;
+</code></pre>
+
+<p><strong>Example for Derived RatePlan</strong></p>
+
+<pre><code class="language-xml">&lt;HotelRatePlanInventoryNotif xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
+    &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;&gt;
+        &lt;RatePlans HotelCode = &quot;1&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+            &lt;RatePlan BaseRatePlanCode = &quot;BAR&quot; RatePlanStatusType = &quot;Active&quot; RatePlanCode = &quot;DERIVED&quot; RateReturn = &quot;false&quot;&gt;
+		&lt;RatePlanInclusionsType&gt;
+                    &lt;RatePlanInclusionDescription&gt;
+                        &lt;Name&gt;BaseMealPlanSupplement&lt;/Name&gt;
+                    &lt;/RatePlanInclusionDescription&gt;
+                &lt;/RatePlanInclusionsType&gt;
+                &lt;Description&gt;
+                    &lt;Text&gt;Derived Rate&lt;/Text&gt;
+                &lt;/Description&gt;
+            &lt;/RatePlan&gt;
+        &lt;/RatePlans&gt;
+&lt;/HotelRatePlanInventoryNotif&gt;
+</code></pre>
+
+<p><strong>Example for Offers</strong></p>
+
+<pre><code class="language-xml">&lt;HotelRatePlanInventoryNotif xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
+    &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;&gt;
+        &lt;RatePlans HotelCode = &quot;1&quot;  HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+            &lt;RatePlan BaseRatePlanCode = &quot;BAR&quot; RatePlanStatusType = &quot;Active&quot; RatePlanCode = &quot;DERIVED&quot; RateReturn = &quot;false&quot;&gt;
+	        &lt;Offers&gt;
+		    &lt;Offer OfferCode=&quot;offer&quot; OfferStatusType=&quot;Active&quot; OfferNotifType = &quot;New&quot;&gt;
+			&lt;OfferRules&gt;
+			    &lt;OfferRule&gt;
+				&lt;LengthsOfStay ArrivalDateBased=&quot;false&quot;&gt;
+				    &lt;LengthOfStay Time=&quot;2&quot; MinMaxMessageType=&quot;MinLOS&quot; /&gt;
+				    &lt;LengthOfStay Time=&quot;6&quot; MinMaxMessageType=&quot;MaxLOS&quot; /&gt;
+				&lt;/LengthsOfStay&gt;
+				&lt;DOW_Restrictions&gt;
+				    &lt;AvailableDaysOfWeek Mon=&quot;true&quot; Tue=&quot;true&quot; Weds=&quot;true&quot; Thur=&quot;true&quot; Fri=&quot;true&quot; Sat=&quot;true&quot; Sun=&quot;true&quot; /&gt;
+				&lt;/DOW_Restrictions&gt;
+				&lt;Inventories&gt;
+                    &lt;Inventory InvCode=&quot;1BDAPT&quot; /&gt;
+                &lt;/Inventories&gt;
+			    &lt;/OfferRule&gt;
+			&lt;/OfferRules&gt;
+			&lt;Discount NightsDiscounted=&quot;1&quot; DiscountPattern=&quot;Last&quot; /&gt;
+			&lt;OfferDescription&gt;
+			    &lt;Text&gt;Offer Test&lt;/Text&gt;
+			&lt;/OfferDescription&gt;
+		    &lt;/Offer&gt;
+		&lt;/Offers&gt;
+            &lt;/RatePlan&gt;
+        &lt;/RatePlans&gt;
+&lt;/HotelRatePlanInventoryNotif&gt;
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Element</strong></th>
+<th align="center"><strong>Rel</strong></th>
+<th align="center"><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">HotelRatePlanInventoryNotif</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../request</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../RatePlans</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@HotelCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@HotelStatusType</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: Active, Deactivated</td>
+</tr>
+
+<tr>
+<td align="left">../RatePlan</td>
+<td align="center">0..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@RatePlanCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Rate code</td>
+</tr>
+
+<tr>
+<td align="left">@BaseRatePlanCode</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>DV</em>. Rate code of the base RatePlan</td>
+</tr>
+
+<tr>
+<td align="left">@RateReturn</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td align="left">@RatePlanNotifType</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>N</em>: New, Delta, Remove</td>
+</tr>
+
+<tr>
+<td align="left">@RatePlanStatusType</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: Active, Deactivated</td>
+</tr>
+
+<tr>
+<td align="left">@CurrencyCode</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>BR</em>. ISO Currency (EUR)</td>
+</tr>
+
+<tr>
+<td align="left">@Start</td>
+<td align="center">0..1</td>
+<td align="center">Date</td>
+<td>Booking Start Date for wich the rate will be available.</td>
+</tr>
+
+<tr>
+<td align="left">@End</td>
+<td align="center">0..1</td>
+<td align="center">Date</td>
+<td>Booking Start Date for wich the rate will be available.</td>
+</tr>
+
+<tr>
+<td align="left">RatePlan/BookingRules</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../BookingRule</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Code</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td>Empty if there are viewships conditions</td>
+</tr>
+
+<tr>
+<td align="left">../CancelPenalties</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../CancelPenalty</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@NonRefundable</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">CancelPenalty/Deadline</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@OffsetTimeUnit</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@OffsetUnitMultiplier</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@OffsetDropTime</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">CancelPenalty/AmountPercent</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td>NmbrOfNights, Percent or Amount tag must be present</td>
+</tr>
+
+<tr>
+<td align="left">@NmbrOfNights</td>
+<td align="center">0..1</td>
+<td align="center">Integer</td>
+<td>Number of nights that will be charged</td>
+</tr>
+
+<tr>
+<td align="left">@Percent</td>
+<td align="center">0..1</td>
+<td align="center">Decimal</td>
+<td>Percent of the total amount that will be charged in case of cancellation applying the current cancel penalty</td>
+</tr>
+
+<tr>
+<td align="left">@Amount</td>
+<td align="center">0..1</td>
+<td align="center">Decimal</td>
+<td>Amount that will be charged</td>
+</tr>
+
+<tr>
+<td align="left">@CurrencyCode</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td>Must be present if amount tag is present</td>
+</tr>
+
+<tr>
+<td align="left">../Viewerships</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../Viewership</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../LocationCodes</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@LocationCodesInclusive</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td>Can or cannot be requested from this countryCode</td>
+</tr>
+
+<tr>
+<td align="left">/LocationCode</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>If it is missing, applies to all countryCodes</td>
+</tr>
+
+<tr>
+<td align="left">@CountryCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Country ISO2 code from can or can not be requested this rate.</td>
+</tr>
+
+<tr>
+<td align="left">RatePlan/Rates</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../Rate</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">Rate/AdditionalGuestAmounts</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../AdditionalGuestAmount</td>
+<td align="center">1..2</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@AgeQualifyingCode</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td><em>N</em>: 8, 7. Child, Baby</td>
+</tr>
+
+<tr>
+<td align="left">@MaxAge</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td>Max age (not inclusive) of the additional guest</td>
+</tr>
+
+<tr>
+<td align="left">Rate/PaymentPolicies</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../GuaranteePayment</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td>Information about an accepted payment</td>
+</tr>
+
+<tr>
+<td align="left">@PaymentCode</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td>Payment method accepted by the rate. Check <em>Documentation &gt; Code Lists &gt; Payment Type Codes</em></td>
+</tr>
+
+<tr>
+<td align="left">../AcceptedPayments</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>Accepted payments information. Only present if <em>PaymentCode</em> is not &ldquo;MerchantPayment&rdquo;</td>
+</tr>
+
+<tr>
+<td align="left">/AcceptedPayment</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../PaymentCard</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@CardCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Check <em>Documentation &gt; Code Lists &gt; Credit Cards</em></td>
+</tr>
+
+<tr>
+<td align="left">Rate/MealsIncluded</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>Present if board is included within the rate</td>
+</tr>
+
+<tr>
+<td align="left">@MealPlanCodes</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td>Check <em>Documentaion &gt; Code Lists &gt; Meal Plan Codes (OTA MPT)</em></td>
+</tr>
+
+<tr>
+<td align="left">RatePlan/SellableProducts</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>List of sellable products. When derived rate and not present it applies to all rooms. In other cases, informs about the rooms which applies</td>
+</tr>
+
+<tr>
+<td align="left">../SellableProduct</td>
+<td align="center">0..n</td>
+<td align="center"></td>
+<td>Present if rooms associated with this rate</td>
+</tr>
+
+<tr>
+<td align="left">@InvCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Sellable Product Code</td>
+</tr>
+
+<tr>
+<td align="left">@InvTypeCode</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td>External information about the room (own code, own description, etc.)</td>
+</tr>
+
+<tr>
+<td align="left">@InvType</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: ROOM</td>
+</tr>
+
+<tr>
+<td align="left">@InvStatusType</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: Active, Deactivated.</td>
+</tr>
+
+<tr>
+<td align="left">@InvNotifType</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>N</em>: New, Delta, Remove</td>
+</tr>
+
+<tr>
+<td align="left">../GuestRoom</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">GuestRoom/Quantities</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@StandardNumBeds</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td>Standard occupation of the room</td>
+</tr>
+
+<tr>
+<td align="left">GuestRoom/Occupancy</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@MinOccupancy</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@MaxOccupancy</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@AgeQualifyingCode</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td><em>N</em>: 10, 8, 7. Adult, Child, Infant.</td>
+</tr>
+
+<tr>
+<td align="left">GuestRoom/Room</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@RoomTypeCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Room Code</td>
+</tr>
+
+<tr>
+<td align="left">@RoomID</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">GuestRoom/Description</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>Room description</td>
+</tr>
+
+<tr>
+<td align="left">Text</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">RatePlan/Taxes</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../Tax</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td>Tax to apply to the room prices of the rate</td>
+</tr>
+
+<tr>
+<td align="left">@Amount/Percent</td>
+<td align="center">1</td>
+<td align="center">Decimal</td>
+<td>Tax will be applied relative to an amount or a percentage</td>
+</tr>
+
+<tr>
+<td align="left">@ChargeFrequency</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td>Tax is/isn&rsquo;t applied relative to the Amount of Nights booked</td>
+</tr>
+
+<tr>
+<td align="left">@ChargeUnit</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td>Tax is/isn&rsquo;t applied relative to the Amount of Paxes booked</td>
+</tr>
+
+<tr>
+<td align="left">../TaxDescription</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../Text</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Description of tax type</td>
+</tr>
+
+<tr>
+<td align="left">../RatePlanInclusionsType</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td><em>DV</em></td>
+</tr>
+
+<tr>
+<td align="left">../RatePlanInclusionDescription</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td><em>DV</em></td>
+</tr>
+
+<tr>
+<td align="left">../Name</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td><em>DV</em>.</td>
+</tr>
+
+<tr>
+<td align="left">RatePlan/Description</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>Rate description</td>
+</tr>
+
+<tr>
+<td align="left">../Text</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../Offers</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../Offer</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@OfferCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@OfferStatusType</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: Active, Deactivated</td>
+</tr>
+
+<tr>
+<td align="left">@OfferNotifType</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>N</em>: New, Delta, Remove</td>
+</tr>
+
+<tr>
+<td align="left">../OfferRules</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../OfferRule</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../LengthsOfStay</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../LengthOfStay</td>
+<td align="center">1..2</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Time</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td>Indicates the number of nights for this stay</td>
+</tr>
+
+<tr>
+<td align="left">@MinMaxMessageType</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: MinLOS, MaxLOS. Minimum or Maximum stay for the Offer</td>
+</tr>
+
+<tr>
+<td align="left">../DOW_Restrictions</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../AvailableDaysOfWeek</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td>Indicates whether the Offer data applies to a certain day of the week</td>
+</tr>
+
+<tr>
+<td align="left">@Mon</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Tue</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Weds</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Thur</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Fri</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Sat</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Sun</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../Inventories</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>Rooms wich the offer will apply to. If no Inventories are sent, the offer will apply for all the rooms in the Rate</td>
+</tr>
+
+<tr>
+<td align="left">../Inventory</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@InvCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Room code</td>
+</tr>
+
+<tr>
+<td align="left">../Discount</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@NightsDiscounted</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Nights discounted by the offer from the total stay amount</td>
+</tr>
+
+<tr>
+<td align="left">@DiscountPattern</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: First, Last, Cheapest. Booking night/s the offer will dicount</td>
+</tr>
+
+<tr>
+<td align="left">../OfferDescription</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>Offer description</td>
+</tr>
+
+<tr>
+<td align="left">../Text</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../TPA_Extensions</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>Only added when creating or deleting a hotel</td>
+</tr>
+
+<tr>
+<td align="left">../TPA_Extensions/Attribute</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@key</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: HotelNotifType</td>
+</tr>
+
+<tr>
+<td align="left">@value</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: New, Remove. To create a hotel or remove all the hotel setup.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="hotelrateplannotif">HotelRatePlanNotif</h2>
+
+<pre><code class="language-xml">
+&lt;HotelRatePlanNotif&gt;
+    &lt;request&gt;
+        &lt;POS&gt;
+            &lt;Source&gt;
+                &lt;RequestorID ID = &quot;Provider1&quot;/&gt;
+                &lt;BookingChannel&gt;
+                    &lt;CompanyName Code = &quot;ClientTravelAgency1&quot;/&gt;
+                &lt;/BookingChannel&gt;
+            &lt;/Source&gt;
+        &lt;/POS&gt;
+        &lt;RatePlans HotelCode = &quot;HOT123&quot;&gt;
+            &lt;RatePlan RatePlanCode = &quot;TAR333&quot; CurrencyCode = &quot;EUR&quot; RatePlanStatusType = &quot;Deactivated&quot;&gt;
+                &lt;Rates&gt;
+                    &lt;Rate Start = &quot;2013-04-01&quot; End = &quot;2013-12-31&quot;&gt;
+                        &lt;BaseByGuestAmts&gt;
+                            &lt;BaseByGuestAmt Type = &quot;25&quot; AmountAfterTax = &quot;150.00&quot;/&gt;
+                        &lt;/BaseByGuestAmts&gt;
+                    &lt;/Rate&gt;
+                &lt;/Rates&gt;
+                &lt;SellableProducts&gt;
+                    &lt;SellableProduct InvCode = &quot;43&quot; InvType = &quot;ROOM&quot;/&gt;
+                &lt;/SellableProducts&gt;
+                &lt;Supplements&gt;
+                    &lt;Supplement Start = &quot;2013-04-01&quot; End = &quot;2013-12-31&quot; AgeQualifyingCode = &quot;10&quot; Amount = &quot;20.00&quot; InvCode = &quot;1&quot; SupplementType = &quot;Board&quot;/&gt;
+                    &lt;Supplement Start = &quot;2013-04-01&quot; End = &quot;2013-12-31&quot; AgeQualifyingCode = &quot;8&quot; Amount = &quot;10.00&quot; InvCode = &quot;1&quot; SupplementType = &quot;Board&quot;/&gt;
+                &lt;/Supplements&gt;
+            &lt;/RatePlan&gt;
+            &lt;RatePlan RatePlanCode = &quot;TAR333&quot; CurrencyCode = &quot;EUR&quot; RatePlanStatusType = &quot;Deactivated&quot;&gt;
+                &lt;Rates&gt;
+                    &lt;Rate Start = &quot;2013-04-01&quot; End = &quot;2013-12-31&quot;&gt;
+                        &lt;BaseByGuestAmts&gt;
+                            &lt;BaseByGuestAmt Type = &quot;14&quot; Code = &quot;2-0-0&quot; AmountAfterTax = &quot;150.00&quot;/&gt;
+                            &lt;BaseByGuestAmt Type = &quot;14&quot; Code = &quot;3-0-0&quot; AmountAfterTax = &quot;180.00&quot;/&gt;
+                        &lt;/BaseByGuestAmts&gt;
+                    &lt;/Rate&gt;
+                &lt;/Rates&gt;
+                &lt;SellableProducts&gt;
+                    &lt;SellableProduct InvCode = &quot;43&quot; InvType = &quot;ROOM&quot;/&gt;
+                &lt;/SellableProducts&gt;
+                &lt;Supplements&gt;
+                    &lt;Supplement Start = &quot;2013-04-01&quot; End = &quot;2013-12-31&quot; AgeQualifyingCode = &quot;10&quot; Amount = &quot;20.00&quot; InvCode = &quot;1&quot; SupplementType = &quot;Board&quot;/&gt;
+                    &lt;Supplement Start = &quot;2013-04-01&quot; End = &quot;2013-12-31&quot; AgeQualifyingCode = &quot;8&quot; Amount = &quot;10.00&quot; InvCode = &quot;1&quot; SupplementType = &quot;Board&quot;/&gt;
+                &lt;/Supplements&gt;
+            &lt;/RatePlan&gt;
+        &lt;/RatePlans&gt;
+    &lt;/request&gt;
+&lt;/HotelRatePlanNotif&gt;
+</code></pre>
+
+<p><strong>Example for Derived RatePlan</strong></p>
+
+<pre><code class="language-xml">    &lt;HotelRatePlanNotif&gt;
+      &lt;request Version = &quot;0&quot;&gt;
+        &lt;POS&gt;
+          &lt;Source&gt;
+            &lt;RequestorID ID = &quot;Provider1&quot;&gt;&lt;/RequestorID&gt;
+            &lt;BookingChannel&gt;
+              &lt;CompanyName Code = &quot;ClientTravelAgency1&quot;&gt;&lt;/CompanyName&gt;
+            &lt;/BookingChannel&gt;
+          &lt;/Source&gt;
+        &lt;/POS&gt;
+        &lt;RatePlan RatePlanCode = &quot;DRV&quot; BaseRatePlanCode = &quot;SRATE&quot; RatePlanStatusType = &quot;Active&quot;&gt;
+          &lt;Rates&gt;
+            &lt;Rate Start = &quot;2014-07-01&quot; End = &quot;2014-07-31&quot; AdjustedPercentage = &quot;10&quot; AdjustUpIndicator = &quot;0&quot;&gt;&lt;/Rate&gt;
+          &lt;/Rates&gt;
+        &lt;/RatePlan&gt;
+        &lt;RatePlan RatePlanCode = &quot;DRV&quot; BaseRatePlanCode = &quot;SRATE&quot; RatePlanStatusType = &quot;Deactivated&quot;&gt;
+          &lt;Rates&gt;
+            &lt;Rate Start = &quot;2014-08-01&quot; End = &quot;2014-08-31&quot; AdjustedPercentage = &quot;10&quot; AdjustUpIndicator = &quot;0&quot;&gt;&lt;/Rate&gt;
+          &lt;/Rates&gt;
+        &lt;/RatePlan&gt;
+      &lt;/request&gt;
+    &lt;/HotelRatePlanNotif&gt;
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Element</strong></th>
+<th align="center"><strong>Rel</strong></th>
+<th align="center"><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">HotelRatePlanNotif</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td>Root Node</td>
+</tr>
+
+<tr>
+<td align="left">../request</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">request/RatePlans</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@HotelCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../RatePlan</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@RatePlanCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@RatePlanStatusType</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>N</em>: Active, Deactivated. Informative tag that indicates wheter RatePlan is active or not</td>
+</tr>
+
+<tr>
+<td align="left">@BaseRatePlanCode</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>DV</em>. Rate code of the base RatePlan</td>
+</tr>
+
+<tr>
+<td align="left">@CurrencyCode</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>BR</em>. ISO Currency</td>
+</tr>
+
+<tr>
+<td align="left">RatePlan/Rates</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../Rate</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Start</td>
+<td align="center">1</td>
+<td align="center">Date</td>
+<td>Start date of rate</td>
+</tr>
+
+<tr>
+<td align="left">@End</td>
+<td align="center">1</td>
+<td align="center">Date</td>
+<td>End date of rate</td>
+</tr>
+
+<tr>
+<td align="left">@AdjustedPercentage</td>
+<td align="center">0..1</td>
+<td align="center">Decimal</td>
+<td><em>DV</em>. The percentage off the base rate plan amount used to determine the price of the Derived RatePlan</td>
+</tr>
+
+<tr>
+<td align="left">@AdjustedAmount</td>
+<td align="center">0..1</td>
+<td align="center">Decimal</td>
+<td><em>DV</em>. The amount which should be added to the Base RatePlan to determine the price of the Derived RatePlan</td>
+</tr>
+
+<tr>
+<td align="left">@AdjustUpIndicator</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td><em>DV</em>: <strong>true</strong>: the adjusted amount/percentage is added to the amount specified for the Base RatePlan to determine the Derived RateAmount. <strong>false</strong>: the adjusted amount or adjusted percentage is subtracted from the amount specified for the Base RatePlan to determine the Derived RatePlan amount</td>
+</tr>
+
+<tr>
+<td align="left">Rate/BaseByGuestAmts</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>Different types of price can come in the same BaseByGuestAmts element.</td>
+</tr>
+
+<tr>
+<td align="left">../BaseByGuestAmt</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@AmountAfterTax</td>
+<td align="center">1</td>
+<td align="center">Decimal</td>
+<td>Total amount for the @NumberOfGuests indicated per day. This amount doesn&rsquo;t include tax</td>
+</tr>
+
+<tr>
+<td align="left">@NumberOfGuests</td>
+<td align="center">0..1</td>
+<td align="center">Integer</td>
+<td>How many adults are indicated per day. If @NumberOfGuests is not informed then @Type must be informed. The maximum @NumberOfGuests is the standard occupancy of the room</td>
+</tr>
+
+<tr>
+<td align="left">@Type</td>
+<td align="center">0..1</td>
+<td align="center">Integer</td>
+<td>If amounts are per Room or per Occupancy instead of per Pax. <strong>@Type=25</strong>: price is per Room. <strong>@Type=14</strong>: price is per occupancy, @Code is mandatory, AdditionalGuestAmounts are not allowed</td>
+</tr>
+
+<tr>
+<td align="left">@Code</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td>Mandatory if <strong>@Type=14</strong>.</td>
+</tr>
+
+<tr>
+<td align="left">Rate/AdditionalGuestAmounts</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td><em>BR</em></td>
+</tr>
+
+<tr>
+<td align="left">../AdditionalGuestAmount</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td>Price and information about the additional pax (children, infants or extra adults</td>
+</tr>
+
+<tr>
+<td align="left">@MaxAdditionalGuests</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td>Number of the additional pax</td>
+</tr>
+
+<tr>
+<td align="left">@AgeQualifyingCode</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td><em>N</em>: 10, 8, 7. Adult, child or baby</td>
+</tr>
+
+<tr>
+<td align="left">@Type</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>N</em>: Exclusive. If present price is absolute and price tag is @Amount</td>
+</tr>
+
+<tr>
+<td align="left">@Amount</td>
+<td align="center">0..1</td>
+<td align="center">Decimal</td>
+<td>Price for each additional pax</td>
+</tr>
+
+<tr>
+<td align="left">@Percent</td>
+<td align="center">0..1</td>
+<td align="center">Decimal</td>
+<td>Percent for each additional pax</td>
+</tr>
+
+<tr>
+<td align="left">RatePlan/Supplements</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td><em>BR</em>. Present if supplements by board exists</td>
+</tr>
+
+<tr>
+<td align="left">../Supplement</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Start</td>
+<td align="center">1</td>
+<td align="center">Date</td>
+<td>Start date of this supplement</td>
+</tr>
+
+<tr>
+<td align="left">@End</td>
+<td align="center">1</td>
+<td align="center">Date</td>
+<td>End date of this supplement</td>
+</tr>
+
+<tr>
+<td align="left">@AgeQualifyingCode</td>
+<td align="center">0..1</td>
+<td align="center">Integer</td>
+<td><em>N</em>: 10, 8, 7. Adult, child, baby. Not allowed if charging Supplement Board by Occupancy</td>
+</tr>
+
+<tr>
+<td align="left">@ChargeTypeCode</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td>Occupancy Supplement Board. Only allowed if charging Supplement Board by Occupancy.</td>
+</tr>
+
+<tr>
+<td align="left">@Amount</td>
+<td align="center">1</td>
+<td align="center">Decimal</td>
+<td>Amount of the supplement</td>
+</tr>
+
+<tr>
+<td align="left">@SupplementType</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: Board</td>
+</tr>
+
+<tr>
+<td align="left">@InvCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>OTA MPT Code if @SupplementType is Board. Check <em>Documentation &gt; Code Lists &gt; Meal Plan Codes (OTA MPT)</em></td>
+</tr>
+
+<tr>
+<td align="left">RatePlan/SellableProducts</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td><em>BR</em>. List of sellable products</td>
+</tr>
+
+<tr>
+<td align="left">../SellableProduct</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@InvCode</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td>Sellable Product Code</td>
+</tr>
+
+<tr>
+<td align="left">@InvType</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td><em>N</em>: ROOM. Sellable product type.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="hotelavailnotif">HotelAvailNotif</h2>
+
+<pre><code class="language-xml">&lt;HotelAvailNotif&gt;
+    &lt;request&gt;
+        &lt;POS&gt;
+            &lt;Source&gt;
+                &lt;RequestorID ID = &quot;Provider1&quot;&gt;&lt;/RequestorID&gt;
+                &lt;BookingChannel&gt;
+                    &lt;CompanyName Code = &quot;ClientTravelAgency1&quot;&gt;&lt;/CompanyName&gt;
+                &lt;/BookingChannel&gt;
+            &lt;/Source&gt;
+        &lt;/POS&gt;
+        &lt;AvailStatusMessages HotelCode = &quot;12&quot;&gt;
+            &lt;AvailStatusMessage BookingLimit = &quot;9&quot;&gt;
+                &lt;StatusApplicationControl Start = &quot;2013-12-20&quot; End = &quot;2013-12-25&quot; RatePlanCode = &quot;BAR&quot; InvCode = &quot;APT&quot; InvType = &quot;ROOM&quot;/&gt;
+                &lt;LengthsOfStay ArrivalDateBased = &quot;true&quot;&gt;
+                    &lt;LengthOfStay Time = &quot;2&quot; TimeUnit = &quot;Day&quot; MinMaxMessageType = &quot;MinLOS&quot;/&gt;
+                    &lt;LengthOfStay Time = &quot;8&quot; TimeUnit = &quot;Day&quot; MinMaxMessageType = &quot;MaxLOS&quot;/&gt;
+                &lt;/LengthsOfStay&gt;
+                &lt;RestrictionStatus SellThroughOpenIndicator = &quot;false&quot; MinAdvancedBookingOffset = &quot;5&quot;/&gt;
+            &lt;/AvailStatusMessage&gt;
+            &lt;AvailStatusMessage BookingLimit = &quot;12&quot;&gt;
+                &lt;StatusApplicationControl Start = &quot;2013-12-20&quot; End = &quot;2013-12-21&quot; RatePlanCode = &quot;LOWCOST&quot; InvCode = &quot;JUN_1&quot; InvType = &quot;ROOM&quot;/&gt;
+                &lt;RestrictionStatus Restriction = &quot;Master&quot; Status = &quot;Close&quot;/&gt;
+            &lt;/AvailStatusMessage&gt;
+        &lt;/AvailStatusMessages&gt;
+    &lt;/request&gt;
+&lt;/HotelAvailNotif&gt;
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Element</strong></th>
+<th align="center"><strong>Rel</strong></th>
+<th align="center"><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">HotelAvailNotif</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../request</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">request/AvailStatusMessages</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@HotelCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">../AvailStatusMessage</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@BookingLimit</td>
+<td align="center">0..1</td>
+<td align="center">Integer</td>
+<td><em>DV</em>. Number of available rooms per Room-RatePlan for the indicated dates</td>
+</tr>
+
+<tr>
+<td align="left">AvailStatusMessage/StatusApplicationControl</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Start</td>
+<td align="center">1</td>
+<td align="center">Date</td>
+<td>Start date</td>
+</tr>
+
+<tr>
+<td align="left">@End</td>
+<td align="center">1</td>
+<td align="center">Date</td>
+<td>End date</td>
+</tr>
+
+<tr>
+<td align="left">@RatePlanCode</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@InvCode</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>BR</em>. Room Code</td>
+</tr>
+
+<tr>
+<td align="left">@InvType</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>BR</em>. <em>N</em>: ROOM</td>
+</tr>
+
+<tr>
+<td align="left">AvailStatusMessage/LengthsOfStay</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@ArrivalDateBased</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td><strong>true</strong>: the Minimum and Maximum Stay is checked ONLY the first day of the availability. <strong>false or null</strong>: the Minimum and Maximum Stay is checked all the availability days. If both values are needed, two AvailStatusMessage will be sent.</td>
+</tr>
+
+<tr>
+<td align="left">../LengthOfStay</td>
+<td align="center">1..2</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Time</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td>Indicates the number of @TimeUnit for this stay</td>
+</tr>
+
+<tr>
+<td align="left">@TimeUnit</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: Day</td>
+</tr>
+
+<tr>
+<td align="left">@MinMaxMessageType</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td><em>N</em>: MinLOS, MaxLOS. Minimum or maximum stay</td>
+</tr>
+
+<tr>
+<td align="left">AvailStatusMessage/RestrictionStatus</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Status</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>N</em>: Open Close</td>
+</tr>
+
+<tr>
+<td align="left">@Restriction</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>N</em>: Master, Arrival, Departure.</td>
+</tr>
+
+<tr>
+<td align="left">@MinAdvancedBookingOffset</td>
+<td align="center">0..1</td>
+<td align="center">Integer</td>
+<td>Minimum number of days before the check-in date to be available to be booked. This restriction is usually used to offer discounts on early bookings.</td>
+</tr>
+
+<tr>
+<td align="left">@MaxAdvancedBookingOffset</td>
+<td align="center">0..1</td>
+<td align="center">Integer</td>
+<td>Maximum number of days before the check-in date to be available to be booked. This restriction is usually used to offer last minute discounts on unsold inventory.</td>
+</tr>
+
+<tr>
+<td align="left">@SellThroughOpenIndicator</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td><em>BR</em>. Room-RatePlan can be sold with no limit if @Status is Open</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="responses">Responses</h2>
+
+<p>Each request should provide a response for the same type of element that has been sent. For example, if a <em>HotelRatePlanNotif</em> request is received, a <em>HotelRatePlanNotif</em> response should be sent and so on.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Possible combination Elements regarding Request</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">HotelAvailNotifResponse / HotelAvailNotifResult</td>
+</tr>
+
+<tr>
+<td align="left">HotelRatePlanNotifResponse / HotelRatePlanNotifResult</td>
+</tr>
+
+<tr>
+<td align="left">HotelRatePlanInventoryNotifResponse / HotelRatePlanInventoryNotifResult</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="success">Success</h4>
+
+<p>For all successful requests is expected to be returned a <em>Success</em> element in the response. On a <em>HotelAvailNotif</em> request it should be looking like the following:</p>
+
+<pre><code class="language-xml">&lt;HotelAvailNotifResponse xmlns=&quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
+      &lt;HotelAvailNotifResult&gt;
+        &lt;Success xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot;/&gt;
+      &lt;/HotelAvailNotifResult&gt;
+    &lt;/HotelAvailNotifResponse&gt;
+</code></pre>
+
+<h4 id="error">Error</h4>
+
+<p>On the other hand, when request provides any error, the response should look like:</p>
+
+<pre><code class="language-xml">&lt;HotelAvailNotifResponse xmlns=&quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
+      &lt;HotelAvailNotifResult&gt;
+        &lt;Errors xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+          &lt;Error ShortText=&quot;AvailStatusMessages not found&quot; Code=&quot;2&quot;/&gt;
+        &lt;/Errors&gt;
+      &lt;/HotelAvailNotifResult&gt;
+    &lt;/HotelAvailNotifResponse&gt;
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Element</strong></th>
+<th align="center"><strong>Rel</strong></th>
+<th align="center"><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Errors</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">Error</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td>Displays error information that has occurred in the system</td>
+</tr>
+
+<tr>
+<td align="left">@ShortText</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Brief description of the error</td>
+</tr>
+
+<tr>
+<td align="left">@Code</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td>Check <em>General Details &gt; Error Table</em></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="global-details">Global Details</h2>
+
+<h3 id="protocol-and-headers">Protocol and Headers</h3>
+
+<p>All requests are expected to be standard HTTP POST requests in which the POST body is the request XML and the Content-Type header is set to &ldquo;application/xml&rdquo;.</p>
+
+<p><strong>Authentication</strong>
+Requests will be sent with a authentication encoded in <em>Base-64</em>. Credentials may be found in <strong>Authorization</strong> header tag, with value <strong>Basic (encoded credentials)</strong> as follows:<br />
+<code>Authorization: Basic aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1RWWg2bVlJSkcyWQ==</code></p>
+
+<h3 id="summary">Summary</h3>
+
+<p>BR = Only used for: &lsquo;Basic Rates&rsquo;<br />
+DV = Only used for: &lsquo;Derived Rates&rsquo;<br />
+N = Names allowed for a specific element</p>
 
 
 
@@ -3671,7 +5322,29 @@ We have logged this resource on our roadmap and we are currently working through
           </div>
           <div class="menu-right">
             <div>
-              
+              <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</a></li>
+<li><a href="#hotelrateplannotif">HotelRatePlanNotif</a></li>
+<li><a href="#hotelavailnotif">HotelAvailNotif</a></li>
+<li><a href="#responses">Responses</a>
+<ul>
+<li>
+<ul>
+<li><a href="#success">Success</a></li>
+<li><a href="#error">Error</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#global-details">Global Details</a>
+<ul>
+<li><a href="#protocol-and-headers">Protocol and Headers</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
             </div>
           </div>
           <div class="clear"></div>
@@ -3685,10 +5358,7 @@ We have logged this resource on our roadmap and we are currently working through
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/travelgatex/release-notes/products-changelogs/changelog-channelx/" title="Go to previous page | ChannelX"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>ChannelX</a>
-            </li>
-        <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/travelgatex/release-notes/products-changelogs/changelog-mappea/" title="Go to next page | Mappea" style="margin-right: 0px;">Mappea<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/getting-started/" title="Go to next page | Getting Started" style="margin-right: 0px;">Getting Started<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">
