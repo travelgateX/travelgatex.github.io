@@ -3636,44 +3636,68 @@
 <p>Data is stored in multiple tables depending on the kind of info that wants to be queried.
 Descriptions of each table and their correspondent fields are found below:</p>
 
-<h2 id="daily-insights">daily_insights</h2>
+<h2 id="insights-daily-buyer-seller">insights_daily_(buyer|seller)</h2>
 
 <p>This table contains info from searches, quotes and bookings aggregated by day.</p>
 
 <p><strong>fields</strong></p>
 
 <ul>
-<li>client_id (STRING). Client unique ID.</li>
+<li>client_id    (STRING). Client unique ID.</li>
 <li>provider_id (STRING). Provider unique ID.</li>
-<li>cache (BOOLEAN). It indicates if the source of request was the client or Speed-X on behalf of the client (0=Client, 1=Speed-X).</li>
+<li>cache (BOOLEAN). It indicates if the source of request was the client or Speed-X to load info in cache (0=Client, 1=Speed-X).</li>
 <li>search_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
 <li>check_in (TIMESTAMP). Check in date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
 <li>nights (NUMBER). Length of stay.</li>
-<li>nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when clients don&rsquo;t send this field.</li>
+<li>market (STRING). Source market of paxes (ISO 3166-1 alpha-2).</li>
 <li>num_rooms (NUMBER). Quantity of rooms.</li>
 <li>adults (NUMBER). Quantity of paxes older than 12 years (12 is not included).</li>
 <li>children (NUMBER). Quantity of paxes between 2 and 12 (both included).</li>
 <li>infants (NUMBER). Quantity of paxes younger than 2 years (2 is not included).</li>
 <li>search_ok (NUMBER). Quantity of searches that returned any available hotel for above key (search_date, check_in&hellip;).</li>
-<li>search_nok (NUMBER). Quantity of searches that didn&rsquo;t return any available hotel for above key.</li>
+<li>search_nok (NUMBER). Quantity of searches that didn&rsquo;t return any available hotels for above key.</li>
 <li>quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key.</li>
 <li>quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key.</li>
-<li>booking_ok (NUMBER). Quantity of confirmed bookings for above key.</li>
+<li>booking_ok_net (NUMBER). Quantity of confirmed bookings for above key where we have the net amount in EUR.</li>
+<li>booking_ok_unknown (NUMBER). Quantity of confirmed bookings for above key where we have the amount in EUR but it may have applied commissions.</li>
 <li>booking_nok (NUMBER). Quantity of failed bookings for above key.</li>
-<li>amount (NUMBER). Total amount of confirmed bookings for above key.</li>
+<li>min_amount_booking_net (NUMBER). Net amount of cheapest booking for above key.</li>
+<li>max_amount_booking_net (NUMBER). Net amount of most expensive booking for above key.</li>
+<li>tot_amount_booking_net (NUMBER). Total net amount of confirmed bookings for above key.</li>
+<li>min_amount_booking_net (NUMBER). Amount of cheapest booking for above key when we don&rsquo;t know if any commission is applied.</li>
+<li>max_amount_booking_net (NUMBER). Amount of most expensive booking for above key when we don&rsquo;t know if any commission is applied.</li>
+<li>tot_amount_booking_net (NUMBER). Total amount of confirmed bookings for above key when we don&rsquo;t know if any commission is applied.</li>
 <li>hotels (STRUCT). Repeated field that contains info about hotels for above key.
 
 <ul>
 <li>code (STRING). Hotel unique ID.</li>
-<li>search_ok (NUMBER). Quantity of searches with available options for above key and hotel.</li>
+<li>search_ok_net (NUMBER). Quantity of searches with available options for above key and hotel with net price available.</li>
+<li>search_ok_unknown (NUMBER). Quantity of searches with available options for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
 <li>search_nok (NUMBER). Quantity of searches without available options for above key and hotel.</li>
-<li>quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key and hotel.</li>
-<li>quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key and hotel.</li>
-<li>booking_ok (NUMBER). Quantity of confirmed bookings for above key and hotel.</li>
+<li>min_amount_search_net (NUMBER). Net amount of cheapest option for that hotel.</li>
+<li>max_amount_search_net (NUMBER). Net amount of most expensive option for that hotel.</li>
+<li>tot_amount_search_net (NUMBER). Total net amount of searches for that hotel.</li>
+<li>min_amount_search_unknown (NUMBER). Amount of cheapest option for that hotel (Commission not available).</li>
+<li>max_amount_search_unknown (NUMBER). Amount of most expensive option for that hotel (Commission not available).</li>
+<li>tot_amount_search_unknown (NUMBER). Total amount of searches for that hotel (Commission not available).</li>
+<li>quote_ok_net (NUMBER). Quantity of quotes for above key and hotel with net price available.</li>
+<li>quote_ok_unknown (NUMBER). Quantity of quotes for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
+<li>quote_nok (NUMBER). Quantity of failed quotes for above key and hotel.</li>
+<li>min_amount_quote_net (NUMBER). Net amount of cheapest quote for that hotel.</li>
+<li>max_amount_quote_net (NUMBER). Net amount of most expensive quote for that hotel.</li>
+<li>tot_amount_quote_net (NUMBER). Total net amount of quotes for that hotel.</li>
+<li>min_amount_quote_unknown (NUMBER). Amount of cheapest quote for that hotel (Commission not available).</li>
+<li>max_amount_quote_unknown (NUMBER). Amount of most expensive quote for that hotel (Commission not available).</li>
+<li>tot_amount_quote_unknown (NUMBER). Total amount of quotes for that hotel (Commission not available).</li>
+<li>booking_ok_net (NUMBER). Quantity of bookings for above key and hotel with net price available.</li>
+<li>booking_ok_unknown (NUMBER). Quantity of bookings for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
 <li>booking_nok (NUMBER). Quantity of failed bookings for above key and hotel.</li>
-<li>amount (NUMBER). Total amount of confirmed bookings for above key and hotel.
-
-<br /></li>
+<li>min_amount_booking_net (NUMBER). Net amount of cheapest booking for that hotel.</li>
+<li>max_amount_booking_net (NUMBER). Net amount of most expensive booking for that hotel.</li>
+<li>tot_amount_booking_net (NUMBER). Total net amount of booking for that hotel.</li>
+<li>min_amount_booking_unknown (NUMBER). Amount of cheapest booking for that hotel (Commission not available).</li>
+<li>max_amount_booking_unknown (NUMBER). Amount of most expensive booking for that hotel (Commission not available).</li>
+<li>tot_amount_booking_unknown (NUMBER). Total amount of booking for that hotel (Commission not available).</li>
 </ul></li>
 </ul>
 
@@ -3682,186 +3706,342 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <table>
 <thead>
 <tr>
-<th align="left">client_id</th>
-<th align="left">provider_id</th>
-<th align="left">cache</th>
-<th align="left">search_date</th>
-<th align="left">check_in</th>
-<th align="left">nights</th>
-<th align="left">nationality</th>
-<th align="left">num_rooms</th>
-<th align="left">adults</th>
-<th align="left">children</th>
-<th align="left">infants</th>
-<th align="left">search_ok</th>
-<th align="left">search_nok</th>
-<th align="left">quote_ok</th>
-<th align="left">quote_nok</th>
-<th align="left">booking_ok</th>
-<th align="left">booking_nok</th>
-<th align="left">amount</th>
-<th align="left">hotels.code</th>
-<th align="left">hotels.search_ok</th>
-<th align="left">hotels.search_nok</th>
-<th align="left">hotels.quote_ok</th>
-<th align="left">hotels.quote_nok</th>
-<th align="left">hotels.booking_ok</th>
-<th align="left">hotels.booking_nok</th>
-<th align="left">hotels.amount</th>
+<th>client_id</th>
+<th>provider_id</th>
+<th>cache</th>
+<th>search_date</th>
+<th>check_in</th>
+<th>nights</th>
+<th>nationality</th>
+<th>num_rooms</th>
+<th>adults</th>
+<th>children</th>
+<th>infants</th>
+<th>search_ok</th>
+<th>search_nok</th>
+<th>quote_ok</th>
+<th>quote_nok</th>
+<th>booking_ok_net</th>
+<th>booking_ok_unknow</th>
+<th>booking_nok</th>
+<th>min_amount_booking_net</th>
+<th>max_amount_booking_net</th>
+<th>tot_amount_booking_net</th>
+<th>min_amount_booking_unknown</th>
+<th>max_amount_booking_unknown</th>
+<th>tot_amount_booking_unknown</th>
+<th>hotels.code</th>
+<th>hotels.search_ok_net</th>
+<th>hotels.search_ok_unknown</th>
+<th>hotels.search_nok</th>
+<th>hotels.quote_ok_net</th>
+<th>hotels.quote_ok_unknown</th>
+<th>hotels.quote_nok</th>
+<th>hotels.booking_ok_net</th>
+<th>hotels.booking_ok_unknown</th>
+<th>hotels.booking_nok</th>
+<th>hotels.min_amount_search_net</th>
+<th>hotels.max_amount_search_net</th>
+<th>hotels.tot_amount_search_net</th>
+<th>hotels.min_amount_search_unknown</th>
+<th>hotels.max_amount_search_unknown</th>
+<th>hotels.tot_amount_search_unknown</th>
+<th>hotels.min_amount_quote_net</th>
+<th>hotels.max_amount_quote_net</th>
+<th>hotels.tot_amount_quote_net</th>
+<th>hotels.min_amount_quote_unknown</th>
+<th>hotels.max_amount_quote_unknown</th>
+<th>hotels.tot_amount_quote_unknown</th>
+<th>hotels.min_amount_booking_net</th>
+<th>hotels.max_amount_booking_net</th>
+<th>hotels.tot_amount_booking_net</th>
+<th>hotels.min_amount_booking_unknown</th>
+<th>hotels.max_amount_booking_unknown</th>
+<th>hotels.tot_amount_booking_unknown</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="left">client A</td>
-<td align="left">provider X</td>
-<td align="left">false</td>
-<td align="left">2019-01-13 00:00:00 UTC</td>
-<td align="left">2019-01-19 00:00:00 UTC</td>
-<td align="left">4</td>
-<td align="left">SE</td>
-<td align="left">1</td>
-<td align="left">1</td>
-<td align="left">0</td>
-<td align="left">0</td>
-<td align="left">13</td>
-<td align="left">11</td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left">641443</td>
-<td align="left">13</td>
-<td align="left">0</td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
+<td>client A</td>
+<td>provider X</td>
+<td>false</td>
+<td>2019-01-13 00:00:00 UTC</td>
+<td>2019-02-13 00:00:00 UTC</td>
+<td>4</td>
+<td>SE</td>
+<td>1</td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>13</td>
+<td>11</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>641443</td>
+<td>13</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
 </tr>
 
 <tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">551568</td>
-<td align="left">0</td>
-<td align="left">11</td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>551568</td>
+<td><em>null</em></td>
+<td>11</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
 </tr>
 
 <tr>
-<td align="left">client B</td>
-<td align="left">provider Y</td>
-<td align="left">false</td>
-<td align="left">2019-01-13 00:00:00 UTC</td>
-<td align="left">2019-01-19 00:00:00 UTC</td>
-<td align="left">2</td>
-<td align="left">CN</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">0</td>
-<td align="left">0</td>
-<td align="left">6</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">0</td>
-<td align="left">1</td>
-<td align="left">0</td>
-<td align="left">398.84</td>
-<td align="left">299</td>
-<td align="left">0</td>
-<td align="left">1</td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
+<td>client B</td>
+<td>provider Y</td>
+<td>false</td>
+<td>2019-01-13 00:00:00 UTC</td>
+<td>2019-01-18 00:00:00 UTC</td>
+<td>2</td>
+<td>CN</td>
+<td>1</td>
+<td>2</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>6</td>
+<td>1</td>
+<td>3</td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>398.84</td>
+<td>398.84</td>
+<td>398.84</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>299</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
 </tr>
 
 <tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">927</td>
-<td align="left">5</td>
-<td align="left">0</td>
-<td align="left">3</td>
-<td align="left">0</td>
-<td align="left">1</td>
-<td align="left">0</td>
-<td align="left">398.84</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>927</td>
+<td>5</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>3</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>198.84</td>
+<td>598.84</td>
+<td>2393.04</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>198.84</td>
+<td>598.84</td>
+<td>1196.52</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>398.84</td>
+<td>398.84</td>
+<td>398.84</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
 </tr>
 
 <tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">203</td>
-<td align="left">1</td>
-<td align="left">0</td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>203</td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>2548.26</td>
+<td>2548.26</td>
+<td>2548.26</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
 </tr>
 </tbody>
 </table>
 
-<h2 id="daily-insights-client-daily-insights-provider">daily_insights_client / daily_insights_provider</h2>
+<h2 id="insights-agg-daily-buyer-seller">insights_agg_daily_(buyer|seller)</h2>
 
-<p>This table contains info similar to _daily<em>insights</em> but with a bigger aggregation. The fields <em>check_in</em>, <em>adults</em>, <em>children</em> and <em>infants</em> have disapeared.</p>
+<p>This table contains info similar to <em>insights_daily_(buyer|seller)</em> but with a bigger aggregation. The fields <em>check_in</em>, <em>adults</em>, <em>children</em> and <em>infants</em> have dissapeared.</p>
 
 <p><strong>fields</strong></p>
 
@@ -3883,7 +4063,7 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <li><strong>8</strong> = More than 3 months (90+ days).</li>
 </ul></li>
 <li>nights (NUMBER). Length of stay.</li>
-<li>nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when clients don&rsquo;t send this field.</li>
+<li>market (STRING). Source market of paxes (ISO 3166-1 alpha-2).</li>
 <li>num_rooms (NUMBER). Quantity of rooms.</li>
 <li><strong>pax_type</strong> (NUMBER). It is an enumeration to describe a combination of paxes (adults + children + infants).
 
@@ -3898,20 +4078,46 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <li>search_nok (NUMBER). Quantity of searches that didn&rsquo;t return any available hotels for above key.</li>
 <li>quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key.</li>
 <li>quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key.</li>
-<li>booking_ok (NUMBER). Quantity of confirmed bookings for above key.</li>
+<li>booking_ok_net (NUMBER). Quantity of confirmed bookings for above key where we have the net amount in EUR.</li>
+<li>booking_ok_unknown (NUMBER). Quantity of confirmed bookings for above key where we have the amount in EUR but it may have applied commissions.</li>
 <li>booking_nok (NUMBER). Quantity of failed bookings for above key.</li>
-<li>amount (NUMBER). Total amount of confirmed bookings for above key.</li>
+<li>min_amount_booking_net (NUMBER). Net amount of cheapest booking for above key.</li>
+<li>max_amount_booking_net (NUMBER). Net amount of most expensive booking for above key.</li>
+<li>tot_amount_booking_net (NUMBER). Total net amount of confirmed bookings for above key.</li>
+<li>min_amount_booking_net (NUMBER). Amount of cheapest booking for above key when we don&rsquo;t know if any commission is applied.</li>
+<li>max_amount_booking_net (NUMBER). Amount of most expensive booking for above key when we don&rsquo;t know if any commission is applied.</li>
+<li>tot_amount_booking_net (NUMBER). Total amount of confirmed bookings for above key when we don&rsquo;t know if any commission is applied.</li>
 <li>hotels (STRUCT). Repeated field that contains info about hotels for above key.
 
 <ul>
 <li>code (STRING). Hotel unique ID.</li>
-<li>search_ok (NUMBER). Quantity of searches with available options for above key and hotel.</li>
+<li>search_ok_net (NUMBER). Quantity of searches with available options for above key and hotel with net price available.</li>
+<li>search_ok_unknown (NUMBER). Quantity of searches with available options for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
 <li>search_nok (NUMBER). Quantity of searches without available options for above key and hotel.</li>
-<li>quote_ok (NUMBER). Quantity of quotes that returned a correct result for above key and hotel.</li>
-<li>quote_nok (NUMBER). Quantity of quotes that returned a wrong result for above key and hotel.</li>
-<li>booking_ok (NUMBER). Quantity of confirmed bookings for above key and hotel.</li>
+<li>min_amount_search_net (NUMBER). Net amount of cheapest option for that hotel.</li>
+<li>max_amount_search_net (NUMBER). Net amount of most expensive option for that hotel.</li>
+<li>tot_amount_search_net (NUMBER). Total net amount of searches for that hotel.</li>
+<li>min_amount_search_unknown (NUMBER). Amount of cheapest option for that hotel (Commission not available).</li>
+<li>max_amount_search_unknown (NUMBER). Amount of most expensive option for that hotel (Commission not available).</li>
+<li>tot_amount_search_unknown (NUMBER). Total amount of searches for that hotel (Commission not available).</li>
+<li>quote_ok_net (NUMBER). Quantity of quotes for above key and hotel with net price available.</li>
+<li>quote_ok_unknown (NUMBER). Quantity of quotes for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
+<li>quote_nok (NUMBER). Quantity of failed quotes for above key and hotel.</li>
+<li>min_amount_quote_net (NUMBER). Net amount of cheapest quote for that hotel.</li>
+<li>max_amount_quote_net (NUMBER). Net amount of most expensive quote for that hotel.</li>
+<li>tot_amount_quote_net (NUMBER). Total net amount of quotes for that hotel.</li>
+<li>min_amount_quote_unknown (NUMBER). Amount of cheapest quote for that hotel (Commission not available).</li>
+<li>max_amount_quote_unknown (NUMBER). Amount of most expensive quote for that hotel (Commission not available).</li>
+<li>tot_amount_quote_unknown (NUMBER). Total amount of quotes for that hotel (Commission not available).</li>
+<li>booking_ok_net (NUMBER). Quantity of bookings for above key and hotel with net price available.</li>
+<li>booking_ok_unknown (NUMBER). Quantity of bookings for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
 <li>booking_nok (NUMBER). Quantity of failed bookings for above key and hotel.</li>
-<li>amount (NUMBER). Total amount of confirmed bookings for above key and hotel.</li>
+<li>min_amount_booking_net (NUMBER). Net amount of cheapest booking for that hotel.</li>
+<li>max_amount_booking_net (NUMBER). Net amount of most expensive booking for that hotel.</li>
+<li>tot_amount_booking_net (NUMBER). Total net amount of booking for that hotel.</li>
+<li>min_amount_booking_unknown (NUMBER). Amount of cheapest booking for that hotel (Commission not available).</li>
+<li>max_amount_booking_unknown (NUMBER). Amount of most expensive booking for that hotel (Commission not available).</li>
+<li>tot_amount_booking_unknown (NUMBER). Total amount of booking for that hotel (Commission not available).</li>
 </ul></li>
 </ul>
 
@@ -3920,170 +4126,354 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <table>
 <thead>
 <tr>
-<th align="left">client_id</th>
-<th align="left">provider_id</th>
-<th align="left">cache</th>
-<th align="left">search_date</th>
-<th align="left">booking_window</th>
-<th align="left">nights</th>
-<th align="left">nationality</th>
-<th align="left">num_rooms</th>
-<th align="left">pax_type</th>
-<th align="left">search_ok</th>
-<th align="left">search_nok</th>
-<th align="left">quote_ok</th>
-<th align="left">quote_nok</th>
-<th align="left">booking_ok</th>
-<th align="left">booking_nok</th>
-<th align="left">amount</th>
-<th align="left">hotels.code</th>
-<th align="left">hotels.search_ok</th>
-<th align="left">hotels.search_nok</th>
-<th align="left">hotels.quote_ok</th>
-<th align="left">hotels.quote_nok</th>
-<th align="left">hotels.booking_ok</th>
-<th align="left">hotels.booking_nok</th>
-<th align="left">hotels.amount</th>
+<th>client_id</th>
+<th>provider_id</th>
+<th>cache</th>
+<th>search_date</th>
+<th>booking_window</th>
+<th>nights</th>
+<th>nationality</th>
+<th>num_rooms</th>
+<th>pax_type</th>
+<th>search_ok</th>
+<th>search_nok</th>
+<th>quote_ok</th>
+<th>quote_nok</th>
+<th>booking_ok_net</th>
+<th>booking_ok_unknow</th>
+<th>booking_nok</th>
+<th>min_amount_booking_net</th>
+<th>max_amount_booking_net</th>
+<th>tot_amount_booking_net</th>
+<th>min_amount_booking_unknown</th>
+<th>max_amount_booking_unknown</th>
+<th>tot_amount_booking_unknown</th>
+<th>hotels.code</th>
+<th>hotels.search_ok_net</th>
+<th>hotels.search_ok_unknown</th>
+<th>hotels.search_nok</th>
+<th>hotels.quote_ok_net</th>
+<th>hotels.quote_ok_unknown</th>
+<th>hotels.quote_nok</th>
+<th>hotels.booking_ok_net</th>
+<th>hotels.booking_ok_unknown</th>
+<th>hotels.booking_nok</th>
+<th>hotels.min_amount_search_net</th>
+<th>hotels.max_amount_search_net</th>
+<th>hotels.tot_amount_search_net</th>
+<th>hotels.min_amount_search_unknown</th>
+<th>hotels.max_amount_search_unknown</th>
+<th>hotels.tot_amount_search_unknown</th>
+<th>hotels.min_amount_quote_net</th>
+<th>hotels.max_amount_quote_net</th>
+<th>hotels.tot_amount_quote_net</th>
+<th>hotels.min_amount_quote_unknown</th>
+<th>hotels.max_amount_quote_unknown</th>
+<th>hotels.tot_amount_quote_unknown</th>
+<th>hotels.min_amount_booking_net</th>
+<th>hotels.max_amount_booking_net</th>
+<th>hotels.tot_amount_booking_net</th>
+<th>hotels.min_amount_booking_unknown</th>
+<th>hotels.max_amount_booking_unknown</th>
+<th>hotels.tot_amount_booking_unknown</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="left">client A</td>
-<td align="left">provider X</td>
-<td align="left">false</td>
-<td align="left">2019-01-13 00:00:00 UTC</td>
-<td align="left">3</td>
-<td align="left">4</td>
-<td align="left">SE</td>
-<td align="left">1</td>
-<td align="left">1</td>
-<td align="left">13</td>
-<td align="left">11</td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left">641443</td>
-<td align="left">13</td>
-<td align="left">0</td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
+<td>client A</td>
+<td>provider X</td>
+<td>false</td>
+<td>2019-01-13 00:00:00 UTC</td>
+<td>3</td>
+<td>4</td>
+<td>SE</td>
+<td>1</td>
+<td>1</td>
+<td>13</td>
+<td>11</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>641443</td>
+<td>13</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
 </tr>
 
 <tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">551568</td>
-<td align="left">0</td>
-<td align="left">11</td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>551568</td>
+<td><em>null</em></td>
+<td>11</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
 </tr>
 
 <tr>
-<td align="left">client B</td>
-<td align="left">provider Y</td>
-<td align="left">false</td>
-<td align="left">2019-01-13 00:00:00 UTC</td>
-<td align="left">3</td>
-<td align="left">2</td>
-<td align="left">CN</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">6</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">0</td>
-<td align="left">1</td>
-<td align="left">0</td>
-<td align="left">398.84</td>
-<td align="left">299</td>
-<td align="left">0</td>
-<td align="left">1</td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
+<td>client B</td>
+<td>provider Y</td>
+<td>false</td>
+<td>2019-01-13 00:00:00 UTC</td>
+<td>3</td>
+<td>2</td>
+<td>CN</td>
+<td>1</td>
+<td>2</td>
+<td>6</td>
+<td>1</td>
+<td>3</td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>398.84</td>
+<td>398.84</td>
+<td>398.84</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>299</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
 </tr>
 
 <tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">927</td>
-<td align="left">5</td>
-<td align="left">0</td>
-<td align="left">3</td>
-<td align="left">0</td>
-<td align="left">1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>927</td>
+<td>5</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>3</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>198.84</td>
+<td>598.84</td>
+<td>2393.04</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>198.84</td>
+<td>598.84</td>
+<td>1196.52</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>398.84</td>
+<td>398.84</td>
+<td>398.84</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
 </tr>
 
 <tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">203</td>
-<td align="left">1</td>
-<td align="left">0</td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
-<td align="left"><em>null</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>203</td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>2548.26</td>
+<td>2548.26</td>
+<td>2548.26</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
 </tr>
 </tbody>
 </table>
+
+<h2 id="effective-bookings-buyer-seller">effective_bookings_(buyer|seller)</h2>
+
+<p>This table contains specific information about bookings done and their current status (Ok or cancelled).</p>
+
+<p><strong>fields</strong>
+* session_id (STRING). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
+* client_id (STRING). Client unique ID.
+* provider_id (STRING). Provider unique ID.
+* booking_date (TIMESTAMP). Booking date in UTC (format: YYYY-MM-DD hh:mm:ss).
+* checkin_date (TIMESTAMP). Checkin date in UTC (format: YYYY-MM-DD hh:mm:ss).
+* amount (NUMBER). Amount of booking in EUR.
+* cancel_date (TIMESTAMP). Cancel date in UTC (format: YYYY-MM-DD hh:mm:ss) if the booking was cancelled else will be empty.
+* market (STRING). Source market of paxes (ISO 3166-1 alpha-2).
+* market_name (STRING). Source market&rsquo;s name.
+* num_room (NUMBER). Quantity of rooms booked.
+* nights (NUMBER). Length of stay.
+* country (STRING). Country of destination (ISO 3166-1 alpha-2).
+* zone_1 (STRING). Main zone of destination.
+* zone_2 (STRING). Secondary zone of destination.
+* city (STRING). Last level of destination.
+* hotel_code (STRING). Hotel&rsquo;s code in provider&rsquo;s portfolio.
+* hotel_name (STRING). Hotel&rsquo;s name in provider&rsquo;s portfolio.</p>
+
+<p><strong>Preview</strong>
+| session_id | client_id | provider_id | booking_date | checkin_date | amount | cancel_date | market | market_name | num_room | nights | country | zone_1 | zone_2 | city | hotel_code | hotel_name |
+| :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- |
+| 12345678-1234-1234-1234-123456789012 | client 1 | provider 1 | 2018-03-28 12:21:18 UTC | 2018-05-28 12:00:00 UTC | 244.72 | <em>null</em> | IT | Italy | 1 | 3 | US | Utah | Garfield County | Panguitch | 123 | Hotel Test |</p>
 
 <h2 id="daily-portfolio-seller">daily_portfolio_seller</h2>
 
@@ -4360,8 +4750,9 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <ul>
 <li><a href="#tables">Tables</a>
 <ul>
-<li><a href="#daily-insights">daily_insights</a></li>
-<li><a href="#daily-insights-client-daily-insights-provider">daily_insights_client / daily_insights_provider</a></li>
+<li><a href="#insights-daily-buyer-seller">insights_daily_(buyer|seller)</a></li>
+<li><a href="#insights-agg-daily-buyer-seller">insights_agg_daily_(buyer|seller)</a></li>
+<li><a href="#effective-bookings-buyer-seller">effective_bookings_(buyer|seller)</a></li>
 <li><a href="#daily-portfolio-seller">daily_portfolio_seller</a></li>
 <li><a href="#daily-stats">daily_stats</a></li>
 </ul></li>

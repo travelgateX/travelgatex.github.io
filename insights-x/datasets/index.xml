@@ -29,9 +29,9 @@ BigQuery BigQuery is a “big data” SQL store invented by Google. Many massive
       <guid>/insights-x/datasets/dataset-reference/</guid>
       <description>On this page you will learn how the data is stored in Datasets.
 Tables Data is stored in multiple tables depending on the kind of info that wants to be queried. Descriptions of each table and their correspondent fields are found below:
-daily_insights This table contains info from searches, quotes and bookings aggregated by day.
+insights_daily_(buyer|seller) This table contains info from searches, quotes and bookings aggregated by day.
 fields
- client_id (STRING). Client unique ID. provider_id (STRING). Provider unique ID. cache (BOOLEAN). It indicates if the source of request was the client or Speed-X on behalf of the client (0=Client, 1=Speed-X).</description>
+ client_id (STRING). Client unique ID. provider_id (STRING). Provider unique ID. cache (BOOLEAN). It indicates if the source of request was the client or Speed-X to load info in cache (0=Client, 1=Speed-X).</description>
     </item>
     
     <item>
