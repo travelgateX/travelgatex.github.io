@@ -4451,29 +4451,75 @@ Descriptions of each table and their correspondent fields are found below:</p>
 
 <p>This table contains specific information about bookings done and their current status (Ok or cancelled).</p>
 
-<p><strong>fields</strong>
-* session_id (STRING). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
-* client_id (STRING). Client unique ID.
-* provider_id (STRING). Provider unique ID.
-* booking_date (TIMESTAMP). Booking date in UTC (format: YYYY-MM-DD hh:mm:ss).
-* checkin_date (TIMESTAMP). Checkin date in UTC (format: YYYY-MM-DD hh:mm:ss).
-* amount (NUMBER). Amount of booking in EUR.
-* cancel_date (TIMESTAMP). Cancel date in UTC (format: YYYY-MM-DD hh:mm:ss) if the booking was cancelled else will be empty.
-* market (STRING). Source market of paxes (ISO 3166-1 alpha-2).
-* market_name (STRING). Source market&rsquo;s name.
-* num_room (NUMBER). Quantity of rooms booked.
-* nights (NUMBER). Length of stay.
-* country (STRING). Country of destination (ISO 3166-1 alpha-2).
-* zone_1 (STRING). Main zone of destination.
-* zone_2 (STRING). Secondary zone of destination.
-* city (STRING). Last level of destination.
-* hotel_code (STRING). Hotel&rsquo;s code in provider&rsquo;s portfolio.
-* hotel_name (STRING). Hotel&rsquo;s name in provider&rsquo;s portfolio.</p>
+<p><strong>fields</strong></p>
 
-<p><strong>Preview</strong>
-| session_id | client_id | provider_id | booking_date | checkin_date | amount | cancel_date | market | market_name | num_room | nights | country | zone_1 | zone_2 | city | hotel_code | hotel_name |
-| :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- | :&mdash;- |
-| 12345678-1234-1234-1234-123456789012 | client 1 | provider 1 | 2018-03-28 12:21:18 UTC | 2018-05-28 12:00:00 UTC | 244.72 | <em>null</em> | IT | Italy | 1 | 3 | US | Utah | Garfield County | Panguitch | 123 | Hotel Test |</p>
+<ul>
+<li>session_id (STRING). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
+<li>client_id (STRING). Client unique ID.</li>
+<li>provider_id (STRING). Provider unique ID.</li>
+<li>booking_date (TIMESTAMP). Booking date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
+<li>checkin_date (TIMESTAMP). Checkin date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
+<li>amount (NUMBER). Amount of booking in EUR.</li>
+<li>cancel_date (TIMESTAMP). Cancel date in UTC (format: YYYY-MM-DD hh:mm:ss) if the booking was cancelled else will be empty.</li>
+<li>market (STRING). Source market of paxes (ISO 3166-1 alpha-2).</li>
+<li>market_name (STRING). Source market&rsquo;s name.</li>
+<li>num_room (NUMBER). Quantity of rooms booked.</li>
+<li>nights (NUMBER). Length of stay.</li>
+<li>country (STRING). Country of destination (ISO 3166-1 alpha-2).</li>
+<li>zone_1 (STRING). Main zone of destination.</li>
+<li>zone_2 (STRING). Secondary zone of destination.</li>
+<li>city (STRING). Last level of destination.</li>
+<li>hotel_code (STRING). Hotel&rsquo;s code in provider&rsquo;s portfolio.</li>
+<li>hotel_name (STRING). Hotel&rsquo;s name in provider&rsquo;s portfolio.</li>
+</ul>
+
+<p><strong>Preview</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>session_id</th>
+<th>client_id</th>
+<th>provider_id</th>
+<th>booking_date</th>
+<th>checkin_date</th>
+<th>amount</th>
+<th>cancel_date</th>
+<th>market</th>
+<th>market_name</th>
+<th>num_room</th>
+<th>nights</th>
+<th>country</th>
+<th>zone_1</th>
+<th>zone_2</th>
+<th>city</th>
+<th>hotel_code</th>
+<th>hotel_name</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>123456789012</td>
+<td>client 1</td>
+<td>provider 1</td>
+<td>2018-03-28 12:21:18 UTC</td>
+<td>2018-05-28 12:00:00 UTC</td>
+<td>244.72</td>
+<td><em>null</em></td>
+<td>IT</td>
+<td>Italy</td>
+<td>1</td>
+<td>3</td>
+<td>US</td>
+<td>Utah</td>
+<td>Garfield County</td>
+<td>Panguitch</td>
+<td>123</td>
+<td>Hotel Test</td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="daily-portfolio-seller">daily_portfolio_seller</h2>
 
