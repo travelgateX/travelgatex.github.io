@@ -7999,6 +7999,17 @@ fields
     </item>
     
     <item>
+      <title>Add ParameterX</title>
+      <link>/hotelx/plugins/add_parameterx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/plugins/add_parameterx/</guid>
+      <description>Add ParameterX is an optional plugin and allows for paramenters to be added to accesses used by different suppliers at a request level.
+Add ParameterX Goals The add parameterX plugin adds parameters in the configuration of the existing accesses. By doing this, communication with suppliers will be improved. The plugin only allows one parameter with the following key/value:
+Key: JSONConfiguration Value: JSON structure, this structure allows adding parameters by access or by provider, or even for all accesses.</description>
+    </item>
+    
+    <item>
       <title>Aggregation</title>
       <link>/hotelx/plugins/aggregation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
