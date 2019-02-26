@@ -2127,6 +2127,17 @@ GraphQL schema definition type Error {  code: String!    type: String!    descri
     </item>
     
     <item>
+      <title>Error and Warning</title>
+      <link>/hotelx/concepts/errorwarning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/concepts/errorwarning/</guid>
+      <description>In this chapter we will list the errors and warnings of HotelX booking flow.
+Error list In the table below, we have structured a relation of all the Errors that can be returned in HotelX booking flow
+   Code Type Description Explanation     ACCESS_ERROR VALIDATION_ERROR No valid accesses found The access is not found or it has no permission, or you are using a test access and you need to add the testMode.</description>
+    </item>
+    
+    <item>
       <title>Exchange</title>
       <link>/hotelx/reference/objects/exchange/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -7828,7 +7839,7 @@ File Format The file should be in the below format:
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to HotelX API
-All notable changes to our platform will be documented on this page. 2019-02-12  Type HotelData introduces new field &amp;ldquo;GiataData&amp;rdquo;. Internal, better performant, REST endpoint in Search operation. Field filters have been added to minimize the throughput, this wasn&amp;rsquo;t necessary with graphql, filtered fields that have a relation with Legacy api are now also sent as filter.   Expire date of payment card in Book now accept the follow format, month: 1 digit or 2 digits, year: 4 digits or 2 digits</description>
+All notable changes to our platform will be documented on this page. 2019-02-26  New plugin, add parameter. You can see the documentation here.    Management of the default currency settings.   2019-02-12  Type HotelData introduces new field &amp;ldquo;GiataData&amp;rdquo;. Internal, better performant, REST endpoint in Search operation. Field filters have been added to minimize the throughput, this wasn&amp;rsquo;t necessary with graphql, filtered fields that have a relation with Legacy api are now also sent as filter.</description>
     </item>
     
     <item>
@@ -8004,7 +8015,7 @@ fields
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/add_parameterx/</guid>
-      <description> Add Parameter is an optional plugin and allows for paramenters to be added to accesses used by different suppliers at a request level.
+      <description> Add Parameter is an optional plugin that allows parameters to be added to accesses used by different suppliers at a request level.
 Add Parameter Goals The add parameter plugin adds parameters in the configuration of the existing accesses. By doing this, you can add parameters dynamically in request time to the existing accesses (see Access configuration).
 Parameters    key value type condition description     JSONConfiguration JSON mandatory JSON structure with parameters that you add by access or by supplier, or even for all accesses    Execution example { &amp;quot;step&amp;quot;: &amp;quot;REQUEST_ACCESS&amp;quot;, &amp;quot;pluginsType&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;add_parameterX&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;POST_STEP&amp;quot;, &amp;quot;parameters&amp;quot;: [ { &amp;quot;key&amp;quot;: &amp;quot;JSONConfiguration&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;{\&amp;quot;accesses\&amp;quot;: [ {\&amp;quot;codes\&amp;quot;: [\&amp;quot;1\&amp;quot;,\&amp;quot;2\&amp;quot;],\&amp;quot;parameters\&amp;quot;: [ {\&amp;quot;key\&amp;quot;: \&amp;quot;A\&amp;quot;, \&amp;quot;value\&amp;quot;: \&amp;quot;1\&amp;quot;} ] } ], \&amp;quot;suppliers\&amp;quot;: [ {\&amp;quot;codes\&amp;quot;: [\&amp;quot;XXX\&amp;quot;], \&amp;quot;parameters\&amp;quot;: [ {\&amp;quot;key\&amp;quot;: \&amp;quot;D\&amp;quot;,\&amp;quot;value\&amp;quot;: \&amp;quot;4\&amp;quot;}] } ], \&amp;quot;parameters\&amp;quot;: [ {\&amp;quot;key\&amp;quot;: \&amp;quot;C\&amp;quot;, \&amp;quot;value\&amp;quot;: \&amp;quot;valor\&amp;quot; } ] }&amp;quot; } ] } ] }  </description>
     </item>
