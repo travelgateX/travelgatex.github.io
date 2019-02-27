@@ -3455,6 +3455,67 @@
         </li>
             </ul>
         </li>
+        <li data-nav-id="/channelx/" class="dd-item parent">
+
+            <a href="/channelx/" class="">
+       
+            <span>
+                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+                ChannelX
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/channelx/overview/" class="dd-item">
+            <a href="/channelx/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/channelx/documentation/" class="dd-item parent active">
+
+            <a href="/channelx/documentation/" class="">
+       
+            <span>
+                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+                Documentation
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+        <li data-nav-id="/channelx/documentation/codelists/" class="dd-item">
+
+            <a href="/channelx/documentation/codelists/" class="">
+       
+            <span>
+                Code Lists
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+        </li>
+        <li data-nav-id="/channelx/documentation/pricetut/" class="dd-item">
+
+            <a href="/channelx/documentation/pricetut/" class="">
+       
+            <span>
+                Price Use Cases
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/channelx/faq/" class="dd-item">
+
+            <a href="/channelx/faq/" class="">
+       
+            <span>
+                FaQ
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+        </li>
+          <li data-nav-id="/channelx/release-notes/breaking-changes/" class="dd-item">
+            <a href="/channelx/release-notes/breaking-changes/">
+              <span style="padding-left: 8px;">ChannelX breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
         <li data-nav-id="/learning-graphql/" class="dd-item">
 
             <a href="/learning-graphql/" class="">
@@ -3667,6 +3728,22 @@
 
 
 
+<h2 id="global-details">Global Details</h2>
+
+<h3 id="protocol-and-headers">Protocol and Headers</h3>
+
+<p>All requests are expected to be standard HTTP POST requests in which the POST body is the request XML and the Content-Type header is set to &ldquo;application/xml&rdquo;.</p>
+
+<p><strong>Authentication</strong>
+Requests will be sent with a authentication encoded in <em>Base-64</em>. Credentials may be found in <strong>Authorization</strong> header tag, with value <strong>Basic (encoded credentials)</strong> as follows:<br />
+<code>Authorization: Basic aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1RWWg2bVlJSkcyWQ==</code></p>
+
+<h3 id="summary">Summary</h3>
+
+<p>BR = Only used for: &lsquo;Basic Rates&rsquo;<br />
+DV = Only used for: &lsquo;Derived Rates&rsquo;<br />
+N = Names allowed for a specific element</p>
+
 <h2 id="hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</h2>
 
 <p>Sets up inventory information that should be followed with the structure Hotel &gt; Rate &gt; Room.</p>
@@ -3769,52 +3846,52 @@
 <p><strong>Example for Derived RatePlan</strong></p>
 
 <pre><code class="language-xml">&lt;HotelRatePlanInventoryNotif xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
-    &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;&gt;
-        &lt;RatePlans HotelCode = &quot;1&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
-            &lt;RatePlan BaseRatePlanCode = &quot;BAR&quot; RatePlanStatusType = &quot;Active&quot; RatePlanCode = &quot;DERIVED&quot; RateReturn = &quot;false&quot;&gt;
-		&lt;RatePlanInclusionsType&gt;
-                    &lt;RatePlanInclusionDescription&gt;
-                        &lt;Name&gt;BaseMealPlanSupplement&lt;/Name&gt;
-                    &lt;/RatePlanInclusionDescription&gt;
-                &lt;/RatePlanInclusionsType&gt;
-                &lt;Description&gt;
-                    &lt;Text&gt;Derived Rate&lt;/Text&gt;
-                &lt;/Description&gt;
-            &lt;/RatePlan&gt;
-        &lt;/RatePlans&gt;
+    &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;/&gt;
+    &lt;RatePlans HotelCode = &quot;1&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+        &lt;RatePlan BaseRatePlanCode = &quot;BAR&quot; RatePlanStatusType = &quot;Active&quot; RatePlanCode = &quot;DERIVED&quot; RateReturn = &quot;false&quot;&gt;
+            &lt;RatePlanInclusionsType&gt;
+                &lt;RatePlanInclusionDescription&gt;
+                    &lt;Name&gt;BaseMealPlanSupplement&lt;/Name&gt;
+                &lt;/RatePlanInclusionDescription&gt;
+            &lt;/RatePlanInclusionsType&gt;
+            &lt;Description&gt;
+                &lt;Text&gt;Derived Rate&lt;/Text&gt;
+            &lt;/Description&gt;
+        &lt;/RatePlan&gt;
+    &lt;/RatePlans&gt;
 &lt;/HotelRatePlanInventoryNotif&gt;
 </code></pre>
 
 <p><strong>Example for Offers</strong></p>
 
 <pre><code class="language-xml">&lt;HotelRatePlanInventoryNotif xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
-    &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;&gt;
-        &lt;RatePlans HotelCode = &quot;1&quot;  HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
-            &lt;RatePlan BaseRatePlanCode = &quot;BAR&quot; RatePlanStatusType = &quot;Active&quot; RatePlanCode = &quot;DERIVED&quot; RateReturn = &quot;false&quot;&gt;
-	        &lt;Offers&gt;
-		    &lt;Offer OfferCode=&quot;offer&quot; OfferStatusType=&quot;Active&quot; OfferNotifType = &quot;New&quot;&gt;
-			&lt;OfferRules&gt;
-			    &lt;OfferRule&gt;
-				&lt;LengthsOfStay ArrivalDateBased=&quot;false&quot;&gt;
-				    &lt;LengthOfStay Time=&quot;2&quot; MinMaxMessageType=&quot;MinLOS&quot; /&gt;
-				    &lt;LengthOfStay Time=&quot;6&quot; MinMaxMessageType=&quot;MaxLOS&quot; /&gt;
-				&lt;/LengthsOfStay&gt;
-				&lt;DOW_Restrictions&gt;
-				    &lt;AvailableDaysOfWeek Mon=&quot;true&quot; Tue=&quot;true&quot; Weds=&quot;true&quot; Thur=&quot;true&quot; Fri=&quot;true&quot; Sat=&quot;true&quot; Sun=&quot;true&quot; /&gt;
-				&lt;/DOW_Restrictions&gt;
-				&lt;Inventories&gt;
-                    &lt;Inventory InvCode=&quot;1BDAPT&quot; /&gt;
-                &lt;/Inventories&gt;
-			    &lt;/OfferRule&gt;
-			&lt;/OfferRules&gt;
-			&lt;Discount NightsDiscounted=&quot;1&quot; DiscountPattern=&quot;Last&quot; /&gt;
-			&lt;OfferDescription&gt;
-			    &lt;Text&gt;Offer Test&lt;/Text&gt;
-			&lt;/OfferDescription&gt;
-		    &lt;/Offer&gt;
-		&lt;/Offers&gt;
-            &lt;/RatePlan&gt;
-        &lt;/RatePlans&gt;
+    &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;/&gt;
+    &lt;RatePlans HotelCode = &quot;1&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+        &lt;RatePlan BaseRatePlanCode = &quot;BAR&quot; RatePlanStatusType = &quot;Active&quot; RatePlanCode = &quot;DERIVED&quot; RateReturn = &quot;false&quot;&gt;
+            &lt;Offers&gt;
+                &lt;Offer OfferCode = &quot;offer&quot; OfferStatusType = &quot;Active&quot; OfferNotifType = &quot;New&quot;&gt;
+                    &lt;OfferRules&gt;
+                        &lt;OfferRule&gt;
+                            &lt;LengthsOfStay ArrivalDateBased = &quot;false&quot;&gt;
+                                &lt;LengthOfStay Time = &quot;2&quot; MinMaxMessageType = &quot;MinLOS&quot;/&gt;
+                                &lt;LengthOfStay Time = &quot;6&quot; MinMaxMessageType = &quot;MaxLOS&quot;/&gt;
+                            &lt;/LengthsOfStay&gt;
+                            &lt;DOW_Restrictions&gt;
+                                &lt;AvailableDaysOfWeek Mon = &quot;true&quot; Tue = &quot;true&quot; Weds = &quot;true&quot; Thur = &quot;true&quot; Fri = &quot;true&quot; Sat = &quot;true&quot; Sun = &quot;true&quot;/&gt;
+                            &lt;/DOW_Restrictions&gt;
+                            &lt;Inventories&gt;
+                                &lt;Inventory InvCode = &quot;1BDAPT&quot;/&gt;
+                            &lt;/Inventories&gt;
+                        &lt;/OfferRule&gt;
+                    &lt;/OfferRules&gt;
+                    &lt;Discount NightsDiscounted = &quot;1&quot; DiscountPattern = &quot;Last&quot;/&gt;
+                    &lt;OfferDescription&gt;
+                        &lt;Text&gt;Offer Test&lt;/Text&gt;
+                    &lt;/OfferDescription&gt;
+                &lt;/Offer&gt;
+            &lt;/Offers&gt;
+        &lt;/RatePlan&gt;
+    &lt;/RatePlans&gt;
 &lt;/HotelRatePlanInventoryNotif&gt;
 </code></pre>
 
@@ -4624,8 +4701,7 @@
 
 <h2 id="hotelrateplannotif">HotelRatePlanNotif</h2>
 
-<pre><code class="language-xml">
-&lt;HotelRatePlanNotif&gt;
+<pre><code class="language-xml">&lt;HotelRatePlanNotif&gt;
     &lt;request&gt;
         &lt;POS&gt;
             &lt;Source&gt;
@@ -4676,28 +4752,28 @@
 
 <p><strong>Example for Derived RatePlan</strong></p>
 
-<pre><code class="language-xml">    &lt;HotelRatePlanNotif&gt;
-      &lt;request Version = &quot;0&quot;&gt;
+<pre><code class="language-xml">&lt;HotelRatePlanNotif&gt;
+    &lt;request Version = &quot;0&quot;&gt;
         &lt;POS&gt;
-          &lt;Source&gt;
-            &lt;RequestorID ID = &quot;Provider1&quot;&gt;&lt;/RequestorID&gt;
-            &lt;BookingChannel&gt;
-              &lt;CompanyName Code = &quot;ClientTravelAgency1&quot;&gt;&lt;/CompanyName&gt;
-            &lt;/BookingChannel&gt;
-          &lt;/Source&gt;
+            &lt;Source&gt;
+                &lt;RequestorID ID = &quot;Provider1&quot;&gt;&lt;/RequestorID&gt;
+                &lt;BookingChannel&gt;
+                    &lt;CompanyName Code = &quot;ClientTravelAgency1&quot;&gt;&lt;/CompanyName&gt;
+                &lt;/BookingChannel&gt;
+            &lt;/Source&gt;
         &lt;/POS&gt;
         &lt;RatePlan RatePlanCode = &quot;DRV&quot; BaseRatePlanCode = &quot;SRATE&quot; RatePlanStatusType = &quot;Active&quot;&gt;
-          &lt;Rates&gt;
-            &lt;Rate Start = &quot;2014-07-01&quot; End = &quot;2014-07-31&quot; AdjustedPercentage = &quot;10&quot; AdjustUpIndicator = &quot;0&quot;&gt;&lt;/Rate&gt;
-          &lt;/Rates&gt;
+            &lt;Rates&gt;
+                &lt;Rate Start = &quot;2014-07-01&quot; End = &quot;2014-07-31&quot; AdjustedPercentage = &quot;10&quot; AdjustUpIndicator = &quot;0&quot;&gt;&lt;/Rate&gt;
+            &lt;/Rates&gt;
         &lt;/RatePlan&gt;
         &lt;RatePlan RatePlanCode = &quot;DRV&quot; BaseRatePlanCode = &quot;SRATE&quot; RatePlanStatusType = &quot;Deactivated&quot;&gt;
-          &lt;Rates&gt;
-            &lt;Rate Start = &quot;2014-08-01&quot; End = &quot;2014-08-31&quot; AdjustedPercentage = &quot;10&quot; AdjustUpIndicator = &quot;0&quot;&gt;&lt;/Rate&gt;
-          &lt;/Rates&gt;
+            &lt;Rates&gt;
+                &lt;Rate Start = &quot;2014-08-01&quot; End = &quot;2014-08-31&quot; AdjustedPercentage = &quot;10&quot; AdjustUpIndicator = &quot;0&quot;&gt;&lt;/Rate&gt;
+            &lt;/Rates&gt;
         &lt;/RatePlan&gt;
-      &lt;/request&gt;
-    &lt;/HotelRatePlanNotif&gt;
+    &lt;/request&gt;
+&lt;/HotelRatePlanNotif&gt;
 </code></pre>
 
 <table>
@@ -5248,24 +5324,24 @@
 
 <p>For all successful requests is expected to be returned a <em>Success</em> element in the response. On a <em>HotelAvailNotif</em> request it should be looking like the following:</p>
 
-<pre><code class="language-xml">&lt;HotelAvailNotifResponse xmlns=&quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
-      &lt;HotelAvailNotifResult&gt;
-        &lt;Success xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot;/&gt;
-      &lt;/HotelAvailNotifResult&gt;
-    &lt;/HotelAvailNotifResponse&gt;
+<pre><code class="language-xml">&lt;HotelAvailNotifResponse xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
+    &lt;HotelAvailNotifResult&gt;
+        &lt;Success xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;/&gt;
+    &lt;/HotelAvailNotifResult&gt;
+&lt;/HotelAvailNotifResponse&gt;
 </code></pre>
 
 <h4 id="error">Error</h4>
 
 <p>On the other hand, when request provides any error, the response should look like:</p>
 
-<pre><code class="language-xml">&lt;HotelAvailNotifResponse xmlns=&quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
-      &lt;HotelAvailNotifResult&gt;
-        &lt;Errors xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
-          &lt;Error ShortText=&quot;AvailStatusMessages not found&quot; Code=&quot;2&quot;/&gt;
+<pre><code class="language-xml">&lt;HotelAvailNotifResponse xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
+    &lt;HotelAvailNotifResult&gt;
+        &lt;Errors xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+            &lt;Error ShortText = &quot;AvailStatusMessages not found&quot; Code = &quot;2&quot;/&gt;
         &lt;/Errors&gt;
-      &lt;/HotelAvailNotifResult&gt;
-    &lt;/HotelAvailNotifResponse&gt;
+    &lt;/HotelAvailNotifResult&gt;
+&lt;/HotelAvailNotifResponse&gt;
 </code></pre>
 
 <table>
@@ -5309,22 +5385,6 @@
 </tbody>
 </table>
 
-<h2 id="global-details">Global Details</h2>
-
-<h3 id="protocol-and-headers">Protocol and Headers</h3>
-
-<p>All requests are expected to be standard HTTP POST requests in which the POST body is the request XML and the Content-Type header is set to &ldquo;application/xml&rdquo;.</p>
-
-<p><strong>Authentication</strong>
-Requests will be sent with a authentication encoded in <em>Base-64</em>. Credentials may be found in <strong>Authorization</strong> header tag, with value <strong>Basic (encoded credentials)</strong> as follows:<br />
-<code>Authorization: Basic aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1RWWg2bVlJSkcyWQ==</code></p>
-
-<h3 id="summary">Summary</h3>
-
-<p>BR = Only used for: &lsquo;Basic Rates&rsquo;<br />
-DV = Only used for: &lsquo;Derived Rates&rsquo;<br />
-N = Names allowed for a specific element</p>
-
 
 
             </div>
@@ -5336,6 +5396,11 @@ N = Names allowed for a specific element</p>
 <ul>
 <li>
 <ul>
+<li><a href="#global-details">Global Details</a>
+<ul>
+<li><a href="#protocol-and-headers">Protocol and Headers</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul></li>
 <li><a href="#hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</a></li>
 <li><a href="#hotelrateplannotif">HotelRatePlanNotif</a></li>
 <li><a href="#hotelavailnotif">HotelAvailNotif</a></li>
@@ -5346,11 +5411,6 @@ N = Names allowed for a specific element</p>
 <li><a href="#success">Success</a></li>
 <li><a href="#error">Error</a></li>
 </ul></li>
-</ul></li>
-<li><a href="#global-details">Global Details</a>
-<ul>
-<li><a href="#protocol-and-headers">Protocol and Headers</a></li>
-<li><a href="#summary">Summary</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5368,7 +5428,10 @@ N = Names allowed for a specific element</p>
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/getting-started/" title="Go to next page | Getting Started" style="margin-right: 0px;">Getting Started<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/channelx/overview/" title="Go to previous page | Overview"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Overview</a>
+            </li>
+        <li class="page-item">
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/channelx/documentation/codelists/" title="Go to next page | Code Lists" style="margin-right: 0px;">Code Lists<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

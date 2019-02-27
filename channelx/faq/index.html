@@ -3455,6 +3455,66 @@
         </li>
             </ul>
         </li>
+        <li data-nav-id="/channelx/" class="dd-item parent">
+
+            <a href="/channelx/" class="">
+       
+            <span>
+                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+                ChannelX
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/channelx/overview/" class="dd-item">
+            <a href="/channelx/overview/">
+              <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/channelx/documentation/" class="dd-item">
+
+            <a href="/channelx/documentation/" class="">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Documentation
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+        <li data-nav-id="/channelx/documentation/codelists/" class="dd-item">
+
+            <a href="/channelx/documentation/codelists/" class="">
+       
+            <span>
+                Code Lists
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+        </li>
+        <li data-nav-id="/channelx/documentation/pricetut/" class="dd-item">
+
+            <a href="/channelx/documentation/pricetut/" class="">
+       
+            <span>
+                Price Use Cases
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/channelx/faq/" class="dd-item parent active">
+
+            <a href="/channelx/faq/" class="">
+       
+            <span>
+                FaQ
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+        </li>
+          <li data-nav-id="/channelx/release-notes/breaking-changes/" class="dd-item">
+            <a href="/channelx/release-notes/breaking-changes/">
+              <span style="padding-left: 8px;">ChannelX breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
         <li data-nav-id="/learning-graphql/" class="dd-item">
 
             <a href="/learning-graphql/" class="">
@@ -3636,7 +3696,32 @@
               </div>
               
 
-	<p><strong>What is <em>FullCopy</em> for?</strong><br />
+	
+
+<h2 id="generic">Generic</h2>
+
+<p><strong>What is the timezone displayed in the messages?</strong><br />
+Time zone is always UTC.</p>
+
+<p><strong>HotelRatePlanInventoryNotif, HotelRatePlanNotif and HotelAVailNotif all include another message called &ldquo;Derived&rdquo;. What is a Derived rate and what is its purpose?</strong><br />
+A derived rate is a rate that has derived from its base rate, but you can change its condition so that you can present it as a discounted rate or some sort of offer.
+In the derived rate message you will also see a RateBasePlanCode. This is used to show the code of the parent rate of the Derived Rate.</p>
+
+<p><strong>What is LocationCodesInclusive used for?</strong><br />
+If set as true, this means that you are able to sell the hotel only for specific markets based on the value of &ldquo;CountryCode&rdquo;. If set as false, you will not be able ot sell the hotel for the markets indicated in the &ldquo;CountryCode&rdquo;.</p>
+
+<p><strong>There are currency codes displayed on both HotelRatePlanInventoryNotif and HotelRatePlanNotif. Is it possible for the currency to be different between these two messages?</strong><br />
+The channel will receive an error if they try to introduce different currencies in these fields. It is not allowed to have different values for the currency in these fields.</p>
+
+<p><strong>Could the system send overlapped dates between &ldquo;End&rdquo; in one load and &ldquo;Start&rdquo; in a new? (Ex. 1st load is for Start = 1 Aug | End = 31 Aug and 2nd load is for Start 31 Aug | End 30 Sept).</strong><br />
+Yes, it is possible, but it is not common. When this happens, the latest product loaded will be the one to be applied. In case they were loaded in the same request, the order goes from top to bottom, and the lowest line containing the overlapping date will be the one that is applied.</p>
+
+<p><strong>Suppose one ARI sent by Travelgate contained multiple rate plans and then a few of them may not be in the right format (i.e. rate plan name missing, etc.). What happens in this case?</strong><br />
+If there is an error at the time the product is pushed into your system, you need to return an error. You have to process the whole request correctly. As for the error description, it is up to you.</p>
+
+<h2 id="fullcopy">FullCopy</h2>
+
+<p><strong>What is <em>FullCopy</em> for?</strong><br />
 It is a tool that allows to make a <em>Full Product</em> copy of the selected hotels inside <em>InventoryX</em> system.</p>
 
 <p><strong>How do I know whether it is a <em>Delta</em> or a *Full Copy</strong>*
@@ -3651,8 +3736,38 @@ It is a tool that allows to make a <em>Full Product</em> copy of the selected ho
 <li>Full Copy will send a lot more information than a simple Delta</li>
 </ul>
 
-<p><strong>What is the timezone displayed in the messages?</strong><br />
-Time zone is always UTC.</p>
+<p><strong>What happens if a rate is deleted, does Travelgate inform us of this in the Full Copy?</strong><br />
+Not in Full Copy. When a Full Copy is run after a rate has been deleted, you will only receive whatever is currently loaded in the system. You will be notified of a rate being removed by a Delta instead of a Full Copy after its removal.</p>
+
+<h2 id="inventory">Inventory</h2>
+
+<p><strong>For HotelRatePlanInventoryNotif, what does the &lsquo;RatePlanNotifType&rsquo; (New, Delta and Remove) stand for?</strong><br />
+Rates can be created/deleted/modified. The status New means that it&rsquo;s a rate that has been created (a new rate), the status Delta is for a rate that has been modified and the status Removed is for a deleted rate.</p>
+
+<p><strong>In HotelRatePlanInventoryNotif, what does CancelPenalty Start and End dates represent?</strong><br />
+Start and End dates in this instance show the range of dates in which these cancellation policies are going to be applied. The start and end days are included in the cancellation policy range.</p>
+
+<p><strong>What does the &ldquo;RatePlan Duration&rdquo; atrribute in HotelRatePlanInventoryNotif mean?</strong><br />
+Duration is no longer being used and will be removed from the documentation.</p>
+
+<p><strong>From the HotelRatePlanInventoryNotif, can you set <code>&lt;RatePlanStatusType = Deactivated&gt;</code> for specific periods? It also contains a start and end for rate plan attribute as well.</strong><br />
+This is used to deactivate a rate. The deactivation can either be for an indefinite amount of time, of a specific time frame, and the date range (start and end) indicates this range.</p>
+
+<p><strong>If your RatePlanInventory ARI provided <code>&lt;MealsIncluded MealPlanCodes = &quot;??&quot;/&gt;</code>, then the Supplement attribute will be present, is this correct? And, is it possible for it to show up when Mealplancode is &lsquo;Room Only&rsquo;?</strong><br />
+The RatePlanInventory informs of what the base MealPlan for this rate is (Room only, Bed and Breakfast, All Inclusive, etc). A base rate cannot have more than one MealPlan. The Supplement is not indicated here, it is indicated in the RatePlanNotif. The MealPlanCode displayed in MealsIncluded is the push system code for the meal plans which can be found in the code list in the static infomration.</p>
+
+<h2 id="avail">Avail</h2>
+
+<p><strong>What does &ldquo;LengthsOfStay ArrivalDateBased&rdquo; mean? What&rsquo;s different between the true and false values?</strong><br />
+If this is set as true, the type of Min/Max LOS is on arrival for that specific day. For this type, the values for Min/Max LOS on arrival, only apply if it is applied to the check-in day. If this is set as false, it&rsquo;s a normal Min/Max LOS.</p>
+
+<p><strong>Does TravelgateX have a default maxmimum nights restriction (Ex. max 30 days) if your HotelAvailNotif does not provide max LOS information for that rate?</strong><br />
+TravelgateX does not have any restriction on default maximum nights.</p>
+
+<p><strong>What does Master/ArrivalClose/DepartureClose mean?</strong><br />
+The Closed On Arrival means that the check-in day cannot be the same day as the one that has Closed On Arrival applied to it, but this day can be inside the Availability search range. The Closed On Departure means that the check-out day cannot be the same day as the one that has Closed On Departure applied, but this day can be in the Availability search range. Closed Master means that the hotel is closed that day. The Closed Master means that in the indicated dates, none of the days can be a check-in day, check-out day or a day inside the range of the search.</p>
+
+<h2 id="prices">Prices</h2>
 
 <p><strong>For the standard occupancy calculation, should the data from <code>&lt;Quantities StandardNumBeds&gt;</code> or <code>&lt;BaseByGuestAmt NumberOfGuests&gt;</code> be consumed?</strong><br />
 The first part indicates the StandardOccupancy number (value). The second indicates the format in which prices are returned when they are loaded by price.</p>
@@ -3661,60 +3776,17 @@ The first part indicates the StandardOccupancy number (value). The second indica
 <p>Note: it is possible to load more than one price type at a time. Although it is not something that is done frequently, it can happen. If a channel manager loads more than one price type (i.e. by room and by pax) we will return the cheapest one in the Availability search response.</p>
 </blockquote>
 
-<p><strong>HotelRatePlanInventoryNotif, HotelRatePlanNotif and HotelAVailNotif all include another message called &ldquo;Derived&rdquo;. What is a Derived rate and what is its purpose?</strong><br />
-A derived rate is a rate that has derived from its base rate, but you can change its condition so that you can present it as a discounted rate or some sort of offer.
-In the derived rate message you will also see a RateBasePlanCode. This is used to show the code of the parent rate of the Derived Rate.</p>
-
-<p><strong>For HotelRatePlanInventoryNotif, what does the &lsquo;RatePlanNotifType&rsquo; (New, Delta and Remove) stand for?</strong><br />
-Rates can be created/deleted/modified. The status New means that it&rsquo;s a rate that has been created (a new rate), the status Delta is for a rate that has been modified and the status Removed is for a deleted rate.</p>
-
-<p><strong>What is LocationCodesInclusive used for?</strong><br />
-If set as true, this means that you are able to sell the hotel only for specific markets based on the value of &ldquo;CountryCode&rdquo;. If set as false, you will not be able ot sell the hotel for the markets indicated in the &ldquo;CountryCode&rdquo;.</p>
-
-<p><strong>In HotelRatePlanInventoryNotif, what does CancelPenalty Start and End dates represent?</strong><br />
-Start and End dates in this instance show the range of dates in which these cancellation policies are going to be applied. The start and end days are included in the cancellation policy range.</p>
-
 <p><strong>Both tax &lsquo;ChargeFrequency&rsquo; and &lsquo;ChargeUnit&rsquo; are optional bits of information. So, what happens if they are not returned in a push message we send you? Do you need to re-calculate the price from HotelRatePlanNotif (if have tax elements are returned), or are you able to assume AmountAfterTax is the final price?</strong><br />
 If these elements are not returned, then a fixed amount will be returned as a tax if you have set it up in the SetUp part of the extranet and depending on the type of tax you have set up. You always have to calculate the price that is returned in this tag with the tax.</p>
 
 <p><strong>Example - suppose you set up an additional tax (i.e. per pax and per night), should we add up or subtract it from AmountAfterTax attribute?</strong><br />
 The AmountAfterTax attribute inside the RatePlanNotify does not include the taxes you will set up (it might include any taxes the channel has loaded on their end if they have done so). The AmountAfterTax at the time of booking (the Reservation RS logs) will include the taxes indicated by you.</p>
 
-<p><strong>What does the &ldquo;RatePlan Duration&rdquo; atrribute in HotelRatePlanInventoryNotif mean?</strong><br />
-Duration is no longer being used and will be removed from the documentation.</p>
-
-<p><strong>There are currency codes displayed on both HotelRatePlanInventoryNotif and HotelRatePlanNotif. Is it possible for the currency to be different between these two messages?</strong><br />
-The channel will receive an error if they try to introduce different currencies in these fields. It is not allowed to have different values for the currency in these fields.</p>
-
-<p><strong>From the HotelRatePlanInventoryNotif, can you set <code>&lt;RatePlanStatusType = Deactivated&gt;</code> for specific periods? It also contains a start and end for rate plan attribute as well.</strong><br />
-This is used to deactivate a rate. The deactivation can either be for an indefinite amount of time, of a specific time frame, and the date range (start and end) indicates this range.</p>
-
-<p><strong>Could the system send overlapped dates between &ldquo;End&rdquo; in one load and &ldquo;Start&rdquo; in a new? (Ex. 1st load is for Start = 1 Aug | End = 31 Aug and 2nd load is for Start 31 Aug | End 30 Sept).</strong><br />
-Yes, it is possible, but it is not common. When this happens, the latest product loaded will be the one to be applied. In case they were loaded in the same request, the order goes from top to bottom, and the lowest line containing the overlapping date will be the one that is applied.</p>
-
-<p><strong>What does &ldquo;LengthsOfStay ArrivalDateBased&rdquo; mean? What&rsquo;s different between the true and false values?</strong><br />
-If this is set as true, the type of Min/Max LOS is on arrival for that specific day. For this type, the values for Min/Max LOS on arrival, only apply if it is applied to the check-in day. If this is set as false, it&rsquo;s a normal Min/Max LOS.</p>
-
 <p><strong>Referring to the RatePlan message, there are <code>&lt;Supplement&gt;</code>. Understanding price is for meal basis, should you require calculation to add with <code>&lt;AmountAfterTax&gt;</code>, the purpose of this is an extra cost for supplement in case there are <code>&lt;AdditionalGuest&gt;</code> applied.</strong><br />
 The Supplement tag is for MealPlans, not for additional paxes. The price indicated in there, shows the price of the supplement.</p>
 
-<p><strong>If your RatePlanInventory ARI provided <code>&lt;MealsIncluded MealPlanCodes = &quot;??&quot;/&gt;</code>, then the Supplement attribute will be present, is this correct? And, is it possible for it to show up when Mealplancode is &lsquo;Room Only&rsquo;?</strong><br />
-The RatePlanInventory informs of what the base MealPlan for this rate is (Room only, Bed and Breakfast, All Inclusive, etc). A base rate cannot have more than one MealPlan. The Supplement is not indicated here, it is indicated in the RatePlanNotif. The MealPlanCode displayed in MealsIncluded is the push system code for the meal plans which can be found in the code list in the static infomration.</p>
-
-<p><strong>Suppose one ARI sent by Travelgate contained multiple rate plans and then a few of them may not be in the right format (i.e. rate plan name missing, etc.). What happens in this case?</strong><br />
-If there is an error at the time the product is pushed into your system, you need to return an error. You have to process the whole request correctly. As for the error description, it is up to you.</p>
-
-<p><strong>Does TravelgateX have a default maxmimum nights restriction (Ex. max 30 days) if your HotelAvailNotif does not provide max LOS information for that rate?</strong><br />
-TravelgateX does not have any restriction on default maximum nights.</p>
-
-<p><strong>What does Master/ArrivalClose/DepartureClose mean?</strong><br />
-The Closed On Arrival means that the check-in day cannot be the same day as the one that has Closed On Arrival applied to it, but this day can be inside the Availability search range. The Closed On Departure means that the check-out day cannot be the same day as the one that has Closed On Departure applied, but this day can be in the Availability search range. Closed Master means that the hotel is closed that day. The Closed Master means that in the indicated dates, none of the days can be a check-in day, check-out day or a day inside the range of the search.</p>
-
 <p><strong>What happens if more than one price type is loaded for the same day/range of days and for the same room/rooms?</strong><br />
 All price types can be loaded at the same time (or at different times without overwriting). This isn&rsquo;t usually the case and almost never is there more than 1 price type loaded at a time. If all price types are loaded at the same time, or only two are loaded at the same time, at the time of the Availability search the price that is returned is the cheapest one.</p>
-
-<p><strong>What happens if a rate is deleted, does Travelgate inform us of this in the Full Copy?</strong><br />
-Not in Full Copy. When a Full Copy is run after a rate has been deleted, you will only receive whatever is currently loaded in the system. You will be notified of a rate being removed by a Delta instead of a Full Copy after its removal.</p>
 
 
 
@@ -3732,7 +3804,18 @@ Not in Full Copy. When a Full Copy is run after a rate has been deleted, you wil
           </div>
           <div class="menu-right">
             <div>
-              
+              <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#generic">Generic</a></li>
+<li><a href="#fullcopy">FullCopy</a></li>
+<li><a href="#inventory">Inventory</a></li>
+<li><a href="#avail">Avail</a></li>
+<li><a href="#prices">Prices</a></li>
+</ul></li>
+</ul>
+</nav>
             </div>
           </div>
           <div class="clear"></div>
@@ -3746,7 +3829,10 @@ Not in Full Copy. When a Full Copy is run after a rate has been deleted, you wil
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/getting-started/" title="Go to next page | Getting Started" style="margin-right: 0px;">Getting Started<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/channelx/documentation/pricetut/" title="Go to previous page | Price Use Cases"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Price Use Cases</a>
+            </li>
+        <li class="page-item">
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/channelx/release-notes/breaking-changes/" title="Go to next page | ChannelX breaking changes" style="margin-right: 0px;">ChannelX breaking changes<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">
