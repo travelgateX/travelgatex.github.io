@@ -7815,11 +7815,13 @@ Supplier Product segmentation over a Supplier API implementation. Each Supplier 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/black-list/</guid>
-      <description>The blacklist plugin is used to ignore hotel code(s) when we a search query is executed. There are 2 types of blacklists:
- Filter hotel code of a specific Access Filter hotel codes of a specific Supplier  Loading a blacklist is as easy as following the steps below:
-Access Blacklist Blacklist is applied for specific Access
+      <description>The blacklist plugin is used to ignore hotel code(s) when we a search query is executed.
+Loading a blacklist is as easy as following the steps below:
 File Format The file should be in the below format:
- Encoding: UTF-8</description>
+ Encoding: UTF-8
+ File Name: blacklist\_access\_hotels.csv
+ Header Row: IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+ IdRule: Unique identifier of the rule.  Criteria rows: * ClientToken, NoClientToken: List of clienttoken separated by &amp;lsquo;;&amp;rsquo; * Client, NoClient: List of client codes separated by &amp;lsquo;;&amp;rsquo; * Supplier, NoSupplier: List of supplier codes separated by &amp;lsquo;;&amp;rsquo; * Access, NoAccess: List of access codes separated by &amp;lsquo;;&amp;rsquo; * Context, NoContext: List of operation context codes separated by &amp;lsquo;;&amp;rsquo;.</description>
     </item>
     
     <item>
