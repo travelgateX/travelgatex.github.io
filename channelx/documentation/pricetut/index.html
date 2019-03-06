@@ -3702,15 +3702,15 @@
 <p>Three price charging types are allowed: <em>price per Room</em>, <em>price per Pax</em> and <em>price per Occupancy</em>. When more than one price is charged for the same day, the lowest price will be returned as available price.</p>
 
 <p><strong>Price per Room</strong><br />
-All occupancies allowed in the room will have the same price. If an <code>AdditionalGuestAmount</code> is charged for occupancies over the standard occupancy, they will have to be applied.</p>
+When a price is charged per Room means that all occupancies allowed in the room will have the same price. If an <code>AdditionalGuestAmount</code> are charged for occupancies over the standard occupancy, they will be applied.</p>
 
 <p><strong>Price per Pax</strong><br />
-The price is for the number of guests specified.</p>
+When a price is charged per Pax means that the price is for the number of guests specified.</p>
 
-<p>If <code>NumberOfGuests</code> is equal or under the standard occupancy, the price returned will have to be the same as the price charged. If <code>NumberOfGuests</code> is over the Standard Occupancy the price is calculated from the Standard Occupancy price and the <code>AdditionalGuestAmount</code> charged.</p>
+<p>If <code>NumberOfGuests</code> is equal or under the standard occupancy, the price returned will have to be the same as the price charged. If <code>NumberOfGuests</code> is over the Standard Occupancy, the price is calculated from the Standard Occupancy price and the <code>AdditionalGuestAmount</code> charged.</p>
 
 <p><strong>Price per Occupancy</strong><br />
-The price will only be available for the specified occupancy. <strong>No</strong> <code>AdditionalGuestAmount</code> can be applied.</p>
+When a price is charged per Occupancy means that this price will only be available for the specified occupancy. <strong>No</strong> <code>AdditionalGuestAmount</code> are applied.</p>
 
 <p><strong>Notes</strong></p>
 
@@ -3720,13 +3720,13 @@ babies are always defined in AdditionalGuestAmounts.</li>
 
 <li><p>The possible Type values in the AdditionalGuestAmount tag are
 Exclusive and not specified.
-&gt; If there&rsquo;s no value specified then the price is a relative and it&rsquo;s added to   the price of the current pax.<br />
-If the value is &ldquo;Exclusive&rdquo; then the price is absolute and will represent the total price of the current pax.</p></li>
+&gt; If there is no value specified, then the price is a relative and it is added to the price of the current pax.<br />
+If the value is &ldquo;Exclusive&rdquo;, then the price is absolute and will represent the total price of the current pax.</p></li>
 
-<li><p>If the price is per room then all AdditionalGuestAmount must be
+<li><p>If the price is per Room, then all AdditionalGuestAmount must be
 relative.</p></li>
 
-<li><p>If the price is per occupancy then <em>@Type</em> should be <strong>14</strong> and <em>@Code</em> should
+<li><p>If the price is per Occupancy then <em>@Type</em> should be <strong>14</strong> and <em>@Code</em> should
 be specified.</p></li>
 
 <li><p>An Occupancy is defined by <em>AdultNumber-ChildNumber-InfantNumber</em>. E.g.: <em>@Code</em> for an occupancy of 2 adults, 1 child and 0 babies would be &ldquo;2-1-0&rdquo;</p></li>
