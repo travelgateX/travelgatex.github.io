@@ -7813,8 +7813,8 @@ Supplier Product segmentation over a Supplier API implementation. Each Supplier 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/black-list/</guid>
-      <description>The blacklist plugin is used to ignore hotel code(s) when we a search query is executed.
-Loading a blacklist is as easy as following the steps below:
+      <description>The Blacklist plugin is used to ignore hotel code(s) when we a Search query is executed.
+Loading a Blacklist is as easy as following the steps below:
 File Format The file should be in the below format:
  Encoding: UTF-8
  File Name: blacklist\_access\_hotels.csv
@@ -8211,8 +8211,8 @@ Search Single Mode This mode is used when the client only wants to get options f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/concepts/search-single-mode/</guid>
-      <description>On this page you will learn about Transactional Booking Flow to Search, quote and confirm a reservation. You will also see the difference between the Search Single Mode VS Search Multi Mode. You can find the necessary access codes used by using the admin-query
-Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use.</description>
+      <description>On this page you will learn about the Transactional Booking Flow to Search, Quote and Confirm a reservation. You will also be able to see the difference between the Search Single Mode VS Search Multi Mode. In this sense, you can find the necessary access codes used by using the admin-query
+Search Single Mode This mode is used when the client only wants to receive options from a single access.</description>
     </item>
     
     <item>
