@@ -3697,9 +3697,353 @@
               
 
 
-<p>{{&lt; graphiql-script queries=&rdquo;[{\&ldquo;apikey\&rdquo;:\&ldquo;64780338-49c8-4439-7c7d-d03c2033b145\&ldquo;,\&ldquo;gist\&rdquo;:\&ldquo;<a href="https://gist.githubusercontent.com/tgx-bot/6972ecae51e849fe8c49305bf0032dfe/raw&quot;,&quot;divname&quot;:&quot;div_authorization&quot;},{&quot;apikey&quot;:&quot;64780338-49c8-4439-7c7d-d03c2033b145&quot;,&quot;gist&quot;:&quot;https://gist.githubusercontent.com/alexjmoya/b5dff8d1ec9c6f61dc0392a20558be67/raw&quot;,&quot;divname&quot;:&quot;div_search&quot;},{&quot;apikey&quot;:&quot;64780338-49c8-4439-7c7d-d03c2033b145&quot;,&quot;gist&quot;:&quot;https://gist.githubusercontent.com/alexjmoya/f6d343260df0e75ab636779c2e00db39/raw&quot;,&quot;divname&quot;:&quot;div_quote&quot;},{&quot;apikey&quot;:&quot;64780338-49c8-4439-7c7d-d03c2033b145&quot;,&quot;gist&quot;:&quot;https://gist.githubusercontent.com/alexjmoya/64dfb6604667ee86399b7857708830e9/raw&quot;,&quot;divname&quot;:&quot;div_book&quot;" target="_blank">https://gist.githubusercontent.com/tgx-bot/6972ecae51e849fe8c49305bf0032dfe/raw&quot;,&quot;divname&quot;:&quot;div_authorization&quot;},{&quot;apikey&quot;:&quot;64780338-49c8-4439-7c7d-d03c2033b145&quot;,&quot;gist&quot;:&quot;https://gist.githubusercontent.com/alexjmoya/b5dff8d1ec9c6f61dc0392a20558be67/raw&quot;,&quot;divname&quot;:&quot;div_search&quot;},{&quot;apikey&quot;:&quot;64780338-49c8-4439-7c7d-d03c2033b145&quot;,&quot;gist&quot;:&quot;https://gist.githubusercontent.com/alexjmoya/f6d343260df0e75ab636779c2e00db39/raw&quot;,&quot;divname&quot;:&quot;div_quote&quot;},{&quot;apikey&quot;:&quot;64780338-49c8-4439-7c7d-d03c2033b145&quot;,&quot;gist&quot;:&quot;https://gist.githubusercontent.com/alexjmoya/64dfb6604667ee86399b7857708830e9/raw&quot;,&quot;divname&quot;:&quot;div_book&quot;</a>},
-{\&ldquo;apikey\&rdquo;:\&ldquo;64780338-49c8-4439-7c7d-d03c2033b145\&ldquo;,\&ldquo;gist\&rdquo;:\&ldquo;<a href="https://gist.githubusercontent.com/alexjmoya/f2933df3054688d8a3551ca3cb16bf90/raw&quot;,&quot;divname&quot;:&quot;div_cancel&quot;},{&quot;apikey&quot;:&quot;64780338-49c8-4439-7c7d-d03c2033b145&quot;,&quot;gist&quot;:&quot;https://gist.githubusercontent.com/alexjmoya/78fcc6ec8ba6c7535d39f687aa0e714d/raw&quot;,&quot;divname&quot;:&quot;div_bookinglist&quot;}]&quot;" target="_blank">https://gist.githubusercontent.com/alexjmoya/f2933df3054688d8a3551ca3cb16bf90/raw&quot;,&quot;divname&quot;:&quot;div_cancel&quot;},{&quot;apikey&quot;:&quot;64780338-49c8-4439-7c7d-d03c2033b145&quot;,&quot;gist&quot;:&quot;https://gist.githubusercontent.com/alexjmoya/78fcc6ec8ba6c7535d39f687aa0e714d/raw&quot;,&quot;divname&quot;:&quot;div_bookinglist&quot;}]&quot;</a> &gt;}}
-{{&lt; graphiql-styles &gt;}}</p>
+<p><script>
+  const apiKeyJO = "q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ";
+  const apiKeyDC = "64780338-49c8-4439-7c7d-d03c2033b145";
+
+  $(document).ready(main);
+  function main() {
+    const q = '[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/6972ecae51e849fe8c49305bf0032dfe\/raw\x22,\x22divname\x22:\x22div_authorization\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/alexjmoya\/b5dff8d1ec9c6f61dc0392a20558be67\/raw\x22,\x22divname\x22:\x22div_search\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/alexjmoya\/f6d343260df0e75ab636779c2e00db39\/raw\x22,\x22divname\x22:\x22div_quote\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/alexjmoya\/64dfb6604667ee86399b7857708830e9\/raw\x22,\x22divname\x22:\x22div_book\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/alexjmoya\/f2933df3054688d8a3551ca3cb16bf90\/raw\x22,\x22divname\x22:\x22div_cancel\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/alexjmoya\/78fcc6ec8ba6c7535d39f687aa0e714d\/raw\x22,\x22divname\x22:\x22div_bookinglist\x22}]';
+    const queries = JSON.parse(q);
+    
+    for (const q of queries) {
+      iterateQueries(q)
+    }
+  }
+
+  function iterateQueries(q) {
+    if(!q.gist.includes('http')) return;
+    $.get(q.gist, function (data) {
+      q.data = data;
+      renderGist(q);
+    });
+  }
+
+  function renderGist(q) {
+    
+
+    var fetchURL = 'https://api.travelgatex.com';
+
+    
+    var search = window.location.search;
+    var parameters = {};
+    search.substr(1).split('&').forEach(function (entry) {
+      var eq = entry.indexOf('=');
+      if (eq >= 0) {
+        parameters[decodeURIComponent(entry.slice(0, eq))] =
+          decodeURIComponent(entry.slice(eq + 1));
+      }
+    });
+
+    
+    parameters.variables = ''; 
+
+    const formattedQuery = q.data;
+    parameters.query = formattedQuery;
+
+
+    if (parameters.variables) {
+      try {
+        parameters.variables =
+          JSON.stringify(JSON.parse(parameters.variables), null, 2);
+      } catch (e) {
+        
+        
+      }
+    }
+
+    
+    
+
+    function onEditQuery(newQuery) {
+      parameters.query = newQuery;
+      console.log(parameters.query);
+      updateURL();
+    }
+
+    function onEditVariables(newVariables) {
+      parameters.variables = newVariables;
+      updateURL();
+    }
+
+    function onEditOperationName(newOperationName) {
+      parameters.operationName = newOperationName;
+      updateURL();
+    }
+
+    function updateURL() {
+      var newSearch = '?' + Object.keys(parameters).filter(function (key) {
+        return Boolean(parameters[key]);
+      }).map(function (key) {
+        return encodeURIComponent(key) + '=' +
+          encodeURIComponent(parameters[key]);
+      }).join('&');
+      history.replaceState(null, null, newSearch);
+    }
+
+    
+    
+    
+    function graphQLFetcher(graphQLParams) {
+      const token = q.apikey;
+      
+      
+      
+      return fetch(fetchURL, {
+        method: 'post',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': token ? 'Apikey ' + token : null
+        },
+        body: JSON.stringify(graphQLParams),
+        
+      }).then(function (response) {
+        
+        return response.text();
+      }).then(function (responseBody) {
+        try {
+          return JSON.parse(responseBody);
+        } catch (error) {
+          return responseBody;
+        }
+      });
+    }
+
+    
+    
+    
+    
+    ReactDOM.render(
+      React.createElement(GraphiQL, {
+        fetcher: graphQLFetcher,
+        query: parameters.query,
+        variables: parameters.variables,
+        operationName: parameters.operationName,
+        onEditQuery: onEditQuery,
+        onEditVariables: onEditVariables,
+        onEditOperationName: onEditOperationName
+      }),
+      document.getElementById(q.divname),
+      _ => {
+        const element = $(`#${q.divname}`);
+        const button = $(element).find('button.execute-button')[0]
+        $(element).append(button);
+      }
+    );
+  }
+</script>
+<style>
+   
+  #tab-holder {
+    transform: scale(0);
+    position: absolute;
+  }
+
+  #tab-holder.show-tabs {
+    transform: scale(1);
+    position: initial;
+  }
+
+  ul.tab-pannel-nav {
+    margin-bottom: -32px;
+  }
+
+  ul.tabs {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  li.tab {
+    margin-bottom: -6px;
+  }
+
+  li.tab,
+  li.tab>label {
+    cursor: pointer;
+  }
+
+  li.tab>label {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    display: block;
+    padding: .5rem 1rem;
+    border-color: #e9ecef #e9ecef #dee2e6;
+  }
+
+  li.tab:hover>label, li.tab.active>label {
+    background-color: #ceddec;
+  }
+
+  .display {
+    max-height: 70vh;
+    overflow: auto;
+  }
+
+  .tab-panel,
+  .display {
+    transform: scale(0);
+    position: absolute;
+  }
+
+
+  .active-tab-panel,
+  .display.active {
+    transform: scale(1) !important;
+    position: initial !important;
+  }
+
+  .graphiql.display {
+    position: relative;
+    z-index: 0;
+    margin: 3.3rem 0 3.3rem 0;
+  }
+
+  .explanation {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  div.graphiql-display {
+    position: relative;
+  }
+
+  div.graphiql.display>button,
+  div.graphiql-display>button {
+    width: 47.5px !important;
+    height: 47.5px !important;
+    background-color: #b6bbbf !important;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    z-index: 1004;
+    transform: translateX(-37%);
+  }
+
+  div.graphiql.display>button svg,
+  div.graphiql-display>button svg {
+    fill: #fff !important;
+    width: 30px;
+    height: 28px;
+  }
+
+  div.graphiql.display>button:hover {
+    background-color: #98a0a6 !important;
+  }
+
+  div.graphiql.display>button:focus {
+    outline: none;
+  }
+
+  div.topBarWrap,
+  div.variable-editor {
+    display: none !important;
+  }
+
+  div.CodeMirror-gutter.CodeMirror-foldgutter {
+    width: 1px;
+    padding: 0 !important;
+  }
+
+  div.CodeMirror-gutter-wrapper {
+    display: none;
+  }
+
+  #pulse-holder {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%);
+
+  }
+
+  .pulse {
+    width: 1px;
+    height: 1px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+  }
+
+  .pulse:hover {
+    animation: none;
+  }
+
+  div#pulse-holder>img {
+    width: 100%;
+    animation: rotation 2s infinite linear;
+  }
+
+  div.query-editor div.CodeMirror-sizer {
+    margin-left: 0 !important;
+    padding-left: 2rem;
+  }
+
+  div.query-editor div.CodeMirror-gutters {
+    display: none;
+  }
+
+  div.query-editor>div.CodeMirror {
+    background-color: #F5F6F6 !important;
+  }
+
+  div.result-window>div.CodeMirror {
+    background-color: #F0F2F2 !important;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(84, 145, 242, 0.4);
+    }
+
+    85% {
+      box-shadow: 0 0 0 60px rgba(84, 145, 242, 0.1);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    }
+  }
+
+
+  @keyframes rotation {
+    from {
+      transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    to {
+      transform: rotate3d(0, 1, 0, 359deg);
+    }
+  }
+
+
+
+   
+  .queryWrap {
+    width: 50%;
+  }
+
+  .CodeMirror-sizer {
+    max-width: auto !important;
+    min-width: auto !important;
+  }
+
+  .graphiql-container .CodeMirror {
+    position: relative !important;
+  }
+</style>
+</p>
 
 <p>In this section you will find all the necessary queries in order to perform a booking flow using <a href="https://api.travelgatex.com/" target="_blank">GraphQL Playground</a>.</p>
 
@@ -3714,14 +4058,24 @@
 <p>In case you have an Apikey, you can use it by introducing it in the HTTP Headers. Otherwise, you can use the following Apikey for test purposes:<br />
 <code>64780338-49c8-4439-7c7d-d03c2033b145</code></p>
 
-<p>{{&lt; graphiql-tags tag=&ldquo;div_authorization&rdquo; &gt;}}</p>
+<p><div id='div_authorization' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div></p>
 
 <h3 id="search">Search</h3>
 
 <p>By means of the following query, you will be able to perform an availability search for a given specific criteria.
 Modify &ldquo;criteriaSearch&rdquo; fields using valid dates and press the button play to send the query.</p>
 
-<p>{{&lt; graphiql-tags tag=&ldquo;div_search&rdquo; &gt;}}</p>
+<div id='div_search' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div>
 
 <p>In case you need to replicate the search, there is a possibility to do so by using our token (see second tab). This token is obtained in the response of a search query and you will find it in each of the options returned.</p>
 
@@ -3729,7 +4083,12 @@ Modify &ldquo;criteriaSearch&rdquo; fields using valid dates and press the butto
 
 <p>This query aims to return the total price and cancellation policies of the option selected in the previous step. In the Query Variables, modify the optionRefId with the option id value returned in the search response and send the query:</p>
 
-<p>{{&lt; graphiql-tags tag=&ldquo;div_quote&rdquo; &gt;}}</p>
+<div id='div_quote' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div>
 
 <p>In this case, you can modify the language, if you don’t indicate the language, it uses the same language of search.</p>
 
@@ -3740,7 +4099,12 @@ Modify &ldquo;criteriaSearch&rdquo; fields using valid dates and press the butto
 <!--<object data="https://graphqlbin.com/1wxWIp" type="text/html" width="100%" height="400px" align="left">
 </object>-->
 
-<p>{{&lt; graphiql-tags tag=&ldquo;div_book&rdquo; &gt;}}</p>
+<div id='div_book' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div>
 
 <h3 id="cancel">Cancel</h3>
 
@@ -3749,7 +4113,12 @@ Modify &ldquo;criteriaSearch&rdquo; fields using valid dates and press the butto
 <!--<object data="https://graphqlbin.com/68LYhr" type="text/html" width="100%" height="400px" align="left">
 </object>-->
 
-<p>{{&lt; graphiql-tags tag=&ldquo;div_cancel&rdquo; &gt;}}</p>
+<div id='div_cancel' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div>
 
 <h3 id="bookinglist">Booking List</h3>
 
@@ -3760,7 +4129,12 @@ Modify &ldquo;criteriaSearch&rdquo; fields using valid dates and press the butto
 
 <p><!--<object data="https://graphqlbin.com/0RvEU2" type="text/html" width="100%" height="400px" align="left">
 </object>-->
-{{&lt; graphiql-tags tag=&ldquo;div_bookinglist&rdquo; &gt;}}</p>
+<div id='div_bookinglist' class='graphiql-display'>
+    <div class="pulse-holder">
+        <div class="pulse"></div>
+        <img src="/images/iconX.png">
+    </div>
+</div></p>
 
 <hr/>
 <h2>Comments</h2>
