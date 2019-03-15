@@ -2450,6 +2450,15 @@ GraphQL schema definition type GiataData {  id: ID!    source: URI!    href: URI
     </item>
     
     <item>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/stats/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.</description>
+    </item>
+    
+    <item>
       <title>Group</title>
       <link>/mappea/reference/objects/group/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -5048,8 +5057,8 @@ Once the data is consolidated in our Data warehouse, we can share data depending
       
       <guid>/stats/overview/</guid>
       <description>In order to analyze useful metrics about performance, Stats-X extracts, loads and stores data from all TravelgateX products.
-Once the metrics are stored in our Time Series Databases, you can analyze your performance using or API stats query or TravelgateX Stats Web
-  Working with Stats-X The most important use case working with Stats-X is to query about your performance.</description>
+Once the metrics are stored in our infraestructure, you can query and nalyze your performance using API stats query or TravelgateX Stats Web
+  Working with Stats-X The most important use case working with Stats is to query about your performance.</description>
     </item>
     
     <item>
@@ -8309,7 +8318,7 @@ In this case you can search the bookings with references or by dates, the dates 
       
       <guid>/stats/howtos/howto-query-stats/</guid>
       <description>This page shows you how to query Stats using API or TravelgateX Web.
-How to request There are 2 ways to query about your performance: - As a Buyer - As a Seller
+How to request You can query about your performance as a buyer or as a seller.
 Below are shown different examples for different casuistry:
     002160e4c2822635ef3b1a3c81b1d44d In this availability case, you will not receive results due to the hotel&amp;rsquo;s restriction of minimum stay. In this case, if you change the date range to 3 days or more, you will receive availability /002160e4c2822635ef3b1a3c81b1d44d</description>
     </item>
@@ -8395,15 +8404,6 @@ Advanced criteria It explains different parameters that can be set up in the req
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.</description>
-    </item>
-    
-    <item>
-      <title>GraphQL Schema breaking changes</title>
-      <link>/stats/release-notes/breaking-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/stats/release-notes/breaking-changes/</guid>
       <description>Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.</description>
     </item>
     

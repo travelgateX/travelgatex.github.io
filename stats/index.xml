@@ -17,27 +17,8 @@
       
       <guid>/stats/overview/</guid>
       <description>In order to analyze useful metrics about performance, Stats-X extracts, loads and stores data from all TravelgateX products.
-Once the metrics are stored in our Time Series Databases, you can analyze your performance using or API stats query or TravelgateX Stats Web
-  Working with Stats-X The most important use case working with Stats-X is to query about your performance.</description>
-    </item>
-    
-    <item>
-      <title>Changelog</title>
-      <link>/stats/release-notes/changelog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/stats/release-notes/changelog/</guid>
-      <description> Easily accessible log of notable changes to Stats-X
-2019-03-14  Insights-X product documentation   </description>
-    </item>
-    
-    <item>
-      <title>GraphQL Schema breaking changes</title>
-      <link>/stats/release-notes/breaking-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/stats/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.</description>
+Once the metrics are stored in our infraestructure, you can query and nalyze your performance using API stats query or TravelgateX Stats Web
+  Working with Stats-X The most important use case working with Stats is to query about your performance.</description>
     </item>
     
   </channel>
