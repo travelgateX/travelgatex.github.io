@@ -4431,6 +4431,13 @@ Yes, you could filter the response by introducing the tag <a href="/hotelx/refer
 
 <p>No, but you can retrieve the cancellation policies where this information is included. You can check the booking information (cancel policies included) with the <a href="/travelgatex/reference/objects/hotelbooking"><code>HotelBooking</code></a> query.</p>
 
+<p><strong>How are cancellation costs calculated and displayed?</strong>
+There are three ways to calculate cancellation costs, depending on the provider. The field value will have the amount associated to each cancellation type:
+- Per nights: indicates the amount of nights to be penalized.
+- Percentage: indicates the percentage of the total booking. The field value will have possible values between 0 and 100.
+- Import: indicates the amount to be paid.
+Bear in mind, that a booking may have more than one penalty type associated, depending on the amount of hours before entrance date that you perform the cancellation.</p>
+
 <p><strong>Cancel Policy hoursBefore checkin date - What timezone is the checkIn date?</strong>
 Normally UTC time is used, but if the provider responds with hotel timezone we add 24 hours.
 You will find further information <a href="/hotelx/reference/objects/cancelpenalty/"><code>here</code></a></p>
