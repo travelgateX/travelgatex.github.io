@@ -4687,7 +4687,7 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <li><strong>8</strong> = More than 3 months (90+ days).</li>
 </ul></li>
 <li><strong>nights (NUMBER).</strong> Length of stay.</li>
-<li><strong>market (STRING).</strong> Source market of paxes (ISO 3166-1 alpha-2).</li>
+<li><strong>market (STRING).</strong> Source market of the paxes (ISO 3166-1 alpha-2).</li>
 <li><strong>num_rooms (NUMBER).</strong> Quantity of rooms.</li>
 <li><strong><strong>pax_type</strong> (NUMBER).</strong> It is an enumeration to describe a combination of paxes (adults + children + infants).
 
@@ -4703,7 +4703,7 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <li><strong>quote_ok (NUMBER).</strong> Quantity of quotes that returned a correct result for above key.</li>
 <li><strong>quote_nok (NUMBER).</strong> Quantity of quotes that returned a wrong result for above key.</li>
 <li><strong>booking_ok_net (NUMBER).</strong> Quantity of confirmed bookings for above key where we have the net amount in EUR.</li>
-<li><strong>booking_ok_unknown (NUMBER).</strong> Quantity of confirmed bookings for above key where we have the amount in EUR but it may have applied commissions.</li>
+<li><strong>booking_ok_unknown (NUMBER).</strong> Quantity of confirmed bookings for above key that have the amount in EUR but it may have commissions applied.</li>
 <li><strong>booking_nok (NUMBER).</strong> Quantity of failed bookings for above key.</li>
 <li><strong>min_amount_booking_net (NUMBER).</strong> Net amount of cheapest booking for above key.</li>
 <li><strong>max_amount_booking_net (NUMBER).</strong> Net amount of most expensive booking for above key.</li>
@@ -4725,7 +4725,7 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <li><strong>max_amount_search_unknown (NUMBER).</strong> Amount of most expensive option for that hotel (Commission not available).</li>
 <li><strong>tot_amount_search_unknown (NUMBER).</strong> Total amount of searches for that hotel (Commission not available).</li>
 <li><strong>quote_ok_net (NUMBER).</strong> Quantity of quotes for above key and hotel with net price available.</li>
-<li><strong>quote_ok_unknown (NUMBER).</strong> Quantity of quotes for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
+<li><strong>quote_ok_unknown (NUMBER).</strong> Quantity of quotes for above key and hotel with a price over we don&rsquo;t know if any commission is applied.</li>
 <li><strong>quote_nok (NUMBER).</strong> Quantity of failed quotes for above key and hotel.</li>
 <li><strong>min_amount_quote_net (NUMBER).</strong> Net amount of cheapest quote for that hotel.</li>
 <li><strong>max_amount_quote_net (NUMBER).</strong> Net amount of most expensive quote for that hotel.</li>
@@ -4736,12 +4736,12 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <li><strong>booking_ok_net (NUMBER).</strong> Quantity of bookings for above key and hotel with net price available.</li>
 <li><strong>booking_ok_unknown (NUMBER).</strong> Quantity of bookings for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
 <li><strong>booking_nok (NUMBER).</strong> Quantity of failed bookings for above key and hotel.</li>
-<li><strong>min_amount_booking_net (NUMBER).</strong> Net amount of cheapest booking for that hotel.</li>
-<li><strong>max_amount_booking_net (NUMBER).</strong> Net amount of most expensive booking for that hotel.</li>
-<li><strong>tot_amount_booking_net (NUMBER).</strong> Total net amount of booking for that hotel.</li>
-<li><strong>min_amount_booking_unknown (NUMBER).</strong> Amount of cheapest booking for that hotel (Commission not available).</li>
-<li><strong>max_amount_booking_unknown (NUMBER).</strong> Amount of most expensive booking for that hotel (Commission not available).</li>
-<li><strong>tot_amount_booking_unknown (NUMBER).</strong> Total amount of booking for that hotel (Commission not available).</li>
+<li><strong>min_amount_booking_net (NUMBER).</strong> Net amount of cheapest bookings for that hotel.</li>
+<li><strong>max_amount_booking_net (NUMBER).</strong> Net amount of most expensive bookings for that hotel.</li>
+<li><strong>tot_amount_booking_net (NUMBER).</strong> Total net amount of bookings for that hotel.</li>
+<li><strong>min_amount_booking_unknown (NUMBER).</strong> Amount of cheapest bookings for that hotel (Commission not available).</li>
+<li><strong>max_amount_booking_unknown (NUMBER).</strong> Amount of most expensive bookings for that hotel (Commission not available).</li>
+<li><strong>tot_amount_booking_unknown (NUMBER).</strong> Total amount of bookings for that hotel (Commission not available).</li>
 </ul></li>
 </ul>
 
@@ -5083,8 +5083,8 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
 <li><strong>booking_date (TIMESTAMP).</strong> Booking date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
 <li><strong>checkin_date (TIMESTAMP).</strong> Checkin date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
-<li><strong>amount (NUMBER).</strong> Amount of booking in EUR.</li>
-<li><strong>cancel_date (TIMESTAMP).</strong> Cancel date in UTC (format: YYYY-MM-DD hh:mm:ss) if the booking was cancelled else will be empty.</li>
+<li><strong>amount (NUMBER).</strong> Amount of bookings in EUR.</li>
+<li><strong>cancel_date (TIMESTAMP).</strong> Cancel date in UTC (format: YYYY-MM-DD hh:mm:ss) if the booking was cancelled elsewhere will be empty.</li>
 <li><strong>market (STRING).</strong> Source market of paxes (ISO 3166-1 alpha-2).</li>
 <li><strong>market_name (STRING).</strong> Source market&rsquo;s name.</li>
 <li><strong>num_room (NUMBER).</strong> Quantity of rooms booked.</li>
@@ -5147,7 +5147,7 @@ Descriptions of each table and their correspondent fields are found below:</p>
 
 <h2 id="daily-portfolio-seller">daily_portfolio_seller</h2>
 
-<p>This table is used to know which hotels over supplier&rsquo;s portfolio are being queried by the clients. This can be helpful to know which percentage over portfolio is mapped by the client.</p>
+<p>This table is used to know which hotels over supplier&rsquo;s portfolio are being queried by the clients. This can be helpful to know which percentage over portfolio is being mapped by the client.</p>
 
 <p><strong>fields</strong></p>
 
@@ -5160,9 +5160,9 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <li><strong>status</strong>. It is an enumeration to describe the status of the hotel.
 
 <ul>
-<li>0 = Hotel code queried but it doesn&rsquo;t appear in provider&rsquo;s portfolio. It can be due to a wrong mapping in client&rsquo;s system.</li>
+<li>0 = Hotel code queried but it doesn&rsquo;t appear in provider&rsquo;s portfolio. It can be due to a wrong mapping in the client&rsquo;s system.</li>
 <li>1 = Hotel code not queried but it appears in provider&rsquo;s portfolio. It can be due to a mismapping in the client&rsquo;s system.</li>
-<li>2 = Hotel code queried and it appears in provider&rsquo;s portfolio.</li>
+<li>2 = Hotel code queried and it appears in the provider&rsquo;s portfolio.</li>
 </ul></li>
 </ul>
 
@@ -5229,7 +5229,7 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <li><strong>st_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss)</li>
 <li><strong>client_id (STRING).</strong> Client unique ID</li>
 <li><strong>provider_id (STRING).</strong> Provider unique ID</li>
-<li><strong>speed (BOOLEAN).</strong> It indicates if the source of request was the client or Speed-X to load info in cache (0=Client, 1=Speed-X).</li>
+<li><strong>speed (BOOLEAN).</strong> It indicates if the source of the request was the client, or Speed-X to load info in cache (0=Client, 1=Speed-X).</li>
 <li><strong>avail_ok (NUMBER).</strong> Quantity of searches with available results.</li>
 <li><strong>avail_nok_results (NUMBER).</strong> Quantity of searches without available results.</li>
 <li><strong>avail_nok_provider (NUMBER).</strong> Quantity of searches with generic error from provider.</li>
@@ -5252,7 +5252,7 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <li><strong>cancel_ok (NUMBER).</strong> Quantity of correct cancellations.</li>
 <li><strong>cancel_nok (NUMBER).</strong> Quantity of cancellations with an error.</li>
 <li><strong>cancel_time (NUMBER).</strong> Total response time (in milliseconds) for cancellations.</li>
-<li><strong>other_ok (NUMBER).</strong> Quantity of transactions that cannot be included in one of above groups and that didn&rsquo;t get an error.</li>
+<li><strong>other_ok (NUMBER).</strong> Quantity of transactions that cannot be included in one of above groups and that didn&rsquo;t receive an error.</li>
 <li><strong>other_nok (NUMBER).</strong> Quantity of other transactions with an error.</li>
 <li><strong>other_time (NUMBER).</strong> Total response time (in milliseconds) for other transactions.</li>
 </ul>
@@ -5396,7 +5396,7 @@ Descriptions of each table and their correspondent fields are found below:</p>
 <h2 id="daily-benchmarking-seller">daily_benchmarking_seller</h2>
 
 <p>This table contains different benchmarks of your organization for the TravelgateX marketplace.
-The benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.</p>
+The benchmarks are based on the total of different and available hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.</p>
 
 <p><strong>fields</strong></p>
 
@@ -5414,49 +5414,49 @@ The benchmarks are based on the total of differents and availables hotels that h
 <li><strong>index_norm_search_ok_net (FLOAT).</strong> Min-Max Normalization of the field search_ok_net divided by avg_search_ok_net.</li>
 <li><strong>booking_ok_net (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, city, country, provider_id).</li>
 <li><strong>perc_booking_ok_net (FLOAT).</strong> Percentage of confirmed bookings for key (search_date, city, country) of the total of sellers of TravelgateX.</li>
-<li><strong>percentile_booking_ok_net (FLOAT).</strong> Value of percentile of the sorted list of confirmed bookings where we have the net amount in EUR of all the sellers of TravelgateX  for key (search_date, city, country).</li>
+<li><strong>percentile_booking_ok_net (FLOAT).</strong> Value of percentile of the sorted list of confirmed bookings, where we have the net amount in EUR of all the sellers of TravelgateX for key (search_date, city, country).</li>
 <li><strong>rank_booking_ok_net (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, city, country) of the total of sellers of TravelgateX.</li>
 <li><strong>avg_booking_ok_net (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, city, country) of the total of sellers of TravelgateX.</li>
 <li><strong>index_norm_booking_ok_net (FLOAT).</strong> Min-Max Normalization of the field booking_ok_net divided by avg_booking_ok_net.</li>
-<li><strong>tot_amount_booking_net (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, city, country, provider_id).</li>
+<li><strong>tot_amount_booking_net (FLOAT).</strong> Total net amount in EUR of confirmed bookings for key (search_date, city, country, provider_id).</li>
 <li><strong>perc_tot_amount_booking_net (FLOAT).</strong> Percentage of net amount in EUR of confirmed bookings for key (search_date, city, country) of the total of sellers of TravelgateX.</li>
-<li><strong>percentile_tot_amount_booking_net (FLOAT).</strong> Value of percentile of the sorted list of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, city, country).</li>
+<li><strong>percentile_tot_amount_booking_net (FLOAT).</strong> Value of percentile of the sorted list of net amount in EUR of confirmed bookings of all the sellers of TravelgateX for key (search_date, city, country).</li>
 <li><strong>rank_tot_amount_booking_net (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, city, country) of the total of sellers of TravelgateX.</li>
 <li><strong>avg_tot_amount_booking_net (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, city, country) of the total of sellers of TravelgateX.</li>
 <li><strong>index_norm_tot_amount_booking_net (FLOAT).</strong> Min-Max Normalization of the field tot_amount_booking_net divided by avg_tot_amount_booking_net.</li>
 <li><strong>search_ok_net_country (NUMBER).</strong> Quantity of unique hotels available for key (search_date, country, provider_id).</li>
 <li><strong>perc_search_ok_net_country (FLOAT).</strong> Percentage of unique hotels available for key (search_date, country) of the total of sellers of TravelgateX.</li>
-<li><strong>percentile_search_ok_net_country (FLOAT).</strong> Value of percentile of the sorted list of unique hotels availables of all the sellers of TravelgateX  for key (search_date, country).</li>
+<li><strong>percentile_search_ok_net_country (FLOAT).</strong> Value of percentile of the sorted list of unique hotels availables of all the sellers of TravelgateX for key (search_date, country).</li>
 <li><strong>rank_search_ok_net_country (NUMBER).</strong> Position of the ranking of unique hotels available for key (search_date, country) of the total of sellers of TravelgateX.</li>
 <li><strong>avg_search_ok_net_country (FLOAT).</strong> Average of unique hotels available for key (search_date, country) of the total of sellers of TravelgateX.</li>
 <li><strong>index_norm_search_ok_net_country (FLOAT).</strong> Min-Max Normalization of the field search_ok_net divided by avg_search_ok_net.</li>
 <li><strong>booking_ok_net_country (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, country, provider_id).</li>
 <li><strong>perc_booking_ok_net_country (FLOAT).</strong> Percentage of Quantity of confirmed bookings for key (search_date, country) of the total of sellers of TravelgateX.</li>
-<li><strong>percentile_booking_ok_net_country (FLOAT).</strong> Value of percentile of the sorted list of confirmed bookings where we have the net amount in EUR of all the sellers of TravelgateX  for key (search_date, country).</li>
+<li><strong>percentile_booking_ok_net_country (FLOAT).</strong> Value of percentile of the sorted list of confirmed bookings, where we have the net amount in EUR for all the sellers of TravelgateX for key (search_date, country).</li>
 <li><strong>rank_booking_ok_net_country (NUMBER).</strong> Position of the ranking of Quantity of confirmed bookings for key (search_date, country) of the total of sellers of TravelgateX.</li>
 <li><strong>avg_booking_ok_net_country (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, country) of the total of sellers of TravelgateX.</li>
 <li><strong>index_norm_booking_ok_net_country (FLOAT).</strong> Min-Max Normalization of the field booking_ok_net divided by avg_booking_ok_net.</li>
-<li><strong>tot_amount_booking_net_country (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, country, provider_id).</li>
+<li><strong>tot_amount_booking_net_country (FLOAT).</strong> Total net amount in EUR of confirmed bookings for key (search_date, country, provider_id).</li>
 <li><strong>perc_tot_amount_booking_net_country (FLOAT).</strong> Percentage of net amount in EUR of confirmed bookings for key (search_date, country) of the total of sellers of TravelgateX.</li>
-<li><strong>percentile_tot_amount_booking_net_country (FLOAT).</strong> Value of percentile of the sorted list of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, country).</li>
+<li><strong>percentile_tot_amount_booking_net_country (FLOAT).</strong> Value of percentile of the sorted list of net amount in EUR of confirmed bookings of all the sellers of TravelgateX for key (search_date, country).</li>
 <li><strong>rank_tot_amount_booking_net_country (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, country) of the total of sellers of TravelgateX.</li>
 <li><strong>avg_tot_amount_booking_net_country (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, country) of the total of sellers of TravelgateX.</li>
 <li><strong>index_norm_tot_amount_booking_net_country (FLOAT).</strong> Min-Max Normalization of the field tot_amount_booking_net divided by avg_tot_amount_booking_net.</li>
 <li><strong>search_ok_net_provider (NUMBER).</strong> Quantity of unique hotels available for key (search_date, provider_id)</li>
 <li><strong>perc_search_ok_net_provider (FLOAT).</strong> Percentage of unique hotels available for key (search_date) of the total of sellers of TravelgateX.</li>
-<li><strong>percentile_search_ok_net_provider (FLOAT).</strong> Value of percentile of the sorted list of unique hotels availables of all the sellers of TravelgateX  for key (search_date).</li>
+<li><strong>percentile_search_ok_net_provider (FLOAT).</strong> Value of percentile of the sorted list of unique hotels availables of all the sellers of TravelgateX for key (search_date).</li>
 <li><strong>rank_search_ok_net_provider (NUMBER).</strong> Position of the ranking of unique hotels available for key (search_date) of the total of sellers of TravelgateX.</li>
 <li><strong>avg_search_ok_net_provider (FLOAT).</strong> Average of unique hotels available for key (search_date) of the total of sellers of TravelgateX.</li>
 <li><strong>index_norm_search_ok_net_provider (FLOAT).</strong> Min-Max Normalization of the field search_ok_net divided by avg_search_ok_net.</li>
 <li><strong>booking_ok_net_provider (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, provider_id).</li>
 <li><strong>perc_booking_ok_net_provider (FLOAT).</strong> Percentage of Quantity of confirmed bookings for key (search_date) of the total of sellers of TravelgateX.</li>
-<li><strong>percentile_booking_ok_net_provider (FLOAT).</strong> Value of percentile of the sorted list of confirmed bookings where we have the net amount in EUR of all the sellers of TravelgateX  for key (search_date).</li>
+<li><strong>percentile_booking_ok_net_provider (FLOAT).</strong> Value of percentile of the sorted list of confirmed bookings, where we have the net amount in EUR of all the sellers of TravelgateX for key (search_date).</li>
 <li><strong>rank_booking_ok_net_provider (NUMBER).</strong> Position of the ranking of Quantity of confirmed bookings for key (search_date) of the total of sellers of TravelgateX.</li>
 <li><strong>avg_booking_ok_net_provider (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date) of the total of sellers of TravelgateX.</li>
 <li><strong>index_norm_booking_ok_net_provider (FLOAT).</strong> Min-Max Normalization of the field booking_ok_net divided by avg_booking_ok_net.</li>
-<li><strong>tot_amount_booking_net_provider (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, provider_id).</li>
+<li><strong>tot_amount_booking_net_provider (FLOAT).</strong> Total net amount in EUR of confirmed bookings for key (search_date, provider_id).</li>
 <li><strong>perc_tot_amount_booking_net_provider (FLOAT).</strong> Percentage of net amount in EUR of confirmed bookings for key (search_date) of the total of sellers of TravelgateX.</li>
-<li><strong>percentile_tot_amount_booking_net_provider (FLOAT).</strong> Value of percentile of the sorted list of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date).</li>
+<li><strong>percentile_tot_amount_booking_net_provider (FLOAT).</strong> Value of percentile of the sorted list of net amount in EUR of confirmed bookings of all the sellers of TravelgateX for key (search_date).</li>
 <li><strong>rank_tot_amount_booking_net_provider (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date) of the total of sellers of TravelgateX.</li>
 <li><strong>avg_tot_amount_booking_net_provider (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date) of the total of sellers of TravelgateX.</li>
 <li><strong>index_norm_tot_amount_booking_net_provider (FLOAT).</strong> Min-Max Normalization of the field tot_amount_booking_net divided by avg_tot_amount_booking_net.</li>
