@@ -7860,7 +7860,7 @@ All notable changes in our platform will be documented on this page. 2019-03-07 
       
       <guid>/insights-x/release-notes/changelog/</guid>
       <description> Easily accessible log of notable changes to Insights-X
-2019-02-21  New table effective_bookings_(buyer|seller)    daily_insights table renamed as insights_daily_(buyer|seller) daily_insights_(client|provider) table renamed as insights_daily_(buyer|seller)   2019-02-07  Insights-X product documentation   </description>
+2019-03-27  New table daily_benchmarking_seller    Insights-X Concepts   2019-02-21  New table effective_bookings_(buyer|seller)    daily_insights table renamed as insights_daily_(buyer|seller) daily_insights_(client|provider) table renamed as insights_daily_(buyer|seller)   2019-02-07  Insights-X product documentation   </description>
     </item>
     
     <item>
@@ -8469,6 +8469,19 @@ How to request     a5b25332a7a5683d602efeb87233a9c7 You can ask for bookings by 
       <description>The commission file should be in the below format:
  Encoding: UTF-8 File Name:  context sequential commission  Extension file: csv Headers:
  ruleId → rule identifier supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date Date format creationDateTo → end creation date Date format checkInFrom → checkin date Date format checkInTo → checkout date Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
+    </item>
+    
+    <item>
+      <title>Concepts</title>
+      <link>/insights-x/datasets/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights-x/datasets/concepts/</guid>
+      <description>On this page you will learn how to interpret the information in our datasets.
+Benchmark How to interpret the information of the table daily_benchmarking_seller.
+Overview On this page, you will learn how to interpret the differents fields of benchmark table.
+First of all, it&amp;rsquo;s important to know that the table is organised in three levels of detail: * City * Country * Provider
+The most specific level of detail is given per city.</description>
     </item>
     
     <item>
