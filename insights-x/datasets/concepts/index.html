@@ -4281,11 +4281,55 @@
 
 <p>Let&rsquo;s see a subset of an example table:</p>
 
-<p>| provider_id | country | city              | city_country          | search_date             | search_ok_net | search_ok_net_country | search_ok_net_provider |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;|
-| provider 1         | ES      | Palma | Palma,ES | 2019-03-19 00:00:00 UTC | 5 | 20 | 30 |
-| provider 1         | ES      | Madrid     | Madrid,ES     | 2019-03-19 00:00:00 UTC | 15 | 20 |30
-| provider 1         | PT    | Sintra    | Sintra,PT    | 2019-03-19 00:00:00:00 UTC |  10 | 10 |30</p>
+<table>
+<thead>
+<tr>
+<th>provider_id</th>
+<th>country</th>
+<th>city</th>
+<th>city_country</th>
+<th>search_date</th>
+<th>search_ok_net</th>
+<th>search_ok_net_country</th>
+<th>search_ok_net_provider</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>provider 1</td>
+<td>ES</td>
+<td>Palma</td>
+<td>Palma,ES</td>
+<td>2019-03-19 00:00:00 UTC</td>
+<td>5</td>
+<td>20</td>
+<td>30</td>
+</tr>
+
+<tr>
+<td>provider 1</td>
+<td>ES</td>
+<td>Madrid</td>
+<td>Madrid,ES</td>
+<td>2019-03-19 00:00:00 UTC</td>
+<td>15</td>
+<td>20</td>
+<td>30</td>
+</tr>
+
+<tr>
+<td>provider 1</td>
+<td>PT</td>
+<td>Sintra</td>
+<td>Sintra,PT</td>
+<td>2019-03-19 00:00:00:00 UTC</td>
+<td>10</td>
+<td>10</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
 
 <p>It means that &lsquo;provider_1&rsquo; has returned 5 differents hotels with availabilty in Palma, and 15 differents hotels in Madrid. Accordingly, &lsquo;provider_1&rsquo; has returned 20 differents hotels with availability in country ES  and 10 differents hotels with availability in country PT. In consequence this provider has returned 30 differents hotels with availability, for the date 2019-03-19 00:00:00 UTC.</p>
 
@@ -4400,29 +4444,38 @@
 </tbody>
 </table>
 
-<p>Let&rsquo;s see what we can say for the &lsquo;provider_1&rsquo; at 2019-03-19 00:00:00 UTC in <strong>availability</strong>:
-* Has returned 1000 diferents hotels availables in Palma.
-* This 1000 diferents hotels are the 1% of the total the differents hotels availables in Palma <sup class="footnote-ref" id="fnref:note1"><a href="#fn:note1">1</a></sup>.
-* The provider is above de 96.3% providers operating in Palma.
-* This provider is the third returning availability in Palma.
-* The average of hotels availables per provider in Palma is 27.58.
-* The value of my index is 0.9, so I&rsquo;m quite near from the best seller.</p>
+<p>Let&rsquo;s see what we can say for the &lsquo;provider_1&rsquo; at 2019-03-19 00:00:00 UTC in <strong>availability</strong>:</p>
 
-<p>Let&rsquo;s see what we can say for the &lsquo;provider_1&rsquo; at 2019-03-19 00:00:00 UTC in <strong>bookings</strong>:
-* Has had 10 bookings Palma.
-* This 10 bookings are the 10% of the total of bookings in Palma.
-* The seller is above de 100% providers operating in Palma (so it&rsquo;s the best).
-* This seller is the first in bookability in Palma.
-* The average of bookings in Palma per seller is 2.
-* The value of my index is 100, so I&rsquo;m the best seller in bookability in Palma.</p>
+<ul>
+<li>Has returned 1000 diferents hotels availables in Palma.</li>
+<li>This 1000 diferents hotels are the 1% of the total the differents hotels availables in Palma <sup class="footnote-ref" id="fnref:note1"><a href="#fn:note1">1</a></sup>.</li>
+<li>The provider is above de 96.3% providers operating in Palma.</li>
+<li>This provider is the third returning availability in Palma.</li>
+<li>The average of hotels availables per provider in Palma is 27.58.</li>
+<li>The value of my index is 0.9, so I&rsquo;m quite near from the best seller.</li>
+</ul>
 
-<p>Let&rsquo;s see what we can say for the &lsquo;provider_1&rsquo; at 2019-03-19 00:00:00 UTC in <strong>revenue</strong>:
-* The bookings with net price in Palma have been sold for 2000€.
-* This revenue is the 30% of the total of revenue in Palma for all the bookings with net price.
-* The seller is above de 98.3% providers operating in Palma.
-* This seller is the second in revenue in Palma.
-* The average of revenue in Palma per seller is 150€.
-* The value of my index is 0.9, so I&rsquo;m close to the seller with largest revenue in Palma.</p>
+<p>Let&rsquo;s see what we can say for the &lsquo;provider_1&rsquo; at 2019-03-19 00:00:00 UTC in <strong>bookings</strong>:</p>
+
+<ul>
+<li>Has had 10 bookings Palma.</li>
+<li>This 10 bookings are the 10% of the total of bookings in Palma.</li>
+<li>The seller is above de 100% providers operating in Palma (so it&rsquo;s the best).</li>
+<li>This seller is the first in bookability in Palma.</li>
+<li>The average of bookings in Palma per seller is 2.</li>
+<li>The value of my index is 100, so I&rsquo;m the best seller in bookability in Palma.</li>
+</ul>
+
+<p>Let&rsquo;s see what we can say for the &lsquo;provider_1&rsquo; at 2019-03-19 00:00:00 UTC in <strong>revenue</strong>:</p>
+
+<ul>
+<li>The bookings with net price in Palma have been sold for 2000€.</li>
+<li>This revenue is the 30% of the total of revenue in Palma for all the bookings with net price.</li>
+<li>The seller is above de 98.3% providers operating in Palma.</li>
+<li>This seller is the second in revenue in Palma.</li>
+<li>The average of revenue in Palma per seller is 150€.</li>
+<li>The value of my index is 0.9, so I&rsquo;m close to the seller with largest revenue in Palma.</li>
+</ul>
 <div class="footnotes">
 
 <hr />
