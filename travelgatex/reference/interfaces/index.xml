@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>AdviseMessage</title>
+      <link>/travelgatex/reference/interfaces/advisemessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/interfaces/advisemessage/</guid>
+      <description>List of advise messages.
+GraphQL schema definition interface AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! // deprecated from 2018-06-01     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
+    </item>
+    
+    <item>
       <title>BookableOptionSearch</title>
       <link>/travelgatex/reference/interfaces/bookableoptionsearch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -53,6 +63,15 @@
       
       <guid>/travelgatex/reference/interfaces/response/</guid>
       <description>GraphQL schema definition interface Response {  stats( token: String!, ): StatsRequest    auditData: AuditData    errors: [Error!]    warnings: [Warning!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields stats(StatsRequest): Application stats  auditData(AuditData): Data sent and received in the supplier’s original format.</description>
+    </item>
+    
+    <item>
+      <title>Text</title>
+      <link>/travelgatex/reference/interfaces/text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/interfaces/text/</guid>
+      <description>GraphQL schema definition interface Text {  text: String!    language: Language!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields text(String!):   language(Language!):</description>
     </item>
     
   </channel>

@@ -32,6 +32,61 @@ GraphQL schema definition type HolderInput {  name: String!    surname: String! 
     </item>
     
     <item>
+      <title>PaymentCardInput</title>
+      <link>/paymentx/reference/inputobjects/paymentcardinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/inputobjects/paymentcardinput/</guid>
+      <description>Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information
+GraphQL schema definition type PaymentCardInput {  cardType: String!    holder: HolderInput!    number: String!    CVC: String!    expire: ExpireDateInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.</description>
+    </item>
+    
+    <item>
+      <title>PaymentXBookingInfoCriteriaInput</title>
+      <link>/paymentx/reference/inputobjects/paymentxbookinginfocriteriainput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/inputobjects/paymentxbookinginfocriteriainput/</guid>
+      <description>GraphQL schema definition type PaymentXBookingInfoCriteriaInput {  organization: String!    pointOfSaleCode: ID    bookingReference: String    holder: HolderInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.  pointOfSaleCode(ID): Indicates the code of the booked property  bookingReference(String): Indicates the referece of the booking  holder(HolderInput): Contains owner&amp;#39;s name</description>
+    </item>
+    
+    <item>
+      <title>PaymentXBookingInfoDeleteInput</title>
+      <link>/paymentx/reference/inputobjects/paymentxbookinginfodeleteinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/inputobjects/paymentxbookinginfodeleteinput/</guid>
+      <description>GraphQL schema definition type PaymentXBookingInfoDeleteInput {  organization: String!    pointOfSaleCode: ID!    bookingReference: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.  pointOfSaleCode(ID!): Indicates the code of the booked property  bookingReference(String!</description>
+    </item>
+    
+    <item>
+      <title>PaymentXBookingInfoFilterInput</title>
+      <link>/paymentx/reference/inputobjects/paymentxbookinginfofilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/inputobjects/paymentxbookinginfofilterinput/</guid>
+      <description>GraphQL schema definition type PaymentXBookingInfoFilterInput {  AND: [PaymentXBookingInfoFilterInput!]    OR: [PaymentXBookingInfoFilterInput!]    checkIn_in: [DateTime!]    checkIn_not_in: [DateTime!]    checkIn_lt: DateTime    checkIn_lte: DateTime    checkIn_gt: DateTime    checkIn_gte: DateTime    checkOut_in: [DateTime!]    checkOut_not_in: [DateTime!]    checkOut_lt: DateTime    checkOut_lte: DateTime    checkOut_gt: DateTime    checkOut_gte: DateTime   Show deprecated fields   organization: : String // Responsible organization of the booked property.</description>
+    </item>
+    
+    <item>
+      <title>PaymentXBookingInfoInput</title>
+      <link>/paymentx/reference/inputobjects/paymentxbookinginfoinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/inputobjects/paymentxbookinginfoinput/</guid>
+      <description>GraphQL schema definition type PaymentXBookingInfoInput {  organization: String!    pointOfSale: PointOfSaleInput!    bookingReference: String!    checkOut: Date!    checkIn: Date!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields organization(String!): Responsible organization of the booked property.</description>
+    </item>
+    
+    <item>
+      <title>PaymentXStoreCardInput</title>
+      <link>/paymentx/reference/inputobjects/paymentxstorecardinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/inputobjects/paymentxstorecardinput/</guid>
+      <description>GraphQL schema definition type PaymentXStoreCardInput {  bookingInfo: PaymentXBookingInfoInput!    card: PaymentCardInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields bookingInfo(PaymentXBookingInfoInput!):   card(PaymentCardInput!):</description>
+    </item>
+    
+    <item>
       <title>PaymentXStoredCardFilterInput</title>
       <link>/paymentx/reference/inputobjects/paymentxstoredcardfilterinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -56,6 +111,16 @@ GraphQL schema definition type HolderInput {  name: String!    surname: String! 
       
       <guid>/paymentx/reference/inputobjects/paymentxstoredcardinput/</guid>
       <description>GraphQL schema definition type PaymentXStoredCardInput {  instanceCode: ID!    pointOfSaleCode: ID!    bookingReference: String!    checkOut: Date    checkIn: Date    cardType: String    holder: HolderInput    number: CardNumber!    CVC: CVC!    expire: ExpireDateInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.</description>
+    </item>
+    
+    <item>
+      <title>PointOfSaleInput</title>
+      <link>/paymentx/reference/inputobjects/pointofsaleinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/inputobjects/pointofsaleinput/</guid>
+      <description>GraphQL schema definition type PointOfSaleInput {  code: ID!    name: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!): POS Identifier  name(String!): POS Name  
+Required by PaymentXBookingInfoInput:</description>
     </item>
     
   </channel>

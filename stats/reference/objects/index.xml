@@ -525,6 +525,16 @@ GraphQL schema definition type Stats {  code: ID!    statsData: StatsData    adv
     </item>
     
     <item>
+      <title>StatsAssert</title>
+      <link>/stats/reference/objects/statsassert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/objects/statsassert/</guid>
+      <description>Assert of an specific error
+GraphQL schema definition type StatsAssert {  startTime: DateTime!    execTime: Int!    url: URI!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields startTime(DateTime!): Start time of the request  execTime(Int!): Execution time of the request  url(URI!</description>
+    </item>
+    
+    <item>
       <title>StatsAsset</title>
       <link>/stats/reference/objects/statsasset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
