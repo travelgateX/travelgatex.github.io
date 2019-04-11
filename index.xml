@@ -1498,17 +1498,6 @@ GraphQL schema definition type Contact {  email: String    telephone: String    
     </item>
     
     <item>
-      <title>Contents</title>
-      <link>/insights-x/content/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/insights-x/content/</guid>
-      <description>How does your infrastructure perform? What hotelier product is being requested and booking around the world? How are you doing with respect to your competitors?
-Knowledge is power and that&amp;rsquo;s what the product Insights-X of TravelgateX offers, based on more than 2 billion search requests and more than 20,000 bookings per day.
-In order to answer the three previous questions, the product has been designed in three parts, which we explain below:</description>
-    </item>
-    
-    <item>
       <title>Coordinates</title>
       <link>/hotelx/reference/objects/coordinates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8273,6 +8262,17 @@ Distribution will be made through 2 different channels, end users will use org_t
     </item>
     
     <item>
+      <title>Contents</title>
+      <link>/insights-x/content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights-x/content/</guid>
+      <description>What is the performance of your infrastructure? What hotelier product is being requested and booking around the world? How are you doing with respect to your competitors?
+Knowledge is power and that&amp;rsquo;s what the product Insights-X offers, based on more than 2 billion search requests and more than 20,000 bookings per day.
+In order to answer the three previous questions, the product has been designed in three parts, which we explain below:</description>
+    </item>
+    
+    <item>
       <title>FlightsX</title>
       <link>/travelgatex/release-notes/products-changelogs/changelog-flightsx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8856,19 +8856,6 @@ How to request     a5b25332a7a5683d602efeb87233a9c7 You can ask for bookings by 
       <description>The commission file should be in the below format:
  Encoding: UTF-8 File Name:  context sequential commission  Extension file: csv Headers:
  ruleId → rule identifier supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date Date format creationDateTo → end creation date Date format checkInFrom → checkin date Date format checkInTo → checkout date Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
-    </item>
-    
-    <item>
-      <title>Concepts</title>
-      <link>/insights-x/datasets/concepts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/insights-x/datasets/concepts/</guid>
-      <description>On this page you will learn how to interpret the information in our datasets.
-Benchmark How to interpret the information of the table daily_benchmarking_seller.
-Overview On this page, you will learn how to interpret the different fields of the benchmark table.
-First of all, it&amp;rsquo;s important to know that the table is organised in three levels of detail: * City * Country * Provider
-The most specific level of detail is given at city level, where the benchmark is calculated considering all suppliers in TravelgateX per city.</description>
     </item>
     
     <item>
