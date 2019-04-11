@@ -1498,6 +1498,17 @@ GraphQL schema definition type Contact {  email: String    telephone: String    
     </item>
     
     <item>
+      <title>Contents</title>
+      <link>/insights-x/content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights-x/content/</guid>
+      <description>How does your infrastructure perform? What hotelier product is being requested and booking around the world? How are you doing with respect to your competitors?
+Knowledge is power and that&amp;rsquo;s what the product Insights-X of TravelgateX offers, based on more than 2 billion search requests and more than 20,000 bookings per day.
+In order to answer the three previous questions, the product has been designed in three parts, which we explain below:</description>
+    </item>
+    
+    <item>
       <title>Coordinates</title>
       <link>/hotelx/reference/objects/coordinates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8216,7 +8227,7 @@ All notable changes in our platform will be documented on this page. 2019-03-07 
       
       <guid>/insights-x/release-notes/changelog/</guid>
       <description> Easily accessible log of notable changes to Insights-X
-2019-03-27  New table daily_benchmarking_seller    Insights-X Concepts   2019-02-21  New table effective_bookings_(buyer|seller)    daily_insights table renamed as insights_daily_(buyer|seller) daily_insights_(client|provider) table renamed as insights_daily_(buyer|seller)   2019-02-07  Insights-X product documentation   </description>
+2019-04-11  Insights-X Content    Benchmarck table daily_benchmarking_seller replaced by new ones benchmark tables    Added buyer field in benchmark seller tables. Added seller field in benchmark buyer tables.   2019-03-27  New table daily_benchmarking_seller    Insights-X Concepts   2019-02-21  New table effective_bookings_(buyer|seller)    daily_insights table renamed as insights_daily_(buyer|seller) daily_insights_(client|provider) table renamed as insights_daily_(buyer|seller)   2019-02-07  Insights-X product documentation   </description>
     </item>
     
     <item>
@@ -8375,15 +8386,35 @@ GraphQL schema definition type Mutation {  admin: AdminMutation    hotelX: Hotel
     
     <item>
       <title>Reference</title>
-      <link>/insights-x/datasets/dataset-reference/</link>
+      <link>/insights-x/datasets/dataset-content/benchmark/dataset-reference-benchmark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/insights-x/datasets/dataset-reference/</guid>
-      <description>On this page you will learn how the data is stored in Datasets.
-Tables Data is stored in multiple tables depending on the kind of info that wants to be queried. Descriptions of each table and their correspondent fields are found below:
-insights_daily_(buyer|seller) This table contains info from searches, quotes and bookings aggregated by day.
-fields
- client_id (STRING). Client unique ID. provider_id (STRING). Provider unique ID. cache (BOOLEAN). It indicates if the source of request was the client or Speed-X to load info in cache (0=Client, 1=Speed-X).</description>
+      <guid>/insights-x/datasets/dataset-content/benchmark/dataset-reference-benchmark/</guid>
+      <description>On this page you will learn how the data is stored in Benchmark Dataset.
+Tables Data is stored in multiple tables depending on the kind of info that wants to be queried and depending on the level of aggregation:
+ Daily (agregation stored every day) Weekly (aggregation stored in the first monday of every week) Monthly (aggregation stored in the first day of the month)  The fields and explanation of tables are based on seller organization.</description>
+    </item>
+    
+    <item>
+      <title>Reference</title>
+      <link>/insights-x/datasets/dataset-content/insights/dataset-reference-insights/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights-x/datasets/dataset-content/insights/dataset-reference-insights/</guid>
+      <description>On this page you will learn how the data is stored in Insights Dataset.
+Tables Data is stored in multiple tables depending on the kind of info that wants to be queried and depending on the level of aggregation:
+ Daily (agregation stored every day) Weekly (aggregation stored in the first monday of every week) Monthly (aggregation stored in the first day of the month)  Descriptions of each table and their correspondent fields are found below:</description>
+    </item>
+    
+    <item>
+      <title>Reference</title>
+      <link>/insights-x/datasets/dataset-content/performance/dataset-reference-performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights-x/datasets/dataset-content/performance/dataset-reference-performance/</guid>
+      <description>On this page you will learn how the data is stored in Performance Dataset.
+Tables Data is stored in multiple tables depending on the kind of info that wants to be queried and depending on the level of aggregation:
+ Daily (agregation stored every day) Weekly (aggregation stored in the first monday of every week) Monthly (aggregation stored in the first day of the month)  Descriptions of each table and their correspondent fields are found below:</description>
     </item>
     
     <item>
@@ -8838,6 +8869,19 @@ Benchmark How to interpret the information of the table daily_benchmarking_selle
 Overview On this page, you will learn how to interpret the different fields of the benchmark table.
 First of all, it&amp;rsquo;s important to know that the table is organised in three levels of detail: * City * Country * Provider
 The most specific level of detail is given at city level, where the benchmark is calculated considering all suppliers in TravelgateX per city.</description>
+    </item>
+    
+    <item>
+      <title>Concepts</title>
+      <link>/insights-x/datasets/dataset-content/benchmark/dataset-concepts-benchmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights-x/datasets/dataset-content/benchmark/dataset-concepts-benchmark/</guid>
+      <description>On this page you will learn how to interpret the information in our datasets.
+Benchmark How to interpret the information of the differents benchmark tables.
+Overview On this page, you will learn how to interpret the differents fields of benchmark table.
+First of all, it&amp;rsquo;s important to know that the benchmark is given by 3 period of time:
+ Daily Weekly (starts on monday) Monthly  and 3 levels of detail:</description>
     </item>
     
     <item>
