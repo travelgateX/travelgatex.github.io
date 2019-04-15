@@ -8216,7 +8216,7 @@ All notable changes in our platform will be documented on this page. 2019-03-07 
       
       <guid>/insights-x/release-notes/changelog/</guid>
       <description> Easily accessible log of notable changes to Insights-X
-2019-04-11  Insights-X Content    Benchmarck table daily_benchmarking_seller replaced by new ones: benchmark tables    Added buyer field in benchmark seller tables. Added seller field in benchmark buyer tables.   2019-03-27  New table daily_benchmarking_seller    Insights-X Concepts   2019-02-21  New table effective_bookings_(buyer|seller)    daily_insights table renamed as insights_daily_(buyer|seller) daily_insights_(client|provider) table renamed as insights_daily_(buyer|seller)   2019-02-07  Insights-X product documentation   </description>
+2019-04-11  Insights-X Content    Benchmarck table daily_benchmarking_seller replaced by new ones benchmark tables    Added buyer field in benchmark seller tables. Added seller field in benchmark buyer tables.   2019-03-27  New table daily_benchmarking_seller    Insights-X Concepts   2019-02-21  New table effective_bookings_(buyer|seller)    daily_insights table renamed as insights_daily_(buyer|seller) daily_insights_(client|provider) table renamed as insights_daily_(buyer|seller)   2019-02-07  Insights-X product documentation   </description>
     </item>
     
     <item>
@@ -8267,9 +8267,9 @@ Distribution will be made through 2 different channels, end users will use org_t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/insights-x/content/</guid>
-      <description>What is the performance of your infrastructure? What hotelier product is being requested and booked around the world? How are you doing with respect to your competitors?
+      <description>What is the performance of your infrastructure? What hotelier product is being requested and booking around the world? How are you doing with respect to your competitors?
 Knowledge is power and that&amp;rsquo;s what the product Insights-X offers, based on more than 2 billion search requests and more than 20,000 bookings per day.
-In order to answer the three previous questions, the product has been designed in three sections, which are explained below:</description>
+In order to answer the three previous questions, the product has been designed in three parts, which we explain below:</description>
     </item>
     
     <item>
@@ -8413,8 +8413,8 @@ Tables Data is stored in multiple tables depending on the kind of info that want
       
       <guid>/insights-x/datasets/dataset-content/performance/dataset-reference-performance/</guid>
       <description>On this page you will learn how the data is stored in Performance Dataset.
-Tables Data is stored in multiple tables depending on the kind of information that wants to be queried and depending on the level of aggregation:
- Daily (agregation stored every day) Weekly (aggregation stored the first monday of every week) Monthly (aggregation stored the first day of the month)  Descriptions of each table and their correspondent fields are found below:</description>
+Tables Data is stored in multiple tables depending on the kind of info that wants to be queried and depending on the level of aggregation:
+ Daily (agregation stored every day) Weekly (aggregation stored in the first monday of every week) Monthly (aggregation stored in the first day of the month)  Descriptions of each table and their correspondent fields are found below:</description>
     </item>
     
     <item>
@@ -8865,10 +8865,12 @@ How to request     a5b25332a7a5683d602efeb87233a9c7 You can ask for bookings by 
       
       <guid>/insights-x/datasets/dataset-content/benchmark/dataset-concepts-benchmark/</guid>
       <description>On this page you will learn how to interpret the information in our datasets.
-Benchmark How to interpret the information of the different benchmark tables.
-Overview On this page, you will learn how to interpret the different fields of benchmark table.
-First of all, it is important to know that the benchmark is given by 3 periods of time:
- Daily Weekly (starts on Monday) Monthly  and 3 levels of detail:</description>
+Benchmark How to interpret the information of the differents benchmark tables.
+Overview On this page, you will learn how to interpret the differents fields of benchmark table.
+First of all, it&amp;rsquo;s important to know that the benchmark is given by 3 period of time:
+ Daily Weekly (starts on monday)
+ Monthly
+  and 3 levels of detail:</description>
     </item>
     
     <item>

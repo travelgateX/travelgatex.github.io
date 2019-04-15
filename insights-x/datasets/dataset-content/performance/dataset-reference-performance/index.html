@@ -3527,6 +3527,39 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
+        <li data-nav-id="/insights-x/datasets/dataset-content/performance/" class="dd-item parent">
+
+            <a href="/insights-x/datasets/dataset-content/performance/" class="wasdirectory">
+       
+            <span>
+                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+                Performance Dataset
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/insights-x/datasets/dataset-content/performance/dataset-reference-performance/" class="dd-item active">
+            <a href="/insights-x/datasets/dataset-content/performance/dataset-reference-performance/">
+              <span style="padding-left: 8px;">Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/insights-x/datasets/dataset-content/insights/" class="dd-item">
+
+            <a href="/insights-x/datasets/dataset-content/insights/" class="wasdirectory">
+       
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
+                Insights Dataset
+            </span><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/insights-x/datasets/dataset-content/insights/dataset-reference-insights/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-content/insights/dataset-reference-insights/">
+              <span style="padding-left: 8px;">Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
         <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/" class="dd-item">
 
             <a href="/insights-x/datasets/dataset-content/benchmark/" class="wasdirectory">
@@ -3544,39 +3577,6 @@
           <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/dataset-concepts-benchmark/" class="dd-item">
             <a href="/insights-x/datasets/dataset-content/benchmark/dataset-concepts-benchmark/">
               <span style="padding-left: 8px;">Concepts</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-        <li data-nav-id="/insights-x/datasets/dataset-content/insights/" class="dd-item">
-
-            <a href="/insights-x/datasets/dataset-content/insights/" class="wasdirectory">
-       
-            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
-                Insight Dataset
-            </span><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-          <li data-nav-id="/insights-x/datasets/dataset-content/insights/dataset-reference-insights/" class="dd-item">
-            <a href="/insights-x/datasets/dataset-content/insights/dataset-reference-insights/">
-              <span style="padding-left: 8px;">Reference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-        <li data-nav-id="/insights-x/datasets/dataset-content/performance/" class="dd-item parent">
-
-            <a href="/insights-x/datasets/dataset-content/performance/" class="wasdirectory">
-       
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
-                Performance Dataset
-            </span><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-          <li data-nav-id="/insights-x/datasets/dataset-content/performance/dataset-reference-performance/" class="dd-item active">
-            <a href="/insights-x/datasets/dataset-content/performance/dataset-reference-performance/">
-              <span style="padding-left: 8px;">Reference</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -4430,19 +4430,19 @@
 
 <h1 id="tables">Tables</h1>
 
-<p>Data is stored in multiple tables depending on the kind of information that wants to be queried and depending on the level of aggregation:</p>
+<p>Data is stored in multiple tables depending on the kind of info that wants to be queried and depending on the level of aggregation:</p>
 
 <ul>
 <li>Daily   (agregation stored every day)</li>
-<li>Weekly  (aggregation stored the first monday of every week)</li>
-<li>Monthly (aggregation stored the first day of the month)</li>
+<li>Weekly  (aggregation stored in the first monday of every week)</li>
+<li>Monthly (aggregation stored in the first day of the month)</li>
 </ul>
 
 <p>Descriptions of each table and their correspondent fields are found below:</p>
 
 <h2 id="stats-daily-weekly-monthly-buyer-seller">stats_(daily|weekly|monthly)_(buyer|seller)</h2>
 
-<p>This table contains transactional information (e.g. response status, response time) of requests between clients and providers.</p>
+<p>This table contains transactional info (response status, response time&hellip;) of requests between clients and providers.</p>
 
 <p><strong>fields</strong></p>
 
@@ -4473,7 +4473,7 @@
 <li><strong>cancel_ok (NUMBER).</strong> Quantity of correct cancellations.</li>
 <li><strong>cancel_nok (NUMBER).</strong> Quantity of cancellations with an error.</li>
 <li><strong>cancel_time (NUMBER).</strong> Total response time (in milliseconds) for cancellations.</li>
-<li><strong>other_ok (NUMBER).</strong> Quantity of transactions that cannot be included in one of the groups above and that didn&rsquo;t receive an error.</li>
+<li><strong>other_ok (NUMBER).</strong> Quantity of transactions that cannot be included in one of above groups and that didn&rsquo;t get an error.</li>
 <li><strong>other_nok (NUMBER).</strong> Quantity of other transactions with an error.</li>
 <li><strong>other_time (NUMBER).</strong> Total response time (in milliseconds) for other transactions.</li>
 </ul>
@@ -4661,7 +4661,7 @@
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/insights-x/datasets/dataset-content/performance/" title="Go to previous page | Performance Dataset"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Performance Dataset</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/insights-x/datasets/dataset-tooling/" title="Go to next page | Tooling" style="margin-right: 0px;">Tooling<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/insights-x/datasets/dataset-content/insights/" title="Go to next page | Insights Dataset" style="margin-right: 0px;">Insights Dataset<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">
