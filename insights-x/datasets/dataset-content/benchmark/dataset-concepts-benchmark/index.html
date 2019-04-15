@@ -4430,17 +4430,17 @@
 
 <h2 id="benchmark">Benchmark</h2>
 
-<p>How to interpret the information of the differents benchmark tables.</p>
+<p>How to interpret the information of the different benchmark tables.</p>
 
 <h3 id="overview">Overview</h3>
 
-<p>On this page, you will learn how to interpret the differents fields of benchmark table.</p>
+<p>On this page, you will learn how to interpret the different fields of benchmark table.</p>
 
-<p>First of all, it&rsquo;s important to know that the benchmark is given by 3 period of time:</p>
+<p>First of all, it is important to know that the benchmark is given by 3 periods of time:</p>
 
 <ul>
 <li>Daily</li>
-<li>Weekly (starts on monday)</li>
+<li>Weekly (starts on Monday)</li>
 <li>Monthly</li>
 </ul>
 
@@ -4448,27 +4448,27 @@
 
 <ul>
 <li><strong>General</strong> for TravelgateX.</li>
-<li>By <strong>destination</strong>.</li>
-<li>By <strong>seller</strong> if your organization has a buyer profile. By <strong>buyer</strong> if your organization has a seller profile.</li>
+<li>By <strong>Destination</strong>.</li>
+<li>By <strong>Seller</strong> if your Organization has a Buyer profile. By <strong>Buyer</strong> if your organization has a Seller profile.</li>
 </ul>
 
-<p>These three levels of detail are given by 6 tables, offering in that way all the combinations of detail.</p>
+<p>These three levels of detail are displayed in 6 tables, hence offering all the combinations.</p>
 
-<p>From now, let&rsquo;s focus on a seller organization. The case of buyer organization is analogous.</p>
+<p>From now, we will focus on a seller organization. The case of buyer organization is analogous.</p>
 
-<p>The most specific level of detail is given per <em>buyer and city</em>. In there, the benchmark is calculated considering all suppliers in TravelgateX per each city and buyer, this means that you&rsquo;ll be able to know differents benchmarks for any of your buyers in a specific city. The table that contains that information is <code>benchmarking\_country\_city\_client\_(daily|weekly|monthly)\_seller</code>.</p>
+<p>The most specific level of detail is given per <em>buyer and city</em>. Here, the benchmark is calculated considering all suppliers in TravelgateX per each city and buyer, this means that you will be able to know different benchmarks for any of your buyers in a specific city. The table that contains that information is <code>benchmarking\_country\_city\_client\_(daily|weekly|monthly)\_seller</code>.</p>
 
-<p>The next level of detailed is given per <em>buyer and country</em>. In there, the benchmark is calculated considering all suppliers in TravelgateX per each country and buyer, this means that you&rsquo;ll be able to know differents benchmarks for any of your buyers in a specific country. The table that contains that information is <code>benchmarking\_country\_client\_(daily|weekly|monthly)\_seller</code>.</p>
+<p>The next level of detail is given per <em>buyer and country</em>. Here, the benchmark is calculated considering all suppliers in TravelgateX per each country and buyer, this means that you will be able to know different benchmarks for any of your buyers in a specific country. The table that contains that information is <code>benchmarking\_country\_client\_(daily|weekly|monthly)\_seller</code>.</p>
 
-<p>The following level detail in given per <em>buyer</em>. In there, the benchmark is calculated considering all suppliers in TravelgateX , this means that you&rsquo;ll be able to know differents benchmarks for any of your buyers for the globaltmarket of TravelgateX. The table that contains that information is <code>benchmarking\_client\_(daily|weekly|monthly)\_seller</code>.</p>
+<p>The following level of detail in given per <em>buyer</em>. Here, the benchmark is calculated considering all suppliers in TravelgateX, this means that you will be able to know different benchmarks for any of your buyers in the globaltmarket of TravelgateX. The table that contains that information is <code>benchmarking\_client\_(daily|weekly|monthly)\_seller</code>.</p>
 
-<p>By the other hand, you can consult your benchmarks just per <em>city</em>. In there, the benchmark is calculated considering all suppliers in TravelgateX per each city. The table that contains that information is <code>benchmarking\_country\_city\_(daily|weekly|monthly)\_seller</code>.</p>
+<p>On the other hand, you can check your benchmarks just per <em>city</em>. Here, the benchmark is calculated considering all suppliers in TravelgateX per each city. The table that contains that information is <code>benchmarking\_country\_city\_(daily|weekly|monthly)\_seller</code>.</p>
 
-<p>The next level of detailed is given per <em>country</em>. In there, the benchmark is calculated considering all suppliers in TravelgateX per each country. The table that contains that information is <code>benchmarking\_country\_(daily|weekly|monthly)\_seller</code>.</p>
+<p>The next level of detail is given per <em>country</em>. Here, the benchmark is calculated considering all suppliers in TravelgateX per each country. The table that contains that information is <code>benchmarking\_country\_(daily|weekly|monthly)\_seller</code>.</p>
 
-<p>Finally, the most general level of detail is given per <em>provider</em>. In there, the benchmark is calculated considering all suppliers in TravelgateX. The table that contains that information is <code>benchmarking\_(daily|weekly|monthly)\_seller</code>.</p>
+<p>Finally, the most general level of detail is given per <em>provider</em>. Here, the benchmark is calculated considering all suppliers in TravelgateX. The table that contains that information is <code>benchmarking\_(daily|weekly|monthly)\_seller</code>.</p>
 
-<p>As a summary of above, the next table sum up the level of details for the 6 benchmark tables:</p>
+<p>As a summary of the information displayed above, the next table sums up the levels of detail for the 6 benchmark tables:</p>
 
 <table>
 <thead>
@@ -4500,52 +4500,52 @@
 </tbody>
 </table>
 
-<p>Next, we&rsquo;ll explain how to interpret the differents fields of the table.</p>
+<p>Next, we will explain how to interpret the different fields of the table.</p>
 
 <h3 id="interpretation">Interpretation</h3>
 
-<p>The bechmark table analyses the total of uniques searches per hotel returning availability, the total of confirmed bookings  and the total revenue net in euros. These analisys is made by different metrics:</p>
+<p>The benchmark table analyses the total of unique searches per hotel returning availability, the total of confirmed bookings and the total revenue net in euros. These analysis is made by different metrics:</p>
 
 <ul>
 <li>The real value:
 
 <ul>
-<li>Total of differents hotels returning availabitity: <strong>availabitity_value</strong></li>
+<li>Total of different hotels returning availability: <strong>availability_value</strong></li>
 <li>Total of bookings: <strong>booking_value</strong></li>
 <li>Total of revenue: <strong>revenue_value</strong></li>
 </ul></li>
 <li>The percentage over total of providers:
 
 <ul>
-<li>Percentatge over total of differents hotels returning availabitity:  <strong>availability_percentage</strong></li>
-<li>Percentatge over total of bookings: <strong>booking_percentage</strong></li>
-<li>Percentatge over total of revenue: <strong>revenue_percentage</strong></li>
+<li>Percentage over total of different hotels returning availability:  <strong>availability_percentage</strong></li>
+<li>Percentage over total of bookings: <strong>booking_percentage</strong></li>
+<li>Percentage over total of revenue: <strong>revenue_percentage</strong></li>
 </ul></li>
-<li>What percentage of suppliers are above than me:
+<li>What percentage of suppliers are above me:
 
 <ul>
-<li>Percentage of total of providers that are worse than me in availables hotels  <strong>availability_percentile</strong></li>
+<li>Percentage of total of providers that are worse than me in available hotels  <strong>availability_percentile</strong></li>
 <li>Percentage of total of providers that are worse than me in bookings: <strong>booking_percentile</strong></li>
 <li>Percentage of total of providers that are worse than me in revenue net: <strong>revenue_percentile</strong></li>
 </ul></li>
 <li>Position of ranking:
 
 <ul>
-<li>Position of the ranking by availables hotels considering all sellers in TravelgateX: <strong>availability_rank</strong></li>
+<li>Position of the ranking by available hotels considering all sellers in TravelgateX: <strong>availability_rank</strong></li>
 <li>Position of the ranking by my bookings considering all sellers in TravelgateX: <strong>booking_rank</strong></li>
 <li>Position of the ranking by revenue net considering all sellers in TravelgateX: <strong>revenue_rank</strong></li>
 </ul></li>
 <li>Average per seller (competitive set):
 
 <ul>
-<li>Average of all the availables hotels per seller: <strong>availability_compset</strong></li>
+<li>Average of all the available hotels per seller: <strong>availability_compset</strong></li>
 <li>Average of all the bookings per seller: <strong>booking_compset</strong></li>
 <li>Average of all the revenue net per seller: <strong>revenue_compset</strong></li>
 </ul></li>
-<li>How far or how close I&rsquo;m from the best/worst seller. For values near zero, you&rsquo;re close to the worst seller. For values near one, you&rsquo;re close to the best seller:
+<li>How far or how close I am from the best/worst seller. For values near zero, you are close to the worst seller. For values near one, you are close to the best seller:
 
 <ul>
-<li>Returning availables hotels: <strong>availability_index</strong></li>
+<li>Returning available hotels: <strong>availability_index</strong></li>
 <li>In bookings: <strong>booking_index</strong></li>
 <li>In revenue net: <strong>revenue_index</strong></li>
 </ul></li>
@@ -4619,37 +4619,37 @@
 </tbody>
 </table>
 
-<p>Let&rsquo;s see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in <strong>availability</strong> for the client 1:</p>
+<p>Let&rsquo;s see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in <strong>availability</strong> for client 1:</p>
 
 <ul>
-<li>Has returned 130 diferents hotels availables in Palma to client 1.</li>
-<li>This 130 diferents hotels are the 24.53% of the total the differents hotels availables in Palma that has request the client 1 <sup class="footnote-ref" id="fnref:note1"><a href="#fn:note1">1</a></sup> .</li>
-<li>The provider is above de 89.89% of providers in Palma of client 1.</li>
-<li>This provider is the first returning availability in Palma for client 1. Here, that&rsquo;s a point, because the provider is first in the ranking but the percentile is not 100%. That&rsquo;s why there is another provider retuning the same numbers of hotels availables.</li>
-<li>The average of hotels availables per provider in Palma for client 1 is 12.25.</li>
-<li>The value of the index is 1, so privider 1 is the best seller for the client 1 or there is not another seller returning more availables hotels.</li>
+<li>It has returned 130 diferents hotels available in Palma to client 1.</li>
+<li>These 130 diferent hotels are the 24.53% of the total from the different hotels available in Palma that has requested client 1 <sup class="footnote-ref" id="fnref:note1"><a href="#fn:note1">1</a></sup> .</li>
+<li>The provider is above the 89.89% of providers in Palma of client 1.</li>
+<li>This provider is the first in returning availability in Palma for client 1. Here, that is a point, because the provider is first in the ranking but the percentile is not 100%. That&rsquo;s why there is another provider retuning the same numbers of hotels available.</li>
+<li>The average of hotels available per provider in Palma for client 1 is 12.25.</li>
+<li>The value of the index is 1, so provider 1 is the best seller for client 1 or there is no another seller returning more available hotels.</li>
 </ul>
 
-<p>Let&rsquo;s see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in <strong>bookings</strong> for the client 1:</p>
+<p>Let&rsquo;s see what we can say about provider 1 at 2019-04-03 00:00:00 UTC in <strong>bookings</strong> for client 1:</p>
 
 <ul>
 <li>Client 1 has booked 3 hotels in Palma to provider 1.</li>
-<li>This 3 bookings are the 14.63% of the total of bookings in Palma for the client 1.</li>
-<li>The seller is above the 76.74% providers operating in Palma for the client 1.</li>
-<li>This seller is the third in bookability in Palma for the client 1.</li>
-<li>The average of bookings in Palma per seller for the client 1 is 1.426.</li>
-<li>The value of the index is 0.8571, so provider 1 is not so far of the first seller in bookability in Palma for the client 1.</li>
+<li>These 3 bookings are the 14.63% of the total of bookings in Palma for client 1.</li>
+<li>The seller is above the 76.74% of providers operating in Palma for client 1.</li>
+<li>This seller is the third in bookability in Palma for client 1.</li>
+<li>The average of bookings in Palma per seller for client 1 is 1.426.</li>
+<li>The value of the index is 0.8571, so provider 1 is not so far from the first seller in bookability in Palma for client 1.</li>
 </ul>
 
-<p>Let&rsquo;s see what we can say for the provider 1 at 2019-04-03 00:00:00 UTC in <strong>revenue</strong> for the client 1:</p>
+<p>Let&rsquo;s see what we can say for provider 1 at 2019-04-03 00:00:00 UTC in <strong>revenue</strong> for client 1:</p>
 
 <ul>
 <li>The bookings with net price in Palma have been sold for 2104.72€ to client 1.</li>
-<li>This revenue is the 26.43% of the total of revenue in Palma for all the bookings with net price  for the client 1.</li>
-<li>The seller is above de 81.63% providers operating in Palma for the client 1.</li>
-<li>This seller is the second in revenue in Palma for the client 1.</li>
-<li>The average of revenue in Palma per seller is 620.36€  for the client 1.</li>
-<li>The value of the index is 0.9126, so provider 1 is close to the seller with largest revenue in Palma for the client 1.</li>
+<li>This revenue is the 26.43% of the total of revenue in Palma for all the bookings with net price for client 1.</li>
+<li>The seller is above the 81.63% of providers operating in Palma for client 1.</li>
+<li>This seller is the second in revenue in Palma for client 1.</li>
+<li>The average of revenue in Palma per seller is 620.36€ for client 1.</li>
+<li>The value of the index is 0.9126, so provider 1 is close to the seller with the largest revenue in Palma for client 1.</li>
 </ul>
 
 <p>The benchmarks have been calculated comparing provider 1 with other 8 providers.</p>
@@ -4718,40 +4718,40 @@
 </tbody>
 </table>
 
-<p>Let&rsquo;s see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in <strong>availability</strong>:</p>
+<p>Let&rsquo;s see what we can say about provider 1 at 2019-04-03 00:00:00 UTC in <strong>availability</strong>:</p>
 
 <ul>
-<li>Has returned 20 diferents hotels availables in La Habana Vieja.</li>
-<li>This 20 diferents hotels are the 4.95% of the total the differents hotels availables in La Habana Vieja <sup class="footnote-ref" id="fnref:note1"><a href="#fn:note1">1</a></sup> .</li>
-<li>The provider is above de 100% of providers in La Habana Vieja (so it&rsquo;s the best).</li>
-<li>This provider is the first returning availability in La Habana Vieja.</li>
-<li>The average of hotels availables per provider in La Habana Vieja is 9.3953.</li>
-<li>The value of the index is 1, so  is the best seller.</li>
+<li>It has returned 20 diferent hotels available in La Habana Vieja.</li>
+<li>These 20 diferent hotels are the 4.95% of the total for the different hotels available in La Habana Vieja <sup class="footnote-ref" id="fnref:note1"><a href="#fn:note1">1</a></sup> .</li>
+<li>The provider is above the 100% of providers in La Habana Vieja (so it is the best).</li>
+<li>This provider is the first in returning availability in La Habana Vieja.</li>
+<li>The average of hotels available per provider in La Habana Vieja is 9.3953.</li>
+<li>The value of the index is 1, so it is the best seller.</li>
 </ul>
 
-<p>Let&rsquo;s see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in <strong>bookings</strong>:</p>
+<p>Let&rsquo;s see what we can say about provider 1 at 2019-04-03 00:00:00 UTC in <strong>bookings</strong>:</p>
 
 <ul>
-<li>Has have 2 bookings in La Habana Vieja.</li>
-<li>This 2 bookings are the 11.76% of the total of bookings in La Habana Vieja.</li>
-<li>The seller is above the 90.72% providers operating in La Habana Vieja.</li>
+<li>It has had 2 bookings in La Habana Vieja.</li>
+<li>These 2 bookings are the 11.76% of the total of bookings in La Habana Vieja.</li>
+<li>The seller is above the 90.72% of providers operating in La Habana Vieja.</li>
 <li>This seller is the second in bookability in La Habana Vieja.</li>
 <li>The average of bookings in La Habana Vieja per seller is 1.8889.</li>
-<li>The value of the index is 0.5, so provider 1 has sold the half of bookings than the best seller in bookability in La Habana Vieja.</li>
+<li>The value of the index is 0.5, so provider 1 has sold half of the bookings in comparison to the best seller in bookability in La Habana Vieja.</li>
 </ul>
 
-<p>Let&rsquo;s see what we can say for the provider 1 at 2019-04-03 00:00:00 UTC in <strong>revenue</strong>:</p>
+<p>Let&rsquo;s see what we can say about provider 1 at 2019-04-03 00:00:00 UTC in <strong>revenue</strong>:</p>
 
 <ul>
 <li>The bookings with net price in La Habana Vieja have been sold for 676.95€.</li>
 <li>This revenue is the 12.07% of the total of revenue in La Habana Vieja for all the bookings with net price.</li>
-<li>The seller is above de 94.12% providers operating in La Habana Vieja.</li>
+<li>The seller is above the 94.12% providers operating in La Habana Vieja.</li>
 <li>This seller is the fourth in revenue in La Habana Vieja.</li>
 <li>The average of revenue in La Habana Vieja per seller is 701.0125€.</li>
-<li>The value of the index is 0.4076 so I&rsquo;m far to the seller with largest revenue in La Habana Vieja.</li>
+<li>The value of the index is 0.4076 so I&rsquo;m far to the seller with the largest revenue in La Habana Vieja.</li>
 </ul>
 
-<p>The benchmarks have been calculated comparing provider 1 with other 52 providers.</p>
+<p>The benchmarks have been calculated comparing provider 1 to other 52 providers.</p>
 <div class="footnotes">
 
 <hr />
