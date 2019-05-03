@@ -8226,7 +8226,7 @@ All notable changes in our platform will be documented on this page. 2019-05-02 
       
       <guid>/stats/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Stats-X
-2019-05-02  Input field retrieveAssets made optional. false by default.   2019-04-30  New required input field retrieveAssets added to indicate if assets are needed.    Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access all the asset nodes.   2019-04-23  Fix an error building internal queries when Quote/Booking and Other are requested.</description>
+2019-05-03  Fix an error that was causing that assets of HUB error types were NULL.   2019-05-02  Input field retrieveAssets made optional. false by default.   2019-04-30  New required input field retrieveAssets added to indicate if assets are needed.    Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access all the asset nodes.</description>
     </item>
     
     <item>
@@ -8707,7 +8707,8 @@ In this case you can search the bookings with references or by dates, the dates 
       <description>This page shows you how to query Stats using API or TravelgateX Web.
 How to request You can query about your performance as a buyer or as a seller.
 Below are shown different examples for different casuistry:
-    002160e4c2822635ef3b1a3c81b1d44d In this availability case, you will not receive results due to the hotel&amp;rsquo;s restriction of minimum stay. In this case, if you change the date range to 3 days or more, you will receive availability /002160e4c2822635ef3b1a3c81b1d44d</description>
+    122d8186fb0ed7d5d886b00b3081cecb Testing /122d8186fb0ed7d5d886b00b3081cecb
+   #tab-holder { transform: scale(0); position: absolute; } #tab-holder.show-tabs { transform: scale(1); position: initial; } ul.tab-pannel-nav { margin-bottom: -32px; } ul.tabs { border-bottom: 1px solid #dee2e6; } li.</description>
     </item>
     
     <item>
