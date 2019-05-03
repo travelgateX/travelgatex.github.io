@@ -2527,7 +2527,7 @@ GraphQL schema definition type GiataData {  id: ID!    source: URI!    href: URI
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced 2019-04-08  Deprecated ratios from StatsData. Reason: Sustituted by hits. Finally removed on 2019-07-08 .   2019-04-03  Deprecated cache from OperationDetailed. Reason: Sustituted by trafficType. Finally removed on 2019-07-03 .</description>
+      <description>Changes history of deprecated notes previously announced 2019-04-08  Deprecated ratios from StatsData. Reason: Substituted by hits. Finally removed on 2019-07-08 .   2019-04-03  Deprecated cache from OperationDetailed. Reason: Substituted by trafficType. Finally removed on 2019-07-03 .</description>
     </item>
     
     <item>
@@ -8226,7 +8226,7 @@ All notable changes in our platform will be documented on this page. 2019-05-02 
       
       <guid>/stats/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Stats-X
-2019-05-02  Input field retrieveAssets made optional. false by default.   2019-04-30  Added new required input field retrieveAssets to indicate if assets are needed.    Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access to all the asset nodes.   2019-04-23  Fix an error building internal queries when Quote/Booking and Other are requested.</description>
+2019-05-02  Input field retrieveAssets made optional. false by default.   2019-04-30  New required input field retrieveAssets added to indicate if assets are needed.    Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access all the asset nodes.   2019-04-23  Fix an error building internal queries when Quote/Booking and Other are requested.</description>
     </item>
     
     <item>

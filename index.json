@@ -1789,7 +1789,7 @@
 	"title": "GraphQL Schema breaking changes",
 	"tags": ["breaking-changes"],
 	"description": "Changes history of deprecated notes previously announced",
-	"content": " Changes history of deprecated notes previously announced 2019-04-08  Deprecated ratios from StatsData. Reason: Sustituted by hits. Finally removed on 2019-07-08 .   2019-04-03  Deprecated cache from OperationDetailed. Reason: Sustituted by trafficType. Finally removed on 2019-07-03 .  \n"
+	"content": " Changes history of deprecated notes previously announced 2019-04-08  Deprecated ratios from StatsData. Reason: Substituted by hits. Finally removed on 2019-07-08 .   2019-04-03  Deprecated cache from OperationDetailed. Reason: Substituted by trafficType. Finally removed on 2019-07-03 .  \n"
 },
 {
 	"uri": "/mappea/reference/objects/group/",
@@ -5946,8 +5946,8 @@
 	"uri": "/stats/release-notes/changelog/",
 	"title": "Changelog",
 	"tags": ["products-changelog"],
-	"description": "Contains an accurated, chronologically-ordered list of notable changes",
-	"content": " Easily accessible log of notable changes to Stats-X\n2019-05-02  Input field retrieveAssets made optional. false by default.   2019-04-30  Added new required input field retrieveAssets to indicate if assets are needed.    Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access to all the asset nodes.   2019-04-23  Fix an error building internal queries when Quote/Booking and Other are requested.   2019-04-11  Added new input field owner to allow filter by organization.   2019-04-08  Added label in OperationData. Reason: Share the operation code in English. Added hits in StatsData. Reason: Share a summary of hits at StatsData level.    Internal queries to Stats DB optimized.   2019-04-03  Added trafficType in OperationDetailed. Reason: Differentiate existents traffic types: BASIC, SPEED, OPTIMIZED.   2019-03-14  Stats-X product documentation   "
+	"description": "Accurated, chronologically-ordered list of notable changes",
+	"content": " Easily accessible log of notable changes to Stats-X\n2019-05-02  Input field retrieveAssets made optional. false by default.   2019-04-30  New required input field retrieveAssets added to indicate if assets are needed.    Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access all the asset nodes.   2019-04-23  Fix an error building internal queries when Quote/Booking and Other are requested.   2019-04-11  New input field owner added to allow filter by organization.   2019-04-08  label in OperationData added. Reason: Share the operation code in English. hits in StatsData added. Reason: Share a summary of hits at StatsData level.    Internal queries to Stats DB optimized.   2019-04-03  trafficType in OperationDetailed added. Reason: To differentiate existents traffic types: BASIC, SPEED, OPTIMIZED.   2019-03-14  Stats-X product documentation   "
 },
 {
 	"uri": "/travelgatex/release-notes/changelog/",
@@ -6836,7 +6836,7 @@
 	"title": "Release Notes",
 	"tags": ["release-notes"],
 	"description": "New Updates &amp; Releases",
-	"content": "   GraphQL Schema breaking changes Changes history of deprecated notes previously announced\n     Changelog Contains an accurated, chronologically-ordered list of notable changes\n    "
+	"content": "   GraphQL Schema breaking changes Changes history of deprecated notes previously announced\n     Changelog Accurated, chronologically-ordered list of notable changes\n    "
 },
 {
 	"uri": "/travelgatex/release-notes/",
