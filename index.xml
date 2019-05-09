@@ -8206,7 +8206,7 @@ File Format The file should be in the below format:
       
       <guid>/hotelx/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to HotelX API
-All notable changes in our platform will be documented on this page. 2019-05-09  fix panic when default settings is not available   2019-05-02  Added field filters in Hotel List    Deprecate type in GeonameData   2019-03-07  Added CurrencyX management for the cancel penalties.    Bug when the cancel penalty type is empty or invalid format.</description>
+All notable changes in our platform will be documented on this page. 2019-05-09  fix error when default settings is not available    improve stats   2019-05-02  Added field filters in Hotel List    Deprecate type in GeonameData   2019-03-07  Added CurrencyX management for the cancel penalties.    Bug when the cancel penalty type is empty or invalid format.</description>
     </item>
     
     <item>
@@ -8631,7 +8631,7 @@ Search Single Mode This mode is used when the client only wants to receive optio
       <guid>/insights-x/datasets/dataset-tooling/</guid>
       <description>On this page you will learn more about TravelgateX free tools to Insights-X Datasets.
 Template reportings If you don&amp;rsquo;t have your own reporting tools as Tableau or PowerBI, the easiest way to interact with Insights-X datasets is via our free Google Data Studio Templates.
-   Dataset Version GDS Template     Partner buyer 1.0    Partner seller 1.0    Hotelier 1.0    Industry partner public 1.</description>
+   Dataset Version GDS Template     Partner buyer 1.0    Partner seller 1.1 https://datastudio.google.com/s/nAuiuI9_l1M   Hotelier 1.0    Industry partner public 1.</description>
     </item>
     
     <item>
