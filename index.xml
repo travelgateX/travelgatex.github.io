@@ -9161,10 +9161,10 @@ Response Format Results are organized in this hierarchy:
     
     <item>
       <title>Avail</title>
-      <link>/legacy/docs/transportation/dsf/flights/avail/</link>
+      <link>/legacy/docs/transportation/flights/avail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/avail/</guid>
+      <guid>/legacy/docs/transportation/flights/avail/</guid>
       <description>Method Goals This method aims to return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.
 Request Format The common part of an availability request is very straight forward. It only requires the destination/s, the travelling dates, the paxes and the indication of the trip type.
 Response Format The response format will always be delivered in the node Transportation, which will be organized by two main nodes:</description>
@@ -9207,10 +9207,10 @@ AvailabilityRQ Example &amp;lt;AvailabilityRQ&amp;gt; &amp;lt;echoToken&amp;gt;t
     
     <item>
       <title>Availability</title>
-      <link>/legacy/docs/transportation/dsf/ferries/avail/</link>
+      <link>/legacy/docs/transportation/ferries/avail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/ferries/avail/</guid>
+      <guid>/legacy/docs/transportation/ferries/avail/</guid>
       <description>Method Goals This method aims to complete the common side of the petition with the ferries specifications, if any, and therefore have the complete petition for ferries.
 Request Format The request needs a list of journeys (each one with the desired dates and ports), a list of the passengers and an optional vehicle list.
 Response Format The response contains a list of fares with the available options.
@@ -9285,10 +9285,10 @@ CancelBookingRQ Example &amp;lt;CancelBookingRQ&amp;gt; &amp;lt;timeoutMilliseco
     
     <item>
       <title>Cancellation</title>
-      <link>/legacy/docs/transportation/dsf/ferries/cancel/</link>
+      <link>/legacy/docs/transportation/ferries/cancel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/ferries/cancel/</guid>
+      <guid>/legacy/docs/transportation/ferries/cancel/</guid>
       <description>Method Goals This method aims to cancel a booking.
 Request Format The request requires the booking code or locator.
 Response Format If the provider returns a Breakdown, this will be informed in CancellarionRS.
@@ -9297,10 +9297,10 @@ CancellationRQ Example &amp;lt;CancellationRQ&amp;gt; &amp;lt;Locator&amp;gt;XXX
     
     <item>
       <title>Cancellation</title>
-      <link>/legacy/docs/transportation/dsf/flights/cancel/</link>
+      <link>/legacy/docs/transportation/flights/cancel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/cancel/</guid>
+      <guid>/legacy/docs/transportation/flights/cancel/</guid>
       <description>Method Goals This method aims to cancel a booking.
 Request Format The request requires the booking code or locator.
 Response Format The result returns empty response
@@ -9528,10 +9528,10 @@ Common Elements RQ Example &amp;lt;TransfersBaseRQ&amp;gt; &amp;lt;echoToken&amp
     
     <item>
       <title>Common Elements</title>
-      <link>/legacy/docs/transportation/dsf/ferries/common-elements/</link>
+      <link>/legacy/docs/transportation/common-elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/ferries/common-elements/</guid>
+      <guid>/legacy/docs/transportation/common-elements/</guid>
       <description>Introduction In every petition there some nodes which will always appear, there for this chapter is dedicated for said nodes.
 Request Format The common elements in all of the petitions are: source of the petition, Timeout, the indication if you wish to register the transactions and the provider configuration.
 Response Format The response will contain the indication if the function is implemented or not, application errors, if any, the providers traces if requested and the response status.</description>
@@ -9539,10 +9539,10 @@ Response Format The response will contain the indication if the function is impl
     
     <item>
       <title>Common Elements</title>
-      <link>/legacy/docs/transportation/common-elements/</link>
+      <link>/legacy/docs/transportation/ferries/common-elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/common-elements/</guid>
+      <guid>/legacy/docs/transportation/ferries/common-elements/</guid>
       <description>Introduction In every petition there some nodes which will always appear, there for this chapter is dedicated for said nodes.
 Request Format The common elements in all of the petitions are: source of the petition, Timeout, the indication if you wish to register the transactions and the provider configuration.
 Response Format The response will contain the indication if the function is implemented or not, application errors, if any, the providers traces if requested and the response status.</description>
@@ -9674,10 +9674,10 @@ DestinationsTreeRQ Example &amp;lt;DestinationsTreeRQ&amp;gt; &amp;lt;timeoutMil
     
     <item>
       <title>Emit</title>
-      <link>/legacy/docs/transportation/dsf/flights/emit/</link>
+      <link>/legacy/docs/transportation/flights/emit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/emit/</guid>
+      <guid>/legacy/docs/transportation/flights/emit/</guid>
       <description>Method Goals This method aims to issue the tickets.
 Request Format The request indicate the booking locator and the issue type (which tickets have to be issued: all, only passengers, only extras).
 Response Format The result returns a list of Locators (booking codes). It can be the supplier&amp;rsquo;s or the one sent in the request. It also returns all the charges associated to the booking, the passengers and the tickets issued (if any).</description>
@@ -10036,10 +10036,10 @@ Remarks Some suppliers do not provide this method. If this is the case, our inte
     
     <item>
       <title>Refund</title>
-      <link>/legacy/docs/transportation/dsf/flights/refund/</link>
+      <link>/legacy/docs/transportation/flights/refund/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/refund/</guid>
+      <guid>/legacy/docs/transportation/flights/refund/</guid>
       <description>Method Goals This method aims to refund tickets issued previously.
 Request Format The request must indicate the tickets to be refunded, the refund operation desired (informative or process) and the refund type (fare, taxes, etc.).
 Response Format The result returns a breakdown with all the amounts of the fare that will be refunded (Info) or that has been refunded (Process). The result returns also the tickets refunded (same ones of the request, only with the status updated), and it may return also a list of booking locators.</description>
@@ -10069,10 +10069,10 @@ Remarks 180000 milliseconds is the maximum amount of time permitted in our syste
     
     <item>
       <title>Reservation</title>
-      <link>/legacy/docs/transportation/dsf/ferries/reservation/</link>
+      <link>/legacy/docs/transportation/ferries/reservation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/ferries/reservation/</guid>
+      <guid>/legacy/docs/transportation/ferries/reservation/</guid>
       <description>Method Goals This method aims to book one or more itineraries.
 Request Format The request format works the same way as the Valuation request. It can work with one Itinerary or with two.
 This request also holds the passengers and payment data.
@@ -10081,10 +10081,10 @@ Response Format The result returns a list of Locator (booking codes). It can be 
     
     <item>
       <title>Reservation</title>
-      <link>/legacy/docs/transportation/dsf/flights/reservation/</link>
+      <link>/legacy/docs/transportation/flights/reservation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/reservation/</guid>
+      <guid>/legacy/docs/transportation/flights/reservation/</guid>
       <description>Method Goals This method aims to book one or more Itineraries.
 Request Format The request format works the same way as the Valuation request. It can work with one or with two Itineraries. The request will also contain a list of Passengers and the PaymentInfo, such as payment method.
 Response Format The result returns a list of Locators (booking codes). It can be the supplier&amp;rsquo;s or the one sent in the request.</description>
@@ -10160,10 +10160,10 @@ RetrieveBookingRQ Example &amp;lt;RetrieveBookingRQ&amp;gt; &amp;lt;timeoutMilli
     
     <item>
       <title>RetrieveReservation</title>
-      <link>/legacy/docs/transportation/dsf/ferries/retrievereservation/</link>
+      <link>/legacy/docs/transportation/ferries/retrievereservation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/ferries/retrievereservation/</guid>
+      <guid>/legacy/docs/transportation/ferries/retrievereservation/</guid>
       <description>Method Goals This method aims to retrieve a booking with its full details.
 Request Format The request requires the booking code or locator.
 Response Format The response contains the details of a booking.
@@ -10172,10 +10172,10 @@ RetrieveReservationRQ Example &amp;lt;RetrieveReservationRQ xmlns:xsd = &amp;quo
     
     <item>
       <title>RetrieveReservation</title>
-      <link>/legacy/docs/transportation/dsf/flights/recover-reserve/</link>
+      <link>/legacy/docs/transportation/flights/recover-reserve/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/recover-reserve/</guid>
+      <guid>/legacy/docs/transportation/flights/recover-reserve/</guid>
       <description>Method Goals This method aims to retrieve a booking with its full details.
 Request Format The booking can be retrieved by several methods, such as the locator of the booking, the email associated to it, passenger name/surname or other information relative to the itinerary itself.
 Response Format The result returns a list of Itineraries, Passengers, Segments and Booking Locators. It may return also the Payment Info of the booking and the information the client had provided to the provider, such as direction, phone number, etc.</description>
@@ -10183,10 +10183,10 @@ Response Format The result returns a list of Itineraries, Passengers, Segments a
     
     <item>
       <title>RetrieveReservationList</title>
-      <link>/legacy/docs/transportation/dsf/ferries/retrievereservationlist/</link>
+      <link>/legacy/docs/transportation/ferries/retrievereservationlist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/ferries/retrievereservationlist/</guid>
+      <guid>/legacy/docs/transportation/ferries/retrievereservationlist/</guid>
       <description>Method Goals This method aims to return a list of bookings for a given time period being that either booking date or the travelling date.
 Request Format The request requires a date (of reservation or departure) and all the bookings that match this date will be returned.
 Response Format The response contains a list of bookings that match the requested date.
@@ -10195,10 +10195,10 @@ RetrieveReservationListRQ Example &amp;lt;RetrieveReservationListRQ&amp;gt; &amp
     
     <item>
       <title>RetrieveReservationList</title>
-      <link>/legacy/docs/transportation/dsf/flights/recover-reserve-list/</link>
+      <link>/legacy/docs/transportation/flights/recover-reserve-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/recover-reserve-list/</guid>
+      <guid>/legacy/docs/transportation/flights/recover-reserve-list/</guid>
       <description>Method Goals This method aims to return a list of bookings for a given time period being that either booking date or the travelling date, among other filters available.
 Request Format The filter can be set between two time periods, search by email, origin, destination, agency, passenger name/surname, etc.
 Response Format The result return a briefing of the basic information of the bookings that match the query&amp;rsquo;s filters.
@@ -10220,10 +10220,10 @@ This message must be implemented solely in case the supplier does not return roo
     
     <item>
       <title>Routes</title>
-      <link>/legacy/docs/transportation/dsf/ferries/routes/</link>
+      <link>/legacy/docs/transportation/ferries/routes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/ferries/routes/</guid>
+      <guid>/legacy/docs/transportation/ferries/routes/</guid>
       <description>Method Goals This method aims to return all the available routes for the selected carrier.
 Request Format This request does not require any parameters.
 Response Format The result returns a list of Route with the corresponding time frame in which this route is valid.
@@ -10233,10 +10233,10 @@ RoutesRQ Example &amp;lt;RoutesRQ&amp;gt; &amp;lt;/RoutesRQ&amp;gt;  RoutesRQ De
     
     <item>
       <title>Routes</title>
-      <link>/legacy/docs/transportation/dsf/flights/routes/</link>
+      <link>/legacy/docs/transportation/flights/routes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/routes/</guid>
+      <guid>/legacy/docs/transportation/flights/routes/</guid>
       <description>Method Goals This method aims to get the availability of routes of a supplier.
 Request Format In the request, it can be set an origin location, so the response would include only the routes which start with this origin, and an airline filtering.
 Response Format The result returns a list of locations and for each one, a destination tree.
@@ -10348,10 +10348,10 @@ Response Format The XML response contains many elements of the supplier&amp;rsqu
     
     <item>
       <title>Supplements</title>
-      <link>/legacy/docs/transportation/dsf/flights/supplements/</link>
+      <link>/legacy/docs/transportation/flights/supplements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/supplements/</guid>
+      <guid>/legacy/docs/transportation/flights/supplements/</guid>
       <description>Method Goals This method aims to get the available supplements and their price information (before or after a reservation has been done).
 Request Format The Supplements request can be done by two different ways: with a group of Itineraries (before a reservation) or with a booking locator (after a reservation).
 Response Format The result returns a list of the available supplements (seats, baggage, fare rules, payment methods, etc.)
@@ -10360,10 +10360,10 @@ Remarks Not implemented by all suppliers</description>
     
     <item>
       <title>SupplementsReservation</title>
-      <link>/legacy/docs/transportation/dsf/flights/supplementsreservation/</link>
+      <link>/legacy/docs/transportation/flights/supplementsreservation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/supplementsreservation/</guid>
+      <guid>/legacy/docs/transportation/flights/supplementsreservation/</guid>
       <description>Method Goals This method aims to add supplements (seats, baggage, etc) to a reservation done previously.
 Request Format Must contain the Itineraries returned in SupplementsRS and any of the possible ways to retrieve the provider booking (by locator, by email, etc.)
 Response Format The result returns an invoice with all the supplement charges.
@@ -10417,10 +10417,10 @@ Remarks Our system allows for a maximum of 180000 milliseconds before the connec
     
     <item>
       <title>Valuation</title>
-      <link>/legacy/docs/transportation/dsf/ferries/valuation/</link>
+      <link>/legacy/docs/transportation/ferries/valuation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/ferries/valuation/</guid>
+      <guid>/legacy/docs/transportation/ferries/valuation/</guid>
       <description>Method Goals This method aims to do a prebook of the selected Option. This Option must be selected in the previous step ( Availability ).
 The Valuation request must be built from results of a single Availability. Mixing OneWay options from different Availability calls do not grant the correct functionability of the Valuation.
 Request Format The Valuation request can be done by two different ways: with a single Itinerary or multiple Itineraries.</description>
@@ -10428,10 +10428,10 @@ Request Format The Valuation request can be done by two different ways: with a s
     
     <item>
       <title>Valuation</title>
-      <link>/legacy/docs/transportation/dsf/flights/valuation/</link>
+      <link>/legacy/docs/transportation/flights/valuation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/transportation/dsf/flights/valuation/</guid>
+      <guid>/legacy/docs/transportation/flights/valuation/</guid>
       <description>Method Goals This method aims to return the total price of the selected Option. This Option must be selected in the previous step ( Availability ).
 Request Format The Valuation request can be done by two different ways: with a single Itinerary or multiple Itineraries.
  Multiple Itineraries :  In this method, the request will have as many Itineraries as there are Journeys . Mainly used for one-way tickets.</description>
