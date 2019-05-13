@@ -1015,6 +1015,10 @@
   </url>
   
   <url>
+    <loc>/legacy/start/onboarding/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/objects/giatadata/</loc>
   </url>
   
@@ -1596,6 +1600,10 @@
   
   <url>
     <loc>/travelgatex/reference/scalars/int/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/intro/</loc>
   </url>
   
   <url>
@@ -2328,10 +2336,6 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/paymentxstoredcardinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/insights-x/datasets/dataset-content/performance/</loc>
   </url>
   
   <url>
@@ -3379,6 +3383,10 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/concepts/accesses-supplier-context/</loc>
   </url>
   
@@ -3423,10 +3431,6 @@
   </url>
   
   <url>
-    <loc>/insights-x/content/</loc>
-  </url>
-  
-  <url>
     <loc>/insights-x/datasets/dataset-content/</loc>
   </url>
   
@@ -3460,10 +3464,6 @@
   
   <url>
     <loc>/travelgatex/security/identity-access-management/</loc>
-  </url>
-  
-  <url>
-    <loc>/insights-x/datasets/dataset-content/insights/</loc>
   </url>
   
   <url>
@@ -3547,6 +3547,10 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/service-endpoints/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/</loc>
   </url>
   
@@ -3559,11 +3563,11 @@
   </url>
   
   <url>
-    <loc>/learning-graphql/basic_concepts/</loc>
+    <loc>/legacy/docs/audience/</loc>
   </url>
   
   <url>
-    <loc>/insights-x/datasets/dataset-content/benchmark/</loc>
+    <loc>/learning-graphql/basic_concepts/</loc>
   </url>
   
   <url>
@@ -3592,6 +3596,10 @@
   
   <url>
     <loc>/insights-x/datasets/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/start/</loc>
   </url>
   
   <url>
@@ -3683,6 +3691,10 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/documents-goals/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/format-files/commission_netprice/</loc>
   </url>
   
@@ -3756,6 +3768,10 @@
   
   <url>
     <loc>/learning-graphql/thinking_in_graphql/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/anatomy-request/</loc>
   </url>
   
   <url>
@@ -3836,6 +3852,10 @@
   
   <url>
     <loc>/travelgatex/tutorials/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/</loc>
   </url>
   
   <url>
@@ -3931,6 +3951,10 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/car/</loc>
+  </url>
+  
+  <url>
     <loc>/channelx/</loc>
   </url>
   
@@ -3951,11 +3975,31 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/car/soap-examples/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/plugins/format-files/supplier_order/</loc>
   </url>
   
   <url>
     <loc>/hotelx/howtos/howto-book/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hub/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/</loc>
   </url>
   
   <url>
@@ -3971,11 +4015,19 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/transfers/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/release-notes/products-changelogs/changelog-web/</loc>
   </url>
   
   <url>
     <loc>/learning-graphql/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/</loc>
   </url>
   
   <url>
@@ -3989,8 +4041,84 @@
   </url>
   
   <url>
+    <loc>/insights-x/content/</loc>
+  </url>
+  
+  <url>
+    <loc>/insights-x/datasets/dataset-content/benchmark/</loc>
+  </url>
+  
+  <url>
+    <loc>/insights-x/datasets/dataset-content/insights/</loc>
+  </url>
+  
+  <url>
+    <loc>/insights-x/datasets/dataset-content/performance/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/dsf/avail/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/avail/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/avail/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/availdestinationtree/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/dsf/avail/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/avail/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/ferries/avail/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/dsf/reservation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/reservation/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/breaking-changes/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/dsf/cancel/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/cancel/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/dsf/cancel/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/cancel-booking/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/ferries/cancel/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/cancel/</loc>
   </url>
   
   <url>
@@ -3999,7 +4127,123 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/hotel/dsf/categorylist/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/certification/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/change-log/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/change-log/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/change-log/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/change-log/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/change-log/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/change-log/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hub/change-log/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/dsf/code-lists/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/code-lists/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/dsf/common-elements/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/dsf/common-elements/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/common-elements/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/common-elements/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/ferries/common-elements/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/common-elements/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/connectivity/</loc>
+  </url>
+  
+  <url>
     <loc>/credits/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/currencylist/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/data-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/data-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/data-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hub/data-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/data-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/descriptiveinfo/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/descriptiveinfoextended/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/destinationtree/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/emit/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/enum/</loc>
   </url>
   
   <url>
@@ -4008,8 +4252,72 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/transportation/error/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hub/example-codes/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/faq/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/faq/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/ferries/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/flights/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/full-messages/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/full-files/full-notif-messages/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/full-files/full-retrieve-messages/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/geographicdestinationtree/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/getrates/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/getsupplements/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/getsupplierratetransfertypes/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/getsuppliertransfertypes/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/gettransfertypes/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/getvehicles/</loc>
   </url>
   
   <url>
@@ -4018,8 +4326,72 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/hotel/dsf/hotellist/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/hotel-list/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hub/quotas/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/listsdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/marketlist/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/mealplanlist/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/hotelpush/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/metadata/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/modifyreservation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/modifyvaluation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/messages-files/notify-messages/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/dsf/valuation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/dsf/rate-rule/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/price-types/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/products-changelog/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/rate-rule/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/refund/</loc>
   </url>
   
   <url>
@@ -4028,8 +4400,120 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/activities/dsf/reservation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/reservation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/ferries/reservation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/reservation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/dsf/reservation-list/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/dsf/reservation-read/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/reservationlist/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/reservationread/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/messages-files/retrieve-messages/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transfers/dsf/retrieve-booking/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/ferries/retrievereservation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/recover-reserve/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/ferries/retrievereservationlist/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/recover-reserve-list/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/roadmap/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/roomlist/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/ferries/routes/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/routes/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/dsf/routes/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/dsf/runtimeconfiguration/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/dsf/runtimeconfiguration/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/runtimeconfiguration/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/soap-examples/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/dsf/search/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/dsf/static-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/dsf/static-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/staticconfiguration/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/supplements/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/supplementsreservation/</loc>
   </url>
   
   <url>
@@ -4038,9 +4522,37 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/activities/dsf/territories/</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/messages-files/typical-scenario/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/activities/dsf/valuation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel/dsf/valuation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/ferries/valuation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/transportation/dsf/flights/valuation/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/hotel-push/messages/</loc>
   </url>
   
 </urlset>

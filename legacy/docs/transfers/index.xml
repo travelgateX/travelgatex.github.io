@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transfers API Documentation on TravelgateX Documentation</title>
+    <link>/legacy/docs/transfers/</link>
+    <description>Recent content in Transfers API Documentation on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/legacy/docs/transfers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Availability</title>
+      <link>/legacy/docs/transfers/dsf/avail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/avail/</guid>
+      <description>Method Goals This method aims to return all the available options for a given dates and destinations.
+Remarks This method must be called before the RateRule method.
+AvailabilityRQ Example &amp;lt;AvailabilityRQ&amp;gt; &amp;lt;echoToken&amp;gt;test&amp;lt;/echoToken&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;xxxx&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;xx&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;xxx&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;xxxx&amp;quot; password = &amp;quot;xxxx&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;xxxx&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlAvailability xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlRateRule xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlBook xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlsSpecific xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;/Attributes&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;Segments&amp;gt; &amp;lt;Segment id = &amp;quot;0&amp;quot;&amp;gt; &amp;lt;Origin type = &amp;quot;ARP&amp;quot; code = &amp;quot;xxx&amp;quot; date = &amp;quot;2014-09-19T17:15:00&amp;quot;&amp;gt; &amp;lt;FlightInfo flightNumber = &amp;quot;xxxx&amp;quot;&amp;gt; &amp;lt;Arrival terminal = &amp;quot;xxx&amp;quot; date = &amp;quot;2014-09-19T17:45:00&amp;quot;/&amp;gt; &amp;lt;Departure terminal = &amp;quot;xxx&amp;quot; date = &amp;quot;2014-09-19T17:15:00&amp;quot;/&amp;gt; &amp;lt;/FlightInfo&amp;gt; &amp;lt;/Origin&amp;gt; &amp;lt;Destination type = &amp;quot;HOT&amp;quot; code = &amp;quot;xxxx&amp;quot; date = &amp;quot;2014-09-30T00:00:00&amp;quot;&amp;gt; &amp;lt;HotelInfo name=&amp;quot;xxxx&amp;quot; address=&amp;quot;xxxxx&amp;quot;&amp;gt;&amp;lt;/HotelInfo&amp;gt; &amp;lt;/Destination&amp;gt; &amp;lt;/Segment&amp;gt; &amp;lt;Segment id = &amp;quot;1&amp;quot;&amp;gt; &amp;lt;Origin type = &amp;quot;HOT&amp;quot; code = &amp;quot;xxxx&amp;quot; date = &amp;quot;2014-09-01T17:15:00&amp;quot;/&amp;gt; &amp;lt;HotelInfo name=&amp;quot;xxxx&amp;quot; address=&amp;quot;xxxxx&amp;quot;&amp;gt;&amp;lt;/HotelInfo&amp;gt; &amp;lt;/Origin&amp;gt; &amp;lt;Destination type = &amp;quot;ARP&amp;quot; code = &amp;quot;xxx&amp;quot; date = &amp;quot;2014-09-02T00:00:00&amp;quot;&amp;gt; &amp;lt;FlightInfo flightNumber = &amp;quot;xxxx&amp;quot;&amp;gt; &amp;lt;Arrival terminal = &amp;quot;xxx&amp;quot; date = &amp;quot;2014-09-01T16:25:00&amp;quot;/&amp;gt; &amp;lt;Departure terminal = &amp;quot;xxx&amp;quot; date = &amp;quot;2014-09-01T15:55:00&amp;quot;/&amp;gt; &amp;lt;/FlightInfo&amp;gt; &amp;lt;/Destination&amp;gt; &amp;lt;/Segment&amp;gt; &amp;lt;/Segments&amp;gt; &amp;lt;Passengers&amp;gt; &amp;lt;Passenger id = &amp;quot;0&amp;quot; age = &amp;quot;30&amp;quot;&amp;gt; &amp;lt;RefSegments&amp;gt; &amp;lt;RefSegment refSegment = &amp;quot;0&amp;quot; bags = &amp;quot;0&amp;quot;/&amp;gt; &amp;lt;RefSegment refSegment = &amp;quot;1&amp;quot; bags = &amp;quot;0&amp;quot;/&amp;gt; &amp;lt;/RefSegments&amp;gt; &amp;lt;/Passenger&amp;gt; &amp;lt;/Passengers&amp;gt; &amp;lt;/AvailabilityRQ&amp;gt;  AvailabilityRQ Description The availability request is very straight forward.</description>
+    </item>
+    
+    <item>
+      <title>Booking</title>
+      <link>/legacy/docs/transfers/dsf/reservation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/reservation/</guid>
+      <description>Method Goals This method aims to book the selected options.
+BookRQ Example &amp;lt;BookRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;test&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;XXX&amp;quot; password = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;XXX&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlAvailability xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlRateRule xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlBook xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlsSpecific xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;/Attributes&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;Locator id = &amp;quot;XXX&amp;quot; type = &amp;quot;CLIENT&amp;quot;/&amp;gt; &amp;lt;SelectedRates&amp;gt; &amp;lt;SelectedRate id = &amp;quot;0&amp;quot; rateType = &amp;quot;OW&amp;quot;&amp;gt; &amp;lt;SelectedOptions&amp;gt; &amp;lt;SelectedOption status = &amp;quot;NEW&amp;quot; id = &amp;quot;0&amp;quot;&amp;gt; &amp;lt;Transfers&amp;gt; &amp;lt;Transfer id = &amp;quot;0&amp;quot;&amp;gt; &amp;lt;Info type = &amp;quot;BUS&amp;quot; code = &amp;quot;XXX&amp;quot; typeVeh = &amp;quot;XXX&amp;quot;/&amp;gt; &amp;lt;LocOrigin type = &amp;quot;ARP&amp;quot; code = &amp;quot;PMI&amp;quot; date = &amp;quot;2014-09-19T00:00:00&amp;quot;/&amp;gt; &amp;lt;LocDestination type = &amp;quot;HOT&amp;quot; code = &amp;quot;XXX&amp;quot; date = &amp;quot;2014-09-19T00:00:00&amp;quot;/&amp;gt; &amp;lt;/Transfer&amp;gt; &amp;lt;/Transfers&amp;gt; &amp;lt;Parameters&amp;gt;&amp;lt;/Parameters&amp;gt; &amp;lt;/SelectedOption&amp;gt; &amp;lt;/SelectedOptions&amp;gt; &amp;lt;TotalRate currency = &amp;quot;EUR&amp;quot; amount = &amp;quot;5.</description>
+    </item>
+    
+    <item>
+      <title>CancelBooking</title>
+      <link>/legacy/docs/transfers/dsf/cancel-booking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/cancel-booking/</guid>
+      <description>Method Goals This method aims to cancel a booking.
+CancelBookingRQ Example &amp;lt;CancelBookingRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;XXXX&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;XXXX&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;XXX&amp;quot; password = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://examples.com&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification&amp;gt;http://examples.com&amp;lt;/UrlIdentification&amp;gt; &amp;lt;UrlAvailability xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlRateRule xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlBook xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlsSpecific xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes/&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;Locator id = &amp;quot;94&amp;quot; type = &amp;quot;PROVIDER&amp;quot;/&amp;gt; &amp;lt;/CancelBookingRQ&amp;gt;  CancelBookingRQ Description    Element Number Type Description     CancelBookingRQ 1  Root node.</description>
+    </item>
+    
+    <item>
+      <title>Change Log</title>
+      <link>/legacy/docs/transfers/change-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/change-log/</guid>
+      <description>Version 1.0: Date 24/09/2013
+: First version of the API.
+|
+Version 2.0: Date 11/09/2014
+: Added RetrieveBooking.
+|
+Version 2.0.1: Date 19/09/2014
+: Added description of Common Elements.
+: Added description of Availability.
+|
+Version 2.0.2: Date 22/09/2014
+: Added description of RateRule.
+: Added description of Book.
+|
+Version 2.0.3: Date 24/09/2014
+: Added description of RetrieveBooking.
+: Added description of DestinationsTree.
+: Added description of HotelList.</description>
+    </item>
+    
+    <item>
+      <title>Common Elements</title>
+      <link>/legacy/docs/transfers/dsf/common-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/common-elements/</guid>
+      <description>This node will be in every request and response objects.
+The request objects contains the supplier&amp;rsquo;s configuration, urls and credentials.
+The response object contains the operation status and errors if any.
+Common Elements RQ Example &amp;lt;TransfersBaseRQ&amp;gt; &amp;lt;echoToken&amp;gt;TEST&amp;lt;/echoToken&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;xxxx&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;xx&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;xxx&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;xxxx&amp;quot; password = &amp;quot;xxxx&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;xxxxx&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlAvailability xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlRateRule xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlBook xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlsSpecific xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key = &amp;quot;xxx&amp;quot; value = &amp;quot;xxx&amp;quot;/&amp;gt; &amp;lt;Attribute key = &amp;quot;xxx&amp;quot; value = &amp;quot;xxx&amp;quot;/&amp;gt; &amp;lt;Attribute key = &amp;quot;xxx&amp;quot; value = &amp;quot;xxx&amp;quot;/&amp;gt; &amp;lt;/Attributes&amp;gt; &amp;lt;/Configuration&amp;gt; … &amp;lt;/TransfersBaseRQ&amp;gt;  Common Elements RQ Description    Element Number Type Description     TransfersBaseRQ 1  Root node.</description>
+    </item>
+    
+    <item>
+      <title>Data Structure</title>
+      <link>/legacy/docs/transfers/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/data-structure/</guid>
+      <description>The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields. The integration will have the following methods:
+   Method Input Output Required Description Endpoint     Availability AvailabilityRQ AvailabilityRS Yes Makes an availability search Transfers Booking Endpoint   RateRule RateRuleRQ RateRuleRS Yes Makes a pre-booking Transfers Booking Endpoint   Book BookRQ BookRS Yes Creates a booking Transfers Booking Endpoint   Retrieve Booking Retrieve BookingRQ Retrieve BookingRS No Retrieves Booking details Transfers Booking Endpoint   Cance lBooking Cancel BookingRQ Cancel BookingRS No Cancels a booking Transfers Booking Endpoint   Destinations Tree Destinations TreeRQ Destinations TreeRS Yes Gets a hierarchical list of destinations Transfers Booking Endpoint   HotelList HotelListRQ HotelListRS No Gets a list of the hotels with a basic information Transfers Booking Endpoint   GetRates GetRatesRQ GetRatesRS No Gets a list of the rates with a basic information Transfers Booking Endpoint   GetSupplements Get SupplementsRQ Get SupplementsRS No Gets a list of the supplements with a basic information Transfers Booking Endpoint   GetSupplier RateTransfers Type Getsupplier RateTransfers TypeRQ Getsupplier RateTransfers TypeRS No Gets a list of the types of suppliers transfers rates with a basicinformation Transfers Booking Endpoint   GetSupplier TransfersType GetSupplier TransfersTypeRQ GetSupplier TransfersTypeRS No Gets a list of the suppliers transfers types with a basic information Transfers Booking Endpoint   GetTransfers Types GetTransfers TypesRQ GetTransfers TypesRQ No Gets a list of the transfers types with a basic information Transfers Booking Endpoint   GetVehicles GetVehiclesRQ GetVehiclesRS No Gets a list of the vehicles with a basic information Transfers Booking Endpoint    Each request sent to the service url requires a node called rqXML .</description>
+    </item>
+    
+    <item>
+      <title>DestinationsTree</title>
+      <link>/legacy/docs/transfers/dsf/destinationtree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/destinationtree/</guid>
+      <description>Method Goals This method aims to return all the available destinations for the selected carrier.
+Remarks This method should be cached internally and only called once a week and in most cases once a month. The hierarchically structure of the tree is defined by the provider.
+DestinationsTreeRQ Example &amp;lt;DestinationsTreeRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;test&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;XXX&amp;quot; password = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;XXX&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlAvailability xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlRateRule xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlBook xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlsSpecific xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt;&amp;lt;/Attributes&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/DestinationsTreeRQ&amp;gt;  DestinationsTreeRQ Description The request just contains the elements of BaseRQ.</description>
+    </item>
+    
+    <item>
+      <title>GetRates</title>
+      <link>/legacy/docs/transfers/dsf/getrates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/getrates/</guid>
+      <description>Method Goals This method aims to retrieve a list of the rates that can be booked.
+Remarks GetRatesRQ Example &amp;lt;GetRatesRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;en&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXXXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;&amp;quot; password = &amp;quot;&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://example.com&amp;lt;/UrlGeneric&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes/&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/GetRatesRQ&amp;gt;  GetRatesRQ Description The request just contains the elements of BaseRQ.
+   Element Number Type Description     GetRatesRQ 1  Root node.</description>
+    </item>
+    
+    <item>
+      <title>GetSupplements</title>
+      <link>/legacy/docs/transfers/dsf/getsupplements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/getsupplements/</guid>
+      <description>Method Goals This method aims to retrieve a list of the supplements that can be added to a product.
+Remarks GetSupplementsRQ Example &amp;lt;GetSupplementsRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;en&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;&amp;quot; password = &amp;quot;&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://example.com&amp;lt;/UrlGeneric&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes/&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/GetSupplementsRQ&amp;gt;  GetSupplementsRQ Description    Element Number Type Description     GetSupplementsRQ 1  Root node.    GetSupplementsRS Example &amp;lt;GetSupplementsRS&amp;gt; &amp;lt;auditData&amp;gt; &amp;lt;timeStamp&amp;gt;2014-10-30T11:31:22.</description>
+    </item>
+    
+    <item>
+      <title>GetSupplierRateTransfersTypes</title>
+      <link>/legacy/docs/transfers/dsf/getsupplierratetransfertypes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/getsupplierratetransfertypes/</guid>
+      <description>Method Goals This method aims to retrieve a list of the suppliers including their rates.
+Remarks GetSupplierRateTransfersTypesRQ Example &amp;lt;GetSupplierRateTransferTypesRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;en&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXXXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;&amp;quot; password = &amp;quot;&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://examples-com&amp;lt;/UrlGeneric&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes/&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/GetSupplierRateTransferTypesRQ&amp;gt;  GetSuppliersRateTransfersTypesRQ Description    Element Number Type Description     GetSupplierRateTransfersTypesRQ 1  Root node.    GetSupplierRateTransfersTypesRS Example &amp;lt;GetSupplierRateTransferTypesRS&amp;gt; &amp;lt;auditData&amp;gt; &amp;lt;timeStamp&amp;gt;2014-10-30T11:32:29.8466879+00:00&amp;lt;/timeStamp&amp;gt; &amp;lt;processTimeMilliseconds&amp;gt;0&amp;lt;/processTimeMilliseconds&amp;gt; &amp;lt;/auditData&amp;gt; &amp;lt;operationImplemented&amp;gt;true&amp;lt;/operationImplemented&amp;gt; &amp;lt;Suppliers&amp;gt; &amp;lt;Supplier id = &amp;quot;ext-3&amp;quot;&amp;gt; &amp;lt;Rates&amp;gt; &amp;lt;Rate id = &amp;quot;7&amp;quot; name = &amp;quot;OWShuttle&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;6&amp;quot; name = &amp;quot;RT&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;3&amp;quot; name = &amp;quot;Rate1&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;19&amp;quot; name = &amp;quot;RateAudit&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;13&amp;quot; name = &amp;quot;RateAudit&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;4&amp;quot; name = &amp;quot;Rate2&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;15&amp;quot; name = &amp;quot;Comas Privado 5 - 8 RT&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;11&amp;quot; name = &amp;quot;Comas Privado 13 - 20&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;9&amp;quot; name = &amp;quot;Comas Privado 5 - 8&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;8&amp;quot; name = &amp;quot;Comas Privado 1 - 4&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;16&amp;quot; name = &amp;quot;Comas Privado 9 - 12 RT&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;12&amp;quot; name = &amp;quot;Comas Privado 21 - 31&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;17&amp;quot; name = &amp;quot;Comas Privado 13 - 20 RT&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;14&amp;quot; name = &amp;quot;Comas Privado 1 - 4 RT&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;10&amp;quot; name = &amp;quot;Comas Privado 9 - 12&amp;quot;/&amp;gt; &amp;lt;Rate id = &amp;quot;18&amp;quot; name = &amp;quot;Comas Privado 21 - 31 RT&amp;quot;/&amp;gt; &amp;lt;/Rates&amp;gt; &amp;lt;/Supplier&amp;gt; &amp;lt;Supplier id = &amp;quot;ext-2&amp;quot;/&amp;gt; &amp;lt;Supplier id = &amp;quot;ext-4&amp;quot;/&amp;gt; &amp;lt;/Suppliers&amp;gt; &amp;lt;/GetSupplierRateTransferTypesRS&amp;gt;  GetSupplierRateTransfersTypesRS Description    Element Number Type Description     GetSupplierRateTransfers TypesRS 1  Root node.</description>
+    </item>
+    
+    <item>
+      <title>GetSupplierTransferTypes</title>
+      <link>/legacy/docs/transfers/dsf/getsuppliertransfertypes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/getsuppliertransfertypes/</guid>
+      <description>Method Goals Remarks GetSupplierTransferTypesRQ Example &amp;lt;GetSupplierTransferTypesRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;en&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXXXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;&amp;quot; password = &amp;quot;&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://example.com&amp;lt;/UrlGeneric&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes/&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/GetSupplierTransferTypesRQ&amp;gt;  GetSupplierTransferTypesRQ Description    Element Number Type Description     GetSupplierTransferTypesRQ 1  Root node.    GetSupplierTransferTypesRS Example &amp;lt;GetSupplierTransferTypesRS&amp;gt; &amp;lt;auditData&amp;gt; &amp;lt;timeStamp&amp;gt;2014-10-30T11:33:16.7125413+00:00&amp;lt;/timeStamp&amp;gt; &amp;lt;processTimeMilliseconds&amp;gt;0&amp;lt;/processTimeMilliseconds&amp;gt; &amp;lt;/auditData&amp;gt; &amp;lt;operationImplemented&amp;gt;true&amp;lt;/operationImplemented&amp;gt; &amp;lt;Suppliers&amp;gt; &amp;lt;Supplier id = &amp;quot;ext-3&amp;quot;&amp;gt; &amp;lt;TransferTypes&amp;gt; &amp;lt;TransferType id = &amp;quot;2&amp;quot; name = &amp;quot;Compartido - Shuttle&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;16&amp;quot; name = &amp;quot;Privado - 13 - 20 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;17&amp;quot; name = &amp;quot;Privado - 21 - 31 Personas&amp;quot;/&amp;gt; &amp;lt;/TransferTypes&amp;gt; &amp;lt;/Supplier&amp;gt; &amp;lt;Supplier id = &amp;quot;ext-2&amp;quot;&amp;gt; &amp;lt;TransferTypes&amp;gt; &amp;lt;TransferType id = &amp;quot;2&amp;quot; name = &amp;quot;Compartido - Shuttle&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;5&amp;quot; name = &amp;quot;Privado - VIP&amp;quot;/&amp;gt; &amp;lt;/TransferTypes&amp;gt; &amp;lt;/Supplier&amp;gt; &amp;lt;Supplier id = &amp;quot;ext-4&amp;quot;&amp;gt; &amp;lt;TransferTypes&amp;gt; &amp;lt;TransferType id = &amp;quot;15&amp;quot; name = &amp;quot;Privado - 9 - 12 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;16&amp;quot; name = &amp;quot;Privado - 13 - 20 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;17&amp;quot; name = &amp;quot;Privado - 21 - 31 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;13&amp;quot; name = &amp;quot;Privado - 1 - 4 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;14&amp;quot; name = &amp;quot;Privado - 5 - 8 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;5&amp;quot; name = &amp;quot;Privado - VIP&amp;quot;/&amp;gt; &amp;lt;/TransferTypes&amp;gt; &amp;lt;/Supplier&amp;gt; &amp;lt;/Suppliers&amp;gt; &amp;lt;/GetSupplierTransferTypesRS&amp;gt;  GetSupplierTransferTypesRS Description    Element Number Type Description     GetSupplierTransferTypesRS 1  Root node.</description>
+    </item>
+    
+    <item>
+      <title>GetTransferTypes</title>
+      <link>/legacy/docs/transfers/dsf/gettransfertypes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/gettransfertypes/</guid>
+      <description>Method Goals Remarks GetTransferTypesRQ Example &amp;lt;GetTransferTypesRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;en&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXXXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;&amp;quot; password = &amp;quot;&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://examples.com&amp;lt;/UrlGeneric&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes/&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/GetTransferTypesRQ&amp;gt;  GetTransferTypesRQ Description    Element Number Type Description     GetTransferTypesRQ 1  Root node.    GetTransferTypesRS Example &amp;lt;GetTransferTypesRS&amp;gt; &amp;lt;auditData&amp;gt; &amp;lt;timeStamp&amp;gt;2014-10-30T11:35:31.1499128+00:00&amp;lt;/timeStamp&amp;gt; &amp;lt;processTimeMilliseconds&amp;gt;0&amp;lt;/processTimeMilliseconds&amp;gt; &amp;lt;/auditData&amp;gt; &amp;lt;operationImplemented&amp;gt;true&amp;lt;/operationImplemented&amp;gt; &amp;lt;TransferTypes&amp;gt; &amp;lt;TransferType id = &amp;quot;15&amp;quot; name = &amp;quot;Privado - 9 - 12 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;3&amp;quot; name = &amp;quot;Compartido - Shuttle Express&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;2&amp;quot; name = &amp;quot;Compartido - Shuttle&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;16&amp;quot; name = &amp;quot;Privado - 13 - 20 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;17&amp;quot; name = &amp;quot;Privado - 21 - 31 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;13&amp;quot; name = &amp;quot;Privado - 1 - 4 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;14&amp;quot; name = &amp;quot;Privado - 5 - 8 Personas&amp;quot;/&amp;gt; &amp;lt;TransferType id = &amp;quot;5&amp;quot; name = &amp;quot;Privado - VIP&amp;quot;/&amp;gt; &amp;lt;/TransferTypes&amp;gt; &amp;lt;/GetTransferTypesRS&amp;gt;  GetTransferTypesRS Description    Element Number Type Description     GetSupplmenetsRS 1  Root node.</description>
+    </item>
+    
+    <item>
+      <title>GetVehicles</title>
+      <link>/legacy/docs/transfers/dsf/getvehicles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/getvehicles/</guid>
+      <description>Method Goals This method aims to retrieve a list of the vehicles that operate the transfers.
+Remarks GetVehiclesRQ Example &amp;lt;GetVehiclesRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;en&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXXXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;&amp;quot; password = &amp;quot;&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://example.com&amp;lt;/UrlGeneric&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes/&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/GetVehiclesRQ&amp;gt;  GetVehiclesRQ Description    Element Number Type Description     GetVehiclesRQ 1  Root node.    GetVehiclesRS Example &amp;lt;GetVehiclesRS&amp;gt; &amp;lt;auditData&amp;gt; &amp;lt;timeStamp&amp;gt;2014-10-30T11:34:03.</description>
+    </item>
+    
+    <item>
+      <title>HotelList</title>
+      <link>/legacy/docs/transfers/dsf/hotel-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/hotel-list/</guid>
+      <description>Method Goals This method aims to retrieve a list of the hotels that can be used as a destination in the provider&amp;rsquo;s system. The information details is provided by the provider.
+Remarks This method should be cached internally and only called once a week and in most cases once a month. The information details is provided by the provider.
+HotelListRQ Example &amp;lt;HotelListRQ xmlns:xsd = &amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; xmlns:xsi = &amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;900000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;test&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;xxxx&amp;quot; password = &amp;quot;xxxxxxx&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;xxxxxxxx&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlAvailability xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlRateRule xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlBook xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlsSpecific xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key = &amp;quot;XXX&amp;quot; value = &amp;quot;xxxxxx&amp;quot;/&amp;gt; &amp;lt;/Attributes&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/HotelListRQ&amp;gt;  HotelListRQ Description The request just contains the elements of BaseRQ.</description>
+    </item>
+    
+    <item>
+      <title>RateRule (Pre-Booking)</title>
+      <link>/legacy/docs/transfers/dsf/rate-rule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/rate-rule/</guid>
+      <description>Method Goals This method aims to return price of the SelectedOptions . This options must be selected in the previous step ( Availability ).
+This message allows the partners to know the applied conditions on the chosen transfers.
+Remarks Some suppliers do not provide this method. If this is the case, our integration will internally call an Availability method and will filter the results in order to refresh the information and produce a RateRuleRS.</description>
+    </item>
+    
+    <item>
+      <title>RetrieveBooking</title>
+      <link>/legacy/docs/transfers/dsf/retrieve-booking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transfers/dsf/retrieve-booking/</guid>
+      <description>Method Goals This method aims to Retrieve Booking details.
+RetrieveBookingRQ Example &amp;lt;RetrieveBookingRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;xxxx&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;XXX&amp;quot; password = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;XXX&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlAvailability xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlRateRule xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlRetrieveBooking xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlsSpecific xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;/Attributes&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;Locator id = &amp;quot;XXX&amp;quot; type = &amp;quot;PROVIDER&amp;quot;/&amp;gt; &amp;lt;/RetrieveBookingRQ&amp;gt;  RetrieveBookingRQ Description The request format works the same way as the Book response.</description>
+    </item>
+    
+  </channel>
+</rss>
