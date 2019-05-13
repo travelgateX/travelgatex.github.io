@@ -9149,10 +9149,10 @@ Request Format It is mandatory to pass a date range and a search type. Depends i
     
     <item>
       <title>Avail</title>
-      <link>/legacy/docs/hotel/dsf/avail/</link>
+      <link>/legacy/docs/hotel/methods/avail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/avail/</guid>
+      <guid>/legacy/docs/hotel/methods/avail/</guid>
       <description>Method Goals This method aims to return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the supplier.
 Request Format The availability request is very straight forward. It only requires destination, travel dates and the number of pax in each room.
 Response Format Results are organized in this hierarchy:
@@ -9172,10 +9172,10 @@ Response Format The response format will always be delivered in the node Transpo
     
     <item>
       <title>AvailDestinationTree</title>
-      <link>/legacy/docs/hotel/dsf/availdestinationtree/</link>
+      <link>/legacy/docs/hotel/methods/availdestinationtree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/availdestinationtree/</guid>
+      <guid>/legacy/docs/hotel/methods/availdestinationtree/</guid>
       <description>Method Goals This method returns the tree of destinations accessible from the call Avail .
 Request Format The request does not require any elements - it&amp;rsquo;s an empty request.
 Response Format The result returns a list of DestinationTree with their corresponding sub-destinations.
@@ -9252,10 +9252,10 @@ CancelRQ Example &amp;lt;OTA_TourActivityCancelRQ xmlns:xsi=&amp;quot;http://www
     
     <item>
       <title>Cancel</title>
-      <link>/legacy/docs/hotel/dsf/cancel/</link>
+      <link>/legacy/docs/hotel/methods/cancel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/cancel/</guid>
+      <guid>/legacy/docs/hotel/methods/cancel/</guid>
       <description>Method Goals This method aims to cancel a booking
 Request Format The request requires one or more of the following data depending on the supplier:
  Locators: booking codes (this element contains two elements Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code), one or both will be required depending on the supplier) hotelCode: the hotel code StartDate: the check-in date EndDate: the check-out date  Response Format The result returns a response with the booking status, the cancellation&amp;rsquo;s ID and the fee for that cancellation.</description>
@@ -9310,10 +9310,10 @@ CancellationRQ Description    Element Number Type Description     CancellationRQ
     
     <item>
       <title>CategoryList</title>
-      <link>/legacy/docs/hotel/dsf/categorylist/</link>
+      <link>/legacy/docs/hotel/methods/categorylist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/categorylist/</guid>
+      <guid>/legacy/docs/hotel/methods/categorylist/</guid>
       <description>Method Goals This method returns a list of categories (codes and descriptions) used in HotelList and DescriptiveInfo.
 Request Format The request does not require any elements empty request.
 Response Format The result returns a list of Category .
@@ -9504,10 +9504,10 @@ Common Elements RQ Example &amp;lt;CarBaseRQ&amp;gt; &amp;lt;timeoutMilliseconds
     
     <item>
       <title>Common Elements</title>
-      <link>/legacy/docs/hotel/dsf/common-elements/</link>
+      <link>/legacy/docs/hotel/methods/common-elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/common-elements/</guid>
+      <guid>/legacy/docs/hotel/methods/common-elements/</guid>
       <description>This node will be in every request and response objects.
 The request object contains the supplier&amp;rsquo;s configuration, urls and credentials.
 The response object contains the status of the request and any possible errors as well as possible messages from the supplier (if previously requested).
@@ -9571,10 +9571,10 @@ Provider should contact with Seller to get its credentials.</description>
     
     <item>
       <title>CurrencyList</title>
-      <link>/legacy/docs/hotel/dsf/currencylist/</link>
+      <link>/legacy/docs/hotel/methods/currencylist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/currencylist/</guid>
+      <guid>/legacy/docs/hotel/methods/currencylist/</guid>
       <description>Method Goals This method returns a list of currencies the supplier supports in Avail.
 Request Format The request does not require any elements. Empty request.
 Response Format The result returns a list of currencies.
@@ -9639,10 +9639,10 @@ For more detailed information on the specific XML elements inside the requests a
     
     <item>
       <title>DescriptiveInfo</title>
-      <link>/legacy/docs/hotel/dsf/descriptiveinfo/</link>
+      <link>/legacy/docs/hotel/methods/descriptiveinfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/descriptiveinfo/</guid>
+      <guid>/legacy/docs/hotel/methods/descriptiveinfo/</guid>
       <description>Method Goals This method returns the details of a hotel (pictures, descriptions &amp;hellip;) in a given language.
 Request Format The request just requires the hotel code and language code (ISO-639-1) - this is specified within the source&amp;ndash;&amp;gt;languageCode).
 Response Format The result returns the details of that hotel.
@@ -9652,10 +9652,10 @@ DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt
     
     <item>
       <title>DescriptiveInfoExtended (In development)</title>
-      <link>/legacy/docs/hotel/dsf/descriptiveinfoextended/</link>
+      <link>/legacy/docs/hotel/methods/descriptiveinfoextended/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/descriptiveinfoextended/</guid>
+      <guid>/legacy/docs/hotel/methods/descriptiveinfoextended/</guid>
       <description>Method Goals This method returns 100% of the hotel information provided by the supplier.
 It allows you to map each hotel using your own criteria with the combination of contextItem_ plus data_ so you will have the information (extracted from the supplier&amp;rsquo;s documentation hierachy/fields descriptions) required to do so.
 Request Format After entering the hotel code, you can set language filters. We recommend that the first call is done without filters in order to ascertain which languages are provided by the supplier.</description>
@@ -9789,10 +9789,10 @@ By using the field ID in the request. For example:</description>
     
     <item>
       <title>GeographicDestinationTree</title>
-      <link>/legacy/docs/hotel/dsf/geographicdestinationtree/</link>
+      <link>/legacy/docs/hotel/methods/geographicdestinationtree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/geographicdestinationtree/</guid>
+      <guid>/legacy/docs/hotel/methods/geographicdestinationtree/</guid>
       <description>Method Goals This method returns the supplier&amp;rsquo;s geographic tree where each node indicates whether the request is accessible from availability, indicated with a parameter with values true or false. The main difference between the methods GeographicalTree and DestinationTree is that GeographicalTree has this boolean parameter.
 Request Format The request not requires any element, it is empty.
 Response Format The result returns a list of DestinationTree with corresponding sub-destinations.
@@ -9860,10 +9860,10 @@ Remarks GetVehiclesRQ Example &amp;lt;GetVehiclesRQ&amp;gt; &amp;lt;timeoutMilli
     
     <item>
       <title>HotelList</title>
-      <link>/legacy/docs/hotel/dsf/hotellist/</link>
+      <link>/legacy/docs/hotel/methods/hotellist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/hotellist/</guid>
+      <guid>/legacy/docs/hotel/methods/hotellist/</guid>
       <description>Method Goals This method returns a list of hotels with basic information (code, name, address, phone, etc.) for each hotel
 Request Format The request does not require any elements. Empty request.
 Response Format The result returns a list of Hotel (hotels).
@@ -9894,20 +9894,20 @@ HotelListRQ Example &amp;lt;HotelListRQ xmlns:xsd = &amp;quot;http://www.w3.org/
     
     <item>
       <title>Lists of Data</title>
-      <link>/legacy/docs/hotel/dsf/listsdata/</link>
+      <link>/legacy/docs/hotel/methods/listsdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/listsdata/</guid>
+      <guid>/legacy/docs/hotel/methods/listsdata/</guid>
       <description>Method Goals This paragraph aims to return all of the data lists used in our system: language codes, error codes,currency list, credit cards, nationality and market.
 Language Codes    Language Code     English en   Spanish es   Portuguese pt   Italian it   French fr   German de   Brazilian br    Error codes    Code Description     101 System Exception (Exception not controlled or not classified as general exception).</description>
     </item>
     
     <item>
       <title>MarketList</title>
-      <link>/legacy/docs/hotel/dsf/marketlist/</link>
+      <link>/legacy/docs/hotel/methods/marketlist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/marketlist/</guid>
+      <guid>/legacy/docs/hotel/methods/marketlist/</guid>
       <description>Method Goals This method aims to return a list of the available Markets, which will be used in the availability request.
 Request Format The request does not require any elements - empty request.
 Response Format The result returns a list of Market.
@@ -9916,10 +9916,10 @@ Remarks The maximum time permitted in our system before the connection is closed
     
     <item>
       <title>MealPlanList</title>
-      <link>/legacy/docs/hotel/dsf/mealplanlist/</link>
+      <link>/legacy/docs/hotel/methods/mealplanlist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/mealplanlist/</guid>
+      <guid>/legacy/docs/hotel/methods/mealplanlist/</guid>
       <description>Method Goals This method aims to return a list of the available MealPlans, which will be used in the availability response.
 Request Format The request does not require any elements - empty request.
 Response Format The result returns a list of MealPlan.
@@ -9947,10 +9947,10 @@ XML Travelgate Hotel PUSH API Table Of Contents  Change Log Intro Audience Docum
     
     <item>
       <title>MetaData</title>
-      <link>/legacy/docs/hotel/dsf/metadata/</link>
+      <link>/legacy/docs/hotel/methods/metadata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/metadata/</guid>
+      <guid>/legacy/docs/hotel/methods/metadata/</guid>
       <description>Method Goals This method provides information about the meta data of the supplier so that it can be effectively configured.
 Request Format The request does not require any elements - empty request.
 Response Format The XML response contains many elements of the supplier&amp;rsquo;s meta data: number of hotels, number of cities and number of areas available, maximum number of roomcandidate, maximum number of paxes in a roomcandidate, release days, minimum stay, list of languages supported &amp;hellip;</description>
@@ -9958,10 +9958,10 @@ Response Format The XML response contains many elements of the supplier&amp;rsqu
     
     <item>
       <title>ModifyReservation</title>
-      <link>/legacy/docs/hotel/dsf/modifyreservation/</link>
+      <link>/legacy/docs/hotel/methods/modifyreservation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/modifyreservation/</guid>
+      <guid>/legacy/docs/hotel/methods/modifyreservation/</guid>
       <description>Method Goals This message confirms a booking change
 Request Format The request requires the valuation returned for ModifyValuationRS
 Response Format The XML returned contains a booking confirmation
@@ -9971,10 +9971,10 @@ ModifyReservationRQ Example &amp;lt;ModifyReservationRQ&amp;gt; &amp;lt;OnReques
     
     <item>
       <title>ModifyValuation</title>
-      <link>/legacy/docs/hotel/dsf/modifyvaluation/</link>
+      <link>/legacy/docs/hotel/methods/modifyvaluation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/modifyvaluation/</guid>
+      <guid>/legacy/docs/hotel/methods/modifyvaluation/</guid>
       <description>Method Goals This message lets you know if it is possible to modify a booking and the proposed new price.
 Request Format The request requires the reservation details and the changes you want to make. (As always, please check if the supplier allows for changes in the booking and what these changes are - you can find this info in the StaticConfiguration).
 Response Format The XML returned contains a simulation of the new booking.</description>
@@ -10056,10 +10056,10 @@ Response Format The result returns a breakdown with all the amounts of the fare 
     
     <item>
       <title>Reservation</title>
-      <link>/legacy/docs/hotel/dsf/reservation/</link>
+      <link>/legacy/docs/hotel/methods/reservation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/reservation/</guid>
+      <guid>/legacy/docs/hotel/methods/reservation/</guid>
       <description>Method Goals This method aims to book an option.
 Request Format The request format works the same way as Valuation but with the list of passengers.
 Response Format The result returns the booking locator (booking code), which could be the supplier&amp;rsquo;s own code or the one sent in request.
@@ -10117,10 +10117,10 @@ ReservationReadRQ Example &amp;lt;OTA_ReadRQ xmlns:xsi=&amp;quot;http://www.w3.o
     
     <item>
       <title>ReservationList</title>
-      <link>/legacy/docs/hotel/dsf/reservationlist/</link>
+      <link>/legacy/docs/hotel/methods/reservationlist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/reservationlist/</guid>
+      <guid>/legacy/docs/hotel/methods/reservationlist/</guid>
       <description>Method Goals This method aims to return a list of bookings for a given time period being that either booking date or the travelling date.
 Request Format The request requires one of the following data depending on provider:
  DateType: indicates the date type: either booking creation date or booking start date Start: the date from End: the date to  Response Format The result returns a list of bookings details, with the same format as ReservationReadRS.</description>
@@ -10128,10 +10128,10 @@ Request Format The request requires one of the following data depending on provi
     
     <item>
       <title>ReservationRead</title>
-      <link>/legacy/docs/hotel/dsf/reservationread/</link>
+      <link>/legacy/docs/hotel/methods/reservationread/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/reservationread/</guid>
+      <guid>/legacy/docs/hotel/methods/reservationread/</guid>
       <description>Method Goals This method aims to retrieve detailed information about a specific Reservation
 Request Format The request requires one of the following data depending on supplier:
  Locators: booking codes (this element contains two elements Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code), one or both will be required depending on the supplier) Currency: the currency code CreationDate: the booking date StardDate: the check-in date EndDate: the check-out date HotelCode: Hotel code  Response Format The result returns the full details of a booking.</description>
@@ -10207,10 +10207,10 @@ Remarks Not implemented by all suppliers</description>
     
     <item>
       <title>RoomList</title>
-      <link>/legacy/docs/hotel/dsf/roomlist/</link>
+      <link>/legacy/docs/hotel/methods/roomlist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/roomlist/</guid>
+      <guid>/legacy/docs/hotel/methods/roomlist/</guid>
       <description>Method Goals This method aims to return a list of rooms, their codes as well as descriptions.
 Request Format The request does not require any elements - empty request.
 Response Format The result returns a list of RoomInfo.
@@ -10280,10 +10280,10 @@ RunTimeConfigurationRQ Example &amp;lt;RunTimeConfigurationRQ xmlns:xsd=&amp;quo
     
     <item>
       <title>RuntimeConfiguration</title>
-      <link>/legacy/docs/hotel/dsf/runtimeconfiguration/</link>
+      <link>/legacy/docs/hotel/methods/runtimeconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/runtimeconfiguration/</guid>
+      <guid>/legacy/docs/hotel/methods/runtimeconfiguration/</guid>
       <description>Method Goals This message returns a template of the supplier&amp;rsquo;s configuration.
 Request Format The request does not require any elements, it is an empty request.
 Response Format The returned XML contains a template of all fields used by the supplier.
@@ -10337,10 +10337,10 @@ StaticConfigurationRQ Example &amp;lt;StaticConfigurationRQ xmlns:xsd = &amp;quo
     
     <item>
       <title>StaticConfiguration</title>
-      <link>/legacy/docs/hotel/dsf/staticconfiguration/</link>
+      <link>/legacy/docs/hotel/methods/staticconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/staticconfiguration/</guid>
+      <guid>/legacy/docs/hotel/methods/staticconfiguration/</guid>
       <description>Method Goals This method provides information about the static configuration of the supplier so that it can be effectively configured.
 Request Format The request does not require any elements - empty request.
 Response Format The XML response contains many elements of the supplier&amp;rsquo;s configuration: number of hotels, number of cities and number of areas available, maximum number of roomcandidate, maximum number of paxes in a roomcandidate, release days, minimum stay, list of languages supported &amp;hellip;</description>
@@ -10405,10 +10405,10 @@ GetTerritoriesRS Example &amp;lt;GetTerritoriesRQ xmlns:xsd=&amp;quot;http://www
     
     <item>
       <title>Valuation</title>
-      <link>/legacy/docs/hotel/dsf/valuation/</link>
+      <link>/legacy/docs/hotel/methods/valuation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/hotel/dsf/valuation/</guid>
+      <guid>/legacy/docs/hotel/methods/valuation/</guid>
       <description>Method Goals This method aims to return the total price and cancellation policies of the Option selected in the previous step (Avail).
 Request Format The Valuation request format is similar to that of availabilityRQ. It&amp;rsquo;s here you will add data to the option selected.
 Response Format The returned XML contains the total price and list of cancellation policies.
