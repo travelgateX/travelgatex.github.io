@@ -140,8 +140,8 @@ HotelRatePlanInventoryNotifRQ &amp;lt;HotelRatePlanInventoryNotif xmlns = &amp;q
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/hotel-push/price-types/</guid>
-      <description>Three price charging types are allowed: price per Room, price per Pax and prices per Occupancy. When more than one price is charged for the same day, the lowest price will be returned as available price.
- Price per Room  When a price is charged per Room means that all occupancies allowed in the room will have the same price. If &amp;ldquo;AdditionalGuestAmount&amp;rdquo; are charged for occupancies over the standard occupancy, they will be applied.</description>
+      <description>Three price charging types are allowed: price per Room, price per Pax and price per Occupancy. When more than one price is charged for the same day, the lowest price will be returned as available price.
+ Price per Room  When a price is charged per Room, it means that all occupancies allowed in the room will have the same price. If &amp;ldquo;AdditionalGuestAmount&amp;rdquo; are charged for occupancies over the standard occupancy, they will be applied.</description>
     </item>
     
     <item>
@@ -163,7 +163,7 @@ HotelRatePlanInventoryRetrieveRQ &amp;lt;HotelRatePlanInventoryRetrieve&amp;gt; 
       <guid>/legacy/docs/hotel-push/messages-files/typical-scenario/</guid>
       <description>Typical use case of message exchange flow between Providers and Sellers can be resumed as:
  Synchronize Hotelier product:
-  Providers retrieve static inventory (Hotel/Rates/Rooms) from Seller using HotelRatePlanInventoryRetrieve in order to map Hotelier inventory into its system. Providers Push/Notif Rate information to Seller using HotelRatePlanNotif in order to synchronize Hotelier rates. Providers Push/Notif Availability information to Seller using HotelAvailNotif in order to synchronize Hotelier availability.   Synchronize Bookings (Confirmations / Cancellations):</description>
+  Providers retrieve static inventory (Hotel/Rates/Rooms) from Seller using HotelRatePlanInventoryRetrieve in order to map Hotelier inventory into their system. Providers Push/Notif Rate information to Seller using HotelRatePlanNotif in order to synchronize Hotelier rates. Providers Push/Notif Availability information to Seller using HotelAvailNotif in order to synchronize Hotelier availability.   Synchronize Bookings (Confirmations / Cancellations):</description>
     </item>
     
     <item>

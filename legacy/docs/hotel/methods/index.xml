@@ -42,8 +42,8 @@ AvailDestinationTreeRQ Example &amp;lt;AvailDestinationTreeRQ&amp;gt; &amp;lt;/A
       
       <guid>/legacy/docs/hotel/methods/cancel/</guid>
       <description>Method Goals This method aims to cancel a booking
-Request Format The request requires one or more of the following data depending on the supplier:
- Locators: booking codes (this element contains two elements Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code), one or both will be required depending on the supplier) hotelCode: the hotel code StartDate: the check-in date EndDate: the check-out date  Response Format The result returns a response with the booking status, the cancellation&amp;rsquo;s ID and the fee for that cancellation.</description>
+Request Format The request requires one or more of the following data, depending on the supplier:
+ Locators: booking codes - this element contains two elements, Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code). One or both will be required depending on the supplier hotelCode: the hotel code StartDate: the check-in date EndDate: the check-out date  Response Format The result returns a response with the booking status, the cancellation&amp;rsquo;s ID and the fee for that cancellation.</description>
     </item>
     
     <item>

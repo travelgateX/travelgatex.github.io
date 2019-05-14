@@ -4914,12 +4914,12 @@
 
 <h3 id="request-format">Request Format</h3>
 
-<p>The request requires one or more of the following data depending on the supplier:</p>
+<p>The request requires one or more of the following data, depending on the supplier:</p>
 
 <ul>
-<li><em>Locators</em>: booking codes (this element contains two elements
+<li><em>Locators</em>: booking codes - this element contains two elements,
 <em>Client</em> (client&rsquo;s booking code) and <em>Provider</em> (supplier&rsquo;s booking
-code), one or both will be required depending on the supplier)</li>
+code). One or both will be required depending on the supplier</li>
 <li><em>hotelCode</em>: the hotel code</li>
 <li><em>StartDate</em>: the check-in date</li>
 <li><em>EndDate</em>: the check-out date</li>
@@ -4932,7 +4932,7 @@ cancellation&rsquo;s ID and the fee for that cancellation.</p>
 
 <h3 id="remarks">Remarks</h3>
 
-<p>The maximum times permitted in our system before the connection
+<p>The maximum time permitted in our system before the connection
 is closed is <strong>180000</strong> milliseconds.</p>
 
 <h3 id="cancelrq-example">CancelRQ Example</h3>
@@ -5084,14 +5084,14 @@ is closed is <strong>180000</strong> milliseconds.</p>
 <td>@binding</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Identifies if is the price is binding (When true the sale price returned <strong>must</strong> not be less than the price informed.</td>
+<td>Identifies if the price is binding (When it true the sale price returned <strong>must</strong> not be less than the price informed.</td>
 </tr>
 
 <tr>
 <td>@commission</td>
 <td>1</td>
 <td>Decimal</td>
-<td>Commission ( -1 = not specified - indicated with the supplier contract, 0 = net price, X = % of the commission that applies to the amount).</td>
+<td>Commission (-1 = not specified - specified in the supplier contract, 0 = net price, X = % of the commission that applies to the amount).</td>
 </tr>
 
 <tr>

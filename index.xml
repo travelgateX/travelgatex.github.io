@@ -9257,8 +9257,8 @@ CancelRQ Example &amp;lt;OTA_TourActivityCancelRQ xmlns:xsi=&amp;quot;http://www
       
       <guid>/legacy/docs/hotel/methods/cancel/</guid>
       <description>Method Goals This method aims to cancel a booking
-Request Format The request requires one or more of the following data depending on the supplier:
- Locators: booking codes (this element contains two elements Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code), one or both will be required depending on the supplier) hotelCode: the hotel code StartDate: the check-in date EndDate: the check-out date  Response Format The result returns a response with the booking status, the cancellation&amp;rsquo;s ID and the fee for that cancellation.</description>
+Request Format The request requires one or more of the following data, depending on the supplier:
+ Locators: booking codes - this element contains two elements, Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code). One or both will be required depending on the supplier hotelCode: the hotel code StartDate: the check-in date EndDate: the check-out date  Response Format The result returns a response with the booking status, the cancellation&amp;rsquo;s ID and the fee for that cancellation.</description>
     </item>
     
     <item>
@@ -10019,8 +10019,8 @@ Remarks: Some suppliers do not provide this method. If this is the case, all the
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/hotel-push/price-types/</guid>
-      <description>Three price charging types are allowed: price per Room, price per Pax and prices per Occupancy. When more than one price is charged for the same day, the lowest price will be returned as available price.
- Price per Room  When a price is charged per Room means that all occupancies allowed in the room will have the same price. If &amp;ldquo;AdditionalGuestAmount&amp;rdquo; are charged for occupancies over the standard occupancy, they will be applied.</description>
+      <description>Three price charging types are allowed: price per Room, price per Pax and price per Occupancy. When more than one price is charged for the same day, the lowest price will be returned as available price.
+ Price per Room  When a price is charged per Room, it means that all occupancies allowed in the room will have the same price. If &amp;ldquo;AdditionalGuestAmount&amp;rdquo; are charged for occupancies over the standard occupancy, they will be applied.</description>
     </item>
     
     <item>
@@ -10391,7 +10391,7 @@ GetTerritoriesRS Example &amp;lt;GetTerritoriesRQ xmlns:xsd=&amp;quot;http://www
       <guid>/legacy/docs/hotel-push/messages-files/typical-scenario/</guid>
       <description>Typical use case of message exchange flow between Providers and Sellers can be resumed as:
  Synchronize Hotelier product:
-  Providers retrieve static inventory (Hotel/Rates/Rooms) from Seller using HotelRatePlanInventoryRetrieve in order to map Hotelier inventory into its system. Providers Push/Notif Rate information to Seller using HotelRatePlanNotif in order to synchronize Hotelier rates. Providers Push/Notif Availability information to Seller using HotelAvailNotif in order to synchronize Hotelier availability.   Synchronize Bookings (Confirmations / Cancellations):</description>
+  Providers retrieve static inventory (Hotel/Rates/Rooms) from Seller using HotelRatePlanInventoryRetrieve in order to map Hotelier inventory into their system. Providers Push/Notif Rate information to Seller using HotelRatePlanNotif in order to synchronize Hotelier rates. Providers Push/Notif Availability information to Seller using HotelAvailNotif in order to synchronize Hotelier availability.   Synchronize Bookings (Confirmations / Cancellations):</description>
     </item>
     
     <item>
