@@ -4951,7 +4951,7 @@ just the number of additional guests for which the price is loaded.</p>
 <li>DepartureOpen</li>
 </ul>
 
-<p>When all booleans are true a booking it&rsquo;s allowed in the specified day.</p>
+<p>When all booleans are true a booking is allowed in the specified day.</p>
 
 <p>When MasterOpen is false bookings are not allowed in the specified day.</p>
 
@@ -4964,10 +4964,10 @@ date from the hotel is the specified day.</p>
 <p>To control these three values when you are notifying availability you
 have RestrictionStatus/Status and RestrictionStatus/Restriction. Status
 indicates the action to do Open or Close. Then the restriction indicates
-which of the internal booleans are set. If restriction is not present
+which of the internal booleans are set. If restriction is not present,
 all booleans are set. For example:</p>
 
-<p>If you want to sell a product. The first needed thing to do is Open all
+<p>If you want to sell a product, the first needed thing to do is Open all
 bits. This is possible doing:</p>
 
 <p>Send Status=Open, without Restriction.</p>
@@ -4993,7 +4993,7 @@ must Close Arrival. This is possible doing:</p>
 
 <p>DepartureOpen = true</p>
 
-<p>Then, if you don&rsquo;t want any booking with departure at the specified day,
+<p>Then, if you don&rsquo;t want any bookings with departure at the specified day,
 you must Close Departure. This is possible doing:</p>
 
 <p>Send Status=Close, Restriction=Departure.</p>
@@ -5006,7 +5006,7 @@ you must Close Departure. This is possible doing:</p>
 
 <p>DepartureOpen = false</p>
 
-<p>Finally, if you want to allow allow any kinds of bookings again, you
+<p>Finally, if you want to allow allow all kinds of bookings again, you
 must Open all bits again. This is possible doing:</p>
 
 <p>Send Status=Open, without Restriction.</p>

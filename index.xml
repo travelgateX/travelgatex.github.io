@@ -8688,7 +8688,7 @@ CurrencyX This plugin receives an Option and a currency and returns the same opt
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/documents-goals/</guid>
-      <description>This document aims to explain all aspects of XML Travelgate&amp;rsquo;s Hotel API specification. In the following pages you will find detailed explanation of all Nodes, Elements and Attributes in every aspect of the API specification. It uses a very straight forward nomenclature that tries to define every aspect of the specification by the name.
+      <description>This document aims to explain all aspects of XML Travelgate&amp;rsquo;s Hotel API specification. In the following pages you will find detailed explanation of all Nodes, Elements and Attributes in every aspect of the API specification. It uses a very straightforward nomenclature that tries to define every aspect of the specification by the name.
 This documentation follows a standard. For every method there is:
  Method Description
  Method Goals: What does it do, how does it do it?</description>
@@ -9350,9 +9350,9 @@ Version 1.0.1: Date 19/04/2014
       
       <guid>/legacy/docs/car/change-log/</guid>
       <description>Version 1.3.3: Date 09/02/2018
- Added element PricedCoverages: We have added the element PricedCoverages in OTA_VehAvailRateRQ/VehAvailRQInfo, OTA_VehRateRuleRQ/RentalInfo and OTA_VehResRQ/VehResRQInfo. With this elements we can request coverages to the provider.
- Added element RentalRate in VehSegmentCore: We have added the element RentalRate in OTA_VehResRQ/VehRetResRSCore/VehReservation/VehSegmentCore and OTA_VehRetResRS/VehRetResRSCore/VehReservation/VehSegmentCore. With this elements we can return more properties of the booking, like the cancel penalties, vehicle charges, etc.
- Added attribute PromotionCode in RateQualifier: We have added the attribute PromotionCode on the nodes RateQualifier in order to could send provider&amp;rsquo;s promotional codes or return the promotional code associated to the rate.</description>
+ Added element PricedCoverages: We have added the element PricedCoverages in OTA_VehAvailRateRQ/VehAvailRQInfo, OTA_VehRateRuleRQ/RentalInfo and OTA_VehResRQ/VehResRQInfo. With these elements we can request coverages to the provider.
+ Added element RentalRate in VehSegmentCore: We have added the element RentalRate in OTA_VehResRQ/VehRetResRSCore/VehReservation/VehSegmentCore and OTA_VehRetResRS/VehRetResRSCore/VehReservation/VehSegmentCore. With these elements we can return more properties of the booking, like the cancel penalties, vehicle charges, etc.
+ Added attribute PromotionCode in RateQualifier: We have added the attribute PromotionCode on the nodes RateQualifier in order to send provider&amp;rsquo;s promotional codes or return the promotional code associated to the rate.</description>
     </item>
     
     <item>
@@ -9475,7 +9475,7 @@ Version 1.0.4: Date 20/03/2014
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/hotel-push/code-lists/</guid>
-      <description>Error Codes    Error Code Error Description     -1 Validation error   1 POS credentials not found   2 HotelCode or RatePlanList not found   3 Rates not found   4 Incomplete Rate values   6 Incomplete AvailStatusMessage StatusApplicationControl Values   7 Incomplete AdditionalGuestAmount values   8 SellableProduct not found   9 Room not found in SellableProduct    Meal Plan Codes (OTA MPT)    Code Description     1 All inclusive   2 American   3 Bed &amp;amp; breakfast   4 Buffet breakfast   5 Caribbean breakfast   6 Continental breakfast   7 English breakfast   8 European plan   9 Family plan   10 Full board   11 Full breakfast   12 Half board/modified American plan   13 As brochured   14 Room only   15 Self catering   16 Bermuda   17 Dinner bed and breakfast plan   18 Family American   19 Breakfast   20 Modified   255 Full board And Drinks   256 Half board And Drinks   257 All inclusive Premium   258 Gala Dinner    Payment Type Codes    Payment Type Code Description     MerchantPayment The customer pays the client and the client will pay de provider.</description>
+      <description>Error Codes    Error Code Error Description     -1 Validation error   1 POS credentials not found   2 HotelCode or RatePlanList not found   3 Rates not found   4 Incomplete Rate values   6 Incomplete AvailStatusMessage StatusApplicationControl Values   7 Incomplete AdditionalGuestAmount values   8 SellableProduct not found   9 Room not found in SellableProduct    Meal Plan Codes (OTA MPT)    Code Description     1 All inclusive   2 American   3 Bed &amp;amp; breakfast   4 Buffet breakfast   5 Caribbean breakfast   6 Continental breakfast   7 English breakfast   8 European plan   9 Family plan   10 Full board   11 Full breakfast   12 Half board/modified American plan   13 As brochured   14 Room only   15 Self catering   16 Bermuda   17 Dinner bed and breakfast plan   18 Family American   19 Breakfast   20 Modified   255 Full board And Drinks   256 Half board And Drinks   257 All inclusive Premium   258 Gala Dinner    Payment Type Codes    Payment Type Code Description     MerchantPayment The customer pays the client and the client will pay the provider.</description>
     </item>
     
     <item>
@@ -9554,10 +9554,10 @@ Response Format The response will contain the indication if the function is impl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/hotel-push/connectivity/</guid>
-      <description>XTG HubPush provides an OTA (OpenTravel Alliance) Web Service which publishes the required methods that allows Channel Managers or Rate Distributors (In advance Providers) to load hotel product information (Availability / Rates/ Inventory) into extranet clients (Normally Online Travel Agencies) (In advance Sellers).
+      <description>XTG HubPush provides an OTA (OpenTravel Alliance) Web Service which publishes the required methods that allow Channel Managers or Rate Distributors (in advance, Providers) to load hotel product information (Availability / Rates/ Inventory) into extranet clients, normally Online Travel Agencies (in advance, Sellers).
 Public Soap WebService Methods:
 https://pushprovider.xmltravelgate.com/Service/Hotel/Provider/ProviderGEN.svc?wsdl
-Provider should contact with Seller to get its credentials.</description>
+The Provider should contact the Seller to get their credentials.</description>
     </item>
     
     <item>
@@ -9598,9 +9598,9 @@ The integration will have the following methods:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/car/data-structure/</guid>
-      <description>This document intends to explain every aspect of this structure and their fields.
+      <description>This document intends to explain every aspect of its structure and fields.
 The integration will have the following methods:
-   Method Input Output Required Description Endpoint     OTA_VehAvailRate OTA_VehAvailRateRQ OTA_VehAvailRateRS Yes Makes a availability call Car Booking Endpoint.   OTA_VehRateRule OTA_VehRateRuleRQ OTA_VehRateRuleRS Yes Makes a pre-booking Car Booking Endpoint   OTA_VehRes OTA_VehResRQ OTA_VehResRS Yes Makes a booking Car Booking Endpoint   OTA_VehLocSearch OTA_VehLocSearchRQ OTA_VehLocSearchRS Yes Gets a static offices list Car Batch Endpoint   OTA_VehRetRes OTA_VehRetResRQ OTA_VehRetResRS No Gets booking details Car Booking Endpoint   OTA_VehCancel OTA_VehCancelRQ OTA_VehCancelRS No Cancels a booking Car Booking Endpoint   StaticConfiguration StaticConfigurationRQ StaticConfigurationRS Yes Returns the information related to the configuration of the provider.</description>
+   Method Input Output Required Description Endpoint     OTA_VehAvailRate OTA_VehAvailRateRQ OTA_VehAvailRateRS Yes Makes an availability call Car Booking Endpoint.   OTA_VehRateRule OTA_VehRateRuleRQ OTA_VehRateRuleRS Yes Makes a pre-booking Car Booking Endpoint   OTA_VehRes OTA_VehResRQ OTA_VehResRS Yes Makes a booking Car Booking Endpoint   OTA_VehLocSearch OTA_VehLocSearchRQ OTA_VehLocSearchRS Yes Gets a static offices list Car Batch Endpoint   OTA_VehRetRes OTA_VehRetResRQ OTA_VehRetResRS No Gets booking details Car Booking Endpoint   OTA_VehCancel OTA_VehCancelRQ OTA_VehCancelRS No Cancels a booking Car Booking Endpoint   StaticConfiguration StaticConfigurationRQ StaticConfigurationRS Yes Returns the information related to the configuration of the provider.</description>
     </item>
     
     <item>

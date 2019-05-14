@@ -49,7 +49,7 @@ Version 1.0.2: Date 28/09/2013
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/hotel-push/code-lists/</guid>
-      <description>Error Codes    Error Code Error Description     -1 Validation error   1 POS credentials not found   2 HotelCode or RatePlanList not found   3 Rates not found   4 Incomplete Rate values   6 Incomplete AvailStatusMessage StatusApplicationControl Values   7 Incomplete AdditionalGuestAmount values   8 SellableProduct not found   9 Room not found in SellableProduct    Meal Plan Codes (OTA MPT)    Code Description     1 All inclusive   2 American   3 Bed &amp;amp; breakfast   4 Buffet breakfast   5 Caribbean breakfast   6 Continental breakfast   7 English breakfast   8 European plan   9 Family plan   10 Full board   11 Full breakfast   12 Half board/modified American plan   13 As brochured   14 Room only   15 Self catering   16 Bermuda   17 Dinner bed and breakfast plan   18 Family American   19 Breakfast   20 Modified   255 Full board And Drinks   256 Half board And Drinks   257 All inclusive Premium   258 Gala Dinner    Payment Type Codes    Payment Type Code Description     MerchantPayment The customer pays the client and the client will pay de provider.</description>
+      <description>Error Codes    Error Code Error Description     -1 Validation error   1 POS credentials not found   2 HotelCode or RatePlanList not found   3 Rates not found   4 Incomplete Rate values   6 Incomplete AvailStatusMessage StatusApplicationControl Values   7 Incomplete AdditionalGuestAmount values   8 SellableProduct not found   9 Room not found in SellableProduct    Meal Plan Codes (OTA MPT)    Code Description     1 All inclusive   2 American   3 Bed &amp;amp; breakfast   4 Buffet breakfast   5 Caribbean breakfast   6 Continental breakfast   7 English breakfast   8 European plan   9 Family plan   10 Full board   11 Full breakfast   12 Half board/modified American plan   13 As brochured   14 Room only   15 Self catering   16 Bermuda   17 Dinner bed and breakfast plan   18 Family American   19 Breakfast   20 Modified   255 Full board And Drinks   256 Half board And Drinks   257 All inclusive Premium   258 Gala Dinner    Payment Type Codes    Payment Type Code Description     MerchantPayment The customer pays the client and the client will pay the provider.</description>
     </item>
     
     <item>
@@ -58,10 +58,10 @@ Version 1.0.2: Date 28/09/2013
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/hotel-push/connectivity/</guid>
-      <description>XTG HubPush provides an OTA (OpenTravel Alliance) Web Service which publishes the required methods that allows Channel Managers or Rate Distributors (In advance Providers) to load hotel product information (Availability / Rates/ Inventory) into extranet clients (Normally Online Travel Agencies) (In advance Sellers).
+      <description>XTG HubPush provides an OTA (OpenTravel Alliance) Web Service which publishes the required methods that allow Channel Managers or Rate Distributors (in advance, Providers) to load hotel product information (Availability / Rates/ Inventory) into extranet clients, normally Online Travel Agencies (in advance, Sellers).
 Public Soap WebService Methods:
 https://pushprovider.xmltravelgate.com/Service/Hotel/Provider/ProviderGEN.svc?wsdl
-Provider should contact with Seller to get its credentials.</description>
+The Provider should contact the Seller to get their credentials.</description>
     </item>
     
     <item>
