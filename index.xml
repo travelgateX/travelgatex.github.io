@@ -8514,6 +8514,29 @@ Version 1.0.1: Date 19/04/2014
     </item>
     
     <item>
+      <title>Change Log</title>
+      <link>/legacy/docs/transportation/change-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transportation/change-log/</guid>
+      <description>Version 1.0.8: Date 24/07/2012
+: Added ConfigCompaniasDispo in the common RQ objects.
+|
+Version 1.0.9: Date 30/08/2012
+: Added Baggage List to Passenger in ResevaRQ.
+: Added baggage type in SuplementosRS.
+: Added special supplement in SuplementosRS.
+|
+Version 1.0.11: Date 09/01/2013
+: Added Generic Error Code.
+|
+Version 1.0.12: Date 30/03/2013
+: Added list of Locators to RespuestaRecuperarReserva and RespuestaRecuperarListaReserva.
+: Added some types to tiposImporteCargo.
+: Added number of stops in DisponibilidadRS.</description>
+    </item>
+    
+    <item>
       <title>Check configuration</title>
       <link>/hotelx/checkconfig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8708,6 +8731,17 @@ Template reportings If you don&amp;rsquo;t have your own reporting tools as Tabl
     </item>
     
     <item>
+      <title>Common Elements</title>
+      <link>/legacy/docs/transportation/common-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transportation/common-elements/</guid>
+      <description>Introduction In every petition there some nodes which will always appear, there for this chapter is dedicated for said nodes.
+Request Format The common elements in all of the petitions are: source of the petition, Timeout, the indication if you wish to register the transactions and the provider configuration.
+Response Format The response will contain the indication if the function is implemented or not, application errors, if any, the providers traces if requested and the response status.</description>
+    </item>
+    
+    <item>
       <title>Currency Converter</title>
       <link>/hotelx/plugins/converter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8852,6 +8886,15 @@ The hub structure is a generic structure wrapping the XML request which will ind
       
       <guid>/hotelx/concepts/content/</guid>
       <description>const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aeb082e484710ebf6b7a4ec5173064cc\/raw\x22,\x22divname\x22:\x22div_hotels\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/4737228c495b09566474fa2db38fc72d\/raw\x22,\x22divname\x22:\x22div_destinations\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/519b4223de8b44cb20c5c33212c62654\/raw\x22,\x22divname\x22:\x22div_boards\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/0815561e9c25ce49bc416dbc73f36388\/raw\x22,\x22divname\x22:\x22div_rooms\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aa1be23b8c9229c8363c142036afb1f5\/raw\x22,\x22divname\x22:\x22div_categories\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.</description>
+    </item>
+    
+    <item>
+      <title>Enumerates</title>
+      <link>/legacy/docs/transportation/enum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transportation/enum/</guid>
+      <description>Enumerate description Resident discount type    Possible Values Description     N None   BP Balearic Islands resident flying to mainland   BI Balearic Islands resident flying to another balearic island   DC Canarian Islands resident flying to another Canarian Island   RC Canarian Islands resident flying to mainland   RM Ceuta/Melilla resident   STR Italian resident discount   ELB Italian resident Elba   SDG Italian resident Sardegna   SLC Italian resident Sicily   RE Ceuta    Charge type    Possible Values Description     TAX Tax   CARD Card   BAGGAGE Baggage   CHECKIN Checkin   CARRIER_CHARGES Carrier charges   DU_TAX DU Taxes   BASE_AMOUNT Base import   DISCOUNT Discount   VEHICLE Vehicle   BANKING_CHARGES Bank charges   CURRENCY_CONVERSION_CHARGES Currency conversion charges   VEHICLE_FEE Vehicle fee   FEE Fee   SEAT Seat   SUPPLEMENT Supplement   TRAVELCARD Travel card   PET Pet   PET_FEE Pet fee   INSURANCE Insurance   FAST_TRACK Fast Track   PRIORITY_BOARDING Priority Boarding   BLOCK_FARE Fare lock   SPECIAL_ASSISTANCE Special assistance   PENALTY Penalty    Block Attribute Type    Possible Values Description     OVER_WING Over wing seat   MIDDLE Middle seat   AISLE Aisle seat   WINDOW Window seat   COMPARTMENT Compartment   LAVATORY Lavatory   LUGGAGE Luggage seat   PHONE Phone seat   POWER Power   TABLE Table   EXITROW Emergency exit   FEETBLOCKED Feet blocked seat   NO_CHILD No childs allowed seat   NO_INFANT No infants allowed seat   XL_SEAT XL seat   RESTRICTED Seat with some kind of restriction   HANDICAP Special seat for handicap people   QUIET Quiet seat   GROUPS Groups seat   NO_PET No pets allowed seat   BULKHEAD Bulk head seat   BLOCKED Blocked seat   UNKNOWN Unknown characterstic   LAST_OFF Last off    Refund type    Possible Values Description     ALL Fare and taxes will be refunded   FARE Only fare will be refunded   TAXES Only taxes will be refunded   AUTO GDS automatic ticket change   PARTIAL Partial refund.</description>
     </item>
     
     <item>
@@ -9427,29 +9470,6 @@ Version 2.0.3: Date 24/09/2014
     </item>
     
     <item>
-      <title>Change Log</title>
-      <link>/legacy/docs/transportation/change-log/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/legacy/docs/transportation/change-log/</guid>
-      <description>Version 1.0.8: Date 24/07/2012
-: Added ConfigCompaniasDispo in the common RQ objects.
-|
-Version 1.0.9: Date 30/08/2012
-: Added Baggage List to Passenger in ResevaRQ.
-: Added baggage type in SuplementosRS.
-: Added special supplement in SuplementosRS.
-|
-Version 1.0.11: Date 09/01/2013
-: Added Generic Error Code.
-|
-Version 1.0.12: Date 30/03/2013
-: Added list of Locators to RespuestaRecuperarReserva and RespuestaRecuperarListaReserva.
-: Added some types to tiposImporteCargo.
-: Added number of stops in DisponibilidadRS.</description>
-    </item>
-    
-    <item>
       <title>Change log</title>
       <link>/legacy/docs/hub/change-log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -9535,17 +9555,6 @@ Common Elements RQ Example &amp;lt;HotelBaseRQ&amp;gt; &amp;lt;echoToken&amp;gt;
 The request objects contains the supplier&amp;rsquo;s configuration, urls and credentials.
 The response object contains the operation status and errors if any.
 Common Elements RQ Example &amp;lt;TransfersBaseRQ&amp;gt; &amp;lt;echoToken&amp;gt;TEST&amp;lt;/echoToken&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;xxxx&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;xx&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;xxx&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;xxxx&amp;quot; password = &amp;quot;xxxx&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;xxxxx&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlAvailability xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlRateRule xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlBook xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlsSpecific xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key = &amp;quot;xxx&amp;quot; value = &amp;quot;xxx&amp;quot;/&amp;gt; &amp;lt;Attribute key = &amp;quot;xxx&amp;quot; value = &amp;quot;xxx&amp;quot;/&amp;gt; &amp;lt;Attribute key = &amp;quot;xxx&amp;quot; value = &amp;quot;xxx&amp;quot;/&amp;gt; &amp;lt;/Attributes&amp;gt; &amp;lt;/Configuration&amp;gt; … &amp;lt;/TransfersBaseRQ&amp;gt;  Common Elements RQ Description    Element Number Type Description     TransfersBaseRQ 1  Root node.</description>
-    </item>
-    
-    <item>
-      <title>Common Elements</title>
-      <link>/legacy/docs/transportation/common-elements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/legacy/docs/transportation/common-elements/</guid>
-      <description>Introduction In every petition there some nodes which will always appear, there for this chapter is dedicated for said nodes.
-Request Format The common elements in all of the petitions are: source of the petition, Timeout, the indication if you wish to register the transactions and the provider configuration.
-Response Format The response will contain the indication if the function is implemented or not, application errors, if any, the providers traces if requested and the response status.</description>
     </item>
     
     <item>
@@ -9681,15 +9690,6 @@ DestinationsTreeRQ Example &amp;lt;DestinationsTreeRQ&amp;gt; &amp;lt;timeoutMil
       <description>Method Goals This method aims to issue the tickets.
 Request Format The request indicate the booking locator and the issue type (which tickets have to be issued: all, only passengers, only extras).
 Response Format The result returns a list of Locators (booking codes). It can be the supplier&amp;rsquo;s or the one sent in the request. It also returns all the charges associated to the booking, the passengers and the tickets issued (if any).</description>
-    </item>
-    
-    <item>
-      <title>Enum</title>
-      <link>/legacy/docs/transportation/enum/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/legacy/docs/transportation/enum/</guid>
-      <description>Enumerate description Resident discount type    Possible Values Description     N None   BP Balearic Islands resident flying to mainland   BI Balearic Islands resident flying to another balearic island   DC Canarian Islands resident flying to another Canarian Island   RC Canarian Islands resident flying to mainland   RM Ceuta/Melilla resident   STR Italian resident discount   ELB Italian resident Elba   SDG Italian resident Sardegna   SLC Italian resident Sicily   RE Ceuta    Charge type    Possible Values Description     TAX Tax   CARD Card   BAGGAGE Baggage   CHECKIN Checkin   CARRIER_CHARGES Carrier charges   DU_TAX DU Taxes   BASE_AMOUNT Base import   DISCOUNT Discount   VEHICLE Vehicle   BANKING_CHARGES Bank charges   CURRENCY_CONVERSION_CHARGES Currency conversion charges   VEHICLE_FEE Vehicle fee   FEE Fee   SEAT Seat   SUPPLEMENT Supplement   TRAVELCARD Travel card   PET Pet   PET_FEE Pet fee   INSURANCE Insurance   FAST_TRACK Fast Track   PRIORITY_BOARDING Priority Boarding   BLOCK_FARE Fare lock   SPECIAL_ASSISTANCE Special assistance   PENALTY Penalty    Block Attribute Type    Possible Values Description     OVER_WING Over wing seat   MIDDLE Middle seat   AISLE Aisle seat   WINDOW Window seat   COMPARTMENT Compartment   LAVATORY Lavatory   LUGGAGE Luggage seat   PHONE Phone seat   POWER Power   TABLE Table   EXITROW Emergency exit   FEETBLOCKED Feet blocked seat   NO_CHILD No childs allowed seat   NO_INFANT No infants allowed seat   XL_SEAT XL seat   RESTRICTED Seat with some kind of restriction   HANDICAP Special seat for handicap people   QUIET Quiet seat   GROUPS Groups seat   NO_PET No pets allowed seat   BULKHEAD Bulk head seat   BLOCKED Blocked seat   UNKNOWN Unknown characterstic   LAST_OFF Last off    Refund type    Possible Values Description     ALL Fare and taxes will be refunded   FARE Only fare will be refunded   TAXES Only taxes will be refunded   AUTO GDS automatic ticket change   PARTIAL Partial refund.</description>
     </item>
     
     <item>
