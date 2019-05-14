@@ -4903,41 +4903,31 @@
 
 <h3 id="method-goals">Method Goals</h3>
 
-<p>This method aims to return all the available options for a given date
-and itinerary. It does not filter different classes, times or fares. It
-will always return all of the results returned by the provider.</p>
+<p>This method aims to return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.</p>
 
 <h3 id="request-format">Request Format</h3>
 
-<p>The common part of an availability request is very straight forward. It
-only requires the destination/s, the travelling dates, the paxes and the
-indication of the trip type.</p>
+<p>The common part of an availability request is very straight forward. It only requires the destination/s, the travelling dates, the paxes and the indication of the trip type.</p>
 
 <h3 id="response-format">Response Format</h3>
 
-<p>The response format will always be delivered in the node Transportation,
-which will be organized by two main nodes:</p>
+<p>The response format will always be delivered in the node Transportation, which will be organized by two main nodes:</p>
 
 <ul>
 <li>Segments:</li>
 </ul>
 
-<p>A list with all of the Segments including details, returned by the
-supplier, such as dates, number, etc.</p>
+<p>A list with all of the Segments including details, returned by the supplier, such as dates, number, etc.</p>
 
 <ul>
 <li>Fares:</li>
 </ul>
 
-<p>A list with all of the prices returned for each Segment in the above
-list. Each Fare has a referenced SegmentReference inside the node
-Option, to identify the Segment. A Fare will have one or more Segments
-associated and every Segment will refer to at least one Option.</p>
+<p>A list with all of the prices returned for each Segment in the above list. Each Fare has a referenced SegmentReference inside the node Option, to identify the Segment. A Fare will have one or more Segments associated and every Segment will refer to at least one Option.</p>
 
 <p>There will always be one PaxBreakdown per passenger type.</p>
 
-<p>The price returned is &ldquo;all inclusive&rdquo;. All fares, taxes and discounts
-are already included in the total price.</p>
+<p>The price returned is &ldquo;all inclusive&rdquo;. All fares, taxes and discounts are already included in the total price.</p>
 
 <h3 id="remarks">Remarks</h3>
 
@@ -5674,220 +5664,1502 @@ are already included in the total price.</p>
 
 <h3 id="availabilityrs-description">AvailabilityRS Description</h3>
 
-<p>| <strong>Element</strong>                   | <strong>Number</strong>| <strong>Type</strong>  | <strong>Description</strong> |<br />
-| &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash;&mdash; | &mdash;&mdash;&mdash; | &mdash;&mdash;&mdash;&mdash;&mdash;-|<br />
-| AvailabilityRS                | 1         |           | Root node.|<br />
-| Transportation                | 1         |           | Contains all of the Segments and Fares.|<br />
-| @totalFares                   | 1         | Integer   | Total number of Fares.|
-| Transportation/Segments       | 1         |           | Contains a list of the Segments.|
-| Transportation/Segments/Segment| 1..n     |  |  Contains the information of the segment.|
-| @id                           | 1         | Integer   | Unique identifier of the segment.|
-| @transportationId             | 1         | String    | Unique Id of the transportation.|
-| @operatingCarrier             | 1         | String    | Company which operates the transportation.|
-| @marketingCarrier             | 1         | String    | Company which commercializes the transportation.|
-| @departureDate                | 1         | Date      | Departure date. Example: 2019-04-15T18:25:00|
-| @arrivalDate                  | 1         | Date      | Arrival date. Example: 2019-04-15T18:25:00|
-| @transportationType           | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#transport-type" rel="nofollow" target="_blank">Transport type</a>   | Transport type|
-| @transportationName           | 0..1      | String    | Name of the transportation.|
-| @transportationCode           | 0..1      | String    | Code of the transportation.|
-| @departureTerminal            | 0..1      | String    | Departure terminal.|
-| @arrivalTerminal              | 0..1      | String    | Arrival terminal.|
-| @segmentDuration              | 0..1      | Integer   | Transport duration ( in minutes ).|
-| @segmentStatus                | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#status-segment-type" rel="nofollow" target="_blank">Status Segment type</a> | Segment status|
-| @planeType                    | 0..1      | String    | Plane type. Flights parameter.|
-| @maxCheckinDate               | 0..1      | String    | Maximum date to make the check-in. Not filled from provider&rsquo;s response |
-| @hasTechnicalStop             | 0..1      | Boolean   | If true, the segment has a technical stop.|
-| @electronicTicket             | 0..1      | Boolean   | If true, the segment uses a electronic ticket.|
-| @secureFlight                 | 0..1      | Boolean   | If true, the provider requires extra information of the passengers. Flights parameter.|
-| Transportation/Segments/Segment/<br>OriginLoc         | 1 |   | Origin location.|
-| @code                         | 1         | String    | Location code.|
-| @type                         | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#location-type" rel="nofollow" target="_blank">Location Type</a> | Type of station of the location|
-| @name                         | 0..1      | String    | Location full name.|
-| @radius                       | 0..1      | Integer   | Area radius from location.|
-| @cityCode                     | 0..1      | Boolean   | If true, the field code indicates a city code, if false, it will indicate an airport code.|
-| Transportation/Segments/Segment/<br>OriginLoc/AlternativeLocations    | 0..1      || Contains a list of AlternativeLocations.|
-| Transportation/Segments/Segment/<br>OriginLoc/AlternativeLocations/<br>AlternativeLocation    | 1..n  || Contains the information of the alternative location.|
-| @code                         | 1         | String    | Location code.|
-| @cityCode                     | 0..1      | Boolean   | If true, the field code indicates a city code, if false, it will indicate an airport code.|
-| @name                         | 0..1      | String    | Location long name.|
-| @type                         | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#location-type" rel="nofollow" target="_blank">Location Type</a> | Type of station of the location.|
-| Transportation/Segments/Segment/<br>DestinationLoc    | 1   || Destination location.|
-| @code                         | 1         | String    | Location code.|
-| @type                         | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#location-type" rel="nofollow" target="_blank">Location Type</a> | Type of station of the location.|
-| @name                         | 0..1      | String    | Location full name.|
-| @radius                       | 0..1      | Integer   | Area radius from location.|
-| @cityCode                     | 0..1      | Boolean   | If true, the field code indicates a city code, if false, it will indicate an airport code.|
-| Transportation/Segments/Segment/<br>DestinationLoc/AlternativeLocations   | 0..1      || Contains a list of AlternativeLocations.|
-| Transportation/Segments/Segment/<br>DestinationLoc/AlternativeLocations/<br>AlternativeLocation   | 1..n  || Contains the information of the alternative location.|
-| @code                         | 1         | String    | Location code.|
-| @cityCode                     | 0..1      | Boolean   | If true, the field code indicates a city code, if false, it will indicate an airport code.|
-| @name                         | 0..1      | String    | Location long name.|
-| @type                         | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#location-type" rel="nofollow" target="_blank">Location Type</a> | Type of station of the location|
-| Transportation/Segments/Segment/<br>TechnicalStops    | 0..1      || Contains a list of TechnicalStops.|
-| @totalTechnicalStops          | 1         | Integer   | Total number of TechnicalStops.|
-| Transportation/Segments/Segment/<br>TechnicalStops/TechnicalStop  | 0..n || Contains the details of the TechnicalStop.|
-| @location                     | 1         | String    | TechnicalStop location|
-| @stopDate                     | 1         | Date      | Approx. stop date and time. Example: 2019-02-20T16:50:00|
-| @departureDate                | 1         | Date      | Approx. departure date and time. Example: 2019-02-20T16:50:00|
-| Transportation/Fares                                  | 1         || Contains a list of Fares.|
-| Transportation/Fares/Fare                             | 1..n      || Contains details of Fare.|
-| @id                           | 1         | Integer   | Unique identifier of the Fare.|
-| @providerCode                 | 1         | String    | Provider code.|
-| @fareType                     | 1         | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#fare-type" rel="nofollow" target="_blank">Fare type</a> | Fare type.|
-| @familyFare                   | 0..1      | String    | Family fare name of the Fare.|
-| Transportation/Fares/Fare/HasObFees                   | 0..1      | Boolean   | If true then there is an extra fee for using credit card.|
-| Transportation/Fares/Fare/Conditions                  | 0..1      || Contains a list of Fare Conditions.|
-| Transportation/Fares/Fare/Conditions/<br>Condition    | 1..n      || Contains details of the Condition that applies to the condition.|
-| @carrier                      | 0..1      | String    | Carrier applying the condition.|
-| @code                         | 0..1      | String    | Code of the condition.|
-| @id                           | 0..1      | String    | Unique id of the condition.|
-| @language                     | 0..1      | String    | Language in which the condition is written.|
-| @Text                         | 0..1      | String    | Description of the condition.|
-| Transportation/Fares/Fare/Conditions/<br>Condition/Paragraph  | 0..n || List of Sentences and titles.|
-| @title                        | 0..1      | String    | Title content.|
-| Transportation/Fares/Fare/Conditions/<br>Condition/Paragraph/Sentence | 0..n | String | List of Sentences contents.|
-| Transportation/Fares/Fare/Options                     | 1         || Contains a list of Fare Options.|
-| Transportation/Fares/Fare/Options/Option              | 1..n      || Contains details of the Fare Option.|
-| @id                           | 1         | Integer   | Unique identifier of the Option.|
-| @availJourneyRef              | 1         | Integer   | Reference id of the AvailabilityRQ Journey.|
-| @numStopOver                  | 1         | Integer   | Number of StopOvers. If -1, then we cannot know how many StopOvers via XML.|
-| @carrier                      | 1         | String    | Validating carrier.|
-| @familyFare                   | 0..1      | String    | Family fare name of the Option.|
-| Transportation/Fares/Fare/Options/Option/<br>SegmentReferences | 1    || Contains a list of SegmentReferences.|
-| Transportation/Fares/Fare/Options/Option/<br>SegmentReferences/SegmentReference | 1..n | | Contains details of the SegmentReference of each option.|
-| @segmentRef                   | 1         | Integer   | Reference of the Segment.|
-| Transportation/Fares/Fare/Options/Option/<br>SegmentReferences/SegmentReference/<br>SegmentClasses | 1 | | Contains a list of SegmentClasses.|
-| Transportation/Fares/Fare/Options/Option/<br>SegmentReferences/SegmentReference/<br>SegmentClasses/SegmentClass | 1..n | | Contains details of the SegmentClass.|
-| @cabinClass                   | 1         | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#cabin-class-type" rel="nofollow" target="_blank">Cabin Class type</a>   | Cabin class of the segment.|
-| @paxRef                       | 1         | Integer   | Passenger reference.|
-| @fareType                     | 1         | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#fare-type" rel="nofollow" target="_blank">Fare type</a> | Fare type|
-| @class                        | 0..1      | String    | Fare class.|
-| @fareBasis                    | 0..1      | String    | Identifier of the fare.|
-| @avail                        | 0..1      | Integer   | Available seats remaining for this class (In flights, the maximum is 9).|
-| Transportation/Fares/Fare/Options/Option/<br>SegmentReferences/SegmentReference/<br>ReservationTokens | 0..1 || Specific attribute used for each provider.|
-| Transportation/Fares/Fare/Options/Option/<br>SegmentReferences/SegmentReference/<br>ReservationTokens/Attribute | 1..n || Type of attribute.|
-| @key                          | 1         | String    | Contains the keyword/ Id to identify a parameter.|
-| @value                        | 1         | String    | Contains the value of the parameter.|
-| Transportation/Fares/Fare/Options/Option/<br>BaggageTypes | 0..1      || Contains a list of BaggageTypes.|
-| Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType | 1..n || Contains details of BaggageType.|
-| @checkInType                  | 1         | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#checkin-type" rel="nofollow" target="_blank">Checkin type</a>   | Check-in type.|
-| @appliesSegments              | 1         | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#segment-applies-type" rel="nofollow" target="_blank">Segment Applies To type</a>    | Segments in which is applied.|
-| Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/<br>References      | 0..1  ||  References for the Baggage Type.|
-| Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/<br>References/SegmentReferences        | 0..1  ||  Contains a list of segment references for the Baggage Type.|
-| Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/<br>References/SegmentReferences/<br>SegmentReference       | 1..n  ||  Segment reference.|
-| @itineraryRef                 | 1         | Integer   | Unique identifier of the Itinerary.|
-| @journeyRef                   | 1         | Integer   | Unique identifier of the Journey.|
-| @segmentRef                   | 1         | Integer   | Unique identifier of the Segment.|
-| Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/<br>References/PaxReferences        | 0..1  ||  Contains a list of passenger references for the Baggage Type.|
-| Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/<br>References/PaxReferences/<br>PaxReference       | 1..n  ||  Passenger reference.|
-| @paxRef                       | 1         | String    | Reference to the passenger.|
-| Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/Baggage | 1..n || Details of the baggage.|
-| @type                         | 1         | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#baggage-type" rel="nofollow" target="_blank">Baggage Type</a>   | Baggage type|
-| @quantity                     | 1         | Integer   | Baggage quantity.|
-| @id                           | 0..1      | String    | Unique identifier of the Baggage.|
-| @maxWeightPerUnit             | 0..1      | Integer   | Maximum weight of the baggage.|
-| @maxTotalWeight               | 0..1      | Integer   | Maximum weight of ALL the baggage.|
-| @paymentInAirpot              | 0..1      | Boolean   | Determines whether the pay is in station.|
-| @code                         | 0..1      | String    | Code of the Baggage.|
-| @carrier                      | 0..1      | String    | Carrier.|
-| @needToken                    | 0..1      | Boolean   | Reserve token mandatory.|
-| @reservationToken             | 0..1      | String    | Reserve token.|
-| @description                  | 0..1      | String    | Baggage description.|
-| Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/Baggage/<br>BaggageCharge | 0..1 || Details of the baggage charge.|
-| @currency                     | 1         | String    | Currency.|
-| @fixAmount                    | 0..1      | Decimal   | Total fixed amount.|
-| @appliesFixAmount             | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#amount-applies-to-type" rel="nofollow" target="_blank">Amount Applies To Type</a>   | Entity which the fixed amount is applied|
-| @minFixAmount                 | 0..1      | Decimal   | Minimal fixed amount.|
-| @maxFixAmount                 | 0..1      | Decimal   | Maximal fixed amount.|
-| @minAmountPercentage          | 0..1      | Decimal   | Minimal percentage amount.|
-| @maxAmountPercentage          | 0..1      | Decimal   | Maximal percentage amount.|
-| @percentage                   | 0..1      | Decimal   | Total percentage amount.|
-| @percentageApplied                | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#amount-applies-to-type" rel="nofollow" target="_blank">Amount Applies To type</a>   | The percentage amount application.|
-| Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements   | 0..1  ||  Contains a list of SpecialSupplements.|
-| Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement     | 1..n  ||  Contains information about the Special Supplement.|
-| @type                         | 1         | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#supplement-type" rel="nofollow" target="_blank">Supplement Type</a> | Type of supplement|
-| @id                           | 0..1      | String    | Unique identifier of the supplement.|
-| @code                         | 0..1      | String    | Supplement code.|
-| @height                       | 0..1      | Integer   | Dimension of the supplement: height.|
-| @width                        | 0..1      | Integer   | Dimension of the supplement: width.|
-| @length                       | 0..1      | Integer   | Dimension of the supplement: length.|
-| @weight                       | 0..1      | Integer   | Dimension of the supplement: weight.|
-| @quantity                     | 0..1      | Integer   | Quantity of supplements.|
-| @description                  | 0..1      | String    | Description of the supplement|
-| @carrier                      | 0..1      | String    | Carrier selling the supplement.|
-| @status                       | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#supplement-status-type" rel="nofollow" target="_blank">Supplement Status Type</a>   | Status of the supplement.|
-| @needToken                    | 0..1      | Boolean   | If true, the field @reservationToken should be filled|
-| @reservationToken             | 0..1      | String    | Reservation Token of the supplement.|
-| @ownTransportation            | 0..1      | Boolean   | If true, the supplement includes own transportation cage.|
-| Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>References      | 0..1  ||  References for the Special Supplement.|
-| Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>References/SegmentReferences        | 0..1  ||  Contains a list of segment references for the Special Supplement.|
-| Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>References/SegmentReferences/<br>SegmentReference       | 1..n  ||  Segment reference.|
-| @itineraryRef                 | 1         | Integer   | Unique identifier of the Itinerary.|
-| @journeyRef                   | 1         | Integer   | Unique identifier of the Journey.|
-| @segmentRef                   | 1         | Integer   | Unique identifier of the Segment.|
-| Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>References/PaxReferences        | 0..1  ||  Contains a list of passenger references for the Special Supplement.|
-| Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>References/PaxReferences/PaxReference       | 1..n  ||  Passenger reference.|
-| @paxRef                       | 1         | String| Reference to the passenger.|
-| Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>SupplementCharge        | 0..1  ||  Details of the special supplement charge.|
-| @currency                     | 1         | String| Currency.|
-| @fixAmount                    | 0..1      | Decimal| Total fixed amount.|
-| @appliesFixAmount             | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#amount-applies-to-type" rel="nofollow" target="_blank">Amount Applies To Type</a>| The fixed amount application|
-| @minFixAmount                 | 0..1      | Decimal| Minimal fixed amount.|
-| @maxFixAmount                 | 0..1      | Decimal| Maximal fixed amount.|
-| @minAmountPercentage          | 0..1      | Decimal| Minimal percentage amount.|
-| @maxAmountPercentage          | 0..1      | Decimal| Maximal percentage amount.|
-| @percentage                   | 0..1      | Decimal| Total percentage amount.|
-| @percentageApplied            | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#amount-applies-to-type" rel="nofollow" target="_blank">Amount Applies To Type</a>| The percentage amount application|
-| Transportation/Fares/Fare/<br>AmountBreakdown         | 1         || Breakdown of the fare amount.|
-| @currency                     | 1         | String    | Currency code of the fare.|
-| @totalAmount                  | 1         | Decimal   | Total amount. with taxes and other charges included.|
-| @notCommissionableAmount      | 0..1      | Decimal   | Total amount that can not be commissioned.|
-| @commission                   | 0..1      | Decimal   | Commission.|                      |
-| Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakdowns | 0..1   || Contains a list of breakdown amounts ( taxes, mandatory charges.. ).|
-| Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakdowns/<br>ChargeBreakdown | 1..n || Contains details of the BreakdownAmount.|
-| @amount                       | 1         | Decimal   | Charge amount.|
-| @type                         | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#charge-type" rel="nofollow" target="_blank">Charge Type.</a>    | Type of charge|
-| @included                     | 0..1      | Boolean   | If true, the charge is included to the total fare amount.|
-| Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakdowns/<br>ChargeBreakdown/Concept | 0..1 | | Contains details of the charge.|
-| @id                           | 0..1      | String    | Unique id of the Concept.|
-| @language                     | 0..1      | String    | Language. ISO 3166-1 alpha-2 format lowercase.|
-| @carrier                      | 0..1      | String    | Carrier.|
-| @code                         | 0..1      | String    | Concept code.|
-| Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakDowns/<br>ChargeBreakdown/Concept/Text       | 0..1 | String | Remarks.|
-| Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakDowns/<br>ChargeBreakdown/Concept/Paragraph  | 0..n || Contains a list of Sentences and titles.|
-| @title                        | 0..1      | String    | Title.|
-| Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakDowns/<br>ChargeBreakdown/Concept/Paragraph/<br>Sentence | 0..n | String | Sentence|
-| Transportation/Fares/Fare/<br>AmountBreakdown/PaxBreakdown | 1        || Contains a list of breakdown amounts for each passenger ( ADT amount, etc. ).|
-| Transportation/Fares/Fare/<br>AmountBreakdown/PaxBreakdowns/<br>PaxBreakdown | 1..n || Contains details of breakdown amounts for each passenger.|
-| @paxType                      | 1         | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#passenger-type" rel="nofollow" target="_blank">Passenger Type</a>   | Passenger type|
-| @amount                       | 1         | Decimal   | Total amount, with taxes included, associated to the passenger.|
-| @taxes                        | 1         | Decimal   | If they exist, taxes are applied for this passenger type.|
-| @duTax                        | 0..1      | Decimal   | DU taxes.|
-| @fees                         | 0..1      | Decimal   | Fees.|
-| Transportation/Fares/Fare/<br>AmountBreakdown/PaxBreakdowns/<br>PaxBreakdown/Taxes | 0..1 || Contains a list of Taxes.|
-| Transportation/Fares/Fare/<br>AmountBreakdown/PaxBreakdowns/<br>PaxBreakdown/Taxes/Tax | 1..n || Code and amount of each tax.|
-| @code                         | 1         | String    | Code.|
-| @amount                       | 1         | Decimal   | Amount.|
-| Transportation/Fares/Fare/<br>PaxConfigurations       | 1     || Contains a list of PaxConfiguration.|
-| Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration | 1..n || Contains details of PaxConfiguration.|
-| @id                           | 1         | Integer   | Unique identifier of the PaxConfiguration.|
-| @paxRef                       | 1         | Integer   | Reference to the passenger Id from the request.|
-| @paxType                      | 1         | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#passenger-type" rel="nofollow" target="_blank">Passenger Type</a>   | Passenger type based on the age of the passenger.|
-| @age                          | 0..1      | Integer   | Age of the passenger.|
-| @nationality                  | 0..1      | String    | Nationality of the passenger.|
-| Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration/<br>AppliedBonuses | 0..1 || Applied discounts.|
-| @resident                     | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#resident-discount-type" rel="nofollow" target="_blank">Resident Discount Type</a>   | Resident discount type|
-| @largeFamily                  | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#passenger-type" rel="nofollow" target="_blank">Large Family Discount Type</a>   | Family discount type|
-| @discountCardCode             | 0..1      | String    | Discount card code.|
-| @discountCard                 | 0..1      | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#discount-card-type" rel="nofollow" target="_blank">Discount Card Type</a>   | Discount card type|
-| Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration/<br>AppliedBonuses/DiscountCards | 0..1  || Contains a list of DiscountCards.|
-| Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration/<br>AppliedBonuses/DiscountCards/<br>DiscountCard| 1..n  || DiscountCard details.|
-| @type                         | 1         | <a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#discount-card-type" rel="nofollow" target="_blank">Discount Card Type</a>   | Discount card type|
-| @code                         | 0..1      | String    | Discount card code.|
-| @id                           | 0..1      | String    | Unique identifier of discound card.|
-| Fares/Fare/PaxConfigurations<br>/PaxConfiguration/PaxConfiguration/<br>AppliedBonuses/PaxTypeCodes        | 0..1  || Contains a list of PaxTypeCodes.|
-| Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration/<br>AppliedBonuses/PaxTypeCodes/<br>PaxTypeCode  | 1..n  || Contains the discount code of the passenger.|
-| @code                         | 1         | String    | Discounts by passenger type|</p>
+<table>
+<thead>
+<tr>
+<th><strong>Element</strong></th>
+<th><strong>Number</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>AvailabilityRS</td>
+<td>1</td>
+<td></td>
+<td>Root node</td>
+</tr>
+
+<tr>
+<td>Transportation</td>
+<td>1</td>
+<td></td>
+<td>Contains all of the Segments and Fares</td>
+</tr>
+
+<tr>
+<td>@totalFares</td>
+<td>1</td>
+<td>Integer</td>
+<td>Total number of Fares</td>
+</tr>
+
+<tr>
+<td>Transportation/Segments</td>
+<td>1</td>
+<td></td>
+<td>Contains a list of the Segments</td>
+</tr>
+
+<tr>
+<td>Transportation/Segments/Segment</td>
+<td>1..n</td>
+<td></td>
+<td>Contains the information of the segment.</td>
+</tr>
+
+<tr>
+<td>@id</td>
+<td>1</td>
+<td>Integer</td>
+<td>Unique identifier of the segment.</td>
+</tr>
+
+<tr>
+<td>@transportationId</td>
+<td>1</td>
+<td>String</td>
+<td>Unique Id of the transportation.</td>
+</tr>
+
+<tr>
+<td>@operatingCarrier</td>
+<td>1</td>
+<td>String</td>
+<td>Company which operates the transportation.</td>
+</tr>
+
+<tr>
+<td>@marketingCarrier</td>
+<td>1</td>
+<td>String</td>
+<td>Company which commercializes the transportation.</td>
+</tr>
+
+<tr>
+<td>@departureDate</td>
+<td>1</td>
+<td>Date</td>
+<td>Departure date. Example: 2019-04-15T18:25:00</td>
+</tr>
+
+<tr>
+<td>@arrivalDate</td>
+<td>1</td>
+<td>Date</td>
+<td>Arrival date. Example: 2019-04-15T18:25:00</td>
+</tr>
+
+<tr>
+<td>@transportationType</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#transport-type" rel="nofollow" target="_blank">Transport type</a></td>
+<td>Transport type</td>
+</tr>
+
+<tr>
+<td>@transportationName</td>
+<td>0..1</td>
+<td>String</td>
+<td>Name of the transportation.</td>
+</tr>
+
+<tr>
+<td>@transportationCode</td>
+<td>0..1</td>
+<td>String</td>
+<td>Code of the transportation.</td>
+</tr>
+
+<tr>
+<td>@departureTerminal</td>
+<td>0..1</td>
+<td>String</td>
+<td>Departure terminal.</td>
+</tr>
+
+<tr>
+<td>@arrivalTerminal</td>
+<td>0..1</td>
+<td>String</td>
+<td>Arrival terminal.</td>
+</tr>
+
+<tr>
+<td>@segmentDuration</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Transport duration ( in minutes ).</td>
+</tr>
+
+<tr>
+<td>@segmentStatus</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#status-segment-type" rel="nofollow" target="_blank">Status Segment type</a></td>
+<td>Segment status</td>
+</tr>
+
+<tr>
+<td>@planeType</td>
+<td>0..1</td>
+<td>String</td>
+<td>Plane type. Flights parameter.</td>
+</tr>
+
+<tr>
+<td>@maxCheckinDate</td>
+<td>0..1</td>
+<td>String</td>
+<td>Maximum date to make the check-in. Not filled from provider&rsquo;s response</td>
+</tr>
+
+<tr>
+<td>@hasTechnicalStop</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true, the segment has a technical stop.</td>
+</tr>
+
+<tr>
+<td>@electronicTicket</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true, the segment uses a electronic ticket.</td>
+</tr>
+
+<tr>
+<td>@secureFlight</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true, the provider requires extra information of the passengers. Flights parameter.</td>
+</tr>
+
+<tr>
+<td>Transportation/Segments/Segment/<br>OriginLoc</td>
+<td>1</td>
+<td></td>
+<td>Origin location.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
+<td>String</td>
+<td>Location code.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#location-type" rel="nofollow" target="_blank">Location Type</a></td>
+<td>Type of station of the location</td>
+</tr>
+
+<tr>
+<td>@name</td>
+<td>0..1</td>
+<td>String</td>
+<td>Location full name.</td>
+</tr>
+
+<tr>
+<td>@radius</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Area radius from location.</td>
+</tr>
+
+<tr>
+<td>@cityCode</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true, the field code indicates a city code, if false, it will indicate an airport code.</td>
+</tr>
+
+<tr>
+<td>Transportation/Segments/Segment/<br>OriginLoc/AlternativeLocations</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of AlternativeLocations.</td>
+</tr>
+
+<tr>
+<td>Transportation/Segments/Segment/<br>OriginLoc/AlternativeLocations/<br>AlternativeLocation</td>
+<td>1..n</td>
+<td></td>
+<td>Contains the information of the alternative location.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
+<td>String</td>
+<td>Location code.</td>
+</tr>
+
+<tr>
+<td>@cityCode</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true, the field code indicates a city code, if false, it will indicate an airport code.</td>
+</tr>
+
+<tr>
+<td>@name</td>
+<td>0..1</td>
+<td>String</td>
+<td>Location long name.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#location-type" rel="nofollow" target="_blank">Location Type</a></td>
+<td>Type of station of the location.</td>
+</tr>
+
+<tr>
+<td>Transportation/Segments/Segment/<br>DestinationLoc</td>
+<td>1</td>
+<td></td>
+<td>Destination location.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
+<td>String</td>
+<td>Location code.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#location-type" rel="nofollow" target="_blank">Location Type</a></td>
+<td>Type of station of the location.</td>
+</tr>
+
+<tr>
+<td>@name</td>
+<td>0..1</td>
+<td>String</td>
+<td>Location full name.</td>
+</tr>
+
+<tr>
+<td>@radius</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Area radius from location.</td>
+</tr>
+
+<tr>
+<td>@cityCode</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true, the field code indicates a city code, if false, it will indicate an airport code.</td>
+</tr>
+
+<tr>
+<td>Transportation/Segments/Segment/<br>DestinationLoc/AlternativeLocations</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of AlternativeLocations.</td>
+</tr>
+
+<tr>
+<td>Transportation/Segments/Segment/<br>DestinationLoc/AlternativeLocations/<br>AlternativeLocation</td>
+<td>1..n</td>
+<td></td>
+<td>Contains the information of the alternative location.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
+<td>String</td>
+<td>Location code.</td>
+</tr>
+
+<tr>
+<td>@cityCode</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true, the field code indicates a city code, if false, it will indicate an airport code.</td>
+</tr>
+
+<tr>
+<td>@name</td>
+<td>0..1</td>
+<td>String</td>
+<td>Location long name.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#location-type" rel="nofollow" target="_blank">Location Type</a></td>
+<td>Type of station of the location</td>
+</tr>
+
+<tr>
+<td>Transportation/Segments/Segment/<br>TechnicalStops</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of TechnicalStops.</td>
+</tr>
+
+<tr>
+<td>@totalTechnicalStops</td>
+<td>1</td>
+<td>Integer</td>
+<td>Total number of TechnicalStops.</td>
+</tr>
+
+<tr>
+<td>Transportation/Segments/Segment/<br>TechnicalStops/TechnicalStop</td>
+<td>0..n</td>
+<td></td>
+<td>Contains the details of the TechnicalStop.</td>
+</tr>
+
+<tr>
+<td>@location</td>
+<td>1</td>
+<td>String</td>
+<td>TechnicalStop location</td>
+</tr>
+
+<tr>
+<td>@stopDate</td>
+<td>1</td>
+<td>Date</td>
+<td>Approx. stop date and time. Example: 2019-02-20T16:50:00</td>
+</tr>
+
+<tr>
+<td>@departureDate</td>
+<td>1</td>
+<td>Date</td>
+<td>Approx. departure date and time. Example: 2019-02-20T16:50:00</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares</td>
+<td>1</td>
+<td></td>
+<td>Contains a list of Fares.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare</td>
+<td>1..n</td>
+<td></td>
+<td>Contains details of Fare.</td>
+</tr>
+
+<tr>
+<td>@id</td>
+<td>1</td>
+<td>Integer</td>
+<td>Unique identifier of the Fare.</td>
+</tr>
+
+<tr>
+<td>@providerCode</td>
+<td>1</td>
+<td>String</td>
+<td>Provider code.</td>
+</tr>
+
+<tr>
+<td>@fareType</td>
+<td>1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#fare-type" rel="nofollow" target="_blank">Fare type</a></td>
+<td>Fare type.</td>
+</tr>
+
+<tr>
+<td>@familyFare</td>
+<td>0..1</td>
+<td>String</td>
+<td>Family fare name of the Fare.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/HasObFees</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true then there is an extra fee for using credit card.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Conditions</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of Fare Conditions.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Conditions/<br>Condition</td>
+<td>1..n</td>
+<td></td>
+<td>Contains details of the Condition that applies to the condition.</td>
+</tr>
+
+<tr>
+<td>@carrier</td>
+<td>0..1</td>
+<td>String</td>
+<td>Carrier applying the condition.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>0..1</td>
+<td>String</td>
+<td>Code of the condition.</td>
+</tr>
+
+<tr>
+<td>@id</td>
+<td>0..1</td>
+<td>String</td>
+<td>Unique id of the condition.</td>
+</tr>
+
+<tr>
+<td>@language</td>
+<td>0..1</td>
+<td>String</td>
+<td>Language in which the condition is written.</td>
+</tr>
+
+<tr>
+<td>@Text</td>
+<td>0..1</td>
+<td>String</td>
+<td>Description of the condition.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Conditions/<br>Condition/Paragraph</td>
+<td>0..n</td>
+<td></td>
+<td>List of Sentences and titles.</td>
+</tr>
+
+<tr>
+<td>@title</td>
+<td>0..1</td>
+<td>String</td>
+<td>Title content.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Conditions/<br>Condition/Paragraph/Sentence</td>
+<td>0..n</td>
+<td>String</td>
+<td>List of Sentences contents.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options</td>
+<td>1</td>
+<td></td>
+<td>Contains a list of Fare Options.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option</td>
+<td>1..n</td>
+<td></td>
+<td>Contains details of the Fare Option.</td>
+</tr>
+
+<tr>
+<td>@id</td>
+<td>1</td>
+<td>Integer</td>
+<td>Unique identifier of the Option.</td>
+</tr>
+
+<tr>
+<td>@availJourneyRef</td>
+<td>1</td>
+<td>Integer</td>
+<td>Reference id of the AvailabilityRQ Journey.</td>
+</tr>
+
+<tr>
+<td>@numStopOver</td>
+<td>1</td>
+<td>Integer</td>
+<td>Number of StopOvers. If -1, then we cannot know how many StopOvers via XML.</td>
+</tr>
+
+<tr>
+<td>@carrier</td>
+<td>1</td>
+<td>String</td>
+<td>Validating carrier.</td>
+</tr>
+
+<tr>
+<td>@familyFare</td>
+<td>0..1</td>
+<td>String</td>
+<td>Family fare name of the Option.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SegmentReferences</td>
+<td>1</td>
+<td></td>
+<td>Contains a list of SegmentReferences.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SegmentReferences/SegmentReference</td>
+<td>1..n</td>
+<td></td>
+<td>Contains details of the SegmentReference of each option.</td>
+</tr>
+
+<tr>
+<td>@segmentRef</td>
+<td>1</td>
+<td>Integer</td>
+<td>Reference of the Segment.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SegmentReferences/SegmentReference/<br>SegmentClasses</td>
+<td>1</td>
+<td></td>
+<td>Contains a list of SegmentClasses.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SegmentReferences/SegmentReference/<br>SegmentClasses/SegmentClass</td>
+<td>1..n</td>
+<td></td>
+<td>Contains details of the SegmentClass.</td>
+</tr>
+
+<tr>
+<td>@cabinClass</td>
+<td>1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#cabin-class-type" rel="nofollow" target="_blank">Cabin Class type</a></td>
+<td>Cabin class of the segment.</td>
+</tr>
+
+<tr>
+<td>@paxRef</td>
+<td>1</td>
+<td>Integer</td>
+<td>Passenger reference.</td>
+</tr>
+
+<tr>
+<td>@fareType</td>
+<td>1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#fare-type" rel="nofollow" target="_blank">Fare type</a></td>
+<td>Fare type</td>
+</tr>
+
+<tr>
+<td>@class</td>
+<td>0..1</td>
+<td>String</td>
+<td>Fare class.</td>
+</tr>
+
+<tr>
+<td>@fareBasis</td>
+<td>0..1</td>
+<td>String</td>
+<td>Identifier of the fare.</td>
+</tr>
+
+<tr>
+<td>@avail</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Available seats remaining for this class (In flights, the maximum is 9).</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SegmentReferences/SegmentReference/<br>ReservationTokens</td>
+<td>0..1</td>
+<td></td>
+<td>Specific attribute used for each provider.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SegmentReferences/SegmentReference/<br>ReservationTokens/Attribute</td>
+<td>1..n</td>
+<td></td>
+<td>Type of attribute.</td>
+</tr>
+
+<tr>
+<td>@key</td>
+<td>1</td>
+<td>String</td>
+<td>Contains the keyword/ Id to identify a parameter.</td>
+</tr>
+
+<tr>
+<td>@value</td>
+<td>1</td>
+<td>String</td>
+<td>Contains the value of the parameter.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>BaggageTypes</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of BaggageTypes.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType</td>
+<td>1..n</td>
+<td></td>
+<td>Contains details of BaggageType.</td>
+</tr>
+
+<tr>
+<td>@checkInType</td>
+<td>1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#checkin-type" rel="nofollow" target="_blank">Checkin type</a></td>
+<td>Check-in type.</td>
+</tr>
+
+<tr>
+<td>@appliesSegments</td>
+<td>1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#segment-applies-type" rel="nofollow" target="_blank">Segment Applies To type</a></td>
+<td>Segments in which is applied.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/<br>References</td>
+<td>0..1</td>
+<td></td>
+<td>References for the Baggage Type.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/<br>References/SegmentReferences</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of segment references for the Baggage Type.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/<br>References/SegmentReferences/<br>SegmentReference</td>
+<td>1..n</td>
+<td></td>
+<td>Segment reference.</td>
+</tr>
+
+<tr>
+<td>@itineraryRef</td>
+<td>1</td>
+<td>Integer</td>
+<td>Unique identifier of the Itinerary.</td>
+</tr>
+
+<tr>
+<td>@journeyRef</td>
+<td>1</td>
+<td>Integer</td>
+<td>Unique identifier of the Journey.</td>
+</tr>
+
+<tr>
+<td>@segmentRef</td>
+<td>1</td>
+<td>Integer</td>
+<td>Unique identifier of the Segment.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/<br>References/PaxReferences</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of passenger references for the Baggage Type.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/<br>References/PaxReferences/<br>PaxReference</td>
+<td>1..n</td>
+<td></td>
+<td>Passenger reference.</td>
+</tr>
+
+<tr>
+<td>@paxRef</td>
+<td>1</td>
+<td>String</td>
+<td>Reference to the passenger.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/Baggage</td>
+<td>1..n</td>
+<td></td>
+<td>Details of the baggage.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#baggage-type" rel="nofollow" target="_blank">Baggage Type</a></td>
+<td>Baggage type</td>
+</tr>
+
+<tr>
+<td>@quantity</td>
+<td>1</td>
+<td>Integer</td>
+<td>Baggage quantity.</td>
+</tr>
+
+<tr>
+<td>@id</td>
+<td>0..1</td>
+<td>String</td>
+<td>Unique identifier of the Baggage.</td>
+</tr>
+
+<tr>
+<td>@maxWeightPerUnit</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Maximum weight of the baggage.</td>
+</tr>
+
+<tr>
+<td>@maxTotalWeight</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Maximum weight of ALL the baggage.</td>
+</tr>
+
+<tr>
+<td>@paymentInAirpot</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>Determines whether the pay is in station.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>0..1</td>
+<td>String</td>
+<td>Code of the Baggage.</td>
+</tr>
+
+<tr>
+<td>@carrier</td>
+<td>0..1</td>
+<td>String</td>
+<td>Carrier.</td>
+</tr>
+
+<tr>
+<td>@needToken</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>Reserve token mandatory.</td>
+</tr>
+
+<tr>
+<td>@reservationToken</td>
+<td>0..1</td>
+<td>String</td>
+<td>Reserve token.</td>
+</tr>
+
+<tr>
+<td>@description</td>
+<td>0..1</td>
+<td>String</td>
+<td>Baggage description.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>BaggageTypes/BaggageType/Baggage/<br>BaggageCharge</td>
+<td>0..1</td>
+<td></td>
+<td>Details of the baggage charge.</td>
+</tr>
+
+<tr>
+<td>@currency</td>
+<td>1</td>
+<td>String</td>
+<td>Currency.</td>
+</tr>
+
+<tr>
+<td>@fixAmount</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Total fixed amount.</td>
+</tr>
+
+<tr>
+<td>@appliesFixAmount</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#amount-applies-to-type" rel="nofollow" target="_blank">Amount Applies To Type</a></td>
+<td>Entity which the fixed amount is applied</td>
+</tr>
+
+<tr>
+<td>@minFixAmount</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Minimal fixed amount.</td>
+</tr>
+
+<tr>
+<td>@maxFixAmount</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Maximal fixed amount.</td>
+</tr>
+
+<tr>
+<td>@minAmountPercentage</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Minimal percentage amount.</td>
+</tr>
+
+<tr>
+<td>@maxAmountPercentage</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Maximal percentage amount.</td>
+</tr>
+
+<tr>
+<td>@percentage</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Total percentage amount.</td>
+</tr>
+
+<tr>
+<td>@percentageApplied</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#amount-applies-to-type" rel="nofollow" target="_blank">Amount Applies To type</a></td>
+<td>The percentage amount application.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of SpecialSupplements.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement</td>
+<td>1..n</td>
+<td></td>
+<td>Contains information about the Special Supplement.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#supplement-type" rel="nofollow" target="_blank">Supplement Type</a></td>
+<td>Type of supplement</td>
+</tr>
+
+<tr>
+<td>@id</td>
+<td>0..1</td>
+<td>String</td>
+<td>Unique identifier of the supplement.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>0..1</td>
+<td>String</td>
+<td>Supplement code.</td>
+</tr>
+
+<tr>
+<td>@height</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Dimension of the supplement: height.</td>
+</tr>
+
+<tr>
+<td>@width</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Dimension of the supplement: width.</td>
+</tr>
+
+<tr>
+<td>@length</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Dimension of the supplement: length.</td>
+</tr>
+
+<tr>
+<td>@weight</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Dimension of the supplement: weight.</td>
+</tr>
+
+<tr>
+<td>@quantity</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Quantity of supplements.</td>
+</tr>
+
+<tr>
+<td>@description</td>
+<td>0..1</td>
+<td>String</td>
+<td>Description of the supplement</td>
+</tr>
+
+<tr>
+<td>@carrier</td>
+<td>0..1</td>
+<td>String</td>
+<td>Carrier selling the supplement.</td>
+</tr>
+
+<tr>
+<td>@status</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#supplement-status-type" rel="nofollow" target="_blank">Supplement Status Type</a></td>
+<td>Status of the supplement.</td>
+</tr>
+
+<tr>
+<td>@needToken</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true, the field @reservationToken should be filled</td>
+</tr>
+
+<tr>
+<td>@reservationToken</td>
+<td>0..1</td>
+<td>String</td>
+<td>Reservation Token of the supplement.</td>
+</tr>
+
+<tr>
+<td>@ownTransportation</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true, the supplement includes own transportation cage.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>References</td>
+<td>0..1</td>
+<td></td>
+<td>References for the Special Supplement.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>References/SegmentReferences</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of segment references for the Special Supplement.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>References/SegmentReferences/<br>SegmentReference</td>
+<td>1..n</td>
+<td></td>
+<td>Segment reference.</td>
+</tr>
+
+<tr>
+<td>@itineraryRef</td>
+<td>1</td>
+<td>Integer</td>
+<td>Unique identifier of the Itinerary.</td>
+</tr>
+
+<tr>
+<td>@journeyRef</td>
+<td>1</td>
+<td>Integer</td>
+<td>Unique identifier of the Journey.</td>
+</tr>
+
+<tr>
+<td>@segmentRef</td>
+<td>1</td>
+<td>Integer</td>
+<td>Unique identifier of the Segment.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>References/PaxReferences</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of passenger references for the Special Supplement.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>References/PaxReferences/PaxReference</td>
+<td>1..n</td>
+<td></td>
+<td>Passenger reference.</td>
+</tr>
+
+<tr>
+<td>@paxRef</td>
+<td>1</td>
+<td>String</td>
+<td>Reference to the passenger.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/Options/Option/<br>SpecialSupplements/SpecialSupplement/<br>SupplementCharge</td>
+<td>0..1</td>
+<td></td>
+<td>Details of the special supplement charge.</td>
+</tr>
+
+<tr>
+<td>@currency</td>
+<td>1</td>
+<td>String</td>
+<td>Currency.</td>
+</tr>
+
+<tr>
+<td>@fixAmount</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Total fixed amount.</td>
+</tr>
+
+<tr>
+<td>@appliesFixAmount</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#amount-applies-to-type" rel="nofollow" target="_blank">Amount Applies To Type</a></td>
+<td>The fixed amount application</td>
+</tr>
+
+<tr>
+<td>@minFixAmount</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Minimal fixed amount.</td>
+</tr>
+
+<tr>
+<td>@maxFixAmount</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Maximal fixed amount.</td>
+</tr>
+
+<tr>
+<td>@minAmountPercentage</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Minimal percentage amount.</td>
+</tr>
+
+<tr>
+<td>@maxAmountPercentage</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Maximal percentage amount.</td>
+</tr>
+
+<tr>
+<td>@percentage</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Total percentage amount.</td>
+</tr>
+
+<tr>
+<td>@percentageApplied</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#amount-applies-to-type" rel="nofollow" target="_blank">Amount Applies To Type</a></td>
+<td>The percentage amount application</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown</td>
+<td>1</td>
+<td></td>
+<td>Breakdown of the fare amount.</td>
+</tr>
+
+<tr>
+<td>@currency</td>
+<td>1</td>
+<td>String</td>
+<td>Currency code of the fare.</td>
+</tr>
+
+<tr>
+<td>@totalAmount</td>
+<td>1</td>
+<td>Decimal</td>
+<td>Total amount. with taxes and other charges included.</td>
+</tr>
+
+<tr>
+<td>@notCommissionableAmount</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Total amount that can not be commissioned.</td>
+</tr>
+
+<tr>
+<td>@commission</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Commission.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakdowns</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of breakdown amounts ( taxes, mandatory charges.. ).</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakdowns/<br>ChargeBreakdown</td>
+<td>1..n</td>
+<td></td>
+<td>Contains details of the BreakdownAmount.</td>
+</tr>
+
+<tr>
+<td>@amount</td>
+<td>1</td>
+<td>Decimal</td>
+<td>Charge amount.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#charge-type" rel="nofollow" target="_blank">Charge Type.</a></td>
+<td>Type of charge</td>
+</tr>
+
+<tr>
+<td>@included</td>
+<td>0..1</td>
+<td>Boolean</td>
+<td>If true, the charge is included to the total fare amount.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakdowns/<br>ChargeBreakdown/Concept</td>
+<td>0..1</td>
+<td></td>
+<td>Contains details of the charge.</td>
+</tr>
+
+<tr>
+<td>@id</td>
+<td>0..1</td>
+<td>String</td>
+<td>Unique id of the Concept.</td>
+</tr>
+
+<tr>
+<td>@language</td>
+<td>0..1</td>
+<td>String</td>
+<td>Language. ISO 3166-1 alpha-2 format lowercase.</td>
+</tr>
+
+<tr>
+<td>@carrier</td>
+<td>0..1</td>
+<td>String</td>
+<td>Carrier.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>0..1</td>
+<td>String</td>
+<td>Concept code.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakDowns/<br>ChargeBreakdown/Concept/Text</td>
+<td>0..1</td>
+<td>String</td>
+<td>Remarks.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakDowns/<br>ChargeBreakdown/Concept/Paragraph</td>
+<td>0..n</td>
+<td></td>
+<td>Contains a list of Sentences and titles.</td>
+</tr>
+
+<tr>
+<td>@title</td>
+<td>0..1</td>
+<td>String</td>
+<td>Title.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown/ChargeBreakDowns/<br>ChargeBreakdown/Concept/Paragraph/<br>Sentence</td>
+<td>0..n</td>
+<td>String</td>
+<td>Sentence</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown/PaxBreakdown</td>
+<td>1</td>
+<td></td>
+<td>Contains a list of breakdown amounts for each passenger ( ADT amount, etc. ).</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown/PaxBreakdowns/<br>PaxBreakdown</td>
+<td>1..n</td>
+<td></td>
+<td>Contains details of breakdown amounts for each passenger.</td>
+</tr>
+
+<tr>
+<td>@paxType</td>
+<td>1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#passenger-type" rel="nofollow" target="_blank">Passenger Type</a></td>
+<td>Passenger type</td>
+</tr>
+
+<tr>
+<td>@amount</td>
+<td>1</td>
+<td>Decimal</td>
+<td>Total amount, with taxes included, associated to the passenger.</td>
+</tr>
+
+<tr>
+<td>@taxes</td>
+<td>1</td>
+<td>Decimal</td>
+<td>If they exist, taxes are applied for this passenger type.</td>
+</tr>
+
+<tr>
+<td>@duTax</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>DU taxes.</td>
+</tr>
+
+<tr>
+<td>@fees</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Fees.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown/PaxBreakdowns/<br>PaxBreakdown/Taxes</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of Taxes.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>AmountBreakdown/PaxBreakdowns/<br>PaxBreakdown/Taxes/Tax</td>
+<td>1..n</td>
+<td></td>
+<td>Code and amount of each tax.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
+<td>String</td>
+<td>Code.</td>
+</tr>
+
+<tr>
+<td>@amount</td>
+<td>1</td>
+<td>Decimal</td>
+<td>Amount.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>PaxConfigurations</td>
+<td>1</td>
+<td></td>
+<td>Contains a list of PaxConfiguration.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration</td>
+<td>1..n</td>
+<td></td>
+<td>Contains details of PaxConfiguration.</td>
+</tr>
+
+<tr>
+<td>@id</td>
+<td>1</td>
+<td>Integer</td>
+<td>Unique identifier of the PaxConfiguration.</td>
+</tr>
+
+<tr>
+<td>@paxRef</td>
+<td>1</td>
+<td>Integer</td>
+<td>Reference to the passenger Id from the request.</td>
+</tr>
+
+<tr>
+<td>@paxType</td>
+<td>1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#passenger-type" rel="nofollow" target="_blank">Passenger Type</a></td>
+<td>Passenger type based on the age of the passenger.</td>
+</tr>
+
+<tr>
+<td>@age</td>
+<td>0..1</td>
+<td>Integer</td>
+<td>Age of the passenger.</td>
+</tr>
+
+<tr>
+<td>@nationality</td>
+<td>0..1</td>
+<td>String</td>
+<td>Nationality of the passenger.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration/<br>AppliedBonuses</td>
+<td>0..1</td>
+<td></td>
+<td>Applied discounts.</td>
+</tr>
+
+<tr>
+<td>@resident</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#resident-discount-type" rel="nofollow" target="_blank">Resident Discount Type</a></td>
+<td>Resident discount type</td>
+</tr>
+
+<tr>
+<td>@largeFamily</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#passenger-type" rel="nofollow" target="_blank">Large Family Discount Type</a></td>
+<td>Family discount type</td>
+</tr>
+
+<tr>
+<td>@discountCardCode</td>
+<td>0..1</td>
+<td>String</td>
+<td>Discount card code.</td>
+</tr>
+
+<tr>
+<td>@discountCard</td>
+<td>0..1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#discount-card-type" rel="nofollow" target="_blank">Discount Card Type</a></td>
+<td>Discount card type</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration/<br>AppliedBonuses/DiscountCards</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of DiscountCards.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration/<br>AppliedBonuses/DiscountCards/<br>DiscountCard</td>
+<td>1..n</td>
+<td></td>
+<td>DiscountCard details.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>1</td>
+<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#discount-card-type" rel="nofollow" target="_blank">Discount Card Type</a></td>
+<td>Discount card type</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>0..1</td>
+<td>String</td>
+<td>Discount card code.</td>
+</tr>
+
+<tr>
+<td>@id</td>
+<td>0..1</td>
+<td>String</td>
+<td>Unique identifier of discound card.</td>
+</tr>
+
+<tr>
+<td>Fares/Fare/PaxConfigurations<br>/PaxConfiguration/PaxConfiguration/<br>AppliedBonuses/PaxTypeCodes</td>
+<td>0..1</td>
+<td></td>
+<td>Contains a list of PaxTypeCodes.</td>
+</tr>
+
+<tr>
+<td>Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration/<br>AppliedBonuses/PaxTypeCodes/<br>PaxTypeCode</td>
+<td>1..n</td>
+<td></td>
+<td>Contains the discount code of the passenger.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
+<td>String</td>
+<td>Discounts by passenger type</td>
+</tr>
+</tbody>
+</table>
 
 <h3 id="detailed-description">Detailed description</h3>
 
