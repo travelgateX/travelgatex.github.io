@@ -83,8 +83,8 @@ OTA VehCancelRQ Example &amp;lt;OTA_VehCancelRQ&amp;gt; &amp;lt;POS&amp;gt; &amp
       
       <guid>/legacy/docs/car/dsf/common-elements/</guid>
       <description>This node will be in every request and response objects.
-The request objects contains the supplier&amp;rsquo;s configuration, urls and credentials.
-The response object contains the operation status and errors if any.
+The request objects contain the supplier&amp;rsquo;s configuration, urls and credentials.
+The response object contains the operation status and errors, if any.
 Common Elements RQ Example &amp;lt;CarBaseRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;20000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration ProviderCode=&amp;quot;xx&amp;quot;&amp;gt; &amp;lt;Credentials user=&amp;quot;testUser&amp;quot; password=&amp;quot;testPass&amp;quot;&amp;gt; &amp;lt;genericURL&amp;gt;https://xxx&amp;lt;/genericURL&amp;gt; &amp;lt;identificationURL&amp;gt;https://xxx&amp;lt;/identificationURL&amp;gt; &amp;lt;availRateURL&amp;gt;https://xxx&amp;lt;/availRateURL&amp;gt; &amp;lt;rateRuleURL&amp;gt;https://xxx&amp;lt;/rateRuleURL&amp;gt; &amp;lt;vehResURL&amp;gt;https://xxx&amp;lt;/vehResURL&amp;gt; &amp;lt;specificURLs /&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes /&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;ClientConfiguration agency = &amp;quot;agencyName&amp;quot; SellCurrency = &amp;quot;EUR&amp;quot;/&amp;gt; … &amp;lt;/CarBaseRQ&amp;gt;  Common Elements RQ Description    Element Number Type Description     CarBaseRQ 1  Root node.</description>
     </item>
     
@@ -116,9 +116,9 @@ OTA VehRetResRQ Example &amp;lt;OTA_VehRetResRQ&amp;gt; &amp;lt;POS&amp;gt; &amp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/car/dsf/rate-rule/</guid>
-      <description>Method Goals This method aims to return the total price of the selected VehAvail (option). This VehAvail option must be selected in the previous step ( OTA VehAvailRate).
+      <description>Method Goals This method aims to return the total price of the selected VehAvail (option). This VehAvail option must be selected in the previous step (OTA VehAvailRate).
 This message allows the partners to know the applied conditions on the chosen car and also shows the breakdown of the applied charges and fees including the final price.
-Remarks Some suppliers do not provide this method. If this is the case all the info must be returned in OTA VehAvailRate and this method will do a OTA VehAvailRate again filtered by the selected option.</description>
+Remarks: Some suppliers do not provide this method. If this is the case, all the info must be returned in OTA VehAvailRate and this method will do a OTA VehAvailRate again filtered by the selected option.</description>
     </item>
     
     <item>

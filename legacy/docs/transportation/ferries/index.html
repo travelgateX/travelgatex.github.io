@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ferries Data Structure | TravelgateX Documentation</title>
+    <title>Ferries API Documentation | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.45" />
-<title>Ferries Data Structure :: TravelgateX Documentation</title>
+<title>Ferries API Documentation :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -30,13 +30,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here.">
+<meta name="description" content="Read documentation on diferent Legacy APIs">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
     
-    <meta name="description" content="">
+    <meta name="description" content="Read documentation on diferent Legacy APIs">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -4564,6 +4564,11 @@
           <span>Emit</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/legacy/docs/transportation/flights/flightsdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/flights/flightsdatastructure/">
+          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/legacy/docs/transportation/flights/refund/" class="dd-item">
         <a href="/legacy/docs/transportation/flights/refund/">
           <span>Refund</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4606,9 +4611,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/legacy/docs/transportation/ferries/" class="dd-item active">
+    <li data-nav-id="/legacy/docs/transportation/ferries/" class="dd-item parent active">
       <a href="/legacy/docs/transportation/ferries/">
-        <span>Ferries API Documentation</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+        <span>Ferries API Documentation</span>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
       <li data-nav-id="/legacy/docs/transportation/ferries/avail/" class="dd-item">
@@ -4624,6 +4630,16 @@
       <li data-nav-id="/legacy/docs/transportation/ferries/common-elements/" class="dd-item">
         <a href="/legacy/docs/transportation/ferries/common-elements/">
           <span>Common Elements</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/error/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/error/">
+          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/ferriesdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/ferriesdatastructure/">
+          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
       <li data-nav-id="/legacy/docs/transportation/ferries/reservation/" class="dd-item">
@@ -4666,21 +4682,6 @@
       <li data-nav-id="/legacy/docs/transportation/enum/" class="dd-item">
         <a href="/legacy/docs/transportation/enum/">
           <span>Enum</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/error/" class="dd-item">
-        <a href="/legacy/docs/transportation/error/">
-          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/ferries/" class="dd-item active">
-        <a href="/legacy/docs/transportation/ferries/">
-          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/flights/" class="dd-item">
-        <a href="/legacy/docs/transportation/flights/">
-          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -4869,7 +4870,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Ferries Data Structure</h1>
+              <h1 class="pageTitle">Ferries API Documentation</h1>
 
               
                 
@@ -4878,123 +4879,91 @@
                 
                 
               <div id="top-github-link">
-                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/legacy/docs/transportation/ferries.md" target="blank">
+                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/legacy/docs/transportation/ferries/_index.md" target="blank">
                   <i class="fa fa-code-fork"></i>
                   Edit page
                 </a>
               </div>
               
-<p>The structure of the API specification follows a standard. This document
-intends to explain every aspect of this structure and their fields.</p>
 
-<p>The integration will have the following methods:</p>
+	
 
-<table>
-<thead>
-<tr>
-<th><strong>Method</strong></th>
-<th><strong>Input</strong></th>
-<th><strong>Output</strong></th>
-<th><strong>Required</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
+<div class="flex">
+		
+	<a href="/legacy/docs/transportation/ferries/avail/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Availability</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/ferries/cancel/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Cancellation</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/ferries/common-elements/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Common Elements</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/ferries/error/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Errors</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/ferries/ferriesdatastructure/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Ferries Data Structure</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/ferries/reservation/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Reservation</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/ferries/retrievereservation/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">RetrieveReservation</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/ferries/retrievereservationlist/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">RetrieveReservationList</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/ferries/routes/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Routes</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/ferries/valuation/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Valuation</h3>
+			</div>
+		</div>
+	</a>
+</div>
 
-<tbody>
-<tr>
-<td>Avail</td>
-<td>AvailabilityRQ</td>
-<td>AvailabilityRS</td>
-<td>Yes</td>
-<td>Makes a availability call</td>
-</tr>
 
-<tr>
-<td>Valuation</td>
-<td>ValuationRQ</td>
-<td>ValuationRS</td>
-<td>Yes</td>
-<td>Makes a pre-booking</td>
-</tr>
 
-<tr>
-<td>Reservation</td>
-<td>ReservationRQ</td>
-<td>ReservationRS</td>
-<td>Yes</td>
-<td>Makes a booking</td>
-</tr>
-
-<tr>
-<td>Routes</td>
-<td>RoutesRQ</td>
-<td>RoutesRS</td>
-<td>Yes</td>
-<td>Gets a static routes list</td>
-</tr>
-
-<tr>
-<td>RetrieveReservation</td>
-<td>RetrieveReservation RQ</td>
-<td>RetrieveReservation RS</td>
-<td>No</td>
-<td>Gets the details of a single booking</td>
-</tr>
-
-<tr>
-<td>RetrieveReservation List</td>
-<td>RetrieveReservation ListRQ</td>
-<td>RetrieveReservation ListRS</td>
-<td>No</td>
-<td>Gets a list of bookings</td>
-</tr>
-
-<tr>
-<td>Cancelation</td>
-<td>CancellationRQ</td>
-<td>CancellationRS</td>
-<td>No</td>
-<td>Cancels a booking</td>
-</tr>
-</tbody>
-</table>
-
-<p>Each request sent to the <strong>service url</strong> requires a node called rqXML .
-Inside this node travels the current method&rsquo;s Input object.</p>
-
-<p>The data structure will always have common elements in all objects and
-the specific objects related to the operation</p>
-
-<p><strong>Data structure content:</strong></p>
-
-<ol>
-<li><a href="/docs/transportation/ferries">Ferries</a></li>
-<li><a href="/docs/transportation/DSF/ferries/common-elements">Common-Elements</a></li>
-<li><a href="/docs/hotel/DSF/Valuation">Valuation</a></li>
-<li><a href="/docs/transportation/DSF/ferries/avail">Avail</a></li>
-<li><a href="/docs/transportation/DSF/ferries/valuation">Valuation</a></li>
-<li><a href="/docs/transportation/DSF/ferries/reservation">Reservation</a></li>
-<li><a href="/docs/transportation/DSF/ferries/routes">Routes</a></li>
-<li><a href="/docs/transportation/DSF/ferries/retrieveReservation">RetrieveReservation</a></li>
-<li><a href="/docs/transportation/DSF/ferries/retrieveReservationList">RetrieveReservationList</a></li>
-<li><a href="/docs/transportation/DSF/ferries/cancel">Cancellation</a></li>
-</ol>
-
-<hr/>
-<h2>Comments</h2>
-
-<div id='discourse-comments'></div>
-
-<script type="text/javascript">
-  DiscourseEmbed = { discourseUrl: 'https://community.travelgatex.com/',
-                     discourseEmbedUrl: window.location.href };
-
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
-</script>
 
 
 
@@ -5017,10 +4986,10 @@ the specific objects related to the operation</p>
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/legacy/docs/transportation/error/" title="Go to previous page | Errors"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Errors</a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/legacy/docs/transportation/flights/valuation/" title="Go to previous page | Valuation"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Valuation</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/legacy/docs/transportation/flights/" title="Go to next page | Flights Data Structure" style="margin-right: 0px;">Flights Data Structure<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/legacy/docs/transportation/ferries/avail/" title="Go to next page | Availability" style="margin-right: 0px;">Availability<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

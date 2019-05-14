@@ -4564,6 +4564,11 @@
           <span>Emit</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/legacy/docs/transportation/flights/flightsdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/flights/flightsdatastructure/">
+          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/legacy/docs/transportation/flights/refund/" class="dd-item">
         <a href="/legacy/docs/transportation/flights/refund/">
           <span>Refund</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4626,6 +4631,16 @@
           <span>Common Elements</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/error/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/error/">
+          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/ferriesdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/ferriesdatastructure/">
+          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/legacy/docs/transportation/ferries/reservation/" class="dd-item">
         <a href="/legacy/docs/transportation/ferries/reservation/">
           <span>Reservation</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4666,21 +4681,6 @@
       <li data-nav-id="/legacy/docs/transportation/enum/" class="dd-item">
         <a href="/legacy/docs/transportation/enum/">
           <span>Enum</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/error/" class="dd-item">
-        <a href="/legacy/docs/transportation/error/">
-          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/ferries/" class="dd-item">
-        <a href="/legacy/docs/transportation/ferries/">
-          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/flights/" class="dd-item">
-        <a href="/legacy/docs/transportation/flights/">
-          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -4888,10 +4888,10 @@
 
 <p>This node will be in every request and response objects.</p>
 
-<p>The request objects contains the supplier&rsquo;s configuration, urls and
+<p>The request objects contain the supplier&rsquo;s configuration, urls and
 credentials.</p>
 
-<p>The response object contains the operation status and errors if any.</p>
+<p>The response object contains the operation status and errors, if any.</p>
 
 <h3 id="common-elements-rq-example">Common Elements RQ Example</h3>
 
@@ -4968,7 +4968,7 @@ credentials.</p>
 <td>source/languageCode</td>
 <td>1</td>
 <td>String</td>
-<td>Language code (ISO 3166-1 alpha-2) format.</td>
+<td>Language code (ISO 3166-1 alpha-2 format).</td>
 </tr>
 
 <tr>
@@ -4989,7 +4989,7 @@ credentials.</p>
 <td>CarBaseRQ/Configuration</td>
 <td>1</td>
 <td>Configuracion Proveedor</td>
-<td>Configuration needed to send the transaction to the provider.</td>
+<td>Configuration that needs to be sent in the transaction to the provider.</td>
 </tr>
 
 <tr>
@@ -5176,7 +5176,7 @@ credentials.</p>
 <td>CarBaseRS/Warnings</td>
 <td>0..1</td>
 <td>Warnings</td>
-<td>Contains a list of warning elements. Important but non critical information returned in the provider&rsquo;s response is shown in this object.</td>
+<td>Contains a list of warning elements. Important but non-critical information returned in the provider&rsquo;s response is shown in this object.</td>
 </tr>
 
 <tr>
@@ -5232,13 +5232,13 @@ credentials.</p>
 <td>CarBaseRS/auditData</td>
 <td>1</td>
 <td>AuditData</td>
-<td>In case registerTransactions has been set to true on the request this object will provide information about the communication with the provider. Otherwise it will be null.</td>
+<td>In case registerTransactions has been set to true on the request this object will provide information about the communication with the provider. Otherwise, it will be null.</td>
 </tr>
 
 <tr>
 <td>auditData/Transactions</td>
 <td>1</td>
-<td>List of Transaction</td>
+<td>List of Transactions</td>
 <td>Object that contains information of a transaction sent to the provider&rsquo;s system.</td>
 </tr>
 

@@ -46,6 +46,26 @@ Response Format The response will contain the indication if the function is impl
     </item>
     
     <item>
+      <title>Errors</title>
+      <link>/legacy/docs/transportation/ferries/error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transportation/ferries/error/</guid>
+      <description>Error description    Possible Values Description     102 Supplier Error.   103 Duplicate Booking.   104 Supplier connection error.   105 Generic communication error.   188 Availability product not found.   191 Unknown error or Integration/Application error.   210 Payment card error.   211 Passenger error.   212 Delta price error.   345 Connection timeout.   346 Operation not implemented.</description>
+    </item>
+    
+    <item>
+      <title>Ferries Data Structure</title>
+      <link>/legacy/docs/transportation/ferries/ferriesdatastructure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transportation/ferries/ferriesdatastructure/</guid>
+      <description>The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
+The integration will have the following methods:
+   Method Input Output Required Description     Avail AvailabilityRQ AvailabilityRS Yes Makes a availability call   Valuation ValuationRQ ValuationRS Yes Makes a pre-booking   Reservation ReservationRQ ReservationRS Yes Makes a booking   Routes RoutesRQ RoutesRS Yes Gets a static routes list   RetrieveReservation RetrieveReservation RQ RetrieveReservation RS No Gets the details of a single booking   RetrieveReservation List RetrieveReservation ListRQ RetrieveReservation ListRS No Gets a list of bookings   Cancelation CancellationRQ CancellationRS No Cancels a booking    Each request sent to the service url requires a node called rqXML .</description>
+    </item>
+    
+    <item>
       <title>Reservation</title>
       <link>/legacy/docs/transportation/ferries/reservation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

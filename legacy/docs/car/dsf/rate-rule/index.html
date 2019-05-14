@@ -4564,6 +4564,11 @@
           <span>Emit</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/legacy/docs/transportation/flights/flightsdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/flights/flightsdatastructure/">
+          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/legacy/docs/transportation/flights/refund/" class="dd-item">
         <a href="/legacy/docs/transportation/flights/refund/">
           <span>Refund</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4626,6 +4631,16 @@
           <span>Common Elements</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/error/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/error/">
+          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/ferriesdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/ferriesdatastructure/">
+          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/legacy/docs/transportation/ferries/reservation/" class="dd-item">
         <a href="/legacy/docs/transportation/ferries/reservation/">
           <span>Reservation</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4666,21 +4681,6 @@
       <li data-nav-id="/legacy/docs/transportation/enum/" class="dd-item">
         <a href="/legacy/docs/transportation/enum/">
           <span>Enum</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/error/" class="dd-item">
-        <a href="/legacy/docs/transportation/error/">
-          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/ferries/" class="dd-item">
-        <a href="/legacy/docs/transportation/ferries/">
-          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/flights/" class="dd-item">
-        <a href="/legacy/docs/transportation/flights/">
-          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -4890,13 +4890,13 @@
 
 <p>This method aims to return the total price of the selected VehAvail
 (option). This VehAvail option <strong>must</strong> be selected in the previous step
-( OTA VehAvailRate).</p>
+(OTA VehAvailRate).</p>
 
 <p>This message allows the partners to know the applied conditions on the
 chosen car and also shows the breakdown of the applied charges and fees
 including the final price.</p>
 
-<p>Remarks Some suppliers do not provide this method. If this is the case
+<p>Remarks: Some suppliers do not provide this method. If this is the case,
 all the info <strong>must</strong> be returned in OTA VehAvailRate and this method
 will do a OTA VehAvailRate again filtered by the selected option.</p>
 
@@ -4954,7 +4954,7 @@ will do a OTA VehAvailRate again filtered by the selected option.</p>
 <ul>
 <li>Pick up location and return location with its corresponding dates.</li>
 <li>The selected vehicle information. This refers to the make model, the
-vehicle type, transmission type and also if it has air condition or
+vehicle type, transmission type and also if it has air conditioning or
 not.</li>
 <li>The selected rate for the chosen option.
 
@@ -5026,7 +5026,7 @@ not.</li>
 <td>RentalInfo/Status</td>
 <td>1</td>
 <td>eInventoryStatus</td>
-<td>Status of the option. It&rsquo;s possible values are Available, OnRequest and All.</td>
+<td>Status of the option. Its possible values are Available, OnRequest and All.</td>
 </tr>
 </tbody>
 </table>
@@ -5178,8 +5178,8 @@ not.</li>
 The main difference is that only one option is returned (the selected
 one). The total price is definitive. Sometimes this method will fail
 since the selected option at OTA VehAvailRate time will not be available
-in this stage. In this case the integration returns an error code 204
-(ERROR NO RESULTS)( link missing ).</p>
+at this stage. In this case the integration returns an error code 204
+(ERROR NO RESULTS)(link missing ).</p>
 
 <table>
 <thead>
@@ -5224,7 +5224,7 @@ in this stage. In this case the integration returns an error code 204
 <td>@OTAVeh<em>RateRuleRS</em> VehicleRentalRate/Status</td>
 <td>1</td>
 <td>eInventoryStatus</td>
-<td>Status of the option. It&rsquo;s possible values are Available, OnRequest and All.</td>
+<td>Status of the option. Its possible values are Available, OnRequest and All.</td>
 </tr>
 
 <tr>

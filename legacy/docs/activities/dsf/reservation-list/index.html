@@ -4564,6 +4564,11 @@
           <span>Emit</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/legacy/docs/transportation/flights/flightsdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/flights/flightsdatastructure/">
+          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/legacy/docs/transportation/flights/refund/" class="dd-item">
         <a href="/legacy/docs/transportation/flights/refund/">
           <span>Refund</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4626,6 +4631,16 @@
           <span>Common Elements</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/error/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/error/">
+          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/ferriesdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/ferriesdatastructure/">
+          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/legacy/docs/transportation/ferries/reservation/" class="dd-item">
         <a href="/legacy/docs/transportation/ferries/reservation/">
           <span>Reservation</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4666,21 +4681,6 @@
       <li data-nav-id="/legacy/docs/transportation/enum/" class="dd-item">
         <a href="/legacy/docs/transportation/enum/">
           <span>Enum</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/error/" class="dd-item">
-        <a href="/legacy/docs/transportation/error/">
-          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/ferries/" class="dd-item">
-        <a href="/legacy/docs/transportation/ferries/">
-          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/flights/" class="dd-item">
-        <a href="/legacy/docs/transportation/flights/">
-          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -4894,7 +4894,7 @@ type.</p>
 
 <h3 id="request-format">Request Format</h3>
 
-<p>It is mandatory to pass a date range and a Date type. Depends the Date
+<p>It is mandatory to pass a date range and a date type. Depends the date
 type, you obtain different reservation list.</p>
 
 <p><strong>Date types</strong></p>
@@ -5080,7 +5080,7 @@ type, you obtain different reservation list.</p>
 <td>@ResStatus</td>
 <td>1</td>
 <td>Enum</td>
-<td>Information about reservation status (Possibles types: &ldquo;Confirmed&rdquo;, &ldquo;Cancel&rdquo; or &ldquo;Unknow&rdquo;).</td>
+<td>Information about reservation status (Possible types: &ldquo;Confirmed&rdquo;, &ldquo;Cancelled&rdquo; or &ldquo;Unknown&rdquo;).</td>
 </tr>
 
 <tr>
@@ -5094,14 +5094,14 @@ type, you obtain different reservation list.</p>
 <td>@LastModifyDateTime</td>
 <td>0..1</td>
 <td>Date</td>
-<td>Information about last modify reservation date time. For example, if cancel we return date time when client cancel this reservation.</td>
+<td>Information about last modify reservation date time. For example, if cancel we return date time when client cancelled this reservation.</td>
 </tr>
 
 <tr>
 <td>Detail/BasicInfo</td>
 <td>0..1</td>
 <td></td>
-<td>If need search by activity provider code.</td>
+<td>If needed, search by activity provider code.</td>
 </tr>
 
 <tr>
@@ -5157,7 +5157,7 @@ type, you obtain different reservation list.</p>
 <td>Detail/PickupDropoff</td>
 <td>0..1</td>
 <td>String</td>
-<td>The pickup and/or dropoff information if transportation is provided to/ from the tour/activity location.</td>
+<td>The pickup and/or dropoff information if transportation is provided to/from the tour/activity location.</td>
 </tr>
 
 <tr>
@@ -5192,7 +5192,7 @@ type, you obtain different reservation list.</p>
 <td>Detail/Pricing/Summary/PricingType</td>
 <td>0..1</td>
 <td>String</td>
-<td>Specifies type of the option price, if value = Other then is mandatory specify Extension type.</td>
+<td>Specifies type of the option price, if value = Other then it is mandatory to specify Extension type.</td>
 </tr>
 
 <tr>
@@ -5262,7 +5262,7 @@ type, you obtain different reservation list.</p>
 <td>Detail/Schedule/Detail</td>
 <td>0..1</td>
 <td></td>
-<td>Information about specify dates on which you can enjoy the activity.</td>
+<td>Information about specific dates on which you can enjoy the activity.</td>
 </tr>
 
 <tr>

@@ -53,36 +53,5 @@ Response Format The response will contain the indication if the function is impl
       <description>Enumerate description Resident discount type    Possible Values Description     N None   BP Balearic Islands resident flying to mainland   BI Balearic Islands resident flying to another balearic island   DC Canarian Islands resident flying to another Canarian Island   RC Canarian Islands resident flying to mainland   RM Ceuta/Melilla resident   STR Italian resident discount   ELB Italian resident Elba   SDG Italian resident Sardegna   SLC Italian resident Sicily   RE Ceuta    Charge type    Possible Values Description     TAX Tax   CARD Card   BAGGAGE Baggage   CHECKIN Checkin   CARRIER_CHARGES Carrier charges   DU_TAX DU Taxes   BASE_AMOUNT Base import   DISCOUNT Discount   VEHICLE Vehicle   BANKING_CHARGES Bank charges   CURRENCY_CONVERSION_CHARGES Currency conversion charges   VEHICLE_FEE Vehicle fee   FEE Fee   SEAT Seat   SUPPLEMENT Supplement   TRAVELCARD Travel card   PET Pet   PET_FEE Pet fee   INSURANCE Insurance   FAST_TRACK Fast Track   PRIORITY_BOARDING Priority Boarding   BLOCK_FARE Fare lock   SPECIAL_ASSISTANCE Special assistance   PENALTY Penalty    Block Attribute Type    Possible Values Description     OVER_WING Over wing seat   MIDDLE Middle seat   AISLE Aisle seat   WINDOW Window seat   COMPARTMENT Compartment   LAVATORY Lavatory   LUGGAGE Luggage seat   PHONE Phone seat   POWER Power   TABLE Table   EXITROW Emergency exit   FEETBLOCKED Feet blocked seat   NO_CHILD No childs allowed seat   NO_INFANT No infants allowed seat   XL_SEAT XL seat   RESTRICTED Seat with some kind of restriction   HANDICAP Special seat for handicap people   QUIET Quiet seat   GROUPS Groups seat   NO_PET No pets allowed seat   BULKHEAD Bulk head seat   BLOCKED Blocked seat   UNKNOWN Unknown characterstic   LAST_OFF Last off    Refund type    Possible Values Description     ALL Fare and taxes will be refunded   FARE Only fare will be refunded   TAXES Only taxes will be refunded   AUTO GDS automatic ticket change   PARTIAL Partial refund.</description>
     </item>
     
-    <item>
-      <title>Errors</title>
-      <link>/legacy/docs/transportation/error/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/legacy/docs/transportation/error/</guid>
-      <description>Error description    Possible Values Description     102 Supplier Error.   103 Duplicate Booking.   104 Supplier connection error.   105 Generic communication error.   188 Availability product not found.   191 Unknown error or Integration/Application error.   210 Payment card error.   211 Passenger error.   212 Delta price error.   345 Connection timeout.   346 Operation not implemented.</description>
-    </item>
-    
-    <item>
-      <title>Ferries Data Structure</title>
-      <link>/legacy/docs/transportation/ferries/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/legacy/docs/transportation/ferries/</guid>
-      <description>The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
-The integration will have the following methods:
-   Method Input Output Required Description     Avail AvailabilityRQ AvailabilityRS Yes Makes a availability call   Valuation ValuationRQ ValuationRS Yes Makes a pre-booking   Reservation ReservationRQ ReservationRS Yes Makes a booking   Routes RoutesRQ RoutesRS Yes Gets a static routes list   RetrieveReservation RetrieveReservation RQ RetrieveReservation RS No Gets the details of a single booking   RetrieveReservation List RetrieveReservation ListRQ RetrieveReservation ListRS No Gets a list of bookings   Cancelation CancellationRQ CancellationRS No Cancels a booking    Each request sent to the service url requires a node called rqXML .</description>
-    </item>
-    
-    <item>
-      <title>Flights Data Structure</title>
-      <link>/legacy/docs/transportation/flights/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/legacy/docs/transportation/flights/</guid>
-      <description>API Structure The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
-The integration will have the following methods:
-   Element Input Output Required Description     Availability AvailabilityRQ AvailabilityRS Yes Return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.</description>
-    </item>
-    
   </channel>
 </rss>

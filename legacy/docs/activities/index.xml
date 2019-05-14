@@ -53,8 +53,8 @@ Version 1.0.1: Date 19/04/2014
       
       <guid>/legacy/docs/activities/dsf/common-elements/</guid>
       <description>This node will be in every request and response objects.
-The request objects contains the supplier&amp;rsquo;s configuration, urls and credentials.
-The response object contains the operation status and errors if any.
+The request object contains the supplier&amp;rsquo;s configuration, urls and credentials.
+The response object contains the operation status and errors, if any.
 Common Elements RQ Example &amp;lt;TicketBaseRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;!-- &amp;lt;agencyCode&amp;gt;test&amp;lt;/agencyCode&amp;gt; --&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;HBA&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;XXX&amp;quot; password = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://testapi.interface-xml.com/appservices/http/FrontendService&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlAvailability xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlBook xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlsSpecific xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key = &amp;quot;urlFTP&amp;quot; value = &amp;quot;ftp://ftp.</description>
     </item>
     
@@ -85,7 +85,7 @@ The integration will have the following methods:
       
       <guid>/legacy/docs/activities/dsf/reservation-list/</guid>
       <description>Method Goals This method aims to return all the reservation list of each activity confirm for a given specific date from which you want to search and Date type.
-Request Format It is mandatory to pass a date range and a Date type. Depends the Date type, you obtain different reservation list.
+Request Format It is mandatory to pass a date range and a date type. Depends the date type, you obtain different reservation list.
 Date types
  ArrivalDate : The arrival date of the reservation. CreateDate : The date the reservation was created.</description>
     </item>
@@ -111,7 +111,7 @@ ReservationReadRQ Example &amp;lt;OTA_ReadRQ xmlns:xsi=&amp;quot;http://www.w3.o
       <guid>/legacy/docs/activities/dsf/runtimeconfiguration/</guid>
       <description>Method Goals This method returns a list of Attributes that should be included in each request for the selected provider.
 Request Format The request only requires the provider code.
-Response Format The response contains a list of Attribute.
+Response Format The response contains a list of Attributes.
 RunTimeConfigurationRQ Example &amp;lt;RunTimeConfigurationRQ xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; xmlns:xsd=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot;&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider=&amp;quot;HBA&amp;quot;&amp;gt; &amp;lt;Credentials user=&amp;quot;TRAVELTNETES41375&amp;quot; password=&amp;quot;TRAVELTNETES41375&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://testapi.interface-xml.com/appservices/http/FrontendService&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;UrlAvailability xsi:nil=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;UrlBook xsi:nil=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;UrlsSpecific xsi:nil=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key=&amp;quot;destinationId&amp;quot; value=&amp;quot;http://xtghubstatic.</description>
     </item>
     
@@ -133,10 +133,10 @@ SearchRQ Example &amp;lt;OTA_TourActivitySearchRQ xmlns:xsd=&amp;quot;http://www
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/activities/dsf/static-configuration/</guid>
-      <description>Method Goals This method returns important information about the behavior of the integration (specific provider).
+      <description>Method Goals This method returns important information about the behaviour of the integration (specific provider).
 Request Format The request only requires the provider code and credentials.
 Response Format The response contains a list of basic information about the limitations of the integration / provider.
-OpenAvailability    Type Description     false Need specify passengers in avail request. In response, provider return price of option that you specify.</description>
+OpenAvailability    Type Description     false Need to specify passengers in avail request. In response, provider returns price of option that you specify.</description>
     </item>
     
     <item>

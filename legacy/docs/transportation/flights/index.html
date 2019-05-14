@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Flights Data Structure | TravelgateX Documentation</title>
+    <title>Flights API Documentation | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.45" />
-<title>Flights Data Structure :: TravelgateX Documentation</title>
+<title>Flights API Documentation :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -30,13 +30,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here.">
+<meta name="description" content="Read documentation on diferent Legacy APIs">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
     
-    <meta name="description" content="">
+    <meta name="description" content="Read documentation on diferent Legacy APIs">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -4544,9 +4544,10 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
-    <li data-nav-id="/legacy/docs/transportation/flights/" class="dd-item active">
+    <li data-nav-id="/legacy/docs/transportation/flights/" class="dd-item parent active">
       <a href="/legacy/docs/transportation/flights/">
-        <span>Flights API Documentation</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+        <span>Flights API Documentation</span>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </a>
         <ul>
       <li data-nav-id="/legacy/docs/transportation/flights/avail/" class="dd-item">
@@ -4562,6 +4563,11 @@
       <li data-nav-id="/legacy/docs/transportation/flights/emit/" class="dd-item">
         <a href="/legacy/docs/transportation/flights/emit/">
           <span>Emit</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+      <li data-nav-id="/legacy/docs/transportation/flights/flightsdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/flights/flightsdatastructure/">
+          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
       <li data-nav-id="/legacy/docs/transportation/flights/refund/" class="dd-item">
@@ -4626,6 +4632,16 @@
           <span>Common Elements</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/error/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/error/">
+          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/ferriesdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/ferriesdatastructure/">
+          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/legacy/docs/transportation/ferries/reservation/" class="dd-item">
         <a href="/legacy/docs/transportation/ferries/reservation/">
           <span>Reservation</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4666,21 +4682,6 @@
       <li data-nav-id="/legacy/docs/transportation/enum/" class="dd-item">
         <a href="/legacy/docs/transportation/enum/">
           <span>Enum</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/error/" class="dd-item">
-        <a href="/legacy/docs/transportation/error/">
-          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/ferries/" class="dd-item">
-        <a href="/legacy/docs/transportation/ferries/">
-          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/flights/" class="dd-item active">
-        <a href="/legacy/docs/transportation/flights/">
-          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -4869,7 +4870,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Flights Data Structure</h1>
+              <h1 class="pageTitle">Flights API Documentation</h1>
 
               
                 
@@ -4878,649 +4879,105 @@
                 
                 
               <div id="top-github-link">
-                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/legacy/docs/transportation/flights.md" target="blank">
+                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/legacy/docs/transportation/flights/_index.md" target="blank">
                   <i class="fa fa-code-fork"></i>
                   Edit page
                 </a>
               </div>
               
 
+	
+
+<div class="flex">
+		
+	<a href="/legacy/docs/transportation/flights/avail/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Avail</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/cancel/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Cancellation</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/emit/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Emit</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/flightsdatastructure/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Flights Data Structure</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/refund/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Refund</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/reservation/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Reservation</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/recover-reserve/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">RetrieveReservation</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/recover-reserve-list/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">RetrieveReservationList</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/routes/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Routes</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/supplements/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Supplements</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/supplementsreservation/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">SupplementsReservation</h3>
+			</div>
+		</div>
+	</a>
+	<a href="/legacy/docs/transportation/flights/valuation/" class="card">
+		<div class="inner-card">
+			<div>
+				<h3 class="text-headline">Valuation</h3>
+			</div>
+		</div>
+	</a>
+</div>
 
-<h3 id="api-structure">API Structure</h3>
 
-<p>The structure of the API specification follows a standard. This document
-intends to explain every aspect of this structure and their fields.</p>
 
-<p>The integration will have the following methods:</p>
-
-<table>
-<thead>
-<tr>
-<th><strong>Element</strong></th>
-<th><strong>Input</strong></th>
-<th><strong>Output</strong></th>
-<th><strong>Required</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><a href="/docs/transportation/DSF/flights/avail">Availability</a></td>
-<td>AvailabilityRQ</td>
-<td>AvailabilityRS</td>
-<td>Yes</td>
-<td>Return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.</td>
-</tr>
-
-<tr>
-<td><a href="/docs/transportation/DSF/flights/valuation">Valuation</a></td>
-<td>ValuationRQ</td>
-<td>ValuationRS</td>
-<td>Yes</td>
-<td>Return the total price of the selected Option, plus the extra supplements (price and information required in ReservationRQ) available in the Option. This Option <strong>must</strong> be selected in the previous step (Availability).</td>
-</tr>
-
-<tr>
-<td><a href="/docs/transportation/DSF/flights/reservation">Reservation</a></td>
-<td>ReservationRQ</td>
-<td>ReservationRS</td>
-<td>Yes</td>
-<td>Book one or more Itineraries.</td>
-</tr>
-
-<tr>
-<td><a href="/docs/transportation/DSF/flights/emit">Emit (Issuance)</a></td>
-<td>EmitRQ</td>
-<td>EmitRS</td>
-<td>Yes*</td>
-<td>Issue the tickets. *Some suppliers don&rsquo;t require the Emit operation. The payment is already resolved at Reservation step.</td>
-</tr>
-
-<tr>
-<td><a href="/docs/transportation/DSF/flights/refund">Refund</a></td>
-<td>RefundRQ</td>
-<td>RefundRS</td>
-<td>No</td>
-<td>This method aims to return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.</td>
-</tr>
-
-<tr>
-<td><a href="/docs/transportation/DSF/flights/cancel">Cancellation</a></td>
-<td>CancellationRQ</td>
-<td>CancellationRS</td>
-<td>No</td>
-<td>Cancel a booking.</td>
-</tr>
-
-<tr>
-<td><a href="/docs/transportation/DSF/flights/recover-reserve">RetrieveReservation</a></td>
-<td>RetrieveReservationRQ</td>
-<td>RetrieveReservationRS</td>
-<td>No</td>
-<td>Retrieve a booking with its full details.</td>
-</tr>
-
-<tr>
-<td><a href="/docs/transportation/DSF/flights/recover-reserve-list">RetrieveReservationList</a></td>
-<td>RetrieveReservationListRQ</td>
-<td>RetrieveReservationListRS</td>
-<td>No</td>
-<td>Return a list of bookings for a given time period being that either booking date or the travelling date, among other filters available.</td>
-</tr>
-
-<tr>
-<td><a href="/docs/transportation/DSF/flights/supplements">Supplements</a></td>
-<td>SupplementsRQ</td>
-<td>SupplementsRS</td>
-<td>No</td>
-<td>Search for supplements (seat, baggage, etc).</td>
-</tr>
-
-<tr>
-<td><a href="/docs/transportation/DSF/flights/supplementsReservation">ReservationSupplements</a></td>
-<td>SupplementsReservationRQ</td>
-<td>SupplementsReservationRS</td>
-<td>No</td>
-<td>Add supplements (seats, baggage, etc) to a reservation done previously.</td>
-</tr>
-</tbody>
-</table>
-
-<p>Each request sent to the <strong>service url</strong> requires a node called rqXML. Inside this node travels the current method&rsquo;s Input object.</p>
-
-<p>The data structure will always have common elements in all objects and the specific objects related to the operation. Therefore, all the RQ and RS presented in the previous table, will have the following common structures:</p>
-
-<h3 id="common-rq-structure-description">Common RQ Structure Description</h3>
-
-<table>
-<thead>
-<tr>
-<th><strong>Element</strong></th>
-<th><strong>Number</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>timeoutMillisencods</td>
-<td>1</td>
-<td>Integer</td>
-<td>Timeout in milliseconds that the client will be waiting for the response.</td>
-</tr>
-
-<tr>
-<td>source</td>
-<td>1</td>
-<td></td>
-<td>Information about source requesting the operation.</td>
-</tr>
-
-<tr>
-<td>source/agencyCode</td>
-<td>0..1</td>
-<td>String</td>
-<td>Agency code that requests the operation.</td>
-</tr>
-
-<tr>
-<td>source/languageCode</td>
-<td>1</td>
-<td>String</td>
-<td>Language code (ISO 3166-1 alpha-2) format lowercase.</td>
-</tr>
-
-<tr>
-<td>filterAuditData</td>
-<td>1</td>
-<td></td>
-<td>Enables or disables information returned in audit data.</td>
-</tr>
-
-<tr>
-<td>filterAuditData/registerTransactions</td>
-<td>1</td>
-<td>Boolean</td>
-<td>Returns all the transactions (XMLs) exchanged with the provider.</td>
-</tr>
-
-<tr>
-<td>optionsQuota</td>
-<td>1</td>
-<td>Integer</td>
-<td>Sets the maximum number of Options returned.</td>
-</tr>
-
-<tr>
-<td>Configuration</td>
-<td>1</td>
-<td></td>
-<td>Information about source requesting the operation.</td>
-</tr>
-
-<tr>
-<td>@providerCode</td>
-<td>1</td>
-<td>String</td>
-<td>Provider (supplier) code of the connection.</td>
-</tr>
-
-<tr>
-<td>Configuration/Credentials</td>
-<td>0..1</td>
-<td></td>
-<td>Required credentials for the conection with this provider.</td>
-</tr>
-
-<tr>
-<td>@user</td>
-<td>1</td>
-<td>String</td>
-<td>User for the connection.</td>
-</tr>
-
-<tr>
-<td>@password</td>
-<td>1</td>
-<td>String</td>
-<td>Password for the connection.</td>
-</tr>
-
-<tr>
-<td>@officeId</td>
-<td>0..1</td>
-<td>String</td>
-<td>.</td>
-</tr>
-
-<tr>
-<td>@iataCode</td>
-<td>0..1</td>
-<td>String</td>
-<td>.</td>
-</tr>
-
-<tr>
-<td>Configuration/Credentials/<br>UrlGeneric</td>
-<td>1</td>
-<td>String</td>
-<td>Url generic connection.</td>
-</tr>
-
-<tr>
-<td>Configuration/Credentials/<br>UrlIdentification</td>
-<td>0..1</td>
-<td>String</td>
-<td>Url for login/identification connection.</td>
-</tr>
-
-<tr>
-<td>Configuration/Credentials/<br>UrlAvail</td>
-<td>0..1</td>
-<td>String</td>
-<td>Url for Avail method.</td>
-</tr>
-
-<tr>
-<td>Configuration/Credentials/<br>UrlValuation</td>
-<td>0..1</td>
-<td>String</td>
-<td>Url for Valuation method.</td>
-</tr>
-
-<tr>
-<td>Configuration/Credentials/<br>UrlReservation</td>
-<td>0..1</td>
-<td>String</td>
-<td>Url for Reservation method.</td>
-</tr>
-
-<tr>
-<td>Configuration/Credentials/<br>UrlSpecifics</td>
-<td>0..1</td>
-<td></td>
-<td>Parameters for additional information.</td>
-</tr>
-
-<tr>
-<td>Configuration/Credentials/<br>UrlSpecifics/Attribute</td>
-<td>1..n</td>
-<td></td>
-<td>List of parameter.</td>
-</tr>
-
-<tr>
-<td>@key</td>
-<td>1</td>
-<td>String</td>
-<td>Contains the keyword/Id to identify a parameter.</td>
-</tr>
-
-<tr>
-<td>@value</td>
-<td>1</td>
-<td>String</td>
-<td>Contains the value of the parameter.</td>
-</tr>
-
-<tr>
-<td>Configuration/Attributes</td>
-<td>0..1</td>
-<td></td>
-<td>Specific configuration parameters to this connector.</td>
-</tr>
-
-<tr>
-<td>Configuration/Attributes/<br>Attribute</td>
-<td>1..n</td>
-<td></td>
-<td>List of parameter.</td>
-</tr>
-
-<tr>
-<td>@key</td>
-<td>1</td>
-<td>String</td>
-<td>Contains the keyword/Id to identify a parameter.</td>
-</tr>
-
-<tr>
-<td>@value</td>
-<td>1</td>
-<td>String</td>
-<td>Contains the value of the parameter.</td>
-</tr>
-
-<tr>
-<td>ClientConfiguration</td>
-<td>1</td>
-<td></td>
-<td>Client&rsquo;s configuration.</td>
-</tr>
-
-<tr>
-<td>@agency</td>
-<td>1</td>
-<td>String</td>
-<td>Agency name.</td>
-</tr>
-
-<tr>
-<td>@currencyCode</td>
-<td>1</td>
-<td>String</td>
-<td>Currency code.</td>
-</tr>
-
-<tr>
-<td>@mark</td>
-<td>0..1</td>
-<td>String</td>
-<td>Mark.</td>
-</tr>
-
-<tr>
-<td>@businessLine</td>
-<td>0..1</td>
-<td>String</td>
-<td>Business line.</td>
-</tr>
-
-<tr>
-<td>@accessLevel</td>
-<td>0..1</td>
-<td>String</td>
-<td>Access level.</td>
-</tr>
-
-<tr>
-<td>@mean</td>
-<td>0..1</td>
-<td>String</td>
-<td>Mean.</td>
-</tr>
-
-<tr>
-<td>@accessType</td>
-<td>0..1</td>
-<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#access-type" rel="nofollow" target="_blank">Access Type</a></td>
-<td>Access type.</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="common-rs-structure-description">Common RS Structure Description</h3>
-
-<table>
-<thead>
-<tr>
-<th><strong>Element</strong></th>
-<th><strong>Number</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>auditData</td>
-<td>0..1</td>
-<td></td>
-<td>Returns the provider transaction logs if filterAuditData/registerTransactions has been set to true.</td>
-</tr>
-
-<tr>
-<td>auditData/processTimeMilliseconds</td>
-<td>1</td>
-<td>Integer</td>
-<td>Time spend in the operation.</td>
-</tr>
-
-<tr>
-<td>auditData/timeStamp</td>
-<td>1</td>
-<td>Date</td>
-<td>Timestamp when the operation begins. Example: 2019-02-12T07:38:14.4137201+01:00</td>
-</tr>
-
-<tr>
-<td>auditData/transactions</td>
-<td>1</td>
-<td></td>
-<td>Contains the RQ and RS of the provider transaction.</td>
-</tr>
-
-<tr>
-<td>auditData/transactions/RQ</td>
-<td>1</td>
-<td>String</td>
-<td>Provider&rsquo;s request transaction.</td>
-</tr>
-
-<tr>
-<td>auditData/transactions/RS</td>
-<td>0..1</td>
-<td>String</td>
-<td>Provider&rsquo;s response transaction. In case of timeout/server communication failure with the provider, this field may not be returned.</td>
-</tr>
-
-<tr>
-<td>auditData/transactions/timeStamp</td>
-<td>1</td>
-<td>Date</td>
-<td>Timestamp when the provider transaction begins. Example: 2019-02-12T07:38:14.4137201+01:00</td>
-</tr>
-
-<tr>
-<td>operationImplemented</td>
-<td>1</td>
-<td>Boolean</td>
-<td>If true, the operation requested is implemented. Some suppliers does not have all the operations implemented. In that case, this filed will return false.</td>
-</tr>
-
-<tr>
-<td>ResponseStatus</td>
-<td>0..1</td>
-<td></td>
-<td>Contains information regarding the operation executed.</td>
-</tr>
-
-<tr>
-<td>@direction</td>
-<td>0..1</td>
-<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#direction-type" rel="nofollow" target="_blank">Direction type</a></td>
-<td>Direction of the journey about to checkin.</td>
-</tr>
-
-<tr>
-<td>@tripType</td>
-<td>0..1</td>
-<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#trip-type" rel="nofollow" target="_blank">Trip type</a></td>
-<td>Trip type</td>
-</tr>
-
-<tr>
-<td>@status</td>
-<td>1</td>
-<td><a href="https://github.com/XML-Travelgate/xtg-content-articles-pub/blob/master/docs/transportation/enum.md#response-status-type" rel="nofollow" target="_blank">Response Status type</a></td>
-<td>Response Status type</td>
-</tr>
-
-<tr>
-<td>applicationErrors</td>
-<td>0..n</td>
-<td></td>
-<td>List of errors occurred during the operation execution.</td>
-</tr>
-
-<tr>
-<td>applicationErrors/code</td>
-<td>0..1</td>
-<td>String</td>
-<td>Provider error code.</td>
-</tr>
-
-<tr>
-<td>applicationErrors/description</td>
-<td>0..1</td>
-<td>String</td>
-<td>Error description.</td>
-</tr>
-
-<tr>
-<td>applicationErrors/type</td>
-<td>0..1</td>
-<td><a href="/docs/transportation/error">Error types</a></td>
-<td>API error type.</td>
-</tr>
-
-<tr>
-<td>Warnings</td>
-<td>0..1</td>
-<td></td>
-<td>Contains a list of warnings.</td>
-</tr>
-
-<tr>
-<td>Warnings/Warning</td>
-<td>1..n</td>
-<td></td>
-<td>Warning occurred during the operation execution.</td>
-</tr>
-
-<tr>
-<td>@code</td>
-<td>0..1</td>
-<td><a href="/docs/transportation/error">Error types</a></td>
-<td>API Warning code.</td>
-</tr>
-
-<tr>
-<td>Warnings/Warning/text</td>
-<td>1</td>
-<td>String</td>
-<td>Warning description.</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="date-format">Date format</h3>
-
-<p>The date format depends to the element where it is placed. Two formats can be returned in RS:</p>
-
-<table>
-<thead>
-<tr>
-<th><strong>Timezone specified</strong></th>
-<th><strong>Format</strong></th>
-<th><strong>Example</strong></th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Yes</td>
-<td>YYYY-MM-ddTHH:mm:ss.fffffff+kk:kk <br> YYYY-MM-ddTHH:mm:ss.fffffffZ</td>
-<td>2019-02-12T07:38:14.4137201+01:00 (UTC+1)<br> 2019-02-12T09:59:17.6756432Z (UTC)</td>
-</tr>
-
-<tr>
-<td>No</td>
-<td>YYYY-MM-ddTHH:mm:ss.fffffff</td>
-<td>2019-04-15T18:25:00</td>
-</tr>
-</tbody>
-</table>
-
-<p><em>Date fields in RQ must be filled with same format that has been received from previous operation (if applicable) in same elements. Ex: if in RS&rsquo;s segment you receive YYYY-MM-dd, you must send same format in the segments from next request.</em></p>
-
-<table>
-<thead>
-<tr>
-<th><strong>Field</strong></th>
-<th><strong>Explanation</strong></th>
-<th>Mandatory</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>YYYY</td>
-<td>Year</td>
-<td>Yes</td>
-</tr>
-
-<tr>
-<td>MM</td>
-<td>Month</td>
-<td>Yes</td>
-</tr>
-
-<tr>
-<td>dd</td>
-<td>Day</td>
-<td>Yes</td>
-</tr>
-
-<tr>
-<td>T</td>
-<td>Time separator</td>
-<td>Yes</td>
-</tr>
-
-<tr>
-<td>HH</td>
-<td>24-hour clock hour, with a leading 0 (e.g. 22)</td>
-<td>Yes</td>
-</tr>
-
-<tr>
-<td>mm</td>
-<td>Minutes</td>
-<td>Yes</td>
-</tr>
-
-<tr>
-<td>ss</td>
-<td>Seconds</td>
-<td>Yes</td>
-</tr>
-
-<tr>
-<td>fffffff</td>
-<td>Represents the seven most significant digits of the seconds fraction; that is, it represents the ten millionths of a second in a date and time value.</td>
-<td>No</td>
-</tr>
-
-<tr>
-<td>+kk:kk</td>
-<td>Represents the time zone information of a date and time value (e.g. +05:00)</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="enumerate-values">Enumerate values</h3>
-
-<p>All the possible enumerate values are explained <a href="/docs/transportation/enum">here</a>.</p>
-
-<hr/>
-<h2>Comments</h2>
-
-<div id='discourse-comments'></div>
-
-<script type="text/javascript">
-  DiscourseEmbed = { discourseUrl: 'https://community.travelgatex.com/',
-                     discourseEmbedUrl: window.location.href };
-
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
-</script>
 
 
 
@@ -5529,21 +4986,7 @@ intends to explain every aspect of this structure and their fields.</p>
           </div>
           <div class="menu-right">
             <div>
-              <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#api-structure">API Structure</a></li>
-<li><a href="#common-rq-structure-description">Common RQ Structure Description</a></li>
-<li><a href="#common-rs-structure-description">Common RS Structure Description</a></li>
-<li><a href="#date-format">Date format</a></li>
-<li><a href="#enumerate-values">Enumerate values</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+              
             </div>
           </div>
           <div class="clear"></div>
@@ -5557,10 +5000,10 @@ intends to explain every aspect of this structure and their fields.</p>
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/legacy/docs/transportation/ferries/" title="Go to previous page | Ferries Data Structure"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Ferries Data Structure</a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/legacy/docs/transportation/" title="Go to previous page | Transportation API Documentation"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Transportation API Documentation</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/legacy/start/" title="Go to next page | Getting Started menu" style="margin-right: 0px;">Getting Started menu<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/legacy/docs/transportation/flights/avail/" title="Go to next page | Avail" style="margin-right: 0px;">Avail<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

@@ -4564,6 +4564,11 @@
           <span>Emit</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/legacy/docs/transportation/flights/flightsdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/flights/flightsdatastructure/">
+          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/legacy/docs/transportation/flights/refund/" class="dd-item">
         <a href="/legacy/docs/transportation/flights/refund/">
           <span>Refund</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4626,6 +4631,16 @@
           <span>Common Elements</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/error/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/error/">
+          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
+      <li data-nav-id="/legacy/docs/transportation/ferries/ferriesdatastructure/" class="dd-item">
+        <a href="/legacy/docs/transportation/ferries/ferriesdatastructure/">
+          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+        </a>
+    </li>
       <li data-nav-id="/legacy/docs/transportation/ferries/reservation/" class="dd-item">
         <a href="/legacy/docs/transportation/ferries/reservation/">
           <span>Reservation</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4666,21 +4681,6 @@
       <li data-nav-id="/legacy/docs/transportation/enum/" class="dd-item">
         <a href="/legacy/docs/transportation/enum/">
           <span>Enum</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/error/" class="dd-item">
-        <a href="/legacy/docs/transportation/error/">
-          <span>Errors</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/ferries/" class="dd-item">
-        <a href="/legacy/docs/transportation/ferries/">
-          <span>Ferries Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
-        </a>
-    </li>
-      <li data-nav-id="/legacy/docs/transportation/flights/" class="dd-item">
-        <a href="/legacy/docs/transportation/flights/">
-          <span>Flights Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
         </a>
     </li>
         </ul>
@@ -4888,10 +4888,10 @@
 
 <p>This node will be in every request and response objects.</p>
 
-<p>The request objects contains the supplier&rsquo;s configuration, urls and
+<p>The request object contains the supplier&rsquo;s configuration, urls and
 credentials.</p>
 
-<p>The response object contains the operation status and errors if any.</p>
+<p>The response object contains the operation status and errors, if any.</p>
 
 <h3 id="common-elements-rq-example">Common Elements RQ Example</h3>
 
@@ -4974,14 +4974,14 @@ credentials.</p>
 <td>filterAuditData/registerTransactions</td>
 <td>1</td>
 <td>Boolean</td>
-<td>If true, registers the transactions  with provider.</td>
+<td>If true, it registers the transactions with provider.</td>
 </tr>
 
 <tr>
 <td>Configuration</td>
 <td>1</td>
 <td></td>
-<td>Information about source requesting the  operation.</td>
+<td>Information about source requesting the operation.</td>
 </tr>
 
 <tr>

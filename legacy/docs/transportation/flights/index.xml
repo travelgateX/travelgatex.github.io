@@ -46,6 +46,17 @@ Response Format The result returns a list of Locators (booking codes). It can be
     </item>
     
     <item>
+      <title>Flights Data Structure</title>
+      <link>/legacy/docs/transportation/flights/flightsdatastructure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/transportation/flights/flightsdatastructure/</guid>
+      <description>API Structure The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
+The integration will have the following methods:
+   Element Input Output Required Description     Availability AvailabilityRQ AvailabilityRS Yes Return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.</description>
+    </item>
+    
+    <item>
       <title>Refund</title>
       <link>/legacy/docs/transportation/flights/refund/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
