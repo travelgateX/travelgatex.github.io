@@ -147,6 +147,10 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/activities/methods/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/objects/addon/</loc>
   </url>
   
@@ -456,6 +460,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/cancelpolicy/</loc>
+  </url>
+  
+  <url>
+    <loc>/legacy/docs/car/methods/</loc>
   </url>
   
   <url>
@@ -3279,6 +3287,10 @@
   </url>
   
   <url>
+    <loc>/legacy/docs/transfers/methods/</loc>
+  </url>
+  
+  <url>
     <loc>/insights-x/datasets/types-of-datasets/</loc>
   </url>
   
@@ -4069,7 +4081,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/avail/</loc>
+    <loc>/legacy/docs/activities/methods/avail/</loc>
   </url>
   
   <url>
@@ -4085,11 +4097,11 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/car/dsf/avail/</loc>
+    <loc>/legacy/docs/car/methods/avail/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/avail/</loc>
+    <loc>/legacy/docs/transfers/methods/avail/</loc>
   </url>
   
   <url>
@@ -4097,11 +4109,11 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/car/dsf/reservation/</loc>
+    <loc>/legacy/docs/car/methods/reservation/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/reservation/</loc>
+    <loc>/legacy/docs/transfers/methods/reservation/</loc>
   </url>
   
   <url>
@@ -4110,7 +4122,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/cancel/</loc>
+    <loc>/legacy/docs/activities/methods/cancel/</loc>
   </url>
   
   <url>
@@ -4118,11 +4130,11 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/car/dsf/cancel/</loc>
+    <loc>/legacy/docs/car/methods/cancel/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/cancel-booking/</loc>
+    <loc>/legacy/docs/transfers/methods/cancel-booking/</loc>
   </url>
   
   <url>
@@ -4175,7 +4187,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/car/dsf/code-lists/</loc>
+    <loc>/legacy/docs/car/methods/code-lists/</loc>
   </url>
   
   <url>
@@ -4183,11 +4195,11 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/common-elements/</loc>
+    <loc>/legacy/docs/activities/methods/common-elements/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/car/dsf/common-elements/</loc>
+    <loc>/legacy/docs/car/methods/common-elements/</loc>
   </url>
   
   <url>
@@ -4195,7 +4207,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/common-elements/</loc>
+    <loc>/legacy/docs/transfers/methods/common-elements/</loc>
   </url>
   
   <url>
@@ -4247,7 +4259,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/destinationtree/</loc>
+    <loc>/legacy/docs/transfers/methods/destinationtree/</loc>
   </url>
   
   <url>
@@ -4309,27 +4321,27 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/getrates/</loc>
+    <loc>/legacy/docs/transfers/methods/getrates/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/getsupplements/</loc>
+    <loc>/legacy/docs/transfers/methods/getsupplements/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/getsupplierratetransfertypes/</loc>
+    <loc>/legacy/docs/transfers/methods/getsupplierratetransfertypes/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/getsuppliertransfertypes/</loc>
+    <loc>/legacy/docs/transfers/methods/getsuppliertransfertypes/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/gettransfertypes/</loc>
+    <loc>/legacy/docs/transfers/methods/gettransfertypes/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/getvehicles/</loc>
+    <loc>/legacy/docs/transfers/methods/getvehicles/</loc>
   </url>
   
   <url>
@@ -4342,7 +4354,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/hotel-list/</loc>
+    <loc>/legacy/docs/transfers/methods/hotel-list/</loc>
   </url>
   
   <url>
@@ -4382,11 +4394,11 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/car/dsf/valuation/</loc>
+    <loc>/legacy/docs/car/methods/valuation/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/car/dsf/rate-rule/</loc>
+    <loc>/legacy/docs/car/methods/rate-rule/</loc>
   </url>
   
   <url>
@@ -4399,7 +4411,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/rate-rule/</loc>
+    <loc>/legacy/docs/transfers/methods/rate-rule/</loc>
   </url>
   
   <url>
@@ -4412,7 +4424,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/reservation/</loc>
+    <loc>/legacy/docs/activities/methods/reservation/</loc>
   </url>
   
   <url>
@@ -4428,11 +4440,11 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/reservation-list/</loc>
+    <loc>/legacy/docs/activities/methods/reservation-list/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/reservation-read/</loc>
+    <loc>/legacy/docs/activities/methods/reservation-read/</loc>
   </url>
   
   <url>
@@ -4448,7 +4460,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/transfers/dsf/retrieve-booking/</loc>
+    <loc>/legacy/docs/transfers/methods/retrieve-booking/</loc>
   </url>
   
   <url>
@@ -4485,15 +4497,15 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/car/dsf/routes/</loc>
+    <loc>/legacy/docs/car/methods/routes/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/runtimeconfiguration/</loc>
+    <loc>/legacy/docs/activities/methods/runtimeconfiguration/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/car/dsf/runtimeconfiguration/</loc>
+    <loc>/legacy/docs/car/methods/runtimeconfiguration/</loc>
   </url>
   
   <url>
@@ -4505,15 +4517,15 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/search/</loc>
+    <loc>/legacy/docs/activities/methods/search/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/static-configuration/</loc>
+    <loc>/legacy/docs/activities/methods/static-configuration/</loc>
   </url>
   
   <url>
-    <loc>/legacy/docs/car/dsf/static-configuration/</loc>
+    <loc>/legacy/docs/car/methods/static-configuration/</loc>
   </url>
   
   <url>
@@ -4534,7 +4546,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/territories/</loc>
+    <loc>/legacy/docs/activities/methods/territories/</loc>
   </url>
   
   <url>
@@ -4548,7 +4560,7 @@
   </url>
   
   <url>
-    <loc>/legacy/docs/activities/dsf/valuation/</loc>
+    <loc>/legacy/docs/activities/methods/valuation/</loc>
   </url>
   
   <url>
