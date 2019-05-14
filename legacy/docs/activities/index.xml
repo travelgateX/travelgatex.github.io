@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>Activities Data Structure</title>
+      <link>/legacy/docs/activities/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/activities/data-structure/</guid>
+      <description>The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
+The integration will have the following methods:
+   Method Input Output Required Description     Search SearchRQ SearchRS Yes Gets destinations and events available   Territories TerritoriesRQ TerritoriesRS No List of Destinations   Avail AvailRQ AvailRS Yes Makes an availability call   Valuation ValuationRQ ValuationRS Yes Makes a valuation for refresh ticket price (pre-book)   Reservation ReservationRQ ReservationRS Yes Makes a booking   ReservationRead ReservationReadRQ ReservationReadRS No Information about one reservation   Cancel CancelRQ CancelRS No Cancel a reservation   ReservationsList ReservationsListRQ ReservationsListRS No List of Reservations    Each request sent to the service url requires a node called rqXML.</description>
+    </item>
+    
+    <item>
       <title>Change Log</title>
       <link>/legacy/docs/activities/change-log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -21,17 +32,6 @@
 |
 Version 1.0.1: Date 19/04/2014
 : Modifications to suit XML Travelgate library and group common elements.</description>
-    </item>
-    
-    <item>
-      <title>Data Structure</title>
-      <link>/legacy/docs/activities/data-structure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/legacy/docs/activities/data-structure/</guid>
-      <description>The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
-The integration will have the following methods:
-   Method Input Output Required Description     Search SearchRQ SearchRS Yes Gets destinations and events available   Territories TerritoriesRQ TerritoriesRS No List of Destinations   Avail AvailRQ AvailRS Yes Makes an availability call   Valuation ValuationRQ ValuationRS Yes Makes a valuation for refresh ticket price (pre-book)   Reservation ReservationRQ ReservationRS Yes Makes a booking   ReservationRead ReservationReadRQ ReservationReadRS No Information about one reservation   Cancel CancelRQ CancelRS No Cancel a reservation   ReservationsList ReservationsListRQ ReservationsListRS No List of Reservations    Each request sent to the service url requires a node called rqXML .</description>
     </item>
     
   </channel>

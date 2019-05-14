@@ -5957,6 +5957,13 @@
 	"content": " On this page you will learn more about Core Entities used in HotelX. You can also refer to the overarching core concepts that apply to all TravelgateX APIs.\nSupplier Product segmentation over a Supplier API implementation. Each Supplier has a Supplier code. These are unique values and they are used consistently throughout all TravelgateX implementations. See our Supplier database, or ask us via our Jira Service desk for a list of Supplier codes.\nPlatform (Provider) Since not all suppliers have their own API, in some cases they will use a third party platform to return availability and allow you to make reservations. This is generally transparent to you as a customer.\nAccess Configuration used when interacting with a Supplier, which includes:\n URLs  Credentials  Markets  Rate Types  Specific Supplier settings   Client Client codes are consistent throughout all TravelgateX implementations. These codes are used to identify the business that is making the request and to confirm that the business has a configuration assigned to it.\nContext Context is the way codes are formed and used in implementations. Each Profile (either a Buyer or Supplier) can manage their own contexts or reuse existing ones. Different buyers or sellers can also manage the same codes context. For example, the SupplierSmyRooms uses SMY contexts for their implementations.\nContext applies to:\n Hotel Codes  Board Codes  Room Codes   With our built-in solution, you are able to choose the context that you wish to use when requesting a HotelX operation. For example, if you are a Buyer, you can map your context to your Suppliers\u0026rsquo; contexts.\nShould you be using the aggregator mode, we recommend that you use the widest Context possible (the one that includes more portfolio) or that you use your own context - in doing so, all supplier mappings will be solved/unified.\nFor more information on setting contexts, check out our Plugin guide on Mapping. "
 },
 {
+	"uri": "/legacy/docs/activities/data-structure/",
+	"title": "Activities Data Structure",
+	"tags": [],
+	"description": "Structure of the API specification",
+	"content": "The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.\nThe integration will have the following methods:\n   Method Input Output Required Description     Search SearchRQ SearchRS Yes Gets destinations and events available   Territories TerritoriesRQ TerritoriesRS No List of Destinations   Avail AvailRQ AvailRS Yes Makes an availability call   Valuation ValuationRQ ValuationRS Yes Makes a valuation for refresh ticket price (pre-book)   Reservation ReservationRQ ReservationRS Yes Makes a booking   ReservationRead ReservationReadRQ ReservationReadRS No Information about one reservation   Cancel CancelRQ CancelRS No Cancel a reservation   ReservationsList ReservationsListRQ ReservationsListRS No List of Reservations    Each request sent to the service url requires a node called rqXML. Inside this node travels the current method\u0026rsquo;s Input object.\nThe data structure will always have common elements in all objects and the specific objects related to the operation.\nData structure content:\n Common-Elements Search Territories Avail Valuation Reservation ReservationRead ReservationList Cancel StaticConfiguration RunTimeConfiguration  "
+},
+{
 	"uri": "/hotelx/plugins/black-list/",
 	"title": "Blacklist",
 	"tags": [],
@@ -6298,6 +6305,13 @@
 	"tags": [],
 	"description": "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation",
 	"content": "   Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n     Search Single Mode \u0026amp; Multi Mode Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n    "
+},
+{
+	"uri": "/legacy/docs/activities/change-log/",
+	"title": "Change Log",
+	"tags": [],
+	"description": "Accurated, chronologically-ordered list of notable changes",
+	"content": "Version 2.0.0: Date 27/07/2018\n: * Added a new structure of Avail and Valuation requests, the old structure has been deprecated. * Added the new Territories request and response documentation and updated the documentation about all the other requests and responses.\n|\nVersion 1.0.1: Date 19/04/2014\n: Modifications to suit XML Travelgate library and group common elements.\n"
 },
 {
 	"uri": "/hotelx/checkconfig/",
@@ -6787,7 +6801,7 @@
 	"title": "Activities API documentation",
 	"tags": [],
 	"description": "Read documentation on diferent Legacy APIs",
-	"content": "   Activities API methods Read documentation on diferent Legacy APIs\n    Change Log     Data Structure     "
+	"content": "   Activities API methods Read documentation on diferent Legacy APIs\n     Activities Data Structure Structure of the API specification\n     Change Log Accurated, chronologically-ordered list of notable changes\n    "
 },
 {
 	"uri": "/hotelx/howtos/bookingflow/booklist/",
@@ -7259,13 +7273,6 @@
 	"content": "Once integration is developed, please refer to https://docs.google.com/a/xmltravelgate.com/document/d/1UD7PpysZaBCouMljiLcBoAnk8M_wx9rqs0tDA8uh2bo/edit in order to certificate it.\n"
 },
 {
-	"uri": "/legacy/docs/activities/change-log/",
-	"title": "Change Log",
-	"tags": [],
-	"description": "",
-	"content": "Version 2.0.0: Date 27/07/2018\n: * Added a new structure of Avail and Valuation requests, the old structure has been deprecated. * Added the new Territories request and response documentation and updated the documentation about all the other requests and responses.\n|\nVersion 1.0.1: Date 19/04/2014\n: Modifications to suit XML Travelgate library and group common elements.\n"
-},
-{
 	"uri": "/legacy/docs/car/change-log/",
 	"title": "Change Log",
 	"tags": [],
@@ -7383,13 +7390,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Method Goals This method returns a list of currencies the supplier supports in Avail.\nRequest Format The request does not require any elements. Empty request.\nResponse Format The result returns a list of currencies.\nCurrencyListRQ Example \u0026lt;CurrencyListRQ\u0026gt; \u0026lt;/CurrencyListRQ\u0026gt;  CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.    CurrencyListRS Example \u0026lt;CurrencyListRS\u0026gt; \u0026lt;UpgradeUTCDate\u0026gt;2016-10-18T13:18:03+02:00\u0026lt;/UpgradeUTCDate\u0026gt; \u0026lt;Currencies\u0026gt; \u0026lt;Currency\u0026gt; \u0026lt;Code\u0026gt;EUR\u0026lt;/Code\u0026gt; \u0026lt;Name\u0026gt;Euro\u0026lt;/Name\u0026gt; \u0026lt;/Currency\u0026gt; \u0026lt;Currency\u0026gt; \u0026lt;Code\u0026gt;USD\u0026lt;/Code\u0026gt; \u0026lt;Name\u0026gt;Dollar\u0026lt;/Name\u0026gt; \u0026lt;/Currency\u0026gt; \u0026lt;/Currencies\u0026gt; \u0026lt;/CurrencyListRS\u0026gt;  CurrencyListRS Description    Element Number Type Description     CurrencyListRS 1  Root node.   UpgradeUTCDate 1 DateTime Indicates the update date of the information in UTC format.   Currencies 1  Contains a list of currencies.   Currency 0..n  Contains details of the currency.   @code 1 String ISO - 3 Code.   @Name 1 String Name of the currency.    "
-},
-{
-	"uri": "/legacy/docs/activities/data-structure/",
-	"title": "Data Structure",
-	"tags": [],
-	"description": "",
-	"content": "The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.\nThe integration will have the following methods:\n   Method Input Output Required Description     Search SearchRQ SearchRS Yes Gets destinations and events available   Territories TerritoriesRQ TerritoriesRS No List of Destinations   Avail AvailRQ AvailRS Yes Makes an availability call   Valuation ValuationRQ ValuationRS Yes Makes a valuation for refresh ticket price (pre-book)   Reservation ReservationRQ ReservationRS Yes Makes a booking   ReservationRead ReservationReadRQ ReservationReadRS No Information about one reservation   Cancel CancelRQ CancelRS No Cancel a reservation   ReservationsList ReservationsListRQ ReservationsListRS No List of Reservations    Each request sent to the service url requires a node called rqXML . Inside this node travels the current method\u0026rsquo;s Input object.\nThe data structure will always have common elements in all objects and the specific objects related to the operation\nData structure content:\n Common-Elements Search Territories Avail Valuation Reservation ReservationRead ReservationList Cancel StaticConfiguration RunTimeConfiguration  "
 },
 {
 	"uri": "/legacy/docs/car/data-structure/",

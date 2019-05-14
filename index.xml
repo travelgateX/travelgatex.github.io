@@ -8184,6 +8184,17 @@ Supplier Product segmentation over a Supplier API implementation. Each Supplier 
     </item>
     
     <item>
+      <title>Activities Data Structure</title>
+      <link>/legacy/docs/activities/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/activities/data-structure/</guid>
+      <description>The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
+The integration will have the following methods:
+   Method Input Output Required Description     Search SearchRQ SearchRS Yes Gets destinations and events available   Territories TerritoriesRQ TerritoriesRS No List of Destinations   Avail AvailRQ AvailRS Yes Makes an availability call   Valuation ValuationRQ ValuationRS Yes Makes a valuation for refresh ticket price (pre-book)   Reservation ReservationRQ ReservationRS Yes Makes a booking   ReservationRead ReservationReadRQ ReservationReadRS No Information about one reservation   Cancel CancelRQ CancelRS No Cancel a reservation   ReservationsList ReservationsListRQ ReservationsListRS No List of Reservations    Each request sent to the service url requires a node called rqXML.</description>
+    </item>
+    
+    <item>
       <title>Blacklist</title>
       <link>/hotelx/plugins/black-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8487,6 +8498,19 @@ It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
       <guid>/learning-graphql/basic_concepts/</guid>
       <description>What are Queries &amp;amp; Mutations There are two basic operations in GraphQL schemas:  Queries: Requesting data from a data model. An example Query would be: checking availability of hotels for a particular date and location  Mutations: Making changes and carrying out transactions on data in the data model. An example Mutation would be: making a booking to reserve a hotel room on a particular date.
 Queries Queries ask the system to provide some data, based on specfic parameters.</description>
+    </item>
+    
+    <item>
+      <title>Change Log</title>
+      <link>/legacy/docs/activities/change-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/activities/change-log/</guid>
+      <description>Version 2.0.0: Date 27/07/2018
+: * Added a new structure of Avail and Valuation requests, the old structure has been deprecated. * Added the new Territories request and response documentation and updated the documentation about all the other requests and responses.
+|
+Version 1.0.1: Date 19/04/2014
+: Modifications to suit XML Travelgate library and group common elements.</description>
     </item>
     
     <item>
@@ -9332,19 +9356,6 @@ CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&am
     
     <item>
       <title>Change Log</title>
-      <link>/legacy/docs/activities/change-log/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/legacy/docs/activities/change-log/</guid>
-      <description>Version 2.0.0: Date 27/07/2018
-: * Added a new structure of Avail and Valuation requests, the old structure has been deprecated. * Added the new Territories request and response documentation and updated the documentation about all the other requests and responses.
-|
-Version 1.0.1: Date 19/04/2014
-: Modifications to suit XML Travelgate library and group common elements.</description>
-    </item>
-    
-    <item>
-      <title>Change Log</title>
       <link>/legacy/docs/car/change-log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -9579,17 +9590,6 @@ The Provider should contact the Seller to get their credentials.</description>
 Request Format The request does not require any elements. Empty request.
 Response Format The result returns a list of currencies.
 CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt;  CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.    CurrencyListRS Example &amp;lt;CurrencyListRS&amp;gt; &amp;lt;UpgradeUTCDate&amp;gt;2016-10-18T13:18:03+02:00&amp;lt;/UpgradeUTCDate&amp;gt; &amp;lt;Currencies&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;EUR&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Euro&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;USD&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Dollar&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;/Currencies&amp;gt; &amp;lt;/CurrencyListRS&amp;gt;  CurrencyListRS Description    Element Number Type Description     CurrencyListRS 1  Root node.</description>
-    </item>
-    
-    <item>
-      <title>Data Structure</title>
-      <link>/legacy/docs/activities/data-structure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/legacy/docs/activities/data-structure/</guid>
-      <description>The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
-The integration will have the following methods:
-   Method Input Output Required Description     Search SearchRQ SearchRS Yes Gets destinations and events available   Territories TerritoriesRQ TerritoriesRS No List of Destinations   Avail AvailRQ AvailRS Yes Makes an availability call   Valuation ValuationRQ ValuationRS Yes Makes a valuation for refresh ticket price (pre-book)   Reservation ReservationRQ ReservationRS Yes Makes a booking   ReservationRead ReservationReadRQ ReservationReadRS No Information about one reservation   Cancel CancelRQ CancelRS No Cancel a reservation   ReservationsList ReservationsListRQ ReservationsListRS No List of Reservations    Each request sent to the service url requires a node called rqXML .</description>
     </item>
     
     <item>
