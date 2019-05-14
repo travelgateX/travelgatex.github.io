@@ -5675,12 +5675,12 @@ are already included in the total price.</p>
 <h3 id="availabilityrs-description">AvailabilityRS Description</h3>
 
 <p>| <strong>Element</strong>                   | <strong>Number</strong>| <strong>Type</strong>  | <strong>Description</strong> |<br />
-| &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash;&mdash; | &mdash;&mdash;&mdash; | &mdash;&mdash;&mdash;&mdash;&mdash;-|
-| AvailabilityRS                | 1         |           | Root node.|
-| Transportation                | 1         |           | Contains all of the Segments and Fares.|
+| &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; | &mdash;&mdash;&mdash; | &mdash;&mdash;&mdash; | &mdash;&mdash;&mdash;&mdash;&mdash;-|<br />
+| AvailabilityRS                | 1         |           | Root node.|<br />
+| Transportation                | 1         |           | Contains all of the Segments and Fares.|<br />
 | @totalFares                   | 1         | Integer   | Total number of Fares.|
 | Transportation/Segments       | 1         |           | Contains a list of the Segments.|
-| Transportation/Segments/Segment| 1..n     | Contains the information of the segment.|
+| Transportation/Segments/Segment| 1..n     |  |  Contains the information of the segment.|
 | @id                           | 1         | Integer   | Unique identifier of the segment.|
 | @transportationId             | 1         | String    | Unique Id of the transportation.|
 | @operatingCarrier             | 1         | String    | Company which operates the transportation.|
