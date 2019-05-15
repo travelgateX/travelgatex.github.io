@@ -4109,6 +4109,13 @@
 	"content": " GraphQL schema definition type PaymentXStoredCardInput {  instanceCode: ID!    pointOfSaleCode: ID!    bookingReference: String!    checkOut: Date    checkIn: Date    cardType: String    holder: HolderInput    number: CardNumber!    CVC: CVC!    expire: ExpireDateInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields instanceCode(ID!): Asigned instance of PaymentX of the booked property.  pointOfSaleCode(ID!): Indicates the code of the booked property  bookingReference(String!): Indicates the referece of the booking  checkOut(Date): Check-out, booking date Format: YYYY-MM-DD  checkIn(Date): Check-in, booking date Format: YYYY-MM-DD  cardType(String): Indicates the card type.  holder(HolderInput): Contains owner\u0026#39;s name  number(CardNumber!): Contains credit card number  CVC(CVC!): Contains credit card CVC  expire(ExpireDateInput!): Contains credit card expiration date  \n"
 },
 {
+	"uri": "/insights-x/datasets/dataset-content/performance/",
+	"title": "Performance Dataset",
+	"tags": [],
+	"description": "Understand Performance-X Insight Dataset",
+	"content": "   Reference Learn about how the information is stored in our performance dataset\n    "
+},
+{
 	"uri": "/hotelx/reference/inputobjects/pluginstepinput/",
 	"title": "PluginStepInput",
 	"tags": [],
@@ -6045,7 +6052,7 @@
 	"title": "Datasets Contents",
 	"tags": [],
 	"description": "Insights-X Datasets Contents",
-	"content": "                 "
+	"content": "   Performance Dataset Understand Performance-X Insight Dataset\n     Insights Dataset Understand Insights-X Insights Dataset\n     Benchmark Dataset Understand Insights-X Benchmark Dataset\n    "
 },
 {
 	"uri": "/channelx/documentation/",
@@ -6116,6 +6123,13 @@
 	"tags": [],
 	"description": "Advanced security management",
 	"content": " This section provides an overview of Identity and access management.\nTravelgateX identity and acccess management lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.\nIdentity and access management provides an unified view of your security policy across your entire organization, with built-in auditing to ease compliance processes.\nAs an administrator, when you register with us, we provide you with login details to access your TravelgateX account, including a username and password. As administrator, you can then add additional users to your account and grant them specific access.\nIdentity and access management lets you manage access control by defining who Member has what kind of access Role to each resource:\nConcepts related to identity You grant access to members which can be either:\n Users: A developer, administrator or any other person from your Organisation who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.\n Service Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.\n  Concepts related to access management When an authenticated member attempts to make a request, the IAM policy will decide if the member is allowed to perform the operation requested.\nResources and Groups You can grant access to member for each resource or set of resources. Some examples of common resources are Suppliers, Accesses and Clients.\nGroups are organized hierarchically, where the Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.\nHierarchy assignment Resources are assigned to groups and propagated by groups hierarchically from bottom to top.\nPermissions and Roles Permissions determine what operations are allowed on a resource.\nA role is a collection of permissions. You cannot assign a permission to the member directly; instead you grant them a role. When you grant a role to a user, you grant them all the permissions that the role contains.\nCommon roles include: - Viewer: Allows a User to make Queries of resources, but not change any data - Editor: Allows a User to make Mutations (changes) to the data - Special: In your admin account, you can create special roles that might allow some of your users to only access specific resources. For example, if you have a large team and have divided them based on suppliers, you may choose to only grant each User access to the resources for a specific Supplier.\nYou can grant roles to members, which define who has what type of access. A policy is attached to a resource and identifies which member role is applied to every resource.\nFor more information about Identity and access management configuration, check out our tutorial How-to configure HotelX permissions\u0026gt; "
+},
+{
+	"uri": "/insights-x/datasets/dataset-content/insights/",
+	"title": "Insights Dataset",
+	"tags": [],
+	"description": "Understand Insights-X Insights Dataset",
+	"content": "   Reference Learn about how the information is stored in our insights dataset\n    "
 },
 {
 	"uri": "/hotelx/howtos/bookingflow/",
@@ -6298,6 +6312,13 @@
 	"tags": [],
 	"description": "",
 	"content": " What are Queries \u0026amp; Mutations There are two basic operations in GraphQL schemas:  Queries: Requesting data from a data model. An example Query would be: checking availability of hotels for a particular date and location  Mutations: Making changes and carrying out transactions on data in the data model. An example Mutation would be: making a booking to reserve a hotel room on a particular date.\nQueries Queries ask the system to provide some data, based on specfic parameters. This operation reads values from the server using a GraphQL Object and returns JSON text as a response.\nQueries are interactive. You can use our API Playground to test your queries.\nOur HotelX Getting Started guide shows you how to make queries to search for available hotels and get quotes. Mutations Mutations are methods that change the data on the server. That is, mutations make a physical change to the data. This can include inserting a new object in a database, or deleting, or updating a data record.\nOur HotelX Getting Started guide shows you how to make mutations to book and cancel reservations. Join us on Slack to talk with us about how to use HotelX in your websites, apps, and products. You can also send us a Jira service desk request. If you would like any new features or more information in our documentation, send us an issues request. "
+},
+{
+	"uri": "/insights-x/datasets/dataset-content/benchmark/",
+	"title": "Benchmark Dataset",
+	"tags": [],
+	"description": "Understand Insights-X Benchmark Dataset",
+	"content": "   Reference Learn about how the information is stored in our benchmark dataset\n     Concepts Learn about how to interpret the information in our datasets\n    "
 },
 {
 	"uri": "/hotelx/concepts/search-mode/",
@@ -7138,27 +7159,6 @@
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "/insights-x/datasets/dataset-content/benchmark/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": " \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; Updated upstream +++ title = \u0026ldquo;Benchmark Dataset\u0026rdquo; pagetitle = \u0026ldquo;Benchmark Dataset\u0026rdquo; description = \u0026ldquo;Understand Insights-X Benchmark Dataset\u0026rdquo; icon = \u0026ldquo;fa-users\u0026rdquo; weight = 3 alwaysopen = false +++\n  Reference Learn about how the information is stored in our benchmark dataset\n     Concepts Learn about how to interpret the information in our datasets\n     +++ title = \u0026ldquo;Benchmark Dataset\u0026rdquo; pagetitle = \u0026ldquo;Benchmark Dataset\u0026rdquo; description = \u0026ldquo;Understand Insights-X Benchmark Dataset\u0026rdquo; icon = \u0026ldquo;fa-users\u0026rdquo; weight = 3 alwaysopen = false +++\n   Reference Learn about how the information is stored in our benchmark dataset\n     Concepts Learn about how to interpret the information in our datasets\n    \u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; Stashed changes\n"
-},
-{
-	"uri": "/insights-x/datasets/dataset-content/insights/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": " \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; Updated upstream +++ title = \u0026ldquo;Insights Dataset\u0026rdquo; pagetitle = \u0026ldquo;Insights Dataset\u0026rdquo; description = \u0026ldquo;Understand Insights-X Insights Dataset\u0026rdquo; icon = \u0026ldquo;fa-usd\u0026rdquo; weight = 2 alwaysopen = false +++\n  Reference Learn about how the information is stored in our insights dataset\n     +++ title = \u0026ldquo;Insights Dataset\u0026rdquo; pagetitle = \u0026ldquo;Insights Dataset\u0026rdquo; description = \u0026ldquo;Understand Insights-X Insights Dataset\u0026rdquo; icon = \u0026ldquo;fa-usd\u0026rdquo; weight = 2 alwaysopen = false +++\n   Reference Learn about how the information is stored in our insights dataset\n    \u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; Stashed changes\n"
-},
-{
-	"uri": "/insights-x/datasets/dataset-content/performance/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": " \u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt;\u0026lt; Updated upstream +++ title = \u0026ldquo;Performance Dataset\u0026rdquo; pagetitle = \u0026ldquo;Performance Dataset\u0026rdquo; description = \u0026ldquo;Understand Performance-X Insight Dataset\u0026rdquo; icon = \u0026ldquo;fa-line-chart\u0026rdquo; weight = 1 alwaysopen = false +++\n  Reference Learn about how the information is stored in our performance dataset\n     +++ title = \u0026ldquo;Performance Dataset\u0026rdquo; pagetitle = \u0026ldquo;Performance Dataset\u0026rdquo; description = \u0026ldquo;Understand Performance-X Insight Dataset\u0026rdquo; icon = \u0026ldquo;fa-line-chart\u0026rdquo; weight = 1 alwaysopen = false +++\n   Reference Learn about how the information is stored in our performance dataset\n    \u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt;\u0026gt; Stashed changes\n"
 },
 {
 	"uri": "/legacy/docs/activities/methods/avail/",
