@@ -37,7 +37,7 @@ All notable changes in our platform will be documented on this page. 2019-05-13 
       
       <guid>/stats/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Stats-X
-2019-05-03  Fix an error that was causing that assets of HUB error types were NULL.   2019-05-02  Input field retrieveAssets made optional. false by default.   2019-04-30  New required input field retrieveAssets added to indicate if assets are needed.    Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access all the asset nodes.</description>
+2019-05-14  Fix an error that was causing that accessCode not being stored successfully. Fix an error to show 100 assets per errorCode and per operation.   2019-05-03  Fix an error that was causing that assets of HUB error types were NULL.   2019-05-02  Input field retrieveAssets made optional. false by default.   2019-04-30  New required input field retrieveAssets added to indicate if assets are needed.</description>
     </item>
     
     <item>
