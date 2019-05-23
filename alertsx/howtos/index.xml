@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How-to guides on TravelgateX Documentation</title>
+    <link>/alertsx/howtos/</link>
+    <description>Recent content in How-to guides on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/alertsx/howtos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create Alert</title>
+      <link>/alertsx/howtos/howto-create-alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/howtos/howto-create-alerts/</guid>
+      <description>This page shows you how to create Alerts using API or TravelgateX Web.
+How to request You must choose a type alert to create it. The alert types are: Error rate, No traffic, Average time and Peak traffic.
+There are different ways to configure the alert types. Bellow are a references of some values of configuration to create alert needed.
+Error rate alert    WHAT IS NEEDED? window periodicity percentage minNumberRequests to check to compare     check by time frame w &amp;gt; 0 p &amp;gt; 0 pg &amp;gt;= 0 mnr &amp;gt;= 0 error codes error codes   check by requests number w = 0 p = 0 pg &amp;gt;= 0 mnr &amp;gt; 0 error codes error codes    By default to check is all error codes excepts 0 and to compare is all error codes.</description>
+    </item>
+    
+    <item>
+      <title>Query Alerts</title>
+      <link>/alertsx/howtos/howto-query-alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/howtos/howto-query-alerts/</guid>
+      <description>This page shows you how to query Alerts using API or TravelgateX Web.
+How to request You must query about your alerts by their ubication group or their code. Also can be filtered by active alerts or not.
+Below are shown different examples for different casuistry:
+       #tab-holder { transform: scale(0); position: absolute; } #tab-holder.show-tabs { transform: scale(1); position: initial; } ul.tab-pannel-nav { margin-bottom: -32px; } ul.</description>
+    </item>
+    
+    <item>
+      <title>Update Alert</title>
+      <link>/alertsx/howtos/howto-update-alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/howtos/howto-update-alerts/</guid>
+      <description>This page shows you how to update an alert using API or TravelgateX.
+How to request To update an alert you must input the alert code. Only data which needs to be update needs to be input.
+Below are shown different examples for different casuistry:
+       #tab-holder { transform: scale(0); position: absolute; } #tab-holder.show-tabs { transform: scale(1); position: initial; } ul.tab-pannel-nav { margin-bottom: -32px; } ul.</description>
+    </item>
+    
+  </channel>
+</rss>

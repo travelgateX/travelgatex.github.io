@@ -2462,6 +2462,15 @@ GraphQL schema definition type GiataData {  id: ID!    source: URI!    href: URI
     
     <item>
       <title>GraphQL Schema breaking changes</title>
+      <link>/alertsx/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced </description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema breaking changes</title>
       <link>/stats/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4943,6 +4952,16 @@ GraphQL schema definition type Organization {  code: ID!    organizationData: Or
       
       <guid>/travelgatex/reference/enums/organizationtemplate/</guid>
       <description> GraphQL schema definition  enum OrganizationTemplate{   ORGANIZATION_DEFAULT,   }   Required by CreateOrganizationInput:     </description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>/alertsx/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/overview/</guid>
+      <description>In order to analyze useful metrics about performance, Alerts-X extracts, loads and stores data from all TravelgateX products.
+Once the metrics are stored in our infrastructure, our service-alerts analyze your performance according to a configuration alert which can be create/update or view using API alertsWorking with Alerts-X The most important use case working with Alerts is to query about your performance.</description>
     </item>
     
     <item>
@@ -8037,6 +8056,16 @@ File Format The file should be in the below format:
     
     <item>
       <title>Changelog</title>
+      <link>/alertsx/release-notes/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/release-notes/changelog/</guid>
+      <description> Easily accessible log of notable changes to Alerts-X API
+2019-05-09  Alerts-X product documentation  </description>
+    </item>
+    
+    <item>
+      <title>Changelog</title>
       <link>/hotelx/release-notes/changelog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -8558,6 +8587,18 @@ Response Format The response will contain the indication if the function is impl
     </item>
     
     <item>
+      <title>Create Alert</title>
+      <link>/alertsx/howtos/howto-create-alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/howtos/howto-create-alerts/</guid>
+      <description>This page shows you how to create Alerts using API or TravelgateX Web.
+How to request You must choose a type alert to create it. The alert types are: Error rate, No traffic, Average time and Peak traffic.
+There are different ways to configure the alert types. Bellow are a references of some values of configuration to create alert needed.
+Error rate alert    WHAT IS NEEDED? window periodicity percentage minNumberRequests to check to compare     check by time frame w &amp;gt; 0 p &amp;gt; 0 pg &amp;gt;= 0 mnr &amp;gt;= 0 error codes error codes   check by requests number w = 0 p = 0 pg &amp;gt;= 0 mnr &amp;gt; 0 error codes error codes    By default to check is all error codes excepts 0 and to compare is all error codes.</description>
+    </item>
+    
+    <item>
       <title>Currency Converter</title>
       <link>/hotelx/plugins/converter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8624,6 +8665,18 @@ In this case you can search the bookings with references or by dates, the dates 
     </item>
     
     <item>
+      <title>Query Alerts</title>
+      <link>/alertsx/howtos/howto-query-alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/howtos/howto-query-alerts/</guid>
+      <description>This page shows you how to query Alerts using API or TravelgateX Web.
+How to request You must query about your alerts by their ubication group or their code. Also can be filtered by active alerts or not.
+Below are shown different examples for different casuistry:
+       #tab-holder { transform: scale(0); position: absolute; } #tab-holder.show-tabs { transform: scale(1); position: initial; } ul.tab-pannel-nav { margin-bottom: -32px; } ul.</description>
+    </item>
+    
+    <item>
       <title>Query Stats</title>
       <link>/stats/howtos/howto-query-stats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8663,6 +8716,18 @@ Advanced criteria It explains different parameters that can be set up in the req
       
       <guid>/learning-graphql/thinking_in_graphql/</guid>
       <description>A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraphQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back.</description>
+    </item>
+    
+    <item>
+      <title>Update Alert</title>
+      <link>/alertsx/howtos/howto-update-alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/howtos/howto-update-alerts/</guid>
+      <description>This page shows you how to update an alert using API or TravelgateX.
+How to request To update an alert you must input the alert code. Only data which needs to be update needs to be input.
+Below are shown different examples for different casuistry:
+       #tab-holder { transform: scale(0); position: absolute; } #tab-holder.show-tabs { transform: scale(1); position: initial; } ul.tab-pannel-nav { margin-bottom: -32px; } ul.</description>
     </item>
     
     <item>
