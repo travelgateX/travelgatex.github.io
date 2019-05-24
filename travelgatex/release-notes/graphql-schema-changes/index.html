@@ -5643,6 +5643,541 @@
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
 
+<h2 id="2019-05-23">2019-05-23</h2>
+
+<p>🛑  Input field <code>AlertUpdateConfigurationInputPeakTraffic.group</code> changed type from <code>AlertGroupInput</code> to <code>[AlertGroupInput!]</code></p>
+
+<p>🛑  Input field <code>AlertUpdateConfigurationInputAverageTime.group</code> changed type from <code>AlertGroupInput</code> to <code>[AlertGroupInput!]</code></p>
+
+<p>🛑  Input field <code>AlertUpdateConfigurationInputErrorRate.group</code> changed type from <code>AlertGroupInput</code> to <code>[AlertGroupInput!]</code></p>
+
+<p>🛑  Input field <code>AlertUpdateConfigurationInputNoTraffic.group</code> changed type from <code>AlertGroupInput</code> to <code>[AlertGroupInput!]</code></p>
+
+<p>🛑  Input field <code>AlertConfigurationInputPeakTraffic.group</code> changed type from <code>AlertGroupInput!</code> to <code>[AlertGroupInput!]</code></p>
+
+<p>🛑  Input field <code>AlertConfigurationInputAverageTime.group</code> changed type from <code>AlertGroupInput!</code> to <code>[AlertGroupInput!]</code></p>
+
+<p>🛑  Input field <code>AlertConfigurationInputErrorRate.group</code> changed type from <code>AlertGroupInput!</code> to <code>[AlertGroupInput!]</code></p>
+
+<p>🛑  Input field <code>AlertConfigurationInputNoTraffic.group</code> changed type from <code>AlertGroupInput!</code> to <code>[AlertGroupInput!]</code></p>
+
+<p>🛑  Field <code>GeonameData.type</code> changed type from <code>DestinationType!</code> to <code>String!</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputPeakTraffic.group</code> description changed from <code>Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed</code> to <code>Must filter traffic by group. Only PRODUCT group type is allowed</code></p>
+
+<p>✅  Description <code>Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.</code> on type <code>AlertUpdateConfigurationInputAverageTime</code> has changed to <code>Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputAverageTime.minNumberRequests</code> description changed from <code>OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.</code> to <code>OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.</code></p>
+
+<p>✅  Description <code>Configuration update for error rate alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are to options.
+- OPTION 1: Can verify traffic of a time frame. Set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Set window fild as 0 and minNumRequest higher than 0.</code> on type <code>AlertUpdateConfigurationInputErrorRate</code> has changed to <code>Configuration update for error rate alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are to options.
+- OPTION 1: Can verify traffic of a time frame. Set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Set window fild as 0 and minNumRequest higher than 0.</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputErrorRate.minNumberRequests</code> description changed from <code>OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.</code> to <code>OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.</code></p>
+
+<p>✅  Description <code>Confiuration update for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.</code> on type <code>AlertUpdateConfigurationInputNoTraffic</code> has changed to <code>Confiuration update for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.</code></p>
+
+<p>✅  Description <code>Configuration for PEAK_TRAFFIC alert type.
+Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) .</code> on type <code>AlertConfigurationInputPeakTraffic</code> has changed to <code>Configuration for PEAK_TRAFFIC alert type.
+Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) .</code></p>
+
+<p>✅  Description <code>Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.</code> on type <code>AlertConfigurationInputAverageTime</code> has changed to <code>Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputAverageTime.minNumberRequests</code> description changed from <code>OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.</code> to <code>OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.</code></p>
+
+<p>✅  Description <code>Configuration for ERROR_RATE alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are two options.
+- OPTION 1: Can verify traffic of a time frame. Must set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Must set window field as 0 and minNumRequest higher than 0.</code> on type <code>AlertConfigurationInputErrorRate</code> has changed to <code>Configuration for ERROR_RATE alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are two options.
+- OPTION 1: Can verify traffic of a time frame. Must set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Must set window field as 0 and minNumRequest higher than 0.</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputErrorRate.minNumberRequests</code> description changed from <code>OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.</code> to <code>OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.</code></p>
+
+<p>✅  Description <code>Configuration for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.</code> on type <code>AlertConfigurationInputNoTraffic</code> has changed to <code>Configuration for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.</code></p>
+
+<p>✅  Description <code>Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.</code> on type <code>DeltaPriceInput</code> has changed to <code>Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.</code></p>
+
+<p>✅  Field <code>quotePrice</code> was added to object type <code>HotelBookingDetail</code></p>
+
+<p>✅  Field <code>searchPrice</code> was added to object type <code>HotelOptionQuote</code></p>
+
+<p>✅  Deprecation reason on field <code>GeonameData.type</code> has changed from <code>Field is deprecated from 2019-04-30</code> to ``</p>
+
+<p>✅  Field <code>adviseMessageCatalog</code> was added to object type <code>APIData</code></p>
+
+<p>✅  Type <code>PriceChange</code> was added</p>
+
+<h2 id="2019-05-16">2019-05-16</h2>
+
+<p>🛑  Input field <code>basicInfoMandatory_in</code> was removed from input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>🛑  Input field <code>basicInfo_in</code> was removed from input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>🛑  Input field <code>isoCode_in</code> was removed from input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>🛑  Field <code>Location.closestDestination</code> changed type from <code>DestinationData!</code> to <code>DestinationData</code></p>
+
+<p>🛑  Field <code>Location.country</code> changed type from <code>Country!</code> to <code>Country</code></p>
+
+<p>🛑  Field <code>HotelData.categoryCode</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>🛑  Field <code>HotelData.hotelName</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>✅  Input field <code>isSchedulerActive</code> was added to input object type <code>AccessInput</code></p>
+
+<p>✅  Description <code>By default: Logical AND on all given filters.</code> on type <code>HotelXHotelFilterInput</code> has changed to <code>By default: Logical AND on all given filters. only hotels that match condition are returned</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.coordinates_in</code> description changed from <code>Coordinates returned in Hotel</code> to <code>Hotel Coordinates required for all Hotels</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.name_in</code> description changed from <code>Name returned in Hotel</code> to <code>Hotel Name required for all Hotels</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.destination_in</code> description changed from <code>Destination returnd in Hotel</code> to <code>Hotel destination required for all Hotels</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.category_in</code> description changed from <code>Category returned in Hotel</code> to <code>Hotel Category code required for all Hotels</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.country_in</code> description changed from <code>Country returned in Hotel</code> to <code>Hotel Country required for all Hotels</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.updatedAt_gte</code> description changed from <code>All values greater than or equal the given value.</code> to <code>Return hotels with update time greater than or equal the given value.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.updatedAt_gt</code> description changed from <code>All values greater than the given value.</code> to <code>Return hotels with update time greater than the given value.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.updatedAt_lte</code> description changed from <code>All values less than or equal the given value.</code> to <code>Return hotels with update time less than or equal the given value.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.updatedAt_lt</code> description changed from <code>All values less than the given value.</code> to <code>Return hotels with update time less than the given value.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.updatedAt_not_in</code> description changed from <code>All values that are not contained in given list.</code> to <code>Return hotels with update time that are not contained in given list.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.updatedAt_in</code> description changed from <code>All values that are contained in given list.</code> to <code>Return hotels with update time that are contained in given list.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.createdAt_gte</code> description changed from <code>All values greater than or equal the given value.</code> to <code>Return hotels with creation time greater than or equal the given value.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.createdAt_gt</code> description changed from <code>All values greater than the given value.</code> to <code>Return hotels with creation time greater than the given value.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.createdAt_lte</code> description changed from <code>All values less than or equal the given value.</code> to <code>Return hotels with creation time less than or equal the given value.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.createdAt_lt</code> description changed from <code>All values less than the given value.</code> to <code>Return hotels with creation time less than the given value.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.createdAt_not_in</code> description changed from <code>All values that are not contained in given list.</code> to <code>Return hotels with creation time that are not contained in given list.</code></p>
+
+<p>✅  Input field <code>HotelXHotelFilterInput.createdAt_in</code> description changed from <code>All values that are contained in given list.</code> to <code>Return hotels with creation time in given list.</code></p>
+
+<h2 id="2019-05-06">2019-05-06</h2>
+
+<p>🛑  Input field <code>AlertUpdateConfigurationInputPeakTraffic.group</code> changed type from <code>[AlertGroupInput!]</code> to <code>AlertGroupInput</code></p>
+
+<p>🛑  Input field <code>AlertUpdateConfigurationInputAverageTime.group</code> changed type from <code>[AlertGroupInput!]</code> to <code>AlertGroupInput</code></p>
+
+<p>🛑  Input field <code>AlertUpdateConfigurationInputErrorRate.group</code> changed type from <code>[AlertGroupInput!]</code> to <code>AlertGroupInput</code></p>
+
+<p>🛑  Input field <code>AlertUpdateConfigurationInputNoTraffic.group</code> changed type from <code>[AlertGroupInput!]</code> to <code>AlertGroupInput</code></p>
+
+<p>🛑  Input field <code>editor</code> was removed from input object type <code>AlertUpdateInput</code></p>
+
+<p>🛑  Input field <code>AlertConfigurationInputPeakTraffic.group</code> changed type from <code>[AlertGroupInput!]!</code> to <code>AlertGroupInput!</code></p>
+
+<p>🛑  Input field <code>AlertConfigurationInputAverageTime.group</code> changed type from <code>[AlertGroupInput!]!</code> to <code>AlertGroupInput!</code></p>
+
+<p>🛑  Input field <code>AlertConfigurationInputErrorRate.group</code> changed type from <code>[AlertGroupInput!]!</code> to <code>AlertGroupInput!</code></p>
+
+<p>🛑  Input field <code>type</code> was removed from input object type <code>AlertGroupInput</code></p>
+
+<p>🛑  Input field <code>AlertConfigurationInputNoTraffic.group</code> changed type from <code>[AlertGroupInput!]!</code> to <code>AlertGroupInput!</code></p>
+
+<p>🛑  Input field <code>group</code> was added to input object type <code>AlertInput</code></p>
+
+<p>🛑  Input field <code>editor</code> was removed from input object type <code>AlertInput</code></p>
+
+<p>🛑  Type for argument <code>criteria</code> on field <code>AlertsXQuery.alerts</code> changed from <code>AlertCriteriaInput</code> to <code>AlertCriteriaInput!</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputAverageTime.group</code> description changed from <code>Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed</code> to <code>Must filter traffic by group. Only PRODUCT group type is allowed</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputErrorRate.group</code> description changed from <code>Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed</code> to <code>Must filter traffic by group. Only PRODUCT group type is allowed</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputNoTraffic.group</code> description changed from <code>Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed</code> to <code>Must filter traffic by group. Only PRODUCT group type is allowed</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputPeakTraffic.group</code> description changed from <code>Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed</code> to <code>Must filter traffic by group. Only PRODUCT group type is allowed</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputAverageTime.group</code> description changed from <code>Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed</code> to <code>Must filter traffic by group. Only PRODUCT group type is allowed</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputErrorRate.group</code> description changed from <code>Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed</code> to <code>Must filter traffic by group. Only PRODUCT group type is allowed</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputNoTraffic.group</code> description changed from <code>Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed</code> to <code>Must filter traffic by group. Only PRODUCT group type is allowed</code></p>
+
+<p>✅  Input field <code>groups</code> was added to input object type <code>AlertCriteriaInput</code></p>
+
+<h2 id="2019-05-02">2019-05-02</h2>
+
+<p>✅  Input field <code>retrieveAssets</code> was added to input object type <code>StatsFilterInput</code></p>
+
+<h2 id="2019-04-30">2019-04-30</h2>
+
+<p>✅  Input field <code>basicInfoMandatory_in</code> was added to input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>✅  Input field <code>basicInfo_in</code> was added to input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>✅  Input field <code>isoCode_in</code> was added to input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>✅  Input field <code>coordinates_in</code> was added to input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>✅  Input field <code>name_in</code> was added to input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>✅  Input field <code>destination_in</code> was added to input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>✅  Input field <code>category_in</code> was added to input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>✅  Input field <code>country_in</code> was added to input object type <code>HotelXHotelFilterInput</code></p>
+
+<p>✅  Deprecation reason on field <code>GeonameData.type</code> has changed from `<code>to</code>Field is deprecated from 2019-04-30`</p>
+
+<p>✅  Input field <code>entityIDs</code> was added to input object type <code>ProfileFilter</code></p>
+
+<p>✅  Field <code>siblings</code> was added to object type <code>GroupData</code></p>
+
+<p>✅  Field <code>OrganizationData.allMembers</code> description changed from <code>Response all members in this group's childrens (hierarchically)</code> to <code>Response all members in this group's childrens (hierarchically)</code></p>
+
+<h2 id="2019-04-24">2019-04-24</h2>
+
+<p>🛑  Input field <code>isActive</code> was added to input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>label</code> was added to input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>method</code> was removed from input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>resources</code> was removed from input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>role</code> was removed from input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>group</code> was removed from input object type <code>UpdateMemberInput</code></p>
+
+<p>🛑  Input field <code>info</code> was removed from input object type <code>UpdateMemberInput</code></p>
+
+<p>✅  Field <code>clonePermissions</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>revokePermissions</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>grantPermissions</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Input field <code>StatsFilterInput.mode</code> description changed from <code>Buyer or Seller</code> to <code>Buyer or Seller
+@deprecated(reason: &quot;deprecated from 2019-04-11. Superfluous field.&quot;)</code></p>
+
+<p>✅  Input field <code>owners</code> was added to input object type <code>StatsFilterInput</code></p>
+
+<p>✅  Field <code>AdviseMessage.type</code> description changed from <code>Error type: The following types are valid:</code> to <code>Error type: The following types are valid:[type]</code></p>
+
+<p>✅  Type <code>ClonePermissionsInput</code> was added</p>
+
+<p>✅  Type <code>GrantPermissionsInput</code> was added</p>
+
+<h2 id="2019-04-08">2019-04-08</h2>
+
+<p>🛑  Field <code>Event.adviseMessage</code> changed type from <code>AdviseMessage</code> to <code>[AdviseMessage!]</code></p>
+
+<p>🛑  Field <code>Alert.adviseMessage</code> changed type from <code>AdviseMessage</code> to <code>[AdviseMessage!]</code></p>
+
+<p>🛑  Argument <code>trafficType: TrafficType!</code> added to field <code>StatsData.ratios</code></p>
+
+<p>🛑  Argument <code>ratioSource: RatiosSource!</code> was removed from field <code>StatsData.ratios</code></p>
+
+<p>🛑  Type <code>RatiosSource</code> was removed</p>
+
+<p>✅  Field <code>Alert.adviseMessage</code> description changed from <code>Advise Message</code> to <code>List of advise messages.</code></p>
+
+<p>✅  Deprecation reason on field <code>OperationDetailed.cache</code> has changed from `<code>to</code>deprecated from 2019-04-03. Added new field trafficType.`</p>
+
+<p>✅  Field <code>trafficType</code> was added to object type <code>OperationDetailed</code></p>
+
+<p>✅  Deprecation reason on field <code>StatsData.ratios</code> has changed from `<code>to</code>deprecated from 2019-04-08. Added hits fields to be able to
+calculate ratios at client side.`</p>
+
+<p>✅  Field <code>hits</code> was added to object type <code>StatsData</code></p>
+
+<p>✅  Description for enum value <code>BookStatusType.KO</code> changed from <code>The status of the booking is KO</code> to <code>The status of the booking is NOT OK</code></p>
+
+<p>✅  Field <code>surcharges</code> was added to object type <code>Room</code></p>
+
+<p>✅  Argument <code>filter: AccessFilter</code> added to field <code>SupplierData.accesses</code></p>
+
+<p>✅  Argument <code>after: String</code> added to field <code>SupplierData.accesses</code></p>
+
+<p>✅  Argument <code>before: String</code> added to field <code>SupplierData.accesses</code></p>
+
+<p>✅  Argument <code>last: Int</code> added to field <code>SupplierData.accesses</code></p>
+
+<p>✅  Argument <code>first: Int</code> added to field <code>SupplierData.accesses</code></p>
+
+<p>✅  Type <code>TrafficType</code> was added</p>
+
+<h2 id="2019-03-28">2019-03-28</h2>
+
+<p>🛑  Argument <code>ratioSource: RatiosSource!</code> added to field <code>StatsData.ratios</code></p>
+
+<p>✅  Field <code>suppliers</code> was added to object type <code>ClientData</code></p>
+
+<p>✅  Field <code>clients</code> was added to object type <code>SupplierData</code></p>
+
+<p>✅  Argument <code>parentCode: ID</code> added to field <code>AdminQuery.groups</code></p>
+
+<p>✅  Type <code>RatiosSource</code> was added</p>
+
+<h2 id="2019-03-14">2019-03-14</h2>
+
+<p>🛑  Input field <code>api</code> was removed from input object type <code>UpdateGroupInput</code></p>
+
+<p>🛑  Argument <code>method: Method!</code> was removed from field <code>AdminMutation.updateGroup</code></p>
+
+<p>✅  Input field <code>label</code> was added to input object type <code>UpdateGroupInput</code></p>
+
+<p>✅  Input field <code>type</code> was added to input object type <code>UpdateGroupInput</code></p>
+
+<p>✅  Input field <code>owner</code> was added to input object type <code>UpdateGroupInput</code></p>
+
+<h2 id="2019-03-07">2019-03-07</h2>
+
+<p>🛑  Input field <code>UpdateGroupInput.api</code> changed type from <code>ID!</code> to <code>[ID!]!</code></p>
+
+<p>🛑  Field <code>impersonationJWT</code> was removed from object type <code>MemberData</code></p>
+
+<p>🛑  Type <code>JWTImpersonation</code> was removed</p>
+
+<p>✅  Input field <code>UpdateGroupInput.api</code> description changed from `<code>to</code>@deprecated(reason: &ldquo;deprecated from 2019-03-06. Use GrantAPIToGroup / RevokeAPIFromGroup to add or delete apis from groups&rdquo;)`</p>
+
+<p>✅  Input field <code>updateDateRange</code> was added to input object type <code>AccessInput</code></p>
+
+<p>✅  Input field <code>updateList</code> was added to input object type <code>AccessInput</code></p>
+
+<p>✅  Input field <code>updateDescriptiveInfo</code> was added to input object type <code>AccessInput</code></p>
+
+<p>✅  Input field <code>descriptiveInfoLimit</code> was added to input object type <code>AccessInput</code></p>
+
+<p>✅  Field <code>revokeApiFromGroup</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>grantApiToGroup</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>suitOrganization</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Deprecation reason on field <code>BookingHotel.checkOut</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Deprecation reason on field <code>BookingHotel.checkIn</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Deprecation reason on field <code>BookingHotel.creationDate</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Field <code>end</code> was added to object type <code>BookingHotel</code></p>
+
+<p>✅  Field <code>start</code> was added to object type <code>BookingHotel</code></p>
+
+<p>✅  Field <code>bookingDate</code> was added to object type <code>BookingHotel</code></p>
+
+<p>✅  Deprecation reason on field <code>Supplement.expireDate</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Deprecation reason on field <code>Supplement.effectiveDate</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Field <code>end</code> was added to object type <code>Supplement</code></p>
+
+<p>✅  Field <code>start</code> was added to object type <code>Supplement</code></p>
+
+<p>✅  Deprecation reason on field <code>Promotion.expireDate</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Deprecation reason on field <code>Promotion.effectiveDate</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Field <code>end</code> was added to object type <code>Promotion</code></p>
+
+<p>✅  Field <code>start</code> was added to object type <code>Promotion</code></p>
+
+<p>✅  Deprecation reason on field <code>RatePlan.expireDate</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Deprecation reason on field <code>RatePlan.effectiveDate</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Field <code>end</code> was added to object type <code>RatePlan</code></p>
+
+<p>✅  Field <code>start</code> was added to object type <code>RatePlan</code></p>
+
+<p>✅  Deprecation reason on field <code>PriceBreakdown.expireDate</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Deprecation reason on field <code>PriceBreakdown.effectiveDate</code> has changed from `<code>to</code>deprecated from 2018-02-28. Incorrect date format.`</p>
+
+<p>✅  Field <code>end</code> was added to object type <code>PriceBreakdown</code></p>
+
+<p>✅  Field <code>start</code> was added to object type <code>PriceBreakdown</code></p>
+
+<p>✅  Argument <code>codeStartsWith: String</code> added to field <code>GroupData.parents</code></p>
+
+<p>✅  Field <code>template</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Field <code>updateDateRange</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Field <code>updateList</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Field <code>descriptiveInfoLimit</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Field <code>updateDescriptiveInfo</code> was added to object type <code>AccessData</code></p>
+
+<p>✅  Argument <code>codeStartsWith: String</code> added to field <code>AdminQuery.groups</code></p>
+
+<p>✅  Type <code>UpdateGroupAPISInput</code> was added</p>
+
+<p>✅  Type <code>SuitOrganizationInput</code> was added</p>
+
+<h2 id="2019-02-20">2019-02-20</h2>
+
+<p>✅  Field <code>alertsX</code> was added to object type <code>Mutation</code></p>
+
+<p>✅  Field <code>Stats.statsData</code> description changed from <code>GUID
+The data returned by a Stats query.</code> to <code>The data returned by a Stats query.</code></p>
+
+<p>✅  Description <code>Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses.
+You must choose one of them, include or exclude, or the other alternative isn't specified anything.
+If input both, you will receive a validation error that indicates this error.
+@deprecated(reason: &quot;deprecated from 2018-08-20. Please, use filterSearch&quot;)</code> on type <code>FilterInput</code> has changed to <code>Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses.
+ You must choose one of them, include or exclude, or the other alternative isn't specified anything.
+ If input both, you will receive a validation error that indicates this error.
+@deprecated(reason: &quot;deprecated from 2018-08-20. Please, use filterSearch&quot;)</code></p>
+
+<p>✅  Input field <code>HotelSettingsInput.connectUser</code> description changed from <code>This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.
+@deprecated(reason: &quot;deprecated from 2018-03-19. Redundant.&quot;)</code> to <code>This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.
+@deprecated(reason: &quot;deprecated from 2018-03-19. Redundant.&quot;)</code></p>
+
+<p>✅  Description <code>The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.
+In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: &quot;{\&quot;int\&quot;: 1, \&quot;string\&quot;: \&quot;value\&quot;}&quot;.</code> on type <code>JSON</code> has changed to <code>The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.
+In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: &quot;{&quot;int&quot;: 1, &quot;string&quot;: &quot;value&quot;}&quot;.</code></p>
+
+<p>✅  Description <code>The URI type represents a URI values. A good example mith be an Hotel Image URL.
+In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &quot;http:\\www.travelgatex.com&quot;.</code> on type <code>URI</code> has changed to <code>The URI type represents a URI values. A good example mith be an Hotel Image URL.
+In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &quot;http:\www.travelgatex.com&quot;.</code></p>
+
+<p>✅  Description <code>on type `APIData` has changed to</code></p>
+
+<p>✅  Field <code>alertsX</code> was added to object type <code>Query</code></p>
+
+<p>✅  Type <code>unitTime</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateConfigurationInputPeakTraffic</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateConfigurationInputAverageTime</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateConfigurationInputErrorRate</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateConfigurationInputNoTraffic</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateInput</code> was added</p>
+
+<p>✅  Type <code>AlertConfigurationInputPeakTraffic</code> was added</p>
+
+<p>✅  Type <code>AlertConfigurationInputAverageTime</code> was added</p>
+
+<p>✅  Type <code>AlertConfigurationInputErrorRate</code> was added</p>
+
+<p>✅  Type <code>ComercialType</code> was added</p>
+
+<p>✅  Type <code>AlertGroupInput</code> was added</p>
+
+<p>✅  Type <code>AlertObjectInput</code> was added</p>
+
+<p>✅  Type <code>ErrorTypeInput</code> was added</p>
+
+<p>✅  Type <code>ErrorCodeInput</code> was added</p>
+
+<p>✅  Type <code>HubStatusInput</code> was added</p>
+
+<p>✅  Type <code>EmailInput</code> was added</p>
+
+<p>✅  Type <code>AlertConfigurationInputNoTraffic</code> was added</p>
+
+<p>✅  Type <code>AlertInput</code> was added</p>
+
+<p>✅  Type <code>AlertsXMutation</code> was added</p>
+
+<p>✅  Type <code>AlertCriteriaInput</code> was added</p>
+
+<p>✅  Type <code>EventType</code> was added</p>
+
+<p>✅  Type <code>EventData</code> was added</p>
+
+<p>✅  Type <code>Event</code> was added</p>
+
+<p>✅  Type <code>EventEdge</code> was added</p>
+
+<p>✅  Type <code>EventConnection</code> was added</p>
+
+<p>✅  Type <code>AlertFilterInput</code> was added</p>
+
+<p>✅  Type <code>AlertGroups</code> was added</p>
+
+<p>✅  Type <code>AlertObjectsUnion</code> was added</p>
+
+<p>✅  Type <code>ErrorType</code> was added</p>
+
+<p>✅  Type <code>HubStatus</code> was added</p>
+
+<p>✅  Type <code>EmailType</code> was added</p>
+
+<p>✅  Type <code>Email</code> was added</p>
+
+<p>✅  Type <code>AlertTypeConfiguration</code> was added</p>
+
+<p>✅  Type <code>AlertType</code> was added</p>
+
+<p>✅  Type <code>AlertConfiguration</code> was added</p>
+
+<p>✅  Type <code>AlertData</code> was added</p>
+
+<p>✅  Type <code>Alert</code> was added</p>
+
+<p>✅  Type <code>AlertEdge</code> was added</p>
+
+<p>✅  Type <code>AlertConnection</code> was added</p>
+
+<p>✅  Type <code>AlertsXQuery</code> was added</p>
+
 <h2 id="2019-02-11">2019-02-11</h2>
 
 <p>🛑  Type <code>Search</code> was removed</p>
@@ -8540,6 +9075,17 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#2019-05-23">2019-05-23</a></li>
+<li><a href="#2019-05-16">2019-05-16</a></li>
+<li><a href="#2019-05-06">2019-05-06</a></li>
+<li><a href="#2019-05-02">2019-05-02</a></li>
+<li><a href="#2019-04-30">2019-04-30</a></li>
+<li><a href="#2019-04-24">2019-04-24</a></li>
+<li><a href="#2019-04-08">2019-04-08</a></li>
+<li><a href="#2019-03-28">2019-03-28</a></li>
+<li><a href="#2019-03-14">2019-03-14</a></li>
+<li><a href="#2019-03-07">2019-03-07</a></li>
+<li><a href="#2019-02-20">2019-02-20</a></li>
 <li><a href="#2019-02-11">2019-02-11</a></li>
 <li><a href="#2019-02-07">2019-02-07</a></li>
 <li><a href="#2019-01-30">2019-01-30</a></li>
