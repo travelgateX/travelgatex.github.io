@@ -11,16 +11,6 @@
     
     
     <item>
-      <title>AdviseMessage</title>
-      <link>/stats/reference/interfaces/advisemessage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/stats/reference/interfaces/advisemessage/</guid>
-      <description>List of advise messages.
-GraphQL schema definition interface AdviseMessage {  code: ID!    description: String!    level: AdviseMessageLevel!    external: ExternalMessage    correlationID: ID!   Show deprecated fields   type: : String! //     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.</description>
-    </item>
-    
-    <item>
       <title>GroupCommonData</title>
       <link>/stats/reference/interfaces/groupcommondata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -35,7 +25,7 @@ GraphQL schema definition interface AdviseMessage {  code: ID!    description: S
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/interfaces/node/</guid>
-      <description> GraphQL schema definition interface Node {  code: ID!    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!): ID code  createdAt(DateTime!): Date created  updatedAt(DateTime!): Date updated   </description>
+      <description> GraphQL schema definition interface Node {  code: ID!    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   createdAt(DateTime!):   updatedAt(DateTime!):    </description>
     </item>
     
   </channel>

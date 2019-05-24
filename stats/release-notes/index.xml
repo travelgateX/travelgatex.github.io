@@ -11,22 +11,22 @@
     
     
     <item>
-      <title>GraphQL Schema breaking changes</title>
-      <link>/stats/release-notes/breaking-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/stats/release-notes/breaking-changes/</guid>
-      <description> Changes history of deprecated notes previously announced 2019-04-08  Deprecated ratios from StatsData. Reason: Substituted by hits. Finally removed on 2019-07-08 .   2019-04-03  Deprecated cache from OperationDetailed. Reason: Substituted by trafficType. Finally removed on 2019-07-03 .   </description>
-    </item>
-    
-    <item>
       <title>Changelog</title>
       <link>/stats/release-notes/changelog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Stats-X
-2019-05-22  Now stats are available from 01/01/2018. Requests by accessCode are available only from 15/05/2019.   2019-05-14  Fix an error that was causing that accessCode not being stored successfully. Fix an error to show 100 assets per errorCode and per operation.   2019-05-03  Fix an error that was causing that assets of HUB error types were NULL.</description>
+2019-05-22  Now stats are available from 01/01/2018. Requests by accessCode are available only from 15/05/2019.   2019-05-14  Fix an error that was causing accessCode not being stored successfully. Fix an error to show 100 assets per errorCode and per operation.   2019-05-03  Fix an error that was causing that assets of HUB error types were NULL.   2019-05-02  Input field retrieveAssets made optional.</description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/stats/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.</description>
     </item>
     
   </channel>

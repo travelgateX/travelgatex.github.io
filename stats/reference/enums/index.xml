@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/advisemessagelevel/</guid>
-      <description> GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:  List of advise messages.   </description>
+      <description> GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:     </description>
     </item>
     
     <item>
@@ -43,8 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/modetype/</guid>
-      <description> Mode to select which kind of stats do you want query
-GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by StatsFilterInput:  Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)   </description>
+      <description> GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by StatsFilterInput:     </description>
     </item>
     
     <item>
@@ -62,8 +61,7 @@ GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/raterulestype/</guid>
-      <description> Rate Rules
-GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   </description>
+      <description> GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   </description>
     </item>
     
     <item>
@@ -81,8 +79,7 @@ GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/serviceapitype/</guid>
-      <description> Services Api available.
-GraphQL schema definition  enum ServiceApiType{   HOTEL,    TRANSPORTATION,    CAR,    TRANSFERS,    ACTIVITIES,    VIRTUALACCOUNT,    PAYMENT,    PACKAGE,   }   </description>
+      <description> GraphQL schema definition  enum ServiceApiType{   HOTEL,    TRANSPORTATION,    CAR,    TRANSFERS,    ACTIVITIES,    VIRTUALACCOUNT,    PAYMENT,    PACKAGE,   }   </description>
     </item>
     
     <item>
@@ -100,7 +97,7 @@ GraphQL schema definition  enum ServiceApiType{   HOTEL,    TRANSPORTATION,    C
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/statsinfotypes/</guid>
-      <description> GraphQL schema definition  enum StatsInfoTypes{   ALL,    OK,    INTEGRATION,    PROVIDER,    COMMUNICATION,    HUB,    OTHER,   }   Required by StatsInfo:  Details of an specific error   </description>
+      <description> GraphQL schema definition  enum StatsInfoTypes{   ALL,    OK,    INTEGRATION,    PROVIDER,    COMMUNICATION,    HUB,    OTHER,   }   Required by StatsInfo:     </description>
     </item>
     
   </channel>

@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/alertsx/reference/objects/api/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/api/</loc>
   </url>
   
@@ -16,6 +20,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/api/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/apiconnection/</loc>
   </url>
   
   <url>
@@ -35,6 +43,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/apidata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/apidata/</loc>
   </url>
   
@@ -48,6 +60,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/apidata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/apiedge/</loc>
   </url>
   
   <url>
@@ -67,6 +83,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/access/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/access/</loc>
   </url>
   
@@ -80,6 +100,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/access/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/accessconnection/</loc>
   </url>
   
   <url>
@@ -99,6 +123,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/accessdata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/accessdata/</loc>
   </url>
   
@@ -112,6 +140,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/accessdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/accessedge/</loc>
   </url>
   
   <url>
@@ -175,7 +207,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/reference/interfaces/advisemessage/</loc>
+    <loc>/alertsx/reference/objects/advisemessage/</loc>
   </url>
   
   <url>
@@ -183,15 +215,7 @@
   </url>
   
   <url>
-    <loc>/mappea/reference/interfaces/advisemessage/</loc>
-  </url>
-  
-  <url>
     <loc>/mappea/reference/objects/advisemessage/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/interfaces/advisemessage/</loc>
   </url>
   
   <url>
@@ -199,19 +223,15 @@
   </url>
   
   <url>
-    <loc>/stats/reference/interfaces/advisemessage/</loc>
-  </url>
-  
-  <url>
     <loc>/stats/reference/objects/advisemessage/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/interfaces/advisemessage/</loc>
+    <loc>/travelgatex/reference/objects/advisemessage/</loc>
   </url>
   
   <url>
-    <loc>/travelgatex/reference/objects/advisemessage/</loc>
+    <loc>/alertsx/reference/enums/advisemessagelevel/</loc>
   </url>
   
   <url>
@@ -248,6 +268,194 @@
   
   <url>
     <loc>/travelgatex/reference/objects/airportdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/alert/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/alert/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/alertconfiguration/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/alertconfiguration/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertconfigurationinputaveragetime/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertconfigurationinputaveragetime/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertconfigurationinputerrorrate/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertconfigurationinputerrorrate/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertconfigurationinputnotraffic/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertconfigurationinputnotraffic/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertconfigurationinputpeaktraffic/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertconfigurationinputpeaktraffic/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/alertconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/alertconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertcriteriainput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertcriteriainput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/alertdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/alertdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/alertedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/alertedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertfilterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertfilterinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertgroupinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertgroupinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/enums/alertgroups/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/alertgroups/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertobjectinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertobjectinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/enums/alerttype/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/alerttype/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/alerttypeconfiguration/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/alerttypeconfiguration/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertupdateconfigurationinputaveragetime/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertupdateconfigurationinputaveragetime/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertupdateconfigurationinputerrorrate/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertupdateconfigurationinputerrorrate/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertupdateconfigurationinputnotraffic/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertupdateconfigurationinputnotraffic/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertupdateconfigurationinputpeaktraffic/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertupdateconfigurationinputpeaktraffic/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/alertupdateinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/alertupdateinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/alertsxmutation/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/schema/query/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/alertsxquery/</loc>
   </url>
   
   <url>
@@ -380,6 +588,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/bookingroom/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/scalars/boolean/</loc>
   </url>
   
   <url>
@@ -523,6 +735,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/client/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/client/</loc>
   </url>
   
@@ -536,6 +752,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/client/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/clientconnection/</loc>
   </url>
   
   <url>
@@ -555,6 +775,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/clientdata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/clientdata/</loc>
   </url>
   
@@ -568,6 +792,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/clientdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/clientedge/</loc>
   </url>
   
   <url>
@@ -588,6 +816,14 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/clientfilter/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/enums/comercialtype/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/comercialtype/</loc>
   </url>
   
   <url>
@@ -695,6 +931,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/scalars/datetime/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/scalars/datetime/</loc>
   </url>
   
@@ -795,6 +1035,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/domain/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/domain/</loc>
   </url>
   
@@ -811,6 +1055,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/domaindata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/domaindata/</loc>
   </url>
   
@@ -824,6 +1072,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/domaindata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/scalars/domainname/</loc>
   </url>
   
   <url>
@@ -851,6 +1103,30 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/scalars/email/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/scalars/email/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/emailinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/emailinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/enums/emailtype/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/emailtype/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/entitiesinput/</loc>
   </url>
   
@@ -868,6 +1144,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/entityfilter/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/error/</loc>
   </url>
   
   <url>
@@ -895,19 +1175,75 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/inputobjects/errorcodeinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/errorcodeinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/enums/errortype/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/errortype/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/errortypeinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/errortypeinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/event/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/event/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/eventconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/eventconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/eventdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/eventdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/eventedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/objects/eventedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/enums/eventtype/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/eventtype/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/objects/exchange/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/objects/exchange/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/objects/expiredate/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/expiredate/</loc>
   </url>
   
   <url>
@@ -920,6 +1256,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/expiredateinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/externalmessage/</loc>
   </url>
   
   <url>
@@ -1035,11 +1375,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/release-notes/breaking-changes/</loc>
-  </url>
-  
-  <url>
-    <loc>/stats/release-notes/breaking-changes/</loc>
+    <loc>/alertsx/reference/objects/group/</loc>
   </url>
   
   <url>
@@ -1059,6 +1395,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/interfaces/groupcommondata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/interfaces/groupcommondata/</loc>
   </url>
   
@@ -1072,6 +1412,10 @@
   
   <url>
     <loc>/travelgatex/reference/interfaces/groupcommondata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/groupconnection/</loc>
   </url>
   
   <url>
@@ -1091,6 +1435,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/groupdata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/groupdata/</loc>
   </url>
   
@@ -1104,6 +1452,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/groupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/groupedge/</loc>
   </url>
   
   <url>
@@ -1124,6 +1476,10 @@
   
   <url>
     <loc>/travelgatex/reference/inputobjects/groupinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/enums/grouptype/</loc>
   </url>
   
   <url>
@@ -1579,6 +1935,26 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/enums/hubstatus/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/enums/hubstatus/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/hubstatusinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/travelgatex/reference/inputobjects/hubstatusinput/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/scalars/id/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/scalars/id/</loc>
   </url>
   
@@ -1596,6 +1972,10 @@
   
   <url>
     <loc>/travelgatex/reference/scalars/id/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/scalars/int/</loc>
   </url>
   
   <url>
@@ -1631,18 +2011,6 @@
   </url>
   
   <url>
-    <loc>/mappea/reference/scalars/jwt/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/scalars/jwt/</loc>
-  </url>
-  
-  <url>
-    <loc>/stats/reference/scalars/jwt/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/reference/scalars/jwt/</loc>
   </url>
   
@@ -1663,6 +2031,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/managedgroup/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/managedgroup/</loc>
   </url>
   
@@ -1676,6 +2048,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/managedgroup/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/managedgroupconnection/</loc>
   </url>
   
   <url>
@@ -1695,6 +2071,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/managedgroupdata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/managedgroupdata/</loc>
   </url>
   
@@ -1708,6 +2088,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/managedgroupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/managedgroupedge/</loc>
   </url>
   
   <url>
@@ -1835,6 +2219,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/member/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/member/</loc>
   </url>
   
@@ -1848,6 +2236,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/member/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/memberconnection/</loc>
   </url>
   
   <url>
@@ -1867,6 +2259,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/memberdata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/memberdata/</loc>
   </url>
   
@@ -1883,6 +2279,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/memberedge/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/memberedge/</loc>
   </url>
   
@@ -1896,6 +2296,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/memberedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/enums/membertype/</loc>
   </url>
   
   <url>
@@ -1935,6 +2339,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/interfaces/node/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/interfaces/node/</loc>
   </url>
   
@@ -1971,6 +2379,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/operation/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/operation/</loc>
   </url>
   
@@ -1987,6 +2399,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/operationconnection/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/operationconnection/</loc>
   </url>
   
@@ -2000,6 +2416,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/operationconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/operationdata/</loc>
   </url>
   
   <url>
@@ -2027,6 +2447,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/operationedge/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/operationedge/</loc>
   </url>
   
@@ -2043,6 +2467,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/enums/operationtype/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/enums/operationtype/</loc>
   </url>
   
@@ -2056,6 +2484,10 @@
   
   <url>
     <loc>/travelgatex/reference/enums/operationtype/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/organization/</loc>
   </url>
   
   <url>
@@ -2076,6 +2508,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/organizationconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/organizationdata/</loc>
   </url>
   
   <url>
@@ -2147,6 +2583,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/pageinfo/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/objects/pageinfo/</loc>
   </url>
   
@@ -2164,6 +2604,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/pageinfo/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/parameter/</loc>
   </url>
   
   <url>
@@ -2207,19 +2651,7 @@
   </url>
   
   <url>
-    <loc>/paymentx/reference/objects/paymentcard/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/paymentcard/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/inputobjects/paymentcardinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/inputobjects/paymentcardinput/</loc>
   </url>
   
   <url>
@@ -2232,46 +2664,6 @@
   
   <url>
     <loc>/travelgatex/reference/enums/paymenttype/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/objects/paymentxbookinginfo/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/paymentxbookinginfo/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/inputobjects/paymentxbookinginfocriteriainput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfocriteriainput/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/inputobjects/paymentxbookinginfodeleteinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/inputobjects/paymentxbookinginfofilterinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfofilterinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/inputobjects/paymentxbookinginfoinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxbookinginfoinput/</loc>
   </url>
   
   <url>
@@ -2292,14 +2684,6 @@
   
   <url>
     <loc>/travelgatex/reference/objects/paymentxquery/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/inputobjects/paymentxstorecardinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/paymentxstorecardinput/</loc>
   </url>
   
   <url>
@@ -2423,14 +2807,6 @@
   </url>
   
   <url>
-    <loc>/paymentx/reference/inputobjects/pointofsaleinput/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/inputobjects/pointofsaleinput/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/objects/price/</loc>
   </url>
   
@@ -2455,6 +2831,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/product/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/product/</loc>
   </url>
   
@@ -2468,6 +2848,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/product/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/productconnection/</loc>
   </url>
   
   <url>
@@ -2487,6 +2871,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/productdata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/productdata/</loc>
   </url>
   
@@ -2500,6 +2888,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/productdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/productedge/</loc>
   </url>
   
   <url>
@@ -2559,6 +2951,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/provider/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/provider/</loc>
   </url>
   
@@ -2599,6 +2995,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/enums/raterulestype/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/enums/raterulestype/</loc>
   </url>
   
@@ -2635,6 +3035,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/inputobjects/relayinput/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/inputobjects/relayinput/</loc>
   </url>
   
@@ -2648,6 +3052,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/resort/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/resource/</loc>
   </url>
   
   <url>
@@ -2667,6 +3075,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/resourceconnection/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/resourceconnection/</loc>
   </url>
   
@@ -2683,6 +3095,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/resourcedata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/resourcedata/</loc>
   </url>
   
@@ -2696,6 +3112,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/resourcedata/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/resourceedge/</loc>
   </url>
   
   <url>
@@ -2735,6 +3155,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/role/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/role/</loc>
   </url>
   
@@ -2748,6 +3172,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/role/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/roleconnection/</loc>
   </url>
   
   <url>
@@ -2767,6 +3195,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/roledata/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/roledata/</loc>
   </url>
   
@@ -2783,6 +3215,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/roleedge/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/roleedge/</loc>
   </url>
   
@@ -2796,6 +3232,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/roleedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/enums/roletype/</loc>
   </url>
   
   <url>
@@ -2887,6 +3327,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/schema/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/schema/</loc>
   </url>
   
@@ -2936,10 +3380,6 @@
   
   <url>
     <loc>/hotelx/reference/objects/servicestatus/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/objects/servicestatus/</loc>
   </url>
   
   <url>
@@ -2996,14 +3436,6 @@
   
   <url>
     <loc>/travelgatex/reference/objects/stats/</loc>
-  </url>
-  
-  <url>
-    <loc>/stats/reference/objects/statsassert/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/statsassert/</loc>
   </url>
   
   <url>
@@ -3087,35 +3519,7 @@
   </url>
   
   <url>
-    <loc>/paymentx/reference/objects/storedcard/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/storedcard/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/objects/storedcardconnection/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/storedcardconnection/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/objects/storedcarddata/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/storedcarddata/</loc>
-  </url>
-  
-  <url>
-    <loc>/paymentx/reference/objects/storedcardedge/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/objects/storedcardedge/</loc>
+    <loc>/alertsx/reference/scalars/string/</loc>
   </url>
   
   <url>
@@ -3143,6 +3547,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/inputobjects/suitorganizationinput/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/objects/supplement/</loc>
   </url>
   
@@ -3156,6 +3564,10 @@
   
   <url>
     <loc>/travelgatex/reference/enums/supplementtype/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/supplier/</loc>
   </url>
   
   <url>
@@ -3175,6 +3587,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/supplierconnection/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/reference/objects/supplierconnection/</loc>
   </url>
   
@@ -3188,6 +3604,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/supplierconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/supplierdata/</loc>
   </url>
   
   <url>
@@ -3212,6 +3632,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/supplierdetected/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/supplieredge/</loc>
   </url>
   
   <url>
@@ -3255,15 +3679,7 @@
   </url>
   
   <url>
-    <loc>/hotelx/reference/interfaces/text/</loc>
-  </url>
-  
-  <url>
     <loc>/hotelx/reference/objects/text/</loc>
-  </url>
-  
-  <url>
-    <loc>/travelgatex/reference/interfaces/text/</loc>
   </url>
   
   <url>
@@ -3303,6 +3719,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/scalars/uri/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/scalars/uri/</loc>
   </url>
   
@@ -3339,6 +3759,10 @@
   </url>
   
   <url>
+    <loc>/travelgatex/reference/inputobjects/updategroupapisinput/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/reference/inputobjects/updategroupinput/</loc>
   </url>
   
@@ -3368,6 +3792,10 @@
   
   <url>
     <loc>/travelgatex/data-automation/uploading-strategies/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/objects/urls/</loc>
   </url>
   
   <url>
@@ -3420,6 +3848,10 @@
   
   <url>
     <loc>/legacy/docs/activities/data-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/schema/mutation/</loc>
   </url>
   
   <url>
@@ -3535,6 +3967,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/objects/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/objects/</loc>
   </url>
   
@@ -3571,6 +4007,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/reference/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/reference/</loc>
   </url>
   
@@ -3592,6 +4032,10 @@
   
   <url>
     <loc>/paymentx/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>/stats/reference/</loc>
   </url>
   
   <url>
@@ -3695,15 +4139,15 @@
   </url>
   
   <url>
-    <loc>/stats/reference/</loc>
-  </url>
-  
-  <url>
     <loc>/travelgatex/concepts/request-headers/</loc>
   </url>
   
   <url>
     <loc>/hotelx/plugins/safety_margin/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/scalars/</loc>
   </url>
   
   <url>
@@ -3784,6 +4228,10 @@
   
   <url>
     <loc>/insights-x/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/interfaces/</loc>
   </url>
   
   <url>
@@ -3883,6 +4331,10 @@
   </url>
   
   <url>
+    <loc>/alertsx/release-notes/breaking-changes/</loc>
+  </url>
+  
+  <url>
     <loc>/hotelx/release-notes/breaking-changes/</loc>
   </url>
   
@@ -3895,11 +4347,19 @@
   </url>
   
   <url>
+    <loc>/stats/release-notes/breaking-changes/</loc>
+  </url>
+  
+  <url>
     <loc>/travelgatex/release-notes/breaking-changes/</loc>
   </url>
   
   <url>
     <loc>/hotelx/plugins/format-files/group/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/inputobjects/</loc>
   </url>
   
   <url>
@@ -3968,6 +4428,10 @@
   
   <url>
     <loc>/hotelx/plugins/format-files/entity_table/</loc>
+  </url>
+  
+  <url>
+    <loc>/alertsx/reference/enums/</loc>
   </url>
   
   <url>

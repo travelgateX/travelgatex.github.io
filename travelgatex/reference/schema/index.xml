@@ -16,8 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/schema/query/</guid>
-      <description>The query root of TravelgateX&amp;rsquo;s GraphQL interface.
-GraphQL schema definition type Query {  admin: AdminQuery    hotelX: HotelXQuery    mappea: MappeaQuery    paymentX: PaymentXQuery    stats: StatsQuery   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields admin(AdminQuery): The admin query root of TravelgateX&amp;#39;s for implementing GraphQL query.</description>
+      <description> GraphQL schema definition type Query {  admin: AdminQuery    hotelX: HotelXQuery    mappea: MappeaQuery    paymentX: PaymentXQuery    stats: StatsQuery    alertsX: AlertsXQuery   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields admin(AdminQuery):   hotelX(HotelXQuery):   mappea(MappeaQuery):   paymentX(PaymentXQuery):   stats(StatsQuery):   alertsX(AlertsXQuery):    </description>
     </item>
     
     <item>
@@ -26,8 +25,7 @@ GraphQL schema definition type Query {  admin: AdminQuery    hotelX: HotelXQuery
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/schema/mutation/</guid>
-      <description>The root query for implementing GraphQL mutations. Mutations are operations that change or update data on the server
-GraphQL schema definition type Mutation {  admin: AdminMutation    hotelX: HotelXMutation    mappea: MappeaMutation    paymentX: PaymentXMutation   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.</description>
+      <description> GraphQL schema definition type Mutation {  admin: AdminMutation    hotelX: HotelXMutation    mappea: MappeaMutation    paymentX: PaymentXMutation    alertsX: AlertsXMutation   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields admin(AdminMutation):   hotelX(HotelXMutation):   mappea(MappeaMutation):   paymentX(PaymentXMutation):   alertsX(AlertsXMutation):    </description>
     </item>
     
   </channel>
