@@ -17,7 +17,7 @@
       
       <guid>/mappea/reference/scalars/boolean/</guid>
       <description> The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by SupplierData:    Provider:    PageInfo:    AccessData:    OrganizationData:    GroupCommonData:    MemberData:    RoleData:    ResourceData:    APIData:    ClientData:    GroupData:     </description>
+GraphQL schema definition scalar Boolean   Required by SupplierData:    Provider:    ClientFilter:    PageInfo:    AccessData:    OrganizationData:    GroupCommonData:    MemberData:    RoleData:    ResourceData:    APIData:    GroupData:    ClientData:    SupplierFilter:     </description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierData:    Provider
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/scalars/datetime/</guid>
-      <description> GraphQL schema definition scalar DateTime   Required by Supplier:    Node:    Organization:    Access:    Member:    Domain:    Role:    Resource:    API:    Operation:    Product:    Client:    Group:    ManagedGroup:     </description>
+      <description> GraphQL schema definition scalar DateTime   Required by Supplier:    Node:    Organization:    Access:    Member:    Domain:    Role:    Resource:    API:    Operation:    Product:    Group:    ManagedGroup:    Client:     </description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierData:    Provider
       
       <guid>/mappea/reference/scalars/id/</guid>
       <description> The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar ID   Required by MappeaMapSupplierInput:    MappeaSupplierConfirmedInput:    SupplierDetected:    Supplier:    SupplierData:    Node:    Provider:    Organization:    Access:    AccessData:    Parameter:    OrganizationData:    AdviseMessage:    Member:    Domain:    GroupCommonData:    MemberData:    Role:    RoleData:    Resource:    ResourceData:    API:    APIData:    Operation:    OperationData:    Product:    ProductData:    Client:    ClientData:    Group:    GroupData:    ManagedGroup:    ManagedGroupData:    DomainData:     </description>
+GraphQL schema definition scalar ID   Required by MappeaMapSupplierInput:    MappeaSupplierConfirmedInput:    SupplierDetected:    Supplier:    SupplierData:    Node:    Provider:    AccessFilter:    Organization:    ClientFilter:    Access:    AccessData:    Parameter:    OrganizationData:    AdviseMessage:    Member:    Domain:    GroupCommonData:    MemberData:    Role:    RoleData:    Resource:    ResourceData:    API:    APIData:    Operation:    OperationData:    Product:    ProductData:    DomainData:    Group:    GroupData:    ManagedGroup:    ManagedGroupData:    Client:    ClientData:    SupplierFilter:     </description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ GraphQL schema definition scalar ID   Required by MappeaMapSupplierInput:    Map
       
       <guid>/mappea/reference/scalars/int/</guid>
       <description> The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   Required by File:    GetMappeaStatsData:    MappeaConfirmUploadInput:    MappeaMapSupplierInput:    UploadFileData:    SupplierDetected:    SupplierData:    AccessData:    GroupData:     </description>
+GraphQL schema definition scalar Int   Required by File:    GetMappeaStatsData:    MappeaConfirmUploadInput:    MappeaMapSupplierInput:    UploadFileData:    SupplierDetected:    SupplierData:    AccessData:    GroupData:    SupplierFilter:     </description>
     </item>
     
     <item>
@@ -65,7 +65,7 @@ GraphQL schema definition scalar Int   Required by File:    GetMappeaStatsData: 
       
       <guid>/mappea/reference/scalars/string/</guid>
       <description> The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar String   Required by MappeaGetMappeaStatsInput:    Error:    Warning:    File:    GetMappeaStatsData:    MappeaUploadFileInput:    UploadFileData:    SupplierData:    Provider:    AccessEdge:    PageInfo:    AccessData:    Parameter:    OrganizationData:    AdviseMessage:    GroupCommonData:    MemberData:    RoleEdge:    RoleData:    ResourceEdge:    ResourceData:    MemberEdge:    APIEdge:    APIData:    OperationEdge:    OperationData:    ProductEdge:    ProductData:    SupplierEdge:    ClientEdge:    GroupData:    ManagedGroupEdge:    ExternalMessage:    GroupEdge:     </description>
+GraphQL schema definition scalar String   Required by MappeaGetMappeaStatsInput:    Error:    Warning:    File:    GetMappeaStatsData:    MappeaUploadFileInput:    UploadFileData:    SupplierData:    Provider:    AccessEdge:    PageInfo:    AccessData:    Parameter:    OrganizationData:    AdviseMessage:    GroupCommonData:    MemberData:    RoleEdge:    RoleData:    ResourceEdge:    ResourceData:    MemberEdge:    APIEdge:    APIData:    OperationEdge:    OperationData:    ProductEdge:    ProductData:    SupplierEdge:    ExternalMessage:    GroupEdge:    GroupData:    ManagedGroupEdge:    ClientEdge:     </description>
     </item>
     
     <item>

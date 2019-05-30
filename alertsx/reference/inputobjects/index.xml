@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>AccessFilter</title>
+      <link>/alertsx/reference/inputobjects/accessfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/reference/inputobjects/accessfilter/</guid>
+      <description> GraphQL schema definition type AccessFilter {  accessID: [ID]    group: [ID]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields accessID([ID]):   group([ID]):   owner([ID!]):    </description>
+    </item>
+    
+    <item>
       <title>AlertConfigurationInputAverageTime</title>
       <link>/alertsx/reference/inputobjects/alertconfigurationinputaveragetime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -55,7 +64,7 @@ GraphQL schema definition type AlertConfigurationInputPeakTraffic {  historicalW
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alertsx/reference/inputobjects/alertcriteriainput/</guid>
-      <description> GraphQL schema definition type AlertCriteriaInput {  alertCodes: [ID!]    isActive: Boolean   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields alertCodes([ID!]):   isActive(Boolean):    </description>
+      <description> GraphQL schema definition type AlertCriteriaInput {  alertCodes: [ID!]    isActive: Boolean    groups: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields alertCodes([ID!]):   isActive(Boolean):   groups([ID!]):    </description>
     </item>
     
     <item>
@@ -73,7 +82,7 @@ GraphQL schema definition type AlertConfigurationInputPeakTraffic {  historicalW
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alertsx/reference/inputobjects/alertgroupinput/</guid>
-      <description> GraphQL schema definition type AlertGroupInput {  code: ID!    type: GroupType!    comercialType: ComercialType!    isInclusive: Boolean!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   type(GroupType!):   comercialType(ComercialType!):   isInclusive(Boolean!):    </description>
+      <description> GraphQL schema definition type AlertGroupInput {  code: ID!    comercialType: ComercialType!    isInclusive: Boolean!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   comercialType(ComercialType!):   isInclusive(Boolean!):    </description>
     </item>
     
     <item>
@@ -83,7 +92,7 @@ GraphQL schema definition type AlertConfigurationInputPeakTraffic {  historicalW
       
       <guid>/alertsx/reference/inputobjects/alertinput/</guid>
       <description>Alert information. Only one configuration has to be set at once.
-GraphQL schema definition type AlertInput {  name: String    description: String    configurationNoTraffic: AlertConfigurationInputNoTraffic    configurationErrorRate: AlertConfigurationInputErrorRate    configurationAverageTime: AlertConfigurationInputAverageTime    configurationPeakTraffic: AlertConfigurationInputPeakTraffic    isActive: Boolean!    editor: Email!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.</description>
+GraphQL schema definition type AlertInput {  name: String    description: String    configurationNoTraffic: AlertConfigurationInputNoTraffic    configurationErrorRate: AlertConfigurationInputErrorRate    configurationAverageTime: AlertConfigurationInputAverageTime    configurationPeakTraffic: AlertConfigurationInputPeakTraffic    isActive: Boolean!    group: ID!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.</description>
     </item>
     
     <item>
@@ -140,7 +149,16 @@ GraphQL schema definition type AlertUpdateConfigurationInputPeakTraffic {  histo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alertsx/reference/inputobjects/alertupdateinput/</guid>
-      <description>GraphQL schema definition type AlertUpdateInput {  name: String    description: String    configurationNoTraffic: AlertUpdateConfigurationInputNoTraffic    configurationErrorRate: AlertUpdateConfigurationInputErrorRate    configurationAverageTime: AlertUpdateConfigurationInputAverageTime    configurationPeakTraffic: AlertUpdateConfigurationInputPeakTraffic    isActive: Boolean    editor: ID!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
+      <description>GraphQL schema definition type AlertUpdateInput {  name: String    description: String    configurationNoTraffic: AlertUpdateConfigurationInputNoTraffic    configurationErrorRate: AlertUpdateConfigurationInputErrorRate    configurationAverageTime: AlertUpdateConfigurationInputAverageTime    configurationPeakTraffic: AlertUpdateConfigurationInputPeakTraffic    isActive: Boolean   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.</description>
+    </item>
+    
+    <item>
+      <title>ClientFilter</title>
+      <link>/alertsx/reference/inputobjects/clientfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/reference/inputobjects/clientfilter/</guid>
+      <description>GraphQL schema definition type ClientFilter {  clientID: [ID]    name: [String!]    groupID: [ID]    isActive: Boolean    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields clientID([ID]):   name([String!]):   groupID([ID]):   isActive(Boolean):   owner([ID!</description>
     </item>
     
     <item>
@@ -186,6 +204,15 @@ GraphQL schema definition type AlertUpdateConfigurationInputPeakTraffic {  histo
       
       <guid>/alertsx/reference/inputobjects/relayinput/</guid>
       <description> GraphQL schema definition type RelayInput {  first: Int    last: Int    before: String    after: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields first(Int):   last(Int):   before(String):   after(String):    </description>
+    </item>
+    
+    <item>
+      <title>SupplierFilter</title>
+      <link>/alertsx/reference/inputobjects/supplierfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/reference/inputobjects/supplierfilter/</guid>
+      <description>GraphQL schema definition type SupplierFilter {  supplierID: [ID]    accessID: [ID]    groupID: [ID]    isActive: Boolean    serviceAPI: [Int]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields supplierID([ID]):   accessID([ID]):   groupID([ID]):   isActive(Boolean):   serviceAPI([Int]):   owner([ID!</description>
     </item>
     
   </channel>

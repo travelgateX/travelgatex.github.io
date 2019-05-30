@@ -124,7 +124,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/enums/destinationtype/</guid>
-      <description> GraphQL schema definition  enum DestinationType{   ZONE,    CITY,    COUNTRY,   }   Required by DestinationData:    GeonameData:     </description>
+      <description> GraphQL schema definition  enum DestinationType{   ZONE,    CITY,    COUNTRY,   }   Required by DestinationData:     </description>
     </item>
     
     <item>
@@ -169,7 +169,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/enums/grouptype/</guid>
-      <description> GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by OrganizationData:    GroupCommonData:    GroupData:    AlertGroupInput:     </description>
+      <description> GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by OrganizationData:    GroupCommonData:    GroupData:     </description>
     </item>
     
     <item>
@@ -178,7 +178,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/enums/grouptypeinput/</guid>
-      <description> GraphQL schema definition  enum GroupTypeInput{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by CreateGroupInput:     </description>
+      <description> GraphQL schema definition  enum GroupTypeInput{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by CreateGroupInput:    UpdateGroupInput:     </description>
     </item>
     
     <item>
@@ -215,15 +215,6 @@
       
       <guid>/travelgatex/reference/enums/metadatatype/</guid>
       <description> GraphQL schema definition  enum MetadataType{   STRING,    NUMERIC,    BOOLEAN,    XML,    URI,   }   Required by HotelRuntimeParameter:     </description>
-    </item>
-    
-    <item>
-      <title>Method</title>
-      <link>/travelgatex/reference/enums/method/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/enums/method/</guid>
-      <description> GraphQL schema definition  enum Method{   ADD,    DEL,   }   Required by UpdateMemberInput:     </description>
     </item>
     
     <item>
@@ -368,6 +359,15 @@
       
       <guid>/travelgatex/reference/enums/template/</guid>
       <description> GraphQL schema definition  enum Template{   FOLDER_DEFAULT,   }   Required by CreateGroupInput:     </description>
+    </item>
+    
+    <item>
+      <title>TrafficType</title>
+      <link>/travelgatex/reference/enums/traffictype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/enums/traffictype/</guid>
+      <description> GraphQL schema definition  enum TrafficType{   BASIC,    SPEED,    OPTIMIZED,   }   Required by OperationDetailed:     </description>
     </item>
     
     <item>

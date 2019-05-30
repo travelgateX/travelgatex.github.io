@@ -100,5 +100,14 @@
       <description> GraphQL schema definition  enum StatsInfoTypes{   ALL,    OK,    INTEGRATION,    PROVIDER,    COMMUNICATION,    HUB,    OTHER,   }   Required by StatsInfo:     </description>
     </item>
     
+    <item>
+      <title>TrafficType</title>
+      <link>/stats/reference/enums/traffictype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/enums/traffictype/</guid>
+      <description> GraphQL schema definition  enum TrafficType{   BASIC,    SPEED,    OPTIMIZED,   }   Required by OperationDetailed:     </description>
+    </item>
+    
   </channel>
 </rss>

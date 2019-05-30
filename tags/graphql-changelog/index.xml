@@ -29,9 +29,8 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2019-05-23 🛑 Input field AlertUpdateConfigurationInputPeakTraffic.group changed type from AlertGroupInput to [AlertGroupInput!]
-🛑 Input field AlertUpdateConfigurationInputAverageTime.group changed type from AlertGroupInput to [AlertGroupInput!]
-🛑 Input field AlertUpdateConfigurationInputErrorRate.group changed type from AlertGroupInput to [AlertGroupInput!</description>
+2019-05-30 ✅ Description
+Configuration for AVERAGE_TIME. Average time is used to verify requests times. There are 3 options: - OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame.</description>
     </item>
     
   </channel>

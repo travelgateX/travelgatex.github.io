@@ -17,7 +17,7 @@
       
       <guid>/paymentx/reference/scalars/boolean/</guid>
       <description> The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:    GroupCommonData:    MemberData:    APIData:    ResourceData:    RoleData:    AccessData:    SupplierData:    Provider:    OrganizationData:    ClientData:     </description>
+GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:    GroupCommonData:    MemberData:    APIData:    ResourceData:    RoleData:    AccessData:    SupplierData:    Provider:    ClientFilter:    OrganizationData:    ClientData:    SupplierFilter:     </description>
     </item>
     
     <item>
@@ -72,7 +72,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       
       <guid>/paymentx/reference/scalars/id/</guid>
       <description> The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar ID   Required by AdviseMessage:    PaymentXStoredCardIDInput:    PaymentXStoredCard:    Node:    Group:    PointOfSale:    GroupData:    Member:    GroupCommonData:    MemberData:    API:    APIData:    Resource:    ResourceData:    Operation:    OperationData:    ManagedGroup:    ManagedGroupData:    Role:    RoleData:    Access:    AccessData:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    OrganizationData:    Domain:    Product:    ProductData:    DomainData:    Client:    ClientData:    PointOfSaleData:    PaymentXStoredCardInput:     </description>
+GraphQL schema definition scalar ID   Required by AdviseMessage:    PaymentXStoredCardIDInput:    PaymentXStoredCard:    Node:    Group:    PointOfSale:    GroupData:    Member:    GroupCommonData:    MemberData:    API:    APIData:    Resource:    ResourceData:    Operation:    OperationData:    ManagedGroup:    ManagedGroupData:    Role:    RoleData:    Access:    AccessData:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    AccessFilter:    ClientFilter:    OrganizationData:    Domain:    Product:    ProductData:    DomainData:    Client:    ClientData:    SupplierFilter:    PointOfSaleData:    PaymentXStoredCardInput:     </description>
     </item>
     
     <item>
@@ -82,7 +82,7 @@ GraphQL schema definition scalar ID   Required by AdviseMessage:    PaymentXStor
       
       <guid>/paymentx/reference/scalars/int/</guid>
       <description> The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   Required by PaymentXExpireDate:    GroupData:    AccessData:    SupplierData:    ExpireDateInput:     </description>
+GraphQL schema definition scalar Int   Required by PaymentXExpireDate:    GroupData:    AccessData:    SupplierData:    SupplierFilter:    ExpireDateInput:     </description>
     </item>
     
     <item>

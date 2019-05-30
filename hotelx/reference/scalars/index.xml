@@ -17,7 +17,7 @@
       
       <guid>/hotelx/reference/scalars/boolean/</guid>
       <description> The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by HotelSettingsInput:    PageInfo:    HotelData:    DestinationData:    SettingsBaseInput:    Room:    Price:    Supplement:    Surcharge:    CancelPolicy:    Bed:    Markup:    Priceable:    HotelRuntimeParameter:    HotelXUpdateStatusData:    DeltaPriceInput:     </description>
+GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:    HotelSettingsInput:    PageInfo:    HotelData:    DestinationData:    SettingsBaseInput:    Room:    Price:    Supplement:    Surcharge:    CancelPolicy:    Bed:    Markup:    Priceable:    PriceChange:    HotelRuntimeParameter:    HotelXUpdateStatusData:    DeltaPriceInput:     </description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@ GraphQL schema definition scalar Boolean   Required by HotelSettingsInput:    Pa
       
       <guid>/hotelx/reference/scalars/float/</guid>
       <description> The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.
-GraphQL schema definition scalar Float   Required by Coordinates:    AuditData:    Stat:    Price:    Exchange:    Markup:    Priceable:    Rule:    CancelPenalty:    DeltaPriceInput:     </description>
+GraphQL schema definition scalar Float   Required by Coordinates:    AuditData:    Stat:    Price:    Exchange:    Markup:    Priceable:    Rule:    CancelPenalty:    PriceChange:    DeltaPriceInput:     </description>
     </item>
     
     <item>
@@ -111,7 +111,7 @@ GraphQL schema definition scalar Int   Required by RelayInput:    HotelXHotelLis
       
       <guid>/hotelx/reference/scalars/string/</guid>
       <description> The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar String   Required by ServiceStatus:    RelayInput:    HotelConnection:    RoomConnection:    DestinationConnection:    HotelXDestinationSearcherInput:    HotelCriteriaSearchInput:    HotelSettingsInput:    HotelSearch:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    AdviseMessage:    HotelXDefaultPluginStep:    HotelXDefaultPlugin:    HotelXParameter:    ExternalMessage:    BoardEdge:    PageInfo:    BoardData:    Error:    Text:    CategoryEdge:    CategoryData:    HotelEdge:    HotelData:    Property:    Location:    Contact:    Amenity:    Media:    DestinationData:    AirportData:    GeonameData:    RoomEdge:    RoomData:    DestinationEdge:    HotelXSupplierInput:    ConfigurationInput:    ParameterInput:    PluginsInput:    HotelXFilterPluginTypeInput:    StatsRequest:    CriteriaSearch:    HotelOptionSearch:    Warning:    StatPlugin:    StatAccess:    StatTransaction:    Transactions:    Room:    Supplement:    Surcharge:    BookableOptionSearch:    Bed:    RatePlan:    Promotion:    Markup:    Rule:    Resort:    AddOn:    HotelOptionQuote:    CriteriaBookingReferencesInput:    BookReferenceInput:    HotelBookingDetail:    Reference:    Holder:    BookingHotel:    BookingRoom:    MappingContext:    MappingEntity:    Map:    HotelRuntimeParameter:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:    HotelXDefaultPluginInput:    PaymentCardInput:    HolderInput:    BookPaxInput:    HotelCancelDetail:    HotelXMutation:     </description>
+GraphQL schema definition scalar String   Required by ServiceStatus:    RelayInput:    HotelConnection:    RoomConnection:    DestinationConnection:    HotelXDestinationSearcherInput:    HotelCriteriaSearchInput:    HotelSettingsInput:    HotelSearch:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    AdviseMessage:    HotelXDefaultPluginStep:    HotelXDefaultPlugin:    HotelXParameter:    ExternalMessage:    BoardEdge:    PageInfo:    BoardData:    Error:    Text:    CategoryEdge:    CategoryData:    HotelEdge:    HotelData:    Property:    Location:    Contact:    Amenity:    Media:    DestinationData:    AirportData:    GeonameData:    RoomEdge:    RoomData:    DestinationEdge:    HotelXSupplierInput:    ConfigurationInput:    ParameterInput:    PluginsInput:    HotelXFilterPluginTypeInput:    StatsRequest:    CriteriaSearch:    HotelOptionSearch:    Warning:    StatPlugin:    StatAccess:    StatTransaction:    Transactions:    Room:    Supplement:    Surcharge:    BookableOptionSearch:    Bed:    RatePlan:    Promotion:    Markup:    Rule:    Resort:    AddOn:    HotelOptionQuote:    PriceChange:    CriteriaBookingReferencesInput:    BookReferenceInput:    HotelBookingDetail:    Reference:    Holder:    BookingHotel:    BookingRoom:    MappingContext:    MappingEntity:    Map:    HotelRuntimeParameter:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:    HotelXDefaultPluginInput:    PaymentCardInput:    HolderInput:    BookPaxInput:    HotelCancelDetail:    HotelXMutation:     </description>
     </item>
     
     <item>
