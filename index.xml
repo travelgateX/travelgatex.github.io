@@ -4591,7 +4591,7 @@ GraphQL schema definition scalar Int   Required by PaymentXExpireDate:    GroupD
       
       <guid>/stats/reference/scalars/int/</guid>
       <description> The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   Required by StatsData:    Ratios:    OperationDetailed:    AccessData:    SupplierData:    GroupData:    SupplierFilter:    StatsInfo:    StatsAsset:     </description>
+GraphQL schema definition scalar Int   Required by Ratios:    AccessData:    SupplierData:    GroupData:    SupplierFilter:    StatsInfo:    StatsAsset:     </description>
     </item>
     
     <item>
@@ -4601,7 +4601,25 @@ GraphQL schema definition scalar Int   Required by StatsData:    Ratios:    Oper
       
       <guid>/travelgatex/reference/scalars/int/</guid>
       <description>The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData:    SupplierData:    GroupData:    ServiceOperation:    RelayInput:    HotelXHotelListInput:    HotelConnection:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    Timeout:    BusinessRules:    PaxInput:    BusinessRulesInput:    SettingsBaseInput:    StatsRequest:    StatAccess:    Pax:    Occupancy:    Room:    Supplement:    Bed:    CancelPenalty:    BookingRoom:    File:    GetMappeaStatsData:    PaymentXExpireDate:    StatsData:    Ratios:    OperationDetailed:    StatsInfo:    StatsAsset:    AlertConnection:  Alert list  AlertConfiguration:    EventConnection:  Events list  AlertTypeConfiguration:  Depending on the talert type, typeConfiguration will use some fields   AccessInput:    TimeoutInput:    HotelXBusinessRulesInput:    BookRoomInput:    ExpireDateInput:    BookPaxInput:    MappeaConfirmUploadInput:    MappeaMapSupplierInput:    UploadFileData:    SupplierDetected:    AlertConfigurationInputNoTraffic:  Configuration for NO_TRAFFIC alert type.</description>
+GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData:    SupplierData:    GroupData:    ServiceOperation:    RelayInput:    HotelXHotelListInput:    HotelConnection:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    Timeout:    BusinessRules:    PaxInput:    BusinessRulesInput:    SettingsBaseInput:    StatsRequest:    StatAccess:    Pax:    Occupancy:    Room:    Supplement:    Bed:    CancelPenalty:    BookingRoom:    File:    GetMappeaStatsData:    PaymentXExpireDate:    Ratios:    StatsInfo:    StatsAsset:    AlertConnection:  Alert list  AlertConfiguration:    EventConnection:  Events list  AlertTypeConfiguration:  Depending on the talert type, typeConfiguration will use some fields   AccessInput:    TimeoutInput:    HotelXBusinessRulesInput:    BookRoomInput:    ExpireDateInput:    BookPaxInput:    MappeaConfirmUploadInput:    MappeaMapSupplierInput:    UploadFileData:    SupplierDetected:    AlertConfigurationInputNoTraffic:  Configuration for NO_TRAFFIC alert type.</description>
+    </item>
+    
+    <item>
+      <title>Int64</title>
+      <link>/stats/reference/scalars/int64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/reference/scalars/int64/</guid>
+      <description> GraphQL schema definition scalar Int64   Required by StatsData:    OperationDetailed:    StatsInfo:     </description>
+    </item>
+    
+    <item>
+      <title>Int64</title>
+      <link>/travelgatex/reference/scalars/int64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/reference/scalars/int64/</guid>
+      <description> GraphQL schema definition scalar Int64   Required by StatsData:    OperationDetailed:    StatsInfo:     </description>
     </item>
     
     <item>
@@ -5591,7 +5609,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/operationdetailed/</guid>
-      <description>GraphQL schema definition type OperationDetailed {  operation: Operation!    totalHits: Int!    detailedHits( type: [StatsInfoTypes!], code: [Int!], ): [StatsInfo!]    trafficType: TrafficType!   Show deprecated fields   cache: : Boolean! // deprecated from 2019-04-03 Added new field trafficType.     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
+      <description>GraphQL schema definition type OperationDetailed {  operation: Operation!    totalHits: Int64!    detailedHits( type: [StatsInfoTypes!], code: [Int!], ): [StatsInfo!]    trafficType: TrafficType!   Show deprecated fields   cache: : Boolean! // deprecated from 2019-04-03 Added new field trafficType.     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
     </item>
     
     <item>
@@ -5600,7 +5618,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/operationdetailed/</guid>
-      <description>GraphQL schema definition type OperationDetailed {  operation: Operation!    totalHits: Int!    detailedHits( type: [StatsInfoTypes!], code: [Int!], ): [StatsInfo!]    trafficType: TrafficType!   Show deprecated fields   cache: : Boolean! // deprecated from 2019-04-03 Added new field trafficType.     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
+      <description>GraphQL schema definition type OperationDetailed {  operation: Operation!    totalHits: Int64!    detailedHits( type: [StatsInfoTypes!], code: [Int!], ): [StatsInfo!]    trafficType: TrafficType!   Show deprecated fields   cache: : Boolean! // deprecated from 2019-04-03 Added new field trafficType.     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
     </item>
     
     <item>
@@ -7856,7 +7874,7 @@ There are two kind of settings, overridable and partially overridable. You can f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/statsdata/</guid>
-      <description>GraphQL schema definition type StatsData {  access: Access!    client: Client!    from: DateTime!    to: DateTime!    operations( type: [ServiceOperationType!], ): [OperationDetailed!]    hits(    trafficType: TrafficType!,     statusType: StatsInfoTypes!,     operationType: OperationType!,     ): Int!   Show deprecated fields   ratios( trafficType: TrafficType!, ): Ratios!</description>
+      <description>GraphQL schema definition type StatsData {  access: Access!    client: Client!    from: DateTime!    to: DateTime!    operations( type: [ServiceOperationType!], ): [OperationDetailed!]    hits(    trafficType: TrafficType!,     statusType: StatsInfoTypes!,     operationType: OperationType!,     ): Int64!   Show deprecated fields   ratios( trafficType: TrafficType!, ): Ratios!</description>
     </item>
     
     <item>
@@ -7865,7 +7883,7 @@ There are two kind of settings, overridable and partially overridable. You can f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/statsdata/</guid>
-      <description>GraphQL schema definition type StatsData {  access: Access!    client: Client!    from: DateTime!    to: DateTime!    operations( type: [ServiceOperationType!], ): [OperationDetailed!]    hits(    trafficType: TrafficType!,     statusType: StatsInfoTypes!,     operationType: OperationType!,     ): Int!   Show deprecated fields   ratios( trafficType: TrafficType!, ): Ratios!</description>
+      <description>GraphQL schema definition type StatsData {  access: Access!    client: Client!    from: DateTime!    to: DateTime!    operations( type: [ServiceOperationType!], ): [OperationDetailed!]    hits(    trafficType: TrafficType!,     statusType: StatsInfoTypes!,     operationType: OperationType!,     ): Int64!   Show deprecated fields   ratios( trafficType: TrafficType!, ): Ratios!</description>
     </item>
     
     <item>
@@ -7910,7 +7928,7 @@ There are two kind of settings, overridable and partially overridable. You can f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/statsinfo/</guid>
-      <description>GraphQL schema definition type StatsInfo {  code: ID!    type: StatsInfoTypes!    hits: Int!    time: Int!    assets: [StatsAsset!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   type(StatsInfoTypes!):   hits(Int!</description>
+      <description>GraphQL schema definition type StatsInfo {  code: ID!    type: StatsInfoTypes!    hits: Int64!    time: Int!    assets: [StatsAsset!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   type(StatsInfoTypes!):   hits(Int64!</description>
     </item>
     
     <item>
@@ -7919,7 +7937,7 @@ There are two kind of settings, overridable and partially overridable. You can f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/statsinfo/</guid>
-      <description>GraphQL schema definition type StatsInfo {  code: ID!    type: StatsInfoTypes!    hits: Int!    time: Int!    assets: [StatsAsset!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   type(StatsInfoTypes!):   hits(Int!</description>
+      <description>GraphQL schema definition type StatsInfo {  code: ID!    type: StatsInfoTypes!    hits: Int64!    time: Int!    assets: [StatsAsset!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   type(StatsInfoTypes!):   hits(Int64!</description>
     </item>
     
     <item>
@@ -8884,7 +8902,8 @@ All notable changes in our platform will be documented on this page. 2019-05-27 
       
       <guid>/travelgatex/release-notes/changelog/</guid>
       <description>To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-All notable changes on TravelgateX platform will be documented in this page. 2019-05-30  GraphQL Schema updated.   2019-05-23  GraphQL Schema updated. Accesses, Clients and Suppliers querys chagend to the new entitiesx client    flow cascade permissions code field from accessData to match with query response    CatalogAdviseMessage to extern schema   2019-05-16  GraphQL Schema updated.</description>
+All notable changes on TravelgateX platform will be documented in this page. 2019-06-03  GraphQL Schema updated.    stats gateway  
+2019-05-30  GraphQL Schema updated.   2019-05-23  GraphQL Schema updated. Accesses, Clients and Suppliers querys chagend to the new entitiesx client    flow cascade permissions code field from accessData to match with query response    CatalogAdviseMessage to extern schema   2019-05-16  GraphQL Schema updated.</description>
     </item>
     
     <item>
@@ -9225,8 +9244,7 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2019-05-30 ✅ Description
-Configuration for AVERAGE_TIME. Average time is used to verify requests times. There are 3 options: - OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame.</description>
+2019-05-30 🛑 Field StatsInfo.hits changed type from Int! to Int64! 🛑 Field OperationDetailed.totalHits changed type from Int! to Int64! 🛑 Field StatsData.hits changed type from Int! to Int64!</description>
     </item>
     
     <item>

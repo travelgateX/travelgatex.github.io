@@ -304,7 +304,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/operationdetailed/</guid>
-      <description>GraphQL schema definition type OperationDetailed {  operation: Operation!    totalHits: Int!    detailedHits( type: [StatsInfoTypes!], code: [Int!], ): [StatsInfo!]    trafficType: TrafficType!   Show deprecated fields   cache: : Boolean! // deprecated from 2019-04-03 Added new field trafficType.     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
+      <description>GraphQL schema definition type OperationDetailed {  operation: Operation!    totalHits: Int64!    detailedHits( type: [StatsInfoTypes!], code: [Int!], ): [StatsInfo!]    trafficType: TrafficType!   Show deprecated fields   cache: : Boolean! // deprecated from 2019-04-03 Added new field trafficType.     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
     </item>
     
     <item>
@@ -511,7 +511,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/statsdata/</guid>
-      <description>GraphQL schema definition type StatsData {  access: Access!    client: Client!    from: DateTime!    to: DateTime!    operations( type: [ServiceOperationType!], ): [OperationDetailed!]    hits(    trafficType: TrafficType!,     statusType: StatsInfoTypes!,     operationType: OperationType!,     ): Int!   Show deprecated fields   ratios( trafficType: TrafficType!, ): Ratios!</description>
+      <description>GraphQL schema definition type StatsData {  access: Access!    client: Client!    from: DateTime!    to: DateTime!    operations( type: [ServiceOperationType!], ): [OperationDetailed!]    hits(    trafficType: TrafficType!,     statusType: StatsInfoTypes!,     operationType: OperationType!,     ): Int64!   Show deprecated fields   ratios( trafficType: TrafficType!, ): Ratios!</description>
     </item>
     
     <item>
@@ -529,7 +529,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/objects/statsinfo/</guid>
-      <description>GraphQL schema definition type StatsInfo {  code: ID!    type: StatsInfoTypes!    hits: Int!    time: Int!    assets: [StatsAsset!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   type(StatsInfoTypes!):   hits(Int!</description>
+      <description>GraphQL schema definition type StatsInfo {  code: ID!    type: StatsInfoTypes!    hits: Int64!    time: Int!    assets: [StatsAsset!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   type(StatsInfoTypes!):   hits(Int64!</description>
     </item>
     
     <item>
