@@ -8881,8 +8881,8 @@ All notable changes in our platform will be documented on this page. 2019-05-27 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/insights-x/release-notes/changelog/</guid>
-      <description> Easily accessible log of notable changes to Insights-X
-2019-05-27  Added new fields in benchmark datasets: TravelgateX total availability, total bookings and total revenue.   2019-04-11  Insights-X Content    Benchmarck table daily_benchmarking_seller replaced by new ones benchmark tables    Added buyer field in benchmark seller tables. Added seller field in benchmark buyer tables.   2019-03-27  New table daily_benchmarking_seller    Insights-X Concepts   2019-02-21  New table effective_bookings_(buyer|seller)    daily_insights table renamed as insights_daily_(buyer|seller) daily_insights_(client|provider) table renamed as insights_daily_(buyer|seller)   2019-02-07  Insights-X product documentation   </description>
+      <description>Easily accessible log of notable changes to Insights-X
+2019-06-05  Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.    Added new fields in effective bookings: username, commision, adults, childen, infants.    Benchmark is available now for Performance. Added new table in benchmark: performance_daily_(buyer|seller).   2019-05-27  Added new fields in benchmark datasets: TravelgateX total availability, total bookings and total revenue.</description>
     </item>
     
     <item>
@@ -9061,13 +9061,24 @@ Entity Maps File Format The file should be in the following format:</description
     
     <item>
       <title>Reference</title>
-      <link>/insights-x/datasets/dataset-content/benchmark/dataset-reference-benchmark/</link>
+      <link>/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/insights-x/datasets/dataset-content/benchmark/dataset-reference-benchmark/</guid>
+      <guid>/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/</guid>
       <description>On this page you will learn how the data is stored in Benchmark Dataset.
 Tables Data is stored in multiple tables depending on the kind of info that wants to be queried and depending on the level of aggregation:
  Daily (agregation stored every day) Weekly (aggregation stored in the first monday of every week) Monthly (aggregation stored in the first day of the month)  The fields and explanation of tables are based on seller organization.</description>
+    </item>
+    
+    <item>
+      <title>Reference</title>
+      <link>/insights-x/datasets/dataset-content/benchmark/performance/dataset-reference-benchmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/insights-x/datasets/dataset-content/benchmark/performance/dataset-reference-benchmark/</guid>
+      <description>On this page you will learn how the data is stored in Benchmark Dataset.
+Tables Descriptions of each table and their correspondent fields are found below:
+performance_(daily|weekly|monthly)_(seller|buyer) This table contains the total of ok and nok searches, quotes, bookings and cancellation requests and responses times for the buyer|seller and for TravelgateX. The buyers|sellers that aren&amp;rsquo;t connected are aggregated in &amp;ldquo;others&amp;rdquo; for the seller case and &amp;ldquo;OTHERS&amp;rdquo; for the buyers case.</description>
     </item>
     
     <item>
@@ -9687,10 +9698,10 @@ How to request     a5b25332a7a5683d602efeb87233a9c7 You can ask for bookings by 
     
     <item>
       <title>Concepts</title>
-      <link>/insights-x/datasets/dataset-content/benchmark/dataset-concepts-benchmark/</link>
+      <link>/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/insights-x/datasets/dataset-content/benchmark/dataset-concepts-benchmark/</guid>
+      <guid>/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/</guid>
       <description>On this page you will learn how to interpret the information in our datasets.
 Benchmark How to interpret the information of the differents benchmark tables.
 Overview On this page, you will learn how to interpret the differents fields of benchmark table.
