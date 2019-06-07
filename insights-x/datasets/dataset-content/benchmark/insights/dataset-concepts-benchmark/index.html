@@ -5869,9 +5869,69 @@
 
 <p>Let&rsquo;s consider the following row from the table <code>benchmarking\_country\_city\_client\_(daily\|weekly\|monthly)\_seller</code>:</p>
 
-<p>| client_id   | provider_id | country | city           | country_city_client         | search_date             | availability_value | availability_percentile | availability_rank | availability_compset | availability_index | booking_value | booking_percentile | booking_rank | booking_compset | booking_index | revenue_value | revenue_percentile | revenue_rank | revenue_compset | revenue_index | total_provider | country_name         |availability_tgx  | booking_tgx         | revenue_tgx         |<br />
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|
-| client 1    | provider 1  | ES      | Palma          | Palma,ES,client 1           | 2019-04-03 00:00:00 UTC | 130                | 0.8889                  | 1                 | 12.625                | 1.0                | 3            | 0.7674       | 3        | 1.426             | 0.8571             | 2104.72            | 0.8163       | 2       |   620.36   |     0.9126   | 8      |Spain |  60000   | 20 | 3600 |</p>
+<table>
+<thead>
+<tr>
+<th>client_id</th>
+<th>provider_id</th>
+<th>country</th>
+<th>city</th>
+<th>country_city_client</th>
+<th>search_date</th>
+<th>availability_value</th>
+<th>availability_percentile</th>
+<th>availability_rank</th>
+<th>availability_compset</th>
+<th>availability_index</th>
+<th>booking_value</th>
+<th>booking_percentile</th>
+<th>booking_rank</th>
+<th>booking_compset</th>
+<th>booking_index</th>
+<th>revenue_value</th>
+<th>revenue_percentile</th>
+<th>revenue_rank</th>
+<th>revenue_compset</th>
+<th>revenue_index</th>
+<th>total_provider</th>
+<th>country_name</th>
+<th>availability_tgx</th>
+<th>booking_tgx</th>
+<th>revenue_tgx</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>client 1</td>
+<td>provider 1</td>
+<td>ES</td>
+<td>Palma</td>
+<td>ES,Palma,client 1</td>
+<td>2019-04-03 00:00:00 UTC</td>
+<td>130</td>
+<td>0.8889</td>
+<td>1</td>
+<td>12.625</td>
+<td>1.0</td>
+<td>3</td>
+<td>0.7674</td>
+<td>3</td>
+<td>1.426</td>
+<td>0.8571</td>
+<td>2104.72</td>
+<td>0.8163</td>
+<td>2</td>
+<td>620.36</td>
+<td>0.9126</td>
+<td>8</td>
+<td>Spain</td>
+<td>60000</td>
+<td>20</td>
+<td>3600</td>
+</tr>
+</tbody>
+</table>
 
 <p>Let&rsquo;s see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in <strong>availability</strong> for the client 1:</p>
 
@@ -5910,9 +5970,67 @@
 
 <p>Let&rsquo;s consider the following row from the table  <code>benchmarking\_country\_city\_(daily\|weekly\|monthly)\_seller</code>:</p>
 
-<p>| provider_id | country | city            | country_city       | search_date             | availability_value | availability_percentile | availability_rank | availability_compset | availability_index | booking_value | booking_percentile | booking_rank | booking_compset | booking_index | revenue_value | revenue_percentile | revenue_rank | revenue_compset | revenue_index | total_provider | country_name |availability_tgx  | booking_tgx         | revenue_tgx         |
-|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;|&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&ndash;|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|
-| provider 1  | CU      | La Habana Vieja | La Habana Vieja,CU | 2019-04-03 00:00:00 UTC | 20                 | 1.0                     | 1                 | 9.3953               | 1.0                | 2             | 0.902              | 2            | 1.8889          | 0.5           | 676.95        | 0.9412             | 4            | 701.0125        | 0.4076        | 52             | Cuba         |60000              | 20                   | 3600                 |</p>
+<table>
+<thead>
+<tr>
+<th>provider_id</th>
+<th>country</th>
+<th>city</th>
+<th>country_city</th>
+<th>search_date</th>
+<th>availability_value</th>
+<th>availability_percentile</th>
+<th>availability_rank</th>
+<th>availability_compset</th>
+<th>availability_index</th>
+<th>booking_value</th>
+<th>booking_percentile</th>
+<th>booking_rank</th>
+<th>booking_compset</th>
+<th>booking_index</th>
+<th>revenue_value</th>
+<th>revenue_percentile</th>
+<th>revenue_rank</th>
+<th>revenue_compset</th>
+<th>revenue_index</th>
+<th>total_provider</th>
+<th>country_name</th>
+<th>availability_tgx</th>
+<th>booking_tgx</th>
+<th>revenue_tgx</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>provider 1</td>
+<td>CU</td>
+<td>La Habana Vieja</td>
+<td>La Habana Vieja</td>
+<td>2019-04-03 00:00:00 UTC</td>
+<td>20</td>
+<td>1.0</td>
+<td>1</td>
+<td>9.3953</td>
+<td>1.0</td>
+<td>2</td>
+<td>0.902</td>
+<td>2</td>
+<td>1.8889</td>
+<td>0.5</td>
+<td>676.95</td>
+<td>0.9412</td>
+<td>4</td>
+<td>701.0125</td>
+<td>0.4076</td>
+<td>52</td>
+<td>Cuba</td>
+<td>60000</td>
+<td>20</td>
+<td>3600</td>
+</tr>
+</tbody>
+</table>
 
 <p>Let&rsquo;s see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in <strong>availability</strong>:</p>
 
