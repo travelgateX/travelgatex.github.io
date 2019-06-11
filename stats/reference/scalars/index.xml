@@ -26,7 +26,7 @@ GraphQL schema definition scalar Boolean   Required by StatsFilterInput:    Page
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/scalars/datetime/</guid>
-      <description> GraphQL schema definition scalar DateTime   Required by StatsFilterInput:    Stats:    StatsData:    Node:    Access:    Client:    Supplier:    Organization:    Member:    Domain:    Role:    Resource:    API:    Operation:    Product:    Group:    ManagedGroup:    StatsAsset:     </description>
+      <description>GraphQL schema definition scalar DateTime   Required by StatsFilterInput:    Stats:    StatsData:    Node:    Access:    Client:    Supplier:    Organization:    Member:    Domain:    Role:    Resource:    API:    Operation:    Product:    Group:    ManagedGroup:    StatsAsset:</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ GraphQL schema definition scalar Boolean   Required by StatsFilterInput:    Page
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/scalars/domainname/</guid>
-      <description> GraphQL schema definition scalar DomainName   Required by DomainData:     </description>
+      <description>GraphQL schema definition scalar DomainName   Required by DomainData:</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ GraphQL schema definition scalar Int   Required by Ratios:    AccessData:    Sup
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/scalars/int64/</guid>
-      <description> GraphQL schema definition scalar Int64   Required by StatsData:    OperationDetailed:    StatsInfo:     </description>
+      <description>GraphQL schema definition scalar Int64   Required by StatsData:    OperationDetailed:    StatsInfo:</description>
     </item>
     
     <item>
@@ -83,7 +83,7 @@ GraphQL schema definition scalar String   Required by StatsEdge:    PageInfo:   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/scalars/uri/</guid>
-      <description> GraphQL schema definition scalar URI   Required by Urls:    StatsAsset:     </description>
+      <description>GraphQL schema definition scalar URI   Required by Urls:    StatsAsset:</description>
     </item>
     
   </channel>

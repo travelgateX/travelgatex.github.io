@@ -25,7 +25,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/apiconnection/</guid>
-      <description> GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    OrganizationData:    GroupCommonData:    GroupData:    ResourceData:    ProductData:     </description>
+      <description>GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    OrganizationData:    GroupCommonData:    GroupData:    ResourceData:    ProductData:</description>
     </item>
     
     <item>
@@ -43,7 +44,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/apiedge/</guid>
-      <description> GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):    Required by APIConnection:     </description>
+      <description>GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):   
+Required by APIConnection:</description>
     </item>
     
     <item>
@@ -61,7 +63,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/accessconnection/</guid>
-      <description> GraphQL schema definition type AccessConnection {  edges: [AccessEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AccessEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    SupplierData:    OrganizationData:    GroupCommonData:    GroupData:     </description>
+      <description>GraphQL schema definition type AccessConnection {  edges: [AccessEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AccessEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    SupplierData:    OrganizationData:    GroupCommonData:    GroupData:</description>
     </item>
     
     <item>
@@ -79,7 +82,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/accessedge/</guid>
-      <description> GraphQL schema definition type AccessEdge {  node: Access    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Access):   cursor(String!):    Required by AccessConnection:     </description>
+      <description>GraphQL schema definition type AccessEdge {  node: Access    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Access):   cursor(String!):   
+Required by AccessConnection:</description>
     </item>
     
     <item>
@@ -88,7 +92,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/addon/</guid>
-      <description> GraphQL schema definition type AddOn {  key: String!    value: JSON!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields key(String!):   value(JSON!):    </description>
+      <description>GraphQL schema definition type AddOn {  key: String!    value: JSON!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields key(String!):   value(JSON!):</description>
     </item>
     
     <item>
@@ -97,7 +101,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/addons/</guid>
-      <description> GraphQL schema definition type AddOns {  distribution: [AddOn!]   Show deprecated fields   distribute: : JSON // deprecated from 2018-05-21 You can find it in distribution AddOn     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields distribute(JSON):   distribution([AddOn!]):    Required by HotelOptionSearch:    HotelOptionQuote:    HotelBookingDetail:     </description>
+      <description>GraphQL schema definition type AddOns {  distribution: [AddOn!]   Show deprecated fields   distribute: : JSON // deprecated from 2018-05-21 You can find it in distribution AddOn     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields distribute(JSON):   distribution([AddOn!]):</description>
     </item>
     
     <item>
@@ -142,7 +146,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/airportdata/</guid>
-      <description> GraphQL schema definition type AirportData {  code: ID!    name: String    location: Location   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String):   location(Location):    Required by Airport:     </description>
+      <description>GraphQL schema definition type AirportData {  code: ID!    name: String    location: Location   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String):   location(Location):   
+Required by Airport:</description>
     </item>
     
     <item>
@@ -170,8 +175,9 @@ GraphQL schema definition type Alert {  code: ID!    alertData: AlertData    adv
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/alertconnection/</guid>
-      <description> Alert list
-GraphQL schema definition type AlertConnection {  edges: [AlertEdge]    pageInfo: PageInfo!    count: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AlertEdge]):   pageInfo(PageInfo!):   count(Int!):    Required by AlertsXQuery:    AlertData:     </description>
+      <description>Alert list
+GraphQL schema definition type AlertConnection {  edges: [AlertEdge]    pageInfo: PageInfo!    count: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AlertEdge]):   pageInfo(PageInfo!):   count(Int!):   
+Required by AlertsXQuery:    AlertData:</description>
     </item>
     
     <item>
@@ -189,7 +195,8 @@ GraphQL schema definition type AlertConnection {  edges: [AlertEdge]    pageInfo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/alertedge/</guid>
-      <description> GraphQL schema definition type AlertEdge {  node: Alert    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Alert):   cursor(String!):    Required by AlertConnection:  Alert list   </description>
+      <description>GraphQL schema definition type AlertEdge {  node: Alert    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Alert):   cursor(String!):   
+Required by AlertConnection:  Alert list</description>
     </item>
     
     <item>
@@ -208,7 +215,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/alertsxmutation/</guid>
-      <description> GraphQL schema definition type AlertsXMutation {  createAlert( input: AlertInput!, ): Alert    updateAlert( code: ID!, input: AlertUpdateInput!, ): Alert   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields createAlert(Alert): Mutation to create a new alert  updateAlert(Alert): Mutation to update an existing alert   Required by Mutation:     </description>
+      <description>GraphQL schema definition type AlertsXMutation {  createAlert( input: AlertInput!, ): Alert    updateAlert( code: ID!, input: AlertUpdateInput!, ): Alert   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields createAlert(Alert): Mutation to create a new alert  updateAlert(Alert): Mutation to update an existing alert</description>
     </item>
     
     <item>
@@ -217,7 +224,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/alertsxquery/</guid>
-      <description> GraphQL schema definition type AlertsXQuery {  alerts(    relay: RelayInput,     filter: AlertFilterInput,     criteria: AlertCriteriaInput!,     ): AlertConnection!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields alerts(AlertConnection!): Query to obtain Alerts   Required by Query:     </description>
+      <description>GraphQL schema definition type AlertsXQuery {  alerts(    relay: RelayInput,     filter: AlertFilterInput,     criteria: AlertCriteriaInput!,     ): AlertConnection!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields alerts(AlertConnection!): Query to obtain Alerts</description>
     </item>
     
     <item>
@@ -226,7 +233,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/amenity/</guid>
-      <description> GraphQL schema definition type Amenity {  code: String!    type: ApplicationAreaType!    texts( languages: [Language!], ): [Text!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   type(ApplicationAreaType!):   texts([Text!]!):    </description>
+      <description>GraphQL schema definition type Amenity {  code: String!    type: ApplicationAreaType!    texts( languages: [Language!], ): [Text!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   type(ApplicationAreaType!):   texts([Text!]!):</description>
     </item>
     
     <item>
@@ -235,7 +242,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/auditdata/</guid>
-      <description> GraphQL schema definition type AuditData {  transactions: [Transactions!]!    timeStamp: DateTime!    processTime: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields transactions([Transactions!]!):   timeStamp(DateTime!):   processTime(Float!):    Required by HotelSearch:    HotelQuote:    HotelBooking:    Response:    HotelBookPayload:    HotelCancelPayload:     </description>
+      <description>GraphQL schema definition type AuditData {  transactions: [Transactions!]!    timeStamp: DateTime!    processTime: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields transactions([Transactions!]!):   timeStamp(DateTime!):   processTime(Float!):   
+Required by HotelSearch:    HotelQuote:    HotelBooking:    Response:    HotelBookPayload:    HotelCancelPayload:</description>
     </item>
     
     <item>
@@ -244,7 +252,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/bed/</guid>
-      <description> GraphQL schema definition type Bed {  type: String    description: String    count: Int    shared: Boolean   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields type(String):   description(String):   count(Int):   shared(Boolean):    </description>
+      <description>GraphQL schema definition type Bed {  type: String    description: String    count: Int    shared: Boolean   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields type(String):   description(String):   count(Int):   shared(Boolean):</description>
     </item>
     
     <item>
@@ -262,7 +270,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/boardconnection/</guid>
-      <description> GraphQL schema definition type BoardConnection {  edges: [BoardEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([BoardEdge]):   pageInfo(PageInfo!):    Required by HotelXQuery:     </description>
+      <description>GraphQL schema definition type BoardConnection {  edges: [BoardEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([BoardEdge]):   pageInfo(PageInfo!):   
+Required by HotelXQuery:</description>
     </item>
     
     <item>
@@ -271,7 +280,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/boarddata/</guid>
-      <description> GraphQL schema definition type BoardData {  code: ID!    boardCode: String!    texts( languages: [Language!], ): [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   boardCode(String!):   texts([Text!]):    Required by Board:     </description>
+      <description>GraphQL schema definition type BoardData {  code: ID!    boardCode: String!    texts( languages: [Language!], ): [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   boardCode(String!):   texts([Text!]):   
+Required by Board:</description>
     </item>
     
     <item>
@@ -280,7 +290,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/boardedge/</guid>
-      <description> GraphQL schema definition type BoardEdge {  node: Board    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Board):   cursor(String!):    Required by BoardConnection:     </description>
+      <description>GraphQL schema definition type BoardEdge {  node: Board    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Board):   cursor(String!):   
+Required by BoardConnection:</description>
     </item>
     
     <item>
@@ -298,7 +309,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/bookingroom/</guid>
-      <description> GraphQL schema definition type BookingRoom {  occupancyRefId: Int    code: String    description: String    price: Price   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields occupancyRefId(Int):   code(String):   description(String):   price(Price):    </description>
+      <description>GraphQL schema definition type BookingRoom {  occupancyRefId: Int    code: String    description: String    price: Price   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields occupancyRefId(Int):   code(String):   description(String):   price(Price):</description>
     </item>
     
     <item>
@@ -307,7 +318,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/businessrules/</guid>
-      <description> GraphQL schema definition type BusinessRules {  optionsQuota: Int!    businessRulesType: BusinessRulesType!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields optionsQuota(Int!):   businessRulesType(BusinessRulesType!):    Required by HotelXDefaultSettingsData:    HotelXCommonSettingsData:     </description>
+      <description>GraphQL schema definition type BusinessRules {  optionsQuota: Int!    businessRulesType: BusinessRulesType!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields optionsQuota(Int!):   businessRulesType(BusinessRulesType!):   
+Required by HotelXDefaultSettingsData:    HotelXCommonSettingsData:</description>
     </item>
     
     <item>
@@ -316,7 +328,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/cancelpenalty/</guid>
-      <description> GraphQL schema definition type CancelPenalty {  hoursBefore: Int!    penaltyType: CancelPenaltyType!    currency: Currency!    value: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hoursBefore(Int!):   penaltyType(CancelPenaltyType!):   currency(Currency!):   value(Float!):    </description>
+      <description>GraphQL schema definition type CancelPenalty {  hoursBefore: Int!    penaltyType: CancelPenaltyType!    currency: Currency!    value: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hoursBefore(Int!):   penaltyType(CancelPenaltyType!):   currency(Currency!):   value(Float!):</description>
     </item>
     
     <item>
@@ -325,7 +337,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/cancelpolicy/</guid>
-      <description> GraphQL schema definition type CancelPolicy {  refundable: Boolean!    cancelPenalties: [CancelPenalty!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields refundable(Boolean!):   cancelPenalties([CancelPenalty!]):    Required by HotelOptionSearch:    HotelOptionQuote:    HotelBookingDetail:     </description>
+      <description>GraphQL schema definition type CancelPolicy {  refundable: Boolean!    cancelPenalties: [CancelPenalty!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields refundable(Boolean!):   cancelPenalties([CancelPenalty!]):   
+Required by HotelOptionSearch:    HotelOptionQuote:    HotelBookingDetail:</description>
     </item>
     
     <item>
@@ -343,7 +356,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/categoryconnection/</guid>
-      <description> GraphQL schema definition type CategoryConnection {  edges: [CategoryEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([CategoryEdge]):   pageInfo(PageInfo!):    Required by HotelXQuery:     </description>
+      <description>GraphQL schema definition type CategoryConnection {  edges: [CategoryEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([CategoryEdge]):   pageInfo(PageInfo!):   
+Required by HotelXQuery:</description>
     </item>
     
     <item>
@@ -352,7 +366,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/categorydata/</guid>
-      <description> GraphQL schema definition type CategoryData {  code: ID!    categoryCode: String!    texts( languages: [Language!], ): [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   categoryCode(String!):   texts([Text!]):    Required by Category:     </description>
+      <description>GraphQL schema definition type CategoryData {  code: ID!    categoryCode: String!    texts( languages: [Language!], ): [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   categoryCode(String!):   texts([Text!]):   
+Required by Category:</description>
     </item>
     
     <item>
@@ -361,7 +376,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/categoryedge/</guid>
-      <description> GraphQL schema definition type CategoryEdge {  node: Category    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Category):   cursor(String!):    Required by CategoryConnection:     </description>
+      <description>GraphQL schema definition type CategoryEdge {  node: Category    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Category):   cursor(String!):   
+Required by CategoryConnection:</description>
     </item>
     
     <item>
@@ -379,7 +395,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/clientconnection/</guid>
-      <description> GraphQL schema definition type ClientConnection {  edges: [ClientEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([ClientEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    SupplierData:    OrganizationData:    GroupCommonData:    GroupData:     </description>
+      <description>GraphQL schema definition type ClientConnection {  edges: [ClientEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([ClientEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    SupplierData:    OrganizationData:    GroupCommonData:    GroupData:</description>
     </item>
     
     <item>
@@ -397,7 +414,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/clientedge/</guid>
-      <description> GraphQL schema definition type ClientEdge {  node: Client    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Client):   cursor(String!):    Required by ClientConnection:     </description>
+      <description>GraphQL schema definition type ClientEdge {  node: Client    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Client):   cursor(String!):   
+Required by ClientConnection:</description>
     </item>
     
     <item>
@@ -406,7 +424,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/contact/</guid>
-      <description> GraphQL schema definition type Contact {  email: String    telephone: String    fax: String    web: URI   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields email(String):   telephone(String):   fax(String):   web(URI):    Required by HotelData:     </description>
+      <description>GraphQL schema definition type Contact {  email: String    telephone: String    fax: String    web: URI   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields email(String):   telephone(String):   fax(String):   web(URI):</description>
     </item>
     
     <item>
@@ -415,7 +433,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/coordinates/</guid>
-      <description> GraphQL schema definition type Coordinates {  latitude: Float!    longitude: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields latitude(Float!):   longitude(Float!):    Required by Location:    GeonameData:     </description>
+      <description>GraphQL schema definition type Coordinates {  latitude: Float!    longitude: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields latitude(Float!):   longitude(Float!):   
+Required by Location:    GeonameData:</description>
     </item>
     
     <item>
@@ -433,7 +452,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/description/</guid>
-      <description> GraphQL schema definition type Description {  type: DescriptionType!    texts: [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields type(DescriptionType!):   texts([Text!]):    </description>
+      <description>GraphQL schema definition type Description {  type: DescriptionType!    texts: [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields type(DescriptionType!):   texts([Text!]):</description>
     </item>
     
     <item>
@@ -451,7 +470,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/destinationconnection/</guid>
-      <description> GraphQL schema definition type DestinationConnection {  edges: [DestinationEdge]    token: String!    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([DestinationEdge]):   token(String!):   pageInfo(PageInfo!):    Required by HotelXQuery:     </description>
+      <description>GraphQL schema definition type DestinationConnection {  edges: [DestinationEdge]    token: String!    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([DestinationEdge]):   token(String!):   pageInfo(PageInfo!):   
+Required by HotelXQuery:</description>
     </item>
     
     <item>
@@ -469,7 +489,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/destinationedge/</guid>
-      <description> GraphQL schema definition type DestinationEdge {  node: Destination    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Destination):   cursor(String!):    Required by DestinationConnection:     </description>
+      <description>GraphQL schema definition type DestinationEdge {  node: Destination    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Destination):   cursor(String!):   
+Required by DestinationConnection:</description>
     </item>
     
     <item>
@@ -487,7 +508,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/domaindata/</guid>
-      <description> GraphQL schema definition type DomainData {  id: ID!    name: DomainName!    organization: Organization!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields id(ID!):   name(DomainName!):   organization(Organization!):    Required by Domain:     </description>
+      <description>GraphQL schema definition type DomainData {  id: ID!    name: DomainName!    organization: Organization!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields id(ID!):   name(DomainName!):   organization(Organization!):   
+Required by Domain:</description>
     </item>
     
     <item>
@@ -505,7 +527,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/entityconnection/</guid>
-      <description> GraphQL schema definition type EntityConnection {  edges: [EntityEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([EntityEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    ProfileData:     </description>
+      <description>GraphQL schema definition type EntityConnection {  edges: [EntityEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([EntityEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    ProfileData:</description>
     </item>
     
     <item>
@@ -514,7 +537,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/entityedge/</guid>
-      <description> GraphQL schema definition type EntityEdge {  node: Entity    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Entity):   cursor(String!):    Required by EntityConnection:     </description>
+      <description>GraphQL schema definition type EntityEdge {  node: Entity    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Entity):   cursor(String!):   
+Required by EntityConnection:</description>
     </item>
     
     <item>
@@ -523,7 +547,8 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/error/</guid>
-      <description> GraphQL schema definition type Error {  code: String!    type: String!    description: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   type(String!):   description(String!):    Required by GetUploadedFilesResponse:    GetMappeaStatsResponse:    OnlyStatusResponse:    UploadFileResponse:     </description>
+      <description>GraphQL schema definition type Error {  code: String!    type: String!    description: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   type(String!):   description(String!):   
+Required by GetUploadedFilesResponse:    GetMappeaStatsResponse:    OnlyStatusResponse:    UploadFileResponse:</description>
     </item>
     
     <item>
@@ -542,8 +567,9 @@ GraphQL schema definition type Event {  code: ID!    eventData: EventData    adv
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/eventconnection/</guid>
-      <description> Events list
-GraphQL schema definition type EventConnection {  edges: [EventEdge]    pageInfo: PageInfo!    count: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([EventEdge]):   pageInfo(PageInfo!):   count(Int!):    Required by AlertData:    EventData:  Event data   </description>
+      <description>Events list
+GraphQL schema definition type EventConnection {  edges: [EventEdge]    pageInfo: PageInfo!    count: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([EventEdge]):   pageInfo(PageInfo!):   count(Int!):   
+Required by AlertData:    EventData:  Event data</description>
     </item>
     
     <item>
@@ -562,7 +588,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/eventedge/</guid>
-      <description> GraphQL schema definition type EventEdge {  node: Event    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Event):   cursor(String!):    Required by EventConnection:  Events list   </description>
+      <description>GraphQL schema definition type EventEdge {  node: Event    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Event):   cursor(String!):   
+Required by EventConnection:  Events list</description>
     </item>
     
     <item>
@@ -571,7 +598,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/exchange/</guid>
-      <description> GraphQL schema definition type Exchange {  currency: Currency!    rate: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields currency(Currency!):   rate(Float!):    Required by Price:    Markup:    Priceable:     </description>
+      <description>GraphQL schema definition type Exchange {  currency: Currency!    rate: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields currency(Currency!):   rate(Float!):   
+Required by Price:    Markup:    Priceable:</description>
     </item>
     
     <item>
@@ -580,7 +608,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/externalmessage/</guid>
-      <description> GraphQL schema definition type ExternalMessage {  code: String    message: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String):   message(String!):    Required by AdviseMessage:     </description>
+      <description>GraphQL schema definition type ExternalMessage {  code: String    message: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String):   message(String!):   
+Required by AdviseMessage:</description>
     </item>
     
     <item>
@@ -589,7 +618,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/file/</guid>
-      <description> GraphQL schema definition type File {  fileName: String!    fileId: Int!    uploadTime: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields fileName(String!):   fileId(Int!):   uploadTime(String!):    Required by GetUploadedFilesData:     </description>
+      <description>GraphQL schema definition type File {  fileName: String!    fileId: Int!    uploadTime: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields fileName(String!):   fileId(Int!):   uploadTime(String!):   
+Required by GetUploadedFilesData:</description>
     </item>
     
     <item>
@@ -616,7 +646,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/getmappeastatsdata/</guid>
-      <description> GraphQL schema definition type GetMappeaStatsData {  supplierMapped: String    startTime: String    endTime: String    organizationHotels: Int    contextHotels: Int    suggestedHotels: Int   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields supplierMapped(String):   startTime(String):   endTime(String):   organizationHotels(Int):   contextHotels(Int):   suggestedHotels(Int):    Required by GetMappeaStatsResponse:     </description>
+      <description>GraphQL schema definition type GetMappeaStatsData {  supplierMapped: String    startTime: String    endTime: String    organizationHotels: Int    contextHotels: Int    suggestedHotels: Int   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields supplierMapped(String):   startTime(String):   endTime(String):   organizationHotels(Int):   contextHotels(Int):   suggestedHotels(Int):</description>
     </item>
     
     <item>
@@ -625,7 +655,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/getmappeastatsresponse/</guid>
-      <description> GraphQL schema definition type GetMappeaStatsResponse {  data: [GetMappeaStatsData]    error: Error    warnings: [Warning]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields data([GetMappeaStatsData]):   error(Error):   warnings([Warning]):    Required by MappeaQuery:     </description>
+      <description>GraphQL schema definition type GetMappeaStatsResponse {  data: [GetMappeaStatsData]    error: Error    warnings: [Warning]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields data([GetMappeaStatsData]):   error(Error):   warnings([Warning]):   
+Required by MappeaQuery:</description>
     </item>
     
     <item>
@@ -634,7 +665,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/getuploadedfilesdata/</guid>
-      <description> GraphQL schema definition type GetUploadedFilesData {  files: [File]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields files([File]):    Required by GetUploadedFilesResponse:     </description>
+      <description> GraphQL schema definition type GetUploadedFilesData {  files: [File]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields files([File]):   
+Required by GetUploadedFilesResponse:     </description>
     </item>
     
     <item>
@@ -643,7 +675,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/getuploadedfilesresponse/</guid>
-      <description> GraphQL schema definition type GetUploadedFilesResponse {  data: GetUploadedFilesData    error: Error    warnings: [Warning]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields data(GetUploadedFilesData):   error(Error):   warnings([Warning]):    Required by MappeaQuery:     </description>
+      <description>GraphQL schema definition type GetUploadedFilesResponse {  data: GetUploadedFilesData    error: Error    warnings: [Warning]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields data(GetUploadedFilesData):   error(Error):   warnings([Warning]):   
+Required by MappeaQuery:</description>
     </item>
     
     <item>
@@ -652,7 +685,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/giatadata/</guid>
-      <description> GraphQL schema definition type GiataData {  id: ID!    source: URI!    href: URI!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields id(ID!):   source(URI!):   href(URI!):   updatedAt(DateTime!):    Required by HotelData:     </description>
+      <description>GraphQL schema definition type GiataData {  id: ID!    source: URI!    href: URI!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields id(ID!):   source(URI!):   href(URI!):   updatedAt(DateTime!):</description>
     </item>
     
     <item>
@@ -670,7 +703,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/groupconnection/</guid>
-      <description> GraphQL schema definition type GroupConnection {  edges: [GroupEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([GroupEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    AccessData:    SupplierData:    OrganizationData:    GroupCommonData:    MemberData:    GroupData:    APIData:     </description>
+      <description>GraphQL schema definition type GroupConnection {  edges: [GroupEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([GroupEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    AccessData:    SupplierData:    OrganizationData:    GroupCommonData:    MemberData:    GroupData:    APIData:</description>
     </item>
     
     <item>
@@ -688,7 +722,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/groupedge/</guid>
-      <description> GraphQL schema definition type GroupEdge {  node: Group    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Group):   cursor(String!):    Required by GroupConnection:     </description>
+      <description>GraphQL schema definition type GroupEdge {  node: Group    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Group):   cursor(String!):   
+Required by GroupConnection:</description>
     </item>
     
     <item>
@@ -697,7 +732,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/holder/</guid>
-      <description> GraphQL schema definition type Holder {  name: String!    surname: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!):   surname(String!):    Required by HotelBookingDetail:    PaymentXStoredCardData:     </description>
+      <description>GraphQL schema definition type Holder {  name: String!    surname: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!):   surname(String!):   
+Required by HotelBookingDetail:    PaymentXStoredCardData:</description>
     </item>
     
     <item>
@@ -742,7 +778,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelcanceldetail/</guid>
-      <description> GraphQL schema definition type HotelCancelDetail {  reference: Reference    cancelReference: String    status: BookStatusType    price: Price    booking: HotelBookingDetail   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields reference(Reference):   cancelReference(String):   status(BookStatusType):   price(Price):   booking(HotelBookingDetail):    Required by HotelCancelPayload:     </description>
+      <description>GraphQL schema definition type HotelCancelDetail {  reference: Reference    cancelReference: String    status: BookStatusType    price: Price    booking: HotelBookingDetail   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields reference(Reference):   cancelReference(String):   status(BookStatusType):   price(Price):   booking(HotelBookingDetail):</description>
     </item>
     
     <item>
@@ -760,7 +796,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelconnection/</guid>
-      <description> GraphQL schema definition type HotelConnection {  edges: [HotelEdge]    count: Int!    token: String    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([HotelEdge]):   count(Int!):   token(String):   pageInfo(PageInfo!):    Required by HotelXQuery:     </description>
+      <description>GraphQL schema definition type HotelConnection {  edges: [HotelEdge]    count: Int!    token: String    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([HotelEdge]):   count(Int!):   token(String):   pageInfo(PageInfo!):</description>
     </item>
     
     <item>
@@ -778,7 +814,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hoteledge/</guid>
-      <description> GraphQL schema definition type HotelEdge {  node: Hotel    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Hotel):   cursor(String!):    Required by HotelConnection:     </description>
+      <description>GraphQL schema definition type HotelEdge {  node: Hotel    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Hotel):   cursor(String!):   
+Required by HotelConnection:</description>
     </item>
     
     <item>
@@ -823,7 +860,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelruntimeconfigurationdata/</guid>
-      <description> GraphQL schema definition type HotelRuntimeConfigurationData {  hotelRuntimeParameters: [HotelRuntimeParameter!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hotelRuntimeParameters([HotelRuntimeParameter!]!):    Required by HotelRuntimeConfiguration:     </description>
+      <description>GraphQL schema definition type HotelRuntimeConfigurationData {  hotelRuntimeParameters: [HotelRuntimeParameter!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hotelRuntimeParameters([HotelRuntimeParameter!]!):   
+Required by HotelRuntimeConfiguration:</description>
     </item>
     
     <item>
@@ -850,7 +888,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelxcommonsettings/</guid>
-      <description> GraphQL schema definition type HotelXCommonSettings {  settings: HotelXCommonSettingsData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields settings(HotelXCommonSettingsData):   adviseMessage([AdviseMessage!]):    Required by HotelXQuery:    HotelXMutation:     </description>
+      <description>GraphQL schema definition type HotelXCommonSettings {  settings: HotelXCommonSettingsData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields settings(HotelXCommonSettingsData):   adviseMessage([AdviseMessage!]):   
+Required by HotelXQuery:    HotelXMutation:</description>
     </item>
     
     <item>
@@ -859,7 +898,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelxcommonsettingsdata/</guid>
-      <description> GraphQL schema definition type HotelXCommonSettingsData {  currency: Currency    businessRules: BusinessRules    timeout: Timeout   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields currency(Currency):   businessRules(BusinessRules):   timeout(Timeout):    Required by HotelXCommonSettings:     </description>
+      <description>GraphQL schema definition type HotelXCommonSettingsData {  currency: Currency    businessRules: BusinessRules    timeout: Timeout   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields currency(Currency):   businessRules(BusinessRules):   timeout(Timeout):   
+Required by HotelXCommonSettings:</description>
     </item>
     
     <item>
@@ -877,7 +917,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelxdefaultpluginstep/</guid>
-      <description> GraphQL schema definition type HotelXDefaultPluginStep {  step: String!    plugins: [HotelXDefaultPlugin!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields step(String!):   plugins([HotelXDefaultPlugin!]!):    </description>
+      <description>GraphQL schema definition type HotelXDefaultPluginStep {  step: String!    plugins: [HotelXDefaultPlugin!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields step(String!):   plugins([HotelXDefaultPlugin!]!):</description>
     </item>
     
     <item>
@@ -886,7 +926,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelxdefaultsettings/</guid>
-      <description> GraphQL schema definition type HotelXDefaultSettings {  settings: HotelXDefaultSettingsData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields settings(HotelXDefaultSettingsData):   adviseMessage([AdviseMessage!]):    Required by HotelXQuery:    HotelXMutation:     </description>
+      <description>GraphQL schema definition type HotelXDefaultSettings {  settings: HotelXDefaultSettingsData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields settings(HotelXDefaultSettingsData):   adviseMessage([AdviseMessage!]):   
+Required by HotelXQuery:    HotelXMutation:</description>
     </item>
     
     <item>
@@ -913,7 +954,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelxparameter/</guid>
-      <description> GraphQL schema definition type HotelXParameter {  key: String!    value: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields key(String!):   value(String!):    </description>
+      <description>GraphQL schema definition type HotelXParameter {  key: String!    value: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields key(String!):   value(String!):</description>
     </item>
     
     <item>
@@ -940,7 +981,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/hotelxupdatestatusdata/</guid>
-      <description> GraphQL schema definition type HotelXUpdateStatusData {  code: ID!    isActive: Boolean!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   isActive(Boolean!):    Required by HotelXUpdateStatus:     </description>
+      <description>GraphQL schema definition type HotelXUpdateStatusData {  code: ID!    isActive: Boolean!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   isActive(Boolean!):   
+Required by HotelXUpdateStatus:</description>
     </item>
     
     <item>
@@ -967,7 +1009,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/managedgroupconnection/</guid>
-      <description> GraphQL schema definition type ManagedGroupConnection {  edges: [ManagedGroupEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([ManagedGroupEdge]):   pageInfo(PageInfo!):    Required by GroupData:     </description>
+      <description>GraphQL schema definition type ManagedGroupConnection {  edges: [ManagedGroupEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([ManagedGroupEdge]):   pageInfo(PageInfo!):   
+Required by GroupData:</description>
     </item>
     
     <item>
@@ -985,7 +1028,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/managedgroupedge/</guid>
-      <description> GraphQL schema definition type ManagedGroupEdge {  node: ManagedGroup    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(ManagedGroup):   cursor(String!):    Required by ManagedGroupConnection:     </description>
+      <description>GraphQL schema definition type ManagedGroupEdge {  node: ManagedGroup    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(ManagedGroup):   cursor(String!):   
+Required by ManagedGroupConnection:</description>
     </item>
     
     <item>
@@ -994,7 +1038,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/map/</guid>
-      <description> GraphQL schema definition type Map {  code: String!    maps: [String!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   maps([String!]):    </description>
+      <description>GraphQL schema definition type Map {  code: String!    maps: [String!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   maps([String!]):</description>
     </item>
     
     <item>
@@ -1012,7 +1056,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/mappeaquery/</guid>
-      <description> GraphQL schema definition type MappeaQuery {  getUploadedFiles: GetUploadedFilesResponse!    getMappeaStats( input: MappeaGetMappeaStatsInput!, ): GetMappeaStatsResponse!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields getUploadedFiles(GetUploadedFilesResponse!):   getMappeaStats(GetMappeaStatsResponse!):    Required by Query:     </description>
+      <description>GraphQL schema definition type MappeaQuery {  getUploadedFiles: GetUploadedFilesResponse!    getMappeaStats( input: MappeaGetMappeaStatsInput!, ): GetMappeaStatsResponse!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields getUploadedFiles(GetUploadedFilesResponse!):   getMappeaStats(GetMappeaStatsResponse!):   
+Required by Query:</description>
     </item>
     
     <item>
@@ -1021,7 +1066,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/mapping/</guid>
-      <description> GraphQL schema definition type Mapping {  contexts( codes: [String!], ): [MappingContext!]    errors: [Error!]    warnings: [Warning!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields contexts([MappingContext!]):   errors([Error!]):   warnings([Warning!]):    Required by HotelXQuery:     </description>
+      <description>GraphQL schema definition type Mapping {  contexts( codes: [String!], ): [MappingContext!]    errors: [Error!]    warnings: [Warning!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields contexts([MappingContext!]):   errors([Error!]):   warnings([Warning!]):   
+Required by HotelXQuery:</description>
     </item>
     
     <item>
@@ -1039,7 +1085,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/mappingentity/</guid>
-      <description> GraphQL schema definition type MappingEntity {  code: String!    contexts( codes: [String!], ): [Map!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   contexts([Map!]):    </description>
+      <description>GraphQL schema definition type MappingEntity {  code: String!    contexts( codes: [String!], ): [Map!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   contexts([Map!]):</description>
     </item>
     
     <item>
@@ -1075,7 +1121,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/memberconnection/</guid>
-      <description> GraphQL schema definition type MemberConnection {  edges: [MemberEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([MemberEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    OrganizationData:    GroupCommonData:    GroupData:     </description>
+      <description>GraphQL schema definition type MemberConnection {  edges: [MemberEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([MemberEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    OrganizationData:    GroupCommonData:    GroupData:</description>
     </item>
     
     <item>
@@ -1093,7 +1140,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/memberedge/</guid>
-      <description> GraphQL schema definition type MemberEdge {  node: Member    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Member):   cursor(String!):    Required by MemberConnection:     </description>
+      <description>GraphQL schema definition type MemberEdge {  node: Member    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Member):   cursor(String!):   
+Required by MemberConnection:</description>
     </item>
     
     <item>
@@ -1102,7 +1150,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/occupancy/</guid>
-      <description> GraphQL schema definition type Occupancy {  id: Int!    paxes: [Pax!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields id(Int!):   paxes([Pax!]!):    </description>
+      <description>GraphQL schema definition type Occupancy {  id: Int!    paxes: [Pax!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields id(Int!):   paxes([Pax!]!):</description>
     </item>
     
     <item>
@@ -1111,7 +1159,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/onlystatusresponse/</guid>
-      <description> GraphQL schema definition type OnlyStatusResponse {  error: Error    warnings: [Warning]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields error(Error):   warnings([Warning]):    Required by MappeaMutation:     </description>
+      <description>GraphQL schema definition type OnlyStatusResponse {  error: Error    warnings: [Warning]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields error(Error):   warnings([Warning]):   
+Required by MappeaMutation:</description>
     </item>
     
     <item>
@@ -1129,7 +1178,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/operationconnection/</guid>
-      <description> GraphQL schema definition type OperationConnection {  edges: [OperationEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([OperationEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    APIData:     </description>
+      <description>GraphQL schema definition type OperationConnection {  edges: [OperationEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([OperationEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    APIData:</description>
     </item>
     
     <item>
@@ -1156,7 +1206,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/operationedge/</guid>
-      <description> GraphQL schema definition type OperationEdge {  node: Operation    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Operation):   cursor(String!):    Required by OperationConnection:     </description>
+      <description>GraphQL schema definition type OperationEdge {  node: Operation    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Operation):   cursor(String!):   
+Required by OperationConnection:</description>
     </item>
     
     <item>
@@ -1174,7 +1225,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/organizationconnection/</guid>
-      <description> GraphQL schema definition type OrganizationConnection {  edges: [OrganizationEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([OrganizationEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:     </description>
+      <description>GraphQL schema definition type OrganizationConnection {  edges: [OrganizationEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([OrganizationEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:</description>
     </item>
     
     <item>
@@ -1192,7 +1244,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/organizationedge/</guid>
-      <description> GraphQL schema definition type OrganizationEdge {  node: Organization    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Organization):   cursor(String!):    Required by OrganizationConnection:     </description>
+      <description>GraphQL schema definition type OrganizationEdge {  node: Organization    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Organization):   cursor(String!):   
+Required by OrganizationConnection:</description>
     </item>
     
     <item>
@@ -1201,7 +1254,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/pageinfo/</guid>
-      <description> GraphQL schema definition type PageInfo {  hasNextPage: Boolean!    hasPreviousPage: Boolean!    startCursor: String!    endCursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hasNextPage(Boolean!):   hasPreviousPage(Boolean!):   startCursor(String!):   endCursor(String!):    Required by AccessConnection:    SupplierConnection:    ClientConnection:    PointOfSaleConnection:    ProfileConnection:    EntityConnection:    OrganizationConnection:    ProductConnection:    MemberConnection:    GroupConnection:    APIConnection:    ResourceConnection:    RoleConnection:    OperationConnection:    ManagedGroupConnection:    BoardConnection:    CategoryConnection:    HotelConnection:    RoomConnection:    DestinationConnection:    PaymentXStoredCardConnection:    StatsConnection:    AlertConnection:  Alert list  EventConnection:  Events list   </description>
+      <description>GraphQL schema definition type PageInfo {  hasNextPage: Boolean!    hasPreviousPage: Boolean!    startCursor: String!    endCursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hasNextPage(Boolean!):   hasPreviousPage(Boolean!):   startCursor(String!):   endCursor(String!):</description>
     </item>
     
     <item>
@@ -1210,7 +1263,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/parameter/</guid>
-      <description> GraphQL schema definition type Parameter {  key: ID!    value: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields key(ID!):   value(String!):    Required by AccessData:     </description>
+      <description>GraphQL schema definition type Parameter {  key: ID!    value: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields key(ID!):   value(String!):   
+Required by AccessData:</description>
     </item>
     
     <item>
@@ -1219,7 +1273,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/pax/</guid>
-      <description> GraphQL schema definition type Pax {  age: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields age(Int!):    </description>
+      <description>GraphQL schema definition type Pax {  age: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields age(Int!):</description>
     </item>
     
     <item>
@@ -1228,7 +1282,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/paymentxexpiredate/</guid>
-      <description> GraphQL schema definition type PaymentXExpireDate {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields month(Int!):   year(Int!):    Required by PaymentXStoredCardData:     </description>
+      <description>GraphQL schema definition type PaymentXExpireDate {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields month(Int!):   year(Int!):   
+Required by PaymentXStoredCardData:</description>
     </item>
     
     <item>
@@ -1237,7 +1292,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/paymentxmutation/</guid>
-      <description> GraphQL schema definition type PaymentXMutation {  storeCard( input: PaymentXStoredCardInput!, ): PaymentXStoredCard!    deleteStoredCard( criteria: PaymentXStoredCardIDInput!, ): PaymentXStoredCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields storeCard(PaymentXStoredCard!):   deleteStoredCard(PaymentXStoredCard!):    Required by Mutation:     </description>
+      <description>GraphQL schema definition type PaymentXMutation {  storeCard( input: PaymentXStoredCardInput!, ): PaymentXStoredCard!    deleteStoredCard( criteria: PaymentXStoredCardIDInput!, ): PaymentXStoredCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields storeCard(PaymentXStoredCard!):   deleteStoredCard(PaymentXStoredCard!):   
+Required by Mutation:</description>
     </item>
     
     <item>
@@ -1246,7 +1302,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/paymentxquery/</guid>
-      <description> GraphQL schema definition type PaymentXQuery {  vaultStatusService: AdviseMessage!    allStoredCards( filter: PaymentXStoredCardFilterInput!, instanceCode: String!, ): PaymentXStoredCardConnection!    storedCard( criteria: PaymentXStoredCardIDInput!, ): PaymentXStoredCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields vaultStatusService(AdviseMessage!):   allStoredCards(PaymentXStoredCardConnection!):   storedCard(PaymentXStoredCard!):    Required by Query:     </description>
+      <description>GraphQL schema definition type PaymentXQuery {  vaultStatusService: AdviseMessage!    allStoredCards( filter: PaymentXStoredCardFilterInput!, instanceCode: String!, ): PaymentXStoredCardConnection!    storedCard( criteria: PaymentXStoredCardIDInput!, ): PaymentXStoredCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields vaultStatusService(AdviseMessage!):   allStoredCards(PaymentXStoredCardConnection!):   storedCard(PaymentXStoredCard!):</description>
     </item>
     
     <item>
@@ -1264,7 +1320,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/paymentxstoredcardconnection/</guid>
-      <description> GraphQL schema definition type PaymentXStoredCardConnection {  edges: [PaymentXStoredCardEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([PaymentXStoredCardEdge]):   pageInfo(PageInfo!):    Required by PaymentXQuery:     </description>
+      <description>GraphQL schema definition type PaymentXStoredCardConnection {  edges: [PaymentXStoredCardEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([PaymentXStoredCardEdge]):   pageInfo(PageInfo!):   
+Required by PaymentXQuery:</description>
     </item>
     
     <item>
@@ -1282,7 +1339,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/paymentxstoredcardedge/</guid>
-      <description> GraphQL schema definition type PaymentXStoredCardEdge {  cursor: String!    node: PaymentXStoredCard   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields cursor(String!):   node(PaymentXStoredCard):    Required by PaymentXStoredCardConnection:     </description>
+      <description>GraphQL schema definition type PaymentXStoredCardEdge {  cursor: String!    node: PaymentXStoredCard   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields cursor(String!):   node(PaymentXStoredCard):   
+Required by PaymentXStoredCardConnection:</description>
     </item>
     
     <item>
@@ -1300,7 +1358,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/pointofsaleconnection/</guid>
-      <description> GraphQL schema definition type PointOfSaleConnection {  edges: [PointOfSaleEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([PointOfSaleEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:     </description>
+      <description>GraphQL schema definition type PointOfSaleConnection {  edges: [PointOfSaleEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([PointOfSaleEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:</description>
     </item>
     
     <item>
@@ -1309,7 +1368,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/pointofsaledata/</guid>
-      <description> GraphQL schema definition type PointOfSaleData {  code: ID!    name: String    owner: Organization   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String):   owner(Organization):    Required by PointOfSale:     </description>
+      <description>GraphQL schema definition type PointOfSaleData {  code: ID!    name: String    owner: Organization   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String):   owner(Organization):   
+Required by PointOfSale:</description>
     </item>
     
     <item>
@@ -1318,7 +1378,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/pointofsaleedge/</guid>
-      <description> GraphQL schema definition type PointOfSaleEdge {  node: PointOfSale    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(PointOfSale):   cursor(String!):    Required by PointOfSaleConnection:     </description>
+      <description>GraphQL schema definition type PointOfSaleEdge {  node: PointOfSale    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(PointOfSale):   cursor(String!):   
+Required by PointOfSaleConnection:</description>
     </item>
     
     <item>
@@ -1345,7 +1406,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/pricechange/</guid>
-      <description> GraphQL schema definition type PriceChange {  currency: String!    net: Float!    gross: Float!    binding: Boolean!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields currency(String!):   net(Float!):   gross(Float!):   binding(Boolean!):    Required by HotelOptionQuote:    HotelBookingDetail:     </description>
+      <description>GraphQL schema definition type PriceChange {  currency: String!    net: Float!    gross: Float!    binding: Boolean!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields currency(String!):   net(Float!):   gross(Float!):   binding(Boolean!):</description>
     </item>
     
     <item>
@@ -1363,7 +1424,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/productconnection/</guid>
-      <description> GraphQL schema definition type ProductConnection {  edges: [ProductEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([ProductEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    OrganizationData:     </description>
+      <description>GraphQL schema definition type ProductConnection {  edges: [ProductEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([ProductEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    OrganizationData:</description>
     </item>
     
     <item>
@@ -1381,7 +1443,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/productedge/</guid>
-      <description> GraphQL schema definition type ProductEdge {  node: Product    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Product):   cursor(String!):    Required by ProductConnection:     </description>
+      <description>GraphQL schema definition type ProductEdge {  node: Product    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Product):   cursor(String!):   
+Required by ProductConnection:</description>
     </item>
     
     <item>
@@ -1399,7 +1462,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/profileconnection/</guid>
-      <description> GraphQL schema definition type ProfileConnection {  edges: [ProfileEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([ProfileEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:     </description>
+      <description>GraphQL schema definition type ProfileConnection {  edges: [ProfileEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([ProfileEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:</description>
     </item>
     
     <item>
@@ -1417,7 +1481,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/profileedge/</guid>
-      <description> GraphQL schema definition type ProfileEdge {  node: Profile    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Profile):   cursor(String!):    Required by ProfileConnection:     </description>
+      <description>GraphQL schema definition type ProfileEdge {  node: Profile    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Profile):   cursor(String!):   
+Required by ProfileConnection:</description>
     </item>
     
     <item>
@@ -1435,7 +1500,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/property/</guid>
-      <description> GraphQL schema definition type Property {  name: String    code: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String):   code(String):    Required by HotelData:     </description>
+      <description>GraphQL schema definition type Property {  name: String    code: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String):   code(String):   
+Required by HotelData:</description>
     </item>
     
     <item>
@@ -1444,7 +1510,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/provider/</guid>
-      <description> GraphQL schema definition type Provider {  code: ID!    name: String!    isActive: Boolean    isPublic: Boolean   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String!):   isActive(Boolean):   isPublic(Boolean):    Required by SupplierData:     </description>
+      <description>GraphQL schema definition type Provider {  code: ID!    name: String!    isActive: Boolean    isPublic: Boolean   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String!):   isActive(Boolean):   isPublic(Boolean):</description>
     </item>
     
     <item>
@@ -1462,7 +1528,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/ratios/</guid>
-      <description> GraphQL schema definition type Ratios {  lookToQuote: Int!    lookToBook: Int!    quoteToBook: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields lookToQuote(Int!):   lookToBook(Int!):   quoteToBook(Int!):    Required by StatsData:     </description>
+      <description>GraphQL schema definition type Ratios {  lookToQuote: Int!    lookToBook: Int!    quoteToBook: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields lookToQuote(Int!):   lookToBook(Int!):   quoteToBook(Int!):   
+Required by StatsData:</description>
     </item>
     
     <item>
@@ -1471,7 +1538,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/reference/</guid>
-      <description> GraphQL schema definition type Reference {  client: String    supplier: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields client(String):   supplier(String):    Required by HotelBookingDetail:    HotelCancelDetail:     </description>
+      <description>GraphQL schema definition type Reference {  client: String    supplier: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields client(String):   supplier(String):   
+Required by HotelBookingDetail:    HotelCancelDetail:</description>
     </item>
     
     <item>
@@ -1480,7 +1548,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/resort/</guid>
-      <description> GraphQL schema definition type Resort {  code: String!    name: String    description: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   name(String):   description(String):    Required by Supplement:     </description>
+      <description>GraphQL schema definition type Resort {  code: String!    name: String    description: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   name(String):   description(String):   
+Required by Supplement:</description>
     </item>
     
     <item>
@@ -1498,7 +1567,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/resourceconnection/</guid>
-      <description> GraphQL schema definition type ResourceConnection {  edges: [ResourceEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([ResourceEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    APIData:    RoleData:     </description>
+      <description>GraphQL schema definition type ResourceConnection {  edges: [ResourceEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([ResourceEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    APIData:    RoleData:</description>
     </item>
     
     <item>
@@ -1516,7 +1586,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/resourceedge/</guid>
-      <description> GraphQL schema definition type ResourceEdge {  node: Resource    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Resource):   cursor(String!):    Required by ResourceConnection:     </description>
+      <description>GraphQL schema definition type ResourceEdge {  node: Resource    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Resource):   cursor(String!):   
+Required by ResourceConnection:</description>
     </item>
     
     <item>
@@ -1534,7 +1605,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/roleconnection/</guid>
-      <description> GraphQL schema definition type RoleConnection {  edges: [RoleEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([RoleEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    MemberData:    GroupData:    ResourceData:     </description>
+      <description>GraphQL schema definition type RoleConnection {  edges: [RoleEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([RoleEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    MemberData:    GroupData:    ResourceData:</description>
     </item>
     
     <item>
@@ -1552,7 +1624,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/roleedge/</guid>
-      <description> GraphQL schema definition type RoleEdge {  node: Role    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Role):   cursor(String!):    Required by RoleConnection:     </description>
+      <description>GraphQL schema definition type RoleEdge {  node: Role    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Role):   cursor(String!):   
+Required by RoleConnection:</description>
     </item>
     
     <item>
@@ -1570,7 +1643,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/roomconnection/</guid>
-      <description> GraphQL schema definition type RoomConnection {  edges: [RoomEdge]    token: String    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([RoomEdge]):   token(String):   pageInfo(PageInfo!):    Required by HotelXQuery:     </description>
+      <description>GraphQL schema definition type RoomConnection {  edges: [RoomEdge]    token: String    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([RoomEdge]):   token(String):   pageInfo(PageInfo!):   
+Required by HotelXQuery:</description>
     </item>
     
     <item>
@@ -1579,7 +1653,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/roomcriteria/</guid>
-      <description> GraphQL schema definition type RoomCriteria {  paxes: [Pax!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields paxes([Pax!]!):    </description>
+      <description>GraphQL schema definition type RoomCriteria {  paxes: [Pax!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields paxes([Pax!]!):</description>
     </item>
     
     <item>
@@ -1588,7 +1662,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/roomdata/</guid>
-      <description> GraphQL schema definition type RoomData {  code: ID!    roomCode: String!    texts( languages: [Language!], ): [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   roomCode(String!):   texts([Text!]):    Required by RoomStatic:     </description>
+      <description>GraphQL schema definition type RoomData {  code: ID!    roomCode: String!    texts( languages: [Language!], ): [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   roomCode(String!):   texts([Text!]):   
+Required by RoomStatic:</description>
     </item>
     
     <item>
@@ -1597,7 +1672,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/roomedge/</guid>
-      <description> GraphQL schema definition type RoomEdge {  node: RoomStatic    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(RoomStatic):   cursor(String!):    Required by RoomConnection:     </description>
+      <description>GraphQL schema definition type RoomEdge {  node: RoomStatic    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(RoomStatic):   cursor(String!):   
+Required by RoomConnection:</description>
     </item>
     
     <item>
@@ -1606,7 +1682,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/roomprice/</guid>
-      <description> GraphQL schema definition type RoomPrice {  price: Price!    breakdown: [PriceBreakdown!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields price(Price!):   breakdown([PriceBreakdown!]):    Required by Room:     </description>
+      <description>GraphQL schema definition type RoomPrice {  price: Price!    breakdown: [PriceBreakdown!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields price(Price!):   breakdown([PriceBreakdown!]):   
+Required by Room:</description>
     </item>
     
     <item>
@@ -1624,7 +1701,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/rule/</guid>
-      <description> GraphQL schema definition type Rule {  id: String!    name: String    type: MarkupRuleType!    value: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields id(String!):   name(String):   type(MarkupRuleType!):   value(Float!):    </description>
+      <description>GraphQL schema definition type Rule {  id: String!    name: String    type: MarkupRuleType!    value: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields id(String!):   name(String):   type(MarkupRuleType!):   value(Float!):</description>
     </item>
     
     <item>
@@ -1633,7 +1710,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/serviceapi/</guid>
-      <description> GraphQL schema definition type ServiceApi {  code: ID!    name: String!    operations: [ServiceOperation]    error: [Error!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String!):   operations([ServiceOperation]):   error([Error!]):    Required by AdminQuery:     </description>
+      <description>GraphQL schema definition type ServiceApi {  code: ID!    name: String!    operations: [ServiceOperation]    error: [Error!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String!):   operations([ServiceOperation]):   error([Error!]):</description>
     </item>
     
     <item>
@@ -1642,7 +1719,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/serviceoperation/</guid>
-      <description> GraphQL schema definition type ServiceOperation {  code: ID!    name: String!    type: String!    travelOperation: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String!):   type(String!):   travelOperation(Int!):    Required by ServiceApi:     </description>
+      <description>GraphQL schema definition type ServiceOperation {  code: ID!    name: String!    type: String!    travelOperation: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String!):   type(String!):   travelOperation(Int!):</description>
     </item>
     
     <item>
@@ -1651,7 +1728,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/servicestatus/</guid>
-      <description> GraphQL schema definition type ServiceStatus {  code: String    type: String    description: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String):   type(String):   description(String):    Required by HotelXQuery:     </description>
+      <description>GraphQL schema definition type ServiceStatus {  code: String    type: String    description: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String):   type(String):   description(String):   
+Required by HotelXQuery:</description>
     </item>
     
     <item>
@@ -1660,7 +1738,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/stat/</guid>
-      <description> GraphQL schema definition type Stat {  start: DateTime!    end: DateTime!    duration: Float   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields start(DateTime!):   end(DateTime!):   duration(Float):    Required by StatsRequest:    StatPlugin:    StatAccess:    StatTransaction:     </description>
+      <description>GraphQL schema definition type Stat {  start: DateTime!    end: DateTime!    duration: Float   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields start(DateTime!):   end(DateTime!):   duration(Float):   
+Required by StatsRequest:    StatPlugin:    StatAccess:    StatTransaction:</description>
     </item>
     
     <item>
@@ -1678,7 +1757,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/statplugin/</guid>
-      <description> GraphQL schema definition type StatPlugin {  name: String!    total: Stat!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!):   total(Stat!):    Required by StatsRequest:    StatAccess:     </description>
+      <description>GraphQL schema definition type StatPlugin {  name: String!    total: Stat!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!):   total(Stat!):   
+Required by StatsRequest:    StatAccess:</description>
     </item>
     
     <item>
@@ -1705,7 +1785,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/statsasset/</guid>
-      <description> GraphQL schema definition type StatsAsset {  startTime: DateTime!    execTime: Int!    url: URI!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields startTime(DateTime!):   execTime(Int!):   url(URI!):    </description>
+      <description>GraphQL schema definition type StatsAsset {  startTime: DateTime!    execTime: Int!    url: URI!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields startTime(DateTime!):   execTime(Int!):   url(URI!):</description>
     </item>
     
     <item>
@@ -1714,7 +1794,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/statsconnection/</guid>
-      <description> GraphQL schema definition type StatsConnection {  edges: [StatsEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([StatsEdge]):   pageInfo(PageInfo!):    Required by StatsQuery:     </description>
+      <description>GraphQL schema definition type StatsConnection {  edges: [StatsEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([StatsEdge]):   pageInfo(PageInfo!):   
+Required by StatsQuery:</description>
     </item>
     
     <item>
@@ -1732,7 +1813,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/statsedge/</guid>
-      <description> GraphQL schema definition type StatsEdge {  node: Stats    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Stats):   cursor(String!):    Required by StatsConnection:     </description>
+      <description>GraphQL schema definition type StatsEdge {  node: Stats    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Stats):   cursor(String!):   
+Required by StatsConnection:</description>
     </item>
     
     <item>
@@ -1786,7 +1868,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/supplierconnection/</guid>
-      <description> GraphQL schema definition type SupplierConnection {  edges: [SupplierEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([SupplierEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    OrganizationData:    GroupCommonData:    ClientData:    GroupData:     </description>
+      <description>GraphQL schema definition type SupplierConnection {  edges: [SupplierEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([SupplierEdge]):   pageInfo(PageInfo!):   
+Required by AdminQuery:    OrganizationData:    GroupCommonData:    ClientData:    GroupData:</description>
     </item>
     
     <item>
@@ -1804,7 +1887,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/supplierdetected/</guid>
-      <description> GraphQL schema definition type SupplierDetected {  code: ID!    supplier: Supplier    numberOfHotels: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   supplier(Supplier):   numberOfHotels(Int!):    </description>
+      <description>GraphQL schema definition type SupplierDetected {  code: ID!    supplier: Supplier    numberOfHotels: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   supplier(Supplier):   numberOfHotels(Int!):</description>
     </item>
     
     <item>
@@ -1813,7 +1896,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/supplieredge/</guid>
-      <description> GraphQL schema definition type SupplierEdge {  node: Supplier    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Supplier):   cursor(String!):    Required by SupplierConnection:     </description>
+      <description>GraphQL schema definition type SupplierEdge {  node: Supplier    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Supplier):   cursor(String!):   
+Required by SupplierConnection:</description>
     </item>
     
     <item>
@@ -1822,7 +1906,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/surcharge/</guid>
-      <description> GraphQL schema definition type Surcharge {  chargeType: ChargeType!    mandatory: Boolean!    price: Price!    description: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields chargeType(ChargeType!):   mandatory(Boolean!):   price(Price!):   description(String):    </description>
+      <description>GraphQL schema definition type Surcharge {  chargeType: ChargeType!    mandatory: Boolean!    price: Price!    description: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields chargeType(ChargeType!):   mandatory(Boolean!):   price(Price!):   description(String):</description>
     </item>
     
     <item>
@@ -1831,7 +1915,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/text/</guid>
-      <description> GraphQL schema definition type Text {  text: String!    language: Language!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields text(String!):   language(Language!):    </description>
+      <description>GraphQL schema definition type Text {  text: String!    language: Language!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields text(String!):   language(Language!):</description>
     </item>
     
     <item>
@@ -1840,7 +1924,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/timeout/</guid>
-      <description> GraphQL schema definition type Timeout {  search: Int!    quote: Int!    book: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields search(Int!):   quote(Int!):   book(Int!):    Required by HotelXDefaultSettingsData:    HotelXCommonSettingsData:     </description>
+      <description>GraphQL schema definition type Timeout {  search: Int!    quote: Int!    book: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields search(Int!):   quote(Int!):   book(Int!):   
+Required by HotelXDefaultSettingsData:    HotelXCommonSettingsData:</description>
     </item>
     
     <item>
@@ -1849,7 +1934,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/transactions/</guid>
-      <description> GraphQL schema definition type Transactions {  request: String!    response: String!    timeStamp: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields request(String!):   response(String!):   timeStamp(DateTime!):    </description>
+      <description>GraphQL schema definition type Transactions {  request: String!    response: String!    timeStamp: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields request(String!):   response(String!):   timeStamp(DateTime!):</description>
     </item>
     
     <item>
@@ -1858,7 +1943,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/uploadfiledata/</guid>
-      <description> GraphQL schema definition type UploadFileData {  fileId: String!    suppliers: [SupplierDetected!]    numberOfLines: Int    numberOfHotels: Int   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields fileId(String!):   suppliers([SupplierDetected!]):   numberOfLines(Int):   numberOfHotels(Int):    Required by UploadFileResponse:     </description>
+      <description>GraphQL schema definition type UploadFileData {  fileId: String!    suppliers: [SupplierDetected!]    numberOfLines: Int    numberOfHotels: Int   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields fileId(String!):   suppliers([SupplierDetected!]):   numberOfLines(Int):   numberOfHotels(Int):</description>
     </item>
     
     <item>
@@ -1867,7 +1952,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/uploadfileresponse/</guid>
-      <description> GraphQL schema definition type UploadFileResponse {  data: UploadFileData    error: Error    warnings: [Warning]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields data(UploadFileData):   error(Error):   warnings([Warning]):    Required by MappeaMutation:     </description>
+      <description>GraphQL schema definition type UploadFileResponse {  data: UploadFileData    error: Error    warnings: [Warning]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields data(UploadFileData):   error(Error):   warnings([Warning]):   
+Required by MappeaMutation:</description>
     </item>
     
     <item>
@@ -1876,7 +1962,7 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/urls/</guid>
-      <description> GraphQL schema definition type Urls {  search: URI    quote: URI    book: URI    generic: URI   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields search(URI):   quote(URI):   book(URI):   generic(URI):    Required by AccessData:     </description>
+      <description>GraphQL schema definition type Urls {  search: URI    quote: URI    book: URI    generic: URI   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields search(URI):   quote(URI):   book(URI):   generic(URI):</description>
     </item>
     
     <item>
@@ -1885,7 +1971,8 @@ GraphQL schema definition type EventData {  code: ID!    groupBy: String    stat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/objects/warning/</guid>
-      <description> GraphQL schema definition type Warning {  code: String!    type: String!    description: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   type(String!):   description(String!):    Required by GetUploadedFilesResponse:    GetMappeaStatsResponse:    OnlyStatusResponse:    UploadFileResponse:     </description>
+      <description>GraphQL schema definition type Warning {  code: String!    type: String!    description: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   type(String!):   description(String!):   
+Required by GetUploadedFilesResponse:    GetMappeaStatsResponse:    OnlyStatusResponse:    UploadFileResponse:</description>
     </item>
     
   </channel>

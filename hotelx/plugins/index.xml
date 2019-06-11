@@ -27,13 +27,8 @@ Flows HotelX query or mutation determine what flow is executed. Plugins can be e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotelx/plugins/black-list/</guid>
-      <description>The Blacklist plugin is used to ignore hotel code(s) when a Search query is executed.
-Loading a Blacklist is as easy as following the steps below:
-File Format The file should be in the below format:
- Encoding: UTF-8
- File Name: blacklist\_access\_hotels.csv
- Header Row: IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
- IdRule: Unique identifier of the rule.  Criteria rows: * ClientToken, NoClientToken: List of clienttoken separated by &amp;lsquo;;&amp;rsquo; * Client, NoClient: List of client codes separated by &amp;lsquo;;&amp;rsquo; * Supplier, NoSupplier: List of supplier codes separated by &amp;lsquo;;&amp;rsquo; * Access, NoAccess: List of access codes separated by &amp;lsquo;;&amp;rsquo; * Context, NoContext: List of operation context codes separated by &amp;lsquo;;&amp;rsquo;.</description>
+      <description>The Blacklist plugin is used to ignore hotel code(s) when a Search query is executed. This means that all the hotels on the blacklist won&amp;rsquo;t be requested to the supplier. You can apply also rules in order to block an entire supplier. More details regarding configuration below.
+Definitions  Client Token: Dynamic parameter you can send on the RQ in case you want to differentiate the traffic. For B2B clients could help to differentiate agency groups Client: The client you use on HotelX to make requests.</description>
     </item>
     
     <item>
