@@ -2977,6 +2977,16 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
+          <li data-nav-id="/hotelx/reference/schema/query/" class="dd-item">
+            <a href="/hotelx/reference/schema/query/">
+              <span style="padding-left: 8px;">HotelXQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/reference/schema/mutation/" class="dd-item">
+            <a href="/hotelx/reference/schema/mutation/">
+              <span style="padding-left: 8px;">HotelXMutation</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/hotelx/reference/objects/" class="dd-item">
@@ -5966,6 +5976,10 @@
       $('#navbar').removeClass('toogled');
       $('#backgroundMenu').removeClass('toogled');
     });
+
+    $('.menu-right').prepend('<p class="menu-head">Sections <span class="toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></span></p>').on('click', 'span.toggle-menu', function(){ 
+      $('#TableOfContents').toggle()
+    }); 
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);

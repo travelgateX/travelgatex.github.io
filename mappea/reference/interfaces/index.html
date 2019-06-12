@@ -2680,16 +2680,6 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/alertsx/reference/interfaces/groupcommondata/" class="dd-item">
-            <a href="/alertsx/reference/interfaces/groupcommondata/">
-              <span style="padding-left: 8px;">GroupCommonData</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/alertsx/reference/interfaces/node/" class="dd-item">
-            <a href="/alertsx/reference/interfaces/node/">
-              <span style="padding-left: 8px;">Node</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/alertsx/reference/inputobjects/" class="dd-item">
@@ -3575,19 +3565,24 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/travelgatex/concepts/common-resources/" class="dd-item">
-            <a href="/travelgatex/concepts/common-resources/">
-              <span style="padding-left: 8px;">Common resources</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotelx/reference/interfaces/bookableoptionsearch/" class="dd-item">
+            <a href="/hotelx/reference/interfaces/bookableoptionsearch/">
+              <span style="padding-left: 8px;">BookableOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/concepts/quotas-limits/" class="dd-item">
-            <a href="/travelgatex/concepts/quotas-limits/">
-              <span style="padding-left: 8px;">Quotas &amp; Limits</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotelx/reference/interfaces/node/" class="dd-item">
+            <a href="/hotelx/reference/interfaces/node/">
+              <span style="padding-left: 8px;">Node</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/travelgatex/concepts/request-headers/" class="dd-item">
-            <a href="/travelgatex/concepts/request-headers/">
-              <span style="padding-left: 8px;">Request Headers</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotelx/reference/interfaces/priceable/" class="dd-item">
+            <a href="/hotelx/reference/interfaces/priceable/">
+              <span style="padding-left: 8px;">Priceable</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotelx/reference/interfaces/response/" class="dd-item">
+            <a href="/hotelx/reference/interfaces/response/">
+              <span style="padding-left: 8px;">Response</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5968,6 +5963,10 @@
       $('#navbar').removeClass('toogled');
       $('#backgroundMenu').removeClass('toogled');
     });
+
+    $('.menu-right').prepend('<p class="menu-head">Sections <span class="toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></span></p>').on('click', 'span.toggle-menu', function(){ 
+      $('#TableOfContents').toggle()
+    }); 
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);

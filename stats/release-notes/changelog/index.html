@@ -5976,6 +5976,10 @@
       $('#backgroundMenu').removeClass('toogled');
     });
 
+    $('.menu-right').prepend('<p class="menu-head">Sections <span class="toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></span></p>').on('click', 'span.toggle-menu', function(){ 
+      $('#TableOfContents').toggle()
+    }); 
+
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);
       $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
@@ -6227,13 +6231,13 @@
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/insights-x/release-notes/changelog/">Insights-X changelog</a></li>
-		
 		<li><a href="/hotelx/release-notes/changelog/">HotelX changelog</a></li>
 		
-		<li><a href="/alertsx/release-notes/changelog/">Alerts-X changelog</a></li>
+		<li><a href="/insights-x/release-notes/changelog/">Insights-X changelog</a></li>
 		
 		<li><a href="/channelx/release-notes/changelog/">ChannelX changelog</a></li>
+		
+		<li><a href="/alertsx/release-notes/changelog/">Alerts-X changelog</a></li>
 		
 	</ul>
 </div>

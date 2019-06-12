@@ -4303,14 +4303,29 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/hotelx/faqs/frequently-asked-questions/" class="dd-item">
-            <a href="/hotelx/faqs/frequently-asked-questions/">
-              <span style="padding-left: 8px;">FAQs</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/legacy/docs/intro/" class="dd-item">
+            <a href="/legacy/docs/intro/">
+              <span style="padding-left: 8px;">Introduction</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotelx/faqs/common-errors/" class="dd-item">
-            <a href="/hotelx/faqs/common-errors/">
-              <span style="padding-left: 8px;">Common Errors</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/legacy/docs/service-endpoints/" class="dd-item">
+            <a href="/legacy/docs/service-endpoints/">
+              <span style="padding-left: 8px;">Service Endpoints</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/audience/" class="dd-item">
+            <a href="/legacy/docs/audience/">
+              <span style="padding-left: 8px;">Audience</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/documents-goals/" class="dd-item">
+            <a href="/legacy/docs/documents-goals/">
+              <span style="padding-left: 8px;">Documents goals</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/anatomy-request/" class="dd-item">
+            <a href="/legacy/docs/anatomy-request/">
+              <span style="padding-left: 8px;">Anatomy of Request</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5976,6 +5991,10 @@
       $('#navbar').removeClass('toogled');
       $('#backgroundMenu').removeClass('toogled');
     });
+
+    $('.menu-right').prepend('<p class="menu-head">Sections <span class="toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></span></p>').on('click', 'span.toggle-menu', function(){ 
+      $('#TableOfContents').toggle()
+    }); 
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);
