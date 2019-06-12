@@ -9158,7 +9158,7 @@ All notable changes in our platform will be documented on this page. 2019-05-27 
       
       <guid>/stats/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Stats-X
-2019-05-22  Now stats are available from 01/01/2018. Requests by accessCode are available only from 15/05/2019.   2019-05-14  Fix an error that was causing accessCode not being stored successfully. Fix an error to show 100 assets per errorCode and per operation.   2019-05-03  Fix an error that was causing that assets of HUB error types were NULL.   2019-05-02  Input field retrieveAssets made optional.</description>
+2019-06-12  Fix an error that was causing to have empty operations in the response.   2019-06-03  New scalar type Int64 has been created. hits in StatsData, totalHits in OperationDetailed and hits in StatsInfo have changed its type to this new scalar.   2019-05-30  Now adviceMessage&amp;rsquo;s from others TravelgateX products are returned as external in owns adviceMessage&amp;rsquo;s.   2019-05-23  Now type of StatsInforeturns the correct value.</description>
     </item>
     
     <item>
