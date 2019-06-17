@@ -9958,7 +9958,7 @@ How to request     a5b25332a7a5683d602efeb87233a9c7 You can ask for bookings by 
       <guid>/hotelx/plugins/format-files/commission/</guid>
       <description>The commission file should be in the below format:
  Encoding: UTF-8 File Name:  context sequential commission  Extension file: csv Headers:
- ruleId → rule identifier supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date Date format creationDateTo → end creation date Date format checkInFrom → checkin date Date format checkInTo → checkout date Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
+ ruleId → rule identifier clientTokens → client token used for index the rule supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date Date format creationDateTo → end creation date Date format checkInFrom → checkin date Date format checkInTo → checkout date Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.</description>
     </item>
     
     <item>
