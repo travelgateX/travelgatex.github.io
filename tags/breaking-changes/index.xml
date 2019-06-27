@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Breaking Changes on TravelgateX Documentation</title>
+    <link>/tags/breaking-changes/</link>
+    <description>Recent content in Breaking Changes on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/breaking-changes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ChannelX breaking changes</title>
+      <link>/channelx/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/channelx/release-notes/breaking-changes/</guid>
+      <description>Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+ Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!</description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/alertsx/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alertsx/release-notes/breaking-changes/</guid>
+      <description> Changes history of deprecated notes previously announced No deletions to date </description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/hotelx/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotelx/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of loadFile from HotelXMutation. Reason: . Deprecated on 2018-06-06.To be removed soon. Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of type from AdviseMessage.</description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/mappea/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mappea/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.</description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/paymentx/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.</description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/stats/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/stats/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.</description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/travelgatex/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/travelgatex/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced Unreleased  Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of loadFile from HotelXMutation.</description>
+    </item>
+    
+  </channel>
+</rss>
