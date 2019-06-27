@@ -17,7 +17,7 @@
       
       <guid>/travelgatex/reference/scalars/boolean/</guid>
       <description>The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by SupplierFilter:    ClientFilter:    EntityFilter:    PageInfo:    AccessData:    SupplierData:    Provider:    OrganizationData:    GroupCommonData:    MemberData:    ClientData:    GroupData:    APIData:    ResourceData:    RoleData:    ProfileData:    HotelXHotelFilterInput:    HotelSettingsInput:    HotelData:    DestinationData:    SettingsBaseInput:    Room:    Price:    Supplement:    Surcharge:    CancelPolicy:    Bed:    Markup:    Priceable:    PriceChange:    HotelRuntimeParameter:    StatsFilterInput:    OperationDetailed:    AlertCriteriaInput:    AlertData:    AlertConfiguration:    AccessInput:    CreateClientInput:    UpdateClientInput:    CreateProfileInput:    UpdateProfileInput:    UpdateMemberInput:    HotelXUpdateStatusData:    DeltaPriceInput:    AlertInput:  Alert information.</description>
+GraphQL schema definition scalar Boolean   Required by SupplierFilter:    ClientFilter:    EntityFilter:    PageInfo:    AccessData:    SupplierData:    Provider:  Temporary type to use only during SQL server&amp;#39;s lifetime  OrganizationData:    GroupCommonData:    MemberData:    ClientData:    GroupData:    APIData:    ResourceData:    RoleData:    ProfileData:  Profile data  HotelSettingsInput:  Settings that you can edit for this avail.</description>
     </item>
     
     <item>
@@ -44,7 +44,8 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/country/</guid>
-      <description>GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    Location:    GeonameData:    CriteriaSearch:    HotelXDefaultSettingsDataInput:</description>
+      <description>The Country type represents Country values. A good example might be a Passenger Nationality. In queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes &amp;ldquo;ES&amp;rdquo;.
+GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:  Search criteria contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
     </item>
     
     <item>
@@ -53,7 +54,8 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/currency/</guid>
-      <description>GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:</description>
+      <description>The Currenty type represents Currency values. A good example might be a Rate Price Currency. In queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes &amp;ldquo;EUR&amp;rdquo;.
+GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:  Search criteria contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
     </item>
     
     <item>
@@ -62,7 +64,8 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/date/</guid>
-      <description>GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:    CriteriaSearch:    Supplement:    RatePlan:    Promotion:    PriceBreakdown:    CriteriaBookingDatesInput:    BookingHotel:    PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
+      <description>The Date type represents Date values. A good example might be a Hotel CheckIn Date. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22&amp;rdquo;.
+GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:  Search criteria contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
     </item>
     
     <item>
@@ -71,7 +74,8 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/datetime/</guid>
-      <description>GraphQL schema definition scalar DateTime   Required by Access:    Node:    Supplier:    Organization:    Member:    Domain:    Client:    Group:    ManagedGroup:    API:    Resource:    Role:    PointOfSale:    Profile:    Entity:    Product:    Operation:    HotelXHotelFilterInput:    HotelRuntimeConfiguration:    Board:    Category:    Hotel:    GiataData:    Media:    Airport:    Geoname:    RoomStatic:    Destination:    AuditData:    Stat:    Transactions:    PaymentXStoredCardFilterInput:    PaymentXStoredCard:    StatsFilterInput:    Stats:    StatsData:    StatsAsset:    AlertFilterInput:    Alert:   Alert node  Event:  Event triggered  HotelXUpdateStatus:</description>
+      <description>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
+GraphQL schema definition scalar DateTime   Required by Access:  An Access is a set of credentials and configuration in order to access the system of a Supplier.  Node:    Supplier:  A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers  Organization:  Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.</description>
     </item>
     
     <item>
@@ -80,16 +84,8 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/domainname/</guid>
-      <description>GraphQL schema definition scalar DomainName   Required by DomainData:</description>
-    </item>
-    
-    <item>
-      <title>Email</title>
-      <link>/travelgatex/reference/scalars/email/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/scalars/email/</guid>
-      <description> GraphQL schema definition scalar Email   </description>
+      <description> Scalar for type Domain
+GraphQL schema definition scalar DomainName   Required by DomainData:     </description>
     </item>
     
     <item>
@@ -98,8 +94,8 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/float/</guid>
-      <description> The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.
-GraphQL schema definition scalar Float   Required by Coordinates:    AuditData:    Stat:    Price:    Exchange:    Markup:    Priceable:    Rule:    CancelPenalty:    PriceChange:    DeltaPriceInput:     </description>
+      <description>The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.
+GraphQL schema definition scalar Float   Required by Coordinates:  Geographical coordinates corresponding to a location.  AuditData:  Data sent and received in the supplier’s native format.  Stat:    Price:  Price indicates the value of the room/option. Supplements and/or surcharges can be included into the price, and will be verified with nodes Supplements/Surcharges.</description>
     </item>
     
     <item>
@@ -109,7 +105,7 @@ GraphQL schema definition scalar Float   Required by Coordinates:    AuditData: 
       
       <guid>/travelgatex/reference/scalars/id/</guid>
       <description>The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar ID   Required by AccessFilter:    SupplierFilter:    ClientFilter:    ServiceApi:    PointOfSaleFilter:    ProfileFilter:    Access:    AccessData:    Node:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    OrganizationData:    AdviseMessage:    Member:    Domain:    GroupCommonData:    MemberData:    DomainData:    Client:    ClientData:    Group:    GroupData:    ManagedGroup:    ManagedGroupData:    API:    Resource:    Role:    APIData:    ResourceData:    RoleData:    ServiceOperation:    PointOfSale:    PointOfSaleData:    Profile:    ProfileData:    Entity:    Product:    ProductData:    Operation:    OperationData:    HotelXBoardQueryInput:    HotelXCategoryQueryInput:    HotelXHotelListInput:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    HotelRuntimeConfiguration:    Board:    BoardData:    Category:    CategoryData:    Hotel:    HotelData:    GiataData:    DestinationData:    Airport:    Geoname:    AirportData:    GeonameData:    RoomStatic:    RoomData:    Destination:    HotelXAccessInput:    PaymentXStoredCardIDInput:    PaymentXStoredCard:    Stats:    StatsInfo:    Alert:   Alert node  AlertData:    Event:  Event triggered  EventData:  Event data  AccessInput:    GroupInput:    CreateClientInput:    UpdateClientInput:    CreateProfileInput:    UpdateProfileInput:    UpdateEntitiesInput:    CreateOrganizationInput:    SuitOrganizationInput:    CreateMemberInput:    CreateGroupInput:    UpdateMemberInput:    GrantPermissionsInput:    ClonePermissionsInput:    UpdateGroupInput:    DeleteMemberInput:    DeleteGroupInput:    UpdateGroupAPISInput:    HotelXUpdateStatus:    HotelXUpdateStatusData:    MappeaMapSupplierInput:    MappeaSupplierConfirmedInput:    SupplierDetected:    PaymentXStoredCardInput:    AlertInput:  Alert information.</description>
+GraphQL schema definition scalar ID   Required by AccessFilter:    SupplierFilter:    ClientFilter:    ServiceApi:  Information related to a Service API  PointOfSaleFilter:    ProfileFilter:    Access:  An Access is a set of credentials and configuration in order to access the system of a Supplier.</description>
     </item>
     
     <item>
@@ -119,16 +115,7 @@ GraphQL schema definition scalar ID   Required by AccessFilter:    SupplierFilte
       
       <guid>/travelgatex/reference/scalars/int/</guid>
       <description>The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData:    SupplierData:    GroupData:    ServiceOperation:    RelayInput:    HotelXHotelListInput:    HotelConnection:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    Timeout:    BusinessRules:    PaxInput:    BusinessRulesInput:    SettingsBaseInput:    StatsRequest:    StatAccess:    Pax:    Occupancy:    Room:    Supplement:    Bed:    CancelPenalty:    BookingRoom:    File:    GetMappeaStatsData:    PaymentXExpireDate:    Ratios:    StatsInfo:    StatsAsset:    AlertConnection:  Alert list  AlertConfiguration:    EventConnection:  Events list  AlertTypeConfiguration:  Depending on the talert type, typeConfiguration will use some fields   AccessInput:    TimeoutInput:    HotelXBusinessRulesInput:    BookRoomInput:    ExpireDateInput:    BookPaxInput:    MappeaConfirmUploadInput:    MappeaMapSupplierInput:    UploadFileData:    SupplierDetected:    AlertConfigurationInputNoTraffic:  Configuration for NO_TRAFFIC alert type.</description>
-    </item>
-    
-    <item>
-      <title>Int64</title>
-      <link>/travelgatex/reference/scalars/int64/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/travelgatex/reference/scalars/int64/</guid>
-      <description>GraphQL schema definition scalar Int64   Required by StatsData:    OperationDetailed:    StatsInfo:</description>
+GraphQL schema definition scalar Int   Required by SupplierFilter:    SupplierData:    GroupData:    ServiceOperation:  Information related to an API operation  RelayInput:    HotelXHotelListInput:    HotelConnection:  HotelList definition  HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:  Settings that you can edit for this avail.</description>
     </item>
     
     <item>
@@ -137,7 +124,8 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/json/</guid>
-      <description>GraphQL schema definition scalar JSON   Required by AddOns:    AddOn:</description>
+      <description> The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string. In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: &amp;ldquo;{\&amp;ldquo;int\&amp;rdquo;: 1, \&amp;ldquo;string\&amp;rdquo;: \&amp;ldquo;value\&amp;ldquo;}&amp;rdquo;.
+GraphQL schema definition scalar JSON   Required by AddOns:  Additional information about the option  AddOn:  Additional information about the option   </description>
     </item>
     
     <item>
@@ -146,7 +134,8 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/jwt/</guid>
-      <description>GraphQL schema definition scalar JWT   Required by AdminQuery:</description>
+      <description> JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
+GraphQL schema definition scalar JWT   Required by AdminQuery:  The admin query root of TravelgateX&amp;#39;s GraphQL interface.   </description>
     </item>
     
     <item>
@@ -155,7 +144,8 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/language/</guid>
-      <description>GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    Text:    CriteriaSearch:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:</description>
+      <description>The Language type represents Language values. A good example might be a Hotel Description Language. In queries or mutations, Language fields have to be specified in ISO 639-1 format with enclosing double quotes &amp;ldquo;en&amp;rdquo;.
+GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:  Search criteria contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.</description>
     </item>
     
     <item>
@@ -165,7 +155,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
       
       <guid>/travelgatex/reference/scalars/string/</guid>
       <description>The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar String   Required by ServiceApiFilter:    ServiceApi:    AccessEdge:    PageInfo:    AccessData:    Error:    Parameter:    SupplierData:    Provider:    OrganizationData:    AdviseMessage:    GroupCommonData:    MemberData:    ExternalMessage:    SupplierEdge:    ClientEdge:    GroupData:    ManagedGroupEdge:    APIData:    ResourceData:    RoleData:    ServiceOperation:    PointOfSaleEdge:    PointOfSaleData:    ProfileEdge:    ProfileData:    EntityEdge:    OrganizationEdge:    ProductEdge:    ProductData:    MemberEdge:    GroupEdge:    APIEdge:    ResourceEdge:    RoleEdge:    OperationEdge:    OperationData:    ServiceStatus:    RelayInput:    HotelConnection:    RoomConnection:    DestinationConnection:    HotelXDestinationSearcherInput:    HotelCriteriaSearchInput:    HotelSettingsInput:    HotelSearch:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    HotelXDefaultPluginStep:    HotelXDefaultPlugin:    HotelXParameter:    BoardEdge:    BoardData:    Text:    CategoryEdge:    CategoryData:    HotelEdge:    HotelData:    Property:    Location:    Contact:    Amenity:    Media:    DestinationData:    AirportData:    GeonameData:    RoomEdge:    RoomData:    DestinationEdge:    HotelXSupplierInput:    ConfigurationInput:    ParameterInput:    PluginsInput:    HotelXFilterPluginTypeInput:    StatsRequest:    CriteriaSearch:    HotelOptionSearch:    Warning:    StatPlugin:    StatAccess:    StatTransaction:    Transactions:    Room:    Supplement:    Surcharge:    BookableOptionSearch:    Bed:    RatePlan:    Promotion:    Markup:    Rule:    Resort:    AddOn:    HotelOptionQuote:    PriceChange:    CriteriaBookingReferencesInput:    BookReferenceInput:    HotelBookingDetail:    Reference:    Holder:    BookingHotel:    BookingRoom:    MappingContext:    MappingEntity:    Map:    HotelRuntimeParameter:    MappeaGetMappeaStatsInput:    File:    GetMappeaStatsData:    PaymentXStoredCardIDInput:    HolderInput:    PaymentXStoredCardEdge:    PaymentXStoredCardData:    StatsEdge:    AlertEdge:    AlertData:    EventEdge:    EventData:  Event data  HotelXMutation:    AccessInput:    CreateClientInput:    UpdateClientInput:    CreateProfileInput:    UpdateProfileInput:    CreateOrganizationInput:    CreateMemberInput:    CreateGroupInput:    UpdateMemberInput:    UpdateGroupInput:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:    HotelXDefaultPluginInput:    PaymentCardInput:    BookPaxInput:    HotelCancelDetail:    MappeaUploadFileInput:    UploadFileData:    PaymentXStoredCardInput:    AlertInput:  Alert information.</description>
+GraphQL schema definition scalar String   Required by ServiceApiFilter:    ServiceApi:  Information related to a Service API  AccessEdge:    PageInfo:    AccessData:    Error:  Application errors  Parameter:  Parameters for additional information for the supplier&amp;#39;s configuration.</description>
     </item>
     
     <item>
@@ -174,7 +164,8 @@ GraphQL schema definition scalar String   Required by ServiceApiFilter:    Servi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/uri/</guid>
-      <description>GraphQL schema definition scalar URI   Required by Urls:    GiataData:    Contact:    Media:    UrlsInput:    StatsAsset:</description>
+      <description> The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
+GraphQL schema definition scalar URI   Required by Urls:  Url&amp;#39;s  Contact:  Contact Data.  Media:  Contains media information.  UrlsInput:  URLs Input  StatsAsset:  Asset of an specific error   </description>
     </item>
     
   </channel>

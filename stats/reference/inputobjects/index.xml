@@ -11,39 +11,13 @@
     
     
     <item>
-      <title>AccessFilter</title>
-      <link>/stats/reference/inputobjects/accessfilter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/stats/reference/inputobjects/accessfilter/</guid>
-      <description>GraphQL schema definition type AccessFilter {  accessID: [ID]    group: [ID]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields accessID([ID]):   group([ID]):   owner([ID!]):</description>
-    </item>
-    
-    <item>
-      <title>ClientFilter</title>
-      <link>/stats/reference/inputobjects/clientfilter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/stats/reference/inputobjects/clientfilter/</guid>
-      <description>GraphQL schema definition type ClientFilter {  clientID: [ID]    name: [String!]    groupID: [ID]    isActive: Boolean    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields clientID([ID]):   name([String!]):   groupID([ID]):   isActive(Boolean):   owner([ID!</description>
-    </item>
-    
-    <item>
       <title>StatsFilterInput</title>
       <link>/stats/reference/inputobjects/statsfilterinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/inputobjects/statsfilterinput/</guid>
-      <description>GraphQL schema definition type StatsFilterInput {  owners: [ID!]    groups: [ID!]    accesses: [ID!]    suppliers: [ID!]    clients: [ID!]    mode: ModeType!    serviceApis: [ServiceApiType!]    operation: [ServiceOperationType!]    serviceOperations: [ID!]    from: DateTime!    to: DateTime!    retrieveAssets: Boolean   Show deprecated fields   }    window.</description>
-    </item>
-    
-    <item>
-      <title>SupplierFilter</title>
-      <link>/stats/reference/inputobjects/supplierfilter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/stats/reference/inputobjects/supplierfilter/</guid>
-      <description>GraphQL schema definition type SupplierFilter {  supplierID: [ID]    accessID: [ID]    groupID: [ID]    isActive: Boolean    serviceAPI: [Int]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields supplierID([ID]):   accessID([ID]):   groupID([ID]):   isActive(Boolean):   serviceAPI([Int]):   owner([ID!</description>
+      <description>Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)
+GraphQL schema definition type StatsFilterInput {  groups: [ID!]    accesses: [ID!]    suppliers: [ID!]    clients: [ID!]    mode: ModeType!    serviceApis: [ServiceApiType!]    operation: [ServiceOperationType!</description>
     </item>
     
   </channel>
