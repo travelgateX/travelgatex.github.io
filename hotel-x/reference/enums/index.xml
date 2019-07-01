@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Enums on TravelgateX Documentation</title>
+    <link>/hotel-x/reference/enums/</link>
+    <description>Recent content in Enums on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/hotel-x/reference/enums/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AdviseMessageLevel</title>
+      <link>/hotel-x/reference/enums/advisemessagelevel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/advisemessagelevel/</guid>
+      <description>GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:  List of advise messages.</description>
+    </item>
+    
+    <item>
+      <title>ApplicationAreaType</title>
+      <link>/hotel-x/reference/enums/applicationareatype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/applicationareatype/</guid>
+      <description>Indicates where it applies
+GraphQL schema definition  enum ApplicationAreaType{   HOTEL,    ROOM,    SERVICE,    GENERAL,   }   Required by Amenity:  An Amenity is defined as something intended to make life more pleasant or comfortable for people. Examples include: swimming pools, shopping centers, etc.  Media:  Contains media information.</description>
+    </item>
+    
+    <item>
+      <title>BookStatusType</title>
+      <link>/hotel-x/reference/enums/bookstatustype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/bookstatustype/</guid>
+      <description>Book status
+GraphQL schema definition  enum BookStatusType{   OK,    KO,    ON_REQUEST,    CANCELLED,    UNKNOWN,   }   Required by HotelBookingDetail:  Contains information about booking  HotelCancelDetail:  Contains information about cancel</description>
+    </item>
+    
+    <item>
+      <title>BookingCriteriaType</title>
+      <link>/hotel-x/reference/enums/bookingcriteriatype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/bookingcriteriatype/</guid>
+      <description>Indicates the type of criteria in the request of the booking list
+GraphQL schema definition  enum BookingCriteriaType{   DATES,    REFERENCES,   }   Required by HotelCriteriaBookingInput:  Criteria of book contains basic information to find a book or books.</description>
+    </item>
+    
+    <item>
+      <title>BusinessRulesType</title>
+      <link>/hotel-x/reference/enums/businessrulestype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/businessrulestype/</guid>
+      <description>Business rules type
+GraphQL schema definition  enum BusinessRulesType{   CHEAPER_AMOUNT,    ROOM_TYPE,   }   Required by BusinessRules:  List of business rules for filtering options based on your interests.  BusinessRulesInput:  List of business rules to use as filter on the options.  HotelXBusinessRulesInput:  List of business rules to use as filter on the options.</description>
+    </item>
+    
+    <item>
+      <title>CancelPenaltyType</title>
+      <link>/hotel-x/reference/enums/cancelpenaltytype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/cancelpenaltytype/</guid>
+      <description>Options type
+GraphQL schema definition  enum CancelPenaltyType{   NIGHTS,    PERCENT,    IMPORT,   }   Required by CancelPenalty:  Contains information for cancellation penalities..</description>
+    </item>
+    
+    <item>
+      <title>ChargeType</title>
+      <link>/hotel-x/reference/enums/chargetype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/chargetype/</guid>
+      <description>Charge Type
+GraphQL schema definition  enum ChargeType{   INCLUDE,    EXCLUDE,   }   Required by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.  Surcharge:  Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.</description>
+    </item>
+    
+    <item>
+      <title>DateType</title>
+      <link>/hotel-x/reference/enums/datetype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/datetype/</guid>
+      <description>Indicates the type of dates
+GraphQL schema definition  enum DateType{   ARRIVAL,    BOOKING,   }   Required by CriteriaBookingDatesInput:  Criteria by dates</description>
+    </item>
+    
+    <item>
+      <title>DescriptionType</title>
+      <link>/hotel-x/reference/enums/descriptiontype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/descriptiontype/</guid>
+      <description>Indicates the type of description
+GraphQL schema definition  enum DescriptionType{   ADDITIONAL,    AMENITY,    ACTIVITY,    RESTAURANT,    ROOM,    GENERAL,    POOL,    LOCATION,    HOW_TO_GET,   }   Required by Description:  Object description indicates the type and the description about something.</description>
+    </item>
+    
+    <item>
+      <title>DestinationType</title>
+      <link>/hotel-x/reference/enums/destinationtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/destinationtype/</guid>
+      <description>Indicates the type of destination
+GraphQL schema definition  enum DestinationType{   ZONE,    CITY,    COUNTRY,   }   Required by DestinationData:  Information about destinantion  GeonameData:  Geoname data, which contain a reference to his parent location</description>
+    </item>
+    
+    <item>
+      <title>DurationType</title>
+      <link>/hotel-x/reference/enums/durationtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/durationtype/</guid>
+      <description>Duration Type
+GraphQL schema definition  enum DurationType{   RANGE,    OPEN,   }   Required by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.</description>
+    </item>
+    
+    <item>
+      <title>MarkupRuleType</title>
+      <link>/hotel-x/reference/enums/markupruletype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/markupruletype/</guid>
+      <description>Indicates what type of value is the markup, by percentage or is an import.
+GraphQL schema definition  enum MarkupRuleType{   PERCENT,    IMPORT,   }   Required by Rule:</description>
+    </item>
+    
+    <item>
+      <title>MetadataType</title>
+      <link>/hotel-x/reference/enums/metadatatype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/metadatatype/</guid>
+      <description>Indicates value type of current paramter
+GraphQL schema definition  enum MetadataType{   STRING,    NUMERIC,    BOOLEAN,    XML,    URI,   }   Required by HotelRuntimeParameter:  template of all fields used by the supplier</description>
+    </item>
+    
+    <item>
+      <title>PaymentType</title>
+      <link>/hotel-x/reference/enums/paymenttype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/paymenttype/</guid>
+      <description>Options payment type
+GraphQL schema definition  enum PaymentType{   MERCHANT,    DIRECT,    CARD_BOOKING,    CARD_CHECK_IN,   }   Required by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description</description>
+    </item>
+    
+    <item>
+      <title>PluginStepType</title>
+      <link>/hotel-x/reference/enums/pluginsteptype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/pluginsteptype/</guid>
+      <description>Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+GraphQL schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,    RESPONSE_OPTION,    RESPONSE_ACCESS,    RESPONSE,   }   Required by HotelXDefaultPlugin:    PluginStepInput:  Plugin to execute.  HotelXFilterPluginTypeInput:    HotelXDefaultPluginStepInput:    HotelXDefaultPluginInput:</description>
+    </item>
+    
+    <item>
+      <title>PluginType</title>
+      <link>/hotel-x/reference/enums/plugintype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/plugintype/</guid>
+      <description>Plugin Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+GraphQL schema definition  enum PluginType{   PRE_STEP,    HOTEL_MAP,    BOARD_MAP,    ROOM_MAP,    CURRENCY_CONVERSION,    MARKUP,    AGGREGATION,    POST_STEP,   }   Required by HotelXDefaultPlugin:    PluginsInput:  Plugin to execute.  HotelXDefaultPluginInput:</description>
+    </item>
+    
+    <item>
+      <title>RateRulesType</title>
+      <link>/hotel-x/reference/enums/raterulestype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/raterulestype/</guid>
+      <description> Rate Rules
+GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   </description>
+    </item>
+    
+    <item>
+      <title>StatusType</title>
+      <link>/hotel-x/reference/enums/statustype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/statustype/</guid>
+      <description>Indicartes options status
+GraphQL schema definition  enum StatusType{   OK,    RQ,   }   Required by HotelOptionSearch:  An option includes hotel information, meal plan, total price, conditions and room description  HotelOptionQuote:  Contains information about quote(s)</description>
+    </item>
+    
+    <item>
+      <title>SupplementType</title>
+      <link>/hotel-x/reference/enums/supplementtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/supplementtype/</guid>
+      <description>Supplement Type
+GraphQL schema definition  enum SupplementType{   SKI_PASS,    LESSONS,    MEALS,    EQUIPMENT,    TICKET,    TRANSFERS,    GALA,    ACTIVITY,   }   Required by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.</description>
+    </item>
+    
+    <item>
+      <title>TagRuntimeType</title>
+      <link>/hotel-x/reference/enums/tagruntimetype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/tagruntimetype/</guid>
+      <description>Indicates xml tag used by the current parameter
+GraphQL schema definition  enum TagRuntimeType{   USER,    PASSWORD,    URLAVAIL,    URLVALUATION,    URLRESERVATION,    URLGENERIC,    PARAMETER,   }   Required by HotelRuntimeParameter:  template of all fields used by the supplier</description>
+    </item>
+    
+    <item>
+      <title>UnitTimeType</title>
+      <link>/hotel-x/reference/enums/unittimetype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/reference/enums/unittimetype/</guid>
+      <description>Unit Time Type
+GraphQL schema definition  enum UnitTimeType{   DAY,    HOUR,   }   Required by Supplement:  Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.</description>
+    </item>
+    
+  </channel>
+</rss>
