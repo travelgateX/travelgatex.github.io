@@ -5864,7 +5864,7 @@ HotelX will return the information from all the suppliers at the same time, once
 <p><strong>How can I obtain the supplier’s mealplans?</strong></p>
 
 <p>You can download the full list of mealplans from the provider by using the board query:
-<a href="https://docs.travelgatex.com/hotelx/concepts/content/#boards" target="_blank">https://docs.travelgatex.com/hotelx/concepts/content/#boards</a></p>
+<a href="https://docs.travelgatex.com/hotel-x/concepts/content/#boards" target="_blank">https://docs.travelgatex.com/hotel-x/concepts/content/#boards</a></p>
 
 <p><strong>I&rsquo;ve run a request to obtain the information on the Board list and I receive a list of nodes that include code and text but I cannot see the relation between the boards and the hotels. Is it possible that the boarddata is being received directly from the supplier and that is independent from the hotel?</strong></p>
 
@@ -5894,14 +5894,14 @@ HotelX will return the information from all the suppliers at the same time, once
 
 <p><strong>It is possible to use GIATA codes?</strong></p>
 
-<p>Our platform allows to return GIATA codes in our Hotels Query response. First of all, you wil need to provide us your GIATA credentials in order to set up your Apikey. After that, you will be able to obtain these codes through our system and use them through our <a href="/hotelx/plugins/mapping/"><code>hotel map</code></a> process.</p>
+<p>Our platform allows to return GIATA codes in our Hotels Query response. First of all, you wil need to provide us your GIATA credentials in order to set up your Apikey. After that, you will be able to obtain these codes through our system and use them through our <a href="/hotel-x/plugins/mapping/"><code>hotel map</code></a> process.</p>
 
 <h2 id="certification-process">Certification process</h2>
 
 <p><strong>Please advise us on the procedure for Certification</strong>
 All the details regarding the Certification Process are explained in the Welcome Pack we sent you.
 Basically, you have to perform the three cases asked in the Welcome Pack and raise a certification ticket on our Customer Care Service Desk (attaching the files).
-You can also find more information on the certification process within our <a href="/hotelx/howtos/certification_process/"><code>documentation site</code></a></p>
+You can also find more information on the certification process within our <a href="/hotel-x/howtos/certification_process/"><code>documentation site</code></a></p>
 
 <h2 id="supplier-hoteltest">Supplier HOTELTEST</h2>
 
@@ -5916,7 +5916,7 @@ No, we use a test supplier, so there is a limited number of hotels in the databa
 <p><strong>Can we define our own context for 2 or more test suppliers? This will help us to test how the requests will work with our own context.</strong></p>
 
 <p>Yes, you can create your own context for HOTELTEST and TTHOTTEST. You will need to upload the mapping files according to our documentation and use your own context when making the requests:
-<a href="https://docs.travelgatex.com/hotelx/plugins/mapping/" target="_blank">https://docs.travelgatex.com/hotelx/plugins/mapping/</a></p>
+<a href="https://docs.travelgatex.com/hotel-x/plugins/mapping/" target="_blank">https://docs.travelgatex.com/hotel-x/plugins/mapping/</a></p>
 
 <h2 id="search">Search</h2>
 
@@ -5969,7 +5969,7 @@ No, we use a test supplier, so there is a limited number of hotels in the databa
 <p>Every time you activate a supplier, you receive an access code. This access code is used to differentiate between suppliers and also to filter between the same supplier&rsquo;s different credentials and configurations. This allows you, for instance, to diffentiate between B2B or B2C requests, or search availability only for certain suppliers.</p>
 
 <p><strong>In case I would like to receive a specific rate, would it be possible?</strong>
-Yes, you could filter the response by introducing the tag <a href="/hotelx/reference/inputobjects/raterulesfilterinput/"><code>rateRules</code></a> in your filter.</p>
+Yes, you could filter the response by introducing the tag <a href="/hotel-x/reference/inputobjects/raterulesfilterinput/"><code>rateRules</code></a> in your filter.</p>
 
 <p><strong>Which are the possible filters in the Search Request?</strong></p>
 
@@ -5990,7 +5990,7 @@ Yes, you could filter the response by introducing the tag <a href="/hotelx/refer
 
 <p><strong>How can I request a specific destination?</strong></p>
 
-<p>In order to perform a request by destination you should introduce our <a href="/hotelx/plugins/mapping/"><code>Search by destination</code></a> process plugin.</p>
+<p>In order to perform a request by destination you should introduce our <a href="/hotel-x/plugins/mapping/"><code>Search by destination</code></a> process plugin.</p>
 
 <h2 id="surchages">Surchages</h2>
 
@@ -6017,7 +6017,7 @@ Yes, you could filter the response by introducing the tag <a href="/hotelx/refer
 <p>In these cases, there are two possible scennarios:</p>
 
 <ul>
-<li>Exchange rates can be applied using a <a href="/hotelx/plugins/converter/"><code>currency conversion plugin</code></a> (this plugin contains the exchange rates previously loaded by client rules)</li>
+<li>Exchange rates can be applied using a <a href="/hotel-x/plugins/converter/"><code>currency conversion plugin</code></a> (this plugin contains the exchange rates previously loaded by client rules)</li>
 <li>Not applying any exchange rate. In this case, you will receive the supplier´s currency - some suppliers accept the currency in the request and others will return their currency, depending on your account as client with them.</li>
 </ul>
 
@@ -6036,7 +6036,7 @@ Bear in mind, that a booking may have more than one penalty type associated, dep
 
 <p><strong>Cancel Policy hoursBefore checkin date - What timezone is the checkIn date?</strong>
 Normally UTC time is used, but if the provider responds with hotel timezone we add 24 hours.
-You will find further information <a href="/hotelx/reference/objects/cancelpenalty/"><code>here</code></a></p>
+You will find further information <a href="/hotel-x/reference/objects/cancelpenalty/"><code>here</code></a></p>
 
 <p><strong>Is there any possibility to obtain the RoomCodes in the Quote step?</strong></p>
 
@@ -6110,7 +6110,7 @@ More information in our <a href="https://api.travelgatex.com/" target="_blank"><
 }
 </code></pre>
 
-<p><a href="/hotelx/concepts/content/">More info on HotelX content.</a></p>
+<p><a href="/hotel-x/concepts/content/">More info on HotelX content.</a></p>
 
 <h2 id="country-names">Country names</h2>
 
@@ -6128,7 +6128,7 @@ Please check our content section for further information: <code>link</code></p>
 <p><strong>I would like to perform the HotelList and DestinationList, but I am not finding GraphQL examples.</strong></p>
 
 <p>In the Welcome Pack mail you will find attached our <code>Usecases</code> and Insomnia environment packs with some query and mutation examples.
-For further information, feel free to access our <a href="/hotelx/concepts/content/"><code>content section</code></a></p>
+For further information, feel free to access our <a href="/hotel-x/concepts/content/"><code>content section</code></a></p>
 
 <p><strong>Where do I find the available services at the hotel?</strong></p>
 
@@ -6142,7 +6142,7 @@ For further information, feel free to access our <a href="/hotelx/concepts/conte
 
 <p><strong>To be able to upload the mapping, should we be using the HotelMapX plugin, and is there a document that we can refer to on the plugin and how the request should be sent?</strong></p>
 
-<p>Not via API. Uploading to FTP as described <a href="/hotelx/plugins/mapping/"><code>here</code></a></p>
+<p>Not via API. Uploading to FTP as described <a href="/hotel-x/plugins/mapping/"><code>here</code></a></p>
 
 <hr/>
 <h2>Comments</h2>
@@ -6213,9 +6213,9 @@ For further information, feel free to access our <a href="/hotelx/concepts/conte
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/hotel-x/faqs/common-errors/">HotelX Common Errors</a></li>
-		
 		<li><a href="/travelgatex/frequently-asked-questions/">TravelgateX Frequently Asked Questions</a></li>
+		
+		<li><a href="/hotel-x/faqs/common-errors/">HotelX Common Errors</a></li>
 		
 	</ul>
 </div>

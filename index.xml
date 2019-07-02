@@ -6264,7 +6264,7 @@ GraphQL schema definition type PluginStepInput {  step: PluginStepType!    plugi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/enums/pluginsteptype/</guid>
-      <description>Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+      <description>Plugin Step Type. https://docs.travelgatex.com/hotel-x/plugins/overview/
 GraphQL schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,    RESPONSE_OPTION,    RESPONSE_ACCESS,    RESPONSE,   }   Required by HotelXDefaultPlugin:    PluginStepInput:  Plugin to execute.  HotelXFilterPluginTypeInput:    HotelXDefaultPluginStepInput:    HotelXDefaultPluginInput:</description>
     </item>
     
@@ -6274,7 +6274,7 @@ GraphQL schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/enums/pluginsteptype/</guid>
-      <description>Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+      <description>Plugin Step Type. https://docs.travelgatex.com/hotel-x/plugins/overview/
 GraphQL schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,    RESPONSE_OPTION,    RESPONSE_ACCESS,    RESPONSE,   }   Required by HotelXDefaultPlugin:    PluginStepInput:  Plugin to execute.  HotelXFilterPluginTypeInput:    HotelXDefaultPluginStepInput:    HotelXDefaultPluginInput:</description>
     </item>
     
@@ -6284,7 +6284,7 @@ GraphQL schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/enums/plugintype/</guid>
-      <description>Plugin Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+      <description>Plugin Type. https://docs.travelgatex.com/hotel-x/plugins/overview/
 GraphQL schema definition  enum PluginType{   PRE_STEP,    HOTEL_MAP,    BOARD_MAP,    ROOM_MAP,    CURRENCY_CONVERSION,    MARKUP,    AGGREGATION,    POST_STEP,   }   Required by HotelXDefaultPlugin:    PluginsInput:  Plugin to execute.  HotelXDefaultPluginInput:</description>
     </item>
     
@@ -6294,7 +6294,7 @@ GraphQL schema definition  enum PluginType{   PRE_STEP,    HOTEL_MAP,    BOARD_M
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/enums/plugintype/</guid>
-      <description>Plugin Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+      <description>Plugin Type. https://docs.travelgatex.com/hotel-x/plugins/overview/
 GraphQL schema definition  enum PluginType{   PRE_STEP,    HOTEL_MAP,    BOARD_MAP,    ROOM_MAP,    CURRENCY_CONVERSION,    MARKUP,    AGGREGATION,    POST_STEP,   }   Required by HotelXDefaultPlugin:    PluginsInput:  Plugin to execute.  HotelXDefaultPluginInput:</description>
     </item>
     

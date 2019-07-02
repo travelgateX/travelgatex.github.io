@@ -5823,16 +5823,16 @@
 
 <h3 id="introduction">Introduction</h3>
 
-<p><em>Plugins</em> are custom code, executed in <a href="/hotelx/">HotelX</a> servers, that add or modify specific functionalities. Any <code>Partner</code> can develop custom <em>Plugins</em>, nevertheless HotelX, <a href="/hotelx/">HotelX</a> has developed many <em>Plugins</em> available for anyone to use out of the box.</p>
+<p><em>Plugins</em> are custom code, executed in <a href="/hotel-x/">HotelX</a> servers, that add or modify specific functionalities. Any <code>Partner</code> can develop custom <em>Plugins</em>, nevertheless HotelX, <a href="/hotel-x/">HotelX</a> has developed many <em>Plugins</em> available for anyone to use out of the box.</p>
 
 <h3 id="flows">Flows</h3>
 
-<p><a href="/hotelx/">HotelX</a> <em>query</em> or <em>mutation</em> determine what <em>flow</em> is executed. <em>Plugins</em> can be executed in different <code>Queries</code> or <code>Mutations</code>:</p>
+<p><a href="/hotel-x/">HotelX</a> <em>query</em> or <em>mutation</em> determine what <em>flow</em> is executed. <em>Plugins</em> can be executed in different <code>Queries</code> or <code>Mutations</code>:</p>
 
-<!-- * [search](/hotelx/concepts/booking-flow#search)
-* [quote](/hotelx/concepts/booking-flow#quote)
-* [hotelBook](/hotelx/concepts/booking-flow#book)
-* [hotelCancel](/hotelx/concepts/management-flow#cancel) -->
+<!-- * [search](/hotel-x/concepts/booking-flow#search)
+* [quote](/hotel-x/concepts/booking-flow#quote)
+* [hotelBook](/hotel-x/concepts/booking-flow#book)
+* [hotelCancel](/hotel-x/concepts/management-flow#cancel) -->
 
 <ul>
 <li>Search</li>
@@ -5856,7 +5856,7 @@
 <tbody>
 <tr>
 <td><em>Request</em></td>
-<td><em>After</em> <code>Client</code> requests message to <a href="/hotelx/">HotelX</a>.</td>
+<td><em>After</em> <code>Client</code> requests message to <a href="/hotel-x/">HotelX</a>.</td>
 </tr>
 
 <tr>
@@ -5876,14 +5876,14 @@
 
 <tr>
 <td><em>Response</em></td>
-<td><em>Before</em> <a href="/hotelx/">HotelX</a> responds message to to <code>Client</code>.</td>
+<td><em>Before</em> <a href="/hotel-x/">HotelX</a> responds message to to <code>Client</code>.</td>
 </tr>
 </tbody>
 </table>
 
 <h3 id="plugin-types">Plugin Types</h3>
 
-<p>Plugin types supported by <a href="/hotelx/">HotelX</a>:</p>
+<p>Plugin types supported by <a href="/hotel-x/">HotelX</a>:</p>
 
 <ul>
 <li><a href="../processor">Pre Step</a>: First execution on every <em>step</em>.</li>
@@ -5899,20 +5899,20 @@
 
 <h3 id="plugin-context-execution">Plugin Context Execution</h3>
 
-<p>Once <em>message</em> enters on <a href="/hotelx/">HotelX</a> it flows over different <em>flows</em> and <em>steps</em>. That&rsquo;s why  <em>plugins</em> are executed in different <em>contexts</em>.</p>
+<p>Once <em>message</em> enters on <a href="/hotel-x/">HotelX</a> it flows over different <em>flows</em> and <em>steps</em>. That&rsquo;s why  <em>plugins</em> are executed in different <em>contexts</em>.</p>
 
 <p><em>Context</em> allows:</p>
 
 <ul>
 <li>Read objects involved in current <em>query</em> and/or <em>mutations</em>.</li>
-<li>Read objects available in all <a href="/hotelx/">HotelX</a> operations.</li>
+<li>Read objects available in all <a href="/hotel-x/">HotelX</a> operations.</li>
 </ul>
 
 <p>With <em>context</em> information developers can personalize <em>plugin</em> features, more information about plugin development can be found <a href="../development">here</a>.</p>
 
 <h3 id="plugin-step-execution">Plugin Step Execution</h3>
 
-<p><a href="/hotelx/">HotelX</a> determine the order and <a href="#plugintypes">plugin types</a> executed for each <em>step</em>.</p>
+<p><a href="/hotel-x/">HotelX</a> determine the order and <a href="#plugintypes">plugin types</a> executed for each <em>step</em>.</p>
 
 <table>
 <thead>
