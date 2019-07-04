@@ -4522,6 +4522,16 @@ GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput
     </item>
     
     <item>
+      <title>List of credit cards</title>
+      <link>/hotel-x/concepts/creditcard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/concepts/creditcard/</guid>
+      <description> In this chapter we will list all suppoted credit cards in HotelX.
+Credit Cards list    Codes Names     VI Visa   AX American Express   BC BC Card   CA MasterCard   CB Carte Blanche   CU China Union Pay   DS Discover   DC Diners Club   T Carta Si   R Carte Bleue   N Dankort   L Delta   E Electron   JC Japan Credit Bureau   TO Maestro   S Switch   EC Electronic Cash   EU EuroCard   TP universal air travel card   OP optima   ER Air Canada/RnRoute   XS access   O others    </description>
+    </item>
+    
+    <item>
       <title>Location</title>
       <link>/hotel-x/reference/objects/location/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -8898,7 +8908,8 @@ Definitions  Client Token: Dynamic parameter you can send on the RQ in case you 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/release-notes/changelog/</guid>
-      <description>Easily accessible log of notable changes to HotelX API All notable changes in our platform will be documented on this page. 2019-06-27  Categories in Hotel-Category are grouped by group. Internal system improvements.   2019-06-26  New warning type in book. EMPTY_PRICE is returned when the supplier doesn&amp;rsquo;t return the price and we use the price obtained in quote.   2019-06-19  New field in book, cancel and booking respone.</description>
+      <description>Easily accessible log of notable changes to HotelX API All notable changes in our platform will be documented on this page. 2019-07-02  New field in book, cancel and booking respone. booking/reference/hotel.    Client token in batch and booking flow.  
+2019-06-27  Categories in Hotel-Category are grouped by group. Internal system improvements.   2019-06-26  New warning type in book. EMPTY_PRICE is returned when the supplier doesn&amp;rsquo;t return the price and we use the price obtained in quote.</description>
     </item>
     
     <item>
