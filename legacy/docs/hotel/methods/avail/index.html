@@ -5880,6 +5880,8 @@ is closed.</p>
 <pre><code class="language-xml">    &lt;AvailRQ&gt;
         &lt;CancellationPolicies&gt;false&lt;/CancellationPolicies&gt;
         &lt;RoomCancellationPolicies&gt;false&lt;/RoomCancellationPolicies&gt;
+        &lt;DailyPrices&gt;false&lt;/DailyPrices&gt;
+        &lt;DailyRatePlans&gt;false&lt;/DailyRatePlans&gt;
         &lt;OnRequest&gt;false&lt;/OnRequest&gt;
         &lt;BusinessRules&gt;CheaperAmount&lt;/BusinessRules&gt;
         &lt;AvailDestinations&gt; list of destinations
@@ -5947,6 +5949,20 @@ is closed.</p>
 <td>1</td>
 <td>Boolean</td>
 <td>Indicates if you want to receive the cancellation policies at room level in AvailRS, as long as the supplier returns it in this method (see Metadata method in order to verify if a supplier implements it).</td>
+</tr>
+
+<tr>
+<td>DailyPrices</td>
+<td>0</td>
+<td>Boolean</td>
+<td>Indicates if you want to receive the daily prices at room level in AvailRS, as long as the supplier returns it in this method (see StaticConfiguration in order to verify if a supplier implements it).</td>
+</tr>
+
+<tr>
+<td>DailyRatePlans</td>
+<td>0</td>
+<td>Boolean</td>
+<td>Indicates if you want to receive the daily rate plans at room level in AvailRS, as long as the supplier returns it in this method (see StaticConfiguration in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>

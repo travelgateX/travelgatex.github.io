@@ -10185,8 +10185,8 @@ Version 1.0.2: Date 28/09/2013
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/legacy/docs/hotel/change-log/</guid>
-      <description>Version 1.0.21: Date 25/04/2018
- CancelPolicies and fees returned at stage room in AvailRS. Depending on the supplier, the information concerning CancelPolicies and fees can be displayed at room level. To receive the CancelPolicies at room level, it is necessary to send the tag RoomCancellationPolicies in the AvailRQ. Property reservation number in ReservationRS, ReservationReadRS and ReservationListRS. Depending on the supplier, you will receive the property reservation number in addition to the supplier locator.</description>
+      <description>Version 1.0.22: Date 09/07/2019
+ Addition of the boolean DailyPrices to AvailRS. By default DailyPrices is set to true and given the supplier implements daily prices, you will receive a list of daily prices for each room in the Avail response for the given stay range. If set to false this information will not be included in the response. Addition of the boolean DailyRatePlans to AvailRS. By default DailyRatePlans is set to true and given the supplier implements daily rate plans, you will receive a list of the available rate plans for each room in the Avail response for the given stay range.</description>
     </item>
     
     <item>
