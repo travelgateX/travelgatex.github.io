@@ -3,7 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/alertsx/reference/objects/api/</loc>
+    <loc>/alerts-x/reference/objects/api/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/api/</loc>
   </url>
   
   <url>
@@ -23,7 +27,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/apiconnection/</loc>
+    <loc>/alerts-x/reference/objects/apiconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/apiconnection/</loc>
   </url>
   
   <url>
@@ -43,7 +51,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/apidata/</loc>
+    <loc>/alerts-x/reference/objects/apidata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/apidata/</loc>
   </url>
   
   <url>
@@ -63,7 +75,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/apiedge/</loc>
+    <loc>/alerts-x/reference/objects/apiedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/apiedge/</loc>
   </url>
   
   <url>
@@ -83,7 +99,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/access/</loc>
+    <loc>/alerts-x/reference/objects/access/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/access/</loc>
   </url>
   
   <url>
@@ -103,7 +123,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/accessconnection/</loc>
+    <loc>/alerts-x/reference/objects/accessconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/accessconnection/</loc>
   </url>
   
   <url>
@@ -123,7 +147,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/accessdata/</loc>
+    <loc>/alerts-x/reference/objects/accessdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/accessdata/</loc>
   </url>
   
   <url>
@@ -143,7 +171,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/accessedge/</loc>
+    <loc>/alerts-x/reference/objects/accessedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/accessedge/</loc>
   </url>
   
   <url>
@@ -163,7 +195,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/accessfilter/</loc>
+    <loc>/alerts-x/reference/inputobjects/accessfilter/</loc>
   </url>
   
   <url>
@@ -211,11 +243,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/advisemessage/</loc>
+    <loc>/alerts-x/reference/objects/advisemessage/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/objects/advisemessage/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/advisemessage/</loc>
   </url>
   
   <url>
@@ -235,11 +271,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/advisemessagelevel/</loc>
+    <loc>/alerts-x/reference/enums/advisemessagelevel/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/enums/advisemessagelevel/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/enums/advisemessagelevel/</loc>
   </url>
   
   <url>
@@ -275,95 +315,95 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/alert/</loc>
+    <loc>/alerts-x/reference/objects/alert/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/alertconfiguration/</loc>
+    <loc>/alerts-x/reference/objects/alertconfiguration/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertconfigurationinputaveragetime/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertconfigurationinputaveragetime/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertconfigurationinputerrorrate/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertconfigurationinputerrorrate/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertconfigurationinputnotraffic/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertconfigurationinputnotraffic/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertconfigurationinputpeaktraffic/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertconfigurationinputpeaktraffic/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/alertconnection/</loc>
+    <loc>/alerts-x/reference/objects/alertconnection/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertcriteriainput/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertcriteriainput/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/alertdata/</loc>
+    <loc>/alerts-x/reference/objects/alertdata/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/alertedge/</loc>
+    <loc>/alerts-x/reference/objects/alertedge/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertfilterinput/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertfilterinput/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertgroupinput/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertgroupinput/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/alertgroups/</loc>
+    <loc>/alerts-x/reference/enums/alertgroups/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertinput/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertinput/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertobjectinput/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertobjectinput/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/alerttype/</loc>
+    <loc>/alerts-x/reference/enums/alerttype/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/alerttypeconfiguration/</loc>
+    <loc>/alerts-x/reference/objects/alerttypeconfiguration/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertupdateconfigurationinputaveragetime/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertupdateconfigurationinputaveragetime/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertupdateconfigurationinputerrorrate/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertupdateconfigurationinputerrorrate/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertupdateconfigurationinputnotraffic/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertupdateconfigurationinputnotraffic/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertupdateconfigurationinputpeaktraffic/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertupdateconfigurationinputpeaktraffic/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/alertupdateinput/</loc>
+    <loc>/alerts-x/reference/inputobjects/alertupdateinput/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/schema/query/</loc>
+    <loc>/alerts-x/reference/schema/query/</loc>
   </url>
   
   <url>
@@ -499,11 +539,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/scalars/boolean/</loc>
+    <loc>/alerts-x/reference/scalars/boolean/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/scalars/boolean/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/scalars/boolean/</loc>
   </url>
   
   <url>
@@ -643,7 +687,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/client/</loc>
+    <loc>/alerts-x/reference/objects/client/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/client/</loc>
   </url>
   
   <url>
@@ -663,7 +711,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/clientconnection/</loc>
+    <loc>/alerts-x/reference/objects/clientconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/clientconnection/</loc>
   </url>
   
   <url>
@@ -683,7 +735,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/clientdata/</loc>
+    <loc>/alerts-x/reference/objects/clientdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/clientdata/</loc>
   </url>
   
   <url>
@@ -703,7 +759,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/clientedge/</loc>
+    <loc>/alerts-x/reference/objects/clientedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/clientedge/</loc>
   </url>
   
   <url>
@@ -723,7 +783,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/clientfilter/</loc>
+    <loc>/alerts-x/reference/inputobjects/clientfilter/</loc>
   </url>
   
   <url>
@@ -731,7 +791,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/comercialtype/</loc>
+    <loc>/alerts-x/reference/enums/comercialtype/</loc>
   </url>
   
   <url>
@@ -839,11 +899,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/scalars/datetime/</loc>
+    <loc>/alerts-x/reference/scalars/datetime/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/scalars/datetime/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/scalars/datetime/</loc>
   </url>
   
   <url>
@@ -943,7 +1007,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/domain/</loc>
+    <loc>/alerts-x/reference/objects/domain/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/domain/</loc>
   </url>
   
   <url>
@@ -963,7 +1031,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/domaindata/</loc>
+    <loc>/alerts-x/reference/objects/domaindata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/domaindata/</loc>
   </url>
   
   <url>
@@ -983,7 +1055,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/scalars/domainname/</loc>
+    <loc>/alerts-x/reference/scalars/domainname/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/scalars/domainname/</loc>
   </url>
   
   <url>
@@ -1011,15 +1087,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/scalars/email/</loc>
+    <loc>/alerts-x/reference/scalars/email/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/emailinput/</loc>
+    <loc>/alerts-x/reference/inputobjects/emailinput/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/emailtype/</loc>
+    <loc>/alerts-x/reference/enums/emailtype/</loc>
   </url>
   
   <url>
@@ -1043,11 +1119,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/error/</loc>
+    <loc>/alerts-x/reference/objects/error/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/objects/error/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/error/</loc>
   </url>
   
   <url>
@@ -1071,35 +1151,35 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/errorcodeinput/</loc>
+    <loc>/alerts-x/reference/inputobjects/errorcodeinput/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/errortype/</loc>
+    <loc>/alerts-x/reference/enums/errortype/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/errortypeinput/</loc>
+    <loc>/alerts-x/reference/inputobjects/errortypeinput/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/event/</loc>
+    <loc>/alerts-x/reference/objects/event/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/eventconnection/</loc>
+    <loc>/alerts-x/reference/objects/eventconnection/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/eventdata/</loc>
+    <loc>/alerts-x/reference/objects/eventdata/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/eventedge/</loc>
+    <loc>/alerts-x/reference/objects/eventedge/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/eventtype/</loc>
+    <loc>/alerts-x/reference/enums/eventtype/</loc>
   </url>
   
   <url>
@@ -1123,11 +1203,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/externalmessage/</loc>
+    <loc>/alerts-x/reference/objects/externalmessage/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/objects/externalmessage/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/externalmessage/</loc>
   </url>
   
   <url>
@@ -1231,7 +1315,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/group/</loc>
+    <loc>/alerts-x/reference/objects/group/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/group/</loc>
   </url>
   
   <url>
@@ -1251,7 +1339,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/interfaces/groupcommondata/</loc>
+    <loc>/alerts-x/reference/interfaces/groupcommondata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/interfaces/groupcommondata/</loc>
   </url>
   
   <url>
@@ -1271,7 +1363,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/groupconnection/</loc>
+    <loc>/alerts-x/reference/objects/groupconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/groupconnection/</loc>
   </url>
   
   <url>
@@ -1291,7 +1387,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/groupdata/</loc>
+    <loc>/alerts-x/reference/objects/groupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/groupdata/</loc>
   </url>
   
   <url>
@@ -1311,7 +1411,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/groupedge/</loc>
+    <loc>/alerts-x/reference/objects/groupedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/groupedge/</loc>
   </url>
   
   <url>
@@ -1335,7 +1439,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/grouptype/</loc>
+    <loc>/alerts-x/reference/enums/grouptype/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/enums/grouptype/</loc>
   </url>
   
   <url>
@@ -1799,19 +1907,23 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/hubstatus/</loc>
+    <loc>/alerts-x/reference/enums/hubstatus/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/hubstatusinput/</loc>
+    <loc>/alerts-x/reference/inputobjects/hubstatusinput/</loc>
   </url>
   
   <url>
-    <loc>/alertsx/reference/scalars/id/</loc>
+    <loc>/alerts-x/reference/scalars/id/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/scalars/id/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/scalars/id/</loc>
   </url>
   
   <url>
@@ -1831,11 +1943,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/scalars/int/</loc>
+    <loc>/alerts-x/reference/scalars/int/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/scalars/int/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/scalars/int/</loc>
   </url>
   
   <url>
@@ -1891,7 +2007,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/managedgroup/</loc>
+    <loc>/alerts-x/reference/objects/managedgroup/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/managedgroup/</loc>
   </url>
   
   <url>
@@ -1911,7 +2031,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/managedgroupconnection/</loc>
+    <loc>/alerts-x/reference/objects/managedgroupconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/managedgroupconnection/</loc>
   </url>
   
   <url>
@@ -1931,7 +2055,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/managedgroupdata/</loc>
+    <loc>/alerts-x/reference/objects/managedgroupdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/managedgroupdata/</loc>
   </url>
   
   <url>
@@ -1951,7 +2079,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/managedgroupedge/</loc>
+    <loc>/alerts-x/reference/objects/managedgroupedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/managedgroupedge/</loc>
   </url>
   
   <url>
@@ -2079,7 +2211,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/member/</loc>
+    <loc>/alerts-x/reference/objects/member/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/member/</loc>
   </url>
   
   <url>
@@ -2099,7 +2235,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/memberconnection/</loc>
+    <loc>/alerts-x/reference/objects/memberconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/memberconnection/</loc>
   </url>
   
   <url>
@@ -2119,7 +2259,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/memberdata/</loc>
+    <loc>/alerts-x/reference/objects/memberdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/memberdata/</loc>
   </url>
   
   <url>
@@ -2139,7 +2283,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/memberedge/</loc>
+    <loc>/alerts-x/reference/objects/memberedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/memberedge/</loc>
   </url>
   
   <url>
@@ -2159,7 +2307,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/membertype/</loc>
+    <loc>/alerts-x/reference/enums/membertype/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/enums/membertype/</loc>
   </url>
   
   <url>
@@ -2191,6 +2343,10 @@
   </url>
   
   <url>
+    <loc>/logging/reference/enums/modetype/</loc>
+  </url>
+  
+  <url>
     <loc>/stats/reference/enums/modetype/</loc>
   </url>
   
@@ -2199,11 +2355,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/interfaces/node/</loc>
+    <loc>/alerts-x/reference/interfaces/node/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/interfaces/node/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/interfaces/node/</loc>
   </url>
   
   <url>
@@ -2239,7 +2399,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/operation/</loc>
+    <loc>/alerts-x/reference/objects/operation/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/operation/</loc>
   </url>
   
   <url>
@@ -2259,7 +2423,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/operationconnection/</loc>
+    <loc>/alerts-x/reference/objects/operationconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/operationconnection/</loc>
   </url>
   
   <url>
@@ -2279,7 +2447,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/operationdata/</loc>
+    <loc>/alerts-x/reference/objects/operationdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/operationdata/</loc>
   </url>
   
   <url>
@@ -2299,6 +2471,10 @@
   </url>
   
   <url>
+    <loc>/logging/reference/objects/operationdetailed/</loc>
+  </url>
+  
+  <url>
     <loc>/stats/reference/objects/operationdetailed/</loc>
   </url>
   
@@ -2307,7 +2483,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/operationedge/</loc>
+    <loc>/alerts-x/reference/objects/operationedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/operationedge/</loc>
   </url>
   
   <url>
@@ -2327,7 +2507,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/operationtype/</loc>
+    <loc>/alerts-x/reference/enums/operationtype/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/enums/operationtype/</loc>
   </url>
   
   <url>
@@ -2347,7 +2531,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/organization/</loc>
+    <loc>/alerts-x/reference/objects/organization/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/organization/</loc>
   </url>
   
   <url>
@@ -2371,7 +2559,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/organizationdata/</loc>
+    <loc>/alerts-x/reference/objects/organizationdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/organizationdata/</loc>
   </url>
   
   <url>
@@ -2399,7 +2591,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/overview/</loc>
+    <loc>/alerts-x/overview/</loc>
   </url>
   
   <url>
@@ -2423,6 +2615,10 @@
   </url>
   
   <url>
+    <loc>/logging/overview/</loc>
+  </url>
+  
+  <url>
     <loc>/mappea/overview/</loc>
   </url>
   
@@ -2439,11 +2635,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/pageinfo/</loc>
+    <loc>/alerts-x/reference/objects/pageinfo/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/objects/pageinfo/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/pageinfo/</loc>
   </url>
   
   <url>
@@ -2463,7 +2663,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/parameter/</loc>
+    <loc>/alerts-x/reference/objects/parameter/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/parameter/</loc>
   </url>
   
   <url>
@@ -2687,7 +2891,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/product/</loc>
+    <loc>/alerts-x/reference/objects/product/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/product/</loc>
   </url>
   
   <url>
@@ -2707,7 +2915,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/productconnection/</loc>
+    <loc>/alerts-x/reference/objects/productconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/productconnection/</loc>
   </url>
   
   <url>
@@ -2727,7 +2939,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/productdata/</loc>
+    <loc>/alerts-x/reference/objects/productdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/productdata/</loc>
   </url>
   
   <url>
@@ -2747,7 +2963,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/productedge/</loc>
+    <loc>/alerts-x/reference/objects/productedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/productedge/</loc>
   </url>
   
   <url>
@@ -2807,7 +3027,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/provider/</loc>
+    <loc>/alerts-x/reference/objects/provider/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/provider/</loc>
   </url>
   
   <url>
@@ -2851,11 +3075,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/raterulestype/</loc>
+    <loc>/alerts-x/reference/enums/raterulestype/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/enums/raterulestype/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/enums/raterulestype/</loc>
   </url>
   
   <url>
@@ -2875,6 +3103,10 @@
   </url>
   
   <url>
+    <loc>/logging/reference/objects/ratios/</loc>
+  </url>
+  
+  <url>
     <loc>/stats/reference/objects/ratios/</loc>
   </url>
   
@@ -2891,7 +3123,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/relayinput/</loc>
+    <loc>/alerts-x/reference/inputobjects/relayinput/</loc>
   </url>
   
   <url>
@@ -2911,7 +3143,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/resource/</loc>
+    <loc>/alerts-x/reference/objects/resource/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/resource/</loc>
   </url>
   
   <url>
@@ -2931,7 +3167,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/resourceconnection/</loc>
+    <loc>/alerts-x/reference/objects/resourceconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/resourceconnection/</loc>
   </url>
   
   <url>
@@ -2951,7 +3191,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/resourcedata/</loc>
+    <loc>/alerts-x/reference/objects/resourcedata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/resourcedata/</loc>
   </url>
   
   <url>
@@ -2971,7 +3215,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/resourceedge/</loc>
+    <loc>/alerts-x/reference/objects/resourceedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/resourceedge/</loc>
   </url>
   
   <url>
@@ -3011,7 +3259,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/role/</loc>
+    <loc>/alerts-x/reference/objects/role/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/role/</loc>
   </url>
   
   <url>
@@ -3031,7 +3283,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/roleconnection/</loc>
+    <loc>/alerts-x/reference/objects/roleconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/roleconnection/</loc>
   </url>
   
   <url>
@@ -3051,7 +3307,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/roledata/</loc>
+    <loc>/alerts-x/reference/objects/roledata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/roledata/</loc>
   </url>
   
   <url>
@@ -3071,7 +3331,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/roleedge/</loc>
+    <loc>/alerts-x/reference/objects/roleedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/roleedge/</loc>
   </url>
   
   <url>
@@ -3091,7 +3355,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/roletype/</loc>
+    <loc>/alerts-x/reference/enums/roletype/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/enums/roletype/</loc>
   </url>
   
   <url>
@@ -3183,11 +3451,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/schema/</loc>
+    <loc>/alerts-x/reference/schema/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/schema/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/schema/</loc>
   </url>
   
   <url>
@@ -3215,6 +3487,10 @@
   </url>
   
   <url>
+    <loc>/logging/reference/enums/serviceapitype/</loc>
+  </url>
+  
+  <url>
     <loc>/stats/reference/enums/serviceapitype/</loc>
   </url>
   
@@ -3224,6 +3500,10 @@
   
   <url>
     <loc>/travelgatex/reference/objects/serviceoperation/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/enums/serviceoperationtype/</loc>
   </url>
   
   <url>
@@ -3287,11 +3567,19 @@
   </url>
   
   <url>
+    <loc>/logging/reference/objects/stats/</loc>
+  </url>
+  
+  <url>
     <loc>/stats/reference/objects/stats/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/objects/stats/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/statsasset/</loc>
   </url>
   
   <url>
@@ -3303,11 +3591,19 @@
   </url>
   
   <url>
+    <loc>/logging/reference/objects/statsconnection/</loc>
+  </url>
+  
+  <url>
     <loc>/stats/reference/objects/statsconnection/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/objects/statsconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/statsdata/</loc>
   </url>
   
   <url>
@@ -3319,11 +3615,19 @@
   </url>
   
   <url>
+    <loc>/logging/reference/objects/statsedge/</loc>
+  </url>
+  
+  <url>
     <loc>/stats/reference/objects/statsedge/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/objects/statsedge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/inputobjects/statsfilterinput/</loc>
   </url>
   
   <url>
@@ -3335,6 +3639,10 @@
   </url>
   
   <url>
+    <loc>/logging/reference/objects/statsinfo/</loc>
+  </url>
+  
+  <url>
     <loc>/stats/reference/objects/statsinfo/</loc>
   </url>
   
@@ -3343,11 +3651,19 @@
   </url>
   
   <url>
+    <loc>/logging/reference/enums/statsinfotypes/</loc>
+  </url>
+  
+  <url>
     <loc>/stats/reference/enums/statsinfotypes/</loc>
   </url>
   
   <url>
     <loc>/travelgatex/reference/enums/statsinfotypes/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/schema/query/</loc>
   </url>
   
   <url>
@@ -3375,11 +3691,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/scalars/string/</loc>
+    <loc>/alerts-x/reference/scalars/string/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/scalars/string/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/scalars/string/</loc>
   </url>
   
   <url>
@@ -3419,7 +3739,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/supplier/</loc>
+    <loc>/alerts-x/reference/objects/supplier/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/supplier/</loc>
   </url>
   
   <url>
@@ -3439,7 +3763,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/supplierconnection/</loc>
+    <loc>/alerts-x/reference/objects/supplierconnection/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/supplierconnection/</loc>
   </url>
   
   <url>
@@ -3459,7 +3787,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/supplierdata/</loc>
+    <loc>/alerts-x/reference/objects/supplierdata/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/supplierdata/</loc>
   </url>
   
   <url>
@@ -3487,7 +3819,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/supplieredge/</loc>
+    <loc>/alerts-x/reference/objects/supplieredge/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/supplieredge/</loc>
   </url>
   
   <url>
@@ -3507,7 +3843,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/supplierfilter/</loc>
+    <loc>/alerts-x/reference/inputobjects/supplierfilter/</loc>
   </url>
   
   <url>
@@ -3575,11 +3911,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/scalars/uri/</loc>
+    <loc>/alerts-x/reference/scalars/uri/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/scalars/uri/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/scalars/uri/</loc>
   </url>
   
   <url>
@@ -3647,7 +3987,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/urls/</loc>
+    <loc>/alerts-x/reference/objects/urls/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/urls/</loc>
   </url>
   
   <url>
@@ -3703,7 +4047,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/schema/mutation/</loc>
+    <loc>/alerts-x/reference/schema/mutation/</loc>
   </url>
   
   <url>
@@ -3715,7 +4059,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/release-notes/changelog/</loc>
+    <loc>/alerts-x/release-notes/changelog/</loc>
   </url>
   
   <url>
@@ -3728,6 +4072,10 @@
   
   <url>
     <loc>/insights-x/release-notes/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/release-notes/changelog/</loc>
   </url>
   
   <url>
@@ -3795,6 +4143,10 @@
   </url>
   
   <url>
+    <loc>/logging/howtos/</loc>
+  </url>
+  
+  <url>
     <loc>/stats/howtos/</loc>
   </url>
   
@@ -3823,11 +4175,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/objects/</loc>
+    <loc>/alerts-x/reference/objects/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/objects/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/objects/</loc>
   </url>
   
   <url>
@@ -3863,7 +4219,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/</loc>
+    <loc>/alerts-x/reference/</loc>
   </url>
   
   <url>
@@ -3884,6 +4240,10 @@
   
   <url>
     <loc>/insights-x/datasets/dataset-content/performance/dataset-reference-performance/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/</loc>
   </url>
   
   <url>
@@ -3975,7 +4335,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/howtos/</loc>
+    <loc>/alerts-x/howtos/</loc>
   </url>
   
   <url>
@@ -4015,11 +4375,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/scalars/</loc>
+    <loc>/alerts-x/reference/scalars/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/scalars/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/scalars/</loc>
   </url>
   
   <url>
@@ -4059,7 +4423,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/</loc>
+    <loc>/alerts-x/</loc>
   </url>
   
   <url>
@@ -4071,7 +4435,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/howtos/howto-create-alerts/</loc>
+    <loc>/alerts-x/howtos/howto-create-alerts/</loc>
   </url>
   
   <url>
@@ -4099,11 +4463,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/interfaces/</loc>
+    <loc>/alerts-x/reference/interfaces/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/interfaces/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/interfaces/</loc>
   </url>
   
   <url>
@@ -4127,6 +4495,10 @@
   </url>
   
   <url>
+    <loc>/logging/</loc>
+  </url>
+  
+  <url>
     <loc>/hotel-x/concepts/management-flow/</loc>
   </url>
   
@@ -4135,7 +4507,11 @@
   </url>
   
   <url>
-    <loc>/alertsx/howtos/howto-query-alerts/</loc>
+    <loc>/alerts-x/howtos/howto-query-alerts/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/howtos/howto-query-logging/</loc>
   </url>
   
   <url>
@@ -4167,7 +4543,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/howtos/howto-update-alerts/</loc>
+    <loc>/alerts-x/howtos/howto-update-alerts/</loc>
   </url>
   
   <url>
@@ -4195,11 +4571,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/release-notes/breaking-changes/</loc>
+    <loc>/alerts-x/release-notes/breaking-changes/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/release-notes/breaking-changes/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/release-notes/breaking-changes/</loc>
   </url>
   
   <url>
@@ -4223,11 +4603,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/inputobjects/</loc>
+    <loc>/alerts-x/reference/inputobjects/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/inputobjects/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/inputobjects/</loc>
   </url>
   
   <url>
@@ -4295,11 +4679,15 @@
   </url>
   
   <url>
-    <loc>/alertsx/reference/enums/</loc>
+    <loc>/alerts-x/reference/enums/</loc>
   </url>
   
   <url>
     <loc>/hotel-x/reference/enums/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/reference/enums/</loc>
   </url>
   
   <url>
@@ -4339,7 +4727,7 @@
   </url>
   
   <url>
-    <loc>/alertsx/release-notes/</loc>
+    <loc>/alerts-x/release-notes/</loc>
   </url>
   
   <url>
@@ -4348,6 +4736,10 @@
   
   <url>
     <loc>/hotel-x/release-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>/logging/release-notes/</loc>
   </url>
   
   <url>

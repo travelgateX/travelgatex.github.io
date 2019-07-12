@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Release Notes on TravelgateX Documentation</title>
+    <link>/logging/release-notes/</link>
+    <description>Recent content in Release Notes on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/logging/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Changelog</title>
+      <link>/logging/release-notes/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/logging/release-notes/changelog/</guid>
+      <description>Easily accessible log of notable changes to Logging
+2019-07-11  Added a new field statusType in LoggingLegacyData to retrieve the final status of the transacction.    Added a new input field first in LoggingLegacyFilterInput to be able to change the size of the response. By default up to 100 results will be returned.   2019-07-10  Fix an error that was causing to download files with empty content.</description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/logging/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/logging/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced </description>
+    </item>
+    
+  </channel>
+</rss>

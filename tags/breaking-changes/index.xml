@@ -22,10 +22,10 @@
     
     <item>
       <title>GraphQL Schema breaking changes</title>
-      <link>/alertsx/release-notes/breaking-changes/</link>
+      <link>/alerts-x/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/alertsx/release-notes/breaking-changes/</guid>
+      <guid>/alerts-x/release-notes/breaking-changes/</guid>
       <description> Changes history of deprecated notes previously announced No deletions to date </description>
     </item>
     
@@ -36,6 +36,15 @@
       
       <guid>/hotel-x/release-notes/breaking-changes/</guid>
       <description>Changes history of deprecated notes previously announced Unreleased  Removal of loadFile from HotelXMutation. Reason: . Deprecated on 2018-06-06.To be removed soon. Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of type from AdviseMessage.</description>
+    </item>
+    
+    <item>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/logging/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/logging/release-notes/breaking-changes/</guid>
+      <description>Changes history of deprecated notes previously announced </description>
     </item>
     
     <item>

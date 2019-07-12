@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Enums on TravelgateX Documentation</title>
+    <link>/alerts-x/reference/enums/</link>
+    <description>Recent content in Enums on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/alerts-x/reference/enums/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AdviseMessageLevel</title>
+      <link>/alerts-x/reference/enums/advisemessagelevel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/advisemessagelevel/</guid>
+      <description>GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:</description>
+    </item>
+    
+    <item>
+      <title>AlertGroups</title>
+      <link>/alerts-x/reference/enums/alertgroups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/alertgroups/</guid>
+      <description> GraphQL schema definition  enum AlertGroups{   ACCESS,    CLIENT,    SUPPLIER,    SUPPLIER_EXTERNAL,    XTG,    OPERATION,    HUB_STATUS,    ERROR_CODE,    ERROR_TYPE,    GROUP_ORG_SELLER,    GROUP_ORG_BUYER,    GROUP_FOLDER_SELLER,    GROUP_FOLDER_BUYER,    GROUP_PRODUCT_SELLER,    GROUP_PRODUCT_BUYER,   }   </description>
+    </item>
+    
+    <item>
+      <title>AlertType</title>
+      <link>/alerts-x/reference/enums/alerttype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/alerttype/</guid>
+      <description>GraphQL schema definition  enum AlertType{   ERROR_RATE,    AVERAGE_TIME,    NO_TRAFFIC,    PEAK_TRAFFIC,   }   Required by AlertConfiguration:</description>
+    </item>
+    
+    <item>
+      <title>ComercialType</title>
+      <link>/alerts-x/reference/enums/comercialtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/comercialtype/</guid>
+      <description>GraphQL schema definition  enum ComercialType{   SELLER,    BUYER,   }   Required by AlertGroupInput:</description>
+    </item>
+    
+    <item>
+      <title>EmailType</title>
+      <link>/alerts-x/reference/enums/emailtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/emailtype/</guid>
+      <description>GraphQL schema definition  enum EmailType{   BCC,    TO,   }   Required by EmailInput:</description>
+    </item>
+    
+    <item>
+      <title>ErrorType</title>
+      <link>/alerts-x/reference/enums/errortype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/errortype/</guid>
+      <description>GraphQL schema definition  enum ErrorType{   OK,    PROVIDER,    TIMEOUT,    INTEGRATION,   }   Required by ErrorTypeInput:</description>
+    </item>
+    
+    <item>
+      <title>EventType</title>
+      <link>/alerts-x/reference/enums/eventtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/eventtype/</guid>
+      <description>GraphQL schema definition  enum EventType{   OK,    ALERTING,   }   Required by EventData:  Event data</description>
+    </item>
+    
+    <item>
+      <title>GroupType</title>
+      <link>/alerts-x/reference/enums/grouptype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/grouptype/</guid>
+      <description>GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by GroupData:    GroupCommonData:    OrganizationData:</description>
+    </item>
+    
+    <item>
+      <title>HubStatus</title>
+      <link>/alerts-x/reference/enums/hubstatus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/hubstatus/</guid>
+      <description>GraphQL schema definition  enum HubStatus{   OK,    EXCEPTION,    TIMEOUT,    UNDEFINED,   }   Required by HubStatusInput:</description>
+    </item>
+    
+    <item>
+      <title>MemberType</title>
+      <link>/alerts-x/reference/enums/membertype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/membertype/</guid>
+      <description>GraphQL schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Required by MemberData:</description>
+    </item>
+    
+    <item>
+      <title>OperationType</title>
+      <link>/alerts-x/reference/enums/operationtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/operationtype/</guid>
+      <description> GraphQL schema definition  enum OperationType{   SEARCH,    QUOTE,    BOOKING,    CANCEL,    SCHEDULER,    CREATE,    READ,    UPDATE,    DELETE,    EXECUTE,    OTHER,   }   </description>
+    </item>
+    
+    <item>
+      <title>RateRulesType</title>
+      <link>/alerts-x/reference/enums/raterulestype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/raterulestype/</guid>
+      <description> GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   </description>
+    </item>
+    
+    <item>
+      <title>RoleType</title>
+      <link>/alerts-x/reference/enums/roletype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/roletype/</guid>
+      <description>GraphQL schema definition  enum RoleType{   VIEWER,    EDITOR,    ADMIN,    EXECUTOR,    SPECIFIC,   }   Required by RoleData:</description>
+    </item>
+    
+  </channel>
+</rss>
