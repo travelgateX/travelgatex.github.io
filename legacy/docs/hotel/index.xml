@@ -17,7 +17,8 @@
       
       <guid>/legacy/docs/hotel/change-log/</guid>
       <description>Version 1.0.22: Date 09/07/2019
- Addition of the boolean DailyPrices to AvailRS. By default DailyPrices is set to true and given the supplier implements daily prices, you will receive a list of daily prices for each room in the Avail response for the given stay range. If set to false this information will not be included in the response. Addition of the boolean DailyRatePlans to AvailRS. By default DailyRatePlans is set to true and given the supplier implements daily rate plans, you will receive a list of the available rate plans for each room in the Avail response for the given stay range.</description>
+ Addition of the boolean DailyPrices to AvailRS. By default DailyPrices is set to true. When set to true, if the supplier implements daily prices you will receive a list of daily prices for each room in the Avail response for the given date range. If set to false this information will not be included in the response.
+ Addition of the boolean DailyRatePlans to AvailRS. By default DailyRatePlans is set to true.</description>
     </item>
     
     <item>
