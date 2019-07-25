@@ -17,7 +17,7 @@
       
       <guid>/alerts-x/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Alerts-X
-2019-07-10  After an alert configuration update their past events will be deleted.   2019-06-12  Fixed an error that was causing an unsuccessful alert create or update to set clients, suppliers and accesses to the alert for Travelgate Teams users.   2019-06-11  Fixed an error to return all the events of the alerts.   2019-06-06  Added /Health to check service status.</description>
+2019-07-25  Allow to get alerts without groups criteria input.    Fixed an error to allow an alert create in an AlertsX group with no alert.   2019-07-10  After an alert configuration update their past events will be deleted.   2019-06-12  Fixed an error that was causing an unsuccessful alert create or update to set clients, suppliers and accesses to the alert for Travelgate Teams users.</description>
     </item>
     
     <item>
