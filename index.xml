@@ -9713,7 +9713,7 @@ Definitions  Client Token: Dynamic parameter you can send on the RQ in case you 
       
       <guid>/alerts-x/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Alerts-X
-2019-07-25  Allow to get alerts without groups criteria input.    Fixed an error to allow an alert create in an AlertsX group with no alert.   2019-07-10  After an alert configuration update their past events will be deleted.   2019-06-12  Fixed an error that was causing an unsuccessful alert create or update to set clients, suppliers and accesses to the alert for Travelgate Teams users.</description>
+2019-07-30  Save historicalWindow correctly.   2019-07-29  Check permissions of team groups.   2019-07-25  Allow to get alerts without groups criteria input.    Fixed an error to allow an alert create in an AlertsX group with no alert.   2019-07-10  After an alert configuration update their past events will be deleted.   2019-06-12  Fixed an error that was causing an unsuccessful alert create or update to set clients, suppliers and accesses to the alert for Travelgate Teams users.</description>
     </item>
     
     <item>
