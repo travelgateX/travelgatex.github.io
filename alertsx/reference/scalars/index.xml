@@ -17,7 +17,7 @@
       
       <guid>/alertsx/reference/scalars/boolean/</guid>
       <description>The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    PageInfo:    AlertData:    AlertConfiguration:    MemberData:    GroupData:    GroupCommonData:    APIData:    ResourceData:    RoleData:    AccessData:    SupplierData:    Provider:    ClientFilter:    OrganizationData:    ClientData:    SupplierFilter:    AlertInput:  Alert information.</description>
+GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    PageInfo:    AlertData:    AlertConfiguration:    MemberData:    GroupData:    GroupCommonData:    APIData:    ResourceData:    RoleData:    AccessData:    SupplierData:    Provider:    ClientFilter:    SystemData:    SupplierFilter:    OrganizationData:    ClientData:    ProfileData:    AlertInput:  Alert information.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alertsx/reference/scalars/datetime/</guid>
-      <description>GraphQL schema definition scalar DateTime   Required by AlertFilterInput:    Alert:   Alert node  Node:    Member:    Group:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    Domain:    Product:    Client:    Event:  Event triggered</description>
+      <description> GraphQL schema definition scalar DateTime   Required by AlertFilterInput:    Alert:   Alert node  Node:    Member:    Group:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    System:    Domain:    Product:    MacroPermission:    Client:    Profile:    Entity:    Event:  Event triggered   </description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alertsx/reference/scalars/domainname/</guid>
-      <description>GraphQL schema definition scalar DomainName   Required by DomainData:</description>
+      <description> GraphQL schema definition scalar DomainName   Required by DomainData:     </description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       
       <guid>/alertsx/reference/scalars/id/</guid>
       <description>The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar ID   Required by Alert:   Alert node  AlertData:    AdviseMessage:    Node:    Member:    MemberData:    Group:    GroupData:    GroupCommonData:    API:    APIData:    Resource:    ResourceData:    Operation:    OperationData:    ManagedGroup:    ManagedGroupData:    Role:    RoleData:    Access:    AccessData:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    AccessFilter:    ClientFilter:    OrganizationData:    Domain:    Product:    ProductData:    DomainData:    Client:    ClientData:    SupplierFilter:    Event:  Event triggered  EventData:  Event data  AlertInput:  Alert information.</description>
+GraphQL schema definition scalar ID   Required by Alert:   Alert node  AlertData:    AdviseMessage:    Node:    Member:    MemberData:    Group:    GroupData:    GroupCommonData:    API:    APIData:    Resource:    ResourceData:    Operation:    OperationData:    ManagedGroup:    ManagedGroupData:    Role:    RoleData:    Access:    AccessData:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    AccessFilter:    ClientFilter:    System:    SystemData:    SupplierFilter:    OrganizationData:    Domain:    Product:    ProductData:    MacroPermission:    MacroPermissionData:    DomainData:    Client:    ClientData:    Profile:    ProfileData:    Entity:    Event:  Event triggered  EventData:  Event data  AlertInput:  Alert information.</description>
     </item>
     
     <item>
@@ -74,7 +74,7 @@ GraphQL schema definition scalar Int   Required by RelayInput:    AlertConnectio
       
       <guid>/alertsx/reference/scalars/string/</guid>
       <description>The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar String   Required by RelayInput:    AlertEdge:    PageInfo:    AlertData:    AdviseMessage:    MemberData:    GroupEdge:    GroupData:    GroupCommonData:    MemberEdge:    APIEdge:    APIData:    ResourceEdge:    ResourceData:    OperationEdge:    OperationData:    ManagedGroupEdge:    RoleData:    AccessEdge:    AccessData:    Error:    Parameter:    SupplierData:    Provider:    OrganizationData:    ProductEdge:    ProductData:    SupplierEdge:    ClientEdge:    RoleEdge:    EventEdge:    EventData:  Event data  ExternalMessage:    AlertInput:  Alert information.</description>
+GraphQL schema definition scalar String   Required by RelayInput:    AlertEdge:    PageInfo:    AlertData:    AdviseMessage:    MemberData:    GroupEdge:    GroupData:    GroupCommonData:    MemberEdge:    APIEdge:    APIData:    ResourceEdge:    ResourceData:    OperationEdge:    OperationData:    ManagedGroupEdge:    RoleData:    AccessEdge:    AccessData:    Error:    Parameter:    SupplierData:    Provider:    OrganizationData:    ProductEdge:    ProductData:    MacroPermissionEdge:    MacroPermissionData:    SupplierEdge:    ClientEdge:    ProfileEdge:    ProfileData:    EntityEdge:    RoleEdge:    EventEdge:    EventData:  Event data  ExternalMessage:    AlertInput:  Alert information.</description>
     </item>
     
     <item>
@@ -83,7 +83,7 @@ GraphQL schema definition scalar String   Required by RelayInput:    AlertEdge: 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alertsx/reference/scalars/uri/</guid>
-      <description>GraphQL schema definition scalar URI   Required by Urls:</description>
+      <description> GraphQL schema definition scalar URI   Required by Urls:     </description>
     </item>
     
   </channel>

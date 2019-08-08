@@ -27,8 +27,7 @@ The Project has a few columns that act as the status whereas cards are the items
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/release-notes/changelog/</guid>
-      <description>Easily accessible log of notable changes to HotelX API All notable changes in our platform will be documented on this page. 2019-07-11  Deprecate type error in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category Add error filter in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category Add adviseMessage as new error type    Fix Level value in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category  
-2019-07-02  New field in book, cancel and booking respone. booking/reference/hotel.    Client token in batch and booking flow.</description>
+      <description>Easily accessible log of notable changes to HotelX API All notable changes in our platform will be documented on this page. 2019-08-07  Fix Hotel-List repeated Hotels   2019-08-06  Add new enum type PaymentCardType which contain list of supported payment card. Add new field type of type PaymentCardType into PaymentCardInput and deprecate old field cardType Type HotelData introduces field RoomConnection (same type as Rooms service operation) Modified RoomData type by adding the new types RoomSource (string) and OccupancyStatic    Deprecated description from Bed (search) Deprecated KO in BookStatusType</description>
     </item>
     
     <item>

@@ -11,14 +11,30 @@
     
     
     <item>
+      <title>AccessFilter</title>
+      <link>/paymentx/reference/inputobjects/accessfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/inputobjects/accessfilter/</guid>
+      <description> GraphQL schema definition type AccessFilter {  accessID: [ID]    group: [ID]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields accessID([ID]):   group([ID]):   owner([ID!]):    </description>
+    </item>
+    
+    <item>
+      <title>ClientFilter</title>
+      <link>/paymentx/reference/inputobjects/clientfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/inputobjects/clientfilter/</guid>
+      <description>GraphQL schema definition type ClientFilter {  clientID: [ID]    name: [String!]    groupID: [ID]    isActive: Boolean    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields clientID([ID]):   name([String!]):   groupID([ID]):   isActive(Boolean):   owner([ID!</description>
+    </item>
+    
+    <item>
       <title>ExpireDateInput</title>
       <link>/paymentx/reference/inputobjects/expiredateinput/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/inputobjects/expiredateinput/</guid>
-      <description>The card expiration date
-GraphQL schema definition type ExpireDateInput {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields month(Int!): Month MM  year(Int!): Year yy  
-Required by PaymentXStoredCardInput:</description>
+      <description> GraphQL schema definition type ExpireDateInput {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields month(Int!):   year(Int!):    Required by PaymentXStoredCardInput:     </description>
     </item>
     
     <item>
@@ -27,8 +43,7 @@ Required by PaymentXStoredCardInput:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/inputobjects/holderinput/</guid>
-      <description>Holder object that contains the occupant&amp;rsquo;s (pax&amp;rsquo;s) name and surname.
-GraphQL schema definition type HolderInput {  name: String!    surname: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!): The card holder&amp;#39;s name  surname(String!): The card holder&amp;#39;s surname</description>
+      <description> GraphQL schema definition type HolderInput {  name: String!    surname: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!):   surname(String!):    Required by PaymentXStoredCardFilterInput:    PaymentXStoredCardInput:     </description>
     </item>
     
     <item>
@@ -46,7 +61,7 @@ GraphQL schema definition type HolderInput {  name: String!    surname: String! 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/inputobjects/paymentxstoredcardidinput/</guid>
-      <description>GraphQL schema definition type PaymentXStoredCardIDInput {  instanceCode: ID    pointOfSaleCode: ID    bookingReference: String    code: ID   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields instanceCode(ID): Asigned instance of PaymentX of the booked property.  pointOfSaleCode(ID): Indicates the code of the booked property  bookingReference(String): Indicates the referece of the booking  code(ID): Stored card ID returned in allStoredCards query</description>
+      <description> GraphQL schema definition type PaymentXStoredCardIDInput {  instanceCode: ID    pointOfSaleCode: ID    bookingReference: String    code: ID   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields instanceCode(ID):   pointOfSaleCode(ID):   bookingReference(String):   code(ID):    </description>
     </item>
     
     <item>
@@ -56,6 +71,15 @@ GraphQL schema definition type HolderInput {  name: String!    surname: String! 
       
       <guid>/paymentx/reference/inputobjects/paymentxstoredcardinput/</guid>
       <description>GraphQL schema definition type PaymentXStoredCardInput {  instanceCode: ID!    pointOfSaleCode: ID!    bookingReference: String!    checkOut: Date    checkIn: Date    cardType: String    holder: HolderInput    number: CardNumber!    CVC: CVC!    expire: ExpireDateInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.</description>
+    </item>
+    
+    <item>
+      <title>SupplierFilter</title>
+      <link>/paymentx/reference/inputobjects/supplierfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/paymentx/reference/inputobjects/supplierfilter/</guid>
+      <description>GraphQL schema definition type SupplierFilter {  supplierID: [ID]    accessID: [ID]    groupID: [ID]    isActive: Boolean    serviceAPI: [Int]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields supplierID([ID]):   accessID([ID]):   groupID([ID]):   isActive(Boolean):   serviceAPI([Int]):   owner([ID!</description>
     </item>
     
   </channel>

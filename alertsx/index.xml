@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alerts-X on TravelgateX Documentation</title>
+    <title>Alertsxes on TravelgateX Documentation</title>
     <link>/alertsx/</link>
-    <description>Recent content in Alerts-X on TravelgateX Documentation</description>
+    <description>Recent content in Alertsxes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -11,13 +11,12 @@
     
     
     <item>
-      <title>Overview</title>
-      <link>/alertsx/overview/</link>
+      <title>GraphQL Schema breaking changes</title>
+      <link>/alertsx/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/alertsx/overview/</guid>
-      <description>In order to analyze useful metrics about performance, Alerts-X extracts, loads and stores data from all TravelgateX products.
-Once the metrics are stored in our infrastructure, our service-alerts analyze your performance according to a configuration alert which can be created/updated or viewed using API alertsWorking with Alerts-X The most important use case working with Alerts is to query about your performance.</description>
+      <guid>/alertsx/release-notes/breaking-changes/</guid>
+      <description> Changes history of deprecated notes previously announced No deletions to date </description>
     </item>
     
   </channel>

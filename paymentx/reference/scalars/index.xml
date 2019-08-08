@@ -17,7 +17,7 @@
       
       <guid>/paymentx/reference/scalars/boolean/</guid>
       <description> The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:    GroupCommonData:    MemberData:    APIData:    ResourceData:    RoleData:    AccessData:    SupplierData:    Provider:  Temporary type to use only during SQL server&amp;#39;s lifetime  OrganizationData:    ClientData:     </description>
+GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:    GroupCommonData:    MemberData:    APIData:    ResourceData:    RoleData:    AccessData:    SupplierData:    Provider:    ClientFilter:    SystemData:    SupplierFilter:    OrganizationData:    ClientData:    ProfileData:     </description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/cvc/</guid>
-      <description>GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
+      <description> GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/cardnumber/</guid>
-      <description>GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
+      <description> GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
     </item>
     
     <item>
@@ -44,8 +44,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/date/</guid>
-      <description> The Date type represents Date values. A good example might be a Hotel CheckIn Date. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22&amp;rdquo;.
-GraphQL schema definition scalar Date   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
+      <description> GraphQL schema definition scalar Date   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
     </item>
     
     <item>
@@ -54,8 +53,7 @@ GraphQL schema definition scalar Date   Required by PaymentXStoredCardData:    P
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/datetime/</guid>
-      <description>The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
-GraphQL schema definition scalar DateTime   Required by PaymentXStoredCardFilterInput:    PaymentXStoredCard:    Node:    Group:  Groups are organized hierarchically.  PointOfSale:    Member:  You grant access to members which can be either: Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform.</description>
+      <description> GraphQL schema definition scalar DateTime   Required by PaymentXStoredCardFilterInput:    PaymentXStoredCard:    Node:    Group:    PointOfSale:    Member:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    System:    Domain:    Product:    MacroPermission:    Client:    Profile:    Entity:     </description>
     </item>
     
     <item>
@@ -64,8 +62,7 @@ GraphQL schema definition scalar DateTime   Required by PaymentXStoredCardFilter
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/domainname/</guid>
-      <description> Scalar for type Domain
-GraphQL schema definition scalar DomainName   Required by DomainData:     </description>
+      <description> GraphQL schema definition scalar DomainName   Required by DomainData:     </description>
     </item>
     
     <item>
@@ -74,8 +71,8 @@ GraphQL schema definition scalar DomainName   Required by DomainData:     </desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/id/</guid>
-      <description>The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar ID   Required by AdviseMessage:  List of advise messages.</description>
+      <description> The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
+GraphQL schema definition scalar ID   Required by AdviseMessage:    PaymentXStoredCardIDInput:    PaymentXStoredCard:    Node:    Group:    PointOfSale:    GroupData:    Member:    GroupCommonData:    MemberData:    API:    APIData:    Resource:    ResourceData:    Operation:    OperationData:    ManagedGroup:    ManagedGroupData:    Role:    RoleData:    Access:    AccessData:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    AccessFilter:    ClientFilter:    System:    SystemData:    SupplierFilter:    OrganizationData:    Domain:    Product:    ProductData:    MacroPermission:    MacroPermissionData:    DomainData:    Client:    ClientData:    Profile:    ProfileData:    Entity:    PointOfSaleData:    PaymentXStoredCardInput:     </description>
     </item>
     
     <item>
@@ -85,7 +82,7 @@ GraphQL schema definition scalar ID   Required by AdviseMessage:  List of advise
       
       <guid>/paymentx/reference/scalars/int/</guid>
       <description> The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   Required by PaymentXExpireDate:  The card expiration date  GroupData:    SupplierData:    ExpireDateInput:  The card expiration date   </description>
+GraphQL schema definition scalar Int   Required by PaymentXExpireDate:    GroupData:    AccessData:    SupplierData:    SupplierFilter:    ExpireDateInput:     </description>
     </item>
     
     <item>
@@ -94,8 +91,8 @@ GraphQL schema definition scalar Int   Required by PaymentXExpireDate:  The card
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/string/</guid>
-      <description>The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar String   Required by AdviseMessage:  List of advise messages.  PaymentXStoredCardIDInput:    ExternalMessage:    HolderInput:  Holder object that contains the occupant&amp;#39;s (pax&amp;#39;s) name and surname.  PaymentXStoredCardEdge:    PageInfo:    PaymentXStoredCardData:    Holder:  Holder object that contains the occupant&amp;#39;s (pax&amp;#39;s) name and surname.</description>
+      <description> The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL schema definition scalar String   Required by AdviseMessage:    PaymentXStoredCardIDInput:    ExternalMessage:    HolderInput:    PaymentXStoredCardEdge:    PageInfo:    PaymentXStoredCardData:    Holder:    GroupData:    GroupCommonData:    GroupEdge:    MemberData:    MemberEdge:    APIEdge:    APIData:    ResourceEdge:    ResourceData:    OperationEdge:    OperationData:    ManagedGroupEdge:    RoleData:    AccessEdge:    AccessData:    Error:    Parameter:    SupplierData:    Provider:    OrganizationData:    ProductEdge:    ProductData:    MacroPermissionEdge:    MacroPermissionData:    SupplierEdge:    ClientEdge:    RoleEdge:    ProfileEdge:    ProfileData:    EntityEdge:    PointOfSaleData:    PaymentXStoredCardInput:     </description>
     </item>
     
     <item>
@@ -104,8 +101,7 @@ GraphQL schema definition scalar String   Required by AdviseMessage:  List of ad
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/uri/</guid>
-      <description> The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
-GraphQL schema definition scalar URI   Required by Urls:  Url&amp;#39;s   </description>
+      <description> GraphQL schema definition scalar URI   Required by Urls:     </description>
     </item>
     
   </channel>

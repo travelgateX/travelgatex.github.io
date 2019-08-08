@@ -26,7 +26,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alerts-x/reference/scalars/datetime/</guid>
-      <description>GraphQL schema definition scalar DateTime   Required by AlertFilterInput:    Alert:   Alert node  Node:    Member:    Group:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    Domain:    Product:    Client:    Event:  Event triggered</description>
+      <description> GraphQL schema definition scalar DateTime   Required by AlertFilterInput:    Alert:   Alert node  Node:    Member:    Group:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    Domain:    Product:    Client:    Event:  Event triggered   </description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alerts-x/reference/scalars/domainname/</guid>
-      <description>GraphQL schema definition scalar DomainName   Required by DomainData:</description>
+      <description> GraphQL schema definition scalar DomainName   Required by DomainData:     </description>
     </item>
     
     <item>
@@ -83,7 +83,7 @@ GraphQL schema definition scalar String   Required by RelayInput:    AlertEdge: 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alerts-x/reference/scalars/uri/</guid>
-      <description>GraphQL schema definition scalar URI   Required by Urls:</description>
+      <description> GraphQL schema definition scalar URI   Required by Urls:     </description>
     </item>
     
   </channel>
