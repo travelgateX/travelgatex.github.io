@@ -17,7 +17,7 @@
       
       <guid>/alerts-x/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Alerts-X
-2019-08-07  Now is Checked api, operation &amp;amp; errorCode inputs to be sure that exists or its combinations are posible.    Now is checked if update values are different. If not, update is rejected.   2019-08-06  New field api in configuration inputs to be able to filter by serviceApi (hotel, transportation&amp;hellip;). New field API in AlertConfiguration.   2019-08-05  Returns warning to advise of deleted events if configuration of the alert is updated.</description>
+2019-08-12  Error to update alerts in some cases.   2019-08-07  Now is Checked api, operation &amp;amp; errorCode inputs to be sure that exists or its combinations are posible.    Now is checked if update values are different. If not, update is rejected.   2019-08-06  New field api in configuration inputs to be able to filter by serviceApi (hotel, transportation&amp;hellip;).</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alerts-x/release-notes/breaking-changes/</guid>
-      <description> Changes history of deprecated notes previously announced No deletions to date </description>
+      <description> Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-08-13  Removed type from AdviseMessage. Reason: . Deprecated on 2018-06-01 .   2018-06-01  Deprecated type from AdviseMessage. Reason: . Finally removed on 2019-08-13 . Deprecated type from AdviseMessage. Reason: . Expected removal on 2018-08-30 .   </description>
     </item>
     
   </channel>

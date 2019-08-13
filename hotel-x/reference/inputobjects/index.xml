@@ -16,8 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/accessfilterinput/</guid>
-      <description>Include OR exclude accesses in this specific search query. If not specified, default accesses will be used. Only one list (includes or excludes) MUST be used.
-GraphQL schema definition type AccessFilterInput {  includes: [ID!]    excludes: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.</description>
+      <description> GraphQL schema definition type AccessFilterInput {  includes: [ID!]    excludes: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields includes([ID!]):   excludes([ID!]):    Required by FilterInput:    HotelXFilterSearchInput:     </description>
     </item>
     
     <item>
@@ -26,8 +25,7 @@ GraphQL schema definition type AccessFilterInput {  includes: [ID!]    excludes:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/bookpaxinput/</guid>
-      <description>Input BookPax contains basic information abaout pax suach as name, surname and age.
-GraphQL schema definition type BookPaxInput {  name: String!    surname: String!    age: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!): The guest&amp;#39;s first name  surname(String!</description>
+      <description> GraphQL schema definition type BookPaxInput {  name: String!    surname: String!    age: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!):   surname(String!):   age(Int!):    </description>
     </item>
     
     <item>
@@ -36,8 +34,7 @@ GraphQL schema definition type BookPaxInput {  name: String!    surname: String!
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/bookreferenceinput/</guid>
-      <description>Reference object that contains the client reference and/or supplier reference.
-GraphQL schema definition type BookReferenceInput {  client: String    supplier: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields client(String): The client&amp;#39;s reference  supplier(String): The Supplier&amp;#39;s reference   Required by HotelCancelInput:  Cancellation Criteria.</description>
+      <description> GraphQL schema definition type BookReferenceInput {  client: String    supplier: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields client(String):   supplier(String):    Required by HotelCancelInput:     </description>
     </item>
     
     <item>
@@ -46,8 +43,7 @@ GraphQL schema definition type BookReferenceInput {  client: String    supplier:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/bookroominput/</guid>
-      <description> Input BookRoom contains list of pax and the room&amp;rsquo;s reference.
-GraphQL schema definition type BookRoomInput {  occupancyRefId: Int!    paxes: [BookPaxInput!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields occupancyRefId(Int!): The room&amp;#39;s reference in the booking  paxes([BookPaxInput!]!): The list or lists of paxes of the room   </description>
+      <description> GraphQL schema definition type BookRoomInput {  occupancyRefId: Int!    paxes: [BookPaxInput!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields occupancyRefId(Int!):   paxes([BookPaxInput!]!):    </description>
     </item>
     
     <item>
@@ -56,8 +52,7 @@ GraphQL schema definition type BookRoomInput {  occupancyRefId: Int!    paxes: [
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/businessrulesinput/</guid>
-      <description>List of business rules to use as filter on the options.
-GraphQL schema definition type BusinessRulesInput {  optionsQuota: Int    businessRulesType: BusinessRulesType   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields optionsQuota(Int): Options quota per search. Maximum numbers of options to be returned by the search query.</description>
+      <description> GraphQL schema definition type BusinessRulesInput {  optionsQuota: Int    businessRulesType: BusinessRulesType   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields optionsQuota(Int):   businessRulesType(BusinessRulesType):    Required by HotelSettingsInput:    SettingsBaseInput:     </description>
     </item>
     
     <item>
@@ -66,8 +61,7 @@ GraphQL schema definition type BusinessRulesInput {  optionsQuota: Int    busine
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/configurationinput/</guid>
-      <description>The information and credentials required to access the supplier’s system.
-GraphQL schema definition type ConfigurationInput {  username: String    password: String    urls: UrlsInput!    parameters: [ParameterInput!]    markets: [String!]    rateRules: [RateRulesType!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
+      <description>GraphQL schema definition type ConfigurationInput {  username: String    password: String    urls: UrlsInput!    parameters: [ParameterInput!]    markets: [String!]    rateRules: [RateRulesType!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields username(String):   password(String):   urls(UrlsInput!</description>
     </item>
     
     <item>
@@ -76,8 +70,7 @@ GraphQL schema definition type ConfigurationInput {  username: String    passwor
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/criteriabookingdatesinput/</guid>
-      <description>Criteria by dates
-GraphQL schema definition type CriteriaBookingDatesInput {  dateType: DateType!    start: Date!    end: Date!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields dateType(DateType!): Type of date. Can be Arrival or Booking date.  start(Date!): Start date.</description>
+      <description> GraphQL schema definition type CriteriaBookingDatesInput {  dateType: DateType!    start: Date!    end: Date!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields dateType(DateType!):   start(Date!):   end(Date!):    Required by HotelCriteriaBookingInput:     </description>
     </item>
     
     <item>
@@ -86,8 +79,7 @@ GraphQL schema definition type CriteriaBookingDatesInput {  dateType: DateType! 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/criteriabookingreferencesinput/</guid>
-      <description>Criteria by references
-GraphQL schema definition type CriteriaBookingReferencesInput {  hotelCode: String!    currency: Currency!    references: [BookReferenceInput!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hotelCode(String!): The hotel code.  currency(Currency!): The requested currency. The API will convert to this currency if supplier returns a different one.</description>
+      <description> GraphQL schema definition type CriteriaBookingReferencesInput {  hotelCode: String!    currency: Currency!    references: [BookReferenceInput!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hotelCode(String!):   currency(Currency!):   references([BookReferenceInput!]!):    Required by HotelCriteriaBookingInput:     </description>
     </item>
     
     <item>
@@ -96,7 +88,7 @@ GraphQL schema definition type CriteriaBookingReferencesInput {  hotelCode: Stri
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/deltapriceinput/</guid>
-      <description>Input delta price, indicates price variation permitted by the client An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation). This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation.</description>
+      <description> GraphQL schema definition type DeltaPriceInput {  amount: Float    percent: Float    applyBoth: Boolean!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields amount(Float):   percent(Float):   applyBoth(Boolean!):    Required by HotelBookInput:     </description>
     </item>
     
     <item>
@@ -105,8 +97,7 @@ GraphQL schema definition type CriteriaBookingReferencesInput {  hotelCode: Stri
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/expiredateinput/</guid>
-      <description> The card expiration date
-GraphQL schema definition type ExpireDateInput {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields month(Int!): Month MM  year(Int!): Year yy   Required by PaymentCardInput:  Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information   </description>
+      <description> GraphQL schema definition type ExpireDateInput {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields month(Int!):   year(Int!):    Required by PaymentCardInput:     </description>
     </item>
     
     <item>
@@ -115,8 +106,7 @@ GraphQL schema definition type ExpireDateInput {  month: Int!    year: Int!   Sh
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/filterinput/</guid>
-      <description>Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses. You must choose one of them, include or exclude, or the other alternative isn&amp;rsquo;t specified anything. If input both, you will receive a validation error that indicates this error. @deprecated(reason: &amp;ldquo;deprecated from 2018-08-20. Please, use filterSearch&amp;rdquo;)
-GraphQL schema definition type FilterInput {  access: AccessFilterInput    rateRules: RateRulesFilterInput   Show deprecated fields   }    window.</description>
+      <description> GraphQL schema definition type FilterInput {  access: AccessFilterInput    rateRules: RateRulesFilterInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields access(AccessFilterInput):   rateRules(RateRulesFilterInput):    </description>
     </item>
     
     <item>
@@ -125,8 +115,7 @@ GraphQL schema definition type FilterInput {  access: AccessFilterInput    rateR
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/holderinput/</guid>
-      <description>Holder object that contains the occupant&amp;rsquo;s (pax&amp;rsquo;s) name and surname.
-GraphQL schema definition type HolderInput {  name: String!    surname: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!): The card holder&amp;#39;s name  surname(String!): The card holder&amp;#39;s surname   Required by HotelBookInput:  Criteria of book.</description>
+      <description> GraphQL schema definition type HolderInput {  name: String!    surname: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!):   surname(String!):    Required by HotelBookInput:    PaymentCardInput:     </description>
     </item>
     
     <item>
@@ -135,8 +124,7 @@ GraphQL schema definition type HolderInput {  name: String!    surname: String! 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelbookinput/</guid>
-      <description>Criteria of book.
-GraphQL schema definition type HotelBookInput {  optionRefId: String!    language: Language    clientReference: String!    deltaPrice: DeltaPriceInput    paymentCard: PaymentCardInput    remarks: String    holder: HolderInput!    rooms: [BookRoomInput!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
+      <description>GraphQL schema definition type HotelBookInput {  optionRefId: String!    language: Language    clientReference: String!    deltaPrice: DeltaPriceInput    paymentCard: PaymentCardInput    remarks: String    holder: HolderInput!    rooms: [BookRoomInput!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.</description>
     </item>
     
     <item>
@@ -145,8 +133,7 @@ GraphQL schema definition type HotelBookInput {  optionRefId: String!    languag
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelcancelinput/</guid>
-      <description>Cancellation Criteria.
-GraphQL schema definition type HotelCancelInput {  accessCode: String!    language: Language    hotelCode: String!    reference: BookReferenceInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields accessCode(String!): The name of the access to use in the request.</description>
+      <description> GraphQL schema definition type HotelCancelInput {  accessCode: String!    language: Language    hotelCode: String!    reference: BookReferenceInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields accessCode(String!):   language(Language):   hotelCode(String!):   reference(BookReferenceInput!):    </description>
     </item>
     
     <item>
@@ -155,8 +142,7 @@ GraphQL schema definition type HotelCancelInput {  accessCode: String!    langua
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelcriteriabookinginput/</guid>
-      <description>Criteria of book contains basic information to find a book or books.
-GraphQL schema definition type HotelCriteriaBookingInput {  accessCode: String!    language: Language    typeSearch: BookingCriteriaType!    references: CriteriaBookingReferencesInput    dates: CriteriaBookingDatesInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.</description>
+      <description>GraphQL schema definition type HotelCriteriaBookingInput {  accessCode: String!    language: Language    typeSearch: BookingCriteriaType!    references: CriteriaBookingReferencesInput    dates: CriteriaBookingDatesInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields accessCode(String!):   language(Language):   typeSearch(BookingCriteriaType!</description>
     </item>
     
     <item>
@@ -165,8 +151,7 @@ GraphQL schema definition type HotelCriteriaBookingInput {  accessCode: String! 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelcriteriaquoteinput/</guid>
-      <description> The quote criteria contains the option reference id, block and language.
-GraphQL schema definition type HotelCriteriaQuoteInput {  optionRefId: String!    language: Language   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields optionRefId(String!): Identifier of the option chosen in the search.  language(Language): Language to be used in request   </description>
+      <description> GraphQL schema definition type HotelCriteriaQuoteInput {  optionRefId: String!    language: Language   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields optionRefId(String!):   language(Language):    </description>
     </item>
     
     <item>
@@ -175,8 +160,7 @@ GraphQL schema definition type HotelCriteriaQuoteInput {  optionRefId: String!  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelcriteriasearchinput/</guid>
-      <description>Search criteria contains destination, travel dates and the number of pax in each room. You must preload the other fields in our system by complete the fields absents.
-GraphQL schema definition type HotelCriteriaSearchInput {  checkIn: Date!    checkOut: Date!    hotels: [String!]    destinations: [String!]    occupancies: [RoomInput!]!    language: Language    currency: Currency    nationality: Country    market: String   Show deprecated fields   }    window.</description>
+      <description>GraphQL schema definition type HotelCriteriaSearchInput {  checkIn: Date!    checkOut: Date!    hotels: [String!]    destinations: [String!]    occupancies: [RoomInput!]!    language: Language    currency: Currency    nationality: Country    market: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.</description>
     </item>
     
     <item>
@@ -185,8 +169,7 @@ GraphQL schema definition type HotelCriteriaSearchInput {  checkIn: Date!    che
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelsettingsinput/</guid>
-      <description>Settings that you can edit for this avail. Values are loaded by default in our Back Office.
-GraphQL schema definition type HotelSettingsInput {  context: String    client: ID    group: ID    timeout: Int    auditTransactions: Boolean    businessRules: BusinessRulesInput    suppliers: [HotelXSupplierInput!]    plugins: [PluginStepInput!]    testMode: Boolean    clientTokens: [String!</description>
+      <description>GraphQL schema definition type HotelSettingsInput {  context: String    useContext: Boolean    connectUser: String    client: ID    group: ID    timeout: Int    auditTransactions: Boolean    businessRules: BusinessRulesInput    suppliers: [HotelXSupplierInput!]    plugins: [PluginStepInput!]    testMode: Boolean    clientTokens: [String!]   Show deprecated fields   }    window.</description>
     </item>
     
     <item>
@@ -195,8 +178,7 @@ GraphQL schema definition type HotelSettingsInput {  context: String    client: 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxaccessinput/</guid>
-      <description>AccessInput overwrites an existent access in our Back Office or creates a new one to be used in this search query only. An access object contains its own code, configuration and settings.
-GraphQL schema definition type HotelXAccessInput {  accessId: ID!    configuration: ConfigurationInput    settings: SettingsBaseInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.</description>
+      <description> GraphQL schema definition type HotelXAccessInput {  accessId: ID!    configuration: ConfigurationInput    settings: SettingsBaseInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields accessId(ID!):   configuration(ConfigurationInput):   settings(SettingsBaseInput):    </description>
     </item>
     
     <item>
@@ -205,7 +187,7 @@ GraphQL schema definition type HotelXAccessInput {  accessId: ID!    configurati
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxboardqueryinput/</guid>
-      <description> GraphQL schema definition type HotelXBoardQueryInput {  boardCodes: [String!]    access: ID!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields boardCodes([String!]): Indicates the board codes that you want filter.  access(ID!): Indicates the access that you want use.   </description>
+      <description> GraphQL schema definition type HotelXBoardQueryInput {  boardCodes: [String!]    access: ID!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields boardCodes([String!]):   access(ID!):    </description>
     </item>
     
     <item>
@@ -214,8 +196,7 @@ GraphQL schema definition type HotelXAccessInput {  accessId: ID!    configurati
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxbusinessrulesinput/</guid>
-      <description>List of business rules to use as filter on the options.
-GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!    businessRulesType: BusinessRulesType!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields optionsQuota(Int!): Options quota per search. Maximum numbers of options to be returned by the search query.</description>
+      <description> GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!    businessRulesType: BusinessRulesType!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields optionsQuota(Int!):   businessRulesType(BusinessRulesType!):    Required by HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:     </description>
     </item>
     
     <item>
@@ -224,7 +205,7 @@ GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxcategoryqueryinput/</guid>
-      <description> GraphQL schema definition type HotelXCategoryQueryInput {  categoryCodes: [String!]    access: ID!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields categoryCodes([String!]): Indicates the category codes that you want filter.  access(ID!): Indicates the access that you want use.   </description>
+      <description> GraphQL schema definition type HotelXCategoryQueryInput {  categoryCodes: [String!]    access: ID    group: ID   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields categoryCodes([String!]):   access(ID):   group(ID):    </description>
     </item>
     
     <item>
@@ -233,7 +214,7 @@ GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxcommonsettingsdatainput/</guid>
-      <description> GraphQL schema definition type HotelXCommonSettingsDataInput {  currency: Currency!    businessRules: HotelXBusinessRulesInput!    timeout: TimeoutInput!    audit: HotelXAuditInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields currency(Currency!):   businessRules(HotelXBusinessRulesInput!):   timeout(TimeoutInput!):   audit(HotelXAuditInput!):    </description>
+      <description> GraphQL schema definition type HotelXCommonSettingsDataInput {  currency: Currency!    businessRules: HotelXBusinessRulesInput!    timeout: TimeoutInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields currency(Currency!):   businessRules(HotelXBusinessRulesInput!):   timeout(TimeoutInput!):    </description>
     </item>
     
     <item>
@@ -260,7 +241,7 @@ GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput/</guid>
-      <description>GraphQL schema definition type HotelXDefaultSettingsDataInput {  clientName: ID!    context: String!    language: Language!    currency: Currency!    nationality: Country!    market: String!    timeout: TimeoutInput!    businessRules: HotelXBusinessRulesInput!    defaultAccesses: [ID!]    defaultPlugins: [HotelXDefaultPluginStepInput!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.</description>
+      <description>GraphQL schema definition type HotelXDefaultSettingsDataInput {  context: String!    language: Language!    currency: Currency!    nationality: Country!    market: String!    timeout: TimeoutInput!    businessRules: HotelXBusinessRulesInput!    defaultAccesses: [ID!]    defaultPlugins: [HotelXDefaultPluginStepInput!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.</description>
     </item>
     
     <item>
@@ -269,7 +250,7 @@ GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxdestinationlistinput/</guid>
-      <description> GraphQL schema definition type HotelXDestinationListInput {  access: ID!    destinationCodes: [String!]    maxSize: Int   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields access(ID!): Indicates the access  destinationCodes([String!]): Search by hotel codes  maxSize(Int): Maxium number of items per page   </description>
+      <description> GraphQL schema definition type HotelXDestinationListInput {  access: ID    group: ID    destinationCodes: [String!]    maxSize: Int   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields access(ID):   group(ID):   destinationCodes([String!]):   maxSize(Int):    </description>
     </item>
     
     <item>
@@ -278,7 +259,7 @@ GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxdestinationsearcherinput/</guid>
-      <description> GraphQL schema definition type HotelXDestinationSearcherInput {  access: ID!    text: String!    maxSize: Int   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields access(ID!): Indicates the access  text(String!): Search by hotel name or destination name  maxSize(Int): Maxium number of items per type   </description>
+      <description> GraphQL schema definition type HotelXDestinationSearcherInput {  access: ID!    text: String!    maxSize: Int   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields access(ID!):   text(String!):   maxSize(Int):    </description>
     </item>
     
     <item>
@@ -287,7 +268,7 @@ GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxfilterinput/</guid>
-      <description> GraphQL schema definition type HotelXFilterInput {  plugin: HotelXPluginFilterInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields plugin(HotelXPluginFilterInput): Only is possible to specify one of this filters, it allows to filter which plugins have to be executed or excluded   </description>
+      <description> GraphQL schema definition type HotelXFilterInput {  plugin: HotelXPluginFilterInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields plugin(HotelXPluginFilterInput):    </description>
     </item>
     
     <item>
@@ -296,7 +277,7 @@ GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxfilterplugintypeinput/</guid>
-      <description>GraphQL schema definition type HotelXFilterPluginTypeInput {  step: PluginStepType!    type: String!    name: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields step(PluginStepType!): The Step of the plugin to filter  type(String!): The Type of the plugin to filter  name(String!</description>
+      <description> GraphQL schema definition type HotelXFilterPluginTypeInput {  step: PluginStepType!    type: String!    name: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields step(PluginStepType!):   type(String!):   name(String!):    </description>
     </item>
     
     <item>
@@ -305,7 +286,7 @@ GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxfiltersearchinput/</guid>
-      <description>GraphQL schema definition type HotelXFilterSearchInput {  access: AccessFilterInput    rateRules: RateRulesFilterInput    plugin: HotelXPluginFilterInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields access(AccessFilterInput): You can specify one of the filters or any of them. In this latter case, all the configurated accesses will be executed.</description>
+      <description> GraphQL schema definition type HotelXFilterSearchInput {  access: AccessFilterInput    rateRules: RateRulesFilterInput    plugin: HotelXPluginFilterInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields access(AccessFilterInput):   rateRules(RateRulesFilterInput):   plugin(HotelXPluginFilterInput):    </description>
     </item>
     
     <item>
@@ -314,8 +295,7 @@ GraphQL schema definition type HotelXBusinessRulesInput {  optionsQuota: Int!   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxhotelfilterinput/</guid>
-      <description>By default: Logical AND on all given filters.
-GraphQL schema definition type HotelXHotelFilterInput {  AND: [HotelXHotelFilterInput!]    OR: [HotelXHotelFilterInput!]    createdAt_in: [DateTime!]    createdAt_not_in: [DateTime!]    createdAt_lt: DateTime    createdAt_lte: DateTime    createdAt_gt: DateTime    createdAt_gte: DateTime    updatedAt_in: [DateTime!]    updatedAt_not_in: [DateTime!]    updatedAt_lt: DateTime    updatedAt_lte: DateTime    updatedAt_gt: DateTime    updatedAt_gte: DateTime   Show deprecated fields   }    window.</description>
+      <description>GraphQL schema definition type HotelXHotelFilterInput {  AND: [HotelXHotelFilterInput!]    OR: [HotelXHotelFilterInput!]    createdAt_in: [DateTime!]    createdAt_not_in: [DateTime!]    createdAt_lt: DateTime    createdAt_lte: DateTime    createdAt_gt: DateTime    createdAt_gte: DateTime    updatedAt_in: [DateTime!]    updatedAt_not_in: [DateTime!]    updatedAt_lt: DateTime    updatedAt_lte: DateTime    updatedAt_gt: DateTime    updatedAt_gte: DateTime    country_in: Boolean    category_in: Boolean    destination_in: Boolean    name_in: Boolean    coordinates_in: Boolean   Show deprecated fields   }    window.</description>
     </item>
     
     <item>
@@ -333,7 +313,7 @@ GraphQL schema definition type HotelXHotelFilterInput {  AND: [HotelXHotelFilter
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxpluginfilterinput/</guid>
-      <description> GraphQL schema definition type HotelXPluginFilterInput {  includes: [HotelXFilterPluginTypeInput!]    excludes: [HotelXFilterPluginTypeInput!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields includes([HotelXFilterPluginTypeInput!]): Plugins to include (only these plugins will be executed)  excludes([HotelXFilterPluginTypeInput!]): Plugins to exclude   Required by HotelXFilterSearchInput:    HotelXFilterInput:     </description>
+      <description> GraphQL schema definition type HotelXPluginFilterInput {  includes: [HotelXFilterPluginTypeInput!]    excludes: [HotelXFilterPluginTypeInput!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields includes([HotelXFilterPluginTypeInput!]):   excludes([HotelXFilterPluginTypeInput!]):    Required by HotelXFilterSearchInput:    HotelXFilterInput:     </description>
     </item>
     
     <item>
@@ -342,7 +322,7 @@ GraphQL schema definition type HotelXHotelFilterInput {  AND: [HotelXHotelFilter
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxroomqueryinput/</guid>
-      <description>GraphQL schema definition type HotelXRoomQueryInput {  access: ID!    roomCodes: [String!]    maxSize: Int   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields access(ID!): Indicates the access that you want use.  roomCodes([String!]): Indicates the room codes that you want filter.</description>
+      <description> GraphQL schema definition type HotelXRoomQueryInput {  access: ID!    roomCodes: [String!]    maxSize: Int   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields access(ID!):   roomCodes([String!]):   maxSize(Int):    </description>
     </item>
     
     <item>
@@ -351,8 +331,7 @@ GraphQL schema definition type HotelXHotelFilterInput {  AND: [HotelXHotelFilter
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/hotelxsupplierinput/</guid>
-      <description>Supplier object. Contains its own settings, code and access.
-GraphQL schema definition type HotelXSupplierInput {  settings: SettingsBaseInput    code: String!    accesses: [HotelXAccessInput!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields settings(SettingsBaseInput): You can configure an special settings for any supplier.</description>
+      <description> GraphQL schema definition type HotelXSupplierInput {  settings: SettingsBaseInput    code: String!    accesses: [HotelXAccessInput!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields settings(SettingsBaseInput):   code(String!):   accesses([HotelXAccessInput!]):    </description>
     </item>
     
     <item>
@@ -361,8 +340,7 @@ GraphQL schema definition type HotelXSupplierInput {  settings: SettingsBaseInpu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/parameterinput/</guid>
-      <description>Parameters Input.
-GraphQL schema definition type ParameterInput {  key: String!    value: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields key(String!): Contains the keyword/Id to identify a parameter. This information is mandatory.  value(String!): Contains the parameter values. This information is mandatory.</description>
+      <description> GraphQL schema definition type ParameterInput {  key: String!    value: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields key(String!):   value(String!):    </description>
     </item>
     
     <item>
@@ -371,8 +349,7 @@ GraphQL schema definition type ParameterInput {  key: String!    value: String! 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/paxinput/</guid>
-      <description> Pax object that contains the pax age.
-GraphQL schema definition type PaxInput {  age: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields age(Int!): Pax age.   </description>
+      <description> GraphQL schema definition type PaxInput {  age: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields age(Int!):    </description>
     </item>
     
     <item>
@@ -381,8 +358,7 @@ GraphQL schema definition type PaxInput {  age: Int!   Show deprecated fields   
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/paymentcardinput/</guid>
-      <description>Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information
-GraphQL schema definition type PaymentCardInput {  cardType: String!    holder: HolderInput!    number: String!    CVC: String!    expire: ExpireDateInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.</description>
+      <description>GraphQL schema definition type PaymentCardInput {  cardType: String    type: PaymentCardType    holder: HolderInput!    number: String!    CVC: String!    expire: ExpireDateInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields cardType(String):   type(PaymentCardType):   holder(HolderInput!</description>
     </item>
     
     <item>
@@ -391,8 +367,7 @@ GraphQL schema definition type PaymentCardInput {  cardType: String!    holder: 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/pluginstepinput/</guid>
-      <description> Plugin to execute.
-GraphQL schema definition type PluginStepInput {  step: PluginStepType!    pluginsType: [PluginsInput!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields step(PluginStepType!): Indicates where the plugin will be executed.  pluginsType([PluginsInput!]): Indicates the plugin that will be executed.   </description>
+      <description> GraphQL schema definition type PluginStepInput {  step: PluginStepType!    pluginsType: [PluginsInput!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields step(PluginStepType!):   pluginsType([PluginsInput!]):    </description>
     </item>
     
     <item>
@@ -401,8 +376,7 @@ GraphQL schema definition type PluginStepInput {  step: PluginStepType!    plugi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/pluginsinput/</guid>
-      <description>Plugin to execute.
-GraphQL schema definition type PluginsInput {  type: PluginType!    name: String!    parameters: [ParameterInput!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields type(PluginType!): type of the plugins to execute  name(String!): name of plugin to execute  parameters([ParameterInput!</description>
+      <description> GraphQL schema definition type PluginsInput {  type: PluginType!    name: String!    parameters: [ParameterInput!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields type(PluginType!):   name(String!):   parameters([ParameterInput!]):    </description>
     </item>
     
     <item>
@@ -411,8 +385,7 @@ GraphQL schema definition type PluginsInput {  type: PluginType!    name: String
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/raterulesfilterinput/</guid>
-      <description>If requested, only options with the specified rateRules will be returned
-GraphQL schema definition type RateRulesFilterInput {  includes: [RateRulesType!]    excludes: [RateRulesType!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields includes([RateRulesType!]): if includes not nil: only options without rate rules and options with rate rules found in includes will be returned  excludes([RateRulesType!</description>
+      <description> GraphQL schema definition type RateRulesFilterInput {  includes: [RateRulesType!]    excludes: [RateRulesType!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields includes([RateRulesType!]):   excludes([RateRulesType!]):    Required by FilterInput:    HotelXFilterSearchInput:     </description>
     </item>
     
     <item>
@@ -430,8 +403,7 @@ GraphQL schema definition type RateRulesFilterInput {  includes: [RateRulesType!
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/roominput/</guid>
-      <description>Occupancy for a room. It contains a list of pax ages.
-GraphQL schema definition type RoomInput {  paxes: [PaxInput!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields paxes([PaxInput!]!): Array of pax ages. The number of items in the array will indicate the pax occupancy.</description>
+      <description> GraphQL schema definition type RoomInput {  paxes: [PaxInput!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields paxes([PaxInput!]!):    </description>
     </item>
     
     <item>
@@ -440,8 +412,7 @@ GraphQL schema definition type RoomInput {  paxes: [PaxInput!]!   Show deprecate
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/settingsbaseinput/</guid>
-      <description>Contains the time out and business rules of a supplier or an access.
-GraphQL schema definition type SettingsBaseInput {  timeout: Int    auditTransactions: Boolean    businessRules: BusinessRulesInput    currency: Currency   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields timeout(Int): Milliseconds before the connection is closed.</description>
+      <description> GraphQL schema definition type SettingsBaseInput {  timeout: Int    auditTransactions: Boolean    businessRules: BusinessRulesInput    currency: Currency   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields timeout(Int):   auditTransactions(Boolean):   businessRules(BusinessRulesInput):   currency(Currency):    Required by HotelXSupplierInput:    HotelXAccessInput:     </description>
     </item>
     
     <item>
@@ -450,7 +421,7 @@ GraphQL schema definition type SettingsBaseInput {  timeout: Int    auditTransac
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/timeoutinput/</guid>
-      <description>GraphQL schema definition type TimeoutInput {  search: Int!    quote: Int!    book: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields search(Int!): Milliseconds before the search connection is closed.  quote(Int!): Milliseconds before the quote connection is closed.</description>
+      <description> GraphQL schema definition type TimeoutInput {  search: Int!    quote: Int!    book: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields search(Int!):   quote(Int!):   book(Int!):    Required by HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:     </description>
     </item>
     
     <item>
@@ -459,8 +430,7 @@ GraphQL schema definition type SettingsBaseInput {  timeout: Int    auditTransac
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/inputobjects/urlsinput/</guid>
-      <description>URLs Input
-GraphQL schema definition type UrlsInput {  search: URI    quote: URI    book: URI    generic: URI   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields search(URI): Specific URL for Availability method.  quote(URI): Specific URL for Reservation method.</description>
+      <description> GraphQL schema definition type UrlsInput {  search: URI    quote: URI    book: URI    generic: URI   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields search(URI):   quote(URI):   book(URI):   generic(URI):    Required by ConfigurationInput:     </description>
     </item>
     
   </channel>

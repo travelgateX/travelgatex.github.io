@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alerts-x/reference/enums/alertgroups/</guid>
-      <description> GraphQL schema definition  enum AlertGroups{   ACCESS,    CLIENT,    SUPPLIER,    SUPPLIER_EXTERNAL,    XTG,    OPERATION,    HUB_STATUS,    ERROR_CODE,    ERROR_TYPE,    GROUP_ORG_SELLER,    GROUP_ORG_BUYER,    GROUP_FOLDER_SELLER,    GROUP_FOLDER_BUYER,    GROUP_PRODUCT_SELLER,    GROUP_PRODUCT_BUYER,   }   </description>
+      <description> GraphQL schema definition  enum AlertGroups{   ACCESS,    CLIENT,    SUPPLIER,    OPERATION,    HUB_STATUS,    ERROR_CODE,    ERROR_TYPE,    GROUP_ORG_SELLER,    GROUP_ORG_BUYER,    GROUP_FOLDER_SELLER,    GROUP_FOLDER_BUYER,    GROUP_PRODUCT_SELLER,    GROUP_PRODUCT_BUYER,   }   </description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alerts-x/reference/enums/comercialtype/</guid>
-      <description> GraphQL schema definition  enum ComercialType{   SELLER,    BUYER,   }   Required by AlertGroupInput:     </description>
+      <description> GraphQL schema definition  enum ComercialType{   SELLER,    BUYER,   }   Required by AlertConfiguration:    AlertGroupInput:     </description>
     </item>
     
     <item>
@@ -107,6 +107,15 @@
       
       <guid>/alerts-x/reference/enums/operationtype/</guid>
       <description> GraphQL schema definition  enum OperationType{   SEARCH,    QUOTE,    BOOKING,    CANCEL,    SCHEDULER,    CREATE,    READ,    UPDATE,    DELETE,    EXECUTE,    OTHER,   }   </description>
+    </item>
+    
+    <item>
+      <title>ProfileType</title>
+      <link>/alerts-x/reference/enums/profiletype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/alerts-x/reference/enums/profiletype/</guid>
+      <description> GraphQL schema definition  enum ProfileType{   BUYER,    SELLER,   }   </description>
     </item>
     
     <item>

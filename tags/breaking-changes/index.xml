@@ -26,16 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/alerts-x/release-notes/breaking-changes/</guid>
-      <description> Changes history of deprecated notes previously announced No deletions to date </description>
-    </item>
-    
-    <item>
-      <title>GraphQL Schema breaking changes</title>
-      <link>/alertsx/release-notes/breaking-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/alertsx/release-notes/breaking-changes/</guid>
-      <description> Changes history of deprecated notes previously announced No deletions to date </description>
+      <description> Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-08-13  Removed type from AdviseMessage. Reason: . Deprecated on 2018-06-01 .   2018-06-01  Deprecated type from AdviseMessage. Reason: . Finally removed on 2019-08-13 . Deprecated type from AdviseMessage. Reason: . Expected removal on 2018-08-30 .   </description>
     </item>
     
     <item>
@@ -44,15 +35,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced Unreleased  Removal of loadFile from HotelXMutation. Reason: . Deprecated on 2018-06-06.To be removed soon. Removal of useContext from HotelSettingsInput. Reason: Redundant.. Deprecated on 2017-12-12.To be removed soon. Removal of connectUser from HotelSettingsInput. Reason: Redundant.. Deprecated on 2018-03-19.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of type from AdviseMessage.</description>
-    </item>
-    
-    <item>
-      <title>GraphQL Schema breaking changes</title>
-      <link>/hotelx/release-notes/breaking-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotelx/release-notes/breaking-changes/</guid>
       <description>Changes history of deprecated notes previously announced Unreleased  Removal of loadFile from HotelXMutation. Reason: . Deprecated on 2018-06-06.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of creationDate from BookingHotel. Reason: Incorrect date format.. Deprecated on 2018-02-28.To be removed soon. Removal of checkIn from BookingHotel.</description>
     </item>
     

@@ -17,7 +17,7 @@
       
       <guid>/alerts-x/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Alerts-X
-2019-08-07  Now is Checked api, operation &amp;amp; errorCode inputs to be sure that exists or its combinations are posible.    Now is checked if update values are different. If not, update is rejected.   2019-08-06  New field api in configuration inputs to be able to filter by serviceApi (hotel, transportation&amp;hellip;). New field API in AlertConfiguration.   2019-08-05  Returns warning to advise of deleted events if configuration of the alert is updated.</description>
+2019-08-12  Error to update alerts in some cases.   2019-08-07  Now is Checked api, operation &amp;amp; errorCode inputs to be sure that exists or its combinations are posible.    Now is checked if update values are different. If not, update is rejected.   2019-08-06  New field api in configuration inputs to be able to filter by serviceApi (hotel, transportation&amp;hellip;).</description>
     </item>
     
     <item>
