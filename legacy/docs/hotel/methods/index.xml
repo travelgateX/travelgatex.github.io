@@ -11,6 +11,15 @@
     
     
     <item>
+      <title></title>
+      <link>/legacy/docs/hotel/methods/modifyreservation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/hotel/methods/modifyreservation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Avail</title>
       <link>/legacy/docs/hotel/methods/avail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -176,19 +185,6 @@ If the supplier has more than 100 mealplan codes, or more than 20 codes for one 
       <description>Method Goals This method provides information about the meta data of the supplier so that it can be effectively configured.
 Request Format The request does not require any elements - empty request.
 Response Format The XML response contains many elements of the supplier&amp;rsquo;s meta data: number of hotels, number of cities and number of areas available, maximum number of roomcandidate, maximum number of paxes in a roomcandidate, release days, minimum stay, list of languages supported &amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>ModifyReservation</title>
-      <link>/legacy/docs/hotel/methods/modifyreservation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/legacy/docs/hotel/methods/modifyreservation/</guid>
-      <description>Method Goals This message confirms a booking change
-Request Format The request requires the valuation returned for ModifyValuationRS
-Response Format The XML returned contains a booking confirmation
-Remarks The maximum time permitted in our system before the connection is closed is 180000 milliseconds.
-ModifyReservationRQ Example &amp;lt;ModifyReservationRQ&amp;gt; &amp;lt;OnRequest&amp;gt;false&amp;lt;/OnRequest&amp;gt; &amp;lt;Nationality&amp;gt;ES&amp;lt;/Nationality&amp;gt; &amp;lt;Reservation&amp;gt; &amp;lt;Locators&amp;gt; &amp;lt;Client&amp;gt;5356342&amp;lt;/Client&amp;gt; &amp;lt;Provider&amp;gt;MGNZ12345&amp;lt;/Provider&amp;gt; &amp;lt;/Locators&amp;gt; &amp;lt;Currency&amp;gt;EUR&amp;lt;/Currency&amp;gt; &amp;lt;StartDate&amp;gt;28/01/2014&amp;lt;/StartDate&amp;gt; &amp;lt;EndDate&amp;gt;29/01/2014&amp;lt;/EndDate&amp;gt; &amp;lt;CreationDate&amp;gt;17/01/2014&amp;lt;/CreationDate&amp;gt; &amp;lt;/Reservation&amp;gt; &amp;lt;Modifications&amp;gt; &amp;lt;ModifyMealPlan&amp;gt;&amp;lt;/ModifyMealPlan&amp;gt; &amp;lt;ModifyStartDateAddDays&amp;gt; &amp;lt;StartDate&amp;gt;29/01/2014&amp;lt;/StartDate&amp;gt; &amp;lt;/ModifyStartDateAddDays&amp;gt; &amp;lt;ModifyEndDateAddDays&amp;gt; &amp;lt;EndDate&amp;gt;30/01/2014&amp;lt;/EndDate&amp;gt; &amp;lt;/ModifyEndDateAddDays&amp;gt; &amp;lt;ModifyHolder&amp;gt; &amp;lt;Holder name = &amp;quot;Test11Modify&amp;quot; surname = &amp;quot;TestSur11Modify&amp;quot;/&amp;gt; &amp;lt;/ModifyHolder&amp;gt; &amp;lt;ModifyRoomsAddRooms&amp;gt; &amp;lt;Rooms&amp;gt; &amp;lt;Room code = &amp;quot;506&amp;quot;&amp;gt; &amp;lt;PaxGuests&amp;gt; &amp;lt;PaxGuest age = &amp;quot;30&amp;quot;&amp;gt; &amp;lt;GivenName&amp;gt;name1&amp;lt;/GivenName&amp;gt; &amp;lt;SurName&amp;gt;surname1&amp;lt;/SurName&amp;gt; &amp;lt;/PaxGuest&amp;gt; &amp;lt;PaxGuest age = &amp;quot;30&amp;quot;&amp;gt; &amp;lt;GivenName&amp;gt;name2&amp;lt;/GivenName&amp;gt; &amp;lt;SurName&amp;gt;surname2&amp;lt;/SurName&amp;gt; &amp;lt;/PaxGuest&amp;gt; &amp;lt;/PaxGuests&amp;gt; &amp;lt;/Room&amp;gt; &amp;lt;/Rooms&amp;gt; &amp;lt;/ModifyRoomsAddRooms&amp;gt; &amp;lt;ModifyRoomsRemoveRooms&amp;gt; &amp;lt;Rooms&amp;gt; &amp;lt;Room code = &amp;quot;500&amp;quot;&amp;gt; &amp;lt;Price currency = &amp;quot;EUR&amp;quot; amount = &amp;quot;36.</description>
     </item>
     
     <item>
