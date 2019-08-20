@@ -26,7 +26,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierData:    Provider
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/scalars/datetime/</guid>
-      <description> GraphQL schema definition scalar DateTime   Required by Supplier:    Node:    Organization:    System:    Access:    Member:    Domain:    Role:    Resource:    API:    Operation:    Product:    MacroPermission:    Profile:    Group:    Entity:    ManagedGroup:    Client:     </description>
+      <description>GraphQL schema definition scalar DateTime   Required by Supplier:    Node:    Organization:    System:    Access:    Member:    Domain:    Role:    Resource:    API:    Operation:    Product:    MacroPermission:    Profile:    Group:    Entity:    ManagedGroup:    Client:</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierData:    Provider
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/scalars/domainname/</guid>
-      <description> GraphQL schema definition scalar DomainName   Required by DomainData:     </description>
+      <description>GraphQL schema definition scalar DomainName   Required by DomainData:</description>
     </item>
     
     <item>
@@ -74,7 +74,7 @@ GraphQL schema definition scalar String   Required by MappeaGetMappeaStatsInput:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/mappea/reference/scalars/uri/</guid>
-      <description> GraphQL schema definition scalar URI   Required by Urls:     </description>
+      <description>GraphQL schema definition scalar URI   Required by Urls:</description>
     </item>
     
   </channel>

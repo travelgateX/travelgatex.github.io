@@ -67,6 +67,16 @@ It&amp;rsquo;s based on SQL Aggregate Functions but filtering, not aggregating.
     </item>
     
     <item>
+      <title>Booking Persistence</title>
+      <link>/hotel-x/plugins/booking_persistence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/plugins/booking_persistence/</guid>
+      <description>Booking Persistence is a plugin that allows store bookings.
+Booking Persistence Goals Booking Persistence is a plugin that allows clients to store bookings and avoid duplicated bookings. This plugin only can be executed in booking service. With this plugin, each booking(by clientReference) of an organization is unique. Each booking done with this plugin will be stored since one day after booking checkout day. An application/communication error will store a booking with UNKNOWN status.</description>
+    </item>
+    
+    <item>
       <title>Commission</title>
       <link>/hotel-x/plugins/net-price/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
