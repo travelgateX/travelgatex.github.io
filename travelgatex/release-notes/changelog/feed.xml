@@ -1,13 +1,13 @@
-{&lt;?xml version="2.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<link rel="self"  type="application/atom+xml" href="/travelgatex/release-notes/changelog/feed.xml" />
 	<link rel="alternate" type="type/html" href="/travelgatex/release-notes/changelog/" />
 	
 	
-	<generator url="https://gohugo.io" version="0.54.0">Hugo</generator>
+	<generator url="https://gohugo.io" version="0.40.1">Hugo</generator>
 	<updated>
 		
-			2019-08-14 13:31:00 CEST
+			2019-08-20 08:29:00 DST
 		
 	</updated>
 	<id>urn:uuid:42099b4a-f021-553f-d98f-e056c2568d7c</id>
@@ -32,7 +32,7 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 
 <div class="release-types type-a">
         <ul>
-<li><a href="https://github.com/travelgateX/slack-botx" rel="nofollow" target="_blank">New TravelgateX Slack Bot</a></li>
+<li><a href="https://github.com/travelgateX/slack-botx" target="_blank">New TravelgateX Slack Bot</a></li>
 </ul>
 
 </div>
@@ -874,7 +874,7 @@ apis:
 <p><div class="release-types type-c">
         <ul>
 <li><a href="/travelgatex/release-notes/graphql-schema-changes/#20180716">GraphQL Schema updated.</a></li>
-<li>Changelog based on <a href="https://keepachangelog.com" rel="nofollow" target="_blank">keep a changelog</a></li>
+<li>Changelog based on <a href="https://keepachangelog.com" target="_blank">keep a changelog</a></li>
 </ul>
 
 </div>
