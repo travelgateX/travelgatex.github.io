@@ -7,7 +7,7 @@
 	<generator url="https://gohugo.io" version="0.40.1">Hugo</generator>
 	<updated>
 		
-			2019-08-20 08:55:00 DST
+			2019-08-21 08:03:00 DST
 		
 	</updated>
 	<id>urn:uuid:42099b4a-f021-553f-d98f-e056c2568d7c</id>
@@ -21,6 +21,24 @@
 			<description><![CDATA[
 
 <p>Easily accessible log of notable changes to Alerts-X</p>
+
+<h2 id="2019-08-21">2019-08-21</h2>
+
+<div class="release-types type-f">
+        <ul>
+<li>Error to update alerts from price to an other alertType or vice versa.</li>
+</ul>
+
+</div>
+
+<h2 id="2019-08-20">2019-08-20</h2>
+
+<div class="release-types type-a">
+        <ul>
+<li>New <code>Alert type</code> available <code>PRICE</code>. With this alert type will be posible to set alerts which will advise of <code>amount</code> or <code>commission</code> anomalies for <code>price</code>.</li>
+</ul>
+
+</div>
 
 <h2 id="2019-08-12">2019-08-12</h2>
 
