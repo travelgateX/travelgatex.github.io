@@ -4627,6 +4627,11 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
+          <li data-nav-id="/insights-x/faqs/" class="dd-item">
+            <a href="/insights-x/faqs/">
+              <span style="padding-left: 8px;">FAQs</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/insights-x/overview/" class="dd-item">
             <a href="/insights-x/overview/">
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
@@ -7112,7 +7117,7 @@
     </header>
     <section class="post-excerpt">
         <p>Easily accessible log of notable changes to Logging
-2019-07-17  Added a new input object reference with two fields client and supplier from which bookings can be searched.   2019-07-11  Added a new field statusType in LoggingLegacyData to retrieve the final status of the transacction.    Added a new input field first in LoggingLegacyFilterInput to be able to change the size of the response. By default up to 100 results will be returned. <a class="read-more" href="/logging/release-notes/changelog/">&raquo;</a></p>
+2019-08-22  Added the field hotel in the input object reference from which bookings can be searched by the hotel&rsquo;s reference.   2019-08-21  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-08-02  Added a hard limit when an API&rsquo;s response lasts more than 60 seconds. <a class="read-more" href="/logging/release-notes/changelog/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
@@ -7134,7 +7139,7 @@
     </header>
     <section class="post-excerpt">
         <p>Easily accessible log of notable changes to Stats
-2019-06-12  Fix an error that was causing to have empty operations in the response.   2019-06-03  New scalar type Int64 has been created. hits in StatsData, totalHits in OperationDetailed and hits in StatsInfo have changed its type to this new scalar.   2019-05-30  Now adviceMessage&rsquo;s from others TravelgateX products are returned as external in owns adviceMessage&rsquo;s.   2019-05-23  Now type of StatsInforeturns the correct value. <a class="read-more" href="/stats/release-notes/changelog/">&raquo;</a></p>
+2019-08-02  Added a hard limit when an API&rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).   2019-07-22  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-06-12  Fix an error that was causing to have empty operations in the response. <a class="read-more" href="/stats/release-notes/changelog/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          

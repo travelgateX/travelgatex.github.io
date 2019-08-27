@@ -17,7 +17,7 @@
       
       <guid>/logging/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Logging
-2019-07-17  Added a new input object reference with two fields client and supplier from which bookings can be searched.   2019-07-11  Added a new field statusType in LoggingLegacyData to retrieve the final status of the transacction.    Added a new input field first in LoggingLegacyFilterInput to be able to change the size of the response. By default up to 100 results will be returned.</description>
+2019-08-22  Added the field hotel in the input object reference from which bookings can be searched by the hotel&amp;rsquo;s reference.   2019-08-21  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-08-02  Added a hard limit when an API&amp;rsquo;s response lasts more than 60 seconds.</description>
     </item>
     
     <item>

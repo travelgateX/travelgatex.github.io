@@ -7,7 +7,7 @@
 	<generator url="https://gohugo.io" version="0.40.1">Hugo</generator>
 	<updated>
 		
-			2019-08-21 08:24:00 DST
+			2019-08-27 07:58:00 DST
 		
 	</updated>
 	<id>urn:uuid:42099b4a-f021-553f-d98f-e056c2568d7c</id>
@@ -21,6 +21,33 @@
 			<description><![CDATA[
 
 <p>Easily accessible log of notable changes to Logging</p>
+
+<h2 id="2019-08-22">2019-08-22</h2>
+
+<div class="release-types type-a">
+        <ul>
+<li>Added the field <code>hotel</code> in the input object <code>reference</code> from which bookings can be searched by the hotel&rsquo;s reference.</li>
+</ul>
+
+</div>
+
+<h2 id="2019-08-21">2019-08-21</h2>
+
+<div class="release-types type-a">
+        <ul>
+<li>Added new input object <code>timeRange</code> that improves the time filters providing both a relative time filter and an absolute time filter.</li>
+</ul>
+
+</div>
+
+<h2 id="2019-08-02">2019-08-02</h2>
+
+<div class="release-types type-a">
+        <ul>
+<li>Added a hard limit when an API&rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).</li>
+</ul>
+
+</div>
 
 <h2 id="2019-07-17">2019-07-17</h2>
 
