@@ -4627,11 +4627,6 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/insights-x/faqs/" class="dd-item active">
-            <a href="/insights-x/faqs/">
-              <span style="padding-left: 8px;">FAQs</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/insights-x/overview/" class="dd-item">
             <a href="/insights-x/overview/">
               <span style="padding-left: 8px;">Overview</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4774,6 +4769,11 @@
             </a>
         </li>
             </ul>
+        </li>
+          <li data-nav-id="/insights-x/faqs/" class="dd-item active">
+            <a href="/insights-x/faqs/">
+              <span style="padding-left: 8px;">FAQs</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
         </li>
             </ul>
         </li>
@@ -7023,127 +7023,226 @@
                 </a>
               </div>
               
-<p>In order to analyze and <strong>produce useful insights</strong>, we recommend you to read Insights-X FAQs.</p>
+
+
+<p>In order to analyze and <strong>access useful insights</strong>, we recommend you to read Insights-X FAQs.</p>
+
+<h2 id="data-sets-and-reporting">* <strong>Data sets and Reporting:</strong></h2>
 
 <ul>
-<li><strong>Data sets and Reporting:</strong></li>
+<li><strong>How do I get access to my data sets?</strong></li>
 </ul>
 
-<p>How do I get access to my data sets?
-Insights-X data sets are stored in BigQuery. Once Insights-X is acquired, we will provide you with the <a href="insights-x/datasets/types-of-datasets/" target="_blank">credentials to access</a> and connect to the database with your data sets.</p>
-
-<p>How often are the data sets updated?
-Insights-X stores data from all transactions passing through TravelgateX. Everyday, data from the previous day is uploaded automatically to data sets. There is a delay of 24 hours due to data ingest and data cleansing.</p>
-
-<p>Can I create my own BI dashboard with my business data from TravelgateX?
-Once you have access to the data sets, it is possible to create customizable BI dashboards for all business areas. <a href="/insights-x/datasets/">Insights-X datasets</a> are compatible with different BI tools, such as Data Studio, Micro Strategy, Power BI, Tableau, etc.</p>
-
-<p>How can I use the Data Studio template as report tool for my business?
-Insights-X makes available a <a href="insights-xdatasets/dataset-tooling/" target="_blank">Data Studio template</a> for clients and providers connected in TravelgateX. By using this template, it is possible to monitor KPis of each connectivity, analyse bookings and know your competitiveness on TravelgateX platform. Once data set is connected to Data Studio, it is possible to modify the template according to your preferences and analysis.</p>
-
-<p>What is the level of detail provided by Insights-X?
-Performance, Insights and Benchmark datasets allow clients and suppliers analyse data from transactions at a client / provider and city levels. Besides, thanks to Insights-Portfolio it is possible to analyse the performance at a hotel level.</p>
-
-<p>What is the time based aggregation?
-Insights-X data is aggregated on a daily, weekly or monthly basis.</p>
-
-<p>Can I compare two time ranges in one report?
-Yes. Insights-X has up to three years historical data. So it is possible to compare data to previous periods.</p>
+<p>Insights-X data sets are stored in BigQuery. Once Insights-X is acquired, we will provide you with the <a href="insights-x/datasets/types-of-datasets/" target="_blank">credentials to access</a> and connect to the database with your data sets.</p>
 
 <ul>
-<li><strong>Performance Data Sets:</strong></li>
+<li><strong>How often are the data sets updated?</strong></li>
 </ul>
 
-<p>If I do “multi search” for search request, how are these searches captured in Insights-x?
-In Performance datasets, search requests counts multisearch as one unique search. However, in Insights datasets, the request goes till hotel level, it would be equivalent to N hotel searches for each multi-search.</p>
+<p>Insights-X stores data from all transactions passing through TravelgateX. Everyday, data from the previous day is uploaded automatically to data sets. There is a delay of 24 hours due to data ingest and data cleansing.</p>
 
-<p>How is “%Searches Ok” calculated?
-In Performance datasets, the percentage of searches ok is calculated over the total amount of search requests, no matter the amount of searched hotels.
+<ul>
+<li><strong>Can I create my own BI dashboard with my business data from TravelgateX?</strong></li>
+</ul>
+
+<p>Once you have access to the data sets, it is possible to create customizable BI dashboards for all business areas. <a href="/insights-x/datasets/">Insights-X datasets</a> are compatible with different BI tools, such as Data Studio, Micro Strategy, Power BI, Tableau, etc.</p>
+
+<ul>
+<li><strong>How can I use the Data Studio template as report tool for my business?</strong></li>
+</ul>
+
+<p>Insights-X makes available a <a href="insights-xdatasets/dataset-tooling/" target="_blank">Data Studio template</a> for clients and providers connected in TravelgateX. By using this template, it is possible to monitor KPis of each connectivity, analyse bookings and know your competitiveness on TravelgateX platform. Once data set is connected to Data Studio, it is possible to modify the template according to your preferences and analysis.</p>
+
+<ul>
+<li><strong>What is the level of detail provided by Insights-X?</strong></li>
+</ul>
+
+<p>Performance, Insights and Benchmark datasets allow clients and suppliers analyse data from transactions at a client / provider and city levels. Besides, thanks to Insights-Portfolio it is possible to analyse the performance at a hotel level.</p>
+
+<ul>
+<li><strong>What is the time based aggregation?</strong></li>
+</ul>
+
+<p>Insights-X data is aggregated on a daily, weekly or monthly basis.</p>
+
+<ul>
+<li><strong>Can I compare two time ranges in one report?</strong></li>
+</ul>
+
+<p>Yes. Insights-X has up to three years historical data. So it is possible to compare data to previous periods.</p>
+
+<h2 id="performance-data-sets">* <strong>Performance Data Sets:</strong></h2>
+
+<ul>
+<li><strong>If I do “multi search” for search request, how are these searches captured in Insights-x?</strong></li>
+</ul>
+
+<p>In Performance datasets, search requests counts multisearch as one unique search. However, in Insights datasets, the request goes till hotel level, it would be equivalent to N hotel searches for each multi-search.</p>
+
+<ul>
+<li><strong>How is “%Searches Ok” calculated?</strong></li>
+</ul>
+
+<p>In Performance datasets, the percentage of searches ok is calculated over the total amount of search requests, no matter the amount of searched hotels.
 However, in Insights datasets, that metric is calculated over the total of one specific hotel.</p>
 
-<p>Are searches made for price comparison included in “Searches”?
-Yes. All searches are included, even those made to compare rates or create rate calendars.</p>
-
-<p>How has “Response Time” been calculated on searches ,quotes, bookings and cancellations?
-Response Time (RP) is the total time aggregated. Example: client RP + TGX RP-supplier RP + TGX RP+ client RP</p>
-
-<p>What do errors on searches, quotes and bookings mean and how could I solve each type?
-    “No results”:  it is a common error and refers to “non availability” for one search (hotel, distribution, check in, nights, etc).
-    “Communication”: time out due to problems to connect with providers.
-    “Seller”: error returned by the supplier that could not be tagged.
-    “Bad Request”: means bad requests: the supplier does not accept the distribution, dates or the requests.
-    “Integration”: Unexpected error on TravelgateX’ side.</p>
-
 <ul>
-<li><strong>Insights Data Sets:</strong></li>
+<li><strong>Are searches made for price comparison included in “Searches”?</strong></li>
 </ul>
 
-<p>Revenue is always in Euros currency; how is the exchange calculated?
-Everyday Insights-X check the exchange rate and convert all currencies to Euros.</p>
-
-<p>Can I have data from requests at a destination level?
-Although some providers allow searches by destination (non standard destinations), at this moment TravelgateX only captures hotel requests.</p>
-
-<p>What does “source market” refer to?
-Source Market refers to the value sent by client via API on “market” field. In case the field “market” is empty,  Insights-X will take the field “nationality”. Source market is based on the standard ISO 31661-2 apha-2.</p>
-
-<p>How is “Amount Cancelled” calculated ?
-“Amount Cancelled” is the total amount of cancelled revenue from the cancelled bookings in a period of time.</p>
-
-<p>Some fields like “origin market” or “destination” do not return real values, just “-” or “null”. Why is this happening?
-When clients or providers do not send the value on the field, Insights-X captures the register as “null”. We recommend investigate the case and find out the provider / client that is not sharing the right value.</p>
-
-<p>What is “Cancel Window”?
-Cancel window is the average time (days) between the booking date and the date the booking was canceled.</p>
-
-<p>In case of cancelled bookings, would the revenue from bookings be updated?
-Yes. Revenue from bookings and cancelled revenue will be updated every day once cancelled bookings data has been checked.</p>
-
-<p>Hoteles Portfolio, ¿is this the number of unique hotels?
-Hotels displayed in Portfolio report are unique at a provider level.</p>
-
-<p>How is a “multisearch” for search request captured in Insights-x?
-In Insights datasets, the request goes till hotel level, it would be equivalent to N hotel searches for each multi-search. However, at search request level, Performance datasets count multisearch as one unique search.</p>
-
-<p>How can I optimize requests and hotels portfolio to reduce costs and improve performance?
-Thanks to Portfolio dataset you will be able to monitor hotels portfolio for each client / provider. It is possible to analyse at a hotel level, the total requests, errors, performance ratios from search to book, number of bookings, cancelations, etc.</p>
-
-<p>How to understand hotel “status” on portfolio page?
-    &ldquo;Hotels not in portfolio queried&rdquo;: requested hotels not available in provider’s portfolio. Those requests might happen due to mapping errors or non updated inventory.
-    &ldquo;Hotels not queried&rdquo;: hotels in provider’s portfolio not being requested. One of the reasons might be that mapping is not updated or the client does not operate in that destination.
-    &ldquo;Hotels in portfolio queried&rdquo;: hotels in provider’s portfolio being requested.
-    &ldquo;Hotels not dadded&rdquo;: hotels requested but not added in provider’s portfolio. If you are on the client side, we recommend you to check with your providers that hotels have been updated on TravelgateX platform.</p>
-
-<p>“Total Hotels Available”, how is this metric calculated?
-Report Page “Summary” of DS-Insights-X template, displays the number of “Total Hotels Available”. This metric refers to the total of hotels that have received at least one search during the previous month.</p>
+<p>Yes. All searches are included, even those made to compare rates or create rate calendars.</p>
 
 <ul>
-<li><strong>Benchmark Data Sets:</strong></li>
+<li><strong>How has “Response Time” been calculated on searches ,quotes, bookings and cancellations?</strong></li>
 </ul>
 
-<p>What is compared in benchmarking?
-Benchmarking is a competitive analysis of main indicators in TravelgateX: performance, availability (available hotels, both offered and received), revenue from bookings and number of bookings. Clients / providers will see their position in TravelgateX rank up to “city” level against other clients / providers in TravelgateX.</p>
+<p>Response Time (RP) is the total time aggregated. Example: client RP + TGX RP-supplier RP + TGX RP+ client RP</p>
 
-<p>What is “Comp. Set”?
-Comp. Set (Competitive Set) is a group of suppliers / buyers that are seen as direct competitors to your own business and are selling / buying through TravelgateX. All data is anonymous; Insights-X keeps Connected Partners’ privacy and any company name will never be shared.</p>
+<ul>
+<li><p><strong>What do errors on searches, quotes and bookings mean and how could I solve each type?</strong></p>
 
-<p>What is TravelgateX ranking?
-TravelgateX ranking shows, for the same search criteria, the achieved position by one client / provider in TravelgateX. For example, as a provider, you will be able to see your position in the ranking selling to one specific destination.</p>
+<ul>
+<li><p><strong>“No results”</strong>:  it is a common error and refers to “non availability” for one search (hotel, distribution, check in, nights, etc).</p></li>
 
-<p>What does “Total TGX” metric on benchmarking mean?
-Total TGX (TravelgateX) shows you the number of total hotels, bookings or revenue in TravelgateX for the same search key. This metric is a reference to understand how well that destination is performing (up to city level) on TravelgateX Platform. Clients and providers will be able to know if there are opportunities to improve on those destinations and how many competitors are making more revenue and bookings.</p>
+<li><p><strong>“Communication”</strong>: time out due to problems to connect with providers.</p></li>
 
-<p>Can I know how many competitors are selling / buying in my destinations?
-Yes. Thanks to Benchmark data sets it is possible to know the number of competitors on your destinations. Besides, you will be able to know the volume of bookings and estimate your growth potential for that destination.</p>
+<li><p><strong>“Seller”</strong>: error returned by the supplier that could not be tagged.</p></li>
 
-<p>Is my price strategy competitive?
-Thanks to Benchmark datasets you will be able to compare your price strategy for the search key “source market | destination | booking window” against other buyers / suppliers in TravelgateX.</p>
+<li><p><strong>“Bad Request”</strong>: means bad requests: the supplier does not accept the distribution, dates or the requests.</p></li>
 
-<p>Is my L2B (Look-to-Book) being competitive in TravelgateX?
-Benchmark datasets allows L2B comparison for the search key “source market | destination (city) | booking window&rdquo;. Use this metric as a reference of your competitiveness in our platform.</p>
+<li><p><strong>“Integration”</strong>: Unexpected error on TravelgateX’ side.</p></li>
+</ul></li>
+</ul>
 
-<p>How to increase bookings and revenue with new connections?
-Table “Opportunities” shows the number of potential clients / providers not connected with you but selling or buying in your markets or destinations. This will allow you to identify potential partnerships to boost your business by selling your product into new markets or new destinations.</p>
+<h2 id="insights-data-sets">* <strong>Insights Data Sets:</strong></h2>
+
+<ul>
+<li><strong>Revenue is always in Euros currency; how is the exchange calculated?</strong></li>
+</ul>
+
+<p>Everyday Insights-X check the exchange rate and convert all currencies to Euros.</p>
+
+<ul>
+<li><strong>Can I have data from requests at a destination level?</strong></li>
+</ul>
+
+<p>Although some providers allow searches by destination (non standard destinations), at this moment TravelgateX only captures hotel requests.</p>
+
+<ul>
+<li><strong>What does “source market” refer to?</strong></li>
+</ul>
+
+<p>Source Market refers to the value sent by client via API on “market” field. In case the field “market” is empty,  Insights-X will take the field “nationality”. Source market is based on the standard ISO 31661-2 apha-2.</p>
+
+<ul>
+<li><strong>How is “Amount Cancelled” calculated ?</strong></li>
+</ul>
+
+<p>“Amount Cancelled” is the total amount of cancelled revenue from the cancelled bookings in a period of time.</p>
+
+<ul>
+<li><strong>Some fields like “origin market” or “destination” do not return real values, just “-” or “null”. Why is this happening?</strong></li>
+</ul>
+
+<p>When clients or providers do not send the value on the field, Insights-X captures the register as “null”. We recommend investigate the case and find out the provider / client that is not sharing the right value.</p>
+
+<ul>
+<li><strong>What is “Cancel Window”?</strong></li>
+</ul>
+
+<p>Cancel window is the average time (days) between the booking date and the date the booking was canceled.</p>
+
+<ul>
+<li><strong>In case of cancelled bookings, would the revenue from bookings be updated?</strong></li>
+</ul>
+
+<p>Yes. Revenue from bookings and cancelled revenue will be updated every day once cancelled bookings data has been checked.</p>
+
+<ul>
+<li><strong>Hoteles Portfolio, ¿is this the number of unique hotels?</strong></li>
+</ul>
+
+<p>Hotels displayed in Portfolio report are unique at a provider level.</p>
+
+<ul>
+<li><strong>How is a “multisearch” for search request captured in Insights-x?</strong></li>
+</ul>
+
+<p>In Insights datasets, the request goes till hotel level, it would be equivalent to N hotel searches for each multi-search. However, at search request level, Performance datasets count multisearch as one unique search.</p>
+
+<ul>
+<li><strong>How can I optimize requests and hotels portfolio to reduce costs and improve performance?</strong></li>
+</ul>
+
+<p>Thanks to Portfolio dataset you will be able to monitor hotels portfolio for each client / provider. It is possible to analyse at a hotel level, the total requests, errors, performance ratios from search to book, number of bookings, cancelations, etc.</p>
+
+<ul>
+<li><p><strong>How to understand hotel “status” on portfolio page?</strong></p>
+
+<ul>
+<li><p><strong>&ldquo;Hotels not in portfolio queried&rdquo;</strong>: requested hotels not available in provider’s portfolio. Those requests might happen due to mapping errors or non updated inventory.</p></li>
+
+<li><p><strong>&ldquo;Hotels not queried&rdquo;</strong>: hotels in provider’s portfolio not being requested. One of the reasons might be that mapping is not updated or the client does not operate in that destination.</p></li>
+
+<li><p><strong>&ldquo;Hotels in portfolio queried&rdquo;</strong>: hotels in provider’s portfolio being requested.</p></li>
+
+<li><p><strong>&ldquo;Hotels not dadded&rdquo;</strong>: hotels requested but not added in provider’s portfolio. If you are on the client side, we recommend you to check with your providers that hotels have been updated on TravelgateX platform.</p></li>
+</ul></li>
+
+<li><p><strong>“Total Hotels Available”, how is this metric calculated?</strong></p></li>
+</ul>
+
+<p>Report Page “Summary” of DS-Insights-X template, displays the number of “Total Hotels Available”. This metric refers to the total of hotels that have received at least one search during the previous month.</p>
+
+<h2 id="benchmark-data-sets">* <strong>Benchmark Data Sets:</strong></h2>
+
+<ul>
+<li><strong>What is compared in benchmarking?</strong></li>
+</ul>
+
+<p>Benchmarking is a competitive analysis of main indicators in TravelgateX: performance, availability (available hotels, both offered and received), revenue from bookings and number of bookings. Clients / providers will see their position in TravelgateX rank up to “city” level against other clients / providers in TravelgateX.</p>
+
+<ul>
+<li><strong>What is “Comp. Set”?</strong></li>
+</ul>
+
+<p>Comp. Set (Competitive Set) is a group of suppliers / buyers that are seen as direct competitors to your own business and are selling / buying through TravelgateX. All data is anonymous; Insights-X keeps Connected Partners’ privacy and any company name will never be shared.</p>
+
+<ul>
+<li><strong>What is TravelgateX ranking?</strong></li>
+</ul>
+
+<p>TravelgateX ranking shows, for the same search criteria, the achieved position by one client / provider in TravelgateX. For example, as a provider, you will be able to see your position in the ranking selling to one specific destination.</p>
+
+<ul>
+<li><strong>What does “Total TGX” metric on benchmarking mean?</strong></li>
+</ul>
+
+<p>Total TGX (TravelgateX) shows you the number of total hotels, bookings or revenue in TravelgateX for the same search key. This metric is a reference to understand how well that destination is performing (up to city level) on TravelgateX Platform. Clients and providers will be able to know if there are opportunities to improve on those destinations and how many competitors are making more revenue and bookings.</p>
+
+<ul>
+<li><strong>Can I know how many competitors are selling / buying in my destinations?</strong></li>
+</ul>
+
+<p>Yes. Thanks to Benchmark data sets it is possible to know the number of competitors on your destinations. Besides, you will be able to know the volume of bookings and estimate your growth potential for that destination.</p>
+
+<ul>
+<li><strong>Is my price strategy competitive?</strong></li>
+</ul>
+
+<p>Thanks to Benchmark datasets you will be able to compare your price strategy for the search key “source market | destination | booking window” against other buyers / suppliers in TravelgateX.</p>
+
+<ul>
+<li><strong>Is my L2B (Look-to-Book) being competitive in TravelgateX?</strong></li>
+</ul>
+
+<p>Benchmark datasets allows L2B comparison for the search key “source market | destination (city) | booking window&rdquo;. Use this metric as a reference of your competitiveness in our platform.</p>
+
+<ul>
+<li><strong>How to increase bookings and revenue with new connections?</strong></li>
+</ul>
+
+<p>Table “Opportunities” shows the number of potential clients / providers not connected with you but selling or buying in your markets or destinations. This will allow you to identify potential partnerships to boost your business by selling your product into new markets or new destinations.</p>
 
 <hr/>
 <h2>Comments</h2>
@@ -7168,7 +7267,17 @@ Table “Opportunities” shows the number of potential clients / providers not 
           </div>
           <div class="menu-right">
             <div>
-              
+              <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#data-sets-and-reporting">* <strong>Data sets and Reporting:</strong></a></li>
+<li><a href="#performance-data-sets">* <strong>Performance Data Sets:</strong></a></li>
+<li><a href="#insights-data-sets">* <strong>Insights Data Sets:</strong></a></li>
+<li><a href="#benchmark-data-sets">* <strong>Benchmark Data Sets:</strong></a></li>
+</ul></li>
+</ul>
+</nav>
             </div>
           </div>
           <div class="clear"></div>
@@ -7182,10 +7291,10 @@ Table “Opportunities” shows the number of potential clients / providers not 
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/insights-x/" title="Go to previous page | Insights-X"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Insights-X</a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/insights-x/release-notes/changelog/" title="Go to previous page | Changelog"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Changelog</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/insights-x/overview/" title="Go to next page | Overview" style="margin-right: 0px;">Overview<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/logging/" title="Go to next page | Logging" style="margin-right: 0px;">Logging<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">
