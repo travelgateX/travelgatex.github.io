@@ -6,7 +6,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.54.0" />
 <title>Changelog :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -6746,440 +6746,494 @@
 
 
 <p>Easily accessible log of notable changes to HotelX API
-&lt;div class=&ldquo;alert
-alert-info&rdquo;</p>
-
-<p>role=&ldquo;alert&rdquo;&gt;All notable changes in our platform will be documented on this page.</div></p>
+<div class="alert 
+alert-info"
+ 
+role="alert">All notable changes in our platform will be documented on this page.</div>
+</p>
 
 <h2 id="2019-08-07">2019-08-07</h2>
 
 <div class="release-types type-f">
-        
-- Fix Hotel-List repeated Hotels
+        <ul>
+<li>Fix Hotel-List repeated Hotels</li>
+</ul>
 
 </div>
 
 <h2 id="2019-08-06">2019-08-06</h2>
 
-<div class="release-types type-a">
-        
-- Add new enum type PaymentCardType which contain list of supported payment card.
-- Add new field *type* of type PaymentCardType into PaymentCardInput and deprecate old field *cardType* 
-- Type HotelData introduces field RoomConnection (same type as Rooms service operation)
-- Modified RoomData type by adding the new types RoomSource (string) and OccupancyStatic
+<p><div class="release-types type-a">
+        <ul>
+<li>Add new enum type PaymentCardType which contain list of supported payment card.</li>
+<li>Add new field <em>type</em> of type PaymentCardType into PaymentCardInput and deprecate old field <em>cardType</em></li>
+<li>Type HotelData introduces field RoomConnection (same type as Rooms service operation)</li>
+<li>Modified RoomData type by adding the new types RoomSource (string) and OccupancyStatic</li>
+</ul>
 
 </div>
 <div class="release-types type-c">
-        
-- Deprecated description from Bed (search)
-- Deprecated KO in BookStatusType
+        <ul>
+<li>Deprecated description from Bed (search)</li>
+<li>Deprecated KO in BookStatusType</li>
+</ul>
 
-</div>
+</div></p>
 
 <h2 id="2019-07-11">2019-07-11</h2>
 
-<div class="release-types type-a">
-        
-- Deprecate type error in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category
-- Add error filter in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category
-- Add adviseMessage as new error type
+<p><div class="release-types type-a">
+        <ul>
+<li>Deprecate type error in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category</li>
+<li>Add error filter in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category</li>
+<li>Add adviseMessage as new error type</li>
+</ul>
 
 </div>
 <div class="release-types type-f">
-        
-- Fix Level value in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category
+        <ul>
+<li>Fix Level value in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category</li>
+</ul>
 
-</div>
+</div></p>
 
 <h2 id="2019-07-02">2019-07-02</h2>
 
-<div class="release-types type-a">
-        
-- New field in book, cancel and booking respone. booking/reference/hotel.
+<p><div class="release-types type-a">
+        <ul>
+<li>New field in book, cancel and booking respone. booking/reference/hotel.</li>
+</ul>
 
 </div>
 <div class="release-types type-f">
-        
-- Client token in batch and booking flow.
+        <ul>
+<li>Client token in batch and booking flow.</li>
+</ul>
 
-</div>
+</div></p>
 
 <h2 id="2019-06-27">2019-06-27</h2>
 
 <div class="release-types type-a">
-        
-- Categories in Hotel-Category are grouped by group.
-- Internal system improvements. 
+        <ul>
+<li>Categories in Hotel-Category are grouped by group.</li>
+<li>Internal system improvements.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-06-26">2019-06-26</h2>
 
 <div class="release-types type-a">
-        
-- New warning type in book. EMPTY_PRICE is returned when the supplier doesn't return the price and we use the price obtained in quote. 
+        <ul>
+<li>New warning type in book. EMPTY_PRICE is returned when the supplier doesn&rsquo;t return the price and we use the price obtained in quote.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-06-19">2019-06-19</h2>
 
 <div class="release-types type-a">
-        
-- New field in book, cancel and booking respone. booking/billingSupplierCode.
-- New blacklist file format. The values has changed to allow new features. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/black-list/). 
-- New field for the commision file. Now you can put clienToken for each rule. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/net-price/). 
-- Internal system improvements. 
+        <ul>
+<li>New field in book, cancel and booking respone. booking/billingSupplierCode.</li>
+<li>New blacklist file format. The values has changed to allow new features. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/black-list/" rel="nofollow" target="_blank">here</a>.</li>
+<li>New field for the commision file. Now you can put clienToken for each rule. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/net-price/" rel="nofollow" target="_blank">here</a>.</li>
+<li>Internal system improvements.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-06-13">2019-06-13</h2>
 
 <div class="release-types type-a">
-        
-- New fields in search respone. room/features, room/supplierCode and ratPlan/supplierCode.
+        <ul>
+<li>New fields in search respone. room/features, room/supplierCode and ratPlan/supplierCode.</li>
+</ul>
 
 </div>
 
 <div class="release-types type-s">
-        
-- Security improvements.
+        <ul>
+<li>Security improvements.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-27">2019-05-27</h2>
 
 <div class="release-types type-a">
-        
-- Added searchPrice in Quote and quotePrice in Book
+        <ul>
+<li>Added searchPrice in Quote and quotePrice in Book</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-13">2019-05-13</h2>
 
 <div class="release-types type-f">
-        
-- Internal monitorization
+        <ul>
+<li>Internal monitorization</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-09">2019-05-09</h2>
 
 <div class="release-types type-f">
-        
-- Fix error when default settings are not available
+        <ul>
+<li>Fix error when default settings are not available</li>
+</ul>
 
 </div>
 
 <div class="release-types type-f">
-        
-- Improve stats
+        <ul>
+<li>Improve stats</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-02">2019-05-02</h2>
 
 <div class="release-types type-a">
-        
-- Added field filters in Hotel List
+        <ul>
+<li>Added field filters in Hotel List</li>
+</ul>
 
 </div>
 
 <div class="release-types type-f">
-        
-- Deprecate type in GeonameData
+        <ul>
+<li>Deprecate type in GeonameData</li>
+</ul>
 
 </div>
 
 <h2 id="2019-03-07">2019-03-07</h2>
 
 <div class="release-types type-a">
-        
-- Added CurrencyX management for the cancel penalties.
+        <ul>
+<li>Added CurrencyX management for the cancel penalties.</li>
+</ul>
 
 </div>
 
 <div class="release-types type-f">
-        
-- Bug when the cancel penalty type is empty or invalid format.
-- Mandatory field always returns FALSE when fee is EXCLUSIVE type in Surcharge node.
+        <ul>
+<li>Bug when the cancel penalty type is empty or invalid format.</li>
+<li>Mandatory field always returns FALSE when fee is EXCLUSIVE type in Surcharge node.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-02-26">2019-02-26</h2>
 
 <div class="release-types type-a">
-        
-- New plugin, add parameter. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/add_parameterx/).
+        <ul>
+<li>New plugin, add parameter. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/add_parameterx/" rel="nofollow" target="_blank">here</a>.</li>
+</ul>
 
 </div>
 
 <div class="release-types type-f">
-        
-- Management of the default currency settings.
+        <ul>
+<li>Management of the default currency settings.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-02-12">2019-02-12</h2>
 
 <div class="release-types type-a">
-        
-- Type HotelData introduces new field "GiataData". 
-- Internal, better performant, REST endpoint in Search operation. Field filters have been added to minimize the throughput, this wasn't necessary with Graphql, filtered fields that have a relation with Legacy API are now also sent as filter.
+        <ul>
+<li>Type HotelData introduces new field &ldquo;GiataData&rdquo;.</li>
+<li>Internal, better performant, REST endpoint in Search operation. Field filters have been added to minimize the throughput, this wasn&rsquo;t necessary with Graphql, filtered fields that have a relation with Legacy API are now also sent as filter.</li>
+</ul>
 
 </div>
 
 <div class="release-types type-c">
-        
-Expire date of payment card in Book now accept the following format: month: 1 digit or 2 digits, year: 4 digits or 2 digits
+        <p>Expire date of payment card in Book now accept the following format: month: 1 digit or 2 digits, year: 4 digits or 2 digits</p>
 
 </div>
 
 <h2 id="2019-02-04">2019-02-04</h2>
 
 <div class="release-types type-f">
-        
-- Fix Hotel List and Hotel Room EOF error, when elastic returns empty result.
+        <ul>
+<li>Fix Hotel List and Hotel Room EOF error, when elastic returns empty result.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-01-28">2019-01-28</h2>
 
 <div class="release-types type-f">
-        
-- Fix the error of destinationSearcher when elastic returns empty value.
+        <ul>
+<li>Fix the error of destinationSearcher when elastic returns empty value.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-01-23">2019-01-23</h2>
 
 <div class="release-types type-f">
-        
-- Fix the error of Hotel List and Hotel Room when requesting more than one code.
+        <ul>
+<li>Fix the error of Hotel List and Hotel Room when requesting more than one code.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-01-14">2019-01-14</h2>
 
 <div class="release-types type-a">
-        
-- Upgrade permission check in all microservices
-- Environment variable health check
-- Add parameter in Hotel-Quote and Hotel-Book
+        <ul>
+<li>Upgrade permission check in all microservices</li>
+<li>Environment variable health check</li>
+<li>Add parameter in Hotel-Quote and Hotel-Book</li>
+</ul>
 
 </div>
 
 <h2 id="2018-12-04">2018-12-04</h2>
 
 <div class="release-types type-f">
-        
-- Fix booking timeout issue
+        <ul>
+<li>Fix booking timeout issue</li>
+</ul>
 
 </div>
 
 <div class="release-types type-a">
-        
-- Added warning if any option has been discarded by CommissionX and CurrencyX plugins
+        <ul>
+<li>Added warning if any option has been discarded by CommissionX and CurrencyX plugins</li>
+</ul>
 
 </div>
 
 <h2 id="2018-11-29">2018-11-29</h2>
 
 <div class="release-types type-f">
-        
-- Fix filter maxSize Destination
+        <ul>
+<li>Fix filter maxSize Destination</li>
+</ul>
 
 </div>
 
 <div class="release-types type-c">
-        
-- Adapt Hotel-Room, Hotel-Board, Hotel-Category to new organization.
+        <ul>
+<li>Adapt Hotel-Room, Hotel-Board, Hotel-Category to new organization.</li>
+</ul>
 
 </div>
 
 <div class="release-types type-a">
-        
-- Added log if commission Fee is -1
+        <ul>
+<li>Added log if commission Fee is -1</li>
+</ul>
 
 </div>
 
 <h2 id="2018-11-27">2018-11-27</h2>
 
 <div class="release-types type-c">
-        
-- Ambiguous warning message in Book when supplier has not returned a price
-- Removed error nodes from Groups and Organization nodes
-- Removed log if amount is 0 in Fees node
+        <ul>
+<li>Ambiguous warning message in Book when supplier has not returned a price</li>
+<li>Removed error nodes from Groups and Organization nodes</li>
+<li>Removed log if amount is 0 in Fees node</li>
+</ul>
 
 </div>
 
 <h2 id="2018-11-20">2018-11-20</h2>
 
 <div class="release-types type-a">
-        
-- Added geonames in Hotel List
-- Added access code in Book log in some special cases of commission
+        <ul>
+<li>Added geonames in Hotel List</li>
+<li>Added access code in Book log in some special cases of commission</li>
+</ul>
 
 </div>
 
 <div class="release-types type-c">
-        
-- Partially synchronous resource caches in Hotel-Quote, Hotel-Book, Hotel-Cancel, Hotel-Booking 
+        <ul>
+<li>Partially synchronous resource caches in Hotel-Quote, Hotel-Book, Hotel-Cancel, Hotel-Booking</li>
+</ul>
 
 </div>
 
 <h2 id="2018-11-19">2018-11-19</h2>
 
 <div class="release-types type-f">
-        
-- Fix Stats
-- Fix Hotels requested stats in Access and Transaction spans in some cases where the count wasn't correct
+        <ul>
+<li>Fix Stats</li>
+<li>Fix Hotels requested stats in Access and Transaction spans in some cases where the count wasn&rsquo;t correct</li>
+</ul>
 
 </div>
 
 <div class="release-types type-c">
-        
-- Margin plugin compares net commission in order to decide discarding or mantaining an option.
+        <ul>
+<li>Margin plugin compares net commission in order to decide discarding or mantaining an option.</li>
+</ul>
 
 </div>
 
 <h2 id="2018-11-08">2018-11-08</h2>
 
 <div class="release-types type-f">
-        
-- Fix blacklist (by supplier) plugin
+        <ul>
+<li>Fix blacklist (by supplier) plugin</li>
+</ul>
 
 </div>
 
 <h2 id="2018-11-02">2018-11-02</h2>
 
 <div class="release-types type-f">
-        
-- Fix price discrepancy between Quote and Book
+        <ul>
+<li>Fix price discrepancy between Quote and Book</li>
+</ul>
 
 </div>
 
 <h2 id="2018-10-02">2018-10-02</h2>
 
 <div class="release-types type-a">
-        
-- Allow relay at the Query Hotels
-- Count field in HotelConnection to retrieve the number of HotelEdges that match the filter. Pagination does not affect Count.
+        <ul>
+<li>Allow relay at the Query Hotels</li>
+<li>Count field in HotelConnection to retrieve the number of HotelEdges that match the filter. Pagination does not affect Count.</li>
+</ul>
 
 </div>
 
 <h2 id="2018-09-25">2018-09-25</h2>
 
 <div class="release-types type-a">
-        
-- Status tipification to be able to differentiate from critical to non-critical external services
+        <ul>
+<li>Status tipification to be able to differentiate from critical to non-critical external services</li>
+</ul>
 
 </div>
 
 <div class="release-types type-f">
-        
-- Commission and currency rates are now kept unchanged between Quote and Book
+        <ul>
+<li>Commission and currency rates are now kept unchanged between Quote and Book</li>
+</ul>
 
 </div>
 
 <div class="release-types type-c">
-        
-- Operation and Access processes have been updated to register times of their different execution steps and their processed options.
-- Transactions to worker are now monitorized in their own span with supplier's communication times, parsing times and processed options.
+        <ul>
+<li>Operation and Access processes have been updated to register times of their different execution steps and their processed options.</li>
+<li>Transactions to worker are now monitorized in their own span with supplier&rsquo;s communication times, parsing times and processed options.</li>
+</ul>
 
 </div>
 
 <h2 id="2018-09-06">2018-09-06</h2>
 
 <div class="release-types type-f">
-        
-- Fix apply Markups to net price
+        <ul>
+<li>Fix apply Markups to net price</li>
+</ul>
 
 </div>
 
 <h2 id="2018-09-04">2018-09-04</h2>
 
 <div class="release-types type-f">
-        
-- Fix currency bug inside markups, in Quote and Book
+        <ul>
+<li>Fix currency bug inside markups, in Quote and Book</li>
+</ul>
 
 </div>
 
 <h2 id="2018-09-03">2018-09-03</h2>
 
-<div class="release-types type-f">
-        
-- Fix Exchange node empty if not CurrencyX (see doc in https://docs.travelgatex.com/hotel-x/plugins/converter/)
-- Fix bugs in Quote
+<p><div class="release-types type-f">
+        <ul>
+<li>Fix Exchange node empty if not CurrencyX (see doc in <a href="https://docs.travelgatex.com/hotel-x/plugins/converter/" rel="nofollow" target="_blank">https://docs.travelgatex.com/hotel-x/plugins/converter/</a>)</li>
+<li>Fix bugs in Quote</li>
+</ul>
 
 </div>
 <div class="release-types type-c">
-        
-- Improve reponse time and service
+        <ul>
+<li>Improve reponse time and service</li>
+</ul>
 
-</div>
+</div></p>
 
 <h2 id="2018-08-22">2018-08-22</h2>
 
-<div class="release-types type-a">
-        
-- Settings heritage. [Guide](https://docs.travelgatex.com/hotel-x/concepts/settings/)
-- Plugins filter
+<p><div class="release-types type-a">
+        <ul>
+<li>Settings heritage. <a href="https://docs.travelgatex.com/hotel-x/concepts/settings/" rel="nofollow" target="_blank">Guide</a></li>
+<li>Plugins filter</li>
+</ul>
 
 </div>
 <div class="release-types type-f">
-        
-- Fix bugs
+        <ul>
+<li>Fix bugs</li>
+</ul>
 
-</div>
+</div></p>
 
 <h2 id="2018-08-21">2018-08-21</h2>
 
 <div class="release-types type-a">
-        
-- New input field in Hotels Query filter. This allows to filter the response by hotel's country. [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-21)
-
+        <ul>
+<li>New input field in Hotels Query filter. This allows to filter the response by hotel&rsquo;s country. <a href="/travelgatex/release-notes/graphql-schema-changes/#2018-08-21">GraphQL Schema updated.</a></li>
+</ul>
 
 </div>
 
 <h2 id="2018-07-24">2018-07-24</h2>
 
 <div class="release-types type-a">
-        
-- New plugin, safety margin. You can see the documentation [here](/hotel-x/plugins/safety_margin/).
+        <ul>
+<li>New plugin, safety margin. You can see the documentation <a href="/hotel-x/plugins/safety_margin/">here</a>.</li>
+</ul>
 
 </div>
 
 <h2 id="2018-07-18">2018-07-18</h2>
 
 <div class="release-types type-c">
-        
-- Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user's experience when 1st time debugging operations.
-- Hotel maps cache refactoring to reduce the number of cached items and cached operations.
-- Hotel maps cached requests are now pipelined to reduce Round Trip Time.
+        <ul>
+<li>Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user&rsquo;s experience when 1st time debugging operations.</li>
+<li>Hotel maps cache refactoring to reduce the number of cached items and cached operations.</li>
+<li>Hotel maps cached requests are now pipelined to reduce Round Trip Time.</li>
+</ul>
 
 </div>
 
 <h2 id="20180716">2018-07-16</h2>
 
 <div class="release-types type-f">
-        
-- HotelX concepts content [examples](/hotel-x/concepts/content/).
+        <ul>
+<li>HotelX concepts content <a href="/hotel-x/concepts/content/">examples</a>.</li>
+</ul>
 
 </div>
 
 <h2 id="2018-07-11">2018-07-11</h2>
 
 <div class="release-types type-c">
-        
-- Improvement of the [`Rooms`](/travelgatex/reference/objects/hotelxquery/) Schema with paginated list and max number of elements per page. By default: 1000 rooms.
+        <ul>
+<li>Improvement of the <a href="/travelgatex/reference/objects/hotelxquery/"><code>Rooms</code></a> Schema with paginated list and max number of elements per page. By default: 1000 rooms.</li>
+</ul>
 
 </div>
 
 <h2 id="2018-07-04">2018-07-04</h2>
 
 <div class="release-types type-f">
-        
-- Wrong behaviour that made options to be discarded when price in supplements was empty in [`Search`](/travelgatex/reference/objects/hotelxquery/) query.
+        <ul>
+<li>Wrong behaviour that made options to be discarded when price in supplements was empty in <a href="/travelgatex/reference/objects/hotelxquery/"><code>Search</code></a> query.</li>
+</ul>
 
 </div>
 
@@ -7263,15 +7317,15 @@ Expire date of payment card in Book now accept the following format: month: 1 di
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/logging/release-notes/changelog/">Logging changelog</a></li>
-		
-		<li><a href="/alerts-x/release-notes/changelog/">Alerts-X changelog</a></li>
-		
 		<li><a href="/channel-x/release-notes/changelog/">ChannelX changelog</a></li>
+		
+		<li><a href="/insights-x/release-notes/changelog/">Insights-X changelog</a></li>
 		
 		<li><a href="/stats/release-notes/changelog/">Stats changelog</a></li>
 		
-		<li><a href="/insights-x/release-notes/changelog/">Insights-X changelog</a></li>
+		<li><a href="/alerts-x/release-notes/changelog/">Alerts-X changelog</a></li>
+		
+		<li><a href="/logging/release-notes/changelog/">Logging changelog</a></li>
 		
 	</ul>
 </div>

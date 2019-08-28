@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.54.0" />
 <title>GraphQL Schema Changes :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -6748,6 +6748,84 @@
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
 
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+
+<h2 id="2019-08-29">2019-08-29</h2>
+
+<p>=======</p>
+
+<h2 id="2019-08-28">2019-08-28</h2>
+
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>cb39564ecfa58ff32e43941770791ce3060d18a5</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+
+<p>🛑  Input field <code>ReferenceFilter.supplier</code> changed type from <code>[String]</code> to <code>[String!]</code></p>
+
+<p>🛑  Input field <code>ReferenceFilter.client</code> changed type from <code>[String]</code> to <code>[String!]</code></p>
+
+<p>⚠️  Enum value <code>PRICE</code> was added to enum <code>AlertType</code></p>
+
+<p>✅  Input field <code>configurationPrice</code> was added to input object type <code>AlertUpdateInput</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputAverageTime.groupBy</code> description changed from <code>Possibility to group by traffic and calculate its parameters separately</code> to <code>Possibility to group by traffic and calculate its parameters separately</code></p>
+
+<p>✅  Input field <code>configurationPrice</code> was added to input object type <code>AlertInput</code></p>
+
+<p>✅  Input field <code>hotel</code> was added to input object type <code>ReferenceFilter</code></p>
+
+<p>✅  Input field <code>LoggingLegacyFilterInput.to</code> changed type from <code>DateTime!</code> to <code>DateTime</code></p>
+
+<p>✅  Input field <code>LoggingLegacyFilterInput.from</code> changed type from <code>DateTime!</code> to <code>DateTime</code></p>
+
+<p>✅  Input field <code>groups</code> was added to input object type <code>LoggingLegacyFilterInput</code></p>
+
+<p>✅  Input field <code>timeRange</code> was added to input object type <code>LoggingLegacyFilterInput</code></p>
+
+<p>✅  Field <code>price</code> was added to object type <code>AlertTypeConfiguration</code></p>
+
+<p>✅  Field <code>legacyRoomId</code> was added to object type <code>Room</code></p>
+
+<p>✅  Deprecation reason on field <code>AdminQuery.entities</code> has changed from `<code>to</code>deprecated from 2019-08-21. Only for statsX product. Use client, supplier, accesess queries`</p>
+
+<p>✅  Type <code>AlertPriceUpdateInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateConfigurationInputPrice</code> was added</p>
+
+<p>✅  Type <code>AlertPriceInput</code> was added</p>
+
+<p>✅  Type <code>AlertGroupsInsights</code> was added</p>
+
+<p>✅  Type <code>AlertConfigurationInputPrice</code> was added</p>
+
+<p>✅  Type <code>RangePrice</code> was added</p>
+
+<p>✅  Type <code>CheckPrice</code> was added</p>
+
+<p>✅  Type <code>ModePrice</code> was added</p>
+
+<p>✅  Type <code>AlertPrice</code> was added</p>
+
+<h2 id="2019-08-19">2019-08-19</h2>
+
+<p>🛑  Input field <code>ReferenceFilter.supplier</code> changed type from <code>String</code> to <code>[String]</code></p>
+
+<p>🛑  Input field <code>ReferenceFilter.client</code> changed type from <code>String</code> to <code>[String]</code></p>
+
+<p>✅  Description <code>Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information</code> on type <code>PaymentCardInput</code> has changed to <code>Input PaymentCard, if the payment type is DIRECT, CARD_BOOKING or CARD_CHECK_IN, then is mandatory to specify the payment card information</code></p>
+
 <h2 id="2019-08-08">2019-08-08</h2>
 
 <p>⚠️  Union member <code>API</code> was added to Union type <code>AlertObjectsUnion</code></p>
@@ -10673,6 +10751,9 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#2019-08-29">2019-08-29</a></li>
+<li><a href="#2019-08-28">2019-08-28</a></li>
+<li><a href="#2019-08-19">2019-08-19</a></li>
 <li><a href="#2019-08-08">2019-08-08</a></li>
 <li><a href="#2019-08-05">2019-08-05</a></li>
 <li><a href="#2019-07-31">2019-07-31</a></li>

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.54.0" />
 <title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -6762,11 +6762,12 @@ The correct way to send it to GraphQL server is via HTTP Header:</p>
 <div class="alert 
 alert-warning"
  
-role="alert">All queries must include a HTTP Header with the API key inserted in the format: 
-* API key: `"Authorization: Apikey xxxxxxxxx"`
+role="alert"><p>All queries must include a HTTP Header with the API key inserted in the format:
+* API key: <code>&quot;Authorization: Apikey xxxxxxxxx&quot;</code></p>
 
-If you wish to use test headers, insert `"Authorization":"Apikey 64780338-49c8-4439-7c7d-d03c2033b145"`
+<p>If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Apikey 64780338-49c8-4439-7c7d-d03c2033b145&quot;</code></p>
 </div>
+
 
 <pre><code class="language-bash">curl -X\
    POST\
@@ -6782,8 +6783,9 @@ If you wish to use test headers, insert `"Authorization":"Apikey 64780338-49c8-4
 <div class="alert 
 alert-info"
  
-role="alert">For development and testing purposes, please use the following Test API Key `64780338-49c8-4439-7c7d-d03c2033b145`
+role="alert"><p>For development and testing purposes, please use the following Test API Key <code>64780338-49c8-4439-7c7d-d03c2033b145</code></p>
 </div>
+
 
 <h3 id="json-web-token-jwt">JSON Web Token (JWT)</h3>
 
@@ -6794,9 +6796,10 @@ role="alert">For development and testing purposes, please use the following Test
 <div class="alert 
 alert-warning"
  
-role="alert">All queries to a protected resources must include an Authorization Header using the Bearer schema. The content of the header should look like the following:
-`"Authorization: Bearer xxxxxxxxx"`
+role="alert"><p>All queries to a protected resources must include an Authorization Header using the Bearer schema. The content of the header should look like the following:
+<code>&quot;Authorization: Bearer xxxxxxxxx&quot;</code></p>
 </div>
+
 
 <h2 id="authorization">Authorization</h2>
 

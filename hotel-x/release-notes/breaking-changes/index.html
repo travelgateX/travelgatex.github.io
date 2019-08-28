@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.54.0" />
 <title>GraphQL Schema breaking changes :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -6742,195 +6742,242 @@ alert-info"
  
 role="alert">Changes history of deprecated notes previously announced</div>
 
+
 <h3 id="unreleased">Unreleased</h3>
 
 <div class="release-types type-u">
-        
-- Removal of `loadFile` from `HotelXMutation`. Reason: .  Deprecated on 2018-06-06.**To be removed soon**.
-- Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.**To be removed soon**.
-- Removal of `type` from `AdviseMessage`. Reason: .  Deprecated on 2018-06-01.**To be removed soon**.
-- Removal of `creationDate` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `checkIn` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `checkOut` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `effectiveDate` from `PriceBreakdown`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `expireDate` from `PriceBreakdown`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `effectiveDate` from `Promotion`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `expireDate` from `Promotion`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `effectiveDate` from `RatePlan`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `expireDate` from `RatePlan`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `effectiveDate` from `Supplement`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `expireDate` from `Supplement`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
-- Removal of `token` from `HotelOptionSearch`. Reason: .  Deprecated on 2019-02-05.**To be removed soon**.
-- Removal of `description` from `Bed`. Reason: Deprecated from 2019-07-29.  Deprecated on 2019-07-29.Expected removal on 2019-10-27.
-- Removal of `error` from `Board`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
-- Removal of `error` from `Category`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
-- Removal of `error` from `Destination`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
-- Removal of `error` from `Hotel`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
-- Removal of `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
+        <ul>
+<li>Removal of <code>loadFile</code> from <code>HotelXMutation</code>. Reason: .  Deprecated on 2018-06-06.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>distribute</code> from <code>AddOns</code>. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>type</code> from <code>AdviseMessage</code>. Reason: .  Deprecated on 2018-06-01.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>creationDate</code> from <code>BookingHotel</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>checkIn</code> from <code>BookingHotel</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>checkOut</code> from <code>BookingHotel</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>effectiveDate</code> from <code>PriceBreakdown</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>expireDate</code> from <code>PriceBreakdown</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>effectiveDate</code> from <code>Promotion</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>expireDate</code> from <code>Promotion</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>effectiveDate</code> from <code>RatePlan</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>expireDate</code> from <code>RatePlan</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>effectiveDate</code> from <code>Supplement</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>expireDate</code> from <code>Supplement</code>. Reason: Incorrect date format..  Deprecated on 2018-02-28.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>token</code> from <code>HotelOptionSearch</code>. Reason: .  Deprecated on 2019-02-05.<strong>To be removed soon</strong>.</li>
+<li>Removal of <code>description</code> from <code>Bed</code>. Reason: Deprecated from 2019-07-29.  Deprecated on 2019-07-29.Expected removal on 2019-10-27.</li>
+<li>Removal of <code>error</code> from <code>Board</code>. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.</li>
+<li>Removal of <code>error</code> from <code>Category</code>. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.</li>
+<li>Removal of <code>error</code> from <code>Destination</code>. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.</li>
+<li>Removal of <code>error</code> from <code>Hotel</code>. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.</li>
+<li>Removal of <code>error</code> from <code>RoomStatic</code>. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.</li>
+</ul>
 
 </div>
-### 2019-08-13
+
+<h3 id="2019-08-13">2019-08-13</h3>
+
 <div class="release-types type-r">
-        
-- Removed `loadFile` from `HotelXMutation`. Reason: . Deprecated on 2018-06-06 .
-- Removed `type` from `AdviseMessage`. Reason: . Deprecated on 2018-06-01 .
-- Removed `description` from `Bed`. Reason: Deprecated from 2019-07-29. Deprecated on 2019-07-29 .
-- Removed `error` from `Board`. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .
-- Removed `error` from `Category`. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .
-- Removed `error` from `Destination`. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .
-- Removed `error` from `Hotel`. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .
-- Removed `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .
-- Removed `creationDate` from `BookingHotel`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
-- Removed `checkIn` from `BookingHotel`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
-- Removed `checkOut` from `BookingHotel`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
-- Removed `effectiveDate` from `PriceBreakdown`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
-- Removed `expireDate` from `PriceBreakdown`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
-- Removed `effectiveDate` from `Promotion`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
-- Removed `expireDate` from `Promotion`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
-- Removed `effectiveDate` from `RatePlan`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
-- Removed `expireDate` from `RatePlan`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
-- Removed `effectiveDate` from `Supplement`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
-- Removed `expireDate` from `Supplement`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+        <ul>
+<li>Removed <code>loadFile</code> from <code>HotelXMutation</code>. Reason: . Deprecated on 2018-06-06 .</li>
+<li>Removed <code>type</code> from <code>AdviseMessage</code>. Reason: . Deprecated on 2018-06-01 .</li>
+<li>Removed <code>description</code> from <code>Bed</code>. Reason: Deprecated from 2019-07-29. Deprecated on 2019-07-29 .</li>
+<li>Removed <code>error</code> from <code>Board</code>. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .</li>
+<li>Removed <code>error</code> from <code>Category</code>. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .</li>
+<li>Removed <code>error</code> from <code>Destination</code>. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .</li>
+<li>Removed <code>error</code> from <code>Hotel</code>. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .</li>
+<li>Removed <code>error</code> from <code>RoomStatic</code>. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .</li>
+<li>Removed <code>creationDate</code> from <code>BookingHotel</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+<li>Removed <code>checkIn</code> from <code>BookingHotel</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+<li>Removed <code>checkOut</code> from <code>BookingHotel</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+<li>Removed <code>effectiveDate</code> from <code>PriceBreakdown</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+<li>Removed <code>expireDate</code> from <code>PriceBreakdown</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+<li>Removed <code>effectiveDate</code> from <code>Promotion</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+<li>Removed <code>expireDate</code> from <code>Promotion</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+<li>Removed <code>effectiveDate</code> from <code>RatePlan</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+<li>Removed <code>expireDate</code> from <code>RatePlan</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+<li>Removed <code>effectiveDate</code> from <code>Supplement</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+<li>Removed <code>expireDate</code> from <code>Supplement</code>. Reason: Incorrect date format.. Deprecated on 2018-02-28 .</li>
+</ul>
 
 </div>
-### 2019-07-29
+
+<h3 id="2019-07-29">2019-07-29</h3>
+
 <div class="release-types type-d">
-        
-- Deprecated `description` from `Bed`. Reason: Deprecated from 2019-07-29. Finally removed on 2019-08-13 .
-- Deprecated `description` from `Bed`. Reason: Deprecated from 2019-07-29. Expected removal on 2019-10-27 .
+        <ul>
+<li>Deprecated <code>description</code> from <code>Bed</code>. Reason: Deprecated from 2019-07-29. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>description</code> from <code>Bed</code>. Reason: Deprecated from 2019-07-29. Expected removal on 2019-10-27 .</li>
+</ul>
 
 </div>
-### 2019-07-03
+
+<h3 id="2019-07-03">2019-07-03</h3>
+
 <div class="release-types type-d">
-        
-- Deprecated `error` from `Board`. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .
-- Deprecated `error` from `Category`. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .
-- Deprecated `error` from `Destination`. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .
-- Deprecated `error` from `Hotel`. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .
-- Deprecated `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .
-- Deprecated `error` from `Board`. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .
-- Deprecated `error` from `Category`. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .
-- Deprecated `error` from `Destination`. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .
-- Deprecated `error` from `Hotel`. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .
-- Deprecated `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .
+        <ul>
+<li>Deprecated <code>error</code> from <code>Board</code>. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>error</code> from <code>Category</code>. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>error</code> from <code>Destination</code>. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>error</code> from <code>Hotel</code>. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>error</code> from <code>RoomStatic</code>. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>error</code> from <code>Board</code>. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .</li>
+<li>Deprecated <code>error</code> from <code>Category</code>. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .</li>
+<li>Deprecated <code>error</code> from <code>Destination</code>. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .</li>
+<li>Deprecated <code>error</code> from <code>Hotel</code>. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .</li>
+<li>Deprecated <code>error</code> from <code>RoomStatic</code>. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .</li>
+</ul>
 
 </div>
-### 2019-02-19
+
+<h3 id="2019-02-19">2019-02-19</h3>
+
 <div class="release-types type-r">
-        
-- Removed `token` from `HotelOptionSearch`. Reason: . Deprecated on 2019-02-05 .
+        <ul>
+<li>Removed <code>token</code> from <code>HotelOptionSearch</code>. Reason: . Deprecated on 2019-02-05 .</li>
+</ul>
 
 </div>
-### 2019-02-05
+
+<h3 id="2019-02-05">2019-02-05</h3>
+
 <div class="release-types type-d">
-        
-- Deprecated `token` from `HotelOptionSearch`. Reason: . Finally removed on 2019-02-19 .
-- Deprecated `token` from `HotelOptionSearch`. Reason: . Expected removal on 2019-05-06 .
+        <ul>
+<li>Deprecated <code>token</code> from <code>HotelOptionSearch</code>. Reason: . Finally removed on 2019-02-19 .</li>
+<li>Deprecated <code>token</code> from <code>HotelOptionSearch</code>. Reason: . Expected removal on 2019-05-06 .</li>
+</ul>
 
 </div>
-### 2018-07-26
+
+<h3 id="2018-07-26">2018-07-26</h3>
+
 <div class="release-types type-r">
-        
-- Removed `useContext` from `HotelSettingsInput`. Reason: Redundant.. Deprecated on 2017-12-12 .
-- Removed `connectUser` from `HotelSettingsInput`. Reason: Redundant.. Deprecated on 2018-03-19 .
+        <ul>
+<li>Removed <code>useContext</code> from <code>HotelSettingsInput</code>. Reason: Redundant.. Deprecated on 2017-12-12 .</li>
+<li>Removed <code>connectUser</code> from <code>HotelSettingsInput</code>. Reason: Redundant.. Deprecated on 2018-03-19 .</li>
+</ul>
 
 </div>
-### 2018-07-24
+
+<h3 id="2018-07-24">2018-07-24</h3>
+
 <div class="release-types type-r">
-        
-- Removed `distribute` from `AddOns`. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21 .
+        <ul>
+<li>Removed <code>distribute</code> from <code>AddOns</code>. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21 .</li>
+</ul>
 
 </div>
-### 2018-07-09
+
+<h3 id="2018-07-09">2018-07-09</h3>
+
 <div class="release-types type-r">
-        
-- Removed `quote` from `Query`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
-- Removed `deleteDefaultSettings` from `Mutation`. Reason: You can find it in query at Admin. Deprecated on 2017-11-21 .
-- Removed `updateDefaultSettings` from `Mutation`. Reason: You can find it in query at Admin. Deprecated on 2017-11-21 .
-- Removed `createDefaultSettings` from `Mutation`. Reason: You can find it in query at Admin. Deprecated on 2017-11-21 .
-- Removed `loadFile` from `Mutation`. Reason: You can find it in query at Admin. Deprecated on 2017-11-21 .
-- Removed `hotelCancel` from `Mutation`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
-- Removed `hotelBook` from `Mutation`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
-- Removed `search` from `Query`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
-- Removed `booking` from `Query`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
-- Removed `defaultSettings` from `Query`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
-- Removed `mapping` from `Query`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
+        <ul>
+<li>Removed <code>quote</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .</li>
+<li>Removed <code>deleteDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21 .</li>
+<li>Removed <code>updateDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21 .</li>
+<li>Removed <code>createDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21 .</li>
+<li>Removed <code>loadFile</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21 .</li>
+<li>Removed <code>hotelCancel</code> from <code>Mutation</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .</li>
+<li>Removed <code>hotelBook</code> from <code>Mutation</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .</li>
+<li>Removed <code>search</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .</li>
+<li>Removed <code>booking</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .</li>
+<li>Removed <code>defaultSettings</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .</li>
+<li>Removed <code>mapping</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .</li>
+</ul>
 
 </div>
-### 2018-06-06
+
+<h3 id="2018-06-06">2018-06-06</h3>
+
 <div class="release-types type-d">
-        
-- Deprecated `loadFile` from `HotelXMutation`. Reason: . Finally removed on 2019-08-13 .
-- Deprecated `loadFile` from `HotelXMutation`. Reason: . Expected removal on 2018-09-04 .
+        <ul>
+<li>Deprecated <code>loadFile</code> from <code>HotelXMutation</code>. Reason: . Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>loadFile</code> from <code>HotelXMutation</code>. Reason: . Expected removal on 2018-09-04 .</li>
+</ul>
 
 </div>
-### 2018-06-01
+
+<h3 id="2018-06-01">2018-06-01</h3>
+
 <div class="release-types type-d">
-        
-- Deprecated `type` from `AdviseMessage`. Reason: . Finally removed on 2019-08-13 .
-- Deprecated `type` from `AdviseMessage`. Reason: . Expected removal on 2018-08-30 .
+        <ul>
+<li>Deprecated <code>type</code> from <code>AdviseMessage</code>. Reason: . Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>type</code> from <code>AdviseMessage</code>. Reason: . Expected removal on 2018-08-30 .</li>
+</ul>
 
 </div>
-### 2018-05-21
+
+<h3 id="2018-05-21">2018-05-21</h3>
+
 <div class="release-types type-d">
-        
-- Deprecated `distribute` from `AddOns`. Reason: You can find it in distribution AddOn. Finally removed on 2018-07-24 .
-- Deprecated `distribute` from `AddOns`. Reason: You can find it in distribution AddOn. Expected removal on 2018-08-19 .
+        <ul>
+<li>Deprecated <code>distribute</code> from <code>AddOns</code>. Reason: You can find it in distribution AddOn. Finally removed on 2018-07-24 .</li>
+<li>Deprecated <code>distribute</code> from <code>AddOns</code>. Reason: You can find it in distribution AddOn. Expected removal on 2018-08-19 .</li>
+</ul>
 
 </div>
-### 2018-03-19
+
+<h3 id="2018-03-19">2018-03-19</h3>
+
 <div class="release-types type-d">
-        
-- Deprecated `connectUser` from `HotelSettingsInput`. Reason: Redundant.. Finally removed on 2018-07-26 .
+        <ul>
+<li>Deprecated <code>connectUser</code> from <code>HotelSettingsInput</code>. Reason: Redundant.. Finally removed on 2018-07-26 .</li>
+</ul>
 
 </div>
-### 2018-02-28
+
+<h3 id="2018-02-28">2018-02-28</h3>
+
 <div class="release-types type-d">
-        
-- Deprecated `creationDate` from `BookingHotel`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `checkIn` from `BookingHotel`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `checkOut` from `BookingHotel`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `effectiveDate` from `PriceBreakdown`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `expireDate` from `PriceBreakdown`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `effectiveDate` from `Promotion`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `expireDate` from `Promotion`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `effectiveDate` from `RatePlan`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `expireDate` from `RatePlan`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `effectiveDate` from `Supplement`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `expireDate` from `Supplement`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
-- Deprecated `creationDate` from `BookingHotel`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
-- Deprecated `checkIn` from `BookingHotel`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
-- Deprecated `checkOut` from `BookingHotel`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
-- Deprecated `effectiveDate` from `PriceBreakdown`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
-- Deprecated `expireDate` from `PriceBreakdown`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
-- Deprecated `effectiveDate` from `Promotion`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
-- Deprecated `expireDate` from `Promotion`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
-- Deprecated `effectiveDate` from `RatePlan`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
-- Deprecated `expireDate` from `RatePlan`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
-- Deprecated `effectiveDate` from `Supplement`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
-- Deprecated `expireDate` from `Supplement`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+        <ul>
+<li>Deprecated <code>creationDate</code> from <code>BookingHotel</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>checkIn</code> from <code>BookingHotel</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>checkOut</code> from <code>BookingHotel</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>effectiveDate</code> from <code>PriceBreakdown</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>expireDate</code> from <code>PriceBreakdown</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>effectiveDate</code> from <code>Promotion</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>expireDate</code> from <code>Promotion</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>effectiveDate</code> from <code>RatePlan</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>expireDate</code> from <code>RatePlan</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>effectiveDate</code> from <code>Supplement</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>expireDate</code> from <code>Supplement</code>. Reason: Incorrect date format.. Finally removed on 2019-08-13 .</li>
+<li>Deprecated <code>creationDate</code> from <code>BookingHotel</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+<li>Deprecated <code>checkIn</code> from <code>BookingHotel</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+<li>Deprecated <code>checkOut</code> from <code>BookingHotel</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+<li>Deprecated <code>effectiveDate</code> from <code>PriceBreakdown</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+<li>Deprecated <code>expireDate</code> from <code>PriceBreakdown</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+<li>Deprecated <code>effectiveDate</code> from <code>Promotion</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+<li>Deprecated <code>expireDate</code> from <code>Promotion</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+<li>Deprecated <code>effectiveDate</code> from <code>RatePlan</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+<li>Deprecated <code>expireDate</code> from <code>RatePlan</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+<li>Deprecated <code>effectiveDate</code> from <code>Supplement</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+<li>Deprecated <code>expireDate</code> from <code>Supplement</code>. Reason: Incorrect date format.. Expected removal on 2018-05-29 .</li>
+</ul>
 
 </div>
-### 2017-12-12
+
+<h3 id="2017-12-12">2017-12-12</h3>
+
 <div class="release-types type-d">
-        
-- Deprecated `useContext` from `HotelSettingsInput`. Reason: Redundant.. Finally removed on 2018-07-26 .
+        <ul>
+<li>Deprecated <code>useContext</code> from <code>HotelSettingsInput</code>. Reason: Redundant.. Finally removed on 2018-07-26 .</li>
+</ul>
 
 </div>
-### 2017-11-21
+
+<h3 id="2017-11-21">2017-11-21</h3>
+
 <div class="release-types type-d">
-        
-- Deprecated `quote` from `Query`. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .
-- Deprecated `deleteDefaultSettings` from `Mutation`. Reason: You can find it in query at Admin. Finally removed on 2018-07-09 .
-- Deprecated `updateDefaultSettings` from `Mutation`. Reason: You can find it in query at Admin. Finally removed on 2018-07-09 .
-- Deprecated `createDefaultSettings` from `Mutation`. Reason: You can find it in query at Admin. Finally removed on 2018-07-09 .
-- Deprecated `loadFile` from `Mutation`. Reason: You can find it in query at Admin. Finally removed on 2018-07-09 .
-- Deprecated `hotelCancel` from `Mutation`. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .
-- Deprecated `hotelBook` from `Mutation`. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .
-- Deprecated `search` from `Query`. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .
-- Deprecated `booking` from `Query`. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .
-- Deprecated `defaultSettings` from `Query`. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .
-- Deprecated `mapping` from `Query`. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .
+        <ul>
+<li>Deprecated <code>quote</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .</li>
+<li>Deprecated <code>deleteDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Finally removed on 2018-07-09 .</li>
+<li>Deprecated <code>updateDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Finally removed on 2018-07-09 .</li>
+<li>Deprecated <code>createDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Finally removed on 2018-07-09 .</li>
+<li>Deprecated <code>loadFile</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Finally removed on 2018-07-09 .</li>
+<li>Deprecated <code>hotelCancel</code> from <code>Mutation</code>. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .</li>
+<li>Deprecated <code>hotelBook</code> from <code>Mutation</code>. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .</li>
+<li>Deprecated <code>search</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .</li>
+<li>Deprecated <code>booking</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .</li>
+<li>Deprecated <code>defaultSettings</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .</li>
+<li>Deprecated <code>mapping</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .</li>
+</ul>
 
 </div>
 
@@ -6964,6 +7011,21 @@ role="alert">Changes history of deprecated notes previously announced</div>
 <li>
 <ul>
 <li><a href="#unreleased">Unreleased</a></li>
+<li><a href="#2019-08-13">2019-08-13</a></li>
+<li><a href="#2019-07-29">2019-07-29</a></li>
+<li><a href="#2019-07-03">2019-07-03</a></li>
+<li><a href="#2019-02-19">2019-02-19</a></li>
+<li><a href="#2019-02-05">2019-02-05</a></li>
+<li><a href="#2018-07-26">2018-07-26</a></li>
+<li><a href="#2018-07-24">2018-07-24</a></li>
+<li><a href="#2018-07-09">2018-07-09</a></li>
+<li><a href="#2018-06-06">2018-06-06</a></li>
+<li><a href="#2018-06-01">2018-06-01</a></li>
+<li><a href="#2018-05-21">2018-05-21</a></li>
+<li><a href="#2018-03-19">2018-03-19</a></li>
+<li><a href="#2018-02-28">2018-02-28</a></li>
+<li><a href="#2017-12-12">2017-12-12</a></li>
+<li><a href="#2017-11-21">2017-11-21</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -6980,13 +7042,13 @@ role="alert">Changes history of deprecated notes previously announced</div>
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/channel-x/release-notes/breaking-changes/">ChannelX breaking changes</a></li>
+		<li><a href="/travelgatex/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
 		
-		<li><a href="/logging/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
+		<li><a href="/stats/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
+		
+		<li><a href="/alerts-x/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
 		
 		<li><a href="/mappea/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
-		
-		<li><a href="/travelgatex/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
 		
 		<li><a href="/paymentx/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
 		

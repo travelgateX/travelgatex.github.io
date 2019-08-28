@@ -17,7 +17,7 @@
       
       <guid>/logging/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Logging
-2019-08-22 - Added the field `hotel` in the input object `reference` from which bookings can be searched by the hotel&#39;s reference.  2019-08-21 - Added new input object `timeRange` that improves the time filters providing both a relative time filter and an absolute time filter.  2019-08-02 - Added a hard limit when an API&#39;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).</description>
+2019-08-22  Added the field hotel in the input object reference from which bookings can be searched by the hotel&amp;rsquo;s reference.   2019-08-21  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-08-02  Added a hard limit when an API&amp;rsquo;s response lasts more than 60 seconds.</description>
     </item>
     
     <item>

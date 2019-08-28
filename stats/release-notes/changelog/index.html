@@ -6,7 +6,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.54.0" />
 <title>Changelog :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -6750,142 +6750,160 @@
 <h2 id="2019-08-02">2019-08-02</h2>
 
 <div class="release-types type-a">
-        
-- Added a hard limit when an API's response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).
+        <ul>
+<li>Added a hard limit when an API&rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).</li>
+</ul>
 
 </div>
 
 <h2 id="2019-07-22">2019-07-22</h2>
 
 <div class="release-types type-a">
-        
-- Added new input object `timeRange` that improves the time filters providing both a relative time filter and an absolute time filter.
+        <ul>
+<li>Added new input object <code>timeRange</code> that improves the time filters providing both a relative time filter and an absolute time filter.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-06-12">2019-06-12</h2>
 
 <div class="release-types type-f">
-        
-- Fix an error that was causing to have empty `operations` in the response.
+        <ul>
+<li>Fix an error that was causing to have empty <code>operations</code> in the response.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-06-03">2019-06-03</h2>
 
 <div class="release-types type-a">
-        
-- New scalar type Int64 has been created. `hits` in `StatsData`, `totalHits` in `OperationDetailed` and `hits` in `StatsInfo` have changed its type to this new scalar.
+        <ul>
+<li>New scalar type Int64 has been created. <code>hits</code> in <code>StatsData</code>, <code>totalHits</code> in <code>OperationDetailed</code> and <code>hits</code> in <code>StatsInfo</code> have changed its type to this new scalar.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-30">2019-05-30</h2>
 
 <div class="release-types type-f">
-        
-- Now `adviceMessage`'s from others TravelgateX products are returned as `external` in owns `adviceMessage`'s.
+        <ul>
+<li>Now <code>adviceMessage</code>&rsquo;s from others TravelgateX products are returned as <code>external</code> in owns <code>adviceMessage</code>&rsquo;s.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-23">2019-05-23</h2>
 
 <div class="release-types type-f">
-        
-- Now `type` of `StatsInfo`returns the correct value.
+        <ul>
+<li>Now <code>type</code> of <code>StatsInfo</code>returns the correct value.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-22">2019-05-22</h2>
 
 <div class="release-types type-a">
-        
-- Now stats are available from 01/01/2018. Requests by `accessCode` are available only from 15/05/2019.
+        <ul>
+<li>Now stats are available from 01/01/2018. Requests by <code>accessCode</code> are available only from 15/05/2019.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-14">2019-05-14</h2>
 
 <div class="release-types type-f">
-        
-- Fix an error that was causing `accessCode` not being stored successfully.
-- Fix an error to show 100 assets per `errorCode` and per `operation`.
+        <ul>
+<li>Fix an error that was causing <code>accessCode</code> not being stored successfully.</li>
+<li>Fix an error to show 100 assets per <code>errorCode</code> and per <code>operation</code>.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-03">2019-05-03</h2>
 
 <div class="release-types type-f">
-        
-- Fix an error that was causing that assets of HUB error types were NULL.
+        <ul>
+<li>Fix an error that was causing that assets of HUB error types were NULL.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-02">2019-05-02</h2>
 
 <div class="release-types type-f">
-        
-- Input field `retrieveAssets` made optional. `false` by default.
+        <ul>
+<li>Input field <code>retrieveAssets</code> made optional. <code>false</code> by default.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-04-30">2019-04-30</h2>
 
 <div class="release-types type-a">
-        
-- New required input field `retrieveAssets` added to indicate if assets are needed.
+        <ul>
+<li>New required input field <code>retrieveAssets</code> added to indicate if assets are needed.</li>
+</ul>
 
 </div>
 
 <div class="release-types type-f">
-        
-- Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access all the asset nodes.
+        <ul>
+<li>Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access all the asset nodes.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-04-23">2019-04-23</h2>
 
 <div class="release-types type-f">
-        
-- Fix an error building internal queries when Quote/Booking and Other are requested.
+        <ul>
+<li>Fix an error building internal queries when Quote/Booking and Other are requested.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-04-11">2019-04-11</h2>
 
 <div class="release-types type-f">
-        
-- New input field `owner` added to allow filter by organization.
+        <ul>
+<li>New input field <code>owner</code> added to allow filter by organization.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-04-08">2019-04-08</h2>
 
 <div class="release-types type-a">
-        
-- `label` in `OperationData` added. Reason: Share the operation code in English.
-- `hits` in `StatsData` added. Reason: Share a summary of hits at `StatsData` level.
+        <ul>
+<li><code>label</code> in <code>OperationData</code> added. Reason: Share the operation code in English.</li>
+<li><code>hits</code> in <code>StatsData</code> added. Reason: Share a summary of hits at <code>StatsData</code> level.</li>
+</ul>
 
 </div>
 
 <div class="release-types type-c">
-        
-- Internal queries to Stats DB optimized.
+        <ul>
+<li>Internal queries to Stats DB optimized.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-04-03">2019-04-03</h2>
 
 <div class="release-types type-a">
-        
-- `trafficType` in `OperationDetailed` added. Reason: To differentiate existent traffic types: BASIC, SPEED, OPTIMIZED.
+        <ul>
+<li><code>trafficType</code> in <code>OperationDetailed</code> added. Reason: To differentiate existent traffic types: BASIC, SPEED, OPTIMIZED.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-03-14">2019-03-14</h2>
 
 <div class="release-types type-a">
-        
-* Stats [product documentation](https://docs.travelgatex.com/stats/)
+        <ul>
+<li>Stats <a href="https://docs.travelgatex.com/stats/" rel="nofollow" target="_blank">product documentation</a></li>
+</ul>
 
 </div>
 
@@ -6947,15 +6965,15 @@
 	<h3>See Also</h3>
 	<ul>
 		
+		<li><a href="/channel-x/release-notes/changelog/">ChannelX changelog</a></li>
+		
 		<li><a href="/logging/release-notes/changelog/">Logging changelog</a></li>
+		
+		<li><a href="/insights-x/release-notes/changelog/">Insights-X changelog</a></li>
 		
 		<li><a href="/alerts-x/release-notes/changelog/">Alerts-X changelog</a></li>
 		
 		<li><a href="/hotel-x/release-notes/changelog/">HotelX changelog</a></li>
-		
-		<li><a href="/channel-x/release-notes/changelog/">ChannelX changelog</a></li>
-		
-		<li><a href="/insights-x/release-notes/changelog/">Insights-X changelog</a></li>
 		
 	</ul>
 </div>

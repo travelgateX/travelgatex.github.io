@@ -4,10 +4,10 @@
 	<link rel="alternate" type="type/html" href="/insights-x/release-notes/changelog/" />
 	
 	
-	<generator url="https://gohugo.io" version="0.55.6">Hugo</generator>
+	<generator url="https://gohugo.io" version="0.54.0">Hugo</generator>
 	<updated>
 		
-			2019-08-28 11:05:00 CEST
+			2019-08-28 17:43:00 CEST
 		
 	</updated>
 	<id>urn:uuid:42099b4a-f021-553f-d98f-e056c2568d7c</id>
@@ -25,94 +25,106 @@
 <h2 id="2019-06-19">2019-06-19</h2>
 
 <div class="release-types type-a">
-        
-* Added [new tables](/insights-x/datasets/dataset-content/insights/dataset-reference-insights/): insights\_(daily|weekly|monthly)\_destination\_(buyer|seller), insights\_agg\_(daily|weekly|monthly)\_destination\_(buyer|seller) and insights\_agg\_(daily|weekly|monthly)\_destination\_tgx
+        <ul>
+<li>Added <a href="/insights-x/datasets/dataset-content/insights/dataset-reference-insights/">new tables</a>: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller) and insights_agg_(daily|weekly|monthly)_destination_tgx</li>
+</ul>
 
 </div>
 
 <h2 id="2019-06-05">2019-06-05</h2>
 
 <div class="release-types type-a">
-        
-* Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.
+        <ul>
+<li>Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.</li>
+</ul>
 
 </div>
 
 <div class="release-types type-a">
-        
-* Added new fields in effective bookings: username, commision, adults, childen, infants.
+        <ul>
+<li>Added new fields in effective bookings: username, commision, adults, childen, infants.</li>
+</ul>
 
 </div>
 
 <div class="release-types type-a">
-        
-* Benchmark is available now for Performance. Added [new table](/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/) in benchmark: performance\_daily\_(buyer|seller).
+        <ul>
+<li>Benchmark is available now for Performance. Added <a href="/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/">new table</a> in benchmark: performance_daily_(buyer|seller).</li>
+</ul>
 
 </div>
 
 <h2 id="2019-05-27">2019-05-27</h2>
 
 <div class="release-types type-a">
-        
-* Added new fields in benchmark datasets: TravelgateX total availability, total bookings and total revenue.
+        <ul>
+<li>Added new fields in benchmark datasets: TravelgateX total availability, total bookings and total revenue.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-04-11">2019-04-11</h2>
 
 <div class="release-types type-a">
-        
-* Insights-X [Content](/insights-x/content/)
+        <ul>
+<li>Insights-X <a href="/insights-x/content/">Content</a></li>
+</ul>
 
 </div>
 
 <div class="release-types type-c">
-        
-* Benchmark table daily\_benchmarking\_seller replaced by new ones benchmark [tables](/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/)
-
+        <ul>
+<li>Benchmark table daily_benchmarking_seller replaced by new ones benchmark <a href="/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/">tables</a></li>
+</ul>
 
 </div>
 
 <div class="release-types type-a">
-        
-* Added buyer field in benchmark seller tables. Added seller field in benchmark buyer tables.
+        <ul>
+<li>Added buyer field in benchmark seller tables. Added seller field in benchmark buyer tables.</li>
+</ul>
 
 </div>
 
 <h2 id="2019-03-27">2019-03-27</h2>
 
 <div class="release-types type-a">
-        
-* New table daily\_benchmarking\_seller
+        <ul>
+<li>New table daily_benchmarking_seller</li>
+</ul>
 
 </div>
 
 <div class="release-types type-a">
-        
-* Benchmark [Concepts](/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/)
+        <ul>
+<li>Benchmark <a href="/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/">Concepts</a></li>
+</ul>
 
 </div>
 
 <h2 id="2019-02-21">2019-02-21</h2>
 
 <div class="release-types type-a">
-        
-* New table effective\_bookings\_(buyer|seller)
+        <ul>
+<li>New table effective_bookings_(buyer|seller)</li>
+</ul>
 
 </div>
 
 <div class="release-types type-c">
-        
-* daily\_insights table renamed as insights\_daily\_(buyer|seller)
-* daily\_insights\_(client|provider) table renamed as insights\_daily\_(buyer|seller)
+        <ul>
+<li>daily_insights table renamed as insights_daily_(buyer|seller)</li>
+<li>daily_insights_(client|provider) table renamed as insights_daily_(buyer|seller)</li>
+</ul>
 
 </div>
 
 <h2 id="2019-02-07">2019-02-07</h2>
 
 <div class="release-types type-a">
-        
-* Insights-X [product documentation](https://docs.travelgatex.com/insights-x/)
+        <ul>
+<li>Insights-X <a href="https://docs.travelgatex.com/insights-x/" rel="nofollow" target="_blank">product documentation</a></li>
+</ul>
 
 </div>
 ]]></description>

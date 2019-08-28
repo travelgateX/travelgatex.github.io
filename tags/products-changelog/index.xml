@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>products-changelog on TravelgateX Documentation</title>
+    <title>Products Changelog on TravelgateX Documentation</title>
     <link>/tags/products-changelog/</link>
-    <description>Recent content in products-changelog on TravelgateX Documentation</description>
+    <description>Recent content in Products Changelog on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -17,7 +17,7 @@
       
       <guid>/alerts-x/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Alerts-X
-2019-08-21 - Error to update alerts from price to an other alertType or vice versa.  2019-08-20 - New `Alert type` available `PRICE`. With this alert type will be posible to set alerts which will advise of `amount` or `commission` anomalies for `price`.  2019-08-12 - Error to update alerts in some cases.  2019-08-07 - Now is Checked `api`, `operation` &amp; `errorCode` inputs to be sure that exists or its combinations are posible.</description>
+2019-08-21  Error to update alerts from price to an other alertType or vice versa.   2019-08-20  New Alert type available PRICE. With this alert type will be posible to set alerts which will advise of amount or commission anomalies for price.   2019-08-12  Error to update alerts in some cases.   2019-08-07  Now is Checked api, operation &amp;amp; errorCode inputs to be sure that exists or its combinations are posible.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/channel-x/release-notes/changelog/</guid>
-      <description> 2019-06-04 * Deletion order when value is -1  </description>
+      <description> 2019-06-04  Deletion order when value is -1   </description>
     </item>
     
     <item>
@@ -35,9 +35,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/release-notes/changelog/</guid>
-      <description>Easily accessible log of notable changes to HotelX API &amp;lt;div class=&amp;ldquo;alert alert-info&amp;rdquo;
-role=&amp;ldquo;alert&amp;rdquo;&amp;gt;All notable changes in our platform will be documented on this page.
-2019-08-07 - Fix Hotel-List repeated Hotels  2019-08-06 - Add new enum type PaymentCardType which contain list of supported payment card. - Add new field *type* of type PaymentCardType into PaymentCardInput and deprecate old field *cardType* - Type HotelData introduces field RoomConnection (same type as Rooms service operation) - Modified RoomData type by adding the new types RoomSource (string) and OccupancyStatic  - Deprecated description from Bed (search) - Deprecated KO in BookStatusType  2019-07-11 - Deprecate type error in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category - Add error filter in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category - Add adviseMessage as new error type  - Fix Level value in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category  2019-07-02 - New field in book, cancel and booking respone.</description>
+      <description>Easily accessible log of notable changes to HotelX API All notable changes in our platform will be documented on this page. 2019-08-07  Fix Hotel-List repeated Hotels   2019-08-06  Add new enum type PaymentCardType which contain list of supported payment card. Add new field type of type PaymentCardType into PaymentCardInput and deprecate old field cardType Type HotelData introduces field RoomConnection (same type as Rooms service operation) Modified RoomData type by adding the new types RoomSource (string) and OccupancyStatic    Deprecated description from Bed (search) Deprecated KO in BookStatusType</description>
     </item>
     
     <item>
@@ -47,7 +45,7 @@ role=&amp;ldquo;alert&amp;rdquo;&amp;gt;All notable changes in our platform will
       
       <guid>/insights-x/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Insights-X
-2019-06-19 * Added [new tables](/insights-x/datasets/dataset-content/insights/dataset-reference-insights/): insights\_(daily|weekly|monthly)\_destination\_(buyer|seller), insights\_agg\_(daily|weekly|monthly)\_destination\_(buyer|seller) and insights\_agg\_(daily|weekly|monthly)\_destination\_tgx  2019-06-05 * Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.  * Added new fields in effective bookings: username, commision, adults, childen, infants.  * Benchmark is available now for Performance. Added [new table](/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/) in benchmark: performance\_daily\_(buyer|seller).</description>
+2019-06-19  Added new tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller) and insights_agg_(daily|weekly|monthly)_destination_tgx   2019-06-05  Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.    Added new fields in effective bookings: username, commision, adults, childen, infants.    Benchmark is available now for Performance. Added new table in benchmark: performance_daily_(buyer|seller).</description>
     </item>
     
     <item>
@@ -57,7 +55,7 @@ role=&amp;ldquo;alert&amp;rdquo;&amp;gt;All notable changes in our platform will
       
       <guid>/logging/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Logging
-2019-08-22 - Added the field `hotel` in the input object `reference` from which bookings can be searched by the hotel&#39;s reference.  2019-08-21 - Added new input object `timeRange` that improves the time filters providing both a relative time filter and an absolute time filter.  2019-08-02 - Added a hard limit when an API&#39;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).</description>
+2019-08-22  Added the field hotel in the input object reference from which bookings can be searched by the hotel&amp;rsquo;s reference.   2019-08-21  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-08-02  Added a hard limit when an API&amp;rsquo;s response lasts more than 60 seconds.</description>
     </item>
     
     <item>
@@ -67,7 +65,7 @@ role=&amp;ldquo;alert&amp;rdquo;&amp;gt;All notable changes in our platform will
       
       <guid>/stats/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Stats
-2019-08-02 - Added a hard limit when an API&#39;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).  2019-07-22 - Added new input object `timeRange` that improves the time filters providing both a relative time filter and an absolute time filter.  2019-06-12 - Fix an error that was causing to have empty `operations` in the response.</description>
+2019-08-02  Added a hard limit when an API&amp;rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).   2019-07-22  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-06-12  Fix an error that was causing to have empty operations in the response.</description>
     </item>
     
     <item>

@@ -5587,12 +5587,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/_footer/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
@@ -5604,7 +5598,6 @@
   
   <url>
     <loc>/legacy/docs/hotel/methods/modifyreservation/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -5641,6 +5634,11 @@
   
   <url>
     <loc>/legacy/docs/transfers/methods/reservation/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/breaking-changes/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -5769,6 +5767,11 @@
   </url>
   
   <url>
+    <loc>/tags/errors/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/legacy/docs/transportation/ferries/error/</loc>
   </url>
   
@@ -5778,6 +5781,11 @@
   
   <url>
     <loc>/legacy/docs/hotel-push/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/faq/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -5830,6 +5838,11 @@
   
   <url>
     <loc>/legacy/docs/transfers/methods/getvehicles/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/graphql-changelog/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -5889,11 +5902,21 @@
   </url>
   
   <url>
+    <loc>/tags/products-changelog/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/legacy/docs/transfers/methods/rate-rule/</loc>
   </url>
   
   <url>
     <loc>/legacy/docs/transportation/flights/refund/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/release-notes/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -5950,6 +5973,11 @@
   
   <url>
     <loc>/legacy/docs/transportation/flights/recover-reserve-list/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/roadmap/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -6018,6 +6046,12 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/legacy/docs/hotel-push/messages-files/typical-scenario/</loc>
   </url>
   
@@ -6035,41 +6069,6 @@
   
   <url>
     <loc>/legacy/docs/transportation/flights/valuation/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/breaking-changes/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/errors/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/faq/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/graphql-changelog/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/products-changelog/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/release-notes/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/roadmap/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
