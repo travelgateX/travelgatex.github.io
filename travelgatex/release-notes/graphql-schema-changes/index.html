@@ -6748,12 +6748,331 @@
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
 
+<h2 id="2019-08-08">2019-08-08</h2>
+
+<p>⚠️  Union member <code>API</code> was added to Union type <code>AlertObjectsUnion</code></p>
+
+<p>✅  Input field <code>api</code> was added to input object type <code>AlertUpdateConfigurationInputPeakTraffic</code></p>
+
+<p>✅  Input field <code>api</code> was added to input object type <code>AlertUpdateConfigurationInputAverageTime</code></p>
+
+<p>✅  Input field <code>api</code> was added to input object type <code>AlertUpdateConfigurationInputErrorRate</code></p>
+
+<p>✅  Input field <code>api</code> was added to input object type <code>AlertUpdateConfigurationInputNoTraffic</code></p>
+
+<p>✅  Input field <code>api</code> was added to input object type <code>AlertConfigurationInputPeakTraffic</code></p>
+
+<p>✅  Input field <code>api</code> was added to input object type <code>AlertConfigurationInputAverageTime</code></p>
+
+<p>✅  Input field <code>api</code> was added to input object type <code>AlertConfigurationInputErrorRate</code></p>
+
+<p>✅  Input field <code>api</code> was added to input object type <code>AlertConfigurationInputNoTraffic</code></p>
+
+<p>✅  Field <code>revokeMacroPermissionsFromMember</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>grantMacroPermissionsToMember</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>suitFolder</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Input field <code>HotelXDestinationListInput.access</code> changed type from <code>ID!</code> to <code>ID</code></p>
+
+<p>✅  Input field <code>group</code> was added to input object type <code>HotelXDestinationListInput</code></p>
+
+<p>✅  Type <code>GrantMacroPermissionInput</code> was added</p>
+
+<p>✅  Type <code>FolderTemplate</code> was added</p>
+
+<p>✅  Type <code>SuitFolderInput</code> was added</p>
+
+<h2 id="2019-08-05">2019-08-05</h2>
+
+<p>🛑  Input field <code>PaymentCardInput.cardType</code> changed type from <code>PaymentCardType!</code> to <code>String</code></p>
+
+<p>🛑  Input field <code>ActiveFilterInput.codes</code> changed type from <code>[ID!]</code> to <code>[ID!]!</code></p>
+
+<p>✅  Input field <code>PaymentCardInput.cardType</code> description changed from <code>Indicates the supported card type, the supported card for this option is shown in Quote step.</code> to <code>Indicates the supported card type, the supported card for this option is shown in Quote step.
+@deprecated(reason: &quot;deprecated from 2019-07-31. Please, use type&quot;)</code></p>
+
+<p>✅  Input field <code>type</code> was added to input object type <code>PaymentCardInput</code></p>
+
+<p>✅  Field <code>AlertConfiguration.groupBy</code> description changed from <code>Group by traffic and calculate its parameters separately</code> to <code>Group by traffic and calculate its parameters separately</code></p>
+
+<p>✅  Field <code>comercialType</code> was added to object type <code>AlertConfiguration</code></p>
+
+<p>✅  Field <code>macroPermissions</code> was added to object type <code>ProductData</code></p>
+
+<p>✅  Type <code>Permission</code> was added</p>
+
+<p>✅  Type <code>MacroPermissionData</code> was added</p>
+
+<p>✅  Type <code>MacroPermission</code> was added</p>
+
+<p>✅  Type <code>MacroPermissionEdge</code> was added</p>
+
+<p>✅  Type <code>MacroPermissionsConnection</code> was added</p>
+
+<h2 id="2019-07-31">2019-07-31</h2>
+
+<p>🛑  Input field <code>PaymentCardInput.cardType</code> changed type from <code>String!</code> to <code>PaymentCardType!</code></p>
+
+<p>🛑  Input field <code>owner</code> was removed from input object type <code>UpdateProfileInput</code></p>
+
+<p>🛑  Input field <code>owner</code> was removed from input object type <code>CreateProfileInput</code></p>
+
+<p>🛑  Field <code>HotelOptionQuote.cardTypes</code> changed type from <code>[String!]</code> to <code>[PaymentCardType!]</code></p>
+
+<p>🛑  Field <code>HotelData.cardTypes</code> changed type from <code>[String!]</code> to <code>[PaymentCardType!]</code></p>
+
+<p>✅  Input field <code>PaymentCardInput.cardType</code> description changed from <code>Indicates the card type.</code> to <code>Indicates the supported card type, the supported card for this option is shown in Quote step.</code></p>
+
+<p>✅  Input field <code>api</code> was added to input object type <code>GrantPermissionsInput</code></p>
+
+<p>✅  Field <code>grantProfileToGroup</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>deleteProfile</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Input field <code>StatsFilterInput.to</code> changed type from <code>DateTime!</code> to <code>DateTime</code></p>
+
+<p>✅  Input field <code>StatsFilterInput.to</code> description changed from <code>To date of search</code> to <code>To date of search
+@deprecated(reason: &quot;deprecated from 2019-07-19. Added new field timeRange.&quot;)</code></p>
+
+<p>✅  Input field <code>StatsFilterInput.from</code> changed type from <code>DateTime!</code> to <code>DateTime</code></p>
+
+<p>✅  Input field <code>StatsFilterInput.from</code> description changed from <code>From date of search</code> to <code>From date of search
+@deprecated(reason: &quot;deprecated from 2019-07-19. Added new field timeRange.&quot;)</code></p>
+
+<p>✅  Input field <code>StatsFilterInput.mode</code> description changed from <code>Buyer or Seller
+@deprecated(reason: &quot;deprecated from 2019-04-11. Superfluous field.&quot;)</code> to <code>Buyer or Seller
+@deprecated(reason: &quot;deprecated from 2019-04-11. Superfluous field.&quot;)</code></p>
+
+<p>✅  Input field <code>timeRange</code> was added to input object type <code>StatsFilterInput</code></p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>StatsConnection</code></p>
+
+<p>✅  Enum value <code>BookStatusType.KO</code> was deprecated with reason <code>Deprecated from 2019-07-29</code></p>
+
+<p>✅  Field <code>HotelOptionQuote.cardTypes</code> description changed from <code>List of credit cards</code> to <code>List of credit cards allowed for this option</code></p>
+
+<p>✅  Deprecation reason on field <code>Bed.description</code> has changed from `<code>to</code>Deprecated from 2019-07-29`</p>
+
+<p>✅  Field <code>occupancies</code> was added to object type <code>RoomData</code></p>
+
+<p>✅  Field <code>source</code> was added to object type <code>RoomData</code></p>
+
+<p>✅  Field <code>rooms</code> was added to object type <code>HotelData</code></p>
+
+<p>✅  Field <code>adviseMessageCatalog</code> was added to object type <code>ProductData</code></p>
+
+<p>✅  Argument <code>contains: String</code> added to field <code>AdminQuery.groups</code></p>
+
+<p>✅  Type <code>DeleteProfileInput</code> was added</p>
+
+<p>✅  Type <code>AbsoluteInput</code> was added</p>
+
+<p>✅  Type <code>Duration</code> was added</p>
+
+<p>✅  Type <code>RelativeInput</code> was added</p>
+
+<p>✅  Type <code>TimeRangeInput</code> was added</p>
+
+<p>✅  Type <code>OccupancyRange</code> was added</p>
+
+<p>✅  Type <code>OccupancyStatic</code> was added</p>
+
+<p>✅  Type <code>PaymentCardType</code> was added</p>
+
+<h2 id="2019-07-15">2019-07-15</h2>
+
+<p>🛑  Field <code>ProfileData.type</code> changed type from <code>ProfileType</code> to <code>[ProfileType!]!</code></p>
+
+<p>✅  Input field <code>reference</code> was added to input object type <code>LoggingLegacyFilterInput</code></p>
+
+<p>✅  Field <code>getActiveConnection</code> was added to object type <code>StatsQuery</code></p>
+
+<p>✅  Deprecation reason on field <code>Destination.error</code> has changed from `<code>to</code>Deprecated from 2019-07-03`</p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Destination</code></p>
+
+<p>✅  Deprecation reason on field <code>RoomStatic.error</code> has changed from `<code>to</code>Deprecated from 2019-07-03`</p>
+
+<p>✅  Field <code>RoomStatic.error</code> description changed from <code>Errors that abort services</code> to <code>Errors that abort services.</code></p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>RoomStatic</code></p>
+
+<p>✅  Description <code>By default: Logical AND on all given filters. only hotels that match condition are returned</code> on type <code>HotelXHotelFilterInput</code> has changed to <code>By default: Logical AND on all given filters. Hotels data are returned
+only if match condition</code></p>
+
+<p>✅  Deprecation reason on field <code>Hotel.error</code> has changed from `<code>to</code>Deprecated from 2019-07-03`</p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Hotel</code></p>
+
+<p>✅  Deprecation reason on field <code>Category.error</code> has changed from `<code>to</code>Deprecated from 2019-07-03`</p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Category</code></p>
+
+<p>✅  Deprecation reason on field <code>Board.error</code> has changed from `<code>to</code>Deprecated from 2019-07-03`</p>
+
+<p>✅  Field <code>Board.error</code> description changed from <code>Errors that abort services</code> to <code>Errors that abort services.</code></p>
+
+<p>✅  Field <code>adviseMessage</code> was added to object type <code>Board</code></p>
+
+<p>✅  Field <code>profiles</code> was added to object type <code>GroupData</code></p>
+
+<p>✅  Field <code>profiles</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Type <code>ReferenceFilter</code> was added</p>
+
+<p>✅  Type <code>ActiveFilterInput</code> was added</p>
+
+<p>✅  Type <code>Connection</code> was added</p>
+
+<p>✅  Type <code>ConnectionEdge</code> was added</p>
+
+<p>✅  Type <code>ConnectionConnection</code> was added</p>
+
+<h2 id="2019-07-04">2019-07-04</h2>
+
+<p>✅  Field <code>updateSystem</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>createSystem</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>hotel</code> was added to object type <code>Reference</code></p>
+
+<p>✅  Field <code>SupplierData.owner</code> changed type from <code>Organization</code> to <code>Organization!</code></p>
+
+<p>✅  Field <code>system</code> was added to object type <code>SupplierData</code></p>
+
+<p>✅  Field <code>systems</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Field <code>logging</code> was added to object type <code>Query</code></p>
+
+<p>✅  Type <code>EnvironmentType</code> was added</p>
+
+<p>✅  Type <code>LoggingFilterInput</code> was added</p>
+
+<p>✅  Type <code>TGXFilter</code> was added</p>
+
+<p>✅  Type <code>LoggingEdge</code> was added</p>
+
+<p>✅  Type <code>LoggingConnection</code> was added</p>
+
+<p>✅  Type <code>TGX</code> was added</p>
+
+<p>✅  Type <code>LoggingData</code> was added</p>
+
+<p>✅  Type <code>Logging</code> was added</p>
+
+<p>✅  Type <code>UpdateSystemInput</code> was added</p>
+
+<p>✅  Type <code>CreateSystemInput</code> was added</p>
+
+<p>✅  Type <code>ErrorFilter</code> was added</p>
+
+<p>✅  Type <code>LoggingLegacyFilterInput</code> was added</p>
+
+<p>✅  Type <code>Worker</code> was added</p>
+
+<p>✅  Type <code>CloudEnvironment</code> was added</p>
+
+<p>✅  Type <code>EnvironmentName</code> was added</p>
+
+<p>✅  Type <code>Environment</code> was added</p>
+
+<p>✅  Type <code>LoggingLegacyData</code> was added</p>
+
+<p>✅  Type <code>LoggingLegacy</code> was added</p>
+
+<p>✅  Type <code>LoggingLegacyEdge</code> was added</p>
+
+<p>✅  Type <code>LoggingLegacyConnection</code> was added</p>
+
+<p>✅  Type <code>LoggingQuery</code> was added</p>
+
+<p>✅  Type <code>SystemFilter</code> was added</p>
+
+<p>✅  Type <code>SystemEdge</code> was added</p>
+
+<p>✅  Type <code>SystemConnection</code> was added</p>
+
+<p>✅  Type <code>SystemData</code> was added</p>
+
+<p>✅  Type <code>System</code> was added</p>
+
+<h2 id="2019-06-25">2019-06-25</h2>
+
+<p>🛑  Enum value <code>XTG</code> was removed from enum <code>AlertGroups</code></p>
+
+<p>🛑  Enum value <code>SUPPLIER_EXTERNAL</code> was removed from enum <code>AlertGroups</code></p>
+
+<p>✅  Input field <code>label</code> was added to input object type <code>CreateOrganizationInput</code></p>
+
+<p>✅  Input field <code>HotelXCategoryQueryInput.access</code> changed type from <code>ID!</code> to <code>ID</code></p>
+
+<p>✅  Input field <code>group</code> was added to input object type <code>HotelXCategoryQueryInput</code></p>
+
+<p>✅  Argument <code>api: [ID!]</code> added to field <code>AdminQuery.groups</code></p>
+
+<h2 id="2019-06-13">2019-06-13</h2>
+
+<p>⚠️  Enum value <code>SCHEDULER</code> was added to enum <code>TrafficType</code></p>
+
+<p>⚠️  Enum value <code>PAYX</code> was added to enum <code>PaymentType</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputPeakTraffic.client</code> description changed from <code>Possibility to filter traffic by clients (hub user)</code> to <code>Possibility to filter traffic by clients</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputPeakTraffic.supplier</code> description changed from <code>Possibility to filter traffic by suppliers (hub provider)</code> to <code>Possibility to filter traffic by suppliers</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputAverageTime.client</code> description changed from <code>Possibility to filter traffic by clients (hub user)</code> to <code>Possibility to filter traffic by clients</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputAverageTime.supplier</code> description changed from <code>Possibility to filter traffic by suppliers (hub provider)</code> to <code>Possibility to filter traffic by suppliers</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputErrorRate.client</code> description changed from <code>Possibility to filter traffic by clients (hub user)</code> to <code>Possibility to filter traffic by clients</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputErrorRate.supplier</code> description changed from <code>Possibility to filter traffic by suppliers (hub provider)</code> to <code>Possibility to filter traffic by suppliers</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputNoTraffic.client</code> description changed from <code>Possibility to filter traffic by clients (hub user)</code> to <code>Possibility to filter traffic by clients</code></p>
+
+<p>✅  Input field <code>AlertUpdateConfigurationInputNoTraffic.supplier</code> description changed from <code>Possibility to filter traffic by suppliers (hub provider)</code> to <code>Possibility to filter traffic by suppliers</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputPeakTraffic.client</code> description changed from <code>Possibility to filter traffic by clients (hub user)</code> to <code>Possibility to filter traffic by clients</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputPeakTraffic.supplier</code> description changed from <code>Possibility to filter traffic by suppliers (hub provider)</code> to <code>Possibility to filter traffic by suppliers</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputAverageTime.client</code> description changed from <code>Possibility to filter traffic by clients (hub user)</code> to <code>Possibility to filter traffic by clients</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputAverageTime.supplier</code> description changed from <code>Possibility to filter traffic by suppliers (hub provider</code> to <code>Possibility to filter traffic by suppliers</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputErrorRate.client</code> description changed from <code>Possibility to filter traffic by clients (hub user)</code> to <code>Possibility to filter traffic by clients</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputErrorRate.supplier</code> description changed from <code>Possibility to filter traffic by suppliers (hub provider)</code> to <code>Possibility to filter traffic by suppliers</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputNoTraffic.client</code> description changed from <code>Possibility to filter traffic by clients (hub user)</code> to <code>Possibility to filter traffic by clients</code></p>
+
+<p>✅  Input field <code>AlertConfigurationInputNoTraffic.supplier</code> description changed from <code>Possibility to filter traffic by suppliers (hub provider)</code> to <code>Possibility to filter traffic by suppliers</code></p>
+
+<p>✅  Description for enum value <code>TrafficType.OPTIMIZED</code> changed from <code>Ratios calculated from traffic between Speed and seller</code> to <code>Ratios calculated from traffic between TGX's caches and seller</code></p>
+
+<p>✅  Field <code>billingSupplierCode</code> was added to object type <code>HotelBookingDetail</code></p>
+
+<p>✅  Field <code>supplierCode</code> was added to object type <code>RatePlan</code></p>
+
+<p>✅  Field <code>features</code> was added to object type <code>Room</code></p>
+
+<p>✅  Field <code>supplierCode</code> was added to object type <code>Room</code></p>
+
+<p>✅  Argument <code>label: String</code> added to field <code>AdminQuery.organizations</code></p>
+
+<p>✅  Type <code>Feature</code> was added</p>
+
 <h2 id="2019-05-30">2019-05-30</h2>
 
-<p>🛑  Field <code>StatsInfo.hits</code> changed type from <code>Int!</code> to <code>Int64!</code>
-🛑  Field <code>OperationDetailed.totalHits</code> changed type from <code>Int!</code> to <code>Int64!</code>
-🛑  Field <code>StatsData.hits</code> changed type from <code>Int!</code> to <code>Int64!</code>
-✅  Type <code>Int64</code> was added</p>
+<p>🛑  Field <code>StatsInfo.hits</code> changed type from <code>Int!</code> to <code>Int64!</code></p>
+
+<p>🛑  Field <code>OperationDetailed.totalHits</code> changed type from <code>Int!</code> to <code>Int64!</code></p>
+
+<p>🛑  Field <code>StatsData.hits</code> changed type from <code>Int!</code> to <code>Int64!</code></p>
+
+<p>✅  Type <code>Int64</code> was added</p>
 
 <h2 id="2019-05-30-1">2019-05-30</h2>
 
@@ -10354,6 +10673,13 @@ This information is mandatory.</code> to <code>Indicates if the option is refund
 <ul>
 <li>
 <ul>
+<li><a href="#2019-08-08">2019-08-08</a></li>
+<li><a href="#2019-08-05">2019-08-05</a></li>
+<li><a href="#2019-07-31">2019-07-31</a></li>
+<li><a href="#2019-07-15">2019-07-15</a></li>
+<li><a href="#2019-07-04">2019-07-04</a></li>
+<li><a href="#2019-06-25">2019-06-25</a></li>
+<li><a href="#2019-06-13">2019-06-13</a></li>
 <li><a href="#2019-05-30">2019-05-30</a></li>
 <li><a href="#2019-05-30-1">2019-05-30</a></li>
 <li><a href="#2019-05-23">2019-05-23</a></li>

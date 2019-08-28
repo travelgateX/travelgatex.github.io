@@ -29,7 +29,9 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2019-05-30 🛑 Field StatsInfo.hits changed type from Int! to Int64! 🛑 Field OperationDetailed.totalHits changed type from Int! to Int64! 🛑 Field StatsData.hits changed type from Int! to Int64!</description>
+2019-08-08 ⚠️ Union member API was added to Union type AlertObjectsUnion
+✅ Input field api was added to input object type AlertUpdateConfigurationInputPeakTraffic
+✅ Input field api was added to input object type AlertUpdateConfigurationInputAverageTime</description>
     </item>
     
   </channel>
