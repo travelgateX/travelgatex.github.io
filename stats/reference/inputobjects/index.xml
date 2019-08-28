@@ -16,8 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/inputobjects/absoluteinput/</guid>
-      <description>GraphQL schema definition type AbsoluteInput {  from: DateTime!    to: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields from(DateTime!):   to(DateTime!):   
-Required by TimeRangeInput:</description>
+      <description> GraphQL schema definition type AbsoluteInput {  from: DateTime!    to: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields from(DateTime!):   to(DateTime!):    Required by TimeRangeInput:     </description>
     </item>
     
     <item>
@@ -26,7 +25,7 @@ Required by TimeRangeInput:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/inputobjects/accessfilter/</guid>
-      <description>GraphQL schema definition type AccessFilter {  accessID: [ID]    group: [ID]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields accessID([ID]):   group([ID]):   owner([ID!]):</description>
+      <description> GraphQL schema definition type AccessFilter {  accessID: [ID]    group: [ID]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields accessID([ID]):   group([ID]):   owner([ID!]):    </description>
     </item>
     
     <item>
@@ -35,7 +34,7 @@ Required by TimeRangeInput:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/inputobjects/activefilterinput/</guid>
-      <description>GraphQL schema definition type ActiveFilterInput {  requestMode: ModeType!    codes: [ID!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields requestMode(ModeType!):   codes([ID!]!):</description>
+      <description> GraphQL schema definition type ActiveFilterInput {  requestMode: ModeType!    codes: [ID!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields requestMode(ModeType!):   codes([ID!]!):    </description>
     </item>
     
     <item>
@@ -53,8 +52,7 @@ Required by TimeRangeInput:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/inputobjects/relativeinput/</guid>
-      <description>GraphQL schema definition type RelativeInput {  from: Duration!    to: Duration!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields from(Duration!):   to(Duration!):   
-Required by TimeRangeInput:</description>
+      <description> GraphQL schema definition type RelativeInput {  from: Duration!    to: Duration!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields from(Duration!):   to(Duration!):    Required by TimeRangeInput:     </description>
     </item>
     
     <item>
@@ -81,8 +79,7 @@ Required by TimeRangeInput:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/inputobjects/timerangeinput/</guid>
-      <description>GraphQL schema definition type TimeRangeInput {  relative: RelativeInput    absolute: AbsoluteInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields relative(RelativeInput):   absolute(AbsoluteInput):   
-Required by StatsFilterInput:</description>
+      <description> GraphQL schema definition type TimeRangeInput {  relative: RelativeInput    absolute: AbsoluteInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields relative(RelativeInput):   absolute(AbsoluteInput):    Required by StatsFilterInput:     </description>
     </item>
     
   </channel>

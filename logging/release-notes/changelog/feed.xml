@@ -4,10 +4,10 @@
 	<link rel="alternate" type="type/html" href="/logging/release-notes/changelog/" />
 	
 	
-	<generator url="https://gohugo.io" version="0.40.1">Hugo</generator>
+	<generator url="https://gohugo.io" version="0.55.6">Hugo</generator>
 	<updated>
 		
-			2019-08-27 08:38:00 DST
+			2019-08-28 10:09:00 CEST
 		
 	</updated>
 	<id>urn:uuid:42099b4a-f021-553f-d98f-e056c2568d7c</id>
@@ -25,70 +25,62 @@
 <h2 id="2019-08-22">2019-08-22</h2>
 
 <div class="release-types type-a">
-        <ul>
-<li>Added the field <code>hotel</code> in the input object <code>reference</code> from which bookings can be searched by the hotel&rsquo;s reference.</li>
-</ul>
+        
+- Added the field `hotel` in the input object `reference` from which bookings can be searched by the hotel's reference.
 
 </div>
 
 <h2 id="2019-08-21">2019-08-21</h2>
 
 <div class="release-types type-a">
-        <ul>
-<li>Added new input object <code>timeRange</code> that improves the time filters providing both a relative time filter and an absolute time filter.</li>
-</ul>
+        
+- Added new input object `timeRange` that improves the time filters providing both a relative time filter and an absolute time filter.
 
 </div>
 
 <h2 id="2019-08-02">2019-08-02</h2>
 
 <div class="release-types type-a">
-        <ul>
-<li>Added a hard limit when an API&rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).</li>
-</ul>
+        
+- Added a hard limit when an API's response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).
 
 </div>
 
 <h2 id="2019-07-17">2019-07-17</h2>
 
 <div class="release-types type-a">
-        <ul>
-<li>Added a new input object <code>reference</code> with two fields <code>client</code> and <code>supplier</code> from which bookings can be searched.</li>
-</ul>
+        
+- Added a new input object `reference` with two fields `client` and `supplier` from which bookings can be searched.
 
 </div>
 
 <h2 id="2019-07-11">2019-07-11</h2>
 
 <div class="release-types type-a">
-        <ul>
-<li>Added a new field <code>statusType</code> in <code>LoggingLegacyData</code> to retrieve the final status of the transacction.</li>
-</ul>
+        
+- Added a new field `statusType` in `LoggingLegacyData` to retrieve the final status of the transacction.
 
 </div>
 
 <div class="release-types type-a">
-        <ul>
-<li>Added a new input field <code>first</code> in <code>LoggingLegacyFilterInput</code> to be able to change the size of the response. By default up to 100 results will be returned.</li>
-</ul>
+        
+- Added a new input field `first` in `LoggingLegacyFilterInput` to be able to change the size of the response. By default up to 100 results will be returned.
 
 </div>
 
 <h2 id="2019-07-10">2019-07-10</h2>
 
 <div class="release-types type-f">
-        <ul>
-<li>Fix an error that was causing to download files with empty content. <a href="https://github.com/travelgateX/Issue-tracker/issues/49" target="_blank">Issue-49</a></li>
-</ul>
+        
+- Fix an error that was causing to download files with empty content. [Issue-49](https://github.com/travelgateX/Issue-tracker/issues/49)
 
 </div>
 
 <h2 id="2019-07-09">2019-07-09</h2>
 
 <div class="release-types type-a">
-        <ul>
-<li>Start-up of the Logging service in production</li>
-</ul>
+        
+- Start-up of the Logging service in production
 
 </div>
 ]]></description>

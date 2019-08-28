@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/advisemessagelevel/</guid>
-      <description>GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:</description>
+      <description> GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:     </description>
     </item>
     
     <item>
@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/grouptype/</guid>
-      <description>GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by GroupData:    GroupCommonData:    OrganizationData:</description>
+      <description> GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by GroupData:    GroupCommonData:    OrganizationData:     </description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/membertype/</guid>
-      <description>GraphQL schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Required by MemberData:</description>
+      <description> GraphQL schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Required by MemberData:     </description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/modetype/</guid>
-      <description>GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by StatsFilterInput:    ActiveFilterInput:</description>
+      <description> GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by StatsFilterInput:    ActiveFilterInput:     </description>
     </item>
     
     <item>
@@ -79,7 +79,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/roletype/</guid>
-      <description>GraphQL schema definition  enum RoleType{   VIEWER,    EDITOR,    ADMIN,    EXECUTOR,    SPECIFIC,   }   Required by RoleData:</description>
+      <description> GraphQL schema definition  enum RoleType{   VIEWER,    EDITOR,    ADMIN,    EXECUTOR,    SPECIFIC,   }   Required by RoleData:     </description>
     </item>
     
     <item>
@@ -106,7 +106,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/statsinfotypes/</guid>
-      <description>GraphQL schema definition  enum StatsInfoTypes{   ALL,    OK,    INTEGRATION,    PROVIDER,    COMMUNICATION,    HUB,    OTHER,   }   Required by StatsInfo:</description>
+      <description> GraphQL schema definition  enum StatsInfoTypes{   ALL,    OK,    INTEGRATION,    PROVIDER,    COMMUNICATION,    HUB,    OTHER,   }   Required by StatsInfo:     </description>
     </item>
     
     <item>
@@ -115,7 +115,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/reference/enums/traffictype/</guid>
-      <description>GraphQL schema definition  enum TrafficType{   BASIC,    SPEED,    SCHEDULER,    OPTIMIZED,   }   Required by OperationDetailed:</description>
+      <description> GraphQL schema definition  enum TrafficType{   BASIC,    SPEED,    SCHEDULER,    OPTIMIZED,   }   Required by OperationDetailed:     </description>
     </item>
     
   </channel>

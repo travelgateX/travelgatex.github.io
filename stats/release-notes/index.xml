@@ -17,7 +17,7 @@
       
       <guid>/stats/release-notes/changelog/</guid>
       <description>Easily accessible log of notable changes to Stats
-2019-08-02  Added a hard limit when an API&amp;rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).   2019-07-22  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-06-12  Fix an error that was causing to have empty operations in the response.</description>
+2019-08-02 - Added a hard limit when an API&#39;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).  2019-07-22 - Added new input object `timeRange` that improves the time filters providing both a relative time filter and an absolute time filter.  2019-06-12 - Fix an error that was causing to have empty `operations` in the response.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/stats/release-notes/breaking-changes/</guid>
-      <description>Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of cache from OperationDetailed. Reason: Added new field trafficType.. Deprecated on 2019-04-03.To be removed soon. Removal of ratios from StatsData. Reason: Added hits fields to be able to calculate ratios at client side.. Deprecated on 2019-04-08.To be removed soon.   2019-04-08  Deprecated ratios from StatsData.</description>
+      <description>Changes history of deprecated notes previously announced Unreleased - Removal of `type` from `AdviseMessage`. Reason: . Deprecated on 2018-06-01.**To be removed soon**. - Removal of `cache` from `OperationDetailed`. Reason: Added new field trafficType.. Deprecated on 2019-04-03.**To be removed soon**. - Removal of `ratios` from `StatsData`. Reason: Added hits fields to be able to calculate ratios at client side.. Deprecated on 2019-04-08.**To be removed soon**.  ### 2019-04-08 - Deprecated `ratios` from `StatsData`.</description>
     </item>
     
   </channel>

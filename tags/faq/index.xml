@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Faq on TravelgateX Documentation</title>
+    <title>faq on TravelgateX Documentation</title>
     <link>/tags/faq/</link>
-    <description>Recent content in Faq on TravelgateX Documentation</description>
+    <description>Recent content in faq on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
 	<atom:link href="/tags/faq/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Common Errors</title>
-      <link>/hotel-x/faqs/common-errors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/hotel-x/faqs/common-errors/</guid>
-      <description>Error 204 - No Results Found Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.
-There are several potential reasons as to why this error occurs:
- The product is not available for the dates in the request. The product is not available for the number of passengers selected in the request.</description>
-    </item>
     
     <item>
       <title>FAQs</title>
@@ -30,6 +19,17 @@ There are several potential reasons as to why this error occurs:
       <description>General Where can I find object explanations/definitions? You can find it on our Schema
 Languages allowed Which are the languages allowed in HotelX? The new aggregator allows every language, it will depend on each supplier.
 List of suppliers available Is it possible to see the whole list of suppliers and to look at their hotel databases and prices somewhere? Here you will find the list of the sellers already connected to our platform.</description>
+    </item>
+    
+    <item>
+      <title>Common Errors</title>
+      <link>/hotel-x/faqs/common-errors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hotel-x/faqs/common-errors/</guid>
+      <description>Error 204 - No Results Found Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.
+There are several potential reasons as to why this error occurs:
+ The product is not available for the dates in the request. The product is not available for the number of passengers selected in the request.</description>
     </item>
     
     <item>
