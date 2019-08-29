@@ -29,10 +29,9 @@ Under construction! We have logged this resource on our roadmap and we are curre
       <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
       <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
-2019-08-29 =======
-2019-08-28        cb39564ecfa58ff32e43941770791ce3060d18a5
-       🛑 Input field ReferenceFilter.supplier changed type from [String] to [String!</description>
+2019-08-29 🛑 Input field ReferenceFilter.supplier changed type from [String] to [String!]
+🛑 Input field ReferenceFilter.client changed type from [String] to [String!]
+⚠️ Enum value PRICE was added to enum AlertType</description>
     </item>
     
   </channel>
