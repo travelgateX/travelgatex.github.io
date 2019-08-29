@@ -26,7 +26,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/cvc/</guid>
-      <description> GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
+      <description>GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/cardnumber/</guid>
-      <description> GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
+      <description>GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/date/</guid>
-      <description> GraphQL schema definition scalar Date   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
+      <description>GraphQL schema definition scalar Date   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/datetime/</guid>
-      <description> GraphQL schema definition scalar DateTime   Required by PaymentXStoredCardFilterInput:    PaymentXStoredCard:    Node:    Group:    PointOfSale:    Member:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    System:    Domain:    Product:    MacroPermission:    Client:    Profile:    Entity:     </description>
+      <description>GraphQL schema definition scalar DateTime   Required by PaymentXStoredCardFilterInput:    PaymentXStoredCard:    Node:    Group:    PointOfSale:    Member:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    System:    Domain:    Product:    MacroPermission:    Client:    Profile:    Entity:</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/domainname/</guid>
-      <description> GraphQL schema definition scalar DomainName   Required by DomainData:     </description>
+      <description>GraphQL schema definition scalar DomainName   Required by DomainData:</description>
     </item>
     
     <item>
@@ -101,7 +101,7 @@ GraphQL schema definition scalar String   Required by AdviseMessage:    PaymentX
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/paymentx/reference/scalars/uri/</guid>
-      <description> GraphQL schema definition scalar URI   Required by Urls:     </description>
+      <description>GraphQL schema definition scalar URI   Required by Urls:</description>
     </item>
     
   </channel>

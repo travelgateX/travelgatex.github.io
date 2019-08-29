@@ -26,7 +26,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/cvc/</guid>
-      <description> GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
+      <description>GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/cardnumber/</guid>
-      <description> GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
+      <description>GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/country/</guid>
-      <description> GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    Location:    GeonameData:    CriteriaSearch:    HotelXDefaultSettingsDataInput:     </description>
+      <description>GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    Location:    GeonameData:    CriteriaSearch:    HotelXDefaultSettingsDataInput:</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/currency/</guid>
-      <description> GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:     </description>
+      <description>GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/date/</guid>
-      <description> GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:    CriteriaSearch:    Supplement:    RatePlan:    Promotion:    PriceBreakdown:    CriteriaBookingDatesInput:    BookingHotel:    PaymentXStoredCardData:    PaymentXStoredCardInput:     </description>
+      <description>GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:    CriteriaSearch:    Supplement:    RatePlan:    Promotion:    PriceBreakdown:    CriteriaBookingDatesInput:    BookingHotel:    PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/domainname/</guid>
-      <description> GraphQL schema definition scalar DomainName   Required by DomainData:     </description>
+      <description>GraphQL schema definition scalar DomainName   Required by DomainData:</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/duration/</guid>
-      <description> GraphQL schema definition scalar Duration   Required by RelativeInput:     </description>
+      <description>GraphQL schema definition scalar Duration   Required by RelativeInput:</description>
     </item>
     
     <item>
@@ -146,7 +146,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/int64/</guid>
-      <description> GraphQL schema definition scalar Int64   Required by StatsData:    OperationDetailed:    StatsInfo:     </description>
+      <description>GraphQL schema definition scalar Int64   Required by StatsData:    OperationDetailed:    StatsInfo:</description>
     </item>
     
     <item>
@@ -155,7 +155,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/json/</guid>
-      <description> GraphQL schema definition scalar JSON   Required by AddOns:    AddOn:     </description>
+      <description>GraphQL schema definition scalar JSON   Required by AddOns:    AddOn:</description>
     </item>
     
     <item>
@@ -164,7 +164,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/jwt/</guid>
-      <description> GraphQL schema definition scalar JWT   Required by AdminQuery:     </description>
+      <description>GraphQL schema definition scalar JWT   Required by AdminQuery:</description>
     </item>
     
     <item>
@@ -173,7 +173,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/language/</guid>
-      <description> GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    Text:    CriteriaSearch:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:     </description>
+      <description>GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    Text:    CriteriaSearch:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:</description>
     </item>
     
     <item>
@@ -192,7 +192,7 @@ GraphQL schema definition scalar String   Required by ServiceApiFilter:    Servi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/uri/</guid>
-      <description> GraphQL schema definition scalar URI   Required by Urls:    GiataData:    Contact:    Media:    UrlsInput:    StatsAsset:    LoggingLegacyData:     </description>
+      <description>GraphQL schema definition scalar URI   Required by Urls:    GiataData:    Contact:    Media:    UrlsInput:    StatsAsset:    LoggingLegacyData:</description>
     </item>
     
     <item>
@@ -201,7 +201,7 @@ GraphQL schema definition scalar String   Required by ServiceApiFilter:    Servi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/travelgatex/reference/scalars/worker/</guid>
-      <description> GraphQL schema definition scalar Worker   Required by Environment:     </description>
+      <description>GraphQL schema definition scalar Worker   Required by Environment:</description>
     </item>
     
   </channel>

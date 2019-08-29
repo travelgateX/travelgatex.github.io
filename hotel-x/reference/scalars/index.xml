@@ -26,7 +26,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/scalars/country/</guid>
-      <description> GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    Location:    GeonameData:    CriteriaSearch:    HotelXDefaultSettingsDataInput:     </description>
+      <description>GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    Location:    GeonameData:    CriteriaSearch:    HotelXDefaultSettingsDataInput:</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/scalars/currency/</guid>
-      <description> GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:     </description>
+      <description>GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/scalars/date/</guid>
-      <description> GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:    CriteriaSearch:    Supplement:    RatePlan:    Promotion:    PriceBreakdown:    CriteriaBookingDatesInput:    BookingHotel:     </description>
+      <description>GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:    CriteriaSearch:    Supplement:    RatePlan:    Promotion:    PriceBreakdown:    CriteriaBookingDatesInput:    BookingHotel:</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/scalars/datetime/</guid>
-      <description> GraphQL schema definition scalar DateTime   Required by HotelXHotelFilterInput:    HotelRuntimeConfiguration:    Board:    Node:    Category:    Hotel:    GiataData:    Media:    Airport:    Geoname:    RoomStatic:    Destination:    AuditData:    Stat:    Transactions:    HotelXUpdateStatus:     </description>
+      <description>GraphQL schema definition scalar DateTime   Required by HotelXHotelFilterInput:    HotelRuntimeConfiguration:    Board:    Node:    Category:    Hotel:    GiataData:    Media:    Airport:    Geoname:    RoomStatic:    Destination:    AuditData:    Stat:    Transactions:    HotelXUpdateStatus:</description>
     </item>
     
     <item>
@@ -92,7 +92,7 @@ GraphQL schema definition scalar Int   Required by RelayInput:    HotelXHotelLis
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/scalars/json/</guid>
-      <description> GraphQL schema definition scalar JSON   Required by AddOns:    AddOn:     </description>
+      <description>GraphQL schema definition scalar JSON   Required by AddOns:    AddOn:</description>
     </item>
     
     <item>
@@ -101,7 +101,7 @@ GraphQL schema definition scalar Int   Required by RelayInput:    HotelXHotelLis
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/scalars/language/</guid>
-      <description> GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    Text:    CriteriaSearch:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:     </description>
+      <description>GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    Text:    CriteriaSearch:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:</description>
     </item>
     
     <item>
@@ -120,7 +120,7 @@ GraphQL schema definition scalar String   Required by ServiceStatus:    RelayInp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/hotel-x/reference/scalars/uri/</guid>
-      <description> GraphQL schema definition scalar URI   Required by GiataData:    Contact:    Media:    UrlsInput:     </description>
+      <description>GraphQL schema definition scalar URI   Required by GiataData:    Contact:    Media:    UrlsInput:</description>
     </item>
     
   </channel>

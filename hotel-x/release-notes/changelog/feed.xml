@@ -4,10 +4,10 @@
 	<link rel="alternate" type="type/html" href="/hotel-x/release-notes/changelog/" />
 	
 	
-	<generator url="https://gohugo.io" version="0.54.0">Hugo</generator>
+	<generator url="https://gohugo.io" version="0.40.1">Hugo</generator>
 	<updated>
 		
-			2019-08-29 09:40:00 CEST
+			2019-08-29 15:48:00 CEST
 		
 	</updated>
 	<id>urn:uuid:42099b4a-f021-553f-d98f-e056c2568d7c</id>
@@ -111,8 +111,8 @@ role="alert">All notable changes in our platform will be documented on this page
 <div class="release-types type-a">
         <ul>
 <li>New field in book, cancel and booking respone. booking/billingSupplierCode.</li>
-<li>New blacklist file format. The values has changed to allow new features. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/black-list/" rel="nofollow" target="_blank">here</a>.</li>
-<li>New field for the commision file. Now you can put clienToken for each rule. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/net-price/" rel="nofollow" target="_blank">here</a>.</li>
+<li>New blacklist file format. The values has changed to allow new features. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/black-list/" target="_blank">here</a>.</li>
+<li>New field for the commision file. Now you can put clienToken for each rule. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/net-price/" target="_blank">here</a>.</li>
 <li>Internal system improvements.</li>
 </ul>
 
@@ -205,7 +205,7 @@ role="alert">All notable changes in our platform will be documented on this page
 
 <div class="release-types type-a">
         <ul>
-<li>New plugin, add parameter. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/add_parameterx/" rel="nofollow" target="_blank">here</a>.</li>
+<li>New plugin, add parameter. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/add_parameterx/" target="_blank">here</a>.</li>
 </ul>
 
 </div>
@@ -428,7 +428,7 @@ role="alert">All notable changes in our platform will be documented on this page
 
 <p><div class="release-types type-f">
         <ul>
-<li>Fix Exchange node empty if not CurrencyX (see doc in <a href="https://docs.travelgatex.com/hotel-x/plugins/converter/" rel="nofollow" target="_blank">https://docs.travelgatex.com/hotel-x/plugins/converter/</a>)</li>
+<li>Fix Exchange node empty if not CurrencyX (see doc in <a href="https://docs.travelgatex.com/hotel-x/plugins/converter/" target="_blank">https://docs.travelgatex.com/hotel-x/plugins/converter/</a>)</li>
 <li>Fix bugs in Quote</li>
 </ul>
 
@@ -444,7 +444,7 @@ role="alert">All notable changes in our platform will be documented on this page
 
 <p><div class="release-types type-a">
         <ul>
-<li>Settings heritage. <a href="https://docs.travelgatex.com/hotel-x/concepts/settings/" rel="nofollow" target="_blank">Guide</a></li>
+<li>Settings heritage. <a href="https://docs.travelgatex.com/hotel-x/concepts/settings/" target="_blank">Guide</a></li>
 <li>Plugins filter</li>
 </ul>
 
