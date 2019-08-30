@@ -7,7 +7,7 @@
 	<generator url="https://gohugo.io" version="0.40.1">Hugo</generator>
 	<updated>
 		
-			2019-08-30 08:24:00 CEST
+			2019-08-30 13:01:00 CEST
 		
 	</updated>
 	<id>urn:uuid:42099b4a-f021-553f-d98f-e056c2568d7c</id>
@@ -21,6 +21,22 @@
 			<description><![CDATA[
 
 <p>Easily accessible log of notable changes to Logging</p>
+
+<h2 id="2019-08-30">2019-08-30</h2>
+
+<div class="release-types type-c">
+        <ul>
+<li>Now quotes requested by Speed have the same sessionID that quotes requested by the client in order to identify them.</li>
+</ul>
+
+</div>
+
+<div class="release-types type-c">
+        <ul>
+<li>Now <code>reference</code> filters are arrays in order to be able to request multiple reerences at once.</li>
+</ul>
+
+</div>
 
 <h2 id="2019-08-22">2019-08-22</h2>
 
