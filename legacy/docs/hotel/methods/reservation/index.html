@@ -7167,6 +7167,16 @@ is closed.</p>
             &lt;/Guests&gt;
         &lt;/ResGuests&gt;
         &lt;PaymentType&gt;MerchantPay&lt;/PaymentType&gt;
+        &lt;CardInfo&gt;
+            &lt;CardCode&gt;VI&lt;/CardCode&gt;
+            &lt;Number&gt;4321432143214327&lt;/Number&gt;
+            &lt;Holder&gt;Test11 TestAp11&lt;/Holder&gt;
+            &lt;ValidityDate&gt;   
+                &lt;Month&gt;06&lt;/Month&gt;
+                &lt;Year&gt;14&lt;/Year&gt;
+            &lt;/ValidityDate&gt;
+            &lt;CVC&gt;123&lt;/CVC&gt;
+        &lt;/CardInfo&gt;
         &lt;Rooms&gt;
             &lt;Room id = &quot;4582&quot; roomCandidateRefId = &quot;1&quot; code = &quot;506&quot; description = &quot;Double Standard..&quot;/&gt;
             &lt;Preferences&gt;
@@ -7412,7 +7422,63 @@ is closed.</p>
 <td>PaymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates the type of payment.</td>
+<td>Indicates the type of payment. It can be MerchantPay, LaterPay, CardBookingPay or CardCheckInPay. Payment types are explained in &ldquo;Detailed description&rdquo; section, in this same page.</td>
+</tr>
+
+<tr>
+<td>CardInfo</td>
+<td>0..1</td>
+<td></td>
+<td>Credit card details.</td>
+</tr>
+
+<tr>
+<td>CardInfo/CardCode</td>
+<td>1</td>
+<td>String</td>
+<td>Indicates the type of credit card. See types allowed at <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/" target="_blank">Credit Card Types</a></td>
+</tr>
+
+<tr>
+<td>CardInfo/Number</td>
+<td>1</td>
+<td>String</td>
+<td>Credit card number.</td>
+</tr>
+
+<tr>
+<td>CardInfo/Holder</td>
+<td>1</td>
+<td>String</td>
+<td>Credit card holder.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ValidityDate</td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>CardInfo/ValidityDate/Month</td>
+<td>1</td>
+<td>String</td>
+<td>Expiration month (2 characters).</td>
+</tr>
+
+<tr>
+<td>CardInfo/ValidityDate/Year</td>
+<td>1</td>
+<td>String</td>
+<td>Expiration year (2 characters).</td>
+</tr>
+
+<tr>
+<td>CardInfo/CVC</td>
+<td>1</td>
+<td>String</td>
+<td>Credit card security code.</td>
 </tr>
 
 <tr>
