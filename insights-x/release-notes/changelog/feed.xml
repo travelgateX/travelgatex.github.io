@@ -7,7 +7,7 @@
 	<generator url="https://gohugo.io" version="0.40.1">Hugo</generator>
 	<updated>
 		
-			2019-09-03 13:03:00 CEST
+			2019-09-03 13:26:00 CEST
 		
 	</updated>
 	<id>urn:uuid:42099b4a-f021-553f-d98f-e056c2568d7c</id>
@@ -31,10 +31,12 @@
 
 </div>
 
-<p><div class="release-types type-c">
+<div class="release-types type-c">
         <ul>
 <li>Schema modified for tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller). Now, country field is outside the record.</li>
 </ul>
+
+</div>
 
 <h2 id="2019-08-27">2019-08-27</h2>
 
@@ -150,8 +152,6 @@
 </ul>
 
 </div>
-
-</div></p>
 ]]></description>
 		</content>
 	</entry> 
