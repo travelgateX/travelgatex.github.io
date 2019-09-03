@@ -8032,6 +8032,171 @@ The benchmarks are based on the total of differents and availables hotels that h
 </tbody>
 </table>
 
+<h2 id="benchmark-market-city-bw-daily-weekly-monthly-buyer-seller">benchmark_market_city_bw_(daily|weekly|monthly)_(buyer|seller)</h2>
+
+<p>This table contains info from searches, quotes, bookings and revenue aggregated per search date, booking window, market, and location (country + Administrative Zone 1 + Administrative Zone 2 + City) by day|week|month of your organization and all buyers|sellers of TravelgateX.</p>
+
+<p><strong>fields</strong></p>
+
+<ul>
+<li><strong>search_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
+<li><strong><strong>booking_window</strong> (NUMBER).</strong> It is a division to describe how far away is the check-in date.
+
+<ul>
+<li>Last second (0-1 day).</li>
+<li>Last minute (2-3 days).</li>
+<li>About 1 week (4-7 days).</li>
+<li>About 2 weeks (8-14 days).</li>
+<li>About 1 month (15-30 days)</li>
+<li>About 2 months (31-60 days).</li>
+<li>About 3 months (61-90 days).</li>
+<li>More than 3 months (90+ days).</li>
+</ul></li>
+<li><strong>market (STRING).</strong> Source market name. E.g. Spain</li>
+<li><strong>country (STRING).</strong> Country destination name. E.g. Spain</li>
+<li><strong>zone_1 (STRING).</strong> Administrative first level zone. E.g. Comunidad de Madrid</li>
+<li><strong>zone_2 (STRING).</strong> Administrative second level zone E.g. Madrid city</li>
+<li><strong>city (STRING).</strong> City name. If the city is big enough this level shows the neighbourghood. E.G. Chamberí</li>
+<li><strong>search_ok_net (NUMBER).</strong> Quantity of searches with available options for above key (search_date, booking_window, market, country, zone_1, zone_2, city) with net price available for your organization.</li>
+<li><strong>search_ok_unknown (NUMBER).</strong> Quantity of searches with available options for above key with a price where we don&rsquo;t know if any commission is applied for your organization.</li>
+<li><strong>search_nok (NUMBER).</strong> Quantity of searches without available options for above for your organization.</li>
+<li><strong>tot_amount_search_net (NUMBER).</strong> Total net amount of searches for above key for your organization.</li>
+<li><strong>booking_ok_net (NUMBER).</strong> Quantity of bookings for above key with net price available for your organization.</li>
+<li><strong>booking_ok_unknown (NUMBER).</strong> Quantity of bookings for above key with a price where we don&rsquo;t know if any commission is applied for your organization.</li>
+<li><strong>tot_amount_booking_net (NUMBER).</strong> Total net amount of booking for above key for your organization.</li>
+<li><strong>nights_rooms_search_ok_net (NUMBER).</strong> It is the product of the length of stay, the number of rooms requested and the field search_ok_net.</li>
+<li><strong>nights_rooms_booking_ok_net (NUMBER).</strong> It is the product of the length of stay, the number of rooms requested and the field booking_ok_net.</li>
+<li><strong>search_ok_net_tgx (NUMBER).</strong> Quantity of searches with available options for above key (search_date, booking_window, market, country, zone_1, zone_2, city) with net price available for all buyers|suppliers of TravelgateX.</li>
+<li><strong>search_ok_unknown_tgx (NUMBER).</strong> Quantity of searches with available options for above key with a price where we don&rsquo;t know if any commission is applied for all buyers|suppliers of TravelgateX.</li>
+<li><strong>search_nok_tgx (NUMBER).</strong> Quantity of searches without available options for above for all buyers|suppliers of TravelgateX.</li>
+<li><strong>tot_amount_search_net_tgx (NUMBER).</strong> Total net amount of searches for above key for all buyers|suppliers of TravelgateX.</li>
+<li><strong>booking_ok_net_tgx (NUMBER).</strong> Quantity of bookings for above key with net price available for all buyers|suppliers of TravelgateX.</li>
+<li><strong>booking_ok_unknown_tgx (NUMBER).</strong> Quantity of bookings for above key with a price where we don&rsquo;t know if any commission is applied for all buyers|suppliers of TravelgateX.</li>
+<li><strong>tot_amount_booking_net_tgx (NUMBER).</strong> Total net amount of booking for above key for all buyers|suppliers of TravelgateX.</li>
+<li><strong>nights_rooms_search_ok_net_tgx (NUMBER).</strong> It is the product of the length of stay, the number of rooms requested and the field search_ok_net.</li>
+<li><strong>nights_rooms_booking_ok_net_tgx (NUMBER).</strong> It is the product of the length of stay, the number of rooms requested and the field booking_ok_net.</li>
+</ul>
+
+<p><strong>Preview</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>booking_window</th>
+<th>search_date</th>
+<th>market</th>
+<th>country</th>
+<th>zone_1</th>
+<th>zone_2</th>
+<th>city</th>
+<th>search_ok_net</th>
+<th>search_ok_unknown</th>
+<th>search_nok</th>
+<th>booking_ok_net</th>
+<th>booking_ok_unknown</th>
+<th>tot_amount_booking_net</th>
+<th>tot_amount_search_net</th>
+<th>nights_rooms_search_ok_net</th>
+<th>nights_rooms_booking_ok_net</th>
+<th>search_ok_net_tgx</th>
+<th>search_ok_unknown_tgx</th>
+<th>search_nok_tgx</th>
+<th>booking_ok_net_tgx</th>
+<th>booking_ok_unknown_tgx</th>
+<th>tot_amount_booking_net_tgx</th>
+<th>tot_amount_search_net_tgx</th>
+<th>nights_rooms_search_ok_net_tgx</th>
+<th>nights_rooms_booking_ok_net_tgx</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>15-30 days (about 1 month)</td>
+<td>2019-09-02 00:00:00 UTC</td>
+<td>Spain</td>
+<td>Spain</td>
+<td>Andalucia</td>
+<td>Almeria</td>
+<td>Las Marinas</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>0</td>
+<td>423137</td>
+<td>11442</td>
+<td>1000767</td>
+<td>24</td>
+<td></td>
+<td>8408.09</td>
+<td>2.4921782818564382E8</td>
+<td>1842919</td>
+<td>109</td>
+</tr>
+
+<tr>
+<td>2-3 days (last minute)</td>
+<td>2019-09-02 00:00:00 UTC</td>
+<td>Bahrain</td>
+<td>Turkey</td>
+<td>Mugla</td>
+<td>Bodrum</td>
+<td>Guembet</td>
+<td>14</td>
+<td>0</td>
+<td>54</td>
+<td>1</td>
+<td>0</td>
+<td>1359.27</td>
+<td>19616.02432</td>
+<td>196</td>
+<td>14</td>
+<td>99</td>
+<td></td>
+<td>1148</td>
+<td>1</td>
+<td></td>
+<td>1359.27</td>
+<td>129696.2713370888</td>
+<td>1386</td>
+<td>14</td>
+</tr>
+
+<tr>
+<td>31-60 days (about 2 months)</td>
+<td>2019-09-02 00:00:00 UTC</td>
+<td>Romania</td>
+<td>Malta</td>
+<td>Saint Paul&rsquo;s Bay</td>
+<td></td>
+<td>Qawra</td>
+<td>13</td>
+<td>0</td>
+<td>56</td>
+<td>1</td>
+<td>0</td>
+<td>523.0786</td>
+<td>10688.083528</td>
+<td>91</td>
+<td>8</td>
+<td>2548</td>
+<td>30</td>
+<td>2818</td>
+<td>1</td>
+<td></td>
+<td>523.0786</td>
+<td>1786575.898334005</td>
+<td>11019</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+
 <hr/>
 <h2>Comments</h2>
 
@@ -8065,6 +8230,7 @@ The benchmarks are based on the total of differents and availables hotels that h
 <li><a href="#benchmark-country-city-daily-weekly-monthly-seller">benchmark_country_city_(daily|weekly|monthly)_seller</a></li>
 <li><a href="#benchmark-country-daily-weekly-monthly-seller">benchmark_country_(daily|weekly|monthly)_seller</a></li>
 <li><a href="#benchmark-daily-weekly-monthly-seller">benchmark_(daily|weekly|monthly)_seller</a></li>
+<li><a href="#benchmark-market-city-bw-daily-weekly-monthly-buyer-seller">benchmark_market_city_bw_(daily|weekly|monthly)_(buyer|seller)</a></li>
 </ul></li>
 </ul>
 </nav>

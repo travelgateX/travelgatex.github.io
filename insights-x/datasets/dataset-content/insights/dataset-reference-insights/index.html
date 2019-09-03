@@ -7555,10 +7555,10 @@
 <li><strong>adults (NUMBER).</strong> Quantity of paxes older than 12 years (12 is not included).</li>
 <li><strong>children (NUMBER).</strong> Quantity of paxes between 2 and 12 (both included).</li>
 <li><strong>infants (NUMBER).</strong> Quantity of paxes younger than 2 years (2 is not included).</li>
+<li><strong>country (STRING).</strong> Country ISO2 code. E.g. ES (Spain)</li>
 <li><strong>destinations (STRUCT).</strong> Repeated field that contains info about destinations for above key.
 
 <ul>
-<li><strong>country (STRING).</strong> Country ISO2 code. E.g. ES (Spain)</li>
 <li><strong>zone_1 (STRING).</strong> Administrative first level zone. E.g. Comunidad de Madrid</li>
 <li><strong>zone_2 (STRING).</strong> Administrative second level zone E.g. Madrid city</li>
 <li><strong>city (STRING).</strong> City name. If the city is big enough this level shows the neighbourghood. E.G. Chamberí</li>
@@ -8180,10 +8180,10 @@
 <li><strong>4</strong> = Group (Adults &gt; 2).</li>
 <li><strong>5</strong> = Other.</li>
 </ul></li>
+<li><strong>country (STRING).</strong> Country ISO2 code. E.g. ES (Spain)</li>
 <li><strong>destinations (STRUCT).</strong> Repeated field that contains info about destinations for above key.
 
 <ul>
-<li><strong>country (STRING).</strong> Country ISO2 code. E.g. ES (Spain)</li>
 <li><strong>zone_1 (STRING).</strong> Administrative first level zone. E.g. Comunidad de Madrid</li>
 <li><strong>zone_2 (STRING).</strong> Administrative second level zone E.g. Madrid city</li>
 <li><strong>city (STRING).</strong> City name. If the city is big enough this level shows the neighbourghood. E.G. Chamberí</li>
@@ -8390,209 +8390,6 @@
 <td>100.13417054461978</td>
 <td>100.13417054461978</td>
 <td>100.13417054461978</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="insights-agg-daily-weekly-monthly-destination-tgx">insights_agg_(daily|weekly|monthly)_destination_tgx</h2>
-
-<p>This table contains a summary about the demand that TravelgateX platform is receiving. Using this info properly our partners can detect trends in the market and take business decisions in advance.</p>
-
-<p><strong>fields</strong></p>
-
-<ul>
-<li><strong>search_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
-<li><strong>check_in (TIMESTAMP).</strong> Check in date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
-<li><strong>market (STRING).</strong> Source market of paxes (ISO 3166-1 alpha-2).</li>
-<li><strong>destinations (STRUCT).</strong> Repeated field that contains info about destinations for above key.
-
-<ul>
-<li><strong>country (STRING).</strong> Country ISO2 code. E.g. ES (Spain)</li>
-<li><strong>zone_1 (STRING).</strong> Administrative first level zone. E.g. Comunidad de Madrid</li>
-<li><strong>zone_2 (STRING).</strong> Administrative second level zone E.g. Madrid city</li>
-<li><strong>city (STRING).</strong> City name. If the city is big enough this level shows the neighbourghood. E.G. Chamberí</li>
-<li><strong>search_ok_net (NUMBER).</strong> Quantity of searches with available options for above key and hotel with net price available.</li>
-<li><strong>search_ok_unknown (NUMBER).</strong> Quantity of searches with available options for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
-<li><strong>search_nok (NUMBER).</strong> Quantity of searches without available options for above key and hotel.</li>
-<li><strong>min_amount_search_net (NUMBER).</strong> Net amount of cheapest option for that hotel.</li>
-<li><strong>max_amount_search_net (NUMBER).</strong> Net amount of most expensive option for that hotel.</li>
-<li><strong>tot_amount_search_net (NUMBER).</strong> Total net amount of searches for that hotel.</li>
-<li><strong>min_amount_search_unknown (NUMBER).</strong> Amount of cheapest option for that hotel (Commission not available).</li>
-<li><strong>max_amount_search_unknown (NUMBER).</strong> Amount of most expensive option for that hotel (Commission not available).</li>
-<li><strong>tot_amount_search_unknown (NUMBER).</strong> Total amount of searches for that hotel (Commission not available).</li>
-<li><strong>quote_ok_net (NUMBER).</strong> Quantity of quotes for above key and hotel with net price available.</li>
-<li><strong>quote_ok_unknown (NUMBER).</strong> Quantity of quotes for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
-<li><strong>quote_nok (NUMBER).</strong> Quantity of failed quotes for above key and hotel.</li>
-<li><strong>min_amount_quote_net (NUMBER).</strong> Net amount of cheapest quote for that hotel.</li>
-<li><strong>max_amount_quote_net (NUMBER).</strong> Net amount of most expensive quote for that hotel.</li>
-<li><strong>tot_amount_quote_net (NUMBER).</strong> Total net amount of quotes for that hotel.</li>
-<li><strong>min_amount_quote_unknown (NUMBER).</strong> Amount of cheapest quote for that hotel (Commission not available).</li>
-<li><strong>max_amount_quote_unknown (NUMBER).</strong> Amount of most expensive quote for that hotel (Commission not available).</li>
-<li><strong>tot_amount_quote_unknown (NUMBER).</strong> Total amount of quotes for that hotel (Commission not available).</li>
-<li><strong>booking_ok_net (NUMBER).</strong> Quantity of bookings for above key and hotel with net price available.</li>
-<li><strong>booking_ok_unknown (NUMBER).</strong> Quantity of bookings for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
-<li><strong>booking_nok (NUMBER).</strong> Quantity of failed bookings for above key and hotel.</li>
-<li><strong>min_amount_booking_net (NUMBER).</strong> Net amount of cheapest booking for that hotel.</li>
-<li><strong>max_amount_booking_net (NUMBER).</strong> Net amount of most expensive booking for that hotel.</li>
-<li><strong>tot_amount_booking_net (NUMBER).</strong> Total net amount of booking for that hotel.</li>
-<li><strong>min_amount_booking_unknown (NUMBER).</strong> Amount of cheapest booking for that hotel (Commission not available).</li>
-<li><strong>max_amount_booking_unknown (NUMBER).</strong> Amount of most expensive booking for that hotel (Commission not available).</li>
-<li><strong>tot_amount_booking_unknown (NUMBER).</strong> Total amount of booking for that hotel (Commission not available).</li>
-</ul></li>
-</ul>
-
-<p><strong>Preview</strong></p>
-
-<table>
-<thead>
-<tr>
-<th>search_date</th>
-<th>check_in</th>
-<th>market</th>
-<th>destinations.country</th>
-<th>destinations.zone_1</th>
-<th>destinations.zone_2</th>
-<th>destinations.city</th>
-<th>destinations.search_ok_net</th>
-<th>destinations.search_ok_unknown</th>
-<th>destinations.search_nok</th>
-<th>destinations.quote_ok_net</th>
-<th>destinations.quote_ok_unknown</th>
-<th>destinations.quote_nok</th>
-<th>destinations.booking_ok_net</th>
-<th>destinations.booking_ok_unknown</th>
-<th>destinations.booking_nok</th>
-<th>destinations.min_amount_search_net</th>
-<th>destinations.max_amount_search_net</th>
-<th>destinations.tot_amount_search_net</th>
-<th>destinations.min_amount_search_unknown</th>
-<th>destinations.max_amount_search_unknown</th>
-<th>destinations.tot_amount_search_unknown</th>
-<th>destinations.min_amount_quote_net</th>
-<th>destinations.max_amount_quote_net</th>
-<th>destinations.tot_amount_quote_net</th>
-<th>destinations.min_amount_quote_unknown</th>
-<th>destinations.max_amount_quote_unknown</th>
-<th>destinations.tot_amount_quote_unknown</th>
-<th>destinations.min_amount_booking_net</th>
-<th>destinations.max_amount_booking_net</th>
-<th>destinations.tot_amount_booking_net</th>
-<th>destinations.min_amount_booking_unknown</th>
-<th>destinations.max_amount_booking_unknown</th>
-<th>destinations.tot_amount_booking_unknown</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>2019-06-17 00:00:00 UTC</td>
-<td>2019-06-18 00:00:00 UTC</td>
-<td>ES</td>
-<td>ES</td>
-<td>Comunidad de Madrid</td>
-<td>Provincia de Madrid</td>
-<td>Opera</td>
-<td>92917</td>
-<td>12445</td>
-<td>343652</td>
-<td>29</td>
-<td>5</td>
-<td>86</td>
-<td>2</td>
-<td></td>
-<td></td>
-<td>28.323080146206653</td>
-<td>1245085.2277792639</td>
-<td>5.287200889379405E7</td>
-<td>35.5</td>
-<td>19998.0</td>
-<td>5295426.659987811</td>
-<td>49.39</td>
-<td>275.0</td>
-<td>4493.944383435857</td>
-<td></td>
-<td>176.0</td>
-<td>714.0</td>
-<td>49.39</td>
-<td>58.69</td>
-<td>108.08</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-<tr>
-<td>2019-06-17 00:00:00 UTC</td>
-<td>2019-06-27 00:00:00 UTC</td>
-<td>ES</td>
-<td>ES</td>
-<td>Comunidad de Madrid</td>
-<td>Provincia de Madrid</td>
-<td>Chueca</td>
-<td>10670</td>
-<td>1194</td>
-<td>52145</td>
-<td>2</td>
-<td></td>
-<td></td>
-<td>1</td>
-<td></td>
-<td></td>
-<td>12.240349469555142</td>
-<td>5456.194</td>
-<td>3699011.558274537</td>
-<td>17.94</td>
-<td>3056.49</td>
-<td>293527.4320347421</td>
-<td>408.28</td>
-<td>408.28</td>
-<td>816.56</td>
-<td></td>
-<td></td>
-<td></td>
-<td>369.9005000708</td>
-<td>369.9005000708</td>
-<td>369.9005000708</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-
-<tr>
-<td>2019-06-17 00:00:00 UTC</td>
-<td>2019-06-22 00:00:00 UTC</td>
-<td>ES</td>
-<td>ES</td>
-<td>Comunidad de Madrid</td>
-<td>Provincia de Madrid</td>
-<td>Bilbao</td>
-<td>7678</td>
-<td>654</td>
-<td>62376</td>
-<td>9</td>
-<td></td>
-<td>6</td>
-<td>1</td>
-<td></td>
-<td></td>
-<td>23.5706</td>
-<td>1699.28</td>
-<td>2120420.477015076</td>
-<td>49.576535615583495</td>
-<td>1738.6</td>
-<td>216082.4267244658</td>
-<td>47.68654720513507</td>
-<td>274.0</td>
-<td>1529.0430944102702</td>
-<td></td>
-<td></td>
-<td></td>
-<td>218.44</td>
-<td>218.44</td>
-<td>218.44</td>
 <td></td>
 <td></td>
 <td></td>
@@ -8866,7 +8663,6 @@
 <li><a href="#insights-daily-weekly-monthly-destination-buyer-seller">insights_(daily|weekly|monthly)_destination_(buyer|seller)</a></li>
 <li><a href="#insights-agg-daily-weekly-monthly-buyer-seller">insights_agg_(daily|weekly|monthly)_(buyer|seller)</a></li>
 <li><a href="#insights-agg-daily-weekly-monthly-destination-buyer-seller">insights_agg_(daily|weekly|monthly)_destination_(buyer|seller)</a></li>
-<li><a href="#insights-agg-daily-weekly-monthly-destination-tgx">insights_agg_(daily|weekly|monthly)_destination_tgx</a></li>
 <li><a href="#effective-bookings-buyer-seller">effective_bookings_(buyer|seller)</a></li>
 <li><a href="#daily-portfolio-seller">daily_portfolio_seller</a></li>
 </ul></li>
