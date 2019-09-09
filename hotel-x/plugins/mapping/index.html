@@ -7283,6 +7283,61 @@
 
 <h2 id="other-maps">Other Maps</h2>
 
+<h3 id="map-by-provider-hotel">Map by provider hotel</h3>
+
+<p>This plugin allows to convert the room codes in supplier context but by hotel. Is the same plugin (room map) explained before but it offers the possibility to map by supplier and hotel.</p>
+
+<h4 id="format-file">Format File</h4>
+
+<p>The file must be in the below format:</p>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8 </li>
+<li><strong>File Name</strong>: [Context Source]_[Context Destination]_room_map.csv</li>
+<li><strong>Header Row</strong>: ToRemove </li>
+<li><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/</li>
+</ul>
+
+<p>If you are using a file of room map, is necessary that you modify this file adding a new column. Please, see the next example down:</p>
+
+<h4 id="sample-file">Sample File</h4>
+
+<p><strong>Name</strong>: xtg_provider_room_map.csv
+<strong>Data</strong>:</p>
+
+<pre><code class="language-csv">Code Source,Code Destination,Code Hotel
+1,X,A
+1,Y,A
+1,Z,A
+2,X1,B
+2,X2,C
+3,X3,D
+4,X4,
+5,X5,
+</code></pre>
+
+<p>How you can see, in the same file are combined maps with 3 values and maps with 2 values. The rows with two values are mapped by provider. The files with three values are mapped by provider and hotel. Is possible to use only the mapping by provider hotel, in this case, your file only has rows with three values.</p>
+
+<h2 id="how-applies">How applies</h2>
+
+<p>What happens if you use the combined plugin(room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file&rsquo;s name (client context)) and the room codes that don&rsquo;t have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable).</p>
+
+<h2 id="execution-example">Execution example</h2>
+
+<pre><code class="language-json">{
+    &quot;plugins&quot;: {
+        &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
+        &quot;pluginsType&quot;: [
+            {
+                &quot;type&quot;: &quot;ROOM_MAP&quot;,
+                &quot;name&quot;: &quot;room_map&quot;,
+                &quot;parameters&quot;:[{&quot;key&quot;:&quot;hotel&quot;, &quot;value&quot;:&quot;true&quot;}]
+            }
+        ]
+    }
+}
+</code></pre>
+
 <p>Besides, an alternative for room map is also shown below:</p>
 
 <h3 id="description-room-map">Description Room Map</h3>
@@ -7300,7 +7355,7 @@
 
 <h3 id="alias-table">Alias Table</h3>
 
-<h4 id="format-file">Format File</h4>
+<h4 id="format-file-1">Format File</h4>
 
 <p>The file must be in the below format:</p>
 
@@ -7312,7 +7367,7 @@
 <li>Directory:  /F[folder code]_[unique code]/HotelX_[unique code]/Maps/plugin/</li>
 </ul>
 
-<h4 id="sample-file">Sample File</h4>
+<h4 id="sample-file-1">Sample File</h4>
 
 <p><strong>Name</strong>: roomDescriptionMapX_aliasTable.csv</p>
 
@@ -7326,7 +7381,7 @@ apartment,apt,902
 
 <h3 id="noise-words">Noise Words</h3>
 
-<h4 id="format-file-1">Format File</h4>
+<h4 id="format-file-2">Format File</h4>
 
 <p>The file must be in the below format:</p>
 
@@ -7337,7 +7392,7 @@ apartment,apt,902
 <li><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/plugin/</li>
 </ul>
 
-<h4 id="sample-file-1">Sample File</h4>
+<h4 id="sample-file-2">Sample File</h4>
 
 <p><strong>Name</strong>: roomDescriptionMapX_noiseWords.csv
 <strong>Data</strong>:</p>
@@ -7348,7 +7403,7 @@ b&amp;b
 breakf
 </code></pre>
 
-<h2 id="how-applies">How applies</h2>
+<h2 id="how-applies-1">How applies</h2>
 
 <p>When you execute the plugin the steps to be followed are:</p>
 
@@ -7360,7 +7415,7 @@ breakf
 <li>Get your new code. </li>
 </ol>
 
-<h2 id="execution-example">Execution example</h2>
+<h2 id="execution-example-1">Execution example</h2>
 
 <pre><code class="language-json">{
     &quot;plugins&quot;: {
@@ -7431,23 +7486,32 @@ breakf
 <li><a href="#plugin-name">Plugin Name</a></li>
 <li><a href="#other-maps">Other Maps</a>
 <ul>
+<li><a href="#map-by-provider-hotel">Map by provider hotel</a>
+<ul>
+<li><a href="#format-file">Format File</a></li>
+<li><a href="#sample-file">Sample File</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#how-applies">How applies</a></li>
+<li><a href="#execution-example">Execution example</a>
+<ul>
 <li><a href="#description-room-map">Description Room Map</a></li>
 </ul></li>
 <li><a href="#files">Files</a>
 <ul>
 <li><a href="#alias-table">Alias Table</a>
 <ul>
-<li><a href="#format-file">Format File</a></li>
-<li><a href="#sample-file">Sample File</a></li>
-</ul></li>
-<li><a href="#noise-words">Noise Words</a>
-<ul>
 <li><a href="#format-file-1">Format File</a></li>
 <li><a href="#sample-file-1">Sample File</a></li>
 </ul></li>
+<li><a href="#noise-words">Noise Words</a>
+<ul>
+<li><a href="#format-file-2">Format File</a></li>
+<li><a href="#sample-file-2">Sample File</a></li>
 </ul></li>
-<li><a href="#how-applies">How applies</a></li>
-<li><a href="#execution-example">Execution example</a></li>
+</ul></li>
+<li><a href="#how-applies-1">How applies</a></li>
+<li><a href="#execution-example-1">Execution example</a></li>
 <li><a href="#modifying-data">Modifying data</a>
 <ul>
 <li><a href="#updating-data">Updating data</a></li>
