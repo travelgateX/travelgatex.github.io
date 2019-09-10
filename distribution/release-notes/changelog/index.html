@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Changelog | TravelgateX Documentation</title>
-    <link rel="alternate" type="application/xml" href="/stats/release-notes/changelog/feed.xml" title="TravelgateX Documentation"/>
+    <link rel="alternate" type="application/xml" href="/distribution/release-notes/changelog/feed.xml" title="TravelgateX Documentation"/>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -31,13 +31,13 @@
       var baseurl = "\/";
 </script>
 
-<meta name="description" content="Accurated, chronologically-ordered list of notable changes">
+<meta name="description" content="Contains an accurated, chronologically-ordered list of notable changes">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
     
-    <meta name="description" content="Accurated, chronologically-ordered list of notable changes">
+    <meta name="description" content="Contains an accurated, chronologically-ordered list of notable changes">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.js"></script>
   </head>
-  <body data-url="/stats/release-notes/changelog/">
+  <body data-url="/distribution/release-notes/changelog/">
 
     <div class="mo-header fixed-top">
     <div class="top-header">
@@ -5417,12 +5417,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/stats/" class="dd-item parent">
+        <li data-nav-id="/stats/" class="dd-item">
 
             <a href="/stats/" class="">
        
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
                 Stats
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
@@ -6080,17 +6079,16 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/stats/release-notes/" class="dd-item parent">
+        <li data-nav-id="/stats/release-notes/" class="dd-item">
 
             <a href="/stats/release-notes/" class="">
        
-            <span>
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <span><i class="fa fa-angle-right fa-lg category-icon"></i>
                 Release Notes
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/stats/release-notes/changelog/" class="dd-item active">
+          <li data-nav-id="/stats/release-notes/changelog/" class="dd-item">
             <a href="/stats/release-notes/changelog/">
               <span style="padding-left: 8px;">Changelog</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
@@ -7100,7 +7098,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Stats changelog</h1>
+              <h1 class="pageTitle">Distribution-X changelog</h1>
 
               
                 
@@ -7109,7 +7107,7 @@
                 
                 
               <div id="top-github-link">
-                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/stats/release-notes/changelog.md" target="blank">
+                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/distribution/release-notes/changelog.md" target="blank">
                   <i class="fa fa-code-fork"></i>
                   Edit page
                 </a>
@@ -7117,164 +7115,18 @@
               
 
 
-<p>Easily accessible log of notable changes to Stats</p>
+<p>Easily accessible log of notable changes to Distribution-X API
+<div class="alert 
+alert-info"
+ 
+role="alert">All notable changes in our platform will be documented on this page.</div>
+</p>
 
-<h2 id="2019-08-02">2019-08-02</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>Added a hard limit when an API&rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).</li>
-</ul>
-
-</div>
-
-<h2 id="2019-07-22">2019-07-22</h2>
+<h2 id="2019-09-10">2019-09-10</h2>
 
 <div class="release-types type-a">
         <ul>
-<li>Added new input object <code>timeRange</code> that improves the time filters providing both a relative time filter and an absolute time filter.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-06-12">2019-06-12</h2>
-
-<div class="release-types type-f">
-        <ul>
-<li>Fix an error that was causing to have empty <code>operations</code> in the response.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-06-03">2019-06-03</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>New scalar type Int64 has been created. <code>hits</code> in <code>StatsData</code>, <code>totalHits</code> in <code>OperationDetailed</code> and <code>hits</code> in <code>StatsInfo</code> have changed its type to this new scalar.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-05-30">2019-05-30</h2>
-
-<div class="release-types type-f">
-        <ul>
-<li>Now <code>adviceMessage</code>&rsquo;s from others TravelgateX products are returned as <code>external</code> in owns <code>adviceMessage</code>&rsquo;s.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-05-23">2019-05-23</h2>
-
-<div class="release-types type-f">
-        <ul>
-<li>Now <code>type</code> of <code>StatsInfo</code>returns the correct value.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-05-22">2019-05-22</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>Now stats are available from 01/01/2018. Requests by <code>accessCode</code> are available only from 15/05/2019.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-05-14">2019-05-14</h2>
-
-<div class="release-types type-f">
-        <ul>
-<li>Fix an error that was causing <code>accessCode</code> not being stored successfully.</li>
-<li>Fix an error to show 100 assets per <code>errorCode</code> and per <code>operation</code>.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-05-03">2019-05-03</h2>
-
-<div class="release-types type-f">
-        <ul>
-<li>Fix an error that was causing that assets of HUB error types were NULL.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-05-02">2019-05-02</h2>
-
-<div class="release-types type-f">
-        <ul>
-<li>Input field <code>retrieveAssets</code> made optional. <code>false</code> by default.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-04-30">2019-04-30</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>New required input field <code>retrieveAssets</code> added to indicate if assets are needed.</li>
-</ul>
-
-</div>
-
-<div class="release-types type-f">
-        <ul>
-<li>Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access all the asset nodes.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-04-23">2019-04-23</h2>
-
-<div class="release-types type-f">
-        <ul>
-<li>Fix an error building internal queries when Quote/Booking and Other are requested.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-04-11">2019-04-11</h2>
-
-<div class="release-types type-f">
-        <ul>
-<li>New input field <code>owner</code> added to allow filter by organization.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-04-08">2019-04-08</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li><code>label</code> in <code>OperationData</code> added. Reason: Share the operation code in English.</li>
-<li><code>hits</code> in <code>StatsData</code> added. Reason: Share a summary of hits at <code>StatsData</code> level.</li>
-</ul>
-
-</div>
-
-<div class="release-types type-c">
-        <ul>
-<li>Internal queries to Stats DB optimized.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-04-03">2019-04-03</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li><code>trafficType</code> in <code>OperationDetailed</code> added. Reason: To differentiate existent traffic types: BASIC, SPEED, OPTIMIZED.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-03-14">2019-03-14</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>Stats <a href="https://docs.travelgatex.com/stats/" target="_blank">product documentation</a></li>
+<li>Changelog example</li>
 </ul>
 
 </div>
@@ -7306,22 +7158,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#2019-08-02">2019-08-02</a></li>
-<li><a href="#2019-07-22">2019-07-22</a></li>
-<li><a href="#2019-06-12">2019-06-12</a></li>
-<li><a href="#2019-06-03">2019-06-03</a></li>
-<li><a href="#2019-05-30">2019-05-30</a></li>
-<li><a href="#2019-05-23">2019-05-23</a></li>
-<li><a href="#2019-05-22">2019-05-22</a></li>
-<li><a href="#2019-05-14">2019-05-14</a></li>
-<li><a href="#2019-05-03">2019-05-03</a></li>
-<li><a href="#2019-05-02">2019-05-02</a></li>
-<li><a href="#2019-04-30">2019-04-30</a></li>
-<li><a href="#2019-04-23">2019-04-23</a></li>
-<li><a href="#2019-04-11">2019-04-11</a></li>
-<li><a href="#2019-04-08">2019-04-08</a></li>
-<li><a href="#2019-04-03">2019-04-03</a></li>
-<li><a href="#2019-03-14">2019-03-14</a></li>
+<li><a href="#2019-09-10">2019-09-10</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -7337,15 +7174,15 @@
 	<h3>See Also</h3>
 	<ul>
 		
+		<li><a href="/hotel-x/release-notes/changelog/">HotelX changelog</a></li>
+		
 		<li><a href="/logging/release-notes/changelog/">Logging changelog</a></li>
+		
+		<li><a href="/channel-x/release-notes/changelog/">ChannelX changelog</a></li>
 		
 		<li><a href="/insights-x/release-notes/changelog/">Insights-X changelog</a></li>
 		
-		<li><a href="/hotel-x/release-notes/changelog/">HotelX changelog</a></li>
-		
 		<li><a href="/alerts-x/release-notes/changelog/">Alerts-X changelog</a></li>
-		
-		<li><a href="/distribution/release-notes/changelog/">Distribution-X changelog</a></li>
 		
 	</ul>
 </div>
@@ -7355,10 +7192,7 @@
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/stats/release-notes/" title="Go to previous page | Release Notes"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Release Notes</a>
-            </li>
-        <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/stats/release-notes/breaking-changes/" title="Go to next page | GraphQL Schema breaking changes" style="margin-right: 0px;">GraphQL Schema breaking changes<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/getting-started/" title="Go to next page | Getting Started" style="margin-right: 0px;">Getting Started<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

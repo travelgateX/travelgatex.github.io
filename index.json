@@ -1477,6 +1477,13 @@
 	"content": " The Certification process intention is to test and ensure that your integration is performed correctly, this means, that functionality and implementation of the relevant and mandatory information are done correctly and without errors. All of this is focused to avoid issues with the final consumer, or he/she being misled by any incorrect information or not desirable API uses. Before starting the certification process, make sure you have followed the Welcome Pack instructions. This will speed up the process and avoid problems afterwards.\nHaving said that, our certification process will look at 5 different operations: \n Search Quote Book Cancel BookingList  What we check during certification We will be checking the below data:\n Usage of general data structure of our API Usage of the correct booking flow: search, quote, book. The arrival and departure dates. The correct handling of the prices (net price, gross price, commission, etc.). Possible cancellation policies applied to that booking (if you use it). The information of the room selected (id, code, description, etc.). The meal plan selected. Provide supplier’s remarks on the entire booking flow.  "
 },
 {
+	"uri": "/distribution/release-notes/changelog/",
+	"title": "Changelog",
+	"tags": ["products-changelog"],
+	"description": "Contains an accurated, chronologically-ordered list of notable changes",
+	"content": " Easily accessible log of notable changes to Distribution-X API All notable changes in our platform will be documented on this page. 2019-09-10  Changelog example   "
+},
+{
 	"uri": "/travelgatex/release-notes/products-changelogs/changelog-channelx/",
 	"title": "ChannelX",
 	"tags": [],
@@ -5418,6 +5425,13 @@
 	"content": " This tool extracts the product loaded at InventoryX and sends it to a third partner, normally an OTA. These clients will have the option of loading all the product in their system by selecting the Full Copy tab in InventoryX\u0026rsquo;s extranet, having the possibility to only select the hotels they are interested in copying. Also, each update the provider will be notified to the client in a smaller product request, as they will only receive information that has changed. This is due to the ability of ChannelX to detect what information has changed and which is duplicated.\n  What can I receive Delta: will keep information up to date, sending the different updates that the hotels can have (prices, availability, inventory). Its main use is to receive real time changes in order to have the product up to date.\nFullCopy: sends a complete copy of the product of a hotel or a bunch of them. Its main use is to get a full refresh of the product in case something happens (data base dropped, server down for a period of time\u0026hellip;) or simply as a precaution measure.\nOnce you have received the first element of the Full Copy, please bear in mind that you will have to drop the loaded information, overwrite it with all the incoming information for that hotel or do a proper merge with the changing information.\nHow it works ChannelX is defined by 3 main parts. Each part has its own functionality and helps to define the global flow of the service.\n Product to service: every time a message arrives to the InventoryX service (either inventory notification, availability load, price load\u0026hellip;) and it belongs to a ChannelX relation, the message will be sent to this service. At first, this message will be converted from InventoryX API to an own ChannelX object. Once we have this, the message is sent to a storage database.\n Aggregation of the product: this process will be based on reading each one of the messages stored into application memory. Each of them will be added to a final message structure which will get the product with the final changes. In other words, this process aggregates the different changes received in a period of time and sends one unique ChannelX message. With this, we help the system to reduce message workload, compacting several messages into one in a period of time.\n Product Delivery: once the compacted message is created, application gets ready to send it to the Client.\n  What should I expect from HotelRatePlanInventoryNotif\nEach element can have one of these three states: \u0026lsquo;New\u0026rsquo;, \u0026lsquo;Delta\u0026rsquo;, \u0026lsquo;Remove\u0026rsquo;, each one will be indicated in its correspondent tag.\n New: it means the element was not added before. Add the element in your system with the information provided\n Delta (Edit): it means the element was created before but it has been edited. The element should be already created in your system, change the information of it with the new one. Note: here you will get all the info of the element, as we need to provide it, but it is not extrictly necessary that all of this info has changed, it could only change a part of it. You can override all the information already loaded for that specific element and reload it with the new one or have control of what has changed.\n Remove: it means the element has been removed. You should delete the element in your system and all its dependences. When deleting an element (Hotel, rate, derived rate or room), all the information you will receive about the element in the request is the code. If this happens, you should remove from your system all the elements that are depending on the one to delete.\n  HotelAvailNotif\nIt loads availability and conditions for the different elements. No rate information will be returned except code.\nHotelRatePlanNotif\nIt loads prices and supplements for the different elements. No rate information will be returned except Code, currency and status.\nThings to keep in mind  Our system works with up to 3 types of prices: per room, per occupancy and per standard occupancy. Although it is unusual that a channel works with more than one, it can happen. If this is the case, the 3 price types can coexist and the system should always return the lowest one at availability response. Once conditions are loaded they cannot be deleted, they can only modified by sending same dates with different values. If you do not get information for a certain range of dates that you got previously loaded in the system, do not overwrite them, as this means these days conditions that don\u0026rsquo;t appear in the request have not changed.  "
 },
 {
+	"uri": "/distribution/overview/",
+	"title": "Overview",
+	"tags": [],
+	"description": "Distribution-X Overview",
+	"content": "Text pending.\nJoin us on Slack to talk with us about how to use HotelX in your websites, apps, and products. You can also send us a Jira service desk request. If you would like any new features or more information in our documentation, send us an issues request.\n "
+},
+{
 	"uri": "/getting-started/overview/",
 	"title": "Overview",
 	"tags": [],
@@ -8526,6 +8540,13 @@
 	"content": "Our Certification Process should be completed once you have finished the development.\nOnce Certification Process logs have been delivered through our Customer Care service desk, we will review it and advise you once the integration is certified.\n Within your WelcomePack email you should have received a user to access our customer care portal. Click on Certification Process option and upload or drag and drop your logs. You will be issued a WECARE ticket number. Any time you wish to comment on the issue or check on the status of your certification, all you need to do is log into Jira and open your WECARE ticket number. Once you pass the certification process, you are technically ready to start buying through our Hub.  Send us the following information in order to proceed with the certification process:\n CURL request and response of all the XTG methods used on your side to make an availability, valuation, reservation, cancellation, booking detail request of each case and an example of booking list. Additionally, attach the resulting XTG response interpretation screenshots of your system so we can insure you are showing the information correctly.  "
 },
 {
+	"uri": "/distribution/howtos/",
+	"title": "How-to guides",
+	"tags": [],
+	"description": "Perform specific tasks",
+	"content": " The guides  "
+},
+{
 	"uri": "/logging/howtos/",
 	"title": "How-to guides",
 	"tags": [],
@@ -8923,6 +8944,13 @@
 	"tags": [],
 	"description": "",
 	"content": "HotelX limits the maximum rate of requests and graph deep. Specific policies vary depending on resource availability, user profile, service usage history, and other factors, and are subject to change without notice\n"
+},
+{
+	"uri": "/distribution/release-notes/",
+	"title": "Release Notes",
+	"tags": ["release-notes"],
+	"description": "New Updates &amp; Releases",
+	"content": "   Changelog Contains an accurated, chronologically-ordered list of notable changes\n    "
 },
 {
 	"uri": "/travelgatex/concepts/request-headers/",
@@ -9728,6 +9756,13 @@
 	"tags": [],
 	"description": "Contains a curated, chronologically ordered list of notable changes",
 	"content": "To make it easier for users and contributors to see precisely what notable changes have been made on the product.\nProduct Page Link\nAll notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.  "
+},
+{
+	"uri": "/distribution/",
+	"title": "Distribution-X",
+	"tags": [],
+	"description": "A comprehensive Business Rules Engine, right where you need it. When you need it!.",
+	"content": " Flexible, efficient and thorough distribution rules that will help your company maximise benefits while growing the overall sales by managing pricing and inventory for each of your customers. Effortlessly, regardless if you have 1 or 1,000 customers. Configure distribution rules per channel, hotel, booking date, board, etc in a user-friendly environment.\nBenefits:  Simple UI to manage to price, mark-ups and market factors effectively Apply business rules pre-post transactions  Features:  Pre-loaded basic rules Boolean and Fuzzy Logic rules possible  Join us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.   Overview Distribution-X Overview\n     How-to guides Perform specific tasks\n     Release Notes New Updates \u0026amp; Releases\n    "
 },
 {
 	"uri": "/legacy/",
