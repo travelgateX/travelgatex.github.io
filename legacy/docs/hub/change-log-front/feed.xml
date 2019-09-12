@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<link rel="self"  type="application/atom+xml" href="/legacy/docs/hub/change-log-front/feed.xml" />
+	<link rel="alternate" type="type/html" href="/legacy/docs/hub/change-log-front/" />
+	
+	
+	<generator url="https://gohugo.io" version="0.40.1">Hugo</generator>
+	<updated>
+		
+			2019-09-12 11:10:00 CEST
+		
+	</updated>
+	<id>urn:uuid:42099b4a-f021-553f-d98f-e056c2568d7c</id>
+	
+
+	<entry> 
+		<title type="text">Changelog</title> 
+		<category term="legacy" />
+		<link rel='alternate' type='type/html' href='/legacy/docs/hub/change-log-front/' />
+		<content type="html">
+			<description><![CDATA[
+
+<p>​</p>
+
+<h2 id="2019-09-12">2019-09-12</h2>
+
+<p>​
+<div class="release-types type-a">
+        <ul>
+<li>Added log system to detect clients that not use Gzip.</li>
+<li>Added code to send requests to the new serviceIntegration.</li>
+<li>Added stats to check the requests of the clients.</li>
+<li>Added header TGX-Audit when audit is enabled by database.</li>
+<li>Added key in consul to set an environment as down. Usefull for deploys.</li>
+</ul>
+
+</div></p>
+
+<p><div class="release-types type-c">
+        <ul>
+<li>Improve the cache of authorization permisions. This reduces the response time when caché is expired and must be reloaded.</li>
+<li>TGX Headers are bypassed in lowerCase</li>
+</ul>
+
+</div></p>
+]]></description>
+		</content>
+	</entry> 
+</feed>

@@ -8428,6 +8428,13 @@
 	"content": " Easily accessible log of notable changes to Insights-X\n2019-09-03  Added new table: benchmark_market_city_bw_(daily|weekly|monthly)_(buyer|seller). This one replaces insights_agg_(daily|weekly|monthly)_destination_tgx    Schema modified for tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller). Now, country field is outside the record.   2019-08-27  Added FAQs   2019-06-19  Added new tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller) and insights_agg_(daily|weekly|monthly)_destination_tgx   2019-06-05  Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.    Added new fields in effective bookings: username, commision, adults, childen, infants.    Benchmark is available now for Performance. Added new table in benchmark: performance_daily_(buyer|seller).   2019-05-27  Added new fields in benchmark datasets: TravelgateX total availability, total bookings and total revenue.   2019-04-11  Insights-X Content    Benchmark table daily_benchmarking_seller replaced by new ones benchmark tables    Added buyer field in benchmark seller tables. Added seller field in benchmark buyer tables.   2019-03-27  New table daily_benchmarking_seller    Benchmark Concepts   2019-02-21  New table effective_bookings_(buyer|seller)    daily_insights table renamed as insights_daily_(buyer|seller) daily_insights_(client|provider) table renamed as insights_daily_(buyer|seller)   2019-02-07  Insights-X product documentation   "
 },
 {
+	"uri": "/legacy/docs/hub/change-log-front/",
+	"title": "Changelog",
+	"tags": ["hub-changelog"],
+	"description": "Contains an accurated, chronologically-ordered list of notable changes",
+	"content": " ​\n2019-09-12 ​  Added log system to detect clients that not use Gzip. Added code to send requests to the new serviceIntegration. Added stats to check the requests of the clients. Added header TGX-Audit when audit is enabled by database. Added key in consul to set an environment as down. Usefull for deploys.  \n Improve the cache of authorization permisions. This reduces the response time when caché is expired and must be reloaded. TGX Headers are bypassed in lowerCase  \n"
+},
+{
 	"uri": "/logging/release-notes/changelog/",
 	"title": "Changelog",
 	"tags": ["products-changelog"],
@@ -9741,7 +9748,7 @@
 	"title": "Hub API Documentation",
 	"tags": [],
 	"description": "Read documentation on diferent Legacy APIs",
-	"content": "  Change log     Data Structure     Example Code     Hub Quotas     "
+	"content": "   Changelog Contains an accurated, chronologically-ordered list of notable changes\n    Data Structure     Example Code     Hub Quotas     "
 },
 {
 	"uri": "/hotel-x/plugins/format-files/netcompare/",
@@ -9980,13 +9987,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Version 1.0: Date 24/09/2013\n: First version of the API.\n|\nVersion 2.0: Date 11/09/2014\n: Added RetrieveBooking.\n|\nVersion 2.0.1: Date 19/09/2014\n: Added description of Common Elements.\n: Added description of Availability.\n|\nVersion 2.0.2: Date 22/09/2014\n: Added description of RateRule.\n: Added description of Book.\n|\nVersion 2.0.3: Date 24/09/2014\n: Added description of RetrieveBooking.\n: Added description of DestinationsTree.\n: Added description of HotelList.\n"
-},
-{
-	"uri": "/legacy/docs/hub/change-log/",
-	"title": "Change log",
-	"tags": [],
-	"description": "",
-	"content": "Version 1.0: Date 15/11/2012\n: Initial Release.\n|\nVersion 1.0.1: Date 03/12/2013\n: Added Full Sample Requests and Responses.\n|\nVersion 1.0.2: Date 05/02/2014\n: Added Java Example Code.\n|\nVersion 1.0.3: Date 19/02/2014\n: Added PHP Example Code.\n|\nVersion 1.0.4: Date 20/03/2014\n: Changing of url\u0026rsquo;s.\n"
 },
 {
 	"uri": "/hotel-push/code-lists/",
@@ -10260,6 +10260,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Method Goals This method aims to retrieve a list of the hotels that can be used as a destination in the provider\u0026rsquo;s system. The information details is provided by the provider.\nRemarks This method should be cached internally and only called once a week and in most cases once a month. The information details is provided by the provider.\nHotelListRQ Example \u0026lt;HotelListRQ xmlns:xsd = \u0026quot;http://www.w3.org/2001/XMLSchema\u0026quot; xmlns:xsi = \u0026quot;http://www.w3.org/2001/XMLSchema-instance\u0026quot;\u0026gt; \u0026lt;timeoutMilliseconds\u0026gt;900000\u0026lt;/timeoutMilliseconds\u0026gt; \u0026lt;source\u0026gt; \u0026lt;agencyCode\u0026gt;test\u0026lt;/agencyCode\u0026gt; \u0026lt;languageCode\u0026gt;es\u0026lt;/languageCode\u0026gt; \u0026lt;/source\u0026gt; \u0026lt;filterAuditData\u0026gt; \u0026lt;registerTransactions\u0026gt;false\u0026lt;/registerTransactions\u0026gt; \u0026lt;/filterAuditData\u0026gt; \u0026lt;Configuration codeProvider = \u0026quot;XXX\u0026quot;\u0026gt; \u0026lt;Credentials user = \u0026quot;xxxx\u0026quot; password = \u0026quot;xxxxxxx\u0026quot;\u0026gt; \u0026lt;UrlGeneric\u0026gt;xxxxxxxx\u0026lt;/UrlGeneric\u0026gt; \u0026lt;UrlIdentification xsi:nil = \u0026quot;true\u0026quot;/\u0026gt; \u0026lt;UrlAvailability xsi:nil = \u0026quot;true\u0026quot;/\u0026gt; \u0026lt;UrlRateRule xsi:nil = \u0026quot;true\u0026quot;/\u0026gt; \u0026lt;UrlBook xsi:nil = \u0026quot;true\u0026quot;/\u0026gt; \u0026lt;UrlsSpecific xsi:nil = \u0026quot;true\u0026quot;/\u0026gt; \u0026lt;/Credentials\u0026gt; \u0026lt;Attributes\u0026gt; \u0026lt;Attribute key = \u0026quot;XXX\u0026quot; value = \u0026quot;xxxxxx\u0026quot;/\u0026gt; \u0026lt;/Attributes\u0026gt; \u0026lt;/Configuration\u0026gt; \u0026lt;/HotelListRQ\u0026gt;  HotelListRQ Description The request just contains the elements of BaseRQ.\n   Element Number Type Description     HotelListRQ 1  Root node.    HotelListRS Example \u0026lt;HotelListRS xmlns:xsd = \u0026quot;http://www.w3.org/2001/XMLSchema\u0026quot; xmlns:xsi = \u0026quot;http://www.w3.org/2001/XMLSchema-instance\u0026quot;\u0026gt; \u0026lt;auditData\u0026gt; \u0026lt;timeStamp\u0026gt;2014-09-11T17:46:22.3354117+02:00\u0026lt;/timeStamp\u0026gt; \u0026lt;processTimeMilliseconds\u0026gt;0\u0026lt;/processTimeMilliseconds\u0026gt; \u0026lt;/auditData\u0026gt; \u0026lt;operationImplemented\u0026gt;true\u0026lt;/operationImplemented\u0026gt; \u0026lt;Hotel code = \u0026quot;XXXX\u0026quot; name = \u0026quot;xxxxxxxxxx\u0026quot; type = \u0026quot;XXXX\u0026quot; address = \u0026quot;xxxxxxxx\u0026quot; town = \u0026quot;XXXXXX\u0026quot; postalCode = \u0026quot;07840\u0026quot; ISOCountryCode = \u0026quot;ES\u0026quot; lat = \u0026quot;39.73544\u0026quot; lon = \u0026quot;2.80332\u0026quot;\u0026gt; \u0026lt;MinimumLevelDestination code = \u0026quot;XXXX\u0026quot;/\u0026gt; \u0026lt;ContactInfo email = \u0026quot;test@testmail.com\u0026quot; PhoneNmbr = \u0026quot;+34971249625\u0026quot; Fax = \u0026quot;+34971810719\u0026quot;/\u0026gt; \u0026lt;/Hotel\u0026gt; \u0026lt;Hotel code = \u0026quot;XXXX\u0026quot; name = \u0026quot;xxxxxxxxxxx\u0026quot; type = \u0026quot;XXXX\u0026quot; address = \u0026quot;xxxxxxxxxxxx\u0026quot; town = \u0026quot;xxxxxxxx\u0026quot; postalCode = \u0026quot;07340\u0026quot; ISOCountryCode = \u0026quot;ES\u0026quot; lat = \u0026quot;39.70589\u0026quot; lon = \u0026quot;2.78973\u0026quot;\u0026gt; \u0026lt;MinimumLevelDestination code = \u0026quot;XXXX\u0026quot;/\u0026gt; \u0026lt;ContactInfo email = \u0026quot;test@testmail.com\u0026quot; PhoneNmbr = \u0026quot;0034971762343\u0026quot; Fax = \u0026quot;0034971532645\u0026quot;/\u0026gt; \u0026lt;/Hotel\u0026gt; ... \u0026lt;/HotelListRS\u0026gt;  HotelListRS Description The result returns a list of the hotels that can be used as a destination in the provider\u0026rsquo;s system. Each of the retrieved Hotel objects contain a basic information that make possible the corresponding mapping on the client\u0026rsquo;s system.\n   Element Number Type Description     HotelListRS 1  Root Node.   HotelListRS/Hotel 1..n Hotel Contains a list of hotels. Each hotel provides a basic information in order to make possible the mapping.   @Hotel/code 1 String Contains the code that must be used in Availability in order to Search for this location.   @Hotel/name 1 String It is the full name of the Hotel in the provider\u0026rsquo;s system.   @Hotel/type 1 String Indicates the category of the hotel. this information is specified by the provider.   @Hotel/address 1 String Contains the full address of the hotel.   @Hotel/town 1 String Indicates the town where the hotel belongs.   @Hotel/postalCode 1 String Indicates the postal code where the hotel belongs.   @Hotel/ISOCountryCode 1 String Indicates the country of the hotel in ISO format.   @Hotel/lat 1 String Indicates the latitude coordinate of the hotel.   @Hotel/log 1 String Indicates the longitude coordinate of the hotel.   @Hotel/MinimumLevelDestination 1 MinimumLevel Destination Contains information of the lower level destination that contains this hotel as a child. Not always this information is provided.   @MinimumLevelDestination/code 1 String Indicates the code of the destination.   @MinimumLevelDestination/name 1 String Indicates the name of the destination.   @Hotel/ContactInfo 1 ContactInfo Contains the information necessary to contact the hotel.   @ContactInfo/email 1 String Indicates the email.   @ContactInfo/PhoneNmbr 1 String Indicates the phone number of the hotel.   @ContactInfo/Fax 1 String Indicates the fax of the hotel.    "
+},
+{
+	"uri": "/tags/hub-changelog/",
+	"title": "Hub Changelog",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "/legacy/docs/hub/quotas/",

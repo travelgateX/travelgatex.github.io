@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hub Changelog on TravelgateX Documentation</title>
+    <link>/tags/hub-changelog/</link>
+    <description>Recent content in Hub Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/hub-changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Changelog</title>
+      <link>/legacy/docs/hub/change-log-front/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legacy/docs/hub/change-log-front/</guid>
+      <description>​
+2019-09-12 ​  Added log system to detect clients that not use Gzip. Added code to send requests to the new serviceIntegration. Added stats to check the requests of the clients. Added header TGX-Audit when audit is enabled by database. Added key in consul to set an environment as down. Usefull for deploys.  
+ Improve the cache of authorization permisions. This reduces the response time when caché is expired and must be reloaded.</description>
+    </item>
+    
+  </channel>
+</rss>
