@@ -4384,16 +4384,6 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/hotel-x/concepts/search-mode/booking-flow/" class="dd-item">
-            <a href="/hotel-x/concepts/search-mode/booking-flow/">
-              <span style="padding-left: 8px;">Booking Flow</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/hotel-x/concepts/search-mode/search-single-mode/" class="dd-item">
-            <a href="/hotel-x/concepts/search-mode/search-single-mode/">
-              <span style="padding-left: 8px;">Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
           <li data-nav-id="/hotel-x/concepts/quotas-limits/" class="dd-item">
@@ -7028,7 +7018,13 @@
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);
-      $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
+      let offset = 150;
+      if(target.prop('tagName') === 'div'){
+        offset = 0;
+      }
+      
+      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500);
+      window.location.hash = target.attr('id');
       return false;
     });
   })

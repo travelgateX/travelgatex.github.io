@@ -6638,26 +6638,6 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/legacy/docs/hub/change-log/" class="dd-item">
-            <a href="/legacy/docs/hub/change-log/">
-              <span style="padding-left: 8px;">Change log</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/hub/data-structure/" class="dd-item">
-            <a href="/legacy/docs/hub/data-structure/">
-              <span style="padding-left: 8px;">Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/hub/example-codes/" class="dd-item">
-            <a href="/legacy/docs/hub/example-codes/">
-              <span style="padding-left: 8px;">Example Code</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/hub/quotas/" class="dd-item">
-            <a href="/legacy/docs/hub/quotas/">
-              <span style="padding-left: 8px;">Hub Quotas</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/legacy/docs/transfers/" class="dd-item">
@@ -7028,7 +7008,13 @@
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);
-      $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
+      let offset = 150;
+      if(target.prop('tagName') === 'div'){
+        offset = 0;
+      }
+      
+      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500);
+      window.location.hash = target.attr('id');
       return false;
     });
   })

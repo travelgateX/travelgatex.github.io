@@ -2513,16 +2513,6 @@
             </span><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/alerts-x/reference/schema/query/" class="dd-item">
-            <a href="/alerts-x/reference/schema/query/">
-              <span style="padding-left: 8px;">AlertsXQuery</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/alerts-x/reference/schema/mutation/" class="dd-item">
-            <a href="/alerts-x/reference/schema/mutation/">
-              <span style="padding-left: 8px;">AlertsXMutation</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/alerts-x/reference/objects/" class="dd-item">
@@ -7029,7 +7019,13 @@
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);
-      $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
+      let offset = 150;
+      if(target.prop('tagName') === 'div'){
+        offset = 0;
+      }
+      
+      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500);
+      window.location.hash = target.attr('id');
       return false;
     });
   })

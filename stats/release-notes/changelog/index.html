@@ -7028,7 +7028,13 @@
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);
-      $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
+      let offset = 150;
+      if(target.prop('tagName') === 'div'){
+        offset = 0;
+      }
+      
+      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500);
+      window.location.hash = target.attr('id');
       return false;
     });
   })
@@ -7337,15 +7343,15 @@
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/distribution/release-notes/changelog/">Distribution-X changelog</a></li>
+		<li><a href="/hotel-x/release-notes/changelog/">HotelX changelog</a></li>
+		
+		<li><a href="/insights-x/release-notes/changelog/">Insights-X changelog</a></li>
 		
 		<li><a href="/alerts-x/release-notes/changelog/">Alerts-X changelog</a></li>
 		
+		<li><a href="/distribution/release-notes/changelog/">Distribution-X changelog</a></li>
+		
 		<li><a href="/logging/release-notes/changelog/">Logging changelog</a></li>
-		
-		<li><a href="/channel-x/release-notes/changelog/">ChannelX changelog</a></li>
-		
-		<li><a href="/insights-x/release-notes/changelog/">Insights-X changelog</a></li>
 		
 	</ul>
 </div>
