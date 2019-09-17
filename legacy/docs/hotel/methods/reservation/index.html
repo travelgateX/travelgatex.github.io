@@ -7159,14 +7159,17 @@ is closed.</p>
         &lt;MealPlanCode&gt;D&lt;/MealPlanCode&gt;
         &lt;HotelCode&gt;10&lt;/HotelCode&gt;
         &lt;Nationality&gt;ES&lt;/Nationality&gt;
+        &lt;Holder title = &quot;Miss&quot; name = &quot;Test11&quot; surname = &quot;TestAp11&quot;/&gt;
         &lt;Price currency = &quot;EUR&quot; amount = &quot;36.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
         &lt;ResGuests&gt; 
             &lt;Guests&gt;
                 &lt;Guest roomCandidateId = &quot;1&quot; paxId = &quot;1&quot;&gt;
+                    &lt;Title&gt;Miss&lt;/Ttile&gt;  
                     &lt;GivenName&gt;Test11&lt;/GivenName&gt;
                     &lt;SurName&gt;TestAp11&lt;/SurName&gt;
                 &lt;/Guest&gt;
                 &lt;Guest roomCandidateId = &quot;1&quot; paxId = &quot;2&quot;&gt;
+                    &lt;Title&gt;Mr&lt;/Ttile&gt;  
                     &lt;GivenName&gt;Test12&lt;/GivenName&gt;
                     &lt;SurName&gt;TestAp12&lt;/SurName&gt;
                 &lt;/Guest&gt;
@@ -7341,6 +7344,34 @@ is closed.</p>
 </tr>
 
 <tr>
+<td>Holder</td>
+<td>1</td>
+<td></td>
+<td>Holder of the booking.</td>
+</tr>
+
+<tr>
+<td>@title</td>
+<td>1</td>
+<td></td>
+<td>Holder&rsquo;s title.</td>
+</tr>
+
+<tr>
+<td>@name</td>
+<td>1</td>
+<td></td>
+<td>Holder&rsquo;s name.</td>
+</tr>
+
+<tr>
+<td>@surname</td>
+<td>1</td>
+<td></td>
+<td>Holder&rsquo;s surname.</td>
+</tr>
+
+<tr>
 <td>Price</td>
 <td>1</td>
 <td></td>
@@ -7408,6 +7439,13 @@ is closed.</p>
 <td>1</td>
 <td>Integer</td>
 <td>Passenger id (starting at 1).</td>
+</tr>
+
+<tr>
+<td>ResGuests/Guests/Guest/Title</td>
+<td>1</td>
+<td>String</td>
+<td>Guest&rsquo;s title.</td>
 </tr>
 
 <tr>

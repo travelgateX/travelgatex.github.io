@@ -7121,6 +7121,80 @@
                 </a>
               </div>
               
+<p><strong>Version 1.0.22:</strong> Date 30/09/2019</p>
+
+<div class="release-types type-a">
+        <ul>
+<li><strong>Addition of tag AllowsNationality  in MetaData.</strong> Adding AllowsNationality tag to MetaData response to inform if the supplier allows to receive the Nationality of the Holder of the booking.</li>
+</ul>
+
+</div>
+
+<pre><code class="language-xml">&lt;Generic&gt;
+    &lt;AllowsNationality reviewDate = &quot;06/09/2019&quot;&gt;true&lt;/AllowsNationality&gt;
+    &lt;RequiredNationality reviewDate = &quot;06/09/2019&quot;&gt;true&lt;/RequiredNationality&gt;
+    &lt;AllowsOnRequest reviewDate = &quot;06/09/2019&quot;&gt;false&lt;/AllowsOnRequest&gt;
+&lt;/Generic&gt;
+</code></pre>
+
+<div class="release-types type-a">
+        <ul>
+<li><strong>Addition of Holder element in Reservation, ReservationRead and Cancellation requests.</strong> Adding Holder element tag to Reservation, ReservationRead and Cancellation requests. If the supplier allows, we would send this passenger as the Holder of the booking instead of picking the first guest.</li>
+</ul>
+
+</div>
+
+<pre><code class="language-xml">&lt;Holder title = &quot;Miss&quot; name = &quot;test&quot;  surname = &quot;test&quot;/&gt;
+</code></pre>
+
+<div class="release-types type-a">
+        <ul>
+<li><strong>Addition of Title element for guests in Reservation request and ReservationRead response.</strong> Adding Title element of guests to Reservation request and ReservationRead response.</li>
+</ul>
+
+</div>
+
+<pre><code class="language-xml">&lt;Guest roomCandidateId = &quot;1&quot; paxId = &quot;1&quot;&gt;
+    &lt;Title&gt;Miss&lt;/Title&gt;
+    &lt;GivenName&gt;Test11&lt;/GivenName&gt;
+    &lt;SurName&gt;TestAp11&lt;/SurName&gt;
+&lt;/Guest&gt;
+</code></pre>
+
+<div class="release-types type-a">
+        <ul>
+<li><strong>Addition of new payment type PayX.</strong> Adding PayX as a payment type.</li>
+</ul>
+
+</div>
+
+<table>
+<thead>
+<tr>
+<th><strong>Code</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>PayX</td>
+<td>The payment is managed by TravelgateX&rsquo;s payment system.</td>
+</tr>
+</tbody>
+</table>
+
+<p>(You can find full payment types list at <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/" target="_blank">Lists of Data</a>).</p>
+
+<div class="release-types type-a">
+        <ul>
+<li><strong>Addition new error code type 302.</strong> Adding code 302 for error Hotel Not Found in DescriptiveInfo.</li>
+</ul>
+
+</div>
+
+<p>(You can find full error codes list at <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/" target="_blank">Lists of Data</a>).</p>
+
 <p><strong>Version 1.0.22:</strong> Date 09/07/2019</p>
 
 <ul>
