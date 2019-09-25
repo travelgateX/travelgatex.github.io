@@ -6329,6 +6329,93 @@
             <span>Transfers API Documentation</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
+        <li data-nav-id="/legacy/docs/transfers/methods/" class="dd-item">
+          <a href="/legacy/docs/transfers/methods/">
+            <span>Transfers API methods</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/legacy/docs/transfers/methods/avail/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/avail/">
+              <span>Availability</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/reservation/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/reservation/">
+              <span>Booking</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/cancel-booking/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/cancel-booking/">
+              <span>CancelBooking</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/common-elements/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/common-elements/">
+              <span>Common Elements</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/destinationtree/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/destinationtree/">
+              <span>DestinationsTree</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/getrates/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/getrates/">
+              <span>GetRates</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/getsupplements/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/getsupplements/">
+              <span>GetSupplements</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/getsupplierratetransfertypes/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/getsupplierratetransfertypes/">
+              <span>GetSupplierRateTransfersTypes</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/getsuppliertransfertypes/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/getsuppliertransfertypes/">
+              <span>GetSupplierTransferTypes</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/gettransfertypes/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/gettransfertypes/">
+              <span>GetTransferTypes</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/getvehicles/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/getvehicles/">
+              <span>GetVehicles</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/hotel-list/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/hotel-list/">
+              <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/rate-rule/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/rate-rule/">
+              <span>RateRule (Pre-Booking)</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/methods/retrieve-booking/" class="dd-item">
+            <a href="/legacy/docs/transfers/methods/retrieve-booking/">
+              <span>RetrieveBooking</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/change-log/" class="dd-item">
+            <a href="/legacy/docs/transfers/change-log/">
+              <span>Change Log</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/legacy/docs/transfers/data-structure/" class="dd-item">
+            <a href="/legacy/docs/transfers/data-structure/">
+              <span>Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/legacy/docs/transportation/" class="dd-item">
@@ -6581,8 +6668,14 @@
 </script>
     </div>
     <div class="content">
-
-      
+        <script>
+            $(document).ready(function() {
+              if(window.location.hash){
+                var target = $(window.location.hash);
+                $('html, body').animate({ scrollTop: target.offset().top - 120 }, 500);
+              }
+            })
+      </script>
     <div id="searchbar" class="container iso-input-search">
         <div class="sb_search_div">
           <div class="ico-label">
@@ -6592,9 +6685,9 @@
         </div>
         <div class="sb_menu_div">
           <ul class="nav justify-content-end">
-              <li>
+              <li class="page-sections-item">
                   <a class="page-sections-menu-head" href="javascript:void(0)" target="_blank">
-                    <span>Page sections</span>
+                      <span><i title="Sections →" class="icon-menu"></i> Page sections</span>
                   </a>
                   <div class="page-sections-menu">
                       
@@ -6611,6 +6704,7 @@
                         });
 
                       if (ids.length) {
+                      $('.page-sections-item').css('visibility', 'visible');
                         $('.page-sections-menu').html(`
                               <nav id="TableOfContents">
                                 <ul>
@@ -6624,15 +6718,10 @@
                                 </ul>
                               </nav>
                               `);
-                      }else{
-                        $('.page-sections-menu')
-                          .parent()
-                          .hide();
+                              
                       }
-                    } else if ($('.page-sections-menu').children().length === 0) {
-                      $('.page-sections-menu')
-                        .parent()
-                        .hide();
+                    } else if ($('.page-sections-menu').children().length > 0) {
+                      $('.page-sections-item').css('visibility', 'visible');
                     }
 
                     $('.page-sections-menu-head').click(function() {
@@ -6643,27 +6732,42 @@
 
                     $('#TableOfContents').on('click', 'a[href^="#"]', function() {
                       var target = $(this.hash);
-                      let offset = 150;
-                      if (target.prop('tagName') === 'DIV') {
-                        offset = 0;
-                      }
+                      let offset = 120;
+                      
+                        
+                      
 
                       $('html, body').animate({ scrollTop: target.offset().top - offset }, 500);
                       window.location.hash = target.attr('id');
+                      $('.page-sections-menu').slideToggle('fast');
                       return false;
                     });
                   });
                 </script>
             <li>
               <a href="https://slack.travelgatex.com/" target="_blank">
-                <span>Chat</span>
+                <span>Chat <i title="Chat external" class="icon-share-alt"></i></span>
               </a>
             </li>
             <li>
               <a href="https://github.com/travelgateX/Issue-tracker" target="_blank">
-                <span>Issues Tracker</span>
+                <span>Issues Tracker <i title="Issues traker external" class="icon-share-alt"></i></span>
               </a>
             </li>
+            <li class="feed-menu-item"></li>
+              <script>
+                $(document).ready(function(){
+                  if(window.location.href.endsWith('/changelog/')){
+                    $('.feed-menu-item').html(`
+                      <a href="${window.location.href}index.xml" target="_blank">
+                        <span>RSS
+                          <i title="RSS →" class="icon-feed"></i>
+                        </span>
+                      </a>
+                    `).css('visibility', 'visible');
+                  }
+                })          
+              </script>
             <li>
               <a href="https://api.travelgatex.com" target="_blank">
                 <span>Playground
@@ -6703,7 +6807,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container main-container">
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">

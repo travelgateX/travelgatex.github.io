@@ -2339,80 +2339,6 @@
             <span>Release Notes</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/travelgatex/release-notes/roadmap/" class="dd-item">
-            <a href="/travelgatex/release-notes/roadmap/">
-              <span>Roadmap</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/graphql-schema-changes/" class="dd-item">
-            <a href="/travelgatex/release-notes/graphql-schema-changes/">
-              <span>GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/breaking-changes/" class="dd-item">
-            <a href="/travelgatex/release-notes/breaking-changes/">
-              <span>GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/travelgatex/release-notes/products-changelogs/" class="dd-item">
-          <a href="/travelgatex/release-notes/products-changelogs/">
-            <span>Products changelogs</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-channelx/" class="dd-item">
-            <a href="/travelgatex/release-notes/products-changelogs/changelog-channelx/">
-              <span>ChannelX</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-flightsx/" class="dd-item">
-            <a href="/travelgatex/release-notes/products-changelogs/changelog-flightsx/">
-              <span>FlightsX</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-mappea/" class="dd-item">
-            <a href="/travelgatex/release-notes/products-changelogs/changelog-mappea/">
-              <span>Mappea</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-inventory/" class="dd-item">
-            <a href="/travelgatex/release-notes/products-changelogs/changelog-inventory/">
-              <span>Inventory</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-speed/" class="dd-item">
-            <a href="/travelgatex/release-notes/products-changelogs/changelog-speed/">
-              <span>Speed</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-insights/" class="dd-item">
-            <a href="/travelgatex/release-notes/products-changelogs/changelog-insights/">
-              <span>Insights</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-distribution/" class="dd-item">
-            <a href="/travelgatex/release-notes/products-changelogs/changelog-distribution/">
-              <span>Distribution</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-stats/" class="dd-item">
-            <a href="/travelgatex/release-notes/products-changelogs/changelog-stats/">
-              <span>Stats</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-web/" class="dd-item">
-            <a href="/travelgatex/release-notes/products-changelogs/changelog-web/">
-              <span>travelgatex.com</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-        <li data-nav-id="/travelgatex/release-notes/changelog/" class="dd-item">
-          <a href="/travelgatex/release-notes/changelog/">
-            <span>Changelog</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-            </ul>
-        </li>
             </ul>
         </li>
           <li data-nav-id="/travelgatex/frequently-asked-questions/" class="dd-item">
@@ -6669,8 +6595,14 @@
 </script>
     </div>
     <div class="content">
-
-      
+        <script>
+            $(document).ready(function() {
+              if(window.location.hash){
+                var target = $(window.location.hash);
+                $('html, body').animate({ scrollTop: target.offset().top - 120 }, 500);
+              }
+            })
+      </script>
     <div id="searchbar" class="container iso-input-search">
         <div class="sb_search_div">
           <div class="ico-label">
@@ -6680,9 +6612,9 @@
         </div>
         <div class="sb_menu_div">
           <ul class="nav justify-content-end">
-              <li>
+              <li class="page-sections-item">
                   <a class="page-sections-menu-head" href="javascript:void(0)" target="_blank">
-                    <span>Page sections</span>
+                      <span><i title="Sections →" class="icon-menu"></i> Page sections</span>
                   </a>
                   <div class="page-sections-menu">
                       <nav id="TableOfContents">
@@ -6713,6 +6645,7 @@
                         });
 
                       if (ids.length) {
+                      $('.page-sections-item').css('visibility', 'visible');
                         $('.page-sections-menu').html(`
                               <nav id="TableOfContents">
                                 <ul>
@@ -6726,15 +6659,10 @@
                                 </ul>
                               </nav>
                               `);
-                      }else{
-                        $('.page-sections-menu')
-                          .parent()
-                          .hide();
+                              
                       }
-                    } else if ($('.page-sections-menu').children().length === 0) {
-                      $('.page-sections-menu')
-                        .parent()
-                        .hide();
+                    } else if ($('.page-sections-menu').children().length > 0) {
+                      $('.page-sections-item').css('visibility', 'visible');
                     }
 
                     $('.page-sections-menu-head').click(function() {
@@ -6745,27 +6673,42 @@
 
                     $('#TableOfContents').on('click', 'a[href^="#"]', function() {
                       var target = $(this.hash);
-                      let offset = 150;
-                      if (target.prop('tagName') === 'DIV') {
-                        offset = 0;
-                      }
+                      let offset = 120;
+                      
+                        
+                      
 
                       $('html, body').animate({ scrollTop: target.offset().top - offset }, 500);
                       window.location.hash = target.attr('id');
+                      $('.page-sections-menu').slideToggle('fast');
                       return false;
                     });
                   });
                 </script>
             <li>
               <a href="https://slack.travelgatex.com/" target="_blank">
-                <span>Chat</span>
+                <span>Chat <i title="Chat external" class="icon-share-alt"></i></span>
               </a>
             </li>
             <li>
               <a href="https://github.com/travelgateX/Issue-tracker" target="_blank">
-                <span>Issues Tracker</span>
+                <span>Issues Tracker <i title="Issues traker external" class="icon-share-alt"></i></span>
               </a>
             </li>
+            <li class="feed-menu-item"></li>
+              <script>
+                $(document).ready(function(){
+                  if(window.location.href.endsWith('/changelog/')){
+                    $('.feed-menu-item').html(`
+                      <a href="${window.location.href}index.xml" target="_blank">
+                        <span>RSS
+                          <i title="RSS →" class="icon-feed"></i>
+                        </span>
+                      </a>
+                    `).css('visibility', 'visible');
+                  }
+                })          
+              </script>
             <li>
               <a href="https://api.travelgatex.com" target="_blank">
                 <span>Playground
@@ -6805,7 +6748,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container main-container">
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">

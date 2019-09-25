@@ -4563,6 +4563,109 @@
               <span>Contents</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+        <li data-nav-id="/insights-x/datasets/" class="dd-item">
+          <a href="/insights-x/datasets/">
+            <span>Datasets</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/insights-x/datasets/types-of-datasets/" class="dd-item">
+            <a href="/insights-x/datasets/types-of-datasets/">
+              <span>Types of Datasets</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/insights-x/datasets/dataset-content/" class="dd-item">
+          <a href="/insights-x/datasets/dataset-content/">
+            <span>Datasets Contents</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+        <li data-nav-id="/insights-x/datasets/dataset-content/performance/" class="dd-item">
+          <a href="/insights-x/datasets/dataset-content/performance/">
+            <span>Performance Dataset</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/insights-x/datasets/dataset-content/performance/dataset-reference-performance/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-content/performance/dataset-reference-performance/">
+              <span>Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/insights-x/datasets/dataset-content/insights/" class="dd-item">
+          <a href="/insights-x/datasets/dataset-content/insights/">
+            <span>Insights Dataset</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/insights-x/datasets/dataset-content/insights/dataset-reference-insights/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-content/insights/dataset-reference-insights/">
+              <span>Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/" class="dd-item">
+          <a href="/insights-x/datasets/dataset-content/benchmark/">
+            <span>Benchmark Dataset</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+        <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/insights/" class="dd-item">
+          <a href="/insights-x/datasets/dataset-content/benchmark/insights/">
+            <span>Insights Benchmark Dataset</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/">
+              <span>Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/">
+              <span>Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/performance/" class="dd-item">
+          <a href="/insights-x/datasets/dataset-content/benchmark/performance/">
+            <span>Performance Benchmark Dataset</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/performance/dataset-reference-benchmark/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-content/benchmark/performance/dataset-reference-benchmark/">
+              <span>Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+            </ul>
+        </li>
+            </ul>
+        </li>
+          <li data-nav-id="/insights-x/datasets/dataset-tooling/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-tooling/">
+              <span>Tooling</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/insights-x/release-notes/" class="dd-item">
+          <a href="/insights-x/release-notes/">
+            <span>Release Notes</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+          <li data-nav-id="/insights-x/release-notes/roadmap/" class="dd-item">
+            <a href="/insights-x/release-notes/roadmap/">
+              <span>Roadmap</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/insights-x/release-notes/changelog/" class="dd-item">
+          <a href="/insights-x/release-notes/changelog/">
+            <span>Changelog</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+          </a>
+            <ul>
+            </ul>
+        </li>
+            </ul>
+        </li>
           <li data-nav-id="/insights-x/faqs/" class="dd-item">
             <a href="/insights-x/faqs/">
               <span>FAQs</span><i class="fa fa-circle-thin read-icon"></i>
@@ -6566,8 +6669,14 @@
 </script>
     </div>
     <div class="content">
-
-      
+        <script>
+            $(document).ready(function() {
+              if(window.location.hash){
+                var target = $(window.location.hash);
+                $('html, body').animate({ scrollTop: target.offset().top - 120 }, 500);
+              }
+            })
+      </script>
     <div id="searchbar" class="container iso-input-search">
         <div class="sb_search_div">
           <div class="ico-label">
@@ -6577,9 +6686,9 @@
         </div>
         <div class="sb_menu_div">
           <ul class="nav justify-content-end">
-              <li>
+              <li class="page-sections-item">
                   <a class="page-sections-menu-head" href="javascript:void(0)" target="_blank">
-                    <span>Page sections</span>
+                      <span><i title="Sections →" class="icon-menu"></i> Page sections</span>
                   </a>
                   <div class="page-sections-menu">
                       <nav id="TableOfContents">
@@ -6605,6 +6714,7 @@
                         });
 
                       if (ids.length) {
+                      $('.page-sections-item').css('visibility', 'visible');
                         $('.page-sections-menu').html(`
                               <nav id="TableOfContents">
                                 <ul>
@@ -6618,15 +6728,10 @@
                                 </ul>
                               </nav>
                               `);
-                      }else{
-                        $('.page-sections-menu')
-                          .parent()
-                          .hide();
+                              
                       }
-                    } else if ($('.page-sections-menu').children().length === 0) {
-                      $('.page-sections-menu')
-                        .parent()
-                        .hide();
+                    } else if ($('.page-sections-menu').children().length > 0) {
+                      $('.page-sections-item').css('visibility', 'visible');
                     }
 
                     $('.page-sections-menu-head').click(function() {
@@ -6637,27 +6742,42 @@
 
                     $('#TableOfContents').on('click', 'a[href^="#"]', function() {
                       var target = $(this.hash);
-                      let offset = 150;
-                      if (target.prop('tagName') === 'DIV') {
-                        offset = 0;
-                      }
+                      let offset = 120;
+                      
+                        
+                      
 
                       $('html, body').animate({ scrollTop: target.offset().top - offset }, 500);
                       window.location.hash = target.attr('id');
+                      $('.page-sections-menu').slideToggle('fast');
                       return false;
                     });
                   });
                 </script>
             <li>
               <a href="https://slack.travelgatex.com/" target="_blank">
-                <span>Chat</span>
+                <span>Chat <i title="Chat external" class="icon-share-alt"></i></span>
               </a>
             </li>
             <li>
               <a href="https://github.com/travelgateX/Issue-tracker" target="_blank">
-                <span>Issues Tracker</span>
+                <span>Issues Tracker <i title="Issues traker external" class="icon-share-alt"></i></span>
               </a>
             </li>
+            <li class="feed-menu-item"></li>
+              <script>
+                $(document).ready(function(){
+                  if(window.location.href.endsWith('/changelog/')){
+                    $('.feed-menu-item').html(`
+                      <a href="${window.location.href}index.xml" target="_blank">
+                        <span>RSS
+                          <i title="RSS →" class="icon-feed"></i>
+                        </span>
+                      </a>
+                    `).css('visibility', 'visible');
+                  }
+                })          
+              </script>
             <li>
               <a href="https://api.travelgatex.com" target="_blank">
                 <span>Playground
@@ -6697,7 +6817,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container main-container">
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
