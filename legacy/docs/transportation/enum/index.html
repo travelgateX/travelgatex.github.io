@@ -6664,22 +6664,6 @@
       $('#navbar').removeClass('toogled');
       $('#backgroundMenu').removeClass('toogled');
     });
-
-    $('.menu-right').prepend('<p class="menu-head">Sections <span class="toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></span></p>').on('click', 'span.toggle-menu', function(){ 
-      $('#TableOfContents').toggle()
-    }); 
-
-     $('#TableOfContents a[href^="#"]').click(function() {
-      var target = $(this.hash);
-      let offset = 150;
-      if(target.prop('tagName') === 'DIV'){
-        offset = 0;
-      }
-      
-      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500);
-      window.location.hash = target.attr('id');
-      return false;
-    });
   })
 
 </script>
@@ -6696,6 +6680,124 @@
         </div>
         <div class="sb_menu_div">
           <ul class="nav justify-content-end">
+              <li>
+                  <a class="page-sections-menu-head" href="javascript:void(0)" target="_blank">
+                    <span>Page sections</span>
+                  </a>
+                  <div class="page-sections-menu">
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#enumerate-description">Enumerate description</a>
+<ul>
+<li>
+<ul>
+<li><a href="#resident-discount-type">Resident discount type</a></li>
+<li><a href="#charge-type">Charge type</a></li>
+<li><a href="#block-attribute-type">Block Attribute Type</a></li>
+<li><a href="#refund-type">Refund type</a></li>
+<li><a href="#refund-process-type">Refund process type</a></li>
+<li><a href="#refund-amount-type">Refund amount type</a></li>
+<li><a href="#passenger-type">Passenger type</a></li>
+<li><a href="#direction-type">Direction type</a>
+<ul>
+<li>
+<ul>
+<li><a href="#response-status-type">Response Status type</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#trip-type">Trip type</a></li>
+<li><a href="#locator-type">Locator type</a></li>
+<li><a href="#amount-type">Amount Type</a></li>
+<li><a href="#payment-type">Payment Type</a></li>
+<li><a href="#issue-type">Issue Type</a></li>
+<li><a href="#journey-action-type">Journey Action Type</a></li>
+<li><a href="#location-type">Location Type</a></li>
+<li><a href="#special-supplement-type">Special Supplement Type</a></li>
+<li><a href="#discount-card-type">Discount card type</a></li>
+<li><a href="#transport-type">Transport Type</a></li>
+<li><a href="#cabin-class-type">Cabin Class Type</a></li>
+<li><a href="#title-type">Title Type</a></li>
+<li><a href="#document-type">Document Type</a></li>
+<li><a href="#access-type">Access Type</a></li>
+<li><a href="#ticket-type">Ticket Type</a></li>
+<li><a href="#ticket-status-type">Ticket Status Type</a></li>
+<li><a href="#amount-applies-to-type">Amount Applies To Type</a></li>
+<li><a href="#checkin-type">Checkin Type</a></li>
+<li><a href="#segment-applies-to-type">Segment Applies To Type</a></li>
+<li><a href="#supplement-payment-type">Supplement Payment Type</a></li>
+<li><a href="#filter-mode-type">Filter Mode Type</a></li>
+<li><a href="#optional-element-type">Optional Element Type</a></li>
+<li><a href="#fare-type">Fare Type</a></li>
+<li><a href="#block-type">Block Type</a></li>
+<li><a href="#logical-operator-type">Logical Operator Type</a></li>
+<li><a href="#verified-resident-type">Verified Resident Type</a></li>
+<li><a href="#spanish-discount-type">Spanish Discount Type</a></li>
+<li><a href="#checkin-status-type">Checkin Status Type</a></li>
+<li><a href="#large-family-discount-type">Large Family Discount Type</a></li>
+<li><a href="#segment-status-type">Segment Status Type</a></li>
+<li><a href="#baggage-type">Baggage Type</a></li>
+<li><a href="#special-supplement-status-type">Special Supplement Status Type</a></li>
+<li><a href="#reservation-status-type">Reservation Status Type</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+                  </div>
+                </li>
+                <script>
+                  $(document).ready(function() {
+                    if (window.location.href.includes('/release-notes/changelog/')) {
+                      const ids = [];
+                      $('.content-center')
+                        .find('h2')
+                        .each(function() {
+                          ids.push(this.id);
+                        });
+
+                      if (ids.length) {
+                        $('.page-sections-menu').html(`
+                              <nav id="TableOfContents">
+                                <ul>
+                                    <li>
+                                        <ul class="changelog-menu">
+                                            ${ids.map(
+                                              id => `<li><a href="#${id}">${id}</a></li>`
+                                            ).join('')}
+                                        </ul>
+                                    </li>
+                                </ul>
+                              </nav>
+                              `);
+                      }else{
+                        $('.page-sections-menu')
+                          .parent()
+                          .hide();
+                      }
+                    } else if ($('.page-sections-menu').children().length === 0) {
+                      $('.page-sections-menu')
+                        .parent()
+                        .hide();
+                    }
+
+                    $('.page-sections-menu-head').click(function() {
+                      $(this).toggleClass('active');
+                      $('.page-sections-menu').slideToggle('fast');
+                      return false;
+                    });
+
+                    $('#TableOfContents').on('click', 'a[href^="#"]', function() {
+                      var target = $(this.hash);
+                      let offset = 150;
+                      if (target.prop('tagName') === 'DIV') {
+                        offset = 0;
+                      }
+
+                      $('html, body').animate({ scrollTop: target.offset().top - offset }, 500);
+                      window.location.hash = target.attr('id');
+                      return false;
+                    });
+                  });
+                </script>
             <li>
               <a href="https://slack.travelgatex.com/" target="_blank">
                 <span>Chat</span>
@@ -8590,67 +8692,7 @@
             </div>
             <div id="backgroundMenu"></div>
           </div>
-          <div class="menu-right">
-            <div>
-              <nav id="TableOfContents">
-<ul>
-<li><a href="#enumerate-description">Enumerate description</a>
-<ul>
-<li>
-<ul>
-<li><a href="#resident-discount-type">Resident discount type</a></li>
-<li><a href="#charge-type">Charge type</a></li>
-<li><a href="#block-attribute-type">Block Attribute Type</a></li>
-<li><a href="#refund-type">Refund type</a></li>
-<li><a href="#refund-process-type">Refund process type</a></li>
-<li><a href="#refund-amount-type">Refund amount type</a></li>
-<li><a href="#passenger-type">Passenger type</a></li>
-<li><a href="#direction-type">Direction type</a>
-<ul>
-<li>
-<ul>
-<li><a href="#response-status-type">Response Status type</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#trip-type">Trip type</a></li>
-<li><a href="#locator-type">Locator type</a></li>
-<li><a href="#amount-type">Amount Type</a></li>
-<li><a href="#payment-type">Payment Type</a></li>
-<li><a href="#issue-type">Issue Type</a></li>
-<li><a href="#journey-action-type">Journey Action Type</a></li>
-<li><a href="#location-type">Location Type</a></li>
-<li><a href="#special-supplement-type">Special Supplement Type</a></li>
-<li><a href="#discount-card-type">Discount card type</a></li>
-<li><a href="#transport-type">Transport Type</a></li>
-<li><a href="#cabin-class-type">Cabin Class Type</a></li>
-<li><a href="#title-type">Title Type</a></li>
-<li><a href="#document-type">Document Type</a></li>
-<li><a href="#access-type">Access Type</a></li>
-<li><a href="#ticket-type">Ticket Type</a></li>
-<li><a href="#ticket-status-type">Ticket Status Type</a></li>
-<li><a href="#amount-applies-to-type">Amount Applies To Type</a></li>
-<li><a href="#checkin-type">Checkin Type</a></li>
-<li><a href="#segment-applies-to-type">Segment Applies To Type</a></li>
-<li><a href="#supplement-payment-type">Supplement Payment Type</a></li>
-<li><a href="#filter-mode-type">Filter Mode Type</a></li>
-<li><a href="#optional-element-type">Optional Element Type</a></li>
-<li><a href="#fare-type">Fare Type</a></li>
-<li><a href="#block-type">Block Type</a></li>
-<li><a href="#logical-operator-type">Logical Operator Type</a></li>
-<li><a href="#verified-resident-type">Verified Resident Type</a></li>
-<li><a href="#spanish-discount-type">Spanish Discount Type</a></li>
-<li><a href="#checkin-status-type">Checkin Status Type</a></li>
-<li><a href="#large-family-discount-type">Large Family Discount Type</a></li>
-<li><a href="#segment-status-type">Segment Status Type</a></li>
-<li><a href="#baggage-type">Baggage Type</a></li>
-<li><a href="#special-supplement-status-type">Special Supplement Status Type</a></li>
-<li><a href="#reservation-status-type">Reservation Status Type</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-            </div>
-          </div>
+          
           <div class="clear"></div>
         </div>
       </div>

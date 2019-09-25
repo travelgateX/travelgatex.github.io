@@ -6329,93 +6329,6 @@
             <span>Transfers API Documentation</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-        <li data-nav-id="/legacy/docs/transfers/methods/" class="dd-item">
-          <a href="/legacy/docs/transfers/methods/">
-            <span>Transfers API methods</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-          <li data-nav-id="/legacy/docs/transfers/methods/avail/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/avail/">
-              <span>Availability</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/reservation/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/reservation/">
-              <span>Booking</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/cancel-booking/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/cancel-booking/">
-              <span>CancelBooking</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/common-elements/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/common-elements/">
-              <span>Common Elements</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/destinationtree/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/destinationtree/">
-              <span>DestinationsTree</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/getrates/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/getrates/">
-              <span>GetRates</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/getsupplements/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/getsupplements/">
-              <span>GetSupplements</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/getsupplierratetransfertypes/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/getsupplierratetransfertypes/">
-              <span>GetSupplierRateTransfersTypes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/getsuppliertransfertypes/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/getsuppliertransfertypes/">
-              <span>GetSupplierTransferTypes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/gettransfertypes/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/gettransfertypes/">
-              <span>GetTransferTypes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/getvehicles/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/getvehicles/">
-              <span>GetVehicles</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/hotel-list/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/hotel-list/">
-              <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/rate-rule/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/rate-rule/">
-              <span>RateRule (Pre-Booking)</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/methods/retrieve-booking/" class="dd-item">
-            <a href="/legacy/docs/transfers/methods/retrieve-booking/">
-              <span>RetrieveBooking</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/change-log/" class="dd-item">
-            <a href="/legacy/docs/transfers/change-log/">
-              <span>Change Log</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/transfers/data-structure/" class="dd-item">
-            <a href="/legacy/docs/transfers/data-structure/">
-              <span>Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/legacy/docs/transportation/" class="dd-item">
@@ -6663,22 +6576,6 @@
       $('#navbar').removeClass('toogled');
       $('#backgroundMenu').removeClass('toogled');
     });
-
-    $('.menu-right').prepend('<p class="menu-head">Sections <span class="toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></span></p>').on('click', 'span.toggle-menu', function(){ 
-      $('#TableOfContents').toggle()
-    }); 
-
-     $('#TableOfContents a[href^="#"]').click(function() {
-      var target = $(this.hash);
-      let offset = 150;
-      if(target.prop('tagName') === 'DIV'){
-        offset = 0;
-      }
-      
-      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500);
-      window.location.hash = target.attr('id');
-      return false;
-    });
   })
 
 </script>
@@ -6695,6 +6592,68 @@
         </div>
         <div class="sb_menu_div">
           <ul class="nav justify-content-end">
+              <li>
+                  <a class="page-sections-menu-head" href="javascript:void(0)" target="_blank">
+                    <span>Page sections</span>
+                  </a>
+                  <div class="page-sections-menu">
+                      
+                  </div>
+                </li>
+                <script>
+                  $(document).ready(function() {
+                    if (window.location.href.includes('/release-notes/changelog/')) {
+                      const ids = [];
+                      $('.content-center')
+                        .find('h2')
+                        .each(function() {
+                          ids.push(this.id);
+                        });
+
+                      if (ids.length) {
+                        $('.page-sections-menu').html(`
+                              <nav id="TableOfContents">
+                                <ul>
+                                    <li>
+                                        <ul class="changelog-menu">
+                                            ${ids.map(
+                                              id => `<li><a href="#${id}">${id}</a></li>`
+                                            ).join('')}
+                                        </ul>
+                                    </li>
+                                </ul>
+                              </nav>
+                              `);
+                      }else{
+                        $('.page-sections-menu')
+                          .parent()
+                          .hide();
+                      }
+                    } else if ($('.page-sections-menu').children().length === 0) {
+                      $('.page-sections-menu')
+                        .parent()
+                        .hide();
+                    }
+
+                    $('.page-sections-menu-head').click(function() {
+                      $(this).toggleClass('active');
+                      $('.page-sections-menu').slideToggle('fast');
+                      return false;
+                    });
+
+                    $('#TableOfContents').on('click', 'a[href^="#"]', function() {
+                      var target = $(this.hash);
+                      let offset = 150;
+                      if (target.prop('tagName') === 'DIV') {
+                        offset = 0;
+                      }
+
+                      $('html, body').animate({ scrollTop: target.offset().top - offset }, 500);
+                      window.location.hash = target.attr('id');
+                      return false;
+                    });
+                  });
+                </script>
             <li>
               <a href="https://slack.travelgatex.com/" target="_blank">
                 <span>Chat</span>
@@ -6833,11 +6792,7 @@
             </div>
             <div id="backgroundMenu"></div>
           </div>
-          <div class="menu-right">
-            <div>
-              
-            </div>
-          </div>
+          
           <div class="clear"></div>
         </div>
       </div>

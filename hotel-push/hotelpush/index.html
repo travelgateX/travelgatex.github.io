@@ -6662,22 +6662,6 @@
       $('#navbar').removeClass('toogled');
       $('#backgroundMenu').removeClass('toogled');
     });
-
-    $('.menu-right').prepend('<p class="menu-head">Sections <span class="toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></span></p>').on('click', 'span.toggle-menu', function(){ 
-      $('#TableOfContents').toggle()
-    }); 
-
-     $('#TableOfContents a[href^="#"]').click(function() {
-      var target = $(this.hash);
-      let offset = 150;
-      if(target.prop('tagName') === 'DIV'){
-        offset = 0;
-      }
-      
-      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500);
-      window.location.hash = target.attr('id');
-      return false;
-    });
   })
 
 </script>
@@ -6694,6 +6678,136 @@
         </div>
         <div class="sb_menu_div">
           <ul class="nav justify-content-end">
+              <li>
+                  <a class="page-sections-menu-head" href="javascript:void(0)" target="_blank">
+                    <span>Page sections</span>
+                  </a>
+                  <div class="page-sections-menu">
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#xml-travelgate-hotel-push-api">XML Travelgate Hotel PUSH API</a>
+<ul>
+<li><a href="#table-of-contents">Table Of Contents</a></li>
+<li><a href="#change-log">Change Log</a></li>
+<li><a href="#xml-travelgate-hotel-push-api-1">XML Travelgate Hotel PUSH API</a></li>
+<li><a href="#audience">Audience</a></li>
+<li><a href="#document-goals">Document Goals</a></li>
+<li><a href="#connectivity">Connectivity</a></li>
+<li><a href="#messages">Messages</a></li>
+<li><a href="#typical-exchange-message-scenario">Typical Exchange Message Scenario</a></li>
+<li><a href="#retrieve-messages">Retrieve Messages</a></li>
+<li><a href="#hotelrateplaninventoryretrieve">HotelRatePlanInventoryRetrieve</a></li>
+<li><a href="#hotelrateplaninventoryretrieverq">HotelRatePlanInventoryRetrieveRQ</a></li>
+<li><a href="#hotelrateplaninventoryretrievers">HotelRatePlanInventoryRetrieveRS</a>
+<ul>
+<li><a href="#example-for-rateplan">Example for RatePlan</a></li>
+<li><a href="#example-for-derived-rateplan">Example for Derived RatePlan</a></li>
+</ul></li>
+<li><a href="#hotelrateplanretrieve">HotelRatePlanRetrieve</a></li>
+<li><a href="#hotelrateplanretrieverq">HotelRatePlanRetrieveRQ</a></li>
+<li><a href="#hotelrateplanretrievers">HotelRatePlanRetrieveRS</a>
+<ul>
+<li><a href="#example-for-rateplan-1">Example for RatePlan</a></li>
+<li><a href="#example-for-derived-rateplan-1">Example for Derived RatePlan</a></li>
+</ul></li>
+<li><a href="#hotelavailretrieve">HotelAvailRetrieve</a></li>
+<li><a href="#hotelavailretrieverq">HotelAvailRetrieveRQ</a></li>
+<li><a href="#hotelavailretrievers">HotelAvailRetrieveRS</a>
+<ul>
+<li><a href="#example-for-rateplan-2">Example for RatePlan</a></li>
+<li><a href="#example-for-derived-rateplan-2">Example for Derived RatePlan</a></li>
+</ul></li>
+<li><a href="#hotelresretrieve">HotelResRetrieve</a></li>
+<li><a href="#hotelresretrieverq">HotelResRetrieveRQ</a></li>
+<li><a href="#hotelresretrievers">HotelResRetrieveRS</a></li>
+<li><a href="#notify-messages">Notify Messages</a></li>
+<li><a href="#hotelrateplannotif">HotelRatePlanNotif</a></li>
+<li><a href="#hotelrateplannotifrq">HotelRatePlanNotifRQ</a>
+<ul>
+<li><a href="#example-for-rateplan-3">Example for RatePlan</a></li>
+<li><a href="#example-for-derived-rateplan-3">Example for Derived RatePlan</a></li>
+</ul></li>
+<li><a href="#hotelrateplannotifrs">HotelRatePlanNotifRS</a></li>
+<li><a href="#hotelavailnotif">HotelAvailNotif</a></li>
+<li><a href="#hotelavailnotifrq">HotelAvailNotifRQ</a>
+<ul>
+<li><a href="#example-for-rateplan-4">Example for RatePlan</a></li>
+<li><a href="#example-for-derived-rateplan-4">Example for Derived RatePlan</a></li>
+</ul></li>
+<li><a href="#hotelavailnotifrs">HotelAvailNotifRS</a></li>
+<li><a href="#error-codes">Error Codes</a></li>
+<li><a href="#full-hotelrateplaninventoryretrieverq">Full HotelRatePlanInventoryRetrieveRQ</a></li>
+<li><a href="#full-hotelrateplaninventoryretrievers">Full HotelRatePlanInventoryRetrieveRS</a></li>
+<li><a href="#full-hotelrateplanretrieverq">Full HotelRatePlanRetrieveRQ</a></li>
+<li><a href="#full-hotelrateplanretrievers">Full HotelRatePlanRetrieveRS</a></li>
+<li><a href="#full-hotelavailretrieverq">Full HotelAvailRetrieveRQ</a></li>
+<li><a href="#full-hotelavailretrievers">Full HotelAvailRetrieveRS</a></li>
+<li><a href="#full-hotelrateplannotifrq">Full HotelRatePlanNotifRQ</a></li>
+<li><a href="#full-hotelrateplannotifrs">Full HotelRatePlanNotifRS</a></li>
+<li><a href="#full-hotelavailnotifrq">Full HotelAvailNotifRQ</a></li>
+<li><a href="#full-hotelavailnotifrs">Full HotelAvailNotifRS</a></li>
+<li><a href="#certification-process">Certification Process</a></li>
+<li><a href="#meal-plan-codes-ota-mpt">Meal Plan Codes (OTA MPT)</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul></li>
+</ul>
+</nav>
+                  </div>
+                </li>
+                <script>
+                  $(document).ready(function() {
+                    if (window.location.href.includes('/release-notes/changelog/')) {
+                      const ids = [];
+                      $('.content-center')
+                        .find('h2')
+                        .each(function() {
+                          ids.push(this.id);
+                        });
+
+                      if (ids.length) {
+                        $('.page-sections-menu').html(`
+                              <nav id="TableOfContents">
+                                <ul>
+                                    <li>
+                                        <ul class="changelog-menu">
+                                            ${ids.map(
+                                              id => `<li><a href="#${id}">${id}</a></li>`
+                                            ).join('')}
+                                        </ul>
+                                    </li>
+                                </ul>
+                              </nav>
+                              `);
+                      }else{
+                        $('.page-sections-menu')
+                          .parent()
+                          .hide();
+                      }
+                    } else if ($('.page-sections-menu').children().length === 0) {
+                      $('.page-sections-menu')
+                        .parent()
+                        .hide();
+                    }
+
+                    $('.page-sections-menu-head').click(function() {
+                      $(this).toggleClass('active');
+                      $('.page-sections-menu').slideToggle('fast');
+                      return false;
+                    });
+
+                    $('#TableOfContents').on('click', 'a[href^="#"]', function() {
+                      var target = $(this.hash);
+                      let offset = 150;
+                      if (target.prop('tagName') === 'DIV') {
+                        offset = 0;
+                      }
+
+                      $('html, body').animate({ scrollTop: target.offset().top - offset }, 500);
+                      window.location.hash = target.attr('id');
+                      return false;
+                    });
+                  });
+                </script>
             <li>
               <a href="https://slack.travelgatex.com/" target="_blank">
                 <span>Chat</span>
@@ -9905,79 +10019,7 @@ Free <a href="http://xml.tg" target="_blank">URL shortener</a> by XML Travelgate
             </div>
             <div id="backgroundMenu"></div>
           </div>
-          <div class="menu-right">
-            <div>
-              <nav id="TableOfContents">
-<ul>
-<li><a href="#xml-travelgate-hotel-push-api">XML Travelgate Hotel PUSH API</a>
-<ul>
-<li><a href="#table-of-contents">Table Of Contents</a></li>
-<li><a href="#change-log">Change Log</a></li>
-<li><a href="#xml-travelgate-hotel-push-api-1">XML Travelgate Hotel PUSH API</a></li>
-<li><a href="#audience">Audience</a></li>
-<li><a href="#document-goals">Document Goals</a></li>
-<li><a href="#connectivity">Connectivity</a></li>
-<li><a href="#messages">Messages</a></li>
-<li><a href="#typical-exchange-message-scenario">Typical Exchange Message Scenario</a></li>
-<li><a href="#retrieve-messages">Retrieve Messages</a></li>
-<li><a href="#hotelrateplaninventoryretrieve">HotelRatePlanInventoryRetrieve</a></li>
-<li><a href="#hotelrateplaninventoryretrieverq">HotelRatePlanInventoryRetrieveRQ</a></li>
-<li><a href="#hotelrateplaninventoryretrievers">HotelRatePlanInventoryRetrieveRS</a>
-<ul>
-<li><a href="#example-for-rateplan">Example for RatePlan</a></li>
-<li><a href="#example-for-derived-rateplan">Example for Derived RatePlan</a></li>
-</ul></li>
-<li><a href="#hotelrateplanretrieve">HotelRatePlanRetrieve</a></li>
-<li><a href="#hotelrateplanretrieverq">HotelRatePlanRetrieveRQ</a></li>
-<li><a href="#hotelrateplanretrievers">HotelRatePlanRetrieveRS</a>
-<ul>
-<li><a href="#example-for-rateplan-1">Example for RatePlan</a></li>
-<li><a href="#example-for-derived-rateplan-1">Example for Derived RatePlan</a></li>
-</ul></li>
-<li><a href="#hotelavailretrieve">HotelAvailRetrieve</a></li>
-<li><a href="#hotelavailretrieverq">HotelAvailRetrieveRQ</a></li>
-<li><a href="#hotelavailretrievers">HotelAvailRetrieveRS</a>
-<ul>
-<li><a href="#example-for-rateplan-2">Example for RatePlan</a></li>
-<li><a href="#example-for-derived-rateplan-2">Example for Derived RatePlan</a></li>
-</ul></li>
-<li><a href="#hotelresretrieve">HotelResRetrieve</a></li>
-<li><a href="#hotelresretrieverq">HotelResRetrieveRQ</a></li>
-<li><a href="#hotelresretrievers">HotelResRetrieveRS</a></li>
-<li><a href="#notify-messages">Notify Messages</a></li>
-<li><a href="#hotelrateplannotif">HotelRatePlanNotif</a></li>
-<li><a href="#hotelrateplannotifrq">HotelRatePlanNotifRQ</a>
-<ul>
-<li><a href="#example-for-rateplan-3">Example for RatePlan</a></li>
-<li><a href="#example-for-derived-rateplan-3">Example for Derived RatePlan</a></li>
-</ul></li>
-<li><a href="#hotelrateplannotifrs">HotelRatePlanNotifRS</a></li>
-<li><a href="#hotelavailnotif">HotelAvailNotif</a></li>
-<li><a href="#hotelavailnotifrq">HotelAvailNotifRQ</a>
-<ul>
-<li><a href="#example-for-rateplan-4">Example for RatePlan</a></li>
-<li><a href="#example-for-derived-rateplan-4">Example for Derived RatePlan</a></li>
-</ul></li>
-<li><a href="#hotelavailnotifrs">HotelAvailNotifRS</a></li>
-<li><a href="#error-codes">Error Codes</a></li>
-<li><a href="#full-hotelrateplaninventoryretrieverq">Full HotelRatePlanInventoryRetrieveRQ</a></li>
-<li><a href="#full-hotelrateplaninventoryretrievers">Full HotelRatePlanInventoryRetrieveRS</a></li>
-<li><a href="#full-hotelrateplanretrieverq">Full HotelRatePlanRetrieveRQ</a></li>
-<li><a href="#full-hotelrateplanretrievers">Full HotelRatePlanRetrieveRS</a></li>
-<li><a href="#full-hotelavailretrieverq">Full HotelAvailRetrieveRQ</a></li>
-<li><a href="#full-hotelavailretrievers">Full HotelAvailRetrieveRS</a></li>
-<li><a href="#full-hotelrateplannotifrq">Full HotelRatePlanNotifRQ</a></li>
-<li><a href="#full-hotelrateplannotifrs">Full HotelRatePlanNotifRS</a></li>
-<li><a href="#full-hotelavailnotifrq">Full HotelAvailNotifRQ</a></li>
-<li><a href="#full-hotelavailnotifrs">Full HotelAvailNotifRS</a></li>
-<li><a href="#certification-process">Certification Process</a></li>
-<li><a href="#meal-plan-codes-ota-mpt">Meal Plan Codes (OTA MPT)</a></li>
-<li><a href="#faq">FAQ</a></li>
-</ul></li>
-</ul>
-</nav>
-            </div>
-          </div>
+          
           <div class="clear"></div>
         </div>
       </div>
