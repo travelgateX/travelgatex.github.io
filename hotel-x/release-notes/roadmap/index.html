@@ -6757,7 +6757,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  if(window.location.href.endsWith('/changelog/')){
+                  if(window.location.href.includes('/release-notes/changelog/')){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
@@ -6864,9 +6864,9 @@
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/travelgatex/release-notes/roadmap/">TravelgateX roadmap</a></li>
-		
 		<li><a href="/insights-x/release-notes/roadmap/">Insights-X roadmap</a></li>
+		
+		<li><a href="/travelgatex/release-notes/roadmap/">TravelgateX roadmap</a></li>
 		
 	</ul>
 </div>

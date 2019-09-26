@@ -5821,13 +5821,6 @@
               <span>GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-        <li data-nav-id="/stats/release-notes/changelog/" class="dd-item">
-          <a href="/stats/release-notes/changelog/">
-            <span>Changelog</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-          </a>
-            <ul>
-            </ul>
-        </li>
             </ul>
         </li>
             </ul>
@@ -6767,7 +6760,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  if(window.location.href.endsWith('/changelog/')){
+                  if(window.location.href.includes('/release-notes/changelog/')){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS

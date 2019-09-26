@@ -5217,11 +5217,6 @@
             <span>Schema</span><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
           </a>
             <ul>
-          <li data-nav-id="/stats/reference/schema/query/" class="dd-item">
-            <a href="/stats/reference/schema/query/">
-              <span>StatsQuery</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/stats/reference/objects/" class="dd-item">
@@ -6767,7 +6762,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  if(window.location.href.endsWith('/changelog/')){
+                  if(window.location.href.includes('/release-notes/changelog/')){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
