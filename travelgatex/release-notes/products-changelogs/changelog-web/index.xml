@@ -6,10 +6,20 @@
     <description>Recent content in travelgatex.com on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Jun 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/travelgatex/release-notes/products-changelogs/changelog-web/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019-07-15</title>
+      <link>/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-15/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0200</pubDate>
+      
+      <guid>/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-15/</guid>
+      <description>2019-07-15  Alerts: added configuration multiselectors Profiles: Fully enabled filter profiles Logging: Added new filter number of results Entities: Added sorting method Profiles: Updated query to look for stats and formated text in profiles    Logging: Filter errors refactored Logging: Added red control to non filled required filters Logging: Changed time to 24h mode, without am/pm  
+ Logging: Logging table wasn&amp;rsquo;t showing the timestamps on firefox, now is fixed Logging: Enable showing organisation suppliers on SELLER mode Logging: Hide the table on no results</description>
+    </item>
     
     <item>
       <title>2019-06-28</title>
