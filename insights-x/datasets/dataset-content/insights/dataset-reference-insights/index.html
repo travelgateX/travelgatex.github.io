@@ -6901,7 +6901,8 @@
 <li><a href="#insights-agg-daily-weekly-monthly-buyer-seller">insights_agg_(daily|weekly|monthly)_(buyer|seller)</a></li>
 <li><a href="#insights-agg-daily-weekly-monthly-destination-buyer-seller">insights_agg_(daily|weekly|monthly)_destination_(buyer|seller)</a></li>
 <li><a href="#effective-bookings-buyer-seller">effective_bookings_(buyer|seller)</a></li>
-<li><a href="#daily-portfolio-seller">daily_portfolio_seller</a></li>
+<li><a href="#daily-portfolio-buyer-seller">daily_portfolio_(buyer|seller)</a></li>
+<li><a href="#daily-portfolio-stats-buyer-seller">daily_portfolio_stats_(buyer|seller)</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -8418,16 +8419,15 @@
 </tbody>
 </table>
 
-<h2 id="daily-portfolio-seller">daily_portfolio_seller</h2>
+<h2 id="daily-portfolio-buyer-seller">daily_portfolio_(buyer|seller)</h2>
 
 <p>This table is used to know which hotels over supplier&rsquo;s portfolio are being queried by the clients. This can be helpful to know which percentage over portfolio is mapped by the client.</p>
 
 <p><strong>fields</strong></p>
 
 <ul>
-<li><strong>client_id  (STRING).</strong> Client unique ID.</li>
+<li><strong>client_owner (STRING).</strong> Organization&rsquo;s name of the client.</li>
 <li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
-<li><strong>username (STRING).</strong> User ID in provider&rsquo;s system.</li>
 <li><strong>hotel (STRING).</strong> Hotel unique ID.</li>
 <li><strong>hotel_name_portfolio (STRING).</strong> Hotel name.</li>
 <li><strong>country (STRING).</strong> Hotel Country Code (ISO Alpha-2 code).</li>
@@ -8461,9 +8461,8 @@
 <table>
 <thead>
 <tr>
-<th>client_id</th>
+<th>client_owner</th>
 <th>provider_id</th>
-<th>username</th>
 <th>hotel_name</th>
 <th>country</th>
 <th>zone_1</th>
@@ -8486,9 +8485,8 @@
 
 <tbody>
 <tr>
-<td>Client 1</td>
+<td>Org Client 1</td>
 <td>Provider 1</td>
-<td>1464534881</td>
 <td>Residence Bologna</td>
 <td>CZ</td>
 <td>Hlavni mesto Praha</td>
@@ -8509,9 +8507,8 @@
 </tr>
 
 <tr>
-<td>Client 2</td>
+<td>Org Client 2</td>
 <td>Provider 2</td>
-<td>132965</td>
 <td>Hotel Guaparo Suites</td>
 <td>VE</td>
 <td>Estado Carabobo</td>
@@ -8532,9 +8529,8 @@
 </tr>
 
 <tr>
-<td>Client 3</td>
+<td>Org Client 3</td>
 <td>Provider 3</td>
-<td>14644046</td>
 <td></td>
 <td></td>
 <td></td>
@@ -8552,6 +8548,64 @@
 <td></td>
 <td></td>
 <td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="daily-portfolio-stats-buyer-seller">daily_portfolio_stats_(buyer|seller)</h2>
+
+<p>This table is used to measure the evolution of the daily_portfolio_(buyer|seller) table. This can be helpful to know if you are getting better results in your portfolio optimization.</p>
+
+<p><strong>fields</strong></p>
+
+<ul>
+<li><strong>client_owner (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
+<li><strong>status</strong>. It is an enumeration to describe the status of the hotel.
+
+<ul>
+<li>0 = Hotel code queried but it doesn&rsquo;t appear in provider&rsquo;s portfolio. It can be due to a wrong mapping in client&rsquo;s system.</li>
+<li>1 = Hotel code not queried but it appears in provider&rsquo;s portfolio. It can be due to a mismapping in the client&rsquo;s system.</li>
+<li>2 = Hotel code queried and it appears in provider&rsquo;s portfolio.</li>
+<li>3 = Hotel code queried but don&rsquo;t appears in TravelgateX system. It can be due to a out-of-date provider hotels information.</li>
+</ul></li>
+<li><strong>hits (NUMBER).</strong> Quantity of hotels for above key (client_id, provider_id and status).
+<br />
+<br /></li>
+</ul>
+
+<p><strong>Preview</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>client_id</th>
+<th>provider_id</th>
+<th>status</th>
+<th>hits</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Client 1</td>
+<td>Provider 1</td>
+<td>1</td>
+<td>146453</td>
+</tr>
+
+<tr>
+<td>Client 2</td>
+<td>Provider 2</td>
+<td>0</td>
+<td>150200</td>
+</tr>
+
+<tr>
+<td>Client 3</td>
+<td>Provider 3</td>
+<td>2</td>
+<td>14644046</td>
 </tr>
 </tbody>
 </table>
