@@ -6931,7 +6931,10 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    if (window.location.href.includes('/release-notes/changelog/')) {
+                    const href = window.location.href;
+                    if (href.includes('/release-notes/changelog/') || 
+                      (href.includes('/release-notes/products-changelogs/') && 
+                      !href.endsWith('/release-notes/products-changelogs/'))) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -6993,7 +6996,10 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  if(window.location.href.includes('/release-notes/changelog/')){
+                  const href = window.location.href;
+                  if(href.includes('/release-notes/changelog/') || 
+                  (href.includes('/release-notes/products-changelogs/') && 
+                  !href.endsWith('/release-notes/products-changelogs/'))){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
@@ -7100,9 +7106,9 @@
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/travelgatex/release-notes/roadmap/">TravelgateX roadmap</a></li>
-		
 		<li><a href="/hotel-x/release-notes/roadmap/">HotelX roadmap</a></li>
+		
+		<li><a href="/travelgatex/release-notes/roadmap/">TravelgateX roadmap</a></li>
 		
 	</ul>
 </div>

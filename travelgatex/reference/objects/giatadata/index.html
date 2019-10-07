@@ -77,26 +77,6 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/getting-started/overview/" class="dd-item">
-            <a href="/getting-started/overview/">
-              <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/quickstart/" class="dd-item">
-            <a href="/getting-started/quickstart/">
-              <span>Quickstart</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/concepts/" class="dd-item">
-            <a href="/getting-started/concepts/">
-              <span>Concepts</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/getting-started/playground/" class="dd-item">
-            <a href="/getting-started/playground/">
-              <span>Playground</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/" class="dd-item parent">
@@ -6941,7 +6921,10 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    if (window.location.href.includes('/release-notes/changelog/')) {
+                    const href = window.location.href;
+                    if (href.includes('/release-notes/changelog/') || 
+                      (href.includes('/release-notes/products-changelogs/') && 
+                      !href.endsWith('/release-notes/products-changelogs/'))) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7003,7 +6986,10 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  if(window.location.href.includes('/release-notes/changelog/')){
+                  const href = window.location.href;
+                  if(href.includes('/release-notes/changelog/') || 
+                  (href.includes('/release-notes/products-changelogs/') && 
+                  !href.endsWith('/release-notes/products-changelogs/'))){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS

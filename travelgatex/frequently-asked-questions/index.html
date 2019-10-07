@@ -4658,14 +4658,14 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/hotel-x/faqs/frequently-asked-questions/" class="dd-item">
-            <a href="/hotel-x/faqs/frequently-asked-questions/">
-              <span>FAQs</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotel-x/howtos/howto-connect-supplier/" class="dd-item">
+            <a href="/hotel-x/howtos/howto-connect-supplier/">
+              <span>Connect a New Supplier</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotel-x/faqs/common-errors/" class="dd-item">
-            <a href="/hotel-x/faqs/common-errors/">
-              <span>Common Errors</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/hotel-x/howtos/howto-book/" class="dd-item">
+            <a href="/hotel-x/howtos/howto-book/">
+              <span>Useful information</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -6939,7 +6939,10 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    if (window.location.href.includes('/release-notes/changelog/')) {
+                    const href = window.location.href;
+                    if (href.includes('/release-notes/changelog/') || 
+                      (href.includes('/release-notes/products-changelogs/') && 
+                      !href.endsWith('/release-notes/products-changelogs/'))) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7001,7 +7004,10 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  if(window.location.href.includes('/release-notes/changelog/')){
+                  const href = window.location.href;
+                  if(href.includes('/release-notes/changelog/') || 
+                  (href.includes('/release-notes/products-changelogs/') && 
+                  !href.endsWith('/release-notes/products-changelogs/'))){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
@@ -7127,9 +7133,9 @@
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/hotel-x/faqs/common-errors/">HotelX Common Errors</a></li>
-		
 		<li><a href="/hotel-x/faqs/frequently-asked-questions/">HotelX Frequendly Asked Questions</a></li>
+		
+		<li><a href="/hotel-x/faqs/common-errors/">HotelX Common Errors</a></li>
 		
 	</ul>
 </div>

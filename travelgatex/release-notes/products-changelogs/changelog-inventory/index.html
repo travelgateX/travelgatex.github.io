@@ -1438,31 +1438,6 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/travelgatex/reference/interfaces/bookableoptionsearch/" class="dd-item">
-            <a href="/travelgatex/reference/interfaces/bookableoptionsearch/">
-              <span>BookableOptionSearch</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/reference/interfaces/groupcommondata/" class="dd-item">
-            <a href="/travelgatex/reference/interfaces/groupcommondata/">
-              <span>GroupCommonData</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/reference/interfaces/node/" class="dd-item">
-            <a href="/travelgatex/reference/interfaces/node/">
-              <span>Node</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/reference/interfaces/priceable/" class="dd-item">
-            <a href="/travelgatex/reference/interfaces/priceable/">
-              <span>Priceable</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/reference/interfaces/response/" class="dd-item">
-            <a href="/travelgatex/reference/interfaces/response/">
-              <span>Response</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/reference/inputobjects/" class="dd-item">
@@ -6934,7 +6909,10 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    if (window.location.href.includes('/release-notes/changelog/')) {
+                    const href = window.location.href;
+                    if (href.includes('/release-notes/changelog/') || 
+                      (href.includes('/release-notes/products-changelogs/') && 
+                      !href.endsWith('/release-notes/products-changelogs/'))) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -6996,7 +6974,10 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  if(window.location.href.includes('/release-notes/changelog/')){
+                  const href = window.location.href;
+                  if(href.includes('/release-notes/changelog/') || 
+                  (href.includes('/release-notes/products-changelogs/') && 
+                  !href.endsWith('/release-notes/products-changelogs/'))){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS

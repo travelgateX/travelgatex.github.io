@@ -5812,51 +5812,6 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/stats/reference/scalars/boolean/" class="dd-item">
-            <a href="/stats/reference/scalars/boolean/">
-              <span>Boolean</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/stats/reference/scalars/datetime/" class="dd-item">
-            <a href="/stats/reference/scalars/datetime/">
-              <span>DateTime</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/stats/reference/scalars/domainname/" class="dd-item">
-            <a href="/stats/reference/scalars/domainname/">
-              <span>DomainName</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/stats/reference/scalars/duration/" class="dd-item">
-            <a href="/stats/reference/scalars/duration/">
-              <span>Duration</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/stats/reference/scalars/id/" class="dd-item">
-            <a href="/stats/reference/scalars/id/">
-              <span>ID</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/stats/reference/scalars/int/" class="dd-item">
-            <a href="/stats/reference/scalars/int/">
-              <span>Int</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/stats/reference/scalars/int64/" class="dd-item">
-            <a href="/stats/reference/scalars/int64/">
-              <span>Int64</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/stats/reference/scalars/string/" class="dd-item">
-            <a href="/stats/reference/scalars/string/">
-              <span>String</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/stats/reference/scalars/uri/" class="dd-item">
-            <a href="/stats/reference/scalars/uri/">
-              <span>URI</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/stats/reference/interfaces/" class="dd-item">
@@ -6933,7 +6888,10 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    if (window.location.href.includes('/release-notes/changelog/')) {
+                    const href = window.location.href;
+                    if (href.includes('/release-notes/changelog/') || 
+                      (href.includes('/release-notes/products-changelogs/') && 
+                      !href.endsWith('/release-notes/products-changelogs/'))) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -6995,7 +6953,10 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  if(window.location.href.includes('/release-notes/changelog/')){
+                  const href = window.location.href;
+                  if(href.includes('/release-notes/changelog/') || 
+                  (href.includes('/release-notes/products-changelogs/') && 
+                  !href.endsWith('/release-notes/products-changelogs/'))){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS

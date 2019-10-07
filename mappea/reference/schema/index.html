@@ -4857,9 +4857,14 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/logging/reference/schema/query/" class="dd-item">
-            <a href="/logging/reference/schema/query/">
-              <span>StatsQuery</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/insights-x/datasets/types-of-datasets/" class="dd-item">
+            <a href="/insights-x/datasets/types-of-datasets/">
+              <span>Types of Datasets</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/insights-x/datasets/dataset-tooling/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-tooling/">
+              <span>Tooling</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -6930,7 +6935,10 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    if (window.location.href.includes('/release-notes/changelog/')) {
+                    const href = window.location.href;
+                    if (href.includes('/release-notes/changelog/') || 
+                      (href.includes('/release-notes/products-changelogs/') && 
+                      !href.endsWith('/release-notes/products-changelogs/'))) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -6992,7 +7000,10 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  if(window.location.href.includes('/release-notes/changelog/')){
+                  const href = window.location.href;
+                  if(href.includes('/release-notes/changelog/') || 
+                  (href.includes('/release-notes/products-changelogs/') && 
+                  !href.endsWith('/release-notes/products-changelogs/'))){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
