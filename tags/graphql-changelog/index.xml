@@ -1,37 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Graphql Changelog on TravelgateX Documentation</title>
-    <link>/tags/graphql-changelog/</link>
-    <description>Recent content in Graphql Changelog on TravelgateX Documentation</description>
+    <title>TravelgateX Documentation – Graphql Changelog</title>
+    <link>https://docs.travelgatex.com/tags/graphql-changelog/</link>
+    <description>Recent changes in Graphql Changelog on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/tags/graphql-changelog/</link>
+    </image>
     
-	<atom:link href="/tags/graphql-changelog/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://docs.travelgatex.com/tags/graphql-changelog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>GraphQL Schema Changes</title>
-      <link>/hotel-x/release-notes/graphql-schema-changes/</link>
+      <title>Hotel-X: GraphQL Schema Changes</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/graphql-schema-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/release-notes/graphql-schema-changes/</guid>
-      <description>The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/graphql-schema-changes/</guid>
+      <description>
+        
+        
+        The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the HotelX GraphQL API.
-Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</description>
+Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+      </description>
     </item>
     
     <item>
-      <title>GraphQL Schema Changes</title>
-      <link>/travelgatex/release-notes/graphql-schema-changes/</link>
+      <title>Travelgatex: GraphQL Schema Changes</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/graphql-schema-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/release-notes/graphql-schema-changes/</guid>
-      <description>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/graphql-schema-changes/</guid>
+      <description>
+        
+        
+        The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
 2019-08-29 🛑 Input field ReferenceFilter.supplier changed type from [String] to [String!]
 🛑 Input field ReferenceFilter.client changed type from [String] to [String!]
-⚠️ Enum value PRICE was added to enum AlertType</description>
+⚠️ Enum value PRICE was added to enum AlertType
+      </description>
     </item>
     
   </channel>

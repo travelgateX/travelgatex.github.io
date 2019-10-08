@@ -1,207 +1,296 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scalars on TravelgateX Documentation</title>
-    <link>/travelgatex/reference/scalars/</link>
-    <description>Recent content in Scalars on TravelgateX Documentation</description>
+    <title>TravelgateX Documentation – Scalars</title>
+    <link>https://docs.travelgatex.com/travelgatex/reference/scalars/</link>
+    <description>Recent changes in Scalars on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/</link>
+    </image>
     
-	<atom:link href="/travelgatex/reference/scalars/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://docs.travelgatex.com/travelgatex/reference/scalars/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Boolean</title>
-      <link>/travelgatex/reference/scalars/boolean/</link>
+      <title>Travelgatex: Boolean</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/boolean/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/boolean/</guid>
-      <description>The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by SupplierFilter:    ClientFilter:    EntityFilter:    SystemFilter:    PageInfo:    AccessData:    SupplierData:    Provider:    SystemData:    GroupData:    GroupCommonData:    MemberData:    APIData:    ResourceData:    RoleData:    OrganizationData:    ClientData:    ProfileData:    HotelXHotelFilterInput:    HotelSettingsInput:    HotelData:    DestinationData:    SettingsBaseInput:    Room:    Price:    Supplement:    Surcharge:    CancelPolicy:    Bed:    Markup:    Priceable:    PriceChange:    HotelRuntimeParameter:    StatsFilterInput:    OperationDetailed:    AlertCriteriaInput:    AlertData:    AlertConfiguration:    AccessInput:    CreateClientInput:    UpdateClientInput:    CreateProfileInput:    UpdateProfileInput:    CreateSystemInput:    UpdateSystemInput:    UpdateMemberInput:    HotelXUpdateStatusData:    DeltaPriceInput:    AlertInput:  Alert information.</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/boolean/</guid>
+      <description>
+        
+        
+        The Boolean scalar type represents true or false.
+GraphQL schema definition scalar Boolean   Required by SupplierFilter:    ClientFilter:    EntityFilter:    SystemFilter:    PageInfo:    AccessData:    SupplierData:    Provider:    SystemData:    GroupData:    GroupCommonData:    MemberData:    APIData:    ResourceData:    RoleData:    OrganizationData:    ClientData:    ProfileData:    HotelXHotelFilterInput:    HotelSettingsInput:    HotelData:    DestinationData:    SettingsBaseInput:    Room:    Price:    Supplement:    Surcharge:    CancelPolicy:    Bed:    Markup:    Priceable:    PriceChange:    HotelRuntimeParameter:    StatsFilterInput:    OperationDetailed:    AlertCriteriaInput:    AlertData:    AlertConfiguration:    AccessInput:    CreateClientInput:    UpdateClientInput:    CreateProfileInput:    UpdateProfileInput:    CreateSystemInput:    UpdateSystemInput:    UpdateMemberInput:    HotelXUpdateStatusData:    DeltaPriceInput:    AlertInput:  Alert information.
+      </description>
     </item>
     
     <item>
-      <title>CVC</title>
-      <link>/travelgatex/reference/scalars/cvc/</link>
+      <title>Travelgatex: CVC</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/cvc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/cvc/</guid>
-      <description>GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/cvc/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:
+      </description>
     </item>
     
     <item>
-      <title>CardNumber</title>
-      <link>/travelgatex/reference/scalars/cardnumber/</link>
+      <title>Travelgatex: CardNumber</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/cardnumber/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/cardnumber/</guid>
-      <description>GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/cardnumber/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:
+      </description>
     </item>
     
     <item>
-      <title>Country</title>
-      <link>/travelgatex/reference/scalars/country/</link>
+      <title>Travelgatex: Country</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/country/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/country/</guid>
-      <description>GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    Location:    GeonameData:    CriteriaSearch:    HotelXDefaultSettingsDataInput:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/country/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    Location:    GeonameData:    CriteriaSearch:    HotelXDefaultSettingsDataInput:
+      </description>
     </item>
     
     <item>
-      <title>Currency</title>
-      <link>/travelgatex/reference/scalars/currency/</link>
+      <title>Travelgatex: Currency</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/currency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/currency/</guid>
-      <description>GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/currency/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:
+      </description>
     </item>
     
     <item>
-      <title>Date</title>
-      <link>/travelgatex/reference/scalars/date/</link>
+      <title>Travelgatex: Date</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/date/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/date/</guid>
-      <description>GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:    CriteriaSearch:    Supplement:    RatePlan:    Promotion:    PriceBreakdown:    CriteriaBookingDatesInput:    BookingHotel:    PaymentXStoredCardData:    PaymentXStoredCardInput:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/date/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:    CriteriaSearch:    Supplement:    RatePlan:    Promotion:    PriceBreakdown:    CriteriaBookingDatesInput:    BookingHotel:    PaymentXStoredCardData:    PaymentXStoredCardInput:
+      </description>
     </item>
     
     <item>
-      <title>DateTime</title>
-      <link>/travelgatex/reference/scalars/datetime/</link>
+      <title>Travelgatex: DateTime</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/datetime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/datetime/</guid>
-      <description>GraphQL schema definition scalar DateTime   Required by Access:    Node:    Supplier:    Organization:    System:    Group:    Member:    ManagedGroup:    API:    Resource:    Role:    Domain:    Client:    PointOfSale:    Profile:    Entity:    Product:    MacroPermission:    Operation:    HotelXHotelFilterInput:    HotelRuntimeConfiguration:    Board:    Category:    Hotel:    GiataData:    Media:    Airport:    Geoname:    RoomStatic:    Destination:    AuditData:    Stat:    Transactions:    PaymentXStoredCardFilterInput:    PaymentXStoredCard:    StatsFilterInput:    AbsoluteInput:    Stats:    StatsData:    StatsAsset:    AlertFilterInput:    Alert:   Alert node  Event:  Event triggered  LoggingLegacyFilterInput:  Filters needed to do a search.</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/datetime/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar DateTime   Required by Access:    Node:    Supplier:    Organization:    System:    Group:    Member:    ManagedGroup:    API:    Resource:    Role:    Domain:    Client:    PointOfSale:    Profile:    Entity:    Product:    MacroPermission:    Operation:    HotelXHotelFilterInput:    HotelRuntimeConfiguration:    Board:    Category:    Hotel:    GiataData:    Media:    Airport:    Geoname:    RoomStatic:    Destination:    AuditData:    Stat:    Transactions:    PaymentXStoredCardFilterInput:    PaymentXStoredCard:    StatsFilterInput:    AbsoluteInput:    Stats:    StatsData:    StatsAsset:    AlertFilterInput:    Alert:   Alert node  Event:  Event triggered  LoggingLegacyFilterInput:  Filters needed to do a search.
+      </description>
     </item>
     
     <item>
-      <title>DomainName</title>
-      <link>/travelgatex/reference/scalars/domainname/</link>
+      <title>Travelgatex: DomainName</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/domainname/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/domainname/</guid>
-      <description>GraphQL schema definition scalar DomainName   Required by DomainData:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/domainname/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar DomainName   Required by DomainData:
+      </description>
     </item>
     
     <item>
-      <title>Duration</title>
-      <link>/travelgatex/reference/scalars/duration/</link>
+      <title>Travelgatex: Duration</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/duration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/duration/</guid>
-      <description>GraphQL schema definition scalar Duration   Required by RelativeInput:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/duration/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar Duration   Required by RelativeInput:
+      </description>
     </item>
     
     <item>
-      <title>Email</title>
-      <link>/travelgatex/reference/scalars/email/</link>
+      <title>Travelgatex: Email</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/email/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/email/</guid>
-      <description> GraphQL schema definition scalar Email   </description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/email/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar Email   
+      </description>
     </item>
     
     <item>
-      <title>EnvironmentName</title>
-      <link>/travelgatex/reference/scalars/environmentname/</link>
+      <title>Travelgatex: EnvironmentName</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/environmentname/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/environmentname/</guid>
-      <description> Scalars types GraphQL schema definition scalar EnvironmentName   Required by Environment:     </description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/environmentname/</guid>
+      <description>
+        
+        
+         Scalars types GraphQL schema definition scalar EnvironmentName   Required by Environment:     
+      </description>
     </item>
     
     <item>
-      <title>Float</title>
-      <link>/travelgatex/reference/scalars/float/</link>
+      <title>Travelgatex: Float</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/float/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/float/</guid>
-      <description> The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.
-GraphQL schema definition scalar Float   Required by Coordinates:    AuditData:    Stat:    Price:    Exchange:    Markup:    Priceable:    Rule:    CancelPenalty:    PriceChange:    DeltaPriceInput:     </description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/float/</guid>
+      <description>
+        
+        
+         The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.
+GraphQL schema definition scalar Float   Required by Coordinates:    AuditData:    Stat:    Price:    Exchange:    Markup:    Priceable:    Rule:    CancelPenalty:    PriceChange:    DeltaPriceInput:     
+      </description>
     </item>
     
     <item>
-      <title>ID</title>
-      <link>/travelgatex/reference/scalars/id/</link>
+      <title>Travelgatex: ID</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/id/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/id/</guid>
-      <description>The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar ID   Required by AccessFilter:    SupplierFilter:    ClientFilter:    ServiceApi:    PointOfSaleFilter:    ProfileFilter:    SystemFilter:    Access:    AccessData:    Node:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    System:    SystemData:    Group:    GroupData:    AdviseMessage:    Member:    GroupCommonData:    MemberData:    ManagedGroup:    ManagedGroupData:    API:    Resource:    Role:    APIData:    ResourceData:    RoleData:    OrganizationData:    Domain:    DomainData:    Client:    ClientData:    ServiceOperation:    PointOfSale:    PointOfSaleData:    Profile:    ProfileData:    Entity:    Product:    ProductData:    MacroPermission:    MacroPermissionData:    Operation:    OperationData:    HotelXBoardQueryInput:    HotelXCategoryQueryInput:    HotelXHotelListInput:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    HotelRuntimeConfiguration:    Board:    BoardData:    Category:    CategoryData:    Hotel:    HotelData:    GiataData:    DestinationData:    Airport:    Geoname:    AirportData:    GeonameData:    RoomStatic:    RoomData:    Destination:    HotelXAccessInput:    PaymentXStoredCardIDInput:    PaymentXStoredCard:    Stats:    StatsInfo:    Alert:   Alert node  AlertData:    Event:  Event triggered  EventData:  Event data  LoggingLegacyFilterInput:  Filters needed to do a search.</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/id/</guid>
+      <description>
+        
+        
+        The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
+GraphQL schema definition scalar ID   Required by AccessFilter:    SupplierFilter:    ClientFilter:    ServiceApi:    PointOfSaleFilter:    ProfileFilter:    SystemFilter:    Access:    AccessData:    Node:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    System:    SystemData:    Group:    GroupData:    AdviseMessage:    Member:    GroupCommonData:    MemberData:    ManagedGroup:    ManagedGroupData:    API:    Resource:    Role:    APIData:    ResourceData:    RoleData:    OrganizationData:    Domain:    DomainData:    Client:    ClientData:    ServiceOperation:    PointOfSale:    PointOfSaleData:    Profile:    ProfileData:    Entity:    Product:    ProductData:    MacroPermission:    MacroPermissionData:    Operation:    OperationData:    HotelXBoardQueryInput:    HotelXCategoryQueryInput:    HotelXHotelListInput:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    HotelRuntimeConfiguration:    Board:    BoardData:    Category:    CategoryData:    Hotel:    HotelData:    GiataData:    DestinationData:    Airport:    Geoname:    AirportData:    GeonameData:    RoomStatic:    RoomData:    Destination:    HotelXAccessInput:    PaymentXStoredCardIDInput:    PaymentXStoredCard:    Stats:    StatsInfo:    Alert:   Alert node  AlertData:    Event:  Event triggered  EventData:  Event data  LoggingLegacyFilterInput:  Filters needed to do a search.
+      </description>
     </item>
     
     <item>
-      <title>Int</title>
-      <link>/travelgatex/reference/scalars/int/</link>
+      <title>Travelgatex: Int</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/int/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/int/</guid>
-      <description>The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData:    SupplierData:    GroupData:    ServiceOperation:    RelayInput:    HotelXHotelListInput:    HotelConnection:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    Timeout:    BusinessRules:    OccupancyRange:    PaxInput:    BusinessRulesInput:    SettingsBaseInput:    StatsRequest:    StatAccess:    Pax:    Occupancy:    Room:    Supplement:    Bed:    CancelPenalty:    BookingRoom:    File:    GetMappeaStatsData:    PaymentXExpireDate:    Ratios:    StatsInfo:    StatsAsset:    AlertConnection:  Alert list  AlertConfiguration:    EventConnection:  Events list  AlertTypeConfiguration:  Depending on the talert type, typeConfiguration will use some fields   AlertPrice:  Price contains the specific configuration for Price alert Type  LoggingLegacyFilterInput:  Filters needed to do a search.</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/int/</guid>
+      <description>
+        
+        
+        The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData:    SupplierData:    GroupData:    ServiceOperation:    RelayInput:    HotelXHotelListInput:    HotelConnection:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    Timeout:    BusinessRules:    OccupancyRange:    PaxInput:    BusinessRulesInput:    SettingsBaseInput:    StatsRequest:    StatAccess:    Pax:    Occupancy:    Room:    Supplement:    Bed:    CancelPenalty:    BookingRoom:    File:    GetMappeaStatsData:    PaymentXExpireDate:    Ratios:    StatsInfo:    StatsAsset:    AlertConnection:  Alert list  AlertConfiguration:    EventConnection:  Events list  AlertTypeConfiguration:  Depending on the talert type, typeConfiguration will use some fields   AlertPrice:  Price contains the specific configuration for Price alert Type  LoggingLegacyFilterInput:  Filters needed to do a search.
+      </description>
     </item>
     
     <item>
-      <title>Int64</title>
-      <link>/travelgatex/reference/scalars/int64/</link>
+      <title>Travelgatex: Int64</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/int64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/int64/</guid>
-      <description>GraphQL schema definition scalar Int64   Required by StatsData:    OperationDetailed:    StatsInfo:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/int64/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar Int64   Required by StatsData:    OperationDetailed:    StatsInfo:
+      </description>
     </item>
     
     <item>
-      <title>JSON</title>
-      <link>/travelgatex/reference/scalars/json/</link>
+      <title>Travelgatex: JSON</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/json/</guid>
-      <description>GraphQL schema definition scalar JSON   Required by AddOns:    AddOn:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/json/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar JSON   Required by AddOns:    AddOn:
+      </description>
     </item>
     
     <item>
-      <title>JWT</title>
-      <link>/travelgatex/reference/scalars/jwt/</link>
+      <title>Travelgatex: JWT</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/jwt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/jwt/</guid>
-      <description>GraphQL schema definition scalar JWT   Required by AdminQuery:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/jwt/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar JWT   Required by AdminQuery:
+      </description>
     </item>
     
     <item>
-      <title>Language</title>
-      <link>/travelgatex/reference/scalars/language/</link>
+      <title>Travelgatex: Language</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/language/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/language/</guid>
-      <description>GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    Text:    CriteriaSearch:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/language/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    Text:    CriteriaSearch:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:
+      </description>
     </item>
     
     <item>
-      <title>String</title>
-      <link>/travelgatex/reference/scalars/string/</link>
+      <title>Travelgatex: String</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/string/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/string/</guid>
-      <description>The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar String   Required by ServiceApiFilter:    ServiceApi:    AccessEdge:    PageInfo:    AccessData:    Error:    Parameter:    SupplierData:    Provider:    GroupData:    AdviseMessage:    GroupCommonData:    MemberData:    ManagedGroupEdge:    APIData:    ResourceData:    RoleData:    ExternalMessage:    OrganizationData:    SupplierEdge:    ClientEdge:    ServiceOperation:    PointOfSaleEdge:    PointOfSaleData:    ProfileEdge:    ProfileData:    EntityEdge:    SystemEdge:    OrganizationEdge:    ProductEdge:    ProductData:    MacroPermissionEdge:    MacroPermissionData:    MemberEdge:    GroupEdge:    APIEdge:    ResourceEdge:    RoleEdge:    OperationEdge:    OperationData:    ServiceStatus:    RelayInput:    HotelConnection:    RoomConnection:    DestinationConnection:    HotelXDestinationSearcherInput:    HotelCriteriaSearchInput:    HotelSettingsInput:    HotelSearch:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    HotelXDefaultPluginStep:    HotelXDefaultPlugin:    HotelXParameter:    BoardEdge:    BoardData:    Text:    CategoryEdge:    CategoryData:    HotelEdge:    HotelData:    Property:    Location:    Contact:    Amenity:    Media:    DestinationData:    AirportData:    GeonameData:    RoomEdge:    RoomData:    DestinationEdge:    HotelXSupplierInput:    ConfigurationInput:    ParameterInput:    PluginsInput:    HotelXFilterPluginTypeInput:    StatsRequest:    CriteriaSearch:    HotelOptionSearch:    Warning:    StatPlugin:    StatAccess:    StatTransaction:    Transactions:    Room:    Supplement:    Surcharge:    BookableOptionSearch:    Bed:    RatePlan:    Promotion:    Feature:    Markup:    Rule:    Resort:    AddOn:    HotelOptionQuote:    PriceChange:    CriteriaBookingReferencesInput:    BookReferenceInput:    HotelBookingDetail:    Reference:    Holder:    BookingHotel:    BookingRoom:    MappingContext:    MappingEntity:    Map:    HotelRuntimeParameter:    MappeaGetMappeaStatsInput:    File:    GetMappeaStatsData:    PaymentXStoredCardIDInput:    HolderInput:    PaymentXStoredCardEdge:    PaymentXStoredCardData:    StatsEdge:    ConnectionEdge:    AlertEdge:    AlertData:    EventEdge:    EventData:  Event data  LoggingLegacyEdge:    HotelXMutation:    AccessInput:    CreateClientInput:    UpdateClientInput:    CreateProfileInput:    UpdateProfileInput:    CreateOrganizationInput:    CreateMemberInput:    CreateGroupInput:    UpdateMemberInput:    UpdateGroupInput:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:    HotelXDefaultPluginInput:    PaymentCardInput:    BookPaxInput:    HotelCancelDetail:    MappeaUploadFileInput:    UploadFileData:    PaymentXStoredCardInput:    AlertInput:  Alert information.</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/string/</guid>
+      <description>
+        
+        
+        The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL schema definition scalar String   Required by ServiceApiFilter:    ServiceApi:    AccessEdge:    PageInfo:    AccessData:    Error:    Parameter:    SupplierData:    Provider:    GroupData:    AdviseMessage:    GroupCommonData:    MemberData:    ManagedGroupEdge:    APIData:    ResourceData:    RoleData:    ExternalMessage:    OrganizationData:    SupplierEdge:    ClientEdge:    ServiceOperation:    PointOfSaleEdge:    PointOfSaleData:    ProfileEdge:    ProfileData:    EntityEdge:    SystemEdge:    OrganizationEdge:    ProductEdge:    ProductData:    MacroPermissionEdge:    MacroPermissionData:    MemberEdge:    GroupEdge:    APIEdge:    ResourceEdge:    RoleEdge:    OperationEdge:    OperationData:    ServiceStatus:    RelayInput:    HotelConnection:    RoomConnection:    DestinationConnection:    HotelXDestinationSearcherInput:    HotelCriteriaSearchInput:    HotelSettingsInput:    HotelSearch:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    HotelXDefaultPluginStep:    HotelXDefaultPlugin:    HotelXParameter:    BoardEdge:    BoardData:    Text:    CategoryEdge:    CategoryData:    HotelEdge:    HotelData:    Property:    Location:    Contact:    Amenity:    Media:    DestinationData:    AirportData:    GeonameData:    RoomEdge:    RoomData:    DestinationEdge:    HotelXSupplierInput:    ConfigurationInput:    ParameterInput:    PluginsInput:    HotelXFilterPluginTypeInput:    StatsRequest:    CriteriaSearch:    HotelOptionSearch:    Warning:    StatPlugin:    StatAccess:    StatTransaction:    Transactions:    Room:    Supplement:    Surcharge:    BookableOptionSearch:    Bed:    RatePlan:    Promotion:    Feature:    Markup:    Rule:    Resort:    AddOn:    HotelOptionQuote:    PriceChange:    CriteriaBookingReferencesInput:    BookReferenceInput:    HotelBookingDetail:    Reference:    Holder:    BookingHotel:    BookingRoom:    MappingContext:    MappingEntity:    Map:    HotelRuntimeParameter:    MappeaGetMappeaStatsInput:    File:    GetMappeaStatsData:    PaymentXStoredCardIDInput:    HolderInput:    PaymentXStoredCardEdge:    PaymentXStoredCardData:    StatsEdge:    ConnectionEdge:    AlertEdge:    AlertData:    EventEdge:    EventData:  Event data  LoggingLegacyEdge:    HotelXMutation:    AccessInput:    CreateClientInput:    UpdateClientInput:    CreateProfileInput:    UpdateProfileInput:    CreateOrganizationInput:    CreateMemberInput:    CreateGroupInput:    UpdateMemberInput:    UpdateGroupInput:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:    HotelXDefaultPluginInput:    PaymentCardInput:    BookPaxInput:    HotelCancelDetail:    MappeaUploadFileInput:    UploadFileData:    PaymentXStoredCardInput:    AlertInput:  Alert information.
+      </description>
     </item>
     
     <item>
-      <title>URI</title>
-      <link>/travelgatex/reference/scalars/uri/</link>
+      <title>Travelgatex: URI</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/uri/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/uri/</guid>
-      <description>GraphQL schema definition scalar URI   Required by Urls:    GiataData:    Contact:    Media:    UrlsInput:    StatsAsset:    LoggingLegacyData:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/uri/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar URI   Required by Urls:    GiataData:    Contact:    Media:    UrlsInput:    StatsAsset:    LoggingLegacyData:
+      </description>
     </item>
     
     <item>
-      <title>Worker</title>
-      <link>/travelgatex/reference/scalars/worker/</link>
+      <title>Travelgatex: Worker</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/scalars/worker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/travelgatex/reference/scalars/worker/</guid>
-      <description>GraphQL schema definition scalar Worker   Required by Environment:</description>
+      <guid>https://docs.travelgatex.com/travelgatex/reference/scalars/worker/</guid>
+      <description>
+        
+        
+        GraphQL schema definition scalar Worker   Required by Environment:
+      </description>
     </item>
     
   </channel>

@@ -1,211 +1,304 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Enums on TravelgateX Documentation</title>
-    <link>/hotel-x/reference/enums/</link>
-    <description>Recent content in Enums on TravelgateX Documentation</description>
+    <title>TravelgateX Documentation – Enums</title>
+    <link>https://docs.travelgatex.com/hotel-x/reference/enums/</link>
+    <description>Recent changes in Enums on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/</link>
+    </image>
     
-	<atom:link href="/hotel-x/reference/enums/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/reference/enums/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>AdviseMessageLevel</title>
-      <link>/hotel-x/reference/enums/advisemessagelevel/</link>
+      <title>Hotel-X: AdviseMessageLevel</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/advisemessagelevel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/advisemessagelevel/</guid>
-      <description>GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/advisemessagelevel/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:
+      </description>
     </item>
     
     <item>
-      <title>ApplicationAreaType</title>
-      <link>/hotel-x/reference/enums/applicationareatype/</link>
+      <title>Hotel-X: ApplicationAreaType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/applicationareatype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/applicationareatype/</guid>
-      <description>GraphQL schema definition  enum ApplicationAreaType{   HOTEL,    ROOM,    SERVICE,    GENERAL,   }   Required by Amenity:    Media:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/applicationareatype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum ApplicationAreaType{   HOTEL,    ROOM,    SERVICE,    GENERAL,   }   Required by Amenity:    Media:
+      </description>
     </item>
     
     <item>
-      <title>BookStatusType</title>
-      <link>/hotel-x/reference/enums/bookstatustype/</link>
+      <title>Hotel-X: BookStatusType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/bookstatustype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/bookstatustype/</guid>
-      <description>GraphQL schema definition  enum BookStatusType{   OK,    KO,    ON_REQUEST,    CANCELLED,    UNKNOWN,   }   Required by HotelBookingDetail:    HotelCancelDetail:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/bookstatustype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum BookStatusType{   OK,    KO,    ON_REQUEST,    CANCELLED,    UNKNOWN,   }   Required by HotelBookingDetail:    HotelCancelDetail:
+      </description>
     </item>
     
     <item>
-      <title>BookingCriteriaType</title>
-      <link>/hotel-x/reference/enums/bookingcriteriatype/</link>
+      <title>Hotel-X: BookingCriteriaType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/bookingcriteriatype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/bookingcriteriatype/</guid>
-      <description>GraphQL schema definition  enum BookingCriteriaType{   DATES,    REFERENCES,   }   Required by HotelCriteriaBookingInput:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/bookingcriteriatype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum BookingCriteriaType{   DATES,    REFERENCES,   }   Required by HotelCriteriaBookingInput:
+      </description>
     </item>
     
     <item>
-      <title>BusinessRulesType</title>
-      <link>/hotel-x/reference/enums/businessrulestype/</link>
+      <title>Hotel-X: BusinessRulesType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/businessrulestype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/businessrulestype/</guid>
-      <description>GraphQL schema definition  enum BusinessRulesType{   CHEAPER_AMOUNT,    ROOM_TYPE,   }   Required by BusinessRules:    BusinessRulesInput:    HotelXBusinessRulesInput:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/businessrulestype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum BusinessRulesType{   CHEAPER_AMOUNT,    ROOM_TYPE,   }   Required by BusinessRules:    BusinessRulesInput:    HotelXBusinessRulesInput:
+      </description>
     </item>
     
     <item>
-      <title>CancelPenaltyType</title>
-      <link>/hotel-x/reference/enums/cancelpenaltytype/</link>
+      <title>Hotel-X: CancelPenaltyType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/cancelpenaltytype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/cancelpenaltytype/</guid>
-      <description>GraphQL schema definition  enum CancelPenaltyType{   NIGHTS,    PERCENT,    IMPORT,   }   Required by CancelPenalty:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/cancelpenaltytype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum CancelPenaltyType{   NIGHTS,    PERCENT,    IMPORT,   }   Required by CancelPenalty:
+      </description>
     </item>
     
     <item>
-      <title>ChargeType</title>
-      <link>/hotel-x/reference/enums/chargetype/</link>
+      <title>Hotel-X: ChargeType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/chargetype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/chargetype/</guid>
-      <description>GraphQL schema definition  enum ChargeType{   INCLUDE,    EXCLUDE,   }   Required by Supplement:    Surcharge:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/chargetype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum ChargeType{   INCLUDE,    EXCLUDE,   }   Required by Supplement:    Surcharge:
+      </description>
     </item>
     
     <item>
-      <title>DateType</title>
-      <link>/hotel-x/reference/enums/datetype/</link>
+      <title>Hotel-X: DateType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/datetype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/datetype/</guid>
-      <description>GraphQL schema definition  enum DateType{   ARRIVAL,    BOOKING,   }   Required by CriteriaBookingDatesInput:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/datetype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum DateType{   ARRIVAL,    BOOKING,   }   Required by CriteriaBookingDatesInput:
+      </description>
     </item>
     
     <item>
-      <title>DescriptionType</title>
-      <link>/hotel-x/reference/enums/descriptiontype/</link>
+      <title>Hotel-X: DescriptionType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/descriptiontype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/descriptiontype/</guid>
-      <description>GraphQL schema definition  enum DescriptionType{   ADDITIONAL,    AMENITY,    ACTIVITY,    RESTAURANT,    ROOM,    GENERAL,    POOL,    LOCATION,    HOW_TO_GET,   }   Required by Description:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/descriptiontype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum DescriptionType{   ADDITIONAL,    AMENITY,    ACTIVITY,    RESTAURANT,    ROOM,    GENERAL,    POOL,    LOCATION,    HOW_TO_GET,   }   Required by Description:
+      </description>
     </item>
     
     <item>
-      <title>DestinationType</title>
-      <link>/hotel-x/reference/enums/destinationtype/</link>
+      <title>Hotel-X: DestinationType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/destinationtype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/destinationtype/</guid>
-      <description>GraphQL schema definition  enum DestinationType{   ZONE,    CITY,    COUNTRY,   }   Required by DestinationData:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/destinationtype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum DestinationType{   ZONE,    CITY,    COUNTRY,   }   Required by DestinationData:
+      </description>
     </item>
     
     <item>
-      <title>DurationType</title>
-      <link>/hotel-x/reference/enums/durationtype/</link>
+      <title>Hotel-X: DurationType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/durationtype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/durationtype/</guid>
-      <description>GraphQL schema definition  enum DurationType{   RANGE,    OPEN,   }   Required by Supplement:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/durationtype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum DurationType{   RANGE,    OPEN,   }   Required by Supplement:
+      </description>
     </item>
     
     <item>
-      <title>MarkupRuleType</title>
-      <link>/hotel-x/reference/enums/markupruletype/</link>
+      <title>Hotel-X: MarkupRuleType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/markupruletype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/markupruletype/</guid>
-      <description>GraphQL schema definition  enum MarkupRuleType{   PERCENT,    IMPORT,   }   Required by Rule:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/markupruletype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum MarkupRuleType{   PERCENT,    IMPORT,   }   Required by Rule:
+      </description>
     </item>
     
     <item>
-      <title>MetadataType</title>
-      <link>/hotel-x/reference/enums/metadatatype/</link>
+      <title>Hotel-X: MetadataType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/metadatatype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/metadatatype/</guid>
-      <description>GraphQL schema definition  enum MetadataType{   STRING,    NUMERIC,    BOOLEAN,    XML,    URI,   }   Required by HotelRuntimeParameter:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/metadatatype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum MetadataType{   STRING,    NUMERIC,    BOOLEAN,    XML,    URI,   }   Required by HotelRuntimeParameter:
+      </description>
     </item>
     
     <item>
-      <title>PaymentCardType</title>
-      <link>/hotel-x/reference/enums/paymentcardtype/</link>
+      <title>Hotel-X: PaymentCardType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/paymentcardtype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/paymentcardtype/</guid>
-      <description>GraphQL schema definition  enum PaymentCardType{   VI,    AX,    BC,    CA,    CB,    CU,    DS,    DC,    T,    R,    N,    L,    E,    JC,    TO,    S,    EC,    EU,    TP,    OP,    ER,    XS,    O,   }   Required by PaymentCardInput:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/paymentcardtype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum PaymentCardType{   VI,    AX,    BC,    CA,    CB,    CU,    DS,    DC,    T,    R,    N,    L,    E,    JC,    TO,    S,    EC,    EU,    TP,    OP,    ER,    XS,    O,   }   Required by PaymentCardInput:
+      </description>
     </item>
     
     <item>
-      <title>PaymentType</title>
-      <link>/hotel-x/reference/enums/paymenttype/</link>
+      <title>Hotel-X: PaymentType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/paymenttype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/paymenttype/</guid>
-      <description>GraphQL schema definition  enum PaymentType{   MERCHANT,    DIRECT,    CARD_BOOKING,    CARD_CHECK_IN,    PAYX,   }   Required by HotelOptionSearch:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/paymenttype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum PaymentType{   MERCHANT,    DIRECT,    CARD_BOOKING,    CARD_CHECK_IN,    PAYX,   }   Required by HotelOptionSearch:
+      </description>
     </item>
     
     <item>
-      <title>PluginStepType</title>
-      <link>/hotel-x/reference/enums/pluginsteptype/</link>
+      <title>Hotel-X: PluginStepType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/pluginsteptype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/pluginsteptype/</guid>
-      <description>GraphQL schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,    RESPONSE_OPTION,    RESPONSE_ACCESS,    RESPONSE,   }   Required by HotelXDefaultPlugin:    PluginStepInput:    HotelXFilterPluginTypeInput:    HotelXDefaultPluginStepInput:    HotelXDefaultPluginInput:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/pluginsteptype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,    RESPONSE_OPTION,    RESPONSE_ACCESS,    RESPONSE,   }   Required by HotelXDefaultPlugin:    PluginStepInput:    HotelXFilterPluginTypeInput:    HotelXDefaultPluginStepInput:    HotelXDefaultPluginInput:
+      </description>
     </item>
     
     <item>
-      <title>PluginType</title>
-      <link>/hotel-x/reference/enums/plugintype/</link>
+      <title>Hotel-X: PluginType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/plugintype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/plugintype/</guid>
-      <description>GraphQL schema definition  enum PluginType{   PRE_STEP,    HOTEL_MAP,    BOARD_MAP,    ROOM_MAP,    CURRENCY_CONVERSION,    MARKUP,    AGGREGATION,    POST_STEP,    COMMISSION,   }   Required by HotelXDefaultPlugin:    PluginsInput:    HotelXDefaultPluginInput:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/plugintype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum PluginType{   PRE_STEP,    HOTEL_MAP,    BOARD_MAP,    ROOM_MAP,    CURRENCY_CONVERSION,    MARKUP,    AGGREGATION,    POST_STEP,    COMMISSION,   }   Required by HotelXDefaultPlugin:    PluginsInput:    HotelXDefaultPluginInput:
+      </description>
     </item>
     
     <item>
-      <title>RateRulesType</title>
-      <link>/hotel-x/reference/enums/raterulestype/</link>
+      <title>Hotel-X: RateRulesType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/raterulestype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/raterulestype/</guid>
-      <description> GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   </description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/raterulestype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   
+      </description>
     </item>
     
     <item>
-      <title>StatusType</title>
-      <link>/hotel-x/reference/enums/statustype/</link>
+      <title>Hotel-X: StatusType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/statustype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/statustype/</guid>
-      <description>GraphQL schema definition  enum StatusType{   OK,    RQ,   }   Required by HotelOptionSearch:    HotelOptionQuote:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/statustype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum StatusType{   OK,    RQ,   }   Required by HotelOptionSearch:    HotelOptionQuote:
+      </description>
     </item>
     
     <item>
-      <title>SupplementType</title>
-      <link>/hotel-x/reference/enums/supplementtype/</link>
+      <title>Hotel-X: SupplementType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/supplementtype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/supplementtype/</guid>
-      <description>GraphQL schema definition  enum SupplementType{   SKI_PASS,    LESSONS,    MEALS,    EQUIPMENT,    TICKET,    TRANSFERS,    GALA,    ACTIVITY,   }   Required by Supplement:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/supplementtype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum SupplementType{   SKI_PASS,    LESSONS,    MEALS,    EQUIPMENT,    TICKET,    TRANSFERS,    GALA,    ACTIVITY,   }   Required by Supplement:
+      </description>
     </item>
     
     <item>
-      <title>TagRuntimeType</title>
-      <link>/hotel-x/reference/enums/tagruntimetype/</link>
+      <title>Hotel-X: TagRuntimeType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/tagruntimetype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/tagruntimetype/</guid>
-      <description>GraphQL schema definition  enum TagRuntimeType{   USER,    PASSWORD,    URLAVAIL,    URLVALUATION,    URLRESERVATION,    URLGENERIC,    PARAMETER,   }   Required by HotelRuntimeParameter:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/tagruntimetype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum TagRuntimeType{   USER,    PASSWORD,    URLAVAIL,    URLVALUATION,    URLRESERVATION,    URLGENERIC,    PARAMETER,   }   Required by HotelRuntimeParameter:
+      </description>
     </item>
     
     <item>
-      <title>UnitTimeType</title>
-      <link>/hotel-x/reference/enums/unittimetype/</link>
+      <title>Hotel-X: UnitTimeType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/unittimetype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/reference/enums/unittimetype/</guid>
-      <description>GraphQL schema definition  enum UnitTimeType{   DAY,    HOUR,   }   Required by Supplement:</description>
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/unittimetype/</guid>
+      <description>
+        
+        
+        GraphQL schema definition  enum UnitTimeType{   DAY,    HOUR,   }   Required by Supplement:
+      </description>
     </item>
     
   </channel>

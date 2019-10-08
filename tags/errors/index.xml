@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Errors on TravelgateX Documentation</title>
-    <link>/tags/errors/</link>
-    <description>Recent content in Errors on TravelgateX Documentation</description>
+    <title>TravelgateX Documentation – Errors</title>
+    <link>https://docs.travelgatex.com/tags/errors/</link>
+    <description>Recent changes in Errors on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/tags/errors/</link>
+    </image>
     
-	<atom:link href="/tags/errors/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://docs.travelgatex.com/tags/errors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Common Errors</title>
-      <link>/hotel-x/faqs/common-errors/</link>
+      <title>Hotel-X: Common Errors</title>
+      <link>https://docs.travelgatex.com/hotel-x/faqs/common-errors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/hotel-x/faqs/common-errors/</guid>
-      <description>Error 204 - No Results Found Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.
+      <guid>https://docs.travelgatex.com/hotel-x/faqs/common-errors/</guid>
+      <description>
+        
+        
+        Error 204 - No Results Found Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.
 There are several potential reasons as to why this error occurs:
- The product is not available for the dates in the request. The product is not available for the number of passengers selected in the request.</description>
+ The product is not available for the dates in the request. The product is not available for the number of passengers selected in the request.
+      </description>
     </item>
     
   </channel>

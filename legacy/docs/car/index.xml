@@ -1,48 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Car API documentation on TravelgateX Documentation</title>
-    <link>/legacy/docs/car/</link>
-    <description>Recent content in Car API documentation on TravelgateX Documentation</description>
+    <title>TravelgateX Documentation – Car API documentation</title>
+    <link>https://docs.travelgatex.com/legacy/docs/car/</link>
+    <description>Recent changes in Car API documentation on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/docs/car/</link>
+    </image>
     
-	<atom:link href="/legacy/docs/car/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://docs.travelgatex.com/legacy/docs/car/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Full SOAP Examples</title>
-      <link>/legacy/docs/car/soap-examples/</link>
+      <title>Legacy: Full SOAP Examples</title>
+      <link>https://docs.travelgatex.com/legacy/docs/car/soap-examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/car/soap-examples/</guid>
-      <description>Example Description Sette Parameter d by
+      <guid>https://docs.travelgatex.com/legacy/docs/car/soap-examples/</guid>
+      <description>
+        
+        
+        Example Description Sette Parameter d by
 YOUR_TRA This is the User to access the HUB XMLTr VELGATE_ avelg USERNAME ate
 YOUR_TRA This is the Passwords to access the HUB XMLTr VELGATE_ avelg PASSWORD ate
-TIMEOUT_ This timeout is set for the HUB. Note that this should be Runti FOR_THE\ at least 1 second higher than the Provider&amp;rsquo;s Request me _HUB_REQ Timeout. This way you can ensure that the HUB has time to param UEST receive the response from our integration and responds it eter back to you.</description>
+TIMEOUT_ This timeout is set for the HUB. Note that this should be Runti FOR_THE\ at least 1 second higher than the Provider&amp;rsquo;s Request me _HUB_REQ Timeout. This way you can ensure that the HUB has time to param UEST receive the response from our integration and responds it eter back to you.
+      </description>
     </item>
     
     <item>
-      <title>Change Log</title>
-      <link>/legacy/docs/car/change-log/</link>
+      <title>Legacy: Change Log</title>
+      <link>https://docs.travelgatex.com/legacy/docs/car/change-log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/car/change-log/</guid>
-      <description>Version 1.3.3: Date 09/02/2018
+      <guid>https://docs.travelgatex.com/legacy/docs/car/change-log/</guid>
+      <description>
+        
+        
+        Version 1.3.3: Date 09/02/2018
  Added element PricedCoverages: We have added the element PricedCoverages in OTA_VehAvailRateRQ/VehAvailRQInfo, OTA_VehRateRuleRQ/RentalInfo and OTA_VehResRQ/VehResRQInfo. With these elements we can request coverages to the provider.
  Added element RentalRate in VehSegmentCore: We have added the element RentalRate in OTA_VehResRQ/VehRetResRSCore/VehReservation/VehSegmentCore and OTA_VehRetResRS/VehRetResRSCore/VehReservation/VehSegmentCore. With these elements we can return more properties of the booking, like the cancel penalties, vehicle charges, etc.
- Added attribute PromotionCode in RateQualifier: We have added the attribute PromotionCode on the nodes RateQualifier in order to send provider&amp;rsquo;s promotional codes or return the promotional code associated to the rate.</description>
+ Added attribute PromotionCode in RateQualifier: We have added the attribute PromotionCode on the nodes RateQualifier in order to send provider&amp;rsquo;s promotional codes or return the promotional code associated to the rate.
+      </description>
     </item>
     
     <item>
-      <title>Data Structure</title>
-      <link>/legacy/docs/car/data-structure/</link>
+      <title>Legacy: Data Structure</title>
+      <link>https://docs.travelgatex.com/legacy/docs/car/data-structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/legacy/docs/car/data-structure/</guid>
-      <description>This document intends to explain every aspect of its structure and fields.
+      <guid>https://docs.travelgatex.com/legacy/docs/car/data-structure/</guid>
+      <description>
+        
+        
+        This document intends to explain every aspect of its structure and fields.
 The integration will have the following methods:
-   Method Input Output Required Description Endpoint     OTA_VehAvailRate OTA_VehAvailRateRQ OTA_VehAvailRateRS Yes Makes an availability call Car Booking Endpoint.   OTA_VehRateRule OTA_VehRateRuleRQ OTA_VehRateRuleRS Yes Makes a pre-booking Car Booking Endpoint   OTA_VehRes OTA_VehResRQ OTA_VehResRS Yes Makes a booking Car Booking Endpoint   OTA_VehLocSearch OTA_VehLocSearchRQ OTA_VehLocSearchRS Yes Gets a static offices list Car Batch Endpoint   OTA_VehRetRes OTA_VehRetResRQ OTA_VehRetResRS No Gets booking details Car Booking Endpoint   OTA_VehCancel OTA_VehCancelRQ OTA_VehCancelRS No Cancels a booking Car Booking Endpoint   StaticConfiguration StaticConfigurationRQ StaticConfigurationRS Yes Returns the information related to the configuration of the provider.</description>
+   Method Input Output Required Description Endpoint     OTA_VehAvailRate OTA_VehAvailRateRQ OTA_VehAvailRateRS Yes Makes an availability call Car Booking Endpoint.   OTA_VehRateRule OTA_VehRateRuleRQ OTA_VehRateRuleRS Yes Makes a pre-booking Car Booking Endpoint   OTA_VehRes OTA_VehResRQ OTA_VehResRS Yes Makes a booking Car Booking Endpoint   OTA_VehLocSearch OTA_VehLocSearchRQ OTA_VehLocSearchRS Yes Gets a static offices list Car Batch Endpoint   OTA_VehRetRes OTA_VehRetResRQ OTA_VehRetResRS No Gets booking details Car Booking Endpoint   OTA_VehCancel OTA_VehCancelRQ OTA_VehCancelRS No Cancels a booking Car Booking Endpoint   StaticConfiguration StaticConfigurationRQ StaticConfigurationRS Yes Returns the information related to the configuration of the provider.
+      </description>
     </item>
     
   </channel>

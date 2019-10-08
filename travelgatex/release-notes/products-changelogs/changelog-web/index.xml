@@ -1,45 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>travelgatex.com on TravelgateX Documentation</title>
-    <link>/travelgatex/release-notes/products-changelogs/changelog-web/</link>
-    <description>Recent content in travelgatex.com on TravelgateX Documentation</description>
+    <title>TravelgateX Documentation – travelgatex.com</title>
+    <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/</link>
+    <description>Recent changes in travelgatex.com on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jul 2019 00:00:00 +0200</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/</link>
+    </image>
     
-	<atom:link href="/travelgatex/release-notes/products-changelogs/changelog-web/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>2019-07-15</title>
-      <link>/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-15/</link>
+      <title>Travelgatex: 2019-07-15</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-15/</link>
       <pubDate>Mon, 15 Jul 2019 00:00:00 +0200</pubDate>
       
-      <guid>/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-15/</guid>
-      <description>2019-07-15  Alerts: added configuration multiselectors Profiles: Fully enabled filter profiles Logging: Added new filter number of results Entities: Added sorting method Profiles: Updated query to look for stats and formated text in profiles    Logging: Filter errors refactored Logging: Added red control to non filled required filters Logging: Changed time to 24h mode, without am/pm  
- Logging: Logging table wasn&amp;rsquo;t showing the timestamps on firefox, now is fixed Logging: Enable showing organisation suppliers on SELLER mode Logging: Hide the table on no results</description>
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-15/</guid>
+      <description>
+        
+        
+        2019-07-15  Alerts: added configuration multiselectors Profiles: Fully enabled filter profiles Logging: Added new filter number of results Entities: Added sorting method Profiles: Updated query to look for stats and formated text in profiles    Logging: Filter errors refactored Logging: Added red control to non filled required filters Logging: Changed time to 24h mode, without am/pm  
+ Logging: Logging table wasn&amp;rsquo;t showing the timestamps on firefox, now is fixed Logging: Enable showing organisation suppliers on SELLER mode Logging: Hide the table on no results
+      </description>
     </item>
     
     <item>
-      <title>2019-06-28</title>
-      <link>/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-06-28/</link>
+      <title>Travelgatex: 2019-06-28</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-06-28/</link>
       <pubDate>Fri, 28 Jun 2019 00:00:00 +0200</pubDate>
       
-      <guid>/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-06-28/</guid>
-      <description>2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.  
- Fix on Stats Calendar</description>
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-06-28/</guid>
+      <description>
+        
+        
+        2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.  
+ Fix on Stats Calendar
+      </description>
     </item>
     
     <item>
-      <title>travelgatex.com</title>
-      <link>/travelgatex/release-notes/products-changelogs/changelog-web/log/legacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Travelgatex: travelgatex.com</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/legacy/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
       
-      <guid>/travelgatex/release-notes/products-changelogs/changelog-web/log/legacy/</guid>
-      <description>To make it easier for users and contributors to see precisely what notable changes have been made on the web.
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the web.
 Web site Link
-All notable changes to this product will be documented in this page. 2019-06-20  TEAMs: Improved TEAMs page to allow see teams to all TGX operators Stats: Now shows totals and percentatge on all headers IAM Members: Added icon type members to be more clean IAM Members: Improvement to keep groups open at IAM page    Profiles: Revised redirections to all profile pages IAM Members: fixed creation of new members solving issue on granting permissions IAM create organization: New organizations, pattern code has been changed to allow numbers on organization code Stats: stats view all adviseMessages and only reject if error   2019-06-06  IAM admin entities: UX improve, now expanded by default    IAM admin entities: The accesses list weren&amp;rsquo;t showing the supplier data asociated Stats: stats view all adviseMessages and only reject if error   2019-05-29  IAM members: added macro-roles for distribution IAM members: added macro-roles for alerts and agrupations IAM: added &amp;ldquo;suit organization&amp;rdquo; option to adapt organizations to IAM tree structure.</description>
+All notable changes to this product will be documented in this page. 2019-06-20  TEAMs: Improved TEAMs page to allow see teams to all TGX operators Stats: Now shows totals and percentatge on all headers IAM Members: Added icon type members to be more clean IAM Members: Improvement to keep groups open at IAM page    Profiles: Revised redirections to all profile pages IAM Members: fixed creation of new members solving issue on granting permissions IAM create organization: New organizations, pattern code has been changed to allow numbers on organization code Stats: stats view all adviseMessages and only reject if error   2019-06-06  IAM admin entities: UX improve, now expanded by default    IAM admin entities: The accesses list weren&amp;rsquo;t showing the supplier data asociated Stats: stats view all adviseMessages and only reject if error   2019-05-29  IAM members: added macro-roles for distribution IAM members: added macro-roles for alerts and agrupations IAM: added &amp;ldquo;suit organization&amp;rdquo; option to adapt organizations to IAM tree structure.
+      </description>
     </item>
     
   </channel>
