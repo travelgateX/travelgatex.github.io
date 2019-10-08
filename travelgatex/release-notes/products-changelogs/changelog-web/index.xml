@@ -6,7 +6,7 @@
     <description>Recent changes in travelgatex.com on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Oct 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 16 Aug 2019 00:00:00 +0200</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -17,23 +17,9 @@
     
     
     <item>
-      <title>Travelgatex: 2019-07-31</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-31/</link>
-      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-31/</guid>
-      <description>
-        
-        
-         2019-07-31  Alerts: Added sort to table Stats: traffic type selector Logging: Added column machine to results Logging: Selector items per page Error Messages: added hint description to error code table    Changed format of api-errors  
- Logging: Fixed error descriptions Profiles: fixed bug that prevented refresh on edit Logging: Added label when reference filters are disabled   
-      </description>
-    </item>
-    
-    <item>
       <title>Travelgatex: 2019-08-16</title>
       <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-16/</link>
-      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0200</pubDate>
       
       <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-16/</guid>
       <description>
@@ -41,6 +27,20 @@
         
         2019-08-16  Logging: Added new feature to set filters via url Alerts: added logic time alerts Connect: modified profile cals and addded premium partner option to connect    Accesses: improved refresh logic when updating accesses IAM Entities: Improved sorting in entities  
  B2B: Fixed required typename on apis
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-07-31</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-31/</link>
+      <pubDate>Wed, 31 Jul 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-31/</guid>
+      <description>
+        
+        
+         2019-07-31  Alerts: Added sort to table Stats: traffic type selector Logging: Added column machine to results Logging: Selector items per page Error Messages: added hint description to error code table    Changed format of api-errors  
+ Logging: Fixed error descriptions Profiles: fixed bug that prevented refresh on edit Logging: Added label when reference filters are disabled   
       </description>
     </item>
     
