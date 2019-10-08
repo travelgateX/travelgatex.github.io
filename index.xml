@@ -31,6 +31,20 @@
     </item>
     
     <item>
+      <title>Travelgatex: 2019-08-16</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-16/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-16/</guid>
+      <description>
+        
+        
+        2019-08-16  Logging: Added new feature to set filters via url Alerts: added logic time alerts Connect: modified profile cals and addded premium partner option to connect    Accesses: improved refresh logic when updating accesses IAM Entities: Improved sorting in entities  
+ B2B: Fixed required typename on apis
+      </description>
+    </item>
+    
+    <item>
       <title>Travelgatex: ChannelX</title>
       <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-channelx/log/legacy/</link>
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
@@ -672,20 +686,6 @@ Required by AdminQuery:    SupplierData:    GroupData:    GroupCommonData:    Or
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/alerts-x/reference/objects/accessedge/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type AccessEdge {  node: Access    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Access):   cursor(String!):   
-Required by AccessConnection:
-      </description>
-    </item>
-    
-    <item>
-      <title>Logging: AccessEdge</title>
-      <link>https://docs.travelgatex.com/logging/reference/objects/accessedge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/logging/reference/objects/accessedge/</guid>
       <description>
         
         
