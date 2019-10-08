@@ -17,16 +17,16 @@
     
     
     <item>
-      <title>Travelgatex: 2019-08-30</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-30/</link>
+      <title>Travelgatex: 2019-09-16</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-16/</link>
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
       
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-30/</guid>
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-16/</guid>
       <description>
         
         
-         2019-08-30  IAM: Added owner filter to entities/admin-entities. added new tab for&amp;hellip; Logging: Added hotel reference Members: IAM-macro-roles, added tabs for simple and advanced Alerts: entities by buyer or seller    Logging: References now allows more than one option  
- Logging: Fixed logging with filter if your not logged on the page   
+         2019-09-16  Connect: Added VCC to legacy Profiles: Enabled entity asignment to profiles IAM: Added pagination and info to orgs, and profiles page completed    Added gzip compression to calls to the gateway  
+ Alerts: Fixed issue on create new alert Connect: Fixed dates activations   
       </description>
     </item>
     
@@ -42,6 +42,20 @@
         To make it easier for users and contributors to see precisely what notable changes have been made on the product.
 Product Page Link
 All notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-08-30</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-30/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-30/</guid>
+      <description>
+        
+        
+         2019-08-30  IAM: Added owner filter to entities/admin-entities. added new tab for&amp;hellip; Logging: Added hotel reference Members: IAM-macro-roles, added tabs for simple and advanced Alerts: entities by buyer or seller    Logging: References now allows more than one option  
+ Logging: Fixed logging with filter if your not logged on the page   
       </description>
     </item>
     
@@ -674,19 +688,6 @@ Required by AdminQuery:    SupplierData:    GroupData:    GroupCommonData:    Or
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/stats/reference/objects/accessdata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type AccessData {  name: String!    isActive: Boolean!    code: ID!    supplier: Supplier!    isTest: Boolean!    user: String    password: String    urls: Urls    parameters: [Parameter]    markets: [String!]    rateRules: [RateRulesType!]    shared: Access    owner: Organization    updateDescriptiveInfo: Int!
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AccessData</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/accessdata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/accessdata/</guid>
       <description>
         
         
