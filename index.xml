@@ -17,6 +17,20 @@
     
     
     <item>
+      <title>Travelgatex: 2019-08-30</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-30/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-30/</guid>
+      <description>
+        
+        
+         2019-08-30  IAM: Added owner filter to entities/admin-entities. added new tab for&amp;hellip; Logging: Added hotel reference Members: IAM-macro-roles, added tabs for simple and advanced Alerts: entities by buyer or seller    Logging: References now allows more than one option  
+ Logging: Fixed logging with filter if your not logged on the page   
+      </description>
+    </item>
+    
+    <item>
       <title>Travelgatex: ChannelX</title>
       <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-channelx/log/legacy/</link>
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
@@ -677,20 +691,6 @@ Required by AdminQuery:    SupplierData:    GroupData:    GroupCommonData:    Or
         
         
         GraphQL schema definition type AccessData {  name: String!    isActive: Boolean!    code: ID!    supplier: Supplier!    isTest: Boolean!    user: String    password: String    urls: Urls    parameters: [Parameter]    markets: [String!]    rateRules: [RateRulesType!]    shared: Access    owner: Organization    updateDescriptiveInfo: Int!
-      </description>
-    </item>
-    
-    <item>
-      <title>Alerts-X: AccessEdge</title>
-      <link>https://docs.travelgatex.com/alerts-x/reference/objects/accessedge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/alerts-x/reference/objects/accessedge/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type AccessEdge {  node: Access    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Access):   cursor(String!):   
-Required by AccessConnection:
       </description>
     </item>
     
