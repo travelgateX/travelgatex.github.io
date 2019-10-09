@@ -6,7 +6,7 @@
     <description>Recent changes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Oct 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0200</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -15,6 +15,19 @@
     
 	    <atom:link href="https://docs.travelgatex.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Travelgatex: 2019-09-30</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-30/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-30/</guid>
+      <description>
+        
+        
+        2019-09-30  ENTITIES: Modified access form to custom require runtime configuration    IAM: Changes on new macro roles ORGANIZATIONS: Changed filters to not appear on the request on missing    MEMBERS: Solved an error realated on updating api-keys after a new creation
+      </description>
+    </item>
     
     <item>
       <title>Travelgatex: 2019-09-16</title>
@@ -675,19 +688,6 @@ Required by AdminQuery:    SupplierData:    GroupData:    GroupCommonData:    Or
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/paymentx/reference/objects/accessdata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type AccessData {  name: String!    isActive: Boolean!    code: ID!    supplier: Supplier!    isTest: Boolean!    user: String    password: String    urls: Urls    parameters: [Parameter]    markets: [String!]    rateRules: [RateRulesType!]    shared: Access    owner: Organization    updateDescriptiveInfo: Int!
-      </description>
-    </item>
-    
-    <item>
-      <title>Stats: AccessData</title>
-      <link>https://docs.travelgatex.com/stats/reference/objects/accessdata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/stats/reference/objects/accessdata/</guid>
       <description>
         
         
