@@ -30,6 +30,19 @@
     </item>
     
     <item>
+      <title>Travelgatex: 2019-10-09</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-09/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-09/</guid>
+      <description>
+        
+        
+         2019-10-09  ALERTS: Added new filters and group by ALERTS: Add API and timesToRecovery    ALERTS: Added new responsive styles    ALERTS: fix on Status ALERTS: fix on Update Price   
+      </description>
+    </item>
+    
+    <item>
       <title>Travelgatex: 2019-09-16</title>
       <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-16/</link>
       <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
@@ -675,19 +688,6 @@ Required by AdminQuery:    SupplierData:    GroupData:    GroupCommonData:    Or
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/mappea/reference/objects/accessdata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type AccessData {  name: String!    isActive: Boolean!    code: ID!    supplier: Supplier!    isTest: Boolean!    user: String    password: String    urls: Urls    parameters: [Parameter]    markets: [String!]    rateRules: [RateRulesType!]    shared: Access    owner: Organization    updateDescriptiveInfo: Int!
-      </description>
-    </item>
-    
-    <item>
-      <title>Paymentx: AccessData</title>
-      <link>https://docs.travelgatex.com/paymentx/reference/objects/accessdata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/paymentx/reference/objects/accessdata/</guid>
       <description>
         
         
