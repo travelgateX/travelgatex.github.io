@@ -6,7 +6,7 @@
     <description>Recent changes in Products Changelog on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0200</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -17,15 +17,16 @@
     
     
     <item>
-      <title>Travelgatex: 2019-09-30</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-30/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0200</pubDate>
+      <title>Travelgatex: 2019-10-15</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-15/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0200</pubDate>
       
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-30/</guid>
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-15/</guid>
       <description>
         
         
-        2019-09-30  ENTITIES: Modified access form to custom require runtime configuration    IAM: Changes on new macro roles ORGANIZATIONS: Changed filters to not appear on the request on missing    MEMBERS: Solved an error realated on updating api-keys after a new creation
+        2019-10-15  ACCESES: Added shared field and allowed url edition in acceses. MENU: new horizontal menu.    CONNECT: Modified to choose client before hotelx. PUBLIC WEB: changed info searches/day in home.  
+ PROFILES: tag error on removing category fixed. PRESS: Fixed media processing.
       </description>
     </item>
     
@@ -68,6 +69,19 @@
         To make it easier for users and contributors to see precisely what notable changes have been made on the product.
 Product Page Link
 All notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-09-30</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-30/</link>
+      <pubDate>Mon, 30 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-30/</guid>
+      <description>
+        
+        
+        2019-09-30  ENTITIES: Modified access form to custom require runtime configuration    IAM: Changes on new macro roles ORGANIZATIONS: Changed filters to not appear on the request on missing    MEMBERS: Solved an error realated on updating api-keys after a new creation
       </description>
     </item>
     
