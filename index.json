@@ -5506,7 +5506,7 @@
 	"title": "Overview",
 	"tags": [],
 	"description": "Flight-X Overview",
-	"content": ""
+	"content": " Flight-X is TravelgateX’s first product for its Aviation Industry disruption proposition, built on top of a proprietary API, based on IATA’s NDC standard, for direct sellers and airlines integration. By using Flight-X you can direct access differentiated and personalized Airlines dynamic offers and products (flights, ancillaries, fare families) and Prices.\nFlight-X High Level Architecture Suppliers Currently we are seamlessly connected to more than 45 Suppliers (being direct and indirect airlines, GDSs, Aggregators, Consolidators among others), and we keep them all optimized so that response times are super fast and reliable.\n"
 },
 {
 	"uri": "https://docs.travelgatex.com/getting-started/overview/",
@@ -6884,8 +6884,8 @@
 	"uri": "https://docs.travelgatex.com/flight-x/release-notes/roadmap/",
 	"title": "Roadmap",
 	"tags": ["roadmap"],
-	"description": "We have created a GitHub Project where we will keep you updated with all the future modifications regarding this Project",
-	"content": "We have created a GitHub Project where we will keep you updated with all the future modifications regarding this Project.\nHere you will find the GitHub project with the Public Roadmap of TravelgateX.\nThe Project has a few columns that act as the status, whereas cards are the items that we have in our plans. We have also labelled each issue so it would clarify if the item would be added in the Insights-X, Documentation, etc\u0026hellip;\n"
+	"description": "Flight-X roadmap summarized",
+	"content": " 2019 Q4  NDC API\n Availability/Shopping (AirShopping) Pricing/Quote (OfferPrice) Booking/Reservation (OrderCreate) Retrieve (OrderView) Ticketing/Issuance (AirDocIssue) Cancel (OrderCancel)  Backoffice + Web GUI\n Customer Setup Access configuration Monitoring \u0026amp; Statistics Dashboard  CLI\n  2020 Q1  NDC API\n Airline Profile (AirlineProfile) Preorder Ancillaries (AirShopping) Postorder Ancillaries (ServiceList, SeatAvailability, OrderRetrieve, OrderReshop, OrderChange)  Local Cache\n  "
 },
 {
 	"uri": "https://docs.travelgatex.com/hotel-x/release-notes/roadmap/",
@@ -8449,18 +8449,18 @@
 	"content": "   Introduction Introductory Guide\n     Service Endpoints Introduction to Service Endpoints\n     Audience Who is this document indented to?\n     Documents goals Documentation objectives\n     Anatomy of Request Introduction to Service Endpoints\n     Activities API documentation Read documentation on diferent Legacy APIs\n     Car API documentation Read documentation on diferent Legacy APIs\n     Hotel API documentation Read documentation on diferent Legacy APIs\n     Hub API Documentation Read documentation on diferent Legacy APIs\n     Transfers API Documentation Read documentation on diferent Legacy APIs\n     Transportation API Documentation Read documentation on diferent Legacy APIs\n    "
 },
 {
+	"uri": "https://docs.travelgatex.com/flight-x/release-notes/changelog/2019-10-31/",
+	"title": "2019-10-31",
+	"tags": ["products-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-10-31  Released first pilot API version and web page for testing.   "
+},
+{
 	"uri": "https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-flightsx/log/legacy/",
 	"title": "FlightsX",
 	"tags": ["products-changelog"],
 	"description": "Contains a curated, chronologically ordered list of notable changes",
 	"content": "To make it easier for users and contributors to see precisely what notable changes have been made on the product.\nProduct Page Link\nAll notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.  "
-},
-{
-	"uri": "https://docs.travelgatex.com/flight-x/release-notes/changelog/2019-10-31/",
-	"title": "2019-10-04",
-	"tags": ["products-changelog"],
-	"description": "",
-	"content": " 2019-10-04  Added new table: daily_portfolio_stats_(buyer|seller)    Changed fields in daily_portfolio_(buyer|seller) table. Added field client_owner, removed fields client_id and username.  \n"
 },
 {
 	"uri": "https://docs.travelgatex.com/insights-x/release-notes/changelog/2019-10-04/",
@@ -9398,7 +9398,7 @@
 	"title": "Release Notes",
 	"tags": ["release-notes"],
 	"description": "New Updates &amp; Releases",
-	"content": "   Roadmap We have created a GitHub Project where we will keep you updated with all the future modifications regarding this Project\n     Insights-X changelog     "
+	"content": "   Roadmap Flight-X roadmap summarized\n     Flight-X changelog     "
 },
 {
 	"uri": "https://docs.travelgatex.com/insights-x/release-notes/",
@@ -10374,6 +10374,13 @@
 	"content": "The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.\nThe integration will have the following methods:\n   Method Input Output Required Description     Avail AvailabilityRQ AvailabilityRS Yes Makes a availability call   Valuation ValuationRQ ValuationRS Yes Makes a pre-booking   Reservation ReservationRQ ReservationRS Yes Makes a booking   Routes RoutesRQ RoutesRS Yes Gets a static routes list   RetrieveReservation RetrieveReservation RQ RetrieveReservation RS No Gets the details of a single booking   RetrieveReservation List RetrieveReservation ListRQ RetrieveReservation ListRS No Gets a list of bookings   Cancelation CancellationRQ CancellationRS No Cancels a booking    Each request sent to the service url requires a node called rqXML . Inside this node travels the current method\u0026rsquo;s Input object.\nThe data structure will always have common elements in all objects and the specific objects related to the operation\nData structure content:\n Common-Elements Valuation Avail Valuation Reservation Routes RetrieveReservation RetrieveReservationList Cancellation Errors  "
 },
 {
+	"uri": "https://docs.travelgatex.com/flight-x/release-notes/changelog/",
+	"title": "Flight-X changelog",
+	"tags": [],
+	"description": "",
+	"content": "Easily accessible log of notable changes to Flight-X\n\t 2019-10-31  Released first pilot API version and web page for testing.     "
+},
+{
 	"uri": "https://docs.travelgatex.com/legacy/docs/transportation/flights/flightsdatastructure/",
 	"title": "Flights Data Structure",
 	"tags": [],
@@ -10498,13 +10505,6 @@
 	"tags": [],
 	"description": "",
 	"content": "This section enumerates basic quotas and throttling thresholds in XML Travelgate Hub:\n   Quota Name Scope Type Behaviour when exceeded Value     Message size for Http Request System-wide Static Incoming messages will be rejected and an exception will be received by the calling code. 128KB   Request Min. Timeout Milliseconds Travel Operation Static Incoming messages with less timeout will be rejected and an error will be received by the calling code. 50 milliseconds   Request Max. Timeout Milliseconds Travel Operation Static Incoming request timeout will be converted to maximum time allowed. Avail: 25 seconds. Reservation: 180 seconds. Batch: 240 seconds.    "
-},
-{
-	"uri": "https://docs.travelgatex.com/flight-x/release-notes/changelog/",
-	"title": "Insights-X changelog",
-	"tags": [],
-	"description": "",
-	"content": "Easily accessible log of notable changes to Insights-X\n\t 2019-10-04  Added new table: daily_portfolio_stats_(buyer|seller)    Changed fields in daily_portfolio_(buyer|seller) table. Added field client_owner, removed fields client_id and username.  \n  "
 },
 {
 	"uri": "https://docs.travelgatex.com/insights-x/release-notes/changelog/",

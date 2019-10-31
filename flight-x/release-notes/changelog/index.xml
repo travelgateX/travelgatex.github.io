@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TravelgateX Documentation – Insights-X changelog</title>
+    <title>TravelgateX Documentation – Flight-X changelog</title>
     <link>https://docs.travelgatex.com/flight-x/release-notes/changelog/</link>
-    <description>Recent changes in Insights-X changelog on TravelgateX Documentation</description>
+    <description>Recent changes in Flight-X changelog on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -17,15 +17,15 @@
     
     
     <item>
-      <title>Flight-X: 2019-10-04</title>
+      <title>Flight-X: 2019-10-31</title>
       <link>https://docs.travelgatex.com/flight-x/release-notes/changelog/2019-10-31/</link>
-      <pubDate>Fri, 04 Oct 2019 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0100</pubDate>
       
       <guid>https://docs.travelgatex.com/flight-x/release-notes/changelog/2019-10-31/</guid>
       <description>
         
         
-        2019-10-04  Added new table: daily_portfolio_stats_(buyer|seller)    Changed fields in daily_portfolio_(buyer|seller) table. Added field client_owner, removed fields client_id and username.
+         2019-10-31  Released first pilot API version and web page for testing.   
       </description>
     </item>
     
