@@ -4693,11 +4693,6 @@
               <span>Roadmap</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotel-x/release-notes/2019-11-05/" class="dd-item">
-            <a href="/hotel-x/release-notes/2019-11-05/">
-              <span>Changelog 2019-11-05</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/hotel-x/release-notes/graphql-schema-changes/" class="dd-item">
             <a href="/hotel-x/release-notes/graphql-schema-changes/">
               <span>GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
@@ -7145,6 +7140,81 @@ role="alert">All notable changes in our platform will be documented on this page
 </p>
 
 
+<div>	
+	<div>
+
+<h2 id="2019-11-05">2019-11-05</h2>
+
+<div class="release-types type-a">
+        <ul>
+<li>New fields keys in Aggregation Plugin (&ldquo;binding&rdquo; and &ldquo;refundable&rdquo;). More information about Aggregation Plugin <a href="https://docs.travelgatex.com/hotel-x/plugins/aggregation/" target="_blank">here</a>.</li>
+</ul>
+
+<pre><code class="language-json">{
+    &quot;plugins&quot;: {
+        &quot;step&quot;: &quot;RESPONSE_OPTION/RESPONSE&quot;,
+        &quot;pluginsType&quot;: [
+            {
+                &quot;type&quot;: &quot;AGGREGATION&quot;,
+                &quot;name&quot;: &quot;cheapest_price&quot;,
+                &quot;parameters&quot;: [
+                    {
+                        {&quot;key&quot;: &quot;primaryKey&quot;,&quot;value&quot;: &quot;hotel,supplier,room,refundable,binding&quot;}
+                    }
+                ]
+            }
+        ]
+    }
+}
+</code></pre>
+
+</div>
+
+<p><div class="release-types type-f">
+        <ul>
+<li>Field &ldquo;hotel&rdquo; in Booking query. Now, this field indicates the locator provided by the hotel (just in case the supplier returns it).</li>
+</ul>
+
+<pre><code class="language-json">query {
+  hotelX {
+    booking(criteria: {
+    accessCode: &quot;422&quot;,
+    language: &quot;en&quot;,
+    references: {
+      currency: &quot;EUR&quot;,
+      hotelCode: &quot;1&quot;,
+      references: [
+        {
+          client: &quot;Demo_Client&quot;,
+          supplier: &quot;HOTELTEST&quot;
+        }
+      ]
+    },
+     typeSearch: REFERENCES},
+			settings: {client:&quot;Demo_Client&quot;, testMode: true}) 
+    {
+      bookings {
+        reference {
+          client
+          hotel
+          supplier
+        }
+      }
+    }
+  }
+}
+</code></pre>
+
+</div></p>
+
+<p><div class="release-types type-f">
+        <ul>
+<li>Internal improvements.</li>
+</ul>
+
+</div></p>
+</div>
+</div>
 <div>	
 	<div>
 
