@@ -8471,7 +8471,7 @@
 },
 {
 	"uri": "https://docs.travelgatex.com/hotel-x/release-notes/changelog/2019-11-05/",
-	"title": "2019-11-05",
+	"title": "Changelog 2019-11-05",
 	"tags": ["products-changelog"],
 	"description": "Contains an accurated, chronologically-ordered list of notable changes",
 	"content": " 2019-11-05  New fields keys in Aggregation Plugin (\u0026ldquo;binding\u0026rdquo; and \u0026ldquo;refundable\u0026rdquo;). More information about Aggregation Plugin here.  { \u0026quot;plugins\u0026quot;: { \u0026quot;step\u0026quot;: \u0026quot;RESPONSE_OPTION/RESPONSE\u0026quot;, \u0026quot;pluginsType\u0026quot;: [ { \u0026quot;type\u0026quot;: \u0026quot;AGGREGATION\u0026quot;, \u0026quot;name\u0026quot;: \u0026quot;cheapest_price\u0026quot;, \u0026quot;parameters\u0026quot;: [ { {\u0026quot;key\u0026quot;: \u0026quot;primaryKey\u0026quot;,\u0026quot;value\u0026quot;: \u0026quot;hotel,supplier,room,refundable,binding\u0026quot;} } ] } ] } }    Field \u0026ldquo;hotel\u0026rdquo; in Booking query. Now, this field indicates the locator provided by the hotel (just in case the supplier returns it).  query { hotelX { booking(criteria: { accessCode: \u0026quot;422\u0026quot;, language: \u0026quot;en\u0026quot;, references: { currency: \u0026quot;EUR\u0026quot;, hotelCode: \u0026quot;1\u0026quot;, references: [ { client: \u0026quot;Demo_Client\u0026quot;, supplier: \u0026quot;HOTELTEST\u0026quot; } ] }, typeSearch: REFERENCES}, settings: {client:\u0026quot;Demo_Client\u0026quot;, testMode: true}) { bookings { reference { client hotel supplier } } } } }  \n Internal improvements.  \n"

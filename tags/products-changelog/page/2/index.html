@@ -4708,6 +4708,11 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/hotel-x/release-notes/changelog/2019-11-05/" class="dd-item">
+            <a href="/hotel-x/release-notes/changelog/2019-11-05/">
+              <span>Changelog 2019-11-05</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
             </ul>
@@ -7166,7 +7171,7 @@
 
    <article class="post hotel-x">
     <header class="post-header">
-        <h2 class="post-title"><a href="/hotel-x/release-notes/changelog/2019-11-05/">2019-11-05</a></h2>
+        <h2 class="post-title"><a href="/hotel-x/release-notes/changelog/2019-11-05/">Changelog 2019-11-05</a></h2>
     </header>
     <section class="post-excerpt">
         <p>2019-11-05  New fields keys in Aggregation Plugin (&ldquo;binding&rdquo; and &ldquo;refundable&rdquo;). More information about Aggregation Plugin here.  { &quot;plugins&quot;: { &quot;step&quot;: &quot;RESPONSE_OPTION/RESPONSE&quot;, &quot;pluginsType&quot;: [ { &quot;type&quot;: &quot;AGGREGATION&quot;, &quot;name&quot;: &quot;cheapest_price&quot;, &quot;parameters&quot;: [ { {&quot;key&quot;: &quot;primaryKey&quot;,&quot;value&quot;: &quot;hotel,supplier,room,refundable,binding&quot;} } ] } ] } }    Field &ldquo;hotel&rdquo; in Booking query. Now, this field indicates the locator provided by the hotel (just in case the supplier returns it).  query { hotelX { booking(criteria: { accessCode: &quot;422&quot;, language: &quot;en&quot;, references: { currency: &quot;EUR&quot;, hotelCode: &quot;1&quot;, references: [ { client: &quot;Demo_Client&quot;, supplier: &quot;HOTELTEST&quot; } ] }, typeSearch: REFERENCES}, settings: {client:&quot;Demo_Client&quot;, testMode: true}) { bookings { reference { client hotel supplier } } } } } <a class="read-more" href="/hotel-x/release-notes/changelog/2019-11-05/">&raquo;</a></p>
