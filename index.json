@@ -2877,6 +2877,13 @@
 	"content": "  Avail     Cancellation     Emit     Flights Data Structure     Refund     Reservation     RetrieveReservation     RetrieveReservationList     Routes     Supplements     SupplementsReservation     Valuation     "
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/",
+	"title": "Flights integrations",
+	"tags": [],
+	"description": "Changelog of our flight integrations",
+	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
+},
+{
 	"uri": "https://docs.travelgatex.com/hotel-x/reference/scalars/float/",
 	"title": "Float",
 	"tags": [],
@@ -3344,6 +3351,13 @@
 	"tags": [],
 	"description": "Read documentation on diferent Legacy APIs",
 	"content": "  Avail     AvailDestinationTree     Cancel     CategoryList     Common Elements     CurrencyList     DescriptiveInfo     DescriptiveInfoExtended (In development)     GeographicDestinationTree     HotelList     Lists of Data     MarketList     MealPlanList     MetaData     Reservation     ReservationList     ReservationRead     RoomList     RuntimeConfiguration     StaticConfiguration     Valuation     "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/hotel/",
+	"title": "Hotel integrations",
+	"tags": [],
+	"description": "Changelog of our hotel integrations",
+	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
 },
 {
 	"uri": "https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelbookinput/",
@@ -5703,6 +5717,13 @@
 	"tags": [],
 	"description": "",
 	"content": " GraphQL schema definition type PaxInput {  age: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields age(Int!):   \n"
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/payment/",
+	"title": "Payment integrations",
+	"tags": [],
+	"description": "Changelog of our payment integrations",
+	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
 },
 {
 	"uri": "https://docs.travelgatex.com/hotel-x/reference/inputobjects/paymentcardinput/",
@@ -9763,6 +9784,13 @@
 	"tags": [],
 	"description": "Contains a curated, chronologically ordered list of notable changes",
 	"content": "To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.\nAll notable changes on TravelgateX platform will be documented in this page. \tTo make it easier for users and contributors to see precisely what notable changes have been made on the product.\nProduct Page Link\nAll notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/",
+	"title": "Integrations changelog",
+	"tags": [],
+	"description": "Integrations changelog",
+	"content": " Changelogs Consult here our integrations changelog grouped by line.\nJoin us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.    Flights integrations Changelog of our flight integrations\n     Hotel integrations Changelog of our hotel integrations\n     Payment integrations Changelog of our payment integrations\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/mappea/",
