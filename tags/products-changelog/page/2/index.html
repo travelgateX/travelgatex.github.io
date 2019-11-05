@@ -4691,6 +4691,11 @@
               <span>Roadmap</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/hotel-x/release-notes/2019-11-05/" class="dd-item">
+            <a href="/hotel-x/release-notes/2019-11-05/">
+              <span>Changelog 2019-11-05</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/hotel-x/release-notes/graphql-schema-changes/" class="dd-item">
             <a href="/hotel-x/release-notes/graphql-schema-changes/">
               <span>GraphQL Schema Changes</span><i class="fa fa-circle-thin read-icon"></i>
@@ -7125,7 +7130,7 @@
 	
 	    <a class="newer-posts" href="/tags/products-changelog/">&larr; Previous Pages</a>
 	
-	<span class="page-number">Page 2 of 3</span>
+	<span class="page-number">Page 2 of 4</span>
 	
 	    <a class="older-posts" href="/tags/products-changelog/page/3/">Next Pages &rarr;</a>
 	
@@ -7133,6 +7138,27 @@
 
 </div>
 
+
+   <article class="post hotel-x">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/hotel-x/release-notes/2019-11-05/">Changelog 2019-11-05</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>2019-11-05  New fields keys in Aggregation Plugin (&ldquo;binding&rdquo; and &ldquo;refundable&rdquo;). More information about Aggregation Plugin here.  { &quot;plugins&quot;: { &quot;step&quot;: &quot;RESPONSE_OPTION/RESPONSE&quot;, &quot;pluginsType&quot;: [ { &quot;type&quot;: &quot;AGGREGATION&quot;, &quot;name&quot;: &quot;cheapest_price&quot;, &quot;parameters&quot;: [ { {&quot;key&quot;: &quot;primaryKey&quot;,&quot;value&quot;: &quot;hotel,supplier,room,refundable,binding&quot;} } ] } ] } }    Field &ldquo;hotel&rdquo; in Booking query. Now, this field indicates the locator provided by the hotel (just in case the supplier returns it).  query { hotelX { booking(criteria: { accessCode: &quot;422&quot;, language: &quot;en&quot;, references: { currency: &quot;EUR&quot;, hotelCode: &quot;1&quot;, references: [ { client: &quot;Demo_Client&quot;, supplier: &quot;HOTELTEST&quot; } ] }, typeSearch: REFERENCES}, settings: {client:&quot;Demo_Client&quot;, testMode: true}) { bookings { reference { client hotel supplier } } } } } <a class="read-more" href="/hotel-x/release-notes/2019-11-05/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="https://docs.travelgatex.com/tags/products-changelog/">products-changelog</a>
+            
+        
+
+    </footer>
+</article>
 
    <article class="post flight-x">
     <header class="post-header">
@@ -7325,27 +7351,6 @@ All notable changes to this product will be documented in this page. Under const
     </footer>
 </article>
 
-   <article class="post logging">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/logging/release-notes/changelog/legacy/">Legacy changelog</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>2019-08-30  Now quotes requested by Speed have the same sessionID that quotes requested by the client in order to identify them.    Now reference filters are arrays in order to be able to request multiple references at once.   2019-08-22  Added the field hotel in the input object reference from which bookings can be searched by the hotel&rsquo;s reference.   2019-08-21  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter. <a class="read-more" href="/logging/release-notes/changelog/legacy/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="https://docs.travelgatex.com/tags/products-changelog/">products-changelog</a>
-            
-        
-
-    </footer>
-</article>
-
 
 <div style="margin-bottom:2rem"></div>
 
@@ -7353,7 +7358,7 @@ All notable changes to this product will be documented in this page. Under const
 	
 	    <a class="newer-posts" href="/tags/products-changelog/">&larr; Previous Pages</a>
 	
-	<span class="page-number">Page 2 of 3</span>
+	<span class="page-number">Page 2 of 4</span>
 	
 	    <a class="older-posts" href="/tags/products-changelog/page/3/">Next Pages &rarr;</a>
 	
