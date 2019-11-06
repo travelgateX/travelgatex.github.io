@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Distribution | TravelgateX Documentation</title>
+    <title>Integration changelog example | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.40.1" />
-<title>Distribution :: TravelgateX Documentation</title>
+<title>Integration changelog example :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -30,13 +30,13 @@
       var baseurl = "https:\/\/docs.travelgatex.com\/";
 </script>
 
-<meta name="description" content="Contains a curated, chronologically ordered list of notable changes">
+<meta name="description" content="Integration changelog, to keep it with the source code">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
     
-    <meta name="description" content="Contains a curated, chronologically ordered list of notable changes">
+    <meta name="description" content="Integration changelog, to keep it with the source code">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.js"></script>
   </head>
-  <body data-url="/travelgatex/release-notes/products-changelogs/changelog-distribution/log/legacy/">
+  <body data-url="/community/integrations-changelog/integration-changelog/">
 
     <div class="mo-header fixed-top">
     <div class="top-header">
@@ -99,12 +99,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/" class="dd-item">
           <div>
             <a href="/travelgatex/">
               <span>TravelgateX</span>            
-            </a>
-                <i class="fa fa-angle-down fa-lg category-icon"></i>
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
           <li data-nav-id="/travelgatex/overview/" class="dd-item">
@@ -2361,12 +2360,11 @@
         </li>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/release-notes/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/release-notes/" class="dd-item">
           <div>
             <a href="/travelgatex/release-notes/">
               <span>Release Notes</span>            
-            </a>
-                <i class="fa fa-angle-down fa-lg category-icon"></i>
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
           <li data-nav-id="/travelgatex/release-notes/roadmap/" class="dd-item">
@@ -2384,12 +2382,11 @@
               <span>GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-        <li data-nav-id="/travelgatex/release-notes/products-changelogs/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/release-notes/products-changelogs/" class="dd-item">
           <div>
             <a href="/travelgatex/release-notes/products-changelogs/">
               <span>Products changelogs</span>            
-            </a>
-                <i class="fa fa-angle-down fa-lg category-icon"></i>
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
         <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-channelx/" class="dd-item">
@@ -2446,12 +2443,11 @@
             <ul>
             </ul>
         </li>
-        <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-distribution/" class="dd-item parent">
+        <li data-nav-id="/travelgatex/release-notes/products-changelogs/changelog-distribution/" class="dd-item">
           <div>
             <a href="/travelgatex/release-notes/products-changelogs/changelog-distribution/">
               <span>Distribution</span>            
-            </a>
-                <i class="fa fa-angle-down fa-lg category-icon"></i>
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
             </ul>
@@ -7019,7 +7015,15 @@
                       <span><i title="Sections →" class="icon-menu"></i> Page sections</span>
                   </a>
                   <div class="page-sections-menu">
-                      
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#integration-changelog">Integration changelog</a>
+<ul>
+<li><a href="#changelog-md-structure">Changelog.md structure</a></li>
+<li><a href="#example-of-changelog-md-file">Example of Changelog.md file</a></li>
+</ul></li>
+</ul>
+</nav>
                   </div>
                 </li>
                 <script>
@@ -7146,7 +7150,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Distribution changelog</h1>
+              <h1 class="pageTitle">Integration changelog example</h1>
 
               
                 
@@ -7155,31 +7159,96 @@
                 
                 
               <div id="top-github-link">
-                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/travelgatex/release-notes/products-changelogs/changelog-distribution/log/legacy/index.md" target="blank">
+                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/community/integrations-changelog/integration-changelog.md" target="blank">
                   <i class="fa fa-code-fork"></i>
                   Edit page
                 </a>
               </div>
               
-<p>To make it easier for users and contributors to see precisely what notable changes have been made on the product.</p>
-
-<p><a href="https://www.travelgatex.com/products/distribution" target="_blank">Product Page Link</a></p>
-
-<div class="alert 
-alert-info"
- 
-role="alert">All notable changes to this product will be documented in this page.</div>
 
 
-<p><strong>Under construction!</strong>
-We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:</p>
+<h1 id="integration-changelog">Integration changelog</h1>
+
+<p>Each integration needs a changelog to inform about releases, roll backs and so.</p>
+
+<p>This changelog won&rsquo;t be at the documentation page, and will be keep with the source codce repository on a <strong>single file</strong> called <strong><em>&ldquo;Changelog.md&rdquo;</em></strong>.</p>
+
+<p>This file will be copied on the documentation changelog by generating <strong>a folder per day</strong> with a single file called <strong><em>&ldquo;index.md&rdquo;</em></strong>.</p>
+
+<p>Thus on the public documentation site we&rsquo;ll have:</p>
+
 <ul>
-<li>Join us on <a href="https://slack.travelgatex.com/">Slack</a> and let us know what resources you need us to prirotize</li>
-<li>Send us a <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira service desk request</a></li>
-<li>Log an <a href="https://github.com/travelgateX/Issue-tracker">issues request</a> with us</li>
-<li>Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the  <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Edit page</code>  button and issue a Pull Request via GitHub with your suggested edits.</li>
+<li>&hellip;\changelog\2000-01-31\index.md</li>
+<li>&hellip;\changelog\2000-02-01\index.md</li>
+<li>&hellip;\changelog... as folders as needed</li>
 </ul>
 
+<h2 id="changelog-md-structure">Changelog.md structure</h2>
+
+<p>the file will have the following structure:</p>
+
+<ul>
+<li><strong>No header</strong></li>
+<li><strong>Grouped by release</strong>: On each release the changelog is grouped under a title 2 with the date in format iso</li>
+<li><strong>Incremental notation</strong>: Changes not applied yet on a release will be at the top of the file with no title, once published a date title will be written on the top.</li>
+<li><strong>Use containers with lists</strong>: All the entrances are tretated as a list in a release note container</li>
+<li>Remmeber that containers can be of type:
+
+<ul>
+<li><code>Added</code> for new features.</li>
+<li><code>Changed</code> for changes in existing functionality.</li>
+<li><code>Deprecated</code> for soon-to-be removed features.</li>
+<li><code>Removed</code> for now removed features.</li>
+<li><code>Fixed</code> for any bug fixes.</li>
+<li><code>Security</code> in case of vulnerabilities.</li>
+<li>Consult more info on release-notes <a href="/community/release-notes/">here</a></li>
+</ul></li>
+</ul>
+
+<h2 id="example-of-changelog-md-file">Example of Changelog.md file</h2>
+
+<pre><code class="language-md">&lt;!-- NO HEADER NEEDED --&gt;
+
+&lt;!-- UNRELEASED STUFF --&gt;
+{{% release-notes-container type=&quot;a&quot; %}}
+- Addition #3 not applied yet... 
+- Addition #2 not applied yet...
+- Addition #1 not applied yet...
+- ...
+{{% /release-notes-container %}}
+
+## 2000-02-01
+{{% release-notes-container type=&quot;a&quot; %}}
+- Addition explanation #3
+- Addition explanation #2
+- Addition explanation #1
+- ...
+{{% /release-notes-container %}}
+
+{{% release-notes-container type=&quot;d&quot; %}}
+- Deprecation explanation #3
+- Deprecation explanation #2
+- Deprecation explanation #1
+- ...
+{{% /release-notes-container %}}
+
+## 2000-01-31
+{{% release-notes-container type=&quot;a&quot; %}}
+- Addition explanation #2
+- Addition explanation #1
+- ...
+{{% /release-notes-container %}}
+
+{{% release-notes-container type=&quot;f&quot; %}}
+- Fix explanation #3
+- Fix explanation #2
+- Fix explanation #1
+- ...
+{{% /release-notes-container %}}
+
+...
+
+</code></pre>
 
 <hr/>
 <h2>Comments</h2>
@@ -7209,32 +7278,12 @@ We have logged this resource on our roadmap and we are currently working through
     </div>
     <div style="left:20%;top:-100px;position:relative">
          
-<div class="container">
-	<h3>See Also</h3>
-	<ul>
-		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-speed/log/legacy/">Speed changelog</a></li>
-		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-inventory/log/legacy/">Inventory changelog</a></li>
-		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-flightsx/log/legacy/">FlightsX changelog</a></li>
-		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-mappea/log/legacy/">Mappea changelog</a></li>
-		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-channelx/log/legacy/">ChannelX changelog</a></li>
-		
-	</ul>
-</div>
-
 
     </div>
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/travelgatex/release-notes/products-changelogs/changelog-insights/" title="Go to previous page | Insights"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Insights</a>
-            </li>
-        <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/travelgatex/release-notes/products-changelogs/changelog-stats/" title="Go to next page | Stats" style="margin-right: 0px;">Stats<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/getting-started/" title="Go to next page | Getting Started" style="margin-right: 0px;">Getting Started<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

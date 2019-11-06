@@ -9121,7 +9121,7 @@
 	"content": " Preference is an optional plugin and allows to offer options preferentially in relation to the rules informed by the client.\nPreference Goals The preference plugin Gives preference to the options that match the preference rules By doing this, the options will be returned in a preferential way.\nSequentially, the rules will be evaluated until a match is found, upon finding it, the process will be stopped and the preference will be evaluated. In the same way, if the rule is not found, the option will be validated.\nThe matching process uses client Tokens filed, which identify the provided by the client and it is used to filter which business rules can be applied in the request sent.\nFiles needed in order to use this plugin  Preference file format (Mandatory)  Execution example { \u0026quot;step\u0026quot;: \u0026quot;RESPONSE\u0026quot;, \u0026quot;pluginsType\u0026quot;: [{ \u0026quot;name\u0026quot;: \u0026quot;preference\u0026quot;, \u0026quot;type\u0026quot;: \u0026quot;POST_STEP\u0026quot;, \u0026quot;parameters\u0026quot;: [{ \u0026quot;key\u0026quot;: \u0026quot;primaryKey\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;hotel,currency\u0026quot; }, { \u0026quot;key\u0026quot;: \u0026quot;optionsPerKey\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;4\u0026quot; }] }] }  Possible values in \u0026ldquo;key\u0026rdquo;:\u0026ldquo;primaryKey\u0026rdquo; are supplier, hotel, market, board, payment, room, promotion, supplement, surcharges, rateRules or/and cancelPolicy\n Example of use Percentage = 1, Supplier A: 126 €, Supplier B: 125 €\n126 - 126 * 0.01 = 124,74 \u0026lt;= 125 €, then the selected one is supplier A\nPercentage = 1, Supplier A: 128 €, Supplier B: 125 €\n128 - 128 * 0.01 = 126.72\u0026gt; 125 €, then the selected one is supplier B\n"
 },
 {
-	"uri": "https://docs.travelgatex.com/community/public-changelog/",
+	"uri": "https://docs.travelgatex.com/community/integrations-changelog/public-changelog/",
 	"title": "Public changelog example",
 	"tags": [],
 	"description": "Public changelog, to be published at documentation site",
@@ -9324,7 +9324,7 @@
 	"content": "Insights-X is a powerful data product that will let you get back in control of your business.\nThe innovative way we store, manage and process data allows us to produce real-time data, historical trends and forecast the travel industry to match your own needs.\nJoin us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.   Overview Insights-X Overview\n     Contents What is Insights-X?\n     Datasets Understand Insights-X Datasets\n     Release Notes New Updates \u0026amp; Releases\n     FAQs Insights-X FAws\n    "
 },
 {
-	"uri": "https://docs.travelgatex.com/community/integration-changelog/",
+	"uri": "https://docs.travelgatex.com/community/integrations-changelog/integration-changelog/",
 	"title": "Integration changelog example",
 	"tags": [],
 	"description": "Integration changelog, to keep it with the source code",
@@ -9713,7 +9713,7 @@
 	"title": "Community",
 	"tags": [],
 	"description": "",
-	"content": "   Style Guide Community Style Guide\n     Writting release notes Release notes, document with the changelog\n     Public changelog example Public changelog, to be published at documentation site\n     Integration changelog example Integration changelog, to keep it with the source code\n    "
+	"content": "   Style Guide Community Style Guide\n     Writting release notes Release notes, document with the changelog\n     Integrations Changelog Integrations changelog process\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/",
@@ -9798,6 +9798,13 @@
 	"tags": [],
 	"description": "Contains a curated, chronologically ordered list of notable changes",
 	"content": "To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.\nAll notable changes on TravelgateX platform will be documented in this page. \tTo make it easier for users and contributors to see precisely what notable changes have been made on the product.\nProduct Page Link\nAll notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
+},
+{
+	"uri": "https://docs.travelgatex.com/community/integrations-changelog/",
+	"title": "Integrations Changelog",
+	"tags": [],
+	"description": "Integrations changelog process",
+	"content": "Integrations changelog is conducted at Changelog.md kept with the source code, that is copied on docs at integrations changelog section:\n  Public changelog example Public changelog, to be published at documentation site\n     Integration changelog example Integration changelog, to keep it with the source code\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/integrations/",
