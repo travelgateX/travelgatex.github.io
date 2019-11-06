@@ -40,7 +40,39 @@
         
         
         This document assists on write release notes with the changelog of products.
- Release Notes Organization How to keep a good changelog  General Principles  What is a changelog? Why keep a changelog? Who needs a changelog?   How do I make a good changelog?  Guiding Principles Types of changes  How can I reduce the effort required to maintain a changelogs document? Can changelogs be bad?
+ Release Notes Organization How to keep a good changelog  General Principles What is a changelog? Why keep a changelog? Who needs a changelog?  How do I make a good changelog?  Guiding Principles Types of changes  How can I reduce the effort required to maintain a changelogs document? Can changelogs be bad?  Do not document commit log diffs Do not ignore deprecations Avoid confusing dates  Changelog example Reference table Writing resources  Release Notes Organization Release notes includes:
+      </description>
+    </item>
+    
+    <item>
+      <title>Community: Public changelog example</title>
+      <link>https://docs.travelgatex.com/community/public-changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/community/public-changelog/</guid>
+      <description>
+        
+        
+        Public changelog On the documentation an Integrations section will be maintained with the respectives changelogs as can be seen here, all integrations will have his own changelog, integrations will be grouped by lines (hotel, flights, payment).
+Changelogs will have a folder per day containing the releases done on that date. Inside an unique index.md will contain all the changes made.
+Thus on the public documentation site we&amp;rsquo;ll have (example for guestincomming at hotel line):
+      </description>
+    </item>
+    
+    <item>
+      <title>Community: Integration changelog example</title>
+      <link>https://docs.travelgatex.com/community/integration-changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/community/integration-changelog/</guid>
+      <description>
+        
+        
+        Integration changelog Each integration needs a changelog to inform about releases, roll backs and so.
+This changelog won&amp;rsquo;t be at the documentation page, and will be keep with the source codce repository on a single file called &amp;ldquo;Changelog.md&amp;rdquo;.
+This file will be copied on the documentation changelog by generating a folder per day with a single file called &amp;ldquo;index.md&amp;rdquo;.
+Thus on the public documentation site we&amp;rsquo;ll have:
+ &amp;hellip;\changelog\2000-01-31\index.md &amp;hellip;\changelog\2000-02-01\index.
       </description>
     </item>
     

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MappeaX | TravelgateX Documentation</title>
-    <link rel="alternate" type="application/rss" href="https://docs.travelgatex.com/mappea/index.xml" title="TravelgateX Documentation"/>
+    <title>Public changelog example | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.40.1" />
-<title>MappeaX :: TravelgateX Documentation</title>
+<title>Public changelog example :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,13 +30,13 @@
       var baseurl = "https:\/\/docs.travelgatex.com\/";
 </script>
 
-<meta name="description" content="All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here.">
+<meta name="description" content="Public changelog, to be published at documentation site">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
     
-    <meta name="description" content="">
+    <meta name="description" content="Public changelog, to be published at documentation site">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -48,7 +47,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.js"></script>
   </head>
-  <body data-url="/mappea/">
+  <body data-url="/community/public-changelog/">
 
     <div class="mo-header fixed-top">
     <div class="top-header">
@@ -7016,7 +7015,18 @@
                       <span><i title="Sections →" class="icon-menu"></i> Page sections</span>
                   </a>
                   <div class="page-sections-menu">
-                      
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#public-changelog">Public changelog</a>
+<ul>
+<li><a href="#index-md-structure-for-a-release">index.md structure for a release</a></li>
+<li><a href="#example-of-index-md-file">Example of index.md file</a></li>
+<li><a href="#auxiliary-index-md-at-the-integration-level-and-at-the-changelog-level">Auxiliary index.md at the integration level and at the changelog level</a></li>
+<li><a href="#index-md-at-integrations-line-dll">_index.md at \integrations\line\dll</a></li>
+<li><a href="#index-md-at-integrations-line-dll-changelog">_index.md at \integrations\line\dll\changelog</a></li>
+</ul></li>
+</ul>
+</nav>
                   </div>
                 </li>
                 <script>
@@ -7143,7 +7153,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">MappeaX</h1>
+              <h1 class="pageTitle">Public changelog example</h1>
 
               
                 
@@ -7152,57 +7162,150 @@
                 
                 
               <div id="top-github-link">
-                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/mappea/_index.md" target="blank">
+                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/community/public-changelog.md" target="blank">
                   <i class="fa fa-code-fork"></i>
                   Edit page
                 </a>
               </div>
               
 
-	
+
+<h1 id="public-changelog">Public changelog</h1>
+
+<p>On the documentation an Integrations section will be maintained with the respectives changelogs as can be seen <a href="/integrations/">here</a>, all integrations will have his own changelog, integrations will be grouped by lines (hotel, flights, payment).</p>
+
+<p>Changelogs will have a folder per day containing the releases done on that date. Inside an unique index.md will contain all the changes made.</p>
+
+<p>Thus on the public documentation site we&rsquo;ll have (example for guestincomming at hotel line):</p>
+
+<ul>
+<li>\integrations\hotel\gue\changelog\2000-01-31\index.md</li>
+<li>\integrations\hotel\gue\changelog\2000-02-01\index.md</li>
+<li>\integrations\hotel\gue\changelog... as folders as needed</li>
+</ul>
+
+<p>This files will be the copies of the content at the Changelog.md that is hosted on the code repository. There will be a single file with the content grouped by date of release as explained <a href="/community/integration-changelog/">here</a>.</p>
+
+<h2 id="index-md-structure-for-a-release">index.md structure for a release</h2>
+
+<p>the file will have the following structure (this process is planned to be done automatically but a this moment must be handmade):</p>
+
+<ul>
+<li><strong>Header</strong>: As shown at the example, only the dates must be updated (date is used 3 times at the header -title, pagetitle and date- plus another time at the body at the title 2)</li>
+<li><strong>Single release by file</strong>: On each release an index.md file must be created on a folder named as the date of release in iso format, at the file will found a single title 2 with the date so in format iso.</li>
+<li><strong>Use containers with lists</strong>: Copy all the content related to the release from the Changelog.md keeping the container structure.</li>
+</ul>
+
+<h2 id="example-of-index-md-file">Example of index.md file</h2>
+
+<pre><code class="language-md">+++
+title = &quot;2000-01-31&quot;
+pagetitle = &quot;2000-01-31&quot;
+description = &quot;Contains a chronologically ordered list of notable changes at our website&quot;
+weight = 1
+icon = &quot;fa-cube&quot;
+svgicon = &quot;https://media.graphcms.com/TZIRsCAGSD6uCfBeDhc9&quot;
+alwaysopen = false
+date = 2000-01-31
+hidden = true
+tags = [&quot;integration-changelog&quot;]
++++
+
+
+## 2000-01-31
+<div class="release-types type-a">
+        <ul>
+<li>Addition explanation #3</li>
+<li>Addition explanation #2</li>
+<li>Addition explanation #1</li>
+<li>&hellip;</li>
+</ul>
+
+</div>
+
+<div class="release-types type-d">
+        <ul>
+<li>Deprecation explanation #3</li>
+<li>Deprecation explanation #2</li>
+<li>Deprecation explanation #1</li>
+<li>&hellip;</li>
+</ul>
+
+</div>
+
+<div class="release-types type-f">
+        <ul>
+<li>Fix explanation #3</li>
+<li>Fix explanation #2</li>
+<li>Fix explanation #1</li>
+<li>&hellip;</li>
+</ul>
+
+</div>
+
+</code></pre>
+
+<h2 id="auxiliary-index-md-at-the-integration-level-and-at-the-changelog-level">Auxiliary index.md at the integration level and at the changelog level</h2>
+
+<p>At the previous example:
+- \integrations\hotel\gue\changelog</p>
+
+<p>All the folders need a generic &ldquo;_index.md&rdquo; file (with the underscore), so when we create the folder structure for a new integration, we&rsquo;ll need to create two files named &ldquo;_index.md&rdquo; with the following structure:</p>
+
+<h2 id="index-md-at-integrations-line-dll">_index.md at \integrations\line\dll</h2>
+
+<pre><code class="language-md">+++
+title = &quot;dll_name&quot;
+pagetitle = &quot;dll_name&quot;
+description = &quot;dll_name&quot;
+weight = 1
+alwaysopen = false
+isDirectory = false
+icon = &quot;fa-info&quot;
+&lt;!-- Optional: you can upload an svg to show the company logo in format svg, you must upload it to the folder \integrations\line\dll\images\ an use the following configuration line: --&gt;
+svgicon=&quot;/images/custom.svg&quot;
++++
+
+
 
 <div class="flex">
 		
-	<a href="/mappea/overview/" class="card">
-		<div class="inner-card">
-				<div class="material-icons fa fa-info-circle"></div>
-			<div>
-				<h3 class="text-headline">Overview</h3>
-					<p>ChannelX Information</p>
-			</div>
-			
-			
-			
-		</div>
-	</a>
-	<a href="/mappea/reference/" class="card">
-		<div class="inner-card">
-				<div class="material-icons fa fa-book"></div>
-			<div>
-				<h3 class="text-headline">Reference</h3>
-					<p>Reference Documentation</p>
-			</div>
-			
-			
-			
-		</div>
-	</a>
-	<a href="/mappea/release-notes/breaking-changes/" class="card">
-		<div class="inner-card">
-				<div class="material-icons fa fa-eraser"></div>
-			<div>
-				<h3 class="text-headline">GraphQL Schema breaking changes</h3>
-					<p>Changes history of deprecated notes previously announced</p>
-			</div>
-			
-			
-			
-		</div>
-	</a>
 </div>
 
 
 
+
+</code></pre>
+
+<h2 id="index-md-at-integrations-line-dll-changelog">_index.md at \integrations\line\dll\changelog</h2>
+
+<pre><code class="language-md">---
+title: &quot;dll_name changelog&quot;
+icon: &quot;fa-exchange&quot;
+---
+
+# DLL Name Changelog
+Easily accessible log of notable changes to DLL integration
+
+
+
+</code></pre>
+
+<hr/>
+<h2>Comments</h2>
+
+<div id='discourse-comments'></div>
+
+<script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'https://community.travelgatex.com/',
+                     discourseEmbedUrl: window.location.href };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
 
 
 

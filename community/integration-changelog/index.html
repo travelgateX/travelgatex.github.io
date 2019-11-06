@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MappeaX | TravelgateX Documentation</title>
-    <link rel="alternate" type="application/rss" href="https://docs.travelgatex.com/mappea/index.xml" title="TravelgateX Documentation"/>
+    <title>Integration changelog example | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.40.1" />
-<title>MappeaX :: TravelgateX Documentation</title>
+<title>Integration changelog example :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -31,13 +30,13 @@
       var baseurl = "https:\/\/docs.travelgatex.com\/";
 </script>
 
-<meta name="description" content="All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here.">
+<meta name="description" content="Integration changelog, to keep it with the source code">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
     
-    <meta name="description" content="">
+    <meta name="description" content="Integration changelog, to keep it with the source code">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -48,7 +47,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/graphiql/0.11.11/graphiql.min.js"></script>
   </head>
-  <body data-url="/mappea/">
+  <body data-url="/community/integration-changelog/">
 
     <div class="mo-header fixed-top">
     <div class="top-header">
@@ -7016,7 +7015,15 @@
                       <span><i title="Sections →" class="icon-menu"></i> Page sections</span>
                   </a>
                   <div class="page-sections-menu">
-                      
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#integration-changelog">Integration changelog</a>
+<ul>
+<li><a href="#changelog-md-structure">Changelog.md structure</a></li>
+<li><a href="#example-of-changelog-md-file">Example of Changelog.md file</a></li>
+</ul></li>
+</ul>
+</nav>
                   </div>
                 </li>
                 <script>
@@ -7143,7 +7150,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">MappeaX</h1>
+              <h1 class="pageTitle">Integration changelog example</h1>
 
               
                 
@@ -7152,57 +7159,128 @@
                 
                 
               <div id="top-github-link">
-                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/mappea/_index.md" target="blank">
+                <a class="github-link" href="https://github.com/travelgateX/documentation-site/edit/master/content/community/integration-changelog.md" target="blank">
                   <i class="fa fa-code-fork"></i>
                   Edit page
                 </a>
               </div>
               
 
-	
 
-<div class="flex">
-		
-	<a href="/mappea/overview/" class="card">
-		<div class="inner-card">
-				<div class="material-icons fa fa-info-circle"></div>
-			<div>
-				<h3 class="text-headline">Overview</h3>
-					<p>ChannelX Information</p>
-			</div>
-			
-			
-			
-		</div>
-	</a>
-	<a href="/mappea/reference/" class="card">
-		<div class="inner-card">
-				<div class="material-icons fa fa-book"></div>
-			<div>
-				<h3 class="text-headline">Reference</h3>
-					<p>Reference Documentation</p>
-			</div>
-			
-			
-			
-		</div>
-	</a>
-	<a href="/mappea/release-notes/breaking-changes/" class="card">
-		<div class="inner-card">
-				<div class="material-icons fa fa-eraser"></div>
-			<div>
-				<h3 class="text-headline">GraphQL Schema breaking changes</h3>
-					<p>Changes history of deprecated notes previously announced</p>
-			</div>
-			
-			
-			
-		</div>
-	</a>
+<h1 id="integration-changelog">Integration changelog</h1>
+
+<p>Each integration needs a changelog to inform about releases, roll backs and so.</p>
+
+<p>This changelog won&rsquo;t be at the documentation page, and will be keep with the source codce repository on a <strong>single file</strong> called <strong><em>&ldquo;Changelog.md&rdquo;</em></strong>.</p>
+
+<p>This file will be copied on the documentation changelog by generating <strong>a folder per day</strong> with a single file called <strong><em>&ldquo;index.md&rdquo;</em></strong>.</p>
+
+<p>Thus on the public documentation site we&rsquo;ll have:</p>
+
+<ul>
+<li>&hellip;\changelog\2000-01-31\index.md</li>
+<li>&hellip;\changelog\2000-02-01\index.md</li>
+<li>&hellip;\changelog... as folders as needed</li>
+</ul>
+
+<h2 id="changelog-md-structure">Changelog.md structure</h2>
+
+<p>the file will have the following structure:</p>
+
+<ul>
+<li><strong>No header</strong></li>
+<li><strong>Grouped by release</strong>: On each release the changelog is grouped under a title 2 with the date in format iso</li>
+<li><strong>Incremental notation</strong>: Changes not applied yet on a release will be at the top of the file with no title, once published a date title will be written on the top.</li>
+<li><strong>Use containers with lists</strong>: All the entrances are tretated as a list in a release note container</li>
+<li>Remmeber that containers can be of type:
+
+<ul>
+<li><code>Added</code> for new features.</li>
+<li><code>Changed</code> for changes in existing functionality.</li>
+<li><code>Deprecated</code> for soon-to-be removed features.</li>
+<li><code>Removed</code> for now removed features.</li>
+<li><code>Fixed</code> for any bug fixes.</li>
+<li><code>Security</code> in case of vulnerabilities.</li>
+<li>Consult more info on release-notes <a href="/community/release-notes/">here</a></li>
+</ul></li>
+</ul>
+
+<h2 id="example-of-changelog-md-file">Example of Changelog.md file</h2>
+
+<pre><code class="language-md">&lt;!-- NO HEADER NEEDED --&gt;
+
+&lt;!-- UNRELEASED STUFF --&gt;
+<div class="release-types type-a">
+        <ul>
+<li>Addition #3 not applied yet&hellip;</li>
+<li>Addition #2 not applied yet&hellip;</li>
+<li>Addition #1 not applied yet&hellip;</li>
+<li>&hellip;</li>
+</ul>
+
 </div>
 
+## 2000-02-01
+<div class="release-types type-a">
+        <ul>
+<li>Addition explanation #3</li>
+<li>Addition explanation #2</li>
+<li>Addition explanation #1</li>
+<li>&hellip;</li>
+</ul>
 
+</div>
 
+<div class="release-types type-d">
+        <ul>
+<li>Deprecation explanation #3</li>
+<li>Deprecation explanation #2</li>
+<li>Deprecation explanation #1</li>
+<li>&hellip;</li>
+</ul>
+
+</div>
+
+## 2000-01-31
+<div class="release-types type-a">
+        <ul>
+<li>Addition explanation #3</li>
+<li>Addition explanation #2</li>
+<li>Addition explanation #1</li>
+<li>&hellip;</li>
+</ul>
+
+</div>
+
+<div class="release-types type-f">
+        <ul>
+<li>Fix explanation #3</li>
+<li>Fix explanation #2</li>
+<li>Fix explanation #1</li>
+<li>&hellip;</li>
+</ul>
+
+</div>
+
+...
+
+</code></pre>
+
+<hr/>
+<h2>Comments</h2>
+
+<div id='discourse-comments'></div>
+
+<script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'https://community.travelgatex.com/',
+                     discourseEmbedUrl: window.location.href };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
 
 
 
