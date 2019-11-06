@@ -7023,7 +7023,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#keyfilter">KeyFilter</a></li>
+<li><a href="#aggregation-key">Aggregation Key</a></li>
 <li><a href="#parameters">Parameters</a></li>
 <li><a href="#processor">Processor</a></li>
 <li><a href="#execution-example">Execution example</a></li>
@@ -7174,29 +7174,32 @@
               
 
 
-<p><strong>Aggregation plugins</strong> extends <a href="/hotel-x/">HotelX</a> allowing filtering <code>Supplier</code> options and responses using different business rules.</p>
+<p><strong>Aggregation plugins</strong> extends <a href="/hotel-x/">HotelX</a> allowing aggregation <code>Supplier</code> options and responses using different business rules.</p>
 
-<h3 id="keyfilter">KeyFilter</h3>
+<h3 id="aggregation-key">Aggregation Key</h3>
 
-<p>Filters <code>Supplier</code> options based on <em>field keys</em> applying a selector <em>function</em> over <em>field values</em>.</p>
+<p>Aggregate <code>Supplier</code> options based on <em>field keys</em> applying a selector <em>function</em> over <em>field values</em>.</p>
 
-<p>It&rsquo;s based on <a href="https://www.postgresql.org/docs/current/static/functions-aggregate.html" target="_blank">SQL Aggregate Functions</a> but filtering, not aggregating.</p>
+<p>It&rsquo;s based on <a href="https://www.postgresql.org/docs/current/static/functions-aggregate.html" target="_blank">SQL Aggregate Functions</a>.</p>
 
 <ul>
 <li><strong><em>Field Keys</em></strong> as a combination of:
 
 <ul>
-<li>SupplierCode </li>
-<li>HotelCode</li>
-<li>BoardCode</li>
-<li>RoomCode</li>
-<li>Refundable</li>
-<li>Market</li>
-<li>PaymentType</li>
-<li>Promotion</li>
-<li>Supplement</li>
-<li>Surcharges</li>
-<li>Rate rules </li>
+<li>binding</li>
+<li>board</li>
+<li>cancelPolicy</li>
+<li>currency</li>
+<li>hotel</li>
+<li>market</li>
+<li>payment</li>
+<li>promotion</li>
+<li>rateRules </li>
+<li>refundable</li>
+<li>room</li>
+<li>supplement</li>
+<li>supplier</li>
+<li>surcharges</li>
 </ul></li>
 </ul>
 
