@@ -7212,36 +7212,28 @@ tags = [&quot;integration-changelog&quot;]
 +++
 
 
+&lt;!-- Note: Remove /* and */ on tags --&gt;
 ## 2000-01-31
-<div class="release-types type-a">
-        <ul>
-<li>Addition explanation #3</li>
-<li>Addition explanation #2</li>
-<li>Addition explanation #1</li>
-<li>&hellip;</li>
-</ul>
+{{% release-notes-container type=&quot;a&quot; %}}
+- Addition explanation #3
+- Addition explanation #2
+- Addition explanation #1
+- ...
+{{% /release-notes-container %}}
 
-</div>
+{{% release-notes-container type=&quot;d&quot; %}}
+- Deprecation explanation #3
+- Deprecation explanation #2
+- Deprecation explanation #1
+- ...
+{{% /release-notes-container %}}
 
-<div class="release-types type-d">
-        <ul>
-<li>Deprecation explanation #3</li>
-<li>Deprecation explanation #2</li>
-<li>Deprecation explanation #1</li>
-<li>&hellip;</li>
-</ul>
-
-</div>
-
-<div class="release-types type-f">
-        <ul>
-<li>Fix explanation #3</li>
-<li>Fix explanation #2</li>
-<li>Fix explanation #1</li>
-<li>&hellip;</li>
-</ul>
-
-</div>
+{{% release-notes-container type=&quot;f&quot; %}}
+- Fix explanation #3
+- Fix explanation #2
+- Fix explanation #1
+- ...
+{{% /release-notes-container %}}
 
 </code></pre>
 
@@ -7266,28 +7258,23 @@ icon = &quot;fa-info&quot;
 svgicon=&quot;/images/custom.svg&quot;
 +++
 
-
-
-<div class="flex">
-		
-</div>
-
-
-
+&lt;!-- Note: Remove /* and */ on tags --&gt;
+{{% custom-children %}}
 
 </code></pre>
 
 <h2 id="index-md-at-integrations-line-dll-changelog">_index.md at \integrations\line\dll\changelog</h2>
 
-<pre><code class="language-md">---
+<pre><code class="language-md">+++
 title: &quot;dll_name changelog&quot;
 icon: &quot;fa-exchange&quot;
----
++++
 
 # DLL Name Changelog
 Easily accessible log of notable changes to DLL integration
 
-
+&lt;!-- Note: Remove /* and */ on tags --&gt;
+{{% changelog-entry %}}
 
 </code></pre>
 
