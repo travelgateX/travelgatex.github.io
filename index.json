@@ -2870,18 +2870,18 @@
 	"content": " GraphQL schema definition type FilterInput {  access: AccessFilterInput    rateRules: RateRulesFilterInput   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields access(AccessFilterInput):   rateRules(RateRulesFilterInput):   \n"
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/",
+	"title": "Flights",
+	"tags": [],
+	"description": "Flight integrations",
+	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
+},
+{
 	"uri": "https://docs.travelgatex.com/legacy/docs/transportation/flights/",
 	"title": "Flights API Documentation",
 	"tags": [],
 	"description": "Read documentation on diferent Legacy APIs",
 	"content": "  Avail     Cancellation     Emit     Flights Data Structure     Refund     Reservation     RetrieveReservation     RetrieveReservationList     Routes     Supplements     SupplementsReservation     Valuation     "
-},
-{
-	"uri": "https://docs.travelgatex.com/integrations/flights/",
-	"title": "Flights integrations",
-	"tags": [],
-	"description": "Changelog of our flight integrations",
-	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
 },
 {
 	"uri": "https://docs.travelgatex.com/hotel-x/reference/scalars/float/",
@@ -3339,6 +3339,13 @@
 	"content": " GraphQL schema definition type Hotel {  code: ID!    hotelData: HotelData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   error: : [AdviseMessage!] // Deprecated from 2019-07-03     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!):   hotelData(HotelData):   error([AdviseMessage!]):   adviseMessage([AdviseMessage!]):   createdAt(DateTime!):   updatedAt(DateTime!):   \nRequired by HotelEdge:    \n"
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/hotel/",
+	"title": "Hotel",
+	"tags": [],
+	"description": "Hotel integrations",
+	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
+},
+{
 	"uri": "https://docs.travelgatex.com/travelgatex/reference/objects/hotel/",
 	"title": "Hotel",
 	"tags": [],
@@ -3351,13 +3358,6 @@
 	"tags": [],
 	"description": "Read documentation on diferent Legacy APIs",
 	"content": "  Avail     AvailDestinationTree     Cancel     CategoryList     Common Elements     CurrencyList     DescriptiveInfo     DescriptiveInfoExtended (In development)     GeographicDestinationTree     HotelList     Lists of Data     MarketList     MealPlanList     MetaData     Reservation     ReservationList     ReservationRead     RoomList     RuntimeConfiguration     StaticConfiguration     Valuation     "
-},
-{
-	"uri": "https://docs.travelgatex.com/integrations/hotel/",
-	"title": "Hotel integrations",
-	"tags": [],
-	"description": "Changelog of our hotel integrations",
-	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
 },
 {
 	"uri": "https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelbookinput/",
@@ -5720,9 +5720,9 @@
 },
 {
 	"uri": "https://docs.travelgatex.com/integrations/payment/",
-	"title": "Payment integrations",
+	"title": "Payment",
 	"tags": [],
-	"description": "Changelog of our payment integrations",
+	"description": "Payment integrations",
 	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
 },
 {
@@ -9328,7 +9328,7 @@
 	"title": "Integration changelog example",
 	"tags": [],
 	"description": "Integration changelog, to keep it with the source code",
-	"content": " Integration changelog Each integration needs a changelog to inform about releases, roll backs and so.\nThis changelog won\u0026rsquo;t be at the documentation page, and will be kept with the source code repository on a single file called \u0026ldquo;Changelog.md\u0026rdquo;.\nThis file will be copied on the documentation changelog by generating a folder per day with a single file called \u0026ldquo;index.md\u0026rdquo;.\nThus on the public documentation site we\u0026rsquo;ll have:\n \u0026hellip;\\changelog\\2000-01-31\\index.md \u0026hellip;\\changelog\\2000-02-01\\index.md \u0026hellip;\\changelog... as folders as needed  Changelog.md structure the file will have the following structure:\n No header Grouped by release: On each release the changelog is grouped under a title 2 with the date in format iso Incremental notation: Changes not applied yet on a release will be at the top of the file with no title, once published a date title will be written on the top. Use containers with lists: All the entrances are tretated as a list in a release note container Remmeber that containers can be of type:  Added for new features. Changed for changes in existing functionality. Deprecated for soon-to-be removed features. Removed for now removed features. Fixed for any bug fixes. Security in case of vulnerabilities. Consult more info on release-notes here   Example of Changelog.md file \u0026lt;!-- NO HEADER NEEDED --\u0026gt; \u0026lt;!-- UNRELEASED STUFF --\u0026gt; {{% release-notes-container type=\u0026quot;a\u0026quot; %}} - Addition #3 not applied yet... - Addition #2 not applied yet... - Addition #1 not applied yet... - ... {{% /release-notes-container %}} ## 2000-02-01 {{% release-notes-container type=\u0026quot;a\u0026quot; %}} - Addition explanation #3 - Addition explanation #2 - Addition explanation #1 - ... {{% /release-notes-container %}} {{% release-notes-container type=\u0026quot;d\u0026quot; %}} - Deprecation explanation #3 - Deprecation explanation #2 - Deprecation explanation #1 - ... {{% /release-notes-container %}} ## 2000-01-31 {{% release-notes-container type=\u0026quot;a\u0026quot; %}} - Addition explanation #2 - Addition explanation #1 - ... {{% /release-notes-container %}} {{% release-notes-container type=\u0026quot;f\u0026quot; %}} - Fix explanation #3 - Fix explanation #2 - Fix explanation #1 - ... {{% /release-notes-container %}} ...  "
+	"content": " Integration changelog Each integration needs a changelog to inform about releases, roll backs and so.\nThis changelog won\u0026rsquo;t be at the documentation page, and will be kept with the source code repository on a single file called \u0026ldquo;CHANGELOG.md\u0026rdquo;.\nThis file will be copied on the documentation changelog by generating a folder per day with a single file called \u0026ldquo;index.md\u0026rdquo;.\nThus on the public documentation site we\u0026rsquo;ll have:\n \u0026hellip;\\changelog\\2000-01-31\\index.md \u0026hellip;\\changelog\\2000-02-01\\index.md \u0026hellip;\\changelog... as folders as needed  CHANGELOG.md structure the file will have the following structure:\n No header Grouped by release: On each release the changelog is grouped under a title 2 with the date in format iso Incremental notation: Changes not applied yet on a release will be at the top of the file with no title, once published a date title will be written on the top. Use containers with lists: All the entrances are tretated as a list in a release note container Remmeber that containers can be of type:  Added for new features. Changed for changes in existing functionality. Deprecated for soon-to-be removed features. Removed for now removed features. Fixed for any bug fixes. Security in case of vulnerabilities. Consult more info on release-notes here   Example of CHANGELOG.md file \u0026lt;!-- NO HEADER NEEDED --\u0026gt; \u0026lt;!-- UNRELEASED STUFF --\u0026gt; {{% release-notes-container type=\u0026quot;a\u0026quot; %}} - Addition #3 not applied yet... - Addition #2 not applied yet... - Addition #1 not applied yet... - ... {{% /release-notes-container %}} ## 2000-02-01 {{% release-notes-container type=\u0026quot;a\u0026quot; %}} - Addition explanation #3 - Addition explanation #2 - Addition explanation #1 - ... {{% /release-notes-container %}} {{% release-notes-container type=\u0026quot;d\u0026quot; %}} - Deprecation explanation #3 - Deprecation explanation #2 - Deprecation explanation #1 - ... {{% /release-notes-container %}} ## 2000-01-31 {{% release-notes-container type=\u0026quot;a\u0026quot; %}} - Addition explanation #2 - Addition explanation #1 - ... {{% /release-notes-container %}} {{% release-notes-container type=\u0026quot;f\u0026quot; %}} - Fix explanation #3 - Fix explanation #2 - Fix explanation #1 - ... {{% /release-notes-container %}} ...  "
 },
 {
 	"uri": "https://docs.travelgatex.com/alerts-x/reference/interfaces/",
@@ -9800,18 +9800,18 @@
 	"content": "To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.\nAll notable changes on TravelgateX platform will be documented in this page. \tTo make it easier for users and contributors to see precisely what notable changes have been made on the product.\nProduct Page Link\nAll notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/",
+	"title": "Integrations",
+	"tags": [],
+	"description": "Integrations",
+	"content": "Consult here our integrations grouped by line.\nJoin us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.    Flights Flight integrations\n     Hotel Hotel integrations\n     Payment Payment integrations\n    "
+},
+{
 	"uri": "https://docs.travelgatex.com/community/integrations-changelog/",
 	"title": "Integrations Changelog",
 	"tags": [],
 	"description": "Integrations changelog process",
 	"content": "Integrations changelog is conducted at Changelog.md kept with the source code, that is copied on docs at integrations changelog section:\n  Public changelog example Public changelog, to be published at documentation site\n     Integration changelog example Integration changelog, to keep it with the source code\n    "
-},
-{
-	"uri": "https://docs.travelgatex.com/integrations/",
-	"title": "Integrations changelog",
-	"tags": [],
-	"description": "Integrations changelog",
-	"content": " Changelogs Consult here our integrations changelog grouped by line.\nJoin us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.    Flights integrations Changelog of our flight integrations\n     Hotel integrations Changelog of our hotel integrations\n     Payment integrations Changelog of our payment integrations\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/mappea/",

@@ -40,7 +40,7 @@ Thus on the public documentation site we&amp;rsquo;ll have (example for guestinc
         
         
         Integration changelog Each integration needs a changelog to inform about releases, roll backs and so.
-This changelog won&amp;rsquo;t be at the documentation page, and will be kept with the source code repository on a single file called &amp;ldquo;Changelog.md&amp;rdquo;.
+This changelog won&amp;rsquo;t be at the documentation page, and will be kept with the source code repository on a single file called &amp;ldquo;CHANGELOG.md&amp;rdquo;.
 This file will be copied on the documentation changelog by generating a folder per day with a single file called &amp;ldquo;index.md&amp;rdquo;.
 Thus on the public documentation site we&amp;rsquo;ll have:
  &amp;hellip;\changelog\2000-01-31\index.md &amp;hellip;\changelog\2000-02-01\index.
