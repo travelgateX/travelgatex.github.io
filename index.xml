@@ -27,6 +27,7 @@
         
         2019-10-15  ACCESES: Added shared field and allowed url edition in acceses. MENU: new horizontal menu.    CONNECT: Modified to choose client before hotelx. PUBLIC WEB: changed info searches/day in home.  
  PROFILES: tag error on removing category fixed. PRESS: Fixed media processing.
+        
       </description>
     </item>
     
@@ -40,6 +41,7 @@
         
         
          2019-10-09  ALERTS: Added new filters and group by ALERTS: Add API and timesToRecovery    ALERTS: Added new responsive styles    ALERTS: fix on Status ALERTS: fix on Update Price   
+        
       </description>
     </item>
     
@@ -54,6 +56,7 @@
         
          2019-09-16  Connect: Added VCC to legacy Profiles: Enabled entity asignment to profiles IAM: Added pagination and info to orgs, and profiles page completed    Added gzip compression to calls to the gateway  
  Alerts: Fixed issue on create new alert Connect: Fixed dates activations   
+        
       </description>
     </item>
     
@@ -69,6 +72,9 @@
         To make it easier for users and contributors to see precisely what notable changes have been made on the product.
 Product Page Link
 All notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
       </description>
     </item>
     
@@ -82,6 +88,7 @@ All notable changes to this product will be documented in this page. Under const
         
         
         2019-09-30  ENTITIES: Modified access form to custom require runtime configuration    IAM: Changes on new macro roles ORGANIZATIONS: Changed filters to not appear on the request on missing    MEMBERS: Solved an error realated on updating api-keys after a new creation
+        
       </description>
     </item>
     
@@ -96,6 +103,7 @@ All notable changes to this product will be documented in this page. Under const
         
          2019-08-30  IAM: Added owner filter to entities/admin-entities. added new tab for&amp;hellip; Logging: Added hotel reference Members: IAM-macro-roles, added tabs for simple and advanced Alerts: entities by buyer or seller    Logging: References now allows more than one option  
  Logging: Fixed logging with filter if your not logged on the page   
+        
       </description>
     </item>
     
@@ -110,6 +118,7 @@ All notable changes to this product will be documented in this page. Under const
         
         2019-08-16  Logging: Added new feature to set filters via url Alerts: added logic time alerts Connect: modified profile cals and addded premium partner option to connect    Accesses: improved refresh logic when updating accesses IAM Entities: Improved sorting in entities  
  B2B: Fixed required typename on apis
+        
       </description>
     </item>
     
@@ -124,6 +133,7 @@ All notable changes to this product will be documented in this page. Under const
         
          2019-07-31  Alerts: Added sort to table Stats: traffic type selector Logging: Added column machine to results Logging: Selector items per page Error Messages: added hint description to error code table    Changed format of api-errors  
  Logging: Fixed error descriptions Profiles: fixed bug that prevented refresh on edit Logging: Added label when reference filters are disabled   
+        
       </description>
     </item>
     
@@ -138,6 +148,7 @@ All notable changes to this product will be documented in this page. Under const
         
         2019-07-15  Alerts: added configuration multiselectors Profiles: Fully enabled filter profiles Logging: Added new filter number of results Entities: Added sorting method Profiles: Updated query to look for stats and formated text in profiles    Logging: Filter errors refactored Logging: Added red control to non filled required filters Logging: Changed time to 24h mode, without am/pm  
  Logging: Logging table wasn&amp;rsquo;t showing the timestamps on firefox, now is fixed Logging: Enable showing organisation suppliers on SELLER mode Logging: Hide the table on no results
+        
       </description>
     </item>
     
@@ -152,6 +163,7 @@ All notable changes to this product will be documented in this page. Under const
         
         2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.  
  Fix on Stats Calendar
+        
       </description>
     </item>
     
@@ -165,6 +177,9 @@ All notable changes to this product will be documented in this page. Under const
         
         
         GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -178,6 +193,9 @@ All notable changes to this product will be documented in this page. Under const
         
         
         GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -191,6 +209,9 @@ All notable changes to this product will be documented in this page. Under const
         
         
         GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -204,6 +225,9 @@ All notable changes to this product will be documented in this page. Under const
         
         
         GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -217,6 +241,9 @@ All notable changes to this product will be documented in this page. Under const
         
         
         GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -230,6 +257,9 @@ All notable changes to this product will be documented in this page. Under const
         
         
         GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -244,6 +274,7 @@ All notable changes to this product will be documented in this page. Under const
         
         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
 Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:
+        
       </description>
     </item>
     
@@ -258,6 +289,7 @@ Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:
         
         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
 Required by OrganizationData:    GroupCommonData:    ResourceData:    ProductData:    GroupData:
+        
       </description>
     </item>
     
@@ -272,6 +304,7 @@ Required by OrganizationData:    GroupCommonData:    ResourceData:    ProductDat
         
         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
 Required by OrganizationData:    GroupCommonData:    ResourceData:    ProductData:    GroupData:
+        
       </description>
     </item>
     
@@ -286,6 +319,7 @@ Required by OrganizationData:    GroupCommonData:    ResourceData:    ProductDat
         
         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
 Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:
+        
       </description>
     </item>
     
@@ -300,6 +334,7 @@ Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:
         
         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
 Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:
+        
       </description>
     </item>
     
@@ -314,6 +349,7 @@ Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:
         
         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
 Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:
+        
       </description>
     </item>
     
@@ -327,6 +363,9 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
         
         
         GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -340,6 +379,9 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
         
         
         GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -353,6 +395,9 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
         
         
         GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -366,6 +411,9 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
         
         
         GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -379,6 +427,9 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
         
         
         GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -392,6 +443,9 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
         
         
         GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -406,6 +460,7 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
         
         GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):   
 Required by APIConnection:
+        
       </description>
     </item>
     
@@ -420,6 +475,7 @@ Required by APIConnection:
         
         GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):   
 Required by APIConnection:
+        
       </description>
     </item>
     
@@ -434,6 +490,7 @@ Required by APIConnection:
         
         GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):   
 Required by APIConnection:
+        
       </description>
     </item>
     
@@ -448,6 +505,7 @@ Required by APIConnection:
         
         GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):   
 Required by APIConnection:
+        
       </description>
     </item>
     
@@ -462,6 +520,7 @@ Required by APIConnection:
         
         GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):   
 Required by APIConnection:
+        
       </description>
     </item>
     
@@ -476,6 +535,7 @@ Required by APIConnection:
         
         GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):   
 Required by APIConnection:
+        
       </description>
     </item>
     
@@ -490,6 +550,7 @@ Required by APIConnection:
         
         GraphQL schema definition type AbsoluteInput {  from: DateTime!    to: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields from(DateTime!):   to(DateTime!):   
 Required by TimeRangeInput:
+        
       </description>
     </item>
     
@@ -504,6 +565,7 @@ Required by TimeRangeInput:
         
         GraphQL schema definition type AbsoluteInput {  from: DateTime!    to: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields from(DateTime!):   to(DateTime!):   
 Required by TimeRangeInput:
+        
       </description>
     </item>
     
@@ -517,6 +579,9 @@ Required by TimeRangeInput:
         
         
         GraphQL schema definition type Access {  code: ID!    accessData: AccessData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   accessData(AccessData):   error([Error!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -531,6 +596,9 @@ Required by TimeRangeInput:
         
         An Access is a set of credentials and configuration in order to access the system of a Supplier.
 GraphQL schema definition type Access {  code: ID!    accessData: AccessData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -544,6 +612,9 @@ GraphQL schema definition type Access {  code: ID!    accessData: AccessData    
         
         
         GraphQL schema definition type Access {  code: ID!    accessData: AccessData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   accessData(AccessData):   error([Error!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -557,6 +628,9 @@ GraphQL schema definition type Access {  code: ID!    accessData: AccessData    
         
         
         GraphQL schema definition type Access {  code: ID!    accessData: AccessData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   accessData(AccessData):   error([Error!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -570,6 +644,9 @@ GraphQL schema definition type Access {  code: ID!    accessData: AccessData    
         
         
         GraphQL schema definition type Access {  code: ID!    accessData: AccessData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   accessData(AccessData):   error([Error!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -583,6 +660,9 @@ GraphQL schema definition type Access {  code: ID!    accessData: AccessData    
         
         
         GraphQL schema definition type Access {  code: ID!    accessData: AccessData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   accessData(AccessData):   error([Error!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -597,6 +677,7 @@ GraphQL schema definition type Access {  code: ID!    accessData: AccessData    
         
         GraphQL schema definition type AccessConnection {  edges: [AccessEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AccessEdge]):   pageInfo(PageInfo!):   
 Required by GroupData:    GroupCommonData:    SupplierData:    OrganizationData:
+        
       </description>
     </item>
     
@@ -611,6 +692,7 @@ Required by GroupData:    GroupCommonData:    SupplierData:    OrganizationData:
         
         GraphQL schema definition type AccessConnection {  edges: [AccessEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AccessEdge]):   pageInfo(PageInfo!):   
 Required by SupplierData:    OrganizationData:    GroupCommonData:    GroupData:
+        
       </description>
     </item>
     
@@ -625,6 +707,7 @@ Required by SupplierData:    OrganizationData:    GroupCommonData:    GroupData:
         
         GraphQL schema definition type AccessConnection {  edges: [AccessEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AccessEdge]):   pageInfo(PageInfo!):   
 Required by SupplierData:    OrganizationData:    GroupCommonData:    GroupData:
+        
       </description>
     </item>
     
@@ -639,6 +722,7 @@ Required by SupplierData:    OrganizationData:    GroupCommonData:    GroupData:
         
         GraphQL schema definition type AccessConnection {  edges: [AccessEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AccessEdge]):   pageInfo(PageInfo!):   
 Required by GroupData:    GroupCommonData:    SupplierData:    OrganizationData:
+        
       </description>
     </item>
     
@@ -653,6 +737,7 @@ Required by GroupData:    GroupCommonData:    SupplierData:    OrganizationData:
         
         GraphQL schema definition type AccessConnection {  edges: [AccessEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AccessEdge]):   pageInfo(PageInfo!):   
 Required by SupplierData:    GroupData:    GroupCommonData:    OrganizationData:
+        
       </description>
     </item>
     
@@ -667,6 +752,7 @@ Required by SupplierData:    GroupData:    GroupCommonData:    OrganizationData:
         
         GraphQL schema definition type AccessConnection {  edges: [AccessEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AccessEdge]):   pageInfo(PageInfo!):   
 Required by AdminQuery:    SupplierData:    GroupData:    GroupCommonData:    OrganizationData:
+        
       </description>
     </item>
     
@@ -680,6 +766,9 @@ Required by AdminQuery:    SupplierData:    GroupData:    GroupCommonData:    Or
         
         
         GraphQL schema definition type AccessData {  name: String!    isActive: Boolean!    code: ID!    supplier: Supplier!    isTest: Boolean!    user: String    password: String    urls: Urls    parameters: [Parameter]    markets: [String!]    rateRules: [RateRulesType!]    shared: Access    owner: Organization    updateDescriptiveInfo: Int!
+        
+          [...]
+        
       </description>
     </item>
     
@@ -693,6 +782,9 @@ Required by AdminQuery:    SupplierData:    GroupData:    GroupCommonData:    Or
         
         
         GraphQL schema definition type AccessData {  name: String!    isActive: Boolean!    code: ID!    supplier: Supplier!    isTest: Boolean!    user: String    password: String    urls: Urls    parameters: [Parameter]    markets: [String!]    rateRules: [RateRulesType!]    shared: Access    owner: Organization    isSchedulerActive: Boolean    groups(    first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection   Show deprecated fields   }    window.
+        
+          [...]
+        
       </description>
     </item>
     

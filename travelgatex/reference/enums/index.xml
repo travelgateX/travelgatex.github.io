@@ -25,6 +25,7 @@
         
         
         GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:
+        
       </description>
     </item>
     
@@ -38,6 +39,7 @@
         
         
          GraphQL schema definition  enum AlertGroups{   ACCESS,    CLIENT,    SUPPLIER,    OPERATION,    HUB_STATUS,    ERROR_CODE,    ERROR_TYPE,    GROUP_ORG_SELLER,    GROUP_ORG_BUYER,    GROUP_FOLDER_SELLER,    GROUP_FOLDER_BUYER,    GROUP_PRODUCT_SELLER,    GROUP_PRODUCT_BUYER,   }   
+        
       </description>
     </item>
     
@@ -51,6 +53,7 @@
         
         
          GraphQL schema definition  enum AlertGroupsInsights{   ACCESS,    CLIENT,    SUPPLIER,    OPERATION,    GROUP_ORG_SELLER,    GROUP_ORG_BUYER,    GROUP_FOLDER_SELLER,    GROUP_FOLDER_BUYER,    GROUP_PRODUCT_SELLER,    GROUP_PRODUCT_BUYER,   }   
+        
       </description>
     </item>
     
@@ -64,6 +67,7 @@
         
         
         GraphQL schema definition  enum AlertType{   ERROR_RATE,    AVERAGE_TIME,    NO_TRAFFIC,    PEAK_TRAFFIC,    PRICE,   }   Required by AlertConfiguration:
+        
       </description>
     </item>
     
@@ -77,6 +81,7 @@
         
         
         GraphQL schema definition  enum ApplicationAreaType{   HOTEL,    ROOM,    SERVICE,    GENERAL,   }   Required by Amenity:    Media:
+        
       </description>
     </item>
     
@@ -90,6 +95,7 @@
         
         
         GraphQL schema definition  enum BookStatusType{   OK,    KO,    ON_REQUEST,    CANCELLED,    UNKNOWN,   }   Required by HotelBookingDetail:    HotelCancelDetail:
+        
       </description>
     </item>
     
@@ -103,6 +109,7 @@
         
         
         GraphQL schema definition  enum BookingCriteriaType{   DATES,    REFERENCES,   }   Required by HotelCriteriaBookingInput:
+        
       </description>
     </item>
     
@@ -116,6 +123,7 @@
         
         
         GraphQL schema definition  enum BusinessRulesType{   CHEAPER_AMOUNT,    ROOM_TYPE,   }   Required by BusinessRules:    BusinessRulesInput:    HotelXBusinessRulesInput:
+        
       </description>
     </item>
     
@@ -129,6 +137,7 @@
         
         
         GraphQL schema definition  enum CancelPenaltyType{   NIGHTS,    PERCENT,    IMPORT,   }   Required by CancelPenalty:
+        
       </description>
     </item>
     
@@ -142,6 +151,7 @@
         
         
         GraphQL schema definition  enum ChargeType{   INCLUDE,    EXCLUDE,   }   Required by Supplement:    Surcharge:
+        
       </description>
     </item>
     
@@ -155,6 +165,7 @@
         
         
         GraphQL schema definition  enum CheckPrice{   AMOUNT,    COMMISSION,    ALL,   }   Required by AlertPrice:  Price contains the specific configuration for Price alert Type  AlertPriceInput:  Price input  AlertPriceUpdateInput:  Price update
+        
       </description>
     </item>
     
@@ -168,6 +179,7 @@
         
         
         GraphQL schema definition  enum CloudEnvironment{   AZURE,    GOOGLE,    HETZNER,    TOTAL_UPTIME,    BLUEKIRI,   }   Required by Environment:
+        
       </description>
     </item>
     
@@ -181,6 +193,7 @@
         
         
         GraphQL schema definition  enum ComercialType{   SELLER,    BUYER,   }   Required by AlertConfiguration:    AlertGroupInput:
+        
       </description>
     </item>
     
@@ -194,6 +207,7 @@
         
         
         GraphQL schema definition  enum DateType{   ARRIVAL,    BOOKING,   }   Required by CriteriaBookingDatesInput:
+        
       </description>
     </item>
     
@@ -207,6 +221,7 @@
         
         
         GraphQL schema definition  enum DescriptionType{   ADDITIONAL,    AMENITY,    ACTIVITY,    RESTAURANT,    ROOM,    GENERAL,    POOL,    LOCATION,    HOW_TO_GET,   }   Required by Description:
+        
       </description>
     </item>
     
@@ -220,6 +235,7 @@
         
         
         GraphQL schema definition  enum DestinationType{   ZONE,    CITY,    COUNTRY,   }   Required by DestinationData:
+        
       </description>
     </item>
     
@@ -233,6 +249,7 @@
         
         
         GraphQL schema definition  enum DurationType{   RANGE,    OPEN,   }   Required by Supplement:
+        
       </description>
     </item>
     
@@ -246,6 +263,7 @@
         
         
         GraphQL schema definition  enum EmailType{   BCC,    TO,   }   Required by EmailInput:
+        
       </description>
     </item>
     
@@ -259,6 +277,7 @@
         
         
         GraphQL schema definition  enum ErrorType{   OK,    PROVIDER,    TIMEOUT,    INTEGRATION,   }   Required by ErrorTypeInput:
+        
       </description>
     </item>
     
@@ -272,6 +291,7 @@
         
         
         GraphQL schema definition  enum EventType{   OK,    ALERTING,   }   Required by EventData:  Event data
+        
       </description>
     </item>
     
@@ -285,6 +305,7 @@
         
         
         GraphQL schema definition  enum FolderTemplate{   FOLDER_DEFAULT,   }   Required by SuitFolderInput:
+        
       </description>
     </item>
     
@@ -298,6 +319,7 @@
         
         
         GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by GroupData:    GroupCommonData:    OrganizationData:
+        
       </description>
     </item>
     
@@ -311,6 +333,7 @@
         
         
         GraphQL schema definition  enum GroupTypeInput{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by CreateGroupInput:    UpdateGroupInput:
+        
       </description>
     </item>
     
@@ -324,6 +347,7 @@
         
         
         GraphQL schema definition  enum HubStatus{   OK,    EXCEPTION,    TIMEOUT,    UNDEFINED,   }   Required by HubStatusInput:
+        
       </description>
     </item>
     
@@ -337,6 +361,7 @@
         
         
         GraphQL schema definition  enum MarkupRuleType{   PERCENT,    IMPORT,   }   Required by Rule:
+        
       </description>
     </item>
     
@@ -350,6 +375,7 @@
         
         
         GraphQL schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Required by MemberData:    CreateMemberInput:
+        
       </description>
     </item>
     
@@ -363,6 +389,7 @@
         
         
         GraphQL schema definition  enum MetadataType{   STRING,    NUMERIC,    BOOLEAN,    XML,    URI,   }   Required by HotelRuntimeParameter:
+        
       </description>
     </item>
     
@@ -376,6 +403,7 @@
         
         
         GraphQL schema definition  enum ModePrice{   UNIT,    PERCENTAGE,   }   Required by AlertPrice:  Price contains the specific configuration for Price alert Type  AlertPriceInput:  Price input  AlertPriceUpdateInput:  Price update
+        
       </description>
     </item>
     
@@ -389,6 +417,7 @@
         
         
         GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by StatsFilterInput:    ActiveFilterInput:    LoggingLegacyFilterInput:  Filters needed to do a search. From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss),
+        
       </description>
     </item>
     
@@ -402,6 +431,7 @@
         
         
          GraphQL schema definition  enum OperationType{   SEARCH,    QUOTE,    BOOKING,    CANCEL,    SCHEDULER,    CREATE,    READ,    UPDATE,    DELETE,    EXECUTE,    OTHER,   }   
+        
       </description>
     </item>
     
@@ -415,6 +445,7 @@
         
         
         GraphQL schema definition  enum OrganizationTemplate{   ORGANIZATION_DEFAULT,   }   Required by CreateOrganizationInput:    SuitOrganizationInput:
+        
       </description>
     </item>
     
@@ -428,6 +459,7 @@
         
         
         GraphQL schema definition  enum PaymentCardType{   VI,    AX,    BC,    CA,    CB,    CU,    DS,    DC,    T,    R,    N,    L,    E,    JC,    TO,    S,    EC,    EU,    TP,    OP,    ER,    XS,    O,   }   Required by PaymentCardInput:
+        
       </description>
     </item>
     
@@ -441,6 +473,7 @@
         
         
         GraphQL schema definition  enum PaymentType{   MERCHANT,    DIRECT,    CARD_BOOKING,    CARD_CHECK_IN,    PAYX,   }   Required by HotelOptionSearch:
+        
       </description>
     </item>
     
@@ -454,6 +487,7 @@
         
         
         GraphQL schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,    RESPONSE_OPTION,    RESPONSE_ACCESS,    RESPONSE,   }   Required by HotelXDefaultPlugin:    PluginStepInput:    HotelXFilterPluginTypeInput:    HotelXDefaultPluginStepInput:    HotelXDefaultPluginInput:
+        
       </description>
     </item>
     
@@ -467,6 +501,7 @@
         
         
         GraphQL schema definition  enum PluginType{   PRE_STEP,    HOTEL_MAP,    BOARD_MAP,    ROOM_MAP,    CURRENCY_CONVERSION,    MARKUP,    AGGREGATION,    POST_STEP,    COMMISSION,   }   Required by HotelXDefaultPlugin:    PluginsInput:    HotelXDefaultPluginInput:
+        
       </description>
     </item>
     
@@ -480,6 +515,7 @@
         
         
         GraphQL schema definition  enum ProfileType{   BUYER,    SELLER,   }   Required by CreateProfileInput:    UpdateProfileInput:
+        
       </description>
     </item>
     
@@ -493,6 +529,7 @@
         
         
         GraphQL schema definition  enum RangePrice{   LESS,    GREATER,   }   Required by AlertPrice:  Price contains the specific configuration for Price alert Type  AlertPriceInput:  Price input  AlertPriceUpdateInput:  Price update
+        
       </description>
     </item>
     
@@ -506,6 +543,7 @@
         
         
          GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   
+        
       </description>
     </item>
     
@@ -519,6 +557,7 @@
         
         
         GraphQL schema definition  enum RoleType{   VIEWER,    EDITOR,    ADMIN,    EXECUTOR,    SPECIFIC,   }   Required by RoleData:
+        
       </description>
     </item>
     
@@ -532,6 +571,7 @@
         
         
          GraphQL schema definition  enum ServiceApiType{   HOTEL,    TRANSPORTATION,    CAR,    TRANSFERS,    ACTIVITIES,    VIRTUALACCOUNT,    PAYMENT,    PACKAGE,   }   
+        
       </description>
     </item>
     
@@ -545,6 +585,7 @@
         
         
          GraphQL schema definition  enum ServiceOperationType{   ALL,    SEARCH,    QUOTE,    BOOKING,    OTHER,   }   
+        
       </description>
     </item>
     
@@ -558,6 +599,7 @@
         
         
         GraphQL schema definition  enum StatsInfoTypes{   ALL,    OK,    INTEGRATION,    PROVIDER,    COMMUNICATION,    HUB,    OTHER,   }   Required by StatsInfo:    ErrorFilter:    LoggingLegacyData:
+        
       </description>
     </item>
     
@@ -571,6 +613,7 @@
         
         
         GraphQL schema definition  enum StatusType{   OK,    RQ,   }   Required by HotelOptionSearch:    HotelOptionQuote:
+        
       </description>
     </item>
     
@@ -584,6 +627,7 @@
         
         
         GraphQL schema definition  enum SupplementType{   SKI_PASS,    LESSONS,    MEALS,    EQUIPMENT,    TICKET,    TRANSFERS,    GALA,    ACTIVITY,   }   Required by Supplement:
+        
       </description>
     </item>
     
@@ -597,6 +641,7 @@
         
         
         GraphQL schema definition  enum TagRuntimeType{   USER,    PASSWORD,    URLAVAIL,    URLVALUATION,    URLRESERVATION,    URLGENERIC,    PARAMETER,   }   Required by HotelRuntimeParameter:
+        
       </description>
     </item>
     
@@ -610,6 +655,7 @@
         
         
         GraphQL schema definition  enum Template{   FOLDER_DEFAULT,   }   Required by CreateGroupInput:
+        
       </description>
     </item>
     
@@ -623,6 +669,7 @@
         
         
         GraphQL schema definition  enum TrafficType{   BASIC,    SPEED,    SCHEDULER,    OPTIMIZED,   }   Required by OperationDetailed:    LoggingLegacyData:
+        
       </description>
     </item>
     
@@ -636,6 +683,7 @@
         
         
         GraphQL schema definition  enum UnitTimeType{   DAY,    HOUR,   }   Required by Supplement:
+        
       </description>
     </item>
     

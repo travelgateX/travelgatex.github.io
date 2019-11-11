@@ -26,6 +26,9 @@
         
         Version 1.0.22: Date 30/09/2019
  Addition of tag AllowsNationality in MetaData. Adding AllowsNationality tag to MetaData response to inform if the supplier allows to receive the Nationality of the Holder of the booking.   &amp;lt;Generic&amp;gt; &amp;lt;AllowsNationality reviewDate = &amp;quot;06/09/2019&amp;quot;&amp;gt;true&amp;lt;/AllowsNationality&amp;gt; &amp;lt;RequiredNationality reviewDate = &amp;quot;06/09/2019&amp;quot;&amp;gt;true&amp;lt;/RequiredNationality&amp;gt; &amp;lt;AllowsOnRequest reviewDate = &amp;quot;06/09/2019&amp;quot;&amp;gt;false&amp;lt;/AllowsOnRequest&amp;gt; &amp;lt;/Generic&amp;gt;   Addition of Holder element in Reservation, ReservationRead and Cancellation requests. Adding Holder element tag to Reservation, ReservationRead and Cancellation requests.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -42,6 +45,9 @@
 You can read about what changes might and what changes might not cause an error, below:
  Changes that can cause an error:
  Removing a field from XSD. Modifying the type of field or attribute.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -60,6 +66,9 @@ What is the workflow for hotel reservation?
 Our workflow has three mandatory steps: Availability (avail), Valuation and Reservation, always in this order.
 How can I identify which supplier is which in Availability method?
 By using the field ID in the request. For example:
+        
+          [...]
+        
       </description>
     </item>
     
@@ -73,6 +82,9 @@ By using the field ID in the request. For example:
         
         
         Avail &amp;lt;soapenv:Envelope xmlns:soapenv = &amp;quot;http://schemas.xmlsoap.org/soap/envelope/&amp;quot; xmlns:ns = &amp;quot;http://schemas.xmltravelgate.com/hub/2012/06&amp;quot; xmlns:wsse = &amp;quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&amp;quot;&amp;gt; &amp;lt;soapenv:Header&amp;gt; &amp;lt;wsse:Security&amp;gt; &amp;lt;wsse:UsernameToken&amp;gt; &amp;lt;wsse:Username&amp;gt;XXXXXX&amp;lt;/wsse:Username&amp;gt; &amp;lt;wsse:Password&amp;gt;XXXXXX&amp;lt;/wsse:Password&amp;gt; &amp;lt;/wsse:UsernameToken&amp;gt; &amp;lt;/wsse:Security&amp;gt; &amp;lt;/soapenv:Header&amp;gt; &amp;lt;soapenv:Body&amp;gt; &amp;lt;ns:Avail&amp;gt; &amp;lt;ns:availRQ&amp;gt; &amp;lt;ns:timeoutMilliseconds&amp;gt;18000&amp;lt;/ns:timeoutMilliseconds&amp;gt; &amp;lt;ns:version&amp;gt;1&amp;lt;/ns:version&amp;gt; &amp;lt;ns:providerRQs&amp;gt; &amp;lt;ns:ProviderRQ&amp;gt; &amp;lt;ns:code&amp;gt;XXX&amp;lt;/ns:code&amp;gt; &amp;lt;ns:id&amp;gt;1&amp;lt;/ns:id&amp;gt; &amp;lt;ns:rqXML&amp;gt; &amp;lt;AvailRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;99999&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;en&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;&amp;lt;/Password&amp;gt; &amp;lt;UrlAvail&amp;gt;http://www.test.net/test_XML_V10.php?&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlReservation&amp;gt;http://www.test.net/scr/reservation_xml.php&amp;lt;/UrlReservation&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;UrlListHoteles&amp;quot; value = &amp;quot;http://www.test.net/scr/searchxml/location.php?&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;quot;UrlConsulta&amp;quot; value = &amp;quot;https://www.test.net/scr/xml/travelgate.php?&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;quot;office&amp;quot; value = &amp;quot;55555&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;quot;password&amp;quot; value = &amp;quot;XXXXXX&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;AvailDestinations&amp;gt; &amp;lt;Destination type = &amp;quot;CTY&amp;quot; code = &amp;quot;XXX&amp;quot;/&amp;gt; &amp;lt;/AvailDestinations&amp;gt; &amp;lt;StartDate&amp;gt;08/08/2012&amp;lt;/StartDate&amp;gt; &amp;lt;EndDate&amp;gt;12/12/2012&amp;lt;/EndDate&amp;gt; &amp;lt;Currency&amp;gt;EUR&amp;lt;/Currency&amp;gt; &amp;lt;RoomCandidates&amp;gt; &amp;lt;RoomCandidate id = &amp;quot;1&amp;quot;&amp;gt; &amp;lt;Paxes&amp;gt; &amp;lt;Pax age = &amp;quot;30&amp;quot; id = &amp;quot;1&amp;quot;/&amp;gt; &amp;lt;Pax age = &amp;quot;30&amp;quot; id = &amp;quot;2&amp;quot;/&amp;gt; &amp;lt;/Paxes&amp;gt; &amp;lt;/RoomCandidate&amp;gt; &amp;lt;/RoomCandidates&amp;gt; &amp;lt;/AvailRQ&amp;gt; &amp;lt;/ns:rqXML&amp;gt; &amp;lt;/ns:ProviderRQ&amp;gt; &amp;lt;/ns:providerRQs&amp;gt; &amp;lt;/ns:availRQ&amp;gt; &amp;lt;/ns:Avail&amp;gt; &amp;lt;/soapenv:Body&amp;gt; &amp;lt;/soapenv:Envelope&amp;gt;  Multi Avail &amp;lt;soapenv:Envelope xmlns:soapenv = &amp;quot;http://schemas.
+        
+          [...]
+        
       </description>
     </item>
     

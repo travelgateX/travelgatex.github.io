@@ -27,6 +27,9 @@
         Public changelog On the documentation an Integrations section will be maintained with the respectives changelogs as can be seen here, all integrations will have his own changelog, integrations will be grouped by lines (hotel, flights, payment).
 Changelogs will have a folder per day containing the releases done on that date. Inside an unique index.md will contain all the changes made.
 Thus on the public documentation site we&amp;rsquo;ll have (example for guestincomming at hotel line):
+        
+          [...]
+        
       </description>
     </item>
     
@@ -44,6 +47,9 @@ This changelog won&amp;rsquo;t be at the documentation page, and will be kept wi
 This file will be copied on the documentation changelog by generating a folder per date with a single file called &amp;ldquo;index.md&amp;rdquo;.
 Thus on the public documentation site we&amp;rsquo;ll have:
  &amp;hellip;\changelog\2000-01-31\index.md &amp;hellip;\changelog\2000-02-01\index.
+        
+          [...]
+        
       </description>
     </item>
     

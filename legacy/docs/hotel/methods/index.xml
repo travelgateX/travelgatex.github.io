@@ -28,6 +28,9 @@
 Request Format The availability request is very straight forward. It only requires destination, travel dates and the number of pax in each room.
 Response Format Results are organized in this hierarchy:
  Hotel :  A list with all the hotels, including hotel name and code, mealplans list, etc.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -45,6 +48,9 @@ Request Format The request does not require any elements - it&amp;rsquo;s an emp
 Response Format The result returns a list of DestinationTree with their corresponding sub-destinations.
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
 AvailDestinationTreeRQ Example &amp;lt;AvailDestinationTreeRQ&amp;gt; &amp;lt;/AvailDestinationTreeRQ&amp;gt;  AvailDestinationTreeRQ Description    Element Number Type Description     AvailDestinationTreeRQ 1  Root node.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -60,6 +66,9 @@ AvailDestinationTreeRQ Example &amp;lt;AvailDestinationTreeRQ&amp;gt; &amp;lt;/A
         Method Goals This method aims to cancel a booking
 Request Format The request requires one or more of the following data, depending on the supplier:
  Locators: booking codes - this element contains two elements, Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code). One or both will be required depending on the supplier hotelCode: the hotel code StartDate: the check-in date EndDate: the check-out date  Response Format The result returns a response with the booking status, the cancellation&amp;rsquo;s ID and the fee for that cancellation.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -77,6 +86,9 @@ Request Format The request does not require any elements empty request.
 Response Format The result returns a list of Category .
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
 CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&amp;gt;  CategoryListRQ Description    Element Number Type Description     CategoryListRQ 1  Root node.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -93,6 +105,9 @@ CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&am
 The request object contains the supplier&amp;rsquo;s configuration, urls and credentials.
 The response object contains the status of the request and any possible errors as well as possible messages from the supplier (if previously requested).
 Common Elements RQ Example &amp;lt;HotelBaseRQ&amp;gt; &amp;lt;echoToken&amp;gt;TEST&amp;lt;/echoToken&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;20000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;XXXX&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;optionsQuota&amp;gt;500&amp;lt;/optionsQuota&amp;gt; &amp;lt;ContinuationToken expectedRange = &amp;quot;6000&amp;quot;&amp;gt;&amp;lt;/ContinuationToken&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;USERXX&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;PWXX&amp;lt;/Password&amp;gt; &amp;lt;UrlAvail&amp;gt;www.supplier.com/avail&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlReservation&amp;gt;www.supplier.com/reservation&amp;lt;/UrlReservation&amp;gt; &amp;lt;UrlValuation&amp;gt;www.supplier.com/valuation&amp;lt;/UrlValuation&amp;gt; &amp;lt;UrlGeneric&amp;gt;www.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -109,6 +124,9 @@ Common Elements RQ Example &amp;lt;HotelBaseRQ&amp;gt; &amp;lt;echoToken&amp;gt;
 Request Format The request does not require any elements. Empty request.
 Response Format The result returns a list of currencies.
 CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt;  CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.    CurrencyListRS Example &amp;lt;CurrencyListRS&amp;gt; &amp;lt;UpgradeUTCDate&amp;gt;2016-10-18T13:18:03+02:00&amp;lt;/UpgradeUTCDate&amp;gt; &amp;lt;Currencies&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;EUR&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Euro&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;USD&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Dollar&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;/Currencies&amp;gt; &amp;lt;/CurrencyListRS&amp;gt;  CurrencyListRS Description    Element Number Type Description     CurrencyListRS 1  Root node.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -126,6 +144,9 @@ Request Format The request just requires the hotel code and language code (ISO-6
 Response Format The result returns the details of that hotel.
 Remarks The maximum time permitted in our system before the connection is closed is 180000 milliseconds.
 DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt; &amp;lt;Code&amp;gt;524AC&amp;lt;/Code&amp;gt; &amp;lt;/Hotel&amp;gt; &amp;lt;/DescriptiveInfoRQ&amp;gt;  DescriptiveInfoRQ Description    Element Number Type Description     DescriptiveInfoRQ 1  Root node.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -141,6 +162,9 @@ DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt
         Method Goals This method returns 100% of the hotel information provided by the supplier.
 It allows you to map each hotel using your own criteria with the combination of contextItem_ plus data_ so you will have the information (extracted from the supplier&amp;rsquo;s documentation hierachy/fields descriptions) required to do so.
 Request Format After entering the hotel code, you can set language filters. We recommend that the first call is done without filters in order to ascertain which languages are provided by the supplier.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -157,6 +181,9 @@ Request Format After entering the hotel code, you can set language filters. We r
 Request Format The request not requires any element, it is empty.
 Response Format The result returns a list of DestinationTree with corresponding sub-destinations.
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -174,6 +201,9 @@ Request Format The request does not require any elements. Empty request.
 Response Format The result returns a list of Hotel (hotels).
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
 This method may be preloaded in XML Travelgate&amp;rsquo;s system if it takes more than 3 minutes to download.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -188,6 +218,9 @@ This method may be preloaded in XML Travelgate&amp;rsquo;s system if it takes mo
         
         Method Goals This paragraph aims to return all of the data lists used in our system: language codes, error codes,currency list, credit cards, nationality and market.
 Language Codes    Language Code     English en   Spanish es   Portuguese pt   Italian it   French fr   German de   Brazilian br    Error codes    Code Description     101 System Exception (Exception not controlled or not classified as general exception).
+        
+          [...]
+        
       </description>
     </item>
     
@@ -204,6 +237,9 @@ Language Codes    Language Code     English en   Spanish es   Portuguese pt   It
 Request Format The request does not require any elements - empty request.
 Response Format The result returns a list of Market.
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds. Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each individual supplier.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -221,6 +257,9 @@ Request Format The request does not require any elements - empty request.
 Response Format The result returns a list of MealPlan.
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
 If the supplier has more than 100 mealplan codes, or more than 20 codes for one single mealplan, this code will be mapped depending on the supplier.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -236,6 +275,9 @@ If the supplier has more than 100 mealplan codes, or more than 20 codes for one 
         Method Goals This method provides information about the meta data of the supplier so that it can be effectively configured.
 Request Format The request does not require any elements - empty request.
 Response Format The XML response contains many elements of the supplier&amp;rsquo;s meta data: number of hotels, number of cities and number of areas available, maximum number of roomcandidate, maximum number of paxes in a roomcandidate, release days, minimum stay, list of languages supported &amp;hellip;
+        
+          [...]
+        
       </description>
     </item>
     
@@ -253,6 +295,9 @@ Request Format The request format works the same way as Valuation but with the l
 Response Format The result returns the booking locator (booking code), which could be the supplier&amp;rsquo;s own code or the one sent in request.
 It also returns all the charges associated with the booking as well as its status.
 Remarks 180000 milliseconds is the maximum amount of time permitted in our system before the connection is closed.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -268,6 +313,9 @@ Remarks 180000 milliseconds is the maximum amount of time permitted in our syste
         Method Goals This method aims to return a list of bookings for a given time period being that either booking date or the travelling date.
 Request Format The request requires one of the following data depending on provider:
  DateType: indicates the date type: either booking creation date or booking start date Start: the date from End: the date to  Response Format The result returns a list of bookings details, with the same format as ReservationReadRS.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -283,6 +331,9 @@ Request Format The request requires one of the following data depending on provi
         Method Goals This method aims to retrieve detailed information about a specific Reservation
 Request Format The request requires one of the following data depending on supplier:
  Locators: booking codes (this element contains two elements Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code), one or both will be required depending on the supplier) Currency: the currency code CreationDate: the booking date StardDate: the check-in date EndDate: the check-out date HotelCode: Hotel code  Response Format The result returns the full details of a booking.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -300,6 +351,9 @@ Request Format The request does not require any elements - empty request.
 Response Format The result returns a list of RoomInfo.
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
 This message must be implemented solely in case the supplier does not return room description in Avail.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -316,6 +370,9 @@ This message must be implemented solely in case the supplier does not return roo
 Request Format The request does not require any elements, it is an empty request.
 Response Format The returned XML contains a template of all fields used by the supplier.
 RuntimeConfigurationRQ Example &amp;lt;RuntimeConfigurationRQ&amp;gt; &amp;lt;/RuntimeConfigurationRQ&amp;gt;  RuntimeConfigurationRQ Description    Element Number Type Description     RuntimeConfigurationRQ 1  Root node.    RuntimeConfigurationRS Example &amp;lt;RuntimeConfigurationRS&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User/&amp;gt; &amp;lt;Password/&amp;gt; &amp;lt;UrlGeneric/&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;agencia&amp;quot; value = &amp;quot;&amp;quot;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/RuntimeConfigurationRS&amp;gt;  ConfiguracionRunTimeRS Description    Element Number Type Description     RuntimeConfigurationRS 1  Root node.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -331,6 +388,9 @@ RuntimeConfigurationRQ Example &amp;lt;RuntimeConfigurationRQ&amp;gt; &amp;lt;/R
         Method Goals This method provides information about the static configuration of the supplier so that it can be effectively configured.
 Request Format The request does not require any elements - empty request.
 Response Format The XML response contains many elements of the supplier&amp;rsquo;s configuration: number of hotels, number of cities and number of areas available, maximum number of roomcandidate, maximum number of paxes in a roomcandidate, release days, minimum stay, list of languages supported &amp;hellip;
+        
+          [...]
+        
       </description>
     </item>
     
@@ -347,6 +407,9 @@ Response Format The XML response contains many elements of the supplier&amp;rsqu
 Request Format The Valuation request format is similar to that of availabilityRQ. It&amp;rsquo;s here you will add data to the option selected.
 Response Format The returned XML contains the total price and list of cancellation policies.
 Remarks Our system allows for a maximum of 180000 milliseconds before the connection is closed.
+        
+          [...]
+        
       </description>
     </item>
     

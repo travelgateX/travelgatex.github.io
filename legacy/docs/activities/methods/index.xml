@@ -26,6 +26,9 @@
         
         Method Goals This method aims to return all the available options for a given date and search type. It does not filter different classes, times or fares. It will always return all results returned by the supplier between specific date range.
 Request Format It is mandatory to pass a date range and a search type. Depends if OpenAvailability is true or false (this attribute return in StaticConfiguration call), you need specify passengers.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -43,6 +46,9 @@ Request Format The request requires the booking code and the name of the custome
 Response Format The result returns the new status of the reservation and the possible cost of the cancellation.
 Remarks Not implemented by all suppliers
 CancelRQ Example &amp;lt;OTA_TourActivityCancelRQ xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; xmlns:xsd=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; PrimaryLangID = &amp;quot;es&amp;quot;&amp;gt; &amp;lt;Confirmation ID=&amp;quot;1283479#1&amp;quot; type=&amp;quot;PROVIDER&amp;quot; /&amp;gt; &amp;lt;/OTA_TourActivityCancelRQ&amp;gt;  CancelRQ Description    Element Number Type Description     OTA_TourActivityCancelRQ 1  Root node.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -59,6 +65,9 @@ CancelRQ Example &amp;lt;OTA_TourActivityCancelRQ xmlns:xsi=&amp;quot;http://www
 The request object contains the supplier&amp;rsquo;s configuration, urls and credentials.
 The response object contains the operation status and errors, if any.
 Common Elements RQ Example &amp;lt;TicketBaseRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;!-- &amp;lt;agencyCode&amp;gt;test&amp;lt;/agencyCode&amp;gt; --&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;HBA&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;XXX&amp;quot; password = &amp;quot;XXX&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://testapi.interface-xml.com/appservices/http/FrontendService&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlAvailability xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlBook xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;UrlsSpecific xsi:nil = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key = &amp;quot;urlFTP&amp;quot; value = &amp;quot;ftp://ftp.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -72,6 +81,9 @@ Common Elements RQ Example &amp;lt;TicketBaseRQ&amp;gt; &amp;lt;timeoutMilliseco
         
         
         ReservationRQ Example &amp;lt;OTA_TourActivityBookRQ xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; xmlns:xsd=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; PrimaryLangID=&amp;quot;es&amp;quot;&amp;gt; &amp;lt;ContactDetail&amp;gt; &amp;lt;BirthDate&amp;gt;1984-02-19T00:00:00&amp;lt;/BirthDate&amp;gt; &amp;lt;PersonName&amp;gt; &amp;lt;GivenName&amp;gt;TestNameClient&amp;lt;/GivenName&amp;gt; &amp;lt;Surname&amp;gt;TestApClient&amp;lt;/Surname&amp;gt; &amp;lt;/PersonName&amp;gt; &amp;lt;/ContactDetail&amp;gt; &amp;lt;BookingInfo&amp;gt; &amp;lt;BasicInfo Name=&amp;quot;Palma Aquarium&amp;quot; TourActivityID=&amp;quot;000200515&amp;quot;/&amp;gt; &amp;lt;Schedule StartPeriod=&amp;quot;2014-02-26T00:00:00&amp;quot; EndPeriod=&amp;quot;2014-02-27T00:00:00&amp;quot;/&amp;gt; &amp;lt;ParticipantInfo&amp;gt; &amp;lt;Individual LeadCustomerInd=&amp;quot;true&amp;quot; age=&amp;quot;30&amp;quot;&amp;gt; &amp;lt;GivenName&amp;gt;TestName1&amp;lt;/GivenName&amp;gt; &amp;lt;Surname&amp;gt;TestAp1&amp;lt;/Surname&amp;gt; &amp;lt;/Individual&amp;gt; &amp;lt;/ParticipantInfo&amp;gt; &amp;lt;Pricing&amp;gt; &amp;lt;Summary Amount=&amp;quot;19.660&amp;quot; CurrencyCode=&amp;quot;EUR&amp;quot;&amp;gt; &amp;lt;PricingType Extension=&amp;quot;PerTotal&amp;quot;&amp;gt;Other_&amp;lt;/PricingType&amp;gt; &amp;lt;/Summary&amp;gt; &amp;lt;ParticipantCategory age=&amp;quot;30&amp;quot;&amp;gt; &amp;lt;QualifierInfo&amp;gt;Adult&amp;lt;/QualifierInfo&amp;gt; &amp;lt;Price Amount=&amp;quot;19.660&amp;quot; CurrencyCode=&amp;quot;EUR&amp;quot;/&amp;gt; &amp;lt;/ParticipantCategory&amp;gt; &amp;lt;/Pricing&amp;gt; &amp;lt;TPA_Extensions&amp;gt; &amp;lt;Confirmation ID=&amp;quot;4791780&amp;quot; type=&amp;quot;CLIENT&amp;quot;/&amp;gt; &amp;lt;!--OpenAvailability =&amp;quot;true&amp;quot; --&amp;gt; &amp;lt;Issue Mandatory=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;!--Attributes mandatory for confirmation. Specific for IMP --&amp;gt; &amp;lt;Attribute key=&amp;quot;idAgrupacion&amp;quot; value=&amp;quot;8181&amp;quot;/&amp;gt; &amp;lt;Attribute key=&amp;quot;idPago&amp;quot; value=&amp;quot;1&amp;quot;/&amp;gt; &amp;lt;/Attributes&amp;gt; &amp;lt;/TPA_Extensions&amp;gt; &amp;lt;/BookingInfo&amp;gt; &amp;lt;/OTA_TourActivityBookRQ&amp;gt;  ReservationRQ Description    Element Number Type Description     OTA_TourActivityBookRQ 1  Root node.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -88,6 +100,9 @@ Common Elements RQ Example &amp;lt;TicketBaseRQ&amp;gt; &amp;lt;timeoutMilliseco
 Request Format It is mandatory to pass a date range and a date type. Depends the date type, you obtain different reservation list.
 Date types
  ArrivalDate : The arrival date of the reservation. CreateDate : The date the reservation was created.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -105,6 +120,9 @@ Request Format The request requires the booking code and the name of the custome
 Response Format The result returns the new status of the reservation and the possible cost of the consultation.
 Remarks Not implemented by all suppliers
 ReservationReadRQ Example &amp;lt;OTA_ReadRQ xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; xmlns:xsd=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; PrimaryLangID=&amp;quot;es&amp;quot;&amp;gt; &amp;lt;UniqueID ID=&amp;quot;1283712#1&amp;quot; Type=&amp;quot;PROVIDER&amp;quot;/&amp;gt; &amp;lt;/OTA_ReadRQ&amp;gt;  ReservationReadRQ Description    Element Number Type Description     OTA_ReadRQ 1  Root node.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -121,6 +139,9 @@ ReservationReadRQ Example &amp;lt;OTA_ReadRQ xmlns:xsi=&amp;quot;http://www.w3.o
 Request Format The request only requires the provider code.
 Response Format The response contains a list of Attributes.
 RunTimeConfigurationRQ Example &amp;lt;RunTimeConfigurationRQ xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; xmlns:xsd=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot;&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider=&amp;quot;HBA&amp;quot;&amp;gt; &amp;lt;Credentials user=&amp;quot;TRAVELTNETES41375&amp;quot; password=&amp;quot;TRAVELTNETES41375&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;http://testapi.interface-xml.com/appservices/http/FrontendService&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlIdentification xsi:nil=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;UrlAvailability xsi:nil=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;UrlBook xsi:nil=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;UrlsSpecific xsi:nil=&amp;quot;true&amp;quot; /&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key=&amp;quot;destinationId&amp;quot; value=&amp;quot;http://xtghubstatic.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -137,6 +158,9 @@ RunTimeConfigurationRQ Example &amp;lt;RunTimeConfigurationRQ xmlns:xsi=&amp;quo
 Request Format It is not necessary to specify anything as long as usually the provider
 Response Format The response contains information of each activity that provider return.
 SearchRQ Example &amp;lt;OTA_TourActivitySearchRQ xmlns:xsd=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; PrimaryLangID = &amp;quot;es&amp;quot;&amp;gt; &amp;lt;!-- Node for Country/Region filter --&amp;gt; &amp;lt;SearchCriteria&amp;gt; &amp;lt;CountryCode&amp;gt;ES&amp;lt;/CountryCode&amp;gt; &amp;lt;/SearchCriteria&amp;gt; &amp;lt;/OTA_TourActivitySearchRQ&amp;gt;  SearchRQ Description    Element Number Type Description     OTA_TourActivitySearchRQ 1  Root node.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -153,6 +177,9 @@ SearchRQ Example &amp;lt;OTA_TourActivitySearchRQ xmlns:xsd=&amp;quot;http://www
 Request Format The request only requires the provider code and credentials.
 Response Format The response contains a list of basic information about the limitations of the integration / provider.
 OpenAvailability    Type Description     false Need to specify passengers in avail request. In response, provider returns price of option that you specify.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -169,6 +196,9 @@ OpenAvailability    Type Description     false Need to specify passengers in ava
 Request Format The request only requires the provider code and credentials.
 Response Format The response contains a list of territories.
 GetTerritoriesRS Example &amp;lt;GetTerritoriesRQ xmlns:xsd=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;240000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;/GetTerritoriesRQ&amp;gt;  GetTerritoriesRQ Description    Element Number Type Description     GetTerritoriesRQ 1  Root node.    GetTerritoriesRS Example &amp;lt;GetTerritoriesRS xmlns:xsd=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt; &amp;lt;Territories&amp;gt; &amp;lt;Territory id=&amp;quot;0&amp;quot; name=&amp;quot;España&amp;quot; type=&amp;quot;Country&amp;quot;/&amp;gt; &amp;lt;Territory id=&amp;quot;1&amp;quot; name=&amp;quot;Francia&amp;quot; type=&amp;quot;Country&amp;quot;/&amp;gt; &amp;lt;Territory id=&amp;quot;10&amp;quot; name=&amp;quot;Palma&amp;quot; type=&amp;quot;Region&amp;quot; parentId=&amp;quot;0&amp;quot;/&amp;gt; &amp;lt;/GetTerritoriesRS&amp;gt;  GetTerritoriesRS Description    Element Number Type Description     Territories 0.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -182,6 +212,9 @@ GetTerritoriesRS Example &amp;lt;GetTerritoriesRQ xmlns:xsd=&amp;quot;http://www
         
         
         ValuationRQ Example &amp;lt;OTA_TourActivityBookRQ xmlns:xsd=&amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; PrimaryLangID=&amp;quot;es&amp;quot;&amp;gt; &amp;lt;BookingInfo&amp;gt; &amp;lt;BasicInfo Name=&amp;quot;Caldea - Centro Termolúdico&amp;quot; TourActivityID=&amp;quot;E-D01-CALDEA&amp;quot;/&amp;gt; &amp;lt;Location LocationId=&amp;quot;0&amp;quot;&amp;gt; &amp;lt;Position Latitude=&amp;quot;42.511595&amp;quot; Longitude=&amp;quot;1.537232&amp;quot;/&amp;gt; &amp;lt;Address&amp;gt; &amp;lt;AddressLine&amp;gt;Parc de la Mola, 10&amp;lt;/AddressLine&amp;gt; &amp;lt;CityName&amp;gt;ESCALDES&amp;lt;/CityName&amp;gt; &amp;lt;County&amp;gt;Andorra&amp;lt;/County&amp;gt; &amp;lt;/Address&amp;gt; &amp;lt;/Location&amp;gt; &amp;lt;Schedule StartPeriod=&amp;quot;2018-08-21T00:00:00&amp;quot; EndPeriod=&amp;quot;2018-08-22T00:00:00&amp;quot;&amp;gt; &amp;lt;Detail id=&amp;quot;0&amp;quot;&amp;gt; &amp;lt;OperationTimes&amp;gt; &amp;lt;OperationTime Start=&amp;quot;2018-08-21T00:00:00&amp;quot; End=&amp;quot;2018-08-21T00:00:00&amp;quot;/&amp;gt; &amp;lt;/OperationTimes&amp;gt; &amp;lt;TPA_Extensions&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key=&amp;quot;ActivityType&amp;quot; value=&amp;quot;&amp;quot;/&amp;gt; &amp;lt;Attribute key=&amp;quot;ActivityRateKey&amp;quot; value=&amp;quot;4cibvn26c7f80ro75k5d8fv8dq&amp;quot;/&amp;gt; &amp;lt;Attribute key=&amp;quot;ModalityName&amp;quot; value=&amp;quot;EG00001 Entrada general 3 Horas&amp;quot;/&amp;gt; &amp;lt;Attribute key=&amp;quot;ModalityCode&amp;quot; value=&amp;quot;GENERAL@STANDARD||&amp;quot;/&amp;gt; &amp;lt;/Attributes&amp;gt; &amp;lt;/TPA_Extensions&amp;gt; &amp;lt;/Detail&amp;gt; &amp;lt;/Schedule&amp;gt; &amp;lt;ParticipantInfo refId=&amp;quot;0&amp;quot; Condition=&amp;quot;Generic&amp;quot;&amp;gt; &amp;lt;Individual Age=&amp;quot;30&amp;quot;&amp;gt; &amp;lt;NamePrefix&amp;gt;MR&amp;lt;/NamePrefix&amp;gt; &amp;lt;/Individual&amp;gt; &amp;lt;/ParticipantInfo&amp;gt; &amp;lt;ActivityRate RateID=&amp;quot;GENERIC&amp;quot; isNominative=&amp;quot;false&amp;quot; hiddenRate=&amp;quot;false&amp;quot; RateCode=&amp;quot;0&amp;quot;&amp;gt; &amp;lt;Summary Amount=&amp;quot;36.
+        
+          [...]
+        
       </description>
     </item>
     

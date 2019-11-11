@@ -27,6 +27,9 @@
         On this page you will learn more about the Flight-X&amp;rsquo;s AirShopping method
 Method Goals This method aims to return all the available flight offers matching the given request criteria.
 Request Format This method receives a IATA_AishoppingRQ object with a JSON format as request with a list of OriginDestCriteria, every element of this list must have a destination and an origin IATA airport codes and a departure date. Also you have to send a list of passengers with their type.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -42,6 +45,9 @@ Request Format This method receives a IATA_AishoppingRQ object with a JSON forma
         On this page you will learn more about the Flight-X&amp;rsquo;s OrderCreate method
 Method Goals This method aims to purchase an Offer obtained in the Airshopping method response.
 Request Format This method receives a IATA_OrderCreateRQ object with a JSON format as request with one SelectedOffer. We only allow to book one offer at the same time. You have to sent a SelectedOffer with its reference to the shoping response (ShoppingResponseRefID) and all the references to its OfferItems.
+        
+          [...]
+        
       </description>
     </item>
     

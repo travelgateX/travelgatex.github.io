@@ -26,6 +26,9 @@
         
         The Boolean scalar type represents true or false.
 GraphQL schema definition scalar Boolean   Required by SupplierFilter:    ClientFilter:    EntityFilter:    SystemFilter:    PageInfo:    AccessData:    SupplierData:    Provider:    SystemData:    GroupData:    GroupCommonData:    MemberData:    APIData:    ResourceData:    RoleData:    OrganizationData:    ClientData:    ProfileData:    HotelXHotelFilterInput:    HotelSettingsInput:    HotelData:    DestinationData:    SettingsBaseInput:    Room:    Price:    Supplement:    Surcharge:    CancelPolicy:    Bed:    Markup:    Priceable:    PriceChange:    HotelRuntimeParameter:    StatsFilterInput:    OperationDetailed:    AlertCriteriaInput:    AlertData:    AlertConfiguration:    AccessInput:    CreateClientInput:    UpdateClientInput:    CreateProfileInput:    UpdateProfileInput:    CreateSystemInput:    UpdateSystemInput:    UpdateMemberInput:    HotelXUpdateStatusData:    DeltaPriceInput:    AlertInput:  Alert information.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -39,6 +42,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
         
         GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:
+        
       </description>
     </item>
     
@@ -52,6 +56,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
         
         GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:
+        
       </description>
     </item>
     
@@ -65,6 +70,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
         
         GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    Location:    GeonameData:    CriteriaSearch:    HotelXDefaultSettingsDataInput:
+        
       </description>
     </item>
     
@@ -78,6 +84,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
         
         GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:
+        
       </description>
     </item>
     
@@ -91,6 +98,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
         
         GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:    CriteriaSearch:    Supplement:    RatePlan:    Promotion:    PriceBreakdown:    CriteriaBookingDatesInput:    BookingHotel:    PaymentXStoredCardData:    PaymentXStoredCardInput:
+        
       </description>
     </item>
     
@@ -104,6 +112,9 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
         
         GraphQL schema definition scalar DateTime   Required by Access:    Node:    Supplier:    Organization:    System:    Group:    Member:    ManagedGroup:    API:    Resource:    Role:    Domain:    Client:    PointOfSale:    Profile:    Entity:    Product:    MacroPermission:    Operation:    HotelXHotelFilterInput:    HotelRuntimeConfiguration:    Board:    Category:    Hotel:    GiataData:    Media:    Airport:    Geoname:    RoomStatic:    Destination:    AuditData:    Stat:    Transactions:    PaymentXStoredCardFilterInput:    PaymentXStoredCard:    StatsFilterInput:    AbsoluteInput:    Stats:    StatsData:    StatsAsset:    AlertFilterInput:    Alert:   Alert node  Event:  Event triggered  LoggingLegacyFilterInput:  Filters needed to do a search.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -117,6 +128,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
         
         GraphQL schema definition scalar DomainName   Required by DomainData:
+        
       </description>
     </item>
     
@@ -130,6 +142,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
         
         GraphQL schema definition scalar Duration   Required by RelativeInput:
+        
       </description>
     </item>
     
@@ -143,6 +156,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
         
          GraphQL schema definition scalar Email   
+        
       </description>
     </item>
     
@@ -156,6 +170,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
         
          Scalars types GraphQL schema definition scalar EnvironmentName   Required by Environment:     
+        
       </description>
     </item>
     
@@ -170,6 +185,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierFilter:    Client
         
          The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.
 GraphQL schema definition scalar Float   Required by Coordinates:    AuditData:    Stat:    Price:    Exchange:    Markup:    Priceable:    Rule:    CancelPenalty:    PriceChange:    DeltaPriceInput:     
+        
       </description>
     </item>
     
@@ -184,6 +200,9 @@ GraphQL schema definition scalar Float   Required by Coordinates:    AuditData: 
         
         The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
 GraphQL schema definition scalar ID   Required by AccessFilter:    SupplierFilter:    ClientFilter:    ServiceApi:    PointOfSaleFilter:    ProfileFilter:    SystemFilter:    Access:    AccessData:    Node:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    System:    SystemData:    Group:    GroupData:    AdviseMessage:    Member:    GroupCommonData:    MemberData:    ManagedGroup:    ManagedGroupData:    API:    Resource:    Role:    APIData:    ResourceData:    RoleData:    OrganizationData:    Domain:    DomainData:    Client:    ClientData:    ServiceOperation:    PointOfSale:    PointOfSaleData:    Profile:    ProfileData:    Entity:    Product:    ProductData:    MacroPermission:    MacroPermissionData:    Operation:    OperationData:    HotelXBoardQueryInput:    HotelXCategoryQueryInput:    HotelXHotelListInput:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    HotelRuntimeConfiguration:    Board:    BoardData:    Category:    CategoryData:    Hotel:    HotelData:    GiataData:    DestinationData:    Airport:    Geoname:    AirportData:    GeonameData:    RoomStatic:    RoomData:    Destination:    HotelXAccessInput:    PaymentXStoredCardIDInput:    PaymentXStoredCard:    Stats:    StatsInfo:    Alert:   Alert node  AlertData:    Event:  Event triggered  EventData:  Event data  LoggingLegacyFilterInput:  Filters needed to do a search.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -198,6 +217,9 @@ GraphQL schema definition scalar ID   Required by AccessFilter:    SupplierFilte
         
         The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
 GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData:    SupplierData:    GroupData:    ServiceOperation:    RelayInput:    HotelXHotelListInput:    HotelConnection:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    Timeout:    BusinessRules:    OccupancyRange:    PaxInput:    BusinessRulesInput:    SettingsBaseInput:    StatsRequest:    StatAccess:    Pax:    Occupancy:    Room:    Supplement:    Bed:    CancelPenalty:    BookingRoom:    File:    GetMappeaStatsData:    PaymentXExpireDate:    Ratios:    StatsInfo:    StatsAsset:    AlertConnection:  Alert list  AlertConfiguration:    EventConnection:  Events list  AlertTypeConfiguration:  Depending on the talert type, typeConfiguration will use some fields   AlertPrice:  Price contains the specific configuration for Price alert Type  LoggingLegacyFilterInput:  Filters needed to do a search.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -211,6 +233,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
         
         
         GraphQL schema definition scalar Int64   Required by StatsData:    OperationDetailed:    StatsInfo:
+        
       </description>
     </item>
     
@@ -224,6 +247,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
         
         
         GraphQL schema definition scalar JSON   Required by AddOns:    AddOn:
+        
       </description>
     </item>
     
@@ -237,6 +261,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
         
         
         GraphQL schema definition scalar JWT   Required by AdminQuery:
+        
       </description>
     </item>
     
@@ -250,6 +275,7 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
         
         
         GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    Text:    CriteriaSearch:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:
+        
       </description>
     </item>
     
@@ -264,6 +290,9 @@ GraphQL schema definition scalar Int   Required by SupplierFilter:    AccessData
         
         The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
 GraphQL schema definition scalar String   Required by ServiceApiFilter:    ServiceApi:    AccessEdge:    PageInfo:    AccessData:    Error:    Parameter:    SupplierData:    Provider:    GroupData:    AdviseMessage:    GroupCommonData:    MemberData:    ManagedGroupEdge:    APIData:    ResourceData:    RoleData:    ExternalMessage:    OrganizationData:    SupplierEdge:    ClientEdge:    ServiceOperation:    PointOfSaleEdge:    PointOfSaleData:    ProfileEdge:    ProfileData:    EntityEdge:    SystemEdge:    OrganizationEdge:    ProductEdge:    ProductData:    MacroPermissionEdge:    MacroPermissionData:    MemberEdge:    GroupEdge:    APIEdge:    ResourceEdge:    RoleEdge:    OperationEdge:    OperationData:    ServiceStatus:    RelayInput:    HotelConnection:    RoomConnection:    DestinationConnection:    HotelXDestinationSearcherInput:    HotelCriteriaSearchInput:    HotelSettingsInput:    HotelSearch:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    HotelXDefaultPluginStep:    HotelXDefaultPlugin:    HotelXParameter:    BoardEdge:    BoardData:    Text:    CategoryEdge:    CategoryData:    HotelEdge:    HotelData:    Property:    Location:    Contact:    Amenity:    Media:    DestinationData:    AirportData:    GeonameData:    RoomEdge:    RoomData:    DestinationEdge:    HotelXSupplierInput:    ConfigurationInput:    ParameterInput:    PluginsInput:    HotelXFilterPluginTypeInput:    StatsRequest:    CriteriaSearch:    HotelOptionSearch:    Warning:    StatPlugin:    StatAccess:    StatTransaction:    Transactions:    Room:    Supplement:    Surcharge:    BookableOptionSearch:    Bed:    RatePlan:    Promotion:    Feature:    Markup:    Rule:    Resort:    AddOn:    HotelOptionQuote:    PriceChange:    CriteriaBookingReferencesInput:    BookReferenceInput:    HotelBookingDetail:    Reference:    Holder:    BookingHotel:    BookingRoom:    MappingContext:    MappingEntity:    Map:    HotelRuntimeParameter:    MappeaGetMappeaStatsInput:    File:    GetMappeaStatsData:    PaymentXStoredCardIDInput:    HolderInput:    PaymentXStoredCardEdge:    PaymentXStoredCardData:    StatsEdge:    ConnectionEdge:    AlertEdge:    AlertData:    EventEdge:    EventData:  Event data  LoggingLegacyEdge:    HotelXMutation:    AccessInput:    CreateClientInput:    UpdateClientInput:    CreateProfileInput:    UpdateProfileInput:    CreateOrganizationInput:    CreateMemberInput:    CreateGroupInput:    UpdateMemberInput:    UpdateGroupInput:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:    HotelXDefaultPluginInput:    PaymentCardInput:    BookPaxInput:    HotelCancelDetail:    MappeaUploadFileInput:    UploadFileData:    PaymentXStoredCardInput:    AlertInput:  Alert information.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -277,6 +306,7 @@ GraphQL schema definition scalar String   Required by ServiceApiFilter:    Servi
         
         
         GraphQL schema definition scalar URI   Required by Urls:    GiataData:    Contact:    Media:    UrlsInput:    StatsAsset:    LoggingLegacyData:
+        
       </description>
     </item>
     
@@ -290,6 +320,7 @@ GraphQL schema definition scalar String   Required by ServiceApiFilter:    Servi
         
         
         GraphQL schema definition scalar Worker   Required by Environment:
+        
       </description>
     </item>
     

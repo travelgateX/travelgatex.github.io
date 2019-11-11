@@ -27,6 +27,9 @@
         Error 204 - No Results Found Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.
 There are several potential reasons as to why this error occurs:
  The product is not available for the dates in the request. The product is not available for the number of passengers selected in the request.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -46,6 +49,9 @@ The new aggregator allows every language, it will depend on each supplier.
 In aggregator mode, is it possible to set a time out for each provider?
 No, the time out will be applied to all providers, using the parameter setting: timeout.
 Is it possible to see the whole list of providers and to look at their hotel databases and prices somewhere?
+        
+          [...]
+        
       </description>
     </item>
     
@@ -59,6 +65,9 @@ Is it possible to see the whole list of providers and to look at their hotel dat
         
         
         What is TravelgateX? TravelgateX platform provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface). Instead of having to deal with REST APIs, you&amp;rsquo;ll be able to use full poser of GraphQL to interact with your data.
+        
+          [...]
+        
       </description>
     </item>
     

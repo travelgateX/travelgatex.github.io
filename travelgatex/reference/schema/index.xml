@@ -25,6 +25,9 @@
         
         
         GraphQL schema definition type Query {  admin: AdminQuery    hotelX: HotelXQuery    mappea: MappeaQuery    paymentX: PaymentXQuery    stats: StatsQuery    alertsX: AlertsXQuery    logging: LoggingQuery   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -38,6 +41,7 @@
         
         
         GraphQL schema definition type Mutation {  admin: AdminMutation    hotelX: HotelXMutation    mappea: MappeaMutation    paymentX: PaymentXMutation    alertsX: AlertsXMutation   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields admin(AdminMutation):   hotelX(HotelXMutation):   mappea(MappeaMutation):   paymentX(PaymentXMutation):   alertsX(AlertsXMutation):
+        
       </description>
     </item>
     

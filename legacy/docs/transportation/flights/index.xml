@@ -27,6 +27,9 @@
         Method Goals This method aims to return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.
 Request Format The common part of an availability request is very straight forward. It only requires the destination/s, the travelling dates, the paxes and the indication of the trip type.
 Response Format The response format will always be delivered in the node Transportation, which will be organized by two main nodes:
+        
+          [...]
+        
       </description>
     </item>
     
@@ -44,6 +47,9 @@ Request Format The request requires the booking code or locator.
 Response Format The result returns empty response
 Remarks Not implemented by all suppliers
 CancellationRQ Description    Element Number Type Description     CancellationRQ 1  Root node.   Locator 1 String Contains the booking&amp;rsquo;s locator that want to be cancelled   CancellationCosts 0..1 Decimal Contains the amount of cancellation costs.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -59,6 +65,9 @@ CancellationRQ Description    Element Number Type Description     CancellationRQ
         Method Goals This method aims to issue the tickets.
 Request Format The request indicate the booking locator and the issue type (which tickets have to be issued: all, only passengers, only extras).
 Response Format The result returns a list of Locators (booking codes). It can be the supplier&amp;rsquo;s or the one sent in the request. It also returns all the charges associated to the booking, the passengers and the tickets issued (if any).
+        
+          [...]
+        
       </description>
     </item>
     
@@ -74,6 +83,9 @@ Response Format The result returns a list of Locators (booking codes). It can be
         API Structure The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
 The integration will have the following methods:
    Element Input Output Required Description     Availability AvailabilityRQ AvailabilityRS Yes Return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -89,6 +101,9 @@ The integration will have the following methods:
         Method Goals This method aims to refund tickets issued previously.
 Request Format The request must indicate the tickets to be refunded, the refund operation desired (informative or process) and the refund type (fare, taxes, etc.).
 Response Format The result returns a breakdown with all the amounts of the fare that will be refunded (Info) or that has been refunded (Process). The result returns also the tickets refunded (same ones of the request, only with the status updated), and it may return also a list of booking locators.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -104,6 +119,9 @@ Response Format The result returns a breakdown with all the amounts of the fare 
         Method Goals This method aims to book one or more Itineraries.
 Request Format The request format works the same way as the Valuation request. It can work with one or with two Itineraries. The request will also contain a list of Passengers and the PaymentInfo, such as payment method.
 Response Format The result returns a list of Locators (booking codes). It can be the supplier&amp;rsquo;s or the one sent in the request.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -119,6 +137,9 @@ Response Format The result returns a list of Locators (booking codes). It can be
         Method Goals This method aims to retrieve a booking with its full details.
 Request Format The booking can be retrieved by several methods, such as the locator of the booking, the email associated to it, passenger name/surname or other information relative to the itinerary itself.
 Response Format The result returns a list of Itineraries, Passengers, Segments and Booking Locators. It may return also the Payment Info of the booking and the information the client had provided to the provider, such as direction, phone number, etc.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -135,6 +156,9 @@ Response Format The result returns a list of Itineraries, Passengers, Segments a
 Request Format The filter can be set between two time periods, search by email, origin, destination, agency, passenger name/surname, etc.
 Response Format The result return a briefing of the basic information of the bookings that match the query&amp;rsquo;s filters.
 Remarks Not implemented by all suppliers
+        
+          [...]
+        
       </description>
     </item>
     
@@ -151,6 +175,9 @@ Remarks Not implemented by all suppliers
 Request Format In the request, it can be set an origin location, so the response would include only the routes which start with this origin, and an airline filtering.
 Response Format The result returns a list of locations and for each one, a destination tree.
 Remarks Not implemented by all suppliers. Some suppliers will return dates information for each destination tree.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -167,6 +194,9 @@ Remarks Not implemented by all suppliers. Some suppliers will return dates infor
 Request Format The Supplements request can be done by two different ways: with a group of Itineraries (before a reservation) or with a booking locator (after a reservation).
 Response Format The result returns a list of the available supplements (seats, baggage, fare rules, payment methods, etc.)
 Remarks Not implemented by all suppliers
+        
+          [...]
+        
       </description>
     </item>
     
@@ -184,6 +214,9 @@ Request Format Must contain the Itineraries returned in SupplementsRS and any of
 Response Format The result returns an invoice with all the supplement charges.
 Remarks Not implemented by all suppliers
 SupplementsReservationRQ Description    Element Number Type Description     SupplementsReservationRQ 1  Root node.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -199,6 +232,9 @@ SupplementsReservationRQ Description    Element Number Type Description     Supp
         Method Goals This method aims to return the total price of the selected Option. This Option must be selected in the previous step ( Availability ).
 Request Format The Valuation request can be done by two different ways: with a single Itinerary or multiple Itineraries.
  Multiple Itineraries :  In this method, the request will have as many Itineraries as there are Journeys . Mainly used for one-way tickets.
+        
+          [...]
+        
       </description>
     </item>
     

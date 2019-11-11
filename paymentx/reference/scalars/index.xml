@@ -26,6 +26,7 @@
         
          The Boolean scalar type represents true or false.
 GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:    GroupCommonData:    MemberData:    APIData:    ResourceData:    RoleData:    AccessData:    SupplierData:    Provider:    ClientFilter:    SystemData:    SupplierFilter:    OrganizationData:    ClientData:    ProfileData:     
+        
       </description>
     </item>
     
@@ -39,6 +40,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
         
         
         GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:
+        
       </description>
     </item>
     
@@ -52,6 +54,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
         
         
         GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:
+        
       </description>
     </item>
     
@@ -65,6 +68,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
         
         
         GraphQL schema definition scalar Date   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:
+        
       </description>
     </item>
     
@@ -78,6 +82,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
         
         
         GraphQL schema definition scalar DateTime   Required by PaymentXStoredCardFilterInput:    PaymentXStoredCard:    Node:    Group:    PointOfSale:    Member:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    System:    Domain:    Product:    MacroPermission:    Client:    Profile:    Entity:
+        
       </description>
     </item>
     
@@ -91,6 +96,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
         
         
         GraphQL schema definition scalar DomainName   Required by DomainData:
+        
       </description>
     </item>
     
@@ -105,6 +111,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
         
          The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
 GraphQL schema definition scalar ID   Required by AdviseMessage:    PaymentXStoredCardIDInput:    PaymentXStoredCard:    Node:    Group:    PointOfSale:    GroupData:    Member:    GroupCommonData:    MemberData:    API:    APIData:    Resource:    ResourceData:    Operation:    OperationData:    ManagedGroup:    ManagedGroupData:    Role:    RoleData:    Access:    AccessData:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    AccessFilter:    ClientFilter:    System:    SystemData:    SupplierFilter:    OrganizationData:    Domain:    Product:    ProductData:    MacroPermission:    MacroPermissionData:    DomainData:    Client:    ClientData:    Profile:    ProfileData:    Entity:    PointOfSaleData:    PaymentXStoredCardInput:     
+        
       </description>
     </item>
     
@@ -119,6 +126,7 @@ GraphQL schema definition scalar ID   Required by AdviseMessage:    PaymentXStor
         
          The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
 GraphQL schema definition scalar Int   Required by PaymentXExpireDate:    GroupData:    AccessData:    SupplierData:    SupplierFilter:    ExpireDateInput:     
+        
       </description>
     </item>
     
@@ -133,6 +141,7 @@ GraphQL schema definition scalar Int   Required by PaymentXExpireDate:    GroupD
         
          The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
 GraphQL schema definition scalar String   Required by AdviseMessage:    PaymentXStoredCardIDInput:    ExternalMessage:    HolderInput:    PaymentXStoredCardEdge:    PageInfo:    PaymentXStoredCardData:    Holder:    GroupData:    GroupCommonData:    GroupEdge:    MemberData:    MemberEdge:    APIEdge:    APIData:    ResourceEdge:    ResourceData:    OperationEdge:    OperationData:    ManagedGroupEdge:    RoleData:    AccessEdge:    AccessData:    Error:    Parameter:    SupplierData:    Provider:    OrganizationData:    ProductEdge:    ProductData:    MacroPermissionEdge:    MacroPermissionData:    SupplierEdge:    ClientEdge:    RoleEdge:    ProfileEdge:    ProfileData:    EntityEdge:    PointOfSaleData:    PaymentXStoredCardInput:     
+        
       </description>
     </item>
     
@@ -146,6 +155,7 @@ GraphQL schema definition scalar String   Required by AdviseMessage:    PaymentX
         
         
         GraphQL schema definition scalar URI   Required by Urls:
+        
       </description>
     </item>
     

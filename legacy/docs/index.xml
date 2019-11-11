@@ -25,6 +25,9 @@
         
         
         XML Travelgate Introduction XML Travelgate&amp;rsquo;s API allows clients to access content from XML Travelgate&amp;rsquo;s inventory of partners. Currently there are more than 600 suppliers including switching platforms, bedbanks, direct hotel chains, rent a car, ferries, rail, flights and activities companies connected to our system. Use this API to query, check for availability and book fares. It can be accessed by any third-party system such as tour-operator systems, B2C and B2B web applications or third-party applications.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -41,6 +44,9 @@
 WSDLs describing the structure of an XML request and response are available through the following URLs:
 Hotel API:
   Endpoints to our system for the dynamic workflow (Avail, Valuation, Reservation, etc):    http://hubpublic.xmltravelgate.com/Service/Travel/v2/Hotel.svc https://hubpublic.xmltravelgate.com/Service/Travel/v2/HotelSecure.svc    Endpoints to our system for the static information (HotelList, DescriptiveInfo, GeographicDestinationTree, etc):    http://hubhotelbatch.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -54,6 +60,7 @@ Hotel API:
         
         
         This document is intended to a technical audience. Prior knowledge of XML is required. Although it is recommended to have prior knowledge of XML integrations with transfer services, travel services, airlines, ferries or railway carriers, it is not strictly necessary.
+        
       </description>
     </item>
     
@@ -70,6 +77,9 @@ Hotel API:
 This documentation follows a standard. For every method there is:
  Method Description
  Method Goals: What does it do, how does it do it?
+        
+          [...]
+        
       </description>
     </item>
     
@@ -85,6 +95,9 @@ This documentation follows a standard. For every method there is:
         The request is basically made up of two parts: the hub structure and then the XML request.
 The hub structure is a generic structure wrapping the XML request which will indicate the following information:
  Hub credentials. Connection time out measured in Milliseconds. XML Travelgate&amp;rsquo;s API version - usually indicated with a 1. Code for the Supplier you wish to connect to. Id to correlate providerRQ in Request with Response  Observations:
+        
+          [...]
+        
       </description>
     </item>
     

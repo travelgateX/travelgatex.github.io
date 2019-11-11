@@ -25,6 +25,9 @@
         
         
         Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of cache from OperationDetailed. Reason: Added new field trafficType.. Deprecated on 2019-04-03.To be removed soon. Removal of ratios from StatsData. Reason: Added hits fields to be able to calculate ratios at client side.. Deprecated on 2019-04-08.To be removed soon.   2019-04-08  Deprecated ratios from StatsData.
+        
+          [...]
+        
       </description>
     </item>
     

@@ -28,6 +28,9 @@
 YOUR_TRA This is the User to access the HUB XMLTr VELGATE_ avelg USERNAME ate
 YOUR_TRA This is the Passwords to access the HUB XMLTr VELGATE_ avelg PASSWORD ate
 TIMEOUT_ This timeout is set for the HUB. Note that this should be Runti FOR_THE\ at least 1 second higher than the Provider&amp;rsquo;s Request me _HUB_REQ Timeout. This way you can ensure that the HUB has time to param UEST receive the response from our integration and responds it eter back to you.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -44,6 +47,9 @@ TIMEOUT_ This timeout is set for the HUB. Note that this should be Runti FOR_THE
  Added element PricedCoverages: We have added the element PricedCoverages in OTA_VehAvailRateRQ/VehAvailRQInfo, OTA_VehRateRuleRQ/RentalInfo and OTA_VehResRQ/VehResRQInfo. With these elements we can request coverages to the provider.
  Added element RentalRate in VehSegmentCore: We have added the element RentalRate in OTA_VehResRQ/VehRetResRSCore/VehReservation/VehSegmentCore and OTA_VehRetResRS/VehRetResRSCore/VehReservation/VehSegmentCore. With these elements we can return more properties of the booking, like the cancel penalties, vehicle charges, etc.
  Added attribute PromotionCode in RateQualifier: We have added the attribute PromotionCode on the nodes RateQualifier in order to send provider&amp;rsquo;s promotional codes or return the promotional code associated to the rate.
+        
+          [...]
+        
       </description>
     </item>
     
@@ -59,6 +65,9 @@ TIMEOUT_ This timeout is set for the HUB. Note that this should be Runti FOR_THE
         This document intends to explain every aspect of its structure and fields.
 The integration will have the following methods:
    Method Input Output Required Description Endpoint     OTA_VehAvailRate OTA_VehAvailRateRQ OTA_VehAvailRateRS Yes Makes an availability call Car Booking Endpoint.   OTA_VehRateRule OTA_VehRateRuleRQ OTA_VehRateRuleRS Yes Makes a pre-booking Car Booking Endpoint   OTA_VehRes OTA_VehResRQ OTA_VehResRS Yes Makes a booking Car Booking Endpoint   OTA_VehLocSearch OTA_VehLocSearchRQ OTA_VehLocSearchRS Yes Gets a static offices list Car Batch Endpoint   OTA_VehRetRes OTA_VehRetResRQ OTA_VehRetResRS No Gets booking details Car Booking Endpoint   OTA_VehCancel OTA_VehCancelRQ OTA_VehCancelRS No Cancels a booking Car Booking Endpoint   StaticConfiguration StaticConfigurationRQ StaticConfigurationRS Yes Returns the information related to the configuration of the provider.
+        
+          [...]
+        
       </description>
     </item>
     
