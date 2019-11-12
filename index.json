@@ -70,6 +70,13 @@
 	"content": " 2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.  \n Fix on Stats Calendar  \n"
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-11/",
+	"title": "2000-01-31",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-11-11  Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.   "
+},
+{
 	"uri": "https://docs.travelgatex.com/alerts-x/reference/objects/api/",
 	"title": "API",
 	"tags": [],
@@ -2874,7 +2881,7 @@
 	"title": "Flights",
 	"tags": [],
 	"description": "Flight integrations",
-	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.    "
+	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.     VY - Vueling Vueling integration\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/transportation/flights/",
@@ -8428,6 +8435,13 @@
 	"content": " GraphQL schema definition type UrlsInput {  search: URI    quote: URI    book: URI    generic: URI   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields search(URI):   quote(URI):   book(URI):   generic(URI):   \nRequired by ConfigurationInput:    AccessInput:    \n"
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/vy/",
+	"title": "VY - Vueling",
+	"tags": [],
+	"description": "Vueling integration",
+	"content": "   VY - Vueling Changelog     "
+},
+{
 	"uri": "https://docs.travelgatex.com/hotel-x/reference/objects/warning/",
 	"title": "Warning",
 	"tags": [],
@@ -10570,6 +10584,13 @@
 	"content": "Easily accessible log of notable changes to Insights-X\n\t 2019-10-04  Added new table: daily_portfolio_stats_(buyer|seller)    Changed fields in daily_portfolio_(buyer|seller) table. Added field client_owner, removed fields client_id and username.  \n  \t 2019-09-03  Added new table: benchmark_market_city_bw_(daily|weekly|monthly)_(buyer|seller). This one replaces insights_agg_(daily|weekly|monthly)_destination_tgx    Schema modified for tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller). Now, country field is outside the record.   2019-08-27  Added FAQs   2019-06-19  Added new tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller) and insights_agg_(daily|weekly|monthly)_destination_tgx   2019-06-05  Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.    Added new fields in effective bookings: username, commision, adults, childen, infants.    Benchmark is available now for Performance. Added new table in benchmark: performance_daily_(buyer|seller).   2019-05-27  Added new fields in benchmark datasets: TravelgateX total availability, total bookings and total revenue.   2019-04-11  Insights-X Content    Benchmark table daily_benchmarking_seller replaced by new ones benchmark tables    Added buyer field in benchmark seller tables. Added seller field in benchmark buyer tables.   2019-03-27  New table daily_benchmarking_seller    Benchmark Concepts   2019-02-21  New table effective_bookings_(buyer|seller)    daily_insights table renamed as insights_daily_(buyer|seller) daily_insights_(client|provider) table renamed as insights_daily_(buyer|seller)   2019-02-07  Insights-X product documentation     "
 },
 {
+	"uri": "https://docs.travelgatex.com/tags/integration-changelog/",
+	"title": "Integration Changelog",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/",
 	"title": "Lists of Data",
 	"tags": [],
@@ -10918,6 +10939,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Typical use case of message exchange flow between Providers and Sellers can be resumed as:\n Synchronize Hotelier product:\n  Providers retrieve static inventory (Hotel/Rates/Rooms) from Seller using HotelRatePlanInventoryRetrieve in order to map Hotelier inventory into their system. Providers Push/Notif Rate information to Seller using HotelRatePlanNotif in order to synchronize Hotelier rates. Providers Push/Notif Availability information to Seller using HotelAvailNotif in order to synchronize Hotelier availability.   Synchronize Bookings (Confirmations / Cancellations):\n  Sellers can Push/Notify reservations to Providers using Provider native specification (Specification should be provided to TravelgateX). Providers can retrieve reservations using HotelRatePlanNotif. Use both systems described above.   Optionally, check if synchronization is correct:\n  Providers retrieve dynamic rates and availability using HotelRatePlanRetrieve and HotelAvailRetrieve. Providers retrieve valuated availability using HotelAvail (Currently, this functionality is available only in Seller\u0026rsquo;s extranet)    "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/vy/changelog/",
+	"title": "VY - Vueling Changelog",
+	"tags": [],
+	"description": "",
+	"content": " DLL Name Changelog Easily accessible log of notable changes to DLL integration\n\t 2019-11-11  Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.     "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/activities/methods/valuation/",

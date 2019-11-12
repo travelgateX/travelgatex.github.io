@@ -168,6 +168,20 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
+      <title>Integrations: 2000-01-31</title>
+      <link>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-11/</link>
+      <pubDate>Mon, 31 Jan 2000 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-11/</guid>
+      <description>
+        
+        
+         2019-11-11  Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.   
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Alerts-X: API</title>
       <link>https://docs.travelgatex.com/alerts-x/reference/objects/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -766,22 +780,6 @@ Required by AdminQuery:    SupplierData:    GroupData:    GroupCommonData:    Or
         
         
         GraphQL schema definition type AccessData {  name: String!    isActive: Boolean!    code: ID!    supplier: Supplier!    isTest: Boolean!    user: String    password: String    urls: Urls    parameters: [Parameter]    markets: [String!]    rateRules: [RateRulesType!]    shared: Access    owner: Organization    updateDescriptiveInfo: Int!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Logging: AccessData</title>
-      <link>https://docs.travelgatex.com/logging/reference/objects/accessdata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/logging/reference/objects/accessdata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type AccessData {  name: String!    isActive: Boolean!    code: ID!    supplier: Supplier!    isTest: Boolean!    user: String    password: String    urls: Urls    parameters: [Parameter]    markets: [String!]    rateRules: [RateRulesType!]    shared: Access    owner: Organization    isSchedulerActive: Boolean    groups(    first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection   Show deprecated fields   }    window.
         
           [...]
         
