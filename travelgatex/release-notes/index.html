@@ -5396,15 +5396,19 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/insights-x/datasets/types-of-datasets/" class="dd-item">
-            <a href="/insights-x/datasets/types-of-datasets/">
-              <span>Types of Datasets</span><i class="fa fa-circle-thin read-icon"></i>
+          <li data-nav-id="/logging/release-notes/breaking-changes/" class="dd-item">
+            <a href="/logging/release-notes/breaking-changes/">
+              <span>GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/insights-x/datasets/dataset-tooling/" class="dd-item">
-            <a href="/insights-x/datasets/dataset-tooling/">
-              <span>Tooling</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
+        <li data-nav-id="/logging/release-notes/changelog/" class="dd-item">
+          <div>
+            <a href="/logging/release-notes/changelog/">
+              <span>Logging changelog</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+            </ul>
         </li>
             </ul>
         </li>
@@ -6061,20 +6065,6 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/stats/release-notes/breaking-changes/" class="dd-item">
-            <a href="/stats/release-notes/breaking-changes/">
-              <span>GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/stats/release-notes/changelog/" class="dd-item">
-          <div>
-            <a href="/stats/release-notes/changelog/">
-              <span>Stats changelog</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-            </ul>
-        </li>
             </ul>
         </li>
             </ul>
@@ -7039,10 +7029,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7104,10 +7091,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS

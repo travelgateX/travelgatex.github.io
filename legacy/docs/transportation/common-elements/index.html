@@ -4516,6 +4516,21 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/hotel-x/howtos/certification_process/goals/" class="dd-item">
+            <a href="/hotel-x/howtos/certification_process/goals/">
+              <span>Certification Goals</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotel-x/howtos/certification_process/howtoapply/" class="dd-item">
+            <a href="/hotel-x/howtos/certification_process/howtoapply/">
+              <span>How to apply</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotel-x/howtos/certification_process/usecases/" class="dd-item">
+            <a href="/hotel-x/howtos/certification_process/usecases/">
+              <span>Use cases</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
           <li data-nav-id="/hotel-x/howtos/howto-book/" class="dd-item">
@@ -7044,10 +7059,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7109,10 +7121,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS

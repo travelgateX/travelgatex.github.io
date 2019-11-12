@@ -3387,16 +3387,6 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/hotel-x/reference/schema/query/" class="dd-item">
-            <a href="/hotel-x/reference/schema/query/">
-              <span>HotelXQuery</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/hotel-x/reference/schema/mutation/" class="dd-item">
-            <a href="/hotel-x/reference/schema/mutation/">
-              <span>HotelXMutation</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/hotel-x/reference/objects/" class="dd-item">
@@ -7044,10 +7034,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7109,10 +7096,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS

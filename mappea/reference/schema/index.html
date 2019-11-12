@@ -4918,6 +4918,11 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/logging/reference/schema/query/" class="dd-item">
+            <a href="/logging/reference/schema/query/">
+              <span>StatsQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/logging/reference/objects/" class="dd-item">
@@ -7036,10 +7041,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7101,10 +7103,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS

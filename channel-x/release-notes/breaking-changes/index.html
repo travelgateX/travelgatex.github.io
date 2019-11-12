@@ -7042,10 +7042,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7107,10 +7104,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
@@ -7218,11 +7212,11 @@ We have logged this resource on our roadmap and we are currently working through
 		
 		<li><a href="/alerts-x/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
 		
+		<li><a href="/hotel-x/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
+		
 		<li><a href="/travelgatex/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
 		
-		<li><a href="/logging/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
-		
-		<li><a href="/paymentx/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
+		<li><a href="/stats/release-notes/breaking-changes/">GraphQL Schema breaking changes</a></li>
 		
 	</ul>
 </div>

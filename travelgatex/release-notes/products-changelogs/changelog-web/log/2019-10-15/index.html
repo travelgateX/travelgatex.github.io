@@ -7051,10 +7051,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7116,10 +7113,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
@@ -7250,13 +7244,13 @@
 		
 		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-09/">2019-10-09</a></li>
 		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-channelx/log/legacy/">ChannelX changelog</a></li>
-		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-inventory/log/legacy/">Inventory changelog</a></li>
+		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-mappea/log/legacy/">Mappea changelog</a></li>
 		
 		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-16/">2019-09-16</a></li>
 		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-stats/log/legacy/">Stats changelog</a></li>
+		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-inventory/log/legacy/">Inventory changelog</a></li>
+		
+		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-speed/log/legacy/">Speed changelog</a></li>
 		
 	</ul>
 </div>

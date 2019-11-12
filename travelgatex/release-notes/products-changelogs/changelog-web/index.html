@@ -6914,6 +6914,31 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/learning-graphql/overview/" class="dd-item">
+            <a href="/learning-graphql/overview/">
+              <span>GraphQL Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/basic_concepts/" class="dd-item">
+            <a href="/learning-graphql/basic_concepts/">
+              <span>Basic Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/thinking_in_graphql/" class="dd-item">
+            <a href="/learning-graphql/thinking_in_graphql/">
+              <span>Thinking in GraphQL</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/tools/" class="dd-item">
+            <a href="/learning-graphql/tools/">
+              <span>Tools</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/learning-graphql/tutorials_resources/" class="dd-item">
+            <a href="/learning-graphql/tutorials_resources/">
+              <span>Tutorials &amp; Resources</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
     
@@ -7020,10 +7045,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7085,10 +7107,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
@@ -7197,6 +7216,7 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 </div></p>
 </div>
 </div>
+<article id="is-changelog-page"></article>
 <div>	
 	<div>
 
@@ -7226,6 +7246,7 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 </div>
 </div>
 </div>
+<article id="is-changelog-page"></article>
 <div>	
 	<div>
 
@@ -7256,6 +7277,7 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 </div>
 </div>
 </div>
+<article id="is-changelog-page"></article>
 <div>	
 	<div>
 
@@ -7284,6 +7306,7 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 </div></p>
 </div>
 </div>
+<article id="is-changelog-page"></article>
 <div>	
 	<div>
 
@@ -7314,6 +7337,7 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 </div>
 </div>
 </div>
+<article id="is-changelog-page"></article>
 <div>	
 	<div>
 
@@ -7344,6 +7368,7 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 </div></p>
 </div>
 </div>
+<article id="is-changelog-page"></article>
 <div>	
 	<div>
 
@@ -7377,6 +7402,7 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 </div>
 </div>
 </div>
+<article id="is-changelog-page"></article>
 <div>	
 	<div>
 
@@ -7412,6 +7438,7 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 </div></p>
 </div>
 </div>
+<article id="is-changelog-page"></article>
 <div>	
 	<div>
 
@@ -7443,6 +7470,7 @@ role="alert">All notable changes on TravelgateX platform will be documented in t
 </div></p>
 </div>
 </div>
+<article id="is-changelog-page"></article>
 <div>	
 	<div>
 
@@ -7997,6 +8025,7 @@ role="alert">All notable changes to this product will be documented in this page
 </div>
 </div>
 </div>
+<article id="is-changelog-page"></article>
 
 
 

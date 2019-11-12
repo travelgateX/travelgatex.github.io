@@ -7050,10 +7050,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7115,10 +7112,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
@@ -7230,15 +7224,15 @@
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/alerts-x/release-notes/changelog/older/">Older</a></li>
-		
-		<li><a href="/distribution/release-notes/changelog/older/">Older</a></li>
-		
-		<li><a href="/travelgatex/release-notes/changelog/older/">Older</a></li>
-		
 		<li><a href="/insights-x/release-notes/changelog/older/">Older</a></li>
 		
 		<li><a href="/logging/release-notes/changelog/older/">Older</a></li>
+		
+		<li><a href="/travelgatex/release-notes/changelog/older/">Older</a></li>
+		
+		<li><a href="/distribution/release-notes/changelog/older/">Older</a></li>
+		
+		<li><a href="/hotel-x/release-notes/changelog/older/">Older</a></li>
 		
 	</ul>
 </div>

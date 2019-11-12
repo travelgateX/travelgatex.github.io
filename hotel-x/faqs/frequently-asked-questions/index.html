@@ -7053,10 +7053,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7118,10 +7115,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
@@ -7682,9 +7676,9 @@ We suggest to contact directly with the supplier regarding this matter.</p>
 	<h3>See Also</h3>
 	<ul>
 		
-		<li><a href="/travelgatex/frequently-asked-questions/">TravelgateX Frequently Asked Questions</a></li>
-		
 		<li><a href="/hotel-x/faqs/common-errors/">HotelX Common Errors</a></li>
+		
+		<li><a href="/travelgatex/frequently-asked-questions/">TravelgateX Frequently Asked Questions</a></li>
 		
 	</ul>
 </div>

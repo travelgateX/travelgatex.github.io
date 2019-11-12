@@ -6097,6 +6097,24 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+        <li data-nav-id="/integrations/flights/vy/" class="dd-item">
+          <div>
+            <a href="/integrations/flights/vy/">
+              <span>VY - Vueling</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/integrations/flights/vy/changelog/" class="dd-item">
+          <div>
+            <a href="/integrations/flights/vy/changelog/">
+              <span>VY - Vueling Changelog</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+            </ul>
+        </li>
+            </ul>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/integrations/hotel/" class="dd-item">
@@ -7034,10 +7052,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7099,10 +7114,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS

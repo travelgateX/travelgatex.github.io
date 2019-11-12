@@ -4416,6 +4416,25 @@
               <span>Access, Supplier and Context</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+        <li data-nav-id="/hotel-x/concepts/search-mode/" class="dd-item">
+          <div>
+            <a href="/hotel-x/concepts/search-mode/">
+              <span>Booking Flow</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+          <li data-nav-id="/hotel-x/concepts/search-mode/booking-flow/" class="dd-item">
+            <a href="/hotel-x/concepts/search-mode/booking-flow/">
+              <span>Booking Flow</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/hotel-x/concepts/search-mode/search-single-mode/" class="dd-item">
+            <a href="/hotel-x/concepts/search-mode/search-single-mode/">
+              <span>Search Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
           <li data-nav-id="/hotel-x/concepts/quotas-limits/" class="dd-item">
             <a href="/hotel-x/concepts/quotas-limits/">
               <span>Quotas &amp; Limits</span><i class="fa fa-circle-thin read-icon"></i>
@@ -4684,6 +4703,15 @@
             <a href="/hotel-x/release-notes/breaking-changes/">
               <span>GraphQL Schema breaking changes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
+        </li>
+        <li data-nav-id="/hotel-x/release-notes/changelog/" class="dd-item">
+          <div>
+            <a href="/hotel-x/release-notes/changelog/">
+              <span>Hotel-X changelog</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+            </ul>
         </li>
             </ul>
         </li>
@@ -6077,6 +6105,15 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+        <li data-nav-id="/integrations/flights/vy/changelog/" class="dd-item">
+          <div>
+            <a href="/integrations/flights/vy/changelog/">
+              <span>VY - Vueling Changelog</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+            </ul>
+        </li>
             </ul>
         </li>
             </ul>
@@ -7007,10 +7044,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7072,10 +7106,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS

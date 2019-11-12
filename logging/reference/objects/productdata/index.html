@@ -4803,6 +4803,39 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+        <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/insights/" class="dd-item">
+          <div>
+            <a href="/insights-x/datasets/dataset-content/benchmark/insights/">
+              <span>Insights Benchmark Dataset</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+          <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/">
+              <span>Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/">
+              <span>Concepts</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/performance/" class="dd-item">
+          <div>
+            <a href="/insights-x/datasets/dataset-content/benchmark/performance/">
+              <span>Performance Benchmark Dataset</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+          <li data-nav-id="/insights-x/datasets/dataset-content/benchmark/performance/dataset-reference-benchmark/" class="dd-item">
+            <a href="/insights-x/datasets/dataset-content/benchmark/performance/dataset-reference-benchmark/">
+              <span>Reference</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
             </ul>
         </li>
             </ul>
@@ -7019,10 +7052,7 @@
                 </li>
                 <script>
                   $(document).ready(function() {
-                    const href = window.location.href;
-                    if (href.includes('/release-notes/changelog/') || 
-                      (href.includes('/release-notes/products-changelogs/') && 
-                      !href.endsWith('/release-notes/products-changelogs/'))) {
+                    if ($('#is-changelog-page').length > 0) {
                       const ids = [];
                       $('.content-center')
                         .find('h2')
@@ -7084,10 +7114,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  const href = window.location.href;
-                  if(href.includes('/release-notes/changelog/') || 
-                  (href.includes('/release-notes/products-changelogs/') && 
-                  !href.endsWith('/release-notes/products-changelogs/'))){
+                  if($('#is-changelog-page').length > 0){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
