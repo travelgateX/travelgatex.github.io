@@ -7027,21 +7027,6 @@
 <li><a href="#sample-file">Sample File</a></li>
 <li><a href="#request-example">Request example</a></li>
 </ul></li>
-<li><a href="#the-following-plugin-is-deprecated-please-use-the-previous-plugin-to-blacklist">The following plugin is deprecated. Please use the previous plugin to blacklist</a></li>
-<li><a href="#access-blacklist"><code>Access</code> Blacklist</a>
-<ul>
-<li><a href="#file-format-1">File Format</a>
-<ul>
-<li><a href="#sample-file-1">Sample File</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#supplier-blacklist"><code>Supplier</code> Blacklist</a>
-<ul>
-<li><a href="#file-format-2">File Format</a>
-<ul>
-<li><a href="#sample-file-2">Sample File</a></li>
-</ul></li>
-</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -7336,101 +7321,6 @@ With this input hotel: [&quot;AB&quot;,&quot;CD&quot;] after executing the plugi
 			}
         ]
 	},
-</code></pre>
-
-<h2 id="the-following-plugin-is-deprecated-please-use-the-previous-plugin-to-blacklist">The following plugin is deprecated. Please use the previous plugin to blacklist</h2>
-
-<p>The blacklist plugin is used to ignore hotel code(s) when we a search query is executed. There are 2 types of blacklists:</p>
-
-<ul>
-<li>Filter hotel codes of a specific <code>Access</code></li>
-<li>Filter hotel codes of a specific <code>Supplier</code></li>
-</ul>
-
-<p>Loading a blacklist is as easy as following the steps below:</p>
-
-<h2 id="access-blacklist"><code>Access</code> Blacklist</h2>
-
-<p>Blacklist is applied for specific <code>Access</code></p>
-
-<h3 id="file-format-1">File Format</h3>
-
-<p>The file should be in the below format:</p>
-
-<ul>
-<li><p><strong>Encoding</strong>: UTF-8</p></li>
-
-<li><p><strong>File Name</strong>: <code>access_blacklist.csv</code></p></li>
-
-<li><p><strong>Header Row</strong>: Client, Code, Context, Values</p>
-
-<ul>
-<li><p>Client: The <code>Client</code> that you want to apply the blacklist to. If it is empty, it will apply to all <code>Clients</code> of the same <code>Group</code></p></li>
-
-<li><p>Code: The <code>Access</code> code</p></li>
-
-<li><p>Context: The <code>Context</code> of the hotels codes</p></li>
-
-<li><p>Values: List of hotel codes, separated by &ldquo;;&rdquo;</p></li>
-</ul></li>
-
-<li><p><strong>Delimiter</strong>:  Comma (“,”)</p></li>
-
-<li><p><strong>Directory</strong>:  /F[folder code]<em>[unique code]/HotelX</em>[unique code]/</p></li>
-</ul>
-
-<h4 id="sample-file-1">Sample File</h4>
-
-<p><strong>Name</strong>: access_blacklist.csv</p>
-
-<p><strong>Sample Data</strong>:</p>
-
-<pre><code class="language-csv">Client,Code,Context,Values
-client1,access1,context1,a;b
-client2,access2,context2,a;b;c
-,access3,context1,a;b;c;d;e
-</code></pre>
-
-<h2 id="supplier-blacklist"><code>Supplier</code> Blacklist</h2>
-
-<p>Blacklist is applied for a specific provider</p>
-
-<h3 id="file-format-2">File Format</h3>
-
-<p>The file should be in the below format:</p>
-
-<ul>
-<li><p><strong>Encoding</strong>: UTF-8</p></li>
-
-<li><p><strong>File Name</strong>: access_blacklist.csv</p></li>
-
-<li><p><strong>Header Row</strong>: Client, Code, Context, Values</p>
-
-<ul>
-<li><p>Client: The client that you want to apply the blacklist to. If it is empty, it will apply to all clients from the same group.</p></li>
-
-<li><p>Code: The provider code</p></li>
-
-<li><p>Context: The context of hotel codes</p></li>
-
-<li><p>Values: It contains the list of hotel codes, separated by &ldquo;;&rdquo;</p></li>
-</ul></li>
-
-<li><p><strong>Delimiter</strong>:  Comma (“,”) </p></li>
-
-<li><p><strong>Directory</strong>:  /F[folder code]_[unique code]/HotelX_[unique code]/</p></li>
-</ul>
-
-<h4 id="sample-file-2">Sample File</h4>
-
-<p><strong>Name</strong>: supplier_blacklist.csv</p>
-
-<p><strong>Sample Data</strong>:</p>
-
-<pre><code class="language-csv">Client,Code,Context,Values
-client1,supplier1,context1,a;b
-client2,supplier2,context2,a;b;c
-,supplier3,context1,a;b;c;d;e
 </code></pre>
 
 <hr/>
