@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-11/",
+	"title": "2019-11-11",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-11-11  Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.   "
+},
+{
 	"uri": "https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-15/",
 	"title": "2019-10-15",
 	"tags": ["products-changelog"],
@@ -68,13 +75,6 @@
 	"tags": ["products-changelog"],
 	"description": "Contains a chronologically ordered list of notable changes at our website",
 	"content": " 2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.  \n Fix on Stats Calendar  \n"
-},
-{
-	"uri": "https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-11/",
-	"title": "2000-01-31",
-	"tags": ["integration-changelog"],
-	"description": "Contains a chronologically ordered list of notable changes at our website",
-	"content": " 2019-11-11  Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.   "
 },
 {
 	"uri": "https://docs.travelgatex.com/alerts-x/reference/objects/api/",
@@ -2881,7 +2881,7 @@
 	"title": "Flights",
 	"tags": [],
 	"description": "Flight integrations",
-	"content": "   VY - Vueling Vueling integration\n    "
+	"content": "   SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/transportation/flights/",
@@ -7273,6 +7273,13 @@
 	"content": " GraphQL schema definition type Rule {  id: String!    name: String    type: MarkupRuleType!    value: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields id(String!):   name(String):   type(MarkupRuleType!):   value(Float!):   \n"
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/sbr/",
+	"title": "SBR - Sabre",
+	"tags": [],
+	"description": "Sabre integration",
+	"content": "   SBR - Sabre Changelog     "
+},
+{
 	"uri": "https://docs.travelgatex.com/alerts-x/reference/schema/",
 	"title": "Schema",
 	"tags": [],
@@ -9055,7 +9062,7 @@
 	"title": "Concepts",
 	"tags": [],
 	"description": "Understand TravelgateX basic concepts",
-	"content": "   Error and Warning List of errors and warnings in HotelX\n     List of credit cards List of supported credit cards in HotelX\n     Settings Learn about settings in HotelX\n     Access, Supplier and Context Learn about entities used in HotelX\n     Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n     Quotas \u0026amp; Limits      Search Single Mode \u0026amp; Multi Mode Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n     Management Flow Learn about Management Flow. Cancellations and Booking List\n     Static Content Learn about how to manage static content data in your site: Hotels, Boards, Categories...\n     Ranking Learn about how to rank hotels\n    "
+	"content": "   Error and Warning List of errors and warnings in HotelX\n     List of credit cards List of supported credit cards in HotelX\n     Settings Learn about settings in HotelX\n     Access, Supplier and Context Learn about entities used in HotelX\n     Booking Flow Learn about Transactional Booking flow. Search, Quote and Confirm Reservation\n     Quotas \u0026amp; Limits      Management Flow Learn about Management Flow. Cancellations and Booking List\n     Static Content Learn about how to manage static content data in your site: Hotels, Boards, Categories...\n     Ranking Learn about how to rank hotels\n         "
 },
 {
 	"uri": "https://docs.travelgatex.com/insights-x/datasets/",
@@ -9231,13 +9238,6 @@
 	"tags": [],
 	"description": "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation",
 	"content": " On this page you will learn about Transactional Booking Flow to Search, quote and confirm a reservation. You will also see the difference between the Search Single Mode VS Search Multi Mode.\nSearch Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter, you can find a sample here:\n{ \u0026quot;filter\u0026quot;: { \u0026quot;access\u0026quot;: { \u0026quot;includes\u0026quot;: [\u0026quot;yourAccess\u0026quot;] } } }                                                                   \nSearch Multi Mode If you don’t have any filter in the request and you have permissions for multimode, the search is multimode. By default, the request is for all the accesses that you have configured in the product, if you want to apply some filter, you have to use the filter and to indicate the rules that you want. Is important to know that you only can use includes or excludes in the same request, but never both in the same request.\n                                                                        \nIncludes Sample { \u0026quot;filter\u0026quot;: { \u0026quot;access\u0026quot;: { \u0026quot;includes\u0026quot;: [\u0026quot;yourAccess\u0026quot;,\u0026quot;yourAccess2\u0026quot;] } } }  Excludes Sample { \u0026quot;filter\u0026quot;: { \u0026quot;access\u0026quot;: { \u0026quot;excludes\u0026quot;: [\u0026quot;yourAccess\u0026quot;] } } }  "
-},
-{
-	"uri": "https://docs.travelgatex.com/hotel-x/concepts/search-single-mode/",
-	"title": "Search Single Mode &amp; Multi Mode",
-	"tags": [],
-	"description": "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation",
-	"content": " On this page you will learn about the Transactional Booking Flow to Search, Quote and Confirm a reservation. You will also be able to see the difference between the Search Single Mode VS Search Multi Mode. In this sense, you can find the necessary access codes used by using the admin-query\nSearch Single Mode This mode is used when the client only wants to receive options from a single access. In this case, the client should indicate in the request the access code they want to use within the filter access - You can find a sample here:\n{ \u0026quot;filter\u0026quot;: { \u0026quot;access\u0026quot;: { \u0026quot;includes\u0026quot;: [\u0026quot;yourAccess\u0026quot;] } } }                                                                   \nSearch Multi-Mode If you don’t apply any filters in the request and you have permissions for multi-mode, the Search is multi-ode. By default, the request is run for all the accesses that you have configured in the product, if you want to apply some filters, you should use the filter and indicate the rules that you want to apply. Is important to know that you can only use \u0026ldquo;includes\u0026rdquo; or \u0026ldquo;excludes\u0026rdquo; in the same request, but never both in the same request.\n                                                                        \nIncludes Sample { \u0026quot;filter\u0026quot;: { \u0026quot;access\u0026quot;: { \u0026quot;includes\u0026quot;: [\u0026quot;yourAccess\u0026quot;,\u0026quot;yourAccess2\u0026quot;] } } }  Excludes Sample { \u0026quot;filter\u0026quot;: { \u0026quot;access\u0026quot;: { \u0026quot;excludes\u0026quot;: [\u0026quot;yourAccess\u0026quot;] } } }  "
 },
 {
 	"uri": "https://docs.travelgatex.com/insights-x/datasets/dataset-tooling/",
@@ -10101,6 +10101,13 @@
 	"content": ""
 },
 {
+	"uri": "https://docs.travelgatex.com/hotel-x/concepts/search-single-mode/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://docs.travelgatex.com/alerts-x/release-notes/changelog/",
 	"title": "Alerts-X Changelog",
 	"tags": [],
@@ -10855,6 +10862,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Method Goals This message returns a template of the supplier\u0026rsquo;s configuration.\nRequest Format The request does not require any elements, it is an empty request.\nResponse Format The returned XML contains a template of all fields used by the supplier.\nRuntimeConfigurationRQ Example \u0026lt;RuntimeConfigurationRQ\u0026gt; \u0026lt;/RuntimeConfigurationRQ\u0026gt;  RuntimeConfigurationRQ Description    Element Number Type Description     RuntimeConfigurationRQ 1  Root node.    RuntimeConfigurationRS Example \u0026lt;RuntimeConfigurationRS\u0026gt; \u0026lt;Configuration\u0026gt; \u0026lt;User/\u0026gt; \u0026lt;Password/\u0026gt; \u0026lt;UrlGeneric/\u0026gt; \u0026lt;Parameters\u0026gt; \u0026lt;Parameter key = \u0026quot;agencia\u0026quot; value = \u0026quot;\u0026quot;/\u0026gt; \u0026lt;/Parameters\u0026gt; \u0026lt;/Configuration\u0026gt; \u0026lt;/RuntimeConfigurationRS\u0026gt;  ConfiguracionRunTimeRS Description    Element Number Type Description     RuntimeConfigurationRS 1  Root node.    "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/sbr/changelog/",
+	"title": "SBR - Sabre Changelog",
+	"tags": [],
+	"description": "",
+	"content": " DLL Name Changelog Easily accessible log of notable changes to DLL integration\n"
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/hotel/soap-examples/",
