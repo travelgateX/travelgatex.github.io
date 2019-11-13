@@ -7393,6 +7393,146 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
+<td>Rooms/Room /DailyPrices</td>
+<td>0..1</td>
+<td></td>
+<td>Specifies daily price, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+</tr>
+
+<tr>
+<td>Rooms/Room /DailyPrices/DailyPrice</td>
+<td>1..n</td>
+<td></td>
+<td>Specifies the price for each day.</td>
+</tr>
+
+<tr>
+<td>@effectiveDate</td>
+<td>1</td>
+<td>String</td>
+<td>Start date in which the price becomes effective.</td>
+</tr>
+
+<tr>
+<td>@expireDate</td>
+<td>1</td>
+<td>String</td>
+<td>Expiry date of price.</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices/DailyPrice /Price</td>
+<td>1</td>
+<td></td>
+<td>Day price.</td>
+</tr>
+
+<tr>
+<td>@currency</td>
+<td>1</td>
+<td>String</td>
+<td>Currency code.</td>
+</tr>
+
+<tr>
+<td>@amount</td>
+<td>1</td>
+<td>Decimal</td>
+<td>Day Amount.</td>
+</tr>
+
+<tr>
+<td>@binding</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Identifies if the price is binding (When true, the sale price returned <strong>must</strong> not be less than the price informed.</td>
+</tr>
+
+<tr>
+<td>@commission</td>
+<td>1</td>
+<td>Decimal</td>
+<td>Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room /DailyRatePlans</td>
+<td>0..1</td>
+<td></td>
+<td>Specifies the daily rate, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+</tr>
+
+<tr>
+<td>Rooms/Room /DailyRatePlans/DailyRatePlan</td>
+<td>1..n</td>
+<td></td>
+<td>Specifies the rates for each day.</td>
+</tr>
+
+<tr>
+<td>@effectiveDate</td>
+<td>1</td>
+<td>String</td>
+<td>Start date in which the rate becomes effective.</td>
+</tr>
+
+<tr>
+<td>@expireDate</td>
+<td>1</td>
+<td>String</td>
+<td>Expirty date of rate.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
+<td>String</td>
+<td>Indicates the supplier&rsquo;s rate code. This code specifies the rate applied to those days.</td>
+</tr>
+
+<tr>
+<td>@name</td>
+<td>0</td>
+<td>String</td>
+<td>Indicates the supplier&rsquo;s rate name.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room /Price</td>
+<td>1</td>
+<td></td>
+<td>Room price.</td>
+</tr>
+
+<tr>
+<td>@currency</td>
+<td>1</td>
+<td>String</td>
+<td>Currency code.</td>
+</tr>
+
+<tr>
+<td>@amount</td>
+<td>1</td>
+<td>Decimal</td>
+<td>Room Amount.</td>
+</tr>
+
+<tr>
+<td>@binding</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Identifies if is the price is binding (When true the sale price returned <strong>must</strong> not be less than the price informed).</td>
+</tr>
+
+<tr>
+<td>@commission</td>
+<td>1</td>
+<td>Decimal</td>
+<td>Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.</td>
+</tr>
+
+<tr>
 <td>RoomCandidates/RoomCandidate</td>
 <td>1..n</td>
 <td></td>
