@@ -7821,7 +7821,7 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Possible values (NonRefundable, Older55, Package,&hellip;).</td>
+<td>Possible values (NonRefundable, Older55, Package,&hellip;) (see <a href="#RateRules">RateRules</a></td>
 </tr>
 
 <tr>
@@ -8642,28 +8642,28 @@ parameter <OnRequest> is set as false, the integration will filter
 this option in AvailRS only if the supplier provides us this information
 in the availability method.</p>
 
-<p><strong>Rate conditions:</strong></p>
+<p>#RateRules <strong>Rate conditions (RateRules):</strong></p>
 
 <ul>
-<li>The extra fee for a <strong>nonRefundable</strong> cancellation is a 100% from
+<li><strong>NonRefundable</strong>: The extra fee for a <strong>nonRefundable</strong> cancellation is a 100% from
 the moment the reservation is created.</li>
-<li>The supplier can return options for pax: older than 55 years old,
+<li><strong>Older55</strong>: The supplier can return options for pax: <strong>older than 55 years old</strong>,
 i.e. options that can only be sold to people who are 55 and older.
 In this case we will return the condition: rate 55 years old.</li>
-<li>In the case of pax older than <strong>60 years</strong> and <strong>65 years</strong> the same
+<li><strong>Older60</strong> and <strong>Older65</strong>: In the case of pax older than <strong>60 years</strong> and <strong>65 years</strong> the same
 process applies.</li>
-<li>The rate <strong>package</strong> means that the product can&rsquo;t be sold separately
+<li><strong>Package</strong>: The rate <strong>package</strong> means that the product can&rsquo;t be sold separately
 from another product attached to it, such as a flight.</li>
-<li>The rate <strong>CanaryResident</strong> is applicable to Canary Islands
+<li><strong>CanaryResident</strong>: The rate <strong>CanaryResident</strong> is applicable to Canary Islands
 residents only.</li>
-<li>The rate <strong>BalearicResident</strong> is applicable to Balearic Islands
+<li><strong>BalearicResident</strong>: The rate <strong>BalearicResident</strong> is applicable to Balearic Islands
 residents only.</li>
-<li>The rate <strong>largeFamily</strong> is applied to large families and is
+<li><strong>LargeFamily</strong>. The rate <strong>largeFamily</strong> is applied to large families and is
 determined by each supplier.Check <em>remarks</em> for more details.</li>
-<li>The rate <strong>honeymoon</strong> is applied to those who just got married and
+<li><strong>HoneyMoon</strong>: The rate <strong>honeymoon</strong> is applied to those who just got married and
 is determined by each supplier. Check <em>remarks</em> for more details.</li>
-<li>The rate <strong>publicServant</strong> is applicable to public servants only.</li>
-<li>The rate <strong>unemployed</strong> is applied to those without work.</li>
+<li><strong>PublicServant</strong>: The rate <strong>publicServant</strong> is applicable to public servants only.</li>
+<li><strong>Unemployed</strong>: The rate <strong>unemployed</strong> is applied to those without work.</li>
 </ul>
 
 <p><strong>Offers:</strong></p>
