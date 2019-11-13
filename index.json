@@ -1,5 +1,19 @@
 [
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-13/",
+	"title": "2019-11-13",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.   "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-13/",
+	"title": "2019-11-13",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-11-13  Error in FareAvailability when asking for Optima Fares for return trips.   "
+},
+{
 	"uri": "https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-11/",
 	"title": "2019-11-11",
 	"tags": ["integration-changelog"],
@@ -10868,7 +10882,7 @@
 	"title": "SBR - Sabre Changelog",
 	"tags": [],
 	"description": "",
-	"content": " DLL Name Changelog Easily accessible log of notable changes to DLL integration\n"
+	"content": " \t 2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.      "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/hotel/soap-examples/",
@@ -10959,7 +10973,7 @@
 	"title": "VY - Vueling Changelog",
 	"tags": [],
 	"description": "",
-	"content": " DLL Name Changelog Easily accessible log of notable changes to DLL integration\n\t 2019-11-11  Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.      "
+	"content": " \t 2019-11-13  Error in FareAvailability when asking for Optima Fares for return trips.      \t 2019-11-11  Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.      "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/activities/methods/valuation/",

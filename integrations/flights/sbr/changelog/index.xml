@@ -6,6 +6,7 @@
     <description>Recent changes in SBR - Sabre Changelog on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -14,6 +15,20 @@
     
 	    <atom:link href="https://docs.travelgatex.com/integrations/flights/sbr/changelog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Integrations: 2019-11-13</title>
+      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-13/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-13/</guid>
+      <description>
+        
+        
+         2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.   
+        
+      </description>
+    </item>
     
   </channel>
 </rss>
