@@ -1135,6 +1135,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/createpayment/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/travelgatex/reference/inputobjects/createclientinput/</loc>
   </url>
   
@@ -1188,6 +1192,10 @@
   
   <url>
     <loc>https://docs.travelgatex.com/travelgatex/reference/scalars/currency/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/data-structure/</loc>
   </url>
   
   <url>
@@ -4976,6 +4984,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/capturepayment/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/legacy/docs/hub/change-log-front/</loc>
   </url>
   
@@ -5005,6 +5017,10 @@
   
   <url>
     <loc>https://docs.travelgatex.com/channel-x/documentation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/errorcodes/</loc>
   </url>
   
   <url>
@@ -5226,6 +5242,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/common-structure/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/getting-started/concepts/</loc>
   </url>
   
@@ -5235,6 +5255,10 @@
   
   <url>
     <loc>https://docs.travelgatex.com/insights-x/datasets/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/detailspayment/</loc>
   </url>
   
   <url>
@@ -5356,6 +5380,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/common-elements/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/legacy/docs/transportation/common-elements/</loc>
   </url>
   
@@ -5434,6 +5462,10 @@
   
   <url>
     <loc>https://docs.travelgatex.com/hotel-x/concepts/management-flow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/modifypayment/</loc>
   </url>
   
   <url>
@@ -5578,7 +5610,15 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/hotel-x/plugins/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/processnotification/</loc>
   </url>
   
   <url>
@@ -5689,6 +5729,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/refundpayment/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/alerts-x/release-notes/</loc>
   </url>
   
@@ -5767,6 +5811,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/runtimeconfiguration/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/hotel-x/plugins/format-files/supplier_order/</loc>
   </url>
   
@@ -5789,6 +5837,10 @@
   
   <url>
     <loc>https://docs.travelgatex.com/hotel-x/plugins/format-files/netcompare/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/staticconfiguration/</loc>
   </url>
   
   <url>
@@ -5827,10 +5879,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/legacy/docs/transportation/</loc>
   </url>
   
@@ -5842,50 +5890,6 @@
   <url>
     <loc>https://docs.travelgatex.com/_header/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/common-elements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/common-structure/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/errorcodes/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/capturepayment/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/createpayment/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/detailspayment/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/modifypayment/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/processnotification/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/refundpayment/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/runtimeconfiguration/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/methods/staticconfiguration/</loc>
   </url>
   
   <url>
@@ -6044,10 +6048,6 @@
   
   <url>
     <loc>https://docs.travelgatex.com/legacy/docs/hub/data-structure/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/legacy/docs/payments/data-structure/</loc>
   </url>
   
   <url>

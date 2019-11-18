@@ -16,79 +16,7 @@
     
     
     <item>
-      <title>Legacy: </title>
-      <link>https://docs.travelgatex.com/legacy/docs/payments/common-elements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/legacy/docs/payments/common-elements/</guid>
-      <description>
-        
-        
-        Common Elements In this section most common elements, which are used in various calls, will be explained.
-In some cases the root node name changes, in those cases the name provided by the specific call documentation prevails over the name stated here.
-Reasons Reasons Example &amp;lt;Reasons&amp;gt; &amp;lt;Reason Id = &amp;quot;Reference&amp;quot;&amp;gt;123456798&amp;lt;/Reason&amp;gt; ... &amp;lt;/Reasons&amp;gt;  Reasons Description    Element Number Type Description     Reasons   Reasons of the payment.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Legacy: </title>
-      <link>https://docs.travelgatex.com/legacy/docs/payments/common-structure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/legacy/docs/payments/common-structure/</guid>
-      <description>
-        
-        
-        Common Structure The following structure will be common through all transactions.
-Additionally every operation will have it&amp;rsquo;s specific elements.
-The request objects contains the supplier&amp;rsquo;s configuration, urls and credentials.
-The response object contains the operation details and errors if any.
-Common Structure RQ Example &amp;lt;MethodRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;SFT&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;test53245&amp;quot; password = &amp;quot;pn_test_1&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;https://providerurl.com/api&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlTransactionReport&amp;gt;https://providerurl.com/report&amp;lt;/UrlTransactionReport&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key = &amp;quot; &amp;quot; value = &amp;quot; &amp;quot;/&amp;gt; .
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Legacy: </title>
-      <link>https://docs.travelgatex.com/legacy/docs/payments/errorcodes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/legacy/docs/payments/errorcodes/</guid>
-      <description>
-        
-        
-        Error Codes    Error Code Error Description     101 System exceptions. Exceptions not controlled or classified as generic exceptions.   102 Provider controlled error. The provider returned an error.   104 Timeout. Timeout during the operation execution.   201 In Details request reports the transaction was not found.   205 Supplier doesn&amp;rsquo;t accept this currency.   207 Malformed RQ. Supplier doesn&amp;rsquo;t accept the request.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Legacy: </title>
-      <link>https://docs.travelgatex.com/legacy/docs/payments/methods/capturepayment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/legacy/docs/payments/methods/capturepayment/</guid>
-      <description>
-        
-        
-        CapturePayment Method Goals This method aims to capture a payment. Some providers require to capture the payment to transfer the funds to the merchant, in this case you will need to do a CapturePayment call. If this call is needed you will receive a pending reason as &amp;ldquo;PendingCapture&amp;rdquo; in the ProcessNotification o the DetailsPayment response.
-Request Format The CapturePayment request requires a TransactionId and a CurrencyAmount object.
-Response Format The response contains information about the payment that has been captured.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Legacy: </title>
+      <title>Legacy: Create Payment</title>
       <link>https://docs.travelgatex.com/legacy/docs/payments/methods/createpayment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -107,7 +35,78 @@ CreatePaymentRQ Example &amp;lt;CreatePaymentRQ&amp;gt; &amp;lt;Configuracion/&a
     </item>
     
     <item>
-      <title>Legacy: </title>
+      <title>Legacy: Data Structure</title>
+      <link>https://docs.travelgatex.com/legacy/docs/payments/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/docs/payments/data-structure/</guid>
+      <description>
+        
+        
+        The object of this document is to give an overview of the Payments API. A more detailed explanation of the methods can be found here.
+You can read below about what changes might and what changes might not cause an error:
+ Changes that can cause an error:
+ Removing a field. Modifying the type of field or attribute. For example, passing a string type to numeric.  Changes that cannot cause an error:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Capture Payment</title>
+      <link>https://docs.travelgatex.com/legacy/docs/payments/methods/capturepayment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/docs/payments/methods/capturepayment/</guid>
+      <description>
+        
+        
+        CapturePayment Method Goals This method aims to capture a payment. Some providers require to capture the payment to transfer the funds to the merchant, in this case you will need to do a CapturePayment call. If this call is needed you will receive a pending reason as &amp;ldquo;PendingCapture&amp;rdquo; in the ProcessNotification o the DetailsPayment response.
+Request Format The CapturePayment request requires a TransactionId and a CurrencyAmount object.
+Response Format The response contains information about the payment that has been captured.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Error Codes</title>
+      <link>https://docs.travelgatex.com/legacy/docs/payments/errorcodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/docs/payments/errorcodes/</guid>
+      <description>
+        
+        
+        Error Codes    Error Code Error Description     101 System exceptions. Exceptions not controlled or classified as generic exceptions.   102 Provider controlled error. The provider returned an error.   104 Timeout. Timeout during the operation execution.   201 In Details request reports the transaction was not found.   205 Supplier doesn&amp;rsquo;t accept this currency.   207 Malformed RQ. Supplier doesn&amp;rsquo;t accept the request.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Common Structure</title>
+      <link>https://docs.travelgatex.com/legacy/docs/payments/common-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/docs/payments/common-structure/</guid>
+      <description>
+        
+        
+        Common Structure The following structure will be common through all transactions. Additionally every operation will have it&amp;rsquo;s specific elements.
+The request objects contains the supplier&amp;rsquo;s configuration, urls and credentials. The response object contains the operation details and errors if any.
+Common Structure RQ Example &amp;lt;MethodRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;SFT&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;test53245&amp;quot; password = &amp;quot;pn_test_1&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;https://providerurl.com/api&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlTransactionReport&amp;gt;https://providerurl.com/report&amp;lt;/UrlTransactionReport&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key = &amp;quot; &amp;quot; value = &amp;quot; &amp;quot;/&amp;gt; .
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Details Payment</title>
       <link>https://docs.travelgatex.com/legacy/docs/payments/methods/detailspayment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -126,7 +125,25 @@ DetailsPaymentRQ Example &amp;lt;DetailsPaymentRQ&amp;gt; &amp;lt;Transaction Id
     </item>
     
     <item>
-      <title>Legacy: </title>
+      <title>Legacy: Common Elements</title>
+      <link>https://docs.travelgatex.com/legacy/docs/payments/common-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/docs/payments/common-elements/</guid>
+      <description>
+        
+        
+        Common Elements In this section most common elements, which are used in various calls, will be explained.
+In some cases the root node name changes, in those cases the name provided by the specific call documentation prevails over the name stated here.
+Reasons Reasons Example &amp;lt;Reasons&amp;gt; &amp;lt;Reason Id = &amp;quot;Reference&amp;quot;&amp;gt;123456798&amp;lt;/Reason&amp;gt; ... &amp;lt;/Reasons&amp;gt;  Reasons Description    Element Number Type Description     Reasons   Reasons of the payment.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Modify Payment</title>
       <link>https://docs.travelgatex.com/legacy/docs/payments/methods/modifypayment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -144,7 +161,7 @@ Response Format The response contains information about the payment that has bee
     </item>
     
     <item>
-      <title>Legacy: </title>
+      <title>Legacy: Process Notification</title>
       <link>https://docs.travelgatex.com/legacy/docs/payments/methods/processnotification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -163,7 +180,7 @@ ProcessNotificationRQ Example &amp;lt;ProcessNotificationRQ&amp;gt; &amp;lt;HTTP
     </item>
     
     <item>
-      <title>Legacy: </title>
+      <title>Legacy: Refund Payment</title>
       <link>https://docs.travelgatex.com/legacy/docs/payments/methods/refundpayment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -182,7 +199,7 @@ RefundPaymentRQ Example &amp;lt;RefundPaymentRQ&amp;gt; &amp;lt;Transaction Id =
     </item>
     
     <item>
-      <title>Legacy: </title>
+      <title>Legacy: Runtime Configuration</title>
       <link>https://docs.travelgatex.com/legacy/docs/payments/methods/runtimeconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -201,7 +218,7 @@ RunTimeConfigurationRQ_ Example &amp;lt;RunTimeConfigurationRQ&amp;gt; &amp;lt;/
     </item>
     
     <item>
-      <title>Legacy: </title>
+      <title>Legacy: Static Configuration</title>
       <link>https://docs.travelgatex.com/legacy/docs/payments/methods/staticconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -214,25 +231,6 @@ Request Format The request only requires the provider code.
 Response Format The response contains a list of parameters that will inform how to configure the integration.
 StaticConfigurationRQ_ Example &amp;lt;StaticConfigurationRQ&amp;gt; &amp;lt;/StaticConfigurationRQ&amp;gt;  StaticConfigurationRQ Only the structure defined on common-structure is needed
 StaticConfigurationRS Example &amp;lt;StaticConfigurationRS&amp;gt; &amp;lt;operationImplemented&amp;gt;True&amp;lt;/operationImplemented&amp;gt; &amp;lt;ImplementsRedirect&amp;gt;True&amp;lt;/ImplementsRedirect&amp;gt; &amp;lt;ImplementsRefund&amp;gt;True&amp;lt;/ImplementsRefund&amp;gt; &amp;lt;ImplementsDetails&amp;gt;True&amp;lt;/ImplementsDetails&amp;gt; &amp;lt;ImplementsDetailsByDate&amp;gt;True&amp;lt;/ImplementsDetailsByDate&amp;gt; &amp;lt;ImplementsSeedAuthentication&amp;gt;True&amp;lt;/ImplementsSeedAuthentication&amp;gt; &amp;lt;ImplementsItemsDetails&amp;gt;True&amp;lt;/ImplementsItemsDetails&amp;gt; &amp;lt;RequiresNotificationACK&amp;gt;True&amp;lt;/RequiresNotificationACK&amp;gt; &amp;lt;ImplementsUrls&amp;gt; &amp;lt;Url&amp;gt;Success&amp;lt;/Url&amp;gt; &amp;lt;Url&amp;gt;Fail&amp;lt;/Url&amp;gt; &amp;lt;Url&amp;gt;Notification&amp;lt;/Url&amp;gt; &amp;lt;UrlsNotifications&amp;gt; &amp;lt;Status&amp;gt;Denied&amp;lt;/Status&amp;gt; &amp;lt;Status&amp;gt;Received&amp;lt;/Status&amp;gt; &amp;lt;Status&amp;gt;Refunded&amp;lt;/Status&amp;gt; &amp;lt;/UrlsNotifications&amp;gt; &amp;lt;/ImplementsUrls&amp;gt; &amp;lt;/StaticConfigurationRS&amp;gt;  StaticConfigurationRS    Element Number Type Description     StaticConfigurationRS 1  Root node.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Legacy: Data Structure</title>
-      <link>https://docs.travelgatex.com/legacy/docs/payments/data-structure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/legacy/docs/payments/data-structure/</guid>
-      <description>
-        
-        
-        The object of this document is to give an overview of the Payments API. A more detailed explanation of the methods can be found here.
-You can read below about what changes might and what changes might not cause an error:
- Changes that can cause an error:
- Removing a field. Modifying the type of field or attribute. For example, passing a string type to numeric.   Changes that cannot cause an error:
         
           [...]
         
