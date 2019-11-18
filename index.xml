@@ -6,7 +6,7 @@
     <description>Recent changes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 18 Nov 2019 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -15,6 +15,20 @@
     
 	    <atom:link href="https://docs.travelgatex.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Legacy: 2019-11-18</title>
+      <link>https://docs.travelgatex.com/legacy/docs/payments/changelog/2019-11-18/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/docs/payments/changelog/2019-11-18/</guid>
+      <description>
+        
+        
+         2019-11-18 v1.0.18  Implemented changelog with current API status   
+        
+      </description>
+    </item>
     
     <item>
       <title>Integrations: 2019-11-14</title>
@@ -763,21 +777,6 @@ Required by SupplierData:    OrganizationData:    GroupCommonData:    GroupData:
         
         GraphQL schema definition type AccessConnection {  edges: [AccessEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AccessEdge]):   pageInfo(PageInfo!):   
 Required by SupplierData:    OrganizationData:    GroupCommonData:    GroupData:
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Paymentx: AccessConnection</title>
-      <link>https://docs.travelgatex.com/paymentx/reference/objects/accessconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/paymentx/reference/objects/accessconnection/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type AccessConnection {  edges: [AccessEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AccessEdge]):   pageInfo(PageInfo!):   
-Required by GroupData:    GroupCommonData:    SupplierData:    OrganizationData:
         
       </description>
     </item>
