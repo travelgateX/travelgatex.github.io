@@ -1,10 +1,31 @@
 [
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-25/",
+	"title": "2019-11-25",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-11-25  Added seats to bill with price 0 when not reserved because of \u0026ldquo;PNS not allowed\u0026rdquo; error.   "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-19/",
+	"title": "2019-11-19",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-11-19  Sending duplicated birthdates causing the error \u0026ldquo;DB already collected\u0026rdquo; on Reservation.   "
+},
+{
 	"uri": "https://docs.travelgatex.com/legacy/docs/payments/changelog/2019-11-18/",
 	"title": "2019-11-18",
 	"tags": ["api-changelog"],
 	"description": "Contains a chronologically ordered list of notable changes at our website",
 	"content": " 2019-11-18 v1.0.18  Included docs and changelog with current API status   "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-15/",
+	"title": "2019-11-15",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-11-15  Now in reservation PassengerDetails we always send the element ReceivedFrom.   "
 },
 {
 	"uri": "https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-11-14/",
@@ -11008,7 +11029,7 @@
 	"title": "SBR - Sabre Changelog",
 	"tags": [],
 	"description": "",
-	"content": " \t 2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.      "
+	"content": " \t 2019-11-25  Added seats to bill with price 0 when not reserved because of \u0026ldquo;PNS not allowed\u0026rdquo; error.      \t 2019-11-19  Sending duplicated birthdates causing the error \u0026ldquo;DB already collected\u0026rdquo; on Reservation.      \t 2019-11-15  Now in reservation PassengerDetails we always send the element ReceivedFrom.      \t 2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.      "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/hotel/soap-examples/",
