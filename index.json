@@ -1,5 +1,19 @@
 [
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/lh/changelog/2019-11-27/",
+	"title": "2019-11-27",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-11-27  Error in Bags information Error in aplicaSegmentos when the flight is one-way .   "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-27/",
+	"title": "2019-11-27",
+	"tags": ["integration-changelog"],
+	"description": "Sporadic search errors that we should investigate",
+	"content": " 2019-11-27  Now when it tries to add it checks if it is before and if it deletes it..   "
+},
+{
 	"uri": "https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-25/",
 	"title": "2019-11-25",
 	"tags": ["integration-changelog"],
@@ -2937,7 +2951,7 @@
 	"title": "Flights",
 	"tags": [],
 	"description": "Flight integrations",
-	"content": "   NAS - Norwegian Norwegian integration\n     SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
+	"content": "   LH - Lufthansa Lufthansa integration\n     NAS - Norwegian Norwegian integration\n     SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/transportation/flights/",
@@ -4282,6 +4296,13 @@
 	"tags": [],
 	"description": "",
 	"content": " GraphQL schema definition scalar JWT   Required by AdminQuery:    \n"
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/lh/",
+	"title": "LH - Lufthansa",
+	"tags": [],
+	"description": "Lufthansa integration",
+	"content": "   LH - Lufthansa Changelog     "
 },
 {
 	"uri": "https://docs.travelgatex.com/hotel-x/reference/scalars/language/",
@@ -10745,6 +10766,13 @@
 	"content": ""
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/lh/changelog/",
+	"title": "LH - Lufthansa Changelog",
+	"tags": [],
+	"description": "",
+	"content": " DLL Name Changelog Easily accessible log of notable changes to DLL integration\n\t 2019-11-27  Error in Bags information Error in aplicaSegmentos when the flight is one-way .      "
+},
+{
 	"uri": "https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/",
 	"title": "Lists of Data",
 	"tags": [],
@@ -11029,7 +11057,7 @@
 	"title": "SBR - Sabre Changelog",
 	"tags": [],
 	"description": "",
-	"content": " \t 2019-11-25  Added seats to bill with price 0 when not reserved because of \u0026ldquo;PNS not allowed\u0026rdquo; error.      \t 2019-11-19  Sending duplicated birthdates causing the error \u0026ldquo;DB already collected\u0026rdquo; on Reservation.      \t 2019-11-15  Now in reservation PassengerDetails we always send the element ReceivedFrom.      \t 2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.      "
+	"content": " \t 2019-11-27  Now when it tries to add it checks if it is before and if it deletes it..      \t 2019-11-25  Added seats to bill with price 0 when not reserved because of \u0026ldquo;PNS not allowed\u0026rdquo; error.      \t 2019-11-19  Sending duplicated birthdates causing the error \u0026ldquo;DB already collected\u0026rdquo; on Reservation.      \t 2019-11-15  Now in reservation PassengerDetails we always send the element ReceivedFrom.      \t 2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.      "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/hotel/soap-examples/",
