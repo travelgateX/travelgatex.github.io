@@ -7469,12 +7469,12 @@
 <li>Average of all the bookings per seller: <strong>booking_compset</strong></li>
 <li>Average of all the revenue net per seller: <strong>revenue_compset</strong></li>
 </ul></li>
-<li>How far or how close I&rsquo;m from the best/worst seller. For values near zero, you&rsquo;re close to the worst seller. For values near one, you&rsquo;re close to the best seller:
+<li>The value of the best seller:
 
 <ul>
-<li>Returning availables hotels: <strong>availability_index</strong></li>
-<li>In bookings: <strong>booking_index</strong></li>
-<li>In revenue net: <strong>revenue_index</strong></li>
+<li>Returning availables hotels: <strong>availability_best_compset</strong></li>
+<li>In bookings: <strong>booking_best_compset</strong></li>
+<li>In revenue net: <strong>revenue_best_compset</strong></li>
 </ul></li>
 </ul>
 
@@ -7488,6 +7488,7 @@
 <th>client_id</th>
 <th>provider_id</th>
 <th>country</th>
+<th>zone_2</th>
 <th>city</th>
 <th>country_city_client</th>
 <th>search_date</th>
@@ -7495,17 +7496,17 @@
 <th>availability_percentile</th>
 <th>availability_rank</th>
 <th>availability_compset</th>
-<th>availability_index</th>
+<th>availability_best_compset</th>
 <th>booking_value</th>
 <th>booking_percentile</th>
 <th>booking_rank</th>
 <th>booking_compset</th>
-<th>booking_index</th>
+<th>booking_best_compset</th>
 <th>revenue_value</th>
 <th>revenue_percentile</th>
 <th>revenue_rank</th>
 <th>revenue_compset</th>
-<th>revenue_index</th>
+<th>revenue_best_compset</th>
 <th>total_provider</th>
 <th>country_name</th>
 <th>availability_tgx</th>
@@ -7519,6 +7520,7 @@
 <td>client 1</td>
 <td>provider 1</td>
 <td>ES</td>
+<td>Illes Balears</td>
 <td>Palma</td>
 <td>ES,Palma,client 1</td>
 <td>2019-04-03 00:00:00 UTC</td>
@@ -7526,17 +7528,17 @@
 <td>0.8889</td>
 <td>1</td>
 <td>12.625</td>
-<td>1.0</td>
+<td>130</td>
 <td>3</td>
 <td>0.7674</td>
 <td>3</td>
 <td>1.426</td>
-<td>0.8571</td>
+<td>15</td>
 <td>2104.72</td>
 <td>0.8163</td>
 <td>2</td>
 <td>620.36</td>
-<td>0.9126</td>
+<td>2513.5</td>
 <td>8</td>
 <td>Spain</td>
 <td>60000</td>
@@ -7554,7 +7556,7 @@
 <li>The provider is above de 89.89% of providers in Palma of client 1.</li>
 <li>This provider is the first returning availability in Palma for client 1. Here, that&rsquo;s a point, because the provider is first in the ranking but the percentile is not 100%. That&rsquo;s why there is another provider retuning the same numbers of hotels availables.</li>
 <li>The average of hotels availables per provider in Palma for client 1 is 12.25.</li>
-<li>The value of the index is 1, so privider 1 is the best seller for the client 1 or there is not another seller returning more availables hotels.</li>
+<li>The provider in TGX that has obtained the most available hotels has obtained a total of 130 availables hotels, so provider 1 is the best seller for the client 1 or there is not another seller returning more availables hotels.</li>
 </ul>
 
 <p>Let&rsquo;s see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in <strong>bookings</strong> for the client 1:</p>
@@ -7565,7 +7567,7 @@
 <li>The seller is above the 76.74% providers operating in Palma for the client 1.</li>
 <li>This seller is the third in bookability in Palma for the client 1.</li>
 <li>The average of bookings in Palma per seller for the client 1 is 1.426.</li>
-<li>The value of the index is 0.8571, so provider 1 is not so far of the first seller in bookability in Palma for the client 1.</li>
+<li>The provider in TGX that has obtained the most bookings has obtained a total of 15 bookings, so provider 1 is not so far of the first seller in bookability in Palma for the client 1.</li>
 </ul>
 
 <p>Let&rsquo;s see what we can say for the provider 1 at 2019-04-03 00:00:00 UTC in <strong>revenue</strong> for the client 1:</p>
@@ -7576,7 +7578,7 @@
 <li>The seller is above de 81.63% providers operating in Palma for the client 1.</li>
 <li>This seller is the second in revenue in Palma for the client 1.</li>
 <li>The average of revenue in Palma per seller is 620.36€  for the client 1.</li>
-<li>The value of the index is 0.9126, so provider 1 is close to the seller with largest revenue in Palma for the client 1.</li>
+<li>The provider in TGX that has obtained the most revenue has obtained 2513.5€, so provider 1 is close to the seller with largest revenue in Palma for the client 1.</li>
 </ul>
 
 <p>The benchmarks have been calculated comparing provider 1 with other 8 providers.</p>
@@ -7595,17 +7597,17 @@
 <th>availability_percentile</th>
 <th>availability_rank</th>
 <th>availability_compset</th>
-<th>availability_index</th>
+<th>availability_best_compset</th>
 <th>booking_value</th>
 <th>booking_percentile</th>
 <th>booking_rank</th>
 <th>booking_compset</th>
-<th>booking_index</th>
+<th>booking_best_compset</th>
 <th>revenue_value</th>
 <th>revenue_percentile</th>
 <th>revenue_rank</th>
 <th>revenue_compset</th>
-<th>revenue_index</th>
+<th>revenue_best_compset</th>
 <th>total_provider</th>
 <th>country_name</th>
 <th>availability_tgx</th>
@@ -7625,17 +7627,17 @@
 <td>1.0</td>
 <td>1</td>
 <td>9.3953</td>
-<td>1.0</td>
+<td>20</td>
 <td>2</td>
 <td>0.902</td>
 <td>2</td>
 <td>1.8889</td>
-<td>0.5</td>
+<td>4</td>
 <td>676.95</td>
 <td>0.9412</td>
 <td>4</td>
 <td>701.0125</td>
-<td>0.4076</td>
+<td>1612.7</td>
 <td>52</td>
 <td>Cuba</td>
 <td>60000</td>
@@ -7653,7 +7655,7 @@
 <li>The provider is above de 100% of providers in La Habana Vieja (so it&rsquo;s the best).</li>
 <li>This provider is the first returning availability in La Habana Vieja.</li>
 <li>The average of hotels availables per provider in La Habana Vieja is 9.3953.</li>
-<li>The value of the index is 1, so  is the best seller.</li>
+<li>The provider in TGX that has obtained the most available hotels has obtained a total of 20 availables hotels, so  is the best seller.</li>
 </ul>
 
 <p>Let&rsquo;s see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in <strong>bookings</strong>:</p>
@@ -7664,7 +7666,7 @@
 <li>The seller is above the 90.72% providers operating in La Habana Vieja.</li>
 <li>This seller is the second in bookability in La Habana Vieja.</li>
 <li>The average of bookings in La Habana Vieja per seller is 1.8889.</li>
-<li>The value of the index is 0.5, so provider 1 has sold the half of bookings than the best seller in bookability in La Habana Vieja.</li>
+<li>The provider in TGX that has obtained the most bookings has obtained a total of 4 bookings, so provider 1 has sold the half of bookings than the best seller in bookability in La Habana Vieja.</li>
 </ul>
 
 <p>Let&rsquo;s see what we can say for the provider 1 at 2019-04-03 00:00:00 UTC in <strong>revenue</strong>:</p>
@@ -7675,7 +7677,7 @@
 <li>The seller is above de 94.12% providers operating in La Habana Vieja.</li>
 <li>This seller is the fourth in revenue in La Habana Vieja.</li>
 <li>The average of revenue in La Habana Vieja per seller is 701.0125€.</li>
-<li>The value of the index is 0.4076 so I&rsquo;m far to the seller with largest revenue in La Habana Vieja.</li>
+<li>The provider in TGX that has obtained the most revenue has obtained 1612.7€, so provider1 is far to the seller with largest revenue in La Habana Vieja.</li>
 </ul>
 
 <p>The benchmarks have been calculated comparing provider 1 with other 52 providers.</p>

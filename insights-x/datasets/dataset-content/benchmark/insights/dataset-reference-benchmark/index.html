@@ -7376,31 +7376,32 @@ The benchmarks are based on the total of differents and availables hotels that h
 
 <ul>
 <li><strong>search_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
-<li><strong>client_id (STRING).</strong> Client unique ID.</li>
-<li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
+<li><strong>client_owner    (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
 <li><strong>country (STRING).</strong> Country of destination (ISO 3166-1 alpha-2).</li>
+<li><strong>zone_2 (STRING).</strong> Administrative second level zone E.g. Madrid city.</li>
 <li><strong>city (STRING).</strong> Last level of destination.</li>
 <li><strong>country_city_client (STRING).</strong> Concatenation of fields city, country and client.</li>
-<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, city, country, provider_id, client_id).</li>
-<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, city, country, client_id).</li>
-<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, city, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, city, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_index (FLOAT).</strong> Min-Max Normalization of the field availability_value.</li>
-<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, city, country, provider_id, client_id).</li>
-<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, city, country, client_id).</li>
-<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, city, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, city, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_index (FLOAT).</strong> Min-Max Normalization of the field booking_value.</li>
-<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, city, country, provider_id, client_id).</li>
-<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, city, country, client_id).</li>
-<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, city, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, city, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_index (FLOAT).</strong> Min-Max Normalization of the field revenue_value.</li>
+<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, city, country, provider_owner, client_owner).</li>
+<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, city, country, client_owner).</li>
+<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, city, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, city, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_best_compset  (INTEGER).</strong> Best availability value in the competitive set.</li>
+<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, city, country, provider_owner, client_owner).</li>
+<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, city, country, client_owner).</li>
+<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, city, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, city, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_best_compset  (INTEGER).</strong> Best booking value in the competitive set.</li>
+<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, city, country, provider_owner, client_owner).</li>
+<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, city, country, client_owner).</li>
+<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, city, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, city, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_best_compset  (INTEGER).</strong> Best revenue value in the competitive set.</li>
 <li><strong>total_provider (STRING).</strong> Total of suppliers that have been considered for the benchmarking.</li>
 <li><strong>country_name (STRING).</strong> Country name of destination (English).</li>
 <li><strong>availability_tgx (NUMBER).</strong> - Quantity of unique hotels available in TravelgateX for key above (search_date, city, country, provider_id)</li>
 <li><strong>booking_tgx (NUMBER).</strong> - Quantity of confirmed bookings in TravelgateX for the Key above (seach_date, city, country, provider_id)</li>
-<li><strong>revenue_tgx (NUMBER).</strong> - Total net amount in EUR of confirmed bookings in TravelgateX for the key (search_date, city, country, provider_id)</li>
+<li><strong>revenue_tgx (NUMBER).</strong> - Total net amount in EUR of confirmed bookings in TravelgateX for the key (search_date, city, country, provider_owner)</li>
 </ul>
 
 <p><strong>Preview</strong></p>
@@ -7408,9 +7409,10 @@ The benchmarks are based on the total of differents and availables hotels that h
 <table>
 <thead>
 <tr>
-<th>client_id</th>
-<th>provider_id</th>
+<th>client_owner</th>
+<th>provider_owner</th>
 <th>country</th>
+<th>zone_2</th>
 <th>city</th>
 <th>country_city_client</th>
 <th>search_date</th>
@@ -7418,23 +7420,22 @@ The benchmarks are based on the total of differents and availables hotels that h
 <th>availability_percentile</th>
 <th>availability_rank</th>
 <th>availability_compset</th>
-<th>availability_index</th>
+<th>availability_best_compset</th>
 <th>booking_value</th>
 <th>booking_percentile</th>
 <th>booking_rank</th>
 <th>booking_compset</th>
-<th>booking_index</th>
+<th>booking_best_compset</th>
 <th>revenue_value</th>
 <th>revenue_percentile</th>
 <th>revenue_rank</th>
 <th>revenue_compset</th>
-<th>revenue_index</th>
+<th>revenue_best_compset</th>
 <th>total_provider</th>
 <th>country_name</th>
 <th>availability_tgx</th>
 <th>booking_tgx</th>
 <th>revenue_tgx</th>
-<th></th>
 </tr>
 </thead>
 
@@ -7443,6 +7444,7 @@ The benchmarks are based on the total of differents and availables hotels that h
 <td>client 1</td>
 <td>provider 1</td>
 <td>ES</td>
+<td>Illes Balears</td>
 <td>Palma</td>
 <td>Palma,ES,client 1</td>
 <td>2019-04-03 00:00:00 UTC</td>
@@ -7450,29 +7452,29 @@ The benchmarks are based on the total of differents and availables hotels that h
 <td>0.8889</td>
 <td>1</td>
 <td>6.625</td>
-<td>1.0</td>
+<td>13</td>
 <td>0</td>
 <td>0.0</td>
 <td>3</td>
 <td>1.5</td>
-<td>0.0</td>
+<td>6</td>
 <td>0.0</td>
 <td>0.0</td>
 <td>3</td>
 <td>381.9873</td>
-<td>0.0</td>
+<td>150</td>
 <td>10</td>
 <td>Spain</td>
 <td>250</td>
 <td>55</td>
 <td>120</td>
-<td></td>
 </tr>
 
 <tr>
 <td>client 2</td>
 <td>provider 2</td>
 <td>CL</td>
+<td>Provincia de Santiago</td>
 <td>Santiago</td>
 <td>Santiago,CL,client 2</td>
 <td>2019-04-03 00:00:00 UTC</td>
@@ -7480,23 +7482,22 @@ The benchmarks are based on the total of differents and availables hotels that h
 <td>0.8571</td>
 <td>2</td>
 <td>28.4286</td>
-<td>0.8028</td>
+<td>65</td>
 <td>1</td>
 <td>0.8571</td>
 <td>2</td>
 <td>3.5</td>
-<td>0.1667</td>
+<td>2</td>
 <td>322.02</td>
 <td>0.0532</td>
 <td>2</td>
 <td>3024.72</td>
-<td>0.0562</td>
+<td>145498</td>
 <td>8</td>
 <td>Chile</td>
 <td>330</td>
 <td>33</td>
 <td>130</td>
-<td></td>
 </tr>
 
 <tr>
@@ -7504,29 +7505,29 @@ The benchmarks are based on the total of differents and availables hotels that h
 <td>provider 3</td>
 <td>AE</td>
 <td>Dubai</td>
-<td>Dubai,AE,client 3</td>
+<td>Jaddaf</td>
+<td>Jaddaf,AE,client 3</td>
 <td>2019-04-03 00:00:00 UTC</td>
 <td>97</td>
 <td>0.8462</td>
 <td>2</td>
 <td>47.0714</td>
-<td>0.96</td>
+<td>250</td>
 <td>0</td>
 <td>0.0</td>
 <td>2</td>
 <td>1.0</td>
-<td>0.0</td>
+<td>5</td>
 <td>0.0</td>
 <td>0.0</td>
 <td>2</td>
 <td>1333.491</td>
-<td>0.0</td>
+<td>125</td>
 <td>14</td>
 <td>United Arab Emirates</td>
 <td>225</td>
 <td>21</td>
 <td>122</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -7540,30 +7541,30 @@ The benchmarks are based on the total of differents and availables hotels that h
 
 <ul>
 <li><strong>search_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
-<li><strong>client_id (STRING).</strong> Client unique ID.</li>
-<li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
+<li><strong>client_owner    (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
 <li><strong>country (STRING).</strong> Country of destination (ISO 3166-1 alpha-2).</li>
 <li><strong>country_client (STRING).</strong> Concatenation of fields country and client.</li>
-<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, country, provider_id, client_id).</li>
-<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, country, client_id).</li>
-<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_index (FLOAT).</strong> Min-Max Normalization of the field availability_value.</li>
-<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, country, provider_id, client_id).</li>
-<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, country, client_id).</li>
-<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_index (FLOAT).</strong> Min-Max Normalization of the field booking_value.</li>
-<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, country, provider_id, client_id).</li>
-<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, country, client_id).</li>
-<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, country, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_index (FLOAT).</strong> Min-Max Normalization of the field revenue_value.</li>
+<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, country, provider_owner, client_owner).</li>
+<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, country, client_owner).</li>
+<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_best_compset  (INTEGER).</strong> Best availability value in the competitive set.</li>
+<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, country, provider_owner, client_owner).</li>
+<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, country, client_owner).</li>
+<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_best_compset  (INTEGER).</strong> Best booking value in the competitive set.</li>
+<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, country, provider_owner, client_owner).</li>
+<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, country, client_owner).</li>
+<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, country, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_best_compset  (INTEGER).</strong> Best revenue value in the competitive set.</li>
 <li><strong>total_provider (STRING).</strong> Total of suppliers that have been considered for the benchmarking.</li>
 <li><strong>country_name (STRING).</strong> Country name of destination (English).</li>
-<li><strong>availability_tgx (NUMBER).</strong> - Quantity of unique hotels available in TravelgateX for key (search_date, country, provider_id)</li>
-<li><strong>booking_tgx (NUMBER).</strong> - Quantity of confirmed bookings in TravelgateX for the Key (seach_date, country, provider_id)</li>
-<li><strong>revenue_tgx (NUMBER).</strong> - Total net amount in EUR of confirmed bookings in TravelgateX for the key (search_date, country, provider_id)</li>
+<li><strong>availability_tgx (NUMBER).</strong> - Quantity of unique hotels available in TravelgateX for key (search_date, country, provider_owner)</li>
+<li><strong>booking_tgx (NUMBER).</strong> - Quantity of confirmed bookings in TravelgateX for the Key (seach_date, country, provider_owner)</li>
+<li><strong>revenue_tgx (NUMBER).</strong> - Total net amount in EUR of confirmed bookings in TravelgateX for the key (search_date, country, provider_owner)</li>
 </ul>
 
 <p><strong>Preview</strong></p>
@@ -7571,8 +7572,8 @@ The benchmarks are based on the total of differents and availables hotels that h
 <table>
 <thead>
 <tr>
-<th>client_id</th>
-<th>provider_id</th>
+<th>client_owner</th>
+<th>provider_owner</th>
 <th>country</th>
 <th>country_client</th>
 <th>search_date</th>
@@ -7580,23 +7581,22 @@ The benchmarks are based on the total of differents and availables hotels that h
 <th>availability_percentile</th>
 <th>availability_rank</th>
 <th>availability_compset</th>
-<th>availability_index</th>
+<th>availability_best_compset</th>
 <th>booking_value</th>
 <th>booking_percentile</th>
 <th>booking_rank</th>
 <th>booking_compset</th>
-<th>booking_index</th>
+<th>booking_best_compset</th>
 <th>revenue_value</th>
 <th>revenue_percentile</th>
 <th>revenue_rank</th>
 <th>revenue_compset</th>
-<th>revenue_index</th>
+<th>revenue_best_compset</th>
 <th>total_provider</th>
 <th>country_name</th>
 <th>availability_tgx</th>
 <th>booking_tgx</th>
 <th>revenue_tgx</th>
-<th></th>
 </tr>
 </thead>
 
@@ -7611,23 +7611,22 @@ The benchmarks are based on the total of differents and availables hotels that h
 <td>0.8889</td>
 <td>1</td>
 <td>6.625</td>
-<td>1.0</td>
+<td>13</td>
 <td>0</td>
 <td>0.0</td>
 <td>3</td>
 <td>1.5</td>
-<td>0.0</td>
+<td>6</td>
 <td>0.0</td>
 <td>0.0</td>
 <td>3</td>
 <td>381.9873</td>
-<td>0.0</td>
+<td>150</td>
 <td>10</td>
 <td>Spain</td>
 <td>250</td>
 <td>55</td>
 <td>120</td>
-<td></td>
 </tr>
 
 <tr>
@@ -7640,23 +7639,22 @@ The benchmarks are based on the total of differents and availables hotels that h
 <td>0.8571</td>
 <td>2</td>
 <td>28.4286</td>
-<td>0.8028</td>
+<td>65</td>
 <td>1</td>
 <td>0.8571</td>
 <td>2</td>
 <td>3.5</td>
-<td>0.1667</td>
+<td>2</td>
 <td>322.02</td>
-<td>0.8571</td>
+<td>0.0532</td>
 <td>2</td>
 <td>3024.72</td>
-<td>0.0562</td>
+<td>145498</td>
 <td>8</td>
 <td>Chile</td>
 <td>330</td>
 <td>33</td>
 <td>130</td>
-<td></td>
 </tr>
 
 <tr>
@@ -7669,23 +7667,22 @@ The benchmarks are based on the total of differents and availables hotels that h
 <td>0.8462</td>
 <td>2</td>
 <td>47.0714</td>
-<td>0.96</td>
+<td>250</td>
 <td>0</td>
 <td>0.0</td>
 <td>2</td>
 <td>1.0</td>
-<td>0.0</td>
+<td>5</td>
 <td>0.0</td>
 <td>0.0</td>
 <td>2</td>
 <td>1333.491</td>
-<td>0.0</td>
+<td>125</td>
 <td>14</td>
 <td>United Arab Emirates</td>
 <td>225</td>
 <td>21</td>
 <td>122</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -7699,27 +7696,27 @@ The benchmarks are based on the total of differents and availables hotels that h
 
 <ul>
 <li><strong>search_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
-<li><strong>client_id (STRING).</strong> Client unique ID.</li>
-<li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
-<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, provider_id, client_id).</li>
-<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, provider_id, client_id).</li>
-<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, provider_id, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, provider_id, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_index (FLOAT).</strong> Min-Max Normalization of the field availability_value.</li>
-<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, provider_id, provider_id, client_id).</li>
-<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, provider_id, client_id).</li>
-<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, provider_id, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, provider_id, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_index (FLOAT).</strong> Min-Max Normalization of the field booking_value.</li>
-<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, provider_id, client_id).</li>
-<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, provider_id, client_id).</li>
-<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, provider_id, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, provider_id, client_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_index (FLOAT).</strong> Min-Max Normalization of the field revenue_value.</li>
+<li><strong>client_owner    (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
+<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, provider_owner, client_owner).</li>
+<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, provider_owner, client_owner).</li>
+<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, provider_owner, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, provider_owner, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_best_compset  (INTEGER).</strong> Best availability value in the competitive set.</li>
+<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, provider_owner, provider_owner, client_owner).</li>
+<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, provider_owner, client_owner).</li>
+<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, provider_owner, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, provider_owner, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_best_compset  (INTEGER).</strong> Best booking value in the competitive set.</li>
+<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, provider_owner, client_owner).</li>
+<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, provider_owner, client_owner).</li>
+<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, provider_owner, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, provider_owner, client_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_best_compset  (INTEGER).</strong> Best revenue value in the competitive set.</li>
 <li><strong>total_provider (STRING).</strong> Total of suppliers that have been considered for the benchmarking.</li>
-<li><strong>availability_tgx (NUMBER).</strong> - Quantity of unique hotels available in TravelgateX for key (search_date, provider_id, client_id)</li>
-<li><strong>booking_tgx (NUMBER).</strong> - Quantity of confirmed bookings in TravelgateX for the Key (seach_date, provider_id, client_id)</li>
-<li><strong>revenue_tgx (NUMBER).</strong> - Total net amount in EUR of confirmed bookings in TravelgateX for the key (search_date, provider_id,client_id)</li>
+<li><strong>availability_tgx (NUMBER).</strong> - Quantity of unique hotels available in TravelgateX for key (search_date, provider_owner, client_owner)</li>
+<li><strong>booking_tgx (NUMBER).</strong> - Quantity of confirmed bookings in TravelgateX for the Key (seach_date, provider_owner, client_owner)</li>
+<li><strong>revenue_tgx (NUMBER).</strong> - Total net amount in EUR of confirmed bookings in TravelgateX for the key (search_date, provider_owner,client_owner)</li>
 </ul>
 
 <p><strong>Preview</strong></p>
@@ -7727,25 +7724,26 @@ The benchmarks are based on the total of differents and availables hotels that h
 <table>
 <thead>
 <tr>
-<th>client_id</th>
-<th>provider_id</th>
+<th>client_owner</th>
+<th>provider_owner</th>
 <th>search_date</th>
 <th>availability_value</th>
 <th>availability_percentile</th>
 <th>availability_rank</th>
 <th>availability_compset</th>
-<th>availability_index</th>
+<th>availability_best_compset</th>
 <th>booking_value</th>
 <th>booking_percentile</th>
 <th>booking_rank</th>
 <th>booking_compset</th>
-<th>booking_index</th>
+<th>booking_best_compset</th>
 <th>revenue_value</th>
 <th>revenue_percentile</th>
 <th>revenue_rank</th>
 <th>revenue_compset</th>
-<th>revenue_index</th>
+<th>revenue_best_compset</th>
 <th>total_provider</th>
+<th>country_name</th>
 <th>availability_tgx</th>
 <th>booking_tgx</th>
 <th>revenue_tgx</th>
@@ -7757,75 +7755,78 @@ The benchmarks are based on the total of differents and availables hotels that h
 <td>client 1</td>
 <td>provider 1</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>281</td>
-<td>0.8696</td>
-<td>4</td>
-<td>303.5</td>
-<td>0.061</td>
-<td>45</td>
-<td>0.9565</td>
-<td>2</td>
-<td>20.0</td>
-<td>0.2679</td>
-<td>28569.807281150093</td>
-<td>0.9565</td>
-<td>2</td>
-<td>15114.587</td>
-<td>0.2831</td>
-<td>24</td>
-<td>7284</td>
-<td>300</td>
-<td>166260</td>
+<td>13</td>
+<td>0.8889</td>
+<td>1</td>
+<td>6.625</td>
+<td>13</td>
+<td>0</td>
+<td>0.0</td>
+<td>3</td>
+<td>1.5</td>
+<td>6</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>3</td>
+<td>381.9873</td>
+<td>150</td>
+<td>10</td>
+<td>Spain</td>
+<td>250</td>
+<td>55</td>
+<td>120</td>
 </tr>
 
 <tr>
 <td>client 2</td>
 <td>provider 2</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>3373</td>
-<td>0.381</td>
-<td>14</td>
-<td>20290.8571</td>
-<td>0.0299</td>
-<td>23</td>
-<td>0.619</td>
+<td>57</td>
+<td>0.8571</td>
+<td>2</td>
+<td>28.4286</td>
+<td>65</td>
+<td>1</td>
+<td>0.8571</td>
+<td>2</td>
+<td>3.5</td>
+<td>2</td>
+<td>322.02</td>
+<td>0.0532</td>
+<td>2</td>
+<td>3024.72</td>
+<td>145498</td>
 <td>8</td>
-<td>28.5263</td>
-<td>0.1597</td>
-<td>11466.54830430146</td>
-<td>0.7619</td>
-<td>6</td>
-<td>14475.2945</td>
-<td>0.1503</td>
-<td>22</td>
-<td>426108</td>
-<td>542</td>
-<td>217129</td>
+<td>Chile</td>
+<td>330</td>
+<td>33</td>
+<td>130</td>
 </tr>
 
 <tr>
 <td>client 3</td>
 <td>provider 3</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>1729</td>
-<td>0.4375</td>
-<td>10</td>
-<td>8388.8125</td>
-<td>0.0199</td>
+<td>97</td>
+<td>0.8462</td>
+<td>2</td>
+<td>47.0714</td>
+<td>250</td>
+<td>0</td>
+<td>0.0</td>
+<td>2</td>
+<td>1.0</td>
+<td>5</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>2</td>
+<td>1333.491</td>
+<td>125</td>
 <td>14</td>
-<td>0.5625</td>
-<td>8</td>
-<td>17.9375</td>
-<td>0.2642</td>
-<td>8989.779999999999</td>
-<td>0.6875</td>
-<td>6</td>
-<td>11616.4348</td>
-<td>0.2632</td>
-<td>17</td>
-<td>134221</td>
-<td>287</td>
-<td>151014</td>
+<td>United Arab Emirates</td>
+<td>225</td>
+<td>21</td>
+<td>122</td>
 </tr>
 </tbody>
 </table>
@@ -7839,30 +7840,31 @@ The benchmarks are based on the total of differents and availables hotels that h
 
 <ul>
 <li><strong>search_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
-<li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
 <li><strong>country (STRING).</strong> Country of destination (ISO 3166-1 alpha-2).</li>
 <li><strong>city (STRING).</strong> Last level of destination.</li>
 <li><strong>country_city (STRING).</strong> Concatenation of fields city and country.</li>
-<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, city, country, provider_id).</li>
-<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, city, country, provider_id).</li>
-<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, city, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, city, country , provider_id)of the total of sellers of TravelgateX.</li>
-<li><strong>availability_index (FLOAT).</strong> Min-Max Normalization of the field availability_value.</li>
-<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, city, country, provider_id).</li>
-<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, city, country, provider_id).</li>
-<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, city, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, city, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_index (FLOAT).</strong> Min-Max Normalization of the field booking_value.</li>
-<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, city, country, provider_id).</li>
-<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, city, country, provider_id).</li>
-<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, city, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, city, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_index (FLOAT).</strong> Min-Max Normalization of the field revenue_value.</li>
+<li><strong>zone_2 (STRING).</strong> Administrative second level zone E.g. Madrid city.</li>
+<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, city, country, provider_owner).</li>
+<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, city, country, provider_owner).</li>
+<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, city, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, city, country , provider_owner)of the total of sellers of TravelgateX.</li>
+<li><strong>availability_best_compset  (INTEGER).</strong> Best availability value in the competitive set.</li>
+<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, city, country, provider_owner).</li>
+<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, city, country, provider_owner).</li>
+<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, city, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, city, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_best_compset  (INTEGER).</strong> Best booking value in the competitive set.</li>
+<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, city, country, provider_owner).</li>
+<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, city, country, provider_owner).</li>
+<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, city, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, city, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_best_compset  (INTEGER).</strong> Best revenue value in the competitive set.</li>
 <li><strong>total_provider (STRING).</strong> Total of suppliers that have been considered for the benchmarking.</li>
 <li><strong>country_name (STRING).</strong> Country name of destination (English).</li>
-<li><strong>availability_tgx (NUMBER).</strong> - Quantity of unique hotels available in TravelgateX for key (search_date, city, country, provider_id)</li>
-<li><strong>booking_tgx (NUMBER).</strong> - Quantity of confirmed bookings in TravelgateX for the Key (seach_date, city, country, provider_id)</li>
-<li><strong>revenue_tgx (NUMBER).</strong> - Total net amount in EUR of confirmed bookings in TravelgateX for the key (search_date, city, country, provider_id)</li>
+<li><strong>availability_tgx (NUMBER).</strong> - Quantity of unique hotels available in TravelgateX for key (search_date, city, country, provider_owner)</li>
+<li><strong>booking_tgx (NUMBER).</strong> - Quantity of confirmed bookings in TravelgateX for the Key (seach_date, city, country, provider_owner)</li>
+<li><strong>revenue_tgx (NUMBER).</strong> - Total net amount in EUR of confirmed bookings in TravelgateX for the key (search_date, city, country, provider_owner)</li>
 </ul>
 
 <p><strong>Preview</strong></p>
@@ -7870,8 +7872,9 @@ The benchmarks are based on the total of differents and availables hotels that h
 <table>
 <thead>
 <tr>
-<th>provider_id</th>
+<th>provider_owner</th>
 <th>country</th>
+<th>zone_2</th>
 <th>city</th>
 <th>country_city</th>
 <th>search_date</th>
@@ -7879,17 +7882,17 @@ The benchmarks are based on the total of differents and availables hotels that h
 <th>availability_percentile</th>
 <th>availability_rank</th>
 <th>availability_compset</th>
-<th>availability_index</th>
+<th>availability_best_compset</th>
 <th>booking_value</th>
 <th>booking_percentile</th>
 <th>booking_rank</th>
 <th>booking_compset</th>
-<th>booking_index</th>
+<th>booking_best_compset</th>
 <th>revenue_value</th>
 <th>revenue_percentile</th>
 <th>revenue_rank</th>
 <th>revenue_compset</th>
-<th>revenue_index</th>
+<th>revenue_best_compset</th>
 <th>total_provider</th>
 <th>country_name</th>
 <th>availability_tgx</th>
@@ -7901,86 +7904,89 @@ The benchmarks are based on the total of differents and availables hotels that h
 <tbody>
 <tr>
 <td>provider 1</td>
-<td>GB</td>
-<td>London</td>
-<td>London,GB</td>
+<td>ES</td>
+<td>Illes Balears</td>
+<td>Palma</td>
+<td>Palma,ES</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>67</td>
-<td>0.9706</td>
-<td>2</td>
-<td>28.4921</td>
-<td>0.971</td>
-<td>31</td>
-<td>1.0</td>
+<td>13</td>
+<td>0.8889</td>
 <td>1</td>
-<td>4.6667</td>
-<td>1.0</td>
-<td>13454.129570238987</td>
-<td>1.0</td>
-<td>1</td>
-<td>3278.689</td>
-<td>1.0</td>
-<td>69</td>
-<td>United Kingdom</td>
-<td>1795</td>
-<td>70</td>
-<td>29508</td>
+<td>6.625</td>
+<td>13</td>
+<td>0</td>
+<td>0.0</td>
+<td>3</td>
+<td>1.5</td>
+<td>6</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>3</td>
+<td>381.9873</td>
+<td>150</td>
+<td>10</td>
+<td>Spain</td>
+<td>250</td>
+<td>55</td>
+<td>120</td>
 </tr>
 
 <tr>
 <td>provider 2</td>
-<td>CZ</td>
-<td>Prague</td>
-<td>Prague,CZ</td>
+<td>CL</td>
+<td>Provincia de Santiago</td>
+<td>Santiago</td>
+<td>Santiago,CL</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>108</td>
-<td>0.8</td>
-<td>13</td>
-<td>63.1304</td>
-<td>0.6034</td>
-<td>11</td>
-<td>0.9867</td>
-<td>1</td>
-<td>3.0476</td>
-<td>1.0</td>
-<td>3157.33</td>
-<td>0.9867</td>
+<td>57</td>
+<td>0.8571</td>
 <td>2</td>
-<td>1096.9739</td>
-<td>0.921</td>
-<td>76</td>
-<td>Czech Republic</td>
-<td>4356</td>
-<td>64</td>
-<td>20843</td>
+<td>28.4286</td>
+<td>65</td>
+<td>1</td>
+<td>0.8571</td>
+<td>2</td>
+<td>3.5</td>
+<td>2</td>
+<td>322.02</td>
+<td>0.0532</td>
+<td>2</td>
+<td>3024.72</td>
+<td>145498</td>
+<td>8</td>
+<td>Chile</td>
+<td>330</td>
+<td>33</td>
+<td>130</td>
 </tr>
 
 <tr>
 <td>provider 3</td>
-<td>CZ</td>
-<td>Prague</td>
-<td>Prague,CZ</td>
+<td>AE</td>
+<td>Dubai</td>
+<td>Jaddaf</td>
+<td>Jaddaf,AE</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>179</td>
-<td>0.9733</td>
-<td>1</td>
-<td>63.1304</td>
+<td>97</td>
+<td>0.8462</td>
+<td>2</td>
+<td>47.0714</td>
+<td>250</td>
+<td>0</td>
+<td>0.0</td>
+<td>2</td>
 <td>1.0</td>
-<td>11</td>
-<td>0.9867</td>
-<td>1</td>
-<td>3.0476</td>
-<td>1.0</td>
-<td>3428.2791823675784</td>
-<td>1.0</td>
-<td>1</td>
-<td>1096.9739</td>
-<td>1.0</td>
-<td>76</td>
-<td>Czech Republic</td>
-<td>4356</td>
-<td>64</td>
-<td>20843</td>
+<td>5</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>2</td>
+<td>1333.491</td>
+<td>125</td>
+<td>14</td>
+<td>United Arab Emirates</td>
+<td>225</td>
+<td>21</td>
+<td>122</td>
 </tr>
 </tbody>
 </table>
@@ -7994,28 +8000,28 @@ The benchmarks are based on the total of differents and availables hotels that h
 
 <ul>
 <li><strong>search_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
-<li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
 <li><strong>country (STRING).</strong> Country of destination (ISO 3166-1 alpha-2).</li>
-<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, country, provider_id).</li>
-<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, country, provider_id).</li>
-<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_index (FLOAT).</strong> Min-Max Normalization of the field availability_value.</li>
-<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, country, provider_id), provider_id.</li>
-<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, country, provider_id).</li>
-<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_index (FLOAT).</strong> Min-Max Normalization of the field booking_value.</li>
-<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, country, provider_id), provider_id.</li>
-<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, country, provider_id).</li>
-<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, country, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_index (FLOAT).</strong> Min-Max Normalization of the field revenue_value.</li>
+<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, country, provider_owner).</li>
+<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, country, provider_owner).</li>
+<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_best_compset  (INTEGER).</strong> Best availability value in the competitive set.</li>
+<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, country, provider_owner), provider_owner.</li>
+<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, country, provider_owner).</li>
+<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_best_compset  (INTEGER).</strong> Best booking value in the competitive set.</li>
+<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, country, provider_owner), provider_owner.</li>
+<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, country, provider_owner).</li>
+<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, country, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_best_compset  (INTEGER).</strong> Best revenue value in the competitive set.</li>
 <li><strong>total_provider (STRING).</strong> Total of suppliers that have been considered for the benchmarking.</li>
 <li><strong>country_name (STRING).</strong> Country name of destination (English).</li>
-<li><strong>availability_tgx (NUMBER).</strong> - Quantity of unique hotels available in TravelgateX for key (search_date, country, provider_id)</li>
-<li><strong>booking_tgx (NUMBER).</strong> - Quantity of confirmed bookings in TravelgateX for the Key (seach_date, country, provider_id)</li>
-<li><strong>revenue_tgx (NUMBER).</strong> - Total net amount in EUR of confirmed bookings in TravelgateX for the key (search_date, country, provider_id)</li>
+<li><strong>availability_tgx (NUMBER).</strong> - Quantity of unique hotels available in TravelgateX for key (search_date, country, provider_owner)</li>
+<li><strong>booking_tgx (NUMBER).</strong> - Quantity of confirmed bookings in TravelgateX for the Key (seach_date, country, provider_owner)</li>
+<li><strong>revenue_tgx (NUMBER).</strong> - Total net amount in EUR of confirmed bookings in TravelgateX for the key (search_date, country, provider_owner)</li>
 </ul>
 
 <p><strong>Preview</strong></p>
@@ -8023,24 +8029,24 @@ The benchmarks are based on the total of differents and availables hotels that h
 <table>
 <thead>
 <tr>
-<th>provider_id</th>
+<th>provider_owner</th>
 <th>country</th>
 <th>search_date</th>
 <th>availability_value</th>
 <th>availability_percentile</th>
 <th>availability_rank</th>
 <th>availability_compset</th>
-<th>availability_index</th>
+<th>availability_best_compset</th>
 <th>booking_value</th>
 <th>booking_percentile</th>
 <th>booking_rank</th>
 <th>booking_compset</th>
-<th>booking_index</th>
+<th>booking_best_compset</th>
 <th>revenue_value</th>
 <th>revenue_percentile</th>
 <th>revenue_rank</th>
 <th>revenue_compset</th>
-<th>revenue_index</th>
+<th>revenue_best_compset</th>
 <th>total_provider</th>
 <th>country_name</th>
 <th>availability_tgx</th>
@@ -8052,80 +8058,80 @@ The benchmarks are based on the total of differents and availables hotels that h
 <tbody>
 <tr>
 <td>provider 1</td>
-<td>CU</td>
+<td>ES</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>111</td>
-<td>0.629</td>
-<td>23</td>
-<td>98.1731</td>
-<td>0.3502</td>
-<td>11</td>
-<td>0.9839</td>
-<td>2</td>
-<td>6.0476</td>
-<td>0.1774</td>
-<td>15634.101013693758</td>
-<td>0.9839</td>
-<td>2</td>
-<td>4431.1882</td>
-<td>0.3929</td>
-<td>63</td>
-<td>Cuba</td>
-<td>5105</td>
-<td>127</td>
-<td>84193</td>
+<td>13</td>
+<td>0.8889</td>
+<td>1</td>
+<td>6.625</td>
+<td>13</td>
+<td>0</td>
+<td>0.0</td>
+<td>3</td>
+<td>1.5</td>
+<td>6</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>3</td>
+<td>381.9873</td>
+<td>150</td>
+<td>10</td>
+<td>Spain</td>
+<td>250</td>
+<td>55</td>
+<td>120</td>
 </tr>
 
 <tr>
 <td>provider 2</td>
-<td>CN</td>
+<td>CL</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>3302</td>
-<td>0.9688</td>
-<td>3</td>
-<td>744.4259</td>
-<td>0.9618</td>
-<td>12</td>
-<td>0.9844</td>
+<td>57</td>
+<td>0.8571</td>
 <td>2</td>
-<td>4.8</td>
-<td>0.5</td>
-<td>5080.809816230813</td>
-<td>0.9688</td>
-<td>3</td>
-<td>2572.4229</td>
-<td>0.4133</td>
+<td>28.4286</td>
 <td>65</td>
-<td>China</td>
-<td>40199</td>
-<td>72</td>
-<td>28297</td>
+<td>1</td>
+<td>0.8571</td>
+<td>2</td>
+<td>3.5</td>
+<td>2</td>
+<td>322.02</td>
+<td>0.0532</td>
+<td>2</td>
+<td>3024.72</td>
+<td>145498</td>
+<td>8</td>
+<td>Chile</td>
+<td>330</td>
+<td>33</td>
+<td>130</td>
 </tr>
 
 <tr>
 <td>provider 3</td>
-<td>CN</td>
+<td>AE</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>1639</td>
-<td>0.8594</td>
-<td>10</td>
-<td>744.4259</td>
-<td>0.4774</td>
-<td>11</td>
-<td>0.9688</td>
-<td>3</td>
-<td>4.8</td>
-<td>0.4583</td>
-<td>5247.645802952161</td>
-<td>0.9844</td>
+<td>97</td>
+<td>0.8462</td>
 <td>2</td>
-<td>2572.4229</td>
-<td>0.4269</td>
-<td>65</td>
-<td>China</td>
-<td>40199</td>
-<td>72</td>
-<td>28297</td>
+<td>47.0714</td>
+<td>250</td>
+<td>0</td>
+<td>0.0</td>
+<td>2</td>
+<td>1.0</td>
+<td>5</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>2</td>
+<td>1333.491</td>
+<td>125</td>
+<td>14</td>
+<td>United Arab Emirates</td>
+<td>225</td>
+<td>21</td>
+<td>122</td>
 </tr>
 </tbody>
 </table>
@@ -8139,22 +8145,22 @@ The benchmarks are based on the total of differents and availables hotels that h
 
 <ul>
 <li><strong>search_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
-<li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
-<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, provider_id).</li>
-<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, provider_id).</li>
-<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>availability_index (FLOAT).</strong> Min-Max Normalization of the field availability_value.</li>
-<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, provider_id).</li>
-<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, provider_id).</li>
-<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>booking_index (FLOAT).</strong> Min-Max Normalization of the field booking_value.</li>
-<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, provider_id).</li>
-<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, provider_id).</li>
-<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, provider_id) of the total of sellers of TravelgateX.</li>
-<li><strong>revenue_index (FLOAT).</strong> Min-Max Normalization of the field revenue_value.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
+<li><strong>availability_value (NUMBER).</strong> Quantity of unique hotels available for key (search_date, provider_owner).</li>
+<li><strong>availability_percentile (FLOAT).</strong> Value of percentile of unique hotels availables of all the sellers of TravelgateX for key (search_date, provider_owner).</li>
+<li><strong>availability_rank (NUMBER).</strong> Position of the ranking of unique hotels availables for key (search_date, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_compset (FLOAT).</strong> Average of unique hotels available for key (search_date, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>availability_best_compset  (INTEGER).</strong> Best availability value in the competitive set.</li>
+<li><strong>booking_value (NUMBER).</strong> Quantity of confirmed bookings for key (search_date, provider_owner).</li>
+<li><strong>booking_percentile (FLOAT).</strong> Value of percentile of confirmed bookings of all the sellers of TravelgateX  for key (search_date, provider_owner).</li>
+<li><strong>booking_rank (NUMBER).</strong> Position of the ranking of confirmed bookings for key (search_date, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_compset (FLOAT).</strong> Average of quantity of confirmed bookings for key (search_date, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>booking_best_compset  (INTEGER).</strong> Best booking value in the competitive set.</li>
+<li><strong>revenue_value (FLOAT).</strong> Total net amount in EUR of confirmed bookings for  key (search_date, provider_owner).</li>
+<li><strong>revenue_percentile (FLOAT).</strong> Value of percentile of net amount in EUR of confirmed bookings of all the sellers of TravelgateX  for key (search_date, provider_owner).</li>
+<li><strong>revenue_rank (NUMBER).</strong> Position of the ranking of net amount in EUR of confirmed bookings for key (search_date, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_compset (FLOAT).</strong> Average of net amount in EUR of confirmed bookings for key (search_date, provider_owner) of the total of sellers of TravelgateX.</li>
+<li><strong>revenue_best_compset  (INTEGER).</strong> Best revenue value in the competitive set.</li>
 <li><strong>total_provider (STRING).</strong> Total of suppliers that have been considered for the benchmarking.</li>
 <li><strong>availability_tgx (NUMBER).</strong> - Quantity of unique hotels available in TravelgateX for key above.</li>
 <li><strong>booking_tgx (NUMBER).</strong> - Quantity of confirmed bookings in TravelgateX for the key above.</li>
@@ -8166,24 +8172,25 @@ The benchmarks are based on the total of differents and availables hotels that h
 <table>
 <thead>
 <tr>
-<th>provider_id</th>
+<th>provider_owner</th>
 <th>search_date</th>
 <th>availability_value</th>
 <th>availability_percentile</th>
 <th>availability_rank</th>
 <th>availability_compset</th>
-<th>availability_index</th>
+<th>availability_best_compset</th>
 <th>booking_value</th>
 <th>booking_percentile</th>
 <th>booking_rank</th>
 <th>booking_compset</th>
-<th>booking_index</th>
+<th>booking_best_compset</th>
 <th>revenue_value</th>
 <th>revenue_percentile</th>
 <th>revenue_rank</th>
 <th>revenue_compset</th>
-<th>revenue_index</th>
+<th>revenue_best_compset</th>
 <th>total_provider</th>
+<th>country_name</th>
 <th>availability_tgx</th>
 <th>booking_tgx</th>
 <th>revenue_tgx</th>
@@ -8194,73 +8201,76 @@ The benchmarks are based on the total of differents and availables hotels that h
 <tr>
 <td>provider 1</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>2944</td>
-<td>0.7314</td>
-<td>77</td>
-<td>11463.625</td>
-<td>0.0119</td>
-<td>29</td>
-<td>0.7385</td>
-<td>65</td>
-<td>103.508</td>
-<td>0.0065</td>
-<td>29590.885648230473</td>
-<td>0.8551</td>
-<td>42</td>
-<td>58299.9138</td>
-<td>0.0131</td>
-<td>284</td>
-<td>2934688</td>
-<td>19356</td>
-<td>8336888</td>
+<td>13</td>
+<td>0.8889</td>
+<td>1</td>
+<td>6.625</td>
+<td>13</td>
+<td>0</td>
+<td>0.0</td>
+<td>3</td>
+<td>1.5</td>
+<td>6</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>3</td>
+<td>381.9873</td>
+<td>150</td>
+<td>10</td>
+<td>Spain</td>
+<td>250</td>
+<td>55</td>
+<td>120</td>
 </tr>
 
 <tr>
 <td>provider 2</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>6680</td>
-<td>0.7915</td>
-<td>60</td>
-<td>11463.625</td>
-<td>0.0271</td>
-<td>19</td>
-<td>0.689</td>
-<td>73</td>
-<td>103.508</td>
-<td>0.0043</td>
-<td>8789.47669647448</td>
-<td>0.742</td>
-<td>74</td>
-<td>58299.9138</td>
-<td>0.0039</td>
-<td>284</td>
-<td>2934688</td>
-<td>19356</td>
-<td>8336888</td>
+<td>57</td>
+<td>0.8571</td>
+<td>2</td>
+<td>28.4286</td>
+<td>65</td>
+<td>1</td>
+<td>0.8571</td>
+<td>2</td>
+<td>3.5</td>
+<td>2</td>
+<td>322.02</td>
+<td>0.0532</td>
+<td>2</td>
+<td>3024.72</td>
+<td>145498</td>
+<td>8</td>
+<td>Chile</td>
+<td>330</td>
+<td>33</td>
+<td>130</td>
 </tr>
 
 <tr>
 <td>provider 3</td>
 <td>2019-04-03 00:00:00 UTC</td>
-<td>3130</td>
-<td>0.735</td>
-<td>76</td>
-<td>11463.625</td>
-<td>0.0127</td>
-<td>12</td>
-<td>0.6113</td>
-<td>80</td>
-<td>103.508</td>
-<td>0.0027</td>
-<td>8151.5</td>
-<td>0.735</td>
-<td>76</td>
-<td>58299.9138</td>
-<td>0.0036</td>
-<td>284</td>
-<td>2934688</td>
-<td>19356</td>
-<td>8336888</td>
+<td>97</td>
+<td>0.8462</td>
+<td>2</td>
+<td>47.0714</td>
+<td>250</td>
+<td>0</td>
+<td>0.0</td>
+<td>2</td>
+<td>1.0</td>
+<td>5</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>2</td>
+<td>1333.491</td>
+<td>125</td>
+<td>14</td>
+<td>United Arab Emirates</td>
+<td>225</td>
+<td>21</td>
+<td>122</td>
 </tr>
 </tbody>
 </table>

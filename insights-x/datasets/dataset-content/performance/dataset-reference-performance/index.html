@@ -7369,6 +7369,8 @@
 <li><strong>search_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss)</li>
 <li><strong>client_id (STRING).</strong> Client unique ID</li>
 <li><strong>provider_id (STRING).</strong> Provider unique ID</li>
+<li><strong>client_owner    (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
 <li><strong>speed (BOOLEAN).</strong> It indicates if the source of request was the client or Speed-X to load info in cache (0=Client, 1=Speed-X).</li>
 <li><strong>search_ok (NUMBER).</strong> Quantity of searches with searchable results.</li>
 <li><strong>search_nok_no_results (NUMBER).</strong> Quantity of searches without searchable results.</li>
@@ -7405,6 +7407,8 @@
 <th align="left">search_date</th>
 <th align="left">client_id</th>
 <th align="left">provider_id</th>
+<th align="left">provider_owner</th>
+<th align="left">client_owner</th>
 <th align="left">speed</th>
 <th align="left">search_ok</th>
 <th align="left">search_nok_no_results</th>
@@ -7439,6 +7443,8 @@
 <td align="left">2018-03-28 12:00:00 UTC</td>
 <td align="left">client 1</td>
 <td align="left">provider 1</td>
+<td align="left">Org Name 1</td>
+<td align="left">Org Name 1</td>
 <td align="left">false</td>
 <td align="left">372408</td>
 <td align="left">159272</td>
@@ -7471,6 +7477,8 @@
 <td align="left">2018-03-28 12:00:00 UTC</td>
 <td align="left">client 1</td>
 <td align="left">provider 2</td>
+<td align="left">Org Name 2</td>
+<td align="left">Org Name 2</td>
 <td align="left">false</td>
 <td align="left">50</td>
 <td align="left">10</td>
@@ -7503,6 +7511,8 @@
 <td align="left">2018-03-28 12:00:00 UTC</td>
 <td align="left">client 2</td>
 <td align="left">provider 1</td>
+<td align="left">Org Name 3</td>
+<td align="left">Org Name 3</td>
 <td align="left">false</td>
 <td align="left">548214</td>
 <td align="left">0</td>

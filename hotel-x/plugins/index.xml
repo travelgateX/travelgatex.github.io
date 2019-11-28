@@ -97,7 +97,7 @@ Parameters    key value type condition description     JSONConfiguration JSON ma
         Aggregation plugins extends HotelX allowing aggregation Supplier options and responses using different business rules.
 Aggregation Key Aggregate Supplier options based on field keys applying a selector function over field values.
 It&amp;rsquo;s based on SQL Aggregate Functions.
- Field Keys as a combination of:  binding board cancelPolicy currency hotel market payment promotion rateRules  refundable room supplement supplier surcharges   Parameters    key value type condition description     primaryKey string mandatory It is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:
+ Field Keys as a combination of:  binding board cancelPolicy currency hotel market payment promotion rateRules  refundable room supplement supplier surcharges   Name The aggregation mode currently only supports one mode &amp;ldquo;cheapest_price&amp;rdquo;.
         
           [...]
         

@@ -7372,6 +7372,8 @@
 <p><strong>fields</strong></p>
 
 <ul>
+<li><strong>client_owner    (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
 <li><strong>client_id    (STRING).</strong> Client unique ID.</li>
 <li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
 <li><strong>username (STRING).</strong> User ID in provider&rsquo;s system.</li>
@@ -7776,6 +7778,8 @@
 <p><strong>fields</strong></p>
 
 <ul>
+<li><strong>client_owner    (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
 <li><strong>client_id    (STRING).</strong> Client unique ID.</li>
 <li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
 <li><strong>username (STRING).</strong> User ID in provider&rsquo;s system.</li>
@@ -7832,6 +7836,8 @@
 <tr>
 <th>client_id</th>
 <th>provider_id</th>
+<th>provider_owner</th>
+<th>client_owner</th>
 <th>cache</th>
 <th>search_date</th>
 <th>check_in</th>
@@ -7879,6 +7885,8 @@
 <tr>
 <td>client A</td>
 <td>provider X</td>
+<td>Org Name 1</td>
+<td>Org Name 1</td>
 <td>false</td>
 <td>2019-06-17 00:00:00 UTC</td>
 <td>2019-06-19 00:00:00 UTC</td>
@@ -7924,6 +7932,8 @@
 <tr>
 <td>client B</td>
 <td>Provider Y</td>
+<td>Org Name 2</td>
+<td>Org Name 2</td>
 <td>false</td>
 <td>2019-06-17 00:00:00 UTC</td>
 <td>2019-07-07 00:00:00 UTC</td>
@@ -7975,6 +7985,8 @@
 <p><strong>fields</strong></p>
 
 <ul>
+<li><strong>client_owner    (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
 <li><strong>client_id    (STRING).</strong> Client unique ID.</li>
 <li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
 <li><strong>username (STRING).</strong> User ID in provider&rsquo;s system.</li>
@@ -8384,6 +8396,8 @@
 <p><strong>fields</strong></p>
 
 <ul>
+<li><strong>client_owner    (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
 <li><strong>client_id    (STRING).</strong> Client unique ID.</li>
 <li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
 <li><strong>username (STRING).</strong> User ID in provider&rsquo;s system.</li>
@@ -8457,6 +8471,8 @@
 <tr>
 <th>client_id</th>
 <th>provider_id</th>
+<th>provider_owner</th>
+<th>client_owner</th>
 <th>cache</th>
 <th>search_date</th>
 <th>booking_window</th>
@@ -8502,6 +8518,8 @@
 <tr>
 <td>client A</td>
 <td>provider X</td>
+<td>Org Name 1</td>
+<td>Org Name 1</td>
 <td>false</td>
 <td>2019-06-17 00:00:00 UTC</td>
 <td>5</td>
@@ -8545,6 +8563,8 @@
 <tr>
 <td>client A</td>
 <td>provider Y</td>
+<td>Org Name 2</td>
+<td>Org Name 2</td>
 <td>false</td>
 <td>2019-06-17 00:00:00 UTC</td>
 <td>4</td>
@@ -8588,6 +8608,8 @@
 <tr>
 <td>client B</td>
 <td>provider X</td>
+<td>Org Name 3</td>
+<td>Org Name 3</td>
 <td>false</td>
 <td>2019-06-17 00:00:00 UTC</td>
 <td>8</td>
@@ -8640,6 +8662,8 @@
 <li><strong>session_id (STRING).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
 <li><strong>client_id (STRING).</strong> Client unique ID.</li>
 <li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
+<li><strong>client_owner    (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
 <li><strong>username (STRING).</strong> User ID in provider&rsquo;s system.</li>
 <li><strong>booking_date (TIMESTAMP).</strong> Booking date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
 <li><strong>checkin_date (TIMESTAMP).</strong> Checkin date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
@@ -8675,6 +8699,8 @@
 <th>session_id</th>
 <th>client_id</th>
 <th>provider_id</th>
+<th>client_owner</th>
+<th>provider_owner</th>
 <th>booking_date</th>
 <th>checkin_date</th>
 <th>amount</th>
@@ -8703,6 +8729,8 @@
 <td>123456789012</td>
 <td>client 1</td>
 <td>provider 1</td>
+<td>Org Client 1</td>
+<td>Org Provider 1</td>
 <td>2019-06-18 16:32:37 UTC</td>
 <td>2019-06-20 12:00:00 UTC</td>
 <td>71.54</td>
@@ -8887,7 +8915,7 @@
 <table>
 <thead>
 <tr>
-<th>client_id</th>
+<th>client_owner</th>
 <th>provider_id</th>
 <th>status</th>
 <th>hits</th>
