@@ -140,6 +140,23 @@ CommissionX Goals CommissionX is a plugin that defines the contracted / expected
     </item>
     
     <item>
+      <title>Hotel-X: Market Group X</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/markets_groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/markets_groups/</guid>
+      <description>
+        
+        
+        Market Group X is an optional plugin that allows the user to group the Search result by markets that share the same Options.
+Market Group X Goals The Market Group X plugin groups the input markets from Search depending on the agrupations you&amp;rsquo;ve decided before hand (with a configuration file. More details regarding configuration below.). In order to be able to use the plugin, you&amp;rsquo;ll have to decide which markets to join for which supplier.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Hotel-X: Markup</title>
       <link>https://docs.travelgatex.com/hotel-x/plugins/markup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -186,6 +203,23 @@ Sequentially, the rules will be evaluated until a match is found, upon finding i
         
         Safety Margin is an optional plugin that allows discarding options that have a commission lower than expected. The expected commission has to be loaded in safety-margin file, and is the commission over gross, in other words, the commission/profit is already included in the price.
 Safety Margin Goals The safety margin plugin discards those options that have a commission lower than expected. By doing this, only options that have a commission over gross, equal or lower than those reported in the file will be returned.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Vcc Gen</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/vcc_gen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/vcc_gen/</guid>
+      <description>
+        
+        
+        Vcc Gen is an optional plugin that adds the possibility to create a virtual credit card at Book step, in order to pay the reservation&amp;rsquo;s import with it.
+Vcc Gen Goals The Vcc Gen plugin creates a virtual credit card with an activation and expiration date choosed by the client, so he will be using this VCC instead of a regular credit card. The client must also indicate the token of the virtual credit card.
         
           [...]
         
