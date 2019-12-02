@@ -1,5 +1,19 @@
 [
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/hv/changelog/2019-12-02/",
+	"title": "2019-12-02",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-12-02  Showing payment methods   "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-02/",
+	"title": "2019-12-02",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-12-02  Seating references to flights   "
+},
+{
 	"uri": "https://docs.travelgatex.com/integrations/flights/aa/changelog/2019-11-29/",
 	"title": "2019-11-29",
 	"tags": ["integration-changelog"],
@@ -11,7 +25,7 @@
 	"title": "2019-11-28",
 	"tags": ["integration-changelog"],
 	"description": "Contains a chronologically ordered list of notable changes at our website",
-	"content": " 2019-11-28  No charges for included baggage Repeated seats References to different passengers   "
+	"content": " 2019-11-28  Charges for included baggage Number of baggage shown Baggage references to passengers   "
 },
 {
 	"uri": "https://docs.travelgatex.com/integrations/flights/lh/changelog/2019-11-27/",
@@ -2979,7 +2993,7 @@
 	"title": "Flights",
 	"tags": [],
 	"description": "Flight integrations",
-	"content": "   AA - American Airlines American Airlines integration\n     LH - Lufthansa Lufthansa integration\n     NAS - Norwegian Norwegian integration\n     SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
+	"content": "   AA - American Airlines American Airlines integration\n     HV - Transavia Transavia integration\n     LH - Lufthansa Lufthansa integration\n     NAS - Norwegian Norwegian integration\n     SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/transportation/flights/",
@@ -3393,6 +3407,13 @@
 	"tags": [],
 	"description": "",
 	"content": " GraphQL schema definition  enum GroupTypeInput{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by CreateGroupInput:    UpdateGroupInput:    \n"
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/hv/",
+	"title": "HV - Transavia",
+	"tags": [],
+	"description": "Transavia integration",
+	"content": "   HV - Transavia Changelog     "
 },
 {
 	"uri": "https://docs.travelgatex.com/hotel-x/reference/objects/holder/",
@@ -10808,6 +10829,13 @@
 	"content": ""
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/hv/changelog/",
+	"title": "HV - Transavia Changelog",
+	"tags": [],
+	"description": "",
+	"content": " DLL Name Changelog Easily accessible log of notable changes to DLL integration\n\t 2019-12-02  Showing payment methods      "
+},
+{
 	"uri": "https://docs.travelgatex.com/hotel-x/release-notes/changelog/",
 	"title": "Hotel-X changelog",
 	"tags": [],
@@ -10903,7 +10931,7 @@
 	"title": "Nas - Norwegian Changelog",
 	"tags": [],
 	"description": "",
-	"content": " DLL Name Changelog Easily accessible log of notable changes to DLL integration\n\t 2019-11-28  No charges for included baggage Repeated seats References to different passengers      \t 2019-11-14  Transaction to get a list of supported routes.      "
+	"content": " DLL Name Changelog Easily accessible log of notable changes to DLL integration\n\t 2019-12-02  Seating references to flights      \t 2019-11-28  Charges for included baggage Number of baggage shown Baggage references to passengers      \t 2019-11-14  Transaction to get a list of supported routes.      "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/car/methods/valuation/",

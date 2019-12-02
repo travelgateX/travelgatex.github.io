@@ -6,7 +6,7 @@
     <description>Recent changes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2019 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -15,6 +15,34 @@
     
 	    <atom:link href="https://docs.travelgatex.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Integrations: 2019-12-02</title>
+      <link>https://docs.travelgatex.com/integrations/flights/hv/changelog/2019-12-02/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/hv/changelog/2019-12-02/</guid>
+      <description>
+        
+        
+         2019-12-02  Showing payment methods   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-12-02</title>
+      <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-02/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-02/</guid>
+      <description>
+        
+        
+         2019-12-02  Seating references to flights   
+        
+      </description>
+    </item>
     
     <item>
       <title>Integrations: 2019-11-29</title>
@@ -39,7 +67,7 @@
       <description>
         
         
-         2019-11-28  No charges for included baggage Repeated seats References to different passengers   
+         2019-11-28  Charges for included baggage Number of baggage shown Baggage references to passengers   
         
       </description>
     </item>
@@ -733,39 +761,6 @@ Required by TimeRangeInput:
         
         GraphQL schema definition type AbsoluteInput {  from: DateTime!    to: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields from(DateTime!):   to(DateTime!):   
 Required by TimeRangeInput:
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Alerts-X: Access</title>
-      <link>https://docs.travelgatex.com/alerts-x/reference/objects/access/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/alerts-x/reference/objects/access/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type Access {  code: ID!    accessData: AccessData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   accessData(AccessData):   error([Error!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Logging: Access</title>
-      <link>https://docs.travelgatex.com/logging/reference/objects/access/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/logging/reference/objects/access/</guid>
-      <description>
-        
-        
-        An Access is a set of credentials and configuration in order to access the system of a Supplier.
-GraphQL schema definition type Access {  code: ID!    accessData: AccessData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.
-        
-          [...]
         
       </description>
     </item>
