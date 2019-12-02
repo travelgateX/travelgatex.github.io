@@ -6,7 +6,7 @@
     <description>Recent changes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Nov 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -15,6 +15,20 @@
     
 	    <atom:link href="https://docs.travelgatex.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Integrations: 2019-11-29</title>
+      <link>https://docs.travelgatex.com/integrations/flights/aa/changelog/2019-11-29/</link>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/aa/changelog/2019-11-29/</guid>
+      <description>
+        
+        
+         2019-11-27  change to get item bags.   
+        
+      </description>
+    </item>
     
     <item>
       <title>Integrations: 2019-11-28</title>
@@ -750,22 +764,6 @@ Required by TimeRangeInput:
         
         An Access is a set of credentials and configuration in order to access the system of a Supplier.
 GraphQL schema definition type Access {  code: ID!    accessData: AccessData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Mappea: Access</title>
-      <link>https://docs.travelgatex.com/mappea/reference/objects/access/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/mappea/reference/objects/access/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type Access {  code: ID!    accessData: AccessData    error: [Error!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   accessData(AccessData):   error([Error!
         
           [...]
         
