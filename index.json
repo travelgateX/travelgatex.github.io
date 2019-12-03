@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-03/",
+	"title": "2019-12-03",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": "##2019-12-03  type of priority boarding supplements that we parse in the Valuation response  \n Fare upsell request error  \n"
+},
+{
 	"uri": "https://docs.travelgatex.com/integrations/flights/hv/changelog/2019-12-02/",
 	"title": "2019-12-02",
 	"tags": ["integration-changelog"],
@@ -33,6 +40,13 @@
 	"tags": ["integration-changelog"],
 	"description": "Contains a chronologically ordered list of notable changes at our website",
 	"content": " 2019-11-28  Charges for included baggage Number of baggage shown Baggage references to passengers   "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/eft/changelog/2019-11-27/",
+	"title": "2019-11-27",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-11-27  The possibility of booking Open Jaw fares    tasasDU includes   "
 },
 {
 	"uri": "https://docs.travelgatex.com/integrations/flights/lh/changelog/2019-11-27/",
@@ -2527,6 +2541,13 @@
 	"content": " GraphQL schema definition  enum DurationType{   RANGE,    OPEN,   }   Required by Supplement:    \n"
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/eft/",
+	"title": "EFT - Esferatur",
+	"tags": [],
+	"description": "Esferatur integration",
+	"content": "   EFT - Esferatur Changelog     "
+},
+{
 	"uri": "https://docs.travelgatex.com/alerts-x/reference/scalars/email/",
 	"title": "Email",
 	"tags": [],
@@ -3014,7 +3035,7 @@
 	"title": "Flights",
 	"tags": [],
 	"description": "Flight integrations",
-	"content": "   AA - American Airlines American Airlines integration\n     HV - Transavia Transavia integration\n     IG - MeridianaFly MeridianaFly integration\n     LH - Lufthansa Lufthansa integration\n     NAS - Norwegian Norwegian integration\n     SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
+	"content": "   AA - American Airlines American Airlines integration\n     EFT - Esferatur Esferatur integration\n     HV - Transavia Transavia integration\n     IG - MeridianaFly MeridianaFly integration\n     LH - Lufthansa Lufthansa integration\n     NAS - Norwegian Norwegian integration\n     SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/transportation/flights/",
@@ -10850,6 +10871,13 @@
 	"content": "Easily accessible log of notable changes to Distribution-X API All notable changes in our platform will be documented on this page. \t 2019-09-10  Changelog example      "
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/eft/changelog/",
+	"title": "EFT - Esferatur Changelog",
+	"tags": [],
+	"description": "",
+	"content": " \t 2019-11-27  The possibility of booking Open Jaw fares    tasasDU includes      "
+},
+{
 	"uri": "https://docs.travelgatex.com/legacy/docs/transportation/flights/emit/",
 	"title": "Emit",
 	"tags": [],
@@ -11274,7 +11302,7 @@
 	"title": "VY - Vueling Changelog",
 	"tags": [],
 	"description": "",
-	"content": " \t 2019-11-13  Timeout error typified Error in FareAvailability when asking for Optima Fares for return trips.      \t 2019-11-11  Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.      "
+	"content": " \t##2019-12-03  type of priority boarding supplements that we parse in the Valuation response  \n Fare upsell request error  \n   \t 2019-11-13  Timeout error typified Error in FareAvailability when asking for Optima Fares for return trips.      \t 2019-11-11  Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.      "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/activities/methods/valuation/",
