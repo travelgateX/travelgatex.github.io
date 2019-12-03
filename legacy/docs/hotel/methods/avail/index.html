@@ -6605,14 +6605,24 @@
                 <i class="fa fa-angle-down fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/legacy/docs/hotel/overview/" class="dd-item">
+            <a href="/legacy/docs/hotel/overview/">
+              <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
         <li data-nav-id="/legacy/docs/hotel/methods/" class="dd-item parent">
           <div>
             <a href="/legacy/docs/hotel/methods/">
-              <span>Hotel API methods</span>            
+              <span>API Reference</span>            
             </a>
                 <i class="fa fa-angle-down fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/legacy/docs/hotel/methods/data-structure/" class="dd-item">
+            <a href="/legacy/docs/hotel/methods/data-structure/">
+              <span>Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/legacy/docs/hotel/methods/avail/" class="dd-item active">
             <a href="/legacy/docs/hotel/methods/avail/">
               <span>Avail</span><i class="fa fa-circle-thin read-icon"></i>
@@ -6718,27 +6728,31 @@
               <span>Valuation</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/legacy/docs/hotel/methods/soap-examples/" class="dd-item">
+            <a href="/legacy/docs/hotel/methods/soap-examples/">
+              <span>SOAP Examples</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
-        </li>
-          <li data-nav-id="/legacy/docs/hotel/change-log/" class="dd-item">
-            <a href="/legacy/docs/hotel/change-log/">
-              <span>Change Log</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/legacy/docs/hotel/data-structure/" class="dd-item">
-            <a href="/legacy/docs/hotel/data-structure/">
-              <span>Data Structure</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
         </li>
           <li data-nav-id="/legacy/docs/hotel/faq/" class="dd-item">
             <a href="/legacy/docs/hotel/faq/">
-              <span>Frequently Asked Questions</span><i class="fa fa-circle-thin read-icon"></i>
+              <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/legacy/docs/hotel/soap-examples/" class="dd-item">
-            <a href="/legacy/docs/hotel/soap-examples/">
-              <span>SOAP Examples</span><i class="fa fa-circle-thin read-icon"></i>
+        <li data-nav-id="/legacy/docs/hotel/release-notes/" class="dd-item">
+          <div>
+            <a href="/legacy/docs/hotel/release-notes/">
+              <span>Release notes</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+          <li data-nav-id="/legacy/docs/hotel/release-notes/change-log/" class="dd-item">
+            <a href="/legacy/docs/hotel/release-notes/change-log/">
+              <span>Change Log</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
+        </li>
+            </ul>
         </li>
             </ul>
         </li>
@@ -7252,7 +7266,6 @@
 <li><a href="#availrs-description">AvailRS Description</a></li>
 <li><a href="#detailed-description">Detailed description</a></li>
 </ul></li>
-<li><a href="#rate-rules">Rate Rules:</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -7406,7 +7419,7 @@ destination, travel dates and the number of pax in each room.</p>
 
 <h3 id="response-format">Response Format</h3>
 
-<p>Results are organized in this hierarchy:</p>
+<p>Results are organized in this hierarchy=</p>
 
 <ul>
 <li><em>Hotel</em> :</li>
@@ -7772,7 +7785,7 @@ is closed.</p>
                     &lt;POIs&gt;
                       &lt;POI code = &quot;8A&quot; Description = &quot;Andorra&quot;&gt;
                         &lt;Services&gt;
-                          &lt;Service type = &quot;SkiPass&quot; code = &quot;F1&quot; description = &quot;Forfait&quot; durationType = &quot;open&quot; quantity = &quot;5&quot; unit = &quot;Hour&quot;&gt;&lt;/Service&gt;
+                          &lt;Service type = &quot;SkiPass&quot; code = &quot;F1&quot; description = &quot;Forfait&quot; durationType = &quot;Open&quot; quantity = &quot;5&quot; unit = &quot;Hour&quot;&gt;&lt;/Service&gt;
                         &lt;/Services&gt;
                       &lt;/POI&gt;
                     &lt;/POIs&gt;
@@ -7797,7 +7810,7 @@ is closed.</p>
                     &lt;POIs&gt;
                       &lt;POI code = &quot;8A&quot; Description = &quot;Andorra&quot;&gt;
                         &lt;Services&gt;
-                          &lt;Service type = &quot;SkiPass&quot; code = &quot;F1&quot; description = &quot;Forfait&quot; durationType = &quot;open&quot; quantity = &quot;2&quot; unit = &quot;Day&quot;&gt;&lt;/Service&gt;
+                          &lt;Service type = &quot;SkiPass&quot; code = &quot;F1&quot; description = &quot;Forfait&quot; durationType = &quot;Open&quot; quantity = &quot;2&quot; unit = &quot;Day&quot;&gt;&lt;/Service&gt;
                         &lt;/Services&gt;
                       &lt;/POI&gt;
                     &lt;/POIs&gt;
@@ -8001,7 +8014,7 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Possible values (NonRefundable, Older55, Package,&hellip;) (see <a href="#rate-rules">RateRules</a>)</td>
+<td>Possible values (NonRefundable, Older55, Package,&hellip;).</td>
 </tr>
 
 <tr>
@@ -8036,14 +8049,14 @@ is closed.</p>
 <td>@code</td>
 <td>1</td>
 <td>String</td>
-<td>Room code.</td>
+<td>Room code has to be unique to identify a specific room type. If the RoomList Method is implemented, you can find the description of the room type in the RoomList.</td>
 </tr>
 
 <tr>
 <td>@description</td>
 <td>0..1</td>
 <td>String</td>
-<td>Room description. Mandatory if the supplier doesn&rsquo;t allow RoomList Method. If the supplier implements RoomList Method this field could be empty.</td>
+<td>Room description. Mandatory if the supplier doesn&rsquo;t allow RoomList Method. If the supplier implements RoomList Method, this field could be empty.</td>
 </tr>
 
 <tr>
@@ -8505,7 +8518,7 @@ is closed.</p>
 <td>@durationType</td>
 <td>1</td>
 <td>String</td>
-<td>Date of service. If range= date range is set, then the element &ldquo;RangeDates&rdquo; is returned - Open= not restricted by date. Elements &ldquo;quantity&rdquo; and &ldquo;unit&rdquo; are returned to specify type and quantity.</td>
+<td>Date of service. If durationType = Range, then date range is set and the element &ldquo;RangeDates&rdquo; is returned. If durationType = Open, not restricted by date. Elements &ldquo;quantity&rdquo; and &ldquo;unit&rdquo; are returned to specify type and quantity.</td>
 </tr>
 
 <tr>
@@ -8678,7 +8691,7 @@ is closed.</p>
 
 <p><strong>BusinessRules:</strong></p>
 
-<p>BusinessRules uses <em>optionsQuota</em>, go to <a href="/hotel/DSF/Common-Elements">Common-Elements</a> for more
+<p>BusinessRules uses <em>optionsQuota</em>, go to <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/common-elements/" target="_blank">Common-Elements</a> for more
 information.</p>
 
 <p>This tag will only be used for suppliers availability responses
@@ -8822,28 +8835,28 @@ parameter <OnRequest> is set as false, the integration will filter
 this option in AvailRS only if the supplier provides us this information
 in the availability method.</p>
 
-<h2 id="rate-rules">Rate Rules:</h2>
+<p><strong>Rate conditions:</strong></p>
 
 <ul>
-<li><strong>NonRefundable</strong>: The extra fee for a <strong>nonRefundable</strong> cancellation is a 100% from
+<li>The extra fee for a <strong>nonRefundable</strong> cancellation is a 100% from
 the moment the reservation is created.</li>
-<li><strong>Older55</strong>: The supplier can return options for pax: <strong>older than 55 years old</strong>,
+<li>The supplier can return options for pax: older than 55 years old,
 i.e. options that can only be sold to people who are 55 and older.
 In this case we will return the condition: rate 55 years old.</li>
-<li><strong>Older60</strong> and <strong>Older65</strong>: In the case of pax older than <strong>60 years</strong> and <strong>65 years</strong> the same
+<li>In the case of pax older than <strong>60 years</strong> and <strong>65 years</strong> the same
 process applies.</li>
-<li><strong>Package</strong>: The rate <strong>package</strong> means that the product can&rsquo;t be sold separately
+<li>The rate <strong>package</strong> means that the product can&rsquo;t be sold separately
 from another product attached to it, such as a flight.</li>
-<li><strong>CanaryResident</strong>: The rate <strong>CanaryResident</strong> is applicable to Canary Islands
+<li>The rate <strong>CanaryResident</strong> is applicable to Canary Islands
 residents only.</li>
-<li><strong>BalearicResident</strong>: The rate <strong>BalearicResident</strong> is applicable to Balearic Islands
+<li>The rate <strong>BalearicResident</strong> is applicable to Balearic Islands
 residents only.</li>
-<li><strong>LargeFamily</strong>. The rate <strong>largeFamily</strong> is applied to large families and is
+<li>The rate <strong>largeFamily</strong> is applied to large families and is
 determined by each supplier.Check <em>remarks</em> for more details.</li>
-<li><strong>HoneyMoon</strong>: The rate <strong>honeymoon</strong> is applied to those who just got married and
+<li>The rate <strong>honeymoon</strong> is applied to those who just got married and
 is determined by each supplier. Check <em>remarks</em> for more details.</li>
-<li><strong>PublicServant</strong>: The rate <strong>publicServant</strong> is applicable to public servants only.</li>
-<li><strong>Unemployed</strong>: The rate <strong>unemployed</strong> is applied to those without work.</li>
+<li>The rate <strong>publicServant</strong> is applicable to public servants only.</li>
+<li>The rate <strong>unemployed</strong> is applied to those without work.</li>
 </ul>
 
 <p><strong>Offers:</strong></p>
@@ -8966,7 +8979,7 @@ can enjoy until 2 days of skipass in between the check in and check out.</p>
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/legacy/docs/hotel/methods/" title="Go to previous page | Hotel API methods"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Hotel API methods</a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/legacy/docs/hotel/methods/data-structure/" title="Go to previous page | Data Structure"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Data Structure</a>
             </li>
         <li class="page-item">
                 <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/legacy/docs/hotel/methods/availdestinationtree/" title="Go to next page | AvailDestinationTree" style="margin-right: 0px;">AvailDestinationTree<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
