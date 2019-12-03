@@ -32,6 +32,20 @@
     
     <item>
       <title>Integrations: 2019-12-02</title>
+      <link>https://docs.travelgatex.com/integrations/flights/ig/changelog/2019-12-02/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/ig/changelog/2019-12-02/</guid>
+      <description>
+        
+        
+         2019-12-02  framework to 4.6.2    when receiving RT request in 1 &amp;ldquo;Desglose&amp;rdquo;   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-12-02</title>
       <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-02/</link>
       <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
       
@@ -741,21 +755,6 @@ Required by APIConnection:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/stats/reference/inputobjects/absoluteinput/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type AbsoluteInput {  from: DateTime!    to: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields from(DateTime!):   to(DateTime!):   
-Required by TimeRangeInput:
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AbsoluteInput</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/inputobjects/absoluteinput/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/inputobjects/absoluteinput/</guid>
       <description>
         
         

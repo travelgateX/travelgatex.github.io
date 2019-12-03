@@ -7,6 +7,13 @@
 	"content": " 2019-12-02  Showing payment methods   "
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/ig/changelog/2019-12-02/",
+	"title": "2019-12-02",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": " 2019-12-02  framework to 4.6.2    when receiving RT request in 1 \u0026ldquo;Desglose\u0026rdquo;   "
+},
+{
 	"uri": "https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-02/",
 	"title": "2019-12-02",
 	"tags": ["integration-changelog"],
@@ -3007,7 +3014,7 @@
 	"title": "Flights",
 	"tags": [],
 	"description": "Flight integrations",
-	"content": "   AA - American Airlines American Airlines integration\n     HV - Transavia Transavia integration\n     LH - Lufthansa Lufthansa integration\n     NAS - Norwegian Norwegian integration\n     SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
+	"content": "   AA - American Airlines American Airlines integration\n     HV - Transavia Transavia integration\n     IG - MeridianaFly MeridianaFly integration\n     LH - Lufthansa Lufthansa integration\n     NAS - Norwegian Norwegian integration\n     SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/docs/transportation/flights/",
@@ -4261,6 +4268,13 @@
 	"tags": [],
 	"description": "",
 	"content": " The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as \u0026quot;4\u0026quot;) or integer (such as 4) input value will be accepted as an ID.\nGraphQL schema definition scalar ID   Required by AccessFilter:    SupplierFilter:    ClientFilter:    ServiceApi:    PointOfSaleFilter:    ProfileFilter:    SystemFilter:    Access:    AccessData:    Node:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    System:    SystemData:    Group:    GroupData:    AdviseMessage:    Member:    GroupCommonData:    MemberData:    ManagedGroup:    ManagedGroupData:    API:    Resource:    Role:    APIData:    ResourceData:    RoleData:    OrganizationData:    Domain:    DomainData:    Client:    ClientData:    ServiceOperation:    PointOfSale:    PointOfSaleData:    Profile:    ProfileData:    Entity:    Product:    ProductData:    MacroPermission:    MacroPermissionData:    Operation:    OperationData:    HotelXBoardQueryInput:    HotelXCategoryQueryInput:    HotelXHotelListInput:    HotelXRoomQueryInput:    HotelXDestinationListInput:    HotelXDestinationSearcherInput:    HotelSettingsInput:    HotelRuntimeConfiguration:    Board:    BoardData:    Category:    CategoryData:    Hotel:    HotelData:    GiataData:    DestinationData:    Airport:    Geoname:    AirportData:    GeonameData:    RoomStatic:    RoomData:    Destination:    HotelXAccessInput:    PaymentXStoredCardIDInput:    PaymentXStoredCard:    Stats:    StatsInfo:    Alert:   Alert node  AlertData:    Event:  Event triggered  EventData:  Event data  LoggingLegacyFilterInput:  Filters needed to do a search. From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss),   LoggingLegacy:  The service used to access the stats of every connection that uses the HUB  LoggingLegacyData:    AccessInput:    GroupInput:    CreateClientInput:    UpdateClientInput:    UpdateProfileInput:    DeleteProfileInput:    UpdateEntitiesInput:    CreateSystemInput:    UpdateSystemInput:    CreateOrganizationInput:    SuitOrganizationInput:    SuitFolderInput:    CreateMemberInput:    CreateGroupInput:    UpdateMemberInput:    GrantPermissionsInput:    ClonePermissionsInput:    UpdateGroupInput:    DeleteMemberInput:    DeleteGroupInput:    UpdateGroupAPISInput:    GrantMacroPermissionInput:    HotelXUpdateStatus:    HotelXUpdateStatusData:    MappeaMapSupplierInput:    MappeaSupplierConfirmedInput:    SupplierDetected:    PaymentXStoredCardInput:    AlertInput:  Alert information. Only one configuration has to be set at once.  EmailInput:    AlertObjectInput:    AlertGroupInput:     "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/ig/",
+	"title": "IG - MeridianaFly",
+	"tags": [],
+	"description": "MeridianaFly integration",
+	"content": "   IG - MeridianaFly Changelog     "
 },
 {
 	"uri": "https://docs.travelgatex.com/alerts-x/reference/scalars/int/",
@@ -10974,6 +10988,13 @@
 	"tags": [],
 	"description": "",
 	"content": "This section enumerates basic quotas and throttling thresholds in XML Travelgate Hub:\n   Quota Name Scope Type Behaviour when exceeded Value     Message size for Http Request System-wide Static Incoming messages will be rejected and an exception will be received by the calling code. 128KB   Request Min. Timeout Milliseconds Travel Operation Static Incoming messages with less timeout will be rejected and an error will be received by the calling code. 50 milliseconds   Request Max. Timeout Milliseconds Travel Operation Static Incoming request timeout will be converted to maximum time allowed. Avail: 25 seconds. Reservation: 180 seconds. Batch: 240 seconds.    "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/ig/changelog/",
+	"title": "IG - MeridianaFly Changelog",
+	"tags": [],
+	"description": "",
+	"content": " \t 2019-12-02  framework to 4.6.2    when receiving RT request in 1 \u0026ldquo;Desglose\u0026rdquo;      "
 },
 {
 	"uri": "https://docs.travelgatex.com/insights-x/release-notes/changelog/",
