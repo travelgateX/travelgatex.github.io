@@ -7251,6 +7251,12 @@
 <ul>
 <li><a href="#other-maps-in-booking-api">Other Maps in Booking API</a>
 <ul>
+<li><a href="#amenity-mapping">Amenity mapping</a>
+<ul>
+<li><a href="#file-format-1">File Format</a></li>
+<li><a href="#file-names-1">File Names</a></li>
+<li><a href="#sample-files-1">Sample Files</a></li>
+</ul></li>
 <li><a href="#map-by-provider-hotel">Map by provider hotel</a>
 <ul>
 <li><a href="#format-file">Format File</a></li>
@@ -7605,6 +7611,64 @@
 
 <h3 id="other-maps-in-booking-api">Other Maps in Booking API</h3>
 
+<h4 id="amenity-mapping">Amenity mapping</h4>
+
+<p>This plugin allows to convert the amenity codes from supplier context to a desired context.</p>
+
+<p>Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:</p>
+
+<h5 id="file-format-1">File Format</h5>
+
+<p>The file should be in the following format:</p>
+
+<ul>
+<li><p><strong>Encoding</strong>: UTF-8</p></li>
+
+<li><p><strong>File Name</strong>: [Context Source]_[Context Destination]_amenity_map.csv</p>
+
+<ul>
+<li><p>Context Source: it corresponds to the code in desired context</p></li>
+
+<li><p>Context Destination: it corresponds to the supplier code</p></li>
+
+<li><p>1 file for each supplier</p></li>
+</ul></li>
+
+<li><p><strong>Header Row</strong>:  Code Destination, Code Source</p>
+
+<ul>
+<li><p>Context Destination: it corresponds to the codes in desired context</p></li>
+
+<li><p>Context Source: it corresponds to the supplier codes</p></li>
+</ul></li>
+
+<li><p><strong>Delimiter</strong>: Comma (&ldquo;,&rdquo;)</p></li>
+
+<li><p><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/Amenity/</p></li>
+</ul>
+
+<h5 id="file-names-1">File Names</h5>
+
+<p>The map files must have the same name structure as follows - you need create one file for any supplier context.</p>
+
+<p>[Context Source]_[Context Destination]_amenity_map.csv|</p>
+
+<h5 id="sample-files-1">Sample Files</h5>
+
+<p>Let&rsquo;s suppose we have the following client code and supplier code, then we need to create one file for each supplier we have
+* Client code: EXG</p>
+
+<ul>
+<li>Supplier Code: GTRM2</li>
+</ul>
+
+<p><strong>Name</strong>: EXG_GTRM2_amenity_map.csv</p>
+
+<pre><code class="language-csv">Code Destination,Code Source
+FreeParking,free_parking
+FreeInternet,free_internet
+</code></pre>
+
 <h4 id="map-by-provider-hotel">Map by provider hotel</h4>
 
 <p>This plugin allows to convert the room codes in supplier context but by hotel. Is the same plugin (room map) explained before but it offers the possibility to map by supplier and hotel.</p>
@@ -7642,7 +7706,7 @@
 
 <h3 id="how-applies">How applies</h3>
 
-<p>What happens if you use the combined plugin(room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file&rsquo;s name (client context)) and the room codes that don&rsquo;t have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable).</p>
+<p>What happens if you use the combined plugin (room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file&rsquo;s name (client context)) and the room codes that don&rsquo;t have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable).</p>
 
 <h3 id="execution-example">Execution example</h3>
 
