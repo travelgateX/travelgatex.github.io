@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Activities API</title>
+    <link>https://docs.travelgatex.com/legacy/activities/</link>
+    <description>Recent changes in Activities API on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/activities/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/activities/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Activities Data Structure</title>
+      <link>https://docs.travelgatex.com/legacy/activities/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/activities/data-structure/</guid>
+      <description>
+        
+        
+        The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
+The integration will have the following methods:
+   Method Input Output Required Description     Search SearchRQ SearchRS Yes Gets destinations and events available   Territories TerritoriesRQ TerritoriesRS No List of Destinations   Avail AvailRQ AvailRS Yes Makes an availability call   Valuation ValuationRQ ValuationRS Yes Makes a valuation for refresh ticket price (pre-book)   Reservation ReservationRQ ReservationRS Yes Makes a booking   ReservationRead ReservationReadRQ ReservationReadRS No Information about one reservation   Cancel CancelRQ CancelRS No Cancel a reservation   ReservationsList ReservationsListRQ ReservationsListRS No List of Reservations    Each request sent to the service url requires a node called rqXML.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Change Log</title>
+      <link>https://docs.travelgatex.com/legacy/activities/change-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/activities/change-log/</guid>
+      <description>
+        
+        
+        Version 2.0.0: Date 27/07/2018
+: * Added a new structure of Avail and Valuation requests, the old structure has been deprecated. * Added the new Territories request and response documentation and updated the documentation about all the other requests and responses.
+|
+Version 1.0.1: Date 19/04/2014
+: Modifications to suit XML Travelgate library and group common elements.
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

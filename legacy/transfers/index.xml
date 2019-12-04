@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Transfers API</title>
+    <link>https://docs.travelgatex.com/legacy/transfers/</link>
+    <description>Recent changes in Transfers API on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/transfers/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/transfers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Change Log</title>
+      <link>https://docs.travelgatex.com/legacy/transfers/change-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transfers/change-log/</guid>
+      <description>
+        
+        
+        Version 1.0: Date 24/09/2013
+: First version of the API.
+|
+Version 2.0: Date 11/09/2014
+: Added RetrieveBooking.
+|
+Version 2.0.1: Date 19/09/2014
+: Added description of Common Elements.
+: Added description of Availability.
+|
+Version 2.0.2: Date 22/09/2014
+: Added description of RateRule.
+: Added description of Book.
+|
+Version 2.0.3: Date 24/09/2014
+: Added description of RetrieveBooking.
+: Added description of DestinationsTree.
+: Added description of HotelList.
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Data Structure</title>
+      <link>https://docs.travelgatex.com/legacy/transfers/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transfers/data-structure/</guid>
+      <description>
+        
+        
+        The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields. The integration will have the following methods:
+   Method Input Output Required Description Endpoint     Availability AvailabilityRQ AvailabilityRS Yes Makes an availability search Transfers Booking Endpoint   RateRule RateRuleRQ RateRuleRS Yes Makes a pre-booking Transfers Booking Endpoint   Book BookRQ BookRS Yes Creates a booking Transfers Booking Endpoint   Retrieve Booking Retrieve BookingRQ Retrieve BookingRS No Retrieves Booking details Transfers Booking Endpoint   Cance lBooking Cancel BookingRQ Cancel BookingRS No Cancels a booking Transfers Booking Endpoint   Destinations Tree Destinations TreeRQ Destinations TreeRS Yes Gets a hierarchical list of destinations Transfers Booking Endpoint   HotelList HotelListRQ HotelListRS No Gets a list of the hotels with a basic information Transfers Booking Endpoint   GetRates GetRatesRQ GetRatesRS No Gets a list of the rates with a basic information Transfers Booking Endpoint   GetSupplements Get SupplementsRQ Get SupplementsRS No Gets a list of the supplements with a basic information Transfers Booking Endpoint   GetSupplier RateTransfers Type Getsupplier RateTransfers TypeRQ Getsupplier RateTransfers TypeRS No Gets a list of the types of suppliers transfers rates with a basicinformation Transfers Booking Endpoint   GetSupplier TransfersType GetSupplier TransfersTypeRQ GetSupplier TransfersTypeRS No Gets a list of the suppliers transfers types with a basic information Transfers Booking Endpoint   GetTransfers Types GetTransfers TypesRQ GetTransfers TypesRQ No Gets a list of the transfers types with a basic information Transfers Booking Endpoint   GetVehicles GetVehiclesRQ GetVehiclesRS No Gets a list of the vehicles with a basic information Transfers Booking Endpoint    Each request sent to the service url requires a node called rqXML .
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
