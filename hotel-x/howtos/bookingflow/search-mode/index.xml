@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Booking Flow</title>
+    <link>https://docs.travelgatex.com/hotel-x/howtos/bookingflow/search-mode/</link>
+    <description>Recent changes in Booking Flow on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/bookingflow/search-mode/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/howtos/bookingflow/search-mode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: Booking Flow</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/bookingflow/search-mode/booking-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/bookingflow/search-mode/booking-flow/</guid>
+      <description>
+        
+        
+        Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.
+ --                                            1. SEARCH  2. QUOTE  3.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Search Single Mode &amp; Multi Mode</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/bookingflow/search-mode/search-single-mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/bookingflow/search-mode/search-single-mode/</guid>
+      <description>
+        
+        
+        On this page you will learn about Transactional Booking Flow to Search, quote and confirm a reservation. You will also see the difference between the Search Single Mode VS Search Multi Mode.
+Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
