@@ -7458,6 +7458,10 @@ selected  in the previous step (<em>Avail</em>).</p>
         &lt;Status&gt;OK&lt;/Status&gt;
         &lt;Price currency = &quot;EUR&quot; amount = &quot;36.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
         &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
+		    &lt;CancelPenalty&gt;
+                &lt;HoursBefore&gt;72&lt;/HoursBefore&gt;
+                &lt;Penalty type = &quot;Importe&quot;  paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;25.00&lt;/Penalty&gt;
+            &lt;/CancelPenalty&gt;
             &lt;CancelPenalty&gt;
                 &lt;HoursBefore&gt;48&lt;/HoursBefore&gt;
                 &lt;Penalty type = &quot;Importe&quot;  paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;72.40&lt;/Penalty&gt;
@@ -7767,6 +7771,22 @@ In that case, you will have 30 minutes to complete the booking, if  not, you wil
 <ul>
 <li><strong>Currency:</strong> currency of the penalty fee.</li>
 </ul>
+
+<p>In this example you can see 2 <em>CancelPenalty</em> with different <em>HoursBefore</em>:</p>
+
+<pre><code class="language-xml">&lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
+    &lt;CancelPenalty&gt;
+        &lt;HoursBefore&gt;72&lt;/HoursBefore&gt;
+        &lt;Penalty type = &quot;Importe&quot; paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;25.00&lt;/Penalty&gt;
+    &lt;/CancelPenalty&gt;
+    &lt;CancelPenalty&gt;
+        &lt;HoursBefore&gt;48&lt;/HoursBefore&gt;
+        &lt;Penalty type = &quot;Importe&quot; paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;72.40&lt;/Penalty&gt;
+    &lt;/CancelPenalty&gt;
+&lt;/CancelPenalties&gt;
+</code></pre>
+
+<p>This means that depending on when you cancel the booking you should pay one penalty or the other, but not both. If you cancel 24 hours before the check-in you should pay 72.40€</p>
 
 <p><strong>Final buying price:</strong></p>
 
