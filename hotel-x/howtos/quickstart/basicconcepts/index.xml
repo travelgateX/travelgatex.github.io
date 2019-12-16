@@ -17,15 +17,16 @@
     
     <item>
       <title>Hotel-X: Supplier, Access, Client and Context</title>
-      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/basicconcepts/accesses-supplier-context/</link>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/basicconcepts/supplier-access-client-context/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/basicconcepts/accesses-supplier-context/</guid>
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/basicconcepts/supplier-access-client-context/</guid>
       <description>
         
         
-        On this page you will learn more about Core Entities used in HotelX. You can also refer to the overarching core concepts that apply to all TravelgateX APIs.
-Supplier A party that supplies accommodation services through a Supplier API implementation. Each Supplier has a Supplier code. These are unique values and they are used consistently throughout all TravelgateX implementations. See our Supplier database, or ask us via our Jira Service desk for a list of Supplier codes.
+        Previously, we introduced an overarching definition of the main Core Entities applying to all Travelgate-X APIs. core concepts that apply to all TravelgateX APIs.
+Here, we want to dig in further on how those concepts are applied to Hotel-X API.
+Supplier A party that supplies accommodation services through a Supplier API implementation. Each Supplier has a Supplier code. These are unique values and they are used consistently throughout all TravelgateX implementations.
         
           [...]
         
@@ -59,6 +60,23 @@ Supplier A party that supplies accommodation services through a Supplier API imp
         
          In this chapter we will list all suppoted credit cards in HotelX.
 Credit Cards list    Codes Names     VI Visa   AX American Express   BC BC Card   CA MasterCard   CB Carte Blanche   CU China Union Pay   DS Discover   DC Diners Club   T Carta Si   R Carte Bleue   N Dankort   L Delta   E Electron   JC Japan Credit Bureau   TO Maestro   S Switch   EC Electronic Cash   EU EuroCard   TP universal air travel card   OP optima   ER Air Canada/RnRoute   XS access   O others    
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Single Mode &amp; Multi Mode</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/basicconcepts/search-single-mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/basicconcepts/search-single-mode/</guid>
+      <description>
+        
+        
+        Search Multi Mode is one of the main features of Hotel-X, even if you can use Search Multi Mode in Hotel-X
+Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter, you can find a sample here:
+        
+          [...]
         
       </description>
     </item>
