@@ -2813,7 +2813,7 @@
         <li data-nav-id="/hotel-x/howtos/resources/multimedia/" class="dd-item">
           <div>
             <a href="/hotel-x/howtos/resources/multimedia/">
-              <span>MUltimedia</span>            
+              <span>Multimedia</span>            
             </a>
           </div>
         </li>
@@ -2823,8 +2823,24 @@
           <div>
             <a href="/hotel-x/howtos/bestpractices/">
               <span>Best Practices</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/hotel-x/howtos/bestpractices/graphql_to_rest/" class="dd-item">
+          <div>
+            <a href="/hotel-x/howtos/bestpractices/graphql_to_rest/">
+              <span>GraphQL to Rest</span>            
             </a>
           </div>
+        </li>
+        <li data-nav-id="/hotel-x/howtos/bestpractices/keep_alive_header/" class="dd-item">
+          <div>
+            <a href="/hotel-x/howtos/bestpractices/keep_alive_header/">
+              <span>Keep Alive Header</span>            
+            </a>
+          </div>
+        </li>
+            </ul>
         </li>
             </ul>
         </li>
@@ -7184,7 +7200,7 @@
 
 <h2 id="search-single-mode">Search Single Mode</h2>
 
-<p>This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter, you can find a sample <a href="https://graphqlbin.com/n5nXhX" target="_blank">here</a>:</p>
+<p>This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter.</p>
 
 <pre><code>{
 
@@ -7290,7 +7306,7 @@
 
 <h2 id="search-multi-mode">Search Multi Mode</h2>
 
-<p>If you don’t have any filter in the request and you have permissions for multimode, the search is multimode. By default, the request is for all the accesses that you have configured in the product, if you want to apply some filter, you have to use the filter and to indicate the rules that you want. Is important to know that you only can use includes or excludes in the same request, but never both in the same request.</p>
+<p>If you don’t have any filter in the request and you have permissions for multimode, the request run for all accesses that you have configured in the product. If you want to apply some filter, you have to use the filter and to indicate the rules that you want. Is important to know that you only can use includes or excludes in the same request, but never both in the same request.</p>
 
 <p><svg class="search_multi_mode" width="617px" height="486px" viewBox="75 50 617 486" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>

@@ -2813,7 +2813,7 @@
         <li data-nav-id="/hotel-x/howtos/resources/multimedia/" class="dd-item">
           <div>
             <a href="/hotel-x/howtos/resources/multimedia/">
-              <span>MUltimedia</span>            
+              <span>Multimedia</span>            
             </a>
           </div>
         </li>
@@ -2823,8 +2823,24 @@
           <div>
             <a href="/hotel-x/howtos/bestpractices/">
               <span>Best Practices</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/hotel-x/howtos/bestpractices/graphql_to_rest/" class="dd-item">
+          <div>
+            <a href="/hotel-x/howtos/bestpractices/graphql_to_rest/">
+              <span>GraphQL to Rest</span>            
             </a>
           </div>
+        </li>
+        <li data-nav-id="/hotel-x/howtos/bestpractices/keep_alive_header/" class="dd-item">
+          <div>
+            <a href="/hotel-x/howtos/bestpractices/keep_alive_header/">
+              <span>Keep Alive Header</span>            
+            </a>
+          </div>
+        </li>
+            </ul>
         </li>
             </ul>
         </li>
@@ -7191,16 +7207,13 @@ Mandatory</p>
 <ul>
 <li>CheckIn: check-in date for the booking. <em>Format: YYYY-MM-DD</em></li>
 <li>CheckOut: check-out date for the booking. <em>Format YYYY-MM-DD</em></li>
-<li>Hotels*: List of hotel codes</li>
-<li>Destinations*: List of destination codes</li>
+<li>Hotels: List of hotel codes</li>
 <li>Occupancies: The occupancy you are requesting for each room.
 
 <ul>
 <li>For multi-room bookings, this array will contain multiple elements (rooms). For each room you should specify its own occupancy.</li>
 </ul></li>
 </ul>
-
-<p><em>* Hotels and Destinations parameters are exclusive between them</em></p>
 
 <h2 id="how-to-request">How to request</h2>
 
@@ -7217,10 +7230,7 @@ Mandatory</p>
 
     <div id="tabContent"></div>
 
-    <div id="tabsText" style="display:none"><p>002160e4c2822635ef3b1a3c81b1d44d
-In this availability case, you will not receive results due to the hotel&rsquo;s restriction of minimum stay. In this case, if you change the date range to 3 days or more, you will receive availability
-/002160e4c2822635ef3b1a3c81b1d44d</p>
-</div>
+    <div id="tabsText" style="display:none"></div>
 </div>
 
 <p><style>
@@ -7437,7 +7447,7 @@ In this availability case, you will not receive results due to the hotel&rsquo;s
 <script>
   const token = "";
   const default_user = "";
-  const gists = [{"ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355","g":"765fa8dbddd6a17571feb012f9c876bc","n":"1 Room - 2 Adults","o":["graphiql"],"u":"rubencaballero"},{"ak":"64780338-49c8-4439-7c7d-d03c2033b145","g":"5ac8995ed02d876cb3cf87fcc47efd3a","n":"1 Room - 2 Adults 1 Child","o":["graphiql"],"u":"tgx-bot"},{"ak":"64780338-49c8-4439-7c7d-d03c2033b145","g":"72e51e75ecf971c4e92b4227e88420df","n":"2 Rooms - 2 Adults + 2 Adults","o":["graphiql"],"u":"tgx-bot"},{"ak":"64780338-49c8-4439-7c7d-d03c2033b145","g":"12799fd0a67acb73f030b1f9eae10a4e","n":"2 Rooms - 2 Adults 1 Child + 2 Adults","o":["graphiql"],"u":"tgx-bot"},{"ak":"64780338-49c8-4439-7c7d-d03c2033b145","g":"002160e4c2822635ef3b1a3c81b1d44d","n":"3 days minimmum stay","o":["graphiql"],"u":"tgx-bot"},{"ak":"64780338-49c8-4439-7c7d-d03c2033b145","g":"a0370f6041d58b67bf1e32363a968abf","n":"Destination","o":["graphiql"],"u":"tgx-bot"}];
+  const gists = [{"ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355","g":"765fa8dbddd6a17571feb012f9c876bc","n":"1 Room - 2 Adults","o":["graphiql"],"u":"rubencaballero"},{"ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355","g":"16c1401dff3146bd4685c1a018dce96a","n":"1 Room - 2 Adults 1 Child","o":["graphiql"],"u":"rubencaballero"},{"ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355","g":"b5db36ad7084adbdf100c9b4491d7d43","n":"2 Rooms - 2 Adults + 2 Adults","o":["graphiql"],"u":"rubencaballero"},{"ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355","g":"f8a762bb1efc34f2ff61dd7929d7aa10","n":"2 Rooms - 2 Adults 1 Child + 2 Adults","o":["graphiql"],"u":"rubencaballero"}];
 
   $(document).ready(main);
   function main() {

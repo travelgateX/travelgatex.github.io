@@ -2813,7 +2813,7 @@
         <li data-nav-id="/hotel-x/howtos/resources/multimedia/" class="dd-item">
           <div>
             <a href="/hotel-x/howtos/resources/multimedia/">
-              <span>MUltimedia</span>            
+              <span>Multimedia</span>            
             </a>
           </div>
         </li>
@@ -2823,8 +2823,24 @@
           <div>
             <a href="/hotel-x/howtos/bestpractices/">
               <span>Best Practices</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/hotel-x/howtos/bestpractices/graphql_to_rest/" class="dd-item">
+          <div>
+            <a href="/hotel-x/howtos/bestpractices/graphql_to_rest/">
+              <span>GraphQL to Rest</span>            
             </a>
           </div>
+        </li>
+        <li data-nav-id="/hotel-x/howtos/bestpractices/keep_alive_header/" class="dd-item">
+          <div>
+            <a href="/hotel-x/howtos/bestpractices/keep_alive_header/">
+              <span>Keep Alive Header</span>            
+            </a>
+          </div>
+        </li>
+            </ul>
         </li>
             </ul>
         </li>
@@ -7040,8 +7056,6 @@
 <li><a href="#settings-per-client">Settings per client</a></li>
 <li><a href="#settings-per-hotelx">Settings per HotelX</a></li>
 </ul></li>
-<li><a href="#how-to-execute-a-plugin">How to execute a plugin</a></li>
-<li><a href="#develop-your-own-plugin">Develop your own plugin</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -7254,35 +7268,6 @@
 
 <p>And the last one, settings per <a href="/hotel-x/">HotelX</a> instance. These settings are in the highest level, in the case that you don&rsquo;t have the client&rsquo;s <a href="/hotel-x/concepts/settings/">settings</a> and you don&rsquo;t specify them in the request, settings are obtained from HotelX instance, this setting is mandatory.</p>
 
-<h2 id="how-to-execute-a-plugin">How to execute a plugin</h2>
-
-<p>A <a href="/hotel-x/plugins/">plugin</a> execution can be specified in any request’s HotelSettingsInput and it must specify in which step it should be executed. The plugin type and name are mandatory in order to identify a plugin instance.</p>
-
-<pre><code>&quot;plugins&quot;: {
-
-   &quot;step&quot;: PluginStepType,
-
-   &quot;pluginsType&quot;: [
-
-    {
-
-     &quot;type&quot;: PluginType,
-
-     &quot;name&quot;: plugin name (its unique),
-
-     &quot;parameters&quot;: []
-
-    }
-
-   ]
-
-  }
-</code></pre>
-
-<h2 id="develop-your-own-plugin">Develop your own plugin</h2>
-
-<p>Plugins are a Go language feature and we are using the <a href="https://golang.org/pkg/plugin/" target="_blank">native package</a> in order to implement them. Therefore, a plugin is simply a go file that contains a set of functions that we will specify, the interface is yet to be defined.</p>
-
 <hr/>
 <h2>Comments</h2>
 
@@ -7319,7 +7304,7 @@
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/hotel-x/howtos/resources/guides/certification_process/usecases/" title="Go to previous page | Use cases"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Use cases</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/hotel-x/howtos/resources/multimedia/" title="Go to next page | MUltimedia" style="margin-right: 0px;">MUltimedia<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/hotel-x/howtos/resources/multimedia/" title="Go to next page | Multimedia" style="margin-right: 0px;">Multimedia<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">
