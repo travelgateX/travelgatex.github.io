@@ -4,7 +4,7 @@
 	"title": "2019-12-18",
 	"tags": ["integration-changelog"],
 	"description": "Contains a chronologically ordered list of notable changes at our website",
-	"content": " 2019-12-18  If phone numbers contain the \u0026ldquo;+\u0026rdquo; character, it will be deleted   "
+	"content": " 2019-12-18  Fixed problem with phone numbers starting with \u0026lsquo;+\u0026rsquo;   "
 },
 {
 	"uri": "https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-11/",
@@ -10707,7 +10707,7 @@
 	"title": "BCMR - Bancomer Changelog",
 	"tags": [],
 	"description": "",
-	"content": " \t 2019-12-18  If phone numbers contain the \u0026ldquo;+\u0026rdquo; character, it will be deleted      \t 2019-12-03  MobilePhoneNumber value is now used if specified      "
+	"content": " \t 2019-12-18  Fixed problem with phone numbers starting with \u0026lsquo;+\u0026rsquo;      \t 2019-12-03  MobilePhoneNumber value is now used if specified      "
 },
 {
 	"uri": "https://docs.travelgatex.com/tags/breaking-changes/",
