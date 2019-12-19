@@ -16,6 +16,24 @@
     
     
     <item>
+      <title>Hotel-X: GraphQL Schema Changes</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/graphql-schema-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/graphql-schema-changes/</guid>
+      <description>
+        
+        
+        The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
+Check out this list of new releases and changes applied on the HotelX GraphQL API.
+Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Travelgatex: GraphQL Schema Changes</title>
       <link>https://docs.travelgatex.com/travelgatex/release-notes/graphql-schema-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -29,24 +47,6 @@ Check out this list of new releases and changes applied on the TravelgateX Graph
 2019-08-29 🛑 Input field ReferenceFilter.supplier changed type from [String] to [String!]
 🛑 Input field ReferenceFilter.client changed type from [String] to [String!]
 ⚠️ Enum value PRICE was added to enum AlertType
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Hotel-X: HotelX GraphQL Schema Changes</title>
-      <link>https://docs.travelgatex.com/hotel-x/release-notes/graphql-schema-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/hotel-x/release-notes/graphql-schema-changes/</guid>
-      <description>
-        
-        
-        The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
-Check out this list of new releases and changes applied on the HotelX GraphQL API.
-Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
         
           [...]
         

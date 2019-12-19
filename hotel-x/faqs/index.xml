@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TravelgateX Documentation – Hotel-X Frequendly Asked Questions</title>
+    <title>TravelgateX Documentation – FAQs</title>
     <link>https://docs.travelgatex.com/hotel-x/faqs/</link>
-    <description>Recent changes in Hotel-X Frequendly Asked Questions on TravelgateX Documentation</description>
+    <description>Recent changes in FAQs on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <image>
@@ -14,28 +14,6 @@
     
 	    <atom:link href="https://docs.travelgatex.com/hotel-x/faqs/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hotel-X: Hotel-X FAQs</title>
-      <link>https://docs.travelgatex.com/hotel-x/faqs/frequently-asked-questions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/hotel-x/faqs/frequently-asked-questions/</guid>
-      <description>
-        
-        
-        General Where can I find object explanations/definitions?
-You can find it on our Schema
-Which are the languages allowed in HotelX?
-The new aggregator allows every language, it will depend on each supplier.
-In aggregator mode, is it possible to set a time out for each provider?
-No, the time out will be applied to all providers, using the parameter setting: timeout.
-Is it possible to see the whole list of providers and to look at their hotel databases and prices somewhere?
-        
-          [...]
-        
-      </description>
-    </item>
     
   </channel>
 </rss>
