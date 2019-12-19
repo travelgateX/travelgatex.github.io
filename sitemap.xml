@@ -153,6 +153,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/integrations/flights/aa/</loc>
   </url>
   
@@ -1746,10 +1750,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/faqs/frequently-asked-questions/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/hotel-x/reference/objects/feature/</loc>
   </url>
   
@@ -1859,10 +1859,6 @@
   
   <url>
     <loc>https://docs.travelgatex.com/travelgatex/reference/inputobjects/grantpermissionsinput/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/hotel-x/howtos/bestpractices/graphql_to_rest/</loc>
   </url>
   
   <url>
@@ -2050,6 +2046,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/hotel/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/hotel-x/reference/objects/hotel/</loc>
   </url>
   
@@ -2063,6 +2063,14 @@
   
   <url>
     <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/basicconcepts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/faqs/frequently-asked-questions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/bestpractices/graphql_to_rest/</loc>
   </url>
   
   <url>
@@ -2243,6 +2251,10 @@
   
   <url>
     <loc>https://docs.travelgatex.com/travelgatex/reference/inputobjects/hotelsettingsinput/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/release-notes/roadmap/</loc>
   </url>
   
   <url>
@@ -2471,10 +2483,6 @@
   
   <url>
     <loc>https://docs.travelgatex.com/travelgatex/reference/objects/hotelxupdatestatusdata/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/hotel-x/howtos/</loc>
   </url>
   
   <url>
@@ -4138,10 +4146,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/release-notes/roadmap/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/insights-x/release-notes/roadmap/</loc>
   </url>
   
@@ -5100,10 +5104,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/reference/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/inventory-x/api-reference.md/</loc>
   </url>
   
@@ -5177,11 +5177,19 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/content-copy-2/</loc>
+    <loc>https://docs.travelgatex.com/hotel-x/reference/</loc>
   </url>
   
   <url>
     <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/bookingflow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/destination/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/bestpractices/keep_alive_header/</loc>
   </url>
   
   <url>
@@ -5218,10 +5226,6 @@
   
   <url>
     <loc>https://docs.travelgatex.com/insights-x/datasets/dataset-content/insights/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/hotel-x/howtos/bestpractices/keep_alive_header/</loc>
   </url>
   
   <url>
@@ -5345,14 +5349,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/content-copy/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/content/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/</loc>
   </url>
   
@@ -5398,10 +5394,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/howtos/bestpractices/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/plugins/booking_persistence/</loc>
   </url>
   
@@ -5434,14 +5426,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/faqs/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/hotel-x/release-notes/graphql-schema-changes/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/travelgatex/release-notes/graphql-schema-changes/</loc>
   </url>
   
@@ -5450,7 +5434,23 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/bestpractices/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/bookingflow/book/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/faqs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/room/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/release-notes/graphql-schema-changes/</loc>
   </url>
   
   <url>
@@ -5600,10 +5600,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/advancedconcepts/errorwarning/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/errors/</loc>
   </url>
   
@@ -5616,7 +5612,19 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/hotel-x/release-notes/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/plugins/format-files/commission_netprice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/boards/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/advancedconcepts/errorwarning/</loc>
   </url>
   
   <url>
@@ -5681,10 +5689,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/release-notes/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/insights-x/release-notes/</loc>
   </url>
   
@@ -5742,10 +5746,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/release-notes/breaking-changes/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/logging/release-notes/breaking-changes/</loc>
   </url>
   
@@ -5767,6 +5767,10 @@
   
   <url>
     <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/plugins/format-files/group/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/release-notes/breaking-changes/</loc>
   </url>
   
   <url>
@@ -5841,10 +5845,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/advancedconcepts/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/channel-x/</loc>
   </url>
   
@@ -5906,6 +5906,10 @@
   
   <url>
     <loc>https://docs.travelgatex.com/legacy/hotel/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/advancedconcepts/</loc>
   </url>
   
   <url>
@@ -6009,15 +6013,15 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/advancedconcepts/settings/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/plugins/format-files/netcompare/</loc>
   </url>
   
   <url>
     <loc>https://docs.travelgatex.com/legacy/payments/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/hotel-x/howtos/quickstart/advancedconcepts/settings/</loc>
   </url>
   
   <url>

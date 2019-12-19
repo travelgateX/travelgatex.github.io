@@ -16,11 +16,11 @@
     
     
     <item>
-      <title>Hotel-X: Hotel List</title>
-      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/content-copy-2/</link>
+      <title>Hotel-X: Hotel</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/hotel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/content-copy-2/</guid>
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/hotel/</guid>
       <description>
         
         
@@ -32,11 +32,11 @@
     </item>
     
     <item>
-      <title>Hotel-X: Static Content</title>
-      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/content-copy/</link>
+      <title>Hotel-X: Hotel-X Destination</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/destination/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/content-copy/</guid>
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/destination/</guid>
       <description>
         
         
@@ -48,11 +48,27 @@
     </item>
     
     <item>
-      <title>Hotel-X: Static Content</title>
-      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/content/</link>
+      <title>Hotel-X: Hotel-X Room</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/room/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/content/</guid>
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/room/</guid>
+      <description>
+        
+        
+        const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aeb082e484710ebf6b7a4ec5173064cc\/raw\x22,\x22divname\x22:\x22div_hotels\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/4737228c495b09566474fa2db38fc72d\/raw\x22,\x22divname\x22:\x22div_destinations\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/519b4223de8b44cb20c5c33212c62654\/raw\x22,\x22divname\x22:\x22div_boards\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/0815561e9c25ce49bc416dbc73f36388\/raw\x22,\x22divname\x22:\x22div_rooms\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aa1be23b8c9229c8363c142036afb1f5\/raw\x22,\x22divname\x22:\x22div_categories\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Hotel-X Boards</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/boards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/boards/</guid>
       <description>
         
         
