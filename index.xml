@@ -6,7 +6,7 @@
     <description>Recent changes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 19 Dec 2019 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -15,6 +15,20 @@
     
 	    <atom:link href="https://docs.travelgatex.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Integrations: 2019-12-19</title>
+      <link>https://docs.travelgatex.com/integrations/flights/amd/changelog/2019-12-19/</link>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/amd/changelog/2019-12-19/</guid>
+      <description>
+        
+        
+         2019-12-19  Retrieved bookings&amp;rsquo; status   
+        
+      </description>
+    </item>
     
     <item>
       <title>Integrations: 2019-12-18</title>
@@ -736,21 +750,6 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/alerts-x/reference/objects/apiedge/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):   
-Required by APIConnection:
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Logging: APIEdge</title>
-      <link>https://docs.travelgatex.com/logging/reference/objects/apiedge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/logging/reference/objects/apiedge/</guid>
       <description>
         
         

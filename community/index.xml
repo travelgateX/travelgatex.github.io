@@ -50,5 +50,24 @@
       </description>
     </item>
     
+    <item>
+      <title>Community: Using gist to include GraphQL examples</title>
+      <link>https://docs.travelgatex.com/community/gist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/community/gist/</guid>
+      <description>
+        
+        
+        Using hists on md pages This document assists on using GIST to show GraphQl examples.
+To use Gist it&amp;rsquo;s needed to include the hists on the header and call it on the md page body.
+Setups on header On the page header we&amp;rsquo;ll keep the usual page fields needed (like title, pagetitle&amp;hellip;) and we&amp;rsquo;ll add a new key &amp;ldquo;gists&amp;rdquo; as a list of elements with this atributes:
+   Atribute Explanation     n The Gist title that will be shown   g The Gist Id something like: 765fa8dbddd6a17571feb012f9c876bc   o The language that must be in [&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;, &amp;ldquo;other&amp;rdquo;]   u The user Id that hosts the gist   ak The auth key of the referred user something like: 8777cfff-e333&amp;hellip;    EXAMPLE:
+        
+          [...]
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
