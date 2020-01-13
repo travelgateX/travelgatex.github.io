@@ -68,7 +68,7 @@
         
         
         ##2019-12-03  type of priority boarding supplements that we parse in the Valuation response  
- Fare upsell request error
+ Fare upsell request error   
         
       </description>
     </item>
@@ -320,8 +320,7 @@
       <description>
         
         
-        2019-10-15  ACCESES: Added shared field and allowed url edition in acceses. MENU: new horizontal menu.    CONNECT: Modified to choose client before hotelx. PUBLIC WEB: changed info searches/day in home.  
- PROFILES: tag error on removing category fixed. PRESS: Fixed media processing.
+         2019-10-15  ACCESES: Added shared field and allowed url edition in acceses. MENU: new horizontal menu.    CONNECT: Modified to choose client before hotelx. PUBLIC WEB: changed info searches/day in home.    PROFILES: tag error on removing category fixed. PRESS: Fixed media processing.   
         
       </description>
     </item>
@@ -349,8 +348,7 @@
       <description>
         
         
-         2019-09-16  Connect: Added VCC to legacy Profiles: Enabled entity asignment to profiles IAM: Added pagination and info to orgs, and profiles page completed    Added gzip compression to calls to the gateway  
- Alerts: Fixed issue on create new alert Connect: Fixed dates activations   
+         2019-09-16  Connect: Added VCC to legacy Profiles: Enabled entity asignment to profiles IAM: Added pagination and info to orgs, and profiles page completed    Added gzip compression to calls to the gateway    Alerts: Fixed issue on create new alert Connect: Fixed dates activations   
         
       </description>
     </item>
@@ -382,7 +380,7 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-        2019-09-30  ENTITIES: Modified access form to custom require runtime configuration    IAM: Changes on new macro roles ORGANIZATIONS: Changed filters to not appear on the request on missing    MEMBERS: Solved an error realated on updating api-keys after a new creation
+         2019-09-30  ENTITIES: Modified access form to custom require runtime configuration    IAM: Changes on new macro roles ORGANIZATIONS: Changed filters to not appear on the request on missing    MEMBERS: Solved an error realated on updating api-keys after a new creation   
         
       </description>
     </item>
@@ -396,8 +394,7 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-         2019-08-30  IAM: Added owner filter to entities/admin-entities. added new tab for&amp;hellip; Logging: Added hotel reference Members: IAM-macro-roles, added tabs for simple and advanced Alerts: entities by buyer or seller    Logging: References now allows more than one option  
- Logging: Fixed logging with filter if your not logged on the page   
+         2019-08-30  IAM: Added owner filter to entities/admin-entities. added new tab for&amp;hellip; Logging: Added hotel reference Members: IAM-macro-roles, added tabs for simple and advanced Alerts: entities by buyer or seller    Logging: References now allows more than one option    Logging: Fixed logging with filter if your not logged on the page   
         
       </description>
     </item>
@@ -411,8 +408,7 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-        2019-08-16  Logging: Added new feature to set filters via url Alerts: added logic time alerts Connect: modified profile cals and addded premium partner option to connect    Accesses: improved refresh logic when updating accesses IAM Entities: Improved sorting in entities  
- B2B: Fixed required typename on apis
+         2019-08-16  Logging: Added new feature to set filters via url Alerts: added logic time alerts Connect: modified profile cals and addded premium partner option to connect    Accesses: improved refresh logic when updating accesses IAM Entities: Improved sorting in entities    B2B: Fixed required typename on apis   
         
       </description>
     </item>
@@ -426,8 +422,7 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-         2019-07-31  Alerts: Added sort to table Stats: traffic type selector Logging: Added column machine to results Logging: Selector items per page Error Messages: added hint description to error code table    Changed format of api-errors  
- Logging: Fixed error descriptions Profiles: fixed bug that prevented refresh on edit Logging: Added label when reference filters are disabled   
+         2019-07-31  Alerts: Added sort to table Stats: traffic type selector Logging: Added column machine to results Logging: Selector items per page Error Messages: added hint description to error code table    Changed format of api-errors    Logging: Fixed error descriptions Profiles: fixed bug that prevented refresh on edit Logging: Added label when reference filters are disabled   
         
       </description>
     </item>
@@ -441,8 +436,7 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-        2019-07-15  Alerts: added configuration multiselectors Profiles: Fully enabled filter profiles Logging: Added new filter number of results Entities: Added sorting method Profiles: Updated query to look for stats and formated text in profiles    Logging: Filter errors refactored Logging: Added red control to non filled required filters Logging: Changed time to 24h mode, without am/pm  
- Logging: Logging table wasn&amp;rsquo;t showing the timestamps on firefox, now is fixed Logging: Enable showing organisation suppliers on SELLER mode Logging: Hide the table on no results
+         2019-07-15  Alerts: added configuration multiselectors Profiles: Fully enabled filter profiles Logging: Added new filter number of results Entities: Added sorting method Profiles: Updated query to look for stats and formated text in profiles    Logging: Filter errors refactored Logging: Added red control to non filled required filters Logging: Changed time to 24h mode, without am/pm    Logging: Logging table wasn&amp;rsquo;t showing the timestamps on firefox, now is fixed Logging: Enable showing organisation suppliers on SELLER mode Logging: Hide the table on no results   
         
       </description>
     </item>
@@ -456,8 +450,7 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-        2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.  
- Fix on Stats Calendar
+         2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.    Fix on Stats Calendar   
         
       </description>
     </item>
@@ -468,6 +461,22 @@ All notable changes to this product will be documented in this page. Under const
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/alerts-x/reference/objects/api/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: API</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/objects/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/objects/api/</guid>
       <description>
         
         
@@ -567,8 +576,21 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-        GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
-Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:
+         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: APIConnection</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/objects/apiconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/objects/apiconnection/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
         
       </description>
     </item>
@@ -582,8 +604,7 @@ Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:
       <description>
         
         
-        GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
-Required by OrganizationData:    GroupCommonData:    ResourceData:    ProductData:    GroupData:
+         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by OrganizationData:    GroupCommonData:    ResourceData:    ProductData:    GroupData:     
         
       </description>
     </item>
@@ -597,8 +618,7 @@ Required by OrganizationData:    GroupCommonData:    ResourceData:    ProductDat
       <description>
         
         
-        GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
-Required by OrganizationData:    GroupCommonData:    ResourceData:    ProductData:    GroupData:
+         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
         
       </description>
     </item>
@@ -612,8 +632,7 @@ Required by OrganizationData:    GroupCommonData:    ResourceData:    ProductDat
       <description>
         
         
-        GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
-Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:
+         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
         
       </description>
     </item>
@@ -627,8 +646,7 @@ Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:
       <description>
         
         
-        GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
-Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:
+         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
         
       </description>
     </item>
@@ -642,8 +660,7 @@ Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:
       <description>
         
         
-        GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
-Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:
+         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
         
       </description>
     </item>
@@ -654,6 +671,22 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/alerts-x/reference/objects/apidata/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: APIData</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/objects/apidata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/objects/apidata/</guid>
       <description>
         
         
@@ -708,53 +741,6 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
         GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
         
           [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Stats: APIData</title>
-      <link>https://docs.travelgatex.com/stats/reference/objects/apidata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/stats/reference/objects/apidata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: APIData</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/apidata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/apidata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Alerts-X: APIEdge</title>
-      <link>https://docs.travelgatex.com/alerts-x/reference/objects/apiedge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/alerts-x/reference/objects/apiedge/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):   
-Required by APIConnection:
         
       </description>
     </item>

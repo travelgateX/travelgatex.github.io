@@ -55,7 +55,7 @@
       <description>
         
         
-        Changes history of deprecated notes previously announced Unreleased  Removal of loadFile from HotelXMutation. Reason: . Deprecated on 2018-06-06.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of creationDate from BookingHotel. Reason: Incorrect date format.. Deprecated on 2018-02-28.To be removed soon. Removal of checkIn from BookingHotel.
+        Changes history of deprecated notes previously announced Unreleased  Removal of loadFile from HotelXMutation. Reason: . Deprecated on 2018-06-06.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of description from Bed. Reason: Deprecated from 2019-07-29. Deprecated on 2019-07-29.To be removed soon. Removal of error from Board.
         
           [...]
         
@@ -117,7 +117,7 @@
       <description>
         
         
-        Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of cache from OperationDetailed. Reason: Added new field trafficType.. Deprecated on 2019-04-03.To be removed soon. Removal of ratios from StatsData. Reason: Added hits fields to be able to calculate ratios at client side.. Deprecated on 2019-04-08.To be removed soon.   2019-04-08  Deprecated ratios from StatsData.
+        Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of cache from OperationDetailed. Reason: Added new field trafficType.. Deprecated on 2019-04-03.To be removed soon. Removal of time from StatsInfo. Reason: Added new fields averageTime and totalTime.. Deprecated on 2019-04-03.To be removed soon. Removal of ratios from StatsData. Reason: Added hits fields to be able to calculate ratios at client side.
         
           [...]
         
@@ -133,7 +133,7 @@
       <description>
         
         
-        Changes history of deprecated notes previously announced Unreleased  Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of creationDate from BookingHotel. Reason: Incorrect date format.. Deprecated on 2018-02-28.To be removed soon. Removal of checkIn from BookingHotel. Reason: Incorrect date format.. Deprecated on 2018-02-28.To be removed soon.
+        Changes history of deprecated notes previously announced Unreleased  Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of entities from AdminQuery. Reason: Only for statsX product. Use client, supplier, accesess queries. Deprecated on 2019-08-21.To be removed soon. Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of description from Bed. Reason: Deprecated from 2019-07-29.
         
           [...]
         

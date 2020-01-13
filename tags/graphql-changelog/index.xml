@@ -44,9 +44,9 @@ Under construction! We have logged this resource on our roadmap and we are curre
         
         The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2019-08-29 🛑 Input field ReferenceFilter.supplier changed type from [String] to [String!]
-🛑 Input field ReferenceFilter.client changed type from [String] to [String!]
-⚠️ Enum value PRICE was added to enum AlertType
+2020-01-07 ✅ Input field country was added to input object type UpdateGroupInput
+✅ Input field country was added to input object type CreateOrganizationInput
+✅ Input field deletedAt_gte was added to input object type HotelXHotelFilterInput
         
           [...]
         
