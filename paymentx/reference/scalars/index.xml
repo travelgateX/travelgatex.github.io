@@ -39,7 +39,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <description>
         
         
-         GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     
+        GraphQL schema definition scalar CVC   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:
         
       </description>
     </item>
@@ -53,7 +53,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <description>
         
         
-         GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     
+        GraphQL schema definition scalar CardNumber   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:
         
       </description>
     </item>
@@ -67,7 +67,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <description>
         
         
-         GraphQL schema definition scalar Country   Required by OrganizationData:     
+        GraphQL schema definition scalar Country   Required by OrganizationData:
         
       </description>
     </item>
@@ -81,7 +81,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <description>
         
         
-         GraphQL schema definition scalar Date   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:     
+        GraphQL schema definition scalar Date   Required by PaymentXStoredCardData:    PaymentXStoredCardInput:
         
       </description>
     </item>
@@ -95,7 +95,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <description>
         
         
-         GraphQL schema definition scalar DateTime   Required by PaymentXStoredCardFilterInput:    PaymentXStoredCard:    Node:    Group:    PointOfSale:    Member:    MacroPermission:    Role:    Resource:    API:    Operation:    ManagedGroup:    Access:    Supplier:    Organization:    System:    Domain:    Product:    Client:    Profile:    Entity:     
+        GraphQL schema definition scalar DateTime   Required by PaymentXStoredCardFilterInput:    PaymentXStoredCard:    Node:    Group:    PointOfSale:    Member:    MacroPermission:    Role:    Resource:    API:    Operation:    ManagedGroup:    Access:    Supplier:    Organization:    System:    Domain:    Product:    Client:    Profile:    Entity:
         
       </description>
     </item>
@@ -109,7 +109,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    GroupData:  
       <description>
         
         
-         GraphQL schema definition scalar DomainName   Required by DomainData:     
+        GraphQL schema definition scalar DomainName   Required by DomainData:
         
       </description>
     </item>
@@ -168,7 +168,7 @@ GraphQL schema definition scalar String   Required by AdviseMessage:    PaymentX
       <description>
         
         
-         GraphQL schema definition scalar URI   Required by Urls:     
+        GraphQL schema definition scalar URI   Required by Urls:
         
       </description>
     </item>

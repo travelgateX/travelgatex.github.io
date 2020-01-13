@@ -6,7 +6,7 @@
     <description>Recent changes in Integration Changelog on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -15,6 +15,20 @@
     
 	    <atom:link href="https://docs.travelgatex.com/tags/integration-changelog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Integrations: 2020-01-08</title>
+      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2020-01-08/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2020-01-08/</guid>
+      <description>
+        
+        
+         2020-01-08  Parsing of baggage with import=0 Parsing of included baggage   
+        
+      </description>
+    </item>
     
     <item>
       <title>Integrations: 2019-12-19</title>
@@ -68,7 +82,7 @@
         
         
         ##2019-12-03  type of priority boarding supplements that we parse in the Valuation response  
- Fare upsell request error   
+ Fare upsell request error
         
       </description>
     </item>

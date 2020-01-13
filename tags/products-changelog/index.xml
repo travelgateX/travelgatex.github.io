@@ -25,7 +25,8 @@
       <description>
         
         
-         2019-10-15  ACCESES: Added shared field and allowed url edition in acceses. MENU: new horizontal menu.    CONNECT: Modified to choose client before hotelx. PUBLIC WEB: changed info searches/day in home.    PROFILES: tag error on removing category fixed. PRESS: Fixed media processing.   
+        2019-10-15  ACCESES: Added shared field and allowed url edition in acceses. MENU: new horizontal menu.    CONNECT: Modified to choose client before hotelx. PUBLIC WEB: changed info searches/day in home.  
+ PROFILES: tag error on removing category fixed. PRESS: Fixed media processing.
         
       </description>
     </item>
@@ -53,7 +54,8 @@
       <description>
         
         
-         2019-09-16  Connect: Added VCC to legacy Profiles: Enabled entity asignment to profiles IAM: Added pagination and info to orgs, and profiles page completed    Added gzip compression to calls to the gateway    Alerts: Fixed issue on create new alert Connect: Fixed dates activations   
+         2019-09-16  Connect: Added VCC to legacy Profiles: Enabled entity asignment to profiles IAM: Added pagination and info to orgs, and profiles page completed    Added gzip compression to calls to the gateway  
+ Alerts: Fixed issue on create new alert Connect: Fixed dates activations   
         
       </description>
     </item>
@@ -85,7 +87,7 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-         2019-09-30  ENTITIES: Modified access form to custom require runtime configuration    IAM: Changes on new macro roles ORGANIZATIONS: Changed filters to not appear on the request on missing    MEMBERS: Solved an error realated on updating api-keys after a new creation   
+        2019-09-30  ENTITIES: Modified access form to custom require runtime configuration    IAM: Changes on new macro roles ORGANIZATIONS: Changed filters to not appear on the request on missing    MEMBERS: Solved an error realated on updating api-keys after a new creation
         
       </description>
     </item>
@@ -99,7 +101,8 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-         2019-08-30  IAM: Added owner filter to entities/admin-entities. added new tab for&amp;hellip; Logging: Added hotel reference Members: IAM-macro-roles, added tabs for simple and advanced Alerts: entities by buyer or seller    Logging: References now allows more than one option    Logging: Fixed logging with filter if your not logged on the page   
+         2019-08-30  IAM: Added owner filter to entities/admin-entities. added new tab for&amp;hellip; Logging: Added hotel reference Members: IAM-macro-roles, added tabs for simple and advanced Alerts: entities by buyer or seller    Logging: References now allows more than one option  
+ Logging: Fixed logging with filter if your not logged on the page   
         
       </description>
     </item>
@@ -113,7 +116,8 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-         2019-08-16  Logging: Added new feature to set filters via url Alerts: added logic time alerts Connect: modified profile cals and addded premium partner option to connect    Accesses: improved refresh logic when updating accesses IAM Entities: Improved sorting in entities    B2B: Fixed required typename on apis   
+        2019-08-16  Logging: Added new feature to set filters via url Alerts: added logic time alerts Connect: modified profile cals and addded premium partner option to connect    Accesses: improved refresh logic when updating accesses IAM Entities: Improved sorting in entities  
+ B2B: Fixed required typename on apis
         
       </description>
     </item>
@@ -127,7 +131,8 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-         2019-07-31  Alerts: Added sort to table Stats: traffic type selector Logging: Added column machine to results Logging: Selector items per page Error Messages: added hint description to error code table    Changed format of api-errors    Logging: Fixed error descriptions Profiles: fixed bug that prevented refresh on edit Logging: Added label when reference filters are disabled   
+         2019-07-31  Alerts: Added sort to table Stats: traffic type selector Logging: Added column machine to results Logging: Selector items per page Error Messages: added hint description to error code table    Changed format of api-errors  
+ Logging: Fixed error descriptions Profiles: fixed bug that prevented refresh on edit Logging: Added label when reference filters are disabled   
         
       </description>
     </item>
@@ -141,7 +146,8 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-         2019-07-15  Alerts: added configuration multiselectors Profiles: Fully enabled filter profiles Logging: Added new filter number of results Entities: Added sorting method Profiles: Updated query to look for stats and formated text in profiles    Logging: Filter errors refactored Logging: Added red control to non filled required filters Logging: Changed time to 24h mode, without am/pm    Logging: Logging table wasn&amp;rsquo;t showing the timestamps on firefox, now is fixed Logging: Enable showing organisation suppliers on SELLER mode Logging: Hide the table on no results   
+        2019-07-15  Alerts: added configuration multiselectors Profiles: Fully enabled filter profiles Logging: Added new filter number of results Entities: Added sorting method Profiles: Updated query to look for stats and formated text in profiles    Logging: Filter errors refactored Logging: Added red control to non filled required filters Logging: Changed time to 24h mode, without am/pm  
+ Logging: Logging table wasn&amp;rsquo;t showing the timestamps on firefox, now is fixed Logging: Enable showing organisation suppliers on SELLER mode Logging: Hide the table on no results
         
       </description>
     </item>
@@ -155,7 +161,8 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-         2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.    Fix on Stats Calendar   
+        2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.  
+ Fix on Stats Calendar
         
       </description>
     </item>
@@ -169,7 +176,7 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-         2019-11-28  Added the fields client_owner and provider_owner in all the tables of the InsightsX Dataset.    Changed fields availability_index, booking_index and revenue_index by availability_best_compset, booking_best_compset and revenue_best_compset in benchmark tables.   
+        2019-11-28  Added the fields client_owner and provider_owner in all the tables of the InsightsX Dataset.    Changed fields availability_index, booking_index and revenue_index by availability_best_compset, booking_best_compset and revenue_best_compset in benchmark tables.
         
       </description>
     </item>
@@ -183,7 +190,7 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-        2019-11-05  New fields keys in Aggregation Plugin (&amp;ldquo;binding&amp;rdquo; and &amp;ldquo;refundable&amp;rdquo;). More information about Aggregation Plugin here.  { &amp;quot;plugins&amp;quot;: { &amp;quot;step&amp;quot;: &amp;quot;RESPONSE_OPTION/RESPONSE&amp;quot;, &amp;quot;pluginsType&amp;quot;: [ { &amp;quot;type&amp;quot;: &amp;quot;AGGREGATION&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;cheapest_price&amp;quot;, &amp;quot;parameters&amp;quot;: [ { {&amp;quot;key&amp;quot;: &amp;quot;primaryKey&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;hotel,supplier,room,refundable,binding&amp;quot;} } ] } ] } }    Field &amp;ldquo;hotel&amp;rdquo; in Booking query. Now, this field indicates the locator provided by the hotel (just in case the supplier returns it).  query { hotelX { booking(criteria: { accessCode: &amp;quot;422&amp;quot;, language: &amp;quot;en&amp;quot;, references: { currency: &amp;quot;EUR&amp;quot;, hotelCode: &amp;quot;1&amp;quot;, references: [ { client: &amp;quot;Demo_Client&amp;quot;, supplier: &amp;quot;HOTELTEST&amp;quot; } ] }, typeSearch: REFERENCES}, settings: {client:&amp;quot;Demo_Client&amp;quot;, testMode: true}) { bookings { reference { client hotel supplier } } } } }    Internal improvements.
+        2019-11-05  New fields keys in Aggregation Plugin (&amp;ldquo;binding&amp;rdquo; and &amp;ldquo;refundable&amp;rdquo;). More information about Aggregation Plugin here.  { &amp;quot;plugins&amp;quot;: { &amp;quot;step&amp;quot;: &amp;quot;RESPONSE_OPTION/RESPONSE&amp;quot;, &amp;quot;pluginsType&amp;quot;: [ { &amp;quot;type&amp;quot;: &amp;quot;AGGREGATION&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;cheapest_price&amp;quot;, &amp;quot;parameters&amp;quot;: [ { {&amp;quot;key&amp;quot;: &amp;quot;primaryKey&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;hotel,supplier,room,refundable,binding&amp;quot;} } ] } ] } }    Field &amp;ldquo;hotel&amp;rdquo; in Booking query. Now, this field indicates the locator provided by the hotel (just in case the supplier returns it).  query { hotelX { booking(criteria: { accessCode: &amp;quot;422&amp;quot;, language: &amp;quot;en&amp;quot;, references: { currency: &amp;quot;EUR&amp;quot;, hotelCode: &amp;quot;1&amp;quot;, references: [ { client: &amp;quot;Demo_Client&amp;quot;, supplier: &amp;quot;HOTELTEST&amp;quot; } ] }, typeSearch: REFERENCES}, settings: {client:&amp;quot;Demo_Client&amp;quot;, testMode: true}) { bookings { reference { client hotel supplier } } } } }
         
           [...]
         
@@ -231,7 +238,7 @@ All notable changes to this product will be documented in this page. Under const
       <description>
         
         
-         2019-10-04  Added new table: daily_portfolio_stats_(buyer|seller)    Changed fields in daily_portfolio_(buyer|seller) table. Added field client_owner, removed fields client_id and username.   
+        2019-10-04  Added new table: daily_portfolio_stats_(buyer|seller)    Changed fields in daily_portfolio_(buyer|seller) table. Added field client_owner, removed fields client_id and username.
         
       </description>
     </item>

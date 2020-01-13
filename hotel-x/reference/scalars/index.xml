@@ -24,7 +24,7 @@
       <description>
         
         
-         GraphQL schema definition scalar Area   Required by RoomData:     
+        GraphQL schema definition scalar Area   Required by RoomData:
         
       </description>
     </item>
@@ -53,7 +53,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <description>
         
         
-         GraphQL schema definition scalar CVC   Required by PaymentCardData:     
+        GraphQL schema definition scalar CVC   Required by PaymentCardData:
         
       </description>
     </item>
@@ -67,7 +67,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <description>
         
         
-         GraphQL schema definition scalar CardNumber   Required by PaymentCardData:     
+        GraphQL schema definition scalar CardNumber   Required by PaymentCardData:
         
       </description>
     </item>
@@ -81,7 +81,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <description>
         
         
-         GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    Location:    GeonameData:    CriteriaSearch:    OrganizationData:    HotelXDefaultSettingsDataInput:     
+        GraphQL schema definition scalar Country   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    Location:    GeonameData:    CriteriaSearch:    OrganizationData:    HotelXDefaultSettingsDataInput:
         
       </description>
     </item>
@@ -95,7 +95,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <description>
         
         
-         GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    PriceStatic:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:     
+        GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    PriceStatic:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:
         
       </description>
     </item>
@@ -109,7 +109,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <description>
         
         
-         GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:    ReviewedBool:    ReviewedInt:    ReviewedPaymentType:    ReviewedHotelOptionType:    ReviewedText:    ReviwedPaxTypeRangeInRoomCandidates:    ReviewedRateRule:    ReviewedAgeRanges:    ReviewedAllowsBookPreferences:    CriteriaSearch:    Supplement:    RatePlan:    Promotion:    PriceBreakdown:    CriteriaBookingDatesInput:    BookingHotel:    PaymentCardData:     
+        GraphQL schema definition scalar Date   Required by HotelCriteriaSearchInput:    ReviewedBool:    ReviewedInt:    ReviewedPaymentType:    ReviewedHotelOptionType:    ReviewedText:    ReviwedPaxTypeRangeInRoomCandidates:    ReviewedRateRule:    ReviewedAgeRanges:    ReviewedAllowsBookPreferences:    CriteriaSearch:    Supplement:    RatePlan:    Promotion:    PriceBreakdown:    CriteriaBookingDatesInput:    BookingHotel:    PaymentCardData:
         
       </description>
     </item>
@@ -123,7 +123,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <description>
         
         
-         GraphQL schema definition scalar DateTime   Required by HotelXHotelFilterInput:    HotelRuntimeConfiguration:    Board:    Node:    Category:    Hotel:    GiataData:    Media:    Airport:    Geoname:    HotelXAmenity:    RoomStatic:    Destination:    Metadata:    AuditData:    Stat:    Transactions:    CancelPenalty:    PaymentCard:    Supplier:    Organization:    System:    Access:    Client:    Group:    Member:    MacroPermission:    Role:    Resource:    API:    Operation:    ManagedGroup:    Profile:    Entity:    Domain:    Product:    HotelXUpdateStatus:     
+        GraphQL schema definition scalar DateTime   Required by HotelXHotelFilterInput:    HotelRuntimeConfiguration:    Board:    Node:    Category:    Hotel:    GiataData:    Media:    Airport:    Geoname:    HotelXAmenity:    RoomStatic:    Destination:    Metadata:    AuditData:    Stat:    Transactions:    CancelPenalty:    PaymentCard:    Supplier:    Organization:    System:    Access:    Client:    Group:    Member:    MacroPermission:    Role:    Resource:    API:    Operation:    ManagedGroup:    Profile:    Entity:    Domain:    Product:    HotelXUpdateStatus:
         
       </description>
     </item>
@@ -137,7 +137,7 @@ GraphQL schema definition scalar Boolean   Required by HotelXHotelFilterInput:  
       <description>
         
         
-         GraphQL schema definition scalar DomainName   Required by DomainData:     
+        GraphQL schema definition scalar DomainName   Required by DomainData:
         
       </description>
     </item>
@@ -196,7 +196,7 @@ GraphQL schema definition scalar Int   Required by RelayInput:    HotelXHotelLis
       <description>
         
         
-         GraphQL schema definition scalar JSON   Required by AddOns:    AddOn:     
+        GraphQL schema definition scalar JSON   Required by AddOns:    AddOn:
         
       </description>
     </item>
@@ -210,7 +210,7 @@ GraphQL schema definition scalar Int   Required by RelayInput:    HotelXHotelLis
       <description>
         
         
-         GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    Text:    CriteriaSearch:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:    HotelCommitInput:     
+        GraphQL schema definition scalar Language   Required by HotelCriteriaSearchInput:    HotelCriteriaQuoteInput:    HotelCriteriaBookingInput:    HotelXDefaultSettingsData:    Text:    CriteriaSearch:    HotelXDefaultSettingsDataInput:    HotelBookInput:    HotelCancelInput:    HotelCommitInput:
         
       </description>
     </item>
@@ -224,7 +224,7 @@ GraphQL schema definition scalar Int   Required by RelayInput:    HotelXHotelLis
       <description>
         
         
-         GraphQL schema definition scalar State   Required by Location:     
+        GraphQL schema definition scalar State   Required by Location:
         
       </description>
     </item>
@@ -253,7 +253,7 @@ GraphQL schema definition scalar String   Required by ServiceStatus:    RelayInp
       <description>
         
         
-         GraphQL schema definition scalar Time   Required by TimeRange:     
+        GraphQL schema definition scalar Time   Required by TimeRange:
         
       </description>
     </item>
@@ -267,7 +267,7 @@ GraphQL schema definition scalar String   Required by ServiceStatus:    RelayInp
       <description>
         
         
-         GraphQL schema definition scalar URI   Required by GiataData:    Contact:    Media:    UrlsInput:    Urls:     
+        GraphQL schema definition scalar URI   Required by GiataData:    Contact:    Media:    UrlsInput:    Urls:
         
       </description>
     </item>

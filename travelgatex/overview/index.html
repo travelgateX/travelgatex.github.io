@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.40.1" />
 <title>Overview :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -8252,7 +8252,7 @@
 
 <p><strong>TravelgateX</strong> is the travel API completely based in GraphQL. Unlike many legacy XML Soap APIs, GraphQL enables each client to ask for and receive exactly the data that is needed. Learn more by reading our <a href="/learning-graphql/overview/#graphql-at-travelgatex">Learning GraphQL guides</a>.</p>
 
-<p>Our Gateway is the only endpoint to <strong>access all of our APIs</strong>. It is written in NodeJS. This makes it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: <a href="https://azure.microsoft.com/" rel="nofollow" target="_blank">Microsoft Azure</a>, <a href="https://cloud.google.com/" rel="nofollow" target="_blank">Google Cloud Platform</a>, <a href="https://www.hetzner.de/" rel="nofollow" target="_blank">Hetzner</a> and <a href="http://totaluptime.com/" rel="nofollow" target="_blank">TotalUptime</a>.</p>
+<p>Our Gateway is the only endpoint to <strong>access all of our APIs</strong>. It is written in NodeJS. This makes it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: <a href="https://azure.microsoft.com/" target="_blank">Microsoft Azure</a>, <a href="https://cloud.google.com/" target="_blank">Google Cloud Platform</a>, <a href="https://www.hetzner.de/" target="_blank">Hetzner</a> and <a href="http://totaluptime.com/" target="_blank">TotalUptime</a>.</p>
 
 <h2 id="using-the-api">Using the API</h2>
 
@@ -8270,7 +8270,7 @@
 <div class="alert 
 alert-info"
  
-role="alert">Our GraphQL API endpoint for all operations is: <a href="https://api.travelgatex.com" rel="nofollow" target="_blank">https://api.travelgatex.com</a></div>
+role="alert">Our GraphQL API endpoint for all operations is: <a href="https://api.travelgatex.com" target="_blank">https://api.travelgatex.com</a></div>
 
 
 <h2 id="communicating-with-the-server">Communicating with the Server</h2>
@@ -8279,7 +8279,7 @@ role="alert">Our GraphQL API endpoint for all operations is: <a href="https://ap
 
 <h2 id="making-requests">Making Requests</h2>
 
-<p>The best place to test how to make GraphQL queries in TravelgateX is to start with our interactive <a href="https://api.travelgatex.com/" rel="nofollow" target="_blank">API Playground</a>. You can also use <a href="https://curl.haxx.se" rel="nofollow" target="_blank">curl</a> or any other HTTP-speaking library.</p>
+<p>The best place to test how to make GraphQL queries in TravelgateX is to start with our interactive <a href="https://api.travelgatex.com/" target="_blank">API Playground</a>. You can also use <a href="https://curl.haxx.se" target="_blank">curl</a> or any other HTTP-speaking library.</p>
 
 <div class="alert 
 alert-danger"
@@ -8290,7 +8290,7 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
 <pre><code class="language-html">Accept-Encoding: gzip
 </code></pre>
 
-<p>To query GraphQL using <a href="https://curl.haxx.se" rel="nofollow" target="_blank">curl</a>, make a POST request with a JSON payload. The payload must contain a string called query:</p>
+<p>To query GraphQL using <a href="https://curl.haxx.se" target="_blank">curl</a>, make a POST request with a JSON payload. The payload must contain a string called query:</p>
 
 <pre><code class="language-bash">curl -X\
    POST\
@@ -8308,9 +8308,9 @@ role="alert">All <strong>LIVE</strong> traffic <strong>MUST</strong> enable GZIP
 <ul>
 <li><p><a href="/travelgatex/reference/">Reference Documentation</a> provides complete reference documentation for all resources, fields and objects in our GraphQL data model (called a <code>Schema</code>).</p></li>
 
-<li><p><a href="https://api.travelgatex.com" rel="nofollow" target="_blank">API Playground</a> provides an interactive, multi-column schema definition based on the GraphiQL tool, but with many additional features.</p></li>
+<li><p><a href="https://api.travelgatex.com" target="_blank">API Playground</a> provides an interactive, multi-column schema definition based on the GraphiQL tool, but with many additional features.</p></li>
 
-<li><p><a href="https://api.travelgatex.com/voyager" rel="nofollow" target="_blank">GraphQL-voyager</a> displays our GraphQL API as an interactive relational database-like graph to help you understand the different parent and child tables within our schema.</p></li>
+<li><p><a href="https://api.travelgatex.com/voyager" target="_blank">GraphQL-voyager</a> displays our GraphQL API as an interactive relational database-like graph to help you understand the different parent and child tables within our schema.</p></li>
 
 <li><p><a href="/learning-graphql/">Learning GraphQL</a> is a set of resources to get to know GraphQL and to understand our schema.</p></li>
 </ul>
@@ -8334,7 +8334,7 @@ If you wish to use test headers, insert <code>&quot;Authorization&quot;:&quot;Ap
 <p>TravelgateX follows some conventions about schema definition:</p>
 
 <ul>
-<li><a href="https://facebook.github.io/relay/" rel="nofollow" target="_blank">Relay schema implementation</a></li>
+<li><a href="https://facebook.github.io/relay/" target="_blank">Relay schema implementation</a></li>
 <li><a href="/travelgatex/reference/scalars/">Definition of custom scalar types</a></li>
 <li><a href="/travelgatex/security/overview/">Token Based Authentication</a></li>
 </ul>

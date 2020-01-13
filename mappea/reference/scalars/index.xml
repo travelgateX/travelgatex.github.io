@@ -39,7 +39,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierData:    Provider
       <description>
         
         
-         GraphQL schema definition scalar Country   Required by OrganizationData:     
+        GraphQL schema definition scalar Country   Required by OrganizationData:
         
       </description>
     </item>
@@ -53,7 +53,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierData:    Provider
       <description>
         
         
-         GraphQL schema definition scalar DateTime   Required by Supplier:    Node:    Organization:    System:    Access:    Client:    Group:    Member:    MacroPermission:    Role:    Resource:    API:    Operation:    ManagedGroup:    Profile:    Entity:    Domain:    Product:     
+        GraphQL schema definition scalar DateTime   Required by Supplier:    Node:    Organization:    System:    Access:    Client:    Group:    Member:    MacroPermission:    Role:    Resource:    API:    Operation:    ManagedGroup:    Profile:    Entity:    Domain:    Product:
         
       </description>
     </item>
@@ -67,7 +67,7 @@ GraphQL schema definition scalar Boolean   Required by SupplierData:    Provider
       <description>
         
         
-         GraphQL schema definition scalar DomainName   Required by DomainData:     
+        GraphQL schema definition scalar DomainName   Required by DomainData:
         
       </description>
     </item>
@@ -126,7 +126,7 @@ GraphQL schema definition scalar String   Required by MappeaGetMappeaStatsInput:
       <description>
         
         
-         GraphQL schema definition scalar URI   Required by Urls:     
+        GraphQL schema definition scalar URI   Required by Urls:
         
       </description>
     </item>
