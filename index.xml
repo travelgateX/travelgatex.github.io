@@ -477,6 +477,20 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
+      <title>Integrations: 2019-01-20</title>
+      <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-16/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-16/</guid>
+      <description>
+        
+        
+        ##2019-01-20  ValoracionRS passenger reference issue
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Alerts-X: API</title>
       <link>https://docs.travelgatex.com/alerts-x/reference/objects/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -731,22 +745,6 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/logging/reference/objects/apidata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Mappea: APIData</title>
-      <link>https://docs.travelgatex.com/mappea/reference/objects/apidata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/mappea/reference/objects/apidata/</guid>
       <description>
         
         

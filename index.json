@@ -224,6 +224,13 @@
 	"content": " 2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.  \n Fix on Stats Calendar  \n"
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-16/",
+	"title": "2019-01-20",
+	"tags": ["integration-changelog"],
+	"description": "Contains a chronologically ordered list of notable changes at our website",
+	"content": "##2019-01-20  ValoracionRS passenger reference issue  \n"
+},
+{
 	"uri": "https://docs.travelgatex.com/integrations/flights/aa/",
 	"title": "AA - American Airlines",
 	"tags": [],
@@ -2464,6 +2471,13 @@
 	"content": " GraphQL schema definition scalar Currency   Required by HotelCriteriaSearchInput:    HotelXDefaultSettingsData:    HotelXCommonSettingsData:    PriceStatic:    SettingsBaseInput:    CriteriaSearch:    Price:    Exchange:    Markup:    Priceable:    CancelPenalty:    CriteriaBookingReferencesInput:    HotelXDefaultSettingsDataInput:    HotelXCommonSettingsDataInput:    \n"
 },
 {
+	"uri": "https://docs.travelgatex.com/integrations/flights/de2/",
+	"title": "DE - Condor",
+	"tags": [],
+	"description": "Condor integration",
+	"content": "   DE - Condor Changelog     "
+},
+{
 	"uri": "https://docs.travelgatex.com/legacy/hotel/methods/data-structure/",
 	"title": "Data Structure",
 	"tags": [],
@@ -3371,7 +3385,7 @@
 	"title": "Flights",
 	"tags": [],
 	"description": "Flight integrations",
-	"content": "   AA - American Airlines American Airlines integration\n     AMD - Amadeus Amadeus integration\n     EFT - Esferatur Esferatur integration\n     HV - Transavia Transavia integration\n     IG - MeridianaFly MeridianaFly integration\n     LH - Lufthansa Lufthansa integration\n     NAS - Norwegian Norwegian integration\n     SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
+	"content": "   AA - American Airlines American Airlines integration\n     AMD - Amadeus Amadeus integration\n     DE - Condor Condor integration\n     EFT - Esferatur Esferatur integration\n     HV - Transavia Transavia integration\n     IG - MeridianaFly MeridianaFly integration\n     LH - Lufthansa Lufthansa integration\n     NAS - Norwegian Norwegian integration\n     SBR - Sabre Sabre integration\n     VY - Vueling Vueling integration\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/transportation/flights/",
@@ -6815,7 +6829,7 @@
 	"title": "Overview",
 	"tags": [],
 	"description": "TravelgateX Platform Information",
-	"content": " This page provides an overview of the TravelgateX platform.\nGraphQL Gateway TravelgateX is the travel API completely based in GraphQL. Unlike many legacy XML Soap APIs, GraphQL enables each client to ask for and receive exactly the data that is needed. Learn more by reading our Learning GraphQL guides.\nOur Gateway is the only endpoint to access all of our APIs. It is written in NodeJS. This makes it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime.\nUsing the API There are two types of allowed operations in the TravelgateX GraphQL APIs:\n Queries: Queries are \u0026ldquo;read only\u0026rdquo; and are used to get data from our system. For example, getting a list of available hotel vacancies for a particular date and location is a Query Mutations: Mutations change, add or delete the data in our system. For example, making a booking for a vacant hotel room is a Mutation.  GraphQL Endpoint One of the benefits of using GraphQL is that there is only a single endpoint. You can use this endpoint for all the operations you want to perform.\nOur GraphQL API endpoint for all operations is: https://api.travelgatex.com Communicating with the Server To communicate with our GraphQL server, you\u0026rsquo;ll need an access token with the right scopes. You are able to create a token by following the steps mentioned in the Security Overview.\nMaking Requests The best place to test how to make GraphQL queries in TravelgateX is to start with our interactive API Playground. You can also use curl or any other HTTP-speaking library.\nAll LIVE traffic MUST enable GZIP compression in the HTTP header Accept-Encoding: gzip  To query GraphQL using curl, make a POST request with a JSON payload. The payload must contain a string called query:\ncurl -X\\ POST\\ -H \u0026quot;Content-Type: application/json\u0026quot; \\ -H \u0026quot;Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot; \\ --data '{\u0026quot;query\u0026quot;:\u0026quot;{hotelX{searchStatusService{code description}}}\u0026quot;}' \\ --compressed \\ https://api.travelgatex.com  GraphQL Reference There are several ways you can learn more about the full capabilities of our TravelgateX GraphQL data model\n Reference Documentation provides complete reference documentation for all resources, fields and objects in our GraphQL data model (called a Schema).\n API Playground provides an interactive, multi-column schema definition based on the GraphiQL tool, but with many additional features.\n GraphQL-voyager displays our GraphQL API as an interactive relational database-like graph to help you understand the different parent and child tables within our schema.\n Learning GraphQL is a set of resources to get to know GraphQL and to understand our schema.\n  Examples Check out our GraphQL Playground to get started with making your first query and to work thropugh other query examples.\nKeep in mind that it\u0026rsquo;s important to use the correct Headers. If you wish to use test headers, insert \u0026quot;Authorization\u0026quot;:\u0026quot;Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\u0026quot;\n You can easily share your Queries with others by generating a link using the share button available in the API Playground. This share function works as a Pastebin for your GraphQL query and includes the context (endpoint, HTTP headers, open tabs, etc) so you can share exactly what your Playground query setup looks like.\nConventions TravelgateX follows some conventions about schema definition:\n Relay schema implementation Definition of custom scalar types Token Based Authentication  "
+	"content": " This page provides an overview of the TravelgateX platform.\nGraphQL Gateway TravelgateX is the travel API completely based in GraphQL. Unlike many legacy XML Soap APIs, GraphQL enables each client to ask for and receive exactly the data that is needed. Learn more by reading our Learning GraphQL guides.\nOur Gateway is the only endpoint to access all of our APIs. It is written in NodeJS. This makes it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime.\nUsing the API There are two types of allowed operations in the TravelgateX GraphQL APIs:\n Queries: Queries are \u0026ldquo;read only\u0026rdquo; and are used to get data from our system. For example, getting a list of available hotel vacancies for a particular date and location is a Query Mutations: Mutations change, add or delete the data in our system. For example, making a booking for a vacant hotel room is a Mutation.  GraphQL Endpoint One of the benefits of using GraphQL is that there is only a single endpoint. You can use this endpoint for all the operations you want to perform.\nOur GraphQL API endpoint for all operations is: https://api.travelgatex.com Communicating with the Server To communicate with our GraphQL server, you\u0026rsquo;ll need an access token with the right scopes. You are able to create a token by following the steps mentioned in the Security Overview.\nMaking Requests The best place to test how to make GraphQL queries in TravelgateX is to start with our interactive API Playground. You can also use curl or any other HTTP-speaking library.\nAll LIVE traffic MUST enable GZIP compression in the HTTP header Accept-Encoding: gzip  To query GraphQL using curl, make a POST request with a JSON payload. The payload must contain a string called query:\ncurl -X\\ POST\\ -H \u0026quot;Content-Type: application/json\u0026quot; \\ -H \u0026quot;Authorization: Apikey 64780338-49c8-4439-7c7d-d03c2033b145\u0026quot; \\ --data '{\u0026quot;query\u0026quot;:\u0026quot;{hotelX{searchStatusService{code description}}}\u0026quot;}' \\ --compressed \\ https://api.travelgatex.com  GraphQL Reference There are several ways you can learn more about the full capabilities of our TravelgateX GraphQL data model\n Reference Documentation provides complete reference documentation for all resources, fields and objects in our GraphQL data model (called a Schema).\n API Playground provides an interactive, multi-column schema definition based on the GraphiQL tool, but with many additional features.\n GraphQL-voyager displays our GraphQL API as an interactive relational database-like graph to help you understand the different parent and child tables within our schema.\n Learning GraphQL is a set of resources to get to know GraphQL and to understand our schema.\n  Examples Check out our GraphQL Playground to get started with making your first query and to work thropugh other query examples.\nKeep in mind that it\u0026rsquo;s important to use the correct Headers. If you wish to use test headers, insert \u0026quot;Authorization\u0026quot;:\u0026quot;Apikey 64780338-49c8-4439-7c7d-d03c2033b145\u0026quot;\n You can easily share your Queries with others by generating a link using the share button available in the API Playground. This share function works as a Pastebin for your GraphQL query and includes the context (endpoint, HTTP headers, open tabs, etc) so you can share exactly what your Playground query setup looks like.\nConventions TravelgateX follows some conventions about schema definition:\n Relay schema implementation Definition of custom scalar types Token Based Authentication  "
 },
 {
 	"uri": "https://docs.travelgatex.com/travelgatex/security/overview/",
@@ -12269,6 +12283,13 @@
 	"tags": [],
 	"description": "contributors and packages used by hugo-theme-docdock",
 	"content": " github contributors Other contributors  @bep supports and advices   Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester. clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support reveal-js - The HTML Presentation Framework  Tooling  Netlify - Continuous deployement and hosting of this documentation Hugo    "
+},
+{
+	"uri": "https://docs.travelgatex.com/integrations/flights/de2/changelog/",
+	"title": "DE - Condor Changelog",
+	"tags": [],
+	"description": "",
+	"content": " \t##2019-01-20  ValoracionRS passenger reference issue  \n   "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/hub/data-structure/",
