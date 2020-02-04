@@ -2909,6 +2909,11 @@
               <span>Hotel</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/hotel-x/howtos/quickstart/staticcontent/metadata/" class="dd-item">
+            <a href="/hotel-x/howtos/quickstart/staticcontent/metadata/">
+              <span>Metadata</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/hotel-x/howtos/quickstart/staticcontent/destination/" class="dd-item">
             <a href="/hotel-x/howtos/quickstart/staticcontent/destination/">
               <span>Destination</span><i class="fa fa-circle-thin read-icon"></i>
@@ -8128,12 +8133,9 @@
 <ul>
 <li><a href="#hotels">Hotels</a>
 <ul>
-<li>
-<ul>
 <li><a href="#criteria">Criteria</a></li>
 <li><a href="#token">Token</a></li>
 <li><a href="#playground-samples">Playground Samples</a></li>
-</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -8628,21 +8630,21 @@
 <p>Hotels Query returns a hotel list from one supplier&rsquo;s access. This entity contains static data about the hotel requested, such as code, name, location, and other information - You can find all these fields in the <a href="https://api.travelgatex.com/" target="_blank">graph</a>. You can receive hotels with hotel codes or with minimal destination codes, you can also filter the results based on rank. In this sense, note that there are mandatory and optional fields that allow filtering the hotels returned in the response.
 As for the response, the full response is split into pages: By default, the maximum number of hotels returned in each page (response) is 1000, but it allowes to request between 1 and 1000 hotels by filling in the field maxSize in the criteria. In order to obtain the next page of hotels, you need to fill in the token field, accordingly. Input parameters are explained above.</p>
 
-<h4 id="criteria">Criteria</h4>
+<h3 id="criteria">Criteria</h3>
 
 <p><strong>Mandatory fields</strong><br />
 - access-&gt; It represents the access for which you want to receive the hotels information.</p>
 
 <p><strong>Optional fields</strong><br />
-- hotelCodes-&gt; it allows to filter by hotel codes<br />
+- hotelCodes-&gt; it allows to filter by hotel codes
 - ranks-&gt; it allows to filter by ranks<br />
 - maxSize-&gt; it allows to specify the number of elements per page</p>
 
-<h4 id="token">Token</h4>
+<h3 id="token">Token</h3>
 
 <p>The token allows to request the next page of hotels. The correct way of obtaining multiple pages of hotels is mantaining this field empty for the first execution, and request the token field in the response graph. Then, send subsequent queries filling in the token field with the value returned in the previous response.</p>
 
-<h4 id="playground-samples">Playground Samples</h4>
+<h3 id="playground-samples">Playground Samples</h3>
 
 <ul>
 <li>Hotels
@@ -8690,7 +8692,7 @@ As for the response, the full response is split into pages: By default, the maxi
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/hotel-x/howtos/quickstart/staticcontent/" title="Go to previous page | Static Content"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Static Content</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/hotel-x/howtos/quickstart/staticcontent/destination/" title="Go to next page | Destination" style="margin-right: 0px;">Destination<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/hotel-x/howtos/quickstart/staticcontent/metadata/" title="Go to next page | Metadata" style="margin-right: 0px;">Metadata<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

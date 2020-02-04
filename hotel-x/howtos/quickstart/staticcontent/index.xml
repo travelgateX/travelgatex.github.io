@@ -32,6 +32,23 @@
     </item>
     
     <item>
+      <title>Hotel-X: Metadata</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/metadata/</guid>
+      <description>
+        
+        
+        The metadata query returns information about the metadata or restriction of supplier. In addition, the fields belows are used to verify the Search request input in order to avoid the unnecessary request to the supplier.
+ maxNumberHotels: Maximum number of hotels that can be requested. recommendedNumberHotels: Recomended number of hotels that can be requested. release: Minimum days required in between booking date and checking date ( days in advance ).
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Hotel-X: Destination</title>
       <link>https://docs.travelgatex.com/hotel-x/howtos/quickstart/staticcontent/destination/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
