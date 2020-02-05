@@ -140,7 +140,7 @@ CommissionX Goals CommissionX is a plugin that defines the contracted / expected
     </item>
     
     <item>
-      <title>Hotel-X: Market Group X</title>
+      <title>Hotel-X: Market Group</title>
       <link>https://docs.travelgatex.com/hotel-x/plugins/markets_groups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -219,7 +219,7 @@ Safety Margin Goals The safety margin plugin discards those options that have a 
         
         
         Vcc Gen is an optional plugin that adds the possibility to create a virtual credit card at Book step, in order to pay the reservation&amp;rsquo;s import with it.
-Vcc Gen Goals The Vcc Gen plugin creates a virtual credit card with an activation and expiration date choosed by the client, so he will be using this VCC instead of a regular credit card. The client must also indicate the token of the virtual credit card.
+Virtual Credit Card Generator (Vcc Gen) Goals The Vcc Gen plugin creates a virtual credit card with an activation and expiration date chosen by the client. The client must also send the token for the virtual credit card. The service will return the information of the newly created payment card in the response, even if the Book step has failed.
         
           [...]
         

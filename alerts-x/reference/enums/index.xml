@@ -24,7 +24,7 @@
       <description>
         
         
-        GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:
+         GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:     
         
       </description>
     </item>
@@ -66,7 +66,7 @@
       <description>
         
         
-        GraphQL schema definition  enum AlertType{   ERROR_RATE,    AVERAGE_TIME,    NO_TRAFFIC,    PEAK_TRAFFIC,    PRICE,   }   Required by AlertConfiguration:
+         GraphQL schema definition  enum AlertType{   ERROR_RATE,    AVERAGE_TIME,    NO_TRAFFIC,    PEAK_TRAFFIC,    PRICE,   }   Required by AlertConfiguration:     
         
       </description>
     </item>
@@ -80,7 +80,7 @@
       <description>
         
         
-        GraphQL schema definition  enum CheckPrice{   AMOUNT,    COMMISSION,    ALL,   }   Required by AlertPrice:  Price contains the specific configuration for Price alert Type  AlertPriceInput:  Price input  AlertPriceUpdateInput:  Price update
+         GraphQL schema definition  enum CheckPrice{   AMOUNT,    COMMISSION,    ALL,   }   Required by AlertPrice:  Price contains the specific configuration for Price alert Type  AlertPriceInput:  Price input  AlertPriceUpdateInput:  Price update   
         
       </description>
     </item>
@@ -94,7 +94,7 @@
       <description>
         
         
-        GraphQL schema definition  enum ComercialType{   SELLER,    BUYER,   }   Required by AlertConfiguration:    AlertGroupInput:
+         GraphQL schema definition  enum ComercialType{   SELLER,    BUYER,   }   Required by AlertConfiguration:    AlertGroupInput:     
         
       </description>
     </item>
@@ -108,7 +108,7 @@
       <description>
         
         
-        GraphQL schema definition  enum EmailType{   BCC,    TO,   }   Required by EmailInput:
+         GraphQL schema definition  enum EmailType{   BCC,    TO,   }   Required by EmailInput:     
         
       </description>
     </item>
@@ -122,7 +122,7 @@
       <description>
         
         
-        GraphQL schema definition  enum ErrorType{   OK,    PROVIDER,    TIMEOUT,    INTEGRATION,   }   Required by ErrorTypeInput:
+         GraphQL schema definition  enum ErrorType{   OK,    PROVIDER,    TIMEOUT,    INTEGRATION,   }   Required by ErrorTypeInput:     
         
       </description>
     </item>
@@ -136,7 +136,7 @@
       <description>
         
         
-        GraphQL schema definition  enum EventType{   OK,    ALERTING,   }   Required by EventData:  Event data
+         GraphQL schema definition  enum EventType{   OK,    ALERTING,   }   Required by EventData:  Event data   
         
       </description>
     </item>
@@ -150,7 +150,7 @@
       <description>
         
         
-        GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by GroupData:    GroupCommonData:    OrganizationData:
+         GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by GroupData:    GroupCommonData:    OrganizationData:     
         
       </description>
     </item>
@@ -164,7 +164,7 @@
       <description>
         
         
-        GraphQL schema definition  enum HubStatus{   OK,    EXCEPTION,    TIMEOUT,    UNDEFINED,   }   Required by HubStatusInput:
+         GraphQL schema definition  enum HubStatus{   OK,    EXCEPTION,    TIMEOUT,    UNDEFINED,   }   Required by HubStatusInput:     
         
       </description>
     </item>
@@ -178,7 +178,7 @@
       <description>
         
         
-        GraphQL schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Required by MemberData:
+         GraphQL schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Required by MemberData:     
         
       </description>
     </item>
@@ -192,7 +192,7 @@
       <description>
         
         
-        GraphQL schema definition  enum ModePrice{   UNIT,    PERCENTAGE,   }   Required by AlertPrice:  Price contains the specific configuration for Price alert Type  AlertPriceInput:  Price input  AlertPriceUpdateInput:  Price update
+         GraphQL schema definition  enum ModePrice{   UNIT,    PERCENTAGE,   }   Required by AlertPrice:  Price contains the specific configuration for Price alert Type  AlertPriceInput:  Price input  AlertPriceUpdateInput:  Price update   
         
       </description>
     </item>
@@ -234,7 +234,7 @@
       <description>
         
         
-        GraphQL schema definition  enum RangePrice{   LESS,    GREATER,   }   Required by AlertPrice:  Price contains the specific configuration for Price alert Type  AlertPriceInput:  Price input  AlertPriceUpdateInput:  Price update
+         GraphQL schema definition  enum RangePrice{   LESS,    GREATER,   }   Required by AlertPrice:  Price contains the specific configuration for Price alert Type  AlertPriceInput:  Price input  AlertPriceUpdateInput:  Price update   
         
       </description>
     </item>
@@ -262,7 +262,7 @@
       <description>
         
         
-        GraphQL schema definition  enum RoleType{   VIEWER,    EDITOR,    ADMIN,    EXECUTOR,    SPECIFIC,   }   Required by RoleData:
+         GraphQL schema definition  enum RoleType{   VIEWER,    EDITOR,    ADMIN,    EXECUTOR,    SPECIFIC,   }   Required by RoleData:     
         
       </description>
     </item>

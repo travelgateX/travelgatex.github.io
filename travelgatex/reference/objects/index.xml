@@ -40,8 +40,7 @@
       <description>
         
         
-        GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):   
-Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:
+         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
         
       </description>
     </item>
@@ -71,8 +70,7 @@ Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    Or
       <description>
         
         
-        GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):   
-Required by APIConnection:
+         GraphQL schema definition type APIEdge {  node: API    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(API):   cursor(String!):    Required by APIConnection:     
         
       </description>
     </item>
@@ -134,8 +132,7 @@ Required by APIConnection:
       <description>
         
         
-        GraphQL schema definition type AccessEdge {  node: Access    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Access):   cursor(String!):   
-Required by AccessConnection:
+         GraphQL schema definition type AccessEdge {  node: Access    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Access):   cursor(String!):    Required by AccessConnection:     
         
       </description>
     </item>
@@ -149,7 +146,7 @@ Required by AccessConnection:
       <description>
         
         
-        GraphQL schema definition type AddOn {  key: String!    value: JSON!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields key(String!):   value(JSON!):
+         GraphQL schema definition type AddOn {  key: String!    value: JSON!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields key(String!):   value(JSON!):    
         
       </description>
     </item>
@@ -163,9 +160,7 @@ Required by AccessConnection:
       <description>
         
         
-        GraphQL schema definition type AddOns {  distribution: [AddOn!]   Show deprecated fields   distribute: : JSON // deprecated from 2018-05-21 You can find it in distribution AddOn     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields distribute(JSON):   distribution([AddOn!]):
-        
-          [...]
+         GraphQL schema definition type AddOns {  distribution: [AddOn!]   Show deprecated fields   distribute: : JSON // deprecated from 2018-05-21 You can find it in distribution AddOn     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields distribute(JSON):   distribution([AddOn!]):    Required by HotelOptionSearch:    HotelOptionQuote:    HotelBookingDetail:     
         
       </description>
     </item>
@@ -227,7 +222,7 @@ Required by AccessConnection:
       <description>
         
         
-        GraphQL schema definition type AgeRange {  min: Int!    max: Int!    type: HotelPaxType!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields min(Int!):   max(Int!):   type(HotelPaxType!):
+         GraphQL schema definition type AgeRange {  min: Int!    max: Int!    type: HotelPaxType!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields min(Int!):   max(Int!):   type(HotelPaxType!):    
         
       </description>
     </item>
@@ -257,8 +252,7 @@ Required by AccessConnection:
       <description>
         
         
-        GraphQL schema definition type AirportData {  code: ID!    name: String    location: Location   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String):   location(Location):   
-Required by Airport:
+         GraphQL schema definition type AirportData {  code: ID!    name: String    location: Location   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   name(String):   location(Location):    Required by Airport:     
         
       </description>
     </item>
@@ -305,9 +299,8 @@ GraphQL schema definition type Alert {  code: ID!    alertData: AlertData    adv
       <description>
         
         
-        Alert list
-GraphQL schema definition type AlertConnection {  edges: [AlertEdge]    pageInfo: PageInfo!    count: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AlertEdge]):   pageInfo(PageInfo!):   count(Int!):   
-Required by AlertsXQuery:    AlertData:
+         Alert list
+GraphQL schema definition type AlertConnection {  edges: [AlertEdge]    pageInfo: PageInfo!    count: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([AlertEdge]):   pageInfo(PageInfo!):   count(Int!):    Required by AlertsXQuery:    AlertData:     
         
       </description>
     </item>
@@ -337,8 +330,7 @@ Required by AlertsXQuery:    AlertData:
       <description>
         
         
-        GraphQL schema definition type AlertEdge {  node: Alert    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Alert):   cursor(String!):   
-Required by AlertConnection:  Alert list
+         GraphQL schema definition type AlertEdge {  node: Alert    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Alert):   cursor(String!):    Required by AlertConnection:  Alert list   
         
       </description>
     </item>
@@ -386,9 +378,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <description>
         
         
-        GraphQL schema definition type AlertsXMutation {  createAlert( input: AlertInput!, ): Alert    updateAlert( code: ID!, input: AlertUpdateInput!, ): Alert   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields createAlert(Alert): Mutation to create a new alert  updateAlert(Alert): Mutation to update an existing alert
-        
-          [...]
+         GraphQL schema definition type AlertsXMutation {  createAlert( input: AlertInput!, ): Alert    updateAlert( code: ID!, input: AlertUpdateInput!, ): Alert   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields createAlert(Alert): Mutation to create a new alert  updateAlert(Alert): Mutation to update an existing alert   Required by Mutation:     
         
       </description>
     </item>
@@ -402,9 +392,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <description>
         
         
-        GraphQL schema definition type AlertsXQuery {  alerts(    relay: RelayInput,     filter: AlertFilterInput,     criteria: AlertCriteriaInput,     ): AlertConnection!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields alerts(AlertConnection!): Query to obtain Alerts
-        
-          [...]
+         GraphQL schema definition type AlertsXQuery {  alerts(    relay: RelayInput,     filter: AlertFilterInput,     criteria: AlertCriteriaInput,     ): AlertConnection!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields alerts(AlertConnection!): Query to obtain Alerts   Required by Query:     
         
       </description>
     </item>
@@ -434,7 +422,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <description>
         
         
-        GraphQL schema definition type AmenityStatic {  code: String!    type: ApplicationAreaType!    texts( languages: [Language!], ): [Text!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   type(ApplicationAreaType!):   texts([Text!]!):
+         GraphQL schema definition type AmenityStatic {  code: String!    type: ApplicationAreaType!    texts( languages: [Language!], ): [Text!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(String!):   type(ApplicationAreaType!):   texts([Text!]!):    
         
       </description>
     </item>
@@ -448,8 +436,7 @@ GraphQL schema definition type AlertTypeConfiguration {  historicalWindow: Int  
       <description>
         
         
-        GraphQL schema definition type AuditData {  transactions: [Transactions!]!    timeStamp: DateTime!    processTime: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields transactions([Transactions!]!):   timeStamp(DateTime!):   processTime(Float!):   
-Required by HotelSearch:    HotelQuote:    HotelBooking:    Response:    HotelBookPayload:    HotelCancelPayload:    HotelCommitPayload:
+         GraphQL schema definition type AuditData {  transactions: [Transactions!]!    timeStamp: DateTime!    processTime: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields transactions([Transactions!]!):   timeStamp(DateTime!):   processTime(Float!):    Required by HotelSearch:    HotelQuote:    HotelBooking:    Response:    HotelBookPayload:    HotelCancelPayload:    HotelCommitPayload:     
         
       </description>
     </item>
@@ -463,7 +450,7 @@ Required by HotelSearch:    HotelQuote:    HotelBooking:    Response:    HotelBo
       <description>
         
         
-        GraphQL schema definition type Bed {  type: String    count: Int    shared: Boolean   Show deprecated fields   description: : String // Deprecated from 2019-07-29     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields type(String):   description(String):   count(Int):   shared(Boolean):
+         GraphQL schema definition type Bed {  type: String    count: Int    shared: Boolean   Show deprecated fields   description: : String // Deprecated from 2019-07-29     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields type(String):   description(String):   count(Int):   shared(Boolean):    
         
       </description>
     </item>
@@ -477,7 +464,7 @@ Required by HotelSearch:    HotelQuote:    HotelBooking:    Response:    HotelBo
       <description>
         
         
-        GraphQL schema definition type BedStatic {  type: String    count: Int    shared: Boolean   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields type(String):   count(Int):   shared(Boolean):
+         GraphQL schema definition type BedStatic {  type: String    count: Int    shared: Boolean   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields type(String):   count(Int):   shared(Boolean):    
         
       </description>
     </item>
@@ -507,8 +494,7 @@ Required by HotelSearch:    HotelQuote:    HotelBooking:    Response:    HotelBo
       <description>
         
         
-        GraphQL schema definition type BoardConnection {  edges: [BoardEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([BoardEdge]):   pageInfo(PageInfo!):   
-Required by HotelXQuery:
+         GraphQL schema definition type BoardConnection {  edges: [BoardEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([BoardEdge]):   pageInfo(PageInfo!):    Required by HotelXQuery:     
         
       </description>
     </item>
@@ -522,8 +508,7 @@ Required by HotelXQuery:
       <description>
         
         
-        GraphQL schema definition type BoardData {  code: ID!    boardCode: String!    texts( languages: [Language!], ): [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   boardCode(String!):   texts([Text!]):   
-Required by Board:
+         GraphQL schema definition type BoardData {  code: ID!    boardCode: String!    texts( languages: [Language!], ): [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   boardCode(String!):   texts([Text!]):    Required by Board:     
         
       </description>
     </item>
@@ -537,8 +522,7 @@ Required by Board:
       <description>
         
         
-        GraphQL schema definition type BoardEdge {  node: Board    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Board):   cursor(String!):   
-Required by BoardConnection:
+         GraphQL schema definition type BoardEdge {  node: Board    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Board):   cursor(String!):    Required by BoardConnection:     
         
       </description>
     </item>
@@ -552,7 +536,7 @@ Required by BoardConnection:
       <description>
         
         
-        GraphQL schema definition type BookPreferenceInfo {  hotel: Boolean!    room: Boolean!    preferenceType: BookPreferenceType!    value: BookPreferenceValue!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hotel(Boolean!):   room(Boolean!):   preferenceType(BookPreferenceType!):   value(BookPreferenceValue!):
+         GraphQL schema definition type BookPreferenceInfo {  hotel: Boolean!    room: Boolean!    preferenceType: BookPreferenceType!    value: BookPreferenceValue!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields hotel(Boolean!):   room(Boolean!):   preferenceType(BookPreferenceType!):   value(BookPreferenceValue!):    
         
       </description>
     </item>
@@ -566,8 +550,7 @@ Required by BoardConnection:
       <description>
         
         
-        GraphQL schema definition type BookPreferenceValue {  mandatory: Boolean!    type: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields mandatory(Boolean!):   type(String!):   
-Required by BookPreferenceInfo:
+         GraphQL schema definition type BookPreferenceValue {  mandatory: Boolean!    type: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields mandatory(Boolean!):   type(String!):    Required by BookPreferenceInfo:     
         
       </description>
     </item>
@@ -597,7 +580,7 @@ Required by BookPreferenceInfo:
       <description>
         
         
-        GraphQL schema definition type BookingRoom {  occupancyRefId: Int    code: String    description: String    price: Price   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields occupancyRefId(Int):   code(String):   description(String):   price(Price):
+         GraphQL schema definition type BookingRoom {  occupancyRefId: Int    code: String    description: String    price: Price   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields occupancyRefId(Int):   code(String):   description(String):   price(Price):    
         
       </description>
     </item>
@@ -611,8 +594,7 @@ Required by BookPreferenceInfo:
       <description>
         
         
-        GraphQL schema definition type BusinessRules {  optionsQuota: Int!    businessRulesType: BusinessRulesType!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields optionsQuota(Int!):   businessRulesType(BusinessRulesType!):   
-Required by HotelXDefaultSettingsData:    HotelXCommonSettingsData:
+         GraphQL schema definition type BusinessRules {  optionsQuota: Int!    businessRulesType: BusinessRulesType!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields optionsQuota(Int!):   businessRulesType(BusinessRulesType!):    Required by HotelXDefaultSettingsData:    HotelXCommonSettingsData:     
         
       </description>
     </item>
@@ -642,8 +624,7 @@ Required by HotelXDefaultSettingsData:    HotelXCommonSettingsData:
       <description>
         
         
-        GraphQL schema definition type CancelPolicy {  refundable: Boolean!    cancelPenalties: [CancelPenalty!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields refundable(Boolean!):   cancelPenalties([CancelPenalty!]):   
-Required by HotelOptionSearch:    HotelOptionQuote:    HotelBookingDetail:
+         GraphQL schema definition type CancelPolicy {  refundable: Boolean!    cancelPenalties: [CancelPenalty!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields refundable(Boolean!):   cancelPenalties([CancelPenalty!]):    Required by HotelOptionSearch:    HotelOptionQuote:    HotelBookingDetail:     
         
       </description>
     </item>
@@ -673,8 +654,7 @@ Required by HotelOptionSearch:    HotelOptionQuote:    HotelBookingDetail:
       <description>
         
         
-        GraphQL schema definition type CategoryConnection {  edges: [CategoryEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([CategoryEdge]):   pageInfo(PageInfo!):   
-Required by HotelXQuery:
+         GraphQL schema definition type CategoryConnection {  edges: [CategoryEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([CategoryEdge]):   pageInfo(PageInfo!):    Required by HotelXQuery:     
         
       </description>
     </item>
@@ -688,8 +668,7 @@ Required by HotelXQuery:
       <description>
         
         
-        GraphQL schema definition type CategoryData {  code: ID!    categoryCode: String!    texts( languages: [Language!], ): [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   categoryCode(String!):   texts([Text!]):   
-Required by Category:
+         GraphQL schema definition type CategoryData {  code: ID!    categoryCode: String!    texts( languages: [Language!], ): [Text!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   categoryCode(String!):   texts([Text!]):    Required by Category:     
         
       </description>
     </item>
@@ -703,8 +682,7 @@ Required by Category:
       <description>
         
         
-        GraphQL schema definition type CategoryEdge {  node: Category    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Category):   cursor(String!):   
-Required by CategoryConnection:
+         GraphQL schema definition type CategoryEdge {  node: Category    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Category):   cursor(String!):    Required by CategoryConnection:     
         
       </description>
     </item>
@@ -718,9 +696,7 @@ Required by CategoryConnection:
       <description>
         
         
-        GraphQL schema definition type CheckInformation {  instructions( languages: [Language!], ): [Text!]    specialInstructions( languages: [Language!], ): [Text!]    minAge: Int    schedule: TimeRange   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields instructions([Text!]):   specialInstructions([Text!]):   minAge(Int):   schedule(TimeRange):
-        
-          [...]
+         GraphQL schema definition type CheckInformation {  instructions( languages: [Language!], ): [Text!]    specialInstructions( languages: [Language!], ): [Text!]    minAge: Int    schedule: TimeRange   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields instructions([Text!]):   specialInstructions([Text!]):   minAge(Int):   schedule(TimeRange):    Required by HotelData:     
         
       </description>
     </item>
@@ -782,8 +758,7 @@ Required by CategoryConnection:
       <description>
         
         
-        GraphQL schema definition type ClientEdge {  node: Client    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Client):   cursor(String!):   
-Required by ClientConnection:
+         GraphQL schema definition type ClientEdge {  node: Client    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(Client):   cursor(String!):    Required by ClientConnection:     
         
       </description>
     </item>

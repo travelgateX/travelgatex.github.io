@@ -41,7 +41,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <description>
         
         
-        GraphQL schema definition scalar Country   Required by OrganizationData:
+         GraphQL schema definition scalar Country   Required by OrganizationData:     
         
       </description>
     </item>
@@ -55,7 +55,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <description>
         
         
-        GraphQL schema definition scalar DateTime   Required by AlertFilterInput:    Alert:   Alert node  Node:    Member:    Group:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    System:    Domain:    Product:    Client:    Profile:    Entity:    MacroPermission:    Event:  Event triggered
+         GraphQL schema definition scalar DateTime   Required by AlertFilterInput:    Alert:   Alert node  Node:    Member:    Group:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    System:    Domain:    Product:    Client:    Profile:    Entity:    MacroPermission:    Event:  Event triggered   
         
       </description>
     </item>
@@ -69,7 +69,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <description>
         
         
-        GraphQL schema definition scalar DomainName   Required by DomainData:
+         GraphQL schema definition scalar DomainName   Required by DomainData:     
         
       </description>
     </item>
@@ -148,7 +148,7 @@ GraphQL schema definition scalar String   Required by RelayInput:    AlertEdge: 
       <description>
         
         
-        GraphQL schema definition scalar URI   Required by Urls:
+         GraphQL schema definition scalar URI   Required by Urls:     
         
       </description>
     </item>
