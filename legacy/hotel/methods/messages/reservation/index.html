@@ -8987,6 +8987,12 @@ the system will immediately cancel the reservation to prevent further possible e
 It is the client&rsquo;s responsibility to check if the booking is OK.</li>
 </ul>
 
+<div class="alert 
+alert-warning"
+ 
+role="alert"><strong>Important:</strong> be aware that you can receive an error and a reservation status OK in the same response, in this case the booking is confirmed. You should always consider the reservation status returned.</div>
+
+
 <p><strong>Note:</strong> <em>Keep the parameters in the valuation response to include them in the reservation request.</em></p>
 
 <p><strong>MerchantPay, LaterPay, CardBookingPay &amp; CardCheckInPay</strong></p>
@@ -9052,7 +9058,7 @@ each supplier.</p>
 
 <p><strong>Case 1:</strong></p>
 
-<p>The price in Reservation is lower than the price in Valuation. The selling price for the final customer will be the one in valuation, as this is the one that will be accepted by them at the time of booking. The final price that you should pay the supplier will be the price in Reservation.</p>
+<p>The price in Reservation is lower than the price in Valuation. The selling price for the final customer will be the one in valuation, as this is the one that will be accepted by them at the time of booking.</p>
 
 <p><strong>Case 2:</strong></p>
 
