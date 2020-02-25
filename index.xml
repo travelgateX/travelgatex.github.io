@@ -6,7 +6,7 @@
     <description>Recent changes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 06 Feb 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -15,6 +15,34 @@
     
 	    <atom:link href="https://docs.travelgatex.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Integrations: 2020-02-06</title>
+      <link>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-02-06/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-02-06/</guid>
+      <description>
+        
+        
+         2020-01-17  Fixed transaction code for refunds   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2020-01-17</title>
+      <link>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-01-17/</link>
+      <pubDate>Fri, 17 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-01-17/</guid>
+      <description>
+        
+        
+         2020-01-17  Fixed languages codes   
+        
+      </description>
+    </item>
     
     <item>
       <title>Integrations: 2020-01-08</title>
@@ -699,38 +727,6 @@ All notable changes to this product will be documented in this page. Under const
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/alerts-x/reference/objects/apidata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Hotel-X: APIData</title>
-      <link>https://docs.travelgatex.com/hotel-x/reference/objects/apidata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/hotel-x/reference/objects/apidata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Logging: APIData</title>
-      <link>https://docs.travelgatex.com/logging/reference/objects/apidata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/logging/reference/objects/apidata/</guid>
       <description>
         
         
