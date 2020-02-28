@@ -24,7 +24,7 @@
       <description>
         
         
-        GraphQL schema definition type StatsQuery {  report(    filter: StatsFilterInput!,     first: Int,     last: Int,     before: String,     after: String,     ): StatsConnection!    getActiveConnection( filter: ActiveFilterInput!, ): ConnectionConnection!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.
+        GraphQL schema definition type StatsQuery {report(filter: StatsFilterInput!,first: Int,last: Int,before: String,after: String,): StatsConnection! getActiveConnection(filter: ActiveFilterInput!,): ConnectionConnection! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.
         
           [...]
         

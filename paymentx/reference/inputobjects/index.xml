@@ -24,7 +24,7 @@
       <description>
         
         
-         GraphQL schema definition type AccessFilter {  accessID: [ID]    group: [ID]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields accessID([ID]):   group([ID]):   owner([ID!]):    
+         GraphQL schema definition type AccessFilter {accessID: [ID] group: [ID] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessID([ID]):group([ID]):owner([ID!]): 
         
       </description>
     </item>
@@ -38,7 +38,7 @@
       <description>
         
         
-        GraphQL schema definition type ClientFilter {  clientID: [ID]    name: [String!]    groupID: [ID]    isActive: Boolean    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields clientID([ID]):   name([String!]):   groupID([ID]):   isActive(Boolean):   owner([ID!
+        GraphQL schema definition type ClientFilter {clientID: [ID] name: [String!] groupID: [ID] isActive: Boolean owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields clientID([ID]):name([String!]):groupID([ID]):isActive(Boolean):owner([ID!
         
           [...]
         
@@ -54,7 +54,7 @@
       <description>
         
         
-         GraphQL schema definition type ExpireDateInput {  month: Int!    year: Int!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields month(Int!):   year(Int!):    Required by PaymentXStoredCardInput:     
+         GraphQL schema definition type ExpireDateInput {month: Int! year: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields month(Int!):year(Int!): Required by PaymentXStoredCardInput:  
         
       </description>
     </item>
@@ -68,7 +68,7 @@
       <description>
         
         
-         GraphQL schema definition type HolderInput {  name: String!    surname: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields name(String!):   surname(String!):    Required by PaymentXStoredCardFilterInput:    PaymentXStoredCardInput:     
+         GraphQL schema definition type HolderInput {name: String! surname: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields name(String!):surname(String!): Required by PaymentXStoredCardFilterInput: PaymentXStoredCardInput:  
         
       </description>
     </item>
@@ -82,7 +82,7 @@
       <description>
         
         
-        GraphQL schema definition type PaymentXStoredCardFilterInput {  AND: [PaymentXStoredCardFilterInput!]    OR: [PaymentXStoredCardFilterInput!]    checkIn_in: [DateTime!]    checkIn_not_in: [DateTime!]    checkIn_lt: DateTime    checkIn_lte: DateTime    checkIn_gt: DateTime    checkIn_gte: DateTime    checkOut_in: [DateTime!]    checkOut_not_in: [DateTime!]    checkOut_lt: DateTime    checkOut_lte: DateTime    checkOut_gt: DateTime    checkOut_gte: DateTime    holder_like: HolderInput   Show deprecated fields   }    window.
+        GraphQL schema definition type PaymentXStoredCardFilterInput {AND: [PaymentXStoredCardFilterInput!] OR: [PaymentXStoredCardFilterInput!] checkIn_in: [DateTime!] checkIn_not_in: [DateTime!] checkIn_lt: DateTime checkIn_lte: DateTime checkIn_gt: DateTime checkIn_gte: DateTime checkOut_in: [DateTime!] checkOut_not_in: [DateTime!] checkOut_lt: DateTime checkOut_lte: DateTime checkOut_gt: DateTime checkOut_gte: DateTime holder_like: HolderInput Show deprecated fields}window.
         
           [...]
         
@@ -98,7 +98,7 @@
       <description>
         
         
-         GraphQL schema definition type PaymentXStoredCardIDInput {  instanceCode: ID    pointOfSaleCode: ID    bookingReference: String    code: ID   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields instanceCode(ID):   pointOfSaleCode(ID):   bookingReference(String):   code(ID):    
+         GraphQL schema definition type PaymentXStoredCardIDInput {instanceCode: ID pointOfSaleCode: ID bookingReference: String code: ID Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields instanceCode(ID):pointOfSaleCode(ID):bookingReference(String):code(ID): 
         
       </description>
     </item>
@@ -112,7 +112,7 @@
       <description>
         
         
-        GraphQL schema definition type PaymentXStoredCardInput {  instanceCode: ID!    pointOfSaleCode: ID!    bookingReference: String!    checkOut: Date    checkIn: Date    cardType: String    holder: HolderInput    number: CardNumber!    CVC: CVC!    expire: ExpireDateInput!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.
+        GraphQL schema definition type PaymentXStoredCardInput {instanceCode: ID! pointOfSaleCode: ID! bookingReference: String! checkOut: Date checkIn: Date cardType: String holder: HolderInput number: CardNumber! CVC: CVC! expire: ExpireDateInput! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.
         
           [...]
         
@@ -128,7 +128,7 @@
       <description>
         
         
-        GraphQL schema definition type SupplierFilter {  supplierID: [ID]    accessID: [ID]    groupID: [ID]    isActive: Boolean    serviceAPI: [Int]    owner: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields supplierID([ID]):   accessID([ID]):   groupID([ID]):   isActive(Boolean):   serviceAPI([Int]):   owner([ID!
+        GraphQL schema definition type SupplierFilter {supplierID: [ID] accessID: [ID] groupID: [ID] isActive: Boolean serviceAPI: [Int] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields supplierID([ID]):accessID([ID]):groupID([ID]):isActive(Boolean):serviceAPI([Int]):owner([ID!
         
           [...]
         
