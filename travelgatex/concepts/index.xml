@@ -42,8 +42,8 @@ Access An Access is a set of credentials and configuration in order to access th
       <description>
         
         
-        Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
-Join us on Slack and let us know what resources you need us to prirotizeSend us a Jira service desk requestLog an issues request with usWrite this page yourself!
+        Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+ Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!
         
           [...]
         
@@ -63,6 +63,25 @@ Access An Access is a set of credentials and configuration in order to access th
 Authorization (Required) The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.
 Syntax Authorization: &amp;lt;type&amp;gt; &amp;lt;credentials&amp;gt;  Directives &amp;lt;type&amp;gt;:
  ApiKey Bearer  &amp;lt;credential&amp;gt;: String
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Response status codes</title>
+      <link>https://docs.travelgatex.com/travelgatex/concepts/http-response-status-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/concepts/http-response-status-codes/</guid>
+      <description>
+        
+        
+        General Codes The status codes are divided into the five categories presented below.
+ Informational responses (100–199), Successful responses (200–299), Redirects (300–399), Client errors (400–499), Server errors (500–599).  The below status codes are defined by section 10 of RFC 2616.
+You can find an updated specification in RFC 7231.
+Specifics TravelgateX response codes    Code Reason Description     200 success    180 Informational    280 Success    380 Redirect    480 ClientError    580 ServerError         400 invalidParameter Indicates that a request parameter has an invalid value.
         
           [...]
         

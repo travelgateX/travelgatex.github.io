@@ -133,6 +133,11 @@
               <span>Request Headers</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/concepts/http-response-status-codes/" class="dd-item">
+            <a href="/travelgatex/concepts/http-response-status-codes/">
+              <span>Response status codes</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/reference/" class="dd-item">
@@ -8641,24 +8646,24 @@
 
 <pre><code class="language-json">{
     &quot;plugins&quot;: {
-            &quot;step&quot;: &quot;REQUEST&quot;,
-            &quot;pluginsType&quot;: [
-                {
-                    &quot;type&quot;: &quot;PRE_STEP&quot;,
-                    &quot;name&quot;: &quot;genvcc&quot;,
-                    &quot;parameters&quot;: [
-                        {
-                            &quot;key&quot;: &quot;activationDate&quot;,
-                            &quot;value&quot;: &quot;2020-05-22&quot;
-                        },
-                        {
-                            &quot;key&quot;: &quot;expirationDate&quot;,
-                            &quot;value&quot;: &quot;2020-05-24&quot;
-                        }
-                    ]
-                }
-            ]
-        }
+			&quot;step&quot;: &quot;REQUEST&quot;,
+			&quot;pluginsType&quot;: [
+				{
+					&quot;type&quot;: &quot;PRE_STEP&quot;,
+					&quot;name&quot;: &quot;genvcc&quot;,
+					&quot;parameters&quot;: [
+						{
+							&quot;key&quot;: &quot;activationDate&quot;,
+							&quot;value&quot;: &quot;2020-05-22&quot;
+						},
+						{
+							&quot;key&quot;: &quot;expirationDate&quot;,
+							&quot;value&quot;: &quot;2020-05-24&quot;
+						}
+					]
+				}
+			]
+		}
 }
 </code></pre>
 
@@ -8673,16 +8678,16 @@
 
 <pre><code class="language-json">{
     &quot;plugins&quot;: [
-            {
-                &quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
-                &quot;pluginsType&quot;: [
-                    {
-                        &quot;name&quot;: &quot;market_groupX&quot;,
-                        &quot;type&quot;: &quot;MARKETS_GROUP&quot;
-                    }
-                ]
-            }
-        ]
+			{
+				&quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
+				&quot;pluginsType&quot;: [
+					{
+						&quot;name&quot;: &quot;market_groupX&quot;,
+						&quot;type&quot;: &quot;MARKETS_GROUP&quot;
+					}
+				]
+			}
+		]
 }
 </code></pre>
 
@@ -8745,7 +8750,7 @@
       ]
     },
      typeSearch: REFERENCES},
-            settings: {client:&quot;Demo_Client&quot;, testMode: true}) 
+			settings: {client:&quot;Demo_Client&quot;, testMode: true}) 
     {
       bookings {
         reference {
@@ -8806,9 +8811,9 @@
 		
 		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-09/">2019-10-09</a></li>
 		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-inventory/log/legacy/">Inventory changelog</a></li>
-		
 		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-stats/log/legacy/">Stats changelog</a></li>
+		
+		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-insights/log/legacy/">Insights changelog</a></li>
 		
 	</ul>
 </div>
