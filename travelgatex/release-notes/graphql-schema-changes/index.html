@@ -134,6 +134,11 @@
               <span>Request Headers</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/travelgatex/concepts/http-response-status-codes/" class="dd-item">
+            <a href="/travelgatex/concepts/http-response-status-codes/">
+              <span>Response status codes</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/reference/" class="dd-item">
@@ -8401,6 +8406,17 @@
 <ul>
 <li>
 <ul>
+<li><a href="#2020-03-10">2020-03-10</a></li>
+<li><a href="#2020-03-09">2020-03-09</a></li>
+<li><a href="#2020-03-03">2020-03-03</a></li>
+<li><a href="#2020-02-27">2020-02-27</a></li>
+<li><a href="#2020-02-25">2020-02-25</a></li>
+<li><a href="#2020-02-13">2020-02-13</a></li>
+<li><a href="#2020-02-06">2020-02-06</a></li>
+<li><a href="#2020-02-03">2020-02-03</a></li>
+<li><a href="#2020-01-29">2020-01-29</a></li>
+<li><a href="#2020-01-23">2020-01-23</a></li>
+<li><a href="#2020-01-14">2020-01-14</a></li>
 <li><a href="#2020-01-07">2020-01-07</a></li>
 <li><a href="#2019-12-17">2019-12-17</a></li>
 <li><a href="#2019-12-03">2019-12-03</a></li>
@@ -8616,6 +8632,1558 @@
 <p>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.</p>
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
+
+<h2 id="2020-03-10">2020-03-10</h2>
+
+<p>🛑  Field <code>audit</code> was removed from object type <code>Query</code></p>
+
+<p>🛑  Field <code>audit</code> was removed from object type <code>Mutation</code></p>
+
+<p>🛑  Input field <code>AlertUpdateErrorRateComparativeConfigurationByTimeInput.windowing</code> changed type from <code>AlertCommonByTimeInput</code> to <code>AlertUpdateCommonByTimeInput</code></p>
+
+<p>🛑  Input field <code>AlertUpdatePeakTrafficComparativeByTimeInput.configuration</code> changed type from <code>AlertUpdatePeakTrafficComprarativeConfigurationByTimeInput</code> to <code>AlertUpdatePeakTrafficComparativeConfigurationByTimeInput</code></p>
+
+<p>🛑  Input field <code>AlertPeakTrafficComparativeByTimeInput.configuration</code> changed type from <code>AlertPeakTrafficComprarativeConfigurationByTimeInput!</code> to <code>AlertPeakTrafficComparativeConfigurationByTimeInput!</code></p>
+
+<p>🛑  Type <code>AuditQuery</code> was removed</p>
+
+<p>🛑  Type <code>AuditMutation</code> was removed</p>
+
+<p>🛑  Type <code>AlertUpdatePeakTrafficComprarativeConfigurationByTimeInput</code> was removed</p>
+
+<p>🛑  Type <code>AlertPeakTrafficComprarativeConfigurationByTimeInput</code> was removed</p>
+
+<p>✅  Description <code>The service used to access the stats of every connection that uses the HUB</code> on type <code>AuditRule</code> has changed to <code>The service used to access the stats of every connection that uses the HUB</code></p>
+
+<p>✅  Field <code>AuditRule.code</code> description changed from <code>GUID</code> to ``</p>
+
+<p>✅  Field <code>InsightsQuery.hotelXMappingReport</code> description changed from <code>## Retrieve Mapping Report for HotelX</code> to <code>Retrieve Mapping Report for HotelX</code></p>
+
+<p>✅  Field <code>InsightsQuery.bookingsReport</code> description changed from <code>## Retrieve Bookings Details and Summary</code> to <code>Retrieve Bookings Details and Summary</code></p>
+
+<p>✅  Field <code>logging</code> was added to object type <code>Mutation</code></p>
+
+<p>✅  Field <code>allAuditRules</code> was added to object type <code>LoggingQuery</code></p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeConfigurationByTimeInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeConfigurationByTimeInput.price</code> description changed from `<code>to</code>Configuration of amount &amp; commission values`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeConfigurationByRequestsInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeConfigurationByRequestsInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeConfigurationByRequestsInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeConfigurationByRequestsInput.price</code> description changed from `<code>to</code>Configuration of amount &amp; commission values`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceInput.amountBy</code> description changed from `<code>to</code>Amount can be checked by its total value or night`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceInput.range</code> description changed from <code>Low or greater values of amount/commission (value included)</code> to <code>Low or greater values of amount/commission (value included)</code></p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteConfigurationByTimeInput.price</code> description changed from `<code>to</code>Configuration of amount &amp; commission values`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteConfigurationByRequestsInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteConfigurationByRequestsInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteConfigurationByRequestsInput.price</code> description changed from `<code>to</code>Configuration of amount &amp; commission values`</p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficAbsoluteConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficAbsoluteConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficAbsoluteConfigurationByTimeInput.bounds</code> description changed from `<code>to</code>Limits for number of requests`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeConfigurationByTimeInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeConfigurationByTimeInput.toCompare</code> description changed from `<code>to</code>Error codes to compare. By defaults all traffic is compared`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeConfigurationByTimeInput.toCheck</code> description changed from `<code>to</code>Error codes to check. By default all error codes are checked`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeConfigurationByRequestsInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeConfigurationByRequestsInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeConfigurationByRequestsInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeConfigurationByRequestsInput.toCompare</code> description changed from `<code>to</code>Error codes to compare. By defaults all traffic is compared`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeConfigurationByRequestsInput.toCheck</code> description changed from `<code>to</code>Error codes to check. By default all error codes are checked`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateComparativeConfigurationByTimeInput.comparative</code> description changed from `<code>to</code>Common configuration of comparative mode type`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateComparativeConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateComparativeConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateComparativeConfigurationByTimeInput.toCompare</code> description changed from `<code>to</code>Error codes to compare. By defaults all traffic is compared`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateComparativeConfigurationByTimeInput.toCheck</code> description changed from `<code>to</code>Error codes to check. By default all error codes are checked`</p>
+
+<p>✅  Input field <code>AlertUpdateBoundsInput.lowerBound</code> description changed from `<code>to</code>Lower bound limit`</p>
+
+<p>✅  Input field <code>AlertUpdateBoundsInput.upperBound</code> description changed from `<code>to</code>Upper bound limit`</p>
+
+<p>✅  Input field <code>AlertUpdateBoundsInput.bound</code> description changed from `<code>to</code>Bound limits to be used`</p>
+
+<p>✅  Input field <code>AlertUpdateCommonRelativeInput.percentageToAlert</code> description changed from `<code>to</code>percentage to be considered status ALERTING`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeConfigurationByTimeInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeConfigurationByTimeInput.maxAverageTime</code> description changed from `<code>to</code>Average time value not allowed in miliseconds`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeConfigurationByTimeInput.maxTime</code> description changed from `<code>to</code>Time value not allowed in miliseconds`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeConfigurationByRequestsInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeConfigurationByRequestsInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeConfigurationByRequestsInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeConfigurationByRequestsInput.maxAverageTime</code> description changed from `<code>to</code>Average time value not allowed in miliseconds`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeConfigurationByRequestsInput.maxTime</code> description changed from `<code>to</code>Time value not allowed in miliseconds`</p>
+
+<p>✅  Input field <code>AlertUpdateCommonComparativeInput.percentageToAlert</code> description changed from `<code>to</code>Percentage of traffic to be considered status ALERTING`</p>
+
+<p>✅  Input field <code>AlertUpdateCommonComparativeInput.variation</code> description changed from `<code>to</code>According to percentageToAlert value`</p>
+
+<p>✅  Input field <code>AlertUpdateCommonComparativeInput.offset</code> description changed from `<code>to</code>Time frame in minutes to set the beginning of historicalWindow`</p>
+
+<p>✅  Input field <code>AlertUpdateCommonComparativeInput.historicalWindow</code> description changed from `<code>to</code>The time frame in minutes to be used to compare with the window time frame`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeComparativeConfigurationByTimeInput.comparative</code> description changed from `<code>to</code>Common configuration of comparative mode type`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeComparativeConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeComparativeConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertUpdateCommonByTimeInput.minNumberRequests</code> description changed from `<code>to</code>Minimum number of requests must be in window to check the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateCommonByTimeInput.window</code> description changed from `<code>to</code>The time frame in minutes`</p>
+
+<p>✅  Input field <code>AlertUpdateCommonByTimeInput.periodicity</code> description changed from `<code>to</code>Frequency of time in minutes in which the alert will be reviewed`</p>
+
+<p>✅  Input field <code>AlertUpdateCommonByRequestsInput.minNumberRequests</code> description changed from `<code>to</code>minimum number of requests to check the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput.requestsToAlert</code> description changed from `<code>to</code>Number of requests with anomaly to set alert in ALERTING status`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput.maxAverageTime</code> description changed from `<code>to</code>Average time value not allowed in miliseconds`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput.maxTime</code> description changed from `<code>to</code>Time value not allowed in miliseconds`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput.requestsToAlert</code> description changed from `<code>to</code>Number of requests with anomaly to set alert in ALERTING status`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput.maxAverageTime</code> description changed from `<code>to</code>Average time value not allowed in miliseconds`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput.maxTime</code> description changed from `<code>to</code>Time value not allowed in miliseconds`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeConfigurationByTimeInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeConfigurationByTimeInput.price</code> description changed from `<code>to</code>Configuration of amount &amp; commission values`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeConfigurationByRequestsInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeConfigurationByRequestsInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeConfigurationByRequestsInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeConfigurationByRequestsInput.price</code> description changed from `<code>to</code>Configuration of amount &amp; commission values`</p>
+
+<p>✅  Input field <code>AlertPriceInput.amountBy</code> description changed from `<code>to</code>Amount can be checked by its total value or night`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteConfigurationByTimeInput.price</code> description changed from `<code>to</code>Configuration of amount &amp; commission values`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteConfigurationByRequestsInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteConfigurationByRequestsInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteConfigurationByRequestsInput.price</code> description changed from `<code>to</code>Configuration of amount &amp; commission values`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficAbsoluteConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficAbsoluteConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficAbsoluteConfigurationByTimeInput.bounds</code> description changed from `<code>to</code>Limits for number of requests`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeConfigurationByTimeInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeConfigurationByRequestsInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeConfigurationByRequestsInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeConfigurationByRequestsInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeConfigurationByRequestsInput.toCompare</code> description changed from <code>By defaults all traffic is compared</code> to <code>Error codes to compare. By defaults all traffic is compared</code></p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeConfigurationByRequestsInput.toCheck</code> description changed from <code>By default all error codes are checked</code> to <code>Error codes to check. By default all error codes are checked</code></p>
+
+<p>✅  Input field <code>AlertErrorRateComparativeConfigurationByTimeInput.comparative</code> description changed from `<code>to</code>Common configuration of comparative mode type`</p>
+
+<p>✅  Input field <code>AlertErrorRateComparativeConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateComparativeConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type`</p>
+
+<p>✅  Input field <code>AlertErrorRateComparativeConfigurationByTimeInput.toCompare</code> description changed from <code>By defaults all traffic is compared</code> to <code>Error codes to compare. By defaults all traffic is compared</code></p>
+
+<p>✅  Input field <code>AlertErrorRateComparativeConfigurationByTimeInput.toCheck</code> description changed from <code>By default all error codes are checked</code> to <code>Error codes to check. By default all error codes are checked</code></p>
+
+<p>✅  Input field <code>AlertGroupInput.isInclusive</code> description changed from <code>to indicate if tráfic with the code group has to be checked or not for this alert</code> to <code>Can be filtered traffic setting as inclusive or excludent</code></p>
+
+<p>✅  Input field <code>AlertGroupInput.comercialType</code> description changed from `<code>to</code>SELLER or BUYER`</p>
+
+<p>✅  Input field <code>AlertGroupInput.code</code> description changed from `<code>to</code>Group code`</p>
+
+<p>✅  Input field <code>AlertObjectInput.isInclusive</code> description changed from <code>to indicate if tráfic with the code object has to be checked or not for this alert</code> to <code>Can be filtered traffic setting as inclusive or excludent</code></p>
+
+<p>✅  Input field <code>AlertErrorTypeInput.isInclusive</code> description changed from <code>to indicate if tráfic with the error type code has to be checked or not for this alert</code> to <code>Can be filtered traffic setting as inclusive or excludent</code></p>
+
+<p>✅  Input field <code>AlertErrorTypeInput.code</code> description changed from `<code>to</code>Error type code`</p>
+
+<p>✅  Input field <code>AlertErrorCodeInput.isInclusive</code> description changed from `<code>to</code>Can be filtered traffic setting as inclusive or excludent`</p>
+
+<p>✅  Input field <code>AlertErrorCodeInput.code</code> description changed from `<code>to</code>Error code`</p>
+
+<p>✅  Input field <code>AlertHubStatusInput.isInclusive</code> description changed from `<code>to</code>Can be filtered traffic setting as inclusive or excludent`</p>
+
+<p>✅  Input field <code>AlertHubStatusInput.code</code> description changed from `<code>to</code>Hub status code`</p>
+
+<p>✅  Input field <code>AlertEmailInput.type</code> description changed from <code>email type</code> to <code>Destination email type</code></p>
+
+<p>✅  Input field <code>AlertEmailInput.address</code> description changed from <code>address ID</code> to <code>Email address</code></p>
+
+<p>✅  Description `<code>on type</code>AlertBoundsInput<code>has changed to</code>Limit of requests to define`</p>
+
+<p>✅  Input field <code>AlertBoundsInput.lowerBound</code> description changed from `<code>to</code>Lower bound limit`</p>
+
+<p>✅  Input field <code>AlertBoundsInput.upperBound</code> description changed from `<code>to</code>Upper bound limit`</p>
+
+<p>✅  Input field <code>AlertBoundsInput.bound</code> description changed from `<code>to</code>Bound limits to be used`</p>
+
+<p>✅  Input field <code>AlertCommonRelativeInput.percentageToAlert</code> description changed from <code>percentage to be considered status ALERTING</code> to <code>percentage of traffic to be considered status ALERTING</code></p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeConfigurationByTimeInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration of time window type`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeConfigurationByTimeInput.maxAverageTime</code> description changed from <code>Average time not allowed in miliseconds.</code> to <code>Average time not allowed in miliseconds</code></p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeConfigurationByTimeInput.maxTime</code> description changed from <code>Time not allowed in miliseconds.</code> to <code>Time not allowed in miliseconds</code></p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeConfigurationByRequestsInput.relative</code> description changed from `<code>to</code>Common configuration of relative mode type`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeConfigurationByRequestsInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeConfigurationByRequestsInput.windowing</code> description changed from <code>Average time not allowed in miliseconds.</code> to <code>Common configuration for requests window type</code></p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeConfigurationByRequestsInput.maxTime</code> description changed from <code>Time not allowed in miliseconds.</code> to <code>Time not allowed in miliseconds</code></p>
+
+<p>✅  Input field <code>maxAverageTime</code> was added to input object type <code>AlertAverageTimeRelativeConfigurationByRequestsInput</code></p>
+
+<p>✅  Input field <code>AlertCommonComparativeInput.percentageToAlert</code> description changed from <code>According to percentageToAlert value</code> to <code>Percentage to be considered status ALERTING</code></p>
+
+<p>✅  Input field <code>AlertCommonComparativeInput.variation</code> description changed from <code>Percentage to be considered status ALERTING</code> to <code>According to percentageToAlert value</code></p>
+
+<p>✅  Input field <code>AlertAverageTimeComparativeConfigurationByTimeInput.comparative</code> description changed from `<code>to</code>Common configuration of comparative mode type`</p>
+
+<p>✅  Input field <code>AlertAverageTimeComparativeConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeComparativeConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type.`</p>
+
+<p>✅  Input field <code>AlertCommonByTimeInput.minNumberRequests</code> description changed from <code>minimum number of requests to check the alert</code> to <code>Minimum number of requests must be in window to check the alert</code></p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteConfigurationByTimeInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteConfigurationByTimeInput.windowing</code> description changed from `<code>to</code>Common configuration for time window type.`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteConfigurationByRequestsInput.common</code> description changed from `<code>to</code>Common configuration alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteConfigurationByRequestsInput.windowing</code> description changed from `<code>to</code>Common configuration for requests window type`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteConfigurationByRequestsInput.requestsToAlert</code> description changed from <code>Requests vs total requests checked to consider alert in ALERTING status.</code> to <code>Number of requests with anomaly to set alert in ALERTING status</code></p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteConfigurationByRequestsInput.maxAverageTime</code> description changed from <code>Average time not allowed in miliseconds.</code> to <code>Average time not allowed in miliseconds</code></p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteConfigurationByRequestsInput.maxTime</code> description changed from <code>Time not allowed in miliseconds.</code> to <code>Time not allowed in miliseconds</code></p>
+
+<p>✅  Input field <code>AlertCriteriaInput.shared</code> description changed from <code>List of shared type</code> to <code>shared alerts</code></p>
+
+<p>✅  Input field <code>AlertCriteriaInput.isActive</code> description changed from <code>active or not</code> to <code>enabled or desabled alerts</code></p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteByRequestsInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteByRequestsInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteByRequestsInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteByRequestsInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceAbsoluteByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeByRequestsInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeByRequestsInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeByRequestsInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeByRequestsInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeByTimeInput.isActive</code> description changed from <code>status</code> to <code>To enable or desable the alert</code></p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeByTimeInput.configuration</code> description changed from <code>configuration</code> to <code>Configuration of the alert</code></p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeByTimeInput.description</code> description changed from <code>description</code> to <code>Description of the alert</code></p>
+
+<p>✅  Input field <code>AlertUpdatePriceRelativeByTimeInput.name</code> description changed from <code>name</code> to <code>Name of the alert</code></p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficComparativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficComparativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficComparativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficComparativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficAbsoluteByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficAbsoluteByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficAbsoluteByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdatePeakTrafficAbsoluteByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeComparativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeComparativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeComparativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeComparativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteByRequestsInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteByRequestsInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteByRequestsInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteByRequestsInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeAbsoluteByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeByRequestsInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeByRequestsInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeByRequestsInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeByRequestsInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateAverageTimeRelativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateComparativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateComparativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateComparativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateComparativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeByRequestsInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeByRequestsInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeByRequestsInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeByRequestsInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertUpdateErrorRateRelativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteByRequestsInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteByRequestsInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteByRequestsInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteByRequestsInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteByRequestsInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteByTimeInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceAbsoluteByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeByRequestsInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeByRequestsInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeByRequestsInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeByRequestsInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeByRequestsInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeByTimeInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertPriceRelativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficComparativeByTimeInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficComparativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficComparativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficComparativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficComparativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficAbsoluteByTimeInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficAbsoluteByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficAbsoluteByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficAbsoluteByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertPeakTrafficAbsoluteByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeComparativeByTimeInput.group</code> description changed from `<code>to</code>Group where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertAverageTimeComparativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeComparativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeComparativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeComparativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteByRequestsInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteByRequestsInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteByRequestsInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteByRequestsInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteByRequestsInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteByTimeInput.group</code> description changed from `<code>to</code>Group where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeAbsoluteByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeByRequestsInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeByRequestsInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeByRequestsInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeByRequestsInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeByRequestsInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeByTimeInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertAverageTimeRelativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateComparativeByTimeInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertErrorRateComparativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateComparativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateComparativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateComparativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeByRequestsInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeByRequestsInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeByRequestsInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeByRequestsInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeByRequestsInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeByTimeInput.group</code> description changed from `<code>to</code>groups where the alert is setted`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeByTimeInput.isActive</code> description changed from `<code>to</code>To enable or desable the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeByTimeInput.configuration</code> description changed from `<code>to</code>Configuration of the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeByTimeInput.description</code> description changed from `<code>to</code>Description of the alert`</p>
+
+<p>✅  Input field <code>AlertErrorRateRelativeByTimeInput.name</code> description changed from `<code>to</code>Name of the alert`</p>
+
+<p>✅  Type <code>LoggingMutation</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePeakTrafficComparativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertPeakTrafficComparativeConfigurationByTimeInput</code> was added</p>
+
+<h2 id="2020-03-09">2020-03-09</h2>
+
+<p>✅  Field <code>audit</code> was added to object type <code>Query</code></p>
+
+<p>✅  Field <code>audit</code> was added to object type <code>Mutation</code></p>
+
+<p>✅  Type <code>AuditRuleData</code> was added</p>
+
+<p>✅  Type <code>AuditRuleEdge</code> was added</p>
+
+<p>✅  Type <code>AuditRuleWhereUniqueInput</code> was added</p>
+
+<p>✅  Type <code>AuditRule</code> was added</p>
+
+<p>✅  Type <code>AuditRuleCreateInput</code> was added</p>
+
+<p>✅  Type <code>AuditRuleStatus</code> was added</p>
+
+<p>✅  Type <code>AuditRuleProductInput</code> was added</p>
+
+<p>✅  Type <code>AuditRuleWhereInput</code> was added</p>
+
+<p>✅  Type <code>AuditRuleConnection</code> was added</p>
+
+<p>✅  Type <code>AuditQuery</code> was added</p>
+
+<p>✅  Type <code>AuditMutation</code> was added</p>
+
+<h2 id="2020-03-03">2020-03-03</h2>
+
+<p>✅  Field <code>MetadataSearch.maxStay</code> description changed from <code>Maximum number of days allowed for booking.</code> to <code>Maximum number of days allowed for booking. -1 means there is no restriction</code></p>
+
+<h2 id="2020-02-27">2020-02-27</h2>
+
+<p>🛑  Field <code>allCustomerAccounts</code> was removed from object type <code>AdminQuery</code></p>
+
+<p>🛑  Field <code>customerAccount</code> was removed from object type <code>AdminQuery</code></p>
+
+<p>🛑  Argument <code>PartnerCode: ID!</code> added to field <code>AdminMutation.deleteAgent</code></p>
+
+<p>🛑  Argument <code>CustomerAccountCode: ID!</code> was removed from field <code>AdminMutation.deleteAgent</code></p>
+
+<p>🛑  Field <code>AdminMutation.deleteAgent</code> changed type from <code>CustomerAccount!</code> to <code>Partner!</code></p>
+
+<p>🛑  Argument <code>PartnerCode: ID!</code> added to field <code>AdminMutation.addAgent</code></p>
+
+<p>🛑  Argument <code>CustomerAccountCode: ID!</code> was removed from field <code>AdminMutation.addAgent</code></p>
+
+<p>🛑  Field <code>AdminMutation.addAgent</code> changed type from <code>CustomerAccount!</code> to <code>Partner!</code></p>
+
+<p>🛑  Field <code>setPrimaryCustomerAccount</code> was removed from object type <code>AdminMutation</code></p>
+
+<p>🛑  Field <code>deleteCustomerAccountFromOrganization</code> was removed from object type <code>AdminMutation</code></p>
+
+<p>🛑  Field <code>addCustomerAccountToOrganization</code> was removed from object type <code>AdminMutation</code></p>
+
+<p>🛑  Field <code>deleteCustomerAccount</code> was removed from object type <code>AdminMutation</code></p>
+
+<p>🛑  Field <code>updateCustomerAccount</code> was removed from object type <code>AdminMutation</code></p>
+
+<p>🛑  Field <code>createCustomerAccount</code> was removed from object type <code>AdminMutation</code></p>
+
+<p>🛑  Input field <code>AlertPriceInput.range</code> changed type from <code>RangePrice!</code> to <code>AlertRangePrice!</code></p>
+
+<p>🛑  Input field <code>AlertPriceInput.check</code> changed type from <code>CheckPrice!</code> to <code>AlertCheckPrice!</code></p>
+
+<p>🛑  Input field <code>mode</code> was removed from input object type <code>AlertPriceInput</code></p>
+
+<p>🛑  Input field <code>AlertCriteriaInput.shared</code> changed type from <code>[SharedType!]</code> to <code>[AlertSharedType!]</code></p>
+
+<p>🛑  Input field <code>alertCodes</code> was removed from input object type <code>AlertCriteriaInput</code></p>
+
+<p>🛑  Field <code>updateAlert</code> was removed from object type <code>AlertsXMutation</code></p>
+
+<p>🛑  Field <code>createAlert</code> was removed from object type <code>AlertsXMutation</code></p>
+
+<p>🛑  Input field <code>AlertGroupInput.comercialType</code> changed type from <code>ComercialType!</code> to <code>AlertComercialType!</code></p>
+
+<p>🛑  Field <code>AlertPrice.range</code> changed type from <code>RangePrice!</code> to <code>AlertRangePrice!</code></p>
+
+<p>🛑  Field <code>AlertPrice.check</code> changed type from <code>CheckPrice!</code> to <code>AlertCheckPrice!</code></p>
+
+<p>🛑  Field <code>mode</code> was removed from object type <code>AlertPrice</code></p>
+
+<p>🛑  Field <code>max_average</code> was removed from object type <code>AlertTypeConfiguration</code></p>
+
+<p>🛑  Field <code>offset</code> was removed from object type <code>AlertTypeConfiguration</code></p>
+
+<p>🛑  Field <code>historicalWindow</code> was removed from object type <code>AlertTypeConfiguration</code></p>
+
+<p>🛑  Enum value <code>NO_TRAFFIC</code> was removed from enum <code>AlertType</code></p>
+
+<p>🛑  Field <code>count</code> was removed from object type <code>AlertConnection</code></p>
+
+<p>🛑  Field <code>AlertConfiguration.comercialType</code> changed type from <code>ComercialType</code> to <code>AlertComercialType</code></p>
+
+<p>🛑  Type for argument <code>type</code> on field <code>AlertConfiguration.email</code> changed from <code>EmailType</code> to <code>AlertEmailType</code></p>
+
+<p>🛑  Field <code>AlertConfiguration.email</code> changed type from <code>[Email]!</code> to <code>[AlertEmail]</code></p>
+
+<p>🛑  Field <code>AlertConfiguration.minNumberRequests</code> changed type from <code>Int!</code> to <code>Int</code></p>
+
+<p>🛑  Field <code>AlertData.events</code> changed type from <code>EventConnection!</code> to <code>AlertEventConnection!</code></p>
+
+<p>🛑  Field <code>allCustomerAccounts</code> was removed from object type <code>OrganizationData</code></p>
+
+<p>🛑  Field <code>primaryCustomerAccount</code> was removed from object type <code>OrganizationData</code></p>
+
+<p>🛑  Type <code>unitTime</code> was removed</p>
+
+<p>🛑  Type <code>SharedType</code> was removed</p>
+
+<p>🛑  Type <code>ErrorTypeInput</code> was removed</p>
+
+<p>🛑  Type <code>ErrorCodeInput</code> was removed</p>
+
+<p>🛑  Type <code>HubStatusInput</code> was removed</p>
+
+<p>🛑  Type <code>EmailInput</code> was removed</p>
+
+<p>🛑  Type <code>EventType</code> was removed</p>
+
+<p>🛑  Type <code>EventEdge</code> was removed</p>
+
+<p>🛑  Type <code>Event</code> was removed</p>
+
+<p>🛑  Type <code>EventData</code> was removed</p>
+
+<p>🛑  Type <code>AlertPriceUpdateInput</code> was removed</p>
+
+<p>🛑  Type <code>AlertUpdateConfigurationInputPrice</code> was removed</p>
+
+<p>🛑  Type <code>AlertUpdateConfigurationInputPeakTraffic</code> was removed</p>
+
+<p>🛑  Type <code>AlertUpdateConfigurationInputAverageTime</code> was removed</p>
+
+<p>🛑  Type <code>AlertUpdateConfigurationInputErrorRate</code> was removed</p>
+
+<p>🛑  Type <code>AlertUpdateConfigurationInputNoTraffic</code> was removed</p>
+
+<p>🛑  Type <code>AlertUpdateInput</code> was removed</p>
+
+<p>🛑  Type <code>AlertConfigurationInputPrice</code> was removed</p>
+
+<p>🛑  Type <code>AlertConfigurationInputPeakTraffic</code> was removed</p>
+
+<p>🛑  Type <code>AlertConfigurationInputAverageTime</code> was removed</p>
+
+<p>🛑  Type <code>AlertConfigurationInputErrorRate</code> was removed</p>
+
+<p>🛑  Type <code>AlertConfigurationInputNoTraffic</code> was removed</p>
+
+<p>🛑  Type <code>AlertInput</code> was removed</p>
+
+<p>🛑  Type <code>RangePrice</code> was removed</p>
+
+<p>🛑  Type <code>CheckPrice</code> was removed</p>
+
+<p>🛑  Type <code>ModePrice</code> was removed</p>
+
+<p>🛑  Type <code>EventConnection</code> was removed</p>
+
+<p>🛑  Type <code>ComercialType</code> was removed</p>
+
+<p>🛑  Type <code>EmailType</code> was removed</p>
+
+<p>🛑  Type <code>Email</code> was removed</p>
+
+<p>🛑  Type <code>UpdateCustomerAccountInput</code> was removed</p>
+
+<p>🛑  Type <code>CustomerAccountWhereUniqueInput</code> was removed</p>
+
+<p>🛑  Type <code>CustomerAccountUpdateInput</code> was removed</p>
+
+<p>🛑  Type <code>CustomerAccountCreateInput</code> was removed</p>
+
+<p>🛑  Type <code>CustomerAccountOrderByInput</code> was removed</p>
+
+<p>🛑  Type <code>CustomerAccountWhereInput</code> was removed</p>
+
+<p>🛑  Type <code>CustomerAccountConnection</code> was removed</p>
+
+<p>🛑  Type <code>CustomerAccountEdge</code> was removed</p>
+
+<p>🛑  Type <code>CustomerAccount</code> was removed</p>
+
+<p>🛑  Type <code>CustomerAccountData</code> was removed</p>
+
+<p>✅  Field <code>allPartners</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Field <code>Partner</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Field <code>setPrimaryPartner</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>deletePartnerFromOrganization</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>addPartnerToOrganization</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>deletePartner</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>updatePartner</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>createPartner</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Input field <code>amountBy</code> was added to input object type <code>AlertPriceInput</code></p>
+
+<p>✅  Input field <code>AlertCriteriaInput.groups</code> description changed from <code>List of group codes where alerts are located</code> to <code>Group codes</code></p>
+
+<p>✅  Input field <code>codes</code> was added to input object type <code>AlertCriteriaInput</code></p>
+
+<p>✅  Field <code>deleteAlert</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertPriceAbsoluteByRequests</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertPriceAbsoluteByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertPriceRelativeByRequests</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertPriceRelativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertPeakTrafficComparativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertPeakTrafficAbsoluteByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertAverageTimeComparativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertAverageTimeAbsoluteByRequests</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertAverageTimeAbsoluteByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertAverageTimeRelativeByRequests</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertAverageTimeRelativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertErrorRateComparativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertErrorRateRelativeByRequests</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>updateAlertErrorRateRelativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertPriceAbsoluteByRequests</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertPriceAbsoluteByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertPriceRelativeByRequests</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertPriceRelativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertPeakTrafficComparativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertPeakTrafficAbsoluteByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertAverageTimeComparativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertAverageTimeAbsoluteByRequests</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertAverageTimeAbsoluteByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertAverageTimeRelativeByRequests</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertAverageTimeRelativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertErrorRateComparativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertErrorRateRelativeByRequests</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>createAlertErrorRateRelativeByTime</code> was added to object type <code>AlertsXMutation</code></p>
+
+<p>✅  Field <code>amountBy</code> was added to object type <code>AlertPrice</code></p>
+
+<p>✅  Description <code>Depending on the talert type, typeConfiguration will use some fields</code> on type <code>AlertTypeConfiguration</code> has changed to <code>Depending on the alert type, typeConfiguration will use some fields</code></p>
+
+<p>✅  Field <code>AlertTypeConfiguration.toCompare</code> description changed from <code>Error codes to be Compared with Checked codes. By default all error codes</code> to <code>Error codes to be Compared with Checked codes. By default all error codes.  Used for Error rate alert type</code></p>
+
+<p>✅  Field <code>AlertTypeConfiguration.toCheck</code> description changed from <code>Error codes to be Checked. By default  all error codes excepts 0</code> to <code>Error codes to be Checked. By default  all error codes excepts 0. Used for Error rate alert type</code></p>
+
+<p>✅  Field <code>bounds</code> was added to object type <code>AlertTypeConfiguration</code></p>
+
+<p>✅  Field <code>requestsToAlert</code> was added to object type <code>AlertTypeConfiguration</code></p>
+
+<p>✅  Field <code>maxTime</code> was added to object type <code>AlertTypeConfiguration</code></p>
+
+<p>✅  Field <code>maxAverageTime</code> was added to object type <code>AlertTypeConfiguration</code></p>
+
+<p>✅  Field <code>AlertConnection.pageInfo</code> description changed from <code>Indicates info about page</code> to ``</p>
+
+<p>✅  Field <code>totalCount</code> was added to object type <code>AlertConnection</code></p>
+
+<p>✅  Field <code>AlertConfiguration.percentageToAlert</code> description changed from <code>Minimum percentage to be considered status ALERTING</code> to <code>percentage to be considered status ALERTING</code></p>
+
+<p>✅  Field <code>AlertConfiguration.typeConfiguration</code> description changed from <code>specific configuration according to the alert type</code> to <code>Specific configuration according to the alert type</code></p>
+
+<p>✅  Field <code>variation</code> was added to object type <code>AlertConfiguration</code></p>
+
+<p>✅  Field <code>offset</code> was added to object type <code>AlertConfiguration</code></p>
+
+<p>✅  Field <code>historicalWindow</code> was added to object type <code>AlertConfiguration</code></p>
+
+<p>✅  Field <code>windowType</code> was added to object type <code>AlertConfiguration</code></p>
+
+<p>✅  Field <code>mode</code> was added to object type <code>AlertConfiguration</code></p>
+
+<p>✅  Field <code>group</code> was added to object type <code>AlertData</code></p>
+
+<p>✅  Field <code>allPartners</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Field <code>primaryPartner</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Type <code>AlertUpdatePriceRelativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePriceRelativeConfigurationByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePriceInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePriceAbsoluteConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePriceAbsoluteConfigurationByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePeakTrafficComprarativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePeakTrafficAbsoluteConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateErrorRateRelativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateErrorRateRelativeConfigurationByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateErrorRateComparativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateBoundsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateCommonRelativeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateAverageTimeRelativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateAverageTimeRelativeConfigurationByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateCommonComparativeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateAverageTimeComparativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateCommonByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateCommonConfigurationInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateCommonByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertPriceRelativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertPriceRelativeConfigurationByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertPriceAbsoluteConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertPriceAbsoluteConfigurationByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertPeakTrafficComprarativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertPeakTrafficAbsoluteConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertErrorRateRelativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertErrorRateRelativeConfigurationByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertErrorRateComparativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertSharedType</code> was added</p>
+
+<p>✅  Type <code>AlertErrorTypeInput</code> was added</p>
+
+<p>✅  Type <code>AlertErrorCodeInput</code> was added</p>
+
+<p>✅  Type <code>AlertHubStatusInput</code> was added</p>
+
+<p>✅  Type <code>AlertEmailInput</code> was added</p>
+
+<p>✅  Type <code>AlertBoundsInput</code> was added</p>
+
+<p>✅  Type <code>AlertCommonRelativeInput</code> was added</p>
+
+<p>✅  Type <code>AlertAverageTimeRelativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertAverageTimeRelativeConfigurationByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertCommonComparativeInput</code> was added</p>
+
+<p>✅  Type <code>AlertAverageTimeComparativeConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertCommonByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertCommonConfigurationInput</code> was added</p>
+
+<p>✅  Type <code>AlertCommonByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertAverageTimeAbsoluteConfigurationByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertAverageTimeAbsoluteConfigurationByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePriceAbsoluteByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePriceAbsoluteByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePriceRelativeByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePriceRelativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePeakTrafficComparativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdatePeakTrafficAbsoluteByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateAverageTimeComparativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateAverageTimeAbsoluteByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateAverageTimeAbsoluteByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateAverageTimeRelativeByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateAverageTimeRelativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateErrorRateComparativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateErrorRateRelativeByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertUpdateErrorRateRelativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertPriceAbsoluteByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertPriceAbsoluteByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertPriceRelativeByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertPriceRelativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertPeakTrafficComparativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertPeakTrafficAbsoluteByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertAverageTimeComparativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertAverageTimeAbsoluteByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertAverageTimeAbsoluteByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertAverageTimeRelativeByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertAverageTimeRelativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertErrorRateComparativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertErrorRateRelativeByRequestsInput</code> was added</p>
+
+<p>✅  Type <code>AlertErrorRateRelativeByTimeInput</code> was added</p>
+
+<p>✅  Type <code>AlertAmountBy</code> was added</p>
+
+<p>✅  Type <code>AlertRangePrice</code> was added</p>
+
+<p>✅  Type <code>AlertCheckPrice</code> was added</p>
+
+<p>✅  Type <code>AlertEventType</code> was added</p>
+
+<p>✅  Type <code>AlertEventEdge</code> was added</p>
+
+<p>✅  Type <code>AlertEvent</code> was added</p>
+
+<p>✅  Type <code>AlertEventData</code> was added</p>
+
+<p>✅  Type <code>AlertEventConnection</code> was added</p>
+
+<p>✅  Type <code>AlertComercialType</code> was added</p>
+
+<p>✅  Type <code>AlertEmailType</code> was added</p>
+
+<p>✅  Type <code>AlertEmail</code> was added</p>
+
+<p>✅  Type <code>AlertVariation</code> was added</p>
+
+<p>✅  Type <code>AlertWindowType</code> was added</p>
+
+<p>✅  Type <code>AlertMode</code> was added</p>
+
+<p>✅  Type <code>AlertBounds</code> was added</p>
+
+<p>✅  Type <code>AlertBound</code> was added</p>
+
+<p>✅  Type <code>UpdatePartnerInput</code> was added</p>
+
+<p>✅  Type <code>PartnerWhereUniqueInput</code> was added</p>
+
+<p>✅  Type <code>PartnerUpdateInput</code> was added</p>
+
+<p>✅  Type <code>PartnerCreateInput</code> was added</p>
+
+<p>✅  Type <code>PartnerOrderByInput</code> was added</p>
+
+<p>✅  Type <code>PartnerWhereInput</code> was added</p>
+
+<p>✅  Type <code>PartnerConnection</code> was added</p>
+
+<p>✅  Type <code>PartnerEdge</code> was added</p>
+
+<p>✅  Type <code>Partner</code> was added</p>
+
+<p>✅  Type <code>PartnerData</code> was added</p>
+
+<h2 id="2020-02-25">2020-02-25</h2>
+
+<p>🛑  Input field <code>HotelCriteriaBookingInput.typeSearch</code> changed type from <code>BookingCriteriaType!</code> to <code>BookingCriteriaType</code></p>
+
+<p>🛑  Input field <code>HotelCancelInput.reference</code> changed type from <code>BookReferenceInput!</code> to <code>BookReferenceInput</code></p>
+
+<p>🛑  Argument <code>codes: [ID!]</code> was removed from field <code>OrganizationData.clients</code></p>
+
+<p>🛑  Argument <code>codes: [ID!]</code> was removed from field <code>OrganizationData.suppliers</code></p>
+
+<p>🛑  Argument <code>codes: [ID!]</code> was removed from field <code>OrganizationData.accesses</code></p>
+
+<p>🛑  Argument <code>codes: [ID!]</code> was removed from field <code>GroupData.clients</code></p>
+
+<p>🛑  Argument <code>codes: [ID!]</code> was removed from field <code>GroupData.suppliers</code></p>
+
+<p>🛑  Argument <code>codes: [ID!]</code> was removed from field <code>GroupData.accesses</code></p>
+
+<p>🛑  Argument <code>codes: [ID!]</code> was removed from field <code>GroupCommonData.clients</code></p>
+
+<p>🛑  Argument <code>codes: [ID!]</code> was removed from field <code>GroupCommonData.suppliers</code></p>
+
+<p>🛑  Argument <code>codes: [ID!]</code> was removed from field <code>GroupCommonData.accesses</code></p>
+
+<p>🛑  Field <code>allMembers</code> was removed from object type <code>GroupCommonData</code></p>
+
+<p>✅  Field <code>flightX</code> was added to object type <code>Query</code></p>
+
+<p>✅  Field <code>HotelXQuery.booking</code> description changed from <code>Returns detailed information about books, you can indicated a list of locators or a range date.</code> to <code>Returns detailed information about books, you can search this books by indicating a list of locators, our HotelX booking ID or a range dates.</code></p>
+
+<p>✅  Field <code>flightX</code> was added to object type <code>Mutation</code></p>
+
+<p>✅  Field <code>getProviderMaintainer</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Field <code>getSupplierMaintainer</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Field <code>setProviderMaintainer</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>setSupplierMaintainer</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Description <code>Criteria of book contains basic information to find a book or books.</code> on type <code>HotelCriteriaBookingInput</code> has changed to <code>Criteria of book contains basic information to find a book or books.
+If you are using our Hotelx locator (bookingID) you don't need to indicate any of the other fields</code></p>
+
+<p>✅  Input field <code>HotelCriteriaBookingInput.dates</code> description changed from <code>The dates criteria.</code> to <code>The dates criteria.
+@deprecated(reason: &quot;deprecated from 2020-02-20. Use bookingID instead).</code></p>
+
+<p>✅  Input field <code>HotelCriteriaBookingInput.references</code> description changed from <code>The references criteria.</code> to <code>The references criteria.
+@deprecated(reason: &quot;deprecated from 2020-02-20. Use bookingID instead).</code></p>
+
+<p>✅  Input field <code>HotelCriteriaBookingInput.typeSearch</code> description changed from <code>The search type criteria.</code> to <code>The search type criteria. Necessary if your search if by references or by dates.
+@deprecated(reason: &quot;deprecated from 2020-02-20. Use bookingID instead).</code></p>
+
+<p>✅  Input field <code>HotelCriteriaBookingInput.language</code> description changed from <code>The language code.</code> to <code>The language code.
+@deprecated(reason: &quot;deprecated from 2020-02-20. Use bookingID instead).</code></p>
+
+<p>✅  Input field <code>HotelCriteriaBookingInput.accessCode</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>✅  Input field <code>HotelCriteriaBookingInput.accessCode</code> description changed from <code>Name of the access that have to use in the request.</code> to <code>Name of the access that have to use in the request. Necessary if your search if by references or by dates.
+@deprecated(reason: &quot;deprecated from 2020-02-20. Use bookingID instead).</code></p>
+
+<p>✅  Input field <code>bookingID</code> was added to input object type <code>HotelCriteriaBookingInput</code></p>
+
+<p>✅  Input field <code>HotelCancelInput.reference</code> description changed from <code>Contains the client reference and/or supplier reference.
+One of them is mandatory.</code> to <code>Contains the client reference and/or supplier reference.
+@deprecated(reason: &quot;deprecated from 2020-02-20. Use bookingID instead).</code></p>
+
+<p>✅  Input field <code>HotelCancelInput.hotelCode</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>✅  Input field <code>HotelCancelInput.hotelCode</code> description changed from <code>The hotel code.</code> to <code>The hotel code.
+@deprecated(reason: &quot;deprecated from 2020-02-20. Use bookingID instead).</code></p>
+
+<p>✅  Input field <code>HotelCancelInput.language</code> description changed from <code>The language code.</code> to <code>The language code.
+@deprecated(reason: &quot;deprecated from 2020-02-20. Use bookingID instead).</code></p>
+
+<p>✅  Input field <code>HotelCancelInput.accessCode</code> changed type from <code>String!</code> to <code>String</code></p>
+
+<p>✅  Input field <code>HotelCancelInput.accessCode</code> description changed from <code>The name of the access to use in the request.</code> to <code>The name of the access to use in the request.
+@deprecated(reason: &quot;deprecated from 2020-02-20. Use bookingID instead).</code></p>
+
+<p>✅  Input field <code>bookingID</code> was added to input object type <code>HotelCancelInput</code></p>
+
+<p>✅  Field <code>bookingID</code> was added to object type <code>Reference</code></p>
+
+<p>✅  Argument <code>owner: [ID!]</code> added to field <code>OrganizationData.clients</code></p>
+
+<p>✅  Argument <code>clientID: [ID!]</code> added to field <code>OrganizationData.clients</code></p>
+
+<p>✅  Field <code>OrganizationData.clients</code> description changed from <code>Clients resources in a organization</code> to <code>Clients resources in a group</code></p>
+
+<p>✅  Argument <code>isActive: Boolean</code> added to field <code>OrganizationData.suppliers</code></p>
+
+<p>✅  Argument <code>serviceAPI: [ID!]</code> added to field <code>OrganizationData.suppliers</code></p>
+
+<p>✅  Argument <code>owner: [ID!]</code> added to field <code>OrganizationData.suppliers</code></p>
+
+<p>✅  Argument <code>supplierID: [ID!]</code> added to field <code>OrganizationData.suppliers</code></p>
+
+<p>✅  Field <code>OrganizationData.suppliers</code> description changed from <code>Supplier resources in a organization</code> to <code>Supplier resources in a group</code></p>
+
+<p>✅  Argument <code>owner: [ID!]</code> added to field <code>OrganizationData.accesses</code></p>
+
+<p>✅  Argument <code>accessID: [ID!]</code> added to field <code>OrganizationData.accesses</code></p>
+
+<p>✅  Field <code>OrganizationData.accesses</code> description changed from <code>Access resources in a organization</code> to <code>Access resources in a group</code></p>
+
+<p>✅  Argument <code>owner: [ID!]</code> added to field <code>GroupData.clients</code></p>
+
+<p>✅  Argument <code>clientID: [ID!]</code> added to field <code>GroupData.clients</code></p>
+
+<p>✅  Argument <code>isActive: Boolean</code> added to field <code>GroupData.suppliers</code></p>
+
+<p>✅  Argument <code>serviceAPI: [ID!]</code> added to field <code>GroupData.suppliers</code></p>
+
+<p>✅  Argument <code>owner: [ID!]</code> added to field <code>GroupData.suppliers</code></p>
+
+<p>✅  Argument <code>supplierID: [ID!]</code> added to field <code>GroupData.suppliers</code></p>
+
+<p>✅  Argument <code>owner: [ID!]</code> added to field <code>GroupData.accesses</code></p>
+
+<p>✅  Argument <code>accessID: [ID!]</code> added to field <code>GroupData.accesses</code></p>
+
+<p>✅  Argument <code>owner: [ID!]</code> added to field <code>GroupCommonData.clients</code></p>
+
+<p>✅  Argument <code>clientID: [ID!]</code> added to field <code>GroupCommonData.clients</code></p>
+
+<p>✅  Argument <code>isActive: Boolean</code> added to field <code>GroupCommonData.suppliers</code></p>
+
+<p>✅  Argument <code>serviceAPI: [ID!]</code> added to field <code>GroupCommonData.suppliers</code></p>
+
+<p>✅  Argument <code>owner: [ID!]</code> added to field <code>GroupCommonData.suppliers</code></p>
+
+<p>✅  Argument <code>supplierID: [ID!]</code> added to field <code>GroupCommonData.suppliers</code></p>
+
+<p>✅  Argument <code>owner: [ID!]</code> added to field <code>GroupCommonData.accesses</code></p>
+
+<p>✅  Argument <code>accessID: [ID!]</code> added to field <code>GroupCommonData.accesses</code></p>
+
+<p>✅  Type <code>SelectedOfferItem</code> was added</p>
+
+<p>✅  Type <code>PaymentMethodCodeType</code> was added</p>
+
+<p>✅  Type <code>PaymentMethod</code> was added</p>
+
+<p>✅  Type <code>IdentityDocType</code> was added</p>
+
+<p>✅  Type <code>FlightSupplierInput</code> was added</p>
+
+<p>✅  Type <code>Arrival</code> was added</p>
+
+<p>✅  Type <code>Departure</code> was added</p>
+
+<p>✅  Type <code>IndividualInput</code> was added</p>
+
+<p>✅  Type <code>PaymentInfo</code> was added</p>
+
+<p>✅  Type <code>SelectedOffer</code> was added</p>
+
+<p>✅  Type <code>Discount</code> was added</p>
+
+<p>✅  Type <code>FlightOriginDestCriteriaInput</code> was added</p>
+
+<p>✅  Type <code>ContactInfo</code> was added</p>
+
+<p>✅  Type <code>Phone</code> was added</p>
+
+<p>✅  Type <code>Address</code> was added</p>
+
+<p>✅  Type <code>CountryCodeType</code> was added</p>
+
+<p>✅  Type <code>LocationCode</code> was added</p>
+
+<p>✅  Type <code>TaxType</code> was added</p>
+
+<p>✅  Type <code>TitleNameType</code> was added</p>
+
+<p>✅  Type <code>ProperNameType</code> was added</p>
+
+<p>✅  Type <code>FlightXQuery</code> was added</p>
+
+<p>✅  Type <code>FlightOfferOrderByInput</code> was added</p>
+
+<p>✅  Type <code>FlightSettingsInput</code> was added</p>
+
+<p>✅  Type <code>FlightOfferWhereInput</code> was added</p>
+
+<p>✅  Type <code>FlightXMutation</code> was added</p>
+
+<p>✅  Type <code>FlightOrderCreateInput</code> was added</p>
+
+<p>✅  Type <code>Individual</code> was added</p>
+
+<p>✅  Type <code>FlightSegmentOrderByInput</code> was added</p>
+
+<p>✅  Type <code>FlightSegmentWhereInput</code> was added</p>
+
+<p>✅  Type <code>FlightServiceData</code> was added</p>
+
+<p>✅  Type <code>FlightSegment</code> was added</p>
+
+<p>✅  Type <code>FlightNumber</code> was added</p>
+
+<p>✅  Type <code>AirlineCode</code> was added</p>
+
+<p>✅  Type <code>TransportDeparture</code> was added</p>
+
+<p>✅  Type <code>TransportArrival</code> was added</p>
+
+<p>✅  Type <code>TaxSummaryType</code> was added</p>
+
+<p>✅  Type <code>FlightSurcharge</code> was added</p>
+
+<p>✅  Type <code>FlightPax</code> was added</p>
+
+<p>✅  Type <code>IATA_PTC_CodeType</code> was added</p>
+
+<p>✅  Type <code>FlightOrderItemData</code> was added</p>
+
+<p>✅  Type <code>FlightOrderItem</code> was added</p>
+
+<p>✅  Type <code>FlightTicket</code> was added</p>
+
+<p>✅  Type <code>FlightTicketStatusCode</code> was added</p>
+
+<p>✅  Type <code>FlightOrder</code> was added</p>
+
+<p>✅  Type <code>FlightOrderData</code> was added</p>
+
+<p>✅  Type <code>FlightService</code> was added</p>
+
+<p>✅  Type <code>FlightPrice</code> was added</p>
+
+<p>✅  Type <code>FlightOfferItemData</code> was added</p>
+
+<p>✅  Type <code>FlightOfferItem</code> was added</p>
+
+<p>✅  Type <code>FlightOfferConnection</code> was added</p>
+
+<p>✅  Type <code>FlightOfferEdge</code> was added</p>
+
+<p>✅  Type <code>FlightOffer</code> was added</p>
+
+<p>✅  Type <code>FlightOfferData</code> was added</p>
+
+<p>✅  Type <code>Fee</code> was added</p>
+
+<p>✅  Type <code>TextType</code> was added</p>
+
+<p>✅  Type <code>AmountType</code> was added</p>
+
+<p>✅  Type <code>ClientWhereUniqueInput</code> was added</p>
+
+<h2 id="2020-02-13">2020-02-13</h2>
+
+<p>🛑  Input field <code>fiendlyName</code> was removed from input object type <code>CustomerAccountCreateInput</code></p>
+
+<p>✅  Field <code>insights</code> was added to object type <code>Query</code></p>
+
+<p>✅  Field <code>unencryptedURL</code> was added to object type <code>StatsAsset</code></p>
+
+<p>✅  Field <code>unencryptedURL</code> was added to object type <code>LoggingLegacyData</code></p>
+
+<p>✅  Input field <code>HotelXHotelListInput.hotelCodes</code> description changed from <code>Search by hotel codes</code> to <code>Search by hotel codes. These hotel codes are used to perform search.</code></p>
+
+<p>✅  Input field <code>supplierHotelCodes</code> was added to input object type <code>HotelXHotelListInput</code></p>
+
+<p>✅  Input field <code>friendlyName</code> was added to input object type <code>CustomerAccountCreateInput</code></p>
+
+<p>✅  Type <code>InsightsQuery</code> was added</p>
+
+<p>✅  Type <code>BookingsReportOrderByInput</code> was added</p>
+
+<p>✅  Type <code>BookingsReportGroupByInput</code> was added</p>
+
+<p>✅  Type <code>HotelXMappingReportWhereInput</code> was added</p>
+
+<p>✅  Type <code>MappingType</code> was added</p>
+
+<p>✅  Type <code>BookingsReportWhereInput</code> was added</p>
+
+<p>✅  Type <code>References</code> was added</p>
+
+<p>✅  Type <code>DateRange</code> was added</p>
+
+<p>✅  Type <code>InsightsXBookingReport</code> was added</p>
+
+<p>✅  Type <code>InsightsXBookingDetailConnection</code> was added</p>
+
+<p>✅  Type <code>InsightsXBookingDetailEdge</code> was added</p>
+
+<p>✅  Type <code>InsightsXBookingDetail</code> was added</p>
+
+<p>✅  Type <code>InsightsXBookingAggregationConnection</code> was added</p>
+
+<p>✅  Type <code>InsightsXBookingAggregationEdge</code> was added</p>
+
+<p>✅  Type <code>InsightsXBookingAggregation</code> was added</p>
+
+<p>✅  Type <code>HotelXMappingReportResponse</code> was added</p>
+
+<p>✅  Type <code>RetrieveHotelXMappingReport</code> was added</p>
+
+<p>✅  Type <code>BookingDetail</code> was added</p>
+
+<p>✅  Type <code>BookingAggregation</code> was added</p>
+
+<p>✅  Type <code>BookingWindowType</code> was added</p>
+
+<p>✅  Type <code>PaxTypeType</code> was added</p>
+
+<p>✅  Type <code>AmountCancelPenalty</code> was added</p>
+
+<p>✅  Type <code>Aggregate</code> was added</p>
+
+<p>✅  Type <code>AggregateMax</code> was added</p>
+
+<p>✅  Type <code>AggregateSum</code> was added</p>
+
+<h2 id="2020-02-06">2020-02-06</h2>
+
+<p>🛑  Input field <code>code</code> was removed from input object type <code>CustomerAccountCreateInput</code></p>
+
+<p>🛑  Argument <code>code: ID!</code> was removed from field <code>OrganizationData.primaryCustomerAccount</code></p>
+
+<p>✅  Field <code>HotelOptionSearch.rateRules</code> description changed from <code>Specifies rate rules of the option returned.</code> to <code>Specifies rate
+rules of the option returned. Note: If the option does not have any rate rule, then the option is NORMAL rate.</code></p>
+
+<p>✅  Input field <code>_search</code> was added to input object type <code>CustomerAccountWhereInput</code></p>
+
+<h2 id="2020-02-03">2020-02-03</h2>
+
+<p>✅  Field <code>allCustomerAccounts</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Field <code>customerAccount</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Field <code>deleteAgent</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>addAgent</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>setPrimaryCustomerAccount</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>deleteCustomerAccountFromOrganization</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>addCustomerAccountToOrganization</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>deleteCustomerAccount</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>updateCustomerAccount</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>createCustomerAccount</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>allCustomerAccounts</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Field <code>primaryCustomerAccount</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Type <code>UpdateCustomerAccountInput</code> was added</p>
+
+<p>✅  Type <code>CustomerAccountUpdateInput</code> was added</p>
+
+<p>✅  Type <code>CustomerAccountWhereUniqueInput</code> was added</p>
+
+<p>✅  Type <code>CustomerAccountCreateInput</code> was added</p>
+
+<p>✅  Type <code>CustomerAccountOrderByInput</code> was added</p>
+
+<p>✅  Type <code>CustomerAccountWhereInput</code> was added</p>
+
+<p>✅  Type <code>CustomerAgentType</code> was added</p>
+
+<p>✅  Type <code>CustomerAgent</code> was added</p>
+
+<p>✅  Type <code>CustomerAccountConnection</code> was added</p>
+
+<p>✅  Type <code>CustomerAccountEdge</code> was added</p>
+
+<p>✅  Type <code>CustomerAccount</code> was added</p>
+
+<p>✅  Type <code>CustomerAccountData</code> was added</p>
+
+<h2 id="2020-01-29">2020-01-29</h2>
+
+<p>✅  Input field <code>cancelRequired</code> was added to input object type <code>ReferenceFilter</code></p>
+
+<p>✅  Input field <code>quoteRequired</code> was added to input object type <code>ReferenceFilter</code></p>
+
+<h2 id="2020-01-23">2020-01-23</h2>
+
+<p>⚠️  Enum value <code>accesses_totalCount_DESC</code> was added to enum <code>OrganizationOrderByInput</code></p>
+
+<p>⚠️  Enum value <code>accesses_totalCount_ASC</code> was added to enum <code>OrganizationOrderByInput</code></p>
+
+<p>⚠️  Enum value <code>suppliers_totalCount_DESC</code> was added to enum <code>OrganizationOrderByInput</code></p>
+
+<p>⚠️  Enum value <code>suppliers_totalCount_ASC</code> was added to enum <code>OrganizationOrderByInput</code></p>
+
+<p>⚠️  Enum value <code>clients_totalCount_DESC</code> was added to enum <code>OrganizationOrderByInput</code></p>
+
+<p>⚠️  Enum value <code>clients_totalCount_ASC</code> was added to enum <code>OrganizationOrderByInput</code></p>
+
+<p>⚠️  Enum value <code>profiles_totalCount_DESC</code> was added to enum <code>OrganizationOrderByInput</code></p>
+
+<p>⚠️  Enum value <code>profiles_totalCount_ASC</code> was added to enum <code>OrganizationOrderByInput</code></p>
+
+<p>✅  Field <code>deleteContact</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>addContact</code> was added to object type <code>AdminMutation</code></p>
+
+<p>✅  Field <code>OrganizationData.owner</code> changed type from <code>Member</code> to <code>Member!</code></p>
+
+<p>✅  Field <code>contacts</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Argument <code>codeStartsWith: String</code> added to field <code>GroupCommonData.children</code></p>
+
+<p>✅  Argument <code>type: GroupType</code> added to field <code>GroupCommonData.children</code></p>
+
+<p>✅  Field <code>id</code> was added to object type <code>PaymentCardData</code></p>
+
+<p>✅  Type <code>OrganizationContactType</code> was added</p>
+
+<p>✅  Type <code>OrganizationContact</code> was added</p>
+
+<h2 id="2020-01-14">2020-01-14</h2>
+
+<p>🛑  Field <code>destinationSameCountryRestriction</code> was removed from object type <code>MetadataSearchDestinations</code></p>
+
+<p>🛑  Field <code>hotelSameDestinationRestriction</code> was removed from object type <code>MetadataSearchDestinations</code></p>
+
+<p>🛑  Field <code>maxNumberGeoCodes</code> was removed from object type <code>MetadataSearchDestinations</code></p>
+
+<p>🛑  Field <code>maxNumberZones</code> was removed from object type <code>MetadataSearchDestinations</code></p>
+
+<p>🛑  Field <code>maxNumberCities</code> was removed from object type <code>MetadataSearchDestinations</code></p>
+
+<p>🛑  Field <code>optionTypes</code> was removed from object type <code>MetadataSearch</code></p>
+
+<p>🛑  Field <code>allowsPreferences</code> was removed from object type <code>MetadataBook</code></p>
+
+<p>🛑  Field <code>allowsUrlCard</code> was removed from object type <code>MetadataBook</code></p>
+
+<p>🛑  Field <code>generic</code> was removed from object type <code>MetadataData</code></p>
+
+<p>🛑  Enum value <code>domain_DESC</code> was removed from enum <code>OrganizationOrderByInput</code></p>
+
+<p>🛑  Enum value <code>domain_ASC</code> was removed from enum <code>OrganizationOrderByInput</code></p>
+
+<p>🛑  Enum value <code>name_DESC</code> was removed from enum <code>OrganizationOrderByInput</code></p>
+
+<p>🛑  Enum value <code>name_ASC</code> was removed from enum <code>OrganizationOrderByInput</code></p>
+
+<p>🛑  Type <code>HotelOptionType</code> was removed</p>
+
+<p>🛑  Type <code>ReviewedHotelOptionType</code> was removed</p>
+
+<p>🛑  Type <code>BookPreferenceValue</code> was removed</p>
+
+<p>🛑  Type <code>BookPreferenceType</code> was removed</p>
+
+<p>🛑  Type <code>BookPreferenceInfo</code> was removed</p>
+
+<p>🛑  Type <code>ReviewedAllowsBookPreferences</code> was removed</p>
+
+<p>⚠️  Enum value <code>label_DESC</code> was added to enum <code>OrganizationOrderByInput</code></p>
+
+<p>⚠️  Enum value <code>label_ASC</code> was added to enum <code>OrganizationOrderByInput</code></p>
+
+<p>✅  Field <code>recommendedNumberHotels</code> was added to object type <code>MetadataSearchDestinations</code></p>
+
+<p>✅  Input field <code>master</code> was added to input object type <code>AccessInput</code></p>
+
+<p>✅  Field <code>master</code> was added to object type <code>AccessData</code></p>
 
 <h2 id="2020-01-07">2020-01-07</h2>
 
