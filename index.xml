@@ -6,7 +6,7 @@
     <description>Recent changes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -15,6 +15,49 @@
     
 	    <atom:link href="https://docs.travelgatex.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Integrations: 2020-03-02</title>
+      <link>https://docs.travelgatex.com/integrations/flights/ei/changelog/2020-03-02/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/ei/changelog/2020-03-02/</guid>
+      <description>
+        
+        
+        ##2020-03-02  Added idTarifas in Availability  
+##2020-03-02  numScale counter error in Availability
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2020-02-26</title>
+      <link>https://docs.travelgatex.com/integrations/flights/aert/changelog/2020-02-26/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/aert/changelog/2020-02-26/</guid>
+      <description>
+        
+        
+         2020-02-26  issue of fare amount price without agency comission   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2020-02-12</title>
+      <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-02-12/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-02-12/</guid>
+      <description>
+        
+        
+        ##2020-02-12  Null reference error of Valoracion
+        
+      </description>
+    </item>
     
     <item>
       <title>Integrations: 2020-02-06</title>
@@ -26,6 +69,20 @@
         
         
          2020-01-17  Fixed transaction code for refunds   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2020-01-17</title>
+      <link>https://docs.travelgatex.com/integrations/flights/aert/changelog/2020-01-17/</link>
+      <pubDate>Fri, 17 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/aert/changelog/2020-01-17/</guid>
+      <description>
+        
+        
+         2020-01-17  Bookings with ADT typed passengers   
         
       </description>
     </item>
@@ -45,6 +102,20 @@
     </item>
     
     <item>
+      <title>Integrations: 2020-01-14</title>
+      <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-14/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-14/</guid>
+      <description>
+        
+        
+         2020-01-14  OrderList development   
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Integrations: 2020-01-08</title>
       <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2020-01-08/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0100</pubDate>
@@ -54,6 +125,20 @@
         
         
          2020-01-08  Parsing of baggage with import=0 Parsing of included baggage   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2020-01-07</title>
+      <link>https://docs.travelgatex.com/integrations/flights/vy/changelog/2020-01-07/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/vy/changelog/2020-01-07/</guid>
+      <description>
+        
+        
+        ##2020-01-07  List of segments shown
         
       </description>
     </item>
@@ -73,6 +158,48 @@
     </item>
     
     <item>
+      <title>Integrations: 2019-12-19</title>
+      <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/2019-12-19/</link>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/de2/changelog/2019-12-19/</guid>
+      <description>
+        
+        
+         2019-12-19  Cancellation issue   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-12-19</title>
+      <link>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-19/</link>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-19/</guid>
+      <description>
+        
+        
+        ##2019-12-19  Fare upsell request error by RT fares request
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-12-18</title>
+      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-12-18/</link>
+      <pubDate>Wed, 18 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-12-18/</guid>
+      <description>
+        
+        
+         2019-12-18  Parsing of special suplements of AvailabilityFares branded fares   
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Integrations: 2019-12-18</title>
       <link>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/2019-12-18/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0100</pubDate>
@@ -82,6 +209,20 @@
         
         
          2019-12-18  Fixed problem with phone numbers starting with &amp;lsquo;+&amp;rsquo;   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-12-12</title>
+      <link>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-12/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-12/</guid>
+      <description>
+        
+        
+        ##2019-12-12  changed priority boarding book requirement from perReserva to perSegment
         
       </description>
     </item>
@@ -348,7 +489,7 @@
       <description>
         
         
-         2019-11-11  Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.   
+         2019-11-11  The delta price control in the booking transaction Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.   
         
       </description>
     </item>
@@ -585,152 +726,6 @@ All notable changes to this product will be documented in this page. Under const
         
         
         GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Stats: API</title>
-      <link>https://docs.travelgatex.com/stats/reference/objects/api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/stats/reference/objects/api/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: API</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/api/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Alerts-X: APIConnection</title>
-      <link>https://docs.travelgatex.com/alerts-x/reference/objects/apiconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/alerts-x/reference/objects/apiconnection/</guid>
-      <description>
-        
-        
-         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Hotel-X: APIConnection</title>
-      <link>https://docs.travelgatex.com/hotel-x/reference/objects/apiconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/hotel-x/reference/objects/apiconnection/</guid>
-      <description>
-        
-        
-         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Logging: APIConnection</title>
-      <link>https://docs.travelgatex.com/logging/reference/objects/apiconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/logging/reference/objects/apiconnection/</guid>
-      <description>
-        
-        
-         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by OrganizationData:    GroupCommonData:    ResourceData:    ProductData:    GroupData:     
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Mappea: APIConnection</title>
-      <link>https://docs.travelgatex.com/mappea/reference/objects/apiconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/mappea/reference/objects/apiconnection/</guid>
-      <description>
-        
-        
-         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Paymentx: APIConnection</title>
-      <link>https://docs.travelgatex.com/paymentx/reference/objects/apiconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/paymentx/reference/objects/apiconnection/</guid>
-      <description>
-        
-        
-         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Stats: APIConnection</title>
-      <link>https://docs.travelgatex.com/stats/reference/objects/apiconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/stats/reference/objects/apiconnection/</guid>
-      <description>
-        
-        
-         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: APIConnection</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/apiconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/apiconnection/</guid>
-      <description>
-        
-        
-         GraphQL schema definition type APIConnection {  edges: [APIEdge]    pageInfo: PageInfo!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([APIEdge]):   pageInfo(PageInfo!):    Required by AdminQuery:    GroupData:    GroupCommonData:    ResourceData:    OrganizationData:    ProductData:     
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Alerts-X: APIData</title>
-      <link>https://docs.travelgatex.com/alerts-x/reference/objects/apidata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/alerts-x/reference/objects/apidata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type APIData {  code: ID!    id: ID!    isEditable: Boolean!    label: String    groups(    codes: [ID!],     type: GroupType,     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    resources(    codes: [ID!
         
           [...]
         

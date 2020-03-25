@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Scalars</title>
+    <link>https://docs.travelgatex.com/flight-x/reference/scalars/</link>
+    <description>Recent changes in Scalars on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/flight-x/reference/scalars/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flight-X: AirlineCode</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/airlinecode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/airlinecode/</guid>
+      <description>
+        
+        
+         2-letters IATA airline code
+GraphQL schema definition scalar AirlineCode   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: Arrival</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/arrival/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/arrival/</guid>
+      <description>
+        
+        
+         IATA defined code identifying a city or station.
+GraphQL schema definition scalar Arrival   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: Boolean</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/boolean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/boolean/</guid>
+      <description>
+        
+        
+         The Boolean scalar type represents true or false.
+GraphQL schema definition scalar Boolean   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: DateTime</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/datetime/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DateTime   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: Departure</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/departure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/departure/</guid>
+      <description>
+        
+        
+         IATA defined code identifying a city or station.
+GraphQL schema definition scalar Departure   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightNumber</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/flightnumber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/flightnumber/</guid>
+      <description>
+        
+        
+         4 digits or less that are unique flight codes in a day.
+GraphQL schema definition scalar FlightNumber   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: Float</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/float/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/float/</guid>
+      <description>
+        
+        
+         The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.
+GraphQL schema definition scalar Float   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: ID</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/id/</guid>
+      <description>
+        
+        
+         The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
+GraphQL schema definition scalar ID   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: Int</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/int/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/int/</guid>
+      <description>
+        
+        
+         The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+GraphQL schema definition scalar Int   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: LocationCode</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/locationcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/locationcode/</guid>
+      <description>
+        
+        
+         IATA Location Code.
+GraphQL schema definition scalar LocationCode   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: String</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/scalars/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/scalars/string/</guid>
+      <description>
+        
+        
+         The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL schema definition scalar String   
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

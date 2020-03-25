@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Objects</title>
+    <link>https://docs.travelgatex.com/flight-x/reference/objects/</link>
+    <description>Recent changes in Objects on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/flight-x/reference/objects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flight-X: AmountType</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/amounttype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/amounttype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AmountType {  amount: Float    curCode: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields amount(Float):   curCode(String):    Required by  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: Fee</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/fee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/fee/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type Fee {  amount: AmountType    descText: TextType   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields amount(AmountType):   descText(TextType):    Required by FlightPrice:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightOffer</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightoffer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightoffer/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type FlightOffer {  code: ID!    flightOfferData: FlightOfferData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   flightOfferData(FlightOfferData):   createdAt(DateTime!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightOfferConnection</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightofferconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightofferconnection/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type FlightOfferConnection {  edges: [FlightOfferEdge]    pageinfo: PageInfo!    error: [AdviseMessage!]    totalCount: int!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([FlightOfferEdge]):   pageinfo(PageInfo!):   error([AdviseMessage!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightOfferData</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightofferdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightofferdata/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type FlightOfferData {  code: ID!    supplier: Supplier    totalPrice: AmountType    offeritems: [FlightOfferItem]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   supplier(Supplier):   totalPrice(AmountType):   offeritems([FlightOfferItem]):    Required by FlightOffer:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightOfferEdge</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightofferedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightofferedge/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type FlightOfferEdge {  node: FlightOffer    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(FlightOffer):   cursor(String!):    Required by FlightOfferConnection:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightOfferItem</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightofferitem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightofferitem/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type FlightOfferItem {  code: ID!    OfferItemData: FlightOfferItemData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   OfferItemData(FlightOfferItemData):   createdAt(DateTime!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightOfferItemData</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightofferitemdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightofferitemdata/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type FlightOfferItemData {  code: ID!    price: FlightPrice!    service: FlightService!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   price(FlightPrice!):   service(FlightService!):    Required by FlightOfferItem:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightPax</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightpax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightpax/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type FlightPax {  age: int!    type: IATA_PTC_CodeType    paxID: ID!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields age(int!):   type(IATA_PTC_CodeType):   paxID(ID!):    Required by FlightServiceData:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightPrice</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightprice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightprice/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type FlightPrice {  baseAmount: AmountType    fee: [Fee]    surcharge: [FlightSurcharge]    taxSummary: [TaxSummaryType]    totalAmount: AmountType   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields baseAmount(AmountType):   fee([Fee]):   surcharge([FlightSurcharge]):   taxSummary([TaxSummaryType]):   totalAmount(AmountType):    Required by FlightOfferItemData:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightSegment</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightsegment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightsegment/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type FlightPax {  arrival: TransportArrival!    departure: TransportDeparture!    carrier: AirlineCode    flightNumber: FlightNumber   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields arrival(TransportArrival!):   departure(TransportDeparture!):   carrier(AirlineCode):   flightNumber(FlightNumber):    Required by FlightServiceData:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightService</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightservice/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type FlightService {  code: ID!    flightServiceData: FlightServiceData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   flightServiceData(FlightServiceData):   createdAt(DateTime!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightServiceData</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightservicedata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightservicedata/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type FlightServiceData {  code: ID!    type: ID!    description: String!    pax: [FlightPax]!    segments( where: FlightSegmentWhereInput, orderBy: FlightSegmentOrderByInput, ): [FlightSegment!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: FlightSurcharge</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/flightsurcharge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/flightsurcharge/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type FlightSurcharge {  totalAmount: AmountType    breakdown: [Fee]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields totalAmount(AmountType):   breakdown([Fee]):    Required by FlightPrice:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: TaxSummaryType</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/taxsummarytype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/taxsummarytype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type TaxSummaryType {  totalTaxAmount: AmountType    tax: [TaxType]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields totalTaxAmount(AmountType):   tax([TaxType]):    Required by FlightPrice:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: TaxType</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/taxtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/taxtype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type TaxType {  amount: AmountType    descText: TexType   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields amount(AmountType):   descText(TexType):    Required by TaxSummaryType:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: TextType</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/texttype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/texttype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type Text {  text: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields text(String):    
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: TransportArrival</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/transportarrival/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/transportarrival/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type TransportArrival {  location: LocationCode   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields location(LocationCode):    Required by FlightSegment:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: TransportDeparture</title>
+      <link>https://docs.travelgatex.com/flight-x/reference/objects/transportdeparture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/reference/objects/transportdeparture/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type TransportDeparture {  location: LocationCode    AircraftScheduled: DateTime   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields location(LocationCode):   AircraftScheduled(DateTime):    Required by FlightSegment:     
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Booking Flow</title>
+    <link>https://docs.travelgatex.com/flight-x/methods/bookingflow/</link>
+    <description>Recent changes in Booking Flow on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/flight-x/methods/bookingflow/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/flight-x/methods/bookingflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flight-X: Search</title>
+      <link>https://docs.travelgatex.com/flight-x/methods/bookingflow/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/methods/bookingflow/search/</guid>
+      <description>
+        
+        
+        On this page you will learn more about the Flight-X&amp;rsquo;s Search method
+Method Goals This method is the first step in order to perform a Flight-X&amp;rsquo;s booking flow. This method aims to return all the available flight offers matching the given request criteria. This method is equivalent to the IATA AirShopping method.
+If you are not familiar to some concepts that are named in the following paragraphs you can take a look to our API reference and take a look to our schema
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
