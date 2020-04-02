@@ -8708,24 +8708,8 @@
 </ul></li>
 </ul></li>
 <li><a href="#how-applies">How applies</a></li>
-<li><a href="#execution-example">Execution example</a>
-<ul>
-<li><a href="#description-room-map">Description Room Map</a></li>
+<li><a href="#execution-example">Execution example</a></li>
 </ul></li>
-<li><a href="#files">Files</a></li>
-<li><a href="#alias-table">Alias Table</a>
-<ul>
-<li><a href="#format-file-1">Format File</a></li>
-<li><a href="#sample-file-1">Sample File</a></li>
-</ul></li>
-<li><a href="#noise-words">Noise Words</a>
-<ul>
-<li><a href="#format-file-2">Format File</a></li>
-<li><a href="#sample-file-2">Sample File</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#how-applies-1">How applies</a></li>
-<li><a href="#execution-example-1">Execution example</a></li>
 <li><a href="#modifying-data">Modifying data</a>
 <ul>
 <li><a href="#updating-data">Updating data</a></li>
@@ -9154,96 +9138,6 @@ FreeInternet,free_internet
 </code></pre>
 
 <p>Besides, an alternative for room map is also shown below:</p>
-
-<h4 id="description-room-map">Description Room Map</h4>
-
-<p>As a room map alternative, you can generate a room code from a room description. This plugin applies some rules over the description and generates a code. You need to load other files for this plugin.</p>
-
-<h3 id="files">Files</h3>
-
-<p>We have two files for this plugin:</p>
-
-<ul>
-<li>Alias Table: it is used to replace some words from the description </li>
-<li>Noise Words: it deletes some words from the description </li>
-</ul>
-
-<h3 id="alias-table">Alias Table</h3>
-
-<h4 id="format-file-1">Format File</h4>
-
-<p>The file must be in the below format:</p>
-
-<ul>
-<li>Encoding: UTF-8 </li>
-<li>File Name: roomDescriptionMapX_aliasTable.csv </li>
-<li>Header Row: ToReplace, ReplaceWith, Order </li>
-<li>Delimiter:  Comma (“,”) </li>
-<li>Directory:  /F[folder code]_[unique code]/HotelX_[unique code]/Maps/plugin/</li>
-</ul>
-
-<h4 id="sample-file-1">Sample File</h4>
-
-<p><strong>Name</strong>: roomDescriptionMapX_aliasTable.csv</p>
-
-<pre><code class="language-csv">ToReplace,ReplaceWith,Order
-1 bed,apt,102
-1 bedroom,apt,100
-2 bedroom,2-bedroom,200
-3 bed,3-bedroom,303
-apartment,apt,902
-</code></pre>
-
-<h3 id="noise-words">Noise Words</h3>
-
-<h4 id="format-file-2">Format File</h4>
-
-<p>The file must be in the below format:</p>
-
-<ul>
-<li><strong>Encoding</strong>: UTF-8 </li>
-<li><strong>File Name</strong>: roomDescriptionMapX_noiseWords.csv </li>
-<li><strong>Header Row</strong>: ToRemove </li>
-<li><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/plugin/</li>
-</ul>
-
-<h4 id="sample-file-2">Sample File</h4>
-
-<p><strong>Name</strong>: roomDescriptionMapX_noiseWords.csv
-<strong>Data</strong>:</p>
-
-<pre><code class="language-csv">ToRemove
-ad
-b&amp;b
-breakf
-</code></pre>
-
-<h2 id="how-applies-1">How applies</h2>
-
-<p>When you execute the plugin the steps to be followed are:</p>
-
-<ol>
-<li>Get room description.</li>
-<li>Replace strings with roomDescriptionMapX_aliasTable.csv, the order to apply this replace depends on the order column.</li>
-<li>Sort the description words alphabetically.</li>
-<li>Remove words with roomDescriptionMapX_noiseWords.csv file. </li>
-<li>Get your new code. </li>
-</ol>
-
-<h2 id="execution-example-1">Execution example</h2>
-
-<pre><code class="language-json">{
-    &quot;plugins&quot;: {
-        &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
-        &quot;pluginsType&quot;: [
-            {
-                &quot;type&quot;: &quot;ROOM_MAP&quot;,
-                &quot;name&quot;: &quot;mapping_room_description&quot;
-            }
-        ]
-    }
-}
-</code></pre>
 
 <h2 id="modifying-data">Modifying data</h2>
 
