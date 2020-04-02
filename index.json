@@ -11945,8 +11945,8 @@
 	"uri": "https://docs.travelgatex.com/hotel-x/methods/staticcontent/",
 	"title": "Static Content",
 	"tags": [],
-	"description": "How to manage static content: Hotels, Boards, Categoriesm, Metadata...",
-	"content": "Supplier static information as Hotel List, Room List, Board List, Metadata\u0026hellip; are returned through our content calls.\nWe strongly recommend to implement them as sometimes, supplier codes might be different from the ones returned through our API.\n  Hotel      Metadata Supplier restriction and configuration\n     Destination Learn about how to manage static content data in your site: Hotels, Boards, Categories...\n     Room Learn about how to manage static content data in your site: Hotels, Boards, Categories...\n     Boards Learn about how to manage static content data in your site: Hotels, Boards, Categories...\n    "
+	"description": "How to manage static content: Hotels, Boards, Categories, Metadata...",
+	"content": "Supplier static information as Hotel-List, Hotel-Room, Hotel-Board, Hotel-Category, Destinations and Metadata are returned through our content calls.\nWe strongly recommend to implement them as sometimes, supplier codes might be different from the ones returned through our API.\n  Hotel      Metadata Supplier restriction and configuration\n     Destination Learn about how to manage static content data in your site: Hotels, Boards, Categories...\n     Room Learn about how to manage static content data in your site: Hotels, Boards, Categories...\n     Boards Learn about how to manage static content data in your site: Hotels, Boards, Categories...\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/learning-graphql/thinking_in_graphql/",
@@ -12149,7 +12149,7 @@
 	"title": "Methods",
 	"tags": [],
 	"description": "To get started with Hotel-X",
-	"content": " Quickstart   Booking Flow How to book\n     Reservation Management How to operate over the performed bookings\n     Static Content How to manage static content: Hotels, Boards, Categoriesm, Metadata...\n    "
+	"content": " Quickstart   Booking Flow How to book\n     Reservation Management How to operate over the performed bookings\n     Static Content How to manage static content: Hotels, Boards, Categories, Metadata...\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/paymentx/",
