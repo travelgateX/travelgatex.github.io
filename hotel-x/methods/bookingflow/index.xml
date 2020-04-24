@@ -24,9 +24,8 @@
       <description>
         
         
-        Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution. The operation could search over one or more sellers accesses.
-Depending seller, search operations involves use supplier&amp;rsquo;s cache.
-It returns a list of available options according to your search criteria.
+        Search is the first step in our booking flow. The goal is to check availability in the date range and pax specified for the requested hotels or for the hotels in the destination requested. The call can search one or more sellers&amp;rsquo; accesses. It returns a list of available options according to your search criteria.
+Advanced criteria There are different parameters that can be set up in the request Mandatory
         
           [...]
         

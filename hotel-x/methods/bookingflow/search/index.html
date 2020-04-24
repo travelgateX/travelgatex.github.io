@@ -8685,7 +8685,7 @@
 <ul>
 <li><a href="#advanced-criteria">Advanced criteria</a></li>
 <li><a href="#how-to-request">How to request</a></li>
-<li><a href="#bear-in-mind">Bear in mind</a></li>
+<li><a href="#important-info">Important Info</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -8826,11 +8826,7 @@
               
 
 
-<p>Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution. The operation could search over one or more sellers accesses.</p>
-
-<p>Depending seller, search operations involves use supplier&rsquo;s cache.</p>
-
-<p>It returns a list of available options according to your search criteria.</p>
+<p>Search is the first step in our booking flow. The goal is to check availability in the date range and pax specified for the requested hotels or for the hotels in the  destination requested. The call can search  one or more sellers&rsquo; accesses. It returns a list of available options according to your search criteria.</p>
 
 <h2 id="advanced-criteria">Advanced criteria</h2>
 
@@ -8850,7 +8846,7 @@ Mandatory</p>
 
 <h2 id="how-to-request">How to request</h2>
 
-<p>There are different ways to request a Search. Below are shown different examples for different scenarios:</p>
+<p>There are different ways to perform a search request. Below are shown different examples for different scenarios:</p>
 
 
 <div id="pulse-holder">
@@ -9296,13 +9292,13 @@ Mandatory</p>
   }
 </script></p>
 
-<h2 id="bear-in-mind">Bear in mind</h2>
+<h2 id="important-info">Important Info</h2>
 
 <div class="alert 
 alert-warning"
  
-role="alert"><p>Please, bear in mind that within the room structure response there is a <strong>refundable</strong> field. If that field is filled with <em>false</em> it means that the room has 100% cancellation cost, so the room is not refundable.
-If the field returns a <em>null value</em> it means that the provider is not able to return this info at this step.</p>
+role="alert"><p>Please bear in mind that in the room structure response there is a <strong>refundable</strong> field. If that field is set to <em>false</em>, it means that the room has 100% cancellation cost, in other words, the room is NON-REFUNDABLE.
+If the field returns a <em>null value</em>,  it means that the seller is not able to return this info at this step. Some sellers do not return cancellation policies in availabilit. You can find out the specifities of each seller in their metadata.</p>
 </div>
 
 
