@@ -8815,6 +8815,25 @@
                 </a>
               </div>
               
+<pre><code>    |
+</code></pre>
+
+<p><strong>Version 1.0.23:</strong> Date 03/06/2020</p>
+
+<div class="release-types type-a">
+        <ul>
+<li><strong>Addition of new typified error.</strong> Adding error code 103 to identify when the error returned by the supplier is due to too many requests.</li>
+</ul>
+
+</div>
+
+<pre><code class="language-xml">&lt;ApplicationError&gt;
+    &lt;type&gt;103&lt;/type&gt;
+    &lt;description&gt;TooManyRequests&lt;/description&gt;
+    &lt;httpStatusCode&gt;429&lt;/httpStatusCode&gt;
+&lt;/ApplicationError&gt;
+</code></pre>
+
 <p><strong>Version 1.0.22:</strong> Date 30/09/2019</p>
 
 <div class="release-types type-a">
