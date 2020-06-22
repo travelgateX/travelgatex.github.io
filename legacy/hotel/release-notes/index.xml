@@ -24,9 +24,9 @@
       <description>
         
         
-        |  Version 1.0.23: Date 03/06/2020
- Addition of new typified error. Adding error code 103 to identify when the error returned by the supplier is due to too many requests.   &amp;lt;ApplicationError&amp;gt; &amp;lt;type&amp;gt;103&amp;lt;/type&amp;gt; &amp;lt;description&amp;gt;TooManyRequests&amp;lt;/description&amp;gt; &amp;lt;httpStatusCode&amp;gt;429&amp;lt;/httpStatusCode&amp;gt; &amp;lt;/ApplicationError&amp;gt;  Version 1.0.22: Date 30/09/2019
- Addition of tag AllowsNationality in MetaData. Adding AllowsNationality tag to MetaData response to inform if the supplier allows to receive the Nationality of the Holder of the booking.
+        |  Version 1.0.24: Date 22/06/2020
+ Addition of new typified error. Adding error code 303 to identify bookings that have not been confirmed in the supplier&amp;rsquo;s system. This error will come with the ResStatus element as UN to identify bookings that haven&amp;rsquo;t been confirmed only when the supplier can identify them.   &amp;lt;ApplicationError&amp;gt; &amp;lt;type&amp;gt;303&amp;lt;/type&amp;gt; &amp;lt;description&amp;gt;Booking not confirmed&amp;lt;/description&amp;gt; &amp;lt;/ApplicationError&amp;gt; &amp;lt;ResStatus&amp;gt;UN&amp;lt;/ResStatus&amp;gt;  Version 1.0.23: Date 03/06/2020
+ Addition of new typified error.
         
           [...]
         

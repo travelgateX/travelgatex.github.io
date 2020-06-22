@@ -8818,6 +8818,22 @@
 <pre><code>    |
 </code></pre>
 
+<p><strong>Version 1.0.24:</strong> Date 22/06/2020</p>
+
+<div class="release-types type-a">
+        <ul>
+<li><strong>Addition of new typified error.</strong> Adding error code 303 to identify bookings that have not been confirmed in the supplier&rsquo;s system. This error will come with the ResStatus element as UN to identify bookings that haven&rsquo;t been confirmed only when the supplier can identify them.</li>
+</ul>
+
+</div>
+
+<pre><code class="language-xml">&lt;ApplicationError&gt;
+    &lt;type&gt;303&lt;/type&gt;
+    &lt;description&gt;Booking not confirmed&lt;/description&gt;
+&lt;/ApplicationError&gt;
+&lt;ResStatus&gt;UN&lt;/ResStatus&gt;
+</code></pre>
+
 <p><strong>Version 1.0.23:</strong> Date 03/06/2020</p>
 
 <div class="release-types type-a">

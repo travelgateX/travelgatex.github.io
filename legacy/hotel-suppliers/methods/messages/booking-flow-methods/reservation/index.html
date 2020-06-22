@@ -9520,6 +9520,18 @@ It is the client&rsquo;s responsibility to check if the booking is OK.</li>
 
 <p><strong>Note:</strong> <em>Keep the parameters in the valuation response to include them in the reservation request.</em></p>
 
+<p><strong>Bookings not confirmed:</strong>
+Only when the ResStatus = UN and an application error is also returned with type = 303 we can ensure the booking has not been confirmed in the supplier&rsquo;s system.</p>
+
+<pre><code class="language-xml">&lt;ApplicationError&gt;
+    &lt;type&gt;303&lt;/type&gt;
+    &lt;description&gt;Booking not confirmed&lt;/description&gt;
+&lt;/ApplicationError&gt;
+&lt;ResStatus&gt;UN&lt;/ResStatus&gt;
+</code></pre>
+
+<p>If you receive ResStatus = UN but don&rsquo;t receive a 303 type application error then is the client&rsquo;s responsibility to check if the booking is OK as we can&rsquo;t ensure if the booking is confirmed or not.</p>
+
 <p><strong>MerchantPay, LaterPay, CardBookingPay &amp; CardCheckInPay</strong></p>
 
 <ul>
