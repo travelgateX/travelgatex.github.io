@@ -12196,7 +12196,7 @@ occupancy = 2 Adults, 0 child and 1 baby.</p>
 
 <p>Success Response</p>
 
-<pre><code class="language-xml">    &lt;OTA_HotelResNotifRS Timestamp = &quot;2018-09-12T23:09:08+03:00&quot;&gt;
+<pre><code class="language-xml">    &lt;OTA_HotelResNotifRS xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot; Timestamp = &quot;2018-09-12T23:09:08+03:00&quot;&gt;
       &lt;HotelReservations&gt;
         &lt;HotelReservation ResStatus = &quot;Confirmed&quot;&gt;
           &lt;ResGlobalInfo&gt;
@@ -12206,14 +12206,14 @@ occupancy = 2 Adults, 0 child and 1 baby.</p>
           &lt;/ResGlobalInfo&gt;
         &lt;/HotelReservation&gt;
       &lt;/HotelReservations&gt;
-      &lt;Success xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;/&gt;
+      &lt;Success/&gt;
     &lt;/OTA_HotelResNotifRS&gt;
 </code></pre>
 
 <p>Error Response</p>
 
-<pre><code class="language-xml">    &lt;OTA_HotelResNotifRS&gt;
-      &lt;Errors xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+<pre><code class="language-xml">    &lt;OTA_HotelResNotifRS xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot; Timestamp = &quot;2018-09-12T23:09:08+03:00&quot;&gt;
+      &lt;Errors&gt;
         &lt;Error ShortText = &quot;Confirmation error&quot; Code = &quot;50&quot;&gt;Hotel doesn't exist&lt;/Error&gt;
       &lt;/Errors&gt;
     &lt;/OTA_HotelResNotifRS&gt;
@@ -13397,15 +13397,15 @@ occupancy = 2 Adults, 0 child and 1 baby.</p>
 
 <p>Success Response</p>
 
-<pre><code class="language-xml">    &lt;OTA_HotelResNotifRS&gt;
-      &lt;Success xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;/&gt;
+<pre><code class="language-xml">    &lt;OTA_HotelResNotifRS xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot; Timestamp = &quot;2018-09-12T23:09:08+03:00&quot;&gt;
+      &lt;Success/&gt;
     &lt;/OTA_HotelResNotifRS&gt;
 </code></pre>
 
 <p>Error Response</p>
 
-<pre><code class="language-xml">    &lt;OTA_HotelResNotifRS&gt;
-      &lt;Errors xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+<pre><code class="language-xml">    &lt;OTA_HotelResNotifRS xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot; Timestamp = &quot;2018-09-12T23:09:08+03:00&quot;&gt;
+      &lt;Errors&gt;
         &lt;Error ShortText = &quot;Cancellation error&quot; Code = &quot;60&quot;&gt;Reservation doesn't exist&lt;/Error&gt;
       &lt;/Errors&gt;
     &lt;/OTA_HotelResNotifRS&gt;

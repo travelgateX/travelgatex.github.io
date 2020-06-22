@@ -8684,11 +8684,11 @@
 <li><a href="#error-list">Error list</a></li>
 <li><a href="#warning-list">Warning list</a>
 <ul>
-<li><a href="#hotelx-warnings">HotelX warnings</a></li>
-<li><a href="#connection-warnings">Connection warnings</a>
+<li><a href="#hotelx-warnings">HotelX warnings</a>
 <ul>
 <li><a href="#error-204-no-results-found">Error 204 - No Results Found</a></li>
 </ul></li>
+<li><a href="#connection-warnings">Connection warnings</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -8946,86 +8946,6 @@
 </tbody>
 </table>
 
-<h2 id="connection-warnings">Connection warnings</h2>
-
-<p>This type of warnings contains the supplier original error codes. This type of error codes are classified as warning codes because whenever more than 1 supplier is requested, some of those suppliers may return an error while others may return the response, accordingly. In those cases, if at least one of the suppliers returns results an error cannot be returned, hence those results will be displayed in the response, and for those accesses which have not returned results a warning will be returned.</p>
-
-<table>
-<thead>
-<tr>
-<th align="center">Code</th>
-<th align="center">Type</th>
-<th>Description</th>
-<th>Explanation</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center"><em>According to supplier error code</em></td>
-<td align="center">101</td>
-<td><em>According to the case</em></td>
-<td>System Exception (Exception not controlled or not classified as general exception).</td>
-</tr>
-
-<tr>
-<td align="center"><em>According to supplier error code</em></td>
-<td align="center">102</td>
-<td><em>According to the case</em></td>
-<td>It contains supplier original error and code, for more detail you need to see description or contact the supplier</td>
-</tr>
-
-<tr>
-<td align="center"><em>According to supplier error code</em></td>
-<td align="center">104</td>
-<td><em>According to the case</em></td>
-<td>Timeout, timeout due to supplier, not HotelX system</td>
-</tr>
-
-<tr>
-<td align="center"><em>According to supplier error code</em></td>
-<td align="center">105</td>
-<td><em>According to the case</em></td>
-<td>Communication Error with a specific supplier</td>
-</tr>
-
-<tr>
-<td align="center"><em>According to supplier error code</em></td>
-<td align="center">204</td>
-<td>No results found</td>
-<td>Supplier doesn&rsquo;t return any options</td>
-</tr>
-
-<tr>
-<td align="center"><em>According to supplier error code</em></td>
-<td align="center">205</td>
-<td><em>According to the case</em></td>
-<td>The Supplier doesn’t accept the occupancies configuration.</td>
-</tr>
-
-<tr>
-<td align="center"><em>According to supplier error code</em></td>
-<td align="center">206</td>
-<td><em>According to the case</em></td>
-<td>The Supplier doesn’t accept the dates RQ.</td>
-</tr>
-
-<tr>
-<td align="center"><em>According to supplier error code</em></td>
-<td align="center">207</td>
-<td><em>According to the case</em></td>
-<td>The Supplier doesn’t accept the request RQ.</td>
-</tr>
-
-<tr>
-<td align="center"><em>According to supplier error code</em></td>
-<td align="center">301</td>
-<td><em>According to the case</em></td>
-<td>Option not found in Quote.</td>
-</tr>
-</tbody>
-</table>
-
 <h3 id="error-204-no-results-found">Error 204 - No Results Found</h3>
 
 <p>Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.</p>
@@ -9036,9 +8956,16 @@
 <li>The product is not available for the dates in the request.</li>
 <li>The product is not available for the number of passengers selected in the request.</li>
 <li>The product is not available for the destination selected in the request.</li>
+<li>The product has been filtered by criteria applied in the pluggins.</li>
 </ul>
 
-<p>In case an error of this type is received, you should first contact the supplier directly on a commercial level and check with them whether there should be availability for the product you are trying to obtain with the specific search criteria (dates, passenger quantity, passenger age, destination you have chosen, etc.). In case the supplier confirms that there should be availability but you are still not obtaining it, you should contact our Customer Care department.</p>
+<p>In case an error of this type is received, you should first contact the supplier directly on a commercial level and check with them whether there should be availability for the product you are trying to obtain with the specific search criteria (dates, passenger quantity, passenger age, destination you have chosen, etc.). In case the supplier confirms that there should be availability but you are still not obtaining it, you should review the criteria set out in the pluggins you may be using, if you still can&rsquo;t find the problem please you should contact our Customer Care department.</p>
+
+<h2 id="connection-warnings">Connection warnings</h2>
+
+<p>This type of warnings contains the supplier original error codes. This type of error codes are classified as warning codes because whenever more than 1 supplier is requested, some of those suppliers may return an error while others may return the response, accordingly. In those cases, if at least one of the suppliers returns results an error cannot be returned, hence those results will be displayed in the response, and for those accesses which have not returned results a warning will be returned.</p>
+
+<p><a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/#error-codes" rel="nofollow" target="_blank">See list of supplier error codes</a></p>
 
 <hr/>
 
