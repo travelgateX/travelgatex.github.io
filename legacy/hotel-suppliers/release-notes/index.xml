@@ -25,8 +25,9 @@
         
         
         Version 1.0.24: Date 22/06/2020
- Addition of new typified error. Adding error code 303 to identify bookings that have not been confirmed in the supplier&amp;rsquo;s system. This error will come with the ResStatus element as UN to identify bookings that haven&amp;rsquo;t been confirmed only when the supplier can identify them.   &amp;lt;ApplicationError&amp;gt; &amp;lt;type&amp;gt;303&amp;lt;/type&amp;gt; &amp;lt;description&amp;gt;Booking not confirmed&amp;lt;/description&amp;gt; &amp;lt;/ApplicationError&amp;gt; &amp;lt;ResStatus&amp;gt;UN&amp;lt;/ResStatus&amp;gt;  Version 1.0.23: Date 03/06/2020
- Addition of new typified error. Adding error code 103 to identify when the error returned by the supplier is due to too many requests.
+ Addition of new rate conditions. 2 new rate rule condition types added to the possible returned values:     Codes Description     mobile Rate applicable to options booked by mobile.   warranty Rate applicable to options with cancellation warranty.    See full list at Lists of Data page.
+ Version 1.0.24: Date 22/06/2020
+ Addition of new typified error.
         
           [...]
         
