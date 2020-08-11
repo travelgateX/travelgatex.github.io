@@ -8851,23 +8851,31 @@
 <li><strong>Encoding</strong>: UTF-8</li>
 <li><strong>File Name</strong>: [Context Source]_sequential_genvcc.csv</li>
 
-<li><p><strong>Header Row</strong>: IdRule,ClientToken,NoClientToken,Supplier,NoSupplier,Hotels,NotHotels,Access,NoAccess,CardType,VccAccess</p>
+<li><p><strong>Header Row</strong>: IdRule,ClientToken,NoClientToken,Supplier,NoSupplier,Hotels,NotHotels,Access,NoAccess,CardType,VccAccess</p></li>
+
+<li><p>IdRule: Unique identifier of the rule. Used only for debug.</p></li>
+
+<li><p>Criteria columns:</p>
 
 <ul>
-<li>IdRule: Unique identifier of the rule.</li>
+<li>ClientToken, NoClientToken: List of <code>clienttoken</code> separated by &lsquo;;&rsquo;</li>
+<li>Supplier, NoSupplier: List of <code>supplier</code> codes separated by &lsquo;;&rsquo;</li>
+<li>Hotels, NoHotels: List of <code>hotels</code> codes separated by &lsquo;;&rsquo;</li>
+<li>Access, NoAccess: List of <code>access</code> codes separated by &lsquo;;&rsquo;</li>
+</ul></li>
+
+<li><p>Result columns:</p>
+
+<ul>
+<li>CardType: Card Type of the virtual credit card to be created</li>
+<li>VccAccess: Virtual Credit Card access
+<br />
+<br /></li>
 </ul>
 
-<p>Criteria rows:
-* ClientToken, NoClientToken: List of <code>clienttoken</code> separated by &lsquo;;&rsquo;
-* Supplier, NoSupplier: List of <code>supplier</code> codes separated by &lsquo;;&rsquo;
-* Hotels, NoHotels: List of <code>hotels</code> codes separated by &lsquo;;&rsquo;
-* Access, NoAccess: List of <code>access</code> codes separated by &lsquo;;&rsquo;
-* CardType: Card Type of the virtual credit card to be created
-* VccAccess: Virtual Credit Card access</p>
-
-<p>You should bear in mind that this file is a collection of rules and we chose in every Book the first rule that matches the criteria sent in the Query. <strong>You should specify the more restrictive rules on the top of the file.</strong>
+<p><em>You should bear in mind that this file is a collection of rules and we chose in every Book the first rule that matches the criteria sent in the Query. <strong>You should specify the more restrictive rules on the top of the file.</strong>
 If there is no value for any rule criteria row, it means that any value in the request matches this row.
-It is important to indicate the contexts used in values on the rule criteria to improve rule matching.</p></li>
+It is important to indicate the contexts used in values on the rule criteria to improve rule matching.</em></p></li>
 
 <li><p><strong>Delimiter</strong>:  Comma (&ldquo;,&rdquo;)</p></li>
 
