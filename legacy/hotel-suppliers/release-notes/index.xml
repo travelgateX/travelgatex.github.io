@@ -24,10 +24,9 @@
       <description>
         
         
-        Version 1.0.24: Date 22/06/2020
- Addition of new rate conditions. 2 new rate rule condition types added to the possible returned values:     Codes Description     mobile Rate applicable to options booked by mobile.   warranty Rate applicable to options with cancellation warranty.    See full list at Lists of Data page.
- Version 1.0.24: Date 22/06/2020
- Addition of new typified error.
+        Version 1.0.26: Date 01/09/2020
+ Hotel code in Reservation Read Response. Hotel code not mandatory at Hotel element level in Reservation Read Response.   Version 1.0.24: Date 22/06/2020
+ Addition of new rate conditions. 2 new rate rule condition types added to the possible returned values:     Codes Description     mobile Rate applicable to options booked by mobile.   warranty Rate applicable to options with cancellation warranty.
         
           [...]
         
