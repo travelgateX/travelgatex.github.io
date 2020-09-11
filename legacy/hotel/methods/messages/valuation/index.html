@@ -9365,6 +9365,55 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>String</td>
 <td>Contains the cancellation penalties in free text (see <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
+
+<tr>
+<td>Option</td>
+<td>0..1</td>
+<td>Option quoted</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Option/Rooms</td>
+<td>0..1</td>
+<td></td>
+<td>Rooms in the option (room list).</td>
+</tr>
+
+<tr>
+<td>Option/Rooms/Room</td>
+<td>1..n</td>
+<td></td>
+<td>Room details.</td>
+</tr>
+
+<tr>
+<td>@id</td>
+<td>1</td>
+<td>String</td>
+<td>Room ID.</td>
+</tr>
+
+<tr>
+<td>@roomCandidateRefId</td>
+<td>1</td>
+<td>Integer</td>
+<td>Room candidate ID.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
+<td>String</td>
+<td>Room code has to be unique to identify a specific room type. If the RoomList Method is implemented, you can find the description of the room type in the RoomList.</td>
+</tr>
+
+<tr>
+<td>@description</td>
+<td>0..1</td>
+<td>String</td>
+<td>Room description. Mandatory if the supplier doesn&rsquo;t allow RoomList Method. If the supplier implements RoomList Method, this field could be empty.</td>
+</tr>
 </tbody>
 </table>
 
