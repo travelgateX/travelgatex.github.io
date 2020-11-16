@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Booking Flow Messages</title>
+    <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/</link>
+    <description>Recent changes in Booking Flow Messages on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inventory-X: HotelResRetrieve</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/hotelresretrieve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/hotelresretrieve/</guid>
+      <description>
+        
+        
+        Providers will send a HotelResRetrieveRQ message to retrieve a list of a seller&amp;rsquo;s reservations.
+HotelResRetrieveRQ XML Example
+&amp;lt;HotelResRetrieve&amp;gt; &amp;lt;request&amp;gt; &amp;lt;POS&amp;gt; &amp;lt;Source&amp;gt; &amp;lt;RequestorID ID = &amp;quot;Provider1&amp;quot;/&amp;gt; &amp;lt;BookingChannel&amp;gt; &amp;lt;CompanyName Code = &amp;quot;ClientTravelAgency1&amp;quot;/&amp;gt; &amp;lt;/BookingChannel&amp;gt; &amp;lt;/Source&amp;gt; &amp;lt;/POS&amp;gt; &amp;lt;UniqueID ID = &amp;quot;123456&amp;quot; ID_Context = &amp;quot;Client&amp;quot;/&amp;gt; &amp;lt;ReadRequests&amp;gt; &amp;lt;HotelReadRequest HotelCode=&amp;quot;1608&amp;quot;&amp;gt; &amp;lt;SelectionCriteria Start=&amp;quot;2013-11-25&amp;quot; End=&amp;quot;2013-11-28&amp;quot; DateType=&amp;quot;DepartureDate&amp;quot;/&amp;gt; &amp;lt;/HotelReadRequest&amp;gt; &amp;lt;HotelReadRequest&amp;gt; &amp;lt;SelectionCriteria Start = &amp;quot;2015-12-23&amp;quot; End = &amp;quot;2015-12-28&amp;quot; DateType = &amp;quot;ArrivalDate&amp;quot;/&amp;gt; &amp;lt;/HotelReadRequest&amp;gt; &amp;lt;/ReadRequests&amp;gt; &amp;lt;/request&amp;gt; &amp;lt;/HotelResRetrieve&amp;gt;     Element Number Type Description     HotelResRetrieve/request 1  Root Node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: HotelResNotif</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/hotelresnotif/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/hotelresnotif/</guid>
+      <description>
+        
+        
+        Only implemented if the Channel Manager allows reservation delivery.
+During the booking process, we will send a HotelResNotifRQ message to the Channel to inform about the reservations. The Channel Manager will process the booking information and will inform us of the reservation status. TGX will process the response from the Channel&amp;rsquo;s system and will proceed with the reservation process, returning the status to the seller.
+If the Channel has the booking locator of the reservation, they can send it in the HotelResNotifRS.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: CancelNotif</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/cancelnotif/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/cancelnotif/</guid>
+      <description>
+        
+        
+        Only implemented if the Channel Manager allows cancellation delivery.
+During the cancellation process, we will send a CancelNotifRQ message to the Channel Manager to inform of the cancellation. The Channel Manager will process the cancellation information and will inform us of the reservation status. TGX will process the response from the Channel&amp;rsquo;s system and will proceed with the cancellation process.
+Note that if the cancellation fails in the Channel Manager&amp;rsquo;s system.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

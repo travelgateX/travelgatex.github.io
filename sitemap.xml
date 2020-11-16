@@ -1941,6 +1941,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/codelist/setup-product-load-errors/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/alerts-x/reference/inputobjects/errorcodeinput/</loc>
   </url>
   
@@ -2481,6 +2485,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/product-load/hotelavailnotif/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelbookinput/</loc>
   </url>
   
@@ -2646,6 +2654,14 @@
   
   <url>
     <loc>https://docs.travelgatex.com/travelgatex/reference/objects/hotelquote/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/set-up/hotelrateplaninventoryretrieve/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/hotelresretrieve/</loc>
   </url>
   
   <url>
@@ -3841,10 +3857,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/notify-messages/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/hotel-x/reference/objects/occupancy/</loc>
   </url>
   
@@ -4789,7 +4801,7 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/inventory-x/how-to-guides/quick-start/</loc>
+    <loc>https://docs.travelgatex.com/inventory-x/quick-start/</loc>
   </url>
   
   <url>
@@ -5418,6 +5430,10 @@
   
   <url>
     <loc>https://docs.travelgatex.com/travelgatex/reference/objects/servicestatus/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/set-up/</loc>
   </url>
   
   <url>
@@ -6296,6 +6312,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/codelist/booking-flow-errors/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/channel-x/faq/</loc>
   </url>
   
@@ -6318,6 +6338,18 @@
   
   <url>
     <loc>https://docs.travelgatex.com/insights-x/api/hotelx/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/product-load/hotelavailretrieve/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/set-up/hotelrateplaninventorynotif/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/hotelresnotif/</loc>
   </url>
   
   <url>
@@ -6413,6 +6445,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/product-load/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/travelgatex/concepts/quotas-limits/</loc>
   </url>
   
@@ -6469,14 +6505,6 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/inventory-x/how-to-guides/resources/</loc>
-  </url>
-  
-  <url>
-    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/retrieve-messages/</loc>
-  </url>
-  
-  <url>
     <loc>https://docs.travelgatex.com/legacy/service-endpoints/</loc>
   </url>
   
@@ -6497,7 +6525,7 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/inventory-x/how-to-guides/quick-start/typical-scenario/</loc>
+    <loc>https://docs.travelgatex.com/inventory-x/quick-start/typical-scenario/</loc>
   </url>
   
   <url>
@@ -6554,7 +6582,15 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/hotel-x/plugins/booking_persistence/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/booking-flow/cancelnotif/</loc>
   </url>
   
   <url>
@@ -6606,7 +6642,7 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/inventory-x/how-to-guides/</loc>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/product-load/hotelrateplannotif/</loc>
   </url>
   
   <url>
@@ -6643,7 +6679,7 @@
   </url>
   
   <url>
-    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/messages-ota-xsd/</loc>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/codelist/meal-plan-codes/</loc>
   </url>
   
   <url>
@@ -6816,6 +6852,10 @@
   </url>
   
   <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/product-load/hotelrateplanretrieve/</loc>
+  </url>
+  
+  <url>
     <loc>https://docs.travelgatex.com/community/integrations-changelog/integration-changelog/</loc>
   </url>
   
@@ -6858,6 +6898,14 @@
   
   <url>
     <loc>https://docs.travelgatex.com/legacy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/messages/messages-ota-xsd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/codelist/payment-type-codes/</loc>
   </url>
   
   <url>
@@ -6923,6 +6971,10 @@
   
   <url>
     <loc>https://docs.travelgatex.com/channel-x/release-notes/breaking-changes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docs.travelgatex.com/inventory-x/api-reference/codelist/credit-cards/</loc>
   </url>
   
   <url>

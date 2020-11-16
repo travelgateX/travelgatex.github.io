@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Code List</title>
+    <link>https://docs.travelgatex.com/inventory-x/api-reference/codelist/</link>
+    <description>Recent changes in Code List on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/codelist/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/inventory-x/api-reference/codelist/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inventory-X: Error Codes Set-up and Product load</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/codelist/setup-product-load-errors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/codelist/setup-product-load-errors/</guid>
+      <description>
+        
+        
+        List of the possible errors that you could receive setting up and loading the product. That is in HotelRatePlanInventoryNotif, HotelRatePlanInventoryRetrieve, HotelAvailNotif, HotelAvailNotif, HotelRatePlanNotif or HotelRatePlanRetrieve.
+   Error Code Error Description     -1 Validation error   1 POS credentials not found   2 HotelCode or RatePlanList not found   3 Rates not found   4 Incomplete Rate values   6 Incomplete AvailStatusMessage StatusApplicationControl Values   7 Incomplete AdditionalGuestAmount values   8 SellableProduct not found   9 Room not found in SellableProduct    
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: Error Codes Booking Flow</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/codelist/booking-flow-errors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/codelist/booking-flow-errors/</guid>
+      <description>
+        
+        
+        List of the possible errors that you could receive in the booking flow messages, that are HotelResNotif, CancelNotif or HotelResRetrieve.
+   Error Code Error Description     -1 Unexpected error   1 Validation error   10 HotelCode not found   11 Invalid Dates   14 Invalid Derived Rate   22 Rooms not found   23 Rates not found   30 Occupancy Error   31 RatePlan_Rate Error   38 POS credentials not found   50 Confirmation error   60 Cancellation error    
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: Meal Plan Codes (OTA MPT)</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/codelist/meal-plan-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/codelist/meal-plan-codes/</guid>
+      <description>
+        
+        
+           Code Description     1 All inclusive   2 American   3 Bed &amp;amp; breakfast   4 Buffet breakfast   5 Caribbean breakfast   6 Continental breakfast   7 English breakfast   8 European plan   9 Family plan   10 Full board   11 Full breakfast   12 Half board/modified American plan   13 As brochured   14 Room only   15 Self catering   16 Bermuda   17 Dinner bed and breakfast plan   18 Family American   19 Breakfast   20 Modified   255 Full board And Drinks   256 Half board And Drinks   257 All inclusive Premium   258 Gala Dinner   259 All Inclusive Light   260 Bed and breakfast + Half board    
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: Payment Type Codes</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/codelist/payment-type-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/codelist/payment-type-codes/</guid>
+      <description>
+        
+        
+        Payment Type Code Description     MerchantPayment The customer pays the client and the client will pay the provider.   DirectPayment The customer will have to use a credit card as a guarantee for the hotel and the payment will be done by the customer at check-in.   BookingDatePayment The client will use a credit card with the exact amount of the booking so they can pay the provider/hotel.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: Credit Cards Codes</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/codelist/credit-cards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/codelist/credit-cards/</guid>
+      <description>
+        
+        
+           Codes Names     VI Visa   AX American Express   BC BC Card   CA MasterCard   CB Carte Blanche   CU China Union Pay   DS Discover   DC Diners Club   T Carta Si   R Carte Bleue   N Dankort   L Delta   E Electron   JC Japan Credit Bureau   TO Maestro   S Switch   EC Electronic Cash   EU EuroCard   TP Universal air travel card   OP optima   ER Air Canada/RnRoute   XS Access   O Others    
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
