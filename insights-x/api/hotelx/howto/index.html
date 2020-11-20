@@ -8764,9 +8764,15 @@
 <ul>
 <li><a href="#example-1">Example:</a></li>
 </ul></li>
-<li><a href="#file-format">File Format</a>
+<li><a href="#file-format-rate-board-room">File Format (RATE / BOARD / ROOM)</a>
 <ul>
 <li><a href="#example-2">Example:</a></li>
+<li><a href="#example-3">Example:</a></li>
+</ul></li>
+<li><a href="#file-format-hotel-room">File Format (HOTEL_ROOM)</a>
+<ul>
+<li><a href="#example-4">Example:</a></li>
+<li><a href="#example-5">Example:</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -8926,13 +8932,13 @@
 
 <li><p><strong>mappingReport:</strong> Type of report that will be requested. Below the possible values:</p></li>
 
+<li><p><strong>RATE</strong></p></li>
+
 <li><p><strong>BOARD</strong></p></li>
 
 <li><p><strong>ROOM</strong></p></li>
 
-<li><p><strong>ROOM_HOTEL</strong></p></li>
-
-<li><p><strong>RATE</strong></p></li>
+<li><p><strong>HOTEL_ROOM</strong></p></li>
 </ul></li>
 
 <li><p><strong>Optional fields:</strong></p>
@@ -8951,7 +8957,7 @@
     hotelXMappingReport(
       where: {
         requestDate: { gte: &quot;2020-02-02&quot;, lte: &quot;2020-02-04&quot; }
-        mappingReport: ROOM_HOTEL
+        mappingReport: BOARD
       }
     ) {
       data {
@@ -8988,7 +8994,7 @@
     &quot;insights&quot;: {
       &quot;hotelXMappingReport&quot;: {
         &quot;data&quot;: {
-          &quot;url&quot;: &quot;https://storage.cloud.google.com/report-availability/45782.csv&quot;
+          &quot;url&quot;: &quot;http://storage...../31965.csv&quot;
         }
       }
     }
@@ -8996,27 +9002,50 @@
 }
 </code></pre>
 
-<h1 id="file-format">File Format</h1>
+<h1 id="file-format-rate-board-room">File Format (RATE / BOARD / ROOM)</h1>
 
 <p>The file contains 6 columns separated by comma:</p>
 
 <ul>
 <li><strong>supplier</strong> Supplier code.</li>
-<li><strong>context</strong> Context code of map.</li>
-<li><strong>src_code</strong> Suppliers item&rsquo;s code (board/rooms/etc).</li>
+<li><strong>src_code</strong> Suppliers item&rsquo;s code (rate/board/room/etc).</li>
+<li><strong>src_description</strong> Suppliers item&rsquo;s description (rate/board/room/etc).</li>
+<li><strong>context</strong> Context code to map.</li>
 <li><strong>dst_code</strong> Context code. This column will be empty when src_code wasn&rsquo;t found in mapping file.</li>
 <li><strong>last_hit</strong> Date of last appearance.</li>
 <li><strong>hits</strong> Quantity of times that code was mapped.</li>
 </ul>
 
+<p>Field <strong>src_description</strong> is an array of json struct with next fields:</p>
+
+<ul>
+<li><strong>l</strong> Language of returned description.</li>
+<li><strong>d</strong> Description returned by the supplier (rate/board/room/etc).</li>
+</ul>
+
 <h2 id="example-2">Example:</h2>
+
+<pre><code class="language-json">[
+  {
+    &quot;l&quot;: &quot;ES&quot;,
+    &quot;d&quot;: &quot;Spanish description&quot;
+  },  
+  {
+    &quot;l&quot;: &quot;EN&quot;,
+    &quot;d&quot;: &quot;English description&quot;
+  }
+]
+</code></pre>
+
+<h2 id="example-3">Example:</h2>
 
 <table>
 <thead>
 <tr>
 <th align="left">supplier</th>
-<th align="left">context</th>
 <th align="left">src_code</th>
+<th align="left">src_description</th>
+<th align="left">context</th>
 <th align="left">dst_code</th>
 <th align="left">last_hit</th>
 <th align="left">hits</th>
@@ -9026,8 +9055,9 @@
 <tbody>
 <tr>
 <td align="left">SUP1</td>
-<td align="left">CTX</td>
 <td align="left">full</td>
+<td align="left">[{&ldquo;l&rdquo;: &ldquo;ES&rdquo;, &ldquo;d&rdquo;: &ldquo;Full Board&rdquo;}]</td>
+<td align="left">CTX</td>
 <td align="left">FB</td>
 <td align="left">2020-02-04</td>
 <td align="left">24565</td>
@@ -9035,8 +9065,9 @@
 
 <tr>
 <td align="left">SUP1</td>
-<td align="left">CTX</td>
 <td align="left">extra</td>
+<td align="left">[{&ldquo;l&rdquo;: &ldquo;ES&rdquo;, &ldquo;d&rdquo;: &ldquo;Extra Drinks&rdquo;}]</td>
+<td align="left">CTX</td>
 <td align="left"></td>
 <td align="left">2020-02-03</td>
 <td align="left">284</td>
@@ -9044,8 +9075,9 @@
 
 <tr>
 <td align="left">SUP2</td>
-<td align="left">CTX</td>
 <td align="left">half_board</td>
+<td align="left">[{&ldquo;l&rdquo;: &ldquo;ES&rdquo;, &ldquo;d&rdquo;: &ldquo;Half Board&rdquo;}]</td>
+<td align="left">CTX</td>
 <td align="left">HB</td>
 <td align="left">2020-02-02</td>
 <td align="left">2155</td>
@@ -9053,8 +9085,9 @@
 
 <tr>
 <td align="left">SUP2</td>
-<td align="left">CTX</td>
 <td align="left">all_inclusive</td>
+<td align="left">[{&ldquo;l&rdquo;: &ldquo;ES&rdquo;, &ldquo;d&rdquo;: &ldquo;All Inclusive&rdquo;}]</td>
+<td align="left">CTX</td>
 <td align="left">AI</td>
 <td align="left">2020-02-04</td>
 <td align="left">27</td>
@@ -9062,7 +9095,118 @@
 </tbody>
 </table>
 
-<p>File can be downloaded directly from the browser.</p>
+<h1 id="file-format-hotel-room">File Format (HOTEL_ROOM)</h1>
+
+<p>The file contains 10 columns separated by comma:</p>
+
+<ul>
+<li><strong>supplier</strong> Supplier code.</li>
+<li><strong>supplier_context</strong> Supplier&rsquo;s context.</li>
+<li><strong>supplier_hotel</strong> Hotel&rsquo;s code using supplier context.</li>
+<li><strong>src_code</strong> Supplier&rsquo;s room code.</li>
+<li><strong>src_description</strong> Supplier&rsquo;s room  description.</li>
+<li><strong>context</strong> Context code to map.</li>
+<li><strong>context_hotel</strong> Hotel code using map&rsquo;s context.</li>
+<li><strong>dst_code</strong> Room code using map&rsquo;s context. This column will be empty when src_code wasn&rsquo;t found in mapping file.</li>
+<li><strong>last_hit</strong> Date of last appearance.</li>
+<li><strong>hits</strong> Quantity of times that code was mapped.</li>
+</ul>
+
+<p>Field <strong>src_description</strong> is an array of json struct with next fields:</p>
+
+<ul>
+<li><strong>l</strong> Language of returned description.</li>
+<li><strong>d</strong> Description returned by the supplier (rate/board/room/etc).</li>
+</ul>
+
+<h2 id="example-4">Example:</h2>
+
+<pre><code class="language-json">[
+  {
+    &quot;l&quot;: &quot;ES&quot;,
+    &quot;d&quot;: &quot;Spanish description&quot;
+  },  
+  {
+    &quot;l&quot;: &quot;EN&quot;,
+    &quot;d&quot;: &quot;English description&quot;
+  }
+]
+</code></pre>
+
+<h2 id="example-5">Example:</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left">supplier</th>
+<th align="left">supplier_context</th>
+<th align="left">supplier_hotel</th>
+<th align="left">src_code</th>
+<th align="left">src_description</th>
+<th align="left">context</th>
+<th align="left">context_hotel</th>
+<th align="left">dst_code</th>
+<th align="left">last_hit</th>
+<th align="left">hits</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">SUP1</td>
+<td align="left">CTX1</td>
+<td align="left">hot1</td>
+<td align="left">D2</td>
+<td align="left">[{&ldquo;l&rdquo;: &ldquo;ES&rdquo;, &ldquo;d&rdquo;: &ldquo;Double Room&rdquo;}]</td>
+<td align="left">CTX</td>
+<td align="left">chot1</td>
+<td align="left">D</td>
+<td align="left">2020-02-04</td>
+<td align="left">24565</td>
+</tr>
+
+<tr>
+<td align="left">SUP1</td>
+<td align="left">CTX1</td>
+<td align="left">hot1</td>
+<td align="left">T3</td>
+<td align="left">[{&ldquo;l&rdquo;: &ldquo;ES&rdquo;, &ldquo;d&rdquo;: &ldquo;Extra Drinks&rdquo;}]</td>
+<td align="left">CTX</td>
+<td align="left">chot1</td>
+<td align="left"></td>
+<td align="left">2020-02-03</td>
+<td align="left">284</td>
+</tr>
+
+<tr>
+<td align="left">SUP1</td>
+<td align="left">CTX1</td>
+<td align="left">hot2</td>
+<td align="left">D2</td>
+<td align="left">[{&ldquo;l&rdquo;: &ldquo;ES&rdquo;, &ldquo;d&rdquo;: &ldquo;Half Board&rdquo;}]</td>
+<td align="left">CTX</td>
+<td align="left">chot2</td>
+<td align="left">D</td>
+<td align="left">2020-02-02</td>
+<td align="left">2155</td>
+</tr>
+
+<tr>
+<td align="left">SUP1</td>
+<td align="left">CTX1</td>
+<td align="left">hot2</td>
+<td align="left">D2P</td>
+<td align="left">[{&ldquo;l&rdquo;: &ldquo;ES&rdquo;, &ldquo;d&rdquo;: &ldquo;All Inclusive&rdquo;}]</td>
+<td align="left">CTX</td>
+<td align="left">chot2</td>
+<td align="left">DP</td>
+<td align="left">2020-02-04</td>
+<td align="left">27</td>
+</tr>
+</tbody>
+</table>
+
+<p>Files can be downloaded directly from the browser.</p>
 
 <hr/>
 
