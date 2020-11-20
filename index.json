@@ -11407,7 +11407,7 @@
 	"title": "Booking Flow Messages",
 	"tags": [],
 	"description": "Booking Flow Messages",
-	"content": "Providers can receive an instant API notification from TGX with HotelResNotif message for bookings and CancelNotif message for cancellations. If Provider doesn\u0026rsquo;t allow push notifications to their system, it is possible to implement HotelResRetrieve messages in order to obtain a list of bookings from Inventory-X system.\n  HotelResRetrieve HotelResRetrieve message\n     HotelResNotif HotelResNotif message\n     CancelNotif CancelNotif message\n    "
+	"content": "Providers can receive an instant API notification from TGX with HotelResNotif message for bookings and CancelNotif message for cancellations. If Provider doesn\u0026rsquo;t allow push notifications to their system, it is possible to implement HotelResRetrieve messages in order to obtain a list of bookings from Inventory-X system.\nPlease notice that card payments are only allowed if Provider implements HotelResNotif message   HotelResRetrieve HotelResRetrieve message\n     HotelResNotif HotelResNotif message\n     CancelNotif CancelNotif message\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/hotel-x/plugins/booking_persistence/",
