@@ -8938,6 +8938,7 @@
 <li>Room Map </li>
 <li>Rate Map </li>
 <li>Amenity Map </li>
+<li>Promotion Map</li>
 </ul>
 
 <p>Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:</p>
@@ -9011,6 +9012,11 @@
 <td>Amenity</td>
 <td>[Context Source]_[Context Destination]_amenity_map.csv</td>
 </tr>
+
+<tr>
+<td>Promotion</td>
+<td>[Context Source]_[Context Destination]\promotion_map.csv</td>
+</tr>
 </tbody>
 </table>
 
@@ -9049,6 +9055,11 @@
 <td>Amenity</td>
 <td>/F[folder code]_[unique code]/HotelX_[unique code]/Maps/Amenity/</td>
 </tr>
+
+<tr>
+<td>Promotion</td>
+<td>/F[folder code]_[unique code]/HotelX_[unique code]/Maps/Promotion/</td>
+</tr>
 </tbody>
 </table>
 
@@ -9078,8 +9089,8 @@
 
 <p>There are two ways of using mapping in Booking-Flow:
 * If the context used in the query is different from supplier/s context that are used in the operation.
-In that case, HotelX will try to map all entities(hotel, board, etc.)(but amenities) to query&rsquo;s context.
-* If the mapping plugin is requested (only boards and amenities), only entities requested in the query will be tried to map.</p>
+In that case, HotelX will try to map all entities(hotel, board, etc.)(but amenities and promotions) to query&rsquo;s context.
+* If the mapping plugin is requested (only boards, amenities and promotions), only entities requested in the query will be tried to map.</p>
 
 <p><strong>Important</strong>: Mapping in booking-flow is only usable in Search service.<br><br>
 Here you have the nodes where you can find mapped codes in Search response:<br><br>
@@ -9087,8 +9098,8 @@ Here you have the nodes where you can find mapped codes in Search response:<br><
 <strong>Board</strong>: search.options[</em>].boardCode (boardCodeSupplier will contain the board&rsquo;s code in supplier&rsquo;s context)<br>
 <strong>Room</strong>: search.options[<em>].rooms[</em>].code (supplierCode will contain the room&rsquo;s code in supplier&rsquo;s context)<br>
 <strong>Rate</strong>: search.options[<em>].rooms[</em>].ratePlans[<em>].code (supplierCode will contain the rate plan&rsquo;s code of the room in supplier&rsquo;s context)<br>
-<strong>Amenity</strong>: search.options[</em>].amenities[<em>].code and/or inside rooms[</em>]
-(amenitySupplierCode will contain the amenity&rsquo;s code in supplier context)<br></p>
+<strong>Amenity</strong>: search.options[</em>].amenities[*].code and/or inside rooms<a href="amenitySupplierCode will contain the amenity's code in supplier context" rel="nofollow" target="_blank">*</a><br>
+<strong>Promotion</strong>: search.options[*].promotionCode (promotionCodeSupplier will contain the promotion&rsquo;s code in supplier&rsquo;s context)<br></p>
 
 <p>Examples of plugin that executes board and/or amenity mapping:<br></p>
 
@@ -9116,6 +9127,21 @@ Here you have the nodes where you can find mapped codes in Search response:<br><
             {
                 &quot;type&quot;: &quot;AMENITY_MAP&quot;,
                 &quot;name&quot;: &quot;amenity_mapX&quot;
+            }
+        ]
+    }
+}
+</code></pre>
+
+<p><strong>Promotions</strong>:</p>
+
+<pre><code class="language-json">{
+    &quot;plugins&quot;: {
+        &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
+        &quot;pluginsType&quot;: [
+            {
+                &quot;type&quot;: &quot;PROMOTION_MAP&quot;,
+                &quot;name&quot;: &quot;promotion_mapX&quot;
             }
         ]
     }
