@@ -8772,6 +8772,14 @@
 <li><a href="#markets">Markets</a></li>
 <li><a href="#nationality">Nationality</a></li>
 <li><a href="#payment-types">Payment Types</a></li>
+<li><a href="#electronic-commerce-indicator-codes">Electronic Commerce Indicator Codes</a>
+<ul>
+<li><a href="#visa-american-express-diners-club-and-jcb">Visa, American Express, Diners Club and JCB</a></li>
+<li><a href="#mastercard">MasterCard</a></li>
+</ul></li>
+<li><a href="#pares-status">PARes Status</a></li>
+<li><a href="#card-enrollment-status">Card Enrollment Status</a></li>
+<li><a href="#signature-verification-status">Signature Verification Status</a></li>
 <li><a href="#rate-conditions">Rate Conditions</a></li>
 </ul></li>
 </ul></li>
@@ -9217,6 +9225,158 @@
 <tr>
 <td>PayX</td>
 <td>The payment is managed by TravelgateX&rsquo;s payment system.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="electronic-commerce-indicator-codes">Electronic Commerce Indicator Codes</h3>
+
+<h4 id="visa-american-express-diners-club-and-jcb">Visa, American Express, Diners Club and JCB</h4>
+
+<table>
+<thead>
+<tr>
+<th><strong>ECI Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>05</td>
+<td>3DS authentication was successful, transactions are secured by 3DS.</td>
+</tr>
+
+<tr>
+<td>06</td>
+<td>Authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS.</td>
+</tr>
+
+<tr>
+<td>07</td>
+<td>3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="mastercard">MasterCard</h4>
+
+<table>
+<thead>
+<tr>
+<th><strong>ECI Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>00</td>
+<td>3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.</td>
+</tr>
+
+<tr>
+<td>01</td>
+<td>3DS authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS, or cardholder ran out of time to authorize.</td>
+</tr>
+
+<tr>
+<td>02</td>
+<td>3DS authentication is successful.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="pares-status">PARes Status</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Status Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Y</td>
+<td>Successful Authentication.</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td>Failed Authentication.</td>
+</tr>
+
+<tr>
+<td>U</td>
+<td>Unable to complete Authentication.</td>
+</tr>
+
+<tr>
+<td>A</td>
+<td>Successful Attempts Transaction.</td>
+</tr>
+
+<tr>
+<td>B</td>
+<td>You can proceed to authorisation using the information received.</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td>Authentication Rejected.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="card-enrollment-status">Card Enrollment Status</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Status Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Y</td>
+<td>Cardholder is enrolled. Bank is participating in 3-D Secure protocol and will return the ACSUrl.</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td>Cardholder Not Participating – Cardholder is not enrolled.</td>
+</tr>
+
+<tr>
+<td>U</td>
+<td>Unavailable. The DS or ACS is not available for authentication at the time of the request.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="signature-verification-status">Signature Verification Status</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Status Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Y</td>
+<td>Signature of the PARes has been validated successfully.</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td>PARes could not be validated.</td>
 </tr>
 </tbody>
 </table>

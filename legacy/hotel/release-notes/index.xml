@@ -24,9 +24,8 @@
       <description>
         
         
-        |  Version 1.0.26: Date 01/09/2020
- Hotel code in Reservation Read Response. Hotel code not mandatory at Hotel element level in Reservation Read Response.   Version 1.0.25: Date 28/07/2020
- Addition of new rate conditions. 2 new rate rule condition types added to the possible returned values:     Codes Description     mobile Rate applicable to options booked by mobile.   warranty Rate applicable to options with cancellation warranty.
+        Version 1.0.27: Date 23/12/2020
+ Strong Customer Authentication (3DS). 3DS data can now be included with a Payment Card in a reservation in reservations alongside payment card data. You can find new field &amp;ldquo;ThreeDomainService&amp;rdquo; specification in Reservation request.    Virtual Credit Cards (VCC). Extra information about Virtual Credit Cards can now be included with a Payment Card in a reservation. You can find new field &amp;ldquo;VirtualCreditCard&amp;rdquo; specification in Reservation request.
         
           [...]
         
