@@ -9325,6 +9325,132 @@ is closed.</p>
 </tr>
 
 <tr>
+<td>CardInfo/isVCC</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Indicates if the card information provided is from a Virtual Credit Card or not.</td>
+</tr>
+
+<tr>
+<td>CardInfo/VirtualCreditCard</td>
+<td>0..1</td>
+<td></td>
+<td>Extra information if the card is a virtual credit card.</td>
+</tr>
+
+<tr>
+<td>CardInfo/VirtualCreditCard/VCCActivationDate</td>
+<td>1</td>
+<td>String</td>
+<td>Date from when the card can be charged. Format: DD/MM/YYYY.</td>
+</tr>
+
+<tr>
+<td>CardInfo/VirtualCreditCard/VCCDeactivationDate</td>
+<td>1</td>
+<td>String</td>
+<td>Date from when the card will no longer be chargeable. Format: DD/MM/YYYY.</td>
+</tr>
+
+<tr>
+<td>CardInfo/VirtualCreditCard/VCCCurrentBalance</td>
+<td>1</td>
+<td>String</td>
+<td>The amount which can be charged to the card.</td>
+</tr>
+
+<tr>
+<td>CardInfo/VirtualCreditCard/VCCCurrencyCode</td>
+<td>1</td>
+<td>String</td>
+<td>The ISO currency code of the VCCCurrentBalance.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity</td>
+<td>0..1</td>
+<td></td>
+<td>3DS data and transaction results.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/ThreeDSVersion</td>
+<td>1</td>
+<td>String</td>
+<td>Three Domain Security version used.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/DSTransactionID</td>
+<td>0..1</td>
+<td>String</td>
+<td>Unique transaction identifier assigned by the Directory Server (DS) to identify a single transaction.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/XID</td>
+<td>0..1</td>
+<td>String</td>
+<td>Transaction identifier resulting from authentication processing.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/ECI</td>
+<td>1</td>
+<td>String</td>
+<td>Electronic Commerce Indicator. See values allowed at <a href="https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/listsdata/" rel="nofollow" target="_blank">ECI codes</a>.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/CAVV</td>
+<td>0..1</td>
+<td>String</td>
+<td>Cardholder Authentication Verification Value.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/PARes</td>
+<td>0..1</td>
+<td>String</td>
+<td>Payer Authentication Response.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/PAResStatus</td>
+<td>0..1</td>
+<td>String</td>
+<td>Payer Authentication Response status. See values allowed at <a href="https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/listsdata/" rel="nofollow" target="_blank">PARes Status</a>.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/PARes</td>
+<td>0..1</td>
+<td>String</td>
+<td>Payer Authentication Response.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/CardEnrolledStatus</td>
+<td>0..1</td>
+<td>String</td>
+<td>Status of Authentication eligibility. See values allowed at <a href="https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/listsdata/" rel="nofollow" target="_blank">Card Enrollment Status</a>.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/SignatureStatus</td>
+<td>0..1</td>
+<td>String</td>
+<td>Transaction Signature status. See values allowed at <a href="https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/listsdata/" rel="nofollow" target="_blank">Signature Verification Status</a>.</td>
+</tr>
+
+<tr>
+<td>CardInfo/ThreeDomainSecurity/MerchantName</td>
+<td>0..1</td>
+<td>String</td>
+<td>Merchant name.</td>
+</tr>
+
+<tr>
 <td>Rooms</td>
 <td>1</td>
 <td></td>
