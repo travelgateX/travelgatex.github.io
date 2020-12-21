@@ -8759,6 +8759,14 @@
 <ul>
 <li>
 <ul>
+<li><a href="#2020-12-21">2020-12-21</a></li>
+<li><a href="#2020-12-03">2020-12-03</a></li>
+<li><a href="#2020-11-23">2020-11-23</a></li>
+<li><a href="#2020-08-31">2020-08-31</a></li>
+<li><a href="#2020-07-27">2020-07-27</a></li>
+<li><a href="#2020-05-28">2020-05-28</a></li>
+<li><a href="#2020-04-15">2020-04-15</a></li>
+<li><a href="#2020-03-31">2020-03-31</a></li>
 <li><a href="#2020-03-10">2020-03-10</a></li>
 <li><a href="#2020-03-09">2020-03-09</a></li>
 <li><a href="#2020-03-03">2020-03-03</a></li>
@@ -8985,6 +8993,270 @@
 <p>The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.</p>
 
 <p>Check out this list of new releases and changes applied on the <strong>TravelgateX GraphQL API</strong>.</p>
+
+<h2 id="2020-12-21">2020-12-21</h2>
+
+<p>⚠️  Union member <code>Access</code> was added to Union type <code>Connection</code></p>
+
+<p>✅  Input field <code>serviceApi</code> was added to input object type <code>ActiveFilterInput</code></p>
+
+<p>✅  Input field <code>threeDomainSecurity</code> was added to input object type <code>PaymentCardInput</code></p>
+
+<p>✅  Input field <code>virtualCreditCard</code> was added to input object type <code>PaymentCardInput</code></p>
+
+<p>✅  Input field <code>isVCC</code> was added to input object type <code>PaymentCardInput</code></p>
+
+<p>✅  Type <code>ThreeDSSignatureStatusType</code> was added</p>
+
+<p>✅  Type <code>ThreeDSCardEnrolledStatusType</code> was added</p>
+
+<p>✅  Type <code>PayerResponseStatusType</code> was added</p>
+
+<p>✅  Type <code>ThreeDomainSecurityInput</code> was added</p>
+
+<p>✅  Type <code>VirtualCreditCardInput</code> was added</p>
+
+<h2 id="2020-12-03">2020-12-03</h2>
+
+<p>🛑  Enum value <code>ROOM_HOTEL</code> was removed from enum <code>MappingType</code></p>
+
+<p>⚠️  Enum value <code>supplierOrganization</code> was added to enum <code>BookingsReportGroupByInput</code></p>
+
+<p>⚠️  Enum value <code>clientOrganization</code> was added to enum <code>BookingsReportGroupByInput</code></p>
+
+<p>⚠️  Enum value <code>PROMOTION</code> was added to enum <code>MappingType</code></p>
+
+<p>⚠️  Enum value <code>PROMOTION_MAP</code> was added to enum <code>PluginType</code></p>
+
+<p>✅  Field <code>clientOrganization</code> was added to object type <code>AggregateSum</code></p>
+
+<p>✅  Field <code>supplierOrganization</code> was added to object type <code>AggregateSum</code></p>
+
+<p>✅  Field <code>clientCode</code> was added to object type <code>AggregateSum</code></p>
+
+<p>✅  Field <code>supplierCode</code> was added to object type <code>AggregateSum</code></p>
+
+<p>✅  Field <code>destinationCountry</code> was added to object type <code>AggregateSum</code></p>
+
+<p>✅  Field <code>supplierCode</code> was added to object type <code>Promotion</code></p>
+
+<h2 id="2020-11-23">2020-11-23</h2>
+
+<p>⚠️  Enum value <code>HOTEL_ROOM</code> was added to enum <code>MappingType</code></p>
+
+<p>⚠️  Enum value <code>ORGANIZATION_BUYER_SELLER</code> was added to enum <code>OrganizationTemplate</code></p>
+
+<p>⚠️  Enum value <code>ORGANIZATION_SELLER</code> was added to enum <code>OrganizationTemplate</code></p>
+
+<p>⚠️  Enum value <code>ORGANIZATION_BUYER</code> was added to enum <code>OrganizationTemplate</code></p>
+
+<p>✅  Field <code>isSeller</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Field <code>isBuyer</code> was added to object type <code>OrganizationData</code></p>
+
+<p>✅  Field <code>isSeller</code> was added to object type <code>GroupData</code></p>
+
+<p>✅  Field <code>isBuyer</code> was added to object type <code>GroupData</code></p>
+
+<h2 id="2020-08-31">2020-08-31</h2>
+
+<p>✅  Field <code>HotelOptionQuote.searchPrice</code> description changed from <code>Specifies the price of the previous Search Option. Returned only if the shown Quote price differs from the price shown at the Search Option. If the price does not change, this field will be returned Null.</code> to <code>Specifies the price of the previous search option</code></p>
+
+<p>✅  Field <code>rooms</code> was added to object type <code>HotelOptionQuote</code></p>
+
+<p>✅  Input field <code>providerID</code> was added to input object type <code>AccessFilter</code></p>
+
+<p>✅  Input field <code>supplierID</code> was added to input object type <code>AccessFilter</code></p>
+
+<p>✅  Input field <code>isActive</code> was added to input object type <code>AccessFilter</code></p>
+
+<p>✅  Input field <code>hasMaster</code> was added to input object type <code>AccessFilter</code></p>
+
+<p>✅  Input field <code>providerID</code> was added to input object type <code>SupplierFilter</code></p>
+
+<p>✅  Type <code>RoomOptionQuote</code> was added</p>
+
+<h2 id="2020-07-27">2020-07-27</h2>
+
+<p>⚠️  Enum value <code>WARRANTY</code> was added to enum <code>RateRulesType</code></p>
+
+<p>⚠️  Enum value <code>MOBILE</code> was added to enum <code>RateRulesType</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.ESSENTIAL_WORKER</code> changed from <code>Special hotel rates for essential workers.</code> to <code>ESSENTIAL_WORKER are special hotel rates for essential workers.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.NON_REFUNDABLE</code> changed from <code>The rate non refundable is applied to non refundable options</code> to <code>NON_REFUNDABLE is applicable to non refundable options.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.NORMAL</code> changed from <code>The rate normal refers to options without RateRule</code> to <code>NORMAL are options without RateRule.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.UNEMPLOYED</code> changed from <code>The rate unemployed is applied to those without work.</code> to <code>UNEMPLOYED is applicable to those without work.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.PUBLIC_SERVANT</code> changed from <code>The rate publicServant is applicable to public servants only.</code> to <code>PUBLIC_SERVANT is applicable to public servants only.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.HONEYMOON</code> changed from <code>The rate honeymoon is applied to those who just got married and is determined by each supplier.</code> to <code>HONEYMOON is applicable to those who just got married and is determined by each supplier.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.LARGE_FAMILY</code> changed from <code>The rate largeFamily is applied to large families and is determined by each supplier</code> to <code>LARGE_FAMILY is applicable to large families and is determined by each supplier.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.BALEARIC_RESIDENT</code> changed from <code>The rate BalearicResident is applicable to Balearic Islands residents only.</code> to <code>BALEARIC_RESIDENT is applicable to Balearic Islands residents only.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.CANARY_RESIDENT</code> changed from <code>The rate CanaryResident is applicable to Canary Islands residents only.</code> to <code>CANARY_RESIDENT is applicable to Canary Islands residents only.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.OLDER65</code> changed from <code>Options that can only be sold to people who are 65 and older.</code> to <code>OLDER65 can only be sold to people who are 65 and older.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.OLDER60</code> changed from <code>Options that can only be sold to people who are 60 and older.</code> to <code>OLDER60 can only be sold to people who are 60 and older.</code></p>
+
+<p>✅  Description for enum value <code>RateRulesType.OLDER55</code> changed from <code>Options that can only be sold to people who are 55 and older.</code> to <code>OLDER55 can only be sold to people who are 55 and older.</code></p>
+
+<h2 id="2020-05-28">2020-05-28</h2>
+
+<p>⚠️  Enum value <code>ESSENTIAL_WORKER</code> was added to enum <code>RateRulesType</code></p>
+
+<h2 id="2020-04-15">2020-04-15</h2>
+
+<p>🛑  Field <code>Partner</code> was removed from object type <code>AdminQuery</code></p>
+
+<p>🛑  Field <code>PartnerData</code> was removed from object type <code>Partner</code></p>
+
+<p>✅  Field <code>partner</code> was added to object type <code>AdminQuery</code></p>
+
+<p>✅  Input field <code>title</code> was added to input object type <code>BookPaxInput</code></p>
+
+<p>✅  Field <code>partnerData</code> was added to object type <code>Partner</code></p>
+
+<p>✅  Input field <code>title</code> was added to input object type <code>HolderInput</code></p>
+
+<p>✅  Type <code>PersonalTitleType</code> was added</p>
+
+<h2 id="2020-03-31">2020-03-31</h2>
+
+<p>🛑  Field <code>informFees</code> was removed from object type <code>MetadataQuote</code></p>
+
+<p>🛑  Field <code>allowsBlockOption</code> was removed from object type <code>MetadataQuote</code></p>
+
+<p>🛑  Field <code>informRoomFees</code> was removed from object type <code>MetadataSearch</code></p>
+
+<p>🛑  Field <code>informFees</code> was removed from object type <code>MetadataSearch</code></p>
+
+<p>🛑  Field <code>informOffers</code> was removed from object type <code>MetadataSearch</code></p>
+
+<p>🛑  Field <code>allowsBusinessRules</code> was removed from object type <code>MetadataSearch</code></p>
+
+<p>🛑  Field <code>amenities</code> was removed from object type <code>MetadataContent</code></p>
+
+<p>🛑  Field <code>currencies</code> was removed from object type <code>MetadataContent</code></p>
+
+<p>🛑  Field <code>markets</code> was removed from object type <code>MetadataContent</code></p>
+
+<p>🛑  Field <code>categories</code> was removed from object type <code>MetadataContent</code></p>
+
+<p>🛑  Field <code>boards</code> was removed from object type <code>MetadataContent</code></p>
+
+<p>🛑  Field <code>rooms</code> was removed from object type <code>MetadataContent</code></p>
+
+<p>🛑  Field <code>destinations</code> was removed from object type <code>MetadataContent</code></p>
+
+<p>🛑  Field <code>hotels</code> was removed from object type <code>MetadataContent</code></p>
+
+<p>🛑  Field <code>informExclusiveDeal</code> was removed from object type <code>MetadataContent</code></p>
+
+<p>🛑  Field <code>allowsClientLocator</code> was removed from object type <code>MetadataCancel</code></p>
+
+<p>🛑  Field <code>allowsProvideLocator</code> was removed from object type <code>MetadataCancel</code></p>
+
+<p>🛑  Field <code>implemented</code> was removed from object type <code>MetadataCancel</code></p>
+
+<p>🛑  Field <code>informPropertyReservationNumber</code> was removed from object type <code>MetadataBooking</code></p>
+
+<p>🛑  Field <code>allowsClientLocator</code> was removed from object type <code>MetadataBooking</code></p>
+
+<p>🛑  Field <code>allowsProvideLocator</code> was removed from object type <code>MetadataBooking</code></p>
+
+<p>🛑  Field <code>implemented</code> was removed from object type <code>MetadataBooking</code></p>
+
+<p>🛑  Field <code>informPropertyReservationNumber</code> was removed from object type <code>MetadataBook</code></p>
+
+<p>🛑  Field <code>content</code> was removed from object type <code>MetadataData</code></p>
+
+<p>🛑  Field <code>bookingList</code> was removed from object type <code>MetadataData</code></p>
+
+<p>🛑  Type <code>MetadataGeneric</code> was removed</p>
+
+<p>🛑  Type <code>MetadataStatic</code> was removed</p>
+
+<p>🛑  Type <code>MetadataBookingList</code> was removed</p>
+
+<p>⚠️  Enum value <code>AMENITY</code> was added to enum <code>MappingType</code></p>
+
+<p>✅  Description for enum value <code>MappingType.BOARD</code> changed from <code>HOTEL - Comming soon</code> to ``</p>
+
+<p>✅  Field <code>mandatory</code> was added to object type <code>HotelRuntimeParameter</code></p>
+
+<p>✅  Field <code>requiredNationality</code> was added to object type <code>MetadataQuote</code></p>
+
+<p>✅  Field <code>informSurcharges</code> was added to object type <code>MetadataQuote</code></p>
+
+<p>✅  Field <code>MetadataSearch.maxStay</code> description changed from <code>Maximum number of days allowed for booking. -1 means there is no restriction</code> to <code>Maximum number of days allowed for booking.</code></p>
+
+<p>✅  Field <code>requiredNationality</code> was added to object type <code>MetadataSearch</code></p>
+
+<p>✅  Field <code>informRoomSurcharges</code> was added to object type <code>MetadataSearch</code></p>
+
+<p>✅  Field <code>informSurcharges</code> was added to object type <code>MetadataSearch</code></p>
+
+<p>✅  Field <code>informPromotions</code> was added to object type <code>MetadataSearch</code></p>
+
+<p>✅  Description <code>Contnet static metadata information, allow you know if some static information or API it's supported by the supplier</code> on type <code>MetadataContent</code> has changed to <code>Informs the  content information, return null if not implemented</code></p>
+
+<p>✅  Field <code>languages</code> was added to object type <code>MetadataContent</code></p>
+
+<p>✅  Field <code>mutableByClientReference</code> was added to object type <code>MetadataCancel</code></p>
+
+<p>✅  Field <code>mutableBySupplierReference</code> was added to object type <code>MetadataCancel</code></p>
+
+<p>✅  Field <code>MetadataBooking.informPriceCancel</code> description changed from <code>The supplier informs the cancellation price.</code> to <code>Informs the cancellation price.</code></p>
+
+<p>✅  Field <code>MetadataBooking.informCancelPolicies</code> description changed from <code>Informs cancellation policies.</code> to <code>Informs the cancellation policies.</code></p>
+
+<p>✅  Field <code>informHotelReference</code> was added to object type <code>MetadataBooking</code></p>
+
+<p>✅  Field <code>queryableByCheckinDate</code> was added to object type <code>MetadataBooking</code></p>
+
+<p>✅  Field <code>queryableByCreationDate</code> was added to object type <code>MetadataBooking</code></p>
+
+<p>✅  Field <code>queryableByClientReference</code> was added to object type <code>MetadataBooking</code></p>
+
+<p>✅  Field <code>queryableBySupplierReference</code> was added to object type <code>MetadataBooking</code></p>
+
+<p>✅  Field <code>MetadataBook.informBillingSupplier</code> description changed from <code>Informs if the supplier returns the property reservation number.</code> to <code>Informs if the supplier billing code.</code></p>
+
+<p>✅  Field <code>requiredNationality</code> was added to object type <code>MetadataBook</code></p>
+
+<p>✅  Field <code>informHotelReference</code> was added to object type <code>MetadataBook</code></p>
+
+<p>✅  Field <code>MetadataData.cancel</code> description changed from <code>Cancel medatadata</code> to <code>Cancel metadata</code></p>
+
+<p>✅  Field <code>MetadataData.booking</code> description changed from <code>Booking medatadata</code> to <code>Booking metadata</code></p>
+
+<p>✅  Field <code>MetadataData.book</code> description changed from <code>Book medatadata</code> to <code>Book metadata</code></p>
+
+<p>✅  Field <code>MetadataData.quote</code> description changed from <code>Quote medatadata</code> to <code>Quote metadata</code></p>
+
+<p>✅  Field <code>MetadataData.search</code> description changed from <code>Search medatadata</code> to <code>Search metadata</code></p>
+
+<p>✅  Field <code>amenities</code> was added to object type <code>MetadataData</code></p>
+
+<p>✅  Field <code>currencies</code> was added to object type <code>MetadataData</code></p>
+
+<p>✅  Field <code>markets</code> was added to object type <code>MetadataData</code></p>
+
+<p>✅  Field <code>categories</code> was added to object type <code>MetadataData</code></p>
+
+<p>✅  Field <code>boards</code> was added to object type <code>MetadataData</code></p>
+
+<p>✅  Field <code>rooms</code> was added to object type <code>MetadataData</code></p>
+
+<p>✅  Field <code>destinations</code> was added to object type <code>MetadataData</code></p>
+
+<p>✅  Field <code>hotels</code> was added to object type <code>MetadataData</code></p>
 
 <h2 id="2020-03-10">2020-03-10</h2>
 

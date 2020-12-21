@@ -44,9 +44,9 @@ Under construction! We have logged this resource on our roadmap and we are curre
         
         The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2020-03-10 🛑 Field audit was removed from object type Query
-🛑 Field audit was removed from object type Mutation
-🛑 Input field AlertUpdateErrorRateComparativeConfigurationByTimeInput.windowing changed type from AlertCommonByTimeInput to AlertUpdateCommonByTimeInput
+2020-12-21 ⚠️ Union member Access was added to Union type Connection
+✅ Input field serviceApi was added to input object type ActiveFilterInput
+✅ Input field threeDomainSecurity was added to input object type PaymentCardInput
         
           [...]
         
