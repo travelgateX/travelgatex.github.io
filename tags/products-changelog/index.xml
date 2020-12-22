@@ -161,6 +161,24 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
+      <title>Hotel-X: Changelog 2020-12-22</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/changelog/2020-12-22/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/changelog/2020-12-22/</guid>
+      <description>
+        
+        
+        2020-12-22  Add 3 new fields in PaymentCardInput isVCC, virtualCreditCard and threeDomainSecurity, check Graphql schema changes, for more detail and example you cansee the Book request specification
+ Strong Customer Authentication (3DS). 3DS data can now be included with a Payment Card in a book request alongside payment card data. You can find new field threeDomainSecurity on the input of Paymentcard.
+  Virtual Credit Cards (VCC). Extra information about Virtual Credit Cards can now be included with a Payment Card in a Book request.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Hotel-X: Changelog 2020-12-04</title>
       <link>https://docs.travelgatex.com/hotel-x/release-notes/changelog/2020-12-04/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0100</pubDate>

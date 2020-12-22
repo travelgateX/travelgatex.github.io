@@ -8762,6 +8762,18 @@
 <ul>
 <li><a href="#advanced-criteria">Advanced criteria</a></li>
 <li><a href="#how-to-confirm-a-reservation">How to confirm a reservation</a></li>
+<li><a href="#payment-card">Payment Card</a>
+<ul>
+<li><a href="#isvcc">isVCC</a></li>
+<li><a href="#strong-customer-authentication-3ds">Strong Customer Authentication (3DS)</a>
+<ul>
+<li><a href="#visa-american-express-diners-club-and-jcb">Visa, American Express, Diners Club and JCB</a></li>
+<li><a href="#mastercard">MasterCard</a></li>
+</ul></li>
+<li><a href="#payer-response-status">Payer Response Status</a></li>
+<li><a href="#card-enrollment-status">Card Enrollment Status</a></li>
+<li><a href="#signature-verification-status">Signature Verification Status</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -9372,6 +9384,204 @@ Please, bear in mind that the clientReference should be different for every test
     );
   }
 </script></p>
+
+<h2 id="payment-card">Payment Card</h2>
+
+<p>The example of payment card input</p>
+
+<pre><code class="language-json">{
+			&quot;cardType&quot;: &quot;VI&quot;,
+			&quot;holder&quot;: {
+				&quot;name&quot;: &quot;test_name&quot;,
+				&quot;surname&quot;: &quot;test_surname&quot;
+			},
+			&quot;number&quot;: &quot;4874495143042809&quot;,
+			&quot;CVC&quot;: &quot;330&quot;,
+			&quot;expire&quot;: {
+				&quot;month&quot;: 9,
+				&quot;year&quot;: 2028
+			},
+			&quot;isVCC&quot;: true,
+			&quot;virtualCreditCard&quot;: {
+				&quot;activationDate&quot;: &quot;2020-10-02&quot;,
+				&quot;deactivationDate&quot;: &quot;2021-01-02&quot;,
+				&quot;currentBalance&quot;: 50.58,
+				&quot;currencyCode&quot;: &quot;EUR&quot;
+			},
+			&quot;threeDomainSecurity&quot;: {
+				&quot;version&quot;: &quot;1.0.1&quot;,
+				&quot;DSTransactionID&quot;: &quot;transaction 1&quot;,
+				&quot;XID&quot;: &quot;id123456&quot;,
+				&quot;ECI&quot;: &quot;05&quot;,
+				&quot;CAVV&quot;: &quot;CAVV&quot;,
+				&quot;payerResponse&quot;: &quot;base64xml response&quot;,
+				&quot;payerResponseStatus&quot;: &quot;AUTHENTICATION_SUCCESS&quot;,
+				&quot;cardEnrolledStatus&quot;: &quot;CARD_ENROLLED&quot;,
+				&quot;merchantName&quot;: &quot;test_name&quot;,
+				&quot;signatureStatus&quot;: &quot;SIGNATURE_NOT_VALIDATED&quot;
+			}
+		}
+</code></pre>
+
+<p>isVCC, virtualCreditCard and threeDomainSecurity, are all optionals</p>
+
+<h3 id="isvcc">isVCC</h3>
+
+<p>This field is optional, <em>isVCC = true</em> does not have to be mandatory to send 3DS or Virtual Credit Card, because neither of them is mandatory</p>
+
+<h3 id="strong-customer-authentication-3ds">Strong Customer Authentication (3DS)</h3>
+
+<p>The possible values for the threeDomainSecurity fields</p>
+
+<h4 id="visa-american-express-diners-club-and-jcb">Visa, American Express, Diners Club and JCB</h4>
+
+<table>
+<thead>
+<tr>
+<th><strong>ECI Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>05</td>
+<td>3DS authentication was successful, transactions are secured by 3DS.</td>
+</tr>
+
+<tr>
+<td>06</td>
+<td>Authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS.</td>
+</tr>
+
+<tr>
+<td>07</td>
+<td>3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="mastercard">MasterCard</h4>
+
+<table>
+<thead>
+<tr>
+<th><strong>ECI Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>00</td>
+<td>3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.</td>
+</tr>
+
+<tr>
+<td>01</td>
+<td>3DS authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS, or cardholder ran out of time to authorize.</td>
+</tr>
+
+<tr>
+<td>02</td>
+<td>3DS authentication is successful.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="payer-response-status">Payer Response Status</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Status Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>AUTHENTICATION_SUCCESS</td>
+<td>Successful Authentication.</td>
+</tr>
+
+<tr>
+<td>AUTHENTICATION_FAILED</td>
+<td>Failed Authentication.</td>
+</tr>
+
+<tr>
+<td>AUTHENTICATION_INCOMPLETE</td>
+<td>Unable to complete Authentication.</td>
+</tr>
+
+<tr>
+<td>TRANSACTION_ATTEMPT_SUCCESS_A</td>
+<td>Successful Attempts Transaction.</td>
+</tr>
+
+<tr>
+<td>TRANSACTION_ATTEMPT_SUCCESS_B</td>
+<td>You can proceed to authorisation using the information received.</td>
+</tr>
+
+<tr>
+<td>AUTHENTICATION_REJECTED</td>
+<td>Authentication Rejected.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="card-enrollment-status">Card Enrollment Status</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Status Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>CARD_ENROLLED</td>
+<td>Cardholder is enrolled. Bank is participating in 3-D Secure protocol and will return the ACSUrl.</td>
+</tr>
+
+<tr>
+<td>CARD_NOT_ENROLLED</td>
+<td>Cardholder Not Participating – Cardholder is not enrolled.</td>
+</tr>
+
+<tr>
+<td>CANT_AUTHENTICATE</td>
+<td>Unavailable. The DS or ACS is not available for authentication at the time of the request.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="signature-verification-status">Signature Verification Status</h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Status Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>SIGNATURE_VALIDATED</td>
+<td>Signature of the PARes has been validated successfully.</td>
+</tr>
+
+<tr>
+<td>SIGNATURE_NOT_VALIDATED</td>
+<td>PARes could not be validated.</td>
+</tr>
+</tbody>
+</table>
 
 <hr/>
 
