@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – API Messages</title>
+    <link>https://docs.travelgatex.com/distribution/reservation-api/api-methods/messages/</link>
+    <description>Recent changes in API Messages on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/distribution/reservation-api/api-methods/messages/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/distribution/reservation-api/api-methods/messages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distribution: Search</title>
+      <link>https://docs.travelgatex.com/distribution/reservation-api/api-methods/messages/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/reservation-api/api-methods/messages/search/</guid>
+      <description>
+        
+        
+        Description This method allows us to search for reservations mainly based on date filters, retrieving basic information of each matching reservation.
+
+Considerations  We have to set a bookingDate filter or a checkinDate filter but not both at the same time (or an error will be returned).
+ For the bookingDate filter the dates range can&amp;rsquo;t be more than one week.
+ For the checkinDate filter the dates range can&amp;rsquo;t be more than one week.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Read</title>
+      <link>https://docs.travelgatex.com/distribution/reservation-api/api-methods/messages/read/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/reservation-api/api-methods/messages/read/</guid>
+      <description>
+        
+        
+        Description This method allows us to retreive complete information about reservations.
+
+Considerations  The filters tgxLocators, providerLocators and clientsLocators are mutually exclusive: we can retrieve reservations using only one of them.
+ Only can be retrieved 50 reservations at a time: if more are requested then an error it is generated.
+  
+Read Request (HTTP body) 
+   Element Cardinality Data Type Description     access 1 node Acces information: It will be validated to grant acces to the API and to the operation.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

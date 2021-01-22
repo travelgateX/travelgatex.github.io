@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Configuration</title>
+    <link>https://docs.travelgatex.com/distribution/extranet/rules/configuration/</link>
+    <description>Recent changes in Configuration on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/distribution/extranet/rules/configuration/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/distribution/extranet/rules/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distribution: Pricing</title>
+      <link>https://docs.travelgatex.com/distribution/extranet/rules/configuration/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/extranet/rules/configuration/pricing/</guid>
+      <description>
+        
+        
+        Price Calculation With this rule it can be selected if the base commission-markup of the agency and the Selling Pricing Rules have to be applied as a commission or as a markup (just one behaviour can be selected for all pricing).
+This rule can be set by agency or by organization on general settings: when defined by agency it can be chosen to set a concrete behaviour or to inherit the value set on the general settings.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Filters</title>
+      <link>https://docs.travelgatex.com/distribution/extranet/rules/configuration/filters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/extranet/rules/configuration/filters/</guid>
+      <description>
+        
+        
+        Filter Payment Type With this rule it can be set a list of payment types and then only the sellings that match any of these payment types will be sold and the ones that do not match any of the payment types will be discarded. Payment types:
+ Merchant Pay Later Pay Card Booking Pay Card Checkin Pay  By default the list for an agency is empty and so it inherits the list set on the general settings.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Modifiers</title>
+      <link>https://docs.travelgatex.com/distribution/extranet/rules/configuration/modifiers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/extranet/rules/configuration/modifiers/</guid>
+      <description>
+        
+        
+        Maximum Time to Quote With this rule it can be set the maximum time in minutes than can elapse between the execution of an availability search and the execution of the valuation of any of its selling options: if the elapsed minutes are greater than the maximum then the valuation can not be performed and an error is returned. If this rule is no set with a maximum value then the previous condition will not be applied.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Currencies</title>
+      <link>https://docs.travelgatex.com/distribution/extranet/rules/configuration/currencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/extranet/rules/configuration/currencies/</guid>
+      <description>
+        
+        
+        Block currencies by country With this rule a default currency and a list of not admitted currencies can be set for a concrete country. When applying this rule to a selling it must be used the definition for the country of the selling&amp;rsquo;s hotel. If a selling is received from the supplier with a currency included on the not admitted ones (for the hotel&amp;rsquo;s country definition) then this currency must be exchanged to the default currency: if it cannot be exchanged then the selling will be discarded.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Others</title>
+      <link>https://docs.travelgatex.com/distribution/extranet/rules/configuration/others/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/extranet/rules/configuration/others/</guid>
+      <description>
+        
+        
+        Time Zone With this rule it be can set the Time Zone to use with some rules, as: * Selling Pricing Rules: the Booking Date field (dates from &amp;amp; to), the Booking Hour field and the Booking Day field. * Specific Stop Sales: the Booking Date field (dates from &amp;amp; to).
+Rest of date fields and rules related to dates are managed as UTC. By default this rule is set to UTC Time Zone.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

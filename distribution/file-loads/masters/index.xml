@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Masters</title>
+    <link>https://docs.travelgatex.com/distribution/file-loads/masters/</link>
+    <description>Recent changes in Masters on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/distribution/file-loads/masters/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distribution: Agencies</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/agencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/file-loads/masters/agencies/</guid>
+      <description>
+        
+        
+        What is the meaning of agency? We can understand an agency as a client, a buyer or a distribution channel. An organization has a set of agencies (at least one).
+
+How to create an agency Considerations It is an incremental load, so bear in mind these considerations:
+ If an agency exists then it is updated.
+ If an agency does not exist then it is created. Existing agencies that are not referenced are not removed.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Offices</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/offices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/file-loads/masters/offices/</guid>
+      <description>
+        
+        
+        What is the meaning of office? xxxx
+
+How to create an office 
+Considerations It is an incremental load, so bear in mind these considerations:
+ If an agency exists then it is updated.
+ If an agency does not exist then it is created.
+ Existing agencies that are not referenced are not removed.
+ If an existing agency has to be removed from system then you have to contact with TravelgateX.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Hotels</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/hotels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/file-loads/masters/hotels/</guid>
+      <description>
+        
+        
+        How to add a hotel 
+Considerations It is an incremental load, so bear in mind these considerations:
+ If a meal plan exists then it is updated.
+ If a meal plan does not exist then it is created.
+ Existing meal plans that are not referenced are not removed.
+ If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Hotel Info</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/hotel-info/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/file-loads/masters/hotel-info/</guid>
+      <description>
+        
+        
+        How to add extra info to a hotel Considerations It is an incremental load, so bear in mind these considerations:
+ If a meal plan exists then it is updated.
+ If a meal plan does not exist then it is created.
+ Existing meal plans that are not referenced are not removed.
+ If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: MealPlans</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/mealplans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/file-loads/masters/mealplans/</guid>
+      <description>
+        
+        
+        How to add a mealplan 
+Considerations It is an incremental load, so bear in mind these considerations:
+ If a meal plan exists then it is updated.
+ If a meal plan does not exist then it is created.
+ Existing meal plans that are not referenced are not removed.
+ If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Currencies</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/currencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/file-loads/masters/currencies/</guid>
+      <description>
+        
+        
+        Currencies exchanges Considerations  We can specify global currencies and specific currencies for concrete agencies. If an agency has got specific currencies then this agency will use these ones but if an agency hasn&amp;rsquo;t got specific currencies then this agency will use the global currencies. Global currencies are inherited by agencies with specific currencies in which they are not contained, so if a currency is defined as global and this currency is no defined specifically for an agency then the agency will use de global definition for this currency.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Room List</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/room-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/file-loads/masters/room-list/</guid>
+      <description>
+        
+        
+        How to add a provider 
+Considerations It is an incremental load, so bear in mind these considerations:
+ If a meal plan exists then it is updated.
+ If a meal plan does not exist then it is created.
+ Existing meal plans that are not referenced are not removed.
+ If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Providers</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/providers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/file-loads/masters/providers/</guid>
+      <description>
+        
+        
+        How to add a provider 
+Considerations It is an incremental load, so bear in mind these considerations:
+ If a meal plan exists then it is updated. If a meal plan does not exist then it is created. Existing meal plans that are not referenced are not removed. If an existing meal plan has to be removed from system then you have to contact with TravelgateX. If there is any problem with a meal plan&amp;rsquo;s information then it is omitted (and logged) but the load continues.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Hotels portfolio by Agency</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/hotels-portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/file-loads/masters/hotels-portfolio/</guid>
+      <description>
+        
+        
+        How to add a hotel portfolio by agency 
+Considerations It is an absolute load, so bear in mind these considerations:
+ If all the data on the file is correct then the existing hotels portfolios by agency are removed and file&amp;rsquo;s data is inserted into the system to define the news hotels portfolios by agency.
+ If there is any problem with the file or its data then the load is cancelled and the existing hotels portfolios by agency are not removed.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Destinations</title>
+      <link>https://docs.travelgatex.com/distribution/file-loads/masters/destinations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/file-loads/masters/destinations/</guid>
+      <description>
+        
+        
+        How to add a destination 
+Considerations It is an incremental load, so bear in mind these considerations:
+ If a meal plan exists then it is updated.
+ If a meal plan does not exist then it is created.
+ Existing meal plans that are not referenced are not removed.
+ If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

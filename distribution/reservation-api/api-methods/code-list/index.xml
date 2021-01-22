@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Code list</title>
+    <link>https://docs.travelgatex.com/distribution/reservation-api/api-methods/code-list/</link>
+    <description>Recent changes in Code list on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/distribution/reservation-api/api-methods/code-list/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/distribution/reservation-api/api-methods/code-list/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distribution: Error Codes</title>
+      <link>https://docs.travelgatex.com/distribution/reservation-api/api-methods/code-list/error-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/reservation-api/api-methods/code-list/error-codes/</guid>
+      <description>
+        
+        
+        Error list The following errors will be returned as Http Status Errors:
+   Code Description Explanation     400 Bad Request There is a problem on the request data.   401 Unauthorized There is an access problem.   500 Internal Server Error Internal undefined error.    In other cases we can receive a 200 Http Status (ok) and an error node on the body&amp;rsquo;s response:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Reservation Status Codes</title>
+      <link>https://docs.travelgatex.com/distribution/reservation-api/api-methods/code-list/reservation-status-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/reservation-api/api-methods/code-list/reservation-status-codes/</guid>
+      <description>
+        
+        
+        Reservation status codes    Code Explanation     OK The reservation was created successfully.   KO The reservation process failed and the reservation was not created on the provider.   KOP The reservation process failed but the reservation was created on the provider.   KUN The reservation process failed and we don&amp;rsquo;t know the final status on the provider.   CN The reservation was cancelled successfully.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Data Types</title>
+      <link>https://docs.travelgatex.com/distribution/reservation-api/api-methods/code-list/data-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/reservation-api/api-methods/code-list/data-type/</guid>
+      <description>
+        
+        
+        Data Types Formats to be used with each data type are presented in the following table:
+   Data Type Format     decimal Value has to be set using &amp;lsquo;.&amp;rsquo; as separator.   boolean Value has to be set using false/true.   date Value is a date passed as string and has to be set with the format &amp;ldquo;yyyy-MM-dd&amp;rdquo; (no hour/minutes/seconds information will be used with it).
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

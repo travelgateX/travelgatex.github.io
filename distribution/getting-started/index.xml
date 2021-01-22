@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Getting Started</title>
+    <link>https://docs.travelgatex.com/distribution/getting-started/</link>
+    <description>Recent changes in Getting Started on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/distribution/getting-started/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/distribution/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distribution: Business elements</title>
+      <link>https://docs.travelgatex.com/distribution/getting-started/business-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/getting-started/business-elements/</guid>
+      <description>
+        
+        
+        Distribution-X distinguishes up to 3 levels in which we can organize product distribution: in each of these levels we can establish a set of rules, or even inherit them.
+The entire set of rules and their operation are described in the documentation for the Rules Management Extranet. Please check Rules Management. Organization: 1st level The 1st level is the so-called “organization” and would be equivalent to a Distribution-X customer (not a buyer/client who comes to TravelgateX platform to buy, but the company that has contracted the Distribution-X module to distribute its product).
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Components</title>
+      <link>https://docs.travelgatex.com/distribution/getting-started/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/getting-started/components/</guid>
+      <description>
+        
+        
+        Distribution-X is made up of the following elements. For more detail, please refer to the specific documentation for each component.
+Selling API This API provides different transactions that are part of the reservation flow and also includes transactions to obtain the static information. Therefore, it is the API that buyers / clients will use.
+This is the API that contains the Core of Distribution-X: it is in charge of applying all the distribution rules, closing and cancelling reservations (and storing them) and also allows basic reservation queries.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
