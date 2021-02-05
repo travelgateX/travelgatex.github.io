@@ -9337,14 +9337,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>OnRequest</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/" rel="nofollow" target="_blank">MetaData</a>).</td>
+<td>Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a>).</td>
 </tr>
 
 <tr>
 <td>BlockOption</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/" rel="nofollow" target="_blank">MetaData</a>).</td>
+<td>Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a>).</td>
 </tr>
 
 <tr>
@@ -9365,7 +9365,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>PaymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type (See full type list at <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#payment-types" rel="nofollow" target="_blank">Lists of Data</a>).</td>
+<td>Indicates payment type (See full type list at <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/" rel="nofollow" target="_blank">Lists of Data</a>).</td>
 </tr>
 
 <tr>
@@ -9667,14 +9667,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type of penalty (See full type list at <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#payment-types" rel="nofollow" target="_blank">Lists of Data</a>) .</td>
+<td>Indicates payment type of penalty (See full type list at <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/" rel="nofollow" target="_blank">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
 <td>Remarks</td>
 <td>0..1</td>
 <td>String</td>
-<td>Remarks (see <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Remarks (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -9702,7 +9702,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>@code</td>
 <td>1</td>
 <td>String</td>
-<td>Code card. Se the full list of card codes at <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#credit-cards" rel="nofollow" target="_blank">Lists of Data</a></td>
+<td>Code card. Se the full list of card codes at <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/" rel="nofollow" target="_blank">Lists of Data</a></td>
 </tr>
 
 <tr>
@@ -9772,7 +9772,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>CancelPoliciesDescription</td>
 <td>0..1</td>
 <td>String</td>
-<td>Contains the cancellation penalties in free text (see <a href="https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Contains the cancellation penalties in free text (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -9879,7 +9879,7 @@ In that case, you will have 30 minutes to complete the booking, if  not, you wil
 
 <p><strong>Final buying price:</strong></p>
 
-<p>If the price in Reservation is lower than the price in Valuation. The selling price for the final customer will be the one in valuation, as this is the one that will be accepted by them at the time of booking.</p>
+<p>Usually the final price is the one indicated in the valuation response (except if the supplier allows DeltaPrice, in which case the final price will be the one in the reservation response), as it is the one agreed previously to the reservation.</p>
 
 <p><strong>Note:</strong></p>
 
