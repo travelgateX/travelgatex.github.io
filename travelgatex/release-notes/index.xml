@@ -42,9 +42,10 @@ The Project has a few columns that act as the status whereas cards are the items
         
         The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
-2020-12-21 ⚠️ Union member Access was added to Union type Connection
-✅ Input field serviceApi was added to input object type ActiveFilterInput
-✅ Input field threeDomainSecurity was added to input object type PaymentCardInput
+2021-02-09 🛑 Field suitFolder was removed from object type AdminMutation
+🛑 Enum value FOLDER_DEFAULT was removed from enum FolderTemplate
+🛑 Type SuitFolderInput was removed
+⚠️ Enum value FOLDER_BUYER was added to enum FolderTemplate
         
           [...]
         
