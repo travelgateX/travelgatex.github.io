@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Format files</title>
@@ -26,7 +25,7 @@
         
         The commission supplier file should be in the below format:
 Commission supplier File Format The file should be in the below format:
- Encoding: UTF-8  File Name: commission_supplier.csv  supplier commission  Extension file: csv Headers:  supplier → supplier code commission → commission value, decimal separator must be point (&amp;ldquo;.&amp;rdquo;)  Delimiter: Comma (“,”) Separator for multiples codes in the same row: Semicolon (&amp;ldquo;;&amp;rdquo;) Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.
+ Encoding: UTF-8  File Name: commission_supplier.csv  supplier commission   Extension file: csv Headers:  supplier → supplier code commission → commission value, decimal separator must be point (&amp;quot;.&amp;quot;)   Delimiter: Comma (“,”) Separator for multiples codes in the same row: Semicolon (&amp;quot;;&amp;quot;) Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.
         
           [...]
         
@@ -44,7 +43,7 @@ Commission supplier File Format The file should be in the below format:
         
         The commission file should be in the below format:
 Hotel Commission File Format The hotel commission file should be in the below format:
- Encoding: UTF-8  File Name: commission_hotel.csv  commission hotel  Extension file: csv Headers:  supplier → supplier code  hotel → hotel code  commission → commission value, decimal separator must be point (&amp;ldquo;.&amp;rdquo;)  Delimiter: Comma (“,”) Separator for multiples codes in the same row: Semicolon (&amp;ldquo;;&amp;rdquo;) Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.
+ Encoding: UTF-8  File Name: commission_hotel.csv  commission hotel   Extension file: csv Headers:  supplier → supplier code  hotel → hotel code  commission → commission value, decimal separator must be point (&amp;quot;.&amp;quot;)   Delimiter: Comma (“,”) Separator for multiples codes in the same row: Semicolon (&amp;quot;;&amp;quot;) Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.
         
           [...]
         
@@ -61,7 +60,7 @@ Hotel Commission File Format The hotel commission file should be in the below fo
         
         
         The hotel group file should be in the below format:
- Encoding: UTF-8  File Name: context_entity_group.csv  Context Entity (file will be indexed by this field). Format (indicates format file)  Extension file: csv Headers:  key → Entity. hotelCodes → hotel code chainCodes → chain code destinationCodes → destination code  Delimiter: Comma (“,”)  Directory: /F[folder code]\Maps/HotelX\Hotel/  Sample File Name: context_entity_group.csv
+ Encoding: UTF-8  File Name: context_entity_group.csv  Context Entity (file will be indexed by this field). Format (indicates format file)   Extension file: csv Headers:  key → Entity. hotelCodes → hotel code chainCodes → chain code destinationCodes → destination code   Delimiter: Comma (“,”)  Directory: /F[folder code]\Maps/HotelX\Hotel/  Sample File Name: context_entity_group.csv
 Data:
 Hotel entity example
         
@@ -80,8 +79,16 @@ Hotel entity example
         
         
         The commission file should be in the below format:
- Encoding: UTF-8 File Name:  context sequential commission  Extension file: csv Headers:
- ruleId → rule identifier clientTokens → client token used for index the rule supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date Date format creationDateTo → end creation date Date format checkInFrom → checkin date Date format checkInTo → checkout date Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.
+  Encoding: UTF-8
+  File Name:
+ context sequential commission    Extension file: csv
+  Headers:
+  ruleId → rule identifier
+  clientTokens → client token used for index the rule
+  supplierCodes → supplier code
+  notSupplierCodes → supplier code
+  creationDateFrom → start creation date Date format
+  creationDateTo → end creation date Date format
         
           [...]
         
@@ -113,8 +120,11 @@ Hotel entity example
         
         
         The safety margin file should be in the below format:
- Encoding: UTF-8 File Name:  context sequential safetymargin  Extension file: csv Headers:
- ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date Date format creationDateTo → end creation date Date format checkInFrom → checkinfrom date Date format checkInTo → checkinto date Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.
+  Encoding: UTF-8
+  File Name:
+ context sequential safetymargin    Extension file: csv
+  Headers:
+ ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date Date format creationDateTo → end creation date Date format checkInFrom → checkinfrom date Date format checkInTo → checkinto date Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;quot;.
         
           [...]
         
@@ -131,10 +141,12 @@ Hotel entity example
         
         
         The supplier order file should be in the below format:
- Encoding: UTF-8 File Name:  supplier_order  Extension file: csv Headers:
- ruleId → rule identifier supplierCodes → supplier code  List file fields
-|Field | Mandatory | Excluded fileds* | Multi-value | |---|---|---|---| |ruleId| Yes | - | No | |supplierCodes| Yes | - | Yes |  Delimiter: Comma (“,”)
- Separator for multiples codes in the same row: Semicolon (&amp;ldquo;;&amp;rdquo;)
+  Encoding: UTF-8
+  File Name:
+ supplier_order    Extension file: csv
+  Headers:
+ ruleId → rule identifier supplierCodes → supplier code    List file fields
+ |Field | Mandatory | Excluded fileds* | Multi-value | |---|---|---|---| |ruleId| Yes | - | No | |supplierCodes| Yes | - | Yes |    Delimiter: Comma (“,”)
         
           [...]
         
@@ -151,8 +163,11 @@ Hotel entity example
         
         
         The net compare file should be in the format below:
- Encoding: UTF-8 File Name:  context sequential netCompare  Extension file: csv Headers:
- ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from Date format bookingDateTo → booking date to Date format startDateFrom → start date from Date format startDateTo → start date to Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.
+  Encoding: UTF-8
+  File Name:
+ context sequential netCompare    Extension file: csv
+  Headers:
+ ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from Date format bookingDateTo → booking date to Date format startDateFrom → start date from Date format startDateTo → start date to Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;quot;.
         
           [...]
         
@@ -169,8 +184,11 @@ Hotel entity example
         
         
         The preference file should be in the below format:
- Encoding: UTF-8 File Name:  context sequential preference  Extension file: csv Headers:
- ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from Date format bookingDateTo → booking date to Date format startDateFrom → start date from Date format startDateTo → start date to Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.
+  Encoding: UTF-8
+  File Name:
+ context sequential preference    Extension file: csv
+  Headers:
+ ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from Date format bookingDateTo → booking date to Date format startDateFrom → start date from Date format startDateTo → start date to Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;quot;.
         
           [...]
         

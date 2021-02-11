@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Best Practices</title>
@@ -14,6 +13,56 @@
     
 	    <atom:link href="https://docs.travelgatex.com/hotel-x/bestpractices/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hotel-X: GraphQL to Rest</title>
+      <link>https://docs.travelgatex.com/hotel-x/bestpractices/graphql_to_rest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/bestpractices/graphql_to_rest/</guid>
+      <description>
+        
+        
+        In case you expect to be returned +5k options per search response, we suggest using our GraphQL to Rest feature to keep performance at the highest level.
+To implement this feature, please follow below steps:
+ Check that your JSON parser is updated to the last schema as the Array Fields previously defined as single Scalars can produce unexpected JSON marshalling Add the HTTP header to your request(s): TGX-Content-Type:graphqlx/json Test a sample call for every request using the header Enjoy the performance&amp;lt;div class=&amp;ldquo;alert alert-warning&amp;rdquo;  role=&amp;ldquo;alert&amp;rdquo;&amp;gt;
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Keep Alive Header</title>
+      <link>https://docs.travelgatex.com/hotel-x/bestpractices/keep_alive_header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/bestpractices/keep_alive_header/</guid>
+      <description>
+        
+        
+        In order to increase performance and improve response times (in Search), you can add the Connection: keep-alive header to all our transactions.
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Check Booking status</title>
+      <link>https://docs.travelgatex.com/hotel-x/bestpractices/check_booking_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/bestpractices/check_booking_status/</guid>
+      <description>
+        
+        
+        It is the client´s responsability to check the status of the booking. If you get a response without errors in Book query, it is not meaning that the booking has been confirmed. It is strictly required for an effective use of the API.
+There are 4 different status for the response of Book query:
+ OK:The reservation was completed with no problems. ON_REQUEST: The reservation was completed but the product is still not available, so the reservation goes into a waiting list.
+        
+          [...]
+        
+      </description>
+    </item>
     
   </channel>
 </rss>

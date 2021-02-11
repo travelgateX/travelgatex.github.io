@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Enums</title>
@@ -24,7 +23,7 @@
       <description>
         
         
-         GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:  List of advise messages.   
+        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;WARN&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ERROR&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;INFO&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
         
       </description>
     </item>
@@ -38,7 +37,7 @@
       <description>
         
         
-         GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by OrganizationData:    GroupCommonData:    GroupData:     
+        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ROOT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ORG&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;GROUP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PROFILE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;TEAM&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;FOLDER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PRODUCT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;RESOURCE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SPECIFIC_RESOURCE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/groupdata&amp;quot;&amp;gt; GroupData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
         
       </description>
     </item>
@@ -52,7 +51,7 @@
       <description>
         
         
-         GraphQL schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Required by MemberData:     
+        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;USER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SERVICE_ACCOUNT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
         
       </description>
     </item>
@@ -66,8 +65,8 @@
       <description>
         
         
-         Mode to select which kind of stats do you want query
-GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by StatsFilterInput:  Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)   
+        Mode to select which kind of stats do you want query
+GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BUYER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SELLER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
         
       </description>
     </item>
@@ -81,7 +80,7 @@ GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by 
       <description>
         
         
-         GraphQL schema definition  enum OperationType{   SEARCH,    QUOTE,    BOOKING,    CANCEL,    SCHEDULER,    CREATE,    READ,    UPDATE,    DELETE,    EXECUTE,    OTHER,   }   
+        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SEARCH&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;QUOTE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BOOKING&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CANCEL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SCHEDULER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CREATE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;READ&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;UPDATE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;DELETE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EXECUTE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OTHER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  
         
       </description>
     </item>
@@ -95,8 +94,8 @@ GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by 
       <description>
         
         
-         Rate Rules
-GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   
+        Rate Rules
+GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PACKAGE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OLDER55&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OLDER60&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OLDER65&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CANARY_RESIDENT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BALEARIC_RESIDENT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;LARGE_FAMILY&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HONEYMOON&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PUBLIC_SERVANT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;UNEMPLOYED&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;NORMAL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;NON_REFUNDABLE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  
         
       </description>
     </item>
@@ -110,7 +109,7 @@ GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60
       <description>
         
         
-         GraphQL schema definition  enum RoleType{   VIEWER,    EDITOR,    ADMIN,    EXECUTOR,    SPECIFIC,   }   Required by RoleData:     
+        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;VIEWER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EDITOR&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ADMIN&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EXECUTOR&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SPECIFIC&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
         
       </description>
     </item>
@@ -124,8 +123,8 @@ GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60
       <description>
         
         
-         Services Api available.
-GraphQL schema definition  enum ServiceApiType{   HOTEL,    TRANSPORTATION,    CAR,    TRANSFERS,    ACTIVITIES,    VIRTUALACCOUNT,    PAYMENT,    PACKAGE,   }   
+        Services Api available.
+GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;TRANSPORTATION&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CAR&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;TRANSFERS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ACTIVITIES&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;VIRTUALACCOUNT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PAYMENT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PACKAGE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  
         
       </description>
     </item>
@@ -139,7 +138,7 @@ GraphQL schema definition  enum ServiceApiType{   HOTEL,    TRANSPORTATION,    C
       <description>
         
         
-         GraphQL schema definition  enum ServiceOperationType{   ALL,    SEARCH,    QUOTE,    BOOKING,    OTHER,   }   
+        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ALL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SEARCH&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;QUOTE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BOOKING&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OTHER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  
         
       </description>
     </item>
@@ -153,7 +152,7 @@ GraphQL schema definition  enum ServiceApiType{   HOTEL,    TRANSPORTATION,    C
       <description>
         
         
-         GraphQL schema definition  enum StatsInfoTypes{   ALL,    OK,    INTEGRATION,    PROVIDER,    COMMUNICATION,    HUB,    OTHER,   }   Required by StatsInfo:  Details of an specific error   
+        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ALL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OK&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;INTEGRATION&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PROVIDER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;COMMUNICATION&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HUB&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OTHER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
         
       </description>
     </item>

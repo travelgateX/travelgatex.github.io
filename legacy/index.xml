@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Legacy API</title>
@@ -6,6 +5,7 @@
     <description>Recent changes in Legacy API on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 18 Nov 2019 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -75,7 +75,7 @@ Hotel API:
         
         This document aims to explain all aspects of XML Travelgate&amp;rsquo;s Hotel API specification. In the following pages you will find detailed explanation of all Nodes, Elements and Attributes in every aspect of the API specification. It uses a very straightforward nomenclature that tries to define every aspect of the specification by the name.
 This documentation follows a standard. For every method there is:
- Method Description
+  Method Description
  Method Goals: What does it do, how does it do it?
         
           [...]
@@ -97,6 +97,76 @@ The hub structure is a generic structure wrapping the XML request which will ind
  Hub credentials. Connection time out measured in Milliseconds. XML Travelgate&amp;rsquo;s API version - usually indicated with a 1. Code for the Supplier you wish to connect to. Id to correlate providerRQ in Request with Response  Observations:
         
           [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Hotel API</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/legacy/hotel/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hotel/how-to-guides/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;How to guides&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;How to guides&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hotel/methods/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;API Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;API Reference&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hotel/faq/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-question&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;FAQ&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hotel/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Release notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Release notes&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Hotel Suppliers API</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/legacy/hotel-suppliers/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hotel-suppliers/how-to-guides/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;How to guides&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;How to guides&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hotel-suppliers/methods/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;API Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;API Reference&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hotel-suppliers/faq/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;FAQ&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hotel-suppliers/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Release notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Release notes&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Hub Documentation</title>
+      <link>https://docs.travelgatex.com/legacy/hub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hub/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/legacy/hub/change-log-front/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-exchange&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Changelog&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Contains an accurated, chronologically-ordered list of notable changes&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hub/data-structure/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Data Structure&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hub/example-codes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Example Code&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hub/quotas/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Hub Quotas&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Payments API</title>
+      <link>https://docs.travelgatex.com/legacy/payments/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/legacy/payments/data-structure/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Data Structure&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Summary of all the calls of the API&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/errorcodes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Error Codes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;List of code errors of the API&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/common-structure/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Common Structure&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;List of the most repeated elements across diferent calls&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/common-elements/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Common Elements&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;List of the most repeated elements across diferent calls&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/changelog/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-exchange&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;payments changelog&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/methods/createpayment/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-ellipsis-h&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Create Payment&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Information about the CreatePayment call&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/methods/capturepayment/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-ellipsis-h&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Capture Payment&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Information about the CapturePayment call&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/methods/detailspayment/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-ellipsis-h&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Details Payment&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Information about the DetailsPayment call&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/methods/modifypayment/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-ellipsis-h&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Modify Payment&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Information about the ModifyPayment call&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/methods/processnotification/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-ellipsis-h&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Process Notification&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Information about the ProcessNotification call&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/methods/refundpayment/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-ellipsis-h&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Refund Payment&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Information about the Refund Payment call&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/methods/runtimeconfiguration/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-ellipsis-h&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Runtime Configuration&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Information about the Runtime Configuration call&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/methods/staticconfiguration/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-ellipsis-h&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Static Configuration&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Information about the Static Configuration call&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Transportation API</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/legacy/transportation/flights/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-plane&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Flights API&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Read documentation on Flights Legacy APIs&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/transportation/ferries/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Ferries API&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Read documentation on diferent Legacy APIs&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/transportation/change-log/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-file-text-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Change Log&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Accurated, chronologically-ordered list of notable changes&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/transportation/common-elements/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-chain&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Common Elements&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;In every petition there some nodes which will always appear&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/transportation/enum/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-tags&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Enumerates&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Enumerates in use at our API&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
         
       </description>
     </item>

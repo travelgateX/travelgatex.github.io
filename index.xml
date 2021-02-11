@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – TravelgateX Documentation</title>
@@ -6,7 +5,7 @@
     <description>Recent changes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -17,537 +16,33 @@
     
     
     <item>
-      <title>Integrations: 2020-03-02</title>
-      <link>https://docs.travelgatex.com/integrations/flights/ei/changelog/2020-03-02/</link>
-      <pubDate>Mon, 02 Mar 2020 00:00:00 +0100</pubDate>
+      <title>Getting-Started: Getting Started</title>
+      <link>https://docs.travelgatex.com/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.travelgatex.com/integrations/flights/ei/changelog/2020-03-02/</guid>
+      <guid>https://docs.travelgatex.com/getting-started/</guid>
       <description>
         
         
-        ##2020-03-02  Added idTarifas in Availability  
-##2020-03-02  numScale counter error in Availability
+        Welcome to TravelgateX! Learn the basics of using our APIs, and start making integrations quickly and securely.
+&amp;lt;a href=&amp;quot;/getting-started/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;See how the TravelgateX platform and APIs fit together&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/getting-started/quickstart/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-clock-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Quickstart&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;How to get support for using our APIs&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/getting-started/concepts/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-question-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Concepts&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Basic concepts for all of the TravelgateX platform&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/getting-started/playground/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-play&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Playground&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Try our API now&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  With TravelgateX you can:
+        
+          [...]
         
       </description>
     </item>
     
     <item>
-      <title>Integrations: 2020-02-26</title>
-      <link>https://docs.travelgatex.com/integrations/flights/aert/changelog/2020-02-26/</link>
-      <pubDate>Wed, 26 Feb 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/aert/changelog/2020-02-26/</guid>
-      <description>
-        
-        
-         2020-02-26  issue of fare amount price without agency comission   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2020-02-12</title>
-      <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-02-12/</link>
-      <pubDate>Wed, 12 Feb 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-02-12/</guid>
-      <description>
-        
-        
-        ##2020-02-12  Null reference error of Valoracion
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2020-02-06</title>
-      <link>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-02-06/</link>
-      <pubDate>Thu, 06 Feb 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-02-06/</guid>
-      <description>
-        
-        
-         2020-01-17  Fixed transaction code for refunds   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2020-01-17</title>
-      <link>https://docs.travelgatex.com/integrations/flights/aert/changelog/2020-01-17/</link>
-      <pubDate>Fri, 17 Jan 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/aert/changelog/2020-01-17/</guid>
-      <description>
-        
-        
-         2020-01-17  Bookings with ADT typed passengers   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2020-01-17</title>
-      <link>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-01-17/</link>
-      <pubDate>Fri, 17 Jan 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-01-17/</guid>
-      <description>
-        
-        
-         2020-01-17  Fixed languages codes   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2020-01-14</title>
-      <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-14/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-14/</guid>
-      <description>
-        
-        
-         2020-01-14  OrderList development   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2020-01-08</title>
-      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2020-01-08/</link>
-      <pubDate>Wed, 08 Jan 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2020-01-08/</guid>
-      <description>
-        
-        
-         2020-01-08  Parsing of baggage with import=0 Parsing of included baggage   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2020-01-07</title>
-      <link>https://docs.travelgatex.com/integrations/flights/vy/changelog/2020-01-07/</link>
-      <pubDate>Tue, 07 Jan 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/vy/changelog/2020-01-07/</guid>
-      <description>
-        
-        
-        ##2020-01-07  List of segments shown
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-19</title>
-      <link>https://docs.travelgatex.com/integrations/flights/amd/changelog/2019-12-19/</link>
-      <pubDate>Thu, 19 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/amd/changelog/2019-12-19/</guid>
-      <description>
-        
-        
-         2019-12-19  Retrieved bookings&amp;rsquo; status   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-19</title>
-      <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/2019-12-19/</link>
-      <pubDate>Thu, 19 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/de2/changelog/2019-12-19/</guid>
-      <description>
-        
-        
-         2019-12-19  Cancellation issue   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-19</title>
-      <link>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-19/</link>
-      <pubDate>Thu, 19 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-19/</guid>
-      <description>
-        
-        
-        ##2019-12-19  Fare upsell request error by RT fares request
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-18</title>
-      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-12-18/</link>
-      <pubDate>Wed, 18 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-12-18/</guid>
-      <description>
-        
-        
-         2019-12-18  Parsing of special suplements of AvailabilityFares branded fares   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-18</title>
-      <link>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/2019-12-18/</link>
-      <pubDate>Wed, 18 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/2019-12-18/</guid>
-      <description>
-        
-        
-         2019-12-18  Fixed problem with phone numbers starting with &amp;lsquo;+&amp;rsquo;   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-12</title>
-      <link>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-12/</link>
-      <pubDate>Thu, 12 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-12/</guid>
-      <description>
-        
-        
-        ##2019-12-12  changed priority boarding book requirement from perReserva to perSegment
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-11</title>
-      <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-11/</link>
-      <pubDate>Wed, 11 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-11/</guid>
-      <description>
-        
-        
-         2019-12-11  List of routes offered   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-03</title>
-      <link>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-03/</link>
-      <pubDate>Tue, 03 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-12-03/</guid>
-      <description>
-        
-        
-        ##2019-12-03  type of priority boarding supplements that we parse in the Valuation response  
- Fare upsell request error   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-03</title>
-      <link>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/2019-12-03/</link>
-      <pubDate>Tue, 03 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/2019-12-03/</guid>
-      <description>
-        
-        
-         2019-12-03  MobilePhoneNumber value is now used if specified   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-02</title>
-      <link>https://docs.travelgatex.com/integrations/flights/hv/changelog/2019-12-02/</link>
-      <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/hv/changelog/2019-12-02/</guid>
-      <description>
-        
-        
-         2019-12-02  Showing payment methods   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-02</title>
-      <link>https://docs.travelgatex.com/integrations/flights/ig/changelog/2019-12-02/</link>
-      <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/ig/changelog/2019-12-02/</guid>
-      <description>
-        
-        
-         2019-12-02  framework to 4.6.2    when receiving RT request in 1 &amp;ldquo;Desglose&amp;rdquo;   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-12-02</title>
-      <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-02/</link>
-      <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-02/</guid>
-      <description>
-        
-        
-         2019-12-02  Seating references to flights   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-29</title>
-      <link>https://docs.travelgatex.com/integrations/flights/aa/changelog/2019-11-29/</link>
-      <pubDate>Fri, 29 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/aa/changelog/2019-11-29/</guid>
-      <description>
-        
-        
-         2019-11-27  change to get item bags.   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-28</title>
-      <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-11-28/</link>
-      <pubDate>Thu, 28 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-11-28/</guid>
-      <description>
-        
-        
-         2019-11-28  Charges for included baggage Number of baggage shown Baggage references to passengers   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-27</title>
-      <link>https://docs.travelgatex.com/integrations/flights/eft/changelog/2019-11-27/</link>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/eft/changelog/2019-11-27/</guid>
-      <description>
-        
-        
-         2019-11-27  The possibility of booking Open Jaw fares    tasasDU includes   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-27</title>
-      <link>https://docs.travelgatex.com/integrations/flights/lh/changelog/2019-11-27/</link>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/lh/changelog/2019-11-27/</guid>
-      <description>
-        
-        
-         2019-11-27  Error in Bags information Error in aplicaSegmentos when the flight is one-way .   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-27</title>
-      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-27/</link>
-      <pubDate>Wed, 27 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-27/</guid>
-      <description>
-        
-        
-         2019-11-27  Now when it tries to add it checks if it is before and if it deletes it..   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-25</title>
-      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-25/</link>
-      <pubDate>Mon, 25 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-25/</guid>
-      <description>
-        
-        
-         2019-11-25  Added seats to bill with price 0 when not reserved because of &amp;ldquo;PNS not allowed&amp;rdquo; error.   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-19</title>
-      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-19/</link>
-      <pubDate>Tue, 19 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-19/</guid>
-      <description>
-        
-        
-         2019-11-19  Sending duplicated birthdates causing the error &amp;ldquo;DB already collected&amp;rdquo; on Reservation.   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Legacy: 2019-11-18</title>
-      <link>https://docs.travelgatex.com/legacy/payments/changelog/2019-11-18/</link>
-      <pubDate>Mon, 18 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/legacy/payments/changelog/2019-11-18/</guid>
-      <description>
-        
-        
-         2019-11-18 v1.0.18  Included docs and changelog with current API status   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-15</title>
-      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-15/</link>
-      <pubDate>Fri, 15 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-15/</guid>
-      <description>
-        
-        
-         2019-11-15  Now in reservation PassengerDetails we always send the element ReceivedFrom.   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-14</title>
-      <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-11-14/</link>
-      <pubDate>Thu, 14 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-11-14/</guid>
-      <description>
-        
-        
-         2019-11-14  Transaction to get a list of supported routes.   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-13</title>
-      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-13/</link>
-      <pubDate>Wed, 13 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-13/</guid>
-      <description>
-        
-        
-         2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-13</title>
-      <link>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-13/</link>
-      <pubDate>Wed, 13 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-13/</guid>
-      <description>
-        
-        
-         2019-11-13  Timeout error typified Error in FareAvailability when asking for Optima Fares for return trips.   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-11-11</title>
-      <link>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-11/</link>
-      <pubDate>Mon, 11 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/vy/changelog/2019-11-11/</guid>
-      <description>
-        
-        
-         2019-11-11  The delta price control in the booking transaction Added priority boarding pricing in quote transaction. Added functionalty to request priority boarding in book transaction.   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: 2019-10-15</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-15/</link>
+      <title>Travelgatex: TravelgateX</title>
+      <link>https://docs.travelgatex.com/travelgatex/</link>
       <pubDate>Tue, 15 Oct 2019 00:00:00 +0200</pubDate>
       
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-15/</guid>
+      <guid>https://docs.travelgatex.com/travelgatex/</guid>
       <description>
         
         
-         2019-10-15  ACCESES: Added shared field and allowed url edition in acceses. MENU: new horizontal menu.    CONNECT: Modified to choose client before hotelx. PUBLIC WEB: changed info searches/day in home.    PROFILES: tag error on removing category fixed. PRESS: Fixed media processing.   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: 2019-10-09</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-09/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-09/</guid>
-      <description>
-        
-        
-         2019-10-09  ALERTS: Added new filters and group by ALERTS: Add API and timesToRecovery    ALERTS: Added new responsive styles    ALERTS: fix on Status ALERTS: fix on Update Price   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: 2019-09-16</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-16/</link>
-      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-16/</guid>
-      <description>
-        
-        
-         2019-09-16  Connect: Added VCC to legacy Profiles: Enabled entity asignment to profiles IAM: Added pagination and info to orgs, and profiles page completed    Added gzip compression to calls to the gateway    Alerts: Fixed issue on create new alert Connect: Fixed dates activations   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: ChannelX</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-channelx/log/legacy/</link>
-      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-channelx/log/legacy/</guid>
-      <description>
-        
-        
-        To make it easier for users and contributors to see precisely what notable changes have been made on the product.
-Product Page Link
-All notable changes to this product will be documented in this page. Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        The TravelgateX platform lets you build lightening fast applications and websites that connect to a wide range of travel suppliers in realtime. Integrations to new suppliers take less than 2 days to connect, rather than 2 weeks. Once the integration is in place, response times for showing hotel bookings is in the milliseconds, regardless of the size of the hotel booking database.
+&amp;lt;a href=&amp;quot;/travelgatex/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;TravelgateX Platform Information&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/concepts/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-question-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Concepts&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Understand TravelgateX basic concepts&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-book&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Reference Documentation&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/security/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-shield&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Security&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Authorization &amp;amp;amp; Authentication&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/data-automation/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-database&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Data Automation&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Automate bulk data operations&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/tutorials/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Tutorials&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Walkthrouhgs of common applications&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-map&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Release Notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;New Updates &amp;amp;amp; Releases&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/resources/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-file-text&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Resources&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;New Updates &amp;amp;amp; Releases&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/frequently-asked-questions/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-question-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;FAQs&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Do you have specific questions about TravelgateX?
         
           [...]
         
@@ -555,113 +50,16 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Travelgatex: 2019-09-30</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-30/</link>
-      <pubDate>Mon, 30 Sep 2019 00:00:00 +0200</pubDate>
+      <title>Hotel-X: Hotel-X</title>
+      <link>https://docs.travelgatex.com/hotel-x/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 +0100</pubDate>
       
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-30/</guid>
+      <guid>https://docs.travelgatex.com/hotel-x/</guid>
       <description>
         
         
-         2019-09-30  ENTITIES: Modified access form to custom require runtime configuration    IAM: Changes on new macro roles ORGANIZATIONS: Changed filters to not appear on the request on missing    MEMBERS: Solved an error realated on updating api-keys after a new creation   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: 2019-08-30</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-30/</link>
-      <pubDate>Fri, 30 Aug 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-30/</guid>
-      <description>
-        
-        
-         2019-08-30  IAM: Added owner filter to entities/admin-entities. added new tab for&amp;hellip; Logging: Added hotel reference Members: IAM-macro-roles, added tabs for simple and advanced Alerts: entities by buyer or seller    Logging: References now allows more than one option    Logging: Fixed logging with filter if your not logged on the page   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: 2019-08-16</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-16/</link>
-      <pubDate>Fri, 16 Aug 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-16/</guid>
-      <description>
-        
-        
-         2019-08-16  Logging: Added new feature to set filters via url Alerts: added logic time alerts Connect: modified profile cals and addded premium partner option to connect    Accesses: improved refresh logic when updating accesses IAM Entities: Improved sorting in entities    B2B: Fixed required typename on apis   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: 2019-07-31</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-31/</link>
-      <pubDate>Wed, 31 Jul 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-31/</guid>
-      <description>
-        
-        
-         2019-07-31  Alerts: Added sort to table Stats: traffic type selector Logging: Added column machine to results Logging: Selector items per page Error Messages: added hint description to error code table    Changed format of api-errors    Logging: Fixed error descriptions Profiles: fixed bug that prevented refresh on edit Logging: Added label when reference filters are disabled   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: 2019-07-15</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-15/</link>
-      <pubDate>Mon, 15 Jul 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-15/</guid>
-      <description>
-        
-        
-         2019-07-15  Alerts: added configuration multiselectors Profiles: Fully enabled filter profiles Logging: Added new filter number of results Entities: Added sorting method Profiles: Updated query to look for stats and formated text in profiles    Logging: Filter errors refactored Logging: Added red control to non filled required filters Logging: Changed time to 24h mode, without am/pm    Logging: Logging table wasn&amp;rsquo;t showing the timestamps on firefox, now is fixed Logging: Enable showing organisation suppliers on SELLER mode Logging: Hide the table on no results   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: 2019-06-28</title>
-      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-06-28/</link>
-      <pubDate>Fri, 28 Jun 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-06-28/</guid>
-      <description>
-        
-        
-         2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.    Fix on Stats Calendar   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Integrations: 2019-01-20</title>
-      <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-16/</link>
-      <pubDate>Sun, 20 Jan 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-16/</guid>
-      <description>
-        
-        
-        ##2019-01-20  ValoracionRS passenger reference issue
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Alerts-X: API</title>
-      <link>https://docs.travelgatex.com/alerts-x/reference/objects/api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/alerts-x/reference/objects/api/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        The Hotel-X API is a powerful aggregation solution that allows you to get results from the largest network of sellers in just one request. You have the possibility to aggregate at different levels like hotel, room type and rate plan among others.
+But there is still much more, you can build on your connectivity a robust business logic by using easily a first-in-industry plugin architecture. Leverage the power and flexibility of Hotel-X plugins to get an edge over your competitors.
         
           [...]
         
@@ -669,15 +67,43 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Hotel-X: API</title>
-      <link>https://docs.travelgatex.com/hotel-x/reference/objects/api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Legacy: Legacy API</title>
+      <link>https://docs.travelgatex.com/legacy/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://docs.travelgatex.com/hotel-x/reference/objects/api/</guid>
+      <guid>https://docs.travelgatex.com/legacy/</guid>
       <description>
         
         
-        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        &amp;lt;a href=&amp;quot;/legacy/intro/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Introduction&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Introductory Guide&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/service-endpoints/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-dot-circle-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Service Endpoints&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Introduction to Service Endpoints&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/audience/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-bullhorn&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Audience&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Who is this document indented to?&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/documents-goals/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-bullseye&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Documents goals&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Documentation objectives&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/anatomy-request/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-map&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Anatomy of Request&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Introduction to Service Endpoints&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hotel/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-building&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Hotel API&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Read documentation on Hotel Legacy API&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hotel-suppliers/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-building&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Hotel Suppliers API&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Read documentation on Hotel Suppliers API&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/hub/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-arrows-alt&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Hub Documentation&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Read documentation on Hub API&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/payments/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-credit-card&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Payments API&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Read documentation payments Legacy API&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/legacy/transportation/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-plane&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Transportation API&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Read documentation on diferent Legacy APIs&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: Inventory-X</title>
+      <link>https://docs.travelgatex.com/inventory-x/</link>
+      <pubDate>Wed, 25 Nov 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/inventory-x/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Invnetory-X Overview&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/quick-start/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-clock-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Quickstart&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Inventory-X Quickstart&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/api-reference/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-code&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;API Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Inventory-X API messages&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/faq/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-question-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;FAQ&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Frequently asked questions&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-map&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Release Notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Release Notes for Inventory-X&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Distribution-X</title>
+      <link>https://docs.travelgatex.com/distribution/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/</guid>
+      <description>
+        
+        
+        Distribution-X is the solution that allows you to manage princing rules, filters and blacklists for each of your clients connected trough TravelgateX, for both Legacy and Hotel-X APIs. These rules can be applied at a channel, hotel or booking level, as well as applied to specific date ranges or markets, giving you the power to configure your company’s distribution strategy in a simple, user-friendly interface. Distribution-X rules will help your company maximise benefits while growing the overall sales by managing pricing and filters for each of your customers.
         
           [...]
         
@@ -685,15 +111,46 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Logging: API</title>
-      <link>https://docs.travelgatex.com/logging/reference/objects/api/</link>
+      <title>Paymentx: PaymentX</title>
+      <link>https://docs.travelgatex.com/paymentx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.travelgatex.com/logging/reference/objects/api/</guid>
+      <guid>https://docs.travelgatex.com/paymentx/</guid>
       <description>
         
         
-        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        &amp;lt;a href=&amp;quot;/paymentx/reference/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-book&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Reference Documentation&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/release-notes/breaking-changes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-eraser&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;GraphQL Schema breaking changes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Changes history of deprecated notes previously announced&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Channel-X: Channel-X</title>
+      <link>https://docs.travelgatex.com/channel-x/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/channel-x/</guid>
+      <description>
+        
+        
+        It is a tool that allows a third partner to receive the product of the different channel managers in an unique standardized API. The objective of this platform is to speed up the extraction and the combination of the product for the Client. In order for this to work, Clients should build up an internal service to be able to receive the messages sent from Channel-X.
+&amp;lt;a href=&amp;quot;/channel-x/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;ChannelX Information&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/channel-x/documentation/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-code&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Documentation&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Guide to ChannelX&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/channel-x/faq/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-users&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;FaQ&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Discover ChannelX&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/channel-x/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-map&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Release Notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;New Updates &amp;amp;amp; Releases&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: Insights-X</title>
+      <link>https://docs.travelgatex.com/insights-x/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/</guid>
+      <description>
+        
+        
+        Insights-X is a powerful data product that will let you get back in control of your business.
+The innovative way we store, manage and process data allows us to produce real-time data, historical trends and forecast the travel industry to match your own needs.
+role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Join us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.&amp;lt;a href=&amp;quot;/insights-x/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Insights-X Overview&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/insights-x/content/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-question-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Contents&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;What is Insights-X?
         
           [...]
         
@@ -701,15 +158,135 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Mappea: API</title>
-      <link>https://docs.travelgatex.com/mappea/reference/objects/api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Flight-X: Flight-X</title>
+      <link>https://docs.travelgatex.com/flight-x/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0100</pubDate>
       
-      <guid>https://docs.travelgatex.com/mappea/reference/objects/api/</guid>
+      <guid>https://docs.travelgatex.com/flight-x/</guid>
       <description>
         
         
-        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        Is a new fast, easy, one-stop NDC 19.1 API for flight shopping and booking.
+With Flight-X, you can connect to multiple NDC and non-NDC Suppliers and add business logic to reflect your pricing and unique offers.
+There are no integration costs and you can integrate with hundreds of flights Suppliers.
+role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Join us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.&amp;lt;a href=&amp;quot;/flight-x/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Flight-X Overview&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/flight-x/reference/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-book&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;API Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Reference Documentation&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/flight-x/methods/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list-alt&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Methods&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Flight-X Methods&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/flight-x/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-map&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Release Notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;New Updates &amp;amp;amp; Releases&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: Logging</title>
+      <link>https://docs.travelgatex.com/logging/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/</guid>
+      <description>
+        
+        
+        Logging is a powerful data product that will let you evaluate real-time minute-by-minute buyer and/or seller performance.
+role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Join us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.&amp;lt;a href=&amp;quot;/logging/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Logging Overview&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/logging/howtos/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;How-to guides&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Perform specific tasks&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/logging/reference/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-book&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Reference Documentation&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/logging/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-map&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Release Notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;New Updates &amp;amp;amp; Releases&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: Stats</title>
+      <link>https://docs.travelgatex.com/stats/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/</guid>
+      <description>
+        
+        
+        Stats is a powerful data product that will let you evaluate real-time minute-by-minute buyer and/or seller performance.
+role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Join us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.&amp;lt;a href=&amp;quot;/stats/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Stats Overview&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/stats/howtos/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;How-to guides&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Perform specific tasks&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-book&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Reference Documentation&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/stats/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-map&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Release Notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;New Updates &amp;amp;amp; Releases&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: Alerts-X</title>
+      <link>https://docs.travelgatex.com/alerts-x/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/</guid>
+      <description>
+        
+        
+        Alerts-X is a powerful data product that will evaluate real-time minute-by-minute buyer and/or seller performance according to a configuration to alert of possible unusual performance.
+role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Join us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.&amp;lt;a href=&amp;quot;/alerts-x/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Alerts-X Overview&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/alerts-x/reference/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-book&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Reference Documentation&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/alerts-x/howtos/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;How-to guides&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Perform specific tasks&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/alerts-x/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-map&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Release Notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;New Updates &amp;amp;amp; Releases&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mappea: MappeaX</title>
+      <link>https://docs.travelgatex.com/mappea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/mappea/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;ChannelX Information&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/mappea/reference/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-book&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Reference Documentation&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/mappea/release-notes/breaking-changes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-eraser&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;GraphQL Schema breaking changes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Changes history of deprecated notes previously announced&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: Integrations</title>
+      <link>https://docs.travelgatex.com/integrations/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/</guid>
+      <description>
+        
+        
+        Consult here our integrations grouped by line.
+role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Join us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.&amp;lt;a href=&amp;quot;/integrations/flights/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-plane&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Flights&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Flight integrations&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/integrations/payment/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-credit-card&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Payment&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Payment integrations&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/integrations/hotel/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-hotel&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Hotel&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Hotel integrations&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Learning-Graphql: Learning GraphQL</title>
+      <link>https://docs.travelgatex.com/learning-graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/learning-graphql/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/learning-graphql/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons&amp;quot;&amp;gt;&amp;lt;img width=&amp;quot;24px&amp;quot; src=&amp;quot;/images/graphql.svg&amp;quot;/&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;GraphQL Overview&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/learning-graphql/basic_concepts/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Basic Concepts&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/learning-graphql/thinking_in_graphql/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-cogs&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Thinking in GraphQL&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/learning-graphql/tools/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-wrench&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Tools&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/learning-graphql/tutorials_resources/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-graduation-cap&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Tutorials &amp;amp;amp; Resources&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Community: Community</title>
+      <link>https://docs.travelgatex.com/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/community/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/community/style-guide/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Style Guide&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Community Style Guide&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/community/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Writting release notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Release notes, document with the changelog&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/community/gist/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-info-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Using gist to include GraphQL examples&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Use gist to document GraphQL examples&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/community/integrations-changelog/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-exchange&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Integrations Changelog&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Integrations changelog process&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PRODUCT_TEMPLATE: PRODUCT NAME</title>
+      <link>https://docs.travelgatex.com/product_template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/product_template/</guid>
+      <description>
+        
+        
+        Smoke, mirrors and snake oil
+&amp;lt;a href=&amp;quot;/product_template/reference/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-book&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Reference&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Reference Documentation&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/product_template/howtos/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;How-to guides&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Perform specific tasks&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/product_template/release-notes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-map&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Release Notes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;New Updates &amp;amp;amp; Releases&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/product_template/faqs/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-question&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;FAQs&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Do you have specific questions about PRODUCT?
         
           [...]
         
@@ -717,15 +294,43 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Paymentx: API</title>
-      <link>https://docs.travelgatex.com/paymentx/reference/objects/api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>: footer</title>
+      <link>https://docs.travelgatex.com/_footer/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
       
-      <guid>https://docs.travelgatex.com/paymentx/reference/objects/api/</guid>
+      <guid>https://docs.travelgatex.com/_footer/</guid>
       <description>
         
         
-        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        Lorem ipsum dolor sit amet.
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>: header</title>
+      <link>https://docs.travelgatex.com/_header/</link>
+      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/_header/</guid>
+      <description>
+        
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>: Credits</title>
+      <link>https://docs.travelgatex.com/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/credits/</guid>
+      <description>
+        
+        
+        github contributors Other contributors Packages and libraries  Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services&amp;hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester.
         
           [...]
         

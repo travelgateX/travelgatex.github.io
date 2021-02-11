@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – API Reference</title>
@@ -14,6 +13,34 @@
     
 	    <atom:link href="https://docs.travelgatex.com/inventory-x/api-reference/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Inventory-X: Messages</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/messages/</guid>
+      <description>
+        
+        
+        Messages used in the Inventory-X API &amp;lt;a href=&amp;quot;/inventory-x/api-reference/messages/set-up/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-cog&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Set Up Messages&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Configuration messages&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/api-reference/messages/product-load/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-upload&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Product Load Messages&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Messages to load product&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/api-reference/messages/booking-flow/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-bed&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Booking Flow Messages&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Booking Flow Messages&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/api-reference/messages/messages-ota-xsd/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-exchange&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Messages with OTA XSD structure&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;List of messages with OTA xsd structure used&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: Code List</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/codelist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/codelist/</guid>
+      <description>
+        
+        
+        List of Codes used in the Inventory-X API &amp;lt;a href=&amp;quot;/inventory-x/api-reference/codelist/setup-product-load-errors/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-bug&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Error Codes Set-up and Product load&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;List of Error Codes in Set-up and Product load&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/api-reference/codelist/booking-flow-errors/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-bug&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Error Codes Booking Flow&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;List of Error Codes in Booking Flow&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/api-reference/codelist/meal-plan-codes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-coffee&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Meal Plan Codes (OTA MPT)&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;List of Meal Plan Codes&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/api-reference/codelist/payment-type-codes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-tag&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Payment Type Codes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;List of Payment Type Codes&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/api-reference/codelist/credit-cards/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-credit-card&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Credit Cards Codes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;List of Credit Cards Codes&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
     
   </channel>
 </rss>
