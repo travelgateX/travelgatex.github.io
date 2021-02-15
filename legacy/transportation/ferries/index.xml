@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Ferries API</title>
@@ -26,7 +27,7 @@
         Method Goals This method aims to complete the common side of the petition with the ferries specifications, if any, and therefore have the complete petition for ferries.
 Request Format The request needs a list of journeys (each one with the desired dates and ports), a list of the passengers and an optional vehicle list.
 Response Format The response contains a list of fares with the available options.
-AvailabilityRQ &amp;lt;AvailabilityRQ xmlns:xsd = &amp;#34;http://www.
+AvailabilityRQ &amp;lt;AvailabilityRQ xmlns:xsd = &amp;quot;http://www.
         
           [...]
         
@@ -45,7 +46,7 @@ AvailabilityRQ &amp;lt;AvailabilityRQ xmlns:xsd = &amp;#34;http://www.
         Method Goals This method aims to cancel a booking.
 Request Format The request requires the booking code or locator.
 Response Format If the provider returns a Breakdown, this will be informed in CancellarionRS.
-CancellationRQ Example &amp;lt;CancellationRQ&amp;gt; &amp;lt;Locator&amp;gt;XXX&amp;lt;/Locator&amp;gt; &amp;lt;CancellationCosts&amp;gt;0&amp;lt;/CancellationCosts&amp;gt; &amp;lt;/CancellationRQ&amp;gt; CancellationRQ Description    Element Number Type Description     CancellationRQ 1  Root node.   Locator 1  Contains a list of Tickets.   CancellationCosts 1  Contains details of the Ticket.
+CancellationRQ Example &amp;lt;CancellationRQ&amp;gt; &amp;lt;Locator&amp;gt;XXX&amp;lt;/Locator&amp;gt; &amp;lt;CancellationCosts&amp;gt;0&amp;lt;/CancellationCosts&amp;gt; &amp;lt;/CancellationRQ&amp;gt;  CancellationRQ Description    Element Number Type Description     CancellationRQ 1  Root node.   Locator 1  Contains a list of Tickets.   CancellationCosts 1  Contains details of the Ticket.
         
           [...]
         
@@ -135,7 +136,7 @@ Response Format The result returns a list of Locator (booking codes). It can be 
         Method Goals This method aims to retrieve a booking with its full details.
 Request Format The request requires the booking code or locator.
 Response Format The response contains the details of a booking.
-RetrieveReservationRQ Example &amp;lt;RetrieveReservationRQ xmlns:xsd = &amp;#34;http://www.w3.org/2001/XMLSchema&amp;#34; xmlns:xsi = &amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;&amp;gt; &amp;lt;Configuration/&amp;gt; &amp;lt;ClientConfiguration/&amp;gt; &amp;lt;Locator&amp;gt;BFRFKVM&amp;lt;/Locator&amp;gt; &amp;lt;/RetrieveReservationRQ&amp;gt; RetrieveReservationRQ Description    Element Number Type Description     RetrieveReservationRQ 1  Root node.   Locator 1 String Locator.    RetrieveReservationRS Example &amp;lt;RetrieveReservationRS xmlns:xsd = &amp;#34;http://www.
+RetrieveReservationRQ Example &amp;lt;RetrieveReservationRQ xmlns:xsd = &amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; xmlns:xsi = &amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt; &amp;lt;Configuration/&amp;gt; &amp;lt;ClientConfiguration/&amp;gt; &amp;lt;Locator&amp;gt;BFRFKVM&amp;lt;/Locator&amp;gt; &amp;lt;/RetrieveReservationRQ&amp;gt;  RetrieveReservationRQ Description    Element Number Type Description     RetrieveReservationRQ 1  Root node.   Locator 1 String Locator.
         
           [...]
         
@@ -154,7 +155,7 @@ RetrieveReservationRQ Example &amp;lt;RetrieveReservationRQ xmlns:xsd = &amp;#34
         Method Goals This method aims to return a list of bookings for a given time period being that either booking date or the travelling date.
 Request Format The request requires a date (of reservation or departure) and all the bookings that match this date will be returned.
 Response Format The response contains a list of bookings that match the requested date.
-RetrieveReservationListRQ Example &amp;lt;RetrieveReservationListRQ&amp;gt; &amp;lt;Configuration/&amp;gt; &amp;lt;ClientConfiguration currencyCode = &amp;#34;EUR&amp;#34;/&amp;gt; &amp;lt;ReservationDate&amp;gt;2014-03-04T00:00:00&amp;lt;/ReservationDate&amp;gt; &amp;lt;DepartureDate&amp;gt;2010-09-09T00:00:00&amp;lt;/DepartureDate&amp;gt; &amp;lt;ClientEmail&amp;gt;client@clientmail.
+RetrieveReservationListRQ Example &amp;lt;RetrieveReservationListRQ&amp;gt; &amp;lt;Configuration/&amp;gt; &amp;lt;ClientConfiguration currencyCode = &amp;quot;EUR&amp;quot;/&amp;gt; &amp;lt;ReservationDate&amp;gt;2014-03-04T00:00:00&amp;lt;/ReservationDate&amp;gt; &amp;lt;DepartureDate&amp;gt;2010-09-09T00:00:00&amp;lt;/DepartureDate&amp;gt; &amp;lt;ClientEmail&amp;gt;client@clientmail.
         
           [...]
         
@@ -174,7 +175,7 @@ RetrieveReservationListRQ Example &amp;lt;RetrieveReservationListRQ&amp;gt; &amp
 Request Format This request does not require any parameters.
 Response Format The result returns a list of Route with the corresponding time frame in which this route is valid.
 Remarks This method should be cached internally and only called once a week and in most cases once a month.
-RoutesRQ Example &amp;lt;RoutesRQ&amp;gt; &amp;lt;/RoutesRQ&amp;gt; RoutesRQ Description    Element Number Type Description     RoutesRQ 1  Root node.
+RoutesRQ Example &amp;lt;RoutesRQ&amp;gt; &amp;lt;/RoutesRQ&amp;gt;  RoutesRQ Description    Element Number Type Description     RoutesRQ 1  Root node.
         
           [...]
         

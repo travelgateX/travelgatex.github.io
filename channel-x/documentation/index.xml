@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Documentation</title>
@@ -13,40 +14,6 @@
     
 	    <atom:link href="https://docs.travelgatex.com/channel-x/documentation/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Channel-X: Code Lists</title>
-      <link>https://docs.travelgatex.com/channel-x/documentation/codelists/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/channel-x/documentation/codelists/</guid>
-      <description>
-        
-        
-        Error Codes    Error Code Error Description     -1 Validation error   1 POS credentials not found   2 HotelCode or RatePlanList not found   3 Rates not found   4 Incomplete Rate values   6 Incomplete AvailStatusMessage StatusApplicationControl Values   7 Incomplete AdditionalGuestAmount values   8 SellableProduct not found   9 Room not found in SellableProduct    Meal Plan Codes (OTA MPT)    Code Description     1 All inclusive   2 American   3 Bed &amp;amp; breakfast   4 Buffet breakfast   5 Caribbean breakfast   6 Continental breakfast   7 English breakfast   8 European plan   9 Family plan   10 Full board   11 Full breakfast   12 Half board/modified American plan   13 As brochured   14 Room only   15 Self catering   16 Bermuda   17 Dinner bed and breakfast plan   18 Family American   19 Breakfast   20 Modified   255 Full board And Drinks   256 Half board And Drinks   257 All inclusive Premium   258 Gala Dinner    Payment Type Codes    Payment Type Code Description     MerchantPayment The customer pays the client and the client will pay the provider.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Channel-X: Price Use Cases</title>
-      <link>https://docs.travelgatex.com/channel-x/documentation/pricetut/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/channel-x/documentation/pricetut/</guid>
-      <description>
-        
-        
-        Three price charging types are allowed: price per Room, price per Pax and price per Occupancy. When more than one price is charged for the same day, the lowest price will be returned as available price.
-Price per Room
-When a price is charged per Room means that all occupancies allowed in the room will have the same price. If an AdditionalGuestAmount are charged for occupancies over the standard occupancy, they will be applied.
-        
-          [...]
-        
-      </description>
-    </item>
     
   </channel>
 </rss>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Schema</title>
@@ -23,7 +24,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;alerts&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/alerts-x/reference/objects/alertconnection&amp;quot;&amp;gt;AlertConnection!&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields 
+         GraphQL schema definition type AlertsXQuery {  alerts(    relay: RelayInput,     filter: AlertFilterInput,     criteria: AlertCriteriaInput,     ): AlertConnection!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields alerts(AlertConnection!): Query to obtain Alerts   
         
       </description>
     </item>
@@ -37,7 +38,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;createAlert&amp;lt;/span&amp;gt;(  input: AlertInput!, ): Alert &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;updateAlert&amp;lt;/span&amp;gt;(  code: ID!, input: AlertUpdateInput!, ): Alert &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/alerts-x/reference/objects/alert&amp;quot;&amp;gt;updateAlert(Alert):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;Mutation to update an existing alert&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type AlertsXMutation {  createAlert( input: AlertInput!, ): Alert    updateAlert( code: ID!, input: AlertUpdateInput!, ): Alert   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields createAlert(Alert): Mutation to create a new alert  updateAlert(Alert): Mutation to update an existing alert   
         
       </description>
     </item>

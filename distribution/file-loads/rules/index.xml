@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Rules</title>
@@ -41,8 +42,8 @@
         
         
         Considerations It is an absolute load, so bear in mind these considerations:
-  If all the data on the file is correct then the existing definition of Temporary Pricing Rules is removed and file&amp;rsquo;s data is inserted into the system to define the new Temporary Pricing Rules.
-  If there is any problem with the file or its data then the load is cancelled and the existing definition of Specific Stop Sales is not removed.
+ If all the data on the file is correct then the existing definition of Temporary Pricing Rules is removed and file&amp;rsquo;s data is inserted into the system to define the new Temporary Pricing Rules.
+ If there is any problem with the file or its data then the load is cancelled and the existing definition of Specific Stop Sales is not removed.
         
           [...]
         
@@ -59,8 +60,8 @@
         
         
         General Stop Sales Considerations It is an absolute load, so bear in mind these considerations:
-  If all the data on the file is correct then the existing definition of &amp;ldquo;General Stop Sales&amp;rdquo; is removed and file&amp;rsquo;s data is inserted into the system to define the new &amp;ldquo;General Stop Sales&amp;rdquo;.
-  If there is any problem with the file or its data then the load is cancelled and the existing definition of &amp;ldquo;General Stop Sales&amp;rdquo; is not removed.
+ If all the data on the file is correct then the existing definition of &amp;ldquo;General Stop Sales&amp;rdquo; is removed and file&amp;rsquo;s data is inserted into the system to define the new &amp;ldquo;General Stop Sales&amp;rdquo;.
+ If there is any problem with the file or its data then the load is cancelled and the existing definition of &amp;ldquo;General Stop Sales&amp;rdquo; is not removed.
         
           [...]
         
@@ -77,8 +78,8 @@
         
         
         Specific Stop Sales Considerations It is an absolute load, so bear in mind these considerations:
-  If all the data on the file is correct then the existing definition of General Stop Sales is removed and file&amp;rsquo;s data is inserted into the system to define the new Specific Stop Sales.
-  If there is any problem with the file or its data then the load is cancelled and the existing definition of Specific Stop Sales is not removed.
+ If all the data on the file is correct then the existing definition of General Stop Sales is removed and file&amp;rsquo;s data is inserted into the system to define the new Specific Stop Sales.
+ If there is any problem with the file or its data then the load is cancelled and the existing definition of Specific Stop Sales is not removed.
         
           [...]
         

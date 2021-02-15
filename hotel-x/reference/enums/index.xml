@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Enums</title>
@@ -23,7 +24,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;WARN&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ERROR&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;INFO&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:     
         
       </description>
     </item>
@@ -37,21 +38,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ROOM&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SERVICE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;GENERAL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/objects/media&amp;quot;&amp;gt; Media: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/objects/hotelxamenitydata&amp;quot;&amp;gt; HotelXAmenityData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/objects/amenity&amp;quot;&amp;gt; Amenity: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Hotel-X: BookingCriteriaType</title>
-      <link>https://docs.travelgatex.com/hotel-x/reference/enums/bookingcriteriatype/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/bookingcriteriatype/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;DATES&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;REFERENCES&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum ApplicationAreaType{   HOTEL,    ROOM,    SERVICE,    GENERAL,   }   Required by AmenityStatic:    Media:    HotelXAmenityData:    Amenity:     
         
       </description>
     </item>
@@ -65,7 +52,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SMOKER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;NON_SMOKER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EXTRABED&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CRADLE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;DOUBLE_BED&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;TWIN_BEDS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CONTIGUOUS_ROOMS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;WEDDING&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;LATE_ARRIVAL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;LATE_CHECKOUT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EARLY_CHECKIN&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;GROUND_FLOOR&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;TOP_FLOR&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;WITHOUT_VOUCHER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum BookPreferenceType{   SMOKER,    NON_SMOKER,    EXTRABED,    CRADLE,    DOUBLE_BED,    TWIN_BEDS,    CONTIGUOUS_ROOMS,    WEDDING,    LATE_ARRIVAL,    LATE_CHECKOUT,    EARLY_CHECKIN,    GROUND_FLOOR,    TOP_FLOR,    WITHOUT_VOUCHER,   }   Required by BookPreferenceInfo:     
         
       </description>
     </item>
@@ -79,7 +66,21 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OK&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;KO&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ON_REQUEST&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CANCELLED&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;UNKNOWN&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PENDING_COMMIT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/objects/hotelcanceldetail&amp;quot;&amp;gt; HotelCancelDetail: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/objects/hotelcommitdetails&amp;quot;&amp;gt; HotelCommitDetails: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition  enum BookStatusType{   OK,    KO,    ON_REQUEST,    CANCELLED,    UNKNOWN,    PENDING_COMMIT,   }   Required by HotelBookingDetail:    HotelCancelDetail:    HotelCommitDetails:     
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: BookingCriteriaType</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/enums/bookingcriteriatype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/enums/bookingcriteriatype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition  enum BookingCriteriaType{   DATES,    REFERENCES,   }   Required by HotelCriteriaBookingInput:     
         
       </description>
     </item>
@@ -93,7 +94,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CHEAPER_AMOUNT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ROOM_TYPE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/inputobjects/businessrulesinput&amp;quot;&amp;gt; BusinessRulesInput: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/inputobjects/hotelxbusinessrulesinput&amp;quot;&amp;gt; HotelXBusinessRulesInput: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition  enum BusinessRulesType{   CHEAPER_AMOUNT,    ROOM_TYPE,   }   Required by BusinessRules:    BusinessRulesInput:    HotelXBusinessRulesInput:     
         
       </description>
     </item>
@@ -107,7 +108,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;NIGHTS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PERCENT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;IMPORT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum CancelPenaltyType{   NIGHTS,    PERCENT,    IMPORT,   }   Required by CancelPenalty:     
         
       </description>
     </item>
@@ -121,7 +122,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;INCLUDE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EXCLUDE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/objects/surcharge&amp;quot;&amp;gt; Surcharge: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition  enum ChargeType{   INCLUDE,    EXCLUDE,   }   Required by Supplement:    Surcharge:     
         
       </description>
     </item>
@@ -135,7 +136,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ARRIVAL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BOOKING&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum DateType{   ARRIVAL,    BOOKING,   }   Required by CriteriaBookingDatesInput:     
         
       </description>
     </item>
@@ -149,7 +150,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ADDITIONAL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;AMENITY&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ACTIVITY&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;RESTAURANT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ROOM&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;GENERAL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;POOL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;LOCATION&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOW_TO_GET&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum DescriptionType{   ADDITIONAL,    AMENITY,    ACTIVITY,    RESTAURANT,    ROOM,    GENERAL,    POOL,    LOCATION,    HOW_TO_GET,   }   Required by Description:     
         
       </description>
     </item>
@@ -163,7 +164,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ZONE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CITY&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;COUNTRY&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum DestinationType{   ZONE,    CITY,    COUNTRY,   }   Required by DestinationData:     
         
       </description>
     </item>
@@ -177,7 +178,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;RANGE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OPEN&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum DurationType{   RANGE,    OPEN,   }   Required by Supplement:     
         
       </description>
     </item>
@@ -191,7 +192,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ROOT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ORG&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;GROUP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PROFILE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;TEAM&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;FOLDER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PRODUCT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;RESOURCE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SPECIFIC_RESOURCE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/objects/organizationdata&amp;quot;&amp;gt; OrganizationData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by GroupData:    GroupCommonData:    OrganizationData:     
         
       </description>
     </item>
@@ -205,7 +206,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_SKIPASS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_SKIPASS_LESSONS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_SKIPASS_LESSONS_MEALS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_SKIPASS_EQUIPMENT_LESSONS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_SKIPASS_EQUIPMENT_LESSONS_MEALS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_TICKET&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_TICKET_TRANSFERS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;GALA&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_SKIPASS_EQUIPMENT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_SKIPASS_MEALS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_SKIPASS_EQUIPMENT_MEALS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_ACTIVITY&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum HotelOptionType{   HOTEL,    HOTEL_SKIPASS,    HOTEL_SKIPASS_LESSONS,    HOTEL_SKIPASS_LESSONS_MEALS,    HOTEL_SKIPASS_EQUIPMENT_LESSONS,    HOTEL_SKIPASS_EQUIPMENT_LESSONS_MEALS,    HOTEL_TICKET,    HOTEL_TICKET_TRANSFERS,    GALA,    HOTEL_SKIPASS_EQUIPMENT,    HOTEL_SKIPASS_MEALS,    HOTEL_SKIPASS_EQUIPMENT_MEALS,    HOTEL_ACTIVITY,   }   Required by ReviewedHotelOptionType:     
         
       </description>
     </item>
@@ -219,7 +220,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ADULT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CHILD&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;INFANT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/objects/agerange&amp;quot;&amp;gt; AgeRange: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition  enum HotelPaxType{   ADULT,    CHILD,    INFANT,   }   Required by MetadataCandidate:    AgeRange:     
         
       </description>
     </item>
@@ -233,7 +234,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PERCENT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;IMPORT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum MarkupRuleType{   PERCENT,    IMPORT,   }   Required by Rule:     
         
       </description>
     </item>
@@ -247,7 +248,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;USER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SERVICE_ACCOUNT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Required by MemberData:     
         
       </description>
     </item>
@@ -261,7 +262,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;STRING&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;NUMERIC&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BOOLEAN&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;XML&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;URI&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum MetadataType{   STRING,    NUMERIC,    BOOLEAN,    XML,    URI,   }   Required by HotelRuntimeParameter:     
         
       </description>
     </item>
@@ -275,7 +276,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SEARCH&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;QUOTE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BOOKING&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CANCEL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SCHEDULER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CREATE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;READ&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;UPDATE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;DELETE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EXECUTE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OTHER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  
+         GraphQL schema definition  enum OperationType{   SEARCH,    QUOTE,    BOOKING,    CANCEL,    SCHEDULER,    CREATE,    READ,    UPDATE,    DELETE,    EXECUTE,    OTHER,   }   
         
       </description>
     </item>
@@ -289,7 +290,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;VI&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;AX&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BC&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CA&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CB&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CU&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;DS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;DC&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;T&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;R&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;N&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;L&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;E&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;JC&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;TO&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;S&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EC&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EU&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;TP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;XS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;O&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/inputobjects/paymentcardinput&amp;quot;&amp;gt; PaymentCardInput: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition  enum PaymentCardType{   VI,    AX,    BC,    CA,    CB,    CU,    DS,    DC,    T,    R,    N,    L,    E,    JC,    TO,    S,    EC,    EU,    TP,    OP,    ER,    XS,    O,   }   Required by PaymentCardData:    PaymentCardInput:     
         
       </description>
     </item>
@@ -303,7 +304,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;MERCHANT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;DIRECT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CARD_BOOKING&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CARD_CHECK_IN&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PAYX&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/objects/hoteloptionsearch&amp;quot;&amp;gt; HotelOptionSearch: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition  enum PaymentType{   MERCHANT,    DIRECT,    CARD_BOOKING,    CARD_CHECK_IN,    PAYX,   }   Required by ReviewedPaymentType:    HotelOptionSearch:     
         
       </description>
     </item>
@@ -317,7 +318,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;REQUEST&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;REQUEST_ACCESS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;RESPONSE_OPTION&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;RESPONSE_ACCESS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;RESPONSE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/inputobjects/pluginstepinput&amp;quot;&amp;gt; PluginStepInput: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/inputobjects/hotelxfilterplugintypeinput&amp;quot;&amp;gt; HotelXFilterPluginTypeInput: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/inputobjects/hotelxdefaultpluginstepinput&amp;quot;&amp;gt; HotelXDefaultPluginStepInput: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/inputobjects/hotelxdefaultplugininput&amp;quot;&amp;gt; HotelXDefaultPluginInput: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition  enum PluginStepType{   REQUEST,    REQUEST_ACCESS,    RESPONSE_OPTION,    RESPONSE_ACCESS,    RESPONSE,   }   Required by HotelXDefaultPlugin:    PluginStepInput:    HotelXFilterPluginTypeInput:    HotelXDefaultPluginStepInput:    HotelXDefaultPluginInput:     
         
       </description>
     </item>
@@ -331,7 +332,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PRE_STEP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOTEL_MAP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BOARD_MAP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ROOM_MAP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CURRENCY_CONVERSION&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;MARKUP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;AGGREGATION&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;POST_STEP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;COMMISSION&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;MARKETS_GROUP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;AMENITY_MAP&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/inputobjects/pluginsinput&amp;quot;&amp;gt; PluginsInput: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/inputobjects/hotelxdefaultplugininput&amp;quot;&amp;gt; HotelXDefaultPluginInput: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition  enum PluginType{   PRE_STEP,    HOTEL_MAP,    BOARD_MAP,    ROOM_MAP,    CURRENCY_CONVERSION,    MARKUP,    AGGREGATION,    POST_STEP,    COMMISSION,    MARKETS_GROUP,    AMENITY_MAP,   }   Required by HotelXDefaultPlugin:    PluginsInput:    HotelXDefaultPluginInput:     
         
       </description>
     </item>
@@ -345,7 +346,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BUYER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SELLER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  
+         GraphQL schema definition  enum ProfileType{   BUYER,    SELLER,   }   
         
       </description>
     </item>
@@ -359,7 +360,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PACKAGE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OLDER55&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OLDER60&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OLDER65&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;CANARY_RESIDENT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;BALEARIC_RESIDENT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;LARGE_FAMILY&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HONEYMOON&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PUBLIC_SERVANT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;UNEMPLOYED&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;NORMAL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;NON_REFUNDABLE&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   Required by ReviewedRateRule:     
         
       </description>
     </item>
@@ -373,7 +374,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;VIEWER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EDITOR&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ADMIN&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EXECUTOR&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SPECIFIC&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum RoleType{   VIEWER,    EDITOR,    ADMIN,    EXECUTOR,    SPECIFIC,   }   Required by RoleData:     
         
       </description>
     </item>
@@ -387,7 +388,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;OK&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;RQ&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/hotel-x/reference/objects/hoteloptionquote&amp;quot;&amp;gt; HotelOptionQuote: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition  enum StatusType{   OK,    RQ,   }   Required by HotelOptionSearch:    HotelOptionQuote:     
         
       </description>
     </item>
@@ -401,7 +402,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;SKI_PASS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;LESSONS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;MEALS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;EQUIPMENT&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;TICKET&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;TRANSFERS&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;GALA&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;ACTIVITY&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum SupplementType{   SKI_PASS,    LESSONS,    MEALS,    EQUIPMENT,    TICKET,    TRANSFERS,    GALA,    ACTIVITY,   }   Required by Supplement:     
         
       </description>
     </item>
@@ -415,7 +416,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;USER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PASSWORD&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;URLAVAIL&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;URLVALUATION&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;URLRESERVATION&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;URLGENERIC&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;PARAMETER&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum TagRuntimeType{   USER,    PASSWORD,    URLAVAIL,    URLVALUATION,    URLRESERVATION,    URLGENERIC,    PARAMETER,   }   Required by HotelRuntimeParameter:     
         
       </description>
     </item>
@@ -429,7 +430,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;DAY&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;HOUR&amp;lt;/span&amp;gt;, &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Required by 
+         GraphQL schema definition  enum UnitTimeType{   DAY,    HOUR,   }   Required by Supplement:     
         
       </description>
     </item>

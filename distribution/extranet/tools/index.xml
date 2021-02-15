@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Tools</title>
@@ -13,41 +14,6 @@
     
 	    <atom:link href="https://docs.travelgatex.com/distribution/extranet/tools/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Distribution: Searches</title>
-      <link>https://docs.travelgatex.com/distribution/extranet/tools/searches/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/distribution/extranet/tools/searches/</guid>
-      <description>
-        
-        
-        Overview This tool allows us to perform a search on our hotels and suppliers to see their static data.
-Hotels From the component, by selecting filter, it lets us choose between one of the possible search fields:
- Hotel Name Hotel Code Hotel Chain Destination Country Code.  An example searching by hotel name: We choose the filter and its value, we add it and we can carry out the search.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Distribution: Reports</title>
-      <link>https://docs.travelgatex.com/distribution/extranet/tools/reports/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/distribution/extranet/tools/reports/</guid>
-      <description>
-        
-        
-        Reports return CSV files with information about your product. Currently there is a report of a Hotels Blacklist, Suppliers Blacklist and Hotels Report. This first one also includes information on why these hotels are on the blacklist (if it is by blacklisted destination, chain, market&amp;hellip;).
-We can generate as many reports as we want, but there is a restriction of one every 5 minutes per type of report, and they last 3 months until deleted.
-        
-          [...]
-        
-      </description>
-    </item>
     
   </channel>
 </rss>

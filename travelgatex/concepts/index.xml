@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Concepts</title>
@@ -41,7 +42,10 @@ Access An Access is a set of credentials and configuration in order to access th
       <description>
         
         
+        Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+ Join us on Slack and let us know what resources you need us to prirotize Send us a Jira service desk request Log an issues request with us Write this page yourself!
         
+          [...]
         
       </description>
     </item>
@@ -57,9 +61,10 @@ Access An Access is a set of credentials and configuration in order to access th
         
         The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and they are required in all API requests.
 Authorization (Required) The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.
-Syntax Authorization: &amp;lt;type&amp;gt; &amp;lt;credentials&amp;gt; Directives &amp;lt;type&amp;gt;:
+Syntax Authorization: &amp;lt;type&amp;gt; &amp;lt;credentials&amp;gt;  Directives &amp;lt;type&amp;gt;:
  ApiKey Bearer  &amp;lt;credential&amp;gt;: String
-Example Authorization: Apikey dumq8ggx-poVDW76Kw9-18hwnnRvxlZm-AP2QZ
+        
+          [...]
         
       </description>
     </item>

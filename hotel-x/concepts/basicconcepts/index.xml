@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Basic Concepts</title>
@@ -43,7 +44,7 @@ Supplier A party that supplies accommodation services through a Supplier API imp
         
         Search Multi Mode is one of the main features of Hotel-X, even if you can use Search Multi Mode in Hotel-X
 Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter.
-{ &amp;quot;filter&amp;quot;: { &amp;quot;access&amp;quot;: { &amp;quot;includes&amp;quot;: [&amp;quot;yourAccess&amp;quot;] } } } Search Multi Mode If you don’t have any filter in the request and you have permissions for multimode, the request run for all accesses that you have configured in the product.
+{ &amp;quot;filter&amp;quot;: { &amp;quot;access&amp;quot;: { &amp;quot;includes&amp;quot;: [&amp;quot;yourAccess&amp;quot;] } } }
         
           [...]
         

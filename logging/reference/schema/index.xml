@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Schema</title>
@@ -23,7 +24,9 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;report&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/stats/reference/objects/statsconnection&amp;quot;&amp;gt;StatsConnection!&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields 
+        GraphQL schema definition type StatsQuery {  report(    filter: StatsFilterInput!,     first: Int,     last: Int,     before: String,     after: String,     ): StatsConnection!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.
+        
+          [...]
         
       </description>
     </item>

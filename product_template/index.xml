@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – PRODUCT NAME</title>
@@ -13,68 +14,6 @@
     
 	    <atom:link href="https://docs.travelgatex.com/product_template/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>PRODUCT_TEMPLATE: Reference</title>
-      <link>https://docs.travelgatex.com/product_template/reference/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/product_template/reference/</guid>
-      <description>
-        
-        
-        Our reference pages explain all aspects of our GraphQL schema.
-These pages are divided into the following sections:
-Schema: Explains how our Schema works and the two key operations: Queries and Mutations
-Objects: A complete list of all objects in our schema, their definitions, what fields they use and when they are mandatory.
-role=&amp;ldquo;alert&amp;rdquo;&amp;gt;We are currently building out examples for every Object page. Please send us a Pull request if you would like to see an example for a particular Object, or if you would like to share your own example with the TravelgateX community.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>PRODUCT_TEMPLATE: How-to guides</title>
-      <link>https://docs.travelgatex.com/product_template/howtos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/product_template/howtos/</guid>
-      <description>
-        
-        
-        The guides &amp;lt;a href=&amp;quot;/product_template/howtos/quickstart/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Getting Started&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>PRODUCT_TEMPLATE: Release Notes</title>
-      <link>https://docs.travelgatex.com/product_template/release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/product_template/release-notes/</guid>
-      <description>
-        
-        
-        &amp;lt;a href=&amp;quot;/product_template/release-notes/breaking-changes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-eraser&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;GraphQL Schema breaking changes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Changes history of deprecated notes previously announced&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/product_template/release-notes/changelog/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-exchange&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;PRODUCT Changelog&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>PRODUCT_TEMPLATE: FAQs</title>
-      <link>https://docs.travelgatex.com/product_template/faqs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/product_template/faqs/</guid>
-      <description>
-        
-        
-        
-        
-      </description>
-    </item>
     
   </channel>
 </rss>

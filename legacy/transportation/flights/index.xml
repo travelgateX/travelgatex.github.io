@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Flights API</title>
@@ -230,7 +231,7 @@ SupplementsReservationRQ Description    Element Number Type Description     Supp
         
         Method Goals This method aims to return the total price of the selected Option. This Option must be selected in the previous step ( Availability ).
 Request Format The Valuation request can be done by two different ways: with a single Itinerary or multiple Itineraries.
- Multiple Itineraries :  In this method, the request will have as many Itineraries as there are Journeys . Mainly used for one-way tickets. There&amp;rsquo;s a total price for each selected SegmentInfo.
+ Multiple Itineraries :  In this method, the request will have as many Itineraries as there are Journeys . Mainly used for one-way tickets.
         
           [...]
         
