@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Booking Search | TravelgateX Documentation</title>
+    <title>Booking Panel | TravelgateX Documentation</title>
     <link rel="alternate" type="application/rss+xml" href="https://docs.travelgatex.com/distribution/extranet/booking-search/index.xml" title="TravelgateX Documentation"/>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.54.0" />
-<title>Booking Search :: TravelgateX Documentation</title>
+<title>Booking Panel :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -5704,7 +5704,7 @@
         <li data-nav-id="/distribution/extranet/booking-search/" class="dd-item parent active">
           <div>
             <a href="/distribution/extranet/booking-search/">
-              <span>Booking Search</span>            
+              <span>Booking Panel</span>            
             </a>
           </div>
         </li>
@@ -9094,6 +9094,7 @@
 <ul>
 <li><a href="#booking-list">Booking List</a></li>
 <li><a href="#booking-read">Booking Read</a></li>
+<li><a href="#booking-list-reports">Booking List Reports</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -9217,7 +9218,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Booking Search</h1>
+              <h1 class="pageTitle">Booking Panel</h1>
 
               
                 
@@ -9235,11 +9236,18 @@
 
 	
 
-<p>The booking search tool allows you to obtain a list of all your agencies bookings and cancellations and get more detail information about it. To obtain a list with base informacion you can use the <code>Booking List</code> panel, and then, to check a specific booking and obtain all its details you can use the <code>Booking Read</code> panel.</p>
+<p>The booking panel tool allows you to obtain a list of all your agencies bookings and cancellations and get more detail information about it. To obtain a list with base information you can use the <code>Booking List</code> panel. To check a specific booking and obtain all its details you can use the <code>Booking Read</code> panel.
+</br></p>
+
+<p><img src="./../../images/web/distribution_web_bookingsearch.jpg" alt="Distribution Booking Search tool" title="Distribution Booking Search tool" /></p>
 
 <p></br></p>
 
-<p><img src="./../../images/web/distribution_web_bookingsearch.jpg" alt="Distribution Booking Search tool" title="Distribution Booking Search tool" /></p>
+<p>To see and download a list of detailed bookings you can use the <code>Booking Reports</code> panel (this funcionality especially used for our DMC clients).</p>
+
+<p></br></p>
+
+<p><img src="./../../images/web/distribution_web_bookingreport.jpg" alt="Distribution Booking List Report tool" title="Distribution Booking List Report tool" /></p>
 
 <p></br></p>
 
@@ -9336,9 +9344,38 @@
 
 <ul>
 <li>Main Guest Name</li>
-<li>Room: Room name, code, and number of pax</li>
+<li>Room: Room name, code, and number of pax
+<br /></li>
 </ul></li>
 </ul>
+
+<p></br></p>
+
+<h2 id="booking-list-reports">Booking List Reports</h2>
+
+<p>The booking reports tool allows you to obtain a file with all the bookings that have been done inside the parameters reports specified. The search parameters will be same as can be seen in the Booking Read.</p>
+
+<p>Notice that a Report name it is asked to you (with alfanumeric format), however, to ensure the uniqueness of the name, a datetime format will be added at the beginning of the name.</p>
+
+<p>The display of the reports created can be shown in the List of Reports. There are two importants thing to know:</p>
+
+<ul>
+<li><p>Only one report can be generated every 15 minutes. So, once a generation is asked, the user has to wait 15 minutes to ask for the other one.</p></li>
+
+<li><p>The generation of the report is not instant but it might take some time, depending on the volume of bookings to return. If Generation Status is equal to “Executing” the file is not done yet. So the download will not be able until the file is finished</p></li>
+</ul>
+
+<p><img src="./../../images/web/distribution_web_bookingreportstatus.jpg" alt="Distribution Booking Report Status" title="Distribution Booking Report Status" /></p>
+
+<p></br></p>
+
+<ul>
+<li>When the status changes to &ldquo;Finished ok&rdquo;, the download button will be available.
+<br /></li>
+</ul>
+
+<p><img src="./../../images/web/distribution_web_bookingreportpanel.jpg" alt="Distribution Booking List Report Panel" title="Distribution Booking List Report Panel" />
+</br></p>
 
 
 
