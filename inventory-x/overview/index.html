@@ -6031,11 +6031,6 @@
         </li>
             </ul>
         </li>
-          <li data-nav-id="/inventory-x/api-reference/messages/messages-ota-xsd/" class="dd-item">
-            <a href="/inventory-x/api-reference/messages/messages-ota-xsd/">
-              <span>Messages with OTA XSD structure</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/inventory-x/api-reference/codelist/" class="dd-item">
@@ -6069,6 +6064,113 @@
             <a href="/inventory-x/api-reference/codelist/credit-cards/">
               <span>Credit Cards Codes</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
+        </li>
+            </ul>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/inventory-x/extranet/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/">
+              <span>Extranet</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+          <li data-nav-id="/inventory-x/extranet/overview/" class="dd-item">
+            <a href="/inventory-x/extranet/overview/">
+              <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+        <li data-nav-id="/inventory-x/extranet/load-product/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/load-product/">
+              <span>Load your inventory</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/inventory-x/extranet/load-product/setup/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/load-product/setup/">
+              <span>SetUp</span>            
+            </a>
+          </div>
+        </li>
+        <li data-nav-id="/inventory-x/extranet/load-product/manual-load/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/load-product/manual-load/">
+              <span>Manual Load</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+          <li data-nav-id="/inventory-x/extranet/load-product/manual-load/rate-load/" class="dd-item">
+            <a href="/inventory-x/extranet/load-product/manual-load/rate-load/">
+              <span>Rate: Availability and Price load</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/inventory-x/extranet/load-product/manual-load/derivedrate-load/" class="dd-item">
+            <a href="/inventory-x/extranet/load-product/manual-load/derivedrate-load/">
+              <span>Derived Rate: Availability and Price load</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/inventory-x/extranet/load-product/manual-load/offers-load/" class="dd-item">
+            <a href="/inventory-x/extranet/load-product/manual-load/offers-load/">
+              <span>Offers: Availability conditions load</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/inventory-x/extranet/load-product/calendar/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/load-product/calendar/">
+              <span>Calendar</span>            
+            </a>
+          </div>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/inventory-x/extranet/tools/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/tools/">
+              <span>Tools</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/inventory-x/extranet/tools/availability-simulator/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/tools/availability-simulator/">
+              <span>Availability simulator</span>            
+            </a>
+          </div>
+        </li>
+        <li data-nav-id="/inventory-x/extranet/tools/delete-product/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/tools/delete-product/">
+              <span>Copy Tool</span>            
+            </a>
+          </div>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/inventory-x/extranet/faq/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/faq/">
+              <span>FAQ</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/inventory-x/extranet/faq/discount-supplement/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/faq/discount-supplement/">
+              <span>Discount/Supplement using derived rates</span>            
+            </a>
+          </div>
+        </li>
+        <li data-nav-id="/inventory-x/extranet/faq/free-children-baby/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/faq/free-children-baby/">
+              <span>Free children and Free baby option </span>            
+            </a>
+          </div>
         </li>
             </ul>
         </li>
@@ -9090,9 +9192,9 @@
 <ul>
 <li><a href="#inventory-x-overview">Inventory-X Overview</a>
 <ul>
-<li><a href="#the-way-inventory-x-works-is-the-following">The way Inventory-x works is the following.</a></li>
-<li><a href="#public-soap-webservice-methods">Public Soap WebService Methods:</a></li>
-<li><a href="#more-information">More information.</a></li>
+<li><a href="#the-way-inventory-x-works-is-the-following">The way Inventory-x works is the following</a></li>
+<li><a href="#i-want-to-buy-from-channel-managers">I want to buy from Channel Managers</a></li>
+<li><a href="#i-want-to-sell-my-inventory">I want to sell my inventory</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -9237,31 +9339,41 @@
 
 <p>Inventory-X permits Channel Managers and Product Distributors to push their product into a TravelgateX database, thus making it available for the TravelgateX buyers.</p>
 
-<h2 id="the-way-inventory-x-works-is-the-following">The way Inventory-x works is the following.</h2>
+<h2 id="the-way-inventory-x-works-is-the-following">The way Inventory-x works is the following</h2>
 
-<p>Channel Managers and Hotels will push data to InventoryX.</p>
-
-<ul>
-<li><p>InventoryX will receive the data from the different channels and will store it in a common structure.</p></li>
-
-<li><p>Then, this product can be consumed in 3 different ways:</p>
+<p>Channel Managers and Hotels will push data to Inventory-X.</p>
 
 <ul>
-<li>Pull with our HotelX solution.</li>
-<li>Push with our ChannelX solution.</li>
+<li><p>Inventory-X will receive the data from the different channels and will store it in a common structure.</p></li>
+
+<li><p>Then, this product can be consumed in 3 different ways by TravelgateX buyers:</p>
+
+<ul>
+<li>Pull with our Hotel-X solution.</li>
+<li>Push with our Channel-X solution.</li>
 <li>Flat File solution.</li>
 </ul></li>
 </ul>
 
-<h2 id="public-soap-webservice-methods">Public Soap WebService Methods:</h2>
+<h2 id="i-want-to-buy-from-channel-managers">I want to buy from Channel Managers</h2>
 
-<p><a href="https://pushprovider.xmltravelgate.com/Service/Hotel/Provider/ProviderGEN.svc?wsdl" rel="nofollow" target="_blank">https://pushprovider.xmltravelgate.com/Service/Hotel/Provider/ProviderGEN.svc?wsdl</a></p>
+<p>If you are a buyer and you want to connect with different Channel Managers you will need the following:</p>
 
-<h2 id="more-information">More information.</h2>
+<ol>
+<li>Be a buyer in TravelgateX platform, using our Hotel-X API.</li>
+<li>Request the activation in our <a href="https://www2.travelgatex.com/connect/form/legacy" rel="nofollow" target="_blank">connect form</a>.</li>
+<li>Once the connection is made and delivered to you, use our <a href="/extranet">Inventory-X extranet</a> to create the SetUp of the hotels, rates and rooms contracted with the hoteliers so the Channel Manager can map all this information and load availability and prices for you. We always recommend to start with a real pilot hotel before going live.</li>
+</ol>
 
-<p>You can find more information on how to connect to Inventory-X by consulting our <a href="https://docs.travelgatex.com/inventory-x/" rel="nofollow" target="_blank">public API</a>.</p>
+<h2 id="i-want-to-sell-my-inventory">I want to sell my inventory</h2>
 
-<p>If you are interested in connecting to Inventory-X as a client and not a Channel Manager, please visit our <a href="https://www.travelgatex.com/products/inventory-x" rel="nofollow" target="_blank">product page</a> for more information.</p>
+<p>If you are a Channel Manager or a supplier that wants to be integrated in a push connection, you have two options:</p>
+
+<ul>
+<li><p>Push API: Integrate with <a href="/api-reference">Inventory-X API</a> and load your availability and prices for your different buyers trough a unique integration.</p></li>
+
+<li><p>Extranet: If you don&rsquo;t have an API and want to load your product manually, you can use our <a href="/extranet">Inventory-X extranet</a>.</p></li>
+</ul>
 
 <hr/>
 
