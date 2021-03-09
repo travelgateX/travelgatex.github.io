@@ -5926,24 +5926,24 @@
                 <i class="fa fa-angle-down fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/inventory-x/overview/" class="dd-item">
-            <a href="/inventory-x/overview/">
-              <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/inventory-x/quick-start/" class="dd-item">
+        <li data-nav-id="/inventory-x/getting-started/" class="dd-item">
           <div>
-            <a href="/inventory-x/quick-start/">
-              <span>Quickstart</span>            
+            <a href="/inventory-x/getting-started/">
+              <span>Getting Started</span>            
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/inventory-x/quick-start/typical-scenario/" class="dd-item">
-            <a href="/inventory-x/quick-start/typical-scenario/">
+          <li data-nav-id="/inventory-x/getting-started/typical-scenario/" class="dd-item">
+            <a href="/inventory-x/getting-started/typical-scenario/">
               <span>Typical Scenarios</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
+        </li>
+          <li data-nav-id="/inventory-x/overview/" class="dd-item">
+            <a href="/inventory-x/overview/">
+              <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
         </li>
         <li data-nav-id="/inventory-x/api-reference/" class="dd-item">
           <div>
@@ -9193,15 +9193,18 @@
                   <div class="page-sections-menu">
                       <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
 <li><a href="#rate">Rate</a>
 <ul>
-<li><a href="#how-to-load-availability">How to load Availability</a></li>
-<li><a href="#how-to-load-price">How to load Price</a>
+<li><a href="#how-to-load-availability">How to load Availability</a>
 <ul>
-<li><a href="#price-per-room">Price per Room</a></li>
+<li><a href="#how-to-load-price">How to load Price</a></li>
+<li><a href="#price-per-room">Price per Room</a>
+<ul>
+<li><a href="#occupancy-supplements">Occupancy supplements</a></li>
+<li><a href="#meal-plan-supplements">Meal plan supplements</a></li>
 </ul></li>
+<li><a href="#price-per-standard-occupancy">Price per Standard Occupancy</a></li>
+<li><a href="#price-per-occupancy">Price per Occupancy</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -9343,11 +9346,11 @@
               
 
 
-<h2 id="rate">Rate</h2>
+<h1 id="rate">Rate</h1>
 
 <p>First, you will need to select the client and the Channel Manager in order to keep on the process of loading conditions. Afterwards, you should indicate the hotel to which you want to load availability conditions or prices. Finally, in the <code>Choose your Load</code> field, select <code>Rates</code>. Once the rate is specified in the selectable, you will have to choose if you want to load prices or conditions using the <code>Load Type</code> field.</p>
 
-<h3 id="how-to-load-availability">How to load Availability</h3>
+<h2 id="how-to-load-availability">How to load Availability</h2>
 
 <p>To load availability you should select <code>Availability</code>.</p>
 
@@ -9383,48 +9386,133 @@
 <li><strong>From - To:</strong> Date range when the price will be applied.</li>
 <li><strong>Applicable Days of Week:</strong> Days of week that will apply the price in the previous date range.</li>
 <li><strong>All Rooms:</strong> Rooms that will apply the prices. In case the checkbox is not selected, it will appear a new field that will allow you to select the rooms that you want to apply the prices.</li>
-<li><strong>Price Type</strong>: Inventory-X system allows three different types of price:</li>
+<li><strong>Price Type</strong>: Inventory-X system allows three different types of price:
+
+<ul>
+<li><a href="#price-per-room">Price per Room</a></li>
+<li><a href="#price-per-standard-occupancy">Price per Standard Occupancy</a></li>
+<li><a href="#price-per-occupancy">Price per Occupancy</a></li>
+</ul></li>
 </ul>
 
-<h4 id="price-per-room">Price per Room</h4>
+<p></br></p>
+
+<h3 id="price-per-room">Price per Room</h3>
 
 <p>Price per room allows you to load a price for the whole room and the option to add occupancy and meal plan supplements.</p>
 
 <p><img src="./../../../../images/web/inventory_manualload_priceperroom.png" alt="Inventory-X Manual Load Rate" title="Inventory-X Manual Load Rate" /></p>
 
-<p>All occupancies equal and below the room standard occupancy will have the price loaded in the <code>Room Price</code> field. If your room allows occupancies above the standard occupancy you can control the price for these extra passengers using the <code>Occupancy Supplements</code> option. You will be able to add different supplements by adult, child and baby and the supplement calculation can be done in multiple ways:</p>
+<p>If you want a unique price for the whole room and you don&rsquo;t use occupancy supplements, tyou can load your price in the <code>Room Price</code> field. That way, no matter the occupancy uses your room has, the final price will be the one indicated in the <code>Room Price</code> field.</p>
+
+<p>For example, if you load 100€ in <code>Room Price</code> and your room in the SetUp has allowed several uses (as 1 adult, 2 adults, 3 adults, 2 adults and 1 child and more), the price will be still 100€.</p>
+
+<h4 id="occupancy-supplements">Occupancy supplements</h4>
+
+<p>In case you want to add supplements by pax you have to bear in mind the standard occupancy indicated in the SetUp. For example, a <em>Double Room</em> with standard occupancy 2 and multiple occupancy uses works as follows:</p>
+
+<p>All occupancies uses <strong>equal and below</strong> the room standard occupancy will have the price loaded in the <code>Room Price</code> field:</p>
 
 <ul>
-<li><p><strong>Amount:</strong> This price is the amount added to the average price per pax calculated by the system. If the price per room is 100€ and the first extra adult has a amount supplement, the final price in our example for different occupancies will be:</p>
+<li><strong>1 adult (1-0-0):</strong> 100€ <em>(room price)</em></li>
+<li><strong>2 adults (2-0-0):</strong> 100€ <em>(room price)</em></li>
+</ul>
+
+<p>If the room allows occupancies uses <strong>above</strong> the standard occupancy you can control the price for these extra passengers using the <code>Occupancy Supplements</code> option. You will be able to add different supplements by adult, child and baby. The supplement type defines the way the calculation is done:</p>
 
 <ul>
-<li><strong>1 adult:</strong> 100€ <em>(room price)</em></li>
-<li><strong>2 adults:</strong> 100€ <em>(room price)</em></li>
-<li><strong>1 adult and 1 child:</strong> 100€ <em>(room price)</em></li>
-<li><strong>3 adults:</strong> 100€ <em>(room price)</em> + 50€ <em>(average price per pax: room price / standard occupancy, <sup>100</sup>&frasl;<sub>2</sub>)</em> + 50€ <em>(adult amount supplement)</em> = 200€</li>
-<li><strong>2 adults and 1 child:</strong>  100€ <em>(room price)</em> + 0€ <em>(child exclusive supplement)</em> = 100€</li>
+<li><p><strong>Amount:</strong> This price is the amount added to the average price per pax calculated by the system. If the price per room is 100€ and the first extra adult has an <strong>amount</strong> supplement, the final price in our example for different occupancies will be:</p>
+
+<ul>
+<li><strong>1 adult (1-0-0):</strong> 100€ <em>(room price)</em></li>
+<li><strong>2 adults (2-0-0):</strong> 100€ <em>(room price)</em></li>
+<li><strong>1 adult and 1 child (1-1-0):</strong> 100€ <em>(room price)</em></li>
+<li><strong>3 adults (3-0-0):</strong> 100€ <em>(room price)</em> + 50€ <em>(average price per pax: room price / standard occupancy, <sup>100</sup>&frasl;<sub>2</sub>)</em> + 50€ <em>(adult amount supplement)</em> = 200€</li>
+<li><strong>2 adults and 1 child (2-1-0):</strong>  100€ <em>(room price)</em> + 0€ <em>(child exclusive supplement)</em> = 100€</li>
 </ul></li>
 
-<li><p><strong>Percent:</strong> This price is the percent obtained from the room price. If the price per room is 100€ and the first extra adult has a percent supplement, the final price in our example for different occupancies will be:</p>
+<li><p><strong>Percent:</strong> This price is the percent obtained from the room price. If the price per room is 100€ and the first extra adult has a <strong>percent</strong> supplement, the final price in our example for different occupancies will be:</p>
 
 <ul>
-<li><strong>1 adult:</strong> 100€ <em>(room price)</em></li>
-<li><strong>2 adults:</strong> 100€ <em>(room price)</em></li>
-<li><strong>1 adult and 1 child:</strong> 100€ <em>(room price)</em></li>
-<li><strong>3 adults:</strong> 100€ <em>(room price)</em> + 50€ <em>(50% of 100€)</em> = 150€</li>
-<li><strong>2 adults and 1 child:</strong>  100€ <em>(room price)</em> + 0€ <em>(child exclusive supplement)</em> = 100€</li>
+<li><strong>1 adult (1-0-0):</strong> 100€ <em>(room price)</em></li>
+<li><strong>2 adults (2-0-0):</strong> 100€ <em>(room price)</em></li>
+<li><strong>1 adult and 1 child (1-1-0):</strong> 100€ <em>(room price)</em></li>
+<li><strong>3 adults (3-0-0):</strong> 100€ <em>(room price)</em> + 50€ <em>(50% of 100€)</em> = 150€</li>
+<li><strong>2 adults and 1 child (2-1-0):</strong>  100€ <em>(room price)</em> + 0€ <em>(child exclusive supplement)</em> = 100€</li>
 </ul></li>
 
-<li><p><strong>Exclusive:</strong> This price is absolute. If the price per room is 100€ and the first extra adult has a exclusive supplement, the final price in our example for different occupancies will be:</p>
+<li><p><strong>Exclusive:</strong> This price is absolute. If the price per room is 100€ and the first extra adult has an <strong>exclusive</strong> supplement, the final price in our example for different occupancies will be:</p>
 
 <ul>
-<li><strong>1 adult:</strong> 100€ (room price)</li>
-<li><strong>2 adults:</strong> 100€ (room price)</li>
-<li><strong>1 adult and 1 child:</strong> 100€ (room price)</li>
-<li><strong>3 adults:</strong> 100€ (room price) + 50€ (adult exclusive supplement) = 150€</li>
-<li><strong>2 adults and 1 child:</strong>  100€ (room price) + 0€ (child exclusive supplement) = 100€</li>
+<li><strong>1 adult (1-0-0):</strong> 100€ (room price)</li>
+<li><strong>2 adults (2-0-0):</strong> 100€ (room price)</li>
+<li><strong>1 adult and 1 child (1-1-0):</strong> 100€ (room price)</li>
+<li><strong>3 adults (3-0-0):</strong> 100€ (room price) + 50€ (adult exclusive supplement) = 150€</li>
+<li><strong>2 adults and 1 child (2-1-0):</strong>  100€ (room price) + 0€ (child exclusive supplement) = 100€</li>
 </ul></li>
 </ul>
+
+<h4 id="meal-plan-supplements">Meal plan supplements</h4>
+
+<p>In the SetUp section you have specified a unique meal plan for your rate, but here you will be able to load meal plan supplements if you want. These supplements are able to be indicated by pax type: adult, child or baby. You should indicate the pax type, the meal plan and the amount to be added to the final price.</p>
+
+<div class="alert 
+alert-info"
+ 
+role="alert">If you want to load a meal plan supplement by free, you should load it with a price of 0.</div>
+
+
+<p></br></p>
+
+<h3 id="price-per-standard-occupancy">Price per Standard Occupancy</h3>
+
+<p>Price per standard occupancy allows you to load price for all occupancy uses under or equal to the standard occupancy and the option to add occupancy and meal plan supplements.</p>
+
+<p>Please, bear in mind that the prices here are calculated using the room standard occupancy and that all passangers under this value will be treated as an adult, so occupancies with children under the standard occupancy will have the same price as only adults with the same pax count. That means that, in order to calculate the final amount it is always necessary for the paxes to reach the number of adults indicated by the standard occupancy.</p>
+
+<p>For example, if the room standard occupancy is 2 and our occupancy use is 1 adult and 2 children (1-2-0), the first two passengers will be treated as adults and the remaining will be treated as what they actually are, in this case as a child. In this example, the occupancy use of 1 adult and 2 children (1-2-0) will be treated as 2 adults and 1 child (2-1-0).</p>
+
+<p>Let&rsquo;s check some examples to know how prices are calculated for different occupancy uses. First, we&rsquo;ll check the standard occupancy and uses from our <em>Double Room</em> set in the SetUp section:</p>
+
+<p><img src="./../../../../images/web/inventory_manualload_priceperstandardoccupancy1.png" alt="Inventory-X Manual Load Rate" title="Inventory-X Manual Load Rate" /></p>
+
+<p>In this case, our standard occupancy is 2 adults, but the room allows different occupancy uses as 3 adults, 1 adult, 2 adults and 1 child, 2 adults and 1 baby&hellip;</p>
+
+<p>If we load price for this room using price per standard occupancy we will be able to load price for all occupancies under or equal the standard occupancy:</p>
+
+<p><img src="./../../../../images/web/inventory_manualload_priceperstandardoccupancy2.png" alt="Inventory-X Manual Load Rate" title="Inventory-X Manual Load Rate" /></p>
+
+<p>If we load 50€ for 1 adult and 100€ for 2 adults, let&rsquo;s check how all occupancy uses will be cost:</p>
+
+<ul>
+<li><strong>1 adult (1-0-0):</strong> 50€ (occupancy below the standard occupancy and price loaded specific for this case use).</li>
+<li><strong>2 adults (2-0-0):</strong> 100€ (occupancy equal to the standard occupancy and price loaded specific for this case use).</li>
+<li><strong>1 adult and 1 child (1-1-0):</strong> 100€. Children and babies are trated as adult until the standard occupancy is fulfilled, so in this case we have 1 adult + 1 child converted as an adult because we need to have 2 adults (standard occupancy), that way the price will be the one loaded for two adults.</li>
+<li><strong>1 adult and 2 children (1-2-0):</strong> 100€ (for two adults) + 25€ (child supplement) = 125€. Children and babies are trated as adult until the standard occupancy is fulfilled, so in this case we have 1 adult + 1 child converted as an adult + 1 child, that way the price will be the one loaded for two adults and the price for the first extra child.</li>
+<li><strong>3 adults (3-0-0):</strong>  100€ (for two adults) + 30€ (adult supplement) = 130€. In this case, all paxes are adults, as the standard occupancy is 2, we use that price and we and the supplement for the third adult.</li>
+</ul>
+
+<div class="alert 
+alert-warning"
+ 
+role="alert">All prices for occupancy uses below and equal to the room standard occupancy must be loaded ir order to return availability to the buyers. If for example, price for 1 adult is not loaded, there won&rsquo;t be availability response for that occupancy use.</div>
+
+
+<div class="alert 
+alert-info"
+ 
+role="alert">Check the <a href="#ocuppancy-supplements">occupancy supplements sections</a> explained before to know how different types of supplements work.</div>
+
+
+<p></br></p>
+
+<h3 id="price-per-occupancy">Price per Occupancy</h3>
+
+<p>Price per occupancy allows you to load exactly the amount for each occupancy use that your room allows. In this case, our system doesn´t do any calculation and we don&rsquo;t use the standard occupancy, only the occupancy uses.</p>
+
+<p><img src="./../../../../images/web/inventory_manualload_priceperoccupancy.png" alt="Inventory-X Manual Load Rate" title="Inventory-X Manual Load Rate" /></p>
+
+<p>As you can indicate an specific amount for each occupancy, it doesn&rsquo;t make sense to have occupancy supplements, but you will be able to load <a href="#meal-plan-supplements">meal plan supplements</a> explained before.</p>
 
 
 
