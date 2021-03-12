@@ -9337,7 +9337,7 @@
               
 
 
-<p>Providers will send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp information into the TGX database. TGX will process the data and respond with an error code if needed or success if everything is correct.</p>
+<p>Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp information into the TGX database. TGX then processes the data and responds with an error code if needed or success if everything is correct.</p>
 
 <h2 id="hotelrateplaninventorynotifrq">HotelRatePlanInventoryNotifRQ</h2>
 
@@ -9681,14 +9681,14 @@
 <td>@Start</td>
 <td>0..1</td>
 <td>Date</td>
-<td>Start date of the rate booking window (Booking Dates for wich the rate will be available).</td>
+<td>Start date of the rate booking window (Booking Dates for which the rate will be available).</td>
 </tr>
 
 <tr>
 <td>@End</td>
 <td>0..1</td>
 <td>Date</td>
-<td>End date of the rate booking window (Booking Dates for wich the rate will be available).</td>
+<td>End date of the rate booking window (Booking Dates for which the rate will be available).</td>
 </tr>
 
 <tr>
@@ -9821,21 +9821,21 @@
 <td>@LocationCodesInclusive</td>
 <td>1</td>
 <td>Boolean</td>
-<td>When its true this rate can be request for next countryCode, when false can not be requested from this country.</td>
+<td>When it&rsquo;s true, this rate can be request for next countryCode, when false cannot be requested for this country.</td>
 </tr>
 
 <tr>
 <td>BookingRule/Viewerships/Viewership/LocationCodes/LocationCode</td>
 <td>0..1</td>
 <td></td>
-<td>If is missing, applies to all countryCode againthe other viewership condition.</td>
+<td>If it&rsquo;s missing, applies to all countryCode againthe other viewership condition.</td>
 </tr>
 
 <tr>
 <td>@CountryCode</td>
 <td>1</td>
 <td>String</td>
-<td>Country ISO2 code from can or can not be requested this rate.</td>
+<td>Country ISO2 code from can or cannot be requested this rate.</td>
 </tr>
 
 <tr>

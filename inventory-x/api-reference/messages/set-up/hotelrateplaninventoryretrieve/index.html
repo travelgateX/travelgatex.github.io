@@ -9337,7 +9337,7 @@
               
 
 
-<p>Providers will send a HotelRatePlanInventoryRetrieveRQ message to retrieve a list of hotels, rate plans and rooms and their configurations. TGX will return a list of all active rooms and configurations. <strong><em>Inactive rate plans and rooms will not be returned in these messages.</em></strong></p>
+<p>Providers send a HotelRatePlanInventoryRetrieveRQ message to retrieve a list of hotels, rate plans and rooms and their configurations. TGX then returns a list of all active rooms and configurations. <strong><em>Inactive rate plans and rooms will not be returned in these messages.</em></strong></p>
 
 <h2 id="hotelrateplaninventoryretrieverq">HotelRatePlanInventoryRetrieveRQ</h2>
 
@@ -9394,7 +9394,7 @@
 <td>POS/Source/TPA_Extensions</td>
 <td>0..1</td>
 <td></td>
-<td>Optional, empty only active inventory will be recieved.</td>
+<td>Optional, if empty only active inventory will be received.</td>
 </tr>
 
 <tr>
@@ -9415,7 +9415,7 @@
 <td>@value</td>
 <td>1</td>
 <td>String</td>
-<td>1 - You will recieve all active inventory data. 0 - Active and deactivated inventory will be recieved. (Same case than wihout TPA_Extensions node.)</td>
+<td>1 - You will receive all active inventory data. 0 - Active and deactivated inventory will be received. (Same case as without TPA_Extensions node.)</td>
 </tr>
 
 <tr>

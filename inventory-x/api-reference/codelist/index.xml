@@ -24,7 +24,7 @@
       <description>
         
         
-        List of the possible errors that you could receive setting up and loading the product. That is in HotelRatePlanInventoryNotif, HotelRatePlanInventoryRetrieve, HotelAvailNotif, HotelAvailNotif, HotelRatePlanNotif or HotelRatePlanRetrieve.
+        List of the possible errors you could receive setting up and loading the product (in HotelRatePlanInventoryNotif, HotelRatePlanInventoryRetrieve, HotelAvailNotif, HotelAvailNotif, HotelRatePlanNotif or HotelRatePlanRetrieve.)
    Error Code Error Description     -1 Validation error   1 POS credentials not found   2 HotelCode or RatePlanList not found   3 Rates not found   4 Incomplete Rate values   6 Incomplete AvailStatusMessage StatusApplicationControl Values   7 Incomplete AdditionalGuestAmount values   8 SellableProduct not found   9 Room not found in SellableProduct    
         
       </description>
@@ -39,7 +39,7 @@
       <description>
         
         
-        List of the possible errors that you could receive in the booking flow messages, that are HotelResNotif, CancelNotif or HotelResRetrieve.
+        List of the possible errors you could receive in the booking flow messages that are HotelResNotif, CancelNotif or HotelResRetrieve.
    Error Code Error Description     -1 Unexpected error   1 Validation error   10 HotelCode not found   11 Invalid Dates   14 Invalid Derived Rate   22 Rooms not found   23 Rates not found   30 Occupancy Error   31 RatePlan_Rate Error   38 POS credentials not found   50 Confirmation error   60 Cancellation error    
         
       </description>
