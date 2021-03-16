@@ -7178,8 +7178,8 @@
 	"uri": "https://docs.travelgatex.com/alerts-x/overview/",
 	"title": "Overview",
 	"tags": [],
-	"description": "Alerts-X Overview",
-	"content": " In order to analyze useful metrics about performance, Alerts-X extracts, loads and stores data from all TravelgateX products.\nOnce the metrics are stored in our infrastructure, our service-alerts analyze your performance according to a configuration alert which can be created/updated or viewed using API alertsWorking with Alerts-X The most important use case working with Alerts is to query about your performance.\n"
+	"description": "Alerts Overview",
+	"content": " In order to analyze useful metrics about performance, Alerts extracts, loads and stores data from all TravelgateX marketplace.\nOnce the metrics are stored in our infrastructure, our service-alerts analyze your performance according to a configuration alert which can be created/updated or viewed using API alertsWorking with Alerts The most important use case working with Alerts is to query about your performance.\n"
 },
 {
 	"uri": "https://docs.travelgatex.com/channel-x/overview/",
@@ -7234,8 +7234,8 @@
 	"uri": "https://docs.travelgatex.com/insights-x/overview/",
 	"title": "Overview",
 	"tags": [],
-	"description": "Insights-X Overview",
-	"content": " In order to analyze and produce useful insights, Insights-X extracts, loads and consolidates data from products like Hotel-X.\nOnce the data is consolidated in our Data warehouse, we can share data depending on each partner\u0026rsquo;s relationship with TravelgateX:\n Partners: e.g. OTAs and Wholesalers already connected to our platform, they will have access to accurate data regarding their performance, ratios, prices, product usage\u0026hellip; With these insights an accurate benchmarking against competitors is provided so that our partners can gain a competitive advantage. We do this without ever exposing our partners’ data because we use anonymous competitive sets.\n Hoteliers: connected or not to our platform, will also have access to benchmarking information, discover KPIs such ADR and supplier-client demand, which will help maximize room revenue.\n Other Industry partners: not connected to our platform, can have access to insights about segmentation, profitability and demand across global markets. This data will help you forecast your own needs.\n    Datasets Insights-X will allow access to Datasets with structured data to perform any kind of analysis.\nWe support different Dataset publication formats which are documented here\nTooling If you don\u0026rsquo;t have your own reporting tool, the easiest way to interact with Insights-X datasets is via our free Google Data Studio Templates.\nFind out more about TravelgateX free tools in Dataset tooling\nAPI Insights-X API, which allows to query insights using GraphqQL \u0026lsquo;queries\u0026rsquo;, is coming soon. Please submit an issue to our issue tracker if you require these API immediately.\n "
+	"description": "Insights Overview",
+	"content": " In order to analyze and produce useful insights, Insights extracts, loads and consolidates data from products like Hotel-X.\nOnce the data is consolidated in our Data warehouse, we can share data depending on each partner\u0026rsquo;s relationship with TravelgateX:\n Partners: e.g. OTAs and Wholesalers already connected to our platform, they will have access to accurate data regarding their performance, ratios, prices, product usage\u0026hellip; With these insights an accurate benchmarking against competitors is provided so that our partners can gain a competitive advantage. We do this without ever exposing our partners’ data because we use anonymous competitive sets.\n Hoteliers: connected or not to our platform, will also have access to benchmarking information, discover KPIs such ADR and supplier-client demand, which will help maximize room revenue.\n Other Industry partners: not connected to our platform, can have access to insights about segmentation, profitability and demand across global markets. This data will help you forecast your own needs.\n    Datasets Insights will allow access to Datasets with structured data to perform any kind of analysis.\nWe support different Dataset publication formats which are documented here\nTooling If you don\u0026rsquo;t have your own reporting tool, the easiest way to interact with Insights-X datasets is via our free Google Data Studio Templates.\nFind out more about TravelgateX free tools in Dataset tooling\n"
 },
 {
 	"uri": "https://docs.travelgatex.com/inventory-x/extranet/overview/",
@@ -12317,7 +12317,7 @@
 	"title": "Legacy API",
 	"tags": [],
 	"description": "Legacy system documentation",
-	"content": "   Introduction Introductory Guide\n     Service Endpoints Introduction to Service Endpoints\n     Audience Who is this document indented to?\n     Documents goals Documentation objectives\n     Anatomy of Request Introduction to Service Endpoints\n     Hotel API Read documentation on Hotel Legacy API\n     Hotel Suppliers API Read documentation on Hotel Suppliers API\n     Hub Documentation Read documentation on Hub API\n     Payments API Read documentation payments Legacy API\n     Transportation API Read documentation on diferent Legacy APIs\n    "
+	"content": "   Introduction Introductory Guide\n     Service Endpoints Introduction to Service Endpoints\n     Audience Who is this document indented to?\n     Documents goals Documentation objectives\n     Anatomy of Request Introduction to Service Endpoints\n     Hotel API Read documentation on Hotel Legacy API\n     Hotel Pull Sellers API Read documentation on Hotel Pull Sellers API\n     Hub Documentation Read documentation on Hub API\n     Payments API Read documentation payments Legacy API\n     Transportation API Read documentation on diferent Legacy APIs\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/inventory-x/api-reference/codelist/payment-type-codes/",
@@ -13035,9 +13035,9 @@
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/hotel-suppliers/",
-	"title": "Hotel Suppliers API",
+	"title": "Hotel Pull Sellers API",
 	"tags": [],
-	"description": "Read documentation on Hotel Suppliers API",
+	"description": "Read documentation on Hotel Pull Sellers API",
 	"content": "  Overview      How to guides How to guides\n     API Reference API Reference\n    FAQ      Release notes Release notes\n    "
 },
 {
@@ -13175,10 +13175,10 @@
 },
 {
 	"uri": "https://docs.travelgatex.com/insights-x/",
-	"title": "Insights-X",
+	"title": "Insights",
 	"tags": [],
 	"description": "Grow your business with data",
-	"content": "Insights-X is a powerful data product that will let you get back in control of your business.\nThe innovative way we store, manage and process data allows us to produce real-time data, historical trends and forecast the travel industry to match your own needs.\nJoin us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.   Overview Insights-X Overview\n     Contents What is Insights-X?\n     Datasets Understand Insights-X Datasets\n     Release Notes New Updates \u0026amp; Releases\n     FAQs Insights-X FAws\n     API Guide to use Insights-X API\n    "
+	"content": "Insights is a powerful data solution that will let you get back in control of your business.\nThe innovative way we store, manage and process data allows us to produce real-time data, historical trends and forecast the travel industry to match your own needs.\n  Overview Insights Overview\n     Contents What is Insights-X?\n     Datasets Understand Insights-X Datasets\n     Release Notes New Updates \u0026amp; Releases\n     FAQs Insights-X FAws\n     API Guide to use Insights-X API\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/payments/methods/modifypayment/",
@@ -13315,10 +13315,10 @@
 },
 {
 	"uri": "https://docs.travelgatex.com/alerts-x/",
-	"title": "Alerts-X",
+	"title": "Alerts",
 	"tags": [],
 	"description": "",
-	"content": "Alerts-X is a powerful data product that will evaluate real-time minute-by-minute buyer and/or seller performance according to a configuration to alert of possible unusual performance.\nJoin us on Slack to discuss your integrations, or ask us questions via our Jira Service desk.   Overview Alerts-X Overview\n     Reference Reference Documentation\n     How-to guides Perform specific tasks\n     Release Notes New Updates \u0026amp; Releases\n    "
+	"content": "Alerts is a monitoring App which monitors any unusual performance accroding to the criteria you set for that connection.\n  Overview Alerts Overview\n     Reference Reference Documentation\n     How-to guides Perform specific tasks\n     Release Notes New Updates \u0026amp; Releases\n    "
 },
 {
 	"uri": "https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/static-methods/marketlist/",
