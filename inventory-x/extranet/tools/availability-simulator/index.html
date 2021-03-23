@@ -5824,6 +5824,11 @@
                 <i class="fa fa-angle-down fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/inventory-x/overview/" class="dd-item">
+            <a href="/inventory-x/overview/">
+              <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
         <li data-nav-id="/inventory-x/getting-started/" class="dd-item">
           <div>
             <a href="/inventory-x/getting-started/">
@@ -5833,15 +5838,10 @@
             <ul>
           <li data-nav-id="/inventory-x/getting-started/typical-scenario/" class="dd-item">
             <a href="/inventory-x/getting-started/typical-scenario/">
-              <span>Typical Scenarios</span><i class="fa fa-circle-thin read-icon"></i>
+              <span>Channel Manager Typical Scenario</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
-        </li>
-          <li data-nav-id="/inventory-x/overview/" class="dd-item">
-            <a href="/inventory-x/overview/">
-              <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
         </li>
         <li data-nav-id="/inventory-x/api-reference/" class="dd-item">
           <div>
@@ -6042,6 +6042,13 @@
             </a>
           </div>
         </li>
+        <li data-nav-id="/inventory-x/extranet/tools/copy-tool/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/tools/copy-tool/">
+              <span>Copy Tool</span>            
+            </a>
+          </div>
+        </li>
         <li data-nav-id="/inventory-x/extranet/tools/delete-product/" class="dd-item">
           <div>
             <a href="/inventory-x/extranet/tools/delete-product/">
@@ -6085,19 +6092,8 @@
           <div>
             <a href="/inventory-x/release-notes/">
               <span>Release Notes</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+            </a>
           </div>
-            <ul>
-        <li data-nav-id="/inventory-x/release-notes/changelog/" class="dd-item">
-          <div>
-            <a href="/inventory-x/release-notes/changelog/">
-              <span>Inventory-X Changelog</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-            </ul>
-        </li>
-            </ul>
         </li>
             </ul>
         </li>
@@ -8619,14 +8615,7 @@
                       <span><i title="Sections →" class="icon-menu"></i> Page sections</span>
                   </a>
                   <div class="page-sections-menu">
-                      <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#under-construction">Under construction!</a></li>
-</ul></li>
-</ul>
-</nav>
+                      
                   </div>
                 </li>
                 <script>
@@ -8763,11 +8752,32 @@
               </div>
               
 
-	
+	<p>In order to simulate the availability requests and response for the product loaded in Inventory-X you will need to go to the <code>Product</code> tab and then select the <code>Availability</code> option in the Inventory-X extranet.</p>
 
-<h2 id="under-construction">Under construction!</h2>
+<p><img src="./../../../images/web/inventory_availability1.png" alt="Inventory-X Delete Product" title="Inventory-X Delete Product" /></p>
 
-<p>We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. Meanwhile, you can check our <a href="https://youtu.be/xFQDoRMXzpA?list=PLQwI2TA5wZyaUQHldt7uzJabFOlW8irTh" rel="nofollow" target="_blank">video tutorials</a> of Inventory-X extranet.</p>
+<p></br></p>
+
+<p>First step will be to indicate the desired Client-Provider connection and then the hotel to search availability. After that, you should specify the following conditions:</p>
+
+<ul>
+<li><strong>Hotel</strong>: Hotel name or ID to request for.</li>
+<li><strong>Dates:</strong> Check-in and check-out date to request for.</li>
+<li><strong>Packages Rates</strong>: Filter if you only want to receive package rates.</li>
+<li><strong>Markets</strong>: Optional filter if you only want to receive rates allowed for specific markets.</li>
+<li><strong>Rooms</strong>: Number of rooms to request for.</li>
+<li><strong>Paxes and ages</strong>: Number of pax in each room and their age.</li>
+</ul>
+
+<p>Once you have filled all the information you can click on the <code>Search</code> button and all options and prices will appear if there is any rate that fullfills all conditions.</p>
+
+<div class="alert 
+alert-warning"
+ 
+role="alert"><p>Please, bear in mind that this is just a visual tool that will show you the different options available based on the request that
+you make. It will not let you to do neither a Valuation nor a Booking request,because this is not the purpose of this tool.</p>
+</div>
+
 
 
 
@@ -8798,7 +8808,7 @@
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/inventory-x/extranet/tools/" title="Go to previous page | Tools"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Tools</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/inventory-x/extranet/tools/delete-product/" title="Go to next page | Delete product" style="margin-right: 0px;">Delete product<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/inventory-x/extranet/tools/copy-tool/" title="Go to next page | Copy Tool" style="margin-right: 0px;">Copy Tool<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

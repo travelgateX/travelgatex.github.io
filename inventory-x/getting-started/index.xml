@@ -16,7 +16,7 @@
     
     
     <item>
-      <title>Inventory-X: Typical Scenarios</title>
+      <title>Inventory-X: Channel Manager Typical Scenario</title>
       <link>https://docs.travelgatex.com/inventory-x/getting-started/typical-scenario/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -24,9 +24,9 @@
       <description>
         
         
-        Typical use case of message exchange flow between Providers and Sellers can be resumed as: Synchronize Hotelier product:  Providers retrieve static inventory (Hotel/Rate Plans/Rooms) from Seller using HotelRatePlanInventoryRetrieve in order to map Hotelier inventory into their system.
- Providers Push/Notif Rate Plan information to Seller using HotelRatePlanNotif in order to synchronize Hotelier rates.
- Providers Push/Notif Availability information to Seller using HotelAvailNotif in order to synchronize Hotelier availability.
+        Typical use case of message exchange flow between Channel Manager and Inventory can be resumed as: Synchronize Hotelier product:  Channel Managers retrieve static inventory (Hotel/Rate Plans/Rooms) from Inventory using HotelRatePlanInventoryRetrieve in order to map hotelier inventory into their system.
+ Channel Managers Push/Notif Rate Plan information to Inventory using HotelRatePlanNotif in order to synchronize hotelier rates.
+ Channel Managers Push/Notif Availability information to Inventory using HotelAvailNotif in order to synchronize hotelier availability/allotment.
         
           [...]
         
