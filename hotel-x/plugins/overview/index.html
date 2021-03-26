@@ -4794,11 +4794,6 @@
               <span>Currency Converter</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/hotel-x/plugins/processor/" class="dd-item">
-            <a href="/hotel-x/plugins/processor/">
-              <span>Processor</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/hotel-x/plugins/search_by_destination/" class="dd-item">
             <a href="/hotel-x/plugins/search_by_destination/">
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
@@ -8838,7 +8833,7 @@
 <p>Plugin types supported by <a href="/hotel-x/">HotelX</a>:</p>
 
 <ul>
-<li><a href="../processor">Pre Step</a>: First execution on every <em>step</em>.</li>
+<li>[Pre Step]: First execution on every <em>step</em>.</li>
 <li><a href="../mapping">Hotel Map</a>: Hotel mapping codes.</li>
 <li><a href="../mapping">Board Map</a>: Board mapping codes.</li>
 <li><a href="../mapping">Room Map</a>: Room mapping codes.</li>
@@ -8846,7 +8841,7 @@
 <li><a href="../net-price">Net Price</a>: Calculate the net price. </li>
 <li><a href="../markup">Markup</a>: Markups to <code>supplier</code> price.</li>
 <li><a href="../aggregation">Aggregation</a>: Aggregate multiple <code>supplier</code> options.</li>
-<li><a href="../processor">Post Step</a>: Last execution on every <em>step</em>.</li>
+<li>[Post Step]: Last execution on every <em>step</em>.</li>
 </ul>
 
 <h3 id="plugin-context-execution">Plugin Context Execution</h3>
@@ -8864,7 +8859,7 @@
 
 <h3 id="plugin-step-execution">Plugin Step Execution</h3>
 
-<p><a href="/hotel-x/">HotelX</a> determine the order and <a href="#plugintypes">plugin types</a> executed for each <em>step</em>.</p>
+<p><a href="/hotel-x/">HotelX</a> determines the order and <a href="#plugintypes">plugin types</a> executed for each <em>step</em>.</p>
 
 <table>
 <thead>
@@ -8880,34 +8875,34 @@
 <tbody>
 <tr>
 <td><em>Request</em></td>
-<td><a href="../processor">Pre Step</a><br><a href="../mapping">Hotel Map</a><br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a><br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a><br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a> <br><a href="../processor">Post Step</a></td>
+<td>[Pre Step]<br><a href="../mapping">Hotel Map</a><br>[Post Step]</td>
+<td>[Pre Step]<br>[Post Step]</td>
+<td>[Pre Step]<br>[Post Step]</td>
+<td>[Pre Step] <br>[Post Step]</td>
 </tr>
 
 <tr>
 <td><em>Request Access</em></td>
-<td><a href="../processor">Pre Step</a><br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a> <br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a> <br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a> <br><a href="../processor">Post Step</a></td>
+<td>[Pre Step]<br>[Post Step]</td>
+<td>[Pre Step] <br>[Post Step]</td>
+<td>[Pre Step] <br>[Post Step]</td>
+<td>[Pre Step] <br>[Post Step]</td>
 </tr>
 
 <tr>
 <td><em>Response Option</em></td>
-<td><a href="../processor">Pre Step</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="#../rate-map">Rate Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../net-price#commissionX">CommissionX</a><br><a href="../markup">Markup</a><br><a href="../aggregation">Aggregation</a><br><a href="../processor">Post Step</a><br><a href="../safety_margin">Safety Margin</a></td>
-<td><a href="../processor">Pre Step</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../net-price#commissionX">CommissionX</a><br><a href="../markup">Markup</a><br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../net-price#commissionX">CommissionX</a><br><a href="../markup">Markup</a><br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a><br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../processor">Post Step</a></td>
+<td>[Pre Step]<br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="#../rate-map">Rate Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../net-price#commissionX">CommissionX</a><br><a href="../markup">Markup</a><br><a href="../aggregation">Aggregation</a><br>[Post Step]<br><a href="../safety_margin">Safety Margin</a></td>
+<td>[Pre Step]<br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../net-price#commissionX">CommissionX</a><br><a href="../markup">Markup</a><br>[Post Step]</td>
+<td>[Pre Step]<br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../net-price#commissionX">CommissionX</a><br><a href="../markup">Markup</a><br>[Post Step]</td>
+<td>[Pre Step]<br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br>[Post Step]</td>
 </tr>
 
 <tr>
 <td><em>Response</em></td>
-<td><a href="../processor">Pre Step</a><br><a href="../aggregation">Aggregation</a><br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a> <br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a> <br><a href="../processor">Post Step</a></td>
-<td><a href="../processor">Pre Step</a> <br><a href="../processor">Post Step</a></td>
+<td>[Pre Step]<br><a href="../aggregation">Aggregation</a><br>[Post Step]</td>
+<td>[Pre Step] <br>[Post Step]</td>
+<td>[Pre Step] <br>[Post Step]</td>
+<td>[Pre Step] <br>[Post Step]</td>
 </tr>
 </tbody>
 </table>
