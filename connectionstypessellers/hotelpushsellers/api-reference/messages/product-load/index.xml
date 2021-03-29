@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Product Load Messages</title>
+    <link>https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/</link>
+    <description>Recent changes in Product Load Messages on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connectionstypessellers: HotelAvailNotif</title>
+      <link>https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/hotelavailnotif/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/hotelavailnotif/</guid>
+      <description>
+        
+        
+        Providers will send a HotelAvailNotifRQ message to push availabilities for seller. TGX will process the data and respond with an error code if needed or success if everything is correct.
+HotelAvailNotifRQ Example for a RatePlan
+&amp;lt;HotelAvailNotif&amp;gt; &amp;lt;request&amp;gt; &amp;lt;POS&amp;gt; &amp;lt;Source&amp;gt; &amp;lt;RequestorID ID = &amp;quot;Provider1&amp;quot;&amp;gt;&amp;lt;/RequestorID&amp;gt; &amp;lt;BookingChannel&amp;gt; &amp;lt;CompanyName Code = &amp;quot;ClientTravelAgency1&amp;quot;&amp;gt;&amp;lt;/CompanyName&amp;gt; &amp;lt;/BookingChannel&amp;gt; &amp;lt;/Source&amp;gt; &amp;lt;/POS&amp;gt; &amp;lt;AvailStatusMessages HotelCode = &amp;quot;12&amp;quot;&amp;gt; &amp;lt;AvailStatusMessage BookingLimit = &amp;quot;9&amp;quot;&amp;gt; &amp;lt;StatusApplicationControl Start = &amp;quot;2013-12-20&amp;quot; End = &amp;quot;2013-12-25&amp;quot; RatePlanCode = &amp;quot;BAR&amp;quot; InvCode = &amp;quot;APT&amp;quot; InvType = &amp;quot;ROOM&amp;quot; Mon = &amp;quot;true&amp;quot; Tue = &amp;quot;true&amp;quot; Weds = &amp;quot;true&amp;quot; Thur = &amp;quot;false&amp;quot; Fri = &amp;quot;true&amp;quot; Sat = &amp;quot;true&amp;quot; Sun = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;LengthsOfStay ArrivalDateBased = &amp;quot;true&amp;quot;&amp;gt; &amp;lt;LengthOfStay Time = &amp;quot;2&amp;quot; TimeUnit = &amp;quot;Day&amp;quot; MinMaxMessageType = &amp;quot;MinLOS&amp;quot;/&amp;gt; &amp;lt;LengthOfStay Time = &amp;quot;8&amp;quot; TimeUnit = &amp;quot;Day&amp;quot; MinMaxMessageType = &amp;quot;MaxLOS&amp;quot;/&amp;gt; &amp;lt;/LengthsOfStay&amp;gt; &amp;lt;RestrictionStatus Status = &amp;quot;Open&amp;quot; SellThroughOpenIndicator = &amp;quot;false&amp;quot; MinAdvancedBookingOffset = &amp;quot;5&amp;quot;/&amp;gt; &amp;lt;/AvailStatusMessage&amp;gt; &amp;lt;AvailStatusMessage BookingLimit = &amp;quot;12&amp;quot;&amp;gt; &amp;lt;StatusApplicationControl Start = &amp;quot;2013-12-20&amp;quot; End = &amp;quot;2013-12-21&amp;quot; RatePlanCode = &amp;quot;LOWCOST&amp;quot; InvCode = &amp;quot;JUN_1&amp;quot; InvType = &amp;quot;ROOM&amp;quot; Mon = &amp;quot;false&amp;quot; Tue = &amp;quot;false&amp;quot; Weds = &amp;quot;false&amp;quot; Thur = &amp;quot;false&amp;quot; Fri = &amp;quot;true&amp;quot; Sat = &amp;quot;true&amp;quot; Sun = &amp;quot;false&amp;quot;/&amp;gt; &amp;lt;RestrictionStatus Restriction = &amp;quot;Master&amp;quot; Status = &amp;quot;Close&amp;quot;/&amp;gt; &amp;lt;/AvailStatusMessage&amp;gt; &amp;lt;AvailStatusMessage BookingLimit = &amp;quot;12&amp;quot;&amp;gt; &amp;lt;StatusApplicationControl Start = &amp;quot;2013-12-22&amp;quot; End = &amp;quot;2013-12-25&amp;quot; RatePlanCode = &amp;quot;LOWCOST&amp;quot; InvCode = &amp;quot;JUN_1&amp;quot; InvType = &amp;quot;ROOM&amp;quot; Mon = &amp;quot;true&amp;quot; Tue = &amp;quot;true&amp;quot; Weds = &amp;quot;true&amp;quot; Thur = &amp;quot;false&amp;quot; Fri = &amp;quot;false&amp;quot; Sat = &amp;quot;false&amp;quot; Sun = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;RestrictionStatus Status = &amp;quot;Close&amp;quot; Restriction = &amp;quot;Arrival&amp;quot;/&amp;gt; &amp;lt;/AvailStatusMessage&amp;gt; &amp;lt;AvailStatusMessage BookingLimit = &amp;quot;7&amp;quot;&amp;gt; &amp;lt;StatusApplicationControl Start = &amp;quot;2013-12-20&amp;quot; End = &amp;quot;2013-12-25&amp;quot; RatePlanCode = &amp;quot;LOWCOST&amp;quot; InvCode = &amp;quot;STD1&amp;quot; InvType = &amp;quot;ROOM&amp;quot; Mon = &amp;quot;true&amp;quot; Tue = &amp;quot;true&amp;quot; Weds = &amp;quot;true&amp;quot; Thur = &amp;quot;false&amp;quot; Fri = &amp;quot;true&amp;quot; Sat = &amp;quot;true&amp;quot; Sun = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;LengthsOfStay ArrivalDateBased = &amp;quot;true&amp;quot;&amp;gt; &amp;lt;LengthOfStay Time = &amp;quot;3&amp;quot; TimeUnit = &amp;quot;Day&amp;quot; MinMaxMessageType = &amp;quot;MinLOS&amp;quot;/&amp;gt; &amp;lt;LengthOfStay Time = &amp;quot;9&amp;quot; TimeUnit = &amp;quot;Day&amp;quot; MinMaxMessageType = &amp;quot;MaxLOS&amp;quot;/&amp;gt; &amp;lt;/LengthsOfStay&amp;gt; &amp;lt;RestrictionStatus SellThroughOpenIndicator = &amp;quot;true&amp;quot; MinAdvancedBookingOffset = &amp;quot;6&amp;quot;/&amp;gt; &amp;lt;/AvailStatusMessage&amp;gt; &amp;lt;AvailStatusMessage BookingLimit = &amp;quot;5&amp;quot;&amp;gt; &amp;lt;StatusApplicationControl Start = &amp;quot;2013-12-26&amp;quot; End = &amp;quot;2013-12-27&amp;quot; InvCode = &amp;quot;STD1&amp;quot; InvType = &amp;quot;ROOM&amp;quot; Mon = &amp;quot;true&amp;quot; Tue = &amp;quot;true&amp;quot; Weds = &amp;quot;true&amp;quot; Thur = &amp;quot;false&amp;quot; Fri = &amp;quot;true&amp;quot; Sat = &amp;quot;true&amp;quot; Sun = &amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/AvailStatusMessage&amp;gt; &amp;lt;/AvailStatusMessages&amp;gt; &amp;lt;/request&amp;gt; &amp;lt;/HotelAvailNotif&amp;gt;  **Example for a Derived RatePlan**
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectionstypessellers: HotelAvailRetrieve</title>
+      <link>https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/hotelavailretrieve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/hotelavailretrieve/</guid>
+      <description>
+        
+        
+        Providers will send a HotelAvailRetrieveRQ message to retrieve a complete break down of availability. TGX will return a break down of hotel / rate plans / rooms.
+HotelAvailRetrieveRQ XML Example
+&amp;lt;HotelAvailRetrieve&amp;gt; &amp;lt;request&amp;gt; &amp;lt;POS&amp;gt; &amp;lt;Source&amp;gt; &amp;lt;RequestorID ID = &amp;quot;Provider1&amp;quot;&amp;gt;&amp;lt;/RequestorID&amp;gt; &amp;lt;BookingChannel&amp;gt; &amp;lt;CompanyName Code = &amp;quot;ClientTravelAgency1&amp;quot;/&amp;gt; &amp;lt;/BookingChannel&amp;gt; &amp;lt;TPA_Extensions&amp;gt; &amp;lt;Param key = &amp;quot;onlyActive&amp;quot; value = &amp;quot;0&amp;quot;/&amp;gt; &amp;lt;/TPA_Extensions&amp;gt; &amp;lt;/Source&amp;gt; &amp;lt;/POS&amp;gt; &amp;lt;HotelAvailRequests&amp;gt; &amp;lt;HotelAvailRequest&amp;gt; &amp;lt;DateRange Start = &amp;quot;2013-12-20&amp;quot; End = &amp;quot;2013-12-25&amp;quot;/&amp;gt; &amp;lt;HotelRef HotelCode = &amp;quot;12&amp;quot;/&amp;gt; &amp;lt;RatePlanCandidates&amp;gt; &amp;lt;RatePlanCandidate RatePlanCode = &amp;quot;BAR&amp;quot;&amp;gt;&amp;lt;/RatePlanCandidate&amp;gt; &amp;lt;/RatePlanCandidates&amp;gt; &amp;lt;/HotelAvailRequest&amp;gt; &amp;lt;/HotelAvailRequests&amp;gt; &amp;lt;/request&amp;gt; &amp;lt;/HotelAvailRetrieve&amp;gt;     Element Number Type Description     POS/Source/TPA_Extensions 0.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectionstypessellers: HotelRatePlanNotif</title>
+      <link>https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/hotelrateplannotif/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/hotelrateplannotif/</guid>
+      <description>
+        
+        
+        Providers will send a HotelRatePlanNotifRQ message to push Rate Plans to sellers. TGX will process the data and respond with an error code if needed or success if everything is correct.
+HotelRatePlanNotifRQ Example for a RatePlan
+&amp;lt;HotelRatePlanNotif&amp;gt; &amp;lt;request&amp;gt; &amp;lt;POS&amp;gt; &amp;lt;Source&amp;gt; &amp;lt;RequestorID ID = &amp;quot;Provider1&amp;quot;/&amp;gt; &amp;lt;BookingChannel&amp;gt; &amp;lt;CompanyName Code = &amp;quot;ClientTravelAgency1&amp;quot;/&amp;gt; &amp;lt;/BookingChannel&amp;gt; &amp;lt;/Source&amp;gt; &amp;lt;/POS&amp;gt; &amp;lt;RatePlans HotelCode = &amp;quot;HOT123&amp;quot;&amp;gt; &amp;lt;RatePlan RatePlanCode = &amp;quot;TAR321&amp;quot; CurrencyCode = &amp;quot;EUR&amp;quot; RatePlanStatusType = &amp;quot;Active&amp;quot;&amp;gt; &amp;lt;Rates&amp;gt; &amp;lt;Rate Start = &amp;quot;2007-04-01&amp;quot; End = &amp;quot;2007-12-31&amp;quot;&amp;gt; &amp;lt;BaseByGuestAmts&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;quot;1&amp;quot; AmountAfterTax = &amp;quot;100.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectionstypessellers: HotelRatePlanRetrieve</title>
+      <link>https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/hotelrateplanretrieve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectionstypessellers/hotelpushsellers/api-reference/messages/product-load/hotelrateplanretrieve/</guid>
+      <description>
+        
+        
+        Providers will send a HotelRatePlanRetrieveRQ message to retrieve a complete break down of Rate Plans. TGX will return a break down of hotel / Rate Plans / rooms.
+HotelRatePlanRetrieveRQ Xml Exmaple
+&amp;lt;HotelRatePlanRetrieve&amp;gt; &amp;lt;request&amp;gt; &amp;lt;POS&amp;gt; &amp;lt;Source&amp;gt; &amp;lt;RequestorID ID=&amp;quot;Provider1&amp;quot; /&amp;gt; &amp;lt;BookingChannel &amp;gt; &amp;lt;CompanyName Code=&amp;quot;ClientTravelAgency1&amp;quot;/&amp;gt; &amp;lt;/BookingChannel&amp;gt; &amp;lt;TPA_Extensions&amp;gt; &amp;lt;Param key = &amp;quot;onlyActive&amp;quot; value = &amp;quot;0&amp;quot;/&amp;gt; &amp;lt;/TPA_Extensions&amp;gt; &amp;lt;/Source&amp;gt; &amp;lt;/POS&amp;gt; &amp;lt;RatePlans&amp;gt; &amp;lt;RatePlan&amp;gt; &amp;lt;DateRange Start=&amp;quot;2013-12-20&amp;quot; End=&amp;quot;2013-12-25&amp;quot;/&amp;gt; &amp;lt;RatePlanCandidates&amp;gt; &amp;lt;RatePlanCandidate RatePlanCode=&amp;quot;BAR&amp;quot;&amp;gt;&amp;lt;/RatePlanCandidate&amp;gt; &amp;lt;/RatePlanCandidates&amp;gt; &amp;lt;HotelRef HotelCode=&amp;quot;12&amp;quot; /&amp;gt; &amp;lt;/RatePlan&amp;gt; &amp;lt;/RatePlans&amp;gt; &amp;lt;/request&amp;gt; &amp;lt;/HotelRatePlanRetrieve&amp;gt;     Element Number Type Description     HotelRatePlanRetrieve/request 1  Root Node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

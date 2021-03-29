@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Static Content</title>
+    <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/</link>
+    <description>Recent changes in Static Content on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connectiontypesbuyers: Hotel</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/hotel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/hotel/</guid>
+      <description>
+        
+        
+        Hotels Hotels Query returns a hotel list from one supplier&amp;rsquo;s access. This entity contains static data about the hotel requested, such as code, name, location, and other information - You can find all these fields in the graphQL api documentation. This query allows many types of search. You can receive hotels with hotel codes or with minimal destination codes, you can also filter the results based on rank. In this sense, note that there are mandatory and optional fields that allow filtering the hotels returned in the response.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: Metadata</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/metadata/</guid>
+      <description>
+        
+        
+        The metadata query returns information about the metadata or restriction of supplier. In addition, the fields belows are used to verify the Search request input in order to avoid the unnecessary request to the supplier.
+ maxNumberHotels: Maximum number of hotels that can be requested. recommendedNumberHotels: Recommended number of hotels that can be requested. release: Minimum days required in between booking date and checking date ( days in advance ).
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: Destination</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/destination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/destination/</guid>
+      <description>
+        
+        
+        const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;5067eb7a-6020-4621-79d3-1c5cd8c1d27b&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x228626cf56-e364-4fd1-4fe0-311e23ac6355\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aeb082e484710ebf6b7a4ec5173064cc\/raw\x22,\x22divname\x22:\x22div_hotels\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/4737228c495b09566474fa2db38fc72d\/raw\x22,\x22divname\x22:\x22div_destinations\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/519b4223de8b44cb20c5c33212c62654\/raw\x22,\x22divname\x22:\x22div_boards\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/0815561e9c25ce49bc416dbc73f36388\/raw\x22,\x22divname\x22:\x22div_rooms\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aa1be23b8c9229c8363c142036afb1f5\/raw\x22,\x22divname\x22:\x22div_categories\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: Room</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/room/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/room/</guid>
+      <description>
+        
+        
+        const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;5067eb7a-6020-4621-79d3-1c5cd8c1d27b&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x228626cf56-e364-4fd1-4fe0-311e23ac6355\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aeb082e484710ebf6b7a4ec5173064cc\/raw\x22,\x22divname\x22:\x22div_hotels\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/4737228c495b09566474fa2db38fc72d\/raw\x22,\x22divname\x22:\x22div_destinations\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/519b4223de8b44cb20c5c33212c62654\/raw\x22,\x22divname\x22:\x22div_boards\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/0815561e9c25ce49bc416dbc73f36388\/raw\x22,\x22divname\x22:\x22div_rooms\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aa1be23b8c9229c8363c142036afb1f5\/raw\x22,\x22divname\x22:\x22div_categories\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: Boards</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/boards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/boards/</guid>
+      <description>
+        
+        
+        const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;5067eb7a-6020-4621-79d3-1c5cd8c1d27b&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x228626cf56-e364-4fd1-4fe0-311e23ac6355\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aeb082e484710ebf6b7a4ec5173064cc\/raw\x22,\x22divname\x22:\x22div_hotels\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/4737228c495b09566474fa2db38fc72d\/raw\x22,\x22divname\x22:\x22div_destinations\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/519b4223de8b44cb20c5c33212c62654\/raw\x22,\x22divname\x22:\x22div_boards\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/0815561e9c25ce49bc416dbc73f36388\/raw\x22,\x22divname\x22:\x22div_rooms\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/aa1be23b8c9229c8363c142036afb1f5\/raw\x22,\x22divname\x22:\x22div_categories\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
