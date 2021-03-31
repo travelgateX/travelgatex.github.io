@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Getting Started</title>
+    <link>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/getting-started/</link>
+    <description>Recent changes in Getting Started on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/getting-started/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connectiontypessellers: Channel Manager Typical Scenario</title>
+      <link>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/getting-started/typical-scenario/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/getting-started/typical-scenario/</guid>
+      <description>
+        
+        
+        Typical use case of message exchange flow between Channel Manager and Inventory can be resumed as: Synchronize Hotelier product:  Channel Managers retrieve static inventory (Hotel/Rate Plans/Rooms) from Inventory using HotelRatePlanInventoryRetrieve in order to map hotelier inventory into their system.
+ Channel Managers Push/Notif Rate Plan information to Inventory using HotelRatePlanNotif in order to synchronize hotelier rates.
+ Channel Managers Push/Notif Availability information to Inventory using HotelAvailNotif in order to synchronize hotelier availability/allotment.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

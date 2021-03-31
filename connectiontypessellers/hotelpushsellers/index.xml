@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Hotel Push Sellers API</title>
+    <link>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/</link>
+    <description>Recent changes in Hotel Push Sellers API on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connectiontypessellers: Overview</title>
+      <link>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/overview/</guid>
+      <description>
+        
+        
+        Inventory Overview Inventory allows Channel Managers and Hotel Product Distributors to push their product into a TravelgateX database, thus making it available for the TravelgateX Buyers.
+How does it work? Channel Managers and Hotels will push data to Inventory.
+ Inventory receives the data from the different channels and stores it in a common structure.
+ Then, this product can be consumed in 3 different ways by TravelgateX Buyers:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypessellers: FAQ</title>
+      <link>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/faq/</guid>
+      <description>
+        
+        
+        Inventory-X FAQ What is standard occupancy? Standard occupancy is the standard number of Adult paxes of the room. For example, if the standard occupancy is 2. And the following is loaded&amp;hellip;
+&amp;lt;BaseByGuestAmts&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;quot;1&amp;quot; AmountAfterTax=&amp;quot;50.00&amp;quot;/&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;quot;2&amp;quot; AmountAfterTax=&amp;quot;100.00&amp;quot;/&amp;gt; &amp;lt;/BaseByGuestAmts&amp;gt;  &amp;hellip; The price of two paxes will be 100, and the price for one pax will be 50. Note that prices for pax under the standard occupancy must be specified and prices for babies under the standard occupancy will be 0.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

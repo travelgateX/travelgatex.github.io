@@ -411,20 +411,6 @@
     </item>
     
     <item>
-      <title>Connectiontypesbuyers: 2019-11-18</title>
-      <link>https://docs.travelgatex.com/connectiontypesbuyers/legacy/payments/changelog/2019-11-18/</link>
-      <pubDate>Mon, 18 Nov 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/connectiontypesbuyers/legacy/payments/changelog/2019-11-18/</guid>
-      <description>
-        
-        
-         2019-11-18 v1.0.18  Included docs and changelog with current API status   
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Integrations: 2019-11-15</title>
       <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-15/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0100</pubDate>
@@ -722,6 +708,22 @@ All notable changes to this product will be documented in this page. Under const
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.travelgatex.com/paymentx/reference/objects/api/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: API</title>
+      <link>https://docs.travelgatex.com/stats/reference/objects/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/objects/api/</guid>
       <description>
         
         
