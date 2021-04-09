@@ -4988,23 +4988,23 @@
               <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-        <li data-nav-id="/connectiontypesbuyers/channel-x/documentation/" class="dd-item">
+        <li data-nav-id="/connectiontypesbuyers/channel-x/api-reference/" class="dd-item">
           <div>
-            <a href="/connectiontypesbuyers/channel-x/documentation/">
-              <span>Documentation</span>            
+            <a href="/connectiontypesbuyers/channel-x/api-reference/">
+              <span>API reference</span>            
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-        <li data-nav-id="/connectiontypesbuyers/channel-x/documentation/codelists/" class="dd-item">
+        <li data-nav-id="/connectiontypesbuyers/channel-x/api-reference/codelists/" class="dd-item">
           <div>
-            <a href="/connectiontypesbuyers/channel-x/documentation/codelists/">
-              <span>Code Lists</span>            
+            <a href="/connectiontypesbuyers/channel-x/api-reference/codelists/">
+              <span>Code List</span>            
             </a>
           </div>
         </li>
-        <li data-nav-id="/connectiontypesbuyers/channel-x/documentation/pricetut/" class="dd-item">
+        <li data-nav-id="/connectiontypesbuyers/channel-x/api-reference/pricetut/" class="dd-item">
           <div>
-            <a href="/connectiontypesbuyers/channel-x/documentation/pricetut/">
+            <a href="/connectiontypesbuyers/channel-x/api-reference/pricetut/">
               <span>Price Use Cases</span>            
             </a>
           </div>
@@ -8319,7 +8319,7 @@
 </ul></li>
 <li><a href="#important-information"><strong><em>Important information:</em></strong></a>
 <ul>
-<li><a href="#notify-amounts-by-guests"><strong>Notify amounts by Guests:</strong></a></li>
+<li><a href="#notify-amounts-by-guests-standard-occupancy"><strong>Notify amounts by Guests (Standard Occupancy):</strong></a></li>
 <li><a href="#notify-amounts-with-price-per-room-and-additional-guests"><strong>Notify amounts with price per room and additional guests</strong></a></li>
 <li><a href="#notify-amounts-by-occupancy"><strong>Notify amounts by Occupancy:</strong></a></li>
 <li><a href="#hotelrateplannotifrs">HotelRatePlanNotifRS</a></li>
@@ -8884,38 +8884,27 @@
 </tbody>
 </table>
 
+<p></br></p>
+
 <h1 id="important-information"><strong><em>Important information:</em></strong></h1>
 
 <ul>
+<li>You must always load only <em>one</em> price type per message/notif. If you send different price type in the same message, our system will only use and load one with the following criteria: price by occupancy, price by guest/standard occupancy, price per room. If you send different price type for the same day in different messages, only the newest one would be loaded.</li>
 <li>The prices under the standard occupancy are ALWAYS loaded with <strong>BaseByGuestAmts</strong>.</li>
-<li>Children and babies are not allowed in BaseByGuestAmts. Children and babies must always be defined in AdditionalGuestAmounts.</li>
-<li>The possible Type values in the AdditionalGuestAmount tag are <strong>Exclusive</strong> and <strong>not specified</strong>.</li>
-</ul>
+<li>Children and babies are not allowed in <code>BaseByGuestAmts</code>. Children and babies must always be defined in AdditionalGuestAmounts.</li>
+<li>The possible Type values in the AdditionalGuestAmount tag are <strong>Exclusive</strong> and <strong>not specified</strong>.
 
-<blockquote>
 <ul>
 <li>If there&rsquo;s <strong>no value specified</strong> then the price is a relative and it&rsquo;s added to the price of the current pax.</li>
 <li>If the value is <strong>&ldquo;Exclusive&rdquo;</strong> then the price is absolute and it&rsquo;s the total price of the current pax.</li>
-</ul>
-</blockquote>
-
-<ul>
-<li><p>If NumberOfGuests is not specified in tag BaseByGuestAmt then Type=&ldquo;25&rdquo; (price per room) or Type=&ldquo;14&rdquo; (price per occupancy) must be specified. If Type=&ldquo;25&rdquo; only one tag BaseByGuestAmt is allowed.</p></li>
-
-<li><p>If the price is per room then all AdditionalGuestAmount must be
-relative.</p></li>
-
-<li><p>If the price is per occupancy then Type should be 14 and Code should
-be specified.</p></li>
+</ul></li>
+<li>If NumberOfGuests is not specified in tag <code>BaseByGuestAmt</code> then <code>Type=&quot;25&quot;</code> (price per room) or <code>Type=&quot;14&quot;</code> (price per occupancy) must be specified. If <code>Type=&quot;25&quot;</code> only one tag <code>BaseByGuestAmt</code> is allowed.</li>
+<li>If the price is per room then all <code>AdditionalGuestAmount</code> must be relative.</li>
+<li>If the price is per occupancy then <code>Type</code> should be <code>14</code> and <code>Code</code> should be specified.</li>
+<li>The occupancy code is defined by AdultNumber-ChildNumber-InfantNumber, for an occupancy of 2 adults, 1 child and 0 babies should be &ldquo;2-1-0&rdquo;. In the examples, the room uses are specified using = AdultNumber - ChildNumber - InfantNumber.</li>
 </ul>
 
-<p>The occupancy code is defined by AdultNumber-ChildNumber-InfantNumber, for an occupancy of 2 adults, 1 child and 0 babies should be &ldquo;2-1-0&rdquo;.</p>
-
-<ul>
-<li>In the examples, the room uses are specified using = AdultNumber - ChildNumber - InfantNumber.</li>
-</ul>
-
-<h2 id="notify-amounts-by-guests"><strong>Notify amounts by Guests:</strong></h2>
+<h2 id="notify-amounts-by-guests-standard-occupancy"><strong>Notify amounts by Guests (Standard Occupancy):</strong></h2>
 
 <p>Case 1:</p>
 
