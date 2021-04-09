@@ -8316,7 +8316,12 @@
 <ul>
 <li><a href="#what-can-i-receive">What can I receive</a></li>
 <li><a href="#how-it-works">How it works</a></li>
-<li><a href="#what-should-i-expect-from">What should I expect from</a></li>
+<li><a href="#what-should-i-expect-from">What should I expect from</a>
+<ul>
+<li><a href="#hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</a></li>
+<li><a href="#hotelavailnotif">HotelAvailNotif</a></li>
+<li><a href="#hotelrateplannotif">HotelRatePlanNotif</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#things-to-keep-in-mind">Things to keep in mind</a></li>
 </ul></li>
@@ -8459,7 +8464,7 @@
               
 
 
-<p>This tool extracts the product loaded at <em>InventoryX</em> and sends it to a third partner, normally an <em>OTA</em>. These clients will have the option of loading all the product in their system by selecting the <em>Full Copy</em> tab in <em>InventoryX</em>&rsquo;s extranet, having the possibility to only select the hotels they are interested in copying. Also, each update the provider will be notified to the client in a smaller product request, as they will only receive information that has changed. This is due to the ability of ChannelX to detect what information has changed and which is duplicated.</p>
+<p>Channel-X extracts the product loaded by Channel Managers into our <em>Inventory</em> system and sends it to a third partner, normally an <em>OTA</em>. As a Buyer, you will have the option of loading all the product into your system by selecting the <em>Full Copy</em> tab in <em>Inventory</em>&rsquo;s extranet, having the possibility to only select the hotels you are interested in copying. Also, each update the Channel Manager does, will be notified in a smaller product request, as you will only receive information that has changed. This is due to the ability of Channel-X to detect what information has changed and which is duplicated.</p>
 
 <figure>
     <img src="/images/channelx_diagram.png#center"/> 
@@ -8476,34 +8481,37 @@
 
 <h3 id="how-it-works">How it works</h3>
 
-<p>ChannelX is defined by 3 main parts. Each part has its own functionality and helps to define the global flow of the service.</p>
+<p>ChannelX is defined by 3 main parts. Each one has its own functionality and helps to define the global flow of the service.</p>
 
 <ul>
-<li><p><strong>Product to service:</strong> every time a message arrives to the <em>InventoryX</em> service (either inventory notification, availability load, price load&hellip;) and it belongs to a <em>ChannelX</em> relation, the message will be sent to this service. At first, this message will be converted from <em>InventoryX</em> API to an own <em>ChannelX</em> object. Once we have this, the message is sent to a storage database.</p></li>
+<li><p><strong>Product to service:</strong> every time a message arrives to the <em>Inventory</em> service (either inventory notification, availability load, price load&hellip;) and it belongs to a <em>Channel-X</em> relation, the message will be sent to this service. At first, this message will be converted from <em>Inventory</em> API to an own <em>Channel-X</em> object. Once we have this, the message is sent to a storage database.</p></li>
 
-<li><p><strong>Aggregation of the product:</strong> this process will be based on reading each one of the messages stored into application memory. Each of them will be added to a final message structure which will get the product with the final changes. In other words, this process aggregates the different changes received in a period of time and sends one unique <em>ChannelX</em> message. With this, we help the system to reduce message workload, compacting several messages into one in a period of time.</p></li>
+<li><p><strong>Aggregation of the product:</strong> this process will be based on reading each one of the messages stored into application memory. Each of them will be added to a final message structure which will get the product with the final changes. In other words, this process aggregates the different changes received in a period of time and sends one unique <em>Channel-X</em> message. With this, we help the system to reduce message workload, compacting several messages into one in a period of time.</p></li>
 
 <li><p><strong>Product Delivery:</strong> once the compacted message is created, application gets ready to send it to the Client.</p></li>
 </ul>
 
 <h3 id="what-should-i-expect-from">What should I expect from</h3>
 
-<p><strong>HotelRatePlanInventoryNotif</strong><br />
-Each element can have one of these three states: &lsquo;New&rsquo;, &lsquo;Delta&rsquo;, &lsquo;Remove&rsquo;, each one will be indicated in its correspondent tag.</p>
+<p>Channel-X API has three main methods/messages:</p>
+
+<h4 id="hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</h4>
+
+<p>Each element can have one of these three states: &lsquo;New&rsquo;, &lsquo;Delta&rsquo;, &lsquo;Remove&rsquo;, each one will be indicated in its correspondent tag.</p>
 
 <ul>
-<li><p><strong>New:</strong> it means the element was not added before. Add the element in your system with the information provided</p></li>
-
-<li><p><strong>Delta (Edit):</strong> it means the element was created before but it has been edited. The element should be already created in your system, change the information of it with the new one. <em>Note:</em> here you will get all the info of the element, as we need to provide it, but it is not extrictly necessary that all of this info has changed, it could only change a part of it. You can override all the information already loaded for that specific element and reload it with the new one or have control of what has changed.</p></li>
-
-<li><p><strong>Remove:</strong> it means the element has been removed. You should delete the element in your system and all its dependences. When deleting an element (Hotel, rate, derived rate or room), all the information you will receive about the element in the request is the code. If this happens, you should remove from your system all the elements that are depending on the one to delete.</p></li>
+<li><strong>New:</strong> it means the element was not added before. You should add the element in your system with the information provided.</li>
+<li><strong>Delta (Edit):</strong> it means the element was created before but it has been edited. The element should be already created in your system and you should change the information of it with the new one. <em>Note:</em> here you will get all the information of the element, as we need to provide it, but it is not extrictly necessary that all of this info has changed, it could only change a part of it. You can override all the information already loaded for that specific element and reload it with the new one or have control of what has changed.</li>
+<li><strong>Remove:</strong> it means the element has been removed. You should delete the element in your system and all its dependences. When deleting an element (Hotel, rate, derived rate or room), all the information you will receive about the element in the request is the code. If this happens, you should remove from your system all the elements that are depending on the one to delete.</li>
 </ul>
 
-<p><strong>HotelAvailNotif</strong><br />
-It loads availability and conditions for the different elements. No rate information will be returned except code.</p>
+<h4 id="hotelavailnotif">HotelAvailNotif</h4>
 
-<p><strong>HotelRatePlanNotif</strong><br />
-It loads prices and supplements for the different elements. No rate information will be returned except Code, currency and status.</p>
+<p>It loads availability and conditions for the different elements. No rate information will be returned except code.</p>
+
+<h4 id="hotelrateplannotif">HotelRatePlanNotif</h4>
+
+<p>It loads prices and supplements for the different elements. No rate information will be returned except Code, currency and status.</p>
 
 <h2 id="things-to-keep-in-mind">Things to keep in mind</h2>
 
