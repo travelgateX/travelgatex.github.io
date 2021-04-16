@@ -35,6 +35,8 @@
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2825176.js"></script>
     
     <meta name="description" content="How to perform a booking">
     <meta charset='utf-8'>
@@ -8944,37 +8946,37 @@ Please, bear in mind that the clientReference should be different for every test
 <p>The example of payment card input</p>
 
 <pre><code class="language-json">{
-			&quot;cardType&quot;: &quot;VI&quot;,
-			&quot;holder&quot;: {
-				&quot;name&quot;: &quot;test_name&quot;,
-				&quot;surname&quot;: &quot;test_surname&quot;
-			},
-			&quot;number&quot;: &quot;4874495143042809&quot;,
-			&quot;CVC&quot;: &quot;330&quot;,
-			&quot;expire&quot;: {
-				&quot;month&quot;: 9,
-				&quot;year&quot;: 2028
-			},
-			&quot;isVCC&quot;: true,
-			&quot;virtualCreditCard&quot;: {
-				&quot;activationDate&quot;: &quot;2020-10-02&quot;,
-				&quot;deactivationDate&quot;: &quot;2021-01-02&quot;,
-				&quot;currentBalance&quot;: 50.58,
-				&quot;currencyCode&quot;: &quot;EUR&quot;
-			},
-			&quot;threeDomainSecurity&quot;: {
-				&quot;version&quot;: &quot;1.0.1&quot;,
-				&quot;DSTransactionID&quot;: &quot;transaction 1&quot;,
-				&quot;XID&quot;: &quot;id123456&quot;,
-				&quot;ECI&quot;: &quot;05&quot;,
-				&quot;CAVV&quot;: &quot;CAVV&quot;,
-				&quot;payerResponse&quot;: &quot;base64xml response&quot;,
-				&quot;payerResponseStatus&quot;: &quot;AUTHENTICATION_SUCCESS&quot;,
-				&quot;cardEnrolledStatus&quot;: &quot;CARD_ENROLLED&quot;,
-				&quot;merchantName&quot;: &quot;test_name&quot;,
-				&quot;signatureStatus&quot;: &quot;SIGNATURE_NOT_VALIDATED&quot;
-			}
-		}
+            &quot;cardType&quot;: &quot;VI&quot;,
+            &quot;holder&quot;: {
+                &quot;name&quot;: &quot;test_name&quot;,
+                &quot;surname&quot;: &quot;test_surname&quot;
+            },
+            &quot;number&quot;: &quot;4874495143042809&quot;,
+            &quot;CVC&quot;: &quot;330&quot;,
+            &quot;expire&quot;: {
+                &quot;month&quot;: 9,
+                &quot;year&quot;: 2028
+            },
+            &quot;isVCC&quot;: true,
+            &quot;virtualCreditCard&quot;: {
+                &quot;activationDate&quot;: &quot;2020-10-02&quot;,
+                &quot;deactivationDate&quot;: &quot;2021-01-02&quot;,
+                &quot;currentBalance&quot;: 50.58,
+                &quot;currencyCode&quot;: &quot;EUR&quot;
+            },
+            &quot;threeDomainSecurity&quot;: {
+                &quot;version&quot;: &quot;1.0.1&quot;,
+                &quot;DSTransactionID&quot;: &quot;transaction 1&quot;,
+                &quot;XID&quot;: &quot;id123456&quot;,
+                &quot;ECI&quot;: &quot;05&quot;,
+                &quot;CAVV&quot;: &quot;CAVV&quot;,
+                &quot;payerResponse&quot;: &quot;base64xml response&quot;,
+                &quot;payerResponseStatus&quot;: &quot;AUTHENTICATION_SUCCESS&quot;,
+                &quot;cardEnrolledStatus&quot;: &quot;CARD_ENROLLED&quot;,
+                &quot;merchantName&quot;: &quot;test_name&quot;,
+                &quot;signatureStatus&quot;: &quot;SIGNATURE_NOT_VALIDATED&quot;
+            }
+        }
 </code></pre>
 
 <p>isVCC, virtualCreditCard and threeDomainSecurity, are all optionals</p>

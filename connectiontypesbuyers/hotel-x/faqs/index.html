@@ -36,6 +36,8 @@
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
 <script src="/mermaid/mermaid.js"></script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2825176.js"></script>
     
     <meta name="description" content="Do you have specific questions about HotelX? Check out the FAQs">
     <meta charset='utf-8'>
@@ -8633,7 +8635,7 @@ Those new suppliers would have the same api-key? And the client?</strong></p>
 <p>The amount of null values returned through our API calls will depend on the amount of information we receive from the suppliers. For instance, imagine that you request the following fields in Search query:</p>
 
 <pre><code class="language-json">{
-	rooms {
+    rooms {
           occupancyRefId
           code
           description
@@ -8665,32 +8667,32 @@ Those new suppliers would have the same api-key? And the client?</strong></p>
 <p>In this case, the supplier has been able to return all the information excep bed descriptions:</p>
 
 <pre><code class="language-json">&quot;rooms&quot;: [
-							{
-								&quot;occupancyRefId&quot;: 1,
-								&quot;code&quot;: &quot;1&quot;,
-								&quot;description&quot;: &quot;Standard&quot;,
-								&quot;refundable&quot;: false,
-								&quot;units&quot;: 999,
-								&quot;roomPrice&quot;: {
-									&quot;price&quot;: {
-										&quot;currency&quot;: &quot;EUR&quot;,
-										&quot;binding&quot;: false,
-										&quot;net&quot;: 150,
-										&quot;gross&quot;: 150,
-										&quot;exchange&quot;: {
-											&quot;currency&quot;: &quot;EUR&quot;,
-											&quot;rate&quot;: 1
-										}
-									}
-								},
-								&quot;beds&quot;: [
-									{
-										&quot;type&quot;: &quot;double&quot;,
-										&quot;description&quot;: **null**,
-										&quot;count&quot;: 2,
-										&quot;shared&quot;: false
-									}
-								]
+                            {
+                                &quot;occupancyRefId&quot;: 1,
+                                &quot;code&quot;: &quot;1&quot;,
+                                &quot;description&quot;: &quot;Standard&quot;,
+                                &quot;refundable&quot;: false,
+                                &quot;units&quot;: 999,
+                                &quot;roomPrice&quot;: {
+                                    &quot;price&quot;: {
+                                        &quot;currency&quot;: &quot;EUR&quot;,
+                                        &quot;binding&quot;: false,
+                                        &quot;net&quot;: 150,
+                                        &quot;gross&quot;: 150,
+                                        &quot;exchange&quot;: {
+                                            &quot;currency&quot;: &quot;EUR&quot;,
+                                            &quot;rate&quot;: 1
+                                        }
+                                    }
+                                },
+                                &quot;beds&quot;: [
+                                    {
+                                        &quot;type&quot;: &quot;double&quot;,
+                                        &quot;description&quot;: **null**,
+                                        &quot;count&quot;: 2,
+                                        &quot;shared&quot;: false
+                                    }
+                                ]
 </code></pre>
 
 <p><strong>Can I receive Daily-prices in Search Response?</strong></p>
@@ -8806,13 +8808,13 @@ Bear in mind, that a booking may have more than one penalty type associated, dep
 <p>The percentage returned is from 0 to 100, see example below:</p>
 
 <pre><code class="language-json">{
-	&quot;cancelPenalties&quot;: [
-	{
-		&quot;hoursBefore&quot;: 48
-		&quot;penaltyType&quot;: &quot;PERCENT&quot;
-		&quot;currency&quot;: &quot;EUR&quot;
-		&quot;value&quot;: 100
-	}
+    &quot;cancelPenalties&quot;: [
+    {
+        &quot;hoursBefore&quot;: 48
+        &quot;penaltyType&quot;: &quot;PERCENT&quot;
+        &quot;currency&quot;: &quot;EUR&quot;
+        &quot;value&quot;: 100
+    }
 
 </code></pre>
 
@@ -8868,17 +8870,17 @@ We suggest to contact directly with the supplier regarding this matter.</p>
 </ul>
 
 <pre><code class="language-json">{
-	&quot;criteria&quot;: {
-		&quot;access&quot;: &quot;&quot;,
-		&quot;maxSize&quot;: 200,
-		&quot;hotelCodes&quot;: [
-			&quot;A159&quot;, &quot;B357&quot;, &quot;C568&quot;
-		]
-	},
-	&quot;language&quot;: [
-		&quot;en&quot;
-	],
-	&quot;token&quot;: &quot;&quot;
+    &quot;criteria&quot;: {
+        &quot;access&quot;: &quot;&quot;,
+        &quot;maxSize&quot;: 200,
+        &quot;hotelCodes&quot;: [
+            &quot;A159&quot;, &quot;B357&quot;, &quot;C568&quot;
+        ]
+    },
+    &quot;language&quot;: [
+        &quot;en&quot;
+    ],
+    &quot;token&quot;: &quot;&quot;
 }
 </code></pre>
 
@@ -8887,17 +8889,17 @@ We suggest to contact directly with the supplier regarding this matter.</p>
 </ul>
 
 <pre><code class="language-json">{
-	&quot;criteria&quot;: {
-		&quot;access&quot;: &quot;&quot;,
-		&quot;maxSize&quot;: 200,
-		&quot;hotelCodes&quot;: [
-			&quot;&quot;
-		]
-	},
-	&quot;language&quot;: [
-		&quot;en&quot;
-	],
-	&quot;token&quot;: &quot;&quot;
+    &quot;criteria&quot;: {
+        &quot;access&quot;: &quot;&quot;,
+        &quot;maxSize&quot;: 200,
+        &quot;hotelCodes&quot;: [
+            &quot;&quot;
+        ]
+    },
+    &quot;language&quot;: [
+        &quot;en&quot;
+    ],
+    &quot;token&quot;: &quot;&quot;
 }
 </code></pre>
 
