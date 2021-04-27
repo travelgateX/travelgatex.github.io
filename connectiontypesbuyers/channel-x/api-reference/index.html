@@ -8540,7 +8540,7 @@ N = Names allowed for a specific element</p>
 <pre><code class="language-xml">&lt;HotelRatePlanInventoryNotif xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
     &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;&gt;
         &lt;RatePlans HotelCode = &quot;1&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
-            &lt;RatePlan Duration = &quot;0&quot; CurrencyCode = &quot;EUR&quot; RatePlanCode = &quot;BAR&quot; RatePlanStatusType = &quot;Active&quot; RatePlanNotifType = &quot;New&quot;&gt;
+            &lt;RatePlan Duration = &quot;0&quot; CurrencyCode = &quot;EUR&quot; RatePlanCode = &quot;BAR&quot; FreeChild = &quot;true&quot; FreeBaby = &quot;false&quot; RatePlanStatusType = &quot;Active&quot; RatePlanNotifType = &quot;New&quot;&gt;
                 &lt;BookingRules&gt;
                     &lt;BookingRule&gt;
                         &lt;CancelPenalties&gt;
@@ -8735,6 +8735,20 @@ N = Names allowed for a specific element</p>
 <td align="center">0..n</td>
 <td align="center"></td>
 <td></td>
+</tr>
+
+<tr>
+<td align="left">@FreeChild</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td>Indicates if the child is free at that rate. Find here the <a href="https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/" rel="nofollow" target="_blank">price calculation</a></td>
+</tr>
+
+<tr>
+<td align="left">@FreeBaby</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td>Indicates if the baby is free at that rate. Find here the <a href="https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/" rel="nofollow" target="_blank">price calculation</a></td>
 </tr>
 
 <tr>
@@ -9503,7 +9517,7 @@ N = Names allowed for a specific element</p>
             &lt;/Source&gt;
         &lt;/POS&gt;
         &lt;RatePlans HotelCode = &quot;HOT123&quot;&gt;
-            &lt;RatePlan RatePlanCode = &quot;TAR333&quot; CurrencyCode = &quot;EUR&quot; RatePlanStatusType = &quot;Deactivated&quot;&gt;
+            &lt;RatePlan RatePlanCode = &quot;TAR333&quot; CurrencyCode = &quot;EUR&quot; FreeChild = &quot;true&quot; FreeBaby = &quot;false&quot; RatePlanStatusType = &quot;Deactivated&quot;&gt;
                 &lt;Rates&gt;
                     &lt;Rate Start = &quot;2013-04-01&quot; End = &quot;2013-12-31&quot;&gt;
                         &lt;BaseByGuestAmts&gt;
@@ -9618,6 +9632,20 @@ N = Names allowed for a specific element</p>
 <td align="center">1</td>
 <td align="center">String</td>
 <td></td>
+</tr>
+
+<tr>
+<td align="left">@FreeChild</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td>Indicates if the child is free at that rate. Find here the <a href="https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/" rel="nofollow" target="_blank">price calculation</a></td>
+</tr>
+
+<tr>
+<td align="left">@FreeBaby</td>
+<td align="center">1</td>
+<td align="center">Boolean</td>
+<td>Indicates if the baby is free at that rate. Find here the <a href="https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/" rel="nofollow" target="_blank">price calculation</a></td>
 </tr>
 
 <tr>

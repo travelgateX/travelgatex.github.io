@@ -24,7 +24,7 @@
       <description>
         
         
-         GraphQL schema definition type PaymentXQuery {vaultStatusService: AdviseMessage! allStoredCards(filter: PaymentXStoredCardFilterInput!,instanceCode: String!,): PaymentXStoredCardConnection! storedCard(criteria: PaymentXStoredCardIDInput!,): PaymentXStoredCard! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields vaultStatusService(AdviseMessage!):allStoredCards(PaymentXStoredCardConnection!):storedCard(PaymentXStoredCard!): 
+         GraphQL schema definition type PaymentXQuery {  vaultStatusService: AdviseMessage!    allStoredCards( filter: PaymentXStoredCardFilterInput!, instanceCode: String!, ): PaymentXStoredCardConnection!    storedCard( criteria: PaymentXStoredCardIDInput!, ): PaymentXStoredCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields vaultStatusService(AdviseMessage!):   allStoredCards(PaymentXStoredCardConnection!):   storedCard(PaymentXStoredCard!):    
         
       </description>
     </item>
@@ -38,7 +38,7 @@
       <description>
         
         
-         GraphQL schema definition type PaymentXMutation {storeCard(input: PaymentXStoredCardInput!,): PaymentXStoredCard! deleteStoredCard(criteria: PaymentXStoredCardIDInput!,): PaymentXStoredCard! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields storeCard(PaymentXStoredCard!):deleteStoredCard(PaymentXStoredCard!): 
+         GraphQL schema definition type PaymentXMutation {  storeCard( input: PaymentXStoredCardInput!, ): PaymentXStoredCard!    deleteStoredCard( criteria: PaymentXStoredCardIDInput!, ): PaymentXStoredCard!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields storeCard(PaymentXStoredCard!):   deleteStoredCard(PaymentXStoredCard!):    
         
       </description>
     </item>

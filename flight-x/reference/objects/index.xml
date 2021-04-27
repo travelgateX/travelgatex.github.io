@@ -24,7 +24,7 @@
       <description>
         
         
-         GraphQL schema definition type AmountType {amount: Float curCode: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields amount(Float):curCode(String): Required by  
+         GraphQL schema definition type AmountType {  amount: Float    curCode: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields amount(Float):   curCode(String):    Required by  
         
       </description>
     </item>
@@ -38,7 +38,7 @@
       <description>
         
         
-         GraphQL schema definition type Fee {amount: AmountType descText: TextType Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields amount(AmountType):descText(TextType): Required by FlightPrice:  
+         GraphQL schema definition type Fee {  amount: AmountType    descText: TextType   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields amount(AmountType):   descText(TextType):    Required by FlightPrice:     
         
       </description>
     </item>
@@ -52,7 +52,7 @@
       <description>
         
         
-        GraphQL schema definition type FlightOffer {code: ID! flightOfferData: FlightOfferData createdAt: DateTime! updatedAt: DateTime! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):flightOfferData(FlightOfferData):createdAt(DateTime!
+        GraphQL schema definition type FlightOffer {  code: ID!    flightOfferData: FlightOfferData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   flightOfferData(FlightOfferData):   createdAt(DateTime!
         
           [...]
         
@@ -68,7 +68,7 @@
       <description>
         
         
-        GraphQL schema definition type FlightOfferConnection {edges: [FlightOfferEdge] pageinfo: PageInfo! error: [AdviseMessage!] totalCount: int! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([FlightOfferEdge]):pageinfo(PageInfo!):error([AdviseMessage!
+        GraphQL schema definition type FlightOfferConnection {  edges: [FlightOfferEdge]    pageinfo: PageInfo!    error: [AdviseMessage!]    totalCount: int!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields edges([FlightOfferEdge]):   pageinfo(PageInfo!):   error([AdviseMessage!
         
           [...]
         
@@ -84,7 +84,7 @@
       <description>
         
         
-         GraphQL schema definition type FlightOfferData {code: ID! supplier: Supplier totalPrice: AmountType offeritems: [FlightOfferItem] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):supplier(Supplier):totalPrice(AmountType):offeritems([FlightOfferItem]): Required by FlightOffer:  
+         GraphQL schema definition type FlightOfferData {  code: ID!    supplier: Supplier    totalPrice: AmountType    offeritems: [FlightOfferItem]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   supplier(Supplier):   totalPrice(AmountType):   offeritems([FlightOfferItem]):    Required by FlightOffer:     
         
       </description>
     </item>
@@ -98,7 +98,7 @@
       <description>
         
         
-         GraphQL schema definition type FlightOfferEdge {node: FlightOffer cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(FlightOffer):cursor(String!): Required by FlightOfferConnection:  
+         GraphQL schema definition type FlightOfferEdge {  node: FlightOffer    cursor: String!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields node(FlightOffer):   cursor(String!):    Required by FlightOfferConnection:     
         
       </description>
     </item>
@@ -112,7 +112,7 @@
       <description>
         
         
-        GraphQL schema definition type FlightOfferItem {code: ID! OfferItemData: FlightOfferItemData createdAt: DateTime! updatedAt: DateTime! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):OfferItemData(FlightOfferItemData):createdAt(DateTime!
+        GraphQL schema definition type FlightOfferItem {  code: ID!    OfferItemData: FlightOfferItemData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   OfferItemData(FlightOfferItemData):   createdAt(DateTime!
         
           [...]
         
@@ -128,7 +128,7 @@
       <description>
         
         
-         GraphQL schema definition type FlightOfferItemData {code: ID! price: FlightPrice! service: FlightService! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):price(FlightPrice!):service(FlightService!): Required by FlightOfferItem:  
+         GraphQL schema definition type FlightOfferItemData {  code: ID!    price: FlightPrice!    service: FlightService!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   price(FlightPrice!):   service(FlightService!):    Required by FlightOfferItem:     
         
       </description>
     </item>
@@ -142,7 +142,7 @@
       <description>
         
         
-         GraphQL schema definition type FlightPax {age: int! type: IATA_PTC_CodeType paxID: ID! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields age(int!):type(IATA_PTC_CodeType):paxID(ID!): Required by FlightServiceData:  
+         GraphQL schema definition type FlightPax {  age: int!    type: IATA_PTC_CodeType    paxID: ID!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields age(int!):   type(IATA_PTC_CodeType):   paxID(ID!):    Required by FlightServiceData:     
         
       </description>
     </item>
@@ -156,7 +156,7 @@
       <description>
         
         
-         GraphQL schema definition type FlightPrice {baseAmount: AmountType fee: [Fee] surcharge: [FlightSurcharge] taxSummary: [TaxSummaryType] totalAmount: AmountType Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields baseAmount(AmountType):fee([Fee]):surcharge([FlightSurcharge]):taxSummary([TaxSummaryType]):totalAmount(AmountType): Required by FlightOfferItemData:  
+         GraphQL schema definition type FlightPrice {  baseAmount: AmountType    fee: [Fee]    surcharge: [FlightSurcharge]    taxSummary: [TaxSummaryType]    totalAmount: AmountType   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields baseAmount(AmountType):   fee([Fee]):   surcharge([FlightSurcharge]):   taxSummary([TaxSummaryType]):   totalAmount(AmountType):    Required by FlightOfferItemData:     
         
       </description>
     </item>
@@ -170,7 +170,7 @@
       <description>
         
         
-         GraphQL schema definition type FlightPax {arrival: TransportArrival! departure: TransportDeparture! carrier: AirlineCode flightNumber: FlightNumber Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields arrival(TransportArrival!):departure(TransportDeparture!):carrier(AirlineCode):flightNumber(FlightNumber): Required by FlightServiceData:  
+         GraphQL schema definition type FlightPax {  arrival: TransportArrival!    departure: TransportDeparture!    carrier: AirlineCode    flightNumber: FlightNumber   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields arrival(TransportArrival!):   departure(TransportDeparture!):   carrier(AirlineCode):   flightNumber(FlightNumber):    Required by FlightServiceData:     
         
       </description>
     </item>
@@ -184,7 +184,7 @@
       <description>
         
         
-        GraphQL schema definition type FlightService {code: ID! flightServiceData: FlightServiceData createdAt: DateTime! updatedAt: DateTime! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):flightServiceData(FlightServiceData):createdAt(DateTime!
+        GraphQL schema definition type FlightService {  code: ID!    flightServiceData: FlightServiceData    createdAt: DateTime!    updatedAt: DateTime!    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   flightServiceData(FlightServiceData):   createdAt(DateTime!
         
           [...]
         
@@ -200,7 +200,7 @@
       <description>
         
         
-        GraphQL schema definition type FlightServiceData {code: ID! type: ID! description: String! pax: [FlightPax]! segments(where: FlightSegmentWhereInput,orderBy: FlightSegmentOrderByInput,): [FlightSegment!]! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!
+        GraphQL schema definition type FlightServiceData {  code: ID!    type: ID!    description: String!    pax: [FlightPax]!    segments( where: FlightSegmentWhereInput, orderBy: FlightSegmentOrderByInput, ): [FlightSegment!]!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!
         
           [...]
         
@@ -216,7 +216,7 @@
       <description>
         
         
-         GraphQL schema definition type FlightSurcharge {totalAmount: AmountType breakdown: [Fee] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields totalAmount(AmountType):breakdown([Fee]): Required by FlightPrice:  
+         GraphQL schema definition type FlightSurcharge {  totalAmount: AmountType    breakdown: [Fee]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields totalAmount(AmountType):   breakdown([Fee]):    Required by FlightPrice:     
         
       </description>
     </item>
@@ -230,7 +230,7 @@
       <description>
         
         
-         GraphQL schema definition type TaxSummaryType {totalTaxAmount: AmountType tax: [TaxType] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields totalTaxAmount(AmountType):tax([TaxType]): Required by FlightPrice:  
+         GraphQL schema definition type TaxSummaryType {  totalTaxAmount: AmountType    tax: [TaxType]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields totalTaxAmount(AmountType):   tax([TaxType]):    Required by FlightPrice:     
         
       </description>
     </item>
@@ -244,7 +244,7 @@
       <description>
         
         
-         GraphQL schema definition type TaxType {amount: AmountType descText: TexType Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields amount(AmountType):descText(TexType): Required by TaxSummaryType:  
+         GraphQL schema definition type TaxType {  amount: AmountType    descText: TexType   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields amount(AmountType):   descText(TexType):    Required by TaxSummaryType:     
         
       </description>
     </item>
@@ -258,7 +258,7 @@
       <description>
         
         
-         GraphQL schema definition type Text {text: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields text(String): 
+         GraphQL schema definition type Text {  text: String   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields text(String):    
         
       </description>
     </item>
@@ -272,7 +272,7 @@
       <description>
         
         
-         GraphQL schema definition type TransportArrival {location: LocationCode Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields location(LocationCode): Required by FlightSegment:  
+         GraphQL schema definition type TransportArrival {  location: LocationCode   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields location(LocationCode):    Required by FlightSegment:     
         
       </description>
     </item>
@@ -286,7 +286,7 @@
       <description>
         
         
-         GraphQL schema definition type TransportDeparture {location: LocationCode AircraftScheduled: DateTime Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields location(LocationCode):AircraftScheduled(DateTime): Required by FlightSegment:  
+         GraphQL schema definition type TransportDeparture {  location: LocationCode    AircraftScheduled: DateTime   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields location(LocationCode):   AircraftScheduled(DateTime):    Required by FlightSegment:     
         
       </description>
     </item>

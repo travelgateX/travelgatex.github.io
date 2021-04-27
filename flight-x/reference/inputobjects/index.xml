@@ -24,7 +24,7 @@
       <description>
         
         
-        GraphQL schema definition type FlightOfferWhereInput {AND: [FlightOfferWhereInput!] OR: [FlightOfferWhereInput!] NOT: [FlightOfferWhereInput!] originDestCriteria_in: [FlightOriginDestCriteriaInput!] age_in: [int!] discount_in: [Discount!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields AND([FlightOfferWhereInput!
+        GraphQL schema definition type FlightOfferWhereInput {  AND: [FlightOfferWhereInput!]    OR: [FlightOfferWhereInput!]    NOT: [FlightOfferWhereInput!]    originDestCriteria_in: [FlightOriginDestCriteriaInput!]    age_in: [int!]    discount_in: [Discount!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields AND([FlightOfferWhereInput!
         
           [...]
         
@@ -40,7 +40,7 @@
       <description>
         
         
-         GraphQL schema definition type FlightOriginDestCriteriaInput {departure: Departure! arrival: Arrival! departureAt: [DateTime!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields departure(Departure!):arrival(Arrival!):departureAt([DateTime!]):/flight-x/reference/scalars/datetime Required by FlightOfferWhereInput:  
+         GraphQL schema definition type FlightOriginDestCriteriaInput {  departure: Departure!    arrival: Arrival!    departureAt: [DateTime!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields departure(Departure!):   arrival(Arrival!):   departureAt([DateTime!]): /flight-x/reference/scalars/datetime   Required by FlightOfferWhereInput:     
         
       </description>
     </item>
@@ -54,7 +54,7 @@
       <description>
         
         
-        GraphQL schema definition type FlightSettingsInput {supplierCode_in: [FlightSupplierInput!] groupCode: ID clientCode_in: ID timeout: int auditTransactions: Boolean Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields supplierCode_in([FlightSupplierInput!]):groupCode(ID):clientCode_in(ID):It has not been developed yet.
+        GraphQL schema definition type FlightSettingsInput {  supplierCode_in: [FlightSupplierInput!]    groupCode: ID    clientCode_in: ID    timeout: int    auditTransactions: Boolean   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields supplierCode_in([FlightSupplierInput!]):   groupCode(ID):   clientCode_in(ID): It has not been developed yet.
         
           [...]
         
@@ -70,7 +70,7 @@
       <description>
         
         
-         GraphQL schema definition type FlightSupplierInput {Code: ID! accessCode_in: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields Code(ID!):accessCode_in([ID!]):It has not been developed yet. Required by FlightXQuery:  
+         GraphQL schema definition type FlightSupplierInput {  Code: ID!    accessCode_in: [ID!]   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields Code(ID!):   accessCode_in([ID!]): It has not been developed yet.   Required by FlightXQuery:     
         
       </description>
     </item>

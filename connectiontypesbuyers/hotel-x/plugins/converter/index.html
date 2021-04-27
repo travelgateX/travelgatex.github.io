@@ -4639,44 +4639,6 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/concepts/basicconcepts/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/concepts/basicconcepts/">
-              <span>Basic Concepts</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/concepts/basicconcepts/supplier-access-client-context/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/concepts/basicconcepts/supplier-access-client-context/">
-              <span>Supplier, Access, Client and Context</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/concepts/basicconcepts/single_multi_mode/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/concepts/basicconcepts/single_multi_mode/">
-              <span>Single Mode &amp; Multi Mode</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/">
-              <span>Advanced Concepts</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/errorwarning/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/errorwarning/">
-              <span>Errors and Warnings</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/">
-              <span>Settings</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/methods/" class="dd-item">
@@ -8470,24 +8432,24 @@
 <p>This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file located in our ftp. Is mandatory that this file exists in the ftp and satisfies all the requirements below. Otherwise, an error will be returned. The node in graphQL that indicates the currency exchange rate is:</p>
 
 <pre><code>&quot;exchange&quot;: {
-    &quot;currency&quot;: &quot;currency&quot;,
-    &quot;rate&quot;: 1
+	&quot;currency&quot;: &quot;currency&quot;,
+	&quot;rate&quot;: 1
 },
 </code></pre>
 
 <p>If the plugin is not executed, you will receive:</p>
 
 <pre><code>&quot;exchange&quot;: {
-    &quot;currency&quot;: &quot;EUR&quot;,   //Same currency of option with no currency exchange applied
-    &quot;rate&quot;: 1            //No currency exchange applied
+	&quot;currency&quot;: &quot;EUR&quot;,   //Same currency of option with no currency exchange applied
+	&quot;rate&quot;: 1            //No currency exchange applied
 },
 </code></pre>
 
 <p>otherwise, you will receive:</p>
 
 <pre><code>&quot;exchange&quot;: {
-    &quot;currency&quot;: &quot;EUR&quot;,   //New currency
-    &quot;rate&quot;: 0.86         //Rate exchange applied
+	&quot;currency&quot;: &quot;EUR&quot;,   //New currency
+	&quot;rate&quot;: 0.86         //Rate exchange applied
 },
 </code></pre>
 
