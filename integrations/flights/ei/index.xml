@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – EI - Aer Lingus</title>
@@ -6,6 +5,7 @@
     <description>Recent changes in EI - Aer Lingus on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -14,6 +14,20 @@
     
 	    <atom:link href="https://docs.travelgatex.com/integrations/flights/ei/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Integrations: EI - Aer Lingus Changelog</title>
+      <link>https://docs.travelgatex.com/integrations/flights/ei/changelog/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/ei/changelog/</guid>
+      <description>
+        
+        
+        DLL Name Changelog Easily accessible log of notable changes to DLL integration
+        
+      </description>
+    </item>
     
   </channel>
 </rss>

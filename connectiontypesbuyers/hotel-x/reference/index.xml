@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – API Reference</title>
@@ -14,6 +13,109 @@
     
 	    <atom:link href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Connectiontypesbuyers: Schema</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/schema/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/schema/</guid>
+      <description>
+        
+        
+        The TravelgateX GraphQL API Schema is a powerful way to access all of our functionalities as you need them. GraphQL allows you to ask for the exact information you need, so that you get responses that can be used in your clients (applications, websites and other interfaces) directly, without having to parse information from long-winded or cluttered API responses.
+role=&amp;ldquo;alert&amp;rdquo;&amp;gt;You can also see our ‘schema’ in action by using our API playground.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: Objects</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/objects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/objects/</guid>
+      <description>
+        
+        
+        Our Object pages describe every single resource, and field in our schema.
+You can access our Schema interactively in our API Playground, but if you would like to understand each object’s properties, have a look at the relevant page here.
+Each object is described in the same way:
+ A short definition of the Object An interactive GraphQL schema definition A full list of all Fields in the object A list of which other objects require this Object Where possible, we are adding examples of how to use this Object in your queries.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: Scalars</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/scalars/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/scalars/</guid>
+      <description>
+        
+        
+        Scalars are types of objects that are available in our schema (such as String or Integer). By defining scalars we make sure you can only enter or receive data that fits the objects in our data model.
+Each Scalar is described in the same way:
+ A short definition of the Scalar An interactive GraphQL schema definition A list of which objects require this Scalar Where possible, we are adding examples of how to use this object in your queries.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: Interfaces</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/interfaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/interfaces/</guid>
+      <description>
+        
+        
+        Interfaces are an abstract type that includes a certain set of fields that are grouped together. For example, our AdviseMessage interface requires the error code, error type and error description fields to be used together.
+Each Interface is described in the same way:
+ A short definition of the Interface An interactive GraphQL schema definition A list of all of the fields that are included in this Interface (remember, in GraphQL, ‘!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: Input objects</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/inputobjects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/inputobjects/</guid>
+      <description>
+        
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: Enums</title>
+      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/enums/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/enums/</guid>
+      <description>
+        
+        
+        Enums are a particular type of Scalar that works like a drop-down, single selection menu. Each type of Enum has a number of choices defined, and users must select one of the choices when querying the Enum.
+For example, you could make a Query asking for only hotels with a particular penalty cancellation policy (enum CancelPentaltyType). You then choose whether to see hotels with either a ‘nights’, ‘percent’ or ‘import’ penalty type.
+        
+          [...]
+        
+      </description>
+    </item>
     
   </channel>
 </rss>

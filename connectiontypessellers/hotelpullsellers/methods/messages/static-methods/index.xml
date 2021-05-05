@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Static Content Methods</title>
@@ -28,7 +27,7 @@
 Request Format The request does not require any elements - it&amp;rsquo;s an empty request.
 Response Format The result returns a list of DestinationTree with their corresponding sub-destinations.
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
-AvailDestinationTreeRQ Example &amp;lt;AvailDestinationTreeRQ&amp;gt; &amp;lt;/AvailDestinationTreeRQ&amp;gt;  AvailDestinationTreeRQ Description    Element Number Type Description     AvailDestinationTreeRQ 1  Root node.
+AvailDestinationTreeRQ Example &amp;lt;AvailDestinationTreeRQ&amp;gt; &amp;lt;/AvailDestinationTreeRQ&amp;gt; AvailDestinationTreeRQ Description    Element Number Type Description     AvailDestinationTreeRQ 1  Root node.
         
           [...]
         
@@ -48,7 +47,7 @@ AvailDestinationTreeRQ Example &amp;lt;AvailDestinationTreeRQ&amp;gt; &amp;lt;/A
 Request Format The request does not require any elements empty request.
 Response Format The result returns a list of Category .
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
-CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&amp;gt;  CategoryListRQ Description    Element Number Type Description     CategoryListRQ 1  Root node.
+CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&amp;gt; CategoryListRQ Description    Element Number Type Description     CategoryListRQ 1  Root node.
         
           [...]
         
@@ -67,7 +66,7 @@ CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&am
         Method Goals This method returns a list of currencies the supplier supports in Avail.
 Request Format The request does not require any elements. Empty request.
 Response Format The result returns a list of currencies.
-CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt;  CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.    CurrencyListRS Example &amp;lt;CurrencyListRS&amp;gt; &amp;lt;UpgradeUTCDate&amp;gt;2016-10-18T13:18:03+02:00&amp;lt;/UpgradeUTCDate&amp;gt; &amp;lt;Currencies&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;EUR&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Euro&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;USD&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Dollar&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;/Currencies&amp;gt; &amp;lt;/CurrencyListRS&amp;gt;  CurrencyListRS Description    Element Number Type Description     CurrencyListRS 1  Root node.
+CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt; CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.    CurrencyListRS Example &amp;lt;CurrencyListRS&amp;gt; &amp;lt;UpgradeUTCDate&amp;gt;2016-10-18T13:18:03+02:00&amp;lt;/UpgradeUTCDate&amp;gt; &amp;lt;Currencies&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;EUR&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Euro&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;USD&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Dollar&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;/Currencies&amp;gt; &amp;lt;/CurrencyListRS&amp;gt; CurrencyListRS Description    Element Number Type Description     CurrencyListRS 1  Root node.
         
           [...]
         
@@ -87,7 +86,7 @@ CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&am
 Request Format The request just requires the hotel code and language code (ISO-639-1) - this is specified within the source&amp;ndash;&amp;gt;languageCode).
 Response Format The result returns the details of that hotel.
 Remarks The maximum time permitted in our system before the connection is closed is 180000 milliseconds.
-DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt; &amp;lt;Code&amp;gt;524AC&amp;lt;/Code&amp;gt; &amp;lt;/Hotel&amp;gt; &amp;lt;/DescriptiveInfoRQ&amp;gt;  DescriptiveInfoRQ Description    Element Number Type Description     DescriptiveInfoRQ 1  Root node.
+DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt; &amp;lt;Code&amp;gt;524AC&amp;lt;/Code&amp;gt; &amp;lt;/Hotel&amp;gt; &amp;lt;/DescriptiveInfoRQ&amp;gt; DescriptiveInfoRQ Description    Element Number Type Description     DescriptiveInfoRQ 1  Root node.
         
           [...]
         
@@ -240,7 +239,7 @@ This message must be implemented solely in case the supplier does not return roo
         Method Goals This message returns a template of the supplier&amp;rsquo;s configuration.
 Request Format The request does not require any elements, it is an empty request.
 Response Format The returned XML contains a template of all fields used by the supplier.
-RuntimeConfigurationRQ Example &amp;lt;RuntimeConfigurationRQ&amp;gt; &amp;lt;/RuntimeConfigurationRQ&amp;gt;  RuntimeConfigurationRQ Description    Element Number Type Description     RuntimeConfigurationRQ 1  Root node.    RuntimeConfigurationRS Example &amp;lt;RuntimeConfigurationRS&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User/&amp;gt; &amp;lt;Password/&amp;gt; &amp;lt;UrlGeneric/&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;agencia&amp;quot; value = &amp;quot;&amp;quot;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/RuntimeConfigurationRS&amp;gt;  ConfiguracionRunTimeRS Description    Element Number Type Description     RuntimeConfigurationRS 1  Root node.
+RuntimeConfigurationRQ Example &amp;lt;RuntimeConfigurationRQ&amp;gt; &amp;lt;/RuntimeConfigurationRQ&amp;gt; RuntimeConfigurationRQ Description    Element Number Type Description     RuntimeConfigurationRQ 1  Root node.    RuntimeConfigurationRS Example &amp;lt;RuntimeConfigurationRS&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User/&amp;gt; &amp;lt;Password/&amp;gt; &amp;lt;UrlGeneric/&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;#34;agencia&amp;#34; value = &amp;#34;&amp;#34;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/RuntimeConfigurationRS&amp;gt; ConfiguracionRunTimeRS Description    Element Number Type Description     RuntimeConfigurationRS 1  Root node.
         
           [...]
         

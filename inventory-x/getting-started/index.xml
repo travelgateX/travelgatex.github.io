@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Getting Started</title>
@@ -24,9 +23,9 @@
       <description>
         
         
-        Typical use case of message exchange flow between Channel Manager and Inventory can be resumed as: Synchronize Hotelier product:  Channel Managers retrieve static inventory (Hotel/Rate Plans/Rooms) from Inventory using HotelRatePlanInventoryRetrieve in order to map hotelier inventory into their system.
- Channel Managers Push/Notif Rate Plan information to Inventory using HotelRatePlanNotif in order to synchronize hotelier rates.
- Channel Managers Push/Notif Availability information to Inventory using HotelAvailNotif in order to synchronize hotelier availability/allotment.
+        Typical use case of message exchange flow between Channel Manager and Inventory can be resumed as: Synchronize Hotelier product:   Channel Managers retrieve static inventory (Hotel/Rate Plans/Rooms) from Inventory using HotelRatePlanInventoryRetrieve in order to map hotelier inventory into their system.
+  Channel Managers Push/Notif Rate Plan information to Inventory using HotelRatePlanNotif in order to synchronize hotelier rates.
+  Channel Managers Push/Notif Availability information to Inventory using HotelAvailNotif in order to synchronize hotelier availability/allotment.
         
           [...]
         

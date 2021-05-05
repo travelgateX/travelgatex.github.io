@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Input objects</title>
@@ -25,7 +24,7 @@
         
         
         Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)
-GraphQL schema definition type StatsFilterInput {  groups: [ID!]    accesses: [ID!]    suppliers: [ID!]    clients: [ID!]    mode: ModeType!    serviceApis: [ServiceApiType!]    operation: [ServiceOperationType!
+GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  groups: [ID!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  accesses: [ID!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  suppliers: [ID!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  clients: [ID!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  mode: ModeType! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  serviceApis: [ServiceApiType!
         
           [...]
         

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Configuration</title>
@@ -74,7 +73,8 @@ This rule can be set by agency or by organization on general settings: when defi
       <description>
         
         
-        Block currencies by country With this rule a default currency and a list of not admitted currencies can be set for a concrete country. When applying this rule to a selling it must be used the definition for the country of the selling&amp;rsquo;s hotel. If a selling is received from the supplier with a currency included on the not admitted ones (for the hotel&amp;rsquo;s country definition) then this currency must be exchanged to the default currency: if it cannot be exchanged then the selling will be discarded.
+        Distribution allows you to make a currency exchange from the currency your suppliers provide you to the currency that your buyers are requesting you. The currency exchange used by default in Distribution is updated every day from the European Central Bank. However, you can customize your own currency exchange using the currency exchange master file to indicate your own base currencye and the exchanges you prefer.
+role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Is possible to check the exact currency exchange that Distribution is using in that moment in the Searches panel at the extranet.
         
           [...]
         
@@ -90,8 +90,8 @@ This rule can be set by agency or by organization on general settings: when defi
       <description>
         
         
-        Time Zone With this rule it be can set the Time Zone to use with some rules, as: * Selling Pricing Rules: the Booking Date field (dates from &amp;amp; to), the Booking Hour field and the Booking Day field. * Specific Stop Sales: the Booking Date field (dates from &amp;amp; to).
-Rest of date fields and rules related to dates are managed as UTC. By default this rule is set to UTC Time Zone.
+        Time Zone With this rule it be can set the Time Zone to use with some rules, as:
+ Selling Pricing Rules: the Booking Date field (dates from &amp;amp; to), the Booking Hour field and the Booking Day field. Specific Stop Sales: the Booking Date field (dates from &amp;amp; to).  Rest of date fields and rules related to dates are managed as UTC. By default this rule is set to UTC Time Zone.
         
           [...]
         
