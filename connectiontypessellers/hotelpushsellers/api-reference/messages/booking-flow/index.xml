@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Booking Flow Messages</title>
@@ -25,7 +26,7 @@
         
         Providers will send a HotelResRetrieveRQ message to retrieve a list of a seller&amp;rsquo;s reservations.
 HotelResRetrieveRQ XML Example
-&amp;lt;HotelResRetrieve&amp;gt; &amp;lt;request&amp;gt; &amp;lt;POS&amp;gt; &amp;lt;Source&amp;gt; &amp;lt;RequestorID ID = &amp;#34;Provider1&amp;#34;/&amp;gt; &amp;lt;BookingChannel&amp;gt; &amp;lt;CompanyName Code = &amp;#34;ClientTravelAgency1&amp;#34;/&amp;gt; &amp;lt;/BookingChannel&amp;gt; &amp;lt;/Source&amp;gt; &amp;lt;/POS&amp;gt; &amp;lt;UniqueID ID = &amp;#34;123456&amp;#34; ID_Context = &amp;#34;Client&amp;#34;/&amp;gt; &amp;lt;ReadRequests&amp;gt; &amp;lt;HotelReadRequest HotelCode=&amp;#34;1608&amp;#34;&amp;gt; &amp;lt;SelectionCriteria Start=&amp;#34;2013-11-25&amp;#34; End=&amp;#34;2013-11-28&amp;#34; DateType=&amp;#34;DepartureDate&amp;#34;/&amp;gt; &amp;lt;/HotelReadRequest&amp;gt; &amp;lt;HotelReadRequest&amp;gt; &amp;lt;SelectionCriteria Start = &amp;#34;2015-12-23&amp;#34; End = &amp;#34;2015-12-28&amp;#34; DateType = &amp;#34;ArrivalDate&amp;#34;/&amp;gt; &amp;lt;/HotelReadRequest&amp;gt; &amp;lt;/ReadRequests&amp;gt; &amp;lt;/request&amp;gt; &amp;lt;/HotelResRetrieve&amp;gt;    Element Number Type Description     HotelResRetrieve/request 1  Root Node.
+&amp;lt;HotelResRetrieve&amp;gt; &amp;lt;request&amp;gt; &amp;lt;POS&amp;gt; &amp;lt;Source&amp;gt; &amp;lt;RequestorID ID = &amp;quot;Provider1&amp;quot;/&amp;gt; &amp;lt;BookingChannel&amp;gt; &amp;lt;CompanyName Code = &amp;quot;ClientTravelAgency1&amp;quot;/&amp;gt; &amp;lt;/BookingChannel&amp;gt; &amp;lt;/Source&amp;gt; &amp;lt;/POS&amp;gt; &amp;lt;UniqueID ID = &amp;quot;123456&amp;quot; ID_Context = &amp;quot;Client&amp;quot;/&amp;gt; &amp;lt;ReadRequests&amp;gt; &amp;lt;HotelReadRequest HotelCode=&amp;quot;1608&amp;quot;&amp;gt; &amp;lt;SelectionCriteria Start=&amp;quot;2013-11-25&amp;quot; End=&amp;quot;2013-11-28&amp;quot; DateType=&amp;quot;DepartureDate&amp;quot;/&amp;gt; &amp;lt;/HotelReadRequest&amp;gt; &amp;lt;HotelReadRequest&amp;gt; &amp;lt;SelectionCriteria Start = &amp;quot;2015-12-23&amp;quot; End = &amp;quot;2015-12-28&amp;quot; DateType = &amp;quot;ArrivalDate&amp;quot;/&amp;gt; &amp;lt;/HotelReadRequest&amp;gt; &amp;lt;/ReadRequests&amp;gt; &amp;lt;/request&amp;gt; &amp;lt;/HotelResRetrieve&amp;gt;     Element Number Type Description     HotelResRetrieve/request 1  Root Node.
         
           [...]
         

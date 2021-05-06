@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – How-to guides</title>
@@ -26,7 +27,7 @@
         This page shows you how to create Alerts using API or TravelgateX Web.
 How to request You must choose a type alert to create it. The alert types are: Error rate, No traffic, Average time and Peak traffic.
 There are different ways to configure the alert types. Below there are references of some values of configuration to create the alert needed.
-Error rate alert    WHAT IS NEEDED? window periodicity percentage minNumberRequests to check to compare     check by time frame w &amp;gt; 0 p &amp;gt; 0 pg &amp;gt;= 0 mnr &amp;gt;= 0 error codes error codes   check by requests number w = 0 p = 0 pg &amp;gt;= 0 mnr &amp;gt; 0 error codes error codes    role=&amp;ldquo;alert&amp;rdquo;&amp;gt; By default, you may check all error codes except for 0, and compare all error codes.
+Error rate alert    WHAT IS NEEDED?
         
           [...]
         
@@ -43,8 +44,9 @@ Error rate alert    WHAT IS NEEDED? window periodicity percentage minNumberReque
         
         
         This page shows you how to query Alerts using API or TravelgateX Web.
-How to request &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD You must query about your alerts by their location group or their code. Also can be filtered by active alerts or not. You should query about your alerts by their ubication group or their code. They also can be filtered by active alerts or not active alerts.
-       19fd7afc932b16704f2b83f0c92c4386b900d00f
+How to request &amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+You must query about your alerts by their location group or their code. Also can be filtered by active alerts or not. You should query about your alerts by their ubication group or their code. They also can be filtered by active alerts or not active alerts. &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; 19fd7afc932b16704f2b83f0c92c4386b900d00f
+Below are shown examples for different casuistry:
         
           [...]
         
@@ -63,7 +65,7 @@ How to request &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD You must query abo
         This page shows you how to update an alert using API or TravelgateX.
 How to request To update an alert you should input the alert code. Only data which needs to be updated needs to be input.
 Below are shown examples for different casuistry:
-&amp;lt;div id=&amp;quot;tabContent&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div id=&amp;quot;tabsText&amp;quot; style=&amp;quot;display:none&amp;quot;&amp;gt;   #tab-holder { transform: scale(0); position: absolute; } #tab-holder.show-tabs { transform: scale(1); position: initial; } ul.tab-pannel-nav { margin-bottom: -32px; } ul.
+ #tab-holder {transform: scale(0);position: absolute;}#tab-holder.show-tabs {transform: scale(1);position: initial;}ul.tab-pannel-nav {margin-bottom: -32px;}ul.
         
           [...]
         

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Objects</title>
@@ -15,82 +16,6 @@
     
     
     <item>
-      <title>Paymentx: Access</title>
-      <link>https://docs.travelgatex.com/paymentx/reference/objects/access/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/paymentx/reference/objects/access/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  accessData: AccessData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  error: [Error!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/accessdata&amp;quot;&amp;gt;accessData(AccessData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/error&amp;quot;&amp;gt;error([Error!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Paymentx: AccessConnection</title>
-      <link>https://docs.travelgatex.com/paymentx/reference/objects/accessconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/paymentx/reference/objects/accessconnection/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [AccessEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  totalCount: Int! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/int&amp;quot;&amp;gt;totalCount(Int!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/supplierdata&amp;quot;&amp;gt; SupplierData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/organizationdata&amp;quot;&amp;gt; OrganizationData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Paymentx: AccessData</title>
-      <link>https://docs.travelgatex.com/paymentx/reference/objects/accessdata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/paymentx/reference/objects/accessdata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  name: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isActive: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  supplier: Supplier! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isTest: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  user: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  password: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  urls: Urls &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  parameters: [Parameter] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  markets: [String!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  rateRules: [RateRulesType!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  shared: Access &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  owner: Organization &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updateDescriptiveInfo: Int!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Paymentx: AccessEdge</title>
-      <link>https://docs.travelgatex.com/paymentx/reference/objects/accessedge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/paymentx/reference/objects/accessedge/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Access &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Paymentx: AdviseMessage</title>
-      <link>https://docs.travelgatex.com/paymentx/reference/objects/advisemessage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/paymentx/reference/objects/advisemessage/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  description: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  level: AdviseMessageLevel! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  external: ExternalMessage &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  correlationID: ID! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;type: : &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;String!&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;text-secondary&amp;quot;&amp;gt;// deprecated from &amp;lt;a href=&amp;quot;/travelgateX/reference/changelog/#2018-06-01&amp;quot;&amp;gt;2018-06-01&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;type(String!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Paymentx: API</title>
       <link>https://docs.travelgatex.com/paymentx/reference/objects/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -99,7 +24,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  apiData: APIData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/apidata&amp;quot;&amp;gt;apiData(APIData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type API {code: ID! apiData: APIData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):apiData(APIData):adviseMessage([AdviseMessage!
         
           [...]
         
@@ -115,7 +40,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [APIEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/resourcedata&amp;quot;&amp;gt; ResourceData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/organizationdata&amp;quot;&amp;gt; OrganizationData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/productdata&amp;quot;&amp;gt; ProductData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type APIConnection {edges: [APIEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([APIEdge]):pageInfo(PageInfo!): Required by GroupData: GroupCommonData: ResourceData: OrganizationData: ProductData:  
         
       </description>
     </item>
@@ -129,7 +54,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  id: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isEditable: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  label: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;groups&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/groupconnection&amp;quot;&amp;gt;GroupConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;resources&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/resourceconnection&amp;quot;&amp;gt;ResourceConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;operations&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/operationconnection&amp;quot;&amp;gt;OperationConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessageCatalog&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!
+        GraphQL schema definition type APIData {code: ID! id: ID! isEditable: Boolean! label: String groups(codes: [ID!],type: GroupType,first: Int,last: Int,before: String,after: String,): GroupConnection resources(codes: [ID!
         
           [...]
         
@@ -145,7 +70,85 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: API &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type APIEdge {node: API cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(API):cursor(String!): Required by APIConnection:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: Access</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/objects/access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/objects/access/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type Access {code: ID! accessData: AccessData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):accessData(AccessData):error([Error!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: AccessConnection</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/objects/accessconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/objects/accessconnection/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AccessConnection {edges: [AccessEdge] pageInfo: PageInfo! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] totalCount: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([AccessEdge]):pageInfo(PageInfo!):adviseMessage([AdviseMessage!]):totalCount(Int!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: AccessData</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/objects/accessdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/objects/accessdata/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access owner: Organization updateDescriptiveInfo: Int!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: AccessEdge</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/objects/accessedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/objects/accessedge/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AccessEdge {node: Access cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Access):cursor(String!): Required by AccessConnection:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: AdviseMessage</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/objects/advisemessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/objects/advisemessage/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.
+        
+          [...]
         
       </description>
     </item>
@@ -159,7 +162,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  clientData: ClientData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  error: [Error!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/clientdata&amp;quot;&amp;gt;clientData(ClientData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/error&amp;quot;&amp;gt;error([Error!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type Client {code: ID! clientData: ClientData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):clientData(ClientData):error([Error!
         
           [...]
         
@@ -175,7 +178,9 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [ClientEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  totalCount: Int! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/int&amp;quot;&amp;gt;totalCount(Int!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/supplierdata&amp;quot;&amp;gt; SupplierData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/organizationdata&amp;quot;&amp;gt; OrganizationData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+        GraphQL schema definition type ClientConnection {edges: [ClientEdge] pageInfo: PageInfo! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] totalCount: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ClientEdge]):pageInfo(PageInfo!):adviseMessage([AdviseMessage!]):totalCount(Int!
+        
+          [...]
         
       </description>
     </item>
@@ -189,7 +194,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  name: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isActive: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  group: Group &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  owner: Organization &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;suppliers&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/supplierconnection&amp;quot;&amp;gt;SupplierConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/id&amp;quot;&amp;gt;name(ID!
+        GraphQL schema definition type ClientData {code: ID! name: ID! isActive: Boolean! group: Group owner: Organization suppliers(first: Int,last: Int,before: String,after: String,filter: SupplierFilter,): SupplierConnection Show deprecated fields}window.
         
           [...]
         
@@ -205,7 +210,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Client &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type ClientEdge {node: Client cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Client):cursor(String!): Required by ClientConnection:  
         
       </description>
     </item>
@@ -219,7 +224,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  domainData: DomainData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/domaindata&amp;quot;&amp;gt;domainData(DomainData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type Domain {code: ID! domainData: DomainData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):domainData(DomainData):adviseMessage([AdviseMessage!
         
           [...]
         
@@ -235,7 +240,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  id: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  name: DomainName! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  organization: Organization! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/domainname&amp;quot;&amp;gt;name(DomainName!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/organization&amp;quot;&amp;gt;organization(Organization!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type DomainData {id: ID! name: DomainName! organization: Organization! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields id(ID!):name(DomainName!):organization(Organization!): Required by Domain:  
         
       </description>
     </item>
@@ -249,7 +254,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  entity: EntityData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;entity(EntityData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type Entity {code: ID! entity: EntityData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):entity(EntityData):adviseMessage([AdviseMessage!
         
           [...]
         
@@ -265,7 +270,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [EntityEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type EntityConnection {edges: [EntityEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([EntityEdge]):pageInfo(PageInfo!): Required by ProfileData:  
         
       </description>
     </item>
@@ -279,7 +284,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Entity &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type EntityEdge {node: Entity cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Entity):cursor(String!): Required by EntityConnection:  
         
       </description>
     </item>
@@ -293,7 +298,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  type: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  description: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;type(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;description(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type Error {code: String! type: String! description: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(String!):type(String!):description(String!): 
         
       </description>
     </item>
@@ -307,7 +312,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  message: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;message(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type ExternalMessage {code: String message: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(String):message(String!): Required by AdviseMessage:  
         
       </description>
     </item>
@@ -321,7 +326,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  groupData: GroupData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/groupdata&amp;quot;&amp;gt;groupData(GroupData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type Group {code: ID! groupData: GroupData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):groupData(GroupData):adviseMessage([AdviseMessage!
         
           [...]
         
@@ -337,7 +342,9 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [GroupEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  totalCount: Int! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/int&amp;quot;&amp;gt;totalCount(Int!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/memberdata&amp;quot;&amp;gt; MemberData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/apidata&amp;quot;&amp;gt; APIData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/accessdata&amp;quot;&amp;gt; AccessData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/supplierdata&amp;quot;&amp;gt; SupplierData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/organizationdata&amp;quot;&amp;gt; OrganizationData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+        GraphQL schema definition type GroupConnection {edges: [GroupEdge] pageInfo: PageInfo! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] totalCount: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([GroupEdge]):pageInfo(PageInfo!):adviseMessage([AdviseMessage!]):totalCount(Int!
+        
+          [...]
         
       </description>
     </item>
@@ -351,7 +358,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  id: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  label: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  type: GroupType! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  info: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  parent: Group &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;children&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/groupconnection&amp;quot;&amp;gt;GroupConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;descendents&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/groupconnection&amp;quot;&amp;gt;GroupConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;parents&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/groupconnection&amp;quot;&amp;gt;GroupConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  owner: Member &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isEditable: Boolean!
+        GraphQL schema definition type GroupData {id: ID! code: ID! label: String type: GroupType! info: String parent: Group children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!
         
           [...]
         
@@ -367,7 +374,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Group &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type GroupEdge {node: Group cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Group):cursor(String!): Required by GroupConnection:  
         
       </description>
     </item>
@@ -381,7 +388,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  name: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  surname: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;surname(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type Holder {name: String! surname: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields name(String!):surname(String!): Required by PaymentXStoredCardData:  
         
       </description>
     </item>
@@ -395,7 +402,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  hubUser: Client! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  hubProvider: Supplier! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/supplier&amp;quot;&amp;gt;hubProvider(Supplier!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type LegacyLink {hubUser: Client! hubProvider: Supplier! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields hubUser(Client!):hubProvider(Supplier!): Required by AccessData:  
         
       </description>
     </item>
@@ -409,7 +416,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  macroPermissionData: MacroPermissionData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/macropermissiondata&amp;quot;&amp;gt;macroPermissionData(MacroPermissionData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type MacroPermission {code: ID! macroPermissionData: MacroPermissionData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):macroPermissionData(MacroPermissionData):adviseMessage([AdviseMessage!
         
           [...]
         
@@ -425,7 +432,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  id: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  productID: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  group: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  label: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  permissions: [Permission] &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/id&amp;quot;&amp;gt;code(ID!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/id&amp;quot;&amp;gt;productID(ID!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/id&amp;quot;&amp;gt;group(ID!
+        GraphQL schema definition type MacroPermissionData {id: ID! code: ID! productID: ID! group: ID! label: String permissions: [Permission] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields id(ID!
         
           [...]
         
@@ -441,7 +448,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: MacroPermission &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type MacroPermissionEdge {node: MacroPermission cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(MacroPermission):cursor(String!): Required by MacroPermissionsConnection:  
         
       </description>
     </item>
@@ -455,7 +462,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [MacroPermissionEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/productdata&amp;quot;&amp;gt; ProductData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type MacroPermissionsConnection {edges: [MacroPermissionEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([MacroPermissionEdge]):pageInfo(PageInfo!): Required by MemberData: ProductData:  
         
       </description>
     </item>
@@ -469,7 +476,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  managedGroupData: ManagedGroupData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/managedgroupdata&amp;quot;&amp;gt;managedGroupData(ManagedGroupData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type ManagedGroup {code: ID! managedGroupData: ManagedGroupData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):managedGroupData(ManagedGroupData):adviseMessage([AdviseMessage!
         
           [...]
         
@@ -485,7 +492,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [ManagedGroupEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type ManagedGroupConnection {edges: [ManagedGroupEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ManagedGroupEdge]):pageInfo(PageInfo!): Required by GroupData:  
         
       </description>
     </item>
@@ -499,7 +506,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  group: Group! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  api: API! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  resource: Resource! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  role: Role! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/group&amp;quot;&amp;gt;group(Group!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/api&amp;quot;&amp;gt;api(API!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/resource&amp;quot;&amp;gt;resource(Resource!
+        GraphQL schema definition type ManagedGroupData {code: ID! group: Group! api: API! resource: Resource! role: Role! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):group(Group!):api(API!
         
           [...]
         
@@ -515,7 +522,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: ManagedGroup &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type ManagedGroupEdge {node: ManagedGroup cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(ManagedGroup):cursor(String!): Required by ManagedGroupConnection:  
         
       </description>
     </item>
@@ -529,7 +536,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  memberData: MemberData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/memberdata&amp;quot;&amp;gt;memberData(MemberData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type Member {code: ID! memberData: MemberData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):memberData(MemberData):adviseMessage([AdviseMessage!
         
           [...]
         
@@ -545,7 +552,9 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [MemberEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  totalCount: Int! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/int&amp;quot;&amp;gt;totalCount(Int!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/organizationdata&amp;quot;&amp;gt; OrganizationData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+        GraphQL schema definition type MemberConnection {edges: [MemberEdge] pageInfo: PageInfo! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] totalCount: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([MemberEdge]):pageInfo(PageInfo!):adviseMessage([AdviseMessage!]):totalCount(Int!
+        
+          [...]
         
       </description>
     </item>
@@ -559,7 +568,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  id: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  label: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isActive: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  type: MemberType! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;groups&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/groupconnection&amp;quot;&amp;gt;GroupConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;roles&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/roleconnection&amp;quot;&amp;gt;RoleConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;macroPermissions&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/macropermissionsconnection&amp;quot;&amp;gt;MacroPermissionsConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/id&amp;quot;&amp;gt;code(ID!
+        GraphQL schema definition type MemberData {id: ID! code: ID! label: String isActive: Boolean! type: MemberType! groups(codes: [ID!],type: GroupType,first: Int,last: Int,before: String,after: String,): GroupConnection roles(codes: [ID!
         
           [...]
         
@@ -575,7 +584,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Member &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type MemberEdge {node: Member cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Member):cursor(String!): Required by MemberConnection:  
         
       </description>
     </item>
@@ -589,7 +598,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  operationData: OperationData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/operationdata&amp;quot;&amp;gt;operationData(OperationData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type Operation {code: ID! operationData: OperationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):operationData(OperationData):adviseMessage([AdviseMessage!
         
           [...]
         
@@ -605,7 +614,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [OperationEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type OperationConnection {edges: [OperationEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([OperationEdge]):pageInfo(PageInfo!): Required by APIData:  
         
       </description>
     </item>
@@ -619,7 +628,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  id: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  label: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  types: [OperationType!]! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  api: API &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/id&amp;quot;&amp;gt;code(ID!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;label(String):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/enums/operationtype&amp;quot;&amp;gt;types([OperationType!
+        GraphQL schema definition type OperationData {id: ID! code: ID! label: String types: [OperationType!]! api: API Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields id(ID!):code(ID!):label(String):types([OperationType!
         
           [...]
         
@@ -635,7 +644,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Operation &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type OperationEdge {node: Operation cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Operation):cursor(String!): Required by OperationConnection:  
         
       </description>
     </item>
@@ -649,7 +658,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  organizationData: OrganizationData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/organizationdata&amp;quot;&amp;gt;organizationData(OrganizationData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type Organization {code: ID! organizationData: OrganizationData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):organizationData(OrganizationData):adviseMessage([AdviseMessage!
         
           [...]
         
@@ -665,7 +674,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  id: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  label: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  type: GroupType! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  info: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;children&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/groupconnection&amp;quot;&amp;gt;GroupConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;descendents&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/groupconnection&amp;quot;&amp;gt;GroupConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;parents&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/paymentx/reference/objects/groupconnection&amp;quot;&amp;gt;GroupConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  owner: Member &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isEditable: Boolean!
+        GraphQL schema definition type OrganizationData {id: ID! code: ID! label: String type: GroupType! info: String children(codes: [ID!],first: Int,last: Int,before: String,after: String,type: GroupType,codeStartsWith: String,): GroupConnection descendents(codes: [ID!
         
           [...]
         
@@ -681,7 +690,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  hasNextPage: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  hasPreviousPage: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  startCursor: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  endCursor: String &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/boolean&amp;quot;&amp;gt;hasPreviousPage(Boolean!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;startCursor(String):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;endCursor(String):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/groupconnection&amp;quot;&amp;gt; GroupConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/memberconnection&amp;quot;&amp;gt; MemberConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/apiconnection&amp;quot;&amp;gt; APIConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/managedgroupconnection&amp;quot;&amp;gt; ManagedGroupConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/accessconnection&amp;quot;&amp;gt; AccessConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/supplierconnection&amp;quot;&amp;gt; SupplierConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/clientconnection&amp;quot;&amp;gt; ClientConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/roleconnection&amp;quot;&amp;gt; RoleConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/profileconnection&amp;quot;&amp;gt; ProfileConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/macropermissionsconnection&amp;quot;&amp;gt; MacroPermissionsConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/resourceconnection&amp;quot;&amp;gt; ResourceConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/operationconnection&amp;quot;&amp;gt; OperationConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/productconnection&amp;quot;&amp;gt; ProductConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/entityconnection&amp;quot;&amp;gt; EntityConnection: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type PageInfo {hasNextPage: Boolean! hasPreviousPage: Boolean! startCursor: String endCursor: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields hasNextPage(Boolean!):hasPreviousPage(Boolean!):startCursor(String):endCursor(String): Required by PaymentXStoredCardConnection: GroupConnection: MemberConnection: APIConnection: ManagedGroupConnection: AccessConnection: SupplierConnection: ClientConnection: RoleConnection: ProfileConnection: MacroPermissionsConnection: ResourceConnection: OperationConnection: ProductConnection: EntityConnection:  
         
       </description>
     </item>
@@ -695,7 +704,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  key: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  value: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/string&amp;quot;&amp;gt;value(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type Parameter {key: ID! value: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields key(ID!):value(String!): Required by AccessData:  
         
       </description>
     </item>
@@ -709,7 +718,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  month: Int! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  year: Int! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/int&amp;quot;&amp;gt;year(Int!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type PaymentXExpireDate {month: Int! year: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields month(Int!):year(Int!): Required by PaymentXStoredCardData:  
         
       </description>
     </item>
@@ -723,7 +732,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  storedCardData: PaymentXStoredCardData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/paymentxstoredcarddata&amp;quot;&amp;gt;storedCardData(PaymentXStoredCardData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/scalars/datetime&amp;quot;&amp;gt;updatedAt(DateTime!
+        GraphQL schema definition type PaymentXStoredCard {code: ID! storedCardData: PaymentXStoredCardData createdAt: DateTime! updatedAt: DateTime! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):storedCardData(PaymentXStoredCardData):createdAt(DateTime!
         
           [...]
         
@@ -739,7 +748,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [PaymentXStoredCardEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type PaymentXStoredCardConnection {edges: [PaymentXStoredCardEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([PaymentXStoredCardEdge]):pageInfo(PageInfo!): Required by PaymentXQuery:  
         
       </description>
     </item>
@@ -753,7 +762,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  instance: Group! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pointOfSale: PointOfSale! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  bookingReference: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  checkOut: Date &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  checkIn: Date &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cardType: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  holder: Holder &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  number: CardNumber &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  CVC: CVC &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  expire: PaymentXExpireDate &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/paymentx/reference/objects/pointofsale&amp;quot;&amp;gt;pointOfSale(PointOfSale!
+        GraphQL schema definition type PaymentXStoredCardData {instance: Group! pointOfSale: PointOfSale! bookingReference: String! checkOut: Date checkIn: Date cardType: String holder: Holder number: CardNumber CVC: CVC expire: PaymentXExpireDate Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.
         
           [...]
         

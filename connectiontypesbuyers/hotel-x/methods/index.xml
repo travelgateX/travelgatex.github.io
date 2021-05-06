@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Methods</title>
@@ -13,59 +14,6 @@
     
 	    <atom:link href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Connectiontypesbuyers: Booking Flow</title>
-      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/bookingflow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/bookingflow/</guid>
-      <description>
-        
-        
-        Search, Quote and Book transactions must be executed sequentally in order to book hotel rooms in a Seller.
-In the following steps you will find the three steps in order to perform the booking flow. You can also consult the Schema through our API playground besides to launch requests.
-role=&amp;ldquo;alert&amp;rdquo;&amp;gt;
-NOTE: Remember that you can configure which fields you want to receive on the response, you just have to configure them on the correspondent graph query.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypesbuyers: Reservation Management</title>
-      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/reservationmanagement/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/reservationmanagement/</guid>
-      <description>
-        
-        
-        Management operations allows you to operate over the performed bookings with a specific supplier.
-There are two main operations to manage and control bookings:
-Reservation Management &amp;lt;a href=&amp;quot;/connectiontypesbuyers/hotel-x/methods/reservationmanagement/booklist/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Booking List&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;How to request for booking detail&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypesbuyers/hotel-x/methods/reservationmanagement/cancellation/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-calendar-times-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Cancellation&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;How to cancel a booking&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypesbuyers: Static Content</title>
-      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/</guid>
-      <description>
-        
-        
-        Supplier static information as Hotel-List, Hotel-Room, Hotel-Board, Hotel-Category, Destinations and Metadata are returned through our content calls.
-We strongly recommend to implement them as sometimes, supplier codes might be different from the ones returned through our API.
-&amp;lt;a href=&amp;quot;/connectiontypesbuyers/hotel-x/methods/staticcontent/hotel/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-h-square&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Hotel&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Hotels from a supplier&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypesbuyers/hotel-x/methods/staticcontent/metadata/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-code&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Metadata&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Supplier restriction and configuration&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypesbuyers/hotel-x/methods/staticcontent/destination/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-street-view&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Destination&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Learn about how to manage static content data in your site: Hotels, Boards, Categories.
-        
-          [...]
-        
-      </description>
-    </item>
     
   </channel>
 </rss>

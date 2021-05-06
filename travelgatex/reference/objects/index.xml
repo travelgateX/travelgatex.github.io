@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Objects</title>
@@ -15,356 +16,6 @@
     
     
     <item>
-      <title>Travelgatex: Access</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/access/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/access/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  accessData: AccessData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  error: [Error!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/accessdata&amp;quot;&amp;gt;accessData(AccessData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/error&amp;quot;&amp;gt;error([Error!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AccessConnection</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/accessconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/accessconnection/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [AccessEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  totalCount: Int! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;totalCount(Int!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/supplierdata&amp;quot;&amp;gt; SupplierData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/groupdata&amp;quot;&amp;gt; GroupData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/organizationdata&amp;quot;&amp;gt; OrganizationData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AccessData</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/accessdata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/accessdata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  name: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isActive: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  supplier: Supplier! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isTest: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  user: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  password: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  urls: Urls &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  parameters: [Parameter] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  markets: [String!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  rateRules: [RateRulesType!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  shared: Access &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  owner: Organization &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updateDescriptiveInfo: Int!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AccessEdge</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/accessedge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/accessedge/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Access &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AddOn</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/addon/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/addon/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  key: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  value: JSON! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/json&amp;quot;&amp;gt;value(JSON!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AddOns</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/addons/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/addons/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  distribution: [AddOn!] &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;distribute: : &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/scalars/json&amp;quot;&amp;gt;JSON&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;text-secondary&amp;quot;&amp;gt;// deprecated from &amp;lt;a href=&amp;quot;/travelgateX/reference/changelog/#2018-05-21&amp;quot;&amp;gt;2018-05-21&amp;lt;/a&amp;gt; You can find it in distribution AddOn &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/addon&amp;quot;&amp;gt;distribution([AddOn!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/hoteloptionquote&amp;quot;&amp;gt; HotelOptionQuote: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/hotelbookingdetail&amp;quot;&amp;gt; HotelBookingDetail: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AdminMutation</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/adminmutation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/adminmutation/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;createAccess&amp;lt;/span&amp;gt;(  input: AccessInput!, ): Access &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;updateAccess&amp;lt;/span&amp;gt;(  input: AccessInput!, ): Access &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;grantAccessToGroup&amp;lt;/span&amp;gt;(  input: GroupInput!, ): Access &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;deleteAccessFromGroup&amp;lt;/span&amp;gt;(  input: GroupInput!, ): Access &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;grantSupplierToGroup&amp;lt;/span&amp;gt;(  input: GroupInput!, ): Supplier &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;deleteSupplierFromGroup&amp;lt;/span&amp;gt;(  input: GroupInput!, ): Supplier &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;grantClientToGroup&amp;lt;/span&amp;gt;(  input: GroupInput!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AdminQuery</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/adminquery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/adminquery/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  jwt: JWT &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;accesses&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/accessconnection&amp;quot;&amp;gt;AccessConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;suppliers&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/supplierconnection&amp;quot;&amp;gt;SupplierConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;clients&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/clientconnection&amp;quot;&amp;gt;ClientConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;serviceApi&amp;lt;/span&amp;gt;(  filter: ServiceApiFilter, ): ServiceApi &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;pointsOfSale&amp;lt;/span&amp;gt;(  filter: PointOfSaleFilter, ): PointOfSaleConnection &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;profiles&amp;lt;/span&amp;gt;(  filter: ProfileFilter, ): ProfileConnection &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;systems&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/systemconnection&amp;quot;&amp;gt;SystemConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;organizations&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/organizationconnection&amp;quot;&amp;gt;OrganizationConnection!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AdviseMessage</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/advisemessage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/advisemessage/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  description: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  level: AdviseMessageLevel! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  external: ExternalMessage &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  correlationID: ID! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;type: : &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;String!&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;text-secondary&amp;quot;&amp;gt;// deprecated from &amp;lt;a href=&amp;quot;/travelgateX/reference/changelog/#2018-06-01&amp;quot;&amp;gt;2018-06-01&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;type(String!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AgeRange</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/agerange/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/agerange/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  min: Int! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  max: Int! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  type: HotelPaxType! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;max(Int!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/enums/hotelpaxtype&amp;quot;&amp;gt;type(HotelPaxType!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: Airport</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/airport/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/airport/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  airportData: AirportData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/airportdata&amp;quot;&amp;gt;airportData(AirportData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AirportData</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/airportdata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/airportdata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  name: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  location: Location &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;name(String):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/location&amp;quot;&amp;gt;location(Location):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: Alert</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alert/</guid>
-      <description>
-        
-        
-        Alert node
-GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  alertData: AlertData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/alertdata&amp;quot;&amp;gt;alertData(AlertData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AlertConfiguration</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertconfiguration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertconfiguration/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  alertType: AlertType! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  periodicity: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  window: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  timesToAlert: Int! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  timesToRecovery: Int! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  typeConfiguration: AlertTypeConfiguration &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  noRecoveries: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  stateChangesOnly: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  minNumberRequests: Int! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  percentageToAlert: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;email&amp;lt;/span&amp;gt;(  type: EmailType, ): [Email]!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AlertConnection</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertconnection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertconnection/</guid>
-      <description>
-        
-        
-        Alert list
-GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [AlertEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  count: Int! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;count(Int!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/alertdata&amp;quot;&amp;gt; AlertData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AlertData</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertdata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertdata/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  name: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  description: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  configuration: AlertConfiguration! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isActive: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;history&amp;lt;/span&amp;gt;(  relay: RelayInput, filter: AlertFilterInput, ): AlertConnection! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  editor: Member! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;events&amp;lt;/span&amp;gt;(  relay: RelayInput, filter: AlertFilterInput, ): EventConnection! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;name(String):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;Alert name&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;description(String):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;Alert description&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/alertconfiguration&amp;quot;&amp;gt;configuration(AlertConfiguration!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AlertEdge</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertedge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertedge/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Alert &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AlertPrice</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertprice/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertprice/</guid>
-      <description>
-        
-        
-        Price contains the specific configuration for Price alert Type
-GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  mode: ModePrice! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  check: CheckPrice! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  range: RangePrice! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  amount: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  commission: Int &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/enums/checkprice&amp;quot;&amp;gt;check(CheckPrice!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;Specify which field is goinf to be checked.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AlertsXMutation</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertsxmutation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertsxmutation/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;createAlert&amp;lt;/span&amp;gt;(  input: AlertInput!, ): Alert &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;updateAlert&amp;lt;/span&amp;gt;(  code: ID!, input: AlertUpdateInput!, ): Alert &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/alert&amp;quot;&amp;gt;updateAlert(Alert):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;Mutation to update an existing alert&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AlertsXQuery</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertsxquery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertsxquery/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;alerts&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/alertconnection&amp;quot;&amp;gt;AlertConnection!&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields Required by 
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AlertTypeConfiguration</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alerttypeconfiguration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alerttypeconfiguration/</guid>
-      <description>
-        
-        
-        Depending on the talert type, typeConfiguration will use some fields
-GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  historicalWindow: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  offset: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  max_average: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  toCheck: [Int!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  toCompare: [Int!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  price: AlertPrice &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;offset(Int):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;Time frame in minutes to set the beginning of historicalWindow&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;max_average(Int):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;maximum average time allowed in miliseconds&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;toCheck([Int!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: Amenity</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/amenity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/amenity/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  amenityCodeSupplier: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  type: ApplicationAreaType! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  value: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  texts: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;amenityCodeSupplier(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/enums/applicationareatype&amp;quot;&amp;gt;type(ApplicationAreaType!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;value(String!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: AmenityStatic</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/amenitystatic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/amenitystatic/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  type: ApplicationAreaType! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;texts&amp;lt;/span&amp;gt;(  languages: [Language!], ): [Text!]! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/enums/applicationareatype&amp;quot;&amp;gt;type(ApplicationAreaType!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/text&amp;quot;&amp;gt;texts([Text!]!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Travelgatex: API</title>
       <link>https://docs.travelgatex.com/travelgatex/reference/objects/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -373,7 +24,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  apiData: APIData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/apidata&amp;quot;&amp;gt;apiData(APIData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type API {code: ID! apiData: APIData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):apiData(APIData):adviseMessage([AdviseMessage!
         
           [...]
         
@@ -389,7 +40,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [APIEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/groupdata&amp;quot;&amp;gt; GroupData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/resourcedata&amp;quot;&amp;gt; ResourceData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/organizationdata&amp;quot;&amp;gt; OrganizationData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/productdata&amp;quot;&amp;gt; ProductData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type APIConnection {edges: [APIEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([APIEdge]):pageInfo(PageInfo!): Required by AdminQuery: GroupData: GroupCommonData: ResourceData: OrganizationData: ProductData:  
         
       </description>
     </item>
@@ -403,7 +54,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  id: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isEditable: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  label: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;groups&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/groupconnection&amp;quot;&amp;gt;GroupConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;resources&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/resourceconnection&amp;quot;&amp;gt;ResourceConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;operations&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/operationconnection&amp;quot;&amp;gt;OperationConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessageCatalog&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!
+        GraphQL schema definition type APIData {code: ID! id: ID! isEditable: Boolean! label: String groups(codes: [ID!],type: GroupType,first: Int,last: Int,before: String,after: String,): GroupConnection resources(codes: [ID!
         
           [...]
         
@@ -419,7 +70,359 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: API &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type APIEdge {node: API cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(API):cursor(String!): Required by APIConnection:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Access</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/access/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type Access {code: ID! accessData: AccessData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):accessData(AccessData):error([Error!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AccessConnection</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/accessconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/accessconnection/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AccessConnection {edges: [AccessEdge] pageInfo: PageInfo! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] totalCount: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([AccessEdge]):pageInfo(PageInfo!):adviseMessage([AdviseMessage!]):totalCount(Int!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AccessData</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/accessdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/accessdata/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AccessData {name: String! isActive: Boolean! code: ID! supplier: Supplier! isTest: Boolean! user: String password: String urls: Urls parameters: [Parameter] markets: [String!] rateRules: [RateRulesType!] shared: Access owner: Organization updateDescriptiveInfo: Int!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AccessEdge</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/accessedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/accessedge/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AccessEdge {node: Access cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Access):cursor(String!): Required by AccessConnection:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AddOn</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/addon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/addon/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AddOn {key: String! value: JSON! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields key(String!):value(JSON!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AddOns</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/addons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/addons/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AddOns {distribution: [AddOn!] Show deprecated fieldsdistribute: : JSON // deprecated from2018-05-21You can find it in distribution AddOn}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields distribute(JSON):distribution([AddOn!]): Required by HotelOptionSearch: HotelOptionQuote: HotelBookingDetail:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AdminMutation</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/adminmutation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/adminmutation/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AdminMutation {createAccess(input: AccessInput!,): Access updateAccess(input: AccessInput!,): Access grantAccessToGroup(input: GroupInput!,): Access deleteAccessFromGroup(input: GroupInput!,): Access grantSupplierToGroup(input: GroupInput!,): Supplier deleteSupplierFromGroup(input: GroupInput!,): Supplier grantClientToGroup(input: GroupInput!,): Client deleteClientFromGroup(input: GroupInput!,): Client createClient(input: CreateClientInput!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AdminQuery</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/adminquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/adminquery/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AdminQuery {jwt: JWT accesses(first: Int,last: Int,before: String,after: String,filter: AccessFilter,): AccessConnection suppliers(first: Int,last: Int,before: String,after: String,filter: SupplierFilter,): SupplierConnection clients(first: Int,last: Int,before: String,after: String,filter: ClientFilter,): ClientConnection serviceApi(filter: ServiceApiFilter,): ServiceApi pointsOfSale(filter: PointOfSaleFilter,): PointOfSaleConnection profiles(filter: ProfileFilter,): ProfileConnection systems(first: Int,last: Int,before: String,after: String,filter: SystemFilter,): SystemConnection organizations(codes: [ID!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AdviseMessage</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/advisemessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/advisemessage/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AdviseMessage {code: ID! description: String! level: AdviseMessageLevel! external: ExternalMessage correlationID: ID! Show deprecated fieldstype: : String! // deprecated from2018-06-01}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AgeRange</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/agerange/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/agerange/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AgeRange {min: Int! max: Int! type: HotelPaxType! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields min(Int!):max(Int!):type(HotelPaxType!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Airport</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/airport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/airport/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type Airport {code: ID! airportData: AirportData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):airportData(AirportData):adviseMessage([AdviseMessage!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AirportData</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/airportdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/airportdata/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AirportData {code: ID! name: String location: Location Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):name(String):location(Location): Required by Airport:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Alert</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alert/</guid>
+      <description>
+        
+        
+        Alert node
+GraphQL schema definition type Alert {code: ID! alertData: AlertData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AlertConfiguration</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertconfiguration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertconfiguration/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AlertConfiguration {alertType: AlertType! periodicity: Int window: Int timesToAlert: Int! timesToRecovery: Int! typeConfiguration: AlertTypeConfiguration noRecoveries: Boolean! stateChangesOnly: Boolean! minNumberRequests: Int! percentageToAlert: Int email(type: EmailType,): [Email]! hubStatus(isInclusive: Boolean!,): [HubStatus!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AlertConnection</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertconnection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertconnection/</guid>
+      <description>
+        
+        
+         Alert list
+GraphQL schema definition type AlertConnection {edges: [AlertEdge] pageInfo: PageInfo! count: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([AlertEdge]):pageInfo(PageInfo!):count(Int!): Required by AlertsXQuery: AlertData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AlertData</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertdata/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AlertData {code: ID! name: String description: String configuration: AlertConfiguration! isActive: Boolean! history(relay: RelayInput,filter: AlertFilterInput,): AlertConnection! editor: Member! events(relay: RelayInput,filter: AlertFilterInput,): EventConnection! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AlertEdge</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertedge/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AlertEdge {node: Alert cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Alert):cursor(String!): Required by AlertConnection: Alert list 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AlertPrice</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertprice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertprice/</guid>
+      <description>
+        
+        
+        Price contains the specific configuration for Price alert Type
+GraphQL schema definition type AlertPrice {mode: ModePrice! check: CheckPrice! range: RangePrice! amount: Int commission: Int Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields mode(ModePrice!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AlertTypeConfiguration</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alerttypeconfiguration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alerttypeconfiguration/</guid>
+      <description>
+        
+        
+        Depending on the talert type, typeConfiguration will use some fields
+GraphQL schema definition type AlertTypeConfiguration {historicalWindow: Int offset: Int max_average: Int toCheck: [Int!] toCompare: [Int!] price: AlertPrice Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AlertsXMutation</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertsxmutation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertsxmutation/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AlertsXMutation {createAlert(input: AlertInput!,): Alert updateAlert(code: ID!,input: AlertUpdateInput!,): Alert Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields createAlert(Alert):Mutation to create a new alertupdateAlert(Alert):Mutation to update an existing alert Required by Mutation:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AlertsXQuery</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/alertsxquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/alertsxquery/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AlertsXQuery {alerts(relay: RelayInput,filter: AlertFilterInput,criteria: AlertCriteriaInput,): AlertConnection! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields alerts(AlertConnection!):Query to obtain Alerts Required by Query:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Amenity</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/amenity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/amenity/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type Amenity {code: String! amenityCodeSupplier: String! type: ApplicationAreaType! value: String! texts: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(String!):amenityCodeSupplier(String!):type(ApplicationAreaType!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: AmenityStatic</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/amenitystatic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/amenitystatic/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AmenityStatic {code: String! type: ApplicationAreaType! texts(languages: [Language!],): [Text!]! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(String!):type(ApplicationAreaType!):texts([Text!]!): 
         
       </description>
     </item>
@@ -433,7 +436,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  transactions: [Transactions!]! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  timeStamp: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  processTime: Float! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/datetime&amp;quot;&amp;gt;timeStamp(DateTime!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/float&amp;quot;&amp;gt;processTime(Float!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/hotelquote&amp;quot;&amp;gt; HotelQuote: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/hotelbooking&amp;quot;&amp;gt; HotelBooking: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/interfaces/response&amp;quot;&amp;gt; Response: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/hotelbookpayload&amp;quot;&amp;gt; HotelBookPayload: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/hotelcancelpayload&amp;quot;&amp;gt; HotelCancelPayload: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/hotelcommitpayload&amp;quot;&amp;gt; HotelCommitPayload: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type AuditData {transactions: [Transactions!]! timeStamp: DateTime! processTime: Float! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields transactions([Transactions!]!):timeStamp(DateTime!):processTime(Float!): Required by HotelSearch: HotelQuote: HotelBooking: Response: HotelBookPayload: HotelCancelPayload: HotelCommitPayload:  
         
       </description>
     </item>
@@ -447,7 +450,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  type: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  count: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  shared: Boolean &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;description: : &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;String&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;text-secondary&amp;quot;&amp;gt;// Deprecated from &amp;lt;a href=&amp;quot;/travelgateX/reference/changelog/#2019-07-29&amp;quot;&amp;gt;2019-07-29&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;description(String):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;count(Int):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/boolean&amp;quot;&amp;gt;shared(Boolean):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type Bed {type: String count: Int shared: Boolean Show deprecated fieldsdescription: : String // Deprecated from2019-07-29}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields type(String):description(String):count(Int):shared(Boolean): 
         
       </description>
     </item>
@@ -461,7 +464,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  type: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  count: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  shared: Boolean &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;count(Int):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/boolean&amp;quot;&amp;gt;shared(Boolean):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type BedStatic {type: String count: Int shared: Boolean Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields type(String):count(Int):shared(Boolean): 
         
       </description>
     </item>
@@ -475,7 +478,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  boardData: BoardData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;error: : &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/error&amp;quot;&amp;gt;[Error!]&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;text-secondary&amp;quot;&amp;gt;// Deprecated from &amp;lt;a href=&amp;quot;/travelgateX/reference/changelog/#2019-07-03&amp;quot;&amp;gt;2019-07-03&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/boarddata&amp;quot;&amp;gt;boardData(BoardData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/error&amp;quot;&amp;gt;error([Error!
+        GraphQL schema definition type Board {code: ID! boardData: BoardData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // Deprecated from2019-07-03}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.
         
           [...]
         
@@ -491,7 +494,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [BoardEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type BoardConnection {edges: [BoardEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([BoardEdge]):pageInfo(PageInfo!): Required by HotelXQuery:  
         
       </description>
     </item>
@@ -505,7 +508,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  boardCode: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;texts&amp;lt;/span&amp;gt;(  languages: [Language!], ): [Text!] &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;boardCode(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/text&amp;quot;&amp;gt;texts([Text!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type BoardData {code: ID! boardCode: String! texts(languages: [Language!],): [Text!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):boardCode(String!):texts([Text!]): Required by Board:  
         
       </description>
     </item>
@@ -519,7 +522,35 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Board &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type BoardEdge {node: Board cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Board):cursor(String!): Required by BoardConnection:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: BookPreferenceInfo</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/bookpreferenceinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/bookpreferenceinfo/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type BookPreferenceInfo {hotel: Boolean! room: Boolean! preferenceType: BookPreferenceType! value: BookPreferenceValue! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields hotel(Boolean!):room(Boolean!):preferenceType(BookPreferenceType!):value(BookPreferenceValue!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: BookPreferenceValue</title>
+      <link>https://docs.travelgatex.com/travelgatex/reference/objects/bookpreferencevalue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/bookpreferencevalue/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type BookPreferenceValue {mandatory: Boolean! type: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields mandatory(Boolean!):type(String!): Required by BookPreferenceInfo:  
         
       </description>
     </item>
@@ -533,7 +564,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  bookingDate: Date &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  start: Date &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  end: Date &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  hotelCode: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  hotelName: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  boardCode: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  occupancies: [Occupancy!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  rooms: [BookingRoom!] &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;creationDate: : &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/scalars/date&amp;quot;&amp;gt;Date&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;text-secondary&amp;quot;&amp;gt;// deprecated from &amp;lt;a href=&amp;quot;/travelgateX/reference/changelog/#2018-02-28&amp;quot;&amp;gt;2018-02-28&amp;lt;/a&amp;gt; Incorrect date format.
+        GraphQL schema definition type BookingHotel {bookingDate: Date start: Date end: Date hotelCode: String hotelName: String boardCode: String occupancies: [Occupancy!] rooms: [BookingRoom!] Show deprecated fieldscreationDate: : Date // deprecated from2018-02-28Incorrect date format.checkIn: : Date // deprecated from2018-02-28Incorrect date format.
         
           [...]
         
@@ -549,35 +580,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  occupancyRefId: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  description: String &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  price: Price &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;code(String):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;description(String):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/price&amp;quot;&amp;gt;price(Price):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: BookPreferenceInfo</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/bookpreferenceinfo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/bookpreferenceinfo/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  hotel: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  room: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  preferenceType: BookPreferenceType! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  value: BookPreferenceValue! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/boolean&amp;quot;&amp;gt;room(Boolean!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/enums/bookpreferencetype&amp;quot;&amp;gt;preferenceType(BookPreferenceType!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/bookpreferencevalue&amp;quot;&amp;gt;value(BookPreferenceValue!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: BookPreferenceValue</title>
-      <link>https://docs.travelgatex.com/travelgatex/reference/objects/bookpreferencevalue/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/travelgatex/reference/objects/bookpreferencevalue/</guid>
-      <description>
-        
-        
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  mandatory: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  type: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;type(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type BookingRoom {occupancyRefId: Int code: String description: String price: Price Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields occupancyRefId(Int):code(String):description(String):price(Price): 
         
       </description>
     </item>
@@ -591,7 +594,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  optionsQuota: Int! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  businessRulesType: BusinessRulesType! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/enums/businessrulestype&amp;quot;&amp;gt;businessRulesType(BusinessRulesType!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/hotelxcommonsettingsdata&amp;quot;&amp;gt; HotelXCommonSettingsData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type BusinessRules {optionsQuota: Int! businessRulesType: BusinessRulesType! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields optionsQuota(Int!):businessRulesType(BusinessRulesType!): Required by HotelXDefaultSettingsData: HotelXCommonSettingsData:  
         
       </description>
     </item>
@@ -605,7 +608,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  deadline: DateTime &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  hoursBefore: Int! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  penaltyType: CancelPenaltyType! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  currency: Currency! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  value: Float! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;hoursBefore(Int!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/enums/cancelpenaltytype&amp;quot;&amp;gt;penaltyType(CancelPenaltyType!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/currency&amp;quot;&amp;gt;currency(Currency!
+        GraphQL schema definition type CancelPenalty {deadline: DateTime hoursBefore: Int! penaltyType: CancelPenaltyType! currency: Currency! value: Float! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields deadline(DateTime):hoursBefore(Int!):penaltyType(CancelPenaltyType!
         
           [...]
         
@@ -621,7 +624,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  refundable: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cancelPenalties: [CancelPenalty!] &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/cancelpenalty&amp;quot;&amp;gt;cancelPenalties([CancelPenalty!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/hoteloptionquote&amp;quot;&amp;gt; HotelOptionQuote: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/hotelbookingdetail&amp;quot;&amp;gt; HotelBookingDetail: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type CancelPolicy {refundable: Boolean! cancelPenalties: [CancelPenalty!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields refundable(Boolean!):cancelPenalties([CancelPenalty!]): Required by HotelOptionSearch: HotelOptionQuote: HotelBookingDetail:  
         
       </description>
     </item>
@@ -635,7 +638,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  categoryData: CategoryData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;error: : &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/error&amp;quot;&amp;gt;[Error!]&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;text-secondary&amp;quot;&amp;gt;// Deprecated from &amp;lt;a href=&amp;quot;/travelgateX/reference/changelog/#2019-07-03&amp;quot;&amp;gt;2019-07-03&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/categorydata&amp;quot;&amp;gt;categoryData(CategoryData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/error&amp;quot;&amp;gt;error([Error!
+        GraphQL schema definition type Category {code: ID! categoryData: CategoryData adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fieldserror: : [Error!] // Deprecated from2019-07-03}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.
         
           [...]
         
@@ -651,7 +654,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [CategoryEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type CategoryConnection {edges: [CategoryEdge] pageInfo: PageInfo! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([CategoryEdge]):pageInfo(PageInfo!): Required by HotelXQuery:  
         
       </description>
     </item>
@@ -665,7 +668,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  categoryCode: String! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;texts&amp;lt;/span&amp;gt;(  languages: [Language!], ): [Text!] &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;categoryCode(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/text&amp;quot;&amp;gt;texts([Text!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type CategoryData {code: ID! categoryCode: String! texts(languages: [Language!],): [Text!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):categoryCode(String!):texts([Text!]): Required by Category:  
         
       </description>
     </item>
@@ -679,7 +682,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Category &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type CategoryEdge {node: Category cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Category):cursor(String!): Required by CategoryConnection:  
         
       </description>
     </item>
@@ -693,7 +696,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;instructions&amp;lt;/span&amp;gt;(  languages: [Language!], ): [Text!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;specialInstructions&amp;lt;/span&amp;gt;(  languages: [Language!], ): [Text!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  minAge: Int &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  schedule: TimeRange &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/text&amp;quot;&amp;gt;specialInstructions([Text!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;minAge(Int):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/timerange&amp;quot;&amp;gt;schedule(TimeRange):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type CheckInformation {instructions(languages: [Language!],): [Text!] specialInstructions(languages: [Language!],): [Text!] minAge: Int schedule: TimeRange Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields instructions([Text!]):specialInstructions([Text!]):minAge(Int):schedule(TimeRange): Required by HotelData:  
         
       </description>
     </item>
@@ -707,7 +710,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  clientData: ClientData &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  error: [Error!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  createdAt: DateTime! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  updatedAt: DateTime! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/clientdata&amp;quot;&amp;gt;clientData(ClientData):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/error&amp;quot;&amp;gt;error([Error!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/datetime&amp;quot;&amp;gt;createdAt(DateTime!
+        GraphQL schema definition type Client {code: ID! clientData: ClientData error: [Error!] createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):clientData(ClientData):error([Error!
         
           [...]
         
@@ -723,7 +726,9 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  edges: [ClientEdge] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  pageInfo: PageInfo! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;adviseMessage&amp;lt;/span&amp;gt;(  level: [AdviseMessageLevel], ): [AdviseMessage!] &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  totalCount: Int! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/pageinfo&amp;quot;&amp;gt;pageInfo(PageInfo!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/advisemessage&amp;quot;&amp;gt;adviseMessage([AdviseMessage!]):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/int&amp;quot;&amp;gt;totalCount(Int!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/supplierdata&amp;quot;&amp;gt; SupplierData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/groupdata&amp;quot;&amp;gt; GroupData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/objects/organizationdata&amp;quot;&amp;gt; OrganizationData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+        GraphQL schema definition type ClientConnection {edges: [ClientEdge] pageInfo: PageInfo! adviseMessage(level: [AdviseMessageLevel],): [AdviseMessage!] totalCount: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields edges([ClientEdge]):pageInfo(PageInfo!):adviseMessage([AdviseMessage!]):totalCount(Int!
+        
+          [...]
         
       </description>
     </item>
@@ -737,7 +742,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  code: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  name: ID! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  isActive: Boolean! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  group: Group &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  owner: Organization &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;suppliers&amp;lt;/span&amp;gt;( &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;   &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; ): &amp;lt;a class=&amp;quot;support type&amp;quot; href=&amp;quot;/travelgatex/reference/objects/supplierconnection&amp;quot;&amp;gt;SupplierConnection&amp;lt;/a&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/id&amp;quot;&amp;gt;name(ID!
+        GraphQL schema definition type ClientData {code: ID! name: ID! isActive: Boolean! group: Group owner: Organization suppliers(first: Int,last: Int,before: String,after: String,filter: SupplierFilter,): SupplierConnection Show deprecated fields}window.
         
           [...]
         
@@ -753,7 +758,7 @@ GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&a
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  node: Client &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  cursor: String! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/reference/scalars/string&amp;quot;&amp;gt;cursor(String!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  Required by 
+         GraphQL schema definition type ClientEdge {node: Client cursor: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields node(Client):cursor(String!): Required by ClientConnection:  
         
       </description>
     </item>

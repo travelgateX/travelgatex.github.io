@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Hotel Push Sellers API</title>
@@ -25,39 +26,8 @@
         
         Inventory Overview Inventory allows Channel Managers and Hotel Product Distributors to push their product into a TravelgateX database, thus making it available for the TravelgateX Buyers.
 How does it work? Channel Managers and Hotels will push data to Inventory.
-  Inventory receives the data from the different channels and stores it in a common structure.
-  Then, this product can be consumed in 3 different ways by TravelgateX Buyers:
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypessellers: Getting Started</title>
-      <link>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/getting-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/getting-started/</guid>
-      <description>
-        
-        
-        &amp;lt;a href=&amp;quot;/connectiontypessellers/hotelpushsellers/getting-started/typical-scenario/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-sitemap&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Channel Manager Typical Scenario&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Typical Channel Manager workflow explained&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypessellers: API Reference</title>
-      <link>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/</guid>
-      <description>
-        
-        
-        Messages used in the Inventory API Inventory&amp;rsquo;s API messages have been structured in three parts:
- SetUp: Messages to retrieve or notify the hotel, rate and room structure. Product Load: Messages to load and read availability conditions and prices. Booking flow: Messages to notify or retrieve bookings and cancellations.  You will find detailed information and examples of each method in the Messages section. In Code List wou will find all codes used by the system.
+ Inventory receives the data from the different channels and stores it in a common structure.
+ Then, this product can be consumed in 3 different ways by TravelgateX Buyers:
         
           [...]
         
@@ -74,23 +44,7 @@ How does it work? Channel Managers and Hotels will push data to Inventory.
         
         
         Inventory-X FAQ What is standard occupancy? Standard occupancy is the standard number of Adult paxes of the room. For example, if the standard occupancy is 2. And the following is loaded&amp;hellip;
-&amp;lt;BaseByGuestAmts&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;#34;1&amp;#34; AmountAfterTax=&amp;#34;50.00&amp;#34;/&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;#34;2&amp;#34; AmountAfterTax=&amp;#34;100.00&amp;#34;/&amp;gt; &amp;lt;/BaseByGuestAmts&amp;gt; &amp;hellip; The price of two paxes will be 100, and the price for one pax will be 50. Note that prices for pax under the standard occupancy must be specified and prices for babies under the standard occupancy will be 0.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypessellers: Release Notes</title>
-      <link>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/connectiontypessellers/hotelpushsellers/release-notes/</guid>
-      <description>
-        
-        
-        2020-11-25  Now it&amp;rsquo;s possible to load free charges for child and baby pax using the Inventory-X extranet. This feature allows buyers to set, at rate level, free children or babies when Channel Managers are not able to load it from their side. More info.  2020-11-19  Now it&amp;rsquo;s possible to create hotels using the Inventory-X extranet. This feature allows administrators users to create a hotel not listed in our data base yet without having to open a ticket to our Customer Care Team.
+&amp;lt;BaseByGuestAmts&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;quot;1&amp;quot; AmountAfterTax=&amp;quot;50.00&amp;quot;/&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;quot;2&amp;quot; AmountAfterTax=&amp;quot;100.00&amp;quot;/&amp;gt; &amp;lt;/BaseByGuestAmts&amp;gt;  &amp;hellip; The price of two paxes will be 100, and the price for one pax will be 50. Note that prices for pax under the standard occupancy must be specified and prices for babies under the standard occupancy will be 0.
         
           [...]
         

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Schema</title>
@@ -23,7 +24,7 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt;  getUploadedFiles: GetUploadedFilesResponse! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;getMappeaStats&amp;lt;/span&amp;gt;(  input: MappeaGetMappeaStatsInput!, ): GetMappeaStatsResponse! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/mappea/reference/objects/getmappeastatsresponse&amp;quot;&amp;gt;getMappeaStats(GetMappeaStatsResponse!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+         GraphQL schema definition type MappeaQuery {getUploadedFiles: GetUploadedFilesResponse! getMappeaStats(input: MappeaGetMappeaStatsInput!,): GetMappeaStatsResponse! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields getUploadedFiles(GetUploadedFilesResponse!):getMappeaStats(GetMappeaStatsResponse!): 
         
       </description>
     </item>
@@ -37,7 +38,9 @@
       <description>
         
         
-        GraphQL schema definition  &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;confirmUpload&amp;lt;/span&amp;gt;(  input: MappeaConfirmUploadInput!, ): OnlyStatusResponse! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;uploadFile&amp;lt;/span&amp;gt;(  input: MappeaUploadFileInput!, ): UploadFileResponse! &amp;lt;li&amp;gt; &amp;lt;span class=&amp;quot;tab&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;meta&amp;quot;&amp;gt;mapSupplier&amp;lt;/span&amp;gt;(  input: MappeaMapSupplierInput!, ): OnlyStatusResponse! &amp;lt;li class=&amp;quot;deprecated-button-container p-2&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;btn btn-sm btn-info ml-5&amp;quot; onclick=&amp;quot;toggleDeprecatedEntitiesContainer(this)&amp;quot;&amp;gt;Show deprecated fields&amp;lt;/button&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;div class=&amp;quot;deprecated-entities-container&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;li&amp;gt;}&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  Fields &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/mappea/reference/objects/uploadfileresponse&amp;quot;&amp;gt;uploadFile(UploadFileResponse!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/mappea/reference/objects/onlystatusresponse&amp;quot;&amp;gt;mapSupplier(OnlyStatusResponse!):&amp;lt;/a&amp;gt; &amp;lt;span class=&amp;quot;description&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
+        GraphQL schema definition type MappeaMutation {confirmUpload(input: MappeaConfirmUploadInput!,): OnlyStatusResponse! uploadFile(input: MappeaUploadFileInput!,): UploadFileResponse! mapSupplier(input: MappeaMapSupplierInput!,): OnlyStatusResponse! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields confirmUpload(OnlyStatusResponse!):uploadFile(UploadFileResponse!):mapSupplier(OnlyStatusResponse!
+        
+          [...]
         
       </description>
     </item>

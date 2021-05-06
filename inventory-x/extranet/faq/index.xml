@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – FAQ</title>
@@ -13,41 +14,6 @@
     
 	    <atom:link href="https://docs.travelgatex.com/inventory-x/extranet/faq/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Inventory-X: Discount/Supplement using derived rates</title>
-      <link>https://docs.travelgatex.com/inventory-x/extranet/faq/discount-supplement/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/inventory-x/extranet/faq/discount-supplement/</guid>
-      <description>
-        
-        
-        In order to create discounts or supplements as early bird offers, non refundable discounts or gala extra you can use what we call derived rates. These are rates that descend from non-derived rates and they may or may not modify some of the values of the base rate, such as cancellation policies or markets
-We are going to explain the process to add a derived rate using an example of creating an Early Bird discount:
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Inventory-X: Free children and Free baby option </title>
-      <link>https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/</guid>
-      <description>
-        
-        
-        Currently, there are some Channel Managers that are not able to load their prices indicating free charges for child and baby occupancies. To avoid this problem, we have developed a new functionality that allows buyers to indicate that specific rates work with free child/baby.
-When creating/editing a rate you will be allowed to set passenger conditions in contract terms.
-In order to avoid any disruption with the existing product, both check-boxes are going to be unchecked by default.
-        
-          [...]
-        
-      </description>
-    </item>
     
   </channel>
 </rss>

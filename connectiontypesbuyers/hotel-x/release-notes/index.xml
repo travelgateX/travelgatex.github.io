@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Release Notes</title>
@@ -5,7 +6,6 @@
     <description>Recent changes in Release Notes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://docs.travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -42,6 +42,9 @@ The Project has a few columns that act as the status whereas cards are the items
         
         The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the HotelX GraphQL API.
+Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
         
       </description>
     </item>
@@ -55,24 +58,9 @@ Check out this list of new releases and changes applied on the HotelX GraphQL AP
       <description>
         
         
-        role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Changes history of deprecated notes previously announced2020-02-25  Deprecated accessCode from HotelCancelInput. Reason: Use new bookingID instead. Deprecated language from HotelCancelInput. Reason: Use new bookingID instead. Deprecated hotelCode from HotelCancelInput. Reason: Use new bookingID instead. Deprecated reference from HotelCancelInput. Reason: Use new bookingID instead. Deprecated accessCode from HotelCriteriaBookingInput. Reason: Use new bookingID instead. Deprecated language from HotelCriteriaBookingInput. Reason: Use new bookingID instead. Deprecated typeSearch from HotelCriteriaBookingInput. Reason: Use new bookingID instead.
+        Changes history of deprecated notes previously announced2020-02-25  Deprecated accessCode from HotelCancelInput. Reason: Use new bookingID instead. Deprecated language from HotelCancelInput. Reason: Use new bookingID instead. Deprecated hotelCode from HotelCancelInput. Reason: Use new bookingID instead. Deprecated reference from HotelCancelInput. Reason: Use new bookingID instead. Deprecated accessCode from HotelCriteriaBookingInput. Reason: Use new bookingID instead. Deprecated language from HotelCriteriaBookingInput. Reason: Use new bookingID instead. Deprecated typeSearch from HotelCriteriaBookingInput. Reason: Use new bookingID instead.
         
           [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypesbuyers: Hotel-X Changelog</title>
-      <link>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/release-notes/changelog/</link>
-      <pubDate>Tue, 22 Dec 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/release-notes/changelog/</guid>
-      <description>
-        
-        
-        Easily accessible log of notable changes to HotelX API
-role=&amp;ldquo;alert&amp;rdquo;&amp;gt;All notable changes in our platform will be documented on this page.
         
       </description>
     </item>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Load your inventory</title>
@@ -13,56 +14,6 @@
     
 	    <atom:link href="https://docs.travelgatex.com/inventory-x/extranet/load-product/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Inventory-X: SetUp</title>
-      <link>https://docs.travelgatex.com/inventory-x/extranet/load-product/setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/inventory-x/extranet/load-product/setup/</guid>
-      <description>
-        
-        
-        SetUp The SetUp section enables you to configure the hotels you are going to buy from your connected channel managers or to create the main structure of your own product is you are going to use the extranet to load your static contracts.
-The configuration of the main structure used in Inventory is as follows:
- Hotel Rate Room  There are a series of hotels available that can have one or more rates.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Inventory-X: Manual Load</title>
-      <link>https://docs.travelgatex.com/inventory-x/extranet/load-product/manual-load/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/inventory-x/extranet/load-product/manual-load/</guid>
-      <description>
-        
-        
-        The aim of the Manual Load section is to control the conditions of the rates and derived rates. It is the main tool to load allotment, conditions and prices, as well as offers and supplements in the base and derived rates. You can access this section in the Product tab.
-&amp;lt;a href=&amp;quot;/inventory-x/extranet/load-product/manual-load/rate-load/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-tag&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Rate: Availability and Price load&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Load allotment, availability conditions and prices to your rates&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/extranet/load-product/manual-load/derivedrate-load/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-tags&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Derived Rate: Availability and Price load&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Load availability conditions and supplements or discounts to your derived rates&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/inventory-x/extranet/load-product/manual-load/offers-load/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-percent&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Offers: Availability conditions load&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Load availability conditions to your offers&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Inventory-X: Calendar</title>
-      <link>https://docs.travelgatex.com/inventory-x/extranet/load-product/calendar/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.travelgatex.com/inventory-x/extranet/load-product/calendar/</guid>
-      <description>
-        
-        
-        The Calendar tool will allow you to check the information loaded in a hotel: conditions, amount per room, amount per passenger, amount per occupancy, final amount that will be shown in the availability search, meal plan supplements and derived rate amounts (with their conditions).
-As in previous tools of the extranet, you will need to select the client and the provider. Then, you will be able to introduce the hotel and rate for which you want to check the information that has been loaded in the system.
-        
-          [...]
-        
-      </description>
-    </item>
     
   </channel>
 </rss>

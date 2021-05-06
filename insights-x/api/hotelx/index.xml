@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Hotel-X Reports</title>
@@ -26,9 +27,8 @@
         This page shows how to query Hotel-X content mapping using Insights-X API.
 Access to https://api.travelgatex.com/
 Request Format The request input is formed by 2 mandatory inputs: requestDate, mappingReport and 3 optional inputs: supplierCode_in, clientCode_in and accessCode_in. Below the possible values for each input:
-  Mandatory fields:.
-  requestDate: Range of dates when the searches were done.
- gte Searches done after this date. (YYYY-MM-DD). lte Searches done before this date.
+ Mandatory fields:.
+ requestDate: Range of dates when the searches were done. gte Searches done after this date. (YYYY-MM-DD). lte Searches done before this date. (YYYY-MM-DD).
         
           [...]
         
