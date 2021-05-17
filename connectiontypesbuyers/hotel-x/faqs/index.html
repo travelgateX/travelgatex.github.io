@@ -5835,6 +5835,13 @@
             </a>
           </div>
         </li>
+        <li data-nav-id="/inventory-x/extranet/faq/cancel-policies/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/faq/cancel-policies/">
+              <span>Cancel Policies</span>            
+            </a>
+          </div>
+        </li>
             </ul>
         </li>
             </ul>
@@ -8321,6 +8328,7 @@
 <li><a href="#cancel">Cancel</a></li>
 <li><a href="#content">Content</a></li>
 <li><a href="#mapping">Mapping</a></li>
+<li><a href="#cancelpenalty-deadline">CancelPenalty deadline</a></li>
 </ul>
 </nav>
                   </div>
@@ -8927,19 +8935,37 @@ We suggest to contact directly with the supplier regarding this matter.</p>
 
 <p>All our content calls return the static information supported by the supplier. It is not a per hotel content, but the total amount of room codes, board codes, destination codes and category codes that may be returned by the supplier.</p>
 
+<h1 id="cancelpenalty-deadline">CancelPenalty deadline</h1>
+
 <p><strong>How it is calculated the CancelPolicy deadline and why it is different from what the supplier sent?</strong></p>
 
-<p>The deadline of the CancelPolicy is the final date in which no Cancellation fees will apply. After this date and until check in, Cancellation fees would apply to the booking.</p>
+<p>The deadline of the CancelPolicy is the final date(UTC) in which no Cancellation fees will apply. After this date and until check in, Cancellation fees would apply to the booking.</p>
 
 <p>In the case the Seller informs this date in their response, we’ll simply return it in our deadline field in the response. However, some Sellers don’t return this date in their response, so our logic is to calculate it is as follows:</p>
 
-<ul>
-<li>Hours before - number of hours left (before checkin date) for the client to cancel without incurring penalites. This information is passed by the Seller.</li>
-<li>Checkin date</li>
-<li>Worse case scenario: there are countries with +13 UTC and others -13 UTC, so the worse case scenario would be that a person in +13 performs a booking  -13.</li>
-</ul>
+<p>We get the information from <a href="/hotel-x/reference/objects/cancelpenalty/"><code>cancelPenalty</code></a>
+* <em>Hours before</em> - number of hours left (before checkin date) for the client to cancel without incurring penalties. This information is passed by the Seller.
+* <em>Checkin date</em> - we get this date as UTC</p>
 
-<p>In this scenario,, we apply to the deadline date result the following logic: deadline = checkin date - 26 - Hours Before</p>
+<p>Worse case scenario: there are countries with +14 UTC and others -12 UTC, so the worse case scenario would be that a person in UTC+14 performs a booking in a property located in UTC-12.</p>
+
+<p>In this scenario, we apply to the deadline date result the following logic:</p>
+
+<pre><code>deadline = checkin - safetyMargin - HoursBefore
+</code></pre>
+
+<p>The safety margin in set to 14h. We do not have information about properties timezone, so we assume that checkin is UTC at 00:00:00Z</p>
+
+<p><strong><em>Example</em></strong></p>
+
+<p><em>Checkin</em> = 25 May 2021<br />
+<em>HoursBefore returned by the provider</em> = 48h<br />
+<em>SafetyMargin</em> = 14h</p>
+
+<p>**<strong><em>Calculated deadline</em></strong>**</p>
+
+<pre><code>25/05/2021T00:00:00Z - hoursBefore (48) - safetyMargin(14) = 22/05/2021T10:00:00Z
+</code></pre>
 
 
 

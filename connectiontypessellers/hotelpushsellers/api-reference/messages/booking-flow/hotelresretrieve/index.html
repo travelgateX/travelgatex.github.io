@@ -5837,6 +5837,13 @@
             </a>
           </div>
         </li>
+        <li data-nav-id="/inventory-x/extranet/faq/cancel-policies/" class="dd-item">
+          <div>
+            <a href="/inventory-x/extranet/faq/cancel-policies/">
+              <span>Cancel Policies</span>            
+            </a>
+          </div>
+        </li>
             </ul>
         </li>
             </ul>
@@ -8603,7 +8610,7 @@
                   &lt;/RatePlan&gt;
                 &lt;/RatePlans&gt;
                 &lt;RoomRates&gt;
-                  &lt;RoomRate EffectiveDate = &quot;2013-09-03&quot; ExpireDate = &quot;2013-09-07&quot; RoomTypeCode = &quot;STD1&quot; InvBlockCode = &quot;7&quot; RatePlanCode = &quot;BAR&quot;&gt;
+                  &lt;RoomRate BookingCode=&quot;1|30#30|12|2013-09-03|13|4510741|4510747|3|0|0&quot; EffectiveDate = &quot;2013-09-03&quot; ExpireDate = &quot;2013-09-07&quot; RoomTypeCode = &quot;STD1&quot; InvBlockCode = &quot;7&quot; NumberOfUnits=&quot;5&quot; RatePlanCode = &quot;BAR&quot; RoomID = &quot;1&quot;&gt;
                     &lt;Rates&gt;
                       &lt;Rate EffectiveDate = &quot;2013-09-03&quot; ExpireDate = &quot;2013-09-07&quot;&gt;
                         &lt;Base AmountBeforeTax = &quot;200.00&quot; AmountAfterTax = &quot;200.00&quot; CurrencyCode = &quot;EUR&quot;/&gt;
@@ -8895,6 +8902,13 @@
 </tr>
 
 <tr>
+<td>@BookingCode</td>
+<td>1</td>
+<td>String</td>
+<td>TravelgateX internal data. Do not use.</td>
+</tr>
+
+<tr>
 <td>@EffectiveDate</td>
 <td>1</td>
 <td>Date</td>
@@ -8927,6 +8941,20 @@
 <td>1</td>
 <td>String</td>
 <td>Code of the RatePlan.</td>
+</tr>
+
+<tr>
+<td>@RoomID</td>
+<td>1</td>
+<td>String</td>
+<td>Id of the room.</td>
+</tr>
+
+<tr>
+<td>@NumberOfUnits</td>
+<td>1</td>
+<td>String</td>
+<td>Number of rooms available for this room type.</td>
 </tr>
 
 <tr>
