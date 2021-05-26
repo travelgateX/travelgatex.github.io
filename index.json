@@ -4291,6 +4291,13 @@
 	"content": " GraphQL schema definition type Hotel {  code: ID!    hotelData: HotelData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   error: : [AdviseMessage!] // Deprecated from 2019-07-03     }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields code(ID!):   hotelData(HotelData):   error([AdviseMessage!]):   adviseMessage([AdviseMessage!]):   createdAt(DateTime!):   updatedAt(DateTime!):    Required by HotelEdge:     "
 },
 {
+	"uri": "https://travelgatex.com/connectiontypesbuyers/legacy/",
+	"title": "Hotel Buyers API (legacy)",
+	"tags": [],
+	"description": "Legacy API documentation",
+	"content": "   Introduction Introductory Guide\n     Service Endpoints Introduction to Service Endpoints\n     Hotel Buyers API (legacy) Read documentation on Hotel Buyers API (legacy)\n     Hub Documentation Read documentation on Hub API\n    "
+},
+{
 	"uri": "https://travelgatex.com/connectiontypessellers/hotelpullsellers/",
 	"title": "Hotel Pull Sellers API",
 	"tags": [],
@@ -11729,7 +11736,7 @@
 	"title": "Connection Types - Buyers",
 	"tags": [],
 	"description": "Connection Types - Buyers",
-	"content": "  Hotel-X Hotel-X: NextGen Hotel Search API\n     Channel-X     Hotel Buyers API (legacy) Legacy API documentation\n    "
+	"content": "  Hotel Buyers API (legacy) Legacy API documentation\n    Hotel-X Hotel-X: NextGen Hotel Search API\n     Channel-X     "
 },
 {
 	"uri": "https://travelgatex.com/connectiontypesbuyers/legacy/hotel/how-to-guides/suppliers/connectivity/",
@@ -12206,13 +12213,6 @@
 	"tags": [],
 	"description": "",
 	"content": "What is the workflow for hotel reservation?\nOur workflow has three mandatory steps: Availability (avail), Valuation and Reservation, always in this order. See Booking Flow page.\nWhat does PVP mean?\nPVP is public sale price in Spanish and it means the price you shoud sell the hotel to your customer. If it\u0026rsquo;s binding, you must sell at least at this price, not less. More info below.\nHow does the price work and how should I interpret the value in the field \u0026ldquo;commission\u0026rdquo;?\nEvery option has a price and every price indicates the currency, the amount, if it is binding and the commission.\nBinding: If binding is set as true, then the client cannot sell the product provided by the supplier for a lower price. If it\u0026rsquo;s set as false, the client can sell the product for a lower price.\nCommission:\n Commission = 0: the price returned is a net price. Commission = -1: the supplier has not supplied the sale price nor the commission. This information is obtained by signing a contract with the supplier. Commission is greater than 0: X = % of the commission that is applied to the amount  Please click on Avail for detailed examples.\nWhat is a static download and what is it for?\nIt´s all the information we download from a supplier so we have it ready for access when requested. For example: lists of hotels, destinations, detailed information of hotels, mealplans.\nIn the tag \u0026ldquo;RequiredAllPassenger\u0026rdquo;, is specifying the names of the children necessary?\nIf the value of \u0026ldquo;RequiredAllPassengers\u0026rdquo; is true in the static data, then yes, it is necessary.\nWhat is the difference between push \u0026amp; pull connections?\nAs far as connecting to a client, there is no difference for you. Both types of connection use the same hotel API (pull). Our system converts the push connection into a pull one.\nCan I split the rooms inside an \u0026lt;option\u0026gt; node and book each room separately?\nThe \u0026lt;option\u0026gt; node was created with the goal of guaranteeing that all rooms contained inside the option are bookable. If you need to book separate rooms, you must send us separate avail requests, one per room.\n"
-},
-{
-	"uri": "https://travelgatex.com/connectiontypesbuyers/legacy/",
-	"title": "Hotel Buyers API (legacy)",
-	"tags": [],
-	"description": "Legacy API documentation",
-	"content": "   Introduction Introductory Guide\n     Service Endpoints Introduction to Service Endpoints\n     Hotel Buyers API (legacy) Read documentation on Hotel Buyers API (legacy)\n     Hub Documentation Read documentation on Hub API\n    "
 },
 {
 	"uri": "https://travelgatex.com/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/",
