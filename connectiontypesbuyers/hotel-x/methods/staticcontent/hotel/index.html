@@ -8491,8 +8491,8 @@
 <h2 id="hotels">Hotels</h2>
 
 <p>Hotels Query returns a hotel list from one supplier&rsquo;s access. This entity contains static data about the hotel requested, such as code, name, location, and other information - You can find all these fields in the <a href="https://api.travelgatex.com/" rel="nofollow" target="_blank">graphQL api documentation</a>.
-This query allows many types of search. You can receive hotels with hotel codes or with minimal destination codes, you can also filter the results based on rank. In this sense, note that there are mandatory and optional fields that allow filtering the hotels returned in the response.
-As for the response, if the number of hotels that have the selected provider is greater than 1000, these hotels will be returned in paginated responses. The full response is split into pages: By default, the maximum number of hotels returned in each page (response) is 1000, but it allows to request between 1 and 1000 hotels by filling in the field maxSize in the criteria. In order to obtain the next page of hotels, you need to fill in the token field, accordingly.</p>
+This query allows many types of search. You can receive hotels with hotel codes or with minimal destination codes, you can also filter the results based on rank. In this sense, note that there are mandatory and optional fields that allow filtering the hotels returned to the response.
+As for the response, if the number of hotels that have the selected provider is greater than 1000, these hotels will be returned in paginated responses. The full response is split into pages: By default, the maximum number of hotels returned in each page (response) is 1000, but it allows requesting between 1 and 1000 hotels by filling in the field maxSize in the criteria. In order to obtain the next page of hotels, you need to fill in the token field, accordingly.</p>
 
 <p>In order to enable all kind of search, input parameters must be filled and in some cases its possible to combine them for more accurate search. Also, there is some input parameters that must not be combined. This characteristic is explained later.</p>
 
@@ -8500,27 +8500,30 @@ As for the response, if the number of hotels that have the selected provider is 
 
 <p>Criteria fields allow select provider (access) and allow to select the entity which will be used for search (search by hotel codes, search by destinations, search by countries,&hellip;).</p>
 
-<p><strong>Fields for selecting the access(supplier)</strong></p>
+<p><strong>Fields for selecting the access or a supplier</strong></p>
 
 <ul>
-<li><em>access</em>: it represents the access for which you want to receive the hotels information.</li>
-<li><em>group</em>: <em>only for internal processes. Please don&rsquo;t use.</em></li>
+<li><strong>access</strong>: it represents the access for which you want to receive the hotel&rsquo;s information.</li>
+<li><em>group</em>: <em>only for internal processes. Please do not use.</em></li>
+<li><strong>supplierCode</strong>: this field allows to request the portfolio of a supplier. Only supplier&rsquo;s owner can request it.</li>
 </ul>
+
+<p><em>Only one of these fields can be included</em></p>
 
 <p><strong>Fields for selecting the entity of search</strong></p>
 
 <p>These fields cannot be combined among themselves and all can be nil. In case that no one field is filled, all access hotels will be returned in a non paginated or paginated response/s.</p>
 
 <ul>
-<li><em>hotelCodes</em>: it allows to search by hotel codes. These codes are the same that are used in search query.</li>
-<li><em>ranks</em>: it allows to filter by rank/s.</li>
-<li><em>supplierHotelCodes</em>: used for search by hotel codes in supplier&rsquo;s context.</li>
-<li><em>destinationCodes</em>: it allows to search hotels by minimal destination/s. A <em>minimal destination</em> is a destination that doesn&rsquo;t contain smaller destinations, only contains hotels.</li>
-<li><em>countries</em>: it allows to search hotels by country. Country/ies will be specified in ISO 3466-1 alpha-2 format(i.e &ldquo;ES&rdquo;)</li>
+<li><strong>hotelCodes</strong>: it allows searching by hotel codes. These codes are the same that are used in search query.</li>
+<li><strong>ranks</strong>: it allows filtering by rank/s. <em>Note</em>: not implemented in 2020-03-02</li>
+<li><strong>supplierHotelCodes</strong>: used for search by hotel codes in supplier&rsquo;s context.</li>
+<li><strong>destinationCodes</strong>: it allows searching hotels by minimal destination/s. A <em>minimal destination</em> is a destination that doesn&rsquo;t contain smaller destinations, only contains hotels.</li>
+<li><strong>countries</strong>: it allows searching hotels by country. Country/ies will be specified in ISO 3466-1 alpha-2 format(i.e &ldquo;ES&rdquo;)</li>
 </ul>
 
 <p><strong>Field for configure the response</strong>
-- maxSize: it allows to specify the number of elements per page. The number of elements per page is maxSize if the number of hotels returned by the query sent is greater than maxSize. In this case, will be necessary to retrieve next/s page/s using token field. This use case will be explained later.</p>
+- <strong>maxSize</strong>: it allows to specify the number of elements per page. The number of elements per page is maxSize if the number of hotels returned by the query sent is greater than maxSize. In this case, will be necessary to retrieve next/s page/s using token field. This use case will be explained later.</p>
 
 <h3 id="token">Token</h3>
 
@@ -8529,43 +8532,43 @@ As for the response, if the number of hotels that have the selected provider is 
 - maintain the parameter <em>token</em> empty in the request
 - request the field <em>token</em> in the graph response.</p>
 
-<p>The value stored in field <em>token</em> in HotelConnection element in response, must be used in the subsequent query putting it in <em>token</em> input parameter. This process must be repeated setting the token of the previous response in the query parameter until the query return <em>&ldquo;Hotels not found&rdquo;</em>. In token queries, only <em>token</em> parameter must be filled.</p>
+<p>The value stored in the field <em>token</em> in HotelConnection element in response, must be used in the subsequent query putting it in <em>token</em> input parameter. This process must be repeated setting the token of the previous response in the query parameter until the query return <em>&ldquo;Hotels not found&rdquo;</em>. In token queries, only <em>token</em> parameter must be filled.</p>
 
 <h3 id="filter">Filter</h3>
 
-<p>This field allows to make a more accurate query. Please, consider that is not necessary that AND and OR fields be filled, multiple filters can be used without the use of this fields. There is two kind of fields inside this filter:</p>
+<p>This field allows to make a more accurate query. Please, consider that is not necessary that AND and OR fields be filled, multiple filters can be used without the use of these fields. There are two kinds of fields inside this filter:</p>
 
 <ul>
-<li><p><em>Date filters</em>: in this API, an hotel can be created, updated and deleted. These <em>date filters</em> allow to search by dates in which the hotels has been created, updated or deleted.</p></li>
+<li><p><strong>Date filters</strong>: in this API, a hotel can be created, updated and deleted. These <em>date filters</em> allow searching by dates in which the hotels have been created, updated or deleted.</p></li>
 
-<li><p><em>Field filters</em>: these fields allow to search hotels that have information in indicated fields. It is possible to indicate these field filters: country, category, destination, name, coordinates.</p></li>
+<li><p><strong>Field filters</strong>: these fields allow searching hotels that have information in indicated fields. It is possible to indicate these field filters: country, category, destination, name, coordinates.</p></li>
 </ul>
 
 <h3 id="relay">Relay</h3>
 
-<p>This field allows to search by relay type search. More about relay in: <a href="https://relay.dev/docs/en/introduction-to-relay" rel="nofollow" target="_blank">relay</a></p>
+<p>This field allows searching by relay type search. More about relay in: <a href="https://relay.dev/docs/en/introduction-to-relay" rel="nofollow" target="_blank">relay</a></p>
 
 <p><em>Note</em>: not implemented in 2020-03-02</p>
 
 <h2 id="other-particularities">Other particularities</h2>
 
 <ul>
-<li><p>Count field in HotelConnection is for internal use and does not refer to hotels returned. There is not any field that shows this information.</p></li>
+<li><p>Count field in HotelConnection inform of the number of hotels that will be returned to the complete response for this concrete query (it includes pagination).</p></li>
 
 <li><p>PageInfo element inside response must be used for relay search queries.</p></li>
 </ul>
 
 <h3 id="giata-data">GIATA Data</h3>
 
-<p>GIATA information can be retrieved in node GiataData inside HotelData node. This information is not returned by default, please contact us if you need this information.</p>
+<p>GIATA information can be retrieved in the node GiataData inside HotelData node. This information is not returned by default, please contact us if you need this information.</p>
 
 <h3 id="mapping">Mapping</h3>
 
-<p>Mapping in this API differs lightly of booking flow mapping process. <a href="Booking Flow Mapping" rel="nofollow" target="_blank">https://docs.travelgatex.com/hotel-x/plugins/mapping/</a></p>
+<p>Mapping in this API differs lightly of booking flow mapping process. <a href="https://docs.travelgatex.com/hotel-x/plugins/mapping/" rel="nofollow" target="_blank">Booking Flow Mapping</a></p>
 
 <h4 id="amenity-map">Amenity Map</h4>
 
-<p>This functionality allows to return amenity codes in the context that the client wants. This functionality needs a .csv file that will be loaded in our FTP system (same file for this API and Booking Flow).</p>
+<p>This functionality allows returning amenity codes in the context that the client wants. This functionality needs a .csv file that will be loaded in our FTP system (same file for this API and Booking Flow).</p>
 
 <h5 id="format-file">Format File</h5>
 
