@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TravelgateX Documentation – Reservation Management</title>
+    <title>TravelgateX Documentation – Management</title>
     <link>https://travelgatex.com/connectiontypesbuyers/hotel-x/methods/reservationmanagement/</link>
-    <description>Recent changes in Reservation Management on TravelgateX Documentation</description>
+    <description>Recent changes in Management on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <image>
@@ -26,7 +26,9 @@
         
         The Booking List operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator. The main information returned for each booking in the list is as follows: * Booking reference * Booking holder * Booking pax * Hotel, rooms and boards confirmed * Booking rates
 Advanced criteria There are three different types of booking search:
- By reference  By dates  By bookingID  How to request     cca5c85b0cd1be29f86a67ecf38bb75a You can ask for bookings by client reference or by supplier reference.
+ By reference
+ By dates
+ By bookingID
         
           [...]
         
@@ -43,7 +45,10 @@ Advanced criteria There are three different types of booking search:
         
         
         Cancellation operation allows you to cancel a booking.
-NOTE: Cancellation always takes into account the day and time of the destination in order to calculate what cancellation policy should be applied. UTC time..  When the booking is cancelled, the details of the cancelled booking are returned with the following information:  The booking status: CANCELLED Cancellation fees if applicable Hotel, rooms and rates of the cancelled booking Holder name  Advanced criteria There are two different types of cancellation:
+NOTE: Cancellation always takes into account the day and time of the destination in order to calculate what cancellation policy should be applied. UTC time..  When the booking is cancelled, the details of the cancelled booking are returned with the following information:
+ The booking status: CANCELLED
+ Cancellation fees if applicable
+ Hotel, rooms and rates of the cancelled booking
         
           [...]
         

@@ -4879,7 +4879,7 @@
         <li data-nav-id="/connectiontypesbuyers/hotel-x/methods/reservationmanagement/" class="dd-item">
           <div>
             <a href="/connectiontypesbuyers/hotel-x/methods/reservationmanagement/">
-              <span>Reservation Management</span>            
+              <span>Management</span>            
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
@@ -4898,7 +4898,7 @@
         <li data-nav-id="/connectiontypesbuyers/hotel-x/methods/staticcontent/" class="dd-item parent">
           <div>
             <a href="/connectiontypesbuyers/hotel-x/methods/staticcontent/">
-              <span>Static Content</span>            
+              <span>Content</span>            
             </a>
                 <i class="fa fa-angle-down fa-lg category-icon"></i>
           </div>
@@ -8459,11 +8459,11 @@ As for the response, if the number of hotels that have the selected provider is 
 - maintain the parameter <em>token</em> empty in the request
 - request the field <em>token</em> in the graph response.</p>
 
-<p>The value stored in the field <em>token</em> in HotelConnection element in response, must be used in the subsequent query putting it in <em>token</em> input parameter. This process must be repeated setting the token of the previous response in the query parameter until the query return <em>&ldquo;Hotels not found&rdquo;</em>. In token queries, only <em>token</em> parameter must be filled.</p>
+<p>The value stored in the field <em>token</em> in HotelConnection element in response must be used in the subsequent query putting it in <em>token</em> input parameter. This process must be repeated setting the token of the previous response in the query parameter until the query return <em>&ldquo;Hotels not found&rdquo;</em>. In token queries, only <em>token</em> parameter must be filled.</p>
 
 <h3 id="filter">Filter</h3>
 
-<p>This field allows to make a more accurate query. Please, consider that is not necessary that AND and OR fields be filled, multiple filters can be used without the use of these fields. There are two kinds of fields inside this filter:</p>
+<p>This field allows to make a more accurate query. Please consider that is not necessary that AND and OR fields be filled, multiple filters can be used without the use of these fields. There are two kinds of fields inside this filter:</p>
 
 <ul>
 <li><p><strong>Date filters</strong>: in this API, a hotel can be created, updated and deleted. These <em>date filters</em> allow searching by dates in which the hotels have been created, updated or deleted.</p></li>
@@ -8480,7 +8480,7 @@ As for the response, if the number of hotels that have the selected provider is 
 <h2 id="other-particularities">Other particularities</h2>
 
 <ul>
-<li><p>Count field in HotelConnection inform of the number of hotels that will be returned to the complete response for this concrete query (it includes pagination).</p></li>
+<li><p>Count field in HotelConnection informs of the number of hotels that will be returned to the complete response for this specific query (it includes pagination).</p></li>
 
 <li><p>PageInfo element inside response must be used for relay search queries.</p></li>
 </ul>
@@ -8491,7 +8491,7 @@ As for the response, if the number of hotels that have the selected provider is 
 
 <h3 id="mapping">Mapping</h3>
 
-<p>Mapping in this API differs lightly of booking flow mapping process. <a href="https://docs.travelgatex.com/hotel-x/plugins/mapping/" rel="nofollow" target="_blank">Booking Flow Mapping</a></p>
+<p>Mapping in this API differs slightly of booking flow mapping process. <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/mapping/" rel="nofollow" target="_blank">Booking Flow Mapping</a></p>
 
 <h4 id="amenity-map">Amenity Map</h4>
 
@@ -9123,7 +9123,7 @@ allAmenities(mapOptions: [{groupCode: &quot;HotelX_XXX&quot;, context: &quot;CTX
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/hotel-x/methods/staticcontent/" title="Go to previous page | Static Content"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Static Content</a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/hotel-x/methods/staticcontent/" title="Go to previous page | Content"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Content</a>
             </li>
         <li class="page-item">
                 <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/hotel-x/methods/staticcontent/metadata/" title="Go to next page | Metadata" style="margin-right: 0px;">Metadata<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
