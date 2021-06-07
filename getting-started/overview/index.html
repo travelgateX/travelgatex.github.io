@@ -30,7 +30,7 @@
       var baseurl = "https:\/\/travelgatex.com\/";
 </script>
 
-<meta name="description" content="See how the TravelgateX platform and APIs fit together">
+<meta name="description" content="Understanding our marketplace">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
@@ -38,7 +38,7 @@
 
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2825176.js"></script>
     
-    <meta name="description" content="See how the TravelgateX platform and APIs fit together">
+    <meta name="description" content="Understanding our marketplace">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -3113,29 +3113,6 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/gettingstarted/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/gettingstarted/">
-              <span>Getting Started</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/gettingstarted/credentials/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/gettingstarted/credentials/">
-              <span>Credentials</span>            
-            </a>
-          </div>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/gettingstarted/resources/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/gettingstarted/resources/">
-              <span>Resources</span>            
-            </a>
-          </div>
-        </li>
-            </ul>
-        </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/reference/" class="dd-item">
           <div>
             <a href="/connectiontypesbuyers/hotel-x/reference/">
@@ -8452,9 +8429,15 @@
                 </a>
               </div>
               
-<p>TravelgateX provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface).</p>
+<p>TravelgateX is an online B2B  marketplace providing seamless connectivity between travel companies  across the world. We have 3 APIs available for integration:</p>
 
-<p>Completely rebuilt in GraphQL from our many years of experience with travel XML integrations, we are offering state of the art, cutting edge API technology that is quick to learn and makes integration simple and fast. Our first API &ndash; <a href="/hotel-x">HotelX</a> &ndash; is currently available and provides access to over 600 hotel booking suppliers, with thousands of properties available.</p>
+<ul>
+<li><p><strong>Hotel-X</strong> is our Buyer&rsquo;s API, completely built in GraphQL from our many years of experience with travel XML integrations, it offers state of the art, cutting edge API technology that is quick to learn and makes integration simple and fast.</p></li>
+
+<li><p><strong>Hotel Pull Sellers API</strong> is our generic pull API to which any hotel and accomodation supplier can connect to and immediately get access to 1000s of potential clients.</p></li>
+
+<li><p><strong>Hotel Push Sellers API</strong> is our generic push API to which channel managers connect to in order to get access to 1000s of potential clients with one single integration.</p></li>
+</ul>
 
 <p><svg class="platform_getting_started" width="779px" height="564px" viewBox="229 117 779 564" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
@@ -8701,48 +8684,42 @@
     </g>
 </svg></p>
 
-<p>The TravelgateX platform supports both travel buyers and sellers.</p>
+<p>In our Network, we call <em>Partners</em> all the travel companies connected to our APIS. Our Partners are Buyers, Sellers and Tech Partners.</p>
 
-<p><strong>BUYERS</strong> are businesses that provide travel services to their customer base.</p>
+<p><strong>BUYERS</strong> are companies that come to TGX to source hotel &amp; accomodation product.</p>
 
-<p>Buyers are:</p>
+<p>Buyers can be:</p>
 
 <ul>
-<li>Online travel agents,</li>
-<li>Travel apps,</li>
-<li>Niche travel operators
-or</li>
-<li>Direct-to-consumer travel platforms.</li>
+<li>Online travel agents</li>
+<li>Travel Tech Service Providers</li>
+<li>Tour operators</li>
+<li>Wholesalers</li>
 </ul>
 
-<p>As a buyer, you can use the TravelgateX platform and our <a href="/hotel-x">HotelX API</a> to integrate a wide selection of realtime, hotel bed booking databases into your applications.</p>
+<p>As a Buyer, you connect once to our <a href="/hotel-x">HotelX API</a> and get access to a wide selection of realtime, hotel bed booking databases into your applications.</p>
 
 <div class="alert 
 alert-warning"
  
-role="alert"><p>Our buyers first need to have an agreement with the hotel bed supplier in place, and once that has been arranged, you are able to connect to our HotelX API and to begin displaying hotel bed availability directly in your client applications and interfaces.</p>
+role="alert"><p>Our Buyers need to have their own commercial agreement with the hotel accomodation supplier in place before requesting access to their system via TGX. Once that has been arranged, we will activate the connection between your system and the Seller&rsquo;s system in order to begin displaying hotel bed availability directly in your client applications and interfaces.</p>
 </div>
 
 
-<p><strong>SELLERS</strong> are hotel bed and travel service providers who have an inventory of hotel beds (or travel services) that you want to make available for online booking.</p>
+<p><strong>SELLERS</strong> are hotel and accomodation suppliers/providers that have an inventory of hotel beds available for online booking.</p>
 
 <p>Sellers are:</p>
 
 <ul>
-<li>&gt;B2B travel aggregators,</li>
-<li>Travel fare aggregators and travel metasearch engines,</li>
-<li>Large hotel chains,</li>
-<li>Travel service catalogues, or</li>
-<li>Direct-to-consumer travel platforms.</li>
+<li>B2B travel aggregators</li>
+<li>Wholesalers</li>
+<li>Travel metasearch engines</li>
+<li>Large hotel chains</li>
+<li>Incoming Agencies/DMCs</li>
+<li>Travel Tech Service Providers</li>
 </ul>
 
-<p>As a seller, TravelgateX connects to your realtime booking databases so that you can optimize your vacancies and make them available to buyers. Where you have made set pricing arrangements with particular buyers, specific pricing is displayed as per your agreements. TravelgateX supports suppliers to reach new buyers by helping make it easy for new buyers to sign up for hotel and travel service contracts via our platform.</p>
-
-<div class="alert 
-alert-warning"
- 
-role="alert">Our <a href="/hotel-x">HotelX API</a> is now live and able to integrate thousands of hotel beds into your client applications. Check out our roadmap pages for details of our forthcoming APIs, including an optional Speed API to speed up response times and bookings to large hotel databases, our next-generation Mappea mapping API, and APIs that help you track statistics and travel demands so that you have better insight into tourism trends and changing consumer patterns.</div>
-
+<p>As a Seller, TravelgateX connects your realtime booking databases and make them available to Buyers. Where you have made set pricing arrangements with particular Buyers, specific pricing is displayed as per your agreements. TravelgateX supports suppliers to reach new Buyers by helping make it easy for them to sign up for hotel and travel service contracts via our marketplace.</p>
 
 <hr/>
 
