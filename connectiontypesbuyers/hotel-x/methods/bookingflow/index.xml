@@ -62,7 +62,7 @@ Advanced criteria There are different parameters that can be set up in the reque
         This Book operation requests a reservation confirmation for the specified optionId returned in Quote.
 Advanced criteria Within the Query Variables, you should modify the optionRefId with the optionRefId value returned in the Quote response and send the Query with the other mandatory information.
 Also, please specify advanced criteria if it’s necessary:
-auditTransactions: It returns all the transactions exchanged with the supplier. We recommend to set it to &amp;ldquo;true&amp;rdquo; for possible claiming purposes with the supplier - if set to &amp;ldquo;true&amp;rdquo;, the system will return the logs from the supplier in the response.
+auditTransactions: It returns all the transactions exchanged with the supplier. We recommend to set it to &amp;ldquo;true&amp;rdquo; for possible claiming purposes with the supplier - if set to &amp;ldquo;true&amp;rdquo;, the system will return the logs from the Seller in the response.
         
           [...]
         

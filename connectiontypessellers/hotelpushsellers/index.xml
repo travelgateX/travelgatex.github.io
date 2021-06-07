@@ -43,7 +43,7 @@ How does it work? Channel Managers and Hotels will push data to Inventory.
       <description>
         
         
-        Inventory-X FAQ What is standard occupancy? Standard occupancy is the standard number of Adult paxes of the room. For example, if the standard occupancy is 2. And the following is loaded&amp;hellip;
+        Hotel Push Sellers API FAQ What is standard occupancy? Standard occupancy is the standard number of Adult paxes of the room. For example, if the standard occupancy is 2. And the following is loaded&amp;hellip;
 &amp;lt;BaseByGuestAmts&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;quot;1&amp;quot; AmountAfterTax=&amp;quot;50.00&amp;quot;/&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;quot;2&amp;quot; AmountAfterTax=&amp;quot;100.00&amp;quot;/&amp;gt; &amp;lt;/BaseByGuestAmts&amp;gt;  &amp;hellip; The price of two paxes will be 100, and the price for one pax will be 50. Note that prices for pax under the standard occupancy must be specified and prices for babies under the standard occupancy will be 0.
         
           [...]

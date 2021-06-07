@@ -24,7 +24,7 @@
       <description>
         
         
-        Previously, we introduced an overarching definition of the main Core Entities applying to all Travelgate-X APIs. core concepts that apply to all TravelgateX APIs.
+        Previously, we introduced an overarching definition of the main Core Entities applying to Travelgate-X APIs core concepts that apply to all TravelgateX APIs.
 Here, we want to dig in further on how those concepts are applied to Hotel-X API.
 Supplier A party that supplies accommodation services through a Supplier API implementation. Each Supplier has a Supplier code. These are unique values and they are used consistently throughout all TravelgateX implementations.
         
@@ -34,7 +34,7 @@ Supplier A party that supplies accommodation services through a Supplier API imp
     </item>
     
     <item>
-      <title>Connectiontypesbuyers: Single Mode &amp; Multi Mode</title>
+      <title>Connectiontypesbuyers: Single Mode &amp; Multi Mode Searching</title>
       <link>https://travelgatex.com/connectiontypesbuyers/hotel-x/concepts/basicconcepts/single_multi_mode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -42,7 +42,7 @@ Supplier A party that supplies accommodation services through a Supplier API imp
       <description>
         
         
-        Search Multi Mode is one of the main features of Hotel-X, even if you can use Search Multi Mode in Hotel-X
+        Search Multi Mode is one of the main features of Hotel-X.
 Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter.
 { &amp;quot;filter&amp;quot;: { &amp;quot;access&amp;quot;: { &amp;quot;includes&amp;quot;: [&amp;quot;yourAccess&amp;quot;] } } }
         
