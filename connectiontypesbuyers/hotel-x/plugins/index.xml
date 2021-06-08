@@ -59,8 +59,8 @@ Definitions  Client Token: Dynamic parameter you can send on the RQ in case you 
       <description>
         
         
-        The map plugins are used to change the supplier codes to client codes or vice versa. There are these types:
- Hotel Map  Board Map  Room Map  Rate Map  Amenity Map  Promotion Map  Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
+        The mapping feature is used to change the supplier&amp;rsquo;s native codes to the Buyer&amp;rsquo;s own codes or vice-versa. There are these types:
+ Hotel Map  Board Map  Room Map  Rate Map  Amenity Map  Promotion Map  Our mapping formats share a common structure. In order to load your maps you just need to follow the instructions below:
 Entity Maps File Format The file should be in the following format:
         
           [...]

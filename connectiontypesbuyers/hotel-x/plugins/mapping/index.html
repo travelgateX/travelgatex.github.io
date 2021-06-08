@@ -30,7 +30,7 @@
       var baseurl = "https:\/\/travelgatex.com\/";
 </script>
 
-<meta name="description" content="Map different codes from different suppliers in order to get a de-duped response.">
+<meta name="description" content="Map different codes from different Sellers in order to get a de-duped response.">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
@@ -38,7 +38,7 @@
 
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2825176.js"></script>
     
-    <meta name="description" content="Map different codes from different suppliers in order to get a de-duped response.">
+    <meta name="description" content="Map different codes from different Sellers in order to get a de-duped response.">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -5650,44 +5650,6 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-        <li data-nav-id="/inventory-x/extranet/load-product/setup/" class="dd-item">
-          <div>
-            <a href="/inventory-x/extranet/load-product/setup/">
-              <span>SetUp</span>            
-            </a>
-          </div>
-        </li>
-        <li data-nav-id="/inventory-x/extranet/load-product/manual-load/" class="dd-item">
-          <div>
-            <a href="/inventory-x/extranet/load-product/manual-load/">
-              <span>Manual Load</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/inventory-x/extranet/load-product/manual-load/rate-load/" class="dd-item">
-            <a href="/inventory-x/extranet/load-product/manual-load/rate-load/">
-              <span>Rate: Availability and Price load</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/inventory-x/extranet/load-product/manual-load/derivedrate-load/" class="dd-item">
-            <a href="/inventory-x/extranet/load-product/manual-load/derivedrate-load/">
-              <span>Derived Rate: Availability and Price load</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/inventory-x/extranet/load-product/manual-load/offers-load/" class="dd-item">
-            <a href="/inventory-x/extranet/load-product/manual-load/offers-load/">
-              <span>Offers: Availability conditions load</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-        <li data-nav-id="/inventory-x/extranet/load-product/calendar/" class="dd-item">
-          <div>
-            <a href="/inventory-x/extranet/load-product/calendar/">
-              <span>Calendar</span>            
-            </a>
-          </div>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/inventory-x/extranet/tools/" class="dd-item">
@@ -8271,7 +8233,7 @@
 <li><a href="#sample-file">Sample File</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#how-applies">How applies</a></li>
+<li><a href="#application">Application</a></li>
 <li><a href="#execution-example">Execution example</a></li>
 </ul></li>
 <li><a href="#default-codes">Default Codes</a></li>
@@ -8403,7 +8365,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">HotelX Mapping</h1>
+              <h1 class="pageTitle">HotelX Feature: Mapping</h1>
 
               
                 
@@ -8420,7 +8382,7 @@
               
 
 
-<p>The map plugins are used to change the supplier codes to client codes or vice versa. There are these types:</p>
+<p>The mapping feature is used to change the supplier&rsquo;s native codes to the Buyer&rsquo;s own codes or vice-versa. There are these types:</p>
 
 <ul>
 <li>Hotel Map </li>
@@ -8431,7 +8393,7 @@
 <li>Promotion Map</li>
 </ul>
 
-<p>Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:</p>
+<p>Our mapping formats share a common structure. In order to load your maps you just need to follow the instructions below:</p>
 
 <h2 id="entity-maps">Entity Maps</h2>
 
@@ -8662,7 +8624,8 @@ Here you have the nodes where you can find mapped codes in Search response:<br><
 
 <h3 id="use-in-content">Use in Content</h3>
 
-<p>The use of mapping plugin in Content is entirely different from Booking-Flow. Nowadays only is available in Hotel-List query and only amenity map are available.
+<p>The use of mapping plugin in Content is entirely different from Booking-Flow.
+Currently this is only available in Hotel-List query and only amenity map are available.
 In order to request mapping in content (other entities mapping could be available in future), it is necessary to query the node mappings stored inside the entity:
 This node is a list of mappings that will store the code of the entity in supplier context and the context of the supplier.
 Also, is necessary to indicate the group code and destination context in query variables.<br><br></p>
@@ -8693,7 +8656,7 @@ In other words, Hotel-List will change amenityCode to the context set in destina
 
 <h4 id="room-map-by-provider-hotel">Room map by provider hotel</h4>
 
-<p>This plugin allows to convert the room codes in supplier context but by the hotel. Is the same plugin (room map) explained before, but it offers the possibility to map by supplier and hotel.</p>
+<p>This plugin converts the room codes in the supplier&rsquo;s context by hotel. It&rsquo;s the same plugin (room map) as explained above, but it offers the possibility to map by supplier and hotel.</p>
 
 <h5 id="format-file">Format File</h5>
 
@@ -8706,7 +8669,7 @@ In other words, Hotel-List will change amenityCode to the context set in destina
 <li><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/</li>
 </ul>
 
-<p>If you are using a file of room map, is necessary you modify this file adding a new column. Please, see the next example down:</p>
+<p>If you are using a file of room map, it&rsquo;s necessary to modify this file adding a new column. Please see the example below:</p>
 
 <h5 id="sample-file">Sample File</h5>
 
@@ -8724,9 +8687,9 @@ In other words, Hotel-List will change amenityCode to the context set in destina
 5,X5,
 </code></pre>
 
-<p>How you can see, in the same file are combined maps with 3 values and maps with 2 values. The rows with two values are mapped by provider. The files with three values are mapped by provider and hotel. Is possible to use only the mapping by provider hotel, in this case, your file only has rows with three values.</p>
+<p>As you can see, the same file combined mappings with 3 values and mappings with 2 values. The rows with two values are mapped by supplier. The files with three values are mapped by supplier and hotel. It&rsquo;s possible to use only the mapping by supplier hotel, in this case, your file only has rows with three values.</p>
 
-<h3 id="how-applies">How applies</h3>
+<h3 id="application">Application</h3>
 
 <p>What happens if you use the combined plugin (room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file&rsquo;s name (client context)) and the room codes that don&rsquo;t have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable).</p>
 
