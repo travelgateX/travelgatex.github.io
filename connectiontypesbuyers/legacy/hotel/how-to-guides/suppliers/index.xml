@@ -24,8 +24,8 @@
       <description>
         
         
-        TravelgateX works like a switch connecting buyers to sellers and transforing the requests from TravelgateX&amp;rsquo;s API to the sullers API. But, when the seller is who integrates into TravelgateX&amp;rsquo;s API they will receive the same request the buyer sends, without any transformation. In other words, the seller will receive the same request the buyer sends.
-The seller has to be able to receive requests for TravelgateX&amp;rsquo;s API methods. In every request there is a configuration element with the credential information.
+        TravelgateX works like a switch connecting Buyers to Sellers and transforing the requests from TravelgateX&amp;rsquo;s API to the Seller&amp;rsquo;s API. But, when the Seller integrates into TravelgateX&amp;rsquo;s API they will receive the same request the Buyer sends, without any transformation. In other words, the sSller will receive the same request the Buyer sends.
+The Seller has to be able to receive requests for TravelgateX&amp;rsquo;s API methods. In every request there is a configuration element with the credential information.
         
           [...]
         

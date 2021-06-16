@@ -39,14 +39,7 @@ This is our Hotel Buyers API LEGACY documentation to be used for reference only.
       <description>
         
         
-        How many suppliers can I request in one method?
-One supplier per request. The only exception is in Availability, where you can request one or more suppliers.
-What is the workflow for hotel reservation?
-Our workflow has three mandatory steps: Availability (avail), Valuation and Reservation, always in this order.
-How can I identify which supplier is which in Availability method?
-By using the field ID in the request. For example:
-        
-          [...]
+        Please visit our Help Center for any questions you might have
         
       </description>
     </item>

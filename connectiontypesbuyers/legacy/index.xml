@@ -24,7 +24,8 @@
       <description>
         
         
-        XML Travelgate Introduction XML Travelgate&amp;rsquo;s API allows clients to access content from XML Travelgate&amp;rsquo;s inventory of partners. Currently there are more than 600 suppliers including switching platforms, bedbanks, direct hotel chains, rent a car, ferries, rail, flights and activities companies connected to our system. Use this API to query, check for availability and book fares. It can be accessed by any third-party system such as tour-operator systems, B2C and B2B web applications or third-party applications.
+        The Hotel Buyers API was our first Buyers API, launched back in 2012. We have released a new Buyers API in 2017, called Hotel-X Buyers API, which is the only API new Buyers can integrated in order to join our marketplace.
+We maintain this documentation as a reference for the Buyers still connected to it. It works on SOAP via http or https. A user/password is needed to access the web service.
         
           [...]
         
@@ -40,10 +41,9 @@
       <description>
         
         
-        Service Endpoints (To be used for Testing Purposes only) You will be sent Production endpoints alongside your live access configuration once you have passed our certification process.
-WSDLs describing the structure of an XML request and response are available through the following URLs:
+        Service Endpoints (To be used for Testing Purposes only) WSDLs describing the structure of an XML request and response are available through the following URLs:
 Hotel API:
-  Endpoints to our system for the dynamic workflow (Avail, Valuation, Reservation, etc):    http://hubpublic.xmltravelgate.com/Service/Travel/v2/Hotel.svc https://hubpublic.xmltravelgate.com/Service/Travel/v2/HotelSecure.svc    Endpoints to our system for the static information (HotelList, DescriptiveInfo, GeographicDestinationTree, etc):    http://hubhotelbatch.
+  Endpoints to our system for the dynamic workflow (Avail, Valuation, Reservation, etc):    http://hubpublic.xmltravelgate.com/Service/Travel/v2/Hotel.svc https://hubpublic.xmltravelgate.com/Service/Travel/v2/HotelSecure.svc    Endpoints to our system for the static information (HotelList, DescriptiveInfo, GeographicDestinationTree, etc):    http://hubhotelbatch.xmltravelgate.com/Service/Travel/v2/HotelBatch.svc https://hubhotelbatch.xmltravelgate.com/Service/Travel/v2/HotelBatchSecure.svc    It&amp;rsquo;s the clients responsibility to use http or https when needed.
         
           [...]
         
