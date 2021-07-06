@@ -655,22 +655,6 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Connectiontypesbuyers: API</title>
-      <link>https://travelgatex.com/connectiontypesbuyers/hotel-x/reference/objects/api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypesbuyers/hotel-x/reference/objects/api/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Logging: API</title>
       <link>https://travelgatex.com/logging/reference/objects/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -724,6 +708,22 @@ All notable changes to this product will be documented in this page. Under const
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://travelgatex.com/stats/reference/objects/api/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: API</title>
+      <link>https://travelgatex.com/travelgatex/reference/objects/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/travelgatex/reference/objects/api/</guid>
       <description>
         
         

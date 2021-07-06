@@ -16,36 +16,30 @@
     
     
     <item>
-      <title>Connectiontypesbuyers: Introduction</title>
-      <link>https://travelgatex.com/connectiontypesbuyers/legacy/intro/</link>
+      <title>Connectiontypesbuyers: Overview</title>
+      <link>https://travelgatex.com/connectiontypesbuyers/legacy/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://travelgatex.com/connectiontypesbuyers/legacy/intro/</guid>
+      <guid>https://travelgatex.com/connectiontypesbuyers/legacy/overview/</guid>
       <description>
         
         
-        The Hotel Buyers API was our first Buyers API, launched back in 2012. We have released a new Buyers API in 2017, called Hotel-X Buyers API, which is the only API new Buyers can integrated in order to join our marketplace.
-We maintain this documentation as a reference for the Buyers still connected to it. It works on SOAP via http or https. A user/password is needed to access the web service.
-        
-          [...]
+        Overview of product
+The Hotel Buyers API was our first Buyers API, launched back in 2012. We have released a new Buyers API in 2017, called Hotel-X Buyers API, which is the only API new Buyers can integrated in order to join our marketplace.
         
       </description>
     </item>
     
     <item>
-      <title>Connectiontypesbuyers: Service Endpoints</title>
-      <link>https://travelgatex.com/connectiontypesbuyers/legacy/service-endpoints/</link>
+      <title>Connectiontypesbuyers: FAQ</title>
+      <link>https://travelgatex.com/connectiontypesbuyers/legacy/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://travelgatex.com/connectiontypesbuyers/legacy/service-endpoints/</guid>
+      <guid>https://travelgatex.com/connectiontypesbuyers/legacy/faq/</guid>
       <description>
         
         
-        Service Endpoints (To be used for Testing Purposes only) WSDLs describing the structure of an XML request and response are available through the following URLs:
-Hotel API:
-  Endpoints to our system for the dynamic workflow (Avail, Valuation, Reservation, etc):    http://hubpublic.xmltravelgate.com/Service/Travel/v2/Hotel.svc https://hubpublic.xmltravelgate.com/Service/Travel/v2/HotelSecure.svc    Endpoints to our system for the static information (HotelList, DescriptiveInfo, GeographicDestinationTree, etc):    http://hubhotelbatch.xmltravelgate.com/Service/Travel/v2/HotelBatch.svc https://hubhotelbatch.xmltravelgate.com/Service/Travel/v2/HotelBatchSecure.svc    It&amp;rsquo;s the clients responsibility to use http or https when needed.
-        
-          [...]
+        Please visit our Help Center for any questions you might have
         
       </description>
     </item>

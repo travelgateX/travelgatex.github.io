@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Release notes</title>
+    <link>https://travelgatex.com/connectiontypesbuyers/legacy/release-notes/</link>
+    <description>Recent changes in Release notes on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://travelgatex.com/connectiontypesbuyers/legacy/release-notes/</link>
+    </image>
+    
+	    <atom:link href="https://travelgatex.com/connectiontypesbuyers/legacy/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connectiontypesbuyers: Change Log</title>
+      <link>https://travelgatex.com/connectiontypesbuyers/legacy/release-notes/change-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypesbuyers/legacy/release-notes/change-log/</guid>
+      <description>
+        
+        
+        Version 1.0.27: Date 23/12/2020
+ Strong Customer Authentication (3DS). 3DS data can now be included with a Payment Card in a reservation in reservations alongside payment card data. You can find new field &amp;ldquo;ThreeDomainService&amp;rdquo; specification in Reservation request.    Virtual Credit Cards (VCC). Extra information about Virtual Credit Cards can now be included with a Payment Card in a reservation. You can find new field &amp;ldquo;VirtualCreditCard&amp;rdquo; specification in Reservation request.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
