@@ -3478,14 +3478,14 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/" class="dd-item">
+            <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/">
+              <span>Configuration Element</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/booking-flow/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/booking-flow/">
               <span>Booking flow</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/">
-              <span>Configuration</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/connectivity/" class="dd-item">
@@ -3565,6 +3565,11 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/configuration/" class="dd-item">
+            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/configuration/">
+              <span>Configuration</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/">
               <span>AvailDestinationTree</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3583,11 +3588,6 @@
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfo/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfo/">
               <span>DescriptiveInfo</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfoextended/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfoextended/">
-              <span>DescriptiveInfoExtended (In development)</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/geographicdestinationtree/" class="dd-item">
@@ -3618,11 +3618,6 @@
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/roomlist/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/roomlist/">
               <span>RoomList</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/runtimeconfiguration/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/runtimeconfiguration/">
-              <span>RuntimeConfiguration</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -6174,6 +6169,8 @@
 <h2 id="rooms">Rooms</h2>
 
 <p>Rooms Query returns a simple rooms map that can include translations to other languages. You can search by room codes, if you don&rsquo;t introduce any room codes, you will receive all of them. The full response is split into pages. By default, the number of rooms in each page is 1000, however, you can choose the size with a value between 100 and 10000.</p>
+
+<p>Have in mind the response object roomData is shared with Hotels Query but not necessarily it will share the same data. For example with Hotels Query you may recieve &ldquo;amenities&rdquo; in roomData whereas in Rooms Query you&rsquo;ll not.</p>
 
 <h4 id="criteria">Criteria</h4>
 

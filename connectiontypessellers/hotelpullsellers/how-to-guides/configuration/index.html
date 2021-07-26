@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Configuration | TravelgateX Documentation</title>
+    <title>Configuration Element | TravelgateX Documentation</title>
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.54.0" />
-<title>Configuration :: TravelgateX Documentation</title>
+<title>Configuration Element :: TravelgateX Documentation</title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -3477,14 +3477,14 @@
                 <i class="fa fa-angle-down fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/" class="dd-item active">
+            <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/">
+              <span>Configuration Element</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/booking-flow/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/booking-flow/">
               <span>Booking flow</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/" class="dd-item active">
-            <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/">
-              <span>Configuration</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/connectivity/" class="dd-item">
@@ -3564,6 +3564,11 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/configuration/" class="dd-item">
+            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/configuration/">
+              <span>Configuration</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/">
               <span>AvailDestinationTree</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3582,11 +3587,6 @@
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfo/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfo/">
               <span>DescriptiveInfo</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfoextended/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfoextended/">
-              <span>DescriptiveInfoExtended (In development)</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/geographicdestinationtree/" class="dd-item">
@@ -3617,11 +3617,6 @@
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/roomlist/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/roomlist/">
               <span>RoomList</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/runtimeconfiguration/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/runtimeconfiguration/">
-              <span>RuntimeConfiguration</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5793,7 +5788,7 @@
         <div class="container_row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">Configuration</h1>
+              <h1 class="pageTitle">Configuration Element</h1>
 
               
                 
@@ -5810,15 +5805,10 @@
               
 
 
-<p>A Configuration element with the credentials, endpoints and extra needed parameters by the supplier <strong>will be received in the request</strong> from the buyer and will be sent to the supplier. In this configuration TravelgateX will receive the endpoints needed to send the request to the supplier (you can see the correlation between methods and enpoints used in the <a href="/hotelpullsellers/how-to-guides/connectivity/">connectivity</a> page).</p>
+<p>A Configuration element with the credentials, endpoints and extra needed parameters by the supplier <strong>will be received in the request</strong> from the buyer and will be sent to the supplier. In this configuration TravelgateX will receive the endpoints needed to send the request to the supplier (you can see the correlation between methods and enpoints used in the <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/connectivity/">connectivity</a> page).</p>
 
 <pre><code class="language-xml">&lt;Configuration&gt;
-    &lt;User&gt;&lt;/User&gt;
-    &lt;Password&gt;&lt;/Password&gt;
     &lt;UrlGeneric&gt;&lt;/UrlGeneric&gt;
-    &lt;UrlAvail&gt;&lt;/UrlAvail&gt;
-    &lt;UrlValuation&gt;&lt;/UrlValuation&gt;
-    &lt;UrlReservation&gt;&lt;/UrlReservation&gt;
     &lt;Parameters&gt;
         &lt;Parameter key = &quot;&quot; value = &quot;&quot;/&gt;
     &lt;/Parameters&gt;
@@ -5846,45 +5836,10 @@
 </tr>
 
 <tr>
-<td>Configuration/User</td>
-<td>0..1</td>
-<td>String</td>
-<td>User code to connect to supplier.</td>
-</tr>
-
-<tr>
-<td>Configuration/Password</td>
-<td>0..1</td>
-<td>String</td>
-<td>Password for the connection.</td>
-</tr>
-
-<tr>
 <td>Configuration/UrlGeneric</td>
 <td>1</td>
 <td>String</td>
 <td>Supplier URL used for multiple methods.</td>
-</tr>
-
-<tr>
-<td>Configuration/UrlAvail</td>
-<td>1</td>
-<td>String</td>
-<td>Specific Url for Availability method.</td>
-</tr>
-
-<tr>
-<td>Configuration/UrlValuation</td>
-<td>1</td>
-<td>String</td>
-<td>Specific Url for Valuation method.</td>
-</tr>
-
-<tr>
-<td>Configuration/UrlReservation</td>
-<td>1</td>
-<td>String</td>
-<td>Specific Url for Reservation method.</td>
 </tr>
 
 <tr>
@@ -5936,10 +5891,10 @@
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/connectiontypessellers/hotelpullsellers/how-to-guides/booking-flow/" title="Go to previous page | Booking flow"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Booking flow</a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/connectiontypessellers/hotelpullsellers/how-to-guides/" title="Go to previous page | How to guides"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>How to guides</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/connectiontypessellers/hotelpullsellers/how-to-guides/connectivity/" title="Go to next page | Connectivity" style="margin-right: 0px;">Connectivity<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/connectiontypessellers/hotelpullsellers/how-to-guides/booking-flow/" title="Go to next page | Booking flow" style="margin-right: 0px;">Booking flow<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

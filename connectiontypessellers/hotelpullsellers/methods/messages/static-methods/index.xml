@@ -16,6 +16,22 @@
     
     
     <item>
+      <title>Connectiontypessellers: Configuration</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/configuration/</guid>
+      <description>
+        
+        
+        Method Goals This message returns your connection configuration template as Seller in our platform. With this response we build a form, known as activation or connection form, where the Buyers fill the configuration parameters for the requests to you. In order to expedite the connections to your system through our platform it is important that all data in the configuration response is clear and explanatory as possible. Here you can read how the Buyers create a new connection in our platform.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Connectiontypessellers: AvailDestinationTree</title>
       <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -88,24 +104,6 @@ Request Format The request just requires the hotel code and language code (ISO-6
 Response Format The result returns the details of that hotel.
 Remarks The maximum time permitted in our system before the connection is closed is 180000 milliseconds.
 DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt; &amp;lt;Code&amp;gt;524AC&amp;lt;/Code&amp;gt; &amp;lt;/Hotel&amp;gt; &amp;lt;/DescriptiveInfoRQ&amp;gt;  DescriptiveInfoRQ Description    Element Number Type Description     DescriptiveInfoRQ 1  Root node.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypessellers: DescriptiveInfoExtended (In development)</title>
-      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfoextended/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfoextended/</guid>
-      <description>
-        
-        
-        Method Goals This method returns 100% of the hotel information provided by the supplier.
-It allows you to map each hotel using your own criteria with the combination of contextItem_ plus data_ so you will have the information (extracted from the supplier&amp;rsquo;s documentation hierachy/fields descriptions) required to do so.
-Request Format After entering the hotel code, you can set language filters. We recommend that the first call is done without filters in order to ascertain which languages are provided by the supplier.
         
           [...]
         
@@ -222,25 +220,6 @@ Request Format The request does not require any elements - empty request.
 Response Format The result returns a list of RoomInfo.
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
 This message must be implemented solely in case the supplier does not return room description in Avail.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypessellers: RuntimeConfiguration</title>
-      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/runtimeconfiguration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/runtimeconfiguration/</guid>
-      <description>
-        
-        
-        Method Goals This message returns a template of the supplier&amp;rsquo;s configuration.
-Request Format The request does not require any elements, it is an empty request.
-Response Format The returned XML contains a template of all fields used by the supplier.
-RuntimeConfigurationRQ Example &amp;lt;RuntimeConfigurationRQ&amp;gt; &amp;lt;/RuntimeConfigurationRQ&amp;gt;  RuntimeConfigurationRQ Description    Element Number Type Description     RuntimeConfigurationRQ 1  Root node.    RuntimeConfigurationRS Example &amp;lt;RuntimeConfigurationRS&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User/&amp;gt; &amp;lt;Password/&amp;gt; &amp;lt;UrlGeneric/&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;agencia&amp;quot; value = &amp;quot;&amp;quot;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/RuntimeConfigurationRS&amp;gt;  ConfiguracionRunTimeRS Description    Element Number Type Description     RuntimeConfigurationRS 1  Root node.
         
           [...]
         

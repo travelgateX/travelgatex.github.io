@@ -16,6 +16,23 @@
     
     
     <item>
+      <title>Connectiontypessellers: Configuration Element</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/</guid>
+      <description>
+        
+        
+        A Configuration element with the credentials, endpoints and extra needed parameters by the supplier will be received in the request from the buyer and will be sent to the supplier. In this configuration TravelgateX will receive the endpoints needed to send the request to the supplier (you can see the correlation between methods and enpoints used in the connectivity page).
+&amp;lt;Configuration&amp;gt; &amp;lt;UrlGeneric&amp;gt;&amp;lt;/UrlGeneric&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;&amp;quot; value = &amp;quot;&amp;quot;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt;  Configuration Description    Element Number Type Description     Configuration 1  The info required to access the supplier&amp;rsquo;s system.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Connectiontypessellers: Booking flow</title>
       <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/how-to-guides/booking-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -27,23 +44,6 @@
         Booking flow
 A basic booking flow for buyers using TravelgateX system consists of 3 steps:
  Availability: It allows to check which rooms are available for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution. Valuation (or quote): It&amp;rsquo;s an operation used to assess and valuate the selected option rate before the actual booking. It returns the up-to-date price and cancellation policies for the option selected from the availability response.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypessellers: Configuration</title>
-      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/</guid>
-      <description>
-        
-        
-        A Configuration element with the credentials, endpoints and extra needed parameters by the supplier will be received in the request from the buyer and will be sent to the supplier. In this configuration TravelgateX will receive the endpoints needed to send the request to the supplier (you can see the correlation between methods and enpoints used in the connectivity page).
-&amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;&amp;lt;/Password&amp;gt; &amp;lt;UrlGeneric&amp;gt;&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlAvail&amp;gt;&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlValuation&amp;gt;&amp;lt;/UrlValuation&amp;gt; &amp;lt;UrlReservation&amp;gt;&amp;lt;/UrlReservation&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;&amp;quot; value = &amp;quot;&amp;quot;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt;  Configuration Description    Element Number Type Description     Configuration 1  The info required to access the supplier&amp;rsquo;s system.
         
           [...]
         

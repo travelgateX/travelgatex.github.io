@@ -3478,14 +3478,14 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/" class="dd-item">
+            <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/">
+              <span>Configuration Element</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/booking-flow/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/booking-flow/">
               <span>Booking flow</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/">
-              <span>Configuration</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/how-to-guides/connectivity/" class="dd-item">
@@ -3565,6 +3565,11 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/configuration/" class="dd-item">
+            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/configuration/">
+              <span>Configuration</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/">
               <span>AvailDestinationTree</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3583,11 +3588,6 @@
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfo/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfo/">
               <span>DescriptiveInfo</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfoextended/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfoextended/">
-              <span>DescriptiveInfoExtended (In development)</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/geographicdestinationtree/" class="dd-item">
@@ -3618,11 +3618,6 @@
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/roomlist/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/roomlist/">
               <span>RoomList</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/runtimeconfiguration/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/runtimeconfiguration/">
-              <span>RuntimeConfiguration</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -4925,6 +4920,11 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
+          <li data-nav-id="/stats/reference/schema/query/" class="dd-item">
+            <a href="/stats/reference/schema/query/">
+              <span>StatsQuery</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/stats/reference/objects/" class="dd-item">
@@ -5663,6 +5663,7 @@
 <li>
 <ul>
 <li><a href="#advanced-criteria">Advanced criteria</a></li>
+<li><a href="#filtersearch">FilterSearch</a></li>
 <li><a href="#how-to-request">How to request</a></li>
 <li><a href="#important-info">Important Info</a></li>
 </ul></li>
@@ -5815,10 +5816,19 @@
 <li>CheckIn: check-in date for the booking. <em>Format: YYYY-MM-DD</em></li>
 <li>CheckOut: check-out date for the booking. <em>Format YYYY-MM-DD</em></li>
 <li>Hotels: List of hotel codes</li>
-<li>Occupancies: The occupancy you are requesting for each room.
+
+<li><p>Occupancies: The occupancy you are requesting for each room.</p>
 
 <ul>
 <li>For multi-room bookings, this array will contain multiple elements (rooms). You will  need to detail the occupancy for each room requested.</li>
+
+<li><h2 id="filtersearch">FilterSearch</h2>
+
+<p>These filters can be used to accurate the response to your willingness.
+The possible filters are:
+By access: It is possible to indicate what accesses to use (includes) or excludes any of yours configured acccesses. Only one list can be specified (include or exclude lists). Using the access filter our system will only return options of those selected accesses.
+By raterule:  It is possible to filter the options returned by the suppliers depending on what raterules you want to return or exclude.
+By status: It is possible to filter the options returned by the suppliers, filtering those status you may or not be excluding or including options with the selected status.</p></li>
 </ul></li>
 </ul>
 
