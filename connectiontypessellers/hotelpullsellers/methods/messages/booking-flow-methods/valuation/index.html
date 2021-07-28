@@ -3571,11 +3571,6 @@
               <span>Configuration</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/">
-              <span>AvailDestinationTree</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/categorylist/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/categorylist/">
               <span>CategoryList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -5834,6 +5829,8 @@ selected  in the previous step (<em>Avail</em>).</p>
 
 <h3 id="valuationrq-example">ValuationRQ Example</h3>
 
+<p>In the request for this call it is necessary to use the object: &ldquo;HotelBaseRQ&rdquo;. You can find the information in the section &lsquo;<a href="/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/">Common elements</a>&rsquo;.</p>
+
 <pre><code class="language-xml">&lt;ValuationRQ&gt;
    &lt;StartDate&gt;04/07/2016&lt;/StartDate&gt;
    &lt;EndDate&gt;11/07/2016&lt;/EndDate&gt;
@@ -5907,14 +5904,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>OnRequest</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see <a href="/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a>).</td>
+<td>Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a>).</td>
 </tr>
 
 <tr>
 <td>BlockOption</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see <a href="/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a>).</td>
+<td>Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a>).</td>
 </tr>
 
 <tr>
@@ -5935,7 +5932,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>PaymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type (See full type list at <a href="/hotelpullsellers/methods/messages/listsdata/#payment-types">Lists of Data</a>).</td>
+<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types">Lists of Data</a>).</td>
 </tr>
 
 <tr>
@@ -6237,14 +6234,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type of penalty (See full type list at <a href="/hotelpullsellers/methods/messages/listsdata/#payment-types">Lists of Data</a>) .</td>
+<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
 <td>Remarks</td>
 <td>0..1</td>
 <td>String</td>
-<td>Remarks (see <a href="/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Remarks (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -6272,7 +6269,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>@code</td>
 <td>1</td>
 <td>String</td>
-<td>Code card. Se the full list of card codes at <a href="/hotelpullsellers/methods/messages/listsdata/#credit-cards">Lists of Data</a></td>
+<td>Code card. Se the full list of card codes at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#credit-cards">Lists of Data</a></td>
 </tr>
 
 <tr>
@@ -6342,7 +6339,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>CancelPoliciesDescription</td>
 <td>0..1</td>
 <td>String</td>
-<td>Contains the cancellation penalties in free text (see <a href="/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Contains the cancellation penalties in free text (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 </tbody>
 </table>

@@ -3571,11 +3571,6 @@
               <span>Configuration</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/">
-              <span>AvailDestinationTree</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/categorylist/" class="dd-item">
             <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/categorylist/">
               <span>CategoryList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -5830,6 +5825,8 @@
 
 <h3 id="configurationrq-example">ConfigurationRQ Example</h3>
 
+<p>In the request of this call it is only necessary to use the object: &ldquo;HotelBaseRQ&rdquo;. You can find the info in the &lsquo;<a href="/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/">Common Elements</a>&rsquo; section.</p>
+
 <pre><code class="language-xml">    &lt;ConfigurationRQ&gt;
     &lt;/ConfigurationRQ&gt;
 </code></pre>
@@ -5866,7 +5863,7 @@
             &lt;ProviderTagName&gt;Endpoint Supplier&lt;/ProviderTagName&gt;
             &lt;Show&gt;true&lt;/Show&gt;
             &lt;Mandatory&gt;true&lt;/Mandatory&gt;
-            &lt;Pattern&gt;^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;amp;'\(\)\*\+,;=.]+$&lt;/Pattern&gt;
+            &lt;Pattern&gt;^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;'\(\)\*\+,;=.]+$&lt;/Pattern&gt;
             &lt;DescriptionPattern&gt;Please, this field expects the value of a url.&lt;/DescriptionPattern&gt;
             &lt;Description&gt;Endpoint Supplier Restel&lt;/Description&gt;
             &lt;Type&gt;uri&lt;/Type&gt;
@@ -5961,7 +5958,7 @@
             &lt;TagRunTime&gt;Parameter&lt;/TagRunTime&gt;
             &lt;Show&gt;false&lt;/Show&gt;
             &lt;Mandatory&gt;true&lt;/Mandatory&gt;
-            &lt;Pattern&gt;^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;amp;'\(\)\*\+,;=.]+$&lt;/Pattern&gt;
+            &lt;Pattern&gt;^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;'\(\)\*\+,;=.]+$&lt;/Pattern&gt;
             &lt;DescriptionPattern&gt;Please, this field expects the value of a url.&lt;/DescriptionPattern&gt;
             &lt;Description&gt;Url Room List&lt;/Description&gt;
             &lt;Type&gt;uri&lt;/Type&gt;
@@ -5972,15 +5969,12 @@
 &lt;/ConfigurationRS&gt;  
 </code></pre>
 
-<p>###</p>
+<p><br />
+</p>
 
 <p>This is the example of how the form is displayed with the previous xml response.</p>
 
-<p>###</p>
-
 <p><img src="/connectiontypessellers/hotelpullsellers/images/ExampleFormBuena.png" alt="This is the example of how the form is displayed with the previous xml response" /></p>
-
-<p>###</p>
 
 <h3 id="configuracionrs-description">ConfiguracionRS Description</h3>
 
@@ -6109,6 +6103,9 @@
 </tbody>
 </table>
 
+<p><br />
+</p>
+
 <h4 id="paterns"><strong>Patterns</strong></h4>
 
 <p>All the patterns must work with Golang and ECMAScript(javaScript). You can validate your regular expressions by this two laguanges at <a href="https://regex101.com/" rel="nofollow" target="_blank">regex101</a>.</p>
@@ -6141,7 +6138,7 @@
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/" title="Go to previous page | Static Content Methods"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Static Content Methods</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/" title="Go to next page | AvailDestinationTree" style="margin-right: 0px;">AvailDestinationTree<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/categorylist/" title="Go to next page | CategoryList" style="margin-right: 0px;">CategoryList<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

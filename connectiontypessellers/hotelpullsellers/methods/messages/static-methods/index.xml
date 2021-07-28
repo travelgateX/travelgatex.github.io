@@ -32,26 +32,6 @@
     </item>
     
     <item>
-      <title>Connectiontypessellers: AvailDestinationTree</title>
-      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/availdestinationtree/</guid>
-      <description>
-        
-        
-        Method Goals This method returns the tree of destinations accessible from the call Avail .
-Request Format The request does not require any elements - it&amp;rsquo;s an empty request.
-Response Format The result returns a list of DestinationTree with their corresponding sub-destinations.
-Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
-AvailDestinationTreeRQ Example &amp;lt;AvailDestinationTreeRQ&amp;gt; &amp;lt;/AvailDestinationTreeRQ&amp;gt;  AvailDestinationTreeRQ Description    Element Number Type Description     AvailDestinationTreeRQ 1  Root node.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Connectiontypessellers: CategoryList</title>
       <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/categorylist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -64,7 +44,7 @@ AvailDestinationTreeRQ Example &amp;lt;AvailDestinationTreeRQ&amp;gt; &amp;lt;/A
 Request Format The request does not require any elements empty request.
 Response Format The result returns a list of Category .
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
-CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&amp;gt;  CategoryListRQ Description    Element Number Type Description     CategoryListRQ 1  Root node.
+CategoryListRQ Example In the request of this call it is only necessary to use the object: &amp;ldquo;HotelBaseRQ&amp;rdquo;.
         
           [...]
         
@@ -83,7 +63,8 @@ CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&am
         Method Goals This method returns a list of currencies the supplier supports in Avail.
 Request Format The request does not require any elements. Empty request.
 Response Format The result returns a list of currencies.
-CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt;  CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.    CurrencyListRS Example &amp;lt;CurrencyListRS&amp;gt; &amp;lt;UpgradeUTCDate&amp;gt;2016-10-18T13:18:03+02:00&amp;lt;/UpgradeUTCDate&amp;gt; &amp;lt;Currencies&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;EUR&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Euro&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;USD&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Dollar&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;/Currencies&amp;gt; &amp;lt;/CurrencyListRS&amp;gt;  CurrencyListRS Description    Element Number Type Description     CurrencyListRS 1  Root node.
+CurrencyListRQ Example In the request of this call it is only necessary to use the object: &amp;ldquo;HotelBaseRQ&amp;rdquo;. You can find the info in the &amp;lsquo;Common Elements&amp;rsquo; section.
+&amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt;  CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.
         
           [...]
         
@@ -103,7 +84,7 @@ CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&am
 Request Format The request just requires the hotel code and language code (ISO-639-1) - this is specified within the source&amp;ndash;&amp;gt;languageCode).
 Response Format The result returns the details of that hotel.
 Remarks The maximum time permitted in our system before the connection is closed is 180000 milliseconds.
-DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt; &amp;lt;Code&amp;gt;524AC&amp;lt;/Code&amp;gt; &amp;lt;/Hotel&amp;gt; &amp;lt;/DescriptiveInfoRQ&amp;gt;  DescriptiveInfoRQ Description    Element Number Type Description     DescriptiveInfoRQ 1  Root node.
+DescriptiveInfoRQ Example In the request for this call it is necessary to use the object: &amp;ldquo;HotelBaseRQ&amp;rdquo;.
         
           [...]
         
