@@ -5886,7 +5886,7 @@ With this input hotel: [&quot;A&quot;,&quot;B&quot;,&quot;C&quot;] after executi
 <p>If we want to block all hotels of two suppliers in the blacklist, we should configure the file as specified below:</p>
 
 <pre><code>IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
-r3,,,,,,HOTELTEST;TESTPRV,,,,,,,&quot;bl:(all||all)&quot;
+r3,,,,,HOTELTEST;TESTPRV,,,,,,,,&quot;bl:(all||all)&quot;
 
 With this input hotel: [&quot;A&quot;,&quot;B&quot;,&quot;C&quot;] after executing the plugin, we obtain hotels: [] 
 </code></pre>
@@ -5894,7 +5894,7 @@ With this input hotel: [&quot;A&quot;,&quot;B&quot;,&quot;C&quot;] after executi
 <p>If we want to block all hotels except &ldquo;A&rdquo; and &ldquo;B&rdquo; of two suppliers in the blacklist, we should configure the file as specified below:</p>
 
 <pre><code>IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
-r3,,,,,,HOTELTEST;TESTPRV,,,,,,,&quot;wl:(all||A;B)&quot;
+r3,,,,,HOTELTEST;TESTPRV,,,,,,,,&quot;wl:(all||A;B)&quot;
 
 With this input hotel: [&quot;A&quot;,&quot;B&quot;,&quot;C&quot;] after executing the plugin, we obtain hotels: [&quot;A&quot;,&quot;B&quot;] 
 </code></pre>
