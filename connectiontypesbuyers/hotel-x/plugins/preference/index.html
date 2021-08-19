@@ -5660,6 +5660,7 @@
 <ul>
 <li><a href="#goals">Goals</a></li>
 </ul></li>
+<li><a href="#preference-plugin-workflow">Preference plugin workflow</a></li>
 <li><a href="#files-needed-in-order-to-use-this-plugin">Files needed in order to use this plugin</a>
 <ul>
 <li><a href="#execution-example">Execution example</a></li>
@@ -5817,10 +5818,28 @@
 
 <p>The matching process uses <strong>client Tokens</strong> filed, which identify the provided by the client and it is used to filter which business rules can be applied in the request sent.</p>
 
+<h2 id="preference-plugin-workflow">Preference plugin workflow</h2>
+
+<p>We&rsquo;ll try to explain the basics concepts of a preference plugin workflow:</p>
+
+<ol>
+<li>First starts getting all the args set by the client in the query, like options, parameters (primaryKey among others), client tokens, etc.</li>
+<li>Gets the rules stored in database which will establish which options will be added or discarted based on several factors as % of tolerance of the price, options status, hotelcodes, supplier, etc.</li>
+<li>Then builds a <strong>group function</strong> which will help to clasify the options slice in n different groups based on the primary key established in the query by the client and the rules stored in the data base (ftp preference file).</li>
+<li>Now sorts the options in price order (from cheap to expensive).</li>
+<li>Go over each option and group them by primary key index. However not all the options will be filled in these aggrupations. This is where the rules come into play.</li>
+<li>To determine if an option will be discarted or not we have to check the <strong>group function</strong> which does the following:
+6.1. If it is the first option in the pk index, this option will be automatically added
+6.2. If the rule says that the competitors has to be discarted, all the options of that pk index will be discarted except for the first (the cheapest)
+6.3. If it isnt the first option and there aren&rsquo;t any rule that matches the option, this option will be discarted
+6.4. If it isnt the first option and the price is higher than the tolerance % established in the rules for that pk index, the option will also be discarted</li>
+<li>With the resulting options grouped by pk indexes, finally collects all of them and return them to the service process which has used the plugin.</li>
+</ol>
+
 <h2 id="files-needed-in-order-to-use-this-plugin">Files needed in order to use this plugin</h2>
 
 <ul>
-<li><a href="/hotel-x/plugins/format-files/preference/"><strong>Preference file format</strong></a> (<strong>Mandatory</strong>)</li>
+<li><a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/"><strong>Preference file format</strong></a> (<strong>Mandatory</strong>)</li>
 </ul>
 
 <h3 id="execution-example">Execution example</h3>
