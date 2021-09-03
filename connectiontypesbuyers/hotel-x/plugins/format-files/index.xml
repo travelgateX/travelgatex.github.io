@@ -170,7 +170,7 @@ Hotel entity example
         
         The preference file should be in the below format:
  Encoding: UTF-8 File Name:  context sequential preference  Extension file: csv Headers:
- ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from Date format bookingDateTo → booking date to Date format startDateFrom → start date from Date format startDateTo → start date to Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.
+ ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from Date format bookingDateTo → booking date to Date format startDateFrom → start date from Date format startDateTo → start date to Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code status → option status (OK, RQ)
         
           [...]
         

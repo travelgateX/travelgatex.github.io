@@ -5830,9 +5830,10 @@
 <li><em>notChainCodes</em>  → chain code</li>
 <li><em>destinationCodes</em>  → destination code</li>
 <li><em>notDestinationCodes</em>  → destination code</li>
+<li><em>status</em>  → option status (OK, RQ)<br /></li>
+<li><em>notStatus</em>  → option status (OK, RQ)<br /></li>
 <li><em>percentage</em>  → commission value, decimal separator must be point (&ldquo;.&rdquo;)</li>
 <li>_filter<em>competitors</em>  → filter competitors<br /></li>
-<li><em>status</em>  → option status (OK, RQ)<br /></li>
 </ul>
 
 <p><strong>client tokens</strong> Identifier provided by the client that is used to filter which business rules can be applied for the sent request.</p>
@@ -5950,6 +5951,20 @@
 </tr>
 
 <tr>
+<td>status</td>
+<td>No</td>
+<td>notStatus</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notStatus</td>
+<td>No</td>
+<td>status</td>
+<td>Yes</td>
+</tr>
+
+<tr>
 <td>percentage</td>
 <td>Yes</td>
 <td>-</td>
@@ -5959,13 +5974,6 @@
 <tr>
 <td>filter_competitors</td>
 <td>Yes</td>
-<td>-</td>
-<td>Yes</td>
-</tr>
-
-<tr>
-<td>status</td>
-<td>No</td>
 <td>-</td>
 <td>Yes</td>
 </tr>
@@ -6001,12 +6009,12 @@ T9,subcanal-EROSKI_B2B,INT,,,,,,,,,,,BTEMX,5.0,TRUE
 <p><strong>Multivalue field</strong></p>
 
 <pre><code class="language-csv">ruleId,clientTokens,supplierCodes,notSupplierCodes,bookingDateFrom,bookingDateTo,startDateFrom,startDateTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,filter_competitors, status
-T1,,RIU,,,,,,,,,,,,999.00,TRUE,RQ;OK
-T3,,BAR,,,,,,,,,,,,999.00,FALSE,RQ
-T4,,SEN,,,,,,,,,,,,999.00,FALSE,RQ
-T7,,RHO,,,,,,,,,,,,10.0,FALSE,RQ
-T9,subcanal-EROSKI_B2B,INT,,,,,,,,,,,BTEMX,5.0,TRUE,OK
-T10,,GTA;HOBV2;TOU,,,,,,,,,,ACDMS,,5.5,FALSE,RQ;OK
+T1,,RIU,,,,,,,,,,,,RQ;OK,,999.00,TRUE
+T3,,BAR,,,,,,,,,,,,RQ,,999.00,FALSE
+T4,,SEN,,,,,,,,,,,,RQ,,999.00,FALSE
+T7,,RHO,,,,,,,,,,,,RQ,,10.0,FALSE
+T9,subcanal-EROSKI_B2B,INT,,,,,,,,,,,RQ,,BTEMX,5.0,TRUE
+T10,,GTA;HOBV2;TOU,,,,,,,,,,RQ;OK,,ACDMS,,5.5,FALSE
 </code></pre>
 
 <h3 id="dateformat"><strong>Date format</strong></h3>
