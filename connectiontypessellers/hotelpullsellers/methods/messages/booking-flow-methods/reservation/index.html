@@ -5872,7 +5872,7 @@ is closed.</p>
             &lt;CVC&gt;123&lt;/CVC&gt;
         &lt;/CardInfo&gt;
         &lt;Rooms&gt;
-            &lt;Room id = &quot;4582&quot; roomCandidateRefId = &quot;1&quot; code = &quot;506&quot; description = &quot;Double Standard..&quot;/&gt;
+            &lt;Room id = &quot;4582&quot; roomCandidateRefId = &quot;1&quot; code = &quot;506&quot; description = &quot;Double Standard..&quot;&gt;
             &lt;Preferences&gt;
                 &lt;Preference type = &quot;Smoker&quot;/&gt;
                 &lt;Preference type = &quot;NonSmoker&quot;/&gt;
@@ -5881,9 +5881,26 @@ is closed.</p>
                 &lt;Preference type = &quot;DoubleBed&quot;/&gt;
                 &lt;Preference type = &quot;TwinBeds&quot;/&gt;
             &lt;/Preferences&gt;
+            &lt;/Room&gt;
+            &lt;Room id = &quot;4583&quot; roomCandidateRefId = &quot;2&quot; code = &quot;507&quot; description = &quot;Twin Standard..&quot;&gt;
+            &lt;Preferences&gt;
+                &lt;Preference type = &quot;Smoker&quot;/&gt;
+                &lt;Preference type = &quot;NonSmoker&quot;/&gt;
+                &lt;Preference type = &quot;ExtraBed&quot;/&gt;
+                &lt;Preference type = &quot;Cradle&quot;/&gt;
+                &lt;Preference type = &quot;DoubleBed&quot;/&gt;
+                &lt;Preference type = &quot;TwinBeds&quot;/&gt;
+            &lt;/Preferences&gt;
+            &lt;/Room&gt;
         &lt;/Rooms&gt;
         &lt;RoomCandidates&gt;
             &lt;RoomCandidate id = &quot;1&quot;&gt;
+                &lt;Paxes&gt;
+                    &lt;Pax age = &quot;30&quot; id = &quot;1&quot;/&gt;
+                    &lt;Pax age = &quot;30&quot; id = &quot;2&quot;/&gt;
+                &lt;/Paxes&gt;
+            &lt;/RoomCandidate&gt;
+            &lt;RoomCandidate id = &quot;2&quot;&gt;
                 &lt;Paxes&gt;
                     &lt;Pax age = &quot;30&quot; id = &quot;1&quot;/&gt;
                     &lt;Pax age = &quot;30&quot; id = &quot;2&quot;/&gt;
@@ -6438,7 +6455,7 @@ is closed.</p>
 <td>@id</td>
 <td>1</td>
 <td>Integer</td>
-<td>Passenger id (starting at 1).</td>
+<td>Passenger id (starting at 1, this identifier is at room level).</td>
 </tr>
 
 <tr>

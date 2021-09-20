@@ -5901,7 +5901,59 @@ is <strong>180000</strong> milliseconds.</p>
         &lt;ShortDescription&gt;the hotel.....&lt;/ShortDescription&gt;
         &lt;LongDescription&gt;the hotel....&lt;/LongDescription&gt;
         &lt;HowToGet&gt;&lt;/HowToGet&gt;
-        &lt;RoomDescription&gt;....&lt;/RoomDescription&gt;
+        &lt;Rooms&gt;
+            &lt;Room code = &quot;201232338&quot; size = &quot;0&quot; quantity = &quot;0&quot; viewCode = &quot;Others&quot; classificationCode = &quot;Others&quot; occupancy = &quot;0&quot;&gt;
+                &lt;Beds&gt;
+                    &lt;Bed numberOfBeds = &quot;1&quot; type = &quot;QueenBed&quot;/&gt;
+                &lt;/Beds&gt;
+                &lt;Attributes&gt;                      
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;2403&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Free WiFi&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;2399&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Flat-panel TV&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;2398&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Cable TV service&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;4951&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Free cribs/infant beds&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;318&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Balcony&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                &lt;/Attributes&gt;
+                &lt;Images&gt;
+                    &lt;Picture&gt;
+                        &lt;URL&gt;https://i.travelapi.com/hotels/8000000/7770000/7769600/7769581/72588f9a_z.jpg&lt;/URL&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;UpgradeUTCDate&gt;0001-01-01T00:00:00&lt;/UpgradeUTCDate&gt;
+                    &lt;/Picture&gt;
+                    &lt;Picture&gt;
+                        &lt;URL&gt;https://i.travelapi.com/hotels/8000000/7770000/7769600/7769581/bd3da76f_z.jpg&lt;/URL&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;UpgradeUTCDate&gt;0001-01-01T00:00:00&lt;/UpgradeUTCDate&gt;
+                    &lt;/Picture&gt;
+                &lt;/Images&gt;
+                &lt;Description&gt;Small Double Room with Balcony&lt;/Description&gt;
+                &lt;Views&gt;
+                    &lt;View&gt;
+                        &lt;Code&gt;4219&lt;/Code&gt;
+                        &lt;Name&gt;Mountain view&lt;/Name&gt;
+                    &lt;/View&gt;
+                &lt;/Views&gt;
+            &lt;/Room&gt;    
+        &lt;/Rooms&gt;
         &lt;SituationDescription&gt;....&lt;/SituationDescription&gt;
         &lt;Attributes&gt;
             &lt;Attribute&gt;
@@ -5990,7 +6042,7 @@ is <strong>180000</strong> milliseconds.</p>
                 &lt;Card code=&quot;AX&quot;/&gt;
                 &lt;Card code=&quot;CA&quot;/&gt;
             &lt;/Cards&gt;
-        &lt;PaymentOptions/&gt;
+        &lt;/PaymentOptions&gt;
         &lt;ExclusiveDeal&gt;true&lt;/ExclusiveDeal&gt;
         &lt;PropertyCategory&gt;
              &lt;Code&gt;1&lt;/Code&gt;
@@ -6227,14 +6279,14 @@ is <strong>180000</strong> milliseconds.</p>
 <td>ShortDescription</td>
 <td>0..1</td>
 <td>String</td>
-<td>Short description.</td>
+<td>A brief description of the hotel.</td>
 </tr>
 
 <tr>
 <td>LongDescription</td>
 <td>0..1</td>
 <td>String</td>
-<td>Long description.</td>
+<td>An extended description that can include remarks, observations and other relevant information about the hotel.</td>
 </tr>
 
 <tr>
@@ -6245,10 +6297,234 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>RoomDescription</td>
+<td>Rooms</td>
 <td>0..1</td>
+<td></td>
+<td>Rooms.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room</td>
+<td>1..n</td>
+<td></td>
+<td>Room.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
 <td>String</td>
-<td>Room description.</td>
+<td>Room Code.</td>
+</tr>
+
+<tr>
+<td>@size</td>
+<td>1</td>
+<td>Integer</td>
+<td>Size of the room.</td>
+</tr>
+
+<tr>
+<td>@quantity</td>
+<td>1</td>
+<td>Integer</td>
+<td>Number of rooms availables at the hotel.</td>
+</tr>
+
+<tr>
+<td>@viewCode</td>
+<td>1</td>
+<td>String</td>
+<td>Main view of the room. See the full list of card codes at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#view-codes">Lists of Data</a>.</td>
+</tr>
+
+<tr>
+<td>@classificationCode</td>
+<td>1</td>
+<td>String</td>
+<td>Room classification code. See the full list of card codes at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#room-classifications">Lists of Data</a>.</td>
+</tr>
+
+<tr>
+<td>@occupancy</td>
+<td>1</td>
+<td>Integer</td>
+<td>Number of rooms availables at the hotel.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/Description</td>
+<td>1</td>
+<td>String</td>
+<td>Room Description.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/Beds</td>
+<td>0..1</td>
+<td></td>
+<td>Room bedding.</td>
+</tr>
+
+<tr>
+<td>@sharedBed</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Indicates if it&rsquo;s a shared bed.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/Beds/Bed</td>
+<td>1..n</td>
+<td></td>
+<td>Number of beds allocated in the room.</td>
+</tr>
+
+<tr>
+<td>@numberOfBeds</td>
+<td>1</td>
+<td>String</td>
+<td>Number of beds allocated in the room.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>1</td>
+<td>String</td>
+<td>Type of bed. (Queen Bed, Single&hellip;)</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy</td>
+<td>1</td>
+<td></td>
+<td>Room ocuppancy.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Adults</td>
+<td>1</td>
+<td></td>
+<td>Indicates ocuppancy for adults.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Adults/Min</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates minimum number of adults.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Adults/Max</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates maximum number of adults.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Children</td>
+<td>1</td>
+<td></td>
+<td>Indicates ocuppancy for children.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Children/Min</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates minimum number of children.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Children/Max</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates maximum number of children.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Infants</td>
+<td>1</td>
+<td></td>
+<td>Indicates ocuppancy for infants</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Infants/Min</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates minimum number of infants.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Infants/Max</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates maximum number of infants.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Total</td>
+<td>1</td>
+<td></td>
+<td>Indicates total room ocuppancy without breakout per pax.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Total/Min</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates minimum number of paxes.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/RoomOccupancy/Total/Max</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates maximum number of paxes.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/Views</td>
+<td>0..1</td>
+<td></td>
+<td>Views of the room.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/Views/View</td>
+<td>1..n</td>
+<td></td>
+<td>List of views.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/Views/View/Code</td>
+<td>1..n</td>
+<td>String</td>
+<td>View code.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/Views/View/Name</td>
+<td>1..n</td>
+<td>String</td>
+<td>Name of the View.</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/Attributes</td>
+<td>1</td>
+<td></td>
+<td>Room Attributes. (Follows same structure as Hotel Attributes)</td>
+</tr>
+
+<tr>
+<td>Rooms/Room/Images</td>
+<td>1</td>
+<td></td>
+<td>Room Images.  (Follows same structure as Hotel Images)</td>
 </tr>
 
 <tr>
@@ -6423,7 +6699,7 @@ is <strong>180000</strong> milliseconds.</p>
 <td>@code</td>
 <td>1</td>
 <td>String</td>
-<td>Code of card. Se the full list of card codes at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#credit-cards">Lists of Data</a>.</td>
+<td>Code of card. See the full list of card codes at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#credit-cards">Lists of Data</a>.</td>
 </tr>
 
 <tr>
