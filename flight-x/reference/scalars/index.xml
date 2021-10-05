@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Scalars</title>
@@ -24,8 +23,8 @@
       <description>
         
         
-         2-letters IATA airline code
-GraphQL schema definition scalar AirlineCode   
+        2-letters IATA airline code
+GraphQL schema definition 
         
       </description>
     </item>
@@ -39,8 +38,8 @@ GraphQL schema definition scalar AirlineCode
       <description>
         
         
-         IATA defined code identifying a city or station.
-GraphQL schema definition scalar Arrival   
+        IATA defined code identifying a city or station.
+GraphQL schema definition 
         
       </description>
     </item>
@@ -54,8 +53,8 @@ GraphQL schema definition scalar Arrival
       <description>
         
         
-         The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   
+        The Boolean scalar type represents true or false.
+GraphQL schema definition 
         
       </description>
     </item>
@@ -69,7 +68,7 @@ GraphQL schema definition scalar Boolean
       <description>
         
         
-         GraphQL schema definition scalar DateTime   
+        GraphQL schema definition 
         
       </description>
     </item>
@@ -83,8 +82,8 @@ GraphQL schema definition scalar Boolean
       <description>
         
         
-         IATA defined code identifying a city or station.
-GraphQL schema definition scalar Departure   
+        IATA defined code identifying a city or station.
+GraphQL schema definition 
         
       </description>
     </item>
@@ -98,8 +97,8 @@ GraphQL schema definition scalar Departure
       <description>
         
         
-         4 digits or less that are unique flight codes in a day.
-GraphQL schema definition scalar FlightNumber   
+        4 digits or less that are unique flight codes in a day.
+GraphQL schema definition 
         
       </description>
     </item>
@@ -113,8 +112,8 @@ GraphQL schema definition scalar FlightNumber
       <description>
         
         
-         The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.
-GraphQL schema definition scalar Float   
+        The Float scalar type represents signed double-precision fractional values as specified by IEEE 754.
+GraphQL schema definition 
         
       </description>
     </item>
@@ -128,8 +127,8 @@ GraphQL schema definition scalar Float
       <description>
         
         
-         The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar ID   
+        The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
+GraphQL schema definition 
         
       </description>
     </item>
@@ -143,8 +142,8 @@ GraphQL schema definition scalar ID
       <description>
         
         
-         The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   
+        The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+GraphQL schema definition 
         
       </description>
     </item>
@@ -158,8 +157,8 @@ GraphQL schema definition scalar Int
       <description>
         
         
-         IATA Location Code.
-GraphQL schema definition scalar LocationCode   
+        IATA Location Code.
+GraphQL schema definition 
         
       </description>
     </item>
@@ -173,8 +172,8 @@ GraphQL schema definition scalar LocationCode
       <description>
         
         
-         The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar String   
+        The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL schema definition 
         
       </description>
     </item>

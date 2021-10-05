@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Masters</title>
@@ -25,10 +24,9 @@
         
         
         What is the meaning of agency? We can understand an agency as a client, a buyer or a distribution channel. An organization has a set of agencies (at least one).
-
 How to create an agency Considerations It is an incremental load, so bear in mind these considerations:
- If an agency exists then it is updated.
- If an agency does not exist then it is created. Existing agencies that are not referenced are not removed.
+  If an agency exists then it is updated.
+  If an agency does not exist then it is created. Existing agencies that are not referenced are not removed.
         
           [...]
         
@@ -45,13 +43,11 @@ How to create an agency Considerations It is an incremental load, so bear in min
         
         
         What is the meaning of office? xxxx
-
-How to create an office 
-Considerations It is an incremental load, so bear in mind these considerations:
- If an agency exists then it is updated.
- If an agency does not exist then it is created.
- Existing agencies that are not referenced are not removed.
- If an existing agency has to be removed from system then you have to contact with TravelgateX.
+How to create an office Considerations It is an incremental load, so bear in mind these considerations:
+  If an agency exists then it is updated.
+  If an agency does not exist then it is created.
+  Existing agencies that are not referenced are not removed.
+  If an existing agency has to be removed from system then you have to contact with TravelgateX.
         
           [...]
         
@@ -67,12 +63,11 @@ Considerations It is an incremental load, so bear in mind these considerations:
       <description>
         
         
-        How to add a hotel 
-Considerations It is an incremental load, so bear in mind these considerations:
- If a meal plan exists then it is updated.
- If a meal plan does not exist then it is created.
- Existing meal plans that are not referenced are not removed.
- If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+        How to add a hotel Considerations It is an incremental load, so bear in mind these considerations:
+  If a meal plan exists then it is updated.
+  If a meal plan does not exist then it is created.
+  Existing meal plans that are not referenced are not removed.
+  If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
         
           [...]
         
@@ -89,10 +84,10 @@ Considerations It is an incremental load, so bear in mind these considerations:
         
         
         How to add extra info to a hotel Considerations It is an incremental load, so bear in mind these considerations:
- If a meal plan exists then it is updated.
- If a meal plan does not exist then it is created.
- Existing meal plans that are not referenced are not removed.
- If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+  If a meal plan exists then it is updated.
+  If a meal plan does not exist then it is created.
+  Existing meal plans that are not referenced are not removed.
+  If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
         
           [...]
         
@@ -108,12 +103,11 @@ Considerations It is an incremental load, so bear in mind these considerations:
       <description>
         
         
-        How to add a mealplan 
-Considerations It is an incremental load, so bear in mind these considerations:
- If a meal plan exists then it is updated.
- If a meal plan does not exist then it is created.
- Existing meal plans that are not referenced are not removed.
- If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+        How to add a mealplan Considerations It is an incremental load, so bear in mind these considerations:
+  If a meal plan exists then it is updated.
+  If a meal plan does not exist then it is created.
+  Existing meal plans that are not referenced are not removed.
+  If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
         
           [...]
         
@@ -145,12 +139,11 @@ Considerations It is an incremental load, so bear in mind these considerations:
       <description>
         
         
-        How to add a provider 
-Considerations It is an incremental load, so bear in mind these considerations:
- If a meal plan exists then it is updated.
- If a meal plan does not exist then it is created.
- Existing meal plans that are not referenced are not removed.
- If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+        How to add a provider Considerations It is an incremental load, so bear in mind these considerations:
+  If a meal plan exists then it is updated.
+  If a meal plan does not exist then it is created.
+  Existing meal plans that are not referenced are not removed.
+  If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
         
           [...]
         
@@ -166,8 +159,7 @@ Considerations It is an incremental load, so bear in mind these considerations:
       <description>
         
         
-        How to add a provider 
-Considerations It is an incremental load, so bear in mind these considerations:
+        How to add a provider Considerations It is an incremental load, so bear in mind these considerations:
  If a meal plan exists then it is updated. If a meal plan does not exist then it is created. Existing meal plans that are not referenced are not removed. If an existing meal plan has to be removed from system then you have to contact with TravelgateX. If there is any problem with a meal plan&amp;rsquo;s information then it is omitted (and logged) but the load continues.
         
           [...]
@@ -184,10 +176,9 @@ Considerations It is an incremental load, so bear in mind these considerations:
       <description>
         
         
-        How to add a hotel portfolio by agency 
-Considerations It is an absolute load, so bear in mind these considerations:
- If all the data on the file is correct then the existing hotels portfolios by agency are removed and file&amp;rsquo;s data is inserted into the system to define the news hotels portfolios by agency.
- If there is any problem with the file or its data then the load is cancelled and the existing hotels portfolios by agency are not removed.
+        How to add a hotel portfolio by agency Considerations It is an absolute load, so bear in mind these considerations:
+  If all the data on the file is correct then the existing hotels portfolios by agency are removed and file&amp;rsquo;s data is inserted into the system to define the news hotels portfolios by agency.
+  If there is any problem with the file or its data then the load is cancelled and the existing hotels portfolios by agency are not removed.
         
           [...]
         
@@ -203,13 +194,12 @@ Considerations It is an absolute load, so bear in mind these considerations:
       <description>
         
         
-        How to add a destination 
-Considerations It is an incremental load, so bear in mind these considerations:
- If a destination exists then it is updated.
- If a destination does not exist then it is created.
- Existing destinations that are not referenced are not removed.
- If an existing destination has to be removed from system then you have to contact with TravelgateX.
- If there is any problem with a destination&amp;rsquo;s information then it is omitted (and logged) but the load continues.
+        How to add a destination Considerations It is an incremental load, so bear in mind these considerations:
+  If a destination exists then it is updated.
+  If a destination does not exist then it is created.
+  Existing destinations that are not referenced are not removed.
+  If an existing destination has to be removed from system then you have to contact with TravelgateX.
+  If there is any problem with a destination&amp;rsquo;s information then it is omitted (and logged) but the load continues.
         
           [...]
         

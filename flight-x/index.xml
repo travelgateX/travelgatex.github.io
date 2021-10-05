@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Flight-X</title>
@@ -6,6 +5,7 @@
     <description>Recent changes in Flight-X on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -28,6 +28,54 @@
 Flight-X High Level Architecture Suppliers Currently we are seamlessly connected to more than 45 Suppliers (being direct and indirect airlines, GDSs, Aggregators, Consolidators among others), and we keep them all optimized so that response times are super fast and reliable.
         
           [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: API Reference</title>
+      <link>https://travelgatex.com/flight-x/reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/flight-x/reference/</guid>
+      <description>
+        
+        
+        Our reference pages explain all aspects of our GraphQL schema.
+These pages are divided into the following sections:
+Schema: Explains how our Schema works and the two key operations: Queries and Mutations
+Objects: A complete list of all objects in our schema, their definitions, what fields they use and when they are mandatory.
+role=&amp;ldquo;alert&amp;rdquo;&amp;gt;We are currently building out examples for every Object page. Please send us a Pull request if you would like to see an example for a particular Object, or if you would like to share your own example with the TravelgateX community.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: Methods</title>
+      <link>https://travelgatex.com/flight-x/methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/flight-x/methods/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/flight-x/methods/bookingflow/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-exchange&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Booking Flow&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;How to book&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: Release Notes</title>
+      <link>https://travelgatex.com/flight-x/release-notes/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://travelgatex.com/flight-x/release-notes/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/flight-x/release-notes/roadmap/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-road&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Roadmap&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Flight-X roadmap summarized&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/flight-x/release-notes/changelog/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-exchange&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Flight-X changelog&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
         
       </description>
     </item>

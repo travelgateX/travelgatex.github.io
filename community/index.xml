@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Community</title>
@@ -43,7 +42,7 @@
         
         
         This document assists on write release notes with the changelog of products.
- Release Notes Organization How to keep a good changelog  General Principles What is a changelog? Why keep a changelog? Who needs a changelog?  How do I make a good changelog?  Guiding Principles Types of changes  How can I reduce the effort required to maintain a changelogs document? Can changelogs be bad?  Do not document commit log diffs Do not ignore deprecations Avoid confusing dates  Changelog example Reference table Writing resources  Release Notes Organization Release notes includes:
+ Release Notes Organization How to keep a good changelog  General Principles  What is a changelog? Why keep a changelog? Who needs a changelog?     How do I make a good changelog?  Guiding Principles Types of changes   How can I reduce the effort required to maintain a changelogs document? Can changelogs be bad?
         
           [...]
         
@@ -65,6 +64,21 @@ Setups on header On the page header we&amp;rsquo;ll keep the usual page fields n
    Atribute Explanation     n The Gist title that will be shown   g The Gist Id something like: 765fa8dbddd6a17571feb012f9c876bc   o The language that must be in [&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;, &amp;ldquo;other&amp;rdquo;]   u The user Id that hosts the gist   ak The auth key of the referred user something like: 8777cfff-e333&amp;hellip;    EXAMPLE:
         
           [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Community: Integrations Changelog</title>
+      <link>https://travelgatex.com/community/integrations-changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/community/integrations-changelog/</guid>
+      <description>
+        
+        
+        Integrations changelog is conducted at CHANGELOG.md kept with the source code, that is copied on docs at integrations changelog section:
+&amp;lt;a href=&amp;quot;/community/integrations-changelog/public-changelog/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-book&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Public changelog example&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Public changelog, to be published at documentation site&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/community/integrations-changelog/integration-changelog/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-file-code-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Integration changelog example&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Integration changelog, to keep it with the source code&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
         
       </description>
     </item>

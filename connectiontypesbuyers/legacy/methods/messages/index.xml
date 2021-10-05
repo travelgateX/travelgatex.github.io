@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – API Methods</title>
@@ -28,26 +27,6 @@
 Request Format The availability request is very straight forward. It only requires destination, travel dates and the number of pax in each room.
 Response Format Results are organized in this hierarchy=
  Hotel :  A list with all the hotels, including hotel name and code, mealplans list, etc.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypesbuyers: AvailDestinationTree</title>
-      <link>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/availdestinationtree/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/availdestinationtree/</guid>
-      <description>
-        
-        
-        Method Goals This method returns the tree of destinations accessible from the call Avail .
-Request Format The request does not require any elements - it&amp;rsquo;s an empty request.
-Response Format The result returns a list of DestinationTree with their corresponding sub-destinations.
-Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
-AvailDestinationTreeRQ Example &amp;lt;AvailDestinationTreeRQ&amp;gt; &amp;lt;/AvailDestinationTreeRQ&amp;gt;  AvailDestinationTreeRQ Description    Element Number Type Description     AvailDestinationTreeRQ 1  Root node.
         
           [...]
         
@@ -85,7 +64,7 @@ Request Format The request requires one or more of the following data, depending
 Request Format The request does not require any elements empty request.
 Response Format The result returns a list of Category .
 Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
-CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&amp;gt;  CategoryListRQ Description    Element Number Type Description     CategoryListRQ 1  Root node.
+CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&amp;gt; CategoryListRQ Description    Element Number Type Description     CategoryListRQ 1  Root node.
         
           [...]
         
@@ -104,7 +83,7 @@ CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&am
         This node will be in every request and response objects.
 The request object contains the supplier&amp;rsquo;s configuration, urls and credentials.
 The response object contains the status of the request and any possible errors as well as possible messages from the supplier (if previously requested).
-Common Elements RQ Example &amp;lt;HotelBaseRQ&amp;gt; &amp;lt;echoToken&amp;gt;TEST&amp;lt;/echoToken&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;20000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;XXXX&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;optionsQuota&amp;gt;500&amp;lt;/optionsQuota&amp;gt; &amp;lt;ContinuationToken expectedRange = &amp;quot;6000&amp;quot;&amp;gt;&amp;lt;/ContinuationToken&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;USERXX&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;PWXX&amp;lt;/Password&amp;gt; &amp;lt;UrlAvail&amp;gt;www.supplier.com/avail&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlReservation&amp;gt;www.supplier.com/reservation&amp;lt;/UrlReservation&amp;gt; &amp;lt;UrlValuation&amp;gt;www.supplier.com/valuation&amp;lt;/UrlValuation&amp;gt; &amp;lt;UrlGeneric&amp;gt;www.
+Common Elements RQ Example &amp;lt;HotelBaseRQ&amp;gt; &amp;lt;echoToken&amp;gt;TEST&amp;lt;/echoToken&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;20000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;XXXX&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;optionsQuota&amp;gt;500&amp;lt;/optionsQuota&amp;gt; &amp;lt;ContinuationToken expectedRange = &amp;#34;6000&amp;#34;&amp;gt;&amp;lt;/ContinuationToken&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;USERXX&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;PWXX&amp;lt;/Password&amp;gt; &amp;lt;UrlAvail&amp;gt;www.supplier.com/avail&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlReservation&amp;gt;www.supplier.com/reservation&amp;lt;/UrlReservation&amp;gt; &amp;lt;UrlValuation&amp;gt;www.supplier.com/valuation&amp;lt;/UrlValuation&amp;gt; &amp;lt;UrlGeneric&amp;gt;www.supplier.com&amp;lt;/UrlGeneric&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;#34;SegundoPW&amp;#34; value = &amp;#34;PWXML&amp;#34;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; … &amp;lt;/HotelBaseRQ&amp;gt; Common Elements RQ Description    Element Number Type Description     HotelBaseRQ 1  Root node.
         
           [...]
         
@@ -123,7 +102,7 @@ Common Elements RQ Example &amp;lt;HotelBaseRQ&amp;gt; &amp;lt;echoToken&amp;gt;
         Method Goals This method returns a list of currencies the supplier supports in Avail.
 Request Format The request does not require any elements. Empty request.
 Response Format The result returns a list of currencies.
-CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt;  CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.    CurrencyListRS Example &amp;lt;CurrencyListRS&amp;gt; &amp;lt;UpgradeUTCDate&amp;gt;2016-10-18T13:18:03+02:00&amp;lt;/UpgradeUTCDate&amp;gt; &amp;lt;Currencies&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;EUR&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Euro&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;USD&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Dollar&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;/Currencies&amp;gt; &amp;lt;/CurrencyListRS&amp;gt;  CurrencyListRS Description    Element Number Type Description     CurrencyListRS 1  Root node.
+CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt; CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.    CurrencyListRS Example &amp;lt;CurrencyListRS&amp;gt; &amp;lt;UpgradeUTCDate&amp;gt;2016-10-18T13:18:03+02:00&amp;lt;/UpgradeUTCDate&amp;gt; &amp;lt;Currencies&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;EUR&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Euro&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;USD&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Dollar&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;/Currencies&amp;gt; &amp;lt;/CurrencyListRS&amp;gt; CurrencyListRS Description    Element Number Type Description     CurrencyListRS 1  Root node.
         
           [...]
         
@@ -143,7 +122,7 @@ CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&am
 Request Format The request just requires the hotel code and language code (ISO-639-1) - this is specified within the source&amp;ndash;&amp;gt;languageCode).
 Response Format The result returns the details of that hotel.
 Remarks The maximum time permitted in our system before the connection is closed is 180000 milliseconds.
-DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt; &amp;lt;Code&amp;gt;524AC&amp;lt;/Code&amp;gt; &amp;lt;/Hotel&amp;gt; &amp;lt;/DescriptiveInfoRQ&amp;gt;  DescriptiveInfoRQ Description    Element Number Type Description     DescriptiveInfoRQ 1  Root node.
+DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt; &amp;lt;Code&amp;gt;524AC&amp;lt;/Code&amp;gt; &amp;lt;/Hotel&amp;gt; &amp;lt;/DescriptiveInfoRQ&amp;gt; DescriptiveInfoRQ Description    Element Number Type Description     DescriptiveInfoRQ 1  Root node.
         
           [...]
         
@@ -369,7 +348,7 @@ This message must be implemented solely in case the supplier does not return roo
         Method Goals This message returns a template of the supplier&amp;rsquo;s configuration.
 Request Format The request does not require any elements, it is an empty request.
 Response Format The returned XML contains a template of all fields used by the supplier.
-RuntimeConfigurationRQ Example &amp;lt;RuntimeConfigurationRQ&amp;gt; &amp;lt;/RuntimeConfigurationRQ&amp;gt;  RuntimeConfigurationRQ Description    Element Number Type Description     RuntimeConfigurationRQ 1  Root node.    RuntimeConfigurationRS Example &amp;lt;RuntimeConfigurationRS&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User/&amp;gt; &amp;lt;Password/&amp;gt; &amp;lt;UrlGeneric/&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;agencia&amp;quot; value = &amp;quot;&amp;quot;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/RuntimeConfigurationRS&amp;gt;  ConfiguracionRunTimeRS Description    Element Number Type Description     RuntimeConfigurationRS 1  Root node.
+RuntimeConfigurationRQ Example &amp;lt;RuntimeConfigurationRQ&amp;gt; &amp;lt;/RuntimeConfigurationRQ&amp;gt; RuntimeConfigurationRQ Description    Element Number Type Description     RuntimeConfigurationRQ 1  Root node.    RuntimeConfigurationRS Example &amp;lt;RuntimeConfigurationRS&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User/&amp;gt; &amp;lt;Password/&amp;gt; &amp;lt;UrlGeneric/&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;#34;agencia&amp;#34; value = &amp;#34;&amp;#34;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/RuntimeConfigurationRS&amp;gt; ConfiguracionRunTimeRS Description    Element Number Type Description     RuntimeConfigurationRS 1  Root node.
         
           [...]
         
@@ -377,7 +356,7 @@ RuntimeConfigurationRQ Example &amp;lt;RuntimeConfigurationRQ&amp;gt; &amp;lt;/R
     </item>
     
     <item>
-      <title>Connectiontypesbuyers: StaticConfiguration</title>
+      <title>Connectiontypesbuyers: StaticConfiguration (Deprecated)</title>
       <link>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/staticconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -385,7 +364,7 @@ RuntimeConfigurationRQ Example &amp;lt;RuntimeConfigurationRQ&amp;gt; &amp;lt;/R
       <description>
         
         
-        Method Goals This method provides information about the static configuration of the supplier so that it can be effectively configured.
+        role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Important: be aware that this method is deprecated and will not be updated. MetaData is the new and improved version of StaticConfiguration.Method Goals This method provides information about the static configuration of the supplier so that it can be effectively configured.
 Request Format The request does not require any elements - empty request.
 Response Format The XML response contains many elements of the supplier&amp;rsquo;s configuration: number of hotels, number of cities and number of areas available, maximum number of roomcandidate, maximum number of paxes in a roomcandidate, release days, minimum stay, list of languages supported &amp;hellip;
         
@@ -422,7 +401,7 @@ Remarks Our system allows for a maximum of 180000 milliseconds before the connec
       <description>
         
         
-        Avail &amp;lt;soapenv:Envelope xmlns:soapenv = &amp;quot;http://schemas.xmlsoap.org/soap/envelope/&amp;quot; xmlns:ns = &amp;quot;http://schemas.xmltravelgate.com/hub/2012/06&amp;quot; xmlns:wsse = &amp;quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&amp;quot;&amp;gt; &amp;lt;soapenv:Header&amp;gt; &amp;lt;wsse:Security&amp;gt; &amp;lt;wsse:UsernameToken&amp;gt; &amp;lt;wsse:Username&amp;gt;XXXXXX&amp;lt;/wsse:Username&amp;gt; &amp;lt;wsse:Password&amp;gt;XXXXXX&amp;lt;/wsse:Password&amp;gt; &amp;lt;/wsse:UsernameToken&amp;gt; &amp;lt;/wsse:Security&amp;gt; &amp;lt;/soapenv:Header&amp;gt; &amp;lt;soapenv:Body&amp;gt; &amp;lt;ns:Avail&amp;gt; &amp;lt;ns:availRQ&amp;gt; &amp;lt;ns:timeoutMilliseconds&amp;gt;18000&amp;lt;/ns:timeoutMilliseconds&amp;gt; &amp;lt;ns:version&amp;gt;1&amp;lt;/ns:version&amp;gt; &amp;lt;ns:providerRQs&amp;gt; &amp;lt;ns:ProviderRQ&amp;gt; &amp;lt;ns:code&amp;gt;XXX&amp;lt;/ns:code&amp;gt; &amp;lt;ns:id&amp;gt;1&amp;lt;/ns:id&amp;gt; &amp;lt;ns:rqXML&amp;gt; &amp;lt;AvailRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;99999&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;en&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;&amp;lt;/Password&amp;gt; &amp;lt;UrlAvail&amp;gt;http://www.test.net/test_XML_V10.php?&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlReservation&amp;gt;http://www.test.net/scr/reservation_xml.php&amp;lt;/UrlReservation&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;UrlListHoteles&amp;quot; value = &amp;quot;http://www.test.net/scr/searchxml/location.php?&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;quot;UrlConsulta&amp;quot; value = &amp;quot;https://www.test.net/scr/xml/travelgate.php?&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;quot;office&amp;quot; value = &amp;quot;55555&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;quot;password&amp;quot; value = &amp;quot;XXXXXX&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;AvailDestinations&amp;gt; &amp;lt;Destination type = &amp;quot;CTY&amp;quot; code = &amp;quot;XXX&amp;quot;/&amp;gt; &amp;lt;/AvailDestinations&amp;gt; &amp;lt;StartDate&amp;gt;08/08/2012&amp;lt;/StartDate&amp;gt; &amp;lt;EndDate&amp;gt;12/12/2012&amp;lt;/EndDate&amp;gt; &amp;lt;Currency&amp;gt;EUR&amp;lt;/Currency&amp;gt; &amp;lt;RoomCandidates&amp;gt; &amp;lt;RoomCandidate id = &amp;quot;1&amp;quot;&amp;gt; &amp;lt;Paxes&amp;gt; &amp;lt;Pax age = &amp;quot;30&amp;quot; id = &amp;quot;1&amp;quot;/&amp;gt; &amp;lt;Pax age = &amp;quot;30&amp;quot; id = &amp;quot;2&amp;quot;/&amp;gt; &amp;lt;/Paxes&amp;gt; &amp;lt;/RoomCandidate&amp;gt; &amp;lt;/RoomCandidates&amp;gt; &amp;lt;/AvailRQ&amp;gt; &amp;lt;/ns:rqXML&amp;gt; &amp;lt;/ns:ProviderRQ&amp;gt; &amp;lt;/ns:providerRQs&amp;gt; &amp;lt;/ns:availRQ&amp;gt; &amp;lt;/ns:Avail&amp;gt; &amp;lt;/soapenv:Body&amp;gt; &amp;lt;/soapenv:Envelope&amp;gt;  Multi Avail &amp;lt;soapenv:Envelope xmlns:soapenv = &amp;quot;http://schemas.
+        Avail &amp;lt;soapenv:Envelope xmlns:soapenv = &amp;#34;http://schemas.xmlsoap.org/soap/envelope/&amp;#34; xmlns:ns = &amp;#34;http://schemas.xmltravelgate.com/hub/2012/06&amp;#34; xmlns:wsse = &amp;#34;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&amp;#34;&amp;gt; &amp;lt;soapenv:Header&amp;gt; &amp;lt;wsse:Security&amp;gt; &amp;lt;wsse:UsernameToken&amp;gt; &amp;lt;wsse:Username&amp;gt;XXXXXX&amp;lt;/wsse:Username&amp;gt; &amp;lt;wsse:Password&amp;gt;XXXXXX&amp;lt;/wsse:Password&amp;gt; &amp;lt;/wsse:UsernameToken&amp;gt; &amp;lt;/wsse:Security&amp;gt; &amp;lt;/soapenv:Header&amp;gt; &amp;lt;soapenv:Body&amp;gt; &amp;lt;ns:Avail&amp;gt; &amp;lt;ns:availRQ&amp;gt; &amp;lt;ns:timeoutMilliseconds&amp;gt;18000&amp;lt;/ns:timeoutMilliseconds&amp;gt; &amp;lt;ns:version&amp;gt;1&amp;lt;/ns:version&amp;gt; &amp;lt;ns:providerRQs&amp;gt; &amp;lt;ns:ProviderRQ&amp;gt; &amp;lt;ns:code&amp;gt;XXX&amp;lt;/ns:code&amp;gt; &amp;lt;ns:id&amp;gt;1&amp;lt;/ns:id&amp;gt; &amp;lt;ns:rqXML&amp;gt; &amp;lt;AvailRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;99999&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;en&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;&amp;lt;/Password&amp;gt; &amp;lt;UrlAvail&amp;gt;http://www.test.net/test_XML_V10.php?&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlReservation&amp;gt;http://www.test.net/scr/reservation_xml.php&amp;lt;/UrlReservation&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;#34;UrlListHoteles&amp;#34; value = &amp;#34;http://www.test.net/scr/searchxml/location.php?&amp;#34;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;#34;UrlConsulta&amp;#34; value = &amp;#34;https://www.test.net/scr/xml/travelgate.php?&amp;#34;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;#34;office&amp;#34; value = &amp;#34;55555&amp;#34;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;#34;password&amp;#34; value = &amp;#34;XXXXXX&amp;#34;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;AvailDestinations&amp;gt; &amp;lt;Destination type = &amp;#34;CTY&amp;#34; code = &amp;#34;XXX&amp;#34;/&amp;gt; &amp;lt;/AvailDestinations&amp;gt; &amp;lt;StartDate&amp;gt;08/08/2012&amp;lt;/StartDate&amp;gt; &amp;lt;EndDate&amp;gt;12/12/2012&amp;lt;/EndDate&amp;gt; &amp;lt;Currency&amp;gt;EUR&amp;lt;/Currency&amp;gt; &amp;lt;RoomCandidates&amp;gt; &amp;lt;RoomCandidate id = &amp;#34;1&amp;#34;&amp;gt; &amp;lt;Paxes&amp;gt; &amp;lt;Pax age = &amp;#34;30&amp;#34; id = &amp;#34;1&amp;#34;/&amp;gt; &amp;lt;Pax age = &amp;#34;30&amp;#34; id = &amp;#34;2&amp;#34;/&amp;gt; &amp;lt;/Paxes&amp;gt; &amp;lt;/RoomCandidate&amp;gt; &amp;lt;/RoomCandidates&amp;gt; &amp;lt;/AvailRQ&amp;gt; &amp;lt;/ns:rqXML&amp;gt; &amp;lt;/ns:ProviderRQ&amp;gt; &amp;lt;/ns:providerRQs&amp;gt; &amp;lt;/ns:availRQ&amp;gt; &amp;lt;/ns:Avail&amp;gt; &amp;lt;/soapenv:Body&amp;gt; &amp;lt;/soapenv:Envelope&amp;gt; Multi Avail &amp;lt;soapenv:Envelope xmlns:soapenv = &amp;#34;http://schemas.
         
           [...]
         

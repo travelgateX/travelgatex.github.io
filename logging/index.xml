@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Logging</title>
@@ -6,6 +5,7 @@
     <description>Recent changes in Logging on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0200</lastBuildDate>
     <image>
       <url>https://travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -27,6 +27,54 @@
         In order to analyze useful metrics about performance, Logging extracts, loads and stores data from all TravelgateX products.
 Once the metrics are stored in our infrastructure, you can query and analyze your performance using API Logging query or TravelgateX Logging Web
   Working with Logging The most important use case working with Logging is to query about your performance.
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: How-to guides</title>
+      <link>https://travelgatex.com/logging/howtos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/logging/howtos/</guid>
+      <description>
+        
+        
+        The guides &amp;lt;a href=&amp;quot;/logging/howtos/howto-query-logging/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-search-plus&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Query Logging&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;How to query about your performance&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: Reference</title>
+      <link>https://travelgatex.com/logging/reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/logging/reference/</guid>
+      <description>
+        
+        
+        Our reference pages explain all aspects of our GraphQL schema.
+These pages are divided into the following sections:
+Schema: Explains how our Schema works and the two key operations: Queries and Mutations
+Objects: A complete list of all objects in our schema, their definitions, what fields they use and when they are mandatory.
+role=&amp;ldquo;alert&amp;rdquo;&amp;gt;We are currently building out examples for every Object page. Please send us a Pull request if you would like to see an example for a particular Object, or if you would like to share your own example with the TravelgateX community.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: Release Notes</title>
+      <link>https://travelgatex.com/logging/release-notes/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://travelgatex.com/logging/release-notes/</guid>
+      <description>
+        
+        
+        &amp;lt;a href=&amp;quot;/logging/release-notes/breaking-changes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-eraser&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;GraphQL Schema breaking changes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Changes history of deprecated notes previously announced&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/logging/release-notes/changelog/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-exchange&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Logging changelog&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
         
       </description>
     </item>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Scalars</title>
@@ -24,8 +23,8 @@
       <description>
         
         
-         The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by PageInfo:    OperationDetailed:  Stats information per operation  AccessData:    SupplierData:    Provider:  Temporary type to use only during SQL server&amp;#39;s lifetime  OrganizationData:    GroupCommonData:    MemberData:    RoleData:    ResourceData:    APIData:    GroupData:    ClientData:     
+        The Boolean scalar type represents true or false.
+GraphQL schema definition Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/operationdetailed&amp;quot;&amp;gt; OperationDetailed: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Stats information per operation&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/accessdata&amp;quot;&amp;gt; AccessData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/supplierdata&amp;quot;&amp;gt; SupplierData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/provider&amp;quot;&amp;gt; Provider: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Temporary type to use only during SQL server&amp;amp;#39;s lifetime&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/organizationdata&amp;quot;&amp;gt; OrganizationData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/interfaces/groupcommondata&amp;quot;&amp;gt; GroupCommonData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/memberdata&amp;quot;&amp;gt; MemberData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/roledata&amp;quot;&amp;gt; RoleData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/resourcedata&amp;quot;&amp;gt; ResourceData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/apidata&amp;quot;&amp;gt; APIData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/groupdata&amp;quot;&amp;gt; GroupData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/clientdata&amp;quot;&amp;gt; ClientData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
         
       </description>
     </item>
@@ -40,7 +39,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    OperationDet
         
         
         The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
-GraphQL schema definition scalar DateTime   Required by StatsFilterInput:  Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)  Stats:  The service used to access the stats of every connection that uses the HUB  StatsData:    Node:    Access:  An Access is a set of credentials and configuration in order to access the system of a Supplier.
+GraphQL schema definition Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/stats&amp;quot;&amp;gt; Stats: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;The service used to access the stats of every connection that uses the HUB&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/statsdata&amp;quot;&amp;gt; StatsData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/interfaces/node&amp;quot;&amp;gt; Node: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/access&amp;quot;&amp;gt; Access: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;An Access is a set of credentials and configuration in order to access the system of a Supplier.
         
           [...]
         
@@ -56,8 +55,8 @@ GraphQL schema definition scalar DateTime   Required by StatsFilterInput:  Filte
       <description>
         
         
-         Scalar for type Domain
-GraphQL schema definition scalar DomainName   Required by DomainData:     
+        Scalar for type Domain
+GraphQL schema definition Required by 
         
       </description>
     </item>
@@ -72,7 +71,7 @@ GraphQL schema definition scalar DomainName   Required by DomainData:
         
         
         The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar ID   Required by Stats:  The service used to access the stats of every connection that uses the HUB  AdviseMessage:  List of advise messages.
+GraphQL schema definition Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/advisemessage&amp;quot;&amp;gt; AdviseMessage: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;List of advise messages.
         
           [...]
         
@@ -88,8 +87,8 @@ GraphQL schema definition scalar ID   Required by Stats:  The service used to ac
       <description>
         
         
-         The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   Required by Ratios:  Ratios details  OperationDetailed:  Stats information per operation  SupplierData:    GroupData:    StatsInfo:  Details of an specific error  StatsAsset:  Asset of an specific error   
+        The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+GraphQL schema definition Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/operationdetailed&amp;quot;&amp;gt; OperationDetailed: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Stats information per operation&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/supplierdata&amp;quot;&amp;gt; SupplierData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/groupdata&amp;quot;&amp;gt; GroupData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/statsinfo&amp;quot;&amp;gt; StatsInfo: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Details of an specific error&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/statsasset&amp;quot;&amp;gt; StatsAsset: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Asset of an specific error&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
         
       </description>
     </item>
@@ -103,8 +102,10 @@ GraphQL schema definition scalar Int   Required by Ratios:  Ratios details  Oper
       <description>
         
         
-         The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar String   Required by StatsEdge:    PageInfo:    AdviseMessage:  List of advise messages.  AccessData:    Error:  Application errors  Parameter:  Parameters for additional information for the supplier&amp;#39;s configuration.  SupplierData:    Provider:  Temporary type to use only during SQL server&amp;#39;s lifetime  AccessEdge:    OrganizationData:    GroupCommonData:    MemberData:    RoleEdge:    RoleData:    ResourceEdge:    ResourceData:    MemberEdge:    APIEdge:    APIData:    OperationEdge:    OperationData:    ProductEdge:    ProductData:    SupplierEdge:    ClientEdge:    GroupEdge:    GroupData:    ManagedGroupEdge:    ExternalMessage:     
+        The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL schema definition Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/pageinfo&amp;quot;&amp;gt; PageInfo: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/advisemessage&amp;quot;&amp;gt; AdviseMessage: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;List of advise messages.&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/accessdata&amp;quot;&amp;gt; AccessData: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/error&amp;quot;&amp;gt; Error: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Application errors&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/parameter&amp;quot;&amp;gt; Parameter: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Parameters for additional information for the supplier&amp;amp;#39;s configuration.
+        
+          [...]
         
       </description>
     </item>
@@ -118,8 +119,8 @@ GraphQL schema definition scalar String   Required by StatsEdge:    PageInfo:   
       <description>
         
         
-         The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
-GraphQL schema definition scalar URI   Required by Urls:  Url&amp;#39;s  StatsAsset:  Asset of an specific error   
+        The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
+GraphQL schema definition Required by  &amp;lt;li class=&amp;quot;lifields&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;/stats/reference/objects/statsasset&amp;quot;&amp;gt; StatsAsset: &amp;lt;/a&amp;gt; &amp;lt;span&amp;gt;Asset of an specific error&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt;  
         
       </description>
     </item>
