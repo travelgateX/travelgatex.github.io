@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Configuration</title>
@@ -74,7 +75,7 @@ This rule can be set by agency or by organization on general settings: when defi
         
         
         Distribution allows you to make a currency exchange from the currency your suppliers provide you to the currency that your buyers are requesting you. The currency exchange used by default in Distribution is updated every day from the European Central Bank. However, you can customize your own currency exchange using the currency exchange master file to indicate your own base currencye and the exchanges you prefer.
-role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Is possible to check the exact currency exchange that Distribution is using in that moment in the Searches panel at the extranet.
+Is possible to check the exact currency exchange that Distribution is using in that moment in the Searches panel at the extranet.
         
           [...]
         
@@ -90,8 +91,8 @@ role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Is possible to check the exact currency 
       <description>
         
         
-        Time Zone With this rule it be can set the Time Zone to use with some rules, as:
- Selling Pricing Rules: the Booking Date field (dates from &amp;amp; to), the Booking Hour field and the Booking Day field. Specific Stop Sales: the Booking Date field (dates from &amp;amp; to).  Rest of date fields and rules related to dates are managed as UTC. By default this rule is set to UTC Time Zone.
+        Time Zone With this rule it be can set the Time Zone to use with some rules, as: * Selling Pricing Rules: the Booking Date field (dates from &amp;amp; to), the Booking Hour field and the Booking Day field. * Specific Stop Sales: the Booking Date field (dates from &amp;amp; to).
+Rest of date fields and rules related to dates are managed as UTC. By default this rule is set to UTC Time Zone.
         
           [...]
         

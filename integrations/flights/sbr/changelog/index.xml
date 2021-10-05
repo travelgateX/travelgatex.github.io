@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – SBR - Sabre Changelog</title>
@@ -24,7 +25,7 @@
       <description>
         
         
-        2020-01-08  Parsing of baggage with import=0 Parsing of included baggage  
+         2020-01-08  Parsing of baggage with import=0 Parsing of included baggage   
         
       </description>
     </item>
@@ -38,7 +39,7 @@
       <description>
         
         
-        2019-12-18  Parsing of special suplements of AvailabilityFares branded fares  
+         2019-12-18  Parsing of special suplements of AvailabilityFares branded fares   
         
       </description>
     </item>
@@ -52,7 +53,7 @@
       <description>
         
         
-        2019-11-27  Now when it tries to add it checks if it is before and if it deletes it..  
+         2019-11-27  Now when it tries to add it checks if it is before and if it deletes it..   
         
       </description>
     </item>
@@ -66,7 +67,7 @@
       <description>
         
         
-        2019-11-25  Added seats to bill with price 0 when not reserved because of &amp;ldquo;PNS not allowed&amp;rdquo; error.  
+         2019-11-25  Added seats to bill with price 0 when not reserved because of &amp;ldquo;PNS not allowed&amp;rdquo; error.   
         
       </description>
     </item>
@@ -80,7 +81,7 @@
       <description>
         
         
-        2019-11-19  Sending duplicated birthdates causing the error &amp;ldquo;DB already collected&amp;rdquo; on Reservation.  
+         2019-11-19  Sending duplicated birthdates causing the error &amp;ldquo;DB already collected&amp;rdquo; on Reservation.   
         
       </description>
     </item>
@@ -94,7 +95,7 @@
       <description>
         
         
-        2019-11-15  Now in reservation PassengerDetails we always send the element ReceivedFrom.  
+         2019-11-15  Now in reservation PassengerDetails we always send the element ReceivedFrom.   
         
       </description>
     </item>
@@ -108,7 +109,7 @@
       <description>
         
         
-        2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.  
+         2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.   
         
       </description>
     </item>

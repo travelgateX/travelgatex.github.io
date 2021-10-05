@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – TravelgateX</title>
@@ -5,7 +6,6 @@
     <description>Recent changes in TravelgateX on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0200</lastBuildDate>
     <image>
       <url>https://travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -29,120 +29,6 @@ GraphQL Gateway TravelgateX is the travel API completely based in GraphQL. Unlik
 Our Gateway is the only endpoint to access all of our APIs. It is written in NodeJS. This makes it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime.
         
           [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: Concepts</title>
-      <link>https://travelgatex.com/travelgatex/concepts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/travelgatex/concepts/</guid>
-      <description>
-        
-        
-        &amp;lt;a href=&amp;quot;/travelgatex/concepts/common-resources/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-users&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Common resources&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Learn about common resources used in TravelgateX&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/concepts/quotas-limits/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-balance-scale&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Quotas &amp;amp;amp; Limits&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/concepts/request-headers/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-plus-circle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Request Headers&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;HTTP request headers required in all API requests&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/concepts/http-response-status-codes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-code&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Response status codes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;HTTP response status codes indicate whether a specific HTTP request has been successfully completed&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: Reference</title>
-      <link>https://travelgatex.com/travelgatex/reference/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/travelgatex/reference/</guid>
-      <description>
-        
-        
-        Our reference pages explain all aspects of our GraphQL schema.
-These pages are divided into the following sections:
-Schema: Explains how our Schema works and the two key operations: Queries and Mutations
-Objects: A complete list of all objects in our schema, their definitions, what fields they use and when they are mandatory.
-role=&amp;ldquo;alert&amp;rdquo;&amp;gt;We are currently building out examples for every Object page. Please send us a Pull request if you would like to see an example for a particular Object, or if you would like to share your own example with the TravelgateX community.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: Security</title>
-      <link>https://travelgatex.com/travelgatex/security/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/travelgatex/security/</guid>
-      <description>
-        
-        
-        Providing secure access to our capabilities and data is a core priority for us.
-Our security measures include:
-&amp;lt;a href=&amp;quot;/travelgatex/security/overview/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-file-text-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Overview&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Learn platform security&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/security/identity-access-management/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-address-card-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Identity and access management&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Advanced security management&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: Data Automation</title>
-      <link>https://travelgatex.com/travelgatex/data-automation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/travelgatex/data-automation/</guid>
-      <description>
-        
-        
-        Bulk Data Automation Several of our TravelgateX API products use your data in order to perform tasks.
-For example, your application may use certain field names to describe rooms, hotel amenities, and rates. These need to be matched to field names for your suppliers.
-You can upload your data to our platform by:
- Uploading it via SFTP or Changing data via a mutation.  You can decide what is the best way for you to get your updated data into our servers.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: Tutorials</title>
-      <link>https://travelgatex.com/travelgatex/tutorials/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/travelgatex/tutorials/</guid>
-      <description>
-        
-        
-        What you can build on TravelgateX&amp;rsquo;s platform
-&amp;lt;a href=&amp;quot;/travelgatex/tutorials/ota-site/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-plane&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Build An OTA&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Build your own full fledged OTA&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/tutorials/howto-configure-permissions/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-lock&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Configure HotelX Security&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Configure your own HotelX security model&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: Release Notes</title>
-      <link>https://travelgatex.com/travelgatex/release-notes/</link>
-      <pubDate>Tue, 15 Oct 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://travelgatex.com/travelgatex/release-notes/</guid>
-      <description>
-        
-        
-        &amp;lt;a href=&amp;quot;/travelgatex/release-notes/roadmap/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-road&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Roadmap&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;We have put together a GitHub Project where we will keep updating on the things we’ve in our plans.&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/release-notes/graphql-schema-changes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons&amp;quot;&amp;gt;&amp;lt;img width=&amp;quot;24px&amp;quot; src=&amp;quot;/images/graphql.svg&amp;quot;/&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;GraphQL Schema Changes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;It includes backwards-compatible changes, schema previews, and upcoming breaking changes.&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/release-notes/breaking-changes/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-eraser&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;GraphQL Schema breaking changes&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Changes history of deprecated notes previously announced&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/travelgatex/release-notes/products-changelogs/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons&amp;quot;&amp;gt;&amp;lt;img width=&amp;quot;24px&amp;quot; src=&amp;quot;/images/isotype_travelgatex.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Travelgatex: Resources</title>
-      <link>https://travelgatex.com/travelgatex/resources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/travelgatex/resources/</guid>
-      <description>
-        
-        
-        
         
       </description>
     </item>

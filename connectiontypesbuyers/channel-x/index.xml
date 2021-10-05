@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Channel-X</title>
@@ -26,56 +27,6 @@
         Channel-X extracts the product loaded by Channel Managers into our Inventory system and sends it to a third partner, normally an OTA. As a Buyer, you will have the option of loading all the product into your system by selecting the Full Copy tab in Inventory&amp;rsquo;s extranet, having the possibility to only select the hotels you are interested in copying. Also, each update the Channel Manager does, will be notified in a smaller product request, as you will only receive information that has changed.
         
           [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypesbuyers: API reference</title>
-      <link>https://travelgatex.com/connectiontypesbuyers/channel-x/api-reference/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypesbuyers/channel-x/api-reference/</guid>
-      <description>
-        
-        
-        The API described in this document is used to transmit rate, availability and inventory, data between Channel-X and a partner system. A full implementation of this API requires that the partner system provides a service endpoint that accepts requests from Channel-X of the following types: HotelRatePlanInventoryNotif, HotelRatePlanNotif, HotelAvailNotif.
-You will find detailed information and examples of each method in the Messages section. In Code List you will find all codes used by the system.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypesbuyers: FAQ</title>
-      <link>https://travelgatex.com/connectiontypesbuyers/channel-x/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypesbuyers/channel-x/faq/</guid>
-      <description>
-        
-        
-        Generic What is the timezone displayed in the messages?
-Time zone is always UTC.
-HotelRatePlanInventoryNotif, HotelRatePlanNotif and HotelAVailNotif all include another message called &amp;ldquo;Derived&amp;rdquo;. What is a Derived rate and what is its purpose?
-A derived rate is a rate that has derived from its base rate, but you can change its condition so that you can present it as a discounted rate or some sort of offer. In the derived rate message you will also see a RateBasePlanCode.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypesbuyers: Release Notes</title>
-      <link>https://travelgatex.com/connectiontypesbuyers/channel-x/release-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypesbuyers/channel-x/release-notes/</guid>
-      <description>
-        
-        
-        &amp;lt;a href=&amp;quot;/connectiontypesbuyers/channel-x/release-notes/changelog/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-commenting-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Changelog&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Channel-X Changelog&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
         
       </description>
     </item>

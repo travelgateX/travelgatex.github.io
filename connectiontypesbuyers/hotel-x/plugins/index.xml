@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Plugins</title>
@@ -97,7 +98,7 @@ You can also replace the value of an existing parameter by adding into the query
         Aggregation plugins extends HotelX allowing aggregation Supplier options and responses using different business rules.
 Aggregation Key Aggregate Supplier options based on field keys applying a selector function over field values.
 It&amp;rsquo;s based on SQL Aggregate Functions.
- Field Keys as a combination of:  binding board cancelPolicy currency hotel market payment promotion rateRules  refundable room supplement supplier surcharges    Name The aggregation mode currently only supports one mode &amp;ldquo;cheapest_price&amp;rdquo;.
+ Field Keys as a combination of:  binding board cancelPolicy currency hotel market payment promotion rateRules  refundable room supplement supplier surcharges   Name The aggregation mode currently only supports one mode &amp;ldquo;cheapest_price&amp;rdquo;.
         
           [...]
         
@@ -114,7 +115,7 @@ It&amp;rsquo;s based on SQL Aggregate Functions.
         
         
         Booking Persistence is a plugin that allows clients to store bookings.
-Booking Persistence {#Booking Persistence} Goals Booking Persistence is a plugin that allows clients to store bookings and avoid duplicated bookings. A duplicated booking is a booking that has the same cliente reference that other previous booking.
+Booking Persistence Goals Booking Persistence is a plugin that allows clients to store bookings and avoid duplicated bookings. A duplicated booking is a booking that has the same cliente reference that other previous booking.
 This plugin only can be executed in book service. With this plugin, each booking (by clientReference) of an organization is unique. Each booking done with this plugin will be stored until one day after booking checkout day.
         
           [...]
@@ -234,7 +235,7 @@ CurrencyX This plugin receives an Option and a currency and returns the same opt
       <description>
         
         
-        const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;5067eb7a-6020-4621-79d3-1c5cd8c1d27b&#34;; $(document).ready(main); function main() { const q = &#39;[{\u0022apikey\u0022:\u00228626cf56-e364-4fd1-4fe0-311e23ac6355\u0022,\u0022gist\u0022:\u0022https:\/\/gist.githubusercontent.com\/tgx-bot\/74a01699ccc7f7a8f043f6583e64fcde\/raw\u0022,\u0022divname\u0022:\u0022div_admin_destinations\u0022},{\u0022apikey\u0022:\u00225067eb7a-6020-4621-79d3-1c5cd8c1d27b\u0022,\u0022gist\u0022:\u0022https:\/\/gist.githubusercontent.com\/tgx-bot\/f820c0508f7d47432eaad34823d426e0\/raw\u0022,\u0022divname\u0022:\u0022div_searchbydestinations\u0022}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.
+        const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;5067eb7a-6020-4621-79d3-1c5cd8c1d27b&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x228626cf56-e364-4fd1-4fe0-311e23ac6355\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/74a01699ccc7f7a8f043f6583e64fcde\/raw\x22,\x22divname\x22:\x22div_admin_destinations\x22},{\x22apikey\x22:\x225067eb7a-6020-4621-79d3-1c5cd8c1d27b\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/f820c0508f7d47432eaad34823d426e0\/raw\x22,\x22divname\x22:\x22div_searchbydestinations\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.
         
           [...]
         
@@ -251,22 +252,6 @@ CurrencyX This plugin receives an Option and a currency and returns the same opt
         
         
         On this page you will learn how to develop your own HotelX Plugin.
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypesbuyers: Format files</title>
-      <link>https://travelgatex.com/connectiontypesbuyers/hotel-x/plugins/format-files/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypesbuyers/hotel-x/plugins/format-files/</guid>
-      <description>
-        
-        
-        &amp;lt;a href=&amp;quot;/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-file-text-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Commission supplier&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Format commission supplier file.&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-file-text-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Hotel Commission&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Format hotel commission file.&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypesbuyers/hotel-x/plugins/format-files/group/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-file-text-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Group&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Format group file.&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypesbuyers/hotel-x/plugins/format-files/commission/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-file-text-o&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;Commission&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Format commission file.
-        
-          [...]
         
       </description>
     </item>

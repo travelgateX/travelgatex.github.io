@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Release Notes</title>
@@ -5,7 +6,6 @@
     <description>Recent changes in Release Notes on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://travelgatex.com/img/hugo.png</url>
       <title>GoHugo.io</title>
@@ -24,26 +24,12 @@
       <description>
         
         
-        2019 Q4   NDC API
- Availability/Shopping (AirShopping) Pricing/Quote (OfferPrice) Booking/Reservation (OrderCreate) Retrieve (OrderView) Ticketing/Issuance (AirDocIssue) Cancel (OrderCancel)    Backoffice + Web GUI
- Customer Setup Access configuration Monitoring &amp;amp; Statistics Dashboard    CLI
-  2020 Q1   NDC API
- Airline Profile (AirlineProfile) Preorder Ancillaries (AirShopping) Postorder Ancillaries (ServiceList, SeatAvailability, OrderRetrieve, OrderReshop, OrderChange)    Local Cache
+         2019 Q4  NDC API
+ Availability/Shopping (AirShopping) Pricing/Quote (OfferPrice) Booking/Reservation (OrderCreate) Retrieve (OrderView) Ticketing/Issuance (AirDocIssue) Cancel (OrderCancel)  Backoffice + Web GUI
+ Customer Setup Access configuration Monitoring &amp;amp; Statistics Dashboard  CLI
+  2020 Q1  NDC API
+ Airline Profile (AirlineProfile) Preorder Ancillaries (AirShopping) Postorder Ancillaries (ServiceList, SeatAvailability, OrderRetrieve, OrderReshop, OrderChange)  Local Cache
   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Flight-X: Flight-X changelog</title>
-      <link>https://travelgatex.com/flight-x/release-notes/changelog/</link>
-      <pubDate>Thu, 20 Feb 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://travelgatex.com/flight-x/release-notes/changelog/</guid>
-      <description>
-        
-        
-        Easily accessible log of notable changes to Flight-X
         
       </description>
     </item>

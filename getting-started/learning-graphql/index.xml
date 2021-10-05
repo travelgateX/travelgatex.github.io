@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Learning GraphQL</title>
@@ -40,10 +41,8 @@
       <description>
         
         
-        What are Queries &amp;amp; Mutations There are two basic operations in GraphQL schemas:
-Queries Queries ask the system to provide some data, based on specfic parameters. This operation reads values from the server using a GraphQL Object and returns JSON text as a response.
-Queries are interactive. You can use our API Playground to test your queries.
-role=&amp;ldquo;alert&amp;rdquo;&amp;gt; Here you&amp;rsquo;ll find how to make queries to search for available hotels and get quotes.
+        What are Queries &amp;amp; Mutations There are two basic operations in GraphQL schemas:  Queries: Requesting data from a data model. An example Query would be: checking availability of hotels for a particular date and location  Mutations: Making changes and carrying out transactions on data in the data model. An example Mutation would be: making a booking to reserve a hotel room on a particular date.
+Queries Queries ask the system to provide some data, based on specfic parameters.
         
           [...]
         

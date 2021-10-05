@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – MappeaX</title>
@@ -29,26 +30,6 @@
     </item>
     
     <item>
-      <title>Mappea: Reference</title>
-      <link>https://travelgatex.com/mappea/reference/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/mappea/reference/</guid>
-      <description>
-        
-        
-        Our reference pages explain all aspects of our GraphQL schema.
-These pages are divided into the following sections:
-Schema: Explains how our Schema works and the two key operations: Queries and Mutations
-Objects: A complete list of all objects in our schema, their definitions, what fields they use and when they are mandatory.
-role=&amp;ldquo;alert&amp;rdquo;&amp;gt;We are currently building out examples for every Object page. Please send us a Pull request if you would like to see an example for a particular Object, or if you would like to share your own example with the TravelgateX community.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Mappea: GraphQL Schema breaking changes</title>
       <link>https://travelgatex.com/mappea/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -57,7 +38,7 @@ role=&amp;ldquo;alert&amp;rdquo;&amp;gt;We are currently building out examples f
       <description>
         
         
-        role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Changes history of deprecated notes previously announcedUnreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 .
+        Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.
         
           [...]
         

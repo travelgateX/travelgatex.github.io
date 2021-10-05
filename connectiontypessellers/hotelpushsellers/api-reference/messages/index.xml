@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TravelgateX Documentation – Messages</title>
@@ -13,51 +14,6 @@
     
 	    <atom:link href="https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/messages/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Connectiontypessellers: Set Up Messages</title>
-      <link>https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/messages/set-up/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/messages/set-up/</guid>
-      <description>
-        
-        
-        Providers needs to implement HotelRatePlanInventoryRetrieve meessages to retrieve Seller&amp;rsquo;s static inventory in order to map the hotelier inventory into their system. Optionally Providers can set up the product using HotelRatePlanInventoryNotif messages.
-&amp;lt;a href=&amp;quot;/connectiontypessellers/hotelpushsellers/api-reference/messages/set-up/hotelrateplaninventoryretrieve/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-list&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;HotelRatePlanInventoryRetrieve&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;HotelRatePlanInventoryRetrieve message&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypessellers/hotelpushsellers/api-reference/messages/set-up/hotelrateplaninventorynotif/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-cog&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;HotelRatePlanInventoryNotif&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;HotelRatePlanInventoryNotif message&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypessellers: Product Load Messages</title>
-      <link>https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/messages/product-load/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/messages/product-load/</guid>
-      <description>
-        
-        
-        Providers need to implement HotelRatePlanNotif and HotelAvailNotif messages in order to synchronize hotelier rates and availability. Optionally Providers can read all the properties of their product loaded on our system using HotelAvailRetrieve and HotelRatePlanRetrieve messages.
-&amp;lt;a href=&amp;quot;/connectiontypessellers/hotelpushsellers/api-reference/messages/product-load/hotelavailnotif/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-upload&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;HotelAvailNotif&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;HotelAvailNotif message&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypessellers/hotelpushsellers/api-reference/messages/product-load/hotelavailretrieve/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-download&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;HotelAvailRetrieve&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;HotelAvailRetrieve message&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypessellers/hotelpushsellers/api-reference/messages/product-load/hotelrateplannotif/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-upload&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;HotelRatePlanNotif&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;HotelRatePlanNotif message&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypessellers/hotelpushsellers/api-reference/messages/product-load/hotelrateplanretrieve/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-download&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;HotelRatePlanRetrieve&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;HotelRatePlanRetrieve message&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Connectiontypessellers: Booking Flow Messages</title>
-      <link>https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/messages/booking-flow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/messages/booking-flow/</guid>
-      <description>
-        
-        
-        Providers can receive an instant API notification from TGX with HotelResNotif message for bookings and CancelNotif message for cancellations. If Provider doesn&amp;rsquo;t allow push notifications to their system, it is possible to implement HotelResRetrieve messages in order to obtain a list of bookings from Inventory-X system.
-role=&amp;ldquo;alert&amp;rdquo;&amp;gt;Please notice that card payments are only allowed if Provider implements HotelResNotif message&amp;lt;a href=&amp;quot;/connectiontypessellers/hotelpushsellers/api-reference/messages/booking-flow/hotelresretrieve/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-retweet&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;HotelResRetrieve&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;HotelResRetrieve message&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypessellers/hotelpushsellers/api-reference/messages/booking-flow/hotelresnotif/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-bell&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;HotelResNotif&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;HotelResNotif message&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;/connectiontypessellers/hotelpushsellers/api-reference/messages/booking-flow/cancelnotif/&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;inner-card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;material-icons fa fa-bell&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h3 class=&amp;quot;text-headline&amp;quot;&amp;gt;CancelNotif&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;CancelNotif message&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;  
-        
-      </description>
-    </item>
     
   </channel>
 </rss>
