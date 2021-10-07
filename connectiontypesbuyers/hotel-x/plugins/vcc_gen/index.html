@@ -3073,70 +3073,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5646,14 +5582,15 @@
 <ul>
 <li>
 <ul>
-<li><a href="#vccgen">Virtual Credit Card Generator (Vcc Gen)</a>
+<li>
 <ul>
-<li><a href="#goals">Goals</a></li>
+<li><a href="#vccgen">What it does</a></li>
+<li><a href="#how-to-use-it">How to use it</a></li>
+<li><a href="#execution-example">Execution example</a></li>
 </ul></li>
 <li><a href="#file-format">File Format</a>
 <ul>
 <li><a href="#sample-file">Sample File</a></li>
-<li><a href="#execution-example">Execution example</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5797,65 +5734,15 @@
 
 <p>Vcc Gen is an optional plugin that adds the possibility to create a virtual credit card at Book step, in order to pay the reservation&rsquo;s import with it.</p>
 
-<h2 id="vccgen">Virtual Credit Card Generator (Vcc Gen)</h2>
-
-<h3 id="goals">Goals</h3>
+<h3 id="vccgen">What it does</h3>
 
 <p>The Vcc Gen plugin <strong>creates a virtual credit card</strong> with an activation and expiration date chosen by the client. The client must also send the token for the virtual credit card. The service will return the information of the newly created payment card  in the response, even if the Book step has failed. This information includes the holder name, credit card number, CVC, expiration date and the card type (for instance <code>VI</code>) <strong>(TODO: list of available card types)</strong>. It also returns the source or the supplier that has created this virtual credit card.</p>
 
 <p>You can apply rules through the genvcc.csv configuration file, in order to use or not the a certain vcc, depending on the file configuration and the request parameters. <em>More details regarding configuration below</em>.</p>
 
-<p>Loading a GenVcc is as easy as following the steps below:</p>
+<h3 id="how-to-use-it">How to use it</h3>
 
-<h2 id="file-format">File Format</h2>
-
-<p>The file should be in the below format:</p>
-
-<ul>
-<li><strong>Encoding</strong>: UTF-8</li>
-<li><strong>File Name</strong>: [Context Source]_sequential_genvcc.csv</li>
-
-<li><p><strong>Header Row</strong>: IdRule,ClientToken,NoClientToken,Supplier,NoSupplier,Hotels,NotHotels,Access,NoAccess,CardType,VccAccess</p></li>
-
-<li><p>IdRule: Unique identifier of the rule. Used only for debug.</p></li>
-
-<li><p>Criteria columns:</p>
-
-<ul>
-<li>ClientToken, NoClientToken: List of <code>clienttoken</code> separated by &lsquo;;&rsquo;</li>
-<li>Supplier, NoSupplier: List of <code>supplier</code> codes separated by &lsquo;;&rsquo;</li>
-<li>Hotels, NoHotels: List of <code>hotels</code> codes separated by &lsquo;;&rsquo;</li>
-<li>Access, NoAccess: List of <code>access</code> codes separated by &lsquo;;&rsquo;</li>
-</ul></li>
-
-<li><p>Result columns:</p>
-
-<ul>
-<li>CardType: Card Type of the virtual credit card to be created</li>
-<li>VccAccess: Virtual Credit Card access
-<br />
-<br /></li>
-</ul>
-
-<p><em>You should bear in mind that this file is a collection of rules and we chose in every Book the first rule that matches the criteria sent in the Query. <strong>You should specify the more restrictive rules on the top of the file.</strong>
-If there is no value for any rule criteria row, it means that any value in the request matches this row.
-It is important to indicate the contexts used in values on the rule criteria to improve rule matching.</em></p></li>
-
-<li><p><strong>Delimiter</strong>:  Comma (&ldquo;,&rdquo;)</p></li>
-
-<li><p><strong>Directory</strong>:  /F[folder code]<em>[unique code]/HotelX</em>[unique code]/</p></li>
-</ul>
-
-<h3 id="sample-file">Sample File</h3>
-
-<p><strong>Name</strong>: <code>HOTELTEST_sequential_genvcc.csv</code></p>
-
-<p><strong>Sample Data</strong>:</p>
-
-<pre><code class="language-csv">    IdRule,ClientToken,NoClientToken,Supplier,NoSupplier,Hotels,NotHotels,Access,NoAccess,CardType,VccAccess
-    r1,,,,HOTELTEST;TESTPRV,,,,,CA,vccAccess1
-    r2,,,supplier_test,,hotel1;hotel2,,access1;access2,,VI,vccAccess2
-</code></pre>
+<p>Use this plugin by adding it to the <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/" rel="nofollow" target="_blank">settings</a> in your HotelX Search Query.</p>
 
 <h3 id="execution-example">Execution example</h3>
 
@@ -5915,6 +5802,58 @@ It is important to indicate the contexts used in values on the rule criteria to 
 			}
         ]
 	},
+</code></pre>
+
+<p>Loading a GenVcc is as easy as following the steps below:</p>
+
+<h2 id="file-format">File Format</h2>
+
+<p>The file should be in the below format:</p>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8</li>
+<li><strong>File Name</strong>: [Context Source]_sequential_genvcc.csv</li>
+
+<li><p><strong>Header Row</strong>: IdRule,ClientToken,NoClientToken,Supplier,NoSupplier,Hotels,NotHotels,Access,NoAccess,CardType,VccAccess</p></li>
+
+<li><p>IdRule: Unique identifier of the rule. Used only for debug.</p></li>
+
+<li><p>Criteria columns:</p>
+
+<ul>
+<li>ClientToken, NoClientToken: List of <code>clienttoken</code> separated by &lsquo;;&rsquo;</li>
+<li>Supplier, NoSupplier: List of <code>supplier</code> codes separated by &lsquo;;&rsquo;</li>
+<li>Hotels, NoHotels: List of <code>hotels</code> codes separated by &lsquo;;&rsquo;</li>
+<li>Access, NoAccess: List of <code>access</code> codes separated by &lsquo;;&rsquo;</li>
+</ul></li>
+
+<li><p>Result columns:</p>
+
+<ul>
+<li>CardType: Card Type of the virtual credit card to be created</li>
+<li>VccAccess: Virtual Credit Card access
+<br />
+<br /></li>
+</ul>
+
+<p><em>You should bear in mind that this file is a collection of rules and we chose in every Book the first rule that matches the criteria sent in the Query. <strong>You should specify the more restrictive rules on the top of the file.</strong>
+If there is no value for any rule criteria row, it means that any value in the request matches this row.
+It is important to indicate the contexts used in values on the rule criteria to improve rule matching.</em></p></li>
+
+<li><p><strong>Delimiter</strong>:  Comma (&ldquo;,&rdquo;)</p></li>
+
+<li><p><strong>Directory</strong>:  /F[folder code]<em>[unique code]/HotelX</em>[unique code]/</p></li>
+</ul>
+
+<h3 id="sample-file">Sample File</h3>
+
+<p><strong>Name</strong>: <code>HOTELTEST_sequential_genvcc.csv</code></p>
+
+<p><strong>Sample Data</strong>:</p>
+
+<pre><code class="language-csv">    IdRule,ClientToken,NoClientToken,Supplier,NoSupplier,Hotels,NotHotels,Access,NoAccess,CardType,VccAccess
+    r1,,,,HOTELTEST;TESTPRV,,,,,CA,vccAccess1
+    r2,,,supplier_test,,hotel1;hotel2,,access1;access2,,VI,vccAccess2
 </code></pre>
 
 <hr/>

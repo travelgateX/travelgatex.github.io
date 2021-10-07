@@ -3073,70 +3073,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5648,11 +5584,12 @@
 <ul>
 <li>
 <ul>
-<li><a href="#aggregation-key">Aggregation Key</a></li>
-<li><a href="#name">Name</a></li>
+<li><a href="#what-it-does">What it does</a></li>
+<li><a href="#how-to-use-it">How to use it</a></li>
 <li><a href="#parameters">Parameters</a></li>
-<li><a href="#where-to-place">Where to place</a></li>
+<li><a href="#name">Name</a></li>
 <li><a href="#execution-example">Execution example</a></li>
+<li><a href="#file-format">File format</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5794,11 +5731,11 @@
               
 
 
-<p><strong>Aggregation plugins</strong> extends <a href="/hotel-x/">HotelX</a> allowing aggregation <code>Supplier</code> options and responses using different business rules.</p>
+<p><strong>Aggregation plugin</strong> extends <a href="/hotel-x/">HotelX</a> allowing the aggregation of <code>Supplier</code> options using different business rules.</p>
 
-<h3 id="aggregation-key">Aggregation Key</h3>
+<h3 id="what-it-does">What it does</h3>
 
-<p>Aggregate <code>Supplier</code> options based on <em>field keys</em> applying a selector <em>function</em> over <em>field values</em>.</p>
+<p>Aggregation plugin aggregate <code>Supplier</code> options based on <em>field keys</em> applying a selector <em>function</em> over <em>field values</em>.</p>
 
 <p>It&rsquo;s based on <a href="https://www.postgresql.org/docs/current/static/functions-aggregate.html" rel="nofollow" target="_blank">SQL Aggregate Functions</a>.</p>
 
@@ -5820,12 +5757,14 @@
 <li>supplement</li>
 <li>supplier</li>
 <li>surcharges</li>
+<li>ratePlan</li>
+<li>status</li>
 </ul></li>
 </ul>
 
-<h3 id="name">Name</h3>
+<h3 id="how-to-use-it">How to use it</h3>
 
-<p>The aggregation mode currently only supports one mode &ldquo;cheapest_price&rdquo;. You will need to set this in the &ldquo;name&rdquo; field when using the plugin as shown in the example below.</p>
+<p>Use this plugin by adding it to the <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/" rel="nofollow" target="_blank">settings</a> in your HotelX Search Query.</p>
 
 <h3 id="parameters">Parameters</h3>
 
@@ -5844,18 +5783,18 @@
 <td>primaryKey</td>
 <td>string</td>
 <td>mandatory</td>
-<td>It is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:<br>example: “hotel,supplier,room”</td>
+<td>It is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:<br>example: “hotel,supplier,room,status”</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="where-to-place">Where to place</h3>
+<h3 id="name">Name</h3>
 
-<p>Use this plugin by adding it to the <a href="https://docs.travelgatex.com/hotel-x/concepts/settings/" rel="nofollow" target="_blank">settings</a> in your HotelX Search Query.</p>
+<p>The aggregation mode only supports by now one mode: &ldquo;cheapest_price&rdquo;. You will need to set this in the &ldquo;name&rdquo; field when using the plugin as shown in the example below.</p>
 
 <h3 id="execution-example">Execution example</h3>
 
-<pre><code>{
+<pre><code class="language-json">{
     &quot;plugins&quot;: {
         &quot;step&quot;: &quot;RESPONSE&quot;,
         &quot;pluginsType&quot;: [
@@ -5873,6 +5812,10 @@
     }
 }
 </code></pre>
+
+<h3 id="file-format">File format</h3>
+
+<p>No files are needed in order to use this plugin.</p>
 
 <hr/>
 

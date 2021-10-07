@@ -3074,70 +3074,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5780,11 +5716,9 @@
               </div>
               
 
-	<p><code>Plugins</code> are the <em>secret sauce</em> of the <a href="/hotel-x/">HotelX</a> API. Think of plugins as features you can implement to your basic development that will introduce at a <strong>request</strong> level all the business logic you normally would have had to implement on your side. These plugins can be used to fully customize the request and response in any way you wish, and  can be added as your business grows and evolves. No need to aggregate responses now that you only have a few suppliers live? No problem. With Hotel-X, it&rsquo;s easy to add this feature once your business needs it.</p>
+	<p><code>Plugins</code> are the <em>secret sauce</em> of the <a href="/hotel-x/">HotelX</a> API. Think of plugins as features that will introduce at a <strong>request</strong> level all the business logic you normally would have had to implement on your side. These plugins can be used to fully customize the request and response in any way you wish, and can be added as your business grows and evolves. No need to aggregate responses now that you only have a few suppliers live? No problem. With Hotel-X, it&rsquo;s easy to add this feature once your business needs it.</p>
 
-<p><a href="/hotel-x/">HotelX</a> Plugins are a separate Go application that get compiled into the main application and run natively in our servers.</p>
-
-<p>Anyone can write a <a href="/hotel-x/">HotelX</a> <code>Plugin</code>, and which <code>Plugins</code> get executed can be specified at the request level, or be configured by default.</p>
+<p><a href="/hotel-x/">HotelX</a> Plugins are a separate Go application that get compiled into the main application and run natively in our servers. Plugins are specified at the request level, or be configured by default.</p>
 
 <p>Below is the list of <code>Plugins</code> TravelgateX has already developed. Got a suggestion? Head to our <a href="https://community.travelgatex.com/" rel="nofollow" target="_blank">TGX Community</a></p>
 
@@ -5809,7 +5743,7 @@
 				<div class="material-icons fa fa-flag"></div>
 			<div>
 				<h3 class="text-headline">Blacklist</h3>
-					<p>Hotel codes Blacklist: filter out specific hotels from the Search query.</p>
+					<p>Hotel codes Blacklist: filter out specific hotels from the Search query</p>
 			</div>
 			
 			
@@ -5942,42 +5876,6 @@
 			<div>
 				<h3 class="text-headline">Search by destination</h3>
 					<p>Enables search query to request per destinations by converting destination codes to hotel codes</p>
-			</div>
-			
-			
-			
-		</div>
-	</a>
-	<a href="/connectiontypesbuyers/hotel-x/plugins/development/" class="card">
-		<div class="inner-card">
-				<div class="material-icons fa fa-wrench"></div>
-			<div>
-				<h3 class="text-headline">Development</h3>
-					<p>Learn how to develop your own plugins and addd your magic to the API.</p>
-			</div>
-			
-			
-			
-		</div>
-	</a>
-	<a href="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="card">
-		<div class="inner-card">
-				<div class="material-icons fa fa-file-code-o"></div>
-			<div>
-				<h3 class="text-headline">Format files</h3>
-					<p>Format files explanation.</p>
-			</div>
-			
-			
-			
-		</div>
-	</a>
-	<a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="card">
-		<div class="inner-card">
-				<div class="material-icons fa fa-cubes"></div>
-			<div>
-				<h3 class="text-headline">Entities</h3>
-					<p>Table entities processed values.</p>
 			</div>
 			
 			

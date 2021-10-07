@@ -3073,70 +3073,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5646,8 +5582,13 @@
 <ul>
 <li>
 <ul>
-<li><a href="#plugin">Plugin</a></li>
+<li>
+<ul>
+<li><a href="#safetymargin">What it does</a></li>
+<li><a href="#how-to-use-it">How to use it</a></li>
+</ul></li>
 <li><a href="#destinations">Example query destinations &amp; hotels by access</a></li>
+<li><a href="#pluginsearchbydestinations">Example query with execution plugin search by destinations</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -6136,17 +6077,23 @@
 </style>
 </p>
 
-<p>Search by destination is a feature to search by destinations codes in the Search query. To use it, codes must be sent in &lsquo;CriteriaSearch&rsquo;. Destination codes will be converted to hotel codes, then merged with the hotel codes sent in criteria if any, and finally the request will be sent to the supplier. In order to achieve the destination to hotel conversion, a source must be specified in a plugin.</p>
+<p>Search by destination is a feature to search by destinations codes in the Search query.</p>
 
-<h2 id="plugin">Plugin</h2>
+<h3 id="safetymargin">What it does</h3>
+
+<p>In order to use it, codes must be sent in &lsquo;CriteriaSearch&rsquo;. Destination codes will be converted to hotel codes, then merged with the hotel codes sent in criteria if any, and finally the request will be sent to the supplier. In order to achieve the destination to hotel conversion, a source must be specified in a plugin.</p>
+
+<h3 id="how-to-use-it">How to use it</h3>
+
+<p>Use this plugin by adding it to the <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/" rel="nofollow" target="_blank">settings</a> in your HotelX Search Query.</p>
 
 <p>The conversion must be done at the &lsquo;REQUEST&rsquo; step, either in type &lsquo;PRE_STEP&rsquo; or &lsquo;POST_STEP&rsquo;. The parameter with key &ldquo;accessID&rdquo; is mandatory and is the access used to convert destinations to hotel from its hotel list, which means that the hotel codes obtained are in the same context as the access.</p>
 
-<p><strong>Query get hotels &amp; destination</strong> <a href="/hotel-x/plugins/search_by_destination#destinations">Get hotels &amp; destinations</a></p>
+<p><strong>Query get hotels &amp; destination</strong> <a href="#destinations">Get hotels &amp; destinations</a></p>
 
-<p><strong>Query execute plugin search by destination</strong> <a href="/hotel-x/plugins/search_by_destination#pluginsearchbydestinations">Plugin search by destination</a></p>
+<p><strong>Query execute plugin search by destination</strong> <a href="#pluginsearchbydestinations">Plugin search by destination</a></p>
 
-<pre><code>{
+<pre><code class="language-json">{
     &quot;plugins&quot;: {
         &quot;step&quot;: &quot;REQUEST&quot;,
         &quot;pluginsType&quot;: [
@@ -6173,14 +6120,20 @@
         <div class="pulse"></div>
         <img src="/images/iconX.png">
     </div>
-</div>
- ## Example query with execution plugin search by destinations {#pluginsearchbydestinations}
- <div id='div_searchbydestinations' class='graphiql-display'>
+</div></p>
+
+<h2 id="pluginsearchbydestinations">Example query with execution plugin search by destinations</h2>
+
+<div id='div_searchbydestinations' class='graphiql-display'>
     <div class="pulse-holder">
         <div class="pulse"></div>
         <img src="/images/iconX.png">
     </div>
-</div></p>
+</div>
+
+<p>### File format</p>
+
+<p>No files are needed in order to use this plugin.</p>
 
 <hr/>
 
@@ -6204,7 +6157,7 @@
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/hotel-x/plugins/converter/" title="Go to previous page | Currency Converter"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Currency Converter</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/hotel-x/plugins/development/" title="Go to next page | Development" style="margin-right: 0px;">Development<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/hotel-x/bestpractices/" title="Go to next page | Best Practices" style="margin-right: 0px;">Best Practices<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

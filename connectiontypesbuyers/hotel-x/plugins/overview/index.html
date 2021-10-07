@@ -3073,70 +3073,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5651,7 +5587,8 @@
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#flows">Flows</a></li>
 <li><a href="#steps">Steps</a></li>
-<li><a href="#plugin-types">Plugin Types</a></li>
+<li><a href="#plugintypes">Plugin Types</a></li>
+<li><a href="##pluginnames">Plugin Names</a></li>
 <li><a href="#plugin-context-execution">Plugin Context Execution</a></li>
 <li><a href="#plugin-step-execution">Plugin Step Execution</a></li>
 <li><a href="#ftp-endpoint">Ftp Endpoint</a></li>
@@ -5659,6 +5596,16 @@
 <ul>
 <li><a href="#root-path">Root path</a></li>
 <li><a href="#example">Example</a></li>
+</ul></li>
+<li><a href="#update_ftp_data">Updating ftp data</a></li>
+<li><a href="#deleting-ftp-data">Deleting ftp data</a></li>
+<li><a href="#entityprocessed">Entities processed types:</a>
+<ul>
+<li><a href="#sequential">Sequential</a></li>
+<li><a href="#supplier">Supplier</a></li>
+<li><a href="#access">Access</a></li>
+<li><a href="#hotel">Hotel</a></li>
+<li><a href="#destination">Destination</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#how-to-execute-a-plugin">How to execute a plugin</a></li>
@@ -5804,7 +5751,7 @@
 
 <h3 id="introduction">Introduction</h3>
 
-<p><em>Plugins</em> are custom code, executed in <a href="/hotel-x/">HotelX</a> servers, that add or modify specific functionalities. Any <code>Partner</code> can develop custom <em>Plugins</em>, nevertheless HotelX, <a href="/hotel-x/">HotelX</a> has developed many <em>Plugins</em> available for anyone to use out of the box.</p>
+<p><a href="/hotel-x/">HotelX</a> <em>Plugins</em> are a separate Go application that get compiled into the main application and run natively in our servers that add or modify specific functionalities. Plugins are specified at the request level, or be configured by default.</p>
 
 <h3 id="flows">Flows</h3>
 
@@ -5819,6 +5766,7 @@
 <li>Search</li>
 <li>Quote</li>
 <li>Book</li>
+<li>Booking</li>
 <li>Cancel</li>
 </ul>
 
@@ -5862,19 +5810,43 @@
 </tbody>
 </table>
 
-<h3 id="plugin-types">Plugin Types</h3>
+<h3 id="plugintypes">Plugin Types</h3>
 
 <p>Plugin types supported by <a href="/hotel-x/">HotelX</a>:</p>
 
 <ul>
-<li>[Pre Step]: First execution on every <em>step</em>.</li>
-<li><a href="../mapping">Hotel Map</a>: Hotel mapping codes.</li>
-<li><a href="../mapping">Board Map</a>: Board mapping codes.</li>
-<li><a href="../mapping">Room Map</a>: Room mapping codes.</li>
-<li><a href="../converter">Currency Conversion</a>: Currency rate conversion.</li>
-<li><a href="../net-price">Net Price</a>: Calculate the net price. </li>
-<li><a href="../aggregation">Aggregation</a>: Aggregate multiple <code>supplier</code> options.</li>
-<li>[Post Step]: Last execution on every <em>step</em>.</li>
+<li>[PRE_STEP]: First execution on every <em>step</em>.</li>
+<li><a href="../mapping">HOTEL_MAP</a>: Hotel mapping codes.</li>
+<li><a href="../mapping">BOARD_MAP</a>: Board mapping codes.</li>
+<li><a href="../mapping">ROOM_MAP</a>: Room mapping codes.</li>
+<li><a href="../mapping">PROMOTION_MAP</a>: Promotion mapping codes.</li>
+<li><a href="../mapping">AMENITY_MAP</a>: Amenity mapping codes.</li>
+<li><a href="../converter">CURRENCY_CONVERSION</a>: Currency rate conversion.</li>
+<li><a href="../net-price">COMMISSION</a>: Calculate the net price. </li>
+<li><a href="../aggregation">AGGREGATION</a>: Aggregate multiple <code>supplier</code> options.</li>
+<li><a href="../markets_groups">MARKETS_GROUP</a>: Groups the Search result by markets that share the same product.</li>
+<li>[POST_STEP]: Last execution on every <em>step</em>.</li>
+</ul>
+
+<h3 id="#pluginnames">Plugin Names</h3>
+
+<ul>
+<li><a href="../mapping">hotel_map</a>: Hotel mapping codes.</li>
+<li><a href="../mapping">board_mapX</a>: Board mapping codes.</li>
+<li><a href="../mapping">room_mapX</a>: Room mapping codes.</li>
+<li><a href="../mapping">promotion_mapX</a>: Promotion mapping codes.</li>
+<li><a href="../mapping">amenity_mapX</a>: Amenity mapping codes.</li>
+<li><a href="../converter">currency_exchange</a>: Currency rate conversion.</li>
+<li><a href="../net-price">commission</a>: Calculate the net price.</li>
+<li><a href="../aggregation">cheapest_price</a>: Aggregate multiple <code>supplier</code> options.</li>
+<li><a href="../search_by_destination">search_by_destination</a>: Enables search query to request per destinations by converting destination codes to hotel codes.</li>
+<li><a href="../add_parameterx">add_parameterX</a>: Allows Add Parameter to the access created for a supplier.</li>
+<li><a href="../black-list">blacklist</a>: Filter out specific hotels from the Search query.</li>
+<li><a href="../booking_persistence">booking_detail_persistence</a>: Allows to store and avoid duplicated bookings.</li>
+<li><a href="../markets_groups">market_groupX</a>: Groups the Search result by markets that share the same product.</li>
+<li><a href="../preference">preference</a>: To give preference to the options that match the preference rules.</li>
+<li><a href="../safety_margin">safety_margin</a>: Discards those options that have a commission higher than expected.</li>
+<li><a href="../vcc_gen">genvcc</a>: Creates a virtual credit card at Book step.</li>
 </ul>
 
 <h3 id="plugin-context-execution">Plugin Context Execution</h3>
@@ -5888,11 +5860,9 @@
 <li>Read objects available in all <a href="/hotel-x/">HotelX</a> operations.</li>
 </ul>
 
-<p>With <em>context</em> information developers can personalize <em>plugin</em> features, more information about plugin development can be found <a href="../development">here</a>.</p>
-
 <h3 id="plugin-step-execution">Plugin Step Execution</h3>
 
-<p><a href="/hotel-x/">HotelX</a> determines the order and <a href="#plugintypes">plugin types</a> executed for each <em>step</em>.</p>
+<p><a href="/hotel-x/">HotelX</a> determines the order and the plugins executed for each <em>step</em>. Notice that not all the <a href="#pluginnames">plugins available</a> in HotelX have a <a href="#plugintypes">plugin type</a>. The following table shows the plugins with <a href="#plugintypes">plugin types</a> and also the rest of the plugins with their corresponding <a href="#pluginnames">plugin name</a>.</p>
 
 <table>
 <thead>
@@ -5902,40 +5872,45 @@
 <th><strong>quote</strong></th>
 <th><strong>hotelBook</strong></th>
 <th><strong>hotelCancel</strong></th>
+<th><strong>hotelBooking</strong></th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
 <td><em>Request</em></td>
-<td>[Pre Step]<br><a href="../mapping">Hotel Map</a><br>[Post Step]</td>
-<td>[Pre Step]<br>[Post Step]</td>
-<td>[Pre Step]<br>[Post Step]</td>
-<td>[Pre Step] <br>[Post Step]</td>
+<td>[PRE_STEP]<br><a href="../mapping">HOTEL_MAP</a><br>[POST_STEP]</td>
+<td>[PRE_STEP]<br>[POST_STEP]</td>
+<td>[PRE_STEP]<br><a href="../booking_persistence">booking_detail_persistence</a><br><a href="../vcc_gen">genvcc</a><br>[POST_STEP]</td>
+<td>[PRE_STEP] <br>[POST_STEP]</td>
+<td>[PRE_STEP] <br>[POST_STEP]</td>
 </tr>
 
 <tr>
 <td><em>Request Access</em></td>
-<td>[Pre Step]<br>[Post Step]</td>
-<td>[Pre Step] <br>[Post Step]</td>
-<td>[Pre Step] <br>[Post Step]</td>
-<td>[Pre Step] <br>[Post Step]</td>
+<td>[PRE_STEP]<br><a href="../add_parameterx">add_parameterX</a><br><a href="../markets_groups">MARKETS_GROUP</a><br><a href="../black-list">blacklist</a><br>[POST_STEP]</td>
+<td>[PRE_STEP]<br><a href="../add_parameterx">add_parameterX</a><br>[POST_STEP]</td>
+<td>[PRE_STEP]<br><a href="../add_parameterx">add_parameterX</a><br>[POST_STEP]</td>
+<td>[PRE_STEP]<br><a href="../add_parameterx">add_parameterX</a><br>[POST_STEP]</td>
+<td>[PRE_STEP]<br><a href="../add_parameterx">add_parameterX</a><br>[POST_STEP]</td>
 </tr>
 
 <tr>
 <td><em>Response Option</em></td>
-<td>[Pre Step]<br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="#../rate-map">Rate Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../net-price#commissionX">CommissionX</a><br><a href="../aggregation">Aggregation</a><br>[Post Step]<br><a href="../safety_margin">Safety Margin</a></td>
-<td>[Pre Step]<br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../net-price#commissionX">CommissionX</a><br>[Post Step]</td>
-<td>[Pre Step]<br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br><a href="../net-price#commissionX">CommissionX</a><br>[Post Step]</td>
-<td>[Pre Step]<br><a href="../mapping">Board Map</a><br><a href="../mapping">Room Map</a><br><a href="../currency-conversion">Currency Conversion</a><br><a href="../net-price">Net Price</a><br>[Post Step]</td>
+<td>[PRE_STEP]<br><a href="../mapping">BOARD_MAP</a><br><a href="../mapping">ROOM_MAP</a><br><a href="../mapping">AMENITY_MAP</a><br><a href="../mapping">PROMOTION_MAP</a><br><a href="../converter">CURRENCY_CONVERSION</a><br><a href="../net-price">COMMISSION</a><br><a href="../safety_margin">safety_margin</a><br>[POST_STEP]</td>
+<td>[PRE_STEP]<a href="../converter">CURRENCY_CONVERSION</a><br><a href="../net-price">COMMISSION</a><br>[POST_STEP]</td>
+<td>[PRE_STEP]<br><a href="../converter">CURRENCY_CONVERSION</a><br><a href="../net-price">COMMISSION</a><br>[POST_STEP]</td>
+<td>[PRE_STEP]<br><a href="../converter">CURRENCY_CONVERSION</a><br><a href="../net-price">COMMISSION</a><br>[POST_STEP]</td>
+<td>[PRE_STEP]<br><a href="../converter">CURRENCY_CONVERSION</a><br><a href="../net-price">COMMISSION</a><br>[POST_STEP]</td>
 </tr>
 
 <tr>
 <td><em>Response</em></td>
-<td>[Pre Step]<br><a href="../aggregation">Aggregation</a><br>[Post Step]</td>
-<td>[Pre Step] <br>[Post Step]</td>
-<td>[Pre Step] <br>[Post Step]</td>
-<td>[Pre Step] <br>[Post Step]</td>
+<td>[PRE_STEP]<br><a href="../aggregation">AGGREGATION</a><br><a href="../preference">preference</a>[POST_STEP]</td>
+<td>[PRE_STEP] <br>[POST_STEP]</td>
+<td>[PRE_STEP] <br>[POST_STEP]</td>
+<td>[PRE_STEP] <br>[POST_STEP]</td>
+<td>[PRE_STEP] <br>[POST_STEP]</td>
 </tr>
 </tbody>
 </table>
@@ -5980,29 +5955,96 @@ role="alert"><p>You will receive access credentials to the FTP server with your 
 <li><code>/F**0**\_**178**/HotelX\_**179**</code></li>
 </ul>
 
+<h3 id="update_ftp_data">Updating ftp data</h3>
+
+<p>We have two options:</p>
+
+<ol>
+<li>Reprocessing the same data by renaming the file and just removing &ldquo;_processed&rdquo;.<br>
+Example: <strong>SourceContext_DestinationContext_entity_map_processed.csv &ndash;&gt; example.csv</strong></li>
+<li>Changing the data by deleting the processed file and uploading a new one with new information.
+<br /></li>
+</ol>
+
+<h3 id="deleting-ftp-data">Deleting ftp data</h3>
+
+<p>Uploading a new file only with headers (no information).</p>
+
+<pre><code class="language-csv">Code Source, Code Destination
+</code></pre>
+
+<h3 id="entityprocessed">Entities processed types:</h3>
+
+<h4 id="sequential">Sequential</h4>
+
+<p>Type of processing sequentially, the first rule that coincides will be the one applied.</p>
+
+<h4 id="supplier">Supplier</h4>
+
+<p>Rules applied or indexed at the supplier level.</p>
+
+<h4 id="access">Access</h4>
+
+<p>Rules applied or indexed at the access level.</p>
+
+<h4 id="hotel">Hotel</h4>
+
+<p>The key to indexing is of the hotel type, we hope that the reference is by a hotel code where the type will be given by the context.</p>
+
+<h4 id="destination">Destination</h4>
+
+<p>Idem hotel.</p>
+
+<p>We have different combinations values from entities values this table show this combinations:</p>
+
+<table>
+<thead>
+<tr>
+<th><strong>entity</strong></th>
+<th>chainCodes</th>
+<th>destinationCodes</th>
+<th>hotelCodes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>chain</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>hotel</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>destination</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
 <h2 id="how-to-execute-a-plugin">How to execute a plugin</h2>
 
-<p>A <a href="/hotel-x/plugins/">plugin</a> execution can be specified in any request’s HotelSettingsInput and it must specify in which step it should be executed. The plugin type and name are mandatory in order to identify a plugin instance.</p>
+<p>A <em>plugin</em> execution can be specified in any request’s HotelSettingsInput and it must specify in which step it should be executed. The plugin type and name are mandatory in order to identify a plugin instance.</p>
 
-<pre><code>&quot;plugins&quot;: {
-
-   &quot;step&quot;: PluginStepType,
-
-   &quot;pluginsType&quot;: [
-
-    {
-
-     &quot;type&quot;: PluginType,
-
-     &quot;name&quot;: plugin name (its unique),
-
-     &quot;parameters&quot;: []
-
-    }
-
-   ]
-
-  }
+<pre><code class="language-json">		&quot;plugins&quot;: [
+			{
+				&quot;step&quot;: &quot;PluginStepType&quot;,
+				&quot;pluginsType&quot;: {
+					&quot;name&quot;: &quot;plugin name (its unique)&quot;,
+					&quot;type&quot;: &quot;PluginType&quot;,
+                    &quot;parameters&quot;: []
+				}
+			}
+		]
 </code></pre>
 
 <hr/>

@@ -3073,70 +3073,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5646,13 +5582,15 @@
 <ul>
 <li>
 <ul>
-<li><a href="#currencyx">CurrencyX</a>
+<li>
 <ul>
+<li><a href="#what-it-does">What it does</a></li>
+<li><a href="#how-to-use-it">How to use it</a></li>
+<li><a href="#execution-example">Execution example</a></li>
 <li><a href="#file-format">File Format</a>
 <ul>
 <li><a href="#sample-file">Sample File</a></li>
 </ul></li>
-<li><a href="#execution-example">Execution example</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5794,9 +5732,9 @@
               
 
 
-<p>Currency converter is an optional plugin and allows to apply currency conversion over all the prices in one Option.</p>
+<p>Currency converter is an optional plugin that allows to apply currency conversion over all the prices in one Option.</p>
 
-<h2 id="currencyx">CurrencyX</h2>
+<h3 id="what-it-does">What it does</h3>
 
 <p>This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file located in our ftp. Is mandatory that this file exists in the ftp and satisfies all the requirements below. Otherwise, an error will be returned. The node in graphQL that indicates the currency exchange rate is:</p>
 
@@ -5817,56 +5755,22 @@
 <p>otherwise, you will receive:</p>
 
 <pre><code>&quot;exchange&quot;: {
-	&quot;currency&quot;: &quot;EUR&quot;,   //New currency
+	&quot;currency&quot;: &quot;USD&quot;,   //New currency
 	&quot;rate&quot;: 0.86         //Rate exchange applied
 },
 </code></pre>
 
-<h3 id="file-format">File Format</h3>
+<h3 id="how-to-use-it">How to use it</h3>
 
-<p>The file should be in the below format:</p>
+<p>Use this plugin by adding it to the <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/" rel="nofollow" target="_blank">settings</a> in your HotelX Search Query.</p>
 
-<ul>
-<li><strong>Encoding</strong>: UTF-8 </li>
-<li><strong>File Name</strong>: currency_map.csv </li>
-<li><strong>Header Row</strong>: Code, Rate 
-
-<ul>
-<li>Decimal separator for rate must be point (&ldquo;.&rdquo;)</li>
-</ul></li>
-<li><strong>Delimiter</strong>:  Comma (“,”) </li>
-<li><strong>Directory</strong>:  /[folder code]_[unique code]/HotelX_[unique code]/</li>
-</ul>
-
-<h4 id="sample-file">Sample File</h4>
-
-<p><strong>Name</strong>: currency_map.csv</p>
-
-<p><strong>Data</strong>:</p>
-
-<pre><code class="language-csv">Code,Rate
-AED,4.74
-CAD,1.61
-CHF,1.26
-EUR,1.09
-GBP,1.00
-INR,84.40
-MAD,12.17
-THB,42.91
-USD,1.29
-</code></pre>
-
-<p>The rate with value 1.00 is the base rate. Other rates are calculated from it.</p>
+<h3 id="execution-example">Execution example</h3>
 
 <p>The value of step, type, and name is always the specified in the example below. The two parameters are mandatory and their value means:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&ldquo;currency&rdquo;:</strong> It is a string value in ISO 4217 standard (&ldquo;XXX&rdquo;). It is the currency to which you want to convert.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&ldquo;exclude&rdquo;:</strong> is a Boolean value (true / false). This parameter only has an effect on the search query. It determines if the options on which the currency change cannot be applied (no currency found in ftp) are excluded. <br /></p>
 
-<p>In addition, it is necessary that option and parameter currencies are in ftp file.</p>
-
-<h3 id="execution-example">Execution example</h3>
-
-<pre><code>{
+<pre><code class="language-json">{
   &quot;plugins&quot;: [
     {
       &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
@@ -5890,6 +5794,44 @@ USD,1.29
   ]
 }
 </code></pre>
+
+<p>In addition, it is necessary that option and parameter currencies are in ftp file.</p>
+
+<h3 id="file-format">File Format</h3>
+
+<p>The file should be in the below format:</p>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8 </li>
+<li><strong>File Name</strong>: <code>currency_map.csv</code></li>
+<li><strong>Header Row</strong>: Code,Rate 
+
+<ul>
+<li>Decimal separator for rate must be point (&ldquo;.&rdquo;)</li>
+</ul></li>
+<li><strong>Delimiter</strong>:  Comma (“,”) </li>
+<li><strong>Directory</strong>:  /[folder code]_[unique code]/HotelX_[unique code]/</li>
+</ul>
+
+<h4 id="sample-file">Sample File</h4>
+
+<p><strong>Name</strong>: <code>currency_map.csv</code></p>
+
+<p><strong>Data</strong>:</p>
+
+<pre><code class="language-csv">Code,Rate
+AED,4.74
+CAD,1.61
+CHF,1.26
+EUR,1.09
+GBP,1.00
+INR,84.40
+MAD,12.17
+THB,42.91
+USD,1.29
+</code></pre>
+
+<p>The rate with value 1.00 is the base rate. Other rates are calculated from it.</p>
 
 <hr/>
 

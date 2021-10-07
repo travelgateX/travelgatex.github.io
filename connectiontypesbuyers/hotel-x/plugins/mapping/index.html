@@ -3073,70 +3073,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5646,7 +5582,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#entity-maps">Entity Maps</a>
+<li>
 <ul>
 <li><a href="#file-format">File Format</a></li>
 <li><a href="#file-names">File Names</a></li>
@@ -5672,11 +5608,7 @@
 <li><a href="#execution-example">Execution example</a></li>
 </ul></li>
 <li><a href="#default-codes">Default Codes</a></li>
-<li><a href="#modifying-data-through-ftp">Modifying data through FTP</a>
-<ul>
-<li><a href="#updating-data">Updating data</a></li>
-<li><a href="#deleting-data">Deleting data</a></li>
-</ul></li>
+<li><a href="#modifying-data-through-ftp">Modifying data through FTP</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -5820,17 +5752,15 @@
 <p>The mapping feature is used to change the supplier&rsquo;s native codes to the Buyer&rsquo;s own codes or vice-versa. There are these types:</p>
 
 <ul>
-<li>Hotel Map </li>
-<li>Board Map </li>
-<li>Room Map </li>
-<li>Rate Map </li>
-<li>Amenity Map </li>
+<li>Hotel Map</li>
+<li>Board Map</li>
+<li>Room Map</li>
+<li>Rate Map</li>
+<li>Amenity Map</li>
 <li>Promotion Map</li>
 </ul>
 
 <p>Our mapping formats share a common structure. In order to load your maps you just need to follow the instructions below:</p>
-
-<h2 id="entity-maps">Entity Maps</h2>
 
 <h3 id="file-format">File Format</h3>
 
@@ -5849,7 +5779,7 @@
 <li><p>1 file for each supplier</p></li>
 </ul></li>
 
-<li><p><strong>Header Row</strong>: Code Source, Code Destination</p>
+<li><p><strong>Header Row</strong>: Code Source,Code Destination</p>
 
 <ul>
 <li><p>Context Source: it corresponds to the client codes</p></li>
@@ -5960,7 +5890,7 @@
 <li><p>Supplier Code: BVJ</p></li>
 </ul>
 
-<p><strong>Name</strong>: GUE_BVJ_hotel_map.csv</p>
+<p><strong>Name</strong>: <code>GUE_BVJ_hotel_map.csv</code></p>
 
 <pre><code class="language-csv">Code Source, Code Destination
 10,c11\#10
@@ -6003,14 +5933,14 @@ You can also specify a context for each of the plugins you&rsquo;ll use in your 
 
 <p><strong>Important</strong>: Mapping in booking-flow is only usable in Search service.<br><br>
 Here you have the nodes where you can find mapped codes in Search response:<br><br>
-<strong>Hotel</strong>: search.options[<em>].hotelCode (hotelCodeSupplier will contain the hotel&rsquo;s code in supplier&rsquo;s context)<br>
-<strong>Board</strong>: search.options[</em>].boardCode (boardCodeSupplier will contain the board&rsquo;s code in supplier&rsquo;s context)<br>
-<strong>Room</strong>: search.options[<em>].rooms[</em>].code (supplierCode will contain the room&rsquo;s code in supplier&rsquo;s context)<br>
-<strong>Rate</strong>: search.options[<em>].rooms[</em>].ratePlans[<em>].code (supplierCode will contain the rate plan&rsquo;s code of the room in supplier&rsquo;s context)<br>
-<strong>Amenity</strong>: search.options[</em>].amenities[*].code and/or inside rooms<a href="amenitySupplierCode will contain the amenity's code in supplier context" rel="nofollow" target="_blank">*</a><br>
-<strong>Promotion</strong>: search.options[*].promotionCode (promotionCodeSupplier will contain the promotion&rsquo;s code in supplier&rsquo;s context)<br></p>
+<strong>Hotel</strong>: search.options.hotelCode (hotelCodeSupplier will contain the hotel&rsquo;s code in supplier&rsquo;s context)<br>
+<strong>Board</strong>: search.options.boardCode (boardCodeSupplier will contain the board&rsquo;s code in supplier&rsquo;s context)<br>
+<strong>Room</strong>: search.options.rooms.code (supplierCode will contain the room&rsquo;s code in supplier&rsquo;s context)<br>
+<strong>Rate</strong>: search.options.rooms.ratePlans.code (supplierCode will contain the rate plan&rsquo;s code of the room in supplier&rsquo;s context)<br>
+<strong>Amenity</strong>: search.options.amenities.code and/or inside rooms (amenitySupplierCode will contain the amenity&rsquo;s code in supplier context)<br>
+<strong>Promotion</strong>: search.options.promotionCode (promotionCodeSupplier will contain the promotion&rsquo;s code in supplier&rsquo;s context)<br></p>
 
-<p>Examples of plugin that executes board and/or amenity mapping:<br></p>
+<p>Examples of plugin that executes board and/or amenity and/or promotion mapping:<br></p>
 
 <p><strong>Boards</strong>:</p>
 
@@ -6061,9 +5991,8 @@ Here you have the nodes where you can find mapped codes in Search response:<br><
 
 <p>The use of mapping plugin in Content is entirely different from Booking-Flow.
 Currently this is only available in Hotel-List query and only amenity map are available.
-In order to request mapping in content (other entities mapping could be available in future), it is necessary to query the node mappings stored inside the entity:
-This node is a list of mappings that will store the code of the entity in supplier context and the context of the supplier.
-Also, is necessary to indicate the group code and destination context in query variables.<br><br></p>
+In order to request mapping in content, it is necessary to query an specific field called <code>mappings</code>. This field is a list of mappings that will contain the code of the entity amenity in supplier context and the context of the supplier.
+It is also necessary to indicate the group code and destination context in query variables.<br><br></p>
 
 <p>How to request inside Hotel-List for amenities:<br></p>
 
@@ -6082,10 +6011,8 @@ Also, is necessary to indicate the group code and destination context in query v
             }
 </code></pre>
 
-<p>MapOptions is a list of pair {groupCode, destinationContext}.The groupCode is the HotelX groups assigned to you (HotelX_&hellip;), <br>
-and the destinationContext is the context you want to receive the codes<br>
-For each pair in this list, the mapping will be applied for each amenity.<br>
-In other words, Hotel-List will change amenityCode to the context set in destinationContext<br></p>
+<p>MapOptions is a list of {groupCode, context} pairs. The groupCode is the HotelX group assigned to your organization: (e.g. HotelX_&hellip;), and the context is the destinationContext you want to receive the codes in.<br>
+For each pair in this list, the mapping will be applied for each amenity. In other words, Hotel-List will change amenityCode to the context set in destinationContext<br></p>
 
 <h2 id="other-maps">Other Maps</h2>
 
@@ -6100,7 +6027,7 @@ In other words, Hotel-List will change amenityCode to the context set in destina
 <ul>
 <li><strong>Encoding</strong>: UTF-8 </li>
 <li><strong>File Name</strong>: [Context Source]_[Context Destination]_room_map.csv</li>
-<li><strong>Header Row</strong>: Code Source,Code Destination</li>
+<li><strong>Header Row</strong>: Code Source,Code Destination,Code Hotel</li>
 <li><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/Maps/</li>
 </ul>
 
@@ -6122,11 +6049,11 @@ In other words, Hotel-List will change amenityCode to the context set in destina
 5,X5,
 </code></pre>
 
-<p>As you can see, the same file combined mappings with 3 values and mappings with 2 values. The rows with two values are mapped by supplier. The files with three values are mapped by supplier and hotel. It&rsquo;s possible to use only the mapping by supplier hotel, in this case, your file only has rows with three values.</p>
+<p>As you can see, the same file combined mappings with 3 values and mappings with 2 values. The rows with two values are mapped by supplier. The files with three values are mapped by supplier and hotel. It&rsquo;s possible to use only the mapping by supplier hotel, in this case, your file only will have rows with three values.</p>
 
 <h3 id="application">Application</h3>
 
-<p>What happens if you use the combined plugin (room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file&rsquo;s name (client context)) and the room codes that don&rsquo;t have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable).</p>
+<p>What happens if you use the combined plugin (room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file&rsquo;s name (client context)) and the room codes that don&rsquo;t have provider hotel map, will be mapped with provider map code (in case that exists). If no map codes are found, the option can be discarded (this rule is configurable, please contact us in order to change it and discard those options. By default, no options will be discarted).</p>
 
 <h3 id="execution-example">Execution example</h3>
 
@@ -6159,42 +6086,25 @@ In other words, Hotel-List will change amenityCode to the context set in destina
 <p><strong>Important</strong>: this feature only must be used in Booking-Flow. Only one default code can be assigned to each supplier context.<br>
 In order to use this feature, it is necessary to append the default code to the FTP.<br><br>
 <strong>Example file with default code</strong><br><br>
-File name: sourceContext_destinationContext_entity_map.csv</p>
+File name: <code>sourceContext_destinationContext_entity_map.csv</code></p>
 
-<pre><code class="language-csv">Code Source, Code Destination
+<pre><code class="language-csv">Code Source,Code Destination
 10000,7604
 10000,1274249
 MY_DEFAULT_CODE,*
 </code></pre>
 
 <p><strong>MY_DEFAULT_CODE</strong> is the code that will be returned in response.<br><br>
-In the example above, all the codes of entity &ldquo;entity&rdquo; of provider with context destinationContext that not be found in the file, will be MY_DEFAULT_CODE in response.<br>
+In the example above, all the codes of entity &ldquo;entity&rdquo; of provider with context destinationContext that are not found in the file, will be MY_DEFAULT_CODE in response.<br>
 <br>Remember that, if you do not use default codes, in case that a mapping is not found, and the option is not discarded, in the response you will receive:<br><br>
 code: codeInSupplierContext<br>
 supplierCode: codeInSupplierContext<br><br>
-This feature is useful for controlling not mapped codes, and in case that you use aggregation plugins, all this options will be grouped in the same group and discarded.</p>
+This feature is useful to control those codes which are not not mapped, and in case that you use aggregation plugins, all this options will be grouped in the same group and discarded.</p>
 
 <h2 id="modifying-data-through-ftp">Modifying data through FTP</h2>
 
-<p><strong>Once mapping files are loaded, we can perform the following operations on them:</strong></p>
-
-<h3 id="updating-data">Updating data</h3>
-
-<p>We have two options:</p>
-
-<ol>
-<li>Reprocessing the same data by renaming the file and just removing &ldquo;_processed&rdquo;.<br>
-Example: <strong>SourceContext_DestinationContext_entity_map_processed.csv &ndash;&gt; example.csv</strong></li>
-<li>Changing the data by deleting the processed file and uploading a new one with new information.
-<br /></li>
-</ol>
-
-<h3 id="deleting-data">Deleting data</h3>
-
-<p>Uploading a new file only with headers (no information).</p>
-
-<pre><code class="language-csv">Code Source, Code Destination
-</code></pre>
+<p><strong>Once mapping files are loaded, we can perform the following operations on them:</strong>
+<a href="/connectiontypesbuyers/hotel-x/plugins/overview/#update_ftp_data">Update and Delete</a></p>
 
 <hr/>
 

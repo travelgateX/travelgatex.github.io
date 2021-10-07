@@ -3073,70 +3073,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5646,12 +5582,13 @@
 <ul>
 <li>
 <ul>
-<li><a href="#Booking Persistence">Booking Persistence</a>
+<li>
 <ul>
-<li><a href="#goals">Goals</a></li>
-<li><a href="#flow">Flow</a></li>
-<li><a href="#files-needed-to-use-this-plugin">Files needed to use this plugin</a></li>
+<li><a href="#what-it-does">What it does</a></li>
+<li><a href="#how-to-use-it">How to use it</a></li>
+<li><a href="#workflow">Workflow</a></li>
 <li><a href="#execution-example">Execution example</a></li>
+<li><a href="#file-format">File format</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5795,14 +5732,10 @@
 
 <p>Booking Persistence is a plugin that allows clients to store bookings.</p>
 
-<h2 id="Booking Persistence">Booking Persistence</h2>
+<h3 id="what-it-does">What it does</h3>
 
-<h3 id="goals">Goals</h3>
-
-<p>Booking Persistence is a plugin that allows clients to store bookings and avoid duplicated bookings. A <strong>duplicated booking</strong> is a booking that has the same cliente reference that other previous booking.<br />
-This plugin only can be executed in <strong>book</strong> service.
-With this plugin, each booking (by clientReference) of an organization is unique.
-Each booking done with this plugin will be stored until one day after booking checkout day.
+<p>Booking Persistence allows clients to store their bookings and avoid to duplicate them. Two bookings with the same client reference are considered <strong>duplicated bookings</strong>. With this plugin all the bookings of an organization will be unique (by clientReference). All the bookings will also be stored until the day after the checkout at the hotel.
+This plugin can only be executed in <strong>book</strong> service.
 An application/communication error during booking process will store a persistent booking with <strong>UNKNOWN</strong> status.
 In the following bookings with same client reference, the same response will be returned. In these cases, we don&rsquo;t send a request to the provider and the booking is read from database.
 This plugin is used for storing and retrieving the bookings. This two processes are executed transparently for the client in the booking process.
@@ -5839,17 +5772,17 @@ If the booking returned is a retrieved booking, the application will show a warn
 }
 </code></pre>
 
-<h3 id="flow">Flow</h3>
+<h3 id="how-to-use-it">How to use it</h3>
 
-<p><img src="https://docs.travelgatex.com/hotel-x/plugins/images/BookingPersistence.png" alt="Booking Persistence Squema" /></p>
+<p>Use this plugin by adding it to the <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/" rel="nofollow" target="_blank">settings</a> in your HotelX Search Query.</p>
 
-<h3 id="files-needed-to-use-this-plugin">Files needed to use this plugin</h3>
+<h3 id="workflow">Workflow</h3>
 
-<p>No files are needed in order to use this plugin.</p>
+<p><img src="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/images/BookingPersistence.png" alt="Booking Persistence Squema" /></p>
 
 <h3 id="execution-example">Execution example</h3>
 
-<pre><code class="language-json">mutation ($input: HotelBookInput!, $settings: HotelSettingsInput) {
+<pre><code class="language-graphql">mutation ($input: HotelBookInput!, $settings: HotelSettingsInput) {
   hotelX {
     book(input: $input, settings: $settings) {
       auditData {
@@ -5998,6 +5931,10 @@ If the booking returned is a retrieved booking, the application will show a warn
 	}
 }
 </code></pre>
+
+<h3 id="file-format">File format</h3>
+
+<p>No files are needed in order to use this plugin.</p>
 
 <hr/>
 

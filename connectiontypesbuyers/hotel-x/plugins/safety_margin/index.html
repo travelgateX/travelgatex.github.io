@@ -3073,70 +3073,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5646,13 +5582,22 @@
 <ul>
 <li>
 <ul>
-<li><a href="#safetymargin">Safety Margin</a>
+<li>
 <ul>
-<li><a href="#goals">Goals</a></li>
-</ul></li>
-<li><a href="#files-needed-in-order-to-use-this-plugin">Files needed in order to use this plugin</a>
-<ul>
+<li><a href="#safetymargin">What it does</a></li>
+<li><a href="#how-to-use-it">How to use it</a></li>
 <li><a href="#execution-example">Execution example</a></li>
+<li><a href="#files-needed-to-use-this-plugin">Files needed to use this plugin</a></li>
+<li><a href="#sm_file">Safety Margin file (<strong>Mandatory</strong>)</a>
+<ul>
+<li><a href="#sample-file">Sample File</a></li>
+</ul></li>
+<li><a href="#dateformat"><strong>Date format</strong></a></li>
+<li><a href="#nc_file">Net Compare file (<strong>Optional</strong>)</a>
+<ul>
+<li><a href="#sample-file-1">Sample File</a></li>
+</ul></li>
+<li><a href="#dateformat-1"><strong>Date format</strong></a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5796,9 +5741,7 @@
 
 <p>Safety Margin is an optional plugin that allows discarding options that have a commission <strong>lower</strong> than expected. The expected commission has to be loaded in safety-margin file, and is the commission over gross, in other words, the commission/profit is already included in the price.</p>
 
-<h2 id="safetymargin">Safety Margin</h2>
-
-<h3 id="goals">Goals</h3>
+<h3 id="safetymargin">What it does</h3>
 
 <p>The safety margin plugin <strong>discards those options that have a commission lower than expected.</strong> By doing this, only options that have a commission over gross, equal or lower than those reported in the file will be returned.</p>
 
@@ -5806,36 +5749,434 @@
 
 <p>The matching process uses <strong>client Tokens</strong> filed, which identify the provided by the client and it is used to filter which business rules can be applied in the request sent.</p>
 
-<h2 id="files-needed-in-order-to-use-this-plugin">Files needed in order to use this plugin</h2>
+<h3 id="how-to-use-it">How to use it</h3>
 
-<ul>
-<li><a href="/hotel-x/plugins/format-files/safety_margin/"><strong>Margin safe file format</strong></a> (<strong>Mandatory</strong>)</li>
-</ul>
+<p>Use this plugin by adding it to the <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/" rel="nofollow" target="_blank">settings</a> in your HotelX Search Query.</p>
 
 <h3 id="execution-example">Execution example</h3>
 
-<p>{</p>
+<pre><code class="language-json">{
+    &quot;plugins&quot;: {
+        &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
+        &quot;pluginsType&quot;: [
+            {
+                &quot;type&quot;: &quot;POST_STEP&quot;,
+                &quot;name&quot;: &quot;safety_margin&quot;
+            }
+        ]
+    }
+}
+</code></pre>
 
-<p>    &ldquo;plugins&rdquo;: {</p>
+<h3 id="files-needed-to-use-this-plugin">Files needed to use this plugin</h3>
 
-<p>        &ldquo;step&rdquo;: &ldquo;RESPONSE_OPTION&rdquo;,</p>
+<ul>
+<li><p><a href="#sm_file"><strong>Safety Margin file format</strong></a> (<strong>Mandatory</strong>)</p></li>
 
-<p>        &ldquo;pluginsType&rdquo;: [</p>
+<li><p><a href="#nc_file"><strong>Net Compare file format</strong></a> (<strong>Optional</strong>)</p></li>
+</ul>
 
-<p>            {</p>
+<h3 id="sm_file">Safety Margin file (<strong>Mandatory</strong>)</h3>
 
-<p>                &ldquo;type&rdquo;: &ldquo;POST_STEP&rdquo;</p>
+<ul>
+<li><strong>Encoding</strong>: UTF-8</li>
+<li><strong>File Name</strong>: [Context Source]_sequential_safetymargin.csv</li>
 
-<p>                &ldquo;name&rdquo;: &ldquo;safety_margin&rdquo;</p>
+<li><p><strong>Headers</strong>:</p>
 
-<p>            }</p>
+<ul>
+<li><em>ruleId</em>  → rule identifier</li>
+<li><em>clientTokens</em>  → client Tokens*</li>
+<li><em>supplierCodes</em>  → supplier code</li>
+<li><em>notSupplierCodes</em>  → supplier code</li>
+<li><em>creationDateFrom</em>  → start creation date <a href="dateformat" rel="nofollow" target="_blank"><strong>Date format</strong></a></li>
+<li><em>creationDateTo</em>   → end creation date <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>checkInFrom</em>  → checkinfrom date <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>checkInTo</em>  → checkinto date <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>hotelCodes</em>  → hotel code</li>
+<li><em>nothotelCodes</em>  → hotel code</li>
+<li><em>chainsCodes</em>  → chain code</li>
+<li><em>notChainCodes</em>  → chain code</li>
+<li><em>destinationCodes</em>  → destination code</li>
+<li><em>notDestinationCodes</em>  → destination code</li>
+<li><em>percentage</em>  → commission value, decimal separator must be point (&ldquo;.&rdquo;)<br /></li>
+</ul>
 
-<p>        ]</p>
+<p><strong>client tokens</strong> Identifier provided by the client that serves to filter which business rules can be applied for the sent request.</p>
 
-<p>    }</p>
+<ul>
+<li><p><strong>List file fields</strong></p>
 
-<p>}
-```</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Mandatory</th>
+<th>Excluded fileds*</th>
+<th>Multi-value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ruleId</td>
+<td>Yes</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>clientTokens</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>supplierCodes</td>
+<td>Yes</td>
+<td>notSupplierCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notSupplierCodes</td>
+<td>Yes</td>
+<td>supplierCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>creationDateFrom</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>creationDateTo</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>checkInFrom</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>checkInTo</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>hotelCodes</td>
+<td>No</td>
+<td>nothotelCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>nothotelCodes</td>
+<td>No</td>
+<td>hotelCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>chainsCodes</td>
+<td>No</td>
+<td>notChainCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notChainCodes</td>
+<td>No</td>
+<td>chainsCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>DestinationCodes</td>
+<td>No</td>
+<td>notDestinationCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notDestinationCodes</td>
+<td>No</td>
+<td>DestinationCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>percentage</td>
+<td>Yes</td>
+<td>-</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+<p>*Excluded fileds <strong>Informed field will be ignored</strong></p></li>
+</ul></li>
+
+<li><p><strong>Delimiter</strong>:  Comma (“,”)</p></li>
+
+<li><p><strong>Separator for multiples codes in the same row</strong>: Semicolon (&ldquo;;&rdquo;)</p></li>
+
+<li><p><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/</p></li>
+</ul>
+
+<h4 id="sample-file">Sample File</h4>
+
+<p><strong>Name</strong>: <code>XTG_sequential_safetymargin.csv</code></p>
+
+<p><strong>Data</strong>:</p>
+
+<p><strong>Simple value field</strong></p>
+
+<pre><code class="language-csv">ruleId,clientTokens,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage
+CE1,XXX,DIN,,,,2018-04-01,2018-10-31,3846,,,,,,18.50
+CE2,YYY,DIN,,,,,,3846,,,,,,15.00
+</code></pre>
+
+<p><strong>Multivalue field</strong></p>
+
+<pre><code class="language-csv">ruleId,clientTokens,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage
+CE1,XXX,DIN;HOB;JMB,,,,2018-04-01,2018-10-31,3846,,,,,,18.50
+CE2,YYY,DIN,,,,,,3846,,,,,,15.00
+</code></pre>
+
+<h3 id="dateformat"><strong>Date format</strong></h3>
+
+<div class="notices warning" ><p>Date format <strong>yyyy-mm-dd</strong> is mandatory</p>
+</div>
+
+
+<h3 id="nc_file">Net Compare file (<strong>Optional</strong>)</h3>
+
+<p>The net compare file should be in the format below:</p>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8</li>
+<li><strong>File Name</strong>: [Context Source]_sequential_netCompare.csv</li>
+
+<li><p><strong>Headers</strong>:</p>
+
+<ul>
+<li><em>ruleId</em>  → rule identifier</li>
+<li><em>clientTokens</em>  → client Tokens*</li>
+<li><em>supplierCodes</em>  → supplier code</li>
+<li><em>notSupplierCodes</em>  → supplier code</li>
+<li><em>bookingDateFrom</em>  → booking date from <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>bookingDateTo</em>   → booking date to <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>startDateFrom</em>  → start date from <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>startDateTo</em>  → start date to <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>hotelCodes</em>  → hotel code</li>
+<li><em>nothotelCodes</em>  → hotel code</li>
+<li><em>chainsCodes</em>  → chain code</li>
+<li><em>notChainCodes</em>  → chain code</li>
+<li><em>destinationCodes</em>  → destination code</li>
+<li><em>notDestinationCodes</em>  → destination code</li>
+<li><em>percentage</em>  → commission value, decimal separator must be point (&ldquo;.&rdquo;)</li>
+<li><em>amount</em>  → amount<br /></li>
+</ul>
+
+<p><strong>client tokens</strong> Identifier provided by the client that is used to filter which business rules can be applied for the sent request.</p>
+
+<ul>
+<li><p><strong>List file fields</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Mandatory</th>
+<th>Excluded fields*</th>
+<th>Multi-value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ruleId</td>
+<td>Yes</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>clientTokens</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>supplierCodes</td>
+<td>Yes</td>
+<td>notSupplierCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notSupplierCodes</td>
+<td>Yes</td>
+<td>supplierCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>bookingDateFrom</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>bookingDateTo</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>startDateFrom</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>startDateTo</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>hotelCodes</td>
+<td>No</td>
+<td>nothotelCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>nothotelCodes</td>
+<td>No</td>
+<td>hotelCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>chainsCodes</td>
+<td>No</td>
+<td>notChainCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notChainCodes</td>
+<td>No</td>
+<td>chainsCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>DestinationCodes</td>
+<td>No</td>
+<td>notDestinationCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notDestinationCodes</td>
+<td>No</td>
+<td>DestinationCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>percentage</td>
+<td>Yes</td>
+<td>amount</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>amount</td>
+<td>Yes</td>
+<td>percentage</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+<p>*Excluded fields <strong>Informed field will be ignored</strong></p></li>
+</ul></li>
+
+<li><p><strong>Delimiter</strong>:  Comma (“,”)</p></li>
+
+<li><p><strong>Separator for multiples codes in the same row</strong>: Semicolon (&ldquo;;&rdquo;)</p></li>
+
+<li><p><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/</p></li>
+</ul>
+
+<h4 id="sample-file-1">Sample File</h4>
+
+<p><strong>Name</strong>: <code>XTG_sequential_netCompare.csv</code></p>
+
+<p><strong>Data</strong>:</p>
+
+<p><strong>Simple value field</strong></p>
+
+<pre><code class="language-csv">ruleId,clientTokens,supplierCodes,notSupplierCodes,bookingDateFrom,bookingDateTo,startDateFrom,startDateTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,amount
+2795,,SUN2,,2018-06-04,2018-06-17,,2018-12-31,,,,,,,-2,1
+2796,,EPL,,2018-06-04,2018-06-17,,2018-12-31,,,,,,,-1,2
+2327,,TEC,,,,,2019-04-30,59735,,,,,,-3,3
+2429,,CFT,,,,,2019-04-30,,,,,,,2.5,
+2193,,DIN,,,,,2018-12-31,16038,,,,,,-2,
+1315,,CIM,,,,,2018-12-31,39088,,,,,,-2,
+1272,,TEC,,,,,2018-12-31,40912,,,,,,-4,
+1332,,DIN,,,,,2018-12-31,40371,,,,,,3.5,
+1323,,SMD,,,,,2018-12-31,,,DCHOT,,,,-3,
+2213,,GNA,,,,,2018-12-31,,,GHT,,,,-2.5,
+2225,,PRS,,,,,2019-04-30,,,MEDIT,,,,-4,
+1019,,MED,,,,,2019-04-30,,,MEDP,,,,-3,
+1020,,SEN,,,,,2019-04-30,,,PLYHT,,,,-4.25,
+</code></pre>
+
+<p><strong>Multivalue field</strong></p>
+
+<pre><code class="language-csv">ruleId,clientTokens,supplierCodes,notSupplierCodes,bookingDateFrom,bookingDateTo,startDateFrom,startDateTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,amount
+2795,,SUN2;DIN;HOB;JMB,,2018-06-04,2018-06-17,,2018-12-31,,,,,,,-2,1
+2796,,EPL,,2018-06-04,2018-06-17,,2018-12-31,,,,,,,-1,2
+2327,,TEC,,,,,2019-04-30,59735,,,,,,-3,3
+2429,,CFT,,,,,2019-04-30,,,,,,,2.5,
+2193,,DIN,,,,,2018-12-31,16038,,,,,,-2,
+1315,,CIM,,,,,2018-12-31,39088,,,,,,-2,
+1272,,TEC,,,,,2018-12-31,40912,,,,,,-4,
+1332,,DIN,,,,,2018-12-31,40371,,,,,,3.5,
+1323,,SMD,,,,,2018-12-31,,,DCHOT,,,,-3,
+2213,,GNA,,,,,2018-12-31,,,GHT,,,,-2.5,
+2225,,PRS,,,,,2019-04-30,,,MEDIT,,,,-4,
+1019,,MED,,,,,2019-04-30,,,MEDP,,,,-3,
+1020,,SEN,,,,,2019-04-30,,,PLYHT,,,,-4.25,
+</code></pre>
+
+<h3 id="dateformat-1"><strong>Date format</strong></h3>
+
+<div class="notices warning" ><p>Date format <strong>yyyy-mm-dd</strong> is mandatory</p>
+</div>
+
 
 <hr/>
 

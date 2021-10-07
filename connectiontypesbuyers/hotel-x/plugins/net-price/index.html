@@ -3073,70 +3073,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5646,15 +5582,22 @@
 <ul>
 <li>
 <ul>
-<li><a href="#commissionX">CommissionX</a>
+<li>
 <ul>
-<li><a href="#goals">Goals</a></li>
-<li><a href="#files-needed-to-use-this-plugin">Files needed to use this plugin</a></li>
-<li><a href="#how-we-make-it">How we make it</a>
-<ul>
-<li><a href="#entitygroup"><strong>Possible values entity filename</strong></a></li>
-</ul></li>
+<li><a href="#commissionX">What it does</a></li>
+<li><a href="#how-to-use-it">How to use it</a></li>
 <li><a href="#execution-example">Execution example</a></li>
+<li><a href="#files-needed-to-use-this-plugin">Files needed to use this plugin</a></li>
+<li><a href="#comm_file">Commission file (<strong>Mandatory</strong>)</a>
+<ul>
+<li><a href="#sample-file">Sample File</a></li>
+</ul></li>
+<li><a href="#group_file">Group file (<strong>Optional</strong>)</a>
+<ul>
+<li><a href="#sample-file-1"><em>Sample File</em></a></li>
+<li><a href="#possible-values-entity-filename"><strong>Possible values entity filename</strong></a></li>
+<li><a href="#dateformat"><strong>Date format</strong></a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5798,64 +5741,17 @@
 
 <p>CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration.</p>
 
-<h2 id="commissionX">CommissionX</h2>
-
-<h3 id="goals">Goals</h3>
+<h3 id="commissionX">What it does</h3>
 
 <p>CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier. Different commissions can be applied according to the different rules depending on the format that we will described next. The commission that is loaded in the FTP is interpreted like a <strong>Gross</strong> commission, that is, the commission or profit is included in the price.</p>
 
-<h3 id="files-needed-to-use-this-plugin">Files needed to use this plugin</h3>
+<h3 id="how-to-use-it">How to use it</h3>
 
-<ul>
-<li><p><a href="/hotel-x/plugins/format-files/commission/"><strong>Sequential Commission file format</strong></a> (<strong>Mandatory</strong>). If the columns <strong>chainCodes,destinationCodes</strong> are informed then it is mandatory to upload group file.</p></li>
-
-<li><p><a href="/hotel-x/plugins/format-files/group/"><strong>Group file format</strong></a> (<strong>Optional</strong>)</p>
-
-<ul>
-<li>This file will be necessary in case you want to apply rules depending on a grouping of codes that depend on a <a href="/hotel-x/concepts/accesses-supplier-context/#context"><strong>context</strong></a>. For this case, it is necessary that you pass with the <a href="/hotel-x/plugins/entity_table_file/"><strong>entity</strong></a>.</li>
-</ul></li>
-</ul>
-
-<p><strong>Observation</strong></p>
-
-<p>Although the group file is optional if this file is informed before the commission file the values will be used from the group file.</p>
-
-<h3 id="how-we-make-it">How we make it</h3>
-
-<p>We read sequentially the commission file if the columns <strong>chainCodes,destinationCodes</strong> are informed then it is mandatory to upload group file to be able to read these values from the group file.</p>
-
-<h4 id="entitygroup"><strong>Possible values entity filename</strong></h4>
-
-<table>
-<thead>
-<tr>
-<th>Entity</th>
-<th>chainCodes</th>
-<th>destinationCodes</th>
-<th>hotelCodes</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><a href="connectiontypesbuyers/hotel-x/plugins/entity_table_file#hotel" rel="nofollow" target="_blank">hotel</a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-
-<tr>
-<td><a href="connectiontypesbuyers/hotel-x/plugins/entity_table_file#destination" rel="nofollow" target="_blank">destination</a></td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+<p>Use this plugin by adding it to the <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/" rel="nofollow" target="_blank">settings</a> in your HotelX Search Query.</p>
 
 <h3 id="execution-example">Execution example</h3>
 
-<p>if you want index by client tokens it is necessary to specify the client token as shown below, if the token is not specified, by default, the system will apply those rules that do not have client tokens.</p>
+<p>If you want to index by client tokens it is necessary to specify the client token as shown below, if the token is not specified, by default, the system will apply those rules that do not have client tokens.</p>
 
 <pre><code class="language-json">{
 	&quot;criteriaSearch&quot;: {
@@ -5901,6 +5797,290 @@
 	}
 }
 </code></pre>
+
+<h3 id="files-needed-to-use-this-plugin">Files needed to use this plugin</h3>
+
+<ul>
+<li><p><a href="#comm_file"><strong>Sequential Commission file format</strong></a> (<strong>Mandatory</strong>). If the columns <strong>chainCodes,destinationCodes</strong> are informed then it is mandatory to upload group file.</p></li>
+
+<li><p><a href="#group_file"><strong>Group file format</strong></a> (<strong>Optional</strong>)</p>
+
+<ul>
+<li>This file will be necessary in case you want to apply rules depending on a grouping of codes that depend on a <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/basicconcepts/supplier-access-client-context#context" rel="nofollow" target="_blank"><strong>context</strong></a>. For this case, it is necessary that you pass with the <a href="../overview#entityprocessed"><strong>entity</strong></a>.</li>
+</ul></li>
+</ul>
+
+<p><strong>Observations</strong></p>
+
+<p>Although the group file is optional if this file is informed before the commission file the values will be used from the group file.</p>
+
+<p>We read sequentially the commission file if the columns <strong>chainCodes,destinationCodes</strong> are informed then it is mandatory to upload group file to be able to read these values from the group file.</p>
+
+<h3 id="comm_file">Commission file (<strong>Mandatory</strong>)</h3>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8</li>
+<li><strong>File Name</strong>: [Context Source]_sequential_commission.csv</li>
+
+<li><p><strong>Headers</strong>:</p>
+
+<ul>
+<li><em>ruleId</em>  → rule identifier</li>
+<li><em>clientTokens</em>  → client token used for index the rule</li>
+<li><em>supplierCodes</em>  → supplier code</li>
+<li><em>notSupplierCodes</em>  → supplier code</li>
+<li><em>creationDateFrom</em>  → start creation date <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>creationDateTo</em>   → end creation date <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>checkInFrom</em>  → checkin date <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>checkInTo</em>  → checkout date <a href="#dateformat"><strong>Date format</strong></a></li>
+<li><em>hotelCodes</em>  → hotel code</li>
+<li><em>nothotelCodes</em>  → hotel code</li>
+<li><em>chainsCodes</em>  → chain code</li>
+<li><em>notChainCodes</em>  → chain code</li>
+<li><em>destinationCodes</em>  → destination code</li>
+<li><em>notDestinationCodes</em>  → destination code</li>
+<li><em>percentage</em>  → commission value, decimal separator must be point (&ldquo;.&rdquo;)</li>
+
+<li><p><em>force</em>  → (boolean value <strong>true/false</strong>)</p>
+
+<ul>
+<li><strong>false value</strong> (if the value is false, the rule will not be applied despite of matching all its conditions criteria if a commission is received from the supplier through the integration).</li>
+<li><strong>true value</strong> if the value is true, the rule will be applied if matching all its conditions criteria, regardless of a commission being received or not from the supplier through the integration).</li>
+<li><strong>Example</strong><br />
+<br /></li>
+</ul>
+
+<pre><code class="language-csv">commission received,forced,result from supplier
+no,no,rule applied (if matching all its criteria conditions)
+no,yes,rule applied (if matching all its criteria conditions)
+yes,no,rule NOT applied regardless of matching all its criteria conditions
+yes,yes,rule applied (if matching all its criteria conditions)
+</code></pre>
+
+<ul>
+<li><strong>List of file fields</strong>
+<br /></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Mandatory</th>
+<th>Excluded fields*</th>
+<th>Multi-value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ruleId</td>
+<td>Yes</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>clientTokens</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>supplierCodes</td>
+<td>Yes</td>
+<td>notSupplierCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notSupplierCodes</td>
+<td>Yes</td>
+<td>supplierCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>creationDateFrom</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>creationDateTo</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>checkInFrom</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>checkInTo</td>
+<td>No</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>hotelCodes</td>
+<td>No</td>
+<td>nothotelCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>nothotelCodes</td>
+<td>No</td>
+<td>hotelCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>chainsCodes</td>
+<td>No</td>
+<td>notChainCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notChainCodes</td>
+<td>No</td>
+<td>chainsCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>DestinationCodes</td>
+<td>No</td>
+<td>notDestinationCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>notDestinationCodes</td>
+<td>No</td>
+<td>DestinationCodes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>percentage</td>
+<td>Yes</td>
+<td>-</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td>force</td>
+<td>Yes</td>
+<td>-</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+<p>*Excluded fields <strong>Informed fields will be ignored</strong></p></li>
+</ul></li>
+
+<li><p><strong>Delimiter</strong>:  Comma (“,”)</p></li>
+
+<li><p><strong>Separator for multiples codes in the same row</strong>: Semicolon (&ldquo;;&rdquo;)</p></li>
+
+<li><p><strong>Directory</strong>: /F[folder code]_[unique code]/HotelX_[unique code]/</p></li>
+</ul>
+
+<h4 id="sample-file">Sample File</h4>
+
+<p><strong>Name</strong>: XTG_sequential_commission.csv</p>
+
+<p><strong>Data</strong> without client tokens:</p>
+
+<p><strong>Simple value field</strong></p>
+
+<pre><code class="language-csv">ruleId,clientTokens,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
+CE1,testClientTokens,DIN,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
+CE2,,DIN,,,,,,3846,,,,,,15.00,false
+</code></pre>
+
+<p><strong>Multivalue field</strong></p>
+
+<pre><code class="language-csv">ruleId,clientTokens,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
+CE1,testClientTokens,DIN;HOB;JMB,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
+CE2,,DIN,,,,,,3846,,,,,,15.00,false
+</code></pre>
+
+<h3 id="group_file">Group file (<strong>Optional</strong>)</h3>
+
+<ul>
+<li><strong>Encoding</strong>: UTF-8 </li>
+<li><strong>File Name</strong>: [Context Source]_[Entity]_group.csv</li>
+<li><strong>Headers</strong>:
+
+<ul>
+<li><em>key</em> → <a href="../overview#entityprocessed">Entity</a>.</li>
+<li><em>hotelCodes</em> → hotel code</li>
+<li><em>chainCodes</em> → chain code</li>
+<li><em>destinationCodes</em> → destination code</li>
+</ul></li>
+<li><strong>Delimiter</strong>:  Comma (“,”) </li>
+<li><strong>Directory</strong>: /F[folder code]\Maps/HotelX\Hotel/</li>
+</ul>
+
+<h4 id="sample-file-1"><em>Sample File</em></h4>
+
+<p><strong>Name</strong>: <code>XTG_hotel_group.csv</code></p>
+
+<p><strong>Data</strong>:</p>
+
+<p><strong>Hotel entity example</strong></p>
+
+<pre><code class="language-csv">key,chainCodes,destinationCodes
+1,OHTEL,DNBFQ;BYWRS;BUJSY;BTENE;CGGSZ;CGUNN;COMERCIAL152
+2,000-INDEP,3PR;BYQIW;GCNR;BUJSF;BTENB;CGGSZ;CGUNN;COMERCIAL76
+</code></pre>
+
+<h4 id="possible-values-entity-filename"><strong>Possible values entity filename</strong></h4>
+
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>chainCodes</th>
+<th>destinationCodes</th>
+<th>hotelCodes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="../overview#hotel">hotel</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td><a href="../overview#destination">destination</a></td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="dateformat"><strong>Date format</strong></h4>
+
+<div class="notices warning" ><p>Date format <strong>yyyy-mm-dd</strong> is mandatory</p>
+</div>
+
 
 <hr/>
 

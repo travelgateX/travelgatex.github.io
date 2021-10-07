@@ -3073,70 +3073,6 @@
               <span>Search by destination</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/development/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/development/">
-              <span>Development</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-        <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/" class="dd-item">
-          <div>
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/">
-              <span>Format files</span>            
-            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
-          </div>
-            <ul>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_supplier/">
-              <span>Commission supplier</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission_netprice/">
-              <span>Hotel Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/group/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/group/">
-              <span>Group</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/commission/">
-              <span>Commission</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/entity_table/">
-              <span>Entity Table values</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/safety_margin/">
-              <span>Safety margin</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/supplier_order/">
-              <span>Supplier Order</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/netcompare/">
-              <span>Net compare</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/format-files/preference/">
-              <span>Preference</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-            </ul>
-        </li>
-          <li data-nav-id="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/" class="dd-item">
-            <a href="/connectiontypesbuyers/hotel-x/plugins/entity_table_file/">
-              <span>Entities</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypesbuyers/hotel-x/bestpractices/" class="dd-item">
@@ -5646,14 +5582,15 @@
 <ul>
 <li>
 <ul>
-<li><a href="#market_groupX">Market Group X</a>
+<li>
 <ul>
-<li><a href="#goals">Goals</a></li>
+<li><a href="#market_groupX">What it does</a></li>
+<li><a href="#how-to-use-it">How to use it</a></li>
+<li><a href="#execution-example">Execution example</a></li>
 </ul></li>
 <li><a href="#file-format">File Format</a>
 <ul>
 <li><a href="#sample-file">Sample File</a></li>
-<li><a href="#execution-example">Execution example</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5797,9 +5734,7 @@
 
 <p>Market Group X is an optional plugin that allows the user to group the Search result by markets that share the same Options.</p>
 
-<h2 id="market_groupX">Market Group X</h2>
-
-<h3 id="goals">Goals</h3>
+<h3 id="market_groupX">What it does</h3>
 
 <p>The Market Group X plugin groups the input markets from Search depending on the agrupations you&rsquo;ve decided before hand (with a configuration file. <em>More details regarding configuration below</em>.). In order to be able to use the plugin, you&rsquo;ll have to decide which markets to join for which supplier. This way the Search will only process as much transactions as groups has been formed by the plugin, since all of the markets of a same group, would return the same options.</p>
 
@@ -5819,6 +5754,25 @@
 
 <p>Bear in mind that this plugin is <strong>only available in Search</strong> step and the market groups will not be recalculated after Search step. So if you take an option from Search that has been executed with market groups, those groups will remain the same through all the booking flow, even if you change those groups via ftp. This characteristic could also affect the interaction with other plugins like <strong>commission</strong>, which recalculate the rules in Quote and Book steps.</p>
 
+<h3 id="how-to-use-it">How to use it</h3>
+
+<p>Use this plugin by adding it to the <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/" rel="nofollow" target="_blank">settings</a> in your HotelX Search Query. You&rsquo;ll also need to add a configuration file.</p>
+
+<h3 id="execution-example">Execution example</h3>
+
+<p>In order to use the plugin, we shoud send the following json in the query variables</p>
+
+<pre><code class="language-json">		&quot;plugins&quot;: [
+			{
+				&quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
+				&quot;pluginsType&quot;: {
+					&quot;name&quot;: &quot;market_groupX&quot;,
+					&quot;type&quot;: &quot;MARKETS_GROUP&quot;
+				}
+			}
+		]
+</code></pre>
+
 <p>Loading a Market Group X configuration file is as easy as following the steps below:</p>
 
 <h2 id="file-format">File Format</h2>
@@ -5827,7 +5781,7 @@
 
 <ul>
 <li><strong>Encoding</strong>: UTF-8</li>
-<li><strong>File Name</strong>: markets_groups.csv</li>
+<li><strong>File Name</strong>: <code>markets_groups.csv</code></li>
 
 <li><p><strong>Header Row</strong>: Supplier,Markets,Other</p>
 
@@ -5856,21 +5810,6 @@
     CAN,ES;EN#IT#FR#DE,false
     ELB,ES#EN#IT;FR#DE,false
     HOTELTEST,FR#ES;EN#DE,true
-</code></pre>
-
-<h3 id="execution-example">Execution example</h3>
-
-<p>In order to use the plugin, we shoud send the following json in the query variables</p>
-
-<pre><code class="language-json">		&quot;plugins&quot;: [
-			{
-				&quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
-				&quot;pluginsType&quot;: {
-					&quot;name&quot;: &quot;market_groupX&quot;,
-					&quot;type&quot;: &quot;MARKETS_GROUP&quot;
-				}
-			}
-		]
 </code></pre>
 
 <hr/>
