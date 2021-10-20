@@ -5904,6 +5904,9 @@ list of languages supported &hellip;</p>
         &lt;AllowsClientLocator reviewDate = &quot;20/06/2015&quot;&gt;false&lt;/AllowsClientLocator&gt;
         &lt;InformCancelPolicies reviewDate = &quot;20/06/2015&quot;&gt;false&lt;/InformCancelPolicies&gt;
         &lt;InformPriceCancel reviewDate = &quot;20/06/2015&quot;&gt;false&lt;/InformPriceCancel&gt;
+        &lt;RequiredCheckInDate reviewDate = &quot;18/10/2021&quot;&gt;false&lt;/RequiredCheckInDate&gt;
+        &lt;RequiredCheckOutDate reviewDate = &quot;18/10/2021&quot;&gt;false&lt;/RequiredCheckOutDate&gt;
+        &lt;RequiredReservationDate reviewDate = &quot;18/10/2021&quot;&gt;false&lt;/RequiredReservationDate&gt;
     &lt;/ReservationRead&gt;
     &lt;ReservationList&gt;
         &lt;Implements reviewDate = &quot;20/06/2015&quot;&gt;false&lt;/Implements&gt;
@@ -7074,6 +7077,48 @@ list of languages supported &hellip;</p>
 <td>1</td>
 <td>Boolean</td>
 <td>The supplier informs the cancellation price.</td>
+</tr>
+
+<tr>
+<td>@reviewDate</td>
+<td>1</td>
+<td>String</td>
+<td>Informs of the date when the field was last reviewed.</td>
+</tr>
+
+<tr>
+<td>ReservationRead/RequiredCheckInDate</td>
+<td>1</td>
+<td>Boolean</td>
+<td>The supplier informs if it requires the check-in date to return the reservation.</td>
+</tr>
+
+<tr>
+<td>@reviewDate</td>
+<td>1</td>
+<td>String</td>
+<td>Informs of the date when the field was last reviewed.</td>
+</tr>
+
+<tr>
+<td>ReservationRead/RequiredCheckOutDate</td>
+<td>1</td>
+<td>Boolean</td>
+<td>The supplier informs if it requires the check-out date to return the reservation.</td>
+</tr>
+
+<tr>
+<td>@reviewDate</td>
+<td>1</td>
+<td>String</td>
+<td>Informs of the date when the field was last reviewed.</td>
+</tr>
+
+<tr>
+<td>ReservationRead/RequiredReservationDate</td>
+<td>1</td>
+<td>Boolean</td>
+<td>The supplier informs if it requires the booking date to return the reservation.</td>
 </tr>
 
 <tr>

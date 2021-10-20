@@ -5587,10 +5587,8 @@
 <ul>
 <li><a href="#common-elements-rq-example">Common Elements RQ Example</a></li>
 <li><a href="#common-elements-rq-description">Common Elements RQ Description</a></li>
-<li><a href="#detailed-description">Detailed description</a></li>
 <li><a href="#common-elements-rs-example">Common Elements RS Example</a></li>
 <li><a href="#common-elements-rs-description">Common Elements RS Description</a></li>
-<li><a href="#detailed-description-1">Detailed description</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5742,7 +5740,6 @@ credentials.</p>
 <h3 id="common-elements-rq-example">Common Elements RQ Example</h3>
 
 <pre><code class="language-xml">    &lt;HotelBaseRQ&gt;
-        &lt;echoToken&gt;TEST&lt;/echoToken&gt;
         &lt;timeoutMilliseconds&gt;20000&lt;/timeoutMilliseconds&gt;
         &lt;source&gt;
             &lt;agencyCode&gt;XXXX&lt;/agencyCode&gt;
@@ -5751,17 +5748,12 @@ credentials.</p>
         &lt;filterAuditData&gt;
             &lt;registerTransactions&gt;true&lt;/registerTransactions&gt;
         &lt;/filterAuditData&gt;
-        &lt;optionsQuota&gt;500&lt;/optionsQuota&gt;
-        &lt;ContinuationToken expectedRange = &quot;6000&quot;&gt;&lt;/ContinuationToken&gt;
         &lt;Configuration&gt;
-            &lt;User&gt;USERXX&lt;/User&gt;
-            &lt;Password&gt;PWXX&lt;/Password&gt;
-            &lt;UrlAvail&gt;www.supplier.com/avail&lt;/UrlAvail&gt;
-            &lt;UrlReservation&gt;www.supplier.com/reservation&lt;/UrlReservation&gt;
-            &lt;UrlValuation&gt;www.supplier.com/valuation&lt;/UrlValuation&gt;
             &lt;UrlGeneric&gt;www.supplier.com&lt;/UrlGeneric&gt;
             &lt;Parameters&gt;
                 &lt;Parameter key = &quot;SegundoPW&quot; value = &quot;PWXML&quot;/&gt;
+                &lt;Parameter key = &quot;User&quot; value = &quot;userXML&quot;/&gt;
+                &lt;Parameter key = &quot;Password&quot; value = &quot;passwordXML&quot;/&gt;
             &lt;/Parameters&gt;
         &lt;/Configuration&gt;
         …
@@ -5786,13 +5778,6 @@ credentials.</p>
 <td>1</td>
 <td></td>
 <td>Root node.</td>
-</tr>
-
-<tr>
-<td>echoToken</td>
-<td>0..1</td>
-<td>String</td>
-<td>Echo token to be returned in response (used for test purposes only).</td>
 </tr>
 
 <tr>
@@ -5838,27 +5823,6 @@ credentials.</p>
 </tr>
 
 <tr>
-<td>optionsQuota</td>
-<td>0..1</td>
-<td>Integer</td>
-<td>Sets the max number of options by MealPlan.</td>
-</tr>
-
-<tr>
-<td>ContinuationToken</td>
-<td>0..1</td>
-<td>String</td>
-<td>Internal Token to identify the next set of HotelList or RoomList.</td>
-</tr>
-
-<tr>
-<td>@expectedRange</td>
-<td>0..1</td>
-<td>Integer</td>
-<td>Number of hotels expected in HotelList call.</td>
-</tr>
-
-<tr>
 <td>Configuration</td>
 <td>1</td>
 <td></td>
@@ -5866,45 +5830,10 @@ credentials.</p>
 </tr>
 
 <tr>
-<td>Configuration/User</td>
-<td>0..1</td>
-<td>String</td>
-<td>User code to connect to supplier.</td>
-</tr>
-
-<tr>
-<td>Configuration/Password</td>
-<td>0..1</td>
-<td>String</td>
-<td>Password for the connection.</td>
-</tr>
-
-<tr>
 <td>Configuration/UrlGeneric</td>
 <td>0..1</td>
 <td>String</td>
 <td>Supplier URL used for multiple methods.</td>
-</tr>
-
-<tr>
-<td>Configuration/UrlAvail</td>
-<td>0..1</td>
-<td>String</td>
-<td>Specific Url for Availability method.</td>
-</tr>
-
-<tr>
-<td>Configuration/UrlValuation</td>
-<td>0..1</td>
-<td>String</td>
-<td>Specific Url for Valuation method.</td>
-</tr>
-
-<tr>
-<td>Configuration/UrlReservation</td>
-<td>0..1</td>
-<td>String</td>
-<td>Specific Url for Reservation method.</td>
 </tr>
 
 <tr>
@@ -5937,18 +5866,10 @@ credentials.</p>
 </tbody>
 </table>
 
-<h3 id="detailed-description">Detailed description</h3>
-
-<p><strong>optionsQuota:</strong></p>
-
-<p>This new tag will be used only for those suppliers returning a very large number of options, about 20.000+ in the same response. In order to avoid this, the client can set the numbers of options wanted by MealPlan, as long as the supplier returns it in this call (see <a href="/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> <em>AllowsBusinessRules</em>). If the supplier has ImplementsBusinessRules = True, the client can then choose between differentbusiness rules to filter the options they are interested in (see in Avail). We also have established a system level limit, so that if the OptionsQuota set by the client is higher than the established limit we then use the smallest of those two values.</p>
-
 <h3 id="common-elements-rs-example">Common Elements RS Example</h3>
 
 <pre><code class="language-xml">    &lt;HotelBaseRS&gt;
-        &lt;echoToken&gt;TEST&lt;/echoToken&gt;
         &lt;operationImplemented&gt;true&lt;/operationImplemented&gt;
-        &lt;ContinuationToken expectedRange = &quot;4000&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&amp;gt;&amp;lt;ContinuationToken&amp;gt;&amp;lt;ContinuationToken&amp;gt;&amp;lt;Version&amp;gt;2.0&amp;lt;/Version&amp;gt;&amp;lt;Type&amp;gt;Table&amp;lt;/Type&amp;gt;&amp;lt;NextPartitionKey&amp;gt;1!24!bG93Y29zdGhvbGlkYXlfWk1U&amp;lt;/NextPartitionKey&amp;gt;&amp;lt;NextRowKey&amp;gt;1!40!bG93Y29zdGhvbGlkYXlfWk1UXzBoNFIlMjNvcXBr&amp;lt;/NextRowKey&amp;gt;&amp;lt;TargetLocation&amp;gt;Primary&amp;lt;/TargetLocation&amp;gt;&amp;lt;/ContinuationToken&amp;gt;&amp;lt;/ContinuationToken&amp;gt;&lt;/ContinuationToken&gt;
         &lt;applicationErrors&gt;
             &lt;type&gt;102&lt;/type&gt;
             &lt;code&gt;xxx&lt;/code&gt;
@@ -5990,31 +5911,10 @@ credentials.</p>
 </tr>
 
 <tr>
-<td>echoToken</td>
-<td>0..1</td>
-<td>String</td>
-<td>Echo token to be returned in response (used for test purposes only).</td>
-</tr>
-
-<tr>
 <td>operationImplemented</td>
 <td>1</td>
 <td>Boolean</td>
 <td>Informs whether the method has been implemented by the supplier.</td>
-</tr>
-
-<tr>
-<td>ContinuationToken</td>
-<td>0..1</td>
-<td>String</td>
-<td>Internal Token to identify the next set of HotelList or the next set of RoomList.</td>
-</tr>
-
-<tr>
-<td>@expectedRange</td>
-<td>0..1</td>
-<td>Integer</td>
-<td>Number of hotels/rooms expected in HotelList/RoomList call.</td>
 </tr>
 
 <tr>
@@ -6095,33 +5995,6 @@ credentials.</p>
 </tr>
 </tbody>
 </table>
-
-<h3 id="detailed-description-1">Detailed description</h3>
-
-<p><strong>ContinuationToken:</strong></p>
-
-<p>This new tag is useful to split the hotel list or room list response. This is done
-because there are suppliers with a large amount of hotels (over
-200.000) or rooms (over 200.000). In those cases, the response has to be split in order to
-retrieve all the hotels/rooms available. In case that ContinuationToken is not sent, the
-HotelList and RoomList return a maximum of 200.000 hotels/rooms. Using this
-ContinuationToken and the attribute <em>expectedRange</em> the client may
-decide the number of hotels/rooms expected in each HotelList/RoomList call. If the
-supplier has more than 200.000 hotels/rooms, in order to get 100% of the hotels/rooms available, the client will need to use the
-ContinuationToken returned inside the HotelListRS/RoomListRS response until the
-ContinuationToken field is no longer returned in the response (see the example
-in Common Elements RS). Once the tag is not returned the hotel list or the room list are
-complete. The value of this tag is an internal Token identifying
-the next set of HotelList/RoomList to be returned.</p>
-
-<p><strong>expectedRange</strong> :</p>
-
-<p>Specifies the hotel list range set by the client in each HotelList response.
-The number of hotels returned is set in the expectedRange value, although it
-is possible to get more hotels than requested. This means that
-if the client requests 1000 hotels, the response may contain a range between
-1000 to 1999 hotels. In the case this value is not set, the maximum
-hotel range is 200.000. We strongly recommend using multiples of one thousand.</p>
 
 <hr/>
 
