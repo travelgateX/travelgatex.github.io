@@ -5738,6 +5738,8 @@
 
 <p>You can also <strong>replace</strong> the value of an existing parameter by adding into the query a parameter with the same key as the one to be replaced.</p>
 
+<p>You&rsquo;ll be able to add different parameters to multiple accesses and/or suppliers in the same query.</p>
+
 <h3 id="how-to-use-it">How to use it</h3>
 
 <p>Use this plugin by adding it to the <a href="https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/" rel="nofollow" target="_blank">settings</a> in your HotelX Search Query.</p>
@@ -5766,6 +5768,9 @@
 
 <h3 id="execution-example">Execution example</h3>
 
+<p>The JSONConfiguration value brings several possibilities to this plugin:
+- Lets say you want to add a parameter with key &lsquo;A&rsquo; and value &lsquo;1&rsquo; for the access 123 and the parameters &lsquo;B&rsquo; and &lsquo;C&rsquo; with values &lsquo;2&rsquo; and &lsquo;3&rsquo; respectively for the accesses 456 and 789. The following example shows this:</p>
+
 <pre><code class="language-json">	{
 	  &quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
 	  &quot;pluginsType&quot;: [
@@ -5775,9 +5780,49 @@
 	       &quot;parameters&quot;: [
 	          {
 		     &quot;key&quot;: &quot;JSONConfiguration&quot;,
-		     &quot;value&quot;: &quot;{\&quot;accesses\&quot;: [ {\&quot;codes\&quot;: [\&quot;1\&quot;,\&quot;2\&quot;],\&quot;parameters\&quot;: [ {\&quot;key\&quot;: \&quot;A\&quot;, \&quot;value\&quot;: \&quot;1\&quot;} ] } ],
-		                \&quot;suppliers\&quot;: [ {\&quot;codes\&quot;: [\&quot;XXX\&quot;], \&quot;parameters\&quot;: [ {\&quot;key\&quot;: \&quot;D\&quot;,\&quot;value\&quot;: \&quot;4\&quot;}] } ],
-				\&quot;parameters\&quot;: [ {\&quot;key\&quot;: \&quot;C\&quot;, \&quot;value\&quot;: \&quot;valor\&quot; } ] }&quot;
+		     &quot;value&quot;: &quot;{\&quot;accesses\&quot;: [ { \&quot;codes\&quot;: [\&quot;123\&quot;], \&quot;parameters\&quot;: [{ \&quot;key\&quot;: \&quot;A\&quot;, \&quot;value\&quot;: \&quot;1\&quot; }] }, { \&quot;codes\&quot;: [ \&quot;456\&quot;, \&quot;789\&quot; ], \&quot;parameters\&quot;: [ { \&quot;key\&quot;: \&quot;B\&quot;, \&quot;value\&quot;: \&quot;2\&quot; }, { \&quot;key\&quot;: \&quot;C\&quot;, \&quot;value\&quot;: \&quot;3\&quot; } ] } ]}&quot;
+		  }
+		]
+	     }
+	   ]
+	}
+</code></pre>
+
+<ul>
+<li>Another case could be to add parameters by supplier. So for the supplier XXX you add the parameter with key &rsquo;D&rsquo; and value &lsquo;4&rsquo;.</li>
+</ul>
+
+<pre><code class="language-json">	{
+	  &quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
+	  &quot;pluginsType&quot;: [
+	     {
+	       &quot;name&quot;: &quot;add_parameterX&quot;,
+	       &quot;type&quot;: &quot;POST_STEP&quot;,
+	       &quot;parameters&quot;: [
+	          {
+		     &quot;key&quot;: &quot;JSONConfiguration&quot;,
+		     &quot;value&quot;: &quot;{ \&quot;suppliers\&quot;: [{ \&quot;codes\&quot;: [\&quot;XXX\&quot;], \&quot;parameters\&quot;: [{ \&quot;key\&quot;: \&quot;D\&quot;, \&quot;value\&quot;: \&quot;4\&quot; }] }] }&quot;
+		  }
+		]
+	     }
+	   ]
+	}
+</code></pre>
+
+<ul>
+<li>And finally you&rsquo;re also able to add parameters for all of the accesses requested in the corresponding service query (search, quote&hellip;):</li>
+</ul>
+
+<pre><code class="language-json">	{
+	  &quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
+	  &quot;pluginsType&quot;: [
+	     {
+	       &quot;name&quot;: &quot;add_parameterX&quot;,
+	       &quot;type&quot;: &quot;POST_STEP&quot;,
+	       &quot;parameters&quot;: [
+	          {
+		     &quot;key&quot;: &quot;JSONConfiguration&quot;,
+		     &quot;value&quot;: &quot;{ \&quot;parameters\&quot;: [{ \&quot;key\&quot;: \&quot;E\&quot;, \&quot;value\&quot;: \&quot;1\&quot; }] }&quot;
 		  }
 		]
 	     }
