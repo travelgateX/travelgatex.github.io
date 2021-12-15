@@ -24,10 +24,10 @@
       <description>
         
         
-        The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields. You can also download the XSD file containing each and every data structures of the API from here
+        The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
 You can read about what changes might and what changes might not cause an error, below:
  Changes that can cause an error:
- Removing a field from XSD. Modifying the type of field or attribute.
+ Removing a field from XSD. Modifying the type of field or attribute. For example, passing a string type to numeric.   Changes that cannot cause an error:
         
           [...]
         
