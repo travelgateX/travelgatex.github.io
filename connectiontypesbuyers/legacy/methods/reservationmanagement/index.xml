@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Management</title>
+    <link>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/</link>
+    <description>Recent changes in Management on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/</link>
+    </image>
+    
+	    <atom:link href="https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connectiontypesbuyers: Cancel</title>
+      <link>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/cancel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/cancel/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to cancel a booking
+Request Format The request requires one or more of the following data, depending on the supplier:
+ Locators: booking codes - this element contains two elements, Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code). One or both will be required depending on the supplier hotelCode: the hotel code StartDate: the check-in date EndDate: the check-out date  Response Format The result returns a response with the booking status, the cancellation&amp;rsquo;s ID and the fee for that cancellation.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: ReservationList</title>
+      <link>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/reservationlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/reservationlist/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return a list of bookings for a given time period being that either booking date or the travelling date.
+Request Format The request requires one of the following data depending on provider:
+ DateType: indicates the date type: either booking creation date or booking start date Start: the date from End: the date to  Response Format The result returns a list of bookings details, with the same format as ReservationReadRS.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypesbuyers: ReservationRead</title>
+      <link>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/reservationread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/reservationread/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to retrieve detailed information about a specific Reservation
+Request Format The request requires one of the following data depending on supplier:
+ Locators: booking codes (this element contains two elements Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code), one or both will be required depending on the supplier) Currency: the currency code CreationDate: the booking date StardDate: the check-in date EndDate: the check-out date HotelCode: Hotel code  Response Format The result returns the full details of a booking.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

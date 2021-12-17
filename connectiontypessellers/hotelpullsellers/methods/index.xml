@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TravelgateX Documentation – API Reference</title>
+    <title>TravelgateX Documentation – Methods</title>
     <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/</link>
-    <description>Recent changes in API Reference on TravelgateX Documentation</description>
+    <description>Recent changes in Methods on TravelgateX Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <image>
@@ -16,17 +16,39 @@
     
     
     <item>
-      <title>Connectiontypessellers: Data Structure</title>
-      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/data-structure/</link>
+      <title>Connectiontypessellers: Common Elements</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/common-elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/data-structure/</guid>
+      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/common-elements/</guid>
       <description>
         
         
-        The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
-The integration will have the following methods:
-   Booking Flow Method Input Output Required Description     Avail AvailRQ AvailRS Yes Makes an availability request to check which rooms are available for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
+        This node will be in every request and response objects.
+The request object contains the supplier&amp;rsquo;s configuration, urls and credentials.
+The response object contains the status of the request and any possible errors as well as possible messages from the supplier (if previously requested).
+Common Elements RQ Example &amp;lt;HotelBaseRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;20000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;XXXX&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;UrlGeneric&amp;gt;www.supplier.com&amp;lt;/UrlGeneric&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;SegundoPW&amp;quot; value = &amp;quot;PWXML&amp;quot;/&amp;gt; &amp;lt;Parameter key = &amp;quot;User&amp;quot; value = &amp;quot;userXML&amp;quot;/&amp;gt; &amp;lt;Parameter key = &amp;quot;Password&amp;quot; value = &amp;quot;passwordXML&amp;quot;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; … &amp;lt;/HotelBaseRQ&amp;gt;  Common Elements RQ Description    Element Number Type Description     HotelBaseRQ 1  Root node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypessellers: Examples</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/examples/</guid>
+      <description>
+        
+        
+        In this page you can download a Postman project where you will find an example of each request from TravelgateX API with the connectivity already configured.
+Only changes needed are the endpoint and the configuration in the requests:
+  You can download the Postman example project here
+Example of request the seller will receive from TravelgateX system:
+Post headers:
+Content-Type: text/xml; charset=utf-8 Accept: application/xml Expect: 100-continue Accept-Encoding: gzip Connection: Keep-Alive  Post body:
         
           [...]
         

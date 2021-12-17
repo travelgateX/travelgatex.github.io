@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Booking Flow</title>
+    <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/</link>
+    <description>Recent changes in Booking Flow on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/</link>
+    </image>
+    
+	    <atom:link href="https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connectiontypessellers: Avail</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/avail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/avail/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the supplier.
+Request Format The availability request is very straight forward. It only requires destination, travel dates and the number of pax in each room.
+Response Format Results are organized in this hierarchy=
+ Hotel :  A list with all the hotels, including hotel name and code, mealplans list, etc.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypessellers: Valuation</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/valuation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/valuation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return the total price and cancellation policies of the Option selected in the previous step (Avail).
+Request Format The Valuation request format is similar to that of availabilityRQ. It&amp;rsquo;s here you will add data to the option selected.
+Response Format The returned XML contains the total price and list of cancellation policies.
+Remarks Our system allows for a maximum of 180000 milliseconds before the connection is closed.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypessellers: Reservation</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/reservation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/reservation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to book an option.
+Request Format The request format works the same way as Valuation but with the list of passengers.
+Response Format The result returns the booking locator (booking code), which could be the supplier&amp;rsquo;s own code or the one sent in request.
+It also returns all the charges associated with the booking as well as its status.
+Remarks 180000 milliseconds is the maximum amount of time permitted in our system before the connection is closed.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

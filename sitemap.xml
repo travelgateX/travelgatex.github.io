@@ -823,10 +823,6 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/avail/</loc>
-  </url>
-  
-  <url>
     <loc>https://travelgatex.com/inventory-x/extranet/tools/availability-simulator.1/</loc>
   </url>
   
@@ -895,7 +891,11 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/</loc>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/bookingflow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/</loc>
   </url>
   
   <url>
@@ -1188,7 +1188,7 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/configuration/</loc>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/configuration/</loc>
   </url>
   
   <url>
@@ -1297,14 +1297,6 @@
   
   <url>
     <loc>https://travelgatex.com/integrations/flights/de2/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/data-structure/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/data-structure/</loc>
   </url>
   
   <url>
@@ -2700,6 +2692,14 @@
   </url>
   
   <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/reservationmanagement/</loc>
+  </url>
+  
+  <url>
     <loc>https://travelgatex.com/travelgatex/reference/objects/mandatoryfee/</loc>
   </url>
   
@@ -2992,6 +2992,14 @@
   </url>
   
   <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/</loc>
+  </url>
+  
+  <url>
     <loc>https://travelgatex.com/alerts-x/reference/enums/modeprice/</loc>
   </url>
   
@@ -3269,14 +3277,6 @@
   
   <url>
     <loc>https://travelgatex.com/connectiontypesbuyers/hotel-x/plugins/overview/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/overview/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/overview/</loc>
   </url>
   
   <url>
@@ -3913,6 +3913,14 @@
   
   <url>
     <loc>https://travelgatex.com/travelgatex/reference/inputobjects/relayinput/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/release-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/release-notes/</loc>
   </url>
   
   <url>
@@ -5011,14 +5019,6 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/</loc>
-  </url>
-  
-  <url>
     <loc>https://travelgatex.com/distribution/reservation-api/api-methods/</loc>
   </url>
   
@@ -5039,7 +5039,11 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/avail/</loc>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/bookingflow/avail/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/avail/</loc>
   </url>
   
   <url>
@@ -5059,7 +5063,19 @@
   </url>
   
   <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/cancel/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/reservationmanagement/cancel/</loc>
+  </url>
+  
+  <url>
     <loc>https://travelgatex.com/connectiontypesbuyers/hotel-x/methods/reservationmanagement/cancellation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/categorylist/</loc>
   </url>
   
   <url>
@@ -5099,7 +5115,19 @@
   </url>
   
   <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/</loc>
+  </url>
+  
+  <url>
     <loc>https://travelgatex.com/insights-x/content/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/data-structure/</loc>
   </url>
   
   <url>
@@ -5252,6 +5280,10 @@
   </url>
   
   <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/overview/</loc>
+  </url>
+  
+  <url>
     <loc>https://travelgatex.com/paymentx/reference/schema/mutation/</loc>
   </url>
   
@@ -5344,28 +5376,12 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/valuation/</loc>
-  </url>
-  
-  <url>
     <loc>https://travelgatex.com/community/release-notes/</loc>
   </url>
   
   <url>
     <loc>https://travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-mappea/log/legacy/</loc>
     <lastmod>2019-10-08T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/</loc>
   </url>
   
   <url>
@@ -5421,6 +5437,14 @@
   </url>
   
   <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/common-elements/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/common-elements/</loc>
+  </url>
+  
+  <url>
     <loc>https://travelgatex.com/getting-started/concepts/</loc>
   </url>
   
@@ -5434,6 +5458,14 @@
   
   <url>
     <loc>https://travelgatex.com/inventory-x/extranet/tools/copy-tool/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/currencylist/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/data-structure/</loc>
   </url>
   
   <url>
@@ -5497,6 +5529,10 @@
   </url>
   
   <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/listsdata/</loc>
+  </url>
+  
+  <url>
     <loc>https://travelgatex.com/connectiontypesbuyers/hotel-x/methods/reservationmanagement/</loc>
   </url>
   
@@ -5526,6 +5562,10 @@
   </url>
   
   <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/overview/</loc>
+  </url>
+  
+  <url>
     <loc>https://travelgatex.com/insights-x/datasets/dataset-content/benchmark/performance/</loc>
   </url>
   
@@ -5550,7 +5590,11 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/reservation/</loc>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/reservationlist/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/reservationmanagement/reservationlist/</loc>
   </url>
   
   <url>
@@ -5563,6 +5607,10 @@
   
   <url>
     <loc>https://travelgatex.com/distribution/extranet/rules/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/soap-examples/</loc>
   </url>
   
   <url>
@@ -5614,6 +5662,14 @@
   </url>
   
   <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/bookingflow/valuation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/valuation/</loc>
+  </url>
+  
+  <url>
     <loc>https://travelgatex.com/connectiontypesbuyers/hotel-x/plugins/vcc_gen/</loc>
   </url>
   
@@ -5628,14 +5684,6 @@
   
   <url>
     <loc>https://travelgatex.com/distribution/extranet/booking-search/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/cancel/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/cancel/</loc>
   </url>
   
   <url>
@@ -5668,6 +5716,10 @@
   
   <url>
     <loc>https://travelgatex.com/inventory-x/extranet/tools/delete-product/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/descriptiveinfo/</loc>
   </url>
   
   <url>
@@ -5768,6 +5820,22 @@
   </url>
   
   <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/bookingflow/reservation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/reservation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/reservationread/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/reservationmanagement/reservationread/</loc>
+  </url>
+  
+  <url>
     <loc>https://travelgatex.com/connectiontypesbuyers/hotel-x/plugins/search_by_destination/</loc>
   </url>
   
@@ -5797,11 +5865,7 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/categorylist/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/categorylist/</loc>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/categorylist/</loc>
   </url>
   
   <url>
@@ -5810,6 +5874,14 @@
   
   <url>
     <loc>https://travelgatex.com/travelgatex/data-automation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/descriptiveinfoextended/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/examples/</loc>
   </url>
   
   <url>
@@ -5913,19 +5985,7 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/release-notes/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/release-notes/</loc>
-  </url>
-  
-  <url>
     <loc>https://travelgatex.com/distribution/reservation-api/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/reservationread/</loc>
   </url>
   
   <url>
@@ -5960,14 +6020,6 @@
   
   <url>
     <loc>https://travelgatex.com/inventory-x/extranet/tools/bookings/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/common-elements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/</loc>
   </url>
   
   <url>
@@ -6012,6 +6064,10 @@
   
   <url>
     <loc>https://travelgatex.com/distribution/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/geographicdestinationtree/</loc>
   </url>
   
   <url>
@@ -6064,10 +6120,6 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/reservationlist/</loc>
-  </url>
-  
-  <url>
     <loc>https://travelgatex.com/travelgatex/resources/</loc>
   </url>
   
@@ -6085,11 +6137,7 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/currencylist/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/currencylist/</loc>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/currencylist/</loc>
   </url>
   
   <url>
@@ -6099,6 +6147,10 @@
   
   <url>
     <loc>https://travelgatex.com/travelgatex/frequently-asked-questions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/hotellist/</loc>
   </url>
   
   <url>
@@ -6123,11 +6175,7 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/descriptiveinfo/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/descriptiveinfo/</loc>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/descriptiveinfo/</loc>
   </url>
   
   <url>
@@ -6136,6 +6184,10 @@
   
   <url>
     <loc>https://travelgatex.com/connectiontypesbuyers/hotel-x/faqs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/</loc>
   </url>
   
   <url>
@@ -6165,15 +6217,15 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/descriptiveinfoextended/</loc>
-  </url>
-  
-  <url>
     <loc>https://travelgatex.com/distribution/file-loads/masters/hotels-portfolio/</loc>
   </url>
   
   <url>
     <loc>https://travelgatex.com/insights-x/</loc>
+  </url>
+  
+  <url>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/</loc>
   </url>
   
   <url>
@@ -6194,35 +6246,31 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/geographicdestinationtree/</loc>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/geographicdestinationtree/</loc>
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/geographicdestinationtree/</loc>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/mealplanlist/</loc>
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/hotellist/</loc>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/hotellist/</loc>
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/hotellist/</loc>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/metadata/</loc>
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/listsdata/</loc>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/roomlist/</loc>
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/</loc>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/marketlist/</loc>
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/marketlist/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/marketlist/</loc>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/runtimeconfiguration/</loc>
   </url>
   
   <url>
@@ -6230,11 +6278,11 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/mealplanlist/</loc>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/mealplanlist/</loc>
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/mealplanlist/</loc>
+    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/staticconfiguration/</loc>
   </url>
   
   <url>
@@ -6242,11 +6290,7 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/metadata/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/</loc>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/</loc>
   </url>
   
   <url>
@@ -6254,47 +6298,11 @@
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/reservation/</loc>
-  </url>
-  
-  <url>
     <loc>https://travelgatex.com/community/</loc>
   </url>
   
   <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/reservationlist/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/reservationread/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/roomlist/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/roomlist/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/runtimeconfiguration/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/staticconfiguration/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/valuation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/messages/examples/</loc>
-  </url>
-  
-  <url>
-    <loc>https://travelgatex.com/connectiontypesbuyers/legacy/methods/messages/soap-examples/</loc>
+    <loc>https://travelgatex.com/connectiontypessellers/hotelpullsellers/methods/staticcontent/roomlist/</loc>
   </url>
   
   <url>

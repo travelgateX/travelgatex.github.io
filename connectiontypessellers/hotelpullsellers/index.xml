@@ -16,6 +16,41 @@
     
     
     <item>
+      <title>Connectiontypessellers: Data Structure</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/data-structure/</guid>
+      <description>
+        
+        
+        The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
+The integration will have the following methods:
+   Booking Flow Method Input Output Required Description     Avail AvailRQ AvailRS Yes Makes an availability request to check which rooms are available for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connectiontypessellers: Lists of Data</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/listsdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypessellers/hotelpullsellers/listsdata/</guid>
+      <description>
+        
+        
+        Method Goals This paragraph aims to return all of the data lists used in our system: language codes, error codes,currency list, credit cards, nationality and market.
+Language Codes    Language Code     English en   Spanish es   Portuguese pt   Italian it   French fr   German de   Brazilian br    Error codes    Code Description     101 TravelgateX&amp;rsquo;s System Exception.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Connectiontypessellers: Overview</title>
       <link>https://travelgatex.com/connectiontypessellers/hotelpullsellers/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
