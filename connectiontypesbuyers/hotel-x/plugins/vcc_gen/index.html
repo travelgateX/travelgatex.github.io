@@ -5780,6 +5780,10 @@
 						{
 							&quot;key&quot;: &quot;expirationDate&quot;,
 							&quot;value&quot;: &quot;2020/05/25&quot;
+						},
+						{
+							&quot;key&quot; : &quot;useGross&quot;,
+							&quot;value&quot; : &quot;true&quot;
 						}
 					]
 				}
@@ -5793,6 +5797,8 @@
 <li>Default activation date: <strong>same day as the Book</strong> has been processed through HotelX</li>
 <li>Default expiration date: <strong>one month later</strong> after the <strong>checkin</strong> date of the hotel</li>
 </ul>
+
+<p>The <strong>useGross</strong> parameter is optional and it is used to specify if want charge the gross amount on the generated card. If this parameter is not specified <strong>we will use the net amount</strong>.</p>
 
 <p>To apply specific rule, we should add client token in our request</p>
 
