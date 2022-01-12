@@ -5891,6 +5891,7 @@ list of languages supported &hellip;</p>
         &lt;InformCancelPolicies reviewDate = &quot;20/06/2015&quot;&gt;false&lt;/InformCancelPolicies&gt;
         &lt;InformCancelPoliciesDescription reviewDate = &quot;20/06/2015&quot;&gt;false&lt;/InformCancelPoliciesDescription&gt;
         &lt;InformFees reviewDate = &quot;20/06/2015&quot;&gt;false&lt;/InformFees&gt;
+        &lt;TimeZone reviewDate = &quot;04/01/2022&quot;&gt;[eUtc.Utc_Unknown|eUtc.HotelLocalTime|eUtc.Utc_-14|...|eUtc.Utc_0|...|eUtc.Utc_14]&lt;/TimeZone&gt;
     &lt;/Valuation&gt;
     &lt;Reservation&gt;
         &lt;AllowsDeltaPrice reviewDate = &quot;20/06/2015&quot;&gt;false&lt;/AllowsDeltaPrice&gt;
@@ -6843,6 +6844,20 @@ list of languages supported &hellip;</p>
 <td>1</td>
 <td>Boolean</td>
 <td>Informs if the supplier returns fees.</td>
+</tr>
+
+<tr>
+<td>@reviewDate</td>
+<td>1</td>
+<td>String</td>
+<td>Informs of the date when the field was last reviewed.</td>
+</tr>
+
+<tr>
+<td>Valuation/TimeZone</td>
+<td>1</td>
+<td>Enum</td>
+<td>Informs in which TimeZone are the hoursBefore and deadline values of cancelation policies.</td>
 </tr>
 
 <tr>
@@ -7823,6 +7838,43 @@ role="alert"><strong>Important</strong>: values can be -1, this means the suppli
 <p><strong>Avail:</strong></p>
 
 <p><em>MaxNumberHotelsRecommended, MaxNumberCitiesRecommended, MaxNumberZonesRecommended, MaxNumberGeoCodesRecommended:</em> These tags indicate what the recommended number of Cities/Hotels/Zones or Geocodes is for each supplier are. This means that even if a supplier allows for a search of up to 500 at a time, they may recommend that you do not exceed 200, thus way avoiding TimeOut errors and showing results in time. In the majority of cases the maximum number of hotels allowed is the same as the recommended number of hotels (MaxNumberHotels = MaxNumberHotelsRecommended). There are, however, a few cases in which it can be different.</p>
+
+<p><strong>Valuation:</strong></p>
+
+<p><em>TimeZone</em>: This tag indicate in which timezone are the &ldquo;hoursBefore&rdquo; and &ldquo;Deadline&rdquo; fields of cancelation policies. The possible values are:</p>
+
+<pre><code class="language-xml">            Unknown
+            HotelLocalTime
+            UTC-12            
+            UTC-11            
+            UTC-10          
+            UTC-9
+            UTC-8
+            UTC-7
+            UTC-6
+            UTC-5
+            UTC-4
+            UTC-3
+            UTC-2
+            UTC-1
+            UTC+0
+            UTC+1
+            UTC+2
+            UTC+3
+            UTC+4
+            UTC+5
+            UTC+6
+            UTC+7
+            UTC+8
+            UTC+9
+            UTC+10
+            UTC+11
+            UTC+12
+            UTC+13
+            UTC+14
+</code></pre>
+
+<p>If &ldquo;Unknown&rdquo; or &ldquo;HotelLocalTime&rdquo; are selected we&rsquo;ll add an offset of +14 only to the Deadline in case it&rsquo;s calculated and not returned directly by the supplier on UTC Standard.</p>
 
 <p><strong>Reservation:</strong></p>
 

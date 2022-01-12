@@ -6008,10 +6008,14 @@ selected  in the previous step (<em>Avail</em>).</p>
         &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
             &lt;CancelPenalty&gt;
                 &lt;HoursBefore&gt;72&lt;/HoursBefore&gt;
+                &lt;Deadline&gt;01/07/2016 05:00:00Z&lt;/Deadline&gt;
+                &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
                 &lt;Penalty type = &quot;Importe&quot;  paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;25.00&lt;/Penalty&gt;
             &lt;/CancelPenalty&gt;
             &lt;CancelPenalty&gt;
                 &lt;HoursBefore&gt;48&lt;/HoursBefore&gt;
+                &lt;Deadline&gt;02/07/2016 05:00:00Z&lt;/Deadline&gt;
+                &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
                 &lt;Penalty type = &quot;Importe&quot;  paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;72.40&lt;/Penalty&gt;
             &lt;/CancelPenalty&gt;
         &lt;/CancelPenalties&gt;
@@ -6148,6 +6152,20 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>1</td>
 <td>String</td>
 <td>Number of hours prior to checkin date in which this Cancellation policy applies .</td>
+</tr>
+
+<tr>
+<td>CancelPenalties/CancelPenalty/Deadline</td>
+<td>1</td>
+<td>String</td>
+<td>Date on UTC Standard TimeZone in which this Cancellation policy applies.</td>
+</tr>
+
+<tr>
+<td>CancelPenalties/CancelPenalty/CalculatedDeadline</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate.</td>
 </tr>
 
 <tr>
@@ -6359,6 +6377,10 @@ In that case, you will have 30 minutes to complete the booking, if  not, you wil
 <ul>
 <li><p><strong>HoursBefore:</strong> cancellation fees applicable x number of hours before the check in date</p></li>
 
+<li><p><strong>Deadline:</strong> cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> content.</p></li>
+
+<li><p><strong>CalculatedDeadline:</strong> Specifies if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate.</p></li>
+
 <li><p><strong>Type:</strong> There are three values that can be inside types:</p></li>
 </ul>
 
@@ -6381,10 +6403,14 @@ In that case, you will have 30 minutes to complete the booking, if  not, you wil
 <pre><code class="language-xml">&lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
     &lt;CancelPenalty&gt;
         &lt;HoursBefore&gt;72&lt;/HoursBefore&gt;
+        &lt;Deadline&gt;01/07/2016 05:00:00Z&lt;/Deadline&gt;
+        &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
         &lt;Penalty type = &quot;Importe&quot; paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;25.00&lt;/Penalty&gt;
     &lt;/CancelPenalty&gt;
     &lt;CancelPenalty&gt;
         &lt;HoursBefore&gt;48&lt;/HoursBefore&gt;
+        &lt;Deadline&gt;02/07/2016 05:00:00Z&lt;/Deadline&gt;
+        &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
         &lt;Penalty type = &quot;Importe&quot; paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;72.40&lt;/Penalty&gt;
     &lt;/CancelPenalty&gt;
 &lt;/CancelPenalties&gt;
