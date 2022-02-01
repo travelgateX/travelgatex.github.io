@@ -6021,12 +6021,15 @@ is closed.</p>
                       &lt;Fees&gt;
                           &lt;Fee includedPriceOption = &quot;true&quot; description = &quot;TaxAndServiceFee&quot; mandatory = &quot;true&quot; refundable = &quot;false&quot;&gt;
                               &lt;Price currency = &quot;EUR&quot; amount = &quot;8.11&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                              &lt;Code&gt;SPE&lt;/Code&gt;
                           &lt;/Fee&gt;
                       &lt;/Fees&gt;
                       &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
                           &lt;CancelPenalty&gt;
                               &lt;HoursBefore&gt;24&lt;/HoursBefore&gt;
                               &lt;Penalty type = &quot;Importe&quot; currency = &quot;EUR&quot;&gt;20&lt;/Penalty&gt;
+			                        &lt;Deadline&gt;01/07/2016 05:00:00Z&lt;/Deadline&gt;
+                              &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
                           &lt;/CancelPenalty&gt;
                       &lt;/CancelPenalties&gt;
                       &lt;Beds sharedBed = &quot;false&quot;&gt;
@@ -6060,6 +6063,7 @@ is closed.</p>
                   &lt;Fees&gt;
                     &lt;Fee includedPriceOption = &quot;true&quot; description = &quot;TaxAndServiceFee&quot; mandatory =&quot;true&quot; refundable=&quot;false&quot;&gt;
                         &lt;Price currency = &quot;EUR&quot; amount = &quot;8.11&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+			                  &lt;Code&gt;SPE&lt;/Code&gt;
                     &lt;/Fee&gt;
                   &lt;/Fees&gt;
                 &lt;/Option&gt;
@@ -6146,6 +6150,10 @@ is closed.</p>
                   &lt;RateRules&gt;
                     &lt;Rules&gt;
                       &lt;Rule type = &quot;NonRefundable&quot;/&gt;
+		                  &lt;Rule type = &quot;Negotiated&quot;&gt;
+            		        &lt;Code&gt;REP&lt;/Code&gt;
+            		        &lt;Description&gt;REPSOL&lt;/Description&gt;
+        	            &lt;/Rule&gt;
                     &lt;/Rules&gt;
                   &lt;/RateRules&gt;
                 &lt;/Option&gt;
@@ -6172,6 +6180,8 @@ is closed.</p>
                     &lt;CancelPenalty&gt;
                       &lt;HoursBefore&gt;24&lt;/HoursBefore&gt;
                       &lt;Penalty type = &quot;Importe&quot; currency = &quot;EUR&quot;&gt;20&lt;/Penalty&gt;
+		                  &lt;Deadline&gt;01/07/2016 05:00:00Z&lt;/Deadline&gt;
+                      &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
                     &lt;/CancelPenalty&gt;
                   &lt;/CancelPenalties&gt;
                 &lt;/Option&gt;
@@ -6304,22 +6314,50 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty</td>
-<td>0..1</td>
+<td>MealPlans/MealPlan/Options /Option/CancelPenalties</td>
+<td>1</td>
 <td></td>
-<td>List of cancellation penalties. (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> in order to verify if a supplier implements it)</td>
+<td>Cancellation policy details. (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty/HoursBefore</td>
+<td>@nonRefundable</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Indicate if this option is nonRefundable (true or false).</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty</td>
+<td>0..n</td>
+<td></td>
+<td>Listing cancellation penalties.</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/HoursBefore</td>
 <td>1</td>
 <td>String</td>
-<td>Number of hours prior to arrival day in which this Cancellation policy applies.</td>
+<td>Number of hours prior to checkin date in which this Cancellation policy applies.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty</td>
-<td>1..n</td>
+<td>MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Deadline</td>
+<td>1</td>
+<td>String</td>
+<td>Date on UTC Standard TimeZone in which this Cancellation policy applies.</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/CalculatedDeadline</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Penalty</td>
+<td>1</td>
 <td></td>
 <td>Contains the value to apply.</td>
 </tr>
@@ -6328,7 +6366,7 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Type of penalty -possible values: &ldquo;Noches&rdquo; (nights), &ldquo;Porcentaje&rdquo; (percentage), &ldquo;Importe&rdquo; (price value).</td>
+<td>Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value).</td>
 </tr>
 
 <tr>
@@ -6336,6 +6374,13 @@ is closed.</p>
 <td>1</td>
 <td>String</td>
 <td>Currency code.</td>
+</tr>
+
+<tr>
+<td>@paymentType</td>
+<td>1</td>
+<td>String</td>
+<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
@@ -6364,6 +6409,20 @@ is closed.</p>
 <td>1</td>
 <td>String</td>
 <td>Possible values (NonRefundable, Older55, Package,&hellip;). See full list at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#rate-conditions">Lists of Data</a></td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Code</td>
+<td>1</td>
+<td>String</td>
+<td>Contains the Rate Rule code in case it has one.</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Description</td>
+<td>1</td>
+<td>String</td>
+<td>Contains the Rate Rule description.</td>
 </tr>
 
 <tr>
@@ -6724,22 +6783,57 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty</td>
-<td>0..1</td>
-<td></td>
-<td>List of cancellation penalties. (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> in order to verify if a supplier implements it). <strong>Attention:</strong>   When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option</td>
-</tr>
-
-<tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty/HoursBefore</td>
+<td>MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee/Code</td>
 <td>1</td>
 <td>String</td>
-<td>Number of hours prior to arrival day in which this Cancellation policy applies.</td>
+<td>Specifies the fee code in case it has one.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty</td>
-<td>1..n</td>
+<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties</td>
+<td>1</td>
+<td></td>
+<td>Cancellation policy details. (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> in order to verify if a supplier implements it). <strong>Attention:</strong>  When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option</td>
+</tr>
+
+<tr>
+<td>@nonRefundable</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Indicate if this option is nonRefundable (true or false).</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty</td>
+<td>0..n</td>
+<td></td>
+<td>Listing cancellation penalties.</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/HoursBefore</td>
+<td>1</td>
+<td>String</td>
+<td>Number of hours prior to checkin date in which this Cancellation policy applies.</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Deadline</td>
+<td>1</td>
+<td>String</td>
+<td>Date on UTC Standard TimeZone in which this Cancellation policy applies.</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/CalculatedDeadline</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Penalty</td>
+<td>1</td>
 <td></td>
 <td>Contains the value to apply.</td>
 </tr>
@@ -6748,7 +6842,7 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Type of penalty -possible values: &ldquo;Noches&rdquo; (nights), &ldquo;Porcentaje&rdquo; (percentage), &ldquo;Importe&rdquo; (price value).</td>
+<td>Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value).</td>
 </tr>
 
 <tr>
@@ -6756,6 +6850,13 @@ is closed.</p>
 <td>1</td>
 <td>String</td>
 <td>Currency code.</td>
+</tr>
+
+<tr>
+<td>@paymentType</td>
+<td>1</td>
+<td>String</td>
+<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
@@ -6997,6 +7098,13 @@ is closed.</p>
 </tr>
 
 <tr>
+<td>MealPlans/MealPlan/Options /Option/Fees/Fee/Code</td>
+<td>1</td>
+<td>String</td>
+<td>Specifies the fee code in case it has one.</td>
+</tr>
+
+<tr>
 <td>@currency</td>
 <td>1</td>
 <td>String</td>
@@ -7166,6 +7274,12 @@ the availability method. The treatment of cancellation policies is explained in 
 <p><strong>Attention:</strong> When cancellation policies are requested (<em>CancellationPolicies</em>,<em>RoomCancellationPolicies</em>) you should always return them at Option level (<a href="#AvailRS Description">MealPlans/MealPlan/Options/Option/CancelPenalties/CancelPenalty</a>). If CancellationPolicies is requested we should only receive them at option level, but if RoomCancellationPolicies is requested, we should receive them at option and room levels. Cancellation policies per room are complementary (extra information).</p>
 
 <p><strong>HoursBefore:</strong> cancellation fees applicable <em>x</em> number of hours before the check in date.</p>
+
+<p><strong>Deadline:</strong> cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> content.</p>
+
+<p><strong>CalculatedDeadline:</strong> Specifies if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate.
+    true: the deadline has been converted to UTC-0 by XTG
+    false: the supplier returns the deadline on UTC-0, so no calculation is needed</p>
 
 <p><strong>Type:</strong>
 There are three values that can be inside types:</p>

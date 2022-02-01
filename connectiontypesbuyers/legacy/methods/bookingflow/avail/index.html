@@ -6019,12 +6019,15 @@ is closed.</p>
                       &lt;Fees&gt;
                           &lt;Fee includedPriceOption = &quot;true&quot; description = &quot;TaxAndServiceFee&quot; mandatory = &quot;true&quot; refundable = &quot;false&quot;&gt;
                               &lt;Price currency = &quot;EUR&quot; amount = &quot;8.11&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                              &lt;Code&gt;SPE&lt;/Code&gt;
                           &lt;/Fee&gt;
                       &lt;/Fees&gt;
                       &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
                           &lt;CancelPenalty&gt;
                               &lt;HoursBefore&gt;24&lt;/HoursBefore&gt;
                               &lt;Penalty type = &quot;Importe&quot; currency = &quot;EUR&quot;&gt;20&lt;/Penalty&gt;
+			                        &lt;Deadline&gt;01/07/2016 05:00:00Z&lt;/Deadline&gt;
+                              &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
                           &lt;/CancelPenalty&gt;
                       &lt;/CancelPenalties&gt;
                       &lt;Beds sharedBed = &quot;false&quot;&gt;
@@ -6058,6 +6061,7 @@ is closed.</p>
                   &lt;Fees&gt;
                     &lt;Fee includedPriceOption = &quot;true&quot; description = &quot;TaxAndServiceFee&quot; mandatory =&quot;true&quot; refundable=&quot;false&quot;&gt;
                         &lt;Price currency = &quot;EUR&quot; amount = &quot;8.11&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                        &lt;Code&gt;SPE&lt;/Code&gt;
                     &lt;/Fee&gt;
                   &lt;/Fees&gt;
                 &lt;/Option&gt;
@@ -6144,6 +6148,10 @@ is closed.</p>
                   &lt;RateRules&gt;
                     &lt;Rules&gt;
                       &lt;Rule type = &quot;NonRefundable&quot;/&gt;
+                      &lt;Rule type = &quot;Negotiated&quot;&gt;
+            		        &lt;Code&gt;REP&lt;/Code&gt;
+            		        &lt;Description&gt;REPSOL&lt;/Description&gt;
+        	            &lt;/Rule&gt;
                     &lt;/Rules&gt;
                   &lt;/RateRules&gt;
                 &lt;/Option&gt;
@@ -6170,6 +6178,8 @@ is closed.</p>
                     &lt;CancelPenalty&gt;
                       &lt;HoursBefore&gt;24&lt;/HoursBefore&gt;
                       &lt;Penalty type = &quot;Importe&quot; currency = &quot;EUR&quot;&gt;20&lt;/Penalty&gt;
+		                  &lt;Deadline&gt;01/07/2016 05:00:00Z&lt;/Deadline&gt;
+                      &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
                     &lt;/CancelPenalty&gt;
                   &lt;/CancelPenalties&gt;
                 &lt;/Option&gt;
@@ -6375,7 +6385,21 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Possible values (NonRefundable, Older55, Package,&hellip;). See full list at <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/" rel="nofollow" target="_blank">Lists of Data</a></td>
+<td>Possible values (NonRefundable, Older55, Package,&hellip;). See full list at <a href="https://docs.travelgatex.com/connectiontypessellers/hotelpullsellers/listsdata/#rate-conditions" rel="nofollow" target="_blank">Lists of Data</a></td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Code</td>
+<td>1</td>
+<td>String</td>
+<td>Contains the Rate Rule code in case it has one.</td>
+</tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Description</td>
+<td>1</td>
+<td>String</td>
+<td>Contains the Rate Rule description.</td>
 </tr>
 
 <tr>
@@ -6736,6 +6760,13 @@ is closed.</p>
 </tr>
 
 <tr>
+<td>MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee/Code</td>
+<td>1</td>
+<td>String</td>
+<td>Specifies the fee code in case it has one.</td>
+</tr>
+
+<tr>
 <td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty</td>
 <td>0..1</td>
 <td></td>
@@ -7049,6 +7080,13 @@ is closed.</p>
 <td>Decimal</td>
 <td>Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount.</td>
 </tr>
+
+<tr>
+<td>MealPlans/MealPlan/Options /Option/Fees/Fee/Code</td>
+<td>1</td>
+<td>String</td>
+<td>Specifies the fee code in case it has one.</td>
+</tr>
 </tbody>
 </table>
 
@@ -7203,6 +7241,12 @@ There are three values that can be inside types:</p>
 <li><p><em>Importe:</em> Indicates the exact amount  payable.</p></li>
 </ul>
 </blockquote>
+
+<p><strong>Deadline:</strong> cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> content.</p>
+
+<p><strong>CalculatedDeadline:</strong> Specifies if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate.
+    true: the deadline has been converted to UTC-0 by XTG
+    false: the supplier returns the deadline on UTC-0, so no calculation is needed</p>
 
 <p><strong>On Request:</strong></p>
 
