@@ -5770,9 +5770,33 @@
 
 <p>In the request of this call it is only necessary to use the object: &ldquo;HotelBaseRQ&rdquo;. You can find the info in the &lsquo;<a href="/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/">Common Elements</a>&rsquo; section.</p>
 
-<pre><code class="language-xml">    &lt;ConfigurationRQ&gt;
-    &lt;/ConfigurationRQ&gt;
+<pre><code class="language-xml">    &lt;ConfigurationRQ xmlns:xsd = &quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi = &quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+    &lt;timeoutMilliseconds&gt;999999&lt;/timeoutMilliseconds&gt;
+    &lt;source&gt;
+        &lt;languageCode&gt;en&lt;/languageCode&gt;
+    &lt;/source&gt;
+    &lt;filterAuditData&gt;
+        &lt;registerTransactions&gt;true&lt;/registerTransactions&gt;
+    &lt;/filterAuditData&gt;
+    &lt;optionsQuota&gt;0&lt;/optionsQuota&gt;
+    &lt;hubProvider&gt;XXX&lt;/hubProvider&gt;
+    &lt;Configuration&gt;
+        &lt;User&gt;USERXX&lt;/User&gt;
+        &lt;Password&gt;PWXX&lt;/Password&gt;
+        &lt;UrlAvail&gt;https://www.supplier.com/tgx&lt;/UrlAvail&gt;
+        &lt;UrlReservation&gt;https://www.supplier.com/tgx&lt;/UrlReservation&gt;
+        &lt;UrlValuation&gt;https://www.supplier.com/tgx&lt;/UrlValuation&gt;
+        &lt;UrlGeneric&gt;https://www.supplier.com/tgx&lt;/UrlGeneric&gt;
+        &lt;Parameters&gt;
+            &lt;Parameter key = &quot;param&quot; value = &quot;PWXML&quot;/&gt;
+        &lt;/Parameters&gt;
+    &lt;/Configuration&gt;
+&lt;/ConfigurationRQ&gt;
 </code></pre>
+
+<p><strong>Important information about Number (Cardinal):</strong></p>
+
+<p>Go to <a href="/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/#Important">Common-Elements</a> for more information.</p>
 
 <h3 id="configurationrq-description">ConfigurationRQ Description</h3>
 
@@ -5806,7 +5830,7 @@
             &lt;ProviderTagName&gt;Endpoint Supplier&lt;/ProviderTagName&gt;
             &lt;Show&gt;true&lt;/Show&gt;
             &lt;Mandatory&gt;true&lt;/Mandatory&gt;
-            &lt;Pattern&gt;^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;'\(\)\*\+,;=.]+$&lt;/Pattern&gt;
+            &lt;Pattern&gt;^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;amp;'\(\)\*\+,;=.]+$&lt;/Pattern&gt;
             &lt;DescriptionPattern&gt;Please, this field expects the value of a url.&lt;/DescriptionPattern&gt;
             &lt;Description&gt;Endpoint Supplier Restel&lt;/Description&gt;
             &lt;Type&gt;uri&lt;/Type&gt;
@@ -5901,7 +5925,7 @@
             &lt;TagRunTime&gt;Parameter&lt;/TagRunTime&gt;
             &lt;Show&gt;false&lt;/Show&gt;
             &lt;Mandatory&gt;true&lt;/Mandatory&gt;
-            &lt;Pattern&gt;^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;'\(\)\*\+,;=.]+$&lt;/Pattern&gt;
+            &lt;Pattern&gt;^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;amp;'\(\)\*\+,;=.]+$&lt;/Pattern&gt;
             &lt;DescriptionPattern&gt;Please, this field expects the value of a url.&lt;/DescriptionPattern&gt;
             &lt;Description&gt;Url Room List&lt;/Description&gt;
             &lt;Type&gt;uri&lt;/Type&gt;
@@ -5918,6 +5942,10 @@
 <p>This is the example of how the form is displayed with the previous xml response.</p>
 
 <p><img src="/connectiontypessellers/hotelpullsellers/images/ExampleFormBuena.png" alt="This is the example of how the form is displayed with the previous xml response" /></p>
+
+<p><strong>Important information about Number (Cardinal):</strong></p>
+
+<p>Go to <a href="/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/#Important">Common-Elements</a> for more information.</p>
 
 <h3 id="configuracionrs-description">ConfiguracionRS Description</h3>
 

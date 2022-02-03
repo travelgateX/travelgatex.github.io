@@ -5756,34 +5756,43 @@ Connection: Keep-Alive
 
 <p>Post body:</p>
 
-<pre><code class="language-xml">&lt;AvailRQ&gt;
+<pre><code class="language-xml">
+&lt;AvailRQ&gt;
     &lt;timeoutMilliseconds&gt;24700&lt;/timeoutMilliseconds&gt;
     &lt;source&gt;
         &lt;languageCode&gt;en&lt;/languageCode&gt;
     &lt;/source&gt;
+    &lt;filterAuditData&gt;
+        &lt;registerTransactions&gt;true&lt;/registerTransactions&gt;
+    &lt;/filterAuditData&gt;
     &lt;optionsQuota&gt;0&lt;/optionsQuota&gt;
+    &lt;hubUser&gt;xxx&lt;/hubUser&gt;
+    &lt;hubProvider&gt;XXX&lt;/hubProvider&gt;
+    &lt;hubProviderInstanceCode&gt;XYX&lt;/hubProviderInstanceCode&gt;
     &lt;Configuration&gt;
         &lt;User&gt;USERXX&lt;/User&gt;
         &lt;Password&gt;PWXX&lt;/Password&gt;
-        &lt;UrlAvail&gt;www.supplier.com/avail&lt;/UrlAvail&gt;
-        &lt;UrlReservation&gt;www.supplier.com/reservation&lt;/UrlReservation&gt;
-        &lt;UrlValuation&gt;www.supplier.com/valuation&lt;/UrlValuation&gt;
         &lt;UrlGeneric&gt;www.supplier.com&lt;/UrlGeneric&gt;
+        &lt;UrlAvail&gt;www.supplier.com/avail&lt;/UrlAvail&gt;
+        &lt;UrlValuation&gt;www.supplier.com/valuation&lt;/UrlValuation&gt;
+        &lt;UrlReservation&gt;www.supplier.com/reservation&lt;/UrlReservation&gt;       
         &lt;Parameters&gt;
             &lt;Parameter key = &quot;param&quot; value = &quot;PWXML&quot;/&gt;
         &lt;/Parameters&gt;
     &lt;/Configuration&gt;
+    &lt;SearchType&gt;Combined&lt;/SearchType&gt;
     &lt;CancellationPolicies&gt;false&lt;/CancellationPolicies&gt;
     &lt;RoomCancellationPolicies&gt;false&lt;/RoomCancellationPolicies&gt;
     &lt;DailyPrices&gt;false&lt;/DailyPrices&gt;
     &lt;DailyRatePlans&gt;false&lt;/DailyRatePlans&gt;
+    &lt;Attributes&gt;false&lt;/Attributes&gt;
     &lt;OnRequest&gt;false&lt;/OnRequest&gt;
     &lt;BusinessRules&gt;CheaperAmount&lt;/BusinessRules&gt;
     &lt;AvailDestinations&gt;
-        &lt;Destination type = &quot;HOT&quot; code = &quot;5&quot;/&gt;
+        &lt;Destination type = &quot;HOT&quot; code = &quot;157&quot;/&gt;
     &lt;/AvailDestinations&gt;
-    &lt;StartDate&gt;28/01/2022&lt;/StartDate&gt;
-    &lt;EndDate&gt;29/01/2022&lt;/EndDate&gt;
+    &lt;StartDate&gt;28/10/2022&lt;/StartDate&gt;
+    &lt;EndDate&gt;29/10/2022&lt;/EndDate&gt;
     &lt;Currency&gt;EUR&lt;/Currency&gt;
     &lt;Nationality&gt;ES&lt;/Nationality&gt;
     &lt;Markets&gt;
@@ -5791,21 +5800,23 @@ Connection: Keep-Alive
         &lt;Market&gt;EN&lt;/Market&gt;
     &lt;/Markets&gt;
     &lt;RoomCandidates&gt;
-        &lt;RoomCandidate id = &quot;1&quot;&gt;
+        &lt;RoomCandidate cantidad = &quot;1&quot; id = &quot;1&quot;&gt;
             &lt;Paxes&gt;
                 &lt;Pax age = &quot;30&quot; id = &quot;1&quot;/&gt;
                 &lt;Pax age = &quot;30&quot; id = &quot;2&quot;/&gt;
             &lt;/Paxes&gt;
         &lt;/RoomCandidate&gt;
-        &lt;RoomCandidate id = &quot;2&quot;&gt;
+        &lt;RoomCandidate cantidad = &quot;2&quot; id = &quot;2&quot;&gt;
             &lt;Paxes&gt;
                 &lt;Pax age = &quot;35&quot; id = &quot;1&quot;/&gt;
                 &lt;Pax age = &quot;42&quot; id = &quot;2&quot;/&gt;
                 &lt;Pax age = &quot;5&quot; id = &quot;3&quot;/&gt;
             &lt;/Paxes&gt;
         &lt;/RoomCandidate&gt;
+        &lt;Remarks&gt;true&lt;/Remarks&gt;
     &lt;/RoomCandidates&gt;
 &lt;/AvailRQ&gt;
+
 
 </code></pre>
 

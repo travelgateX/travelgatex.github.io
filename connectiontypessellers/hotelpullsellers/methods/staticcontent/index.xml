@@ -64,7 +64,7 @@ CategoryListRQ Example In the request of this call it is only necessary to use t
 Request Format The request does not require any elements. Empty request.
 Response Format The result returns a list of currencies.
 CurrencyListRQ Example In the request of this call it is only necessary to use the object: &amp;ldquo;HotelBaseRQ&amp;rdquo;. You can find the info in the &amp;lsquo;Common Elements&amp;rsquo; section.
-&amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt;  CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.
+&amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt;  Important information about Number (Cardinal):
         
           [...]
         
