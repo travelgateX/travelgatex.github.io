@@ -5783,11 +5783,15 @@ list of languages supported &hellip;</p>
 
 <h3 id="metadatarq-example">MetaDataRQ Example</h3>
 
-<p>In the request of this call it is only necessary to use the object: &ldquo;HotelBaseRQ&rdquo;. You can find the info in the &lsquo;<a href="/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/">Common Elements</a>&rsquo; section.</p>
+<p>In the request of this call it is only necessary to use the object: &ldquo;HotelBaseRQ&rdquo;. You can find the info in the &lsquo;<a href="/connectiontypessellers/hotelpullsellers/methods/common-elements/">Common Elements</a>&rsquo; section.</p>
 
 <pre><code class="language-xml">    &lt;MetaDataRQ&gt;
     &lt;/MetaDataRQ&gt;
 </code></pre>
+
+<p><strong>Important information about Number (Cardinal):</strong></p>
+
+<p>Go to <a href="/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important">Common-Elements</a> for more information.</p>
 
 <h3 id="metadatarq-description">MetaDataRQ Description</h3>
 
@@ -5848,7 +5852,9 @@ list of languages supported &hellip;</p>
                 &lt;SamePaxAge reviewDate = &quot;20/06/2015&quot;&gt;false&lt;/SamePaxAge&gt;
             &lt;/RequiredRoomWithSamePaxConfiguration&gt;
             &lt;AgeRange reviewDate = &quot;11/11/2016&quot;&gt;
-                &lt;Age type = &quot;Child&quot; min = &quot;2&quot; max = &quot;5&quot;/&gt;
+                &lt;Age type = &quot;Adult&quot; min = &quot;18&quot; max = &quot;99&quot;/&gt;
+                &lt;Age type = &quot;Child&quot; min = &quot;2&quot; max = &quot;17&quot;/&gt;
+                &lt;Age type = &quot;Infant&quot; min = &quot;0&quot; max = &quot;1&quot;/&gt;
             &lt;/AgeRange&gt;
         &lt;/RoomCandidates&gt;
         &lt;RateRules&gt;
@@ -6008,10 +6014,6 @@ list of languages supported &hellip;</p>
     &lt;/Generic&gt;
 &lt;/MetaDataRS&gt;
 </code></pre>
-
-<p><strong>Important information about Number (Cardinal):</strong></p>
-
-<p>Go to <a href="/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important">Common-Elements</a> for more information.</p>
 
 <h3 id="metadatars-description">MetaDataRS Description</h3>
 
@@ -7787,7 +7789,7 @@ role="alert"><strong>Important</strong>: values can be -1, this means the suppli
 <p><em>AllowsPreferences:</em> In this tag it indicates what types of preferences the provider allows at the hotel and / or room level.</p>
 
 <ul>
-<li><strong>Preference</strong>: Each of these tags will specify the type of preference allowed and at what level it can be requested
+<li><p><strong>Preference</strong>: Each of these tags will specify the type of preference allowed and at what level it can be requested</p>
 
 <ul>
 <li>hotel =&gt; at the option / general level.</li>
@@ -7817,14 +7819,14 @@ role="alert"><strong>Important</strong>: values can be -1, this means the suppli
 <li><p><strong>Value</strong> :</p>
 
 <ul>
-<li><strong>mandatory</strong>: Here we will specify if it is necessary to pass a value in the Preference tag in reservation request.</li>
-<li><strong>type</strong>: Then you must specify the type of value that can be sent in tag type. This type is an Enum that could be:
+<li><p><strong>mandatory</strong>: Here we will specify if it is necessary to pass a value in the Preference tag in reservation request.</p></li>
+
+<li><p><strong>type</strong>: Then you must specify the type of value that can be sent in tag type. This type is an Enum that could be:</p>
 
 <ul>
 <li>string</li>
 <li>numeric</li>
-<li>boolean
-<br /></li>
+<li>boolean</li>
 </ul></li>
 </ul></li>
 
