@@ -5850,7 +5850,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>OnRequest</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a>).</td>
+<td>Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a>).</td>
 </tr>
 
 <tr>
@@ -5871,7 +5871,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>PaymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types">Lists of Data</a>).</td>
+<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#payment-types">Lists of Data</a>).</td>
 </tr>
 
 <tr>
@@ -6006,13 +6006,13 @@ selected  in the previous step (<em>Avail</em>).</p>
         &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
             &lt;CancelPenalty&gt;
                 &lt;HoursBefore&gt;72&lt;/HoursBefore&gt;
-                &lt;Deadline&gt;01/07/2016 05:00:00Z&lt;/Deadline&gt;
+                &lt;Deadline&gt;01/07/2016T05:00:00Z&lt;/Deadline&gt;
                 &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
                 &lt;Penalty type = &quot;Importe&quot;  paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;25.00&lt;/Penalty&gt;
             &lt;/CancelPenalty&gt;
             &lt;CancelPenalty&gt;
                 &lt;HoursBefore&gt;48&lt;/HoursBefore&gt;
-                &lt;Deadline&gt;02/07/2016 05:00:00Z&lt;/Deadline&gt;
+                &lt;Deadline&gt;02/07/2016T05:00:00Z&lt;/Deadline&gt;
                 &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
                 &lt;Penalty type = &quot;Importe&quot;  paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;72.40&lt;/Penalty&gt;
             &lt;/CancelPenalty&gt;
@@ -6150,14 +6150,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>CancelPenalties/CancelPenalty/HoursBefore</td>
 <td>1</td>
 <td>String</td>
-<td>Number of hours prior to checkin date in which this Cancellation policy applies.</td>
+<td>Number of hours prior to checkin date in which this Cancellation policy applies</td>
 </tr>
 
 <tr>
 <td>CancelPenalties/CancelPenalty/Deadline</td>
 <td>1</td>
 <td>String</td>
-<td>Date on UTC Standard TimeZone in which this Cancellation policy applies.</td>
+<td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
 </tr>
 
 <tr>
@@ -6192,14 +6192,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types">Lists of Data</a>) .</td>
+<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#payment-types">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
 <td>Remarks</td>
 <td>0..1</td>
 <td>String</td>
-<td>Remarks (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Remarks (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -6227,7 +6227,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>@code</td>
 <td>1</td>
 <td>String</td>
-<td>Code card. Se the full list of card codes at <a href="/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#credit-cards">Lists of Data</a></td>
+<td>Code card. Se the full list of card codes at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#credit-cards">Lists of Data</a></td>
 </tr>
 
 <tr>
@@ -6304,14 +6304,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>CancelPoliciesDescription</td>
 <td>0..1</td>
 <td>String</td>
-<td>Contains the cancellation penalties in free text (see <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Contains the cancellation penalties in free text (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 </tbody>
 </table>
 
 <h3 id="detailed-description">Detailed Description</h3>
 
-<p>**Suppliers with block allotment **</p>
+<p><strong>Suppliers with block allotment</strong></p>
 
 <p>There are some suppliers who use block allotments, sometimes called pre-confirmation or quote.
 In that case, you will have 30 minutes to complete the booking, if  not, you will have to re-launch Valuation 30 minutes after the last request, normally just before booking request.</p>
@@ -6324,25 +6324,26 @@ In that case, you will have 30 minutes to complete the booking, if  not, you wil
 
 <p>Booking cancellation penalties are affected by the following elements:</p>
 
+<p><strong>HoursBefore:</strong> cancellation fees applicable <em>x</em> number of hours before the check in date.</p>
+
+<p><strong>Deadline:</strong> cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> content.</p>
+
 <ul>
-<li><p><strong>HoursBefore:</strong> cancellation fees applicable x number of hours before the check in date</p></li>
-
-<li><p><strong>Deadline:</strong> cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> content.</p></li>
-
-<li><p><strong>CalculatedDeadline:</strong> Specifies if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate.
-true: the deadline has been converted to UTC-0 by XTG
-false: the supplier returns the deadline on UTC-0, so no calculation is needed</p></li>
-
-<li><p><strong>Type:</strong> There are three values that can be inside types:</p></li>
+<li><strong>CalculatedDeadline:</strong> Specifies if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate according to <strong>ISO 8601</strong>
+true: The deadline has been converted to UTC-0 by XTG.
+false: The supplier returns the deadline on UTC-0, so no calculation is needed.</li>
 </ul>
+
+<p><strong>Type:</strong>
+There are three values that can be inside types:</p>
 
 <blockquote>
 <ul>
-<li><p><em>Noches:</em> indicates the number of nights to be penalized.</p></li>
+<li><p><em>Noches:</em> Indicates the number of nights to be penalized.</p></li>
 
-<li><p><em>Porcentaje:</em> indicates the percentage to pay based on the option price.</p></li>
+<li><p><em>Porcentaje:</em> Indicates the percentage to pay based on the option price.</p></li>
 
-<li><p><em>Importe:</em> indicates the exact amount payable</p></li>
+<li><p><em>Importe:</em> Indicates the exact amount  payable.</p></li>
 </ul>
 </blockquote>
 
@@ -6350,18 +6351,18 @@ false: the supplier returns the deadline on UTC-0, so no calculation is needed</
 <li><strong>Currency:</strong> currency of the penalty fee.</li>
 </ul>
 
-<p>In this example you can see 2 <em>CancelPenalty</em> with different <em>HoursBefore</em>:</p>
+<p>In this example you can see 2 <strong>CancelPenalty</strong> with different <strong>HoursBefore</strong>:</p>
 
 <pre><code class="language-xml">&lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
     &lt;CancelPenalty&gt;
         &lt;HoursBefore&gt;72&lt;/HoursBefore&gt;
-        &lt;Deadline&gt;01/07/2016 05:00:00Z&lt;/Deadline&gt;
+        &lt;Deadline&gt;01/07/2016T05:00:00Z&lt;/Deadline&gt;
         &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
         &lt;Penalty type = &quot;Importe&quot; paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;25.00&lt;/Penalty&gt;
     &lt;/CancelPenalty&gt;
     &lt;CancelPenalty&gt;
         &lt;HoursBefore&gt;48&lt;/HoursBefore&gt;
-        &lt;Deadline&gt;02/07/2016 05:00:00Z&lt;/Deadline&gt;
+        &lt;Deadline&gt;02/07/2016T05:00:00Z&lt;/Deadline&gt;
         &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
         &lt;Penalty type = &quot;Importe&quot; paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;72.40&lt;/Penalty&gt;
     &lt;/CancelPenalty&gt;

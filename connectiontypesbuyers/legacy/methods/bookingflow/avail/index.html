@@ -5866,7 +5866,7 @@ is closed.</p>
 <td>CancellationPolicies</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicates if you want to receive the cancellation policies in AvailRS, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a>] in order to verify if a supplier implements it).</td>
+<td>Indicates if you want to receive the cancellation policies in AvailRS, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a>] in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -5880,35 +5880,35 @@ is closed.</p>
 <td>DailyPrices</td>
 <td>0..1</td>
 <td>Boolean</td>
-<td>Indicates if you want to receive the daily prices at room level in AvailRS, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Indicates if you want to receive the daily prices at room level in AvailRS, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
 <td>DailyRatePlans</td>
 <td>0..1</td>
 <td>Boolean</td>
-<td>Indicates if you want to receive the daily rate plans at room level in AvailRS, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Indicates if you want to receive the daily rate plans at room level in AvailRS, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
 <td>OnRequest</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
 <td>BusinessRules</td>
 <td>1</td>
 <td></td>
-<td>Indicates the business rules the client wants to apply in availability, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Indicates the business rules the client wants to apply in availability, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
 <td>AvailDestinations/Destination</td>
 <td>1..n</td>
 <td></td>
-<td>Contains the list of destinations filters (hotels or cities or zones or geocodes). The number of Destinations is defined in <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a>.</td>
+<td>Contains the list of destinations filters (hotels or cities or zones or geocodes). The number of Destinations is defined in <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a>.</td>
 </tr>
 
 <tr>
@@ -5950,14 +5950,14 @@ is closed.</p>
 <td>Nationality</td>
 <td>1</td>
 <td>String</td>
-<td>Nationality of the guest (use ISO3166_1_alfa_2). This information is mandatory. (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Nationality of the guest (use ISO3166_1_alfa_2). This information is mandatory. (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
 <td>Markets</td>
 <td>1</td>
 <td></td>
-<td>List of Market requested (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>List of Market requested (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -6026,7 +6026,7 @@ is closed.</p>
                           &lt;CancelPenalty&gt;
                               &lt;HoursBefore&gt;24&lt;/HoursBefore&gt;
                               &lt;Penalty type = &quot;Importe&quot; currency = &quot;EUR&quot;&gt;20&lt;/Penalty&gt;
-			                        &lt;Deadline&gt;01/07/2016 05:00:00Z&lt;/Deadline&gt;
+			                        &lt;Deadline&gt;01/07/2016T05:00:00Z&lt;/Deadline&gt;
                               &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
                           &lt;/CancelPenalty&gt;
                       &lt;/CancelPenalties&gt;
@@ -6178,7 +6178,7 @@ is closed.</p>
                     &lt;CancelPenalty&gt;
                       &lt;HoursBefore&gt;24&lt;/HoursBefore&gt;
                       &lt;Penalty type = &quot;Importe&quot; currency = &quot;EUR&quot;&gt;20&lt;/Penalty&gt;
-		                  &lt;Deadline&gt;01/07/2016 05:00:00Z&lt;/Deadline&gt;
+		                  &lt;Deadline&gt;01/07/2016T05:00:00Z&lt;/Deadline&gt;
                       &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
                     &lt;/CancelPenalty&gt;
                   &lt;/CancelPenalties&gt;
@@ -6273,7 +6273,7 @@ is closed.</p>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type (See full type list at <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/" rel="nofollow" target="_blank">Lists of Data</a>) .</td>
+<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
@@ -6315,7 +6315,7 @@ is closed.</p>
 <td>MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty</td>
 <td>0..1</td>
 <td></td>
-<td>List of cancellation penalties. (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it)</td>
+<td>List of cancellation penalties. (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it)</td>
 </tr>
 
 <tr>
@@ -6350,14 +6350,14 @@ is closed.</p>
 <td>MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty/CalculatedDeadline</td>
 <td>0..1</td>
 <td>Boolean</td>
-<td>Indicate if the Deadline is returned by the supplier or it’s been calculated by TravelGate.</td>
+<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation</td>
 </tr>
 
 <tr>
 <td>MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty/Deadline</td>
 <td>0..1</td>
 <td>String</td>
-<td>Cancellation fees will be applicabled between this date and check-in date.</td>
+<td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
 </tr>
 
 <tr>
@@ -6385,7 +6385,7 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Possible values (NonRefundable, Older55, Package,&hellip;). See full list at <a href="https://docs.travelgatex.com/connectiontypessellers/hotelpullsellers/listsdata/#rate-conditions" rel="nofollow" target="_blank">Lists of Data</a></td>
+<td>Possible values (NonRefundable, Older55, Package,&hellip;). See full list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#rate-conditions">Lists of Data</a></td>
 </tr>
 
 <tr>
@@ -6455,14 +6455,14 @@ is closed.</p>
 <td>@numberOfUnits</td>
 <td>0..1</td>
 <td>Integer</td>
-<td>Number of rooms available with the same type (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a>).</td>
+<td>Number of rooms available with the same type (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a>).</td>
 </tr>
 
 <tr>
 <td>MealPlans/MealPlan/Options /Option/Rooms/Room/Offers</td>
 <td>0..1</td>
 <td></td>
-<td>The supplier returns in response which offer is applicable for each room (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>The supplier returns in response which offer is applicable for each room (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -6490,7 +6490,7 @@ is closed.</p>
 <td>MealPlans/MealPlan/Options /Option/Rooms/Room/Beds</td>
 <td>0..1</td>
 <td></td>
-<td>Detail of beds (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Detail of beds (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -6546,7 +6546,7 @@ is closed.</p>
 <td>MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices</td>
 <td>0..1</td>
 <td></td>
-<td>Specifies daily price, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Specifies daily price, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -6609,7 +6609,7 @@ is closed.</p>
 <td>MealPlans/MealPlan/Options /Option/Rooms/Room /DailyRatePlans</td>
 <td>0..1</td>
 <td></td>
-<td>Specifies the daily rate, as long as the supplier returns it in this method (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Specifies the daily rate, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -6770,7 +6770,7 @@ is closed.</p>
 <td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty</td>
 <td>0..1</td>
 <td></td>
-<td>List of cancellation penalties. (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it)</td>
+<td>List of cancellation penalties. (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it)</td>
 </tr>
 
 <tr>
@@ -6805,14 +6805,14 @@ is closed.</p>
 <td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty/CalculatedDeadline</td>
 <td>0..1</td>
 <td>Boolean</td>
-<td>Indicate if the Deadline is returned by the supplier or it’s been calculated by TravelGate.</td>
+<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation</td>
 </tr>
 
 <tr>
 <td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty/Deadline</td>
 <td>0..1</td>
 <td>String</td>
-<td>Cancellation fees will be applicabled between this date and check-in date.</td>
+<td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
 </tr>
 
 <tr>
@@ -6854,7 +6854,7 @@ is closed.</p>
 <td>MealPlans/MealPlan/Options /Option/Detail</td>
 <td>0..1</td>
 <td></td>
-<td>Detail of option (if the option is different from the type&lt;&gt; Hotel and see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Detail of option (if the option is different from the type&lt;&gt; Hotel and see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -6966,7 +6966,7 @@ is closed.</p>
 <td>MealPlans/MealPlan/Options /Option/Remarks</td>
 <td>0..1</td>
 <td></td>
-<td>List of remarks (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>List of remarks (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -6980,7 +6980,7 @@ is closed.</p>
 <td>MealPlans/MealPlan/Options /Option/Offers</td>
 <td>0..1</td>
 <td></td>
-<td>The supplier returns in response which offer is applicable for each option (see <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>The supplier returns in response which offer is applicable for each option (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
@@ -7096,7 +7096,7 @@ is closed.</p>
 
 <p>AvailDestinations indicates what destinations will be requested to the supplier.</p>
 
-<p>Hotel codes or other destination codes must be defined using information specified in  <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a>.</p>
+<p>Hotel codes or other destination codes must be defined using information specified in  <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a>.</p>
 
 <p><em>MaxNumberHotels</em>, <em>MaxNumberCities</em>, <em>MaxNumberZones</em> and <em>MaxNumberGeoCodes</em> indicates how client should group avail requests to supplier.</p>
 
@@ -7104,7 +7104,7 @@ is closed.</p>
 
 <p><strong>BusinessRules:</strong></p>
 
-<p>BusinessRules uses <em>optionsQuota</em>, go to <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/common-elements/" rel="nofollow" target="_blank">Common-Elements</a> for more
+<p>BusinessRules uses <em>optionsQuota</em>, go to <a href="/connectiontypessellers/hotelpullsellers/methods/common-elements/">Common-Elements</a> for more
 information.</p>
 
 <p>This tag will only be used for suppliers availability responses
@@ -7229,6 +7229,14 @@ the availability method.</p>
 
 <p><strong>HoursBefore:</strong> cancellation fees applicable <em>x</em> number of hours before the check in date.</p>
 
+<p><strong>Deadline:</strong> cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> content.</p>
+
+<ul>
+<li><strong>CalculatedDeadline:</strong> Specifies if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate according to <strong>ISO 8601</strong>
+true: The deadline has been converted to UTC-0 by XTG.
+false: The supplier returns the deadline on UTC-0, so no calculation is needed.</li>
+</ul>
+
 <p><strong>Type:</strong>
 There are three values that can be inside types:</p>
 
@@ -7241,12 +7249,6 @@ There are three values that can be inside types:</p>
 <li><p><em>Importe:</em> Indicates the exact amount  payable.</p></li>
 </ul>
 </blockquote>
-
-<p><strong>Deadline:</strong> cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> content.</p>
-
-<p><strong>CalculatedDeadline:</strong> Specifies if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate.
-    true: the deadline has been converted to UTC-0 by XTG
-    false: the supplier returns the deadline on UTC-0, so no calculation is needed</p>
 
 <p><strong>On Request:</strong></p>
 
@@ -7270,7 +7272,7 @@ in the availability method.</p>
 <p>In the case  the client doesn&rsquo;t want to display the options in a
 status RQ, we can filter the options as long as the supplier specifies
 the status and the <OnRequest> tag is set in AvailRQ. In
-case the supplier doesn&rsquo;t specify the status, the element AllowOnRequest in <a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/" rel="nofollow" target="_blank">MetaData</a> needs to be set as FALSE.</p>
+case the supplier doesn&rsquo;t specify the status, the element AllowOnRequest in <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> needs to be set as FALSE.</p>
 
 <p><strong>POI cases Examples:</strong></p>
 
