@@ -5775,36 +5775,36 @@ selected  in the previous step (<em>Avail</em>).</p>
 <p>In the request for this call it is necessary to use the object: &ldquo;HotelBaseRQ&rdquo;. You can find the information in the section &lsquo;<a href="/connectiontypessellers/hotelpullsellers/methods/common-elements/">Common elements</a>&rsquo;.</p>
 
 <pre><code class="language-xml">&lt;ValuationRQ&gt;
-   &lt;StartDate&gt;04/07/2016&lt;/StartDate&gt;
-   &lt;EndDate&gt;11/07/2016&lt;/EndDate&gt;
-   &lt;MealPlanCode&gt;15&lt;/MealPlanCode&gt;
-   &lt;HotelCode&gt;6259&lt;/HotelCode&gt;
-   &lt;PaymentType&gt;MerchantPay&lt;/PaymentType&gt;
-   &lt;OptionType&gt;Hotel&lt;/OptionType&gt;
-   &lt;OnRequest&gt;false&lt;/OnRequest&gt;
-   &lt;Nationality&gt;ES&lt;/Nationality&gt;
-   &lt;Parameters&gt;
-       &lt;Parameter key = &quot;ID1&quot; value = &quot;ID#1#VR&quot;/&gt;
-       &lt;Parameter key = &quot;ID2&quot; value = &quot;ID#2#FGR#45187#10-5&quot;/&gt;
-       &lt;Parameter key = &quot;PSR&quot; value = &quot;511.28&quot;/&gt;
-   &lt;/Parameters&gt;
-   &lt;Rooms&gt;
-       &lt;Room id = &quot;ITD10&quot; roomCandidateRefId = &quot;1&quot; code = &quot;TW&quot; description = &quot;Twinn&quot;/&gt;
-       &lt;Room id = &quot;IOG22&quot; roomCandidateRefId = &quot;2&quot; code = &quot;IND&quot; description = &quot;Individual&quot;/&gt;
-   &lt;/Rooms&gt;
-   &lt;RoomCandidates&gt;
-       &lt;RoomCandidate id = &quot;1&quot;&gt;
-           &lt;Paxes&gt;
-               &lt;Pax age = &quot;30&quot; id = &quot;1&quot;/&gt;
-               &lt;Pax age = &quot;30&quot; id = &quot;2&quot;/&gt;
-           &lt;/Paxes&gt;
-       &lt;/RoomCandidate&gt;
-       &lt;RoomCandidate id = &quot;2&quot;&gt;
-           &lt;Paxes&gt;
-               &lt;Pax age = &quot;30&quot; id = &quot;1&quot;/&gt;
-           &lt;/Paxes&gt;
-       &lt;/RoomCandidate&gt;
-   &lt;/RoomCandidates&gt;
+    &lt;StartDate&gt;04/07/2016&lt;/StartDate&gt;
+    &lt;EndDate&gt;11/07/2016&lt;/EndDate&gt;
+    &lt;MealPlanCode&gt;15&lt;/MealPlanCode&gt;
+    &lt;HotelCode&gt;6259&lt;/HotelCode&gt;
+    &lt;PaymentType&gt;MerchantPay&lt;/PaymentType&gt;
+    &lt;OptionType&gt;Hotel&lt;/OptionType&gt;
+    &lt;OnRequest&gt;false&lt;/OnRequest&gt;
+    &lt;Nationality&gt;ES&lt;/Nationality&gt;
+    &lt;Parameters&gt;
+        &lt;Parameter key = &quot;ID1&quot; value = &quot;ID#1#VR&quot;/&gt;
+        &lt;Parameter key = &quot;ID2&quot; value = &quot;ID#2#FGR#45187#10-5&quot;/&gt;
+        &lt;Parameter key = &quot;PSR&quot; value = &quot;511.28&quot;/&gt;
+    &lt;/Parameters&gt;
+    &lt;Rooms&gt;
+        &lt;Room id = &quot;ITD10&quot; roomCandidateRefId = &quot;1&quot; code = &quot;TW&quot; description = &quot;Twinn&quot;/&gt;
+        &lt;Room id = &quot;IOG22&quot; roomCandidateRefId = &quot;2&quot; code = &quot;IND&quot; description = &quot;Individual&quot;/&gt;
+    &lt;/Rooms&gt;
+    &lt;RoomCandidates&gt;
+        &lt;RoomCandidate id = &quot;1&quot;&gt;
+            &lt;Paxes&gt;
+                &lt;Pax age = &quot;30&quot; id = &quot;1&quot;/&gt;
+                &lt;Pax age = &quot;30&quot; id = &quot;2&quot;/&gt;
+            &lt;/Paxes&gt;
+        &lt;/RoomCandidate&gt;
+        &lt;RoomCandidate id = &quot;2&quot;&gt;
+            &lt;Paxes&gt;
+                &lt;Pax age = &quot;30&quot; id = &quot;1&quot;/&gt;
+            &lt;/Paxes&gt;
+        &lt;/RoomCandidate&gt;
+    &lt;/RoomCandidates&gt;
 &lt;/ValuationRQ&gt;
 </code></pre>
 
@@ -5871,7 +5871,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>PaymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#payment-types">Lists of Data</a>).</td>
+<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types">Lists of Data</a>).</td>
 </tr>
 
 <tr>
@@ -5997,42 +5997,42 @@ selected  in the previous step (<em>Avail</em>).</p>
 
 <h3 id="valuationrs-example">ValuationRS Example</h3>
 
-<pre><code class="language-xml">    &lt;ValuationRS&gt;
-        &lt;Parameters&gt;
-            &lt;Parameter key = &quot;bd1&quot; value = &quot;43&quot;/&gt;
-        &lt;/Parameters&gt;
-        &lt;Status&gt;OK&lt;/Status&gt;
-        &lt;Price currency = &quot;EUR&quot; amount = &quot;106.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-        &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
-            &lt;CancelPenalty&gt;
-                &lt;HoursBefore&gt;72&lt;/HoursBefore&gt;
-                &lt;Deadline&gt;01/07/2016T05:00:00Z&lt;/Deadline&gt;
-                &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
-                &lt;Penalty type = &quot;Importe&quot;  paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;25.00&lt;/Penalty&gt;
-            &lt;/CancelPenalty&gt;
-            &lt;CancelPenalty&gt;
-                &lt;HoursBefore&gt;48&lt;/HoursBefore&gt;
-                &lt;Deadline&gt;02/07/2016T05:00:00Z&lt;/Deadline&gt;
-                &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
-                &lt;Penalty type = &quot;Importe&quot;  paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;72.40&lt;/Penalty&gt;
-            &lt;/CancelPenalty&gt;
-        &lt;/CancelPenalties&gt;
-        &lt;Fees&gt;
-            &lt;Fee includedPriceOption = &quot;true&quot; description = &quot;TaxAndServiceFee&quot;&gt;
-                &lt;Price currency = &quot;EUR&quot; amount = &quot;8.11&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-		        &lt;Code&gt;SPE&lt;/Code&gt;
-            &lt;/Fee&gt;
-        &lt;/Fees&gt;
-        &lt;Remarks/&gt;
-        &lt;PaymentOptions cash=&quot;false&quot; bankAcct=&quot;false&quot;&gt;
-            &lt;Cards&gt;
-                &lt;Card code=&quot;VI&quot;/&gt;
-                &lt;Card code=&quot;AX&quot;/&gt;
-                &lt;Card code=&quot;CA&quot;/&gt;  
-            &lt;/Cards&gt; 
-        &lt;PaymentOptions/&gt;       
-       &lt;CancelPoliciesDescription/&gt;
-    &lt;/ValuationRS&gt;
+<pre><code class="language-xml">&lt;ValuationRS&gt;
+    &lt;Parameters&gt;
+        &lt;Parameter key = &quot;bd1&quot; value = &quot;43&quot;/&gt;
+    &lt;/Parameters&gt;
+    &lt;Status&gt;OK&lt;/Status&gt;
+    &lt;Price currency = &quot;EUR&quot; amount = &quot;106.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+    &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
+        &lt;CancelPenalty&gt;
+            &lt;HoursBefore&gt;72&lt;/HoursBefore&gt;
+            &lt;Deadline&gt;01/07/2016T05:00:00Z&lt;/Deadline&gt;
+            &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
+            &lt;Penalty type = &quot;Importe&quot; paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;25.00&lt;/Penalty&gt;
+        &lt;/CancelPenalty&gt;
+        &lt;CancelPenalty&gt;
+            &lt;HoursBefore&gt;48&lt;/HoursBefore&gt;
+            &lt;Deadline&gt;02/07/2016T05:00:00Z&lt;/Deadline&gt;
+            &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
+            &lt;Penalty type = &quot;Importe&quot; paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;72.40&lt;/Penalty&gt;
+        &lt;/CancelPenalty&gt;
+    &lt;/CancelPenalties&gt;
+    &lt;Fees&gt;
+        &lt;Fee includedPriceOption = &quot;true&quot; description = &quot;TaxAndServiceFee&quot;&gt;
+            &lt;Price currency = &quot;EUR&quot; amount = &quot;8.11&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+            &lt;Code&gt;SPE&lt;/Code&gt;
+        &lt;/Fee&gt;
+    &lt;/Fees&gt;
+    &lt;Remarks/&gt;
+    &lt;PaymentOptions cash = &quot;false&quot; bankAcct = &quot;false&quot;&gt;
+        &lt;Cards&gt;
+            &lt;Card code = &quot;VI&quot;/&gt;
+            &lt;Card code = &quot;AX&quot;/&gt;
+            &lt;Card code = &quot;CA&quot;/&gt;
+        &lt;/Cards&gt;
+    &lt;/PaymentOptions&gt;
+    &lt;CancelPoliciesDescription/&gt;
+&lt;/ValuationRS&gt;
 </code></pre>
 
 <h3 id="valuationrs-description">ValuationRS Description</h3>
@@ -6164,7 +6164,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>CancelPenalties/CancelPenalty/CalculatedDeadline</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation</td>
+<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate -&gt; <em>true</em> = has been calculated by XTG / <em>false</em> = bypass of supplier data without calculation</td>
 </tr>
 
 <tr>
@@ -6178,7 +6178,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value).</td>
+<td>Type of possible penalty values: &ldquo;Noches&rdquo; (nights) , &ldquo;Porcentaje&rdquo; (percentage) , &ldquo;Importe&rdquo; (price value).</td>
 </tr>
 
 <tr>
@@ -6192,7 +6192,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#payment-types">Lists of Data</a>) .</td>
+<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
@@ -6330,12 +6330,20 @@ In that case, you will have 30 minutes to complete the booking, if  not, you wil
 
 <ul>
 <li><strong>CalculatedDeadline:</strong> Specifies if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate according to <strong>ISO 8601</strong>
-true: The deadline has been converted to UTC-0 by XTG.
-false: The supplier returns the deadline on UTC-0, so no calculation is needed.</li>
+<br /></li>
 </ul>
 
-<p><strong>Type:</strong>
-There are three values that can be inside types:</p>
+<blockquote>
+<ul>
+<li><p><em>true:</em> The deadline has been converted to UTC-0 by XTG.</p></li>
+
+<li><p><em>false:</em> The supplier returns the deadline on UTC-0, so no calculation is needed.</p></li>
+</ul>
+</blockquote>
+
+<p><strong>Type:</strong></p>
+
+<p>There are three values that can be inside types:</p>
 
 <blockquote>
 <ul>

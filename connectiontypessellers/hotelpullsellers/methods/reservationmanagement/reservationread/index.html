@@ -5784,18 +5784,18 @@ is closed.</p>
 
 <p>In the request for this call it is necessary to use the object: &ldquo;HotelBaseRQ&rdquo;. You can find the information in the section &lsquo;<a href="/connectiontypessellers/hotelpullsellers/methods/common-elements/">Common elements</a>&rsquo;.</p>
 
-<pre><code class="language-xml">    &lt;ReservationReadRQ&gt;
-        &lt;Locators&gt;
-            &lt;Client&gt;5356342&lt;/Client&gt;
-            &lt;Provider&gt;MGNZ12345&lt;/Provider&gt;
-        &lt;/Locators&gt;
-        &lt;Currency&gt;EUR&lt;/Currency&gt;
-        &lt;StartDate&gt;28/01/2014&lt;/StartDate&gt;
-        &lt;EndDate&gt;29/01/2014&lt;/EndDate&gt;
-        &lt;CreationDate&gt;17/01/2014&lt;/CreationDate&gt;
-        &lt;HotelCode&gt;AAA&lt;/HotelCode&gt;
-        &lt;Holder title = &quot;Miss&quot; name = &quot;Test11&quot; surname = &quot;TestAp11&quot;/&gt;
-    &lt;/ReservationReadRQ&gt;
+<pre><code class="language-xml">&lt;ReservationReadRQ&gt;
+    &lt;Locators&gt;
+        &lt;Client&gt;5356342&lt;/Client&gt;
+        &lt;Provider&gt;MGNZ12345&lt;/Provider&gt;
+    &lt;/Locators&gt;
+    &lt;Currency&gt;EUR&lt;/Currency&gt;
+    &lt;StartDate&gt;28/01/2014&lt;/StartDate&gt;
+    &lt;EndDate&gt;29/01/2014&lt;/EndDate&gt;
+    &lt;CreationDate&gt;17/01/2014&lt;/CreationDate&gt;
+    &lt;HotelCode&gt;AAA&lt;/HotelCode&gt;
+    &lt;Holder title = &quot;Miss&quot; name = &quot;Test11&quot; surname = &quot;TestAp11&quot;/&gt;
+&lt;/ReservationReadRQ&gt;
 </code></pre>
 
 <p><strong>Important information about Number (Cardinal):</strong></p>
@@ -5910,36 +5910,38 @@ is closed.</p>
 
 <h3 id="reservationreadrs-example">ReservationReadRS Example</h3>
 
-<pre><code class="language-xml">    &lt;ReservationReadRS&gt;
-          &lt;Locators&gt;
-                    &lt;Client&gt;2578478&lt;/Client&gt;
-                    &lt;Provider&gt;10TTT31&lt;/Provider&gt;
-                    &lt;Property&gt;HCN8273&lt;/Property&gt;
-                &lt;/Locators&gt;
-                &lt;Hotel&gt;
-                    &lt;Name&gt;LEO&lt;/Name&gt;
-                    &lt;Code&gt;10&lt;/Code&gt;
-                    &lt;CreationDate&gt;17/01/2014&lt;/CreationDate&gt;
-                    &lt;StartDate&gt;28/01/2014&lt;/StartDate&gt;
-                    &lt;EndDate&gt;29/01/2014&lt;/EndDate&gt;
-                    &lt;Holder name = &quot;Test11&quot; surname = &quot;TestAp11&quot;/&gt;
-                    &lt;Price currency = &quot;EUR&quot; amount = &quot;36.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                    &lt;Rooms&gt;
-                        &lt;Room id = &quot;4582&quot; roomCandidateRefId = &quot;1&quot; description = &quot;Standard..&quot;/&gt;
-                    &lt;/Rooms&gt;
-                    &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
-                        &lt;CancelPenalty&gt;
-                            &lt;HoursBefore&gt;120&lt;/HoursBefore&gt;
-                            &lt;Penalty type = &quot;Importe&quot; paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;72.40&lt;/Penalty&gt;
-                        &lt;/CancelPenalty&gt;
-                    &lt;/CancelPenalties&gt;
-                &lt;/Hotel&gt;
-                &lt;TransactionStatus&gt;
-                    &lt;ComunicationStatus&gt;OK&lt;/ComunicationStatus&gt;
-                    &lt;RSStatus&gt;EXISTE&lt;/RSStatus&gt;
-                    &lt;ResStatus&gt;OK&lt;/ResStatus&gt;
-                &lt;/TransactionStatus&gt;
-    &lt;/ReservationReadRS&gt;
+<pre><code class="language-xml">&lt;ReservationReadRS&gt;
+    &lt;Locators&gt;
+        &lt;Client&gt;2578478&lt;/Client&gt;
+        &lt;Provider&gt;10TTT31&lt;/Provider&gt;
+        &lt;Property&gt;HCN8273&lt;/Property&gt;
+    &lt;/Locators&gt;
+    &lt;Hotel&gt;
+        &lt;Name&gt;LEO&lt;/Name&gt;
+        &lt;Code&gt;10&lt;/Code&gt;
+        &lt;CreationDate&gt;17/01/2016&lt;/CreationDate&gt;
+        &lt;StartDate&gt;28/01/2016&lt;/StartDate&gt;
+        &lt;EndDate&gt;29/01/2014&lt;/EndDate&gt;
+        &lt;Holder name = &quot;Test11&quot; surname = &quot;TestAp11&quot;/&gt;
+        &lt;Price currency = &quot;EUR&quot; amount = &quot;36.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+        &lt;Rooms&gt;
+            &lt;Room id = &quot;4582&quot; roomCandidateRefId = &quot;1&quot; description = &quot;Standard..&quot;/&gt;
+        &lt;/Rooms&gt;
+        &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
+            &lt;CancelPenalty&gt;
+                &lt;HoursBefore&gt;120&lt;/HoursBefore&gt;
+                &lt;Deadline&gt;01/01/2016T05:00:00Z&lt;/Deadline&gt;
+                &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
+                &lt;Penalty type = &quot;Importe&quot; paymentType = &quot;MerchantPay&quot; currency = &quot;EUR&quot;&gt;72.40&lt;/Penalty&gt;
+            &lt;/CancelPenalty&gt;
+        &lt;/CancelPenalties&gt;
+    &lt;/Hotel&gt;
+    &lt;TransactionStatus&gt;
+        &lt;ComunicationStatus&gt;OK&lt;/ComunicationStatus&gt;
+        &lt;RSStatus&gt;EXISTE&lt;/RSStatus&gt;
+        &lt;ResStatus&gt;OK&lt;/ResStatus&gt;
+    &lt;/TransactionStatus&gt;
+&lt;/ReservationReadRS&gt;
 </code></pre>
 
 <h3 id="reservationreadrs-description">ReservationReadRS Description</h3>
@@ -6212,6 +6214,20 @@ is closed.</p>
 <td>1</td>
 <td>String</td>
 <td>Number of hours prior to arrival day in which this Cancellation policy applies.</td>
+</tr>
+
+<tr>
+<td>Hotel/CancelPenalties/CancelPenalty/Deadline</td>
+<td>1</td>
+<td>String</td>
+<td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
+</tr>
+
+<tr>
+<td>Hotel/CancelPenalties/CancelPenalty/CalculatedDeadline</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate -&gt; <em>true</em> = has been calculated by XTG / <em>false</em> = bypass of supplier data without calculation</td>
 </tr>
 
 <tr>

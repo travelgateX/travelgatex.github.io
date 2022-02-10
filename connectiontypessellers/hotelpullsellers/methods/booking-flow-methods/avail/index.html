@@ -5804,44 +5804,45 @@ is closed.</p>
 
 <p>In the request for this call it is necessary to use the object: &ldquo;HotelBaseRQ&rdquo;. You can find the information in the section &lsquo;<a href="/connectiontypessellers/hotelpullsellers/methods/common-elements/">Common elements</a>&rsquo;.</p>
 
-<pre><code class="language-xml">    &lt;AvailRQ&gt;
-        &lt;CancellationPolicies&gt;false&lt;/CancellationPolicies&gt;
-        &lt;RoomCancellationPolicies&gt;false&lt;/RoomCancellationPolicies&gt;
-        &lt;DailyPrices&gt;false&lt;/DailyPrices&gt;
-        &lt;DailyRatePlans&gt;false&lt;/DailyRatePlans&gt;
-        &lt;OnRequest&gt;false&lt;/OnRequest&gt;
-        &lt;BusinessRules&gt;CheaperAmount&lt;/BusinessRules&gt;
-        &lt;AvailDestinations&gt; list of destinations
-            &lt;Destination type = &quot;CTY&quot; code = &quot;5&quot;/&gt;
-            &lt;Destination type = &quot;CTY&quot; code = &quot;15&quot;/&gt;
-            ....
-        &lt;/AvailDestinations&gt;
-        &lt;StartDate&gt;28/01/2014&lt;/StartDate&gt;
-        &lt;EndDate&gt;29/01/2014&lt;/EndDate&gt;
-        &lt;Currency&gt;EUR&lt;/Currency&gt;
-        &lt;Nationality&gt;ES&lt;/Nationality&gt;
-        &lt;Markets&gt;
-            &lt;Market&gt;ES&lt;/Market&gt;
-            &lt;Market&gt;EN&lt;/Market&gt;
-            ....
-        &lt;/Markets&gt;
-        &lt;RoomCandidates&gt;
-            &lt;RoomCandidate id = &quot;1&quot;&gt;
-                &lt;Paxes&gt;
-                    &lt;Pax age = &quot;30&quot; id = &quot;1&quot;/&gt;
-                    &lt;Pax age = &quot;30&quot; id = &quot;2&quot;/&gt;
-                &lt;/Paxes&gt;
-            &lt;/RoomCandidate&gt;
-            &lt;RoomCandidate id = &quot;2&quot;&gt;
-                &lt;Paxes&gt;
-                    &lt;Pax age = &quot;35&quot; id = &quot;1&quot;/&gt;
-                    &lt;Pax age = &quot;42&quot; id = &quot;2&quot;/&gt;
-                    &lt;Pax age = &quot;5&quot; id = &quot;3&quot;/&gt;
-                &lt;/Paxes&gt;
-            &lt;/RoomCandidate&gt;
-            ....
-        &lt;/RoomCandidates&gt;
-    &lt;/AvailRQ&gt;
+<pre><code class="language-xml">&lt;AvailRQ&gt;
+    &lt;CancellationPolicies&gt;false&lt;/CancellationPolicies&gt;
+    &lt;RoomCancellationPolicies&gt;false&lt;/RoomCancellationPolicies&gt;
+    &lt;DailyPrices&gt;false&lt;/DailyPrices&gt;
+    &lt;DailyRatePlans&gt;false&lt;/DailyRatePlans&gt;
+    &lt;OnRequest&gt;false&lt;/OnRequest&gt;
+    &lt;BusinessRules&gt;CheaperAmount&lt;/BusinessRules&gt;
+    &lt;AvailDestinations&gt;
+        list of destinations
+        &lt;Destination type = &quot;CTY&quot; code = &quot;5&quot;/&gt;
+        &lt;Destination type = &quot;CTY&quot; code = &quot;15&quot;/&gt;
+        ....
+    &lt;/AvailDestinations&gt;
+    &lt;StartDate&gt;28/01/2014&lt;/StartDate&gt;
+    &lt;EndDate&gt;29/01/2014&lt;/EndDate&gt;
+    &lt;Currency&gt;EUR&lt;/Currency&gt;
+    &lt;Nationality&gt;ES&lt;/Nationality&gt;
+    &lt;Markets&gt;
+        &lt;Market&gt;ES&lt;/Market&gt;
+        &lt;Market&gt;EN&lt;/Market&gt;
+        ....
+    &lt;/Markets&gt;
+    &lt;RoomCandidates&gt;
+        &lt;RoomCandidate id = &quot;1&quot;&gt;
+            &lt;Paxes&gt;
+                &lt;Pax age = &quot;30&quot; id = &quot;1&quot;/&gt;
+                &lt;Pax age = &quot;30&quot; id = &quot;2&quot;/&gt;
+            &lt;/Paxes&gt;
+        &lt;/RoomCandidate&gt;
+        &lt;RoomCandidate id = &quot;2&quot;&gt;
+            &lt;Paxes&gt;
+                &lt;Pax age = &quot;35&quot; id = &quot;1&quot;/&gt;
+                &lt;Pax age = &quot;42&quot; id = &quot;2&quot;/&gt;
+                &lt;Pax age = &quot;5&quot; id = &quot;3&quot;/&gt;
+            &lt;/Paxes&gt;
+        &lt;/RoomCandidate&gt;
+        ....
+    &lt;/RoomCandidates&gt;
+&lt;/AvailRQ&gt;
 </code></pre>
 
 <p><strong>Important information about Number (Cardinal):</strong></p>
@@ -6012,191 +6013,182 @@ is closed.</p>
 
 <h3 id="availrs-example">AvailRS Example</h3>
 
-<pre><code class="language-xml">    &lt;AvailRS xmlns:xsd = &quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi = &quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
-      &lt;Hotels&gt;
+<pre><code class="language-xml">&lt;AvailRS xmlns:xsd = &quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi = &quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+    &lt;Hotels&gt;
         &lt;Hotel code = &quot;10&quot; name = &quot;LEO&quot;&gt;
-          &lt;MealPlans&gt;
-            &lt;MealPlan code = &quot;D&quot;&gt;
-              &lt;Options&gt;
-                &lt;Option type = &quot;Hotel&quot; paymentType = &quot;MerchantPay&quot; status = &quot;OK&quot;&gt;
-                  &lt;Rooms&gt;
-                    &lt;Room id = &quot;4145&quot; roomCandidateRefId = &quot;1&quot; code = &quot;DBL#STAND&quot; description = &quot;Doble Standard&quot; nonRefundable = &quot;false&quot; numberOfUnits = &quot;5&quot; &gt;
-                      &lt;Price currency = &quot;EUR&quot; amount = &quot;36.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                      &lt;Fees&gt;
-                          &lt;Fee includedPriceOption = &quot;true&quot; description = &quot;TaxAndServiceFee&quot; mandatory = &quot;true&quot; refundable = &quot;false&quot;&gt;
-                              &lt;Price currency = &quot;EUR&quot; amount = &quot;8.11&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                              &lt;Code&gt;SPE&lt;/Code&gt;
-                          &lt;/Fee&gt;
-                      &lt;/Fees&gt;
-                      &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
-                          &lt;CancelPenalty&gt;
-                              &lt;HoursBefore&gt;24&lt;/HoursBefore&gt;
-                              &lt;Penalty type = &quot;Importe&quot; currency = &quot;EUR&quot;&gt;20&lt;/Penalty&gt;
-			                        &lt;Deadline&gt;01/07/2016T05:00:00Z&lt;/Deadline&gt;
-                              &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
-                          &lt;/CancelPenalty&gt;
-                      &lt;/CancelPenalties&gt;
-                      &lt;Beds sharedBed = &quot;false&quot;&gt;
-                        &lt;Bed numberOfBeds = &quot;1&quot; type = &quot;Doble&quot;/&gt;
-                      &lt;/Beds&gt;
-                      &lt;Features&gt;
-                         &lt;Feature code = &quot;Double with spa&quot;/&gt;
-                      &lt;/Features&gt;
-                      &lt;DailyPrices&gt;
-                        &lt;DailyPrice effectiveDate = &quot;28/01/2014&quot; expireDate = &quot;29/01/2014&quot;&gt;
-                          &lt;Price
-                            currency = &quot;EUR&quot;
-                            amount = &quot;36.20&quot;
-                            binding = &quot;false&quot;
-                            commission = &quot;-1&quot;/&gt;
-                        &lt;/DailyPrice&gt;
-                      &lt;/DailyPrices&gt;
-                      &lt;DailyRatePlans&gt;
-                        &lt;DailyRatePlan
-                            effectiveDate = &quot;28/01/2014&quot;
-                            expireDate = &quot;29/01/2014&quot;
-                            code = &quot;XAD&quot;
-                            name = &quot;Flexy Rate Only Adults&quot;/&gt;
-                      &lt;/DailyRatePlans&gt;                      
-                    &lt;/Room&gt;
-                  &lt;/Rooms&gt;
-                  &lt;Price currency = &quot;EUR&quot; amount = &quot;36.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                  &lt;Offers&gt;
-                    &lt;Offer code = &quot;EBI&quot; name = &quot;Early booking&quot;/&gt;
-                  &lt;/Offers&gt;
-                  &lt;Fees&gt;
-                    &lt;Fee includedPriceOption = &quot;true&quot; description = &quot;TaxAndServiceFee&quot; mandatory =&quot;true&quot; refundable=&quot;false&quot;&gt;
-                        &lt;Price currency = &quot;EUR&quot; amount = &quot;8.11&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-			                  &lt;Code&gt;SPE&lt;/Code&gt;
-                    &lt;/Fee&gt;
-                  &lt;/Fees&gt;
-                &lt;/Option&gt;
-              &lt;/Options&gt;
-            &lt;/MealPlan&gt;
-            &lt;MealPlan code = &quot;M&quot;&gt;
-              &lt;Options&gt;
-                &lt;Option type = &quot;Hotel&quot; paymentType = &quot;MerchantPay&quot; status = &quot;OK&quot;&gt;
-                  &lt;Rooms&gt;
-                    &lt;Room id = &quot;4146&quot; roomCandidateRefId = &quot;1&quot; code = &quot;TWN#STAND&quot; description = &quot;Twin Standard&quot; nonRefundable = &quot;false&quot; numberOfUnits = &quot;5&quot;&gt;
-                      &lt;Price currency = &quot;EUR&quot; amount = &quot;42.90&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                      &lt;Offers&gt;
-                        &lt;Offer code = &quot;EBI&quot; name = &quot;Early booking&quot;/&gt;
-                      &lt;/Offers&gt;
-                    &lt;Beds sharedBed = &quot;false&quot;&gt;
-                        &lt;Bed numberOfBeds = &quot;2&quot; type = &quot;Twin&quot;/&gt;
-                    &lt;/Beds&gt;
-                    &lt;DailyPrices&gt;
-                        &lt;DailyPrice effectiveDate = &quot;28/01/2014&quot; expireDate = &quot;29/01/2014&quot;&gt;
-                            &lt;Price
-                                currency = &quot;EUR&quot;
-                                amount = &quot;42.90&quot;
-                                binding = &quot;false&quot;
-                                commission = &quot;-1&quot;/&gt;
-                        &lt;/DailyPrice&gt;
-                    &lt;/DailyPrices&gt;
-                    &lt;DailyRatePlans&gt;
-                        &lt;DailyRatePlan
-                            effectiveDate = &quot;28/01/2014&quot;
-                            expireDate = &quot;29/01/2014&quot;
-                            code = &quot;XAT&quot;
-                            name=&quot;Flexy Rate&quot;/&gt;
-                    &lt;/DailyRatePlans&gt;
-                    &lt;/Room&gt;
-                  &lt;/Rooms&gt;
-                  &lt;Price currency = &quot;EUR&quot; amount = &quot;42.90&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                &lt;/Option&gt;
-              &lt;/Options&gt;
-              ...
-            &lt;/MealPlan&gt;
-            &lt;MealPlan code = &quot;MP&quot;&gt;
-              &lt;Options&gt;
-                &lt;Option type = &quot;HotelSkiPass&quot; paymentType = &quot;MerchantPay&quot; status = &quot;OK&quot;&gt;
-                  &lt;Rooms&gt;
-                    &lt;Room id = &quot;4145&quot; roomCandidateRefId = &quot;1&quot; code = &quot;DBL#STAND&quot; description = &quot;Doble Standard&quot; nonRefundable = &quot;false&quot;&gt;
-                      &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                    &lt;/Room&gt;
-                  &lt;/Rooms&gt;
-                  &lt;Detail&gt;
-                    &lt;POIs&gt;
-                      &lt;POI code = &quot;8A&quot; Description = &quot;Andorra&quot;&gt;
-                        &lt;Services&gt;
-                          &lt;Service type = &quot;SkiPass&quot; code = &quot;F1&quot; description = &quot;Forfait&quot; durationType = &quot;Range&quot; quantity = &quot;0&quot; unit = &quot;Day&quot;&gt;
-                            &lt;RangeDates startDate = &quot;28/01/2014&quot; endDate = &quot;29/01/2014&quot;/&gt;
-                          &lt;/Service&gt;
-                        &lt;/Services&gt;
-                      &lt;/POI&gt;
-                    &lt;/POIs&gt;
-                  &lt;/Detail&gt;
-                  &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                  &lt;Parameters&gt;
-                    &lt;Parameter key = &quot;sesion&quot; value = &quot;888de014&quot;/&gt;
-                  &lt;/Parameters&gt;
-                &lt;/Option&gt;
-                &lt;Option type = &quot;HotelSkiPass&quot; paymentType = &quot;MerchantPay&quot; status = &quot;OK&quot;&gt;
-                  &lt;Rooms&gt;
-                    &lt;Room id = &quot;4145&quot; roomCandidateRefId = &quot;1&quot; code = &quot;DBL#STAND&quot; description = &quot;Doble Standard&quot; nonRefundable = &quot;false&quot;&gt;
-                      &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                    &lt;/Room&gt;
-                  &lt;/Rooms&gt;
-                  &lt;Detail&gt;
-                    &lt;POIs&gt;
-                      &lt;POI code = &quot;8A&quot; Description = &quot;Andorra&quot;&gt;
-                        &lt;Services&gt;
-                          &lt;Service type = &quot;SkiPass&quot; code = &quot;F1&quot; description = &quot;Forfait&quot; durationType = &quot;Open&quot; quantity = &quot;5&quot; unit = &quot;Hour&quot;&gt;&lt;/Service&gt;
-                        &lt;/Services&gt;
-                      &lt;/POI&gt;
-                    &lt;/POIs&gt;
-                  &lt;/Detail&gt;
-                  &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                  &lt;Parameters&gt;
-                    &lt;Parameter key = &quot;sesion&quot; value = &quot;888de014&quot;/&gt;
-                  &lt;/Parameters&gt;
-                  &lt;RateRules&gt;
-                    &lt;Rules&gt;
-                      &lt;Rule type = &quot;NonRefundable&quot;/&gt;
-		                  &lt;Rule type = &quot;Negotiated&quot;&gt;
-            		        &lt;Code&gt;REP&lt;/Code&gt;
-            		        &lt;Description&gt;REPSOL&lt;/Description&gt;
-        	            &lt;/Rule&gt;
-                    &lt;/Rules&gt;
-                  &lt;/RateRules&gt;
-                &lt;/Option&gt;
-                &lt;Option type = &quot;HotelSkiPass&quot; paymentType = &quot;MerchantPay&quot; status = &quot;OK&quot;&gt;
-                  &lt;Rooms&gt;
-                    &lt;Room id = &quot;4145&quot; roomCandidateRefId = &quot;1&quot; code = &quot;DBL#STAND&quot; description = &quot;Doble Standard&quot; nonRefundable = &quot;false&quot;&gt;
-                      &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                    &lt;/Room&gt;
-                  &lt;/Rooms&gt;
-                  &lt;Detail&gt;
-                    &lt;POIs&gt;
-                      &lt;POI code = &quot;8A&quot; Description = &quot;Andorra&quot;&gt;
-                        &lt;Services&gt;
-                          &lt;Service type = &quot;SkiPass&quot; code = &quot;F1&quot; description = &quot;Forfait&quot; durationType = &quot;Open&quot; quantity = &quot;2&quot; unit = &quot;Day&quot;&gt;&lt;/Service&gt;
-                        &lt;/Services&gt;
-                      &lt;/POI&gt;
-                    &lt;/POIs&gt;
-                  &lt;/Detail&gt;
-                  &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
-                  &lt;Parameters&gt;
-                    &lt;Parameter key = &quot;sesion&quot; value = &quot;888de014&quot;/&gt;
-                  &lt;/Parameters&gt;
-                  &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
-                    &lt;CancelPenalty&gt;
-                      &lt;HoursBefore&gt;24&lt;/HoursBefore&gt;
-                      &lt;Penalty type = &quot;Importe&quot; currency = &quot;EUR&quot;&gt;20&lt;/Penalty&gt;
-		                  &lt;Deadline&gt;01/07/2016T05:00:00Z&lt;/Deadline&gt;
-                      &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
-                    &lt;/CancelPenalty&gt;
-                  &lt;/CancelPenalties&gt;
-                &lt;/Option&gt;
-              &lt;/Options&gt;
-            &lt;/MealPlan&gt;
-            ...
-          &lt;/MealPlans&gt;
+            &lt;MealPlans&gt;
+                &lt;MealPlan code = &quot;D&quot;&gt;
+                    &lt;Options&gt;
+                        &lt;Option type = &quot;Hotel&quot; paymentType = &quot;MerchantPay&quot; status = &quot;OK&quot;&gt;
+                            &lt;Rooms&gt;
+                                &lt;Room id = &quot;4145&quot; roomCandidateRefId = &quot;1&quot; code = &quot;DBL#STAND&quot; description = &quot;Doble Standard&quot; nonRefundable = &quot;false&quot; numberOfUnits = &quot;5&quot;&gt;
+                                    &lt;Price currency = &quot;EUR&quot; amount = &quot;36.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                                    &lt;Fees&gt;
+                                        &lt;Fee includedPriceOption = &quot;true&quot; description = &quot;TaxAndServiceFee&quot; mandatory = &quot;true&quot; refundable = &quot;false&quot;&gt;
+                                            &lt;Price currency = &quot;EUR&quot; amount = &quot;8.11&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                                            &lt;Code&gt;SPE&lt;/Code&gt;
+                                        &lt;/Fee&gt;
+                                    &lt;/Fees&gt;
+                                    &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
+                                        &lt;CancelPenalty&gt;
+                                            &lt;HoursBefore&gt;24&lt;/HoursBefore&gt;
+                                            &lt;Penalty type = &quot;Importe&quot; currency = &quot;EUR&quot;&gt;20&lt;/Penalty&gt;
+                                            &lt;Deadline&gt;01/07/2016T05:00:00Z&lt;/Deadline&gt;
+                                            &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
+                                        &lt;/CancelPenalty&gt;
+                                    &lt;/CancelPenalties&gt;
+                                    &lt;Beds sharedBed = &quot;false&quot;&gt;
+                                        &lt;Bed numberOfBeds = &quot;1&quot; type = &quot;Doble&quot;/&gt;
+                                    &lt;/Beds&gt;
+                                    &lt;Features&gt;
+                                        &lt;Feature code = &quot;Double with spa&quot;/&gt;
+                                    &lt;/Features&gt;
+                                    &lt;DailyPrices&gt;
+                                        &lt;DailyPrice effectiveDate = &quot;28/01/2014&quot; expireDate = &quot;29/01/2014&quot;&gt;
+                                            &lt;Price currency = &quot;EUR&quot; amount = &quot;36.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                                        &lt;/DailyPrice&gt;
+                                    &lt;/DailyPrices&gt;
+                                    &lt;DailyRatePlans&gt;
+                                        &lt;DailyRatePlan effectiveDate = &quot;28/01/2014&quot; expireDate = &quot;29/01/2014&quot; code = &quot;XAD&quot; name = &quot;Flexy Rate Only Adults&quot;/&gt;
+                                    &lt;/DailyRatePlans&gt;
+                                &lt;/Room&gt;
+                            &lt;/Rooms&gt;
+                            &lt;Price currency = &quot;EUR&quot; amount = &quot;36.20&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                            &lt;Offers&gt;
+                                &lt;Offer code = &quot;EBI&quot; name = &quot;Early booking&quot;/&gt;
+                            &lt;/Offers&gt;
+                            &lt;Fees&gt;
+                                &lt;Fee includedPriceOption = &quot;true&quot; description = &quot;TaxAndServiceFee&quot; mandatory = &quot;true&quot; refundable = &quot;false&quot;&gt;
+                                    &lt;Price currency = &quot;EUR&quot; amount = &quot;8.11&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                                    &lt;Code&gt;SPE&lt;/Code&gt;
+                                &lt;/Fee&gt;
+                            &lt;/Fees&gt;
+                        &lt;/Option&gt;
+                    &lt;/Options&gt;
+                &lt;/MealPlan&gt;
+                &lt;MealPlan code = &quot;M&quot;&gt;
+                    &lt;Options&gt;
+                        &lt;Option type = &quot;Hotel&quot; paymentType = &quot;MerchantPay&quot; status = &quot;OK&quot;&gt;
+                            &lt;Rooms&gt;
+                                &lt;Room id = &quot;4146&quot; roomCandidateRefId = &quot;1&quot; code = &quot;TWN#STAND&quot; description = &quot;Twin Standard&quot; nonRefundable = &quot;false&quot; numberOfUnits = &quot;5&quot;&gt;
+                                    &lt;Price currency = &quot;EUR&quot; amount = &quot;42.90&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                                    &lt;Offers&gt;
+                                        &lt;Offer code = &quot;EBI&quot; name = &quot;Early booking&quot;/&gt;
+                                    &lt;/Offers&gt;
+                                    &lt;Beds sharedBed = &quot;false&quot;&gt;
+                                        &lt;Bed numberOfBeds = &quot;2&quot; type = &quot;Twin&quot;/&gt;
+                                    &lt;/Beds&gt;
+                                    &lt;DailyPrices&gt;
+                                        &lt;DailyPrice effectiveDate = &quot;28/01/2014&quot; expireDate = &quot;29/01/2014&quot;&gt;
+                                            &lt;Price currency = &quot;EUR&quot; amount = &quot;42.90&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                                        &lt;/DailyPrice&gt;
+                                    &lt;/DailyPrices&gt;
+                                    &lt;DailyRatePlans&gt;
+                                        &lt;DailyRatePlan effectiveDate = &quot;28/01/2014&quot; expireDate = &quot;29/01/2014&quot; code = &quot;XAT&quot; name = &quot;Flexy Rate&quot;/&gt;
+                                    &lt;/DailyRatePlans&gt;
+                                &lt;/Room&gt;
+                            &lt;/Rooms&gt;
+                            &lt;Price currency = &quot;EUR&quot; amount = &quot;42.90&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                        &lt;/Option&gt;
+                    &lt;/Options&gt;
+                    ...
+                &lt;/MealPlan&gt;
+                &lt;MealPlan code = &quot;MP&quot;&gt;
+                    &lt;Options&gt;
+                        &lt;Option type = &quot;HotelSkiPass&quot; paymentType = &quot;MerchantPay&quot; status = &quot;OK&quot;&gt;
+                            &lt;Rooms&gt;
+                                &lt;Room id = &quot;4145&quot; roomCandidateRefId = &quot;1&quot; code = &quot;DBL#STAND&quot; description = &quot;Doble Standard&quot; nonRefundable = &quot;false&quot;&gt;
+                                    &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                                &lt;/Room&gt;
+                            &lt;/Rooms&gt;
+                            &lt;Detail&gt;
+                                &lt;POIs&gt;
+                                    &lt;POI code = &quot;8A&quot; Description = &quot;Andorra&quot;&gt;
+                                        &lt;Services&gt;
+                                            &lt;Service type = &quot;SkiPass&quot; code = &quot;F1&quot; description = &quot;Forfait&quot; durationType = &quot;Range&quot; quantity = &quot;0&quot; unit = &quot;Day&quot;&gt;
+                                                &lt;RangeDates startDate = &quot;28/01/2014&quot; endDate = &quot;29/01/2014&quot;/&gt;
+                                            &lt;/Service&gt;
+                                        &lt;/Services&gt;
+                                    &lt;/POI&gt;
+                                &lt;/POIs&gt;
+                            &lt;/Detail&gt;
+                            &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                            &lt;Parameters&gt;
+                                &lt;Parameter key = &quot;sesion&quot; value = &quot;888de014&quot;/&gt;
+                            &lt;/Parameters&gt;
+                        &lt;/Option&gt;
+                        &lt;Option type = &quot;HotelSkiPass&quot; paymentType = &quot;MerchantPay&quot; status = &quot;OK&quot;&gt;
+                            &lt;Rooms&gt;
+                                &lt;Room id = &quot;4145&quot; roomCandidateRefId = &quot;1&quot; code = &quot;DBL#STAND&quot; description = &quot;Doble Standard&quot; nonRefundable = &quot;false&quot;&gt;
+                                    &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                                &lt;/Room&gt;
+                            &lt;/Rooms&gt;
+                            &lt;Detail&gt;
+                                &lt;POIs&gt;
+                                    &lt;POI code = &quot;8A&quot; Description = &quot;Andorra&quot;&gt;
+                                        &lt;Services&gt;
+                                            &lt;Service type = &quot;SkiPass&quot; code = &quot;F1&quot; description = &quot;Forfait&quot; durationType = &quot;Open&quot; quantity = &quot;5&quot; unit = &quot;Hour&quot;&gt;&lt;/Service&gt;
+                                        &lt;/Services&gt;
+                                    &lt;/POI&gt;
+                                &lt;/POIs&gt;
+                            &lt;/Detail&gt;
+                            &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                            &lt;Parameters&gt;
+                                &lt;Parameter key = &quot;sesion&quot; value = &quot;888de014&quot;/&gt;
+                            &lt;/Parameters&gt;
+                            &lt;RateRules&gt;
+                                &lt;Rules&gt;
+                                    &lt;Rule type = &quot;NonRefundable&quot;/&gt;
+                                    &lt;Rule type = &quot;Negociated&quot;&gt;
+                                        &lt;Rates&gt;
+                                            &lt;Rate Code = &quot;BAR&quot;&gt;
+                                                &lt;Description&gt;Bar descr&lt;/Description&gt;
+                                                &lt;Restrictions&gt;
+                                                    &lt;Restriction type = &quot;Company&quot; Code = &quot;REP&quot;&gt;Repsol&lt;/Restriction&gt;
+                                                    &lt;Restriction type = &quot;Company&quot; Code = &quot;PEP&quot;&gt;Cedipsa&lt;/Restriction&gt;
+                                                &lt;/Restrictions&gt;
+                                            &lt;/Rate&gt;
+                                        &lt;/Rates&gt;
+                                    &lt;/Rule&gt;
+                                &lt;/Rules&gt;
+                            &lt;/RateRules&gt;
+                        &lt;/Option&gt;
+                        &lt;Option type = &quot;HotelSkiPass&quot; paymentType = &quot;MerchantPay&quot; status = &quot;OK&quot;&gt;
+                            &lt;Rooms&gt;
+                                &lt;Room id = &quot;4145&quot; roomCandidateRefId = &quot;1&quot; code = &quot;DBL#STAND&quot; description = &quot;Doble Standard&quot; nonRefundable = &quot;false&quot;&gt;
+                                    &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                                &lt;/Room&gt;
+                            &lt;/Rooms&gt;
+                            &lt;Detail&gt;
+                                &lt;POIs&gt;
+                                    &lt;POI code = &quot;8A&quot; Description = &quot;Andorra&quot;&gt;
+                                        &lt;Services&gt;
+                                            &lt;Service type = &quot;SkiPass&quot; code = &quot;F1&quot; description = &quot;Forfait&quot; durationType = &quot;Open&quot; quantity = &quot;2&quot; unit = &quot;Day&quot;&gt;&lt;/Service&gt;
+                                        &lt;/Services&gt;
+                                    &lt;/POI&gt;
+                                &lt;/POIs&gt;
+                            &lt;/Detail&gt;
+                            &lt;Price currency = &quot;EUR&quot; amount = &quot;636.80&quot; binding = &quot;false&quot; commission = &quot;-1&quot;/&gt;
+                            &lt;Parameters&gt;
+                                &lt;Parameter key = &quot;sesion&quot; value = &quot;888de014&quot;/&gt;
+                            &lt;/Parameters&gt;
+                            &lt;CancelPenalties nonRefundable = &quot;false&quot;&gt;
+                                &lt;CancelPenalty&gt;
+                                    &lt;HoursBefore&gt;24&lt;/HoursBefore&gt;
+                                    &lt;Penalty type = &quot;Importe&quot; currency = &quot;EUR&quot;&gt;20&lt;/Penalty&gt;
+                                    &lt;Deadline&gt;01/07/2016T05:00:00Z&lt;/Deadline&gt;
+                                    &lt;CalculatedDeadline&gt;false&lt;/CalculatedDeadline&gt;
+                                &lt;/CancelPenalty&gt;
+                            &lt;/CancelPenalties&gt;
+                        &lt;/Option&gt;
+                    &lt;/Options&gt;
+                &lt;/MealPlan&gt;
+                ...
+            &lt;/MealPlans&gt;
         &lt;/Hotel&gt;
         ...
-      &lt;/Hotels&gt;
-    &lt;/AvailRS&gt;
+    &lt;/Hotels&gt;
+&lt;/AvailRS&gt;
 </code></pre>
 
 <h3 id="availrs-description">AvailRS Description</h3>
@@ -6234,14 +6226,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans</td>
+<td>MealPlans /</td>
 <td>1</td>
 <td></td>
 <td>Retrieves a list of available mealplans for this hotel.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan</td>
+<td>MealPlans /MealPlan /</td>
 <td>1..n</td>
 <td></td>
 <td>List of mealplan types.</td>
@@ -6255,14 +6247,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options</td>
+<td>MealPlans /MealPlan /Options /</td>
 <td>1</td>
 <td></td>
 <td>List of options</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan /Options/Option</td>
+<td>MealPlans /MealPlan /Options /Option</td>
 <td>1..n</td>
 <td></td>
 <td>Detail of option.</td>
@@ -6272,14 +6264,14 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates option type <a href="/connectiontypessellers/hotelpullsellers/listsdata/#option-type">Lists of Data</a></td>
+<td>Indicates option type <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Option-Type">Lists of Data</a></td>
 </tr>
 
 <tr>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#payment-types">Lists of Data</a>) .</td>
+<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
@@ -6290,14 +6282,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Parameters</td>
+<td>MealPlans /MealPlan/Options /Option/Parameters /</td>
 <td>0..1</td>
 <td></td>
 <td>Additional parameters that must be reported on the ValuationRQ. Parameters, if this option is required.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Parameters/Parameter</td>
+<td>MealPlans /MealPlan/Options /Option/Parameters /Parameter</td>
 <td>0..n</td>
 <td></td>
 <td>Additional parameter requiring integration.</td>
@@ -6318,7 +6310,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/CancelPenalties</td>
+<td>MealPlans /MealPlan/Options /Option/CancelPenalties /</td>
 <td>1</td>
 <td></td>
 <td>Cancellation policy details. (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
@@ -6332,35 +6324,35 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty</td>
+<td>MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty</td>
 <td>0..n</td>
 <td></td>
 <td>Listing cancellation penalties.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/HoursBefore</td>
+<td>MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/HoursBefore</td>
 <td>1</td>
 <td>String</td>
 <td>Number of hours prior to checkin date in which this Cancellation policy applies.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Deadline</td>
+<td>MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/Deadline</td>
 <td>1</td>
 <td>String</td>
 <td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/CalculatedDeadline</td>
+<td>MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/CalculatedDeadline</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation</td>
+<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate -&gt; <em>true</em> = has been calculated by XTG / <em>false</em> = bypass of supplier data without calculation</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Penalty</td>
+<td>MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/Penalty</td>
 <td>1</td>
 <td></td>
 <td>Contains the value to apply.</td>
@@ -6370,7 +6362,7 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value).</td>
+<td>Type of possible penalty values: &ldquo;Noches&rdquo; (nights) , &ldquo;Porcentaje&rdquo; (percentage) , &ldquo;Importe&rdquo; (price value).</td>
 </tr>
 
 <tr>
@@ -6384,25 +6376,25 @@ is closed.</p>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#payment-types">Lists of Data</a>) .</td>
+<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/RateRules</td>
+<td>MealPlans /MealPlan/Options /Option/RateRules /</td>
 <td>0..1</td>
 <td></td>
-<td>Option restrictions.</td>
+<td>Option rate rules.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/RateRules/Rules</td>
+<td>MealPlans /MealPlan/Options /Option/RateRules /Rules</td>
 <td>0..n</td>
 <td></td>
 <td>Rules.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule</td>
+<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule</td>
 <td>1</td>
 <td></td>
 <td>Rule.</td>
@@ -6412,32 +6404,74 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Possible values (NonRefundable, Older55, Package,&hellip;). See full list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#rate-conditions">Lists of Data</a></td>
+<td>Possible values: NonRefundable, Older55, Package, Negociated.. See full list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Rate-Conditions">Lists of Data</a></td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Code</td>
+<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /</td>
+<td>0..n</td>
+<td></td>
+<td>Rates.</td>
+</tr>
+
+<tr>
+<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate</td>
+<td>1..n</td>
+<td></td>
+<td>Rate.</td>
+</tr>
+
+<tr>
+<td>@code</td>
 <td>1</td>
 <td>String</td>
-<td>Contains the Rate Rule code in case it has one.</td>
+<td>Contains the rate rule code.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Description</td>
+<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate/Description</td>
 <td>1</td>
 <td>String</td>
-<td>Contains the Rate Rule description.</td>
+<td>Contains the rate rule description.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms</td>
+<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions /</td>
+<td>0..n</td>
+<td></td>
+<td>Restrictions for the rate rule.</td>
+</tr>
+
+<tr>
+<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions /Restriction</td>
+<td>1..n</td>
+<td></td>
+<td>Restriction for this rate rule.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>1</td>
+<td>Enum</td>
+<td>This restriction affects: 1 -&gt; Company, 2 -&gt; Market, 3 -&gt; Others.. See the list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Restriction-Type</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
+<td>String</td>
+<td>Contains the restriction code.</td>
+</tr>
+
+<tr>
+<td>MealPlans /MealPlan/Options /Option/Rooms /</td>
 <td>1</td>
 <td></td>
 <td>Rooms in this option (room list).</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room</td>
 <td>1..n</td>
 <td></td>
 <td>Room details.</td>
@@ -6486,14 +6520,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/Offers</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Offers</td>
 <td>0..1</td>
 <td></td>
 <td>The supplier returns in response which offer is applicable for each room (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/Offers/Offer</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Offers /Offer</td>
 <td>1..n</td>
 <td></td>
 <td>List of offers.</td>
@@ -6514,7 +6548,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/Beds</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Beds</td>
 <td>0..1</td>
 <td></td>
 <td>Detail of beds (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
@@ -6528,7 +6562,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room /Beds/Bed</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room /Beds/Bed</td>
 <td>0..n</td>
 <td></td>
 <td>Identifies types of beds.</td>
@@ -6549,14 +6583,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room /Features</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room /Features</td>
 <td>0..1</td>
 <td></td>
 <td>Features of this room (features list).</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room /Features/Feature</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room /Features/Feature</td>
 <td>1..n</td>
 <td></td>
 <td>Detail of feature</td>
@@ -6570,14 +6604,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices</td>
 <td>0..1</td>
 <td></td>
 <td>Specifies daily price, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices/DailyPrice</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices/DailyPrice</td>
 <td>1..n</td>
 <td></td>
 <td>Specifies the price for each day.</td>
@@ -6598,7 +6632,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices/DailyPrice /Price</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices/DailyPrice /Price</td>
 <td>1</td>
 <td></td>
 <td>Day price.</td>
@@ -6633,14 +6667,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room /DailyRatePlans</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room /DailyRatePlans</td>
 <td>0..1</td>
 <td></td>
 <td>Specifies the daily rate, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room /DailyRatePlans/DailyRatePlan</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room /DailyRatePlans/DailyRatePlan</td>
 <td>1..n</td>
 <td></td>
 <td>Specifies the rates for each day.</td>
@@ -6675,7 +6709,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room /Price</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room /Price</td>
 <td>1</td>
 <td></td>
 <td>Room price.</td>
@@ -6710,14 +6744,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/Fees</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Fees</td>
 <td>0..1</td>
 <td></td>
 <td>Contains a list of fees.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee</td>
 <td>1..n</td>
 <td></td>
 <td>Contains details of the fee.</td>
@@ -6752,7 +6786,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee/Price</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee/Price</td>
 <td>1</td>
 <td></td>
 <td>Contains details of price.</td>
@@ -6787,17 +6821,17 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee/Code</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee/Code</td>
 <td>1</td>
 <td>String</td>
 <td>Specifies the fee code in case it has one.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties</td>
 <td>1</td>
 <td></td>
-<td>Cancellation policy details. (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it). <strong>Attention:</strong>    When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option</td>
+<td>Cancellation policy details. (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it). <strong>Attention:</strong>  When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option</td>
 </tr>
 
 <tr>
@@ -6808,35 +6842,35 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty</td>
 <td>0..n</td>
 <td></td>
 <td>Listing cancellation penalties.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/HoursBefore</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/HoursBefore</td>
 <td>1</td>
 <td>String</td>
 <td>Number of hours prior to checkin date in which this Cancellation policy applies.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Deadline</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/Deadline</td>
 <td>1</td>
 <td>String</td>
 <td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/CalculatedDeadline</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/CalculatedDeadline</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation</td>
+<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate -&gt; <em>true</em> = has been calculated by XTG / <em>false</em> = bypass of supplier data without calculation</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Penalty</td>
+<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/Penalty</td>
 <td>1</td>
 <td></td>
 <td>Contains the value to apply.</td>
@@ -6846,7 +6880,7 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value).</td>
+<td>Type of possible penalty values: &ldquo;Noches&rdquo; (nights) , &ldquo;Porcentaje&rdquo; (percentage) , &ldquo;Importe&rdquo; (price value).</td>
 </tr>
 
 <tr>
@@ -6860,11 +6894,11 @@ is closed.</p>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#payment-types">Lists of Data</a>) .</td>
+<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Price</td>
+<td>MealPlans /MealPlan/Options /Option/Price</td>
 <td>1</td>
 <td></td>
 <td>Option price ( it is the total price of option).</td>
@@ -6899,21 +6933,21 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Detail</td>
+<td>MealPlans /MealPlan/Options /Option/Detail</td>
 <td>0..1</td>
 <td></td>
 <td>Detail of option (if the option is different from the type&lt;&gt; Hotel and see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Detail/POIs</td>
+<td>MealPlans /MealPlan/Options /Option/Detail/POIs /</td>
 <td>1</td>
 <td></td>
 <td>Points of interest.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Detail/POIs/POI</td>
+<td>MealPlans /MealPlan/Options /Option/Detail/POIs /POI</td>
 <td>1..n</td>
 <td></td>
 <td>Point of interest.</td>
@@ -6934,14 +6968,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Detail/POIs/POI /Services</td>
+<td>MealPlans /MealPlan/Options /Option/Detail/POIs /POI /Services /</td>
 <td>1</td>
 <td></td>
 <td>Services containing this POI.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Detail/POIs/POI    /Services/Service</td>
+<td>MealPlans /MealPlan/Options /Option/Detail/POIs /POI  /Services /Service</td>
 <td>1..n</td>
 <td></td>
 <td>Service detail.</td>
@@ -6990,7 +7024,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Detail/POIs/POI /Services/Service/RangeDates</td>
+<td>MealPlans /MealPlan/Options /Option/Detail/POIs /POI /Services /Service/RangeDates</td>
 <td>0..1</td>
 <td></td>
 <td>Service date range (Only specified if durationType=Range).</td>
@@ -7011,28 +7045,28 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Remarks</td>
+<td>MealPlans /MealPlan/Options /Option/Remarks /</td>
 <td>0..1</td>
 <td></td>
 <td>List of remarks (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Remarks/Remark</td>
+<td>MealPlans /MealPlan/Options /Option/Remarks /Remark</td>
 <td>1..n</td>
 <td></td>
 <td>Remark.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Offers</td>
+<td>MealPlans /MealPlan/Options /Option/Offers /</td>
 <td>0..1</td>
 <td></td>
 <td>The supplier returns in response which offer is applicable for each option (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Offers/Offer</td>
+<td>MealPlans /MealPlan/Options /Option/Offers /Offer</td>
 <td>1..n</td>
 <td></td>
 <td>List of offers.</td>
@@ -7053,14 +7087,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Fees</td>
+<td>MealPlans /MealPlan/Options /Option/Fees /</td>
 <td>0..1</td>
 <td></td>
 <td>Contains a list of fees.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Fees/Fee</td>
+<td>MealPlans /MealPlan/Options /Option/Fees /Fee</td>
 <td>1..n</td>
 <td></td>
 <td>Contains details of the fee.</td>
@@ -7095,14 +7129,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Fees/Fee/Price</td>
+<td>MealPlans /MealPlan/Options /Option/Fees /Fee/Price</td>
 <td>1</td>
 <td></td>
 <td>Contains details of price.</td>
 </tr>
 
 <tr>
-<td>MealPlans/MealPlan/Options /Option/Fees/Fee/Code</td>
+<td>MealPlans /MealPlan/Options /Option/Fees /Fee/Code</td>
 <td>1</td>
 <td>String</td>
 <td>Specifies the fee code in case it has one.</td>
@@ -7283,12 +7317,20 @@ the availability method. The treatment of cancellation policies is explained in 
 
 <ul>
 <li><strong>CalculatedDeadline:</strong> Specifies if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate according to <strong>ISO 8601</strong>
-true: The deadline has been converted to UTC-0 by XTG.
-false: The supplier returns the deadline on UTC-0, so no calculation is needed.</li>
+<br /></li>
 </ul>
 
-<p><strong>Type:</strong>
-There are three values that can be inside types:</p>
+<blockquote>
+<ul>
+<li><p><em>true:</em> The deadline has been converted to UTC-0 by XTG.</p></li>
+
+<li><p><em>false:</em> The supplier returns the deadline on UTC-0, so no calculation is needed.</p></li>
+</ul>
+</blockquote>
+
+<p><strong>Type:</strong></p>
+
+<p>There are three values that can be inside types:</p>
 
 <blockquote>
 <ul>
