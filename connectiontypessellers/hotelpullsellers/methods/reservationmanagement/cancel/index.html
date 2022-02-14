@@ -3310,11 +3310,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3386,6 +3381,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5826,21 +5826,21 @@ is closed is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Locators</td>
+<td>Locators /</td>
 <td>1</td>
 <td></td>
 <td>Locator Information (it&rsquo;s mandatory to indicate either the client or supplier&rsquo;s).</td>
 </tr>
 
 <tr>
-<td>Locators/Client</td>
+<td>Locators /Client</td>
 <td>0..1</td>
 <td>String</td>
 <td>Client locator.</td>
 </tr>
 
 <tr>
-<td>Locators/Provider</td>
+<td>Locators /Provider</td>
 <td>0..1</td>
 <td>String</td>
 <td>Supplier locator.</td>
@@ -5974,28 +5974,28 @@ is closed is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>TransactionStatus</td>
+<td>TransactionStatus /</td>
 <td>1</td>
 <td></td>
 <td>Transaction Status.</td>
 </tr>
 
 <tr>
-<td>TransactionStatus/ComunicationStatus</td>
+<td>TransactionStatus /ComunicationStatus</td>
 <td>1</td>
 <td>String</td>
 <td>Status communication (OFFLINE, OK and KO).</td>
 </tr>
 
 <tr>
-<td>TransactionStatus/RSStatus</td>
+<td>TransactionStatus /RSStatus</td>
 <td>1</td>
 <td>String</td>
 <td>Status response: DESCONOCIDO - Unknown; EXISTE - Exists; EXISTECANCELADA - Cancelled; NO_EXISTE - Does not exist</td>
 </tr>
 
 <tr>
-<td>TransactionStatus/ResStatus</td>
+<td>TransactionStatus /ResStatus</td>
 <td>1</td>
 <td>String</td>
 <td>Status of the booking (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown).</td>

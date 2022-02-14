@@ -3314,11 +3314,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3390,6 +3385,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5806,11 +5806,11 @@ be used in the availability response.</p>
         &lt;MealPlans&gt;
             &lt;MealPlan&gt;
                 &lt;Code&gt;BB&lt;/Code&gt;
-                &lt;Name&gt;Bed and breakfast.&lt;/Name&gt;
+                &lt;Name&gt;Bed and breakfast&lt;/Name&gt;
             &lt;/MealPlan&gt;
             &lt;MealPlan&gt;
                 &lt;Code&gt;HB&lt;/Code&gt;
-                &lt;Name&gt;Half board./Name&gt;
+                &lt;Name&gt;Half board&lt;/Name&gt;
             &lt;/MealPlan&gt;
             …
             &lt;MealPlan/&gt;
@@ -5832,35 +5832,35 @@ be used in the availability response.</p>
 
 <tbody>
 <tr>
-<td>MealPlanListRS/UpgradeUTCDate</td>
+<td>MealPlanListRS /UpgradeUTCDate</td>
 <td>1</td>
 <td>DateTime</td>
 <td>Indicates the update date of the information in UTC format.</td>
 </tr>
 
 <tr>
-<td>MealPlanListRS/MealPlans</td>
+<td>MealPlanListRS /MealPlans /</td>
 <td>1</td>
 <td></td>
 <td>Root node, list of mealplans.</td>
 </tr>
 
 <tr>
-<td>MealPlan</td>
+<td>MealPlans /MealPlan</td>
 <td>1..n</td>
 <td></td>
 <td>MealPlan.</td>
 </tr>
 
 <tr>
-<td>MealPlan/Code</td>
+<td>MealPlans /MealPlan/Code</td>
 <td>1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>MealPlan/Name</td>
+<td>MealPlans /MealPlan/Name</td>
 <td>1</td>
 <td>String</td>
 <td>Name.</td>

@@ -3314,11 +3314,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3390,6 +3385,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5793,21 +5793,21 @@ is <strong>180000</strong> milliseconds.</p>
 
 <tbody>
 <tr>
-<td>DescriptiveInfoRQ</td>
+<td>DescriptiveInfoRQ /</td>
 <td>1</td>
 <td></td>
 <td>Root node.</td>
 </tr>
 
 <tr>
-<td>DescriptiveInfoRQ/Hotel</td>
+<td>DescriptiveInfoRQ /Hotel /</td>
 <td>1</td>
 <td>String</td>
 <td>Hotel requested.</td>
 </tr>
 
 <tr>
-<td>DescriptiveInfoRQ/Hotel/Code</td>
+<td>DescriptiveInfoRQ /Hotel/ Code</td>
 <td>1</td>
 <td>String</td>
 <td>Code.</td>
@@ -5960,14 +5960,14 @@ is <strong>180000</strong> milliseconds.</p>
 
 <tbody>
 <tr>
-<td>DescriptiveInfoRS/UpgradeUTCDate</td>
+<td>DescriptiveInfoRS /UpgradeUTCDate</td>
 <td>1</td>
 <td>DateTime</td>
 <td>Indicates the update date of the information in UTC format.</td>
 </tr>
 
 <tr>
-<td>DescriptiveInfoRS/Hotel</td>
+<td>DescriptiveInfoRS /Hotel</td>
 <td>0..n</td>
 <td></td>
 <td>Root node. Hotel sheet.</td>
@@ -5995,21 +5995,21 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Airports</td>
+<td>Airports /</td>
 <td>0..1</td>
 <td></td>
 <td>List of airports.</td>
 </tr>
 
 <tr>
-<td>Airports/Airport</td>
+<td>Airports /Airport</td>
 <td>1..n</td>
 <td></td>
 <td>Specific airport near the hotel.</td>
 </tr>
 
 <tr>
-<td>Airports/Airport/IATACode</td>
+<td>Airports /Airport/IATACode</td>
 <td>1</td>
 <td>String</td>
 <td>IATA airport Code.</td>
@@ -6100,28 +6100,28 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Contact</td>
+<td>Contact /</td>
 <td>0..1</td>
 <td></td>
 <td>Hotel contact information.</td>
 </tr>
 
 <tr>
-<td>Contact/Email</td>
+<td>Contact /Email</td>
 <td>1</td>
 <td>String</td>
 <td>Email.</td>
 </tr>
 
 <tr>
-<td>Contact/Telephone</td>
+<td>Contact /Telephone</td>
 <td>1</td>
 <td>String</td>
 <td>Telephone.</td>
 </tr>
 
 <tr>
-<td>Contact/Fax</td>
+<td>Contact /Fax</td>
 <td>1</td>
 <td>String</td>
 <td>Fax.</td>
@@ -6135,28 +6135,28 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>BookingContact</td>
+<td>BookingContact /</td>
 <td>0..1</td>
 <td></td>
 <td>Booking dept contact.</td>
 </tr>
 
 <tr>
-<td>BookingContact/Email</td>
+<td>BookingContact /Email</td>
 <td>1</td>
 <td>String</td>
 <td>Email.</td>
 </tr>
 
 <tr>
-<td>BookingContact/Telephone</td>
+<td>BookingContact /Telephone</td>
 <td>1</td>
 <td>String</td>
 <td>Telephone.</td>
 </tr>
 
 <tr>
-<td>BookingContact/Fax</td>
+<td>BookingContact /Fax</td>
 <td>1</td>
 <td>String</td>
 <td>Fax.</td>
@@ -6240,98 +6240,98 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Attributes</td>
+<td>Attributes /</td>
 <td>0..1</td>
 <td></td>
 <td>Attributes.</td>
 </tr>
 
 <tr>
-<td>Attributes/Attribute</td>
+<td>Attributes /Attribute</td>
 <td>1..n</td>
 <td></td>
 <td>Specific attributes of the hotel, such as wi-fi.</td>
 </tr>
 
 <tr>
-<td>Attributes/Attribute/Code</td>
+<td>Attributes /Attribute/Code</td>
 <td>1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>Attributes/Attribute/Value</td>
+<td>Attributes /Attribute/Value</td>
 <td>1</td>
 <td>String</td>
 <td>Value.</td>
 </tr>
 
 <tr>
-<td>Attributes/Attribute/Classification</td>
+<td>Attributes /Attribute/Classification</td>
 <td>1</td>
 <td>String</td>
 <td>Classification ( HOT=hotel, HAB=room, SER=service and GRAL=generic).</td>
 </tr>
 
 <tr>
-<td>Attributes/Attribute/Description</td>
+<td>Attributes /Attribute/Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Description.</td>
 </tr>
 
 <tr>
-<td>Images</td>
+<td>Images /</td>
 <td>0..1</td>
 <td></td>
 <td>Images.</td>
 </tr>
 
 <tr>
-<td>Images/Picture</td>
+<td>Images /Picture</td>
 <td>1..n</td>
 <td></td>
 <td>Picture.</td>
 </tr>
 
 <tr>
-<td>Images/Picture/Url</td>
+<td>Images /Picture/Url</td>
 <td>1</td>
 <td>String</td>
 <td>Url.</td>
 </tr>
 
 <tr>
-<td>Images/Picture/Classification</td>
+<td>Images /Picture/Classification</td>
 <td>1</td>
 <td>String</td>
 <td>Classification (HOT=hotel, HAB=room, SER=service and GRAL=generic).</td>
 </tr>
 
 <tr>
-<td>Images/Picture/Ordered</td>
+<td>Images /Picture/Ordered</td>
 <td>0..1</td>
 <td>String</td>
 <td>Images should be ordered from 1 onward. 1 is top.</td>
 </tr>
 
 <tr>
-<td>Images/Picture/Description</td>
+<td>Images /Picture/Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Description.</td>
 </tr>
 
 <tr>
-<td>Images/Picture/Code</td>
+<td>Images /Picture/Code</td>
 <td>0..1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>Images/Picture/UpgradeUTCDate</td>
+<td>Images /Picture/UpgradeUTCDate</td>
 <td>0..1</td>
 <td>DateTime</td>
 <td>Indicates the upgrade date of the picture in UTC format.</td>
@@ -6345,21 +6345,21 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>PaymentOptions</td>
+<td>PaymentOptions /</td>
 <td>0..1</td>
 <td>String</td>
 <td>Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than <em>MerchantPay</em>.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions/Cards/Cards</td>
+<td>PaymentOptions /Cards /</td>
 <td>1</td>
 <td></td>
 <td>List of cards allowed.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions/Cards/Card</td>
+<td>PaymentOptions /Cards /Card</td>
 <td>1..n</td>
 <td></td>
 <td>Type of card allowed.</td>
@@ -6369,7 +6369,7 @@ is <strong>180000</strong> milliseconds.</p>
 <td>@code</td>
 <td>1</td>
 <td>String</td>
-<td>Code of card. Se the full list of card codes at <a href="https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" rel="nofollow" target="_blank">Lists of Data</a>.</td>
+<td>Code of card. Se the full list of card codes at <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">Lists of Data</a>.</td>
 </tr>
 
 <tr>
@@ -6380,21 +6380,21 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>PropertyCategory</td>
+<td>PropertyCategory /</td>
 <td>0..1</td>
 <td></td>
 <td>Hotels property type. Similar to Type tag, but on supplier&rsquo;s side.</td>
 </tr>
 
 <tr>
-<td>PropertyCategory/Code</td>
+<td>PropertyCategory /Code</td>
 <td>1</td>
 <td>String</td>
 <td>Supplier property code.</td>
 </tr>
 
 <tr>
-<td>PropertyCategory/Name</td>
+<td>PropertyCategory /Name</td>
 <td>1</td>
 <td>String</td>
 <td>Supplier property name.</td>

@@ -3310,11 +3310,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3386,6 +3381,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -6056,14 +6056,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>Parameters</td>
+<td>Parameters /</td>
 <td>0..1</td>
 <td></td>
 <td>Parameters for additional information.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter</td>
+<td>Parameters /Parameter</td>
 <td>1..n</td>
 <td></td>
 <td>List of parameters.</td>
@@ -6126,7 +6126,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>CancelPenalties</td>
+<td>CancelPenalties /</td>
 <td>1</td>
 <td></td>
 <td>Cancellation policy details.</td>
@@ -6140,35 +6140,35 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty</td>
+<td>CancelPenalties /CancelPenalty</td>
 <td>0..n</td>
 <td></td>
 <td>Listing cancellation penalties.</td>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty/HoursBefore</td>
+<td>CancelPenalties /CancelPenalty/HoursBefore</td>
 <td>1</td>
 <td>String</td>
 <td>Number of hours prior to checkin date in which this Cancellation policy applies</td>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty/Deadline</td>
+<td>CancelPenalties /CancelPenalty/Deadline</td>
 <td>1</td>
 <td>String</td>
 <td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty/CalculatedDeadline</td>
+<td>CancelPenalties /CancelPenalty/CalculatedDeadline</td>
 <td>1</td>
 <td>Boolean</td>
 <td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate -&gt; <em>true</em> = has been calculated by XTG / <em>false</em> = bypass of supplier data without calculation</td>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty/Penalty</td>
+<td>CancelPenalties /CancelPenalty/Penalty</td>
 <td>1</td>
 <td></td>
 <td>Contains the value to apply.</td>
@@ -6203,21 +6203,21 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>PaymentOptions</td>
+<td>PaymentOptions    /</td>
 <td>0..1</td>
 <td>String</td>
 <td>Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions/Cards</td>
+<td>PaymentOptions /Cards</td>
 <td>0..1</td>
 <td></td>
 <td>List of cards allowed.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions/Cards/Card</td>
+<td>PaymentOptions /Cards/Card</td>
 <td>1..n</td>
 <td></td>
 <td>Details of card.</td>
@@ -6231,14 +6231,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>Fees</td>
+<td>Fees  /</td>
 <td>0..1</td>
 <td></td>
 <td>Contains a list of fees.</td>
 </tr>
 
 <tr>
-<td>Fees/Fee</td>
+<td>Fees /Fee</td>
 <td>1..n</td>
 <td></td>
 <td>Contains details of the fee.</td>
@@ -6259,14 +6259,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>Fees/Fee/Price</td>
+<td>Fees /Fee/Price</td>
 <td>1</td>
 <td></td>
 <td>Contains details of price.</td>
 </tr>
 
 <tr>
-<td>Fees/Fee/Code</td>
+<td>Fees /Fee/Code</td>
 <td>1</td>
 <td>String</td>
 <td>Specifies the fee code in case it has one.</td>

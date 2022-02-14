@@ -3314,11 +3314,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3390,6 +3385,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5769,7 +5769,7 @@
 
 <p>The maximum time permitted in our system before the connection is closed is <strong>240000</strong> milliseconds.</p>
 
-<p>This message must be implemented solely in case the supplier does not return room description in Avail. This requirement will be indicated in <a href="https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/metadata/" rel="nofollow" target="_blank">MetaData</a>.</p>
+<p>This message must be implemented solely in case the supplier does not return room description in Avail. This requirement will be indicated in <a href="/connectiontypesbuyers/legacy/methods/staticcontent/metadata/">MetaData</a>.</p>
 
 <h3 id="roomlistrq-example">RoomListRQ Example</h3>
 
@@ -5832,35 +5832,35 @@
 
 <tbody>
 <tr>
-<td>RoomListRS/UpgradeUTCDate</td>
+<td>RoomListRS /UpgradeUTCDate</td>
 <td>1</td>
 <td>DateTime</td>
 <td>Indicates the update date of the information in UTC format.</td>
 </tr>
 
 <tr>
-<td>RoomListRS/RoomsInfo</td>
+<td>RoomListRS /RoomsInfo /</td>
 <td>1</td>
 <td></td>
 <td>Root node, list of rooms</td>
 </tr>
 
 <tr>
-<td>RoomInfo</td>
+<td>RoomInfo /</td>
 <td>1..n</td>
 <td></td>
 <td>Room info.</td>
 </tr>
 
 <tr>
-<td>RoomInfo/Code</td>
+<td>RoomInfo /Code</td>
 <td>1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>RoomInfo/Name</td>
+<td>RoomInfo /Name</td>
 <td>1</td>
 <td>String</td>
 <td>Name.</td>

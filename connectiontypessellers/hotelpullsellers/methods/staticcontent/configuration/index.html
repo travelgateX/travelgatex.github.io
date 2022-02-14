@@ -3310,11 +3310,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3386,6 +3381,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5959,105 +5959,105 @@
 </tr>
 
 <tr>
-<td>Parameters</td>
+<td>Parameters /</td>
 <td>1</td>
 <td></td>
 <td></td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter</td>
+<td>Parameters /Parameter</td>
 <td>1..n</td>
 <td></td>
 <td></td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/TagRunTime</td>
+<td>Parameters /Parameter/TagRunTime</td>
 <td>1</td>
 <td>Enum</td>
 <td>This is the tag of the configuration node in the requests that you want to contextualize in the activation form. Possible values: <em>User</em>, <em>Password</em>, <em>UrlAvail</em>, <em>UrlReservation</em>, <em>UrlValuation</em>, <em>UrlGeneric</em>, <em>Parameter</em>. See <a href="/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/">Configuration</a></td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/ProviderTagName</td>
+<td>Parameters /Parameter/ProviderTagName</td>
 <td>1</td>
 <td>String</td>
 <td>Name of the parameter in the activation form, as you use our PULL Seller API, it is recomendable to put similar names used on it in a human readbility format. For example: <em>Availability Url</em>, <em>Valuation Url</em> &hellip; If it is an extra parameter, you should put a name similar to the key used, and preferly with a human readbility format too.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/Show</td>
+<td>Parameters /Parameter/Show</td>
 <td>1</td>
 <td>Boolean</td>
 <td>Indicates if you want to show the parameter in the connection form or not. May be you want that some parameter to be filled internally and you do not want the Buyer fill it in.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/Mandatory</td>
+<td>Parameters /Parameter/Mandatory</td>
 <td>1</td>
 <td>Boolean</td>
 <td>Indicates if the parameter is compulsory or not in order to make a connection without any problem.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/Type</td>
+<td>Parameters /Parameter/Type</td>
 <td>1</td>
 <td>Enum</td>
 <td>The parameter value data type. Posible types are:  <em>eString</em>, <em>eBoolean</em>, <em>eUri</em>.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/Pattern</td>
+<td>Parameters /Parameter/Pattern</td>
 <td>0..1</td>
 <td>String</td>
 <td>Regular expression to validate the parameter value. If the parameter type is <em>eBoolean</em> or <em>eUri</em> the pattern is mandatory, and has a specific regular expresion. You can find more information about patterns <a href="#patterns">here</a>. If the type is <em>eString</em> or you add the tag <em>PossibleValues</em> the pattern is not mandatory.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/DescriptionPattern</td>
+<td>Parameters /Parameter/DescriptionPattern</td>
 <td>0..1</td>
 <td>String</td>
 <td>This is the error that the Buyer see if the parameter value do not validate the pattern. Please, fill this node if you want to expedite your connections and avoid future issues.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/Description</td>
+<td>Parameters /Parameter/Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Value of the tooltip that explains the parameter. Avoid use an only word, avoid use the same value than <em>ProviderTagName</em>, and if it is an aditional parameter, avoid use the same value than <em>Key</em>. Please, fill this information to help the Buyer to connect you.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/Key</td>
+<td>Parameters /Parameter/Key</td>
 <td>0..1</td>
 <td>String</td>
 <td>Value of the <em>key</em> attribute as you accept in the xml requests in <em>Configuration</em> node.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/DefaultValue</td>
+<td>Parameters /Parameter/DefaultValue</td>
 <td>0..1</td>
 <td>String</td>
 <td>Value by the default, if the Buyer do not change it, all connections to you are set up with this value.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/ExampleValue</td>
+<td>Parameters /Parameter/ExampleValue</td>
 <td>0..1</td>
 <td>String</td>
 <td>Value of the placeholder for this parameter in the form. If the Buyer do not fill the parameter, the value is empty</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/PossibleValues</td>
+<td>Parameters /Parameter/PossibleValues</td>
 <td>0..1</td>
 <td></td>
 <td></td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter/PossibleValues/PossibleValue</td>
+<td>Parameters /Parameter/PossibleValues/PossibleValue</td>
 <td>1..n</td>
 <td>String</td>
 <td>If you return a list of possible parameter values, in the connection form the Buyer only can choose one of this values.</td>

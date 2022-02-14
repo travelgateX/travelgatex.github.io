@@ -3314,11 +3314,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3390,6 +3385,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5771,7 +5771,7 @@
 
 <p>This method may be preloaded in <strong>XML Travelgate</strong>&rsquo;s system if it takes more than 3 minutes to download.</p>
 
-<p>The <strong>ContinuationToken</strong> can be used in this request - the specification can be found in the Common-Elements section_.</p>
+<p>The <strong>ContinuationToken</strong> can be used in this request - the specification can be found in the &lsquo;<a href="/connectiontypesbuyers/legacy/methods/common-elements/">Common Elements</a>&rsquo; section.</p>
 
 <h3 id="hotellistrq-example">HotelListRQ Example</h3>
 
@@ -5885,14 +5885,14 @@
 
 <tbody>
 <tr>
-<td>HotelListRS/UpgradeUTCDate</td>
+<td>HotelListRS /UpgradeUTCDate</td>
 <td>1</td>
 <td>DateTime</td>
 <td>Indicates the update date of the information in UTC format.</td>
 </tr>
 
 <tr>
-<td>HotelListRS/Hotels/Hotel</td>
+<td>HotelListRS /Hotels /Hotel</td>
 <td>0..n</td>
 <td></td>
 <td>Root node. Hotel sheet.</td>
@@ -5909,7 +5909,7 @@
 <td>ProviderCode</td>
 <td>0..1</td>
 <td>String</td>
-<td>Internal code established by the supplier (see <a href="https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/metadata/" rel="nofollow" target="_blank">MetaData</a>).</td>
+<td>Internal code established by the supplier (see <a href="/connectiontypesbuyers/legacy/methods/staticcontent/metadata/">MetaData</a>).</td>
 </tr>
 
 <tr>
@@ -5948,21 +5948,21 @@
 </tr>
 
 <tr>
-<td>Airports</td>
+<td>Airports /</td>
 <td>0..1</td>
 <td></td>
 <td>List of airports.</td>
 </tr>
 
 <tr>
-<td>Airports/Airport</td>
+<td>Airports /Airport</td>
 <td>1..n</td>
 <td></td>
 <td>Specific airport near the hotel.</td>
 </tr>
 
 <tr>
-<td>Airports/Airport/IATACode</td>
+<td>Airports /Airport/IATACode</td>
 <td>1</td>
 <td>String</td>
 <td>IATA airport Code.</td>
@@ -6053,28 +6053,28 @@
 </tr>
 
 <tr>
-<td>Contact</td>
+<td>Contact /</td>
 <td>0..1</td>
 <td></td>
 <td>Contact.</td>
 </tr>
 
 <tr>
-<td>Contact/Email</td>
+<td>Contact /Email</td>
 <td>0..1</td>
 <td>String</td>
 <td>Email.</td>
 </tr>
 
 <tr>
-<td>Contact/Telephone</td>
+<td>Contact /Telephone</td>
 <td>0..1</td>
 <td>String</td>
 <td>Telephone.</td>
 </tr>
 
 <tr>
-<td>Contact/Fax</td>
+<td>Contact /Fax</td>
 <td>0..1</td>
 <td>String</td>
 <td>Fax.</td>
@@ -6095,21 +6095,21 @@
 </tr>
 
 <tr>
-<td>PaymentOptions</td>
+<td>PaymentOptions /</td>
 <td>0..1</td>
 <td>String</td>
 <td>Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than <em>MerchantPay</em>.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions/Cards/Cards</td>
+<td>PaymentOptions /Cards /</td>
 <td>1</td>
 <td></td>
 <td>List of cards allowed.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions/Cards/Card</td>
+<td>PaymentOptions /Cards /Card</td>
 <td>1..n</td>
 <td></td>
 <td>Type of card allowed.</td>
@@ -6130,21 +6130,21 @@
 </tr>
 
 <tr>
-<td>PropertyCategory</td>
+<td>PropertyCategory /</td>
 <td>0..1</td>
 <td></td>
 <td>Hotels property type. Similar to Type, but on supplier&rsquo;s side.</td>
 </tr>
 
 <tr>
-<td>PropertyCategory/Code</td>
+<td>PropertyCategory /Code</td>
 <td>1</td>
 <td>String</td>
 <td>Supplier&rsquo;s property code.</td>
 </tr>
 
 <tr>
-<td>PropertyCategory/Name</td>
+<td>PropertyCategory /Name</td>
 <td>1</td>
 <td>String</td>
 <td>Supplier&rsquo;s property name.</td>
@@ -6210,16 +6210,12 @@ AvailDestinationTree &amp; GeographicDestinationTree, respectively.</p>
 
 <p><strong>Supplier Code:</strong></p>
 
-<p>The hotel code can be returned combined with other codes, like the city
-code. In this case, it&rsquo;s necessary to perform an availability request.
-I.e, if you are making an availability search by hotel code and the
-city code is also needed, our system will combine them so you can
-use it in Availability request. In this case, the code will be the one
-generated by us, combining the hotel code and the city code, and not
-the supplier&rsquo;s native code. This can also happen with other code types
-instead of city code (i.e. country code).In these cases we return
-the <em>ProviderCode</em> tag containing the internal code used by the
-supplier (see <a href="https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/metadata/" rel="nofollow" target="_blank">MetaData</a>).</p>
+<p>The hotel code can be returned combined with other codes, like the city code. In this case, it&rsquo;s necessary to perform an availability request.</p>
+
+<p>e.g, if you are making an availability search by hotel code and the city code is also needed, our system will combine them so you can use it in Availability request.</p>
+
+<p>In this case, the code will be the one generated by us, combining the hotel code and the city code, and not the supplier&rsquo;s native code.
+This can also happen with other code types instead of city code (i.e. country code). In these cases we return the <em>ProviderCode</em> tag containing the internal code used by the supplier (see <a href="/connectiontypesbuyers/legacy/methods/staticcontent/metadata/">MetaData</a>).</p>
 
 <hr/>
 
@@ -6243,7 +6239,7 @@ supplier (see <a href="https://docs.travelgatex.com/connectiontypesbuyers/legacy
                 <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/legacy/methods/staticcontent/geographicdestinationtree/" title="Go to previous page | GeographicDestinationTree"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>GeographicDestinationTree</a>
             </li>
         <li class="page-item">
-                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" title="Go to next page | Lists of Data" style="margin-right: 0px;">Lists of Data<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
+                <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" title="Go to next page | MarketList" style="margin-right: 0px;">MarketList<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>
             </li></ul>
 
     <footer id="footer_docs" role="contentinfo">

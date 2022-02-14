@@ -3314,11 +3314,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3390,6 +3385,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5755,7 +5755,7 @@
 <div class="alert 
 alert-warning"
  
-role="alert"><strong>Important:</strong> be aware that this method is <a href="https://knowledge.travelgatex.com/what-is-the-difference-between-staticconfiguration-legacy-and-metadata-legacy" rel="nofollow" target="_blank">deprecated</a> and will not be updated. <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> is the new and improved version of StaticConfiguration.</div>
+role="alert"><strong>Important:</strong> be aware that this method is <a href="https://knowledge.travelgatex.com/what-is-the-difference-between-staticconfiguration-legacy-and-metadata-legacy" rel="nofollow" target="_blank">deprecated</a> and will not be updated. <a href="/connectiontypesbuyers/legacy/methods/staticcontent/metadata/">MetaData</a> is the new and improved version of StaticConfiguration.</div>
 
 
 <h3 id="method-goals">Method Goals</h3>
@@ -5769,10 +5769,7 @@ supplier so that it can be effectively configured.</p>
 
 <h3 id="response-format">Response Format</h3>
 
-<p>The XML response contains many elements of the supplier&rsquo;s configuration: number of
-hotels, number of cities and number of areas available, maximum number of
-<em>roomcandidate</em>, maximum number of paxes in a <em>roomcandidate</em>, release days,
-minimum stay, list of languages supported &hellip;</p>
+<p>The XML response contains many elements of the supplier&rsquo;s configuration: number of hotels, number of cities and number of areas available, maximum number of <em>roomcandidate</em>, maximum number of paxes in a <em>roomcandidate</em>, release days, minimum stay, list of languages supported &hellip;</p>
 
 <h3 id="staticconfigurationrq-example">StaticConfigurationRQ Example</h3>
 
@@ -6527,8 +6524,9 @@ AvailDestinationTreeType and RoomListType:</strong></p>
 
 <p>These parameters are XMLTravelgate&rsquo;s internal parameters. They define the type of download each method has for each supplier. If the parameter value is set as online, the method runs a direct call to the supplier&rsquo;s system because the method takes less than 4 minutes. Any other value will signify that the process takes more than 4 minutes, which means we have to cache the information in our BBDD (the methods with this feature are updated every week).</p>
 
-<p><strong>The following tags are set as FALSE by default:</strong>
-(This is either because the supplier doesn&rsquo;t support it or because is has not been updated yet)</p>
+<p><strong>The following tags are set as FALSE by default:</strong></p>
+
+<p>(This is either because the supplier doesn&rsquo;t support it or because is has not been updated yet)</p>
 
 <ul>
 <li><strong>ImplementsDailyRatePlan</strong></li>

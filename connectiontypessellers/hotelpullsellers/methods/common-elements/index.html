@@ -3310,11 +3310,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3386,6 +3381,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5826,63 +5826,63 @@ role="alert"><p><strong>Cardinal Number</strong>:</p>
 </tr>
 
 <tr>
-<td>source</td>
+<td>source /</td>
 <td>1</td>
 <td></td>
 <td>Information about source requesting the operation.</td>
 </tr>
 
 <tr>
-<td>source/agencyCode</td>
+<td>source /agencyCode</td>
 <td>0..1</td>
 <td>String</td>
 <td>Agency code requesting the operation (deprecated).</td>
 </tr>
 
 <tr>
-<td>source/languageCode</td>
+<td>source /languageCode</td>
 <td>1</td>
 <td>String</td>
 <td>Language code (ISO 3166-1 alpha-2) format lowercase.</td>
 </tr>
 
 <tr>
-<td>filterAuditData</td>
+<td>filterAuditData /</td>
 <td>1</td>
 <td></td>
 <td>Activates transaction data sent &amp; received in the supplier&rsquo;s native format.</td>
 </tr>
 
 <tr>
-<td>filterAuditData/registerTransactions</td>
+<td>filterAuditData /registerTransactions</td>
 <td>1</td>
 <td>Boolean</td>
 <td>Returns all the transactions (XMLs) exchanged with the supplier.</td>
 </tr>
 
 <tr>
-<td>Configuration</td>
+<td>Configuration /</td>
 <td>1</td>
 <td></td>
 <td>The info required to access the supplier&rsquo;s system.</td>
 </tr>
 
 <tr>
-<td>Configuration/UrlGeneric</td>
+<td>Configuration /UrlGeneric</td>
 <td>0..1</td>
 <td>String</td>
 <td>Supplier URL used for multiple methods.</td>
 </tr>
 
 <tr>
-<td>Configuration/Parameters</td>
+<td>Configuration /Parameters /</td>
 <td>0..1</td>
 <td></td>
 <td>Parameters for additional information.</td>
 </tr>
 
 <tr>
-<td>Configuration/Parameters/Parameter</td>
+<td>Configuration /Parameters /Parameter</td>
 <td>0..n</td>
 <td></td>
 <td>List of parameters.</td>
@@ -5956,77 +5956,77 @@ role="alert"><p><strong>Cardinal Number</strong>:</p>
 </tr>
 
 <tr>
-<td>applicationErrors</td>
+<td>applicationErrors /</td>
 <td>0..n</td>
 <td></td>
 <td>Application errors reported by supplier.</td>
 </tr>
 
 <tr>
-<td>applicationErrors/type</td>
+<td>applicationErrors /type</td>
 <td>1</td>
 <td>String</td>
 <td><a href="/connectiontypessellers/hotelpullsellers/listsdata/#error-codes">Error Type as specified by XML Travelgate</a>.</td>
 </tr>
 
 <tr>
-<td>applicationErrors/code</td>
+<td>applicationErrors /code</td>
 <td>1</td>
 <td>String</td>
 <td>Native error code reported by supplier.</td>
 </tr>
 
 <tr>
-<td>applicationErrors/description</td>
+<td>applicationErrors /description</td>
 <td>1</td>
 <td>String</td>
 <td>Error description.</td>
 </tr>
 
 <tr>
-<td>auditData</td>
+<td>auditData /</td>
 <td>1</td>
 <td></td>
 <td>Data sent &amp; received in the supplier&rsquo;s native format.</td>
 </tr>
 
 <tr>
-<td>auditData/transactions</td>
+<td>auditData /transactions /</td>
 <td>0..n</td>
 <td></td>
 <td>List of transactions data.</td>
 </tr>
 
 <tr>
-<td>auditData/transactions/timeStamp</td>
+<td>auditData /transactions /timeStamp</td>
 <td>1</td>
 <td>Integer</td>
 <td>TimeStamp of each transaction.</td>
 </tr>
 
 <tr>
-<td>auditData/transactions/RQ</td>
+<td>auditData /transactions /RQ</td>
 <td>1</td>
 <td>String</td>
 <td>Transaction Request.</td>
 </tr>
 
 <tr>
-<td>auditData/transactions/RS</td>
+<td>auditData /transactions /RS</td>
 <td>1</td>
 <td>String</td>
 <td>Transaction Response.</td>
 </tr>
 
 <tr>
-<td>auditData/timeStamp</td>
+<td>auditData /timeStamp</td>
 <td>1</td>
 <td>Integer</td>
 <td>Time when the request has been processed.</td>
 </tr>
 
 <tr>
-<td>auditData/processTimeMilliseconds</td>
+<td>auditData /processTimeMilliseconds</td>
 <td>1</td>
 <td>Integer</td>
 <td>Process time in milliseconds</td>

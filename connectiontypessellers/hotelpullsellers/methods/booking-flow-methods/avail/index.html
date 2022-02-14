@@ -3310,11 +3310,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3386,6 +3381,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -6453,7 +6453,7 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>Enum</td>
-<td>This restriction affects: 1 -&gt; Company, 2 -&gt; Market, 3 -&gt; Others.. See the list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Restriction-Type</td>
+<td>This restriction affects: 1 -&gt; Company, 2 -&gt; Market, 3 -&gt; Others.. See the list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Restriction-Type">Lists of Data</a></td>
 </tr>
 
 <tr>
@@ -6656,14 +6656,14 @@ is closed.</p>
 <td>@binding</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Identifies if the price is binding (When true, the sale price returned <strong>must</strong> not be less than the price informed.</td>
+<td>Identifies if the price is binding (When true, the sale price returned <strong>must</strong> not be less than the price informed)</td>
 </tr>
 
 <tr>
 <td>@commission</td>
 <td>1</td>
 <td>Decimal</td>
-<td>Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.</td>
+<td>Commission: -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount.</td>
 </tr>
 
 <tr>
@@ -6733,14 +6733,14 @@ is closed.</p>
 <td>@binding</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Identifies if is the price is binding (When true the sale price returned <strong>must</strong> not be less than the price informed).</td>
+<td>Identifies if is the price is binding (When true the sale price returned <strong>must</strong> not be less than the price informed)</td>
 </tr>
 
 <tr>
 <td>@commission</td>
 <td>1</td>
 <td>Decimal</td>
-<td>Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.</td>
+<td>Commission: -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount.</td>
 </tr>
 
 <tr>
@@ -6810,7 +6810,7 @@ is closed.</p>
 <td>@binding</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Identifies if is the price is binding (When true the sale price returned must not be less than the price informed.</td>
+<td>Identifies if is the price is binding (When true the sale price returned <strong>must</strong> not be less than the price informed)</td>
 </tr>
 
 <tr>
@@ -6922,14 +6922,14 @@ is closed.</p>
 <td>@binding</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Identifies if is the price is binding (When true the sale price returned <strong>must</strong> not be less than the price informed.</td>
+<td>Identifies if is the price is binding (When true the sale price returned <strong>must</strong> not be less than the price informed)</td>
 </tr>
 
 <tr>
 <td>@commission</td>
 <td>1</td>
 <td>Decimal</td>
-<td>Commission:  -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.</td>
+<td>Commission:  -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount.</td>
 </tr>
 
 <tr>
@@ -7160,7 +7160,7 @@ is closed.</p>
 <td>@binding</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Identifies if is the price is binding (When true the sale price returned must not be less than the price informed.</td>
+<td>Identifies if is the price is binding (When true the sale price returned <strong>must</strong> not be less than the price informed)</td>
 </tr>
 
 <tr>
@@ -7237,10 +7237,10 @@ client can sell the product for a lower price.</p>
 
 <blockquote>
 <ul>
-<li>Commission = 0: the price returned is net.</li>
-<li>Commission = -1: the supplier has not supplied the sale price
+<li><em>Commission</em> = 0: the price returned is net.</li>
+<li><em>Commission</em> = -1: the supplier has not supplied the sale price
 nor the commission. This information is in the commercial contract with the supplier.</li>
-<li>Commission is greater than 0: X = % of the commission applied to the amount</li>
+<li><em>Commission</em> is greater than 0: X = % of the commission applied to the amount</li>
 </ul>
 </blockquote>
 

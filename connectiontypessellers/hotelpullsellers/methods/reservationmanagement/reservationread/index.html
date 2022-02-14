@@ -3310,11 +3310,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3386,6 +3381,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5823,21 +5823,21 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Locators</td>
+<td>Locators /</td>
 <td>1</td>
 <td></td>
 <td>Information about the locators (it is mandatory to indicate either client or supplier&rsquo;s locator).</td>
 </tr>
 
 <tr>
-<td>Locators/Client</td>
+<td>Locators /Client</td>
 <td>0..1</td>
 <td>String</td>
 <td>Client locator.</td>
 </tr>
 
 <tr>
-<td>Locators/Provider</td>
+<td>Locators /Provider</td>
 <td>0..1</td>
 <td>String</td>
 <td>Supplier locator.</td>
@@ -5965,91 +5965,91 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Locators</td>
+<td>Locators /</td>
 <td>1</td>
 <td></td>
 <td>Information about the locators.</td>
 </tr>
 
 <tr>
-<td>Locators/Client</td>
+<td>Locators /Client</td>
 <td>0..1</td>
 <td>String</td>
 <td>Client locator.</td>
 </tr>
 
 <tr>
-<td>Locators/Provider</td>
+<td>Locators /Provider</td>
 <td>0..1</td>
 <td>String</td>
 <td>Supplier locator.</td>
 </tr>
 
 <tr>
-<td>Locators/Property</td>
+<td>Locators /Property</td>
 <td>0..1</td>
 <td>String</td>
 <td>Property locator(see Metadata method in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>Hotel</td>
+<td>Hotel /</td>
 <td>0..1</td>
 <td></td>
 <td>Hotel reservation.</td>
 </tr>
 
 <tr>
-<td>Hotel/Code</td>
+<td>Hotel /Code</td>
 <td>0..1</td>
 <td>String</td>
 <td>Hotel Code.</td>
 </tr>
 
 <tr>
-<td>Hotel/Name</td>
+<td>Hotel /Name</td>
 <td>0..1</td>
 <td>String</td>
 <td>Hotel Name.</td>
 </tr>
 
 <tr>
-<td>Hotel/City</td>
+<td>Hotel /City</td>
 <td>0..1</td>
 <td>String</td>
 <td>Hotel city.</td>
 </tr>
 
 <tr>
-<td>Hotel/CreationDate</td>
+<td>Hotel /CreationDate</td>
 <td>0..1</td>
 <td>String</td>
 <td>Date of booking. Format dd/MM/yyyy</td>
 </tr>
 
 <tr>
-<td>Hotel/StartDate</td>
+<td>Hotel /StartDate</td>
 <td>0..1</td>
 <td>String</td>
 <td>Check-in date. Format dd/MM/yyyy</td>
 </tr>
 
 <tr>
-<td>Hotel/EndDate</td>
+<td>Hotel /EndDate</td>
 <td>0..1</td>
 <td>String</td>
 <td>Check out date. Format dd/MM/yyyy</td>
 </tr>
 
 <tr>
-<td>Hotel/MealPlanCode</td>
+<td>Hotel /MealPlanCode</td>
 <td>0..1</td>
 <td>String</td>
 <td>Booking Mealplan code.</td>
 </tr>
 
 <tr>
-<td>Hotel/Holder</td>
+<td>Hotel /Holder</td>
 <td>0..1</td>
 <td>String</td>
 <td>Reservation Holder .</td>
@@ -6070,7 +6070,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Hotel/Price</td>
+<td>Hotel /Price</td>
 <td>1</td>
 <td>String</td>
 <td>Price of the reservation.</td>
@@ -6105,14 +6105,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Hotel/Rooms</td>
+<td>Hotel /Rooms</td>
 <td>0..1</td>
 <td></td>
 <td>List of rooms reserved</td>
 </tr>
 
 <tr>
-<td>Hotel/Rooms/Room</td>
+<td>Hotel /Rooms/Room</td>
 <td>1..n</td>
 <td></td>
 <td>Details of room reserved.</td>
@@ -6147,14 +6147,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Hotel/RoomCandidates</td>
+<td>Hotel /RoomCandidates /</td>
 <td>0..1</td>
 <td></td>
 <td>Rooms requested at the time of booking.</td>
 </tr>
 
 <tr>
-<td>Hotel/RoomCandidates/RoomCandidate</td>
+<td>Hotel /RoomCandidates /RoomCandidate</td>
 <td>1..n</td>
 <td></td>
 <td>Room required.</td>
@@ -6168,7 +6168,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>RoomCandidates/RoomCandidate/Paxes/Pax</td>
+<td>RoomCandidates /RoomCandidate/Paxes/Pax</td>
 <td>1..n</td>
 <td></td>
 <td>Pax required.</td>
@@ -6189,7 +6189,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Hotel/CancelPenaltiesCancelPenalties</td>
+<td>Hotel /CancelPenaltiesCancelPenalties /</td>
 <td>0..1</td>
 <td></td>
 <td>Information of cancellation policies.</td>
@@ -6203,35 +6203,35 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Hotel/CancelPenalties/CancelPenalty</td>
+<td>Hotel /CancelPenalties /CancelPenalty</td>
 <td>0..n</td>
 <td></td>
 <td>Listing of cancellation penalties.</td>
 </tr>
 
 <tr>
-<td>Hotel/CancelPenalties/CancelPenalty/HoursBefore</td>
+<td>Hotel /CancelPenalties /CancelPenalty/HoursBefore</td>
 <td>1</td>
 <td>String</td>
 <td>Number of hours prior to arrival day in which this Cancellation policy applies.</td>
 </tr>
 
 <tr>
-<td>Hotel/CancelPenalties/CancelPenalty/Deadline</td>
+<td>Hotel /CancelPenalties /CancelPenalty/Deadline</td>
 <td>1</td>
 <td>String</td>
 <td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
 </tr>
 
 <tr>
-<td>Hotel/CancelPenalties/CancelPenalty/CalculatedDeadline</td>
+<td>Hotel /CancelPenalties /CancelPenalty/CalculatedDeadline</td>
 <td>1</td>
 <td>Boolean</td>
 <td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate -&gt; <em>true</em> = has been calculated by XTG / <em>false</em> = bypass of supplier data without calculation</td>
 </tr>
 
 <tr>
-<td>Hotel/CancelPenalties/CancelPenalty/Penalty</td>
+<td>Hotel /CancelPenalties /CancelPenalty/Penalty</td>
 <td>1</td>
 <td></td>
 <td>Contains the value to apply.</td>
@@ -6259,35 +6259,35 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Hotel/Remarks</td>
+<td>Hotel /Remarks</td>
 <td>0..1</td>
 <td>String</td>
 <td>Remarks.</td>
 </tr>
 
 <tr>
-<td>TransactionStatus</td>
+<td>TransactionStatus /</td>
 <td>1</td>
 <td>Trans.</td>
 <td>Status.</td>
 </tr>
 
 <tr>
-<td>TransactionStatus/ComunicationStatus</td>
+<td>TransactionStatus /ComunicationStatus</td>
 <td>1</td>
 <td>String</td>
 <td>Status communication (OFFLINE, OK and KO).</td>
 </tr>
 
 <tr>
-<td>TransactionStatus/RSStatus</td>
+<td>TransactionStatus /RSStatus</td>
 <td>1</td>
 <td>String</td>
 <td>Response status - DESCONOCIDO (Unknown), EXISTE (Exists), EXISTECANCELADA (exists but it&rsquo;s cancelled), NO_EXISTE (Does not exist).</td>
 </tr>
 
 <tr>
-<td>TransactionStatus/ResStatus</td>
+<td>TransactionStatus /ResStatus</td>
 <td>1</td>
 <td>String</td>
 <td>Status booking (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown).</td>

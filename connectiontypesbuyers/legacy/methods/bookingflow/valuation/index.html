@@ -3314,11 +3314,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3390,6 +3385,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5845,14 +5845,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>OnRequest</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a>).</td>
+<td>Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see <a href="/connectiontypesbuyers/legacy/methods/staticcontent/metadata/">MetaData</a>).</td>
 </tr>
 
 <tr>
 <td>BlockOption</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a>).</td>
+<td>Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see <a href="/connectiontypesbuyers/legacy/methods/staticcontent/metadata/">MetaData</a>).</td>
 </tr>
 
 <tr>
@@ -5873,7 +5873,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>PaymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/">Lists of Data</a>).</td>
+<td>Indicates payment type (See full type list at <a href="/connectiontypesbuyers/legacy/listsdata/">Lists of Data</a>).</td>
 </tr>
 
 <tr>
@@ -5891,14 +5891,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>Rooms</td>
+<td>Rooms /</td>
 <td>1</td>
 <td></td>
 <td>Rooms in this option (room list).</td>
 </tr>
 
 <tr>
-<td>Rooms/Room</td>
+<td>Rooms /Room</td>
 <td>1..n</td>
 <td></td>
 <td>Room Details.</td>
@@ -5933,7 +5933,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>RoomCandidates/RoomCandidate</td>
+<td>RoomCandidates /RoomCandidate</td>
 <td>1..n</td>
 <td></td>
 <td>Room required.</td>
@@ -5947,7 +5947,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>RoomCandidates/RoomCandidate/Paxes/Pax</td>
+<td>RoomCandidates /RoomCandidate/Paxes/Pax</td>
 <td>1..n</td>
 <td></td>
 <td>Pax required.</td>
@@ -5968,14 +5968,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>Parameters</td>
+<td>Parameters /</td>
 <td>0..1</td>
 <td></td>
 <td>Additional parameters reported in AvailRS. <strong>If you receive parameters in AvailRS it is mandatory to send them exactly the same as received.</strong> If you don&rsquo;t send exactly the same parameters as received the Valuation could fail.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter</td>
+<td>Parameters /Parameter</td>
 <td>0..n</td>
 <td></td>
 <td>Additional parameter requiring integration.</td>
@@ -6058,14 +6058,14 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>Parameters</td>
+<td>Parameters /</td>
 <td>0..1</td>
 <td></td>
 <td>Parameters for additional information.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter</td>
+<td>Parameters /Parameter</td>
 <td>1..n</td>
 <td></td>
 <td>List of parameters.</td>
@@ -6128,7 +6128,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>CancelPenalties</td>
+<td>CancelPenalties /</td>
 <td>1</td>
 <td></td>
 <td>Cancellation policy details.</td>
@@ -6142,35 +6142,35 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty</td>
+<td>CancelPenalties /CancelPenalty</td>
 <td>0..n</td>
 <td></td>
 <td>Listing cancellation penalties.</td>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty/HoursBefore</td>
+<td>CancelPenalties /CancelPenalty/HoursBefore</td>
 <td>1</td>
 <td>String</td>
 <td>Number of hours prior to checkin date in which this Cancellation policy applies .</td>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty/Deadline</td>
+<td>CancelPenalties /CancelPenalty/Deadline</td>
 <td>1</td>
 <td>String</td>
 <td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty/CalculatedDeadline</td>
+<td>CancelPenalties /CancelPenalty/CalculatedDeadline</td>
 <td>1</td>
 <td>Boolean</td>
 <td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate -&gt; <em>true</em> = has been calculated by XTG / <em>false</em> = bypass of supplier data without calculation</td>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty/Penalty</td>
+<td>CancelPenalties /CancelPenalty/Penalty</td>
 <td>1</td>
 <td></td>
 <td>Contains the value to apply.</td>
@@ -6194,11 +6194,11 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/">Lists of Data</a>) .</td>
+<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypesbuyers/legacy/listsdata/">Lists of Data</a>) .</td>
 </tr>
 
 <tr>
-<td>CancelPenalties/CancelPenalty/Deadline</td>
+<td>CancelPenalties /CancelPenalty/Deadline</td>
 <td>0..1</td>
 <td>String</td>
 <td>Cancellation fees will be applicabled between this date and check-in date.</td>
@@ -6208,25 +6208,25 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>Remarks</td>
 <td>0..1</td>
 <td>String</td>
-<td>Remarks (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Remarks (see <a href="/connectiontypesbuyers/legacy/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>PaymentOptions</td>
+<td>PaymentOptions /</td>
 <td>0..1</td>
 <td>String</td>
 <td>Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions/Cards</td>
+<td>PaymentOptions /Cards</td>
 <td>0..1</td>
 <td></td>
 <td>List of cards allowed.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions/Cards/Card</td>
+<td>PaymentOptions /Cards/Card</td>
 <td>1..n</td>
 <td></td>
 <td>Details of card.</td>
@@ -6236,25 +6236,25 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>@code</td>
 <td>1</td>
 <td>String</td>
-<td>Code card. Se the full list of card codes at <a href="/connectiontypessellers/hotelpullsellers/listsdata/">Lists of Data</a></td>
+<td>Code card. Se the full list of card codes at <a href="/connectiontypesbuyers/legacy/listsdata/">Lists of Data</a></td>
 </tr>
 
 <tr>
-<td>Fees</td>
+<td>Fees /</td>
 <td>0..1</td>
 <td></td>
 <td>Contains a list of fees.</td>
 </tr>
 
 <tr>
-<td>Fees/Fee</td>
+<td>Fees /Fee</td>
 <td>1..n</td>
 <td></td>
 <td>Contains details of the fee.</td>
 </tr>
 
 <tr>
-<td>Fees/Fee/Code</td>
+<td>Fees /Fee/Code</td>
 <td>1</td>
 <td>String</td>
 <td>Specifies the fee code in case it has one.</td>
@@ -6275,7 +6275,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 </tr>
 
 <tr>
-<td>Fees/Fee/Price</td>
+<td>Fees /Fee/Price</td>
 <td>1</td>
 <td></td>
 <td>Contains details of price.</td>
@@ -6313,25 +6313,25 @@ selected  in the previous step (<em>Avail</em>).</p>
 <td>CancelPoliciesDescription</td>
 <td>0..1</td>
 <td>String</td>
-<td>Contains the cancellation penalties in free text (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
+<td>Contains the cancellation penalties in free text (see <a href="/connectiontypesbuyers/legacy/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>Option</td>
+<td>Option /</td>
 <td>0..1</td>
 <td>Option quoted</td>
 <td></td>
 </tr>
 
 <tr>
-<td>Option/Rooms</td>
+<td>Option /Rooms /</td>
 <td>0..1</td>
 <td></td>
 <td>Rooms in the option (room list).</td>
 </tr>
 
 <tr>
-<td>Option/Rooms/Room</td>
+<td>Option /Rooms /Room</td>
 <td>1..n</td>
 <td></td>
 <td>Room details.</td>
@@ -6369,7 +6369,7 @@ selected  in the previous step (<em>Avail</em>).</p>
 
 <h3 id="detailed-description">Detailed Description</h3>
 
-<p>**Suppliers with block allotment **</p>
+<p><em>Suppliers with block allotment</em></p>
 
 <p>There are some suppliers who use block allotments, sometimes called pre-confirmation or quote.
 In that case, you will have 30 minutes to complete the booking, if  not, you will have to re-launch Valuation 30 minutes after the last request, normally just before booking request.</p>
@@ -6385,7 +6385,7 @@ In that case, you will have 30 minutes to complete the booking, if  not, you wil
 <ul>
 <li><p><strong>HoursBefore:</strong> cancellation fees applicable x number of hours before the check in date</p></li>
 
-<li><p><strong>Deadline:</strong> cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our <a href="/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/">MetaData</a> content.</p></li>
+<li><p><strong>Deadline:</strong> cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our <a href="/connectiontypesbuyers/legacy/methods/staticcontent/metadata/">MetaData</a> content.</p></li>
 
 <li><p><strong>CalculatedDeadline:</strong> Specifies if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate according to <strong>ISO 8601</strong></p></li>
 </ul>

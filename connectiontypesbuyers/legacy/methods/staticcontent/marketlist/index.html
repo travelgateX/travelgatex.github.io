@@ -3314,11 +3314,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item active">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3390,6 +3385,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5768,7 +5768,7 @@ be used in the availability request.</p>
 <h3 id="remarks">Remarks</h3>
 
 <p>The maximum time permitted in our system before the connection is closed is  <strong>240000</strong> milliseconds.
-Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each individual supplier.</p>
+Most suppliers use a standard <strong>ISO-3166_1_alfa_2</strong>, but it depends on each individual supplier.</p>
 
 <h3 id="marketlistrq-example">MarketListRQ Example</h3>
 
@@ -5833,42 +5833,42 @@ Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each indivi
 
 <tbody>
 <tr>
-<td>MarketListRS/UpgradeUTCDate</td>
+<td>MarketListRS /UpgradeUTCDate</td>
 <td>1</td>
 <td>DateTime</td>
 <td>Indicates the update date of the information in UTC format.</td>
 </tr>
 
 <tr>
-<td>MarketListRS/Markets</td>
+<td>MarketListRS /Markets /</td>
 <td>1</td>
 <td></td>
 <td>Root node, list of markets.</td>
 </tr>
 
 <tr>
-<td>Market</td>
+<td>Markets /Market</td>
 <td>1..n</td>
 <td></td>
 <td>Market.</td>
 </tr>
 
 <tr>
-<td>Market/Code</td>
+<td>Markets /Market/Code</td>
 <td>1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>Market/Name</td>
+<td>Markets /Market/Name</td>
 <td>1</td>
 <td>String</td>
 <td>Name.</td>
 </tr>
 
 <tr>
-<td>Market/GroupCode</td>
+<td>Markets /Market/GroupCode</td>
 <td>0..1</td>
 <td>String</td>
 <td>Indicates if the supplier groups different markets together and what the group is called.</td>
@@ -5899,7 +5899,7 @@ Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each indivi
 
     <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <li class="page-item">
-                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" title="Go to previous page | Lists of Data"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>Lists of Data</a>
+                <a class="nav nav-prev d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/legacy/methods/staticcontent/hotellist/" title="Go to previous page | HotelList"> <i class="fa fa-chevron-left mr-2 mt-1" style="font-size: 12px;"></i>HotelList</a>
             </li>
         <li class="page-item">
                 <a class="nav nav-next d-flex align-items-center" style="border: none;" href="/connectiontypesbuyers/legacy/methods/staticcontent/mealplanlist/" title="Go to next page | MealPlanList" style="margin-right: 0px;">MealPlanList<i class="fa fa-chevron-right ml-2 mt-1" style="font-size: 12px;"></i></a>

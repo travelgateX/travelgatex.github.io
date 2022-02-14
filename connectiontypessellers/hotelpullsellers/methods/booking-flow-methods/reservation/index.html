@@ -3310,11 +3310,6 @@
               <span>HotelList</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">
-              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/marketlist/">
               <span>MarketList</span><i class="fa fa-circle-thin read-icon"></i>
@@ -3386,6 +3381,11 @@
           <li data-nav-id="/connectiontypesbuyers/legacy/faq/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/faq/">
               <span>FAQ</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/connectiontypesbuyers/legacy/listsdata/" class="dd-item">
+            <a href="/connectiontypesbuyers/legacy/listsdata/">
+              <span>Lists of Data</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
             </ul>
@@ -5907,17 +5907,17 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Parameters</td>
+<td>Parameters /</td>
 <td>0..1</td>
 <td></td>
-<td>Parameters for additional information that have been reported in ValuationRS.</td>
+<td>List of parameters.</td>
 </tr>
 
 <tr>
-<td>Parameters/Parameter</td>
+<td>Parameters /Parameter</td>
 <td>1..n</td>
 <td></td>
-<td>List of parameters.</td>
+<td>Parameters for additional information that have been reported in ValuationRS.</td>
 </tr>
 
 <tr>
@@ -6068,21 +6068,21 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>ResGuests</td>
-<td>1</td>
-<td></td>
-<td></td>
-</tr>
-
-<tr>
-<td>ResGuests/Guests</td>
+<td>ResGuests /</td>
 <td>1</td>
 <td></td>
 <td>List of passengers.</td>
 </tr>
 
 <tr>
-<td>ResGuests/Guests/Guest</td>
+<td>ResGuests /Guests</td>
+<td>1</td>
+<td></td>
+<td>Passengers.</td>
+</tr>
+
+<tr>
+<td>ResGuests /Guests/Guest</td>
 <td>1..n</td>
 <td></td>
 <td>Detail of each passenger. If the holder is also a passenger you need to add his/hers information in the gest list.</td>
@@ -6103,21 +6103,21 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>ResGuests/Guests/Guest/Title</td>
+<td>ResGuests /Guests/Guest/Title</td>
 <td>1</td>
 <td>Enum</td>
 <td>Guest&rsquo;s title. Possible values: 0 = Mr, 1 = Mrs, 2 = Miss, 3 = Ms.</td>
 </tr>
 
 <tr>
-<td>ResGuests/Guests/Guest/GivenName</td>
+<td>ResGuests /Guests/Guest/GivenName</td>
 <td>1</td>
 <td>String</td>
 <td>Guest&rsquo;s given name.</td>
 </tr>
 
 <tr>
-<td>ResGuests/Guests/Guest/SurName</td>
+<td>ResGuests /Guests/Guest/SurName</td>
 <td>1</td>
 <td>String</td>
 <td>Guest&rsquo;s last name.</td>
@@ -6131,196 +6131,196 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>CardInfo</td>
+<td>CardInfo /</td>
 <td>0..1</td>
 <td></td>
 <td>Credit card details.</td>
 </tr>
 
 <tr>
-<td>CardInfo/CardCode</td>
+<td>CardInfo /CardCode</td>
 <td>1</td>
 <td>String</td>
 <td>Indicates the type of credit card. See types allowed at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#credit-cards">Credit Card Types</a></td>
 </tr>
 
 <tr>
-<td>CardInfo/Number</td>
+<td>CardInfo /Number</td>
 <td>1</td>
 <td>String</td>
 <td>Credit card number.</td>
 </tr>
 
 <tr>
-<td>CardInfo/Holder</td>
+<td>CardInfo /Holder</td>
 <td>1</td>
 <td>String</td>
 <td>Credit card holder.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ValidityDate</td>
+<td>CardInfo /ValidityDate</td>
 <td>1</td>
 <td></td>
 <td></td>
 </tr>
 
 <tr>
-<td>CardInfo/ValidityDate/Month</td>
+<td>CardInfo /ValidityDate/Month</td>
 <td>1</td>
 <td>String</td>
 <td>Expiration month (2 characters).</td>
 </tr>
 
 <tr>
-<td>CardInfo/ValidityDate/Year</td>
+<td>CardInfo /ValidityDate/Year</td>
 <td>1</td>
 <td>String</td>
 <td>Expiration year (2 characters).</td>
 </tr>
 
 <tr>
-<td>CardInfo/CVC</td>
+<td>CardInfo /CVC</td>
 <td>1</td>
 <td>String</td>
 <td>Credit card security code.</td>
 </tr>
 
 <tr>
-<td>CardInfo/isVCC</td>
+<td>CardInfo /isVCC</td>
 <td>1</td>
 <td>Boolean</td>
 <td>Indicates if the card information provided is from a Virtual Credit Card or not.</td>
 </tr>
 
 <tr>
-<td>CardInfo/VirtualCreditCard</td>
+<td>CardInfo /VirtualCreditCard</td>
 <td>0..1</td>
 <td></td>
 <td>Extra information if the card is a virtual credit card.</td>
 </tr>
 
 <tr>
-<td>CardInfo/VirtualCreditCard/VCCActivationDate</td>
+<td>CardInfo /VirtualCreditCard/VCCActivationDate</td>
 <td>1</td>
 <td>String</td>
 <td>Date from when the card can be charged. Format: DD/MM/YYYY.</td>
 </tr>
 
 <tr>
-<td>CardInfo/VirtualCreditCard/VCCDeactivationDate</td>
+<td>CardInfo /VirtualCreditCard/VCCDeactivationDate</td>
 <td>1</td>
 <td>String</td>
 <td>Date from when the card will no longer be chargeable. Format: DD/MM/YYYY.</td>
 </tr>
 
 <tr>
-<td>CardInfo/VirtualCreditCard/VCCCurrentBalance</td>
+<td>CardInfo /VirtualCreditCard/VCCCurrentBalance</td>
 <td>1</td>
 <td>String</td>
 <td>The amount which can be charged to the card.</td>
 </tr>
 
 <tr>
-<td>CardInfo/VirtualCreditCard/VCCCurrencyCode</td>
+<td>CardInfo /VirtualCreditCard/VCCCurrencyCode</td>
 <td>1</td>
 <td>String</td>
 <td>The ISO currency code of the VCCCurrentBalance.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity</td>
+<td>CardInfo /ThreeDomainSecurity</td>
 <td>0..1</td>
 <td></td>
 <td>3DS data and transaction results.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/ThreeDSVersion</td>
+<td>CardInfo /ThreeDomainSecurity/ThreeDSVersion</td>
 <td>1</td>
 <td>String</td>
 <td>Three Domain Security version used.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/DSTransactionID</td>
+<td>CardInfo /ThreeDomainSecurity/DSTransactionID</td>
 <td>0..1</td>
 <td>String</td>
 <td>Unique transaction identifier assigned by the Directory Server (DS) to identify a single transaction.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/XID</td>
+<td>CardInfo /ThreeDomainSecurity/XID</td>
 <td>0..1</td>
 <td>String</td>
 <td>Transaction identifier resulting from authentication processing.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/ECI</td>
+<td>CardInfo /ThreeDomainSecurity/ECI</td>
 <td>1</td>
 <td>String</td>
 <td>Electronic Commerce Indicator. See values allowed at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#electronic-commerce-indicator-codes">ECI codes</a>.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/CAVV</td>
+<td>CardInfo /ThreeDomainSecurity/CAVV</td>
 <td>0..1</td>
 <td>String</td>
 <td>Cardholder Authentication Verification Value.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/PARes</td>
+<td>CardInfo /ThreeDomainSecurity/PARes</td>
 <td>0..1</td>
 <td>String</td>
 <td>Payer Authentication Response.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/PAResStatus</td>
+<td>CardInfo /ThreeDomainSecurity/PAResStatus</td>
 <td>0..1</td>
 <td>String</td>
 <td>Payer Authentication Response status. See values allowed at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#pares-status">PARes Status</a>.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/PARes</td>
+<td>CardInfo /ThreeDomainSecurity/PARes</td>
 <td>0..1</td>
 <td>String</td>
 <td>Payer Authentication Response.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/CardEnrolledStatus</td>
+<td>CardInfo /ThreeDomainSecurity/CardEnrolledStatus</td>
 <td>0..1</td>
 <td>String</td>
 <td>Status of Authentication eligibility. See values allowed at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#card-enrollment-status">Card Enrollment Status</a>.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/SignatureStatus</td>
+<td>CardInfo /ThreeDomainSecurity/SignatureStatus</td>
 <td>0..1</td>
 <td>String</td>
 <td>Transaction Signature status. See values allowed at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#signature-verification-status">Signature Verification Status</a>.</td>
 </tr>
 
 <tr>
-<td>CardInfo/ThreeDomainSecurity/MerchantName</td>
+<td>CardInfo /ThreeDomainSecurity/MerchantName</td>
 <td>0..1</td>
 <td>String</td>
 <td>Merchant name.</td>
 </tr>
 
 <tr>
-<td>Rooms</td>
+<td>Rooms /</td>
 <td>1</td>
 <td></td>
 <td>Rooms within this option (room list).</td>
 </tr>
 
 <tr>
-<td>Rooms/Room</td>
+<td>Rooms /Room</td>
 <td>1..n</td>
 <td></td>
 <td>Detail of room.</td>
@@ -6355,14 +6355,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Rooms/Preferences</td>
+<td>Rooms /Preferences /</td>
 <td>0..1</td>
 <td></td>
 <td>Preference filters at room level.</td>
 </tr>
 
 <tr>
-<td>Rooms/Preferences/Preference</td>
+<td>Rooms /Preferences /Preference</td>
 <td>1..n</td>
 <td></td>
 <td>Each filter of preference and its values.</td>
@@ -6372,11 +6372,11 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td></td>
-<td>Type of preference allowed. See types allowed in ** PreferenceType:**</td>
+<td>Type of preference allowed. See types allowed in <strong>PreferenceType</strong> further down this page</td>
 </tr>
 
 <tr>
-<td>RoomCandidates/RoomCandidate</td>
+<td>RoomCandidates /RoomCandidate</td>
 <td>1..n</td>
 <td></td>
 <td>Room required.</td>
@@ -6390,7 +6390,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>RoomCandidates/RoomCandidate/Paxes/Pax</td>
+<td>RoomCandidates /RoomCandidate/Paxes /Pax</td>
 <td>1..n</td>
 <td></td>
 <td>Pax required.</td>
@@ -6418,14 +6418,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Preferences</td>
+<td>Preferences /</td>
 <td>0..1</td>
 <td></td>
 <td>Preference filters at the option / general level.</td>
 </tr>
 
 <tr>
-<td>Preferences/Preference</td>
+<td>Preferences /Preference</td>
 <td>1..n</td>
 <td></td>
 <td>Each filter of preference and its values.</td>
@@ -6435,7 +6435,7 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td></td>
-<td>Type of preference allowed. See types allowed in ** PreferenceType:**</td>
+<td>Type of preference allowed. See types allowed in <strong>PreferenceType</strong> further down this page</td>
 </tr>
 </tbody>
 </table>
@@ -6589,6 +6589,12 @@ the system will immediately cancel the reservation to prevent further possible e
 <li><em>UN:</em> The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.
 It is the client&rsquo;s responsibility to check if the booking is OK.</li>
 </ul>
+
+<div class="alert 
+alert-warning"
+ 
+role="alert"><strong>Important:</strong> be aware that you can receive an error and a reservation status OK in the same response, in this case the booking is confirmed. You should always consider the reservation status returned.</div>
+
 
 <p><strong>Note:</strong> <em>Keep the parameters in the valuation response to include them in the reservation request.</em></p>
 
