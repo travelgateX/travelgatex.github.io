@@ -89,10 +89,11 @@ Considerations It is an incremental load, so bear in mind these considerations:
         
         
         How to add extra info to a hotel Considerations It is an incremental load, so bear in mind these considerations:
- If a meal plan exists then it is updated.
- If a meal plan does not exist then it is created.
- Existing meal plans that are not referenced are not removed.
- If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+ If a hotels exists then it is updated.
+ If a hotel does not exist then it is created.
+ Existing hotel that are not referenced are not removed.
+ If an existing hotel has to be removed from system then you have to contact with TravelgateX.
+ If there is any problem with a hotel&amp;rsquo;s information then it is omitted (and logged) but the load continues.
         
           [...]
         
