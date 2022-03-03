@@ -5793,7 +5793,7 @@ N = Names allowed for a specific element</p>
 <pre><code class="language-xml">&lt;HotelRatePlanInventoryNotif xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
     &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;&gt;
         &lt;RatePlans HotelCode = &quot;1&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
-            &lt;RatePlan Duration = &quot;0&quot; CurrencyCode = &quot;EUR&quot; RatePlanCode = &quot;BAR&quot; FreeChild = &quot;true&quot; FreeBaby = &quot;false&quot; RatePlanStatusType = &quot;Active&quot; RatePlanNotifType = &quot;New&quot;&gt;
+            &lt;RatePlan Duration = &quot;0&quot; CurrencyCode = &quot;EUR&quot; RatePlanCode = &quot;BAR&quot; FreeChild = &quot;true&quot; FreeBaby = &quot;false&quot; RatePlanStatusType = &quot;Active&quot; RatePlanNotifType = &quot;New&quot; YieldableIndicator=&quot;true&quot;&gt;
                 &lt;BookingRules&gt;
                     &lt;BookingRule&gt;
                         &lt;CancelPenalties&gt;
@@ -6044,6 +6044,13 @@ N = Names allowed for a specific element</p>
 <td align="center">0..1</td>
 <td align="center">String</td>
 <td><em>BR</em>. ISO Currency (EUR)</td>
+</tr>
+
+<tr>
+<td align="left">@YieldableIndicator</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td>Used to indicate the rate plan is subject to yield management logic. When false, the rate plan is not yieldable. When true or it&rsquo;s not returned, the rate plan is yieldable.</td>
 </tr>
 
 <tr>
