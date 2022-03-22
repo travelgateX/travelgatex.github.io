@@ -5929,6 +5929,56 @@ is <strong>180000</strong> milliseconds.</p>
                 &lt;UpgradeUTCDate&gt;2016-10-18T13:18:03+02:00&lt;/UpgradeUTCDate&gt;
             &lt;/Picture&gt;
         &lt;/Images&gt;
+        &lt;Rooms&gt;
+            &lt;Room code = &quot;821&quot;&gt;
+                &lt;Beds&gt;
+                    &lt;Bed numberOfBeds = &quot;1&quot; type = &quot;SINGLE&quot;/&gt;
+                &lt;/Beds&gt;
+                &lt;RoomOccupancy&gt;
+                    &lt;Adults&gt;
+                        &lt;Min&gt;1&lt;/Min&gt;
+                        &lt;Max&gt;1&lt;/Max&gt;
+                    &lt;/Adults&gt;
+                    &lt;Children&gt;
+                        &lt;Min&gt;0&lt;/Min&gt;
+                        &lt;Max&gt;0&lt;/Max&gt;
+                    &lt;/Children&gt;
+                    &lt;Infants&gt;
+                        &lt;Min&gt;0&lt;/Min&gt;
+                        &lt;Max&gt;0&lt;/Max&gt;
+                    &lt;/Infants&gt;
+                    &lt;Total&gt;
+                        &lt;Min&gt;1&lt;/Min&gt;
+                        &lt;Max&gt;1&lt;/Max&gt;
+                    &lt;/Total&gt;
+                &lt;/RoomOccupancy&gt;
+                &lt;Attributes&gt;
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;01&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Private bathroom&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                &lt;/Attributes&gt;
+                &lt;Images&gt;
+                    &lt;Picture&gt;
+                        &lt;Code&gt;01&lt;/Code&gt;
+                        &lt;URL&gt;http://www.images.net/infor/work/imagen/hotel_room_02/M.jpg&lt;/URL&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Ordered&gt;1&lt;/Ordered&gt;
+                        &lt;Description&gt;Room&lt;/Description&gt;
+                        &lt;UpgradeUTCDate&gt;0001-01-01T00:00:00&lt;/UpgradeUTCDate&gt;
+                    &lt;/Picture&gt;
+                &lt;/Images&gt;
+                &lt;Description&gt;Standard Single room&lt;/Description&gt;
+                &lt;Views&gt;
+                    &lt;View&gt;
+                        &lt;Code&gt;01&lt;/Code&gt;
+                        &lt;Name&gt;Sea view&lt;/Name&gt;
+                    &lt;/View&gt;
+                &lt;/Views&gt;
+                &lt;Area&gt;25&lt;/Area&gt;
+            &lt;/Room&gt;
+        &lt;/Rooms&gt;
         &lt;LocationType&gt;City&lt;/LocationType&gt;
         &lt;PaymentOptions cash=&quot;false&quot; bankAcct=&quot;false&quot;&gt;
             &lt;Cards&gt;
@@ -6335,6 +6385,279 @@ is <strong>180000</strong> milliseconds.</p>
 <td>0..1</td>
 <td>DateTime</td>
 <td>Indicates the upgrade date of the picture in UTC format.</td>
+</tr>
+
+<tr>
+<td>Rooms /</td>
+<td>0..1</td>
+<td></td>
+<td>Hotel rooms.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room</td>
+<td>1..n</td>
+<td></td>
+<td>List of rooms.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
+<td>String</td>
+<td>Room code.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Beds</td>
+<td>0..1</td>
+<td></td>
+<td>Room beds.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Beds/Bed</td>
+<td>1..n</td>
+<td></td>
+<td>List of beds.</td>
+</tr>
+
+<tr>
+<td>@numberOfBeds</td>
+<td>0..1</td>
+<td>String</td>
+<td>Indicates number of beds in the room.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>0..1</td>
+<td>String</td>
+<td>Indicates the type of bed.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy</td>
+<td>0..1</td>
+<td></td>
+<td>Indicates the amount of each occupant type staying in the room.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Adults</td>
+<td>1</td>
+<td></td>
+<td>Indicates the amount of adults staying in the room (minimum and maximum).</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Adults/Min</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates the minimum amount of adults staying in the room.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Adults/Max</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates the maximum amount of adults staying in the room.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Children</td>
+<td>1</td>
+<td></td>
+<td>Indicates the amount of children staying in the room (minimum and maximum).</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Children/Min</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates the minimum amount of children staying in the room.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Children/Max</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates the maximum amount of children staying in the room.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Infants</td>
+<td>1</td>
+<td></td>
+<td>Indicates the amount of infants staying in the room (minimum and maximum).</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Infants/Min</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates the minimum amount of infants staying in the room.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Infants/Max</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates the maximum amount of infants staying in the room.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Total</td>
+<td>1</td>
+<td></td>
+<td>Indicates the total amount of occupants staying in the room (minimum and maximum).</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Total/Min</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates the minimum total amount of occupants staying in the room.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/RoomOccupancy/Total/Max</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates the maximum total amount of occupants staying in the room.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Attributes/</td>
+<td>0..1</td>
+<td></td>
+<td>Attributes.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Attributes/Attribute</td>
+<td>1..n</td>
+<td></td>
+<td>Specific attributes of the room, such as wi-fi.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Attributes/Attribute/Code</td>
+<td>1</td>
+<td>String</td>
+<td>Code.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Attributes/Attribute/Classification</td>
+<td>1</td>
+<td>String</td>
+<td>HAB=room</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Attributes/Attribute/Description</td>
+<td>0..1</td>
+<td>String</td>
+<td>Description.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Images/</td>
+<td>0..1</td>
+<td></td>
+<td>Images.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Images/Picture</td>
+<td>1..n</td>
+<td></td>
+<td>Picture.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Images/Picture/Url</td>
+<td>1</td>
+<td>String</td>
+<td>Url.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Images/Picture/Classification</td>
+<td>1</td>
+<td>String</td>
+<td>HAB=room</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Images/Picture/Ordered</td>
+<td>0..1</td>
+<td>String</td>
+<td>Images should be ordered from 1 onward. 1 is top.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Images/Picture/Description</td>
+<td>0..1</td>
+<td>String</td>
+<td>Description.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Images/Picture/Code</td>
+<td>0..1</td>
+<td>String</td>
+<td>Code.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Images/Picture/UpgradeUTCDate</td>
+<td>0..1</td>
+<td>DateTime</td>
+<td>Indicates the upgrade date of the picture in UTC format.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Description</td>
+<td>0..1</td>
+<td>String</td>
+<td>Room description.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Views/</td>
+<td>0..1</td>
+<td></td>
+<td>Views.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Views/View</td>
+<td>1..n</td>
+<td></td>
+<td>List of room views.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Views/View/Code</td>
+<td>1</td>
+<td>String</td>
+<td>View code.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Views/View/Name</td>
+<td>1</td>
+<td>String</td>
+<td>View name.</td>
+</tr>
+
+<tr>
+<td>Rooms /Room/Area</td>
+<td>0..1</td>
+<td>String</td>
+<td>Room area.</td>
 </tr>
 
 <tr>
