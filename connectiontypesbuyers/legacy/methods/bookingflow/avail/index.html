@@ -6132,7 +6132,7 @@ is closed.</p>
                             &lt;RateRules&gt;
                                 &lt;Rules&gt;
                                     &lt;Rule type = &quot;NonRefundable&quot;/&gt;
-                                    &lt;Rule type = &quot;Negociated&quot;&gt;
+                                    &lt;Rule type = &quot;Negotiated&quot;&gt;
                                         &lt;Rates&gt;
                                             &lt;Rate Code = &quot;BAR&quot;&gt;
                                                 &lt;Description&gt;Bar descr&lt;/Description&gt;
@@ -6360,14 +6360,14 @@ is closed.</p>
 
 <tr>
 <td>MealPlans /MealPlan/Options /Option/RateRules /Rules</td>
-<td>0..n</td>
+<td>1</td>
 <td></td>
 <td>Rules.</td>
 </tr>
 
 <tr>
 <td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule</td>
-<td>1</td>
+<td>1..n</td>
 <td></td>
 <td>Rule.</td>
 </tr>
@@ -6381,7 +6381,7 @@ is closed.</p>
 
 <tr>
 <td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /</td>
-<td>0..n</td>
+<td>0..1</td>
 <td></td>
 <td>Rates.</td>
 </tr>
@@ -6395,14 +6395,14 @@ is closed.</p>
 
 <tr>
 <td>@code</td>
-<td>1</td>
+<td>0..1</td>
 <td>String</td>
 <td>Contains the rate rule code.</td>
 </tr>
 
 <tr>
 <td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate/Description</td>
-<td>1</td>
+<td>0..1</td>
 <td>String</td>
 <td>Contains the rate rule description.</td>
 </tr>
