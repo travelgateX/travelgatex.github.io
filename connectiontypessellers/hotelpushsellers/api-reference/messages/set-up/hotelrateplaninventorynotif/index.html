@@ -6498,10 +6498,17 @@
 </tr>
 
 <tr>
-<td>@Amount/Percent</td>
-<td>1</td>
+<td>@Amount</td>
+<td>0..1</td>
 <td>Decimal</td>
-<td>Indicates that the tax will be applied relative to an amoount or a percentage</td>
+<td>Indicates that the tax will be applied relative to an amount. The tax has to be specified as Amount or Percent not both at the same time.</td>
+</tr>
+
+<tr>
+<td>@Percent</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Indicates that the tax will be applied relative to a percentage. The tax has to be specified as Amount or Percent not both at the same time.</td>
 </tr>
 
 <tr>
@@ -6519,6 +6526,13 @@
 </tr>
 
 <tr>
+<td>@Type</td>
+<td>0..1</td>
+<td>String</td>
+<td>If Inclusive indicates that tax has to be added to the final price. If Type is different than Inclusive or is not present the tax is only informative.</td>
+</tr>
+
+<tr>
 <td>RatePlans/RatePlan/Taxes/Tax/TaxDescription</td>
 <td>1</td>
 <td></td>
@@ -6529,7 +6543,7 @@
 <td>RatePlans/RatePlan/Taxes/Tax/TaxDescription/Text</td>
 <td>1</td>
 <td>String</td>
-<td>Description of tax type</td>
+<td>Description of tax type. Values:  &ldquo;City&rdquo;, &ldquo;Local&rdquo;,&ldquo;Resort Fee&rdquo;, &ldquo;Supplement to be paid on spot&rdquo;</td>
 </tr>
 
 <tr>
