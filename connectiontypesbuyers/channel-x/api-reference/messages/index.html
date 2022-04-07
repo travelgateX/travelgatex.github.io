@@ -5793,7 +5793,7 @@ N = Names allowed for a specific element</p>
 <pre><code class="language-xml">&lt;HotelRatePlanInventoryNotif xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
     &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;&gt;
         &lt;RatePlans HotelCode = &quot;1&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
-            &lt;RatePlan Duration = &quot;0&quot; CurrencyCode = &quot;EUR&quot; RatePlanCode = &quot;BAR&quot; FreeChild = &quot;true&quot; FreeBaby = &quot;false&quot; RatePlanStatusType = &quot;Active&quot; RatePlanNotifType = &quot;New&quot; YieldableIndicator=&quot;true&quot;&gt;
+            &lt;RatePlan Duration = &quot;0&quot; CurrencyCode = &quot;EUR&quot; RatePlanCode = &quot;BAR&quot; FreeChild = &quot;true&quot; FreeBaby = &quot;false&quot; RatePlanStatusType = &quot;Active&quot; RatePlanNotifType = &quot;New&quot; YieldableIndicator=&quot;true&quot; RatePlanType = &quot;0&quot;&gt;
                 &lt;BookingRules&gt;
                     &lt;BookingRule&gt;
                         &lt;CancelPenalties&gt;
@@ -6065,6 +6065,13 @@ N = Names allowed for a specific element</p>
 <td align="center">0..1</td>
 <td align="center">Date</td>
 <td>Booking Start Date for which the rate will be available.</td>
+</tr>
+
+<tr>
+<td align="left">@RatePlanType</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td>Rate rule to apply. 0 - No selected, 11 - Package, 10 - Negotiated. If the attribute is not present and it is a base rate, the value is 0, if it is a derived rate, the value is the same as the parent rate.</td>
 </tr>
 
 <tr>
@@ -6485,6 +6492,13 @@ N = Names allowed for a specific element</p>
 <td align="center">0..1</td>
 <td align="center">Boolean</td>
 <td>Tax is/isn&rsquo;t applied relative to the Amount of Paxes booked</td>
+</tr>
+
+<tr>
+<td align="left">@Type</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td>If Inclusive indicates that tax has to be added to the final price. If Type is different than Inclusive or is not present the tax is only informative.</td>
 </tr>
 
 <tr>
