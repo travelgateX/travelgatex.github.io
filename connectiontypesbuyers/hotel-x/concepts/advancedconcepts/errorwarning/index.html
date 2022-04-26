@@ -5599,6 +5599,8 @@
                   <div class="page-sections-menu">
                       <nav id="TableOfContents">
 <ul>
+<li><a href="#booking-flow">Booking flow</a>
+<ul>
 <li><a href="#error-list">Error list</a></li>
 <li><a href="#warning-list">Warning list</a>
 <ul>
@@ -5607,6 +5609,12 @@
 <li><a href="#error-204-no-results-found">Error 204 - No Results Found</a></li>
 </ul></li>
 <li><a href="#connection-warnings">Connection warnings</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#content">Content</a>
+<ul>
+<li><a href="#error-list-1">Error List</a></li>
+<li><a href="#warnings">Warnings</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -5747,9 +5755,11 @@
               
 
 
-<p>In this chapter we will list the errors and warnings of HotelX booking flow.</p>
+<p>In this chapter we will list the errors and warnings of HotelX booking flow and content.</p>
 
-<h1 id="error-list">Error list</h1>
+<h1 id="booking-flow">Booking flow</h1>
+
+<h2 id="error-list">Error list</h2>
 
 <p>In the table below, we have structured a relation of all the <strong>Errors</strong> that can be returned in HotelX booking flow</p>
 
@@ -5808,11 +5818,11 @@
 </tbody>
 </table>
 
-<h1 id="warning-list">Warning list</h1>
+<h2 id="warning-list">Warning list</h2>
 
 <p>In this section we will expand on all the <strong>Warnings</strong> that can be returned in HotelX booking flow. There are two types of warnings, <strong>HotelX warnings</strong> and <strong>Connection warnings</strong>.</p>
 
-<h2 id="hotelx-warnings">HotelX warnings</h2>
+<h3 id="hotelx-warnings">HotelX warnings</h3>
 
 <p>In the table below, we have structured a relation of all the <strong>Warnings</strong> that can be returned in HotelX.</p>
 
@@ -5864,7 +5874,7 @@
 </tbody>
 </table>
 
-<h3 id="error-204-no-results-found">Error 204 - No Results Found</h3>
+<h4 id="error-204-no-results-found">Error 204 - No Results Found</h4>
 
 <p>Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.</p>
 
@@ -5879,11 +5889,87 @@
 
 <p>In case an error of this type is received, you should first contact the supplier directly on a commercial level and check with them whether there should be availability for the product you are trying to obtain with the specific search criteria (dates, passenger quantity, passenger age, destination you have chosen, etc.). In case the supplier confirms that there should be availability but you are still not obtaining it, you should review the criteria set out in the pluggins you may be using, if you still can&rsquo;t find the problem please you should contact our Customer Care department.</p>
 
-<h2 id="connection-warnings">Connection warnings</h2>
+<h3 id="connection-warnings">Connection warnings</h3>
 
 <p>This type of warnings contains the supplier original error codes. This type of error codes are classified as warning codes because whenever more than 1 supplier is requested, some of those suppliers may return an error while others may return the response, accordingly. In those cases, if at least one of the suppliers returns results an error cannot be returned, hence those results will be displayed in the response, and for those accesses which have not returned results a warning will be returned.</p>
 
 <p><a href="https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/#error-codes" rel="nofollow" target="_blank">See list of supplier error codes</a></p>
+
+<h1 id="content">Content</h1>
+
+<h2 id="error-list-1">Error List</h2>
+
+<p>In the table below, we have structured a relation of all the <strong>Errors</strong> that can be returned in HotelX content</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Code</th>
+<th>Description</th>
+<th>Explanation</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">11204</td>
+<td><em>According to the case</em></td>
+<td>This occurrs when no results found</td>
+</tr>
+
+<tr>
+<td align="center">11400</td>
+<td><em>According to the case</em></td>
+<td>A field or fields in the request are missing or not correct</td>
+</tr>
+
+<tr>
+<td align="center">22401</td>
+<td><em>According to the case</em></td>
+<td>This occurs when the request lacks valid authentication credentials for the requested resource</td>
+</tr>
+
+<tr>
+<td align="center">22500</td>
+<td><em>According to the case</em></td>
+<td>Covers any unexpected error or errors due to <strong>internal</strong> service</td>
+</tr>
+
+<tr>
+<td align="center">22512</td>
+<td><em>According to the case</em></td>
+<td>This occurs when there is insufficient data to return due to internal error service</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="warnings">Warnings</h2>
+
+<p>In the table below, we have structured a relation of all the <strong>Warnings</strong> that can be returned in HotelX content.</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Code</th>
+<th>Description</th>
+<th>Explanation</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">21500</td>
+<td><em>According to the case</em></td>
+<td>This occurrs when there is an unexpected error retrieving mapping codes</td>
+</tr>
+
+<tr>
+<td align="center">22600</td>
+<td><em>According to the case</em></td>
+<td>This occurrs when no mapping is found.</td>
+</tr>
+</tbody>
+</table>
 
 <hr/>
 

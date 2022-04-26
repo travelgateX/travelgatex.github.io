@@ -5924,13 +5924,20 @@
                         &lt;/GuestRoom&gt;
                     &lt;/SellableProduct&gt;
                 &lt;/SellableProducts&gt;
-		&lt;Taxes&gt;
-		    &lt;Tax Amount = &quot;20&quot; ChargeFrequency = &quot;PerNight&quot; ChargeUnit = &quot;&quot;&gt;
-			&lt;TaxDescription&gt;
-			    &lt;Text&gt;city&lt;/Text&gt;
-			&lt;/TaxDescription&gt;
-		    &lt;/Tax&gt;
-		&lt;/Taxes&gt;
+		        &lt;Taxes&gt;
+		            &lt;Tax Amount = &quot;20&quot; ChargeFrequency = &quot;PerNight&quot; ChargeUnit = &quot;&quot;&gt;
+			            &lt;TaxDescription&gt;
+			            &lt;Text&gt;city&lt;/Text&gt;
+			            &lt;/TaxDescription&gt;
+		            &lt;/Tax&gt;
+		        &lt;/Taxes&gt;
+                &lt;AdditionalDetails&gt;
+                    &lt;AdditionalDetail Code=&quot;REP&quot; Type=&quot;39&quot;&gt;
+                        &lt;DetailDescription&gt;
+                            &lt;Text&gt;Repsol&lt;/Text&gt;
+                        &lt;/DetailDescription&gt;
+                    &lt;/AdditionalDetail&gt;
+                &lt;/AdditionalDetails&gt;
                 &lt;Description&gt;
                     &lt;Text&gt;bb&lt;/Text&gt;
                 &lt;/Description&gt;
@@ -6761,6 +6768,48 @@
 <td>1</td>
 <td>String</td>
 <td>Offer desription.</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/AdditionalDetails</td>
+<td>0..1</td>
+<td></td>
+<td>Rate plan additional details</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/AdditionalDetails/AdditionalDetail</td>
+<td>0..n</td>
+<td></td>
+<td>List of additional details</td>
+</tr>
+
+<tr>
+<td>@Code</td>
+<td>1</td>
+<td>String</td>
+<td>Trading partner code associated with the detail</td>
+</tr>
+
+<tr>
+<td>@Type</td>
+<td>1</td>
+<td>String</td>
+<td>Define the information. Only allowed &ldquo;39&rdquo; (Contract/negotiated booking information)</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription</td>
+<td>1</td>
+<td></td>
+<td>Details Description</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription/Text</td>
+<td>1</td>
+<td>String</td>
+<td>Description. If additional details type is &ldquo;39&rdquo;, the name of the trading partner for this rate.</td>
 </tr>
 
 <tr>
