@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Getting Started</title>
+    <link>https://travelgatex.com/core/getting-started/</link>
+    <description>Recent changes in Getting Started on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://travelgatex.com/core/getting-started/</link>
+    </image>
+    
+	    <atom:link href="https://travelgatex.com/core/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Core: Get Accesses</title>
+      <link>https://travelgatex.com/core/getting-started/getaccesses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/core/getting-started/getaccesses/</guid>
+      <description>
+        
+        
+         Get accesses. List of all of your accesses available. query { admin { accesses { edges { node { accessData { name isActive code } error { code type description } } } } } }  Get accesses with filters. List of all of your accesses available choosing the filters, the filters are expecified in DOCS in the playground. query { admin { accesses(filter: { accessID: &amp;quot;0&amp;quot; }) { edges { node { accessData { name isActive code } error { code type description } } } } } }  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Core: Update Access</title>
+      <link>https://travelgatex.com/core/getting-started/updateaccess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/core/getting-started/updateaccess/</guid>
+      <description>
+        
+        
+         Update an Access. Update values of an Access and check DOCS in playground to see what you can modify. mutation { admin { updateAccess(input: { code: &amp;quot;&amp;quot;, isActive: false }) { accessData { code isActive } error { code type description } } } }  
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
