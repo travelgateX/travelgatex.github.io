@@ -6160,10 +6160,10 @@
 </tr>
 
 <tr>
-<td>@CurrencyCode                  0..1</td>
+<td>@CurrencyCode</td>
+<td>0..1</td>
 <td>String</td>
 <td>ISO Currency (EUR). Only null for derived rates.</td>
-<td></td>
 </tr>
 
 <tr>
@@ -6188,17 +6188,24 @@
 </tr>
 
 <tr>
-<td>_@BaseRatePlanCode</td>
+<td>@BaseRatePlanCode</td>
 <td>0..1</td>
 <td>String</td>
 <td>Rate plan code of the base rate plan. Only returned for derived rates.</td>
 </tr>
 
 <tr>
-<td>_@RatePlanStatusType</td>
+<td>@RatePlanStatusType</td>
 <td>1</td>
 <td>String</td>
 <td>Indicates if the rate plan is active or not for this dates. Possible values: &ldquo;Active&rdquo;, &ldquo;Deactivated&rdquo;.</td>
+</tr>
+
+<tr>
+<td>@PromotionCode</td>
+<td>0..1</td>
+<td>String</td>
+<td>Promotion code to apply. 25 - Senior_55  26 - Senior_60, 27 - Senior_65. If the attribute is not present there is no promotion code. Not applicable for derived rates.</td>
 </tr>
 
 <tr>
