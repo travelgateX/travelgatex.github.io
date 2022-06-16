@@ -5787,7 +5787,9 @@
               &lt;CompanyName Code = &quot;ClientTravelAgency1&quot;/&gt;
             &lt;/BookingChannel&gt;
             &lt;TPA_Extensions&gt;
-              &lt;Param key = &quot;onlyActive&quot; value = &quot;0&quot;/&gt;
+               &lt;Params&gt;
+                 &lt;Param key = &quot;onlyActive&quot; value = &quot;0&quot;/&gt;
+               &lt;/Params&gt;
             &lt;/TPA_Extensions&gt;
           &lt;/Source&gt;
         &lt;/POS&gt;
@@ -5833,8 +5835,15 @@
 </tr>
 
 <tr>
-<td>Param</td>
-<td>1</td>
+<td>POS/Source/TPA_Extensions/Params</td>
+<td>0..1</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>POS/Source/TPA_Extensions/Param/Param</td>
+<td>0..N</td>
 <td></td>
 <td></td>
 </tr>
@@ -5876,7 +5885,7 @@
 <pre><code class="language-xml">    &lt;HotelRatePlanInventoryRetrieveResponse xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
       &lt;HotelRatePlanInventoryRetrieveResult Version = &quot;0&quot;&gt;
         &lt;Success xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;/&gt;
-        &lt;RatePlans HotelCode = &quot;1&quot; HotelName = &quot;Hotel Travelgate&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+        &lt;RatePlans HotelCode = &quot;1&quot; HotelName = &quot;Hotel Travelgate&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
           &lt;RatePlan RatePlanCode = &quot;PACK&quot; RatePlanType = &quot;11&quot; YieldableIndicator = &quot;false&quot; CurrencyCode = &quot;EUR&quot; RatePlanStatusType = &quot;Active&quot; Start = &quot;2016-01-01&quot; End = &quot;2016-05-01&quot;&gt;
             &lt;BookingRules&gt;
               &lt;BookingRule Code = &quot;1 Noche&quot;&gt;
@@ -6002,7 +6011,7 @@
 <pre><code class="language-xml">    &lt;HotelRatePlanInventoryRetrieveResponse xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
         &lt;HotelRatePlanInventoryRetrieveResult Version = &quot;0&quot;&gt;
             &lt;Success xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;/&gt;
-            &lt;RatePlans HotelCode = &quot;1&quot; HotelName = &quot;Hotel Test Pruebas Travelgate &quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+            &lt;RatePlans HotelCode = &quot;1&quot; HotelName = &quot;Hotel Test Pruebas Travelgate&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
                 &lt;RatePlan RatePlanCode = &quot;DRVT&quot; BaseRatePlanCode = &quot;SRATE2&quot; RatePlanStatusType = &quot;Active&quot;&gt;
                     &lt;SellableProducts&gt;
                         &lt;SellableProduct InvCode = &quot;TRP&quot; InvType = &quot;ROOM&quot; InvStatusType = &quot;Active&quot;&gt;
@@ -6117,6 +6126,13 @@
 <td>1</td>
 <td>String</td>
 <td>Hotel name.</td>
+</tr>
+
+<tr>
+<td>@HotelStatusType</td>
+<td>1</td>
+<td>String</td>
+<td>Active or Deactivated.</td>
 </tr>
 
 <tr>
