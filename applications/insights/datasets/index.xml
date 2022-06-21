@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Datasets and reporting</title>
+    <link>https://travelgatex.com/applications/insights/datasets/</link>
+    <description>Recent changes in Datasets and reporting on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://travelgatex.com/applications/insights/datasets/</link>
+    </image>
+    
+	    <atom:link href="https://travelgatex.com/applications/insights/datasets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Applications: Datasets formats</title>
+      <link>https://travelgatex.com/applications/insights/datasets/datasets-formats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/applications/insights/datasets/datasets-formats/</guid>
+      <description>
+        
+        
+        As a customer, you can access Insights data via BigQuery Dataset or as Exported Table Data to Cloud Storage
+BigQuery BigQuery is a “big data” SQL store invented by Google. Many massive datasets, like all the code in GitHub and the complete history of the Bitcoin blockchain, are made available to the public through the Google BigQuery Datasets initiative.
+BigQuery Datasets are multi-terabyte datasets hosted on Google’s servers. You interact with the dataset by writing SQL fetch queries within either the web UI, Command-line tool or any client library.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Applications: Data Reporting Tool</title>
+      <link>https://travelgatex.com/applications/insights/datasets/dataset-tooling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/applications/insights/datasets/dataset-tooling/</guid>
+      <description>
+        
+        
+        If you don&amp;rsquo;t have your own reporting tools as Tableau or PowerBI, the easiest way to interact with Insights datasets is via our free Google Data Studio Templates.
+   Dataset Version GDS Template     Partner Seller 2.0 https://datastudio.google.com/s/rhHCR2SAoRQ   Partner Buyer 2.0 https://datastudio.google.com/s/hW8TCMldzhU    
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -639,11 +639,11 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Alerts-X: API</title>
-      <link>https://travelgatex.com/alerts-x/reference/objects/api/</link>
+      <title>Applications: API</title>
+      <link>https://travelgatex.com/applications/logging/reference/objects/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://travelgatex.com/alerts-x/reference/objects/api/</guid>
+      <guid>https://travelgatex.com/applications/logging/reference/objects/api/</guid>
       <description>
         
         
@@ -655,11 +655,27 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Logging: API</title>
-      <link>https://travelgatex.com/logging/reference/objects/api/</link>
+      <title>Applications: API</title>
+      <link>https://travelgatex.com/applications/stats/reference/objects/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://travelgatex.com/logging/reference/objects/api/</guid>
+      <guid>https://travelgatex.com/applications/stats/reference/objects/api/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: API</title>
+      <link>https://travelgatex.com/alerts-x/reference/objects/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/alerts-x/reference/objects/api/</guid>
       <description>
         
         
@@ -692,22 +708,6 @@ All notable changes to this product will be documented in this page. Under const
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://travelgatex.com/paymentx/reference/objects/api/</guid>
-      <description>
-        
-        
-        GraphQL schema definition type API {  code: ID!    apiData: APIData    adviseMessage( level: [AdviseMessageLevel], ): [AdviseMessage!]    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!):   apiData(APIData):   adviseMessage([AdviseMessage!
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Stats: API</title>
-      <link>https://travelgatex.com/stats/reference/objects/api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/stats/reference/objects/api/</guid>
       <description>
         
         

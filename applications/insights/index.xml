@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Insights</title>
+    <link>https://travelgatex.com/applications/insights/</link>
+    <description>Recent changes in Insights on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://travelgatex.com/applications/insights/</link>
+    </image>
+    
+	    <atom:link href="https://travelgatex.com/applications/insights/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Applications: Overview</title>
+      <link>https://travelgatex.com/applications/insights/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/applications/insights/overview/</guid>
+      <description>
+        
+        
+        In order to analyze and produce useful insights, Insights extracts, loads and consolidates data from our Marketplace.
+Once the data is consolidated in our data warehouse, we can share data with Partners already connected to our platform. You will have access to accurate data regarding your performance, ratios, prices, product usage&amp;hellip; With these insights an accurate benchmarking against competitors is provided so that our partners can gain a competitive advantage.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Applications: FAQs</title>
+      <link>https://travelgatex.com/applications/insights/faqs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/applications/insights/faqs/</guid>
+      <description>
+        
+        
+        In order to analyze and access useful insights, we recommend you to read Insights FAQs.
+Data sets and Reporting:  How do I get access to my data sets?  Insights data sets are stored in BigQuery. Once Insights is acquired, we will provide you with the credentials to access and connect to the database with your data sets.
+ How often are the data sets updated?  Insights stores data from all transactions passing through TravelgateX.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

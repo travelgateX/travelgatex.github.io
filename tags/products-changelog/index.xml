@@ -211,25 +211,11 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Insights-X: 2020-11-23</title>
-      <link>https://travelgatex.com/insights-x/release-notes/changelog/2020-11-23/</link>
-      <pubDate>Mon, 23 Nov 2020 00:00:00 +0100</pubDate>
-      
-      <guid>https://travelgatex.com/insights-x/release-notes/changelog/2020-11-23/</guid>
-      <description>
-        
-        
-         2020-11-23  Added descriptions to HotelX mapping report to help user during mapping process.   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Insights-X: 2020-03-11</title>
-      <link>https://travelgatex.com/insights-x/release-notes/changelog/2020-03-11/</link>
+      <title>Applications: 2020-03-11</title>
+      <link>https://travelgatex.com/applications/insights/release-notes/2020-03-11/</link>
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0100</pubDate>
       
-      <guid>https://travelgatex.com/insights-x/release-notes/changelog/2020-03-11/</guid>
+      <guid>https://travelgatex.com/applications/insights/release-notes/2020-03-11/</guid>
       <description>
         
         
@@ -253,11 +239,11 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Insights-X: 2019-11-28</title>
-      <link>https://travelgatex.com/insights-x/release-notes/changelog/2019-11-28/</link>
+      <title>Applications: 2019-11-28</title>
+      <link>https://travelgatex.com/applications/insights/release-notes/2019-11-28/</link>
       <pubDate>Thu, 28 Nov 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://travelgatex.com/insights-x/release-notes/changelog/2019-11-28/</guid>
+      <guid>https://travelgatex.com/applications/insights/release-notes/2019-11-28/</guid>
       <description>
         
         
@@ -315,11 +301,11 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Insights-X: 2019-10-04</title>
-      <link>https://travelgatex.com/insights-x/release-notes/changelog/2019-10-04/</link>
+      <title>Applications: 2019-10-04</title>
+      <link>https://travelgatex.com/applications/insights/release-notes/2019-10-04/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0200</pubDate>
       
-      <guid>https://travelgatex.com/insights-x/release-notes/changelog/2019-10-04/</guid>
+      <guid>https://travelgatex.com/applications/insights/release-notes/2019-10-04/</guid>
       <description>
         
         
@@ -329,15 +315,47 @@ All notable changes to this product will be documented in this page. Under const
     </item>
     
     <item>
-      <title>Stats: 2019-09-19</title>
-      <link>https://travelgatex.com/stats/release-notes/changelog/2019-09-19/</link>
+      <title>Applications: 2019-09-19</title>
+      <link>https://travelgatex.com/applications/stats/release-notes/changelog/2019-09-19/</link>
       <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
       
-      <guid>https://travelgatex.com/stats/release-notes/changelog/2019-09-19/</guid>
+      <guid>https://travelgatex.com/applications/stats/release-notes/changelog/2019-09-19/</guid>
       <description>
         
         
          2019-09-19  Updated changelog   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Applications: Older</title>
+      <link>https://travelgatex.com/applications/logging/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://travelgatex.com/applications/logging/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-08-30  Now quotes requested by Speed have the same sessionID that quotes requested by the client in order to identify them.    Now reference filters are arrays in order to be able to request multiple references at once.   2019-08-22  Added the field hotel in the input object reference from which bookings can be searched by the hotel&amp;rsquo;s reference.   2019-08-21  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Applications: Older</title>
+      <link>https://travelgatex.com/applications/stats/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://travelgatex.com/applications/stats/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-08-02  Added a hard limit when an API&amp;rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).   2019-07-22  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-06-12  Fix an error that was causing to have empty operations in the response.
+        
+          [...]
         
       </description>
     </item>
@@ -384,54 +402,6 @@ All notable changes to this product will be documented in this page. Under const
         
         
          2021-02-16  Added new page to download reports for the booking list. Access is limited by user. Available at Distribution-X extranet [Menu &amp;gt; Bookings &amp;gt; Booking List Reports].   2020-01-08  Added new page to decrypt tokens of the booking flow. Access is limited by user. Available at Distribution-X extranet [Menu &amp;gt; Tools &amp;gt; Decrypt Token].   
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Insights-X: Older</title>
-      <link>https://travelgatex.com/insights-x/release-notes/changelog/older/</link>
-      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://travelgatex.com/insights-x/release-notes/changelog/older/</guid>
-      <description>
-        
-        
-        2019-09-03  Added new table: benchmark_market_city_bw_(daily|weekly|monthly)_(buyer|seller). This one replaces insights_agg_(daily|weekly|monthly)_destination_tgx    Schema modified for tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller). Now, country field is outside the record.   2019-08-27  Added FAQs   2019-06-19  Added new tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller) and insights_agg_(daily|weekly|monthly)_destination_tgx   2019-06-05  Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Logging: Older</title>
-      <link>https://travelgatex.com/logging/release-notes/changelog/older/</link>
-      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://travelgatex.com/logging/release-notes/changelog/older/</guid>
-      <description>
-        
-        
-        2019-08-30  Now quotes requested by Speed have the same sessionID that quotes requested by the client in order to identify them.    Now reference filters are arrays in order to be able to request multiple references at once.   2019-08-22  Added the field hotel in the input object reference from which bookings can be searched by the hotel&amp;rsquo;s reference.   2019-08-21  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Stats: Older</title>
-      <link>https://travelgatex.com/stats/release-notes/changelog/older/</link>
-      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://travelgatex.com/stats/release-notes/changelog/older/</guid>
-      <description>
-        
-        
-        2019-08-02  Added a hard limit when an API&amp;rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).   2019-07-22  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-06-12  Fix an error that was causing to have empty operations in the response.
-        
-          [...]
         
       </description>
     </item>

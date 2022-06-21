@@ -16,6 +16,36 @@
     
     
     <item>
+      <title>Applications: GraphQL Schema breaking changes</title>
+      <link>https://travelgatex.com/applications/logging/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/applications/logging/release-notes/breaking-changes/</guid>
+      <description>
+        
+        
+        Changes history of deprecated notes previously announced 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Applications: GraphQL Schema breaking changes</title>
+      <link>https://travelgatex.com/applications/stats/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/applications/stats/release-notes/breaking-changes/</guid>
+      <description>
+        
+        
+        Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of cache from OperationDetailed. Reason: Added new field trafficType.. Deprecated on 2019-04-03.To be removed soon. Removal of time from StatsInfo. Reason: Added new fields averageTime and totalTime.. Deprecated on 2019-04-03.To be removed soon. Removal of ratios from StatsData. Reason: Added hits fields to be able to calculate ratios at client side.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
       <title>PRODUCT_TEMPLATE: GraphQL Schema breaking changes</title>
       <link>https://travelgatex.com/product_template/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -60,20 +90,6 @@
     </item>
     
     <item>
-      <title>Logging: GraphQL Schema breaking changes</title>
-      <link>https://travelgatex.com/logging/release-notes/breaking-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/logging/release-notes/breaking-changes/</guid>
-      <description>
-        
-        
-        Changes history of deprecated notes previously announced 
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Mappea: GraphQL Schema breaking changes</title>
       <link>https://travelgatex.com/mappea/release-notes/breaking-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -99,22 +115,6 @@
         
         
         Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Stats: GraphQL Schema breaking changes</title>
-      <link>https://travelgatex.com/stats/release-notes/breaking-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/stats/release-notes/breaking-changes/</guid>
-      <description>
-        
-        
-        Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of cache from OperationDetailed. Reason: Added new field trafficType.. Deprecated on 2019-04-03.To be removed soon. Removal of time from StatsInfo. Reason: Added new fields averageTime and totalTime.. Deprecated on 2019-04-03.To be removed soon. Removal of ratios from StatsData. Reason: Added hits fields to be able to calculate ratios at client side.
         
           [...]
         
