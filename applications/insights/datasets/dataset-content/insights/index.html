@@ -5759,6 +5759,7 @@
 <li><a href="#insights-agg-daily-monthly-buyer-seller">insights_agg_(daily|monthly)_(buyer|seller)</a></li>
 <li><a href="#insights-daily-monthly-destination-buyer-seller">insights_(daily|monthly)_destination_(buyer|seller)</a></li>
 <li><a href="#insights-agg-daily-monthly-destination-buyer-seller">insights_agg_(daily|monthly)_destination_(buyer|seller)</a></li>
+<li><a href="#insights-hotel-destination-daily-monthly-buyer-seller">insights_hotel_destination_(daily|monthly)_(buyer|seller)</a></li>
 <li><a href="#effective-bookings-buyer-seller">effective_bookings_(buyer|seller)</a></li>
 <li><a href="#daily-portfolio-buyer-seller">daily_portfolio_(buyer|seller)</a></li>
 <li><a href="#daily-portfolio-stats-buyer-seller">daily_portfolio_stats_(buyer|seller)</a></li>
@@ -5913,6 +5914,7 @@
 <li><strong>Insights Agg:</strong> contains information similar to Insights but with a bigger aggregation. The fields <em>check_in</em>, <em>adults</em>, <em>children</em> and <em>infants</em> have disappeared.</li>
 <li><strong>Insights Destination:</strong> contains information from searches, quotes, bookings and revenue aggregated per buyer, seller, search date, check in date, nights, market, number of rooms, quantity of paxes and location (country + Administrative Zone 1 + Administrative Zone 2 + City) by day|month.</li>
 <li><strong>Insights Destination Agg:</strong> contains information similar to Insights Destination but with a bigger aggregation. The fields <em>check_in</em>, <em>adults</em>, <em>children</em> and <em>infants</em> have disappeared.</li>
+<li><strong>Insights Hotel Destination:</strong> contains combined information of Insights Agg and Insights Destination Agg, in the same table you have metrics by hotel code and its destination, also with cancellation metrics. The fields <em>pax_type</em>, <em>nights</em>, <em>market</em> and <em>num_rooms</em> and <em>username</em> have disappeared.</li>
 <li><strong>Effective Bookings:</strong> contains specific information about bookings and their current status (OK or Cancelled).</li>
 <li><strong>Portfolio:</strong> contains information to know which hotels over supplier&rsquo;s portfolio are being queried by the clients. This can be helpful to know which percentage over portfolio is mapped by the client.</li>
 <li><strong>Portfolio Stats:</strong> contains information to measure the evolution of the daily_portfolio_(buyer|seller) table. This can be helpful to know if you are getting better results in your portfolio optimization.</li>
@@ -7216,6 +7218,250 @@
 <td></td>
 <td></td>
 <td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="insights-hotel-destination-daily-monthly-buyer-seller">insights_hotel_destination_(daily|monthly)_(buyer|seller)</h2>
+
+<p>This table contains combined information of Insights Agg and Insights Destination Agg, in the same table you have metrics by hotel code and its destination, also with cancellation metrics. The fields <em>pax_type</em>, <em>nights</em>, <em>market</em> and <em>num_rooms</em> and <em>username</em> have disappeared.</p>
+
+<p><strong>fields</strong></p>
+
+<ul>
+<li><strong>client_owner    (STRING).</strong> Organization&rsquo;s name of the client.</li>
+<li><strong>provider_owner (STRING).</strong> Organization&rsquo;s name of the provider.</li>
+<li><strong>client_id    (STRING).</strong> Client unique ID.</li>
+<li><strong>provider_id (STRING).</strong> Provider unique ID.</li>
+<li><strong>search_date (TIMESTAMP).</strong> Search date in UTC (format: YYYY-MM-DD hh:mm:ss).</li>
+<li><strong><strong>booking_window</strong> (NUMBER).</strong> It is an enumeration to describe how far away is the check-in date.
+
+<ul>
+<li><strong>1</strong> = Last second (0-1 day).</li>
+<li><strong>2</strong> = Last minute (2-3 days).</li>
+<li><strong>3</strong> = About 1 week (4-7 days).</li>
+<li><strong>4</strong> = About 2 weeks (8-14 days).</li>
+<li><strong>5</strong> = About 1 month (15-30 days)</li>
+<li><strong>6</strong> = About 2 months (31-60 days).</li>
+<li><strong>7</strong> = About 3 months (61-90 days).</li>
+<li><strong>8</strong> = More than 3 months (90+ days).</li>
+</ul></li>
+<li><strong>country (STRING).</strong> Country ISO2 code. E.g. ES (Spain)</li>
+<li><strong>zone_1 (STRING).</strong> Administrative first level zone. E.g. Comunidad de Madrid</li>
+<li><strong>zone_2 (STRING).</strong> Administrative second level zone E.g. Madrid city</li>
+<li><strong>search_ok (NUMBER).</strong> Quantity of searches that returned any available hotel for above key (search_date, booking_window&hellip;).</li>
+<li><strong>search_nok (NUMBER).</strong> Quantity of searches that didn&rsquo;t return any available hotels for above key.</li>
+<li><strong>quote_ok (NUMBER).</strong> Quantity of quotes that returned a correct result for above key.</li>
+<li><strong>quote_nok (NUMBER).</strong> Quantity of quotes that returned a wrong result for above key.</li>
+<li><strong>booking_ok_net (NUMBER).</strong> Quantity of confirmed bookings for above key where we have the net amount in EUR.</li>
+<li><strong>booking_ok_unknown (NUMBER).</strong> Quantity of confirmed bookings for above key where we have the amount in EUR but it may have applied commissions.</li>
+<li><strong>booking_nok (NUMBER).</strong> Quantity of failed bookings for above key.</li>
+<li><strong>cancel_ok_net (NUMBER).</strong> Quantity of cancellations that returned a correct result for above key where we have the net amount in EUR.</li>
+<li><strong>cancel_ok_unknown (NUMBER).</strong> Quantity of cancellations that returned a correct result for above key where we have the amount in EUR but it may have applied commissions.</li>
+<li><strong>cancel_nok (NUMBER).</strong> Quantity of failed cancellations for above key.</li>
+<li><strong>tot_amount_booking_net (NUMBER).</strong> Total net amount of confirmed bookings for above key.</li>
+<li><strong>tot_amount_booking_unknown (NUMBER).</strong> Total amount of confirmed bookings for above key when we don&rsquo;t know if any commission is applied.</li>
+<li><strong>tot_amount_cancel_net (NUMBER).</strong> Total net amount of bookings cancelled for above key.</li>
+<li><strong>tot_amount_cancel_unknown (NUMBER).</strong> Total amount of bookings cancelled  for above key when we don&rsquo;t know if any commission is applied.</li>
+<li><strong>hotels (STRUCT).</strong> Repeated field that contains info about hotels for above key.
+
+<ul>
+<li><strong>code (STRING).</strong> Hotel unique ID.</li>
+<li><strong>name (STRING).</strong> Hotel name.</li>
+<li><strong>city (STRING).</strong> City name of the hotel. If the city is big enough this level shows the neighbourghood. E.G. Chamberí</li>
+<li><strong>search_ok (NUMBER).</strong> Quantity of searches with available options for above key and hotel.</li>
+<li><strong>search_nok (NUMBER).</strong> Quantity of searches without available options for above key and hotel..</li>
+<li><strong>quote_ok (NUMBER).</strong> Quantity of quotes for above key and hotel.</li>
+<li><strong>quote_nok (NUMBER).</strong> Quantity of failed quotes for above key and hotel.</li>
+<li><strong>booking_ok_net (NUMBER).</strong> Quantity of bookings for above key and hotel with net price available.</li>
+<li><strong>booking_ok_unknown (NUMBER).</strong> Quantity of bookings for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
+<li><strong>booking_nok (NUMBER).</strong> Quantity of failed bookings for above key and hotel.</li>
+<li><strong>cancel_ok_net (NUMBER).</strong> Quantity of cancellations for above key and hotel with net price available.</li>
+<li><strong>cancel_ok_unknown (NUMBER).</strong> Quantity of cancellations for above key and hotel with a price where we don&rsquo;t know if any commission is applied.</li>
+<li><strong>cancel_nok (NUMBER).</strong> Quantity of failed cancellations for above key and hotel.</li>
+<li><strong>tot_amount_booking_net (NUMBER).</strong> Total net amount of booking for that hotel.</li>
+<li><strong>tot_amount_booking_unknown (NUMBER).</strong> Total amount of booking for that hotel (Commission not available).</li>
+<li><strong>tot_amount_cancel_net (NUMBER).</strong> Total net amount of bookings cancelled for that hotel.</li>
+<li><strong>tot_amount_cancel_unknown (NUMBER).</strong> Total amount  of bookings cancelled for that hotel (Commission not available).</li>
+</ul></li>
+</ul>
+
+<p><strong>Preview</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>client_owner</th>
+<th>client_id</th>
+<th>provider_owner</th>
+<th>provider_id</th>
+<th>search_date</th>
+<th>booking_window</th>
+<th>country</th>
+<th>zone_1</th>
+<th>zone_2</th>
+<th>search_ok</th>
+<th>search_nok</th>
+<th>quote_ok</th>
+<th>quote_nok</th>
+<th>booking_ok_net</th>
+<th>booking_ok_unknow</th>
+<th>booking_nok</th>
+<th>cancel_ok_net</th>
+<th>cancel_ok_unknow</th>
+<th>booking_nok</th>
+<th>tot_amount_booking_net</th>
+<th>tot_amount_booking_unknown</th>
+<th>tot_amount_cancel_net</th>
+<th>tot_amount\cancel_unknown</th>
+<th>hotels.code</th>
+<th>hotels.name</th>
+<th>hotels.city</th>
+<th>hotels.search_ok</th>
+<th>hotels.search_nok</th>
+<th>hotels.quote_ok</th>
+<th>hotels.quote_nok</th>
+<th>hotels.booking_ok_net</th>
+<th>hotels.booking_ok_unknown</th>
+<th>hotels.booking_nok</th>
+<th>hotels.cancel_ok_net</th>
+<th>hotels.cancel_ok_unknown</th>
+<th>hotels.cancel_nok</th>
+<th>hotels.tot_amount_booking_net</th>
+<th>hotels.tot_amount_booking_unknown</th>
+<th>hotels.tot_amount\cancel_net</th>
+<th>hotels.tot_amount\cancel_unknown</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>org buyer A</td>
+<td>client A</td>
+<td>org seller X</td>
+<td>provider X</td>
+<td>2019-01-13 00:00:00 UTC</td>
+<td>3</td>
+<td>ES</td>
+<td>Comunidad de Madrid</td>
+<td>Provincia de Madrid</td>
+<td>13</td>
+<td>11</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>641443</td>
+<td>Hotel name 1</td>
+<td>Opera</td>
+<td>13</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>551568</td>
+<td>Hotel name 2</td>
+<td>Bilbao</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+</tr>
+
+<tr>
+<td>org buyer B</td>
+<td>client B</td>
+<td>org seller Y</td>
+<td>provider Y</td>
+<td>2019-01-13 00:00:00 UTC</td>
+<td>3</td>
+<td>ES</td>
+<td>Comunidad de Madrid</td>
+<td>Provincia de Madrid</td>
+<td>6</td>
+<td>1</td>
+<td>3</td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>398.84</td>
+<td><em>null</em></td>
+<td>398.84</td>
+<td><em>null</em></td>
+<td>299</td>
+<td>Hotel name 3</td>
+<td>Opera</td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>1</td>
+<td><em>null</em></td>
+<td><em>null</em></td>
+<td>398.84</td>
+<td><em>null</em></td>
+<td>398.84</td>
+<td><em>null</em></td>
 </tr>
 </tbody>
 </table>
