@@ -31,7 +31,7 @@
       var baseurl = "https:\/\/travelgatex.com\/";
 </script>
 
-<meta name="description" content="Panel that allows you to check your reservations and its details">
+<meta name="description" content="Panel that allows you to check your reservations and their details">
 <meta name="author" content="TravelgateX">
 <link href="/css/tgx.css" rel="stylesheet">
 <link href="/mermaid/mermaid.css" rel="stylesheet">
@@ -39,7 +39,7 @@
 
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2825176.js"></script>
     
-    <meta name="description" content="Panel that allows you to check your reservations and its details">
+    <meta name="description" content="Panel that allows you to check your reservations and their details">
     <meta charset='utf-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
@@ -4046,7 +4046,7 @@
         <li data-nav-id="/distribution/extranet/rules/" class="dd-item">
           <div>
             <a href="/distribution/extranet/rules/">
-              <span>Rules managment</span>            
+              <span>Rules management</span>            
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
@@ -5895,14 +5895,14 @@
 
 	
 
-<p>The booking panel tool allows you to obtain a list of all your agencies bookings and cancellations and get more detail information about it. To obtain a list with base information you can use the <code>Booking List</code> panel. To check a specific booking and obtain all its details you can use the <code>Booking Read</code> panel.
+<p>The booking panel tool allows you to obtain a list of all your agencies bookings and cancellations and get more detailed information about it. To obtain a list with base information you can use the <code>Booking List</code> panel. To check a specific booking and obtain all its details you can use the <code>Booking Read</code> panel.
 </br></p>
 
 <p><img src="./../../images/web/distribution_web_bookingsearch.jpg" alt="Distribution Booking Search tool" title="Distribution Booking Search tool" /></p>
 
 <p></br></p>
 
-<p>To see and download a list of detailed bookings you can use the <code>Booking Reports</code> panel (this funcionality especially used for our DMC clients).</p>
+<p>You can also download a .csv file with a detailed report of your bookings from our section <code>Booking List Reports</code> (this functionality is especially used by our DMC clients).</p>
 
 <p></br></p>
 
@@ -5919,14 +5919,14 @@
 
 <ul>
 <li>Booking dates: The date range when the booking was confirmed by the agency.</li>
-<li>Check-in date: The date range when the booking check-in is included.</li>
+<li>Check-in date: The date range of the booking check-in.</li>
 </ul></li>
 <li>Transaction type/status:
 
 <ul>
-<li>Include cancellations: List with both effective bookings and cancelled ones.</li>
-<li>Only cancellations: List with only cancelled bookings.</li>
-<li>Only errors: List with bookings that failed and couldn&rsquo;t be confirmed successfully.</li>
+<li>Include cancellations: List of both effective and cancelled bookings.</li>
+<li>Only cancellations: List of only cancelled bookings.</li>
+<li>Only errors: List of bookings that failed and couldn&rsquo;t be confirmed successfully.</li>
 </ul></li>
 <li>Hotel:
 
@@ -5946,7 +5946,7 @@
 
 <h2 id="booking-read">Booking Read</h2>
 
-<p>In order to obtain more details and information of a specific booking you can use the <code>Booking read</code> panel on the left with one of the locators (Client, Provider or TGX).</p>
+<p>In order to obtain more detailed information of a specific booking you can use the <code>Booking read</code> panel on the left and filter by one of the booking locators (Client, Provider or TGX).</p>
 
 <p>For each booking you will find the following information:</p>
 
@@ -5964,8 +5964,8 @@
 <li>Configuration
 
 <ul>
-<li>* Hotel: Hotel code and name</li>
-<li>* Check-in date</li>
+<li>Hotel: Hotel code and name</li>
+<li>Check-in date</li>
 <li>Check-out date</li>
 <li>Mealplan</li>
 <li>Market</li>
@@ -6012,16 +6012,16 @@
 
 <h2 id="booking-list-reports">Booking List Reports</h2>
 
-<p>The booking reports tool allows you to obtain a file with all the bookings that have been done inside the parameters reports specified. The search parameters will be same as can be seen in the Booking Read.</p>
+<p>The booking reports tool allows you to obtain a file with all the bookings that have been done inside the report parameters specified. The search parameters will be the same as can be seen in the Booking Read.</p>
 
-<p>Notice that a Report name it is asked to you (with alfanumeric format), however, to ensure the uniqueness of the name, a datetime format will be added at the beginning of the name.</p>
+<p>Note that even though you should add a valid name to the report (alphanumeric format) our system will also add a datetime format at the beginning of this name in order to ensure it is unique.</p>
 
 <p>The display of the reports created can be shown in the List of Reports. There are two importants thing to know:</p>
 
 <ul>
-<li><p>Only one report can be generated every 15 minutes. So, once a generation is asked, the user has to wait 15 minutes to ask for the other one.</p></li>
+<li><p>Only one report can be generated every 15 minutes. So, once a generation is asked, the user should wait 15 minutes to ask for a new one.</p></li>
 
-<li><p>The generation of the report is not instant but it might take some time, depending on the volume of bookings to return. If Generation Status is equal to “Executing” the file is not done yet. So the download will not be able until the file is finished</p></li>
+<li><p>The generation of the report is not instant and it might take some time, depending on the volume of bookings to return. If Generation Status is equal to “Executing” the file is not processed yet, so it is still not available.</p></li>
 </ul>
 
 <p><img src="./../../images/web/distribution_web_bookingreportstatus.jpg" alt="Distribution Booking Report Status" title="Distribution Booking Report Status" /></p>
