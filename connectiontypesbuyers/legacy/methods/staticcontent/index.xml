@@ -75,24 +75,6 @@ DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt
     </item>
     
     <item>
-      <title>Connectiontypesbuyers: DescriptiveInfoExtended (In development)</title>
-      <link>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/descriptiveinfoextended/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/descriptiveinfoextended/</guid>
-      <description>
-        
-        
-        Method Goals This method returns 100% of the hotel information provided by the supplier.
-It allows you to map each hotel using your own criteria with the combination of contextItem_ plus data_ so you will have the information (extracted from the supplier&amp;rsquo;s documentation hierachy/fields descriptions) required to do so.
-Request Format After entering the hotel code, you can set language filters. We recommend that the first call is done without filters in order to ascertain which languages are provided by the supplier.
-        
-          [...]
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Connectiontypesbuyers: GeographicDestinationTree</title>
       <link>https://travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/geographicdestinationtree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

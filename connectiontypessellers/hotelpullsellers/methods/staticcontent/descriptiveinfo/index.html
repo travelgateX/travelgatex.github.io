@@ -3305,11 +3305,6 @@
               <span>DescriptiveInfo</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
-          <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/descriptiveinfoextended/" class="dd-item">
-            <a href="/connectiontypesbuyers/legacy/methods/staticcontent/descriptiveinfoextended/">
-              <span>DescriptiveInfoExtended (In development)</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
           <li data-nav-id="/connectiontypesbuyers/legacy/methods/staticcontent/geographicdestinationtree/" class="dd-item">
             <a href="/connectiontypesbuyers/legacy/methods/staticcontent/geographicdestinationtree/">
               <span>GeographicDestinationTree</span><i class="fa fa-circle-thin read-icon"></i>
@@ -5957,14 +5952,14 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>DescriptiveInfoRQ /Hotel /</td>
+<td>DescriptiveInfoRQ/ Hotel/</td>
 <td>1</td>
 <td>String</td>
 <td>Hotel requested.</td>
 </tr>
 
 <tr>
-<td>DescriptiveInfoRQ /Hotel /Code</td>
+<td>DescriptiveInfoRQ/ Hotel/Code</td>
 <td>1</td>
 <td>String</td>
 <td>Code.</td>
@@ -6005,7 +6000,7 @@ is <strong>180000</strong> milliseconds.</p>
         &lt;LongDescription&gt;the hotel....&lt;/LongDescription&gt;
         &lt;HowToGet&gt;&lt;/HowToGet&gt;
         &lt;Rooms&gt;
-            &lt;Room code = &quot;201232338&quot; size = &quot;0&quot; quantity = &quot;0&quot; viewCode = &quot;Others&quot; classificationCode = &quot;Others&quot; occupancy = &quot;0&quot;&gt;
+            &lt;Room code = &quot;201232338&quot; size = &quot;0&quot; viewCode = &quot;Others&quot; classificationCode = &quot;Others&quot; occupancy = &quot;0&quot;&gt;
                 &lt;Beds&gt;
                     &lt;Bed numberOfBeds = &quot;1&quot; type = &quot;QueenBed&quot;/&gt;
                 &lt;/Beds&gt;
@@ -6169,14 +6164,14 @@ is <strong>180000</strong> milliseconds.</p>
 
 <tbody>
 <tr>
-<td>DescriptiveInfoRS /UpgradeUTCDate</td>
+<td>DescriptiveInfoRS/ UpgradeUTCDate</td>
 <td>1</td>
 <td>DateTime</td>
 <td>Indicates the update date of the information in UTC format.</td>
 </tr>
 
 <tr>
-<td>DescriptiveInfoRS /Hotel</td>
+<td>DescriptiveInfoRS/ Hotel</td>
 <td>0..n</td>
 <td></td>
 <td>Root node. Hotel sheet.</td>
@@ -6204,21 +6199,21 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Airports /</td>
+<td>Airports/</td>
 <td>0..1</td>
 <td></td>
 <td>List of airports.</td>
 </tr>
 
 <tr>
-<td>Airports /Airport</td>
+<td>Airports/ Airport</td>
 <td>1..n</td>
 <td></td>
 <td>Specific airport near the hotel.</td>
 </tr>
 
 <tr>
-<td>Airports /Airport/IATACode</td>
+<td>Airports/ Airport/ IATACode</td>
 <td>1</td>
 <td>String</td>
 <td>IATA airport Code.</td>
@@ -6309,28 +6304,28 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Contact /</td>
+<td>Contact/</td>
 <td>0..1</td>
 <td></td>
 <td>Hotel contact information.</td>
 </tr>
 
 <tr>
-<td>Contact /Email</td>
+<td>Contact/ Email</td>
 <td>1</td>
 <td>String</td>
 <td>Email.</td>
 </tr>
 
 <tr>
-<td>Contact /Telephone</td>
+<td>Contact/ Telephone</td>
 <td>1</td>
 <td>String</td>
 <td>Telephone.</td>
 </tr>
 
 <tr>
-<td>Contact /Fax</td>
+<td>Contact/ Fax</td>
 <td>1</td>
 <td>String</td>
 <td>Fax.</td>
@@ -6344,28 +6339,28 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>BookingContact /</td>
+<td>BookingContact/</td>
 <td>0..1</td>
 <td></td>
 <td>Booking dept contact.</td>
 </tr>
 
 <tr>
-<td>BookingContact /Email</td>
+<td>BookingContact/ Email</td>
 <td>1</td>
 <td>String</td>
 <td>Email.</td>
 </tr>
 
 <tr>
-<td>BookingContact /Telephone</td>
+<td>BookingContact/ Telephone</td>
 <td>1</td>
 <td>String</td>
 <td>Telephone.</td>
 </tr>
 
 <tr>
-<td>BookingContact /Fax</td>
+<td>BookingContact/ Fax</td>
 <td>1</td>
 <td>String</td>
 <td>Fax.</td>
@@ -6400,14 +6395,14 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Rooms /</td>
+<td>Rooms/</td>
 <td>0..1</td>
 <td></td>
 <td>Rooms.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room</td>
+<td>Rooms/ Room</td>
 <td>1..n</td>
 <td></td>
 <td>Room.</td>
@@ -6425,13 +6420,6 @@ is <strong>180000</strong> milliseconds.</p>
 <td>1</td>
 <td>Integer</td>
 <td>Size of the room.</td>
-</tr>
-
-<tr>
-<td>@quantity</td>
-<td>1</td>
-<td>Integer</td>
-<td>Number of rooms availables at the hotel.</td>
 </tr>
 
 <tr>
@@ -6456,14 +6444,14 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Rooms /Room/Description</td>
+<td>Rooms/ Room/ Description</td>
 <td>1</td>
 <td>String</td>
 <td>Room Description.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Beds  /</td>
+<td>Rooms/ Room/ Beds/</td>
 <td>0..1</td>
 <td></td>
 <td>Room bedding.</td>
@@ -6477,7 +6465,7 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Rooms /Room/Beds /Bed</td>
+<td>Rooms/ Room/ Beds/ Bed</td>
 <td>1..n</td>
 <td></td>
 <td>Number of beds allocated in the room.</td>
@@ -6498,136 +6486,136 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /</td>
+<td>Rooms/ Room/ RoomOccupancy/</td>
 <td>1</td>
 <td></td>
 <td>Room ocuppancy.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Adults</td>
+<td>Rooms/ Room/ RoomOccupancy/ Adults/</td>
 <td>1</td>
 <td></td>
 <td>Indicates ocuppancy for adults.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Adults/Min</td>
+<td>Rooms/ Room/ RoomOccupancy/ Adults/ Min</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates minimum number of adults.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Adults/Max</td>
+<td>Rooms/ Room/ RoomOccupancy/ Adults/ Max</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates maximum number of adults.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Children</td>
+<td>Rooms/ Room/ RoomOccupancy/ Children/</td>
 <td>1</td>
 <td></td>
 <td>Indicates ocuppancy for children.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Children/Min</td>
+<td>Rooms/ Room/ RoomOccupancy/ Children/ Min</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates minimum number of children.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Children/Max</td>
+<td>Rooms/ Room/ RoomOccupancy/ Children/ Max</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates maximum number of children.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Infants</td>
+<td>Rooms/ Room/ RoomOccupancy/ Infants/</td>
 <td>1</td>
 <td></td>
-<td>Indicates ocuppancy for infants</td>
+<td>Indicates ocuppancy for infants.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Infants/Min</td>
+<td>Rooms/ Room/ RoomOccupancy/ Infants/ Min</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates minimum number of infants.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Infants/Max</td>
+<td>Rooms/ Room/ RoomOccupancy/ Infants/ Max</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates maximum number of infants.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Total</td>
+<td>Rooms/ Room/ RoomOccupancy/ Total/</td>
 <td>1</td>
 <td></td>
 <td>Indicates total room ocuppancy without breakout per pax.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Total/Min</td>
+<td>Rooms/ Room/ RoomOccupancy/ Total/ Min</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates minimum number of paxes.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy /Total/Max</td>
+<td>Rooms/ Room/ RoomOccupancy/ Total/ Max</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates maximum number of paxes.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Views /</td>
+<td>Rooms/ Room/ Views/</td>
 <td>0..1</td>
 <td></td>
 <td>Views of the room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Views /View</td>
+<td>Rooms/ Room/ Views/ View</td>
 <td>1..n</td>
 <td></td>
 <td>List of views.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Views /View/Code</td>
+<td>Rooms/ Room/ Views/ View/ Code</td>
 <td>1..n</td>
 <td>String</td>
 <td>View code.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Views /View/Name</td>
+<td>Rooms/ Room/ Views/ View/ Name</td>
 <td>1..n</td>
 <td>String</td>
 <td>Name of the View.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Attributes</td>
+<td>Rooms/ Room/ Attributes</td>
 <td>1</td>
 <td></td>
 <td>Room Attributes. (Follows same structure as Hotel Attributes)</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Images</td>
+<td>Rooms/ Room/ Images</td>
 <td>1</td>
 <td></td>
-<td>Room Images.  (Follows same structure as Hotel Images)</td>
+<td>Room Images. (Follows same structure as Hotel Images)</td>
 </tr>
 
 <tr>
@@ -6673,98 +6661,98 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Attributes /</td>
+<td>Attributes/</td>
 <td>0..1</td>
 <td></td>
 <td>Attributes.</td>
 </tr>
 
 <tr>
-<td>Attributes /Attribute</td>
+<td>Attributes/ Attribute/</td>
 <td>1..n</td>
 <td></td>
 <td>Specific attributes of the hotel, such as wi-fi.</td>
 </tr>
 
 <tr>
-<td>Attributes /Attribute/Code</td>
+<td>Attributes/ Attribute/ Code</td>
 <td>1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>Attributes /Attribute/Value</td>
+<td>Attributes/ Attribute/ Value</td>
 <td>1</td>
 <td>String</td>
 <td>Value.</td>
 </tr>
 
 <tr>
-<td>Attributes /Attribute/Classification</td>
+<td>Attributes/ Attribute/ Classification</td>
 <td>1</td>
 <td>String</td>
 <td>Classification ( HOT=hotel, HAB=room, SER=service and GRAL=generic).</td>
 </tr>
 
 <tr>
-<td>Attributes /Attribute/Description</td>
+<td>Attributes/ Attribute/ Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Description.</td>
 </tr>
 
 <tr>
-<td>Images /</td>
+<td>Images/</td>
 <td>0..1</td>
 <td></td>
 <td>Images.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/</td>
+<td>Images/ Picture/</td>
 <td>1..n</td>
 <td></td>
 <td>Picture.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/Url</td>
+<td>Images/ Picture/ Url</td>
 <td>1</td>
 <td>String</td>
 <td>Url.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/Classification</td>
+<td>Images/ Picture/ Classification</td>
 <td>1</td>
 <td>String</td>
 <td>Classification (HOT=hotel, HAB=room, SER=service and GRAL=generic).</td>
 </tr>
 
 <tr>
-<td>Images /Picture/Ordered</td>
+<td>Images/ Picture/ Ordered</td>
 <td>0..1</td>
 <td>String</td>
 <td>Images should be ordered from 1 onward. 1 is top.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/Description</td>
+<td>Images/ Picture/ Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Description.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/Code</td>
+<td>Images/ Picture/ Code</td>
 <td>0..1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/UpgradeUTCDate</td>
+<td>Images/ Picture/ UpgradeUTCDate</td>
 <td>0..1</td>
 <td>DateTime</td>
 <td>Indicates the upgrade date of the picture in UTC format.</td>
@@ -6778,21 +6766,21 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>PaymentOptions /</td>
+<td>PaymentOptions/</td>
 <td>0..1</td>
 <td>String</td>
 <td>Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than <em>MerchantPay</em>.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions /Cards /</td>
+<td>PaymentOptions/ Cards/</td>
 <td>1</td>
 <td></td>
 <td>List of cards allowed.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions /Cards /Card</td>
+<td>PaymentOptions/ Cards/ Card</td>
 <td>1..n</td>
 <td></td>
 <td>Type of card allowed.</td>
@@ -6813,21 +6801,21 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>PropertyCategory /</td>
+<td>PropertyCategory/</td>
 <td>0..1</td>
 <td></td>
 <td>Hotels property type. Similar to Type tag, but on supplier&rsquo;s side.</td>
 </tr>
 
 <tr>
-<td>PropertyCategory /Code</td>
+<td>PropertyCategory/ Code</td>
 <td>1</td>
 <td>String</td>
 <td>Supplier property code.</td>
 </tr>
 
 <tr>
-<td>PropertyCategory /Name</td>
+<td>PropertyCategory/ Name</td>
 <td>1</td>
 <td>String</td>
 <td>Supplier property name.</td>
