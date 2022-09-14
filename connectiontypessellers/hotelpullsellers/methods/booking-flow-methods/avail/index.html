@@ -6114,14 +6114,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>Markets/Market</td>
+<td>Markets/ Market</td>
 <td>1..n</td>
 <td>String</td>
 <td>Targeted zone/ country/ Point of sale.</td>
 </tr>
 
 <tr>
-<td>RoomCandidates/RoomCandidate</td>
+<td>RoomCandidates/ RoomCandidate</td>
 <td>1..n</td>
 <td></td>
 <td>Room required.</td>
@@ -6135,7 +6135,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>RoomCandidates/RoomCandidate /Paxes/Pax</td>
+<td>RoomCandidates/ RoomCandidate/ Paxes/ Pax</td>
 <td>1..n</td>
 <td></td>
 <td>Pax required.</td>
@@ -6285,7 +6285,7 @@ is closed.</p>
                             &lt;RateRules&gt;
                                 &lt;Rules&gt;
                                     &lt;Rule type = &quot;NonRefundable&quot;/&gt;
-                                    &lt;Rule type = &quot;Negotiated&quot;&gt;
+                                    &lt;Rule type = &quot;Custom&quot;&gt;
                                         &lt;Rates&gt;
                                             &lt;Rate Code = &quot;BAR&quot;&gt;
                                                 &lt;Description&gt;Bar descr&lt;/Description&gt;
@@ -6372,14 +6372,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /</td>
+<td>MealPlans/</td>
 <td>1</td>
 <td></td>
 <td>Retrieves a list of available mealplans for this hotel.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan /</td>
+<td>MealPlans/ MealPlan/</td>
 <td>1..n</td>
 <td></td>
 <td>List of mealplan types.</td>
@@ -6393,14 +6393,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan /Options /</td>
+<td>MealPlans/ MealPlan/ Options/</td>
 <td>1</td>
 <td></td>
 <td>List of options</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan /Options /Option</td>
+<td>MealPlans/ MealPlan/ Options/ Option</td>
 <td>1..n</td>
 <td></td>
 <td>Detail of option.</td>
@@ -6410,14 +6410,14 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates option type <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Option-Type">Lists of Data</a></td>
+<td>Indicates option type <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Option-Type">Lists of Data</a>.</td>
 </tr>
 
 <tr>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types">Lists of Data</a>) .</td>
+<td>Indicates payment type (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types">Lists of Data</a>).</td>
 </tr>
 
 <tr>
@@ -6428,14 +6428,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Parameters /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Parameters/</td>
 <td>0..1</td>
 <td></td>
 <td>Additional parameters that must be reported on the ValuationRQ. Parameters, if this option is required.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Parameters /Parameter</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Parameters/ Parameter</td>
 <td>0..n</td>
 <td></td>
 <td>Additional parameter requiring integration.</td>
@@ -6456,7 +6456,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/CancelPenalties /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/</td>
 <td>1</td>
 <td></td>
 <td>Cancellation policy details. (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
@@ -6470,35 +6470,35 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/</td>
 <td>0..n</td>
 <td></td>
 <td>Listing cancellation penalties.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/HoursBefore</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ HoursBefore</td>
 <td>1</td>
 <td>String</td>
 <td>Number of hours prior to checkin date in which this Cancellation policy applies.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/Deadline</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ Deadline</td>
 <td>1</td>
 <td>String</td>
-<td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
+<td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/CalculatedDeadline</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ CalculatedDeadline</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate -&gt; <em>true</em> = has been calculated by XTG / <em>false</em> = bypass of supplier data without calculation</td>
+<td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate -&gt; <em>true</em> = has been calculated by XTG / <em>false</em> = bypass of supplier data without calculation.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/Penalty</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ Penalty</td>
 <td>1</td>
 <td></td>
 <td>Contains the value to apply.</td>
@@ -6522,25 +6522,25 @@ is closed.</p>
 <td>@paymentType</td>
 <td>1</td>
 <td>String</td>
-<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types">Lists of Data</a>) .</td>
+<td>Indicates payment type of penalty (See full type list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types">Lists of Data</a>).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/RateRules /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ RateRules/</td>
 <td>0..1</td>
 <td></td>
 <td>Option rate rules.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/RateRules /Rules</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/</td>
 <td>1</td>
 <td></td>
 <td>Rules.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule</td>
 <td>1..n</td>
 <td></td>
 <td>Rule.</td>
@@ -6550,18 +6550,18 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>String</td>
-<td>Possible values: NonRefundable, Older55, Package, Negotiated.. See full list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Rate-Conditions">Lists of Data</a></td>
+<td>Possible values: NonRefundable, Older55, Package, Custom.. See full list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Rate-Conditions">Lists of Data</a>.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule/ Rates/</td>
 <td>0..1</td>
 <td></td>
 <td>Rates.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule/ Rates/ Rate</td>
 <td>1..n</td>
 <td></td>
 <td>Rate.</td>
@@ -6575,21 +6575,21 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate/Description</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule/ Rates/ Rate/ Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Contains the rate rule description.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule/ Restrictions/</td>
 <td>0..n</td>
 <td></td>
 <td>Restrictions for the rate rule.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions /Restriction</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule/ Restrictions/ Restriction</td>
 <td>1..n</td>
 <td></td>
 <td>Restriction for this rate rule.</td>
@@ -6599,7 +6599,7 @@ is closed.</p>
 <td>@type</td>
 <td>1</td>
 <td>Enum</td>
-<td>This restriction affects: 1 -&gt; Company, 2 -&gt; Market, 3 -&gt; Others.. See the list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Restriction-Type">Lists of Data</a></td>
+<td>This restriction affects: 1 -&gt; Company, 2 -&gt; Market, 3 -&gt; Others.. See the list at <a href="/connectiontypessellers/hotelpullsellers/listsdata/#Restriction-Type">Lists of Data</a>.</td>
 </tr>
 
 <tr>
@@ -6610,14 +6610,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/</td>
 <td>1</td>
 <td></td>
 <td>Rooms in this option (room list).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room</td>
 <td>1..n</td>
 <td></td>
 <td>Room details.</td>
@@ -6666,14 +6666,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Offers</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Offers/</td>
 <td>0..1</td>
 <td></td>
 <td>The supplier returns in response which offer is applicable for each room (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Offers /Offer</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Offers/ Offer</td>
 <td>1..n</td>
 <td></td>
 <td>List of offers.</td>
@@ -6694,7 +6694,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Beds</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Beds/</td>
 <td>0..1</td>
 <td></td>
 <td>Detail of beds (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
@@ -6708,7 +6708,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room /Beds/Bed</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Beds/ Bed</td>
 <td>0..n</td>
 <td></td>
 <td>Identifies types of beds.</td>
@@ -6729,35 +6729,35 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room /Features</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Features/</td>
 <td>0..1</td>
 <td></td>
 <td>Features of this room (features list).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room /Features/Feature</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Features/ Feature</td>
 <td>1..n</td>
 <td></td>
-<td>Detail of feature</td>
+<td>Detail of feature.</td>
 </tr>
 
 <tr>
 <td>@code</td>
 <td>1</td>
 <td>String</td>
-<td>Feature code or text</td>
+<td>Feature code or text.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ DailyPrices/</td>
 <td>0..1</td>
 <td></td>
 <td>Specifies daily price, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices/DailyPrice</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ DailyPrices/ DailyPrice/</td>
 <td>1..n</td>
 <td></td>
 <td>Specifies the price for each day.</td>
@@ -6778,7 +6778,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices/DailyPrice /Price</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ DailyPrices/ DailyPrice/ Price</td>
 <td>1</td>
 <td></td>
 <td>Day price.</td>
@@ -6802,7 +6802,7 @@ is closed.</p>
 <td>@binding</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Identifies if the price is binding (When true, the sale price returned <strong>must</strong> not be less than the price informed)</td>
+<td>Identifies if the price is binding (When true, the sale price returned <strong>must</strong> not be less than the price informed).</td>
 </tr>
 
 <tr>
@@ -6813,14 +6813,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room /DailyRatePlans</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ DailyRatePlans/</td>
 <td>0..1</td>
 <td></td>
 <td>Specifies the daily rate, as long as the supplier returns it in this method (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room /DailyRatePlans/DailyRatePlan</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ DailyRatePlans/ DailyRatePlan</td>
 <td>1..n</td>
 <td></td>
 <td>Specifies the rates for each day.</td>
@@ -6855,7 +6855,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room /Price</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Price</td>
 <td>1</td>
 <td></td>
 <td>Room price.</td>
@@ -6879,7 +6879,7 @@ is closed.</p>
 <td>@binding</td>
 <td>1</td>
 <td>Boolean</td>
-<td>Identifies if is the price is binding (When true the sale price returned <strong>must</strong> not be less than the price informed)</td>
+<td>Identifies if is the price is binding (When true the sale price returned <strong>must</strong> not be less than the price informed).</td>
 </tr>
 
 <tr>
@@ -6890,14 +6890,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Fees</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Fees/</td>
 <td>0..1</td>
 <td></td>
 <td>Contains a list of fees.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Fees/ Fee</td>
 <td>1..n</td>
 <td></td>
 <td>Contains details of the fee.</td>
@@ -6932,7 +6932,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee/Price</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Fees/ Fee/ Price</td>
 <td>1</td>
 <td></td>
 <td>Contains details of price.</td>
@@ -6967,17 +6967,17 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee/Code</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Fees/ Fee/ Code</td>
 <td>1</td>
 <td>String</td>
 <td>Specifies the fee code in case it has one.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties</td>
 <td>1</td>
 <td></td>
-<td>Cancellation policy details. (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it). <strong>Attention:</strong>  When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option</td>
+<td>Cancellation policy details. (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it). <strong>Attention:</strong>    When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option.</td>
 </tr>
 
 <tr>
@@ -6988,35 +6988,35 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/</td>
 <td>0..n</td>
 <td></td>
 <td>Listing cancellation penalties.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/HoursBefore</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/ HoursBefore</td>
 <td>1</td>
 <td>String</td>
 <td>Number of hours prior to checkin date in which this Cancellation policy applies.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/Deadline</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/ Deadline</td>
 <td>1</td>
 <td>String</td>
-<td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)</td>
+<td>Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/CalculatedDeadline</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/ CalculatedDeadline</td>
 <td>1</td>
 <td>Boolean</td>
 <td>Indicate if the Deadline is returned by the supplier or it&rsquo;s been calculated by TravelGate -&gt; <em>true</em> = has been calculated by XTG / <em>false</em> = bypass of supplier data without calculation</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/Penalty</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/ Penalty</td>
 <td>1</td>
 <td></td>
 <td>Contains the value to apply.</td>
@@ -7044,10 +7044,10 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Price</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Price</td>
 <td>1</td>
 <td></td>
-<td>Option price ( it is the total price of option).</td>
+<td>Option price (it is the total price of option).</td>
 </tr>
 
 <tr>
@@ -7079,21 +7079,21 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Detail</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Detail</td>
 <td>0..1</td>
 <td></td>
 <td>Detail of option (if the option is different from the type&lt;&gt; Hotel and see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Detail/POIs /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Detail/ POIs/</td>
 <td>1</td>
 <td></td>
 <td>Points of interest.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Detail/POIs /POI</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Detail/ POIs/ POI</td>
 <td>1..n</td>
 <td></td>
 <td>Point of interest.</td>
@@ -7114,14 +7114,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Detail/POIs /POI /Services /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Detail/ POIs/ POI/ Services/</td>
 <td>1</td>
 <td></td>
 <td>Services containing this POI.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Detail/POIs /POI  /Services /Service</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Detail/ POIs/ POI/ Services/ Service</td>
 <td>1..n</td>
 <td></td>
 <td>Service detail.</td>
@@ -7170,7 +7170,7 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Detail/POIs /POI /Services /Service/RangeDates</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Detail/ POIs/ POI/ Services/ Service/ RangeDates</td>
 <td>0..1</td>
 <td></td>
 <td>Service date range (Only specified if durationType=Range).</td>
@@ -7191,28 +7191,28 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Remarks /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Remarks/</td>
 <td>0..1</td>
 <td></td>
 <td>List of remarks (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Remarks /Remark</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Remarks/Remark</td>
 <td>1..n</td>
 <td></td>
 <td>Remark.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Offers /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Offers/</td>
 <td>0..1</td>
 <td></td>
 <td>The supplier returns in response which offer is applicable for each option (see <a href="/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/">MetaData</a> in order to verify if a supplier implements it).</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Offers /Offer</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Offers/ Offer</td>
 <td>1..n</td>
 <td></td>
 <td>List of offers.</td>
@@ -7233,14 +7233,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Fees /</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Fees/</td>
 <td>0..1</td>
 <td></td>
 <td>Contains a list of fees.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Fees /Fee</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Fees/ Fee</td>
 <td>1..n</td>
 <td></td>
 <td>Contains details of the fee.</td>
@@ -7275,14 +7275,14 @@ is closed.</p>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Fees /Fee/Price</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Fees/ Fee/ Price</td>
 <td>1</td>
 <td></td>
 <td>Contains details of price.</td>
 </tr>
 
 <tr>
-<td>MealPlans /MealPlan/Options /Option/Fees /Fee/Code</td>
+<td>MealPlans/ MealPlan/ Options/ Option/ Fees/ Fee/ Code</td>
 <td>1</td>
 <td>String</td>
 <td>Specifies the fee code in case it has one.</td>
