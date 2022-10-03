@@ -15,5 +15,23 @@
 	    <atom:link href="https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Connectiontypessellers: Authentication</title>
+      <link>https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/authentication/</guid>
+      <description>
+        
+        
+        The messages have two levels of authentication, named Security and POS.
+Security Level The Security level is in the SOAP envelope header, where you send the user and password of our Inventory system. Here you have an example:
+&amp;lt;SOAP-ENV:Envelope xmlns:SOAP-ENV = &amp;quot;http://schemas.xmlsoap.org/soap/envelope/&amp;quot; xmlns:ns1 = &amp;quot;http://www.opentravel.org/OTA/2003/05&amp;quot; xmlns:ns2 = &amp;quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&amp;quot; xmlns:ns3 = &amp;quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&amp;quot;&amp;gt; &amp;lt;SOAP-ENV:Header&amp;gt; &amp;lt;ns3:Security SOAP-ENV:mustUnderstand = &amp;quot;1&amp;quot;&amp;gt; &amp;lt;ns3:UsernameToken&amp;gt; &amp;lt;ns3:Username&amp;gt;XXXXX&amp;lt;/ns3:Username&amp;gt; &amp;lt;ns3:Password&amp;gt;XXXXXXX&amp;lt;/ns3:Password&amp;gt; &amp;lt;/ns3:UsernameToken&amp;gt; &amp;lt;/ns3:Security&amp;gt; &amp;lt;/SOAP-ENV:Header&amp;gt; &amp;lt;SOAP-ENV:Body&amp;gt; &amp;lt;!--Your request--&amp;gt; &amp;lt;/SOAP-ENV:Body&amp;gt; &amp;lt;/SOAP-ENV:Envelope&amp;gt;  POS Level The POS level comes in the body that all the requests have.
+        
+          [...]
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>

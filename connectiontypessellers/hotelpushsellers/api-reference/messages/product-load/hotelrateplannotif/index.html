@@ -3755,6 +3755,11 @@
         </li>
             </ul>
         </li>
+          <li data-nav-id="/connectiontypessellers/hotelpushsellers/api-reference/authentication/" class="dd-item">
+            <a href="/connectiontypessellers/hotelpushsellers/api-reference/authentication/">
+              <span>Authentication</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
           <li data-nav-id="/connectiontypessellers/hotelpushsellers/faq/" class="dd-item">
@@ -5906,7 +5911,7 @@
           &lt;/Source&gt;
         &lt;/POS&gt;
         &lt;RatePlans HotelCode = &quot;HOT123&quot;&gt;
-          &lt;RatePlan RatePlanCode = &quot;TAR321&quot; CurrencyCode = &quot;EUR&quot; RatePlanStatusType = &quot;Active&quot;&gt;
+          &lt;RatePlan RatePlanCode = &quot;TAR321&quot; CurrencyCode = &quot;EUR&quot;&gt;
             &lt;Rates&gt;
               &lt;Rate Start = &quot;2007-04-01&quot; End = &quot;2007-12-31&quot;&gt;
                 &lt;BaseByGuestAmts&gt;
@@ -6067,7 +6072,7 @@
 <td>@RatePlanStatusType</td>
 <td>0..1</td>
 <td>String</td>
-<td>Active or Deactivated (You can save prices with initial status deactivated if you want). If this attribute is missing, the price will be saved as active.</td>
+<td>Active or Deactivated (You can save prices with initial status deactivated if you want). If this attribute is missing, the price is saved as active. This is only valid for derived rates, the prices for a base rate always are saved as active. This attribute does not deactivate the rate.</td>
 </tr>
 
 <tr>

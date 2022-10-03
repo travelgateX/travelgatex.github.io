@@ -3754,6 +3754,11 @@
         </li>
             </ul>
         </li>
+          <li data-nav-id="/connectiontypessellers/hotelpushsellers/api-reference/authentication/" class="dd-item">
+            <a href="/connectiontypessellers/hotelpushsellers/api-reference/authentication/">
+              <span>Authentication</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
           <li data-nav-id="/connectiontypessellers/hotelpushsellers/faq/" class="dd-item">
@@ -6217,7 +6222,7 @@ N = Names allowed for a specific element</p>
 <td align="left">@PromotionCode</td>
 <td align="center">0..1</td>
 <td align="center">String</td>
-<td>Promotion code to apply. 25 - Senior_55  26 - Senior_60, 27 - Senior_65. If the attribute is not present there is no promotion code. Not applicable for derived rates.</td>
+<td>Promotion code to apply. 0 - NoPromotion, 25 - Senior55  26 - Senior60, 27 - Senior65. If the attribute is not present or its value is 0 there is no promotion</td>
 </tr>
 
 <tr>
@@ -7485,7 +7490,7 @@ N = Names allowed for a specific element</p>
 <td align="left">@Time</td>
 <td align="center">1</td>
 <td align="center">Integer</td>
-<td>Indicates the number of @TimeUnit for this stay. When value is <em>-1</em>, condition should be deleted from the system.</td>
+<td>Indicates the number of @TimeUnit for this stay. When value is <em>0</em> or <em>-1</em>, condition should be deleted from the system.</td>
 </tr>
 
 <tr>
@@ -7527,7 +7532,7 @@ N = Names allowed for a specific element</p>
 <td align="left">@MinAdvancedBookingOffset</td>
 <td align="center">0..1</td>
 <td align="center">Integer</td>
-<td>Minimum number of days before the check-in date to be available to be booked. This restriction is usually used to offer discounts on early bookings. When value is <em>-1</em>, condition should be deleted from the system.</td>
+<td>Minimum number of days before the check-in date to be available to be booked. This restriction is usually used to offer discounts on early bookings. When value is <em>0</em> or <em>-1</em>, condition should be deleted from the system.</td>
 </tr>
 
 <tr>
