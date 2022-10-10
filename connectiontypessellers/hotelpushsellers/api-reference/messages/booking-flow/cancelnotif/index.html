@@ -3663,6 +3663,11 @@
               <span>HotelRatePlanInventoryNotif</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+          <li data-nav-id="/connectiontypessellers/hotelpushsellers/api-reference/messages/set-up/authentication/" class="dd-item">
+            <a href="/connectiontypessellers/hotelpushsellers/api-reference/messages/set-up/authentication/">
+              <span>Authentication</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/connectiontypessellers/hotelpushsellers/api-reference/messages/product-load/" class="dd-item">
@@ -3754,11 +3759,6 @@
             </a>
         </li>
             </ul>
-        </li>
-          <li data-nav-id="/connectiontypessellers/hotelpushsellers/api-reference/authentication/" class="dd-item">
-            <a href="/connectiontypessellers/hotelpushsellers/api-reference/authentication/">
-              <span>Authentication</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
         </li>
             </ul>
         </li>
@@ -5752,6 +5752,7 @@
 <li><a href="#cancelnotifrq">CancelNotifRQ</a></li>
 </ul></li>
 <li><a href="#cancelnotifrs">CancelNotifRS</a></li>
+<li><a href="#authentication-and-headers">Authentication and Headers</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -6976,6 +6977,16 @@
       &lt;/Errors&gt;
     &lt;/OTA_HotelResNotifRS&gt;
 </code></pre>
+
+<h2 id="authentication-and-headers">Authentication and Headers</h2>
+
+<p>Our system send these messages without SOAP envelop, directly the OTA_HotelResRS, as POST request with the following headers:</p>
+
+<pre><code>  Content-Type: application/xml; charset=utf-8
+  Authorization: Basic XXXXXXXXXXXXXXXXX
+</code></pre>
+
+<p><a href="https://en.wikipedia.org/wiki/Basic_access_authentication" rel="nofollow" target="_blank">Here</a> you can find what is Basic authentication</p>
 
 <hr/>
 
