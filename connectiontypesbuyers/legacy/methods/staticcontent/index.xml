@@ -67,7 +67,7 @@ CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&am
 Request Format The request just requires the hotel code and language code (ISO-639-1) - this is specified within the source&amp;ndash;&amp;gt;languageCode).
 Response Format The result returns the details of that hotel.
 Remarks The maximum time permitted in our system before the connection is closed is 180000 milliseconds.
-DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt; &amp;lt;Code&amp;gt;524AC&amp;lt;/Code&amp;gt; &amp;lt;/Hotel&amp;gt; &amp;lt;/DescriptiveInfoRQ&amp;gt;  DescriptiveInfoRQ Description    Element Number Type Description     DescriptiveInfoRQ / 1  Root node.
+DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt; &amp;lt;Code&amp;gt;524AC&amp;lt;/Code&amp;gt; &amp;lt;/Hotel&amp;gt; &amp;lt;/DescriptiveInfoRQ&amp;gt;  DescriptiveInfoRQ Description    Element Number Type Description     DescriptiveInfoRQ/ 1  Root node.
         
           [...]
         

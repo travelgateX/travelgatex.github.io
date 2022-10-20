@@ -5937,21 +5937,21 @@ is <strong>180000</strong> milliseconds.</p>
 
 <tbody>
 <tr>
-<td>DescriptiveInfoRQ /</td>
+<td>DescriptiveInfoRQ/</td>
 <td>1</td>
 <td></td>
 <td>Root node.</td>
 </tr>
 
 <tr>
-<td>DescriptiveInfoRQ /Hotel /</td>
+<td>DescriptiveInfoRQ/ Hotel/</td>
 <td>1</td>
 <td>String</td>
 <td>Hotel requested.</td>
 </tr>
 
 <tr>
-<td>DescriptiveInfoRQ /Hotel/ Code</td>
+<td>DescriptiveInfoRQ/ Hotel/ Code</td>
 <td>1</td>
 <td>String</td>
 <td>Code.</td>
@@ -5991,7 +5991,59 @@ is <strong>180000</strong> milliseconds.</p>
         &lt;ShortDescription&gt;the hotel.....&lt;/ShortDescription&gt;
         &lt;LongDescription&gt;the hotel....&lt;/LongDescription&gt;
         &lt;HowToGet&gt;&lt;/HowToGet&gt;
-        &lt;RoomDescription&gt;....&lt;/RoomDescription&gt;
+        &lt;Rooms&gt;
+            &lt;Room code = &quot;201232338&quot; size = &quot;0&quot; viewCode = &quot;Others&quot; classificationCode = &quot;Others&quot; occupancy = &quot;0&quot;&gt;
+                &lt;Beds&gt;
+                    &lt;Bed numberOfBeds = &quot;1&quot; type = &quot;QueenBed&quot;/&gt;
+                &lt;/Beds&gt;
+                &lt;Attributes&gt;                      
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;2403&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Free WiFi&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;2399&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Flat-panel TV&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;2398&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Cable TV service&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;4951&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Free cribs/infant beds&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                    &lt;Attribute&gt;
+                        &lt;Code&gt;318&lt;/Code&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;Description&gt;Balcony&lt;/Description&gt;
+                    &lt;/Attribute&gt;
+                &lt;/Attributes&gt;
+                &lt;Images&gt;
+                    &lt;Picture&gt;
+                        &lt;URL&gt;https://i.travelapi.com/hotels/8000000/7770000/7769600/7769581/72588f9a_z.jpg&lt;/URL&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;UpgradeUTCDate&gt;0001-01-01T00:00:00&lt;/UpgradeUTCDate&gt;
+                    &lt;/Picture&gt;
+                    &lt;Picture&gt;
+                        &lt;URL&gt;https://i.travelapi.com/hotels/8000000/7770000/7769600/7769581/bd3da76f_z.jpg&lt;/URL&gt;
+                        &lt;Classification&gt;HAB&lt;/Classification&gt;
+                        &lt;UpgradeUTCDate&gt;0001-01-01T00:00:00&lt;/UpgradeUTCDate&gt;
+                    &lt;/Picture&gt;
+                &lt;/Images&gt;
+                &lt;Description&gt;Small Double Room with Balcony&lt;/Description&gt;
+                &lt;Views&gt;
+                    &lt;View&gt;
+                        &lt;Code&gt;4219&lt;/Code&gt;
+                        &lt;Name&gt;Mountain view&lt;/Name&gt;
+                    &lt;/View&gt;
+                &lt;/Views&gt;
+            &lt;/Room&gt;    
+        &lt;/Rooms&gt;
         &lt;SituationDescription&gt;....&lt;/SituationDescription&gt;
         &lt;Attributes&gt;
             &lt;Attribute&gt;
@@ -6154,14 +6206,14 @@ is <strong>180000</strong> milliseconds.</p>
 
 <tbody>
 <tr>
-<td>DescriptiveInfoRS /UpgradeUTCDate</td>
+<td>DescriptiveInfoRS/ UpgradeUTCDate</td>
 <td>1</td>
 <td>DateTime</td>
 <td>Indicates the update date of the information in UTC format.</td>
 </tr>
 
 <tr>
-<td>DescriptiveInfoRS /Hotel</td>
+<td>DescriptiveInfoRS/ Hotel/</td>
 <td>0..n</td>
 <td></td>
 <td>Root node. Hotel sheet.</td>
@@ -6189,21 +6241,21 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Airports /</td>
+<td>Airports/</td>
 <td>0..1</td>
 <td></td>
 <td>List of airports.</td>
 </tr>
 
 <tr>
-<td>Airports /Airport</td>
+<td>Airports/ Airport/</td>
 <td>1..n</td>
 <td></td>
 <td>Specific airport near the hotel.</td>
 </tr>
 
 <tr>
-<td>Airports /Airport/IATACode</td>
+<td>Airports/ Airport/ IATACode/</td>
 <td>1</td>
 <td>String</td>
 <td>IATA airport Code.</td>
@@ -6294,28 +6346,28 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Contact /</td>
+<td>Contact/</td>
 <td>0..1</td>
 <td></td>
 <td>Hotel contact information.</td>
 </tr>
 
 <tr>
-<td>Contact /Email</td>
+<td>Contact/ Email</td>
 <td>1</td>
 <td>String</td>
 <td>Email.</td>
 </tr>
 
 <tr>
-<td>Contact /Telephone</td>
+<td>Contact/ Telephone</td>
 <td>1</td>
 <td>String</td>
 <td>Telephone.</td>
 </tr>
 
 <tr>
-<td>Contact /Fax</td>
+<td>Contact/ Fax</td>
 <td>1</td>
 <td>String</td>
 <td>Fax.</td>
@@ -6329,28 +6381,28 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>BookingContact /</td>
+<td>BookingContact/</td>
 <td>0..1</td>
 <td></td>
 <td>Booking dept contact.</td>
 </tr>
 
 <tr>
-<td>BookingContact /Email</td>
+<td>BookingContact/ Email</td>
 <td>1</td>
 <td>String</td>
 <td>Email.</td>
 </tr>
 
 <tr>
-<td>BookingContact /Telephone</td>
+<td>BookingContact/ Telephone</td>
 <td>1</td>
 <td>String</td>
 <td>Telephone.</td>
 </tr>
 
 <tr>
-<td>BookingContact /Fax</td>
+<td>BookingContact/ Fax</td>
 <td>1</td>
 <td>String</td>
 <td>Fax.</td>
@@ -6385,10 +6437,136 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>RoomDescription</td>
+<td>Rooms/</td>
 <td>0..1</td>
+<td></td>
+<td>Rooms.</td>
+</tr>
+
+<tr>
+<td>Rooms/ Room/</td>
+<td>1..n</td>
+<td></td>
+<td>Room.</td>
+</tr>
+
+<tr>
+<td>@code</td>
+<td>1</td>
 <td>String</td>
-<td>Room description.</td>
+<td>Room Code.</td>
+</tr>
+
+<tr>
+<td>@size</td>
+<td>1</td>
+<td>Integer</td>
+<td>Size of the room.</td>
+</tr>
+
+<tr>
+<td>@viewCode</td>
+<td>1</td>
+<td>String</td>
+<td>Main view of the room. See the full list of card codes at <a href="/connectiontypesbuyers/legacy/listsdata/">Lists of Data</a>.</td>
+</tr>
+
+<tr>
+<td>@classificationCode</td>
+<td>1</td>
+<td>String</td>
+<td>Room classification code. See the full list of card codes at <a href="/connectiontypesbuyers/legacy/listsdata/">Lists of Data</a>.</td>
+</tr>
+
+<tr>
+<td>@occupancy</td>
+<td>1</td>
+<td>Integer</td>
+<td>Number of rooms availables at the hotel.</td>
+</tr>
+
+<tr>
+<td>Rooms/ Room/ Description</td>
+<td>1</td>
+<td>String</td>
+<td>Room Description.</td>
+</tr>
+
+<tr>
+<td>Rooms/ Room/ Beds/</td>
+<td>0..1</td>
+<td></td>
+<td>Room bedding.</td>
+</tr>
+
+<tr>
+<td>@sharedBed</td>
+<td>1</td>
+<td>Boolean</td>
+<td>Indicates if it&rsquo;s a shared bed.</td>
+</tr>
+
+<tr>
+<td>Rooms/ Room/ Beds/ Bed</td>
+<td>1..n</td>
+<td></td>
+<td>Number of beds allocated in the room.</td>
+</tr>
+
+<tr>
+<td>@numberOfBeds</td>
+<td>1</td>
+<td>String</td>
+<td>Number of beds allocated in the room.</td>
+</tr>
+
+<tr>
+<td>@type</td>
+<td>1</td>
+<td>String</td>
+<td>Type of bed. (Queen Bed, Single&hellip;)</td>
+</tr>
+
+<tr>
+<td>Rooms/ Room/ Views/</td>
+<td>0..1</td>
+<td></td>
+<td>Views of the room.</td>
+</tr>
+
+<tr>
+<td>Rooms/ Room/ Views/ View</td>
+<td>1..n</td>
+<td></td>
+<td>List of views.</td>
+</tr>
+
+<tr>
+<td>Rooms/ Room/ Views/ View/ Code</td>
+<td>1..n</td>
+<td>String</td>
+<td>View code.</td>
+</tr>
+
+<tr>
+<td>Rooms/ Room/ Views/ View/ Name</td>
+<td>1..n</td>
+<td>String</td>
+<td>Name of the View.</td>
+</tr>
+
+<tr>
+<td>Rooms/ Room/ Attributes</td>
+<td>1</td>
+<td></td>
+<td>Room Attributes. (Follows same structure as Hotel Attributes)</td>
+</tr>
+
+<tr>
+<td>Rooms/ Room/ Images</td>
+<td>1</td>
+<td></td>
+<td>Room Images.  (Follows same structure as Hotel Images)</td>
 </tr>
 
 <tr>
@@ -6434,112 +6612,112 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Attributes /</td>
+<td>Attributes/</td>
 <td>0..1</td>
 <td></td>
 <td>Attributes.</td>
 </tr>
 
 <tr>
-<td>Attributes /Attribute</td>
+<td>Attributes/ Attribute/</td>
 <td>1..n</td>
 <td></td>
 <td>Specific attributes of the hotel, such as wi-fi.</td>
 </tr>
 
 <tr>
-<td>Attributes /Attribute/Code</td>
+<td>Attributes/ Attribute/ Code</td>
 <td>1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>Attributes /Attribute/Value</td>
+<td>Attributes/ Attribute/ Value</td>
 <td>1</td>
 <td>String</td>
 <td>Value.</td>
 </tr>
 
 <tr>
-<td>Attributes /Attribute/Classification</td>
+<td>Attributes/ Attribute/ Classification</td>
 <td>1</td>
 <td>String</td>
 <td>Classification ( HOT=hotel, HAB=room, SER=service and GRAL=generic).</td>
 </tr>
 
 <tr>
-<td>Attributes /Attribute/Description</td>
+<td>Attributes/ Attribute/ Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Description.</td>
 </tr>
 
 <tr>
-<td>Images /</td>
+<td>Images/</td>
 <td>0..1</td>
 <td></td>
 <td>Images.</td>
 </tr>
 
 <tr>
-<td>Images /Picture</td>
+<td>Images/ Picture/</td>
 <td>1..n</td>
 <td></td>
 <td>Picture.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/Url</td>
+<td>Images/ Picture/ Url</td>
 <td>1</td>
 <td>String</td>
 <td>Url.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/Classification</td>
+<td>Images/ Picture/ Classification</td>
 <td>1</td>
 <td>String</td>
 <td>Classification (HOT=hotel, HAB=room, SER=service and GRAL=generic).</td>
 </tr>
 
 <tr>
-<td>Images /Picture/Ordered</td>
+<td>Images/ Picture/ Ordered</td>
 <td>0..1</td>
 <td>String</td>
 <td>Images should be ordered from 1 onward. 1 is top.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/Description</td>
+<td>Images/ Picture/ Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Description.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/Code</td>
+<td>Images/ Picture/ Code</td>
 <td>0..1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>Images /Picture/UpgradeUTCDate</td>
+<td>Images/ Picture/ UpgradeUTCDate</td>
 <td>0..1</td>
 <td>DateTime</td>
 <td>Indicates the upgrade date of the picture in UTC format.</td>
 </tr>
 
 <tr>
-<td>Rooms /</td>
+<td>Rooms/</td>
 <td>0..1</td>
 <td></td>
 <td>Hotel rooms.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room</td>
+<td>Rooms/ Room/</td>
 <td>1..n</td>
 <td></td>
 <td>List of rooms.</td>
@@ -6553,14 +6731,14 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Rooms /Room/Beds</td>
+<td>Rooms/ Room/ Beds/</td>
 <td>0..1</td>
 <td></td>
 <td>Room beds.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Beds/Bed</td>
+<td>Rooms/ Room/ Beds/ Bed/</td>
 <td>1..n</td>
 <td></td>
 <td>List of beds.</td>
@@ -6581,224 +6759,224 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy</td>
+<td>Rooms/ Room/ RoomOccupancy/</td>
 <td>0..1</td>
 <td></td>
 <td>Indicates the amount of each occupant type staying in the room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Adults</td>
+<td>Rooms/ Room/ RoomOccupancy/ Adults/</td>
 <td>1</td>
 <td></td>
 <td>Indicates the amount of adults staying in the room (minimum and maximum).</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Adults/Min</td>
+<td>Rooms/ Room/ RoomOccupancy/ Adults/ Min</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates the minimum amount of adults staying in the room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Adults/Max</td>
+<td>Rooms/ Room/ RoomOccupancy/ Adults/ Max</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates the maximum amount of adults staying in the room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Children</td>
+<td>Rooms/ Room/ RoomOccupancy/ Children/</td>
 <td>1</td>
 <td></td>
 <td>Indicates the amount of children staying in the room (minimum and maximum).</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Children/Min</td>
+<td>Rooms/ Room/ RoomOccupancy/ Children/ Min</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates the minimum amount of children staying in the room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Children/Max</td>
+<td>Rooms/ Room/ RoomOccupancy/ Children/ Max</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates the maximum amount of children staying in the room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Infants</td>
+<td>Rooms/ Room/ RoomOccupancy/ Infants</td>
 <td>1</td>
 <td></td>
 <td>Indicates the amount of infants staying in the room (minimum and maximum).</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Infants/Min</td>
+<td>Rooms/ Room/ RoomOccupancy/ Infants/ Min</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates the minimum amount of infants staying in the room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Infants/Max</td>
+<td>Rooms/ Room/ RoomOccupancy/ Infants/ Max</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates the maximum amount of infants staying in the room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Total</td>
+<td>Rooms/ Room/ RoomOccupancy/ Total/</td>
 <td>1</td>
 <td></td>
 <td>Indicates the total amount of occupants staying in the room (minimum and maximum).</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Total/Min</td>
+<td>Rooms/ Room/ RoomOccupancy/ Total/ Min</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates the minimum total amount of occupants staying in the room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/RoomOccupancy/Total/Max</td>
+<td>Rooms/ Room/ RoomOccupancy/ Total/ Max</td>
 <td>1</td>
 <td>Integer</td>
 <td>Indicates the maximum total amount of occupants staying in the room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Attributes/</td>
+<td>Rooms/ Room/ Attributes/</td>
 <td>0..1</td>
 <td></td>
 <td>Attributes.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Attributes/Attribute</td>
+<td>Rooms/ Room/ Attributes/ Attribute/</td>
 <td>1..n</td>
 <td></td>
 <td>Specific attributes of the room, such as wi-fi.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Attributes/Attribute/Code</td>
+<td>Rooms/ Room/ Attributes/ Attribute/ Code</td>
 <td>1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Attributes/Attribute/Classification</td>
+<td>Rooms/ Room/ Attributes/ Attribute/ Classification</td>
 <td>1</td>
 <td>String</td>
-<td>HAB=room</td>
+<td>HAB=room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Attributes/Attribute/Description</td>
+<td>Rooms/ Room/ Attributes/ Attribute/ Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Description.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Images/</td>
+<td>Rooms/ Room/ Images/</td>
 <td>0..1</td>
 <td></td>
 <td>Images.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Images/Picture</td>
+<td>Rooms/ Room/ Images/ Picture/</td>
 <td>1..n</td>
 <td></td>
 <td>Picture.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Images/Picture/Url</td>
+<td>Rooms/ Room/ Images/ Picture/ Url</td>
 <td>1</td>
 <td>String</td>
 <td>Url.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Images/Picture/Classification</td>
+<td>Rooms/ Room/ Images/ Picture/ Classification</td>
 <td>1</td>
 <td>String</td>
-<td>HAB=room</td>
+<td>HAB=room.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Images/Picture/Ordered</td>
+<td>Rooms/ Room/ Images/ Picture/ Ordered</td>
 <td>0..1</td>
 <td>String</td>
 <td>Images should be ordered from 1 onward. 1 is top.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Images/Picture/Description</td>
+<td>Rooms/ Room/ Images/ Picture/ Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Description.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Images/Picture/Code</td>
+<td>Rooms/ Room/ Images/ Picture/ Code</td>
 <td>0..1</td>
 <td>String</td>
 <td>Code.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Images/Picture/UpgradeUTCDate</td>
+<td>Rooms/ Room/ Images/ Picture/ UpgradeUTCDate</td>
 <td>0..1</td>
 <td>DateTime</td>
 <td>Indicates the upgrade date of the picture in UTC format.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Description</td>
+<td>Rooms/ Room/ Description</td>
 <td>0..1</td>
 <td>String</td>
 <td>Room description.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Views/</td>
+<td>Rooms/ Room/ Views/</td>
 <td>0..1</td>
 <td></td>
 <td>Views.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Views/View</td>
+<td>Rooms/ Room/ Views/ View/</td>
 <td>1..n</td>
 <td></td>
 <td>List of room views.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Views/View/Code</td>
+<td>Rooms/ Room/ Views/ View/ Code</td>
 <td>1</td>
 <td>String</td>
 <td>View code.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Views/View/Name</td>
+<td>Rooms/ Room/ Views/ View/ Name</td>
 <td>1</td>
 <td>String</td>
 <td>View name.</td>
 </tr>
 
 <tr>
-<td>Rooms /Room/Area</td>
+<td>Rooms/ Room/ Area/</td>
 <td>0..1</td>
 <td>String</td>
 <td>Room area.</td>
@@ -6812,21 +6990,21 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>PaymentOptions /</td>
+<td>PaymentOptions/</td>
 <td>0..1</td>
 <td>String</td>
 <td>Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than <em>MerchantPay</em>.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions /Cards /</td>
+<td>PaymentOptions/ Cards/</td>
 <td>1</td>
 <td></td>
 <td>List of cards allowed.</td>
 </tr>
 
 <tr>
-<td>PaymentOptions /Cards /Card</td>
+<td>PaymentOptions/ Cards/ Card</td>
 <td>1..n</td>
 <td></td>
 <td>Type of card allowed.</td>
@@ -6836,7 +7014,7 @@ is <strong>180000</strong> milliseconds.</p>
 <td>@code</td>
 <td>1</td>
 <td>String</td>
-<td>Code of card. Se the full list of card codes at <a href="/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/">Lists of Data</a>.</td>
+<td>Code of card. Se the full list of card codes at <a href="/connectiontypesbuyers/legacy/listsdata/">Lists of Data</a>.</td>
 </tr>
 
 <tr>
@@ -6847,21 +7025,21 @@ is <strong>180000</strong> milliseconds.</p>
 </tr>
 
 <tr>
-<td>PropertyCategory /</td>
+<td>PropertyCategory/</td>
 <td>0..1</td>
 <td></td>
 <td>Hotels property type. Similar to Type tag, but on supplier&rsquo;s side.</td>
 </tr>
 
 <tr>
-<td>PropertyCategory /Code</td>
+<td>PropertyCategory/ Code</td>
 <td>1</td>
 <td>String</td>
 <td>Supplier property code.</td>
 </tr>
 
 <tr>
-<td>PropertyCategory /Name</td>
+<td>PropertyCategory/ Name</td>
 <td>1</td>
 <td>String</td>
 <td>Supplier property name.</td>
