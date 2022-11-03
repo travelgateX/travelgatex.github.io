@@ -5768,7 +5768,11 @@
 </ul></li>
 </ul></li>
 <li><a href="#application">Application</a></li>
-<li><a href="#execution-example">Execution example</a></li>
+<li><a href="#execution-example">Execution example</a>
+<ul>
+<li><a href="#room-description-map-by-provider-hotel">Room Description map by provider hotel</a></li>
+</ul></li>
+<li><a href="#execution-example-1">Execution example</a></li>
 </ul></li>
 <li><a href="#default-codes">Default Codes</a></li>
 <li><a href="#modifying-data-through-ftp">Modifying data through FTP</a></li>
@@ -5920,6 +5924,7 @@
 <li>Rate Map</li>
 <li>Amenity Map</li>
 <li>Promotion Map</li>
+<li>Room Description Map</li>
 </ul>
 
 <p>Our mapping formats share a common structure. In order to load your maps you just need to follow the instructions below:</p>
@@ -5996,6 +6001,11 @@
 <td>Promotion</td>
 <td>[Context Source]_[Context Destination]\promotion_map.csv</td>
 </tr>
+
+<tr>
+<td>Room Description</td>
+<td>[Context Source]_[Context Destination]\roomdescription_map.csv</td>
+</tr>
 </tbody>
 </table>
 
@@ -6038,6 +6048,11 @@
 <tr>
 <td>Promotion</td>
 <td>/F[folder code]_[unique code]/HotelX_[unique code]/Maps/Promotion/</td>
+</tr>
+
+<tr>
+<td>Room Description</td>
+<td>/F[folder code]_[unique code]/HotelX_[unique code]/Maps/Room/</td>
 </tr>
 </tbody>
 </table>
@@ -6100,7 +6115,8 @@ Here you have the nodes where you can find mapped codes in Search response:<br><
 <strong>Room</strong>: search.options.rooms.code (supplierCode will contain the room&rsquo;s code in supplier&rsquo;s context)<br>
 <strong>Rate</strong>: search.options.rooms.ratePlans.code (supplierCode will contain the rate plan&rsquo;s code of the room in supplier&rsquo;s context)<br>
 <strong>Amenity</strong>: search.options.amenities.code and/or inside rooms (amenitySupplierCode will contain the amenity&rsquo;s code in supplier context)<br>
-<strong>Promotion</strong>: search.options.promotionCode (promotionCodeSupplier will contain the promotion&rsquo;s code in supplier&rsquo;s context)<br></p>
+<strong>Promotion</strong>: search.options.promotionCode (promotionCodeSupplier will contain the promotion&rsquo;s code in supplier&rsquo;s context)<br>
+<strong>Room Description</strong>: search.options.rooms.code (code will contain the description maped code and supplierCode will contain the room&rsquo;s code in supplier&rsquo;s context)<br></p>
 
 <p>Examples of plugin that executes board and/or amenity and/or promotion mapping:<br></p>
 
@@ -6143,6 +6159,22 @@ Here you have the nodes where you can find mapped codes in Search response:<br><
             {
                 &quot;type&quot;: &quot;PROMOTION_MAP&quot;,
                 &quot;name&quot;: &quot;promotion_mapX&quot;
+            }
+        ]
+    }
+}
+</code></pre>
+
+<p><strong>Room descriptions</strong>:</p>
+
+<pre><code class="language-json">{
+    &quot;plugins&quot;: {
+        &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
+        &quot;pluginsType&quot;: [
+            {
+                &quot;type&quot;: &quot;ROOM_MAP&quot;,
+                &quot;name&quot;: &quot;room_map&quot;,
+                &quot;parameters&quot;:[{&quot;key&quot;:&quot;description&quot;, &quot;value&quot;:&quot;true&quot;}]
             }
         ]
     }
@@ -6233,6 +6265,28 @@ For each pair in this list, the mapping will be applied for each amenity. In oth
 }
 </code></pre>
 
+<h4 id="room-description-map-by-provider-hotel">Room Description map by provider hotel</h4>
+
+<p>It works the same way as room map by provider hotel plugin, but it uses the provider room description to map the room code in the hotelx response.</p>
+
+<h3 id="execution-example-1">Execution example</h3>
+
+<p>In this example the context applied by the plugin will be used instead of the settings context.</p>
+
+<pre><code class="language-json">{
+    &quot;plugins&quot;: {
+        &quot;step&quot;: &quot;RESPONSE_OPTION&quot;,
+        &quot;pluginsType&quot;: [
+            {
+                &quot;type&quot;: &quot;ROOM_MAP&quot;,
+                &quot;name&quot;: &quot;room_map&quot;,
+                &quot;parameters&quot;:[{&quot;key&quot;:&quot;description&quot;, &quot;value&quot;:&quot;true&quot;},{&quot;key&quot;:&quot;hotel&quot;, &quot;value&quot;:&quot;true&quot;},{&quot;key&quot;:&quot;context&quot;, &quot;value&quot;:&quot;CTX&quot;}]
+            }
+        ]
+    }
+}
+</code></pre>
+
 <h2 id="default-codes">Default Codes</h2>
 
 <p>This feature allows to set a default code for each code in the source (provider) context. The entities that can have default codes are:<br></p>
@@ -6243,6 +6297,7 @@ For each pair in this list, the mapping will be applied for each amenity. In oth
 <li>Rate</li>
 <li>Amenity</li>
 <li>Promotion</li>
+<li>Room Description</li>
 </ul>
 
 <p><strong>Important</strong>: this feature only must be used in Booking-Flow. Only one default code can be assigned to each supplier context.<br>
