@@ -8708,6 +8708,13 @@
 	"content": " GraphQL schema definition type AlertsXMutation {  createAlert( input: AlertInput!, ): Alert    updateAlert( code: ID!, input: AlertUpdateInput!, ): Alert   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields createAlert(Alert): Mutation to create a new alert  updateAlert(Alert): Mutation to update an existing alert   "
 },
 {
+	"uri": "https://travelgatex.com/connectiontypesbuyers/hotel-x/methods/reservationmanagement/amendments/",
+	"title": "Amendments",
+	"tags": [],
+	"description": "How to amend a booking",
+	"content": " The amendment operations allow you to amend different aspects of a booking.\nThere are currently four amendment operations available:\n Amend Board: allows to amend the board of a booking. Amend Dates: allows to amend the checkin and/or the checkout of a booking. Amend Paxes: allows to amend the paxes of a booking. Amend Remarks: allows to add a special request (remark) on a booking.  Each amendment type must be performend in two steps:\n Query: simulates the amendment Mutation: commits the amendment\nBoth steps return the details of the amendment with the following information\n The booking detail with the amendment applied Amendment fees if applicable AmendmentID (only returned in the query response)   Advanced criteria You can perform the query (simulation) of the amendment:\n sending all the booking information (references, dates, hotel code) or sending the bookingID got in the booking flow  You can perform the mutation (commit) of the amendment sending the amendmentID received in the previous response.\nHow to amend Please, see the Schema through our API playground for your reference.\n"
+},
+{
 	"uri": "https://travelgatex.com/connectiontypesbuyers/legacy/methods/bookingflow/avail/",
 	"title": "Avail",
 	"tags": [],
@@ -9580,7 +9587,7 @@
 	"title": "Management",
 	"tags": [],
 	"description": "Management operations for bookings performed via TGX",
-	"content": " Management operations allows you to operate over the performed bookings with a specific Seller.\nThere are two main operations to manage bookings:\nReservation Management   Booking List How to request a list of your bookings via TGX\n     Cancellation How to cancel a booking\n    "
+	"content": " Management operations allows you to operate over the performed bookings with a specific Seller.\nThere are three main operations to manage bookings:\nReservation Management   Booking List How to request a list of your bookings via TGX\n     Amendments How to amend a booking\n     Cancellation How to cancel a booking\n    "
 },
 {
 	"uri": "https://travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-mappea/",
