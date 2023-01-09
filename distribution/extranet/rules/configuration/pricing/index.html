@@ -3226,6 +3226,38 @@
         </li>
             </ul>
         </li>
+        <li data-nav-id="/connectiontypesbuyers/inventory-content/" class="dd-item">
+          <div>
+            <a href="/connectiontypesbuyers/inventory-content/">
+              <span>Inventory Content Service</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/connectiontypesbuyers/inventory-content/api-reference/" class="dd-item">
+          <div>
+            <a href="/connectiontypesbuyers/inventory-content/api-reference/">
+              <span>API reference</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/connectiontypesbuyers/inventory-content/api-reference/messages/" class="dd-item">
+          <div>
+            <a href="/connectiontypesbuyers/inventory-content/api-reference/messages/">
+              <span>Messages</span>            
+            </a>
+          </div>
+        </li>
+        <li data-nav-id="/connectiontypesbuyers/inventory-content/api-reference/codelists/" class="dd-item">
+          <div>
+            <a href="/connectiontypesbuyers/inventory-content/api-reference/codelists/">
+              <span>Code List</span>            
+            </a>
+          </div>
+        </li>
+            </ul>
+        </li>
+            </ul>
+        </li>
         <li data-nav-id="/connectiontypesbuyers/legacy/" class="dd-item">
           <div>
             <a href="/connectiontypesbuyers/legacy/">
@@ -5756,6 +5788,7 @@
 <li><a href="#add-base-to-selling-pricing-rules">Add Base To Selling Pricing Rules</a></li>
 <li><a href="#minimum-selling-pricing-rules">Minimum Selling Pricing Rules</a></li>
 <li><a href="#suppliers-to-net">Suppliers To Net</a></li>
+<li><a href="#negative-business-rules">Negative Business Rules</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -5966,6 +5999,18 @@
 <p>By default the value for an agency inherits the one set on the general settings.</p>
 
 <p>This rule can be set by <code>agency</code> or by <code>organization</code> on general settings: when defined by agency it can be chosen to set a concrete behaviour or to inherit the value set on the general settings.</p>
+
+<h2 id="negative-business-rules">Negative Business Rules</h2>
+
+<p><img src="./../../../../images/web/distribution_web_pricing_negativebusiness.jpg" alt="Distribution pricing Negative Business Rules" title="Distribution pricing Negative Business Rules" /></p>
+
+<p>This rule allows the Selling Price to be lower than the Purchasing Price. This is allowed through the Selling Pricing Rules at the agency level when negative markup/comission is set.</p>
+
+<p>The value of this rule is gathered on the availability search and then it is applied also on the quote and booking with the original read value.</p>
+
+<p>By default the value for an agency is <code>Do not allow negative business rules</code>, meaning that Selling will never be lower than Purchasing. If allowed, the selling pricing rule, or the combination of rules, will apply even if Selling Price is lower than Purchasing price.</p>
+
+<p>This rule can only be set by <code>agency</code> and it will never be active, in order to prevent manual loading mistakes.</p>
 
 <hr/>
 
