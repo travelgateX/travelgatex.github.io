@@ -5781,21 +5781,25 @@
                   <div class="page-sections-menu">
                       <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
 <li><a href="#global-details">Global Details</a>
 <ul>
-<li><a href="#protocol-and-headers">Protocol and Headers</a></li>
+<li><a href="#protocol-and-headers">Protocol and headers</a>
+<ul>
+<li><a href="#soapaction-header">SOAPAction header</a></li>
+<li><a href="#soap-envelope-example">SOAP Envelope example</a></li>
 <li><a href="#authentication">Authentication</a></li>
-<li><a href="#summary">Summary</a></li>
 </ul></li>
+<li><a href="#timeout-and-responses">Timeout and responses</a>
+<ul>
+<li><a href="#response-messages">Response messages</a></li>
+</ul></li>
+<li><a href="#error-handling">Error Handling</a></li>
+<li><a href="#requests">Requests</a>
+<ul>
+<li><a href="#acronyms">Acronyms</a></li>
 <li><a href="#hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</a></li>
 <li><a href="#hotelrateplannotif">HotelRatePlanNotif</a></li>
 <li><a href="#hotelavailnotif">HotelAvailNotif</a></li>
-<li><a href="#response-messages">Response messages</a>
-<ul>
-<li><a href="#success">Success</a></li>
-<li><a href="#error">Error</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5937,37 +5941,174 @@
 
 	
 
-<h2 id="global-details">Global Details</h2>
+<h1 id="global-details">Global Details</h1>
 
-<p>In this section you can find the three methods you need to implement to receive from Channel-X and all its specifications:</p>
+<p>In this section, you will find some details to take into account to develop ChannelX successfully and the specification of the methods to be developed.</p>
 
 <ul>
-<li><a href="#hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</a></li>
-<li><a href="#hotelrateplannotif">HotelRatePlanNotif</a></li>
-<li><a href="#hotelavailnotif">HotelAvailNotif</a></li>
+<li><a href="#protocol-and-Headers">Protocol and headers</a></li>
+<li><a href="#timeout-and-responses">Timeout and responses</a></li>
+<li><a href="#error-handling">Error Handling</a></li>
+<li><a href="#requests">Requests</a></li>
 </ul>
 
-<p></br></p>
+<h2 id="protocol-and-headers">Protocol and headers</h2>
 
-<h3 id="protocol-and-headers">Protocol and Headers</h3>
+<p>All requests are expected to be standard HTTP POST requests in which the POST body is the request XML in a SOAP envelope like the <a href="#soap-envelope-example">following</a> and the <strong>Content-Type</strong> header is set to <code>&quot;text/xml;charset=UTF-8&quot;</code>.</p>
 
-<p>All requests are expected to be standard HTTP POST requests in which the POST body is the request XML and the Content-Type header is set to <code>&quot;application/xml&quot;</code>.</p>
+<h3 id="soapaction-header">SOAPAction header</h3>
+
+<p>All requests come with a <strong>SOAPAction</strong> header corresponding to the transmitted message. The possible SOAP actions are:</p>
+
+<ul>
+<li><a href="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelAvailNotif" rel="nofollow" target="_blank">http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelAvailNotif</a></li>
+<li><a href="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanNotif" rel="nofollow" target="_blank">http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanNotif</a></li>
+<li><a href="http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanInventoryNotif" rel="nofollow" target="_blank">http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanInventoryNotif</a></li>
+</ul>
+
+<h3 id="soap-envelope-example">SOAP Envelope example</h3>
+
+<pre><code class="language-xml">&lt;s:Envelope xmlns:s = &quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:u = &quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd&quot;&gt;
+    &lt;s:Header&gt;
+    &lt;o:Security s:mustUnderstand = &quot;1&quot; xmlns:o = &quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot;&gt;
+        &lt;o:UsernameToken u:Id = &quot;uuid-d740d5c0-ebc5-45c7-bd74-62b20c963d85-7&quot;&gt;
+            &lt;o:Username&gt; username  &lt;/o:Username&gt;
+            &lt;o:Password Type = &quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText&quot;&gt; password &lt;/o:Password&gt;
+        &lt;/o:UsernameToken&gt;
+    &lt;/o:Security&gt;
+    &lt;/s:Header&gt;
+    &lt;s:Body xmlns:xsi = &quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd = &quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+        The content request
+    &lt;/s:Body&gt;
+&lt;/s:Envelope&gt;
+</code></pre>
 
 <h3 id="authentication">Authentication</h3>
 
-<p>Requests will be sent with a authentication encoded in <em>Base-64</em>. Credentials may be found in <strong>Authorization</strong> header tag, with value <strong>Basic (encoded credentials)</strong> as follows:</p>
+<p>Requests come with a <em>Base-64</em> encoded authentication. Credentials may be found in <strong>Authorization</strong> header tag, with value <strong>Basic (encoded credentials)</strong> as follows:</p>
 
 <p><code>Authorization: Basic aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1RWWg2bVlJSkcyWQ==</code></p>
 
-<h3 id="summary">Summary</h3>
+<p>The user and password to be set and the endpoint that receives the requests have to be informed to us in order to configure your ChannelX.</p>
+
+<h2 id="timeout-and-responses">Timeout and responses</h2>
+
+<p>ChannelX waits for <strong>5000ms</strong> an HTTP 200 OK and a non-null response with a <em>Success</em> element in the response, or if you have a controlled error you can send us an error response.</p>
+
+<h3 id="response-messages">Response messages</h3>
+
+<p>Each request should provide a response for the same type of element that has been sent. For example, if a <em>HotelRatePlanNotif</em> request is received, a <em>HotelRatePlanNotif</em> response should be sent and so on. <a href="#requests">Here</a> you have the specification of the possible requests.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Possible combination Elements regarding Request</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">HotelAvailNotifResponse / HotelAvailNotifResult</td>
+</tr>
+
+<tr>
+<td align="left">HotelRatePlanNotifResponse / HotelRatePlanNotifResult</td>
+</tr>
+
+<tr>
+<td align="left">HotelRatePlanInventoryNotifResponse / HotelRatePlanInventoryNotifResult</td>
+</tr>
+</tbody>
+</table>
+
+<p><br/></p>
+
+<p><strong>Success</strong></p>
+
+<p>For all successful requests, a <em>Success</em> element is expected to be returned in the response. For a <em>HotelAvailNotif</em> request it should be like the following:</p>
+
+<pre><code class="language-xml">&lt;HotelAvailNotifResponse xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
+    &lt;HotelAvailNotifResult&gt;
+        &lt;Success xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;/&gt;
+    &lt;/HotelAvailNotifResult&gt;
+&lt;/HotelAvailNotifResponse&gt;
+</code></pre>
+
+<p><br/></p>
+
+<p><strong>Error</strong></p>
+
+<p>On the other hand, when request provides any error, the response should be like:</p>
+
+<pre><code class="language-xml">&lt;HotelAvailNotifResponse xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
+    &lt;HotelAvailNotifResult&gt;
+        &lt;Errors xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
+            &lt;Error ShortText = &quot;AvailStatusMessages not found&quot; Code = &quot;2&quot;/&gt;
+        &lt;/Errors&gt;
+    &lt;/HotelAvailNotifResult&gt;
+&lt;/HotelAvailNotifResponse&gt;
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Element</strong></th>
+<th align="center"><strong>Rel</strong></th>
+<th align="center"><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Errors</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">Error</td>
+<td align="center">1..n</td>
+<td align="center"></td>
+<td>Displays error information that has occurred in the system</td>
+</tr>
+
+<tr>
+<td align="left">@ShortText</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Brief description of the error</td>
+</tr>
+
+<tr>
+<td align="left">@Code</td>
+<td align="center">1</td>
+<td align="center">Integer</td>
+<td>Check <a href="https://docs.travelgatex.com/connectiontypesbuyers/channel-x/api-reference/codelists/" rel="nofollow" target="_blank">General Details &gt; Error Table</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="error-handling">Error Handling</h2>
+
+<p>First of all, if your system does not respond to us on time or it returns an error response, in order to get closer to real-time, we do not retry the messages again.</p>
+
+<p>Based on this real-time principle, we recommend that your system processes our requests within 100ms on average.</p>
+
+<h2 id="requests">Requests</h2>
+
+<p>The requests from ChannelX have a <strong>5MB maximum size</strong>, without including the headers and the SOAP envelope. In this section, you have the specification of these requests.</p>
+
+<h3 id="acronyms">Acronyms</h3>
+
+<p>On the the following specification you can find the following acronyms:</p>
 
 <p>BR = Only used for: &lsquo;Basic Rates&rsquo;<br />
 DV = Only used for: &lsquo;Derived Rates&rsquo;<br />
 N = Names allowed for a specific element</p>
 
-<p></br></p>
-
-<h2 id="hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</h2>
+<h3 id="hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</h3>
 
 <p>The <code>HotelRatePlanInventoryNotif</code> message contains information about the inventory setup information that should be followed by the structure: Hotel &gt; Rate &gt; Room.</p>
 
@@ -6066,6 +6207,8 @@ N = Names allowed for a specific element</p>
 &lt;/HotelRatePlanInventoryNotif&gt;
 </code></pre>
 
+<p><br/></p>
+
 <p><strong>Example for Derived RatePlan</strong></p>
 
 <pre><code class="language-xml">&lt;HotelRatePlanInventoryNotif xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
@@ -6084,6 +6227,8 @@ N = Names allowed for a specific element</p>
     &lt;/RatePlans&gt;
 &lt;/HotelRatePlanInventoryNotif&gt;
 </code></pre>
+
+<p><br/></p>
 
 <p><strong>Example for Offers</strong></p>
 
@@ -6280,7 +6425,7 @@ N = Names allowed for a specific element</p>
 <td align="left">@Code</td>
 <td align="center">0..1</td>
 <td align="center">String</td>
-<td>Empty if there are viewships conditions</td>
+<td>Empty if there are viewerships conditions</td>
 </tr>
 
 <tr>
@@ -6364,7 +6509,7 @@ N = Names allowed for a specific element</p>
 <td align="left">@CurrencyCode</td>
 <td align="center">0..1</td>
 <td align="center">String</td>
-<td>Must be present if amount tag is present</td>
+<td>Must be present if the amount tag is present</td>
 </tr>
 
 <tr>
@@ -6964,9 +7109,7 @@ N = Names allowed for a specific element</p>
 </tbody>
 </table>
 
-<p></br></p>
-
-<h2 id="hotelrateplannotif">HotelRatePlanNotif</h2>
+<h3 id="hotelrateplannotif">HotelRatePlanNotif</h3>
 
 <p>The <code>HotelRatePlanNotif</code> message contains information about rate prices.</p>
 
@@ -7018,6 +7161,8 @@ N = Names allowed for a specific element</p>
     &lt;/request&gt;
 &lt;/HotelRatePlanNotif&gt;
 </code></pre>
+
+<p><br/></p>
 
 <p><strong>Example for Derived RatePlan</strong></p>
 
@@ -7366,9 +7511,7 @@ N = Names allowed for a specific element</p>
 </tbody>
 </table>
 
-<p></br></p>
-
-<h2 id="hotelavailnotif">HotelAvailNotif</h2>
+<h3 id="hotelavailnotif">HotelAvailNotif</h3>
 
 <p>The <code>HotelAvailNotif</code> message contains information about rate availability and allotment conditions.</p>
 
@@ -7584,103 +7727,6 @@ N = Names allowed for a specific element</p>
 <td align="center">0..1</td>
 <td align="center">Boolean</td>
 <td><em>BR</em>. Room-RatePlan can be sold with no limit if @Status is Open</td>
-</tr>
-</tbody>
-</table>
-
-<p></br></p>
-
-<h2 id="response-messages">Response messages</h2>
-
-<p>Each request should provide a response for the same type of element that has been sent. For example, if a <em>HotelRatePlanNotif</em> request is received, a <em>HotelRatePlanNotif</em> response should be sent and so on.</p>
-
-<table>
-<thead>
-<tr>
-<th align="left"><strong>Possible combination Elements regarding Request</strong></th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="left">HotelAvailNotifResponse / HotelAvailNotifResult</td>
-</tr>
-
-<tr>
-<td align="left">HotelRatePlanNotifResponse / HotelRatePlanNotifResult</td>
-</tr>
-
-<tr>
-<td align="left">HotelRatePlanInventoryNotifResponse / HotelRatePlanInventoryNotifResult</td>
-</tr>
-</tbody>
-</table>
-
-<p></br></p>
-
-<h3 id="success">Success</h3>
-
-<p>For all successful requests is expected to be returned a <em>Success</em> element in the response. On a <em>HotelAvailNotif</em> request it should be looking like the following:</p>
-
-<pre><code class="language-xml">&lt;HotelAvailNotifResponse xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
-    &lt;HotelAvailNotifResult&gt;
-        &lt;Success xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;/&gt;
-    &lt;/HotelAvailNotifResult&gt;
-&lt;/HotelAvailNotifResponse&gt;
-</code></pre>
-
-<p></br></p>
-
-<h3 id="error">Error</h3>
-
-<p>On the other hand, when request provides any error, the response should look like:</p>
-
-<pre><code class="language-xml">&lt;HotelAvailNotifResponse xmlns = &quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&quot;&gt;
-    &lt;HotelAvailNotifResult&gt;
-        &lt;Errors xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
-            &lt;Error ShortText = &quot;AvailStatusMessages not found&quot; Code = &quot;2&quot;/&gt;
-        &lt;/Errors&gt;
-    &lt;/HotelAvailNotifResult&gt;
-&lt;/HotelAvailNotifResponse&gt;
-</code></pre>
-
-<table>
-<thead>
-<tr>
-<th align="left"><strong>Element</strong></th>
-<th align="center"><strong>Rel</strong></th>
-<th align="center"><strong>Type</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="left">Errors</td>
-<td align="center">1</td>
-<td align="center"></td>
-<td></td>
-</tr>
-
-<tr>
-<td align="left">Error</td>
-<td align="center">1..n</td>
-<td align="center"></td>
-<td>Displays error information that has occurred in the system</td>
-</tr>
-
-<tr>
-<td align="left">@ShortText</td>
-<td align="center">1</td>
-<td align="center">String</td>
-<td>Brief description of the error</td>
-</tr>
-
-<tr>
-<td align="left">@Code</td>
-<td align="center">1</td>
-<td align="center">Integer</td>
-<td>Check <em>General Details &gt; Error Table</em></td>
 </tr>
 </tbody>
 </table>
