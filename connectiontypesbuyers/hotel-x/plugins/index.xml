@@ -98,7 +98,7 @@ You can also replace the value of an existing parameter by adding into the query
         Aggregation plugin extends HotelX allowing the aggregation of Supplier options using different business rules.
 What it does Aggregation plugin aggregate Supplier options based on field keys applying a selector function over field values.
 It&amp;rsquo;s based on SQL Aggregate Functions.
- Field Keys as a combination of:  binding board cancelPolicy currency hotel market payment promotion rateRules  refundable room supplement supplier surcharges ratePlan status   How to use it Use this plugin by adding it to the settings in your HotelX Search Query.
+ Field Keys as a combination of:  binding board cancelPolicy currency hotel market payment promotion rateRules  refundable room supplement supplier surcharges ratePlan status eqRates   How to use it Use this plugin by adding it to the settings in your HotelX Search Query.
         
           [...]
         

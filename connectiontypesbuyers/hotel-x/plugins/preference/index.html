@@ -3447,7 +3447,7 @@
         <li data-nav-id="/connectiontypessellers/hotelpullsellers/" class="dd-item">
           <div>
             <a href="/connectiontypessellers/hotelpullsellers/">
-              <span>Hotel Pull Sellers API</span>            
+              <span>Hotel Pull Sellers API - THIS API HAS BEEN DEPRECATED SINCE JANUARY 2023, PLEASE CONTACT SALES.SUPPORT@TRAVELGATE.COM FOR MORE INFORMATION ON HOW TO JOIN THE MARKETPLACE AS A SELLER.</span>            
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
@@ -5796,6 +5796,7 @@
 <li><a href="#sample-file">Sample File</a></li>
 </ul></li>
 <li><a href="#dateformat"><strong>Date format</strong></a></li>
+<li><a href="#primarykey-eqrates-option">PrimaryKey &ldquo;eqRates&rdquo; option</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -6216,6 +6217,40 @@ T10,,GTA;HOBV2;TOU,,,,,,,,,,RQ;OK,,ACDMS,,5.5,FALSE
 <div class="notices warning" ><p>Date format <strong>yyyy-mm-dd</strong> is mandatory</p>
 </div>
 
+
+<h3 id="primarykey-eqrates-option">PrimaryKey &ldquo;eqRates&rdquo; option</h3>
+
+<pre><code class="language-json">{
+    &quot;plugins&quot;: {
+        &quot;step&quot;: &quot;RESPONSE&quot;,
+        &quot;pluginsType&quot;: [
+            {
+                &quot;type&quot;: &quot;AGGREGATION&quot;,
+                &quot;name&quot;: &quot;cheapest_price&quot;,
+                &quot;parameters&quot;: [
+                    {
+                        &quot;key&quot;: &quot;primaryKey&quot;,
+                        &quot;value&quot;: &quot;hotel,supplier,room,eqRates&quot;
+                    }
+                ]
+            }
+        ]
+    }
+}
+</code></pre>
+
+<p>This will combine the rateRules and ratePlans of an option and group all of the options, based on the file uploaded CTX_rateplanraterule.csv via ftp:</p>
+
+<pre><code class="language-csv">Code Source,Code Tgx,Code Destination
+Null,NON_REFUNDABLE,NRF
+NOREEMBOLSABLE,Null,NRF
+PUBLICA,Null,Null - Standard
+Null,NON_REFUNDABLE;PACKAGE,NRF/Package
+Null,PACKAGE,Packageb
+OPACANRF,Null,NRF/Package
+</code></pre>
+
+<p>With this csv uploaded, for example all the options with ratePlan code &ldquo;NOREEMBOLSABLE&rdquo; and without any rateRules, will compte with each other. Also, all the options without ratePlan code or without ratePlan mapped and rateRules &ldquo;NON_REFUNDABLE&rdquo; will compete each other.</p>
 
 <hr/>
 
