@@ -6119,6 +6119,12 @@
                         &lt;/DetailDescription&gt;
                     &lt;/AdditionalDetail&gt;
                 &lt;/AdditionalDetails&gt;
+                &lt;Fees&gt;
+                    &lt;AmendFees&gt;
+                        &lt;AmendFee Amount = &quot;4&quot; CurrencyCode = &quot;EUR&quot; ChargeUnit = &quot;20&quot;/&gt;
+                        &lt;AmendFee Percent = &quot;5&quot; CurrencyCode = &quot;EUR&quot; ChargeUnit = &quot;15&quot;/&gt;
+                    &lt;/AmendFees&gt;
+                &lt;/Fees&gt;
                 &lt;Description&gt;
                     &lt;Text&gt;bb&lt;/Text&gt;
                 &lt;/Description&gt;
@@ -7012,6 +7018,48 @@
 <td>1</td>
 <td>String</td>
 <td>Description. If additional details type is &ldquo;39&rdquo;, the name of the trading partner for this rate.</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/Fees</td>
+<td>0..1</td>
+<td></td>
+<td>Rate plan Fees</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/Fees/AmendFees</td>
+<td>0..n</td>
+<td></td>
+<td>List of Amend Fees. Only present when IsModifiable equals true and the modifications apply fees.</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/Fees/AmendFees/AmendFee</td>
+<td>1..n</td>
+<td></td>
+<td>Amend Fee</td>
+</tr>
+
+<tr>
+<td>@Amount</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Amount that will be charged in case of modifications applying the current fee</td>
+</tr>
+
+<tr>
+<td>@Percent</td>
+<td>0..1</td>
+<td>Decimal</td>
+<td>Percent that will be charged in case of modifications applying the current fee</td>
+</tr>
+
+<tr>
+<td>@ChargeUnit</td>
+<td>1</td>
+<td>Integer</td>
+<td>Indicates the days before check-in to apply the Amend Fees</td>
 </tr>
 
 <tr>
