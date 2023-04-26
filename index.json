@@ -1358,7 +1358,7 @@
 	"content": " GraphQL schema definition type AuditData {  transactions: [Transactions!]!    timeStamp: DateTime!    processTime: Float!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll('li.deprecated-button-container')[0]; list.style.display = 'block'; console.log(list.style); } }  Fields transactions([Transactions!]!):   timeStamp(DateTime!):   processTime(Float!):    Required by HotelSearch:    HotelQuote:    HotelBooking:    Response:    HotelBookPayload:    HotelCancelPayload:    HotelCommitPayload:     "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/tools/availability-simulator.1/",
+	"uri": "https://travelgatex.com/inventory/extranet/tools/availability-simulator.1/",
 	"title": "Availability simulator",
 	"tags": [],
 	"description": "",
@@ -2352,7 +2352,7 @@
 	"content": " GraphQL schema definition  enum DestinationType{   ZONE,    CITY,    COUNTRY,   }   Required by DestinationData:     "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/faq/discount-supplement/",
+	"uri": "https://travelgatex.com/inventory/extranet/faq/discount-supplement/",
 	"title": "Discount/Supplement using derived rates",
 	"tags": [],
 	"description": "Know how the create and configurate different discounts or supplements",
@@ -3122,7 +3122,7 @@
 	"content": " GraphQL schema definition  enum FolderTemplate{   FOLDER_DEFAULT,   }   Required by SuitFolderInput:     "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/faq/free-children-baby/",
+	"uri": "https://travelgatex.com/inventory/extranet/faq/free-children-baby/",
 	"title": "Free children and Free baby option ",
 	"tags": [],
 	"description": "Know how the free children and baby option works",
@@ -3588,7 +3588,7 @@
 	"title": "Hotel-X Buyers API",
 	"tags": [],
 	"description": "Hotel-X: NextGen Hotel Search API",
-	"content": "Hotel-X API is a powerful aggregation solution that allows you to get results from the largest network of Sellers with just one request. You have the possibility to aggregate (or not!) at different levels like hotel, room type and rate plan among others.\nYou can build on your connectivity a robust business logic by using easily a first-in-industry plugin architecture. Leverage the power and flexibility of Hotel-X plugins to get an edge over your competitors. Hotel-X will replace the business logic in your system as you will get an already processed response. For example, you will get the cheapest options among all your suppliers, or different options in the currency that you prefer.\nA plugin is a piece of code that is executed inside our application that gives you an extra functionality over the requests/responses such as currency conversion.Plugins are a core package in the Go Programming language. You can learn more about how to use plugins here . Using Hotel-X, you will be able to empower your travel websites and apps, expand your catalogue of hotel booking services and improve hotel search times and accuracy by customizing aggregated responses based on your prefered criteria.\n"
+	"content": "Hotel-X API is a powerful aggregation solution that allows you to get results from the largest network of Sellers with just one request. You have the possibility to aggregate (or not!) at different levels like hotel, room type and rate plan among others.\nYou can build on your connectivity a robust business logic by using easily a first-in-industry plugin architecture. Leverage the power and flexibility of Hotel-X plugins to get an edge over your competitors. Hotel-X will replace the business logic in your system as you will get an already processed response. For example, you will get the cheapest options among all your suppliers, or different options in the currency that you prefer.\nA plugin is a piece of code that is executed inside our application that gives you an extra functionality over the requests/responses such as currency conversion.Plugins are a core package in the Go Programming language. You can learn more about how to use plugins here . The API may change without prior notice. New fields without values may appear. Your application should be able to handle them. If you need help, please refer to the documentation or contact us. Using Hotel-X, you will be able to empower your travel websites and apps, expand your catalogue of hotel booking services and improve hotel search times and accuracy by customizing aggregated responses based on your prefered criteria.\n"
 },
 {
 	"uri": "https://travelgatex.com/connectiontypessellers/hotelpushsellers/api-reference/messages/product-load/hotelavailnotif/",
@@ -5747,14 +5747,14 @@
 	"content": "TravelgateX is an online B2B marketplace providing seamless connectivity between travel companies across the world. We have 3 APIs available for integration:\n Hotel-X is our Buyer\u0026rsquo;s API, completely built in GraphQL from our many years of experience with travel XML integrations, it offers state of the art, cutting edge API technology that is quick to learn and makes integration simple and fast.\n Hotel Pull Sellers API is our generic pull API to which any hotel and accomodation supplier can connect to and immediately get access to 1000s of potential clients.\n Hotel Push Sellers API is our generic push API to which channel managers connect to in order to get access to 1000s of potential clients with one single integration.\n                                                                                                                                                                                         \nIn our Network, we call Partners all the travel companies connected to our APIS. Our Partners are Buyers, Sellers and Tech Partners.\nBUYERS are companies that come to TGX to source hotel \u0026amp; accomodation product.\nBuyers can be:\n Online travel agents Travel Tech Service Providers Tour operators Wholesalers  As a Buyer, you connect once to our HotelX API and get access to a wide selection of realtime, hotel bed booking databases into your applications.\nOur Buyers need to have their own commercial agreement with the hotel accomodation supplier in place before requesting access to their system via TGX. Once that has been arranged, we will activate the connection between your system and the Seller\u0026rsquo;s system in order to begin displaying hotel bed availability directly in your client applications and interfaces.\n SELLERS are hotel and accomodation suppliers/providers that have an inventory of hotel beds available for online booking.\nSellers are:\n B2B travel aggregators Wholesalers Travel metasearch engines Large hotel chains Incoming Agencies/DMCs Travel Tech Service Providers  As a Seller, TravelgateX connects your realtime booking databases and make them available to Buyers. Where you have made set pricing arrangements with particular Buyers, specific pricing is displayed as per your agreements. TravelgateX supports suppliers to reach new Buyers by helping make it easy for them to sign up for hotel and travel service contracts via our marketplace.\n"
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/overview/",
+	"uri": "https://travelgatex.com/inventory/extranet/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "Inventory extranet Overview",
 	"content": " Extranet Overview The Inventory extranet allows the Buyer to access and configure the SetUp of the dynamic inventory from all the Channel Managers connected to you. You will have access to different tools, components and panels to create, modify or edit hotels, rates, rooms and sales conditions.\nInventory is also available to load your own static contracts as a Seller: load allotment, prices, discounts, supplements\u0026hellip;\nSections Once you are logged in, you will be redirected to the home page where you\u0026rsquo;ll see the following tabs.\n Inventory Product Manage Permissions  Inventory has different user permissions, so the functionalities will be shown in the extranet depending on your user type. Check our documentation to know how to work with the multiple functionalities in the extranet. You can also check our short tutorial videos video tutorials. "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/overview/",
+	"uri": "https://travelgatex.com/inventory/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "Inventory Overview",
@@ -6678,7 +6678,7 @@
 	"content": " GraphQL schema definition  enum RangePrice{   LESS,    GREATER,   }   Required by AlertPrice:  Price contains the specific configuration for Price alert Type  AlertPriceInput:  Price input  AlertPriceUpdateInput:  Price update   "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/load-product/manual-load/rate-load/",
+	"uri": "https://travelgatex.com/inventory/extranet/load-product/manual-load/rate-load/",
 	"title": "Rate: Availability and Price load",
 	"tags": [],
 	"description": "Load allotment, availability conditions and prices to your rates",
@@ -7525,7 +7525,7 @@
 	"content": "Providers needs to implement HotelRatePlanInventoryRetrieve meessages to retrieve Seller\u0026rsquo;s static inventory in order to map the hotelier inventory into their system. Optionally Providers can set up the product using HotelRatePlanInventoryNotif messages.\nFinally, in Authentication section you while find how to sent the authentication information in the set-up messages.\n  HotelRatePlanInventoryRetrieve HotelRatePlanInventoryRetrieve message\n     HotelRatePlanInventoryNotif HotelRatePlanInventoryNotif message\n     Authentication How to sign in\n    "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/load-product/setup/",
+	"uri": "https://travelgatex.com/inventory/extranet/load-product/setup/",
 	"title": "SetUp",
 	"tags": [],
 	"description": "Configure the SetUp and structure of your inventory",
@@ -8806,7 +8806,7 @@
 	"content": " Typical use case of message exchange flow between Channel Manager and Inventory can be resumed as: Synchronize Hotelier product:  Channel Managers retrieve static inventory (Hotel/Rate Plans/Rooms) from Inventory using HotelRatePlanInventoryRetrieve in order to map hotelier inventory into their system.\n Channel Managers Push/Notif Rate Plan information to Inventory using HotelRatePlanNotif in order to synchronize hotelier rates.\n Channel Managers Push/Notif Availability information to Inventory using HotelAvailNotif in order to synchronize hotelier availability/allotment.\n  Synchronize Bookings (Confirmations / Cancellations):  Inventory can Push/Notify reservations and cancellations to Channel Managers using HotelResNotif and CancelNotif.\n Channel Managers can retrieve reservations using HotelResRetrieve.\n Use both systems as described above.\n  Optionally, check if synchronization is correct:  Channel Managers are able to retrieve dynamic rates using HotelRatePlanRetrieve.\n Channel Managers are able to retrieve availability using HotelAvailRetrieve.\n  "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/getting-started/typical-scenario/",
+	"uri": "https://travelgatex.com/inventory/getting-started/typical-scenario/",
 	"title": "Channel Manager Typical Scenario",
 	"tags": [],
 	"description": "Typical Channel Manager workflow explained",
@@ -8897,7 +8897,7 @@
 	"content": " Knowledge is power and that\u0026rsquo;s what the product Insights offers, based on more than 3 billion search requests and more than 25,000 bookings per day:\n What is the performance of your infrastructure? What hotelier product is being requested and booking around the world? How are you doing with respect to your competitors?  In order to answer the three previous questions, the product has been designed in three parts:\nPerformance This first dataset answers the question of: What is the performance of your infrastructure? With it you will be able to know in detail the performance of your requests for searches, quotes, bookings and cancellations. You will know the status of your requests, what types of errors are you receiving, what times per request you\u0026rsquo;re handling. Find out more about performance here.\nInsights This second dataset answers the question of: What hotelier product is being requested and booking around the world? With it you will be able to know in detail the information of the requests of searches and the characteristics of the bookings throught TravelgateX, the global marketplace. Hotels, destinations, markets, prices are only a part of the information that you will have with the product Insights. Find out more about insights here.\nBenchmark Finally, with benchmark datasets we offer you the competitive advantage of knowing how you are doing with respect to the competition. The benchmark is available for:\n Performance. The comparisons are based on the ratio of searches, quotes, bookings and cancellation ok requests, plus you will be able to compare your time responses with respect to other competitors. Find out more about benchmark here. Insights. The comparisons are based on the number of available hotels, total bookings and net revenue, plus you will be able to see your position with respect to other competitors filtering at the level of country, city and clients/suppliers. Find out more about benchmark here. Hotel Rates. The comparisons are based on the price per hotel returned by your organization against the rates returned by your competitors for a specific check-in week and market, and for both searches and bookings requests.    Performance Dataset Learn about how the information is stored in our Performance Dataset\n     Insights Dataset Learn about how the information is stored in our Insights Dataset\n     Benchmark Dataset Learn about how the information is stored in our Benchmark Datasets\n    "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/load-product/manual-load/derivedrate-load/",
+	"uri": "https://travelgatex.com/inventory/extranet/load-product/manual-load/derivedrate-load/",
 	"title": "Derived Rate: Availability and Price load",
 	"tags": [],
 	"description": "Load availability conditions and supplements or discounts to your derived rates",
@@ -8953,7 +8953,7 @@
 	"content": "Welcome to TravelgateX! Learn the basics of using our APIs, and start building integrations quickly and securely.\n  Overview Understanding our marketplace\n     Quickstart How to get support for using our APIs\n     Concepts Basic concepts for all of the TravelgateX platform\n     Playground Try our API now\n    Learning GraphQL     \n"
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/getting-started/",
+	"uri": "https://travelgatex.com/inventory/getting-started/",
 	"title": "Getting Started",
 	"tags": [],
 	"description": "Basic information to start with",
@@ -9065,7 +9065,7 @@
 	"content": "In order to increase performance and improve response times (in Search), you can add the Connection: keep-alive header to all our transactions.\n"
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/load-product/",
+	"uri": "https://travelgatex.com/inventory/extranet/load-product/",
 	"title": "Load your inventory",
 	"tags": [],
 	"description": "Steps and manual to load your inventory using the extranet",
@@ -9079,7 +9079,7 @@
 	"content": "Logging provides simple access to all your transactions\u0026rsquo; traces. Search and download logs in batch or individual mode from your transactions in the TravelgateX Marketplace.\n  Overview Logging Overview\n     How-to guides Perform specific tasks\n     Reference Reference Documentation\n     Release Notes New Updates \u0026amp; Releases\n    "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/load-product/manual-load/",
+	"uri": "https://travelgatex.com/inventory/extranet/load-product/manual-load/",
 	"title": "Manual Load",
 	"tags": [],
 	"description": "Load avaialbility, prices and conditions",
@@ -9156,7 +9156,7 @@
 	"content": "Our Object pages describe every single resource, and field in our schema.\nYou can access our Schema interactively in our API Playground, but if you would like to understand each object’s properties, have a look at the relevant page here.\nEach object is described in the same way: - A short definition of the Object - An interactive GraphQL schema definition - A full list of all Fields in the object - A list of which other objects require this Object - Where possible, we are adding examples of how to use this Object in your queries.\nYou can update any page of our documentation by clicking on ‘Edit page’ and sending a pull request or by making a comment on the page. Our average turnaround for responding to pull requests or comments is less than 24 hours. "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/load-product/manual-load/offers-load/",
+	"uri": "https://travelgatex.com/inventory/extranet/load-product/manual-load/offers-load/",
 	"title": "Offers: Availability conditions load",
 	"tags": [],
 	"description": "Load availability conditions to your offers",
@@ -9394,14 +9394,14 @@
 	"content": " Booking Persistence is a plugin that allows clients to store bookings.\nWhat it does Booking Persistence allows clients to store their bookings and avoid to duplicate them. Two bookings with the same client reference are considered duplicated bookings. With this plugin all the bookings of an organization will be unique (by clientReference). All the bookings will also be stored until the day after the checkout at the hotel. This plugin can only be executed in book service. An application/communication error during booking process will store a persistent booking with UNKNOWN status. In the following bookings with same client reference, the same response will be returned. In these cases, we don\u0026rsquo;t send a request to the provider and the booking is read from database. This plugin is used for storing and retrieving the bookings. This two processes are executed transparently for the client in the booking process. If the booking returned is a retrieved booking, the application will show a warning like this:\n{ \u0026quot;data\u0026quot;: { \u0026quot;hotelX\u0026quot;: { \u0026quot;book\u0026quot;: { \u0026quot;auditData\u0026quot;: null, \u0026quot;booking\u0026quot;: { \u0026quot;price\u0026quot;: null, \u0026quot;quotePrice\u0026quot;: null, \u0026quot;status\u0026quot;: \u0026quot;BookingStatus\u0026quot;, \u0026quot;remarks\u0026quot;: null, \u0026quot;reference\u0026quot;: { \u0026quot;client\u0026quot;: \u0026quot;clientReference\u0026quot;, \u0026quot;supplier\u0026quot;: \u0026quot;supplierReference\u0026quot; }, \u0026quot;holder\u0026quot;: null, \u0026quot;hotel\u0026quot;: null }, \u0026quot;errors\u0026quot;: null, \u0026quot;warnings\u0026quot;: [ { \u0026quot;code\u0026quot;: \u0026quot;FETCHED_BOOKING\u0026quot;, \u0026quot;type\u0026quot;: \u0026quot;PLUGIN_WARNING\u0026quot;, \u0026quot;description\u0026quot;: \u0026quot;booking obtained by a retry\u0026quot; } ] } } } }  How to use it Use this plugin by adding it to the settings in your HotelX Search Query.\nWorkflow Execution example mutation ($input: HotelBookInput!, $settings: HotelSettingsInput) { hotelX { book(input: $input, settings: $settings) { auditData { transactions { request response } } booking { price { currency net gross binding exchange { currency rate } markups { channel currency binding net gross exchange { currency rate } rules { id name type value } } } quotePrice { currency net gross binding } status remarks reference { client supplier } holder { name surname } hotel { start end hotelCode hotelName boardCode occupancies { id paxes { age } } rooms { code description occupancyRefId price { currency net gross binding } } } } errors { code type description } warnings { code type description } } } }  { \u0026quot;input\u0026quot;: { \u0026quot;optionRefId\u0026quot;: \u0026quot;optionID\u0026quot;, \u0026quot;clientReference\u0026quot;: \u0026quot;clientReference\u0026quot;, \u0026quot;holder\u0026quot;: { \u0026quot;name\u0026quot;: \u0026quot;Name1\u0026quot;, \u0026quot;surname\u0026quot;: \u0026quot;Surname1\u0026quot; }, \u0026quot;paymentCard\u0026quot;: { \u0026quot;cardType\u0026quot;: \u0026quot;VI\u0026quot;, \u0026quot;holder\u0026quot;: { \u0026quot;name\u0026quot;: \u0026quot;Name1\u0026quot;, \u0026quot;surname\u0026quot;: \u0026quot;Surname1\u0026quot; }, \u0026quot;number\u0026quot;: \u0026quot;41111111111111111\u0026quot;, \u0026quot;CVC\u0026quot;: \u0026quot;778\u0026quot;, \u0026quot;expire\u0026quot;: { \u0026quot;month\u0026quot;: 10, \u0026quot;year\u0026quot;: 22 } }, \u0026quot;rooms\u0026quot;: [ { \u0026quot;occupancyRefId\u0026quot;: 1, \u0026quot;paxes\u0026quot;: [ { \u0026quot;name\u0026quot;: \u0026quot;Name1\u0026quot;, \u0026quot;surname\u0026quot;: \u0026quot;Surname1\u0026quot;, \u0026quot;age\u0026quot;: 1 }, { \u0026quot;name\u0026quot;: \u0026quot;Name2\u0026quot;, \u0026quot;surname\u0026quot;: \u0026quot;Surname2\u0026quot;, \u0026quot;age\u0026quot;: 30 } ] } ] }, \u0026quot;settings\u0026quot;: { \u0026quot;plugins\u0026quot;: { \u0026quot;step\u0026quot;: \u0026quot;REQUEST\u0026quot;, \u0026quot;pluginsType\u0026quot;: [ { \u0026quot;name\u0026quot;: \u0026quot;booking_detail_persistence\u0026quot;, \u0026quot;type\u0026quot;: \u0026quot;POST_STEP\u0026quot; } ] }, \u0026quot;client\u0026quot;: \u0026quot;client\u0026quot;, \u0026quot;auditTransactions\u0026quot;: true, \u0026quot;timeout\u0026quot;: 100000 } }  File format No files are needed in order to use this plugin.\n"
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/load-product/calendar/",
+	"uri": "https://travelgatex.com/inventory/extranet/load-product/calendar/",
 	"title": "Calendar",
 	"tags": [],
 	"description": "Check your loaded availability conditions and prices with the calendar",
 	"content": " The Calendar tool will allow you to check the information loaded in a hotel: conditions, amount per room, amount per passenger, amount per occupancy, final amount that will be shown in the availability search, meal plan supplements and derived rate amounts (with their conditions).\nAs in previous tools of the extranet, you will need to select the client and the provider. Then, you will be able to introduce the hotel and rate for which you want to check the information that has been loaded in the system. Once the rate is selected, a filter that allows you to filter per room or derived rate will appear. These two options, unlike the rate, are optional and if you do not indicate information in them, all product loaded for the rate will be displayed.\n\nAfter selecting your filters you can click the Search button and the calendar will be displayed.\nOn top of the calendar you will see a checkbox row in which you can select the information that you want to be displayed. If there is nothing selected you will only see the general information of the rooms of the specific rate filtered.\n\nAs you can see in our example above, we can see the rooms of the BARTEST rate:\n Double Room (DBLRO) Junior Suite Deluxe (JSUITDLX)\n The numbers inside the brackets is the Standard Occupancy for that room. This value will help us to calculate the total amount of the room.*\n  For each room and day you will find availability information as the current booking limit, the booking sold and checkbox for free sales and stop sales conditions. In green it means that those days ara available to book, in red it means that there is a stop sale, and the light green that there is some kind of close sales, as close on departure or close on arrival.\nFor example, the Double Room has the free sales activated for all those days, except 25\u0026frasl;02 and 26\u0026frasl;02 that have a close sales. Also, from 04/03 to 05/03 a close on departure is loaded. The Junior Suite Deluxe is not working with free sales, but has a booking limit of 5 for each day.\nUse cases (checking only these conditions):\n Availability request from Tuesday 02/03 to Friday 05/03: There will be no availability for any room because Friday 05/03 is not possible to do a check out (close on departure loaded). Availability request from Friday 26\u0026frasl;02 to Sunday 28\u0026frasl;02: There will be availability only for the Junior Suite Deluxe room. There will be no availability for the Double Room because Friday 26\u0026frasl;02 there is a close sales. Availability request from Saturday 06/03 to Friday 12\u0026frasl;03: There will be availability for both rooms.  In order to see more details we will check the additional options.\nConditions To be able to see the availability conditions loaded, you should check the Conditions option:\n\nWith this view you will be able to check the minimum and maximum stay length and release. For example, for all days, the Double Room has a condition of minimum 3 nights of stay length and a minimum release of 7 nights. However, the Junior Suite Deluxe has 15 of minimum release and a minimum of 3 nights and a maximum of 7 nights during the stay.\nUse cases (adding the LOS and release conditions):\n Availability request from Saturday 06/03 to Friday 12\u0026frasl;03 with 5 days of release: There will be no availability for any room because their minimum release condition. Availability request from Friday 26\u0026frasl;02 to Sunday 28\u0026frasl;02 with 25 days of release: There won\u0026rsquo;t be availability for the Junior Suite Deluxe room because the minimum nights of stay is 3. There won\u0026rsquo;t be availability for the Double Room because Friday 26\u0026frasl;02 there is a close sales and the minimum nights of stay is 3. Availability request from Saturday 06/03 to Friday 12\u0026frasl;03 with 10 days of release: There will be availability only for the Double Room because the release condition.  Price Inventory-X system allows prices to be loaded in 3 different ways: price per room, price based on standard occupancy and price per occupancy. You will see three options in the checkbox row. Also, you have the Final Occupancies Amounts that allows you to check the final amount for each occupancy loaded after the calculations done by the system depending on the price type used to load.\nIn this example, the Double room has price loaded per room from Friday 26\u0026frasl;02 to Sunday 28\u0026frasl;02 and, after that, the price used is price per occupancy. You can see the price loaded by type, but in the Final Availability Occupancy Prices row you will see the price that will be shown in the availability requests, including all calculations as extra passengers supplements. The currency is set up at rate level.\nUse cases (Double Room):\n From 26\u0026frasl;02 to 28\u0026frasl;02: There is a price per room of 100€. All occupancies equal and below the standard occupancy (2) have the same price. Occupancies above the standard occupancy have price if a supplement was loaded. In this case child and baby have a supplement of 0€ (total price remains 100€) and a third adult a supplement of 20€ (total price for three adults is 120€). From 01/03 to 06/03: There is price per occupancy loaded. In this case, the price loaded is the one loaded for each occupancy. In the example you can see price loaded for 1 adult, 2 adults, 2 adults and a baby and 2 adults and a child. Price for 3 adults has not been loaded, so there won\u0026rsquo;t be availability response for those dates in this room for 3 adults.\n From 07/03 to 17\u0026frasl;03: There is not price loaded, so there won\u0026rsquo;t be availability for this room on those dates.  Board/MealPlan supplements In case that you want to see the board supplements information you should select the option Supplements Board.\n\nIn this example, the Double room has board supplements loaded from Monday 01/03 to Saturday 06/03. The base meal plan or board for this rate was Bed \u0026amp; Breakfast, but availability with All Inclusive will be show for those dates with a supplement added to the final price. In this case, for each adult and each day in the stay, the price will be incremented 35€. For each child and day, the price will be incremented 15€, and for each baby the price won\u0026rsquo;t be incremented because it was loaded as 0€. The Junior Suite Deluxe doesn\u0026rsquo;t have any board supplement, so only Bed \u0026amp; Breakfast options will be shown for this room.\nDerived Rates In case that you want to see the Derived Rates information you should select the option Derived Rates.\n\nIn this example, the Double room has a Derived Rate Early Bird Discount 10%. As you can see, below the final occupancy prices for that room, you will see the final occupancy prices for the derived rate. In the row below, you can see the discount applied, that in this example is a 10% with the condition of a minimum release of 60 days.\nSo, in this example, if an availability request is made with a release of 60 days or more, for a stay date range from 26\u0026frasl;02 to 28\u0026frasl;02 and 2 adults, two options will be shown:\n Base Rate with Double Room and price 100€. Derived Rate with Double Room and price 90€.  Offers In case that you want to see the Offers information you should select the option Offers.\n\nWith this information you will be able to check if the offer is active or not and if there is some kind of availability conditions as close sales.\n "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/faq/cancel-policies/",
+	"uri": "https://travelgatex.com/inventory/extranet/faq/cancel-policies/",
 	"title": "Cancel Policies",
 	"tags": [],
 	"description": "Know how the load different cancellation policies by rate and date",
@@ -9464,7 +9464,7 @@
 	"content": " For connectivities we will use a POST request to the suppliers system.\nThe headers we will use to send the POST request are:\n   Key Value     Content-Type text/xml; charset=utf-8   Accept application/xml   Accept-Encoding gzip   Connection Keep-Alive    The different methods from our API can be sent to 1 unique endpoint or to different enpoints. These endpoints will be set in the configuration TravelgateX receives from the buyer in each request. Endpoints have to be https for Reservation, Cancel, ReservationRead and ReservationList, for other request they can be http or https.\nCorrelation endpoints In this table you can find relation between TravelgateX\u0026rsquo;s API method and the enpoint we will get from the configuration received to send this request:\n   API Method Configuration Parameter Used     All requests UrlGeneric    We expect to receive always a 200 http status. If there is an error in the response it should be notified in the ApplicationError tag.\n"
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/tools/copy-tool/",
+	"uri": "https://travelgatex.com/inventory/extranet/tools/copy-tool/",
 	"title": "Copy Tool",
 	"tags": [],
 	"description": "Copy configurations to make the SetUp process easier and faster",
@@ -9793,7 +9793,7 @@
 	"content": "Scalars are types of objects that are available in our schema (such as String or Integer). By defining scalars we make sure you can only enter or receive data that fits the objects in our data model.\nEach Scalar is described in the same way: - A short definition of the Scalar - An interactive GraphQL schema definition - A list of which objects require this Scalar - Where possible, we are adding examples of how to use this object in your queries.\nYou can update any page of our documentation by clicking on ‘Edit page’ and sending a pull request or by making a comment on the page. Our average turnaround for responding to pull requests or comments is less than 24 hours. "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/tools/",
+	"uri": "https://travelgatex.com/inventory/extranet/tools/",
 	"title": "Tools",
 	"tags": [],
 	"description": "Tools that will help you manage your inventory",
@@ -9912,7 +9912,7 @@
 	"content": " Currency converter is an optional plugin that allows to apply currency conversion over all the prices in one Option.\nWhat it does This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file located in our ftp. Is mandatory that this file exists in the ftp and satisfies all the requirements below. Otherwise, an error will be returned. The node in graphQL that indicates the currency exchange rate is:\n\u0026quot;exchange\u0026quot;: { \u0026quot;currency\u0026quot;: \u0026quot;currency\u0026quot;, \u0026quot;rate\u0026quot;: 1 },  If the plugin is not executed, you will receive:\n\u0026quot;exchange\u0026quot;: { \u0026quot;currency\u0026quot;: \u0026quot;EUR\u0026quot;, //Same currency of option with no currency exchange applied \u0026quot;rate\u0026quot;: 1 //No currency exchange applied },  otherwise, you will receive:\n\u0026quot;exchange\u0026quot;: { \u0026quot;currency\u0026quot;: \u0026quot;USD\u0026quot;, //New currency \u0026quot;rate\u0026quot;: 0.86 //Rate exchange applied },  How to use it Use this plugin by adding it to the settings in your HotelX Search Query.\nExecution example The value of step, type, and name is always the specified in the example below. The two parameters are mandatory and their value means:\n\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026ldquo;currency\u0026rdquo;: It is a string value in ISO 4217 standard (\u0026ldquo;XXX\u0026rdquo;). It is the currency to which you want to convert.\n\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026ldquo;exclude\u0026rdquo;: is a Boolean value (true / false). This parameter only has an effect on the search query. It determines if the options on which the currency change cannot be applied (no currency found in ftp) are excluded. { \u0026quot;plugins\u0026quot;: [ { \u0026quot;step\u0026quot;: \u0026quot;RESPONSE_OPTION\u0026quot;, \u0026quot;pluginsType\u0026quot;: [ { \u0026quot;type\u0026quot;: \u0026quot;CURRENCY_CONVERSION\u0026quot;, \u0026quot;name\u0026quot;: \u0026quot;currency_exchange\u0026quot;, \u0026quot;parameters\u0026quot;: [ { \u0026quot;key\u0026quot;: \u0026quot;currency\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;GBP\u0026quot; }, { \u0026quot;key\u0026quot;: \u0026quot;exclude\u0026quot;, \u0026quot;value\u0026quot;: \u0026quot;true\u0026quot; } ] } ] } ] }  In addition, it is necessary that option and parameter currencies are in ftp file.\nFile Format The file should be in the below format:\n Encoding: UTF-8  File Name: currency_map.csv Header Row: Code,Rate  Decimal separator for rate must be point (\u0026ldquo;.\u0026rdquo;)  Delimiter: Comma (“,”)  Directory: /[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: currency_map.csv\nData:\nCode,Rate AED,4.74 CAD,1.61 CHF,1.26 EUR,1.09 GBP,1.00 INR,84.40 MAD,12.17 THB,42.91 USD,1.29  The rate with value 1.00 is the base rate. Other rates are calculated from it.\n"
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/tools/delete-product/",
+	"uri": "https://travelgatex.com/inventory/extranet/tools/delete-product/",
 	"title": "Delete product",
 	"tags": [],
 	"description": "Delete the availability conditions and prices loaded in Inventory-X",
@@ -9947,7 +9947,7 @@
 	"content": " Masters   Masters Master information about your hotels, meal plans, currencies...\n     Rules Manage princing rules, filters and blacklists\n    "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/",
+	"uri": "https://travelgatex.com/inventory/extranet/",
 	"title": "Extranet",
 	"tags": [],
 	"description": "Learn how to use the extranet and load your inventory",
@@ -10199,7 +10199,7 @@
 	"content": " Hotel Push Sellers API FAQ What is standard occupancy? Standard occupancy is the standard number of Adult paxes of the room. For example, if the standard occupancy is 2. And the following is loaded\u0026hellip;\n\u0026lt;BaseByGuestAmts\u0026gt; \u0026lt;BaseByGuestAmt NumberOfGuests = \u0026quot;1\u0026quot; AmountAfterTax=\u0026quot;50.00\u0026quot;/\u0026gt; \u0026lt;BaseByGuestAmt NumberOfGuests = \u0026quot;2\u0026quot; AmountAfterTax=\u0026quot;100.00\u0026quot;/\u0026gt; \u0026lt;/BaseByGuestAmts\u0026gt;  \u0026hellip; The price of two paxes will be 100, and the price for one pax will be 50. Note that prices for pax under the standard occupancy must be specified and prices for babies under the standard occupancy will be 0.\nStandard occupancy is used for calculating prices above it:\nFor example, if the standard occupancy is 2. And the following is loaded\u0026hellip;\n\u0026lt;BaseByGuestAmts\u0026gt; \u0026lt;BaseByGuestAmt NumberOfGuests = \u0026quot;2\u0026quot; AmountAfterTax=\u0026quot;100.00\u0026quot;/\u0026gt; \u0026lt;/BaseByGuestAmts\u0026gt; \u0026lt;AdditionalGuestAmounts\u0026gt; \u0026lt;AdditionalGuestAmount MaxAdditionalGuests = \u0026quot;1\u0026quot; Amount = \u0026quot;50.00\u0026quot; AgeQualifyingCode = \u0026quot;10\u0026quot;/\u0026gt; \u0026lt;/AdditionalGuestAmounts\u0026gt;  \u0026hellip; The price for one pax will be 50, this is 100\u0026frasl;2. The price of two paxes will be 100 but the price for three paxes will be 200 = 100 + (100\u0026frasl;2 + 50). There are more details in the section HotelRatePlanNotif message.\nWhat is MaxAdditionalGuests in AdditionalGuestAmount? MaxAdditionalGuests is not the maximum number of additional guests but the number of additional guest for which the price is loaded.\nHow to open and close sales correctly? In our system we\u0026rsquo;ve three booleans to control restrictions:\n MasterOpen ArrivalOpen DepartureOpen  When all booleans are true a booking is allowed in the specified day.\nWhen MasterOpen is false bookings are not allowed in the specified day.\nWhen ArrivalOpen is false bookings are not allowed if the arrival date in the hotel is the specified day.\nWhen DepartureOpen is false bookings are not allowed if the departure date from the hotel is the specified day.\nTo control these three values when you are notifying availability you have RestrictionStatus/Status and RestrictionStatus/Restriction. Status indicates whether the action to do is Open or Close. Then the restriction indicates which of the internal booleans will be set (Master, Arrival, Departure). If a restriction is not present, all booleans are set. For example:\nIf you want to sell a product, the first needed thing to do is Open all bits. This is possible by doing the following:\nSend Status=Open, without Restriction.\nThen values will be:\n MasterOpen = true\n ArrivalOpen = true\n DepartureOpen = true\n  Then, if you don\u0026rsquo;t want paxes with arrival at the specified day, you must Close Arrival. This is possible by doing the following:\nSend Status=Close, Restriction=Arrival.\nThen values will be:\n MasterOpen = true\n ArrivalOpen = false\n DepartureOpen = true\n  Then, if you don\u0026rsquo;t want any bookings with departure at the specified day, you must Close Departure. This is possible by doing the following:\nSend Status=Close, Restriction=Departure.\nThen values will be:\n MasterOpen = true\n ArrivalOpen = false\n DepartureOpen = false\n  Finally, if you want to allow allow all kinds of bookings again, you must Open all bits again. This is possible by doing the following:\nSend Status=Open, without Restriction.\nThen values will be:\n MasterOpen = true\n ArrivalOpen = true\n DepartureOpen = true\n  Why AgeQualifyingCode is specified in supplements? In our system it is possible to load different supplements for each kind of pax (Baby, Child or Adult).\n"
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/faq/",
+	"uri": "https://travelgatex.com/inventory/extranet/faq/",
 	"title": "FAQ",
 	"tags": [],
 	"description": "Frequently asked questions about the Inventory-X extranet",
@@ -10311,14 +10311,14 @@
 	"content": "Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:\n Send us a Jira service desk request Log an issues request with us Write this page yourself! If you have experience in solving this topic, we would love your contribution. Please click on the Edit page button and issue a Pull Request via GitHub with your suggested edits.  "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/",
+	"uri": "https://travelgatex.com/inventory/",
 	"title": "Inventory",
 	"tags": [],
 	"description": "Documentation and resources for the Inventory API",
 	"content": "   Overview Inventory Overview\n     Getting Started Basic information to start with\n     Extranet Learn how to use the extranet and load your inventory\n     Release Notes Release Notes for Inventory\n    "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/tools/manage/",
+	"uri": "https://travelgatex.com/inventory/extranet/tools/manage/",
 	"title": "Management",
 	"tags": [],
 	"description": "Manage users and hotels",
@@ -10353,7 +10353,7 @@
 	"content": "   Reference Reference Documentation\n     GraphQL Schema breaking changes Changes history of deprecated notes previously announced\n    "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/tools/permissions/",
+	"uri": "https://travelgatex.com/inventory/extranet/tools/permissions/",
 	"title": "Permissions",
 	"tags": [],
 	"description": "Assign and manage your users and hotels relation",
@@ -10416,7 +10416,7 @@
 	"content": "   Errors and Warnings List of errors and warnings in HotelX\n     Settings Learn about settings in HotelX\n    "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/extranet/tools/bookings/",
+	"uri": "https://travelgatex.com/inventory/extranet/tools/bookings/",
 	"title": "Booking List &amp; Price Details",
 	"tags": [],
 	"description": "Retrieve booking information from a specific hotel.",
@@ -10577,7 +10577,7 @@
 	"content": "   Changelog Changelog Hotel Push Sellers API\n    "
 },
 {
-	"uri": "https://travelgatex.com/inventory-x/release-notes/",
+	"uri": "https://travelgatex.com/inventory/release-notes/",
 	"title": "Release Notes",
 	"tags": [],
 	"description": "Release Notes for Inventory",
