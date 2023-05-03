@@ -5956,6 +5956,8 @@
 
 <p>All requests are expected to be standard HTTP POST requests in which the POST body is the request XML in a SOAP envelope like the <a href="#soap-envelope-example">following</a> and the <strong>Content-Type</strong> header is set to <code>&quot;text/xml;charset=UTF-8&quot;</code>.</p>
 
+<p>By default, the requests are not compressed, but you can choose the following compression <code>gzip</code>, <code>deflate</code> and <code>br</code>, let us know if you want to receive the requests compressed.</p>
+
 <h3 id="soapaction-header">SOAPAction header</h3>
 
 <p>All requests come with a <strong>SOAPAction</strong> header corresponding to the transmitted message. The possible SOAP actions are:</p>
@@ -6106,6 +6108,7 @@
 
 <p>BR = Only used for: &lsquo;Basic Rates&rsquo;<br />
 DV = Only used for: &lsquo;Derived Rates&rsquo;<br />
+OF = Only used for: &lsquo;Offers&rsquo;<br />
 N = Names allowed for a specific element</p>
 
 <h3 id="hotelrateplaninventorynotif">HotelRatePlanInventoryNotif</h3>
@@ -6116,6 +6119,7 @@ N = Names allowed for a specific element</p>
     &lt;request PrimaryLangID = &quot;ES&quot; Version = &quot;0&quot;&gt;
         &lt;RatePlans HotelCode = &quot;1&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
             &lt;RatePlan Duration = &quot;0&quot; CurrencyCode = &quot;EUR&quot; RatePlanCode = &quot;BAR&quot; FreeChild = &quot;true&quot; FreeBaby = &quot;false&quot; RatePlanStatusType = &quot;Active&quot; RatePlanNotifType = &quot;New&quot; YieldableIndicator=&quot;true&quot; RatePlanType = &quot;0&quot;&gt;
+                &lt;Commission Percent=&quot;10&quot;/&gt;
                 &lt;BookingRules&gt;
                     &lt;BookingRule&gt;
                         &lt;CancelPenalties&gt;
@@ -6195,6 +6199,13 @@ N = Names allowed for a specific element</p>
                         &lt;/TaxDescription&gt;
                     &lt;/Tax&gt;
                 &lt;/Taxes&gt;
+                &lt;AdditionalDetails&gt;
+                    &lt;AdditionalDetail Code = &quot;REP&quot; Type = &quot;39&quot;&gt;
+                        &lt;DetailDescription&gt;
+                            &lt;Text&gt;Repsol&lt;/Text&gt;
+                        &lt;/DetailDescription&gt;
+                    &lt;/AdditionalDetail&gt;
+                &lt;/AdditionalDetails&gt;
                 &lt;Description&gt;
                     &lt;Text&gt;bb&lt;/Text&gt;
                 &lt;/Description&gt;
@@ -6405,6 +6416,20 @@ N = Names allowed for a specific element</p>
 <td align="center">0..1</td>
 <td align="center">String</td>
 <td>Promotion code to apply. 0 - NoPromotion, 25 - Senior55  26 - Senior60, 27 - Senior65. If the attribute is not present or its value is 0 there is no promotion</td>
+</tr>
+
+<tr>
+<td align="left">RatePlan/Commission</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="left">@Percent</td>
+<td align="center">1</td>
+<td align="center">Decimal</td>
+<td>Commission percentage applied</td>
 </tr>
 
 <tr>
@@ -7080,6 +7105,48 @@ N = Names allowed for a specific element</p>
 </tr>
 
 <tr>
+<td align="left">RatePlan/AdditionalDetails</td>
+<td align="center">0..1</td>
+<td align="center"></td>
+<td>Rate plan additional details</td>
+</tr>
+
+<tr>
+<td align="left">../AdditionalDetail</td>
+<td align="center">0..n</td>
+<td align="center"></td>
+<td>List of additional details</td>
+</tr>
+
+<tr>
+<td align="left">@Code</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Trading partner code associated with the detail</td>
+</tr>
+
+<tr>
+<td align="left">@Type</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Define the information. Only allowed &ldquo;39&rdquo; (Contract/negotiated booking information)</td>
+</tr>
+
+<tr>
+<td align="left">../DetailDescription</td>
+<td align="center">1</td>
+<td align="center"></td>
+<td>Details Description</td>
+</tr>
+
+<tr>
+<td align="left">../Text</td>
+<td align="center">1</td>
+<td align="center">String</td>
+<td>Description. If additional details type is &ldquo;39&rdquo;, the name of the trading partner for this rate.</td>
+</tr>
+
+<tr>
 <td align="left">../TPA_Extensions</td>
 <td align="center">0..1</td>
 <td align="center"></td>
@@ -7543,6 +7610,30 @@ N = Names allowed for a specific element</p>
 &lt;/HotelAvailNotif&gt;
 </code></pre>
 
+<p><br/></p>
+
+<p><strong>Example for Offers</strong></p>
+
+<pre><code class="language-xml">&lt;HotelAvailNotif&gt;
+    &lt;request&gt;
+        &lt;POS&gt;
+            &lt;Source&gt;
+                &lt;RequestorID ID = &quot;Provider1&quot;&gt;&lt;/RequestorID&gt;
+                &lt;BookingChannel&gt;
+                    &lt;CompanyName Code = &quot;ClientTravelAgency1&quot;&gt;&lt;/CompanyName&gt;
+                &lt;/BookingChannel&gt;
+            &lt;/Source&gt;
+        &lt;/POS&gt;
+        &lt;AvailStatusMessages HotelCode = &quot;12&quot;&gt;
+            &lt;AvailStatusMessage&gt;
+                &lt;StatusApplicationControl Start = &quot;2013-12-20&quot; End = &quot;2013-12-21&quot; RatePlanCode = &quot;LOWCOST&quot; PromotionCode = &quot;OfferCode&quot; Mon = &quot;true&quot; Tue = &quot;true&quot; Weds = &quot;true&quot; Thur = &quot;true&quot; Fri = &quot;true&quot; Sat = &quot;true&quot; Sun = &quot;true&quot;/&gt;
+                &lt;RestrictionStatus Restriction = &quot;Master&quot; Status = &quot;Close&quot;/&gt;
+            &lt;/AvailStatusMessage&gt;
+        &lt;/AvailStatusMessages&gt;
+    &lt;/request&gt;
+&lt;/HotelAvailNotif&gt;
+</code></pre>
+
 <table>
 <thead>
 <tr>
@@ -7643,6 +7734,62 @@ N = Names allowed for a specific element</p>
 <td align="center">0..1</td>
 <td align="center">String</td>
 <td><em>BR</em>. <em>N</em>: ROOM</td>
+</tr>
+
+<tr>
+<td align="left">@PromotionCode</td>
+<td align="center">0..1</td>
+<td align="center">String</td>
+<td><em>OF</em>. <em>N</em>: Offer Code</td>
+</tr>
+
+<tr>
+<td align="left">@Mon</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td>If true or attribute is not present, there is availability on Monday.</td>
+</tr>
+
+<tr>
+<td align="left">@Tue</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td>If true or attribute is not present, there is availability on Tuesday.</td>
+</tr>
+
+<tr>
+<td align="left">@Weds</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td>If true or attribute is not present, there is availability on Wednesday.</td>
+</tr>
+
+<tr>
+<td align="left">@Thur</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td>If true or attribute is not present, there is availability on Thurday.</td>
+</tr>
+
+<tr>
+<td align="left">@Fri</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td>If true or attribute is not present, there is availability on Friday.</td>
+</tr>
+
+<tr>
+<td align="left">@Sat</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td>If true or attribute is not present, there is availability on Saturday.</td>
+</tr>
+
+<tr>
+<td align="left">@Sat</td>
+<td align="center">0..1</td>
+<td align="center">Boolean</td>
+<td>If true or attribute is not present, there is availability on Sunday.</td>
 </tr>
 
 <tr>

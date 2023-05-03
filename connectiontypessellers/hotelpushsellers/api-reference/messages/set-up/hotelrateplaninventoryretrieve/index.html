@@ -4082,6 +4082,100 @@
               <span>Agencies</span><i class="fa fa-circle-thin read-icon"></i>
             </a>
         </li>
+        <li data-nav-id="/distribution/extranet/rules/" class="dd-item">
+          <div>
+            <a href="/distribution/extranet/rules/">
+              <span>Rules management</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/distribution/extranet/rules/configuration/" class="dd-item">
+          <div>
+            <a href="/distribution/extranet/rules/configuration/">
+              <span>Configuration</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+          <li data-nav-id="/distribution/extranet/rules/configuration/pricing/" class="dd-item">
+            <a href="/distribution/extranet/rules/configuration/pricing/">
+              <span>Pricing</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/distribution/extranet/rules/configuration/filters/" class="dd-item">
+            <a href="/distribution/extranet/rules/configuration/filters/">
+              <span>Filters</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/distribution/extranet/rules/configuration/modifiers/" class="dd-item">
+            <a href="/distribution/extranet/rules/configuration/modifiers/">
+              <span>Modifiers</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/distribution/extranet/rules/configuration/currencies/" class="dd-item">
+            <a href="/distribution/extranet/rules/configuration/currencies/">
+              <span>Currencies</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+          <li data-nav-id="/distribution/extranet/rules/configuration/others/" class="dd-item">
+            <a href="/distribution/extranet/rules/configuration/others/">
+              <span>Others</span><i class="fa fa-circle-thin read-icon"></i>
+            </a>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/distribution/extranet/rules/selling-pricing-rules/" class="dd-item">
+          <div>
+            <a href="/distribution/extranet/rules/selling-pricing-rules/">
+              <span>Selling pricing rules</span>            
+            </a>
+          </div>
+        </li>
+        <li data-nav-id="/distribution/extranet/rules/general-stop-sales/" class="dd-item">
+          <div>
+            <a href="/distribution/extranet/rules/general-stop-sales/">
+              <span>General stop sales</span>            
+            </a>
+          </div>
+        </li>
+        <li data-nav-id="/distribution/extranet/rules/specific-stop-sales/" class="dd-item">
+          <div>
+            <a href="/distribution/extranet/rules/specific-stop-sales/">
+              <span>Specific stop sales</span>            
+            </a>
+          </div>
+        </li>
+            </ul>
+        </li>
+        <li data-nav-id="/distribution/extranet/booking-search/" class="dd-item">
+          <div>
+            <a href="/distribution/extranet/booking-search/">
+              <span>Booking Panel</span>            
+            </a>
+          </div>
+        </li>
+        <li data-nav-id="/distribution/extranet/tools/" class="dd-item">
+          <div>
+            <a href="/distribution/extranet/tools/">
+              <span>Tools</span>            
+            </a><i class="fa fa-angle-right fa-lg category-icon"></i>
+          </div>
+            <ul>
+        <li data-nav-id="/distribution/extranet/tools/searches/" class="dd-item">
+          <div>
+            <a href="/distribution/extranet/tools/searches/">
+              <span>Searches</span>            
+            </a>
+          </div>
+        </li>
+        <li data-nav-id="/distribution/extranet/tools/reports/" class="dd-item">
+          <div>
+            <a href="/distribution/extranet/tools/reports/">
+              <span>Reports</span>            
+            </a>
+          </div>
+        </li>
+            </ul>
+        </li>
             </ul>
         </li>
         <li data-nav-id="/distribution/file-loads/" class="dd-item">
@@ -5946,6 +6040,7 @@
         &lt;Success xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;/&gt;
         &lt;RatePlans HotelCode = &quot;1&quot; HotelName = &quot;Hotel Travelgate&quot; HotelStatusType = &quot;Active&quot; xmlns = &quot;http://www.opentravel.org/OTA/2003/05&quot;&gt;
           &lt;RatePlan RatePlanCode = &quot;PACK&quot; RatePlanType = &quot;11&quot; YieldableIndicator = &quot;false&quot; CurrencyCode = &quot;EUR&quot; RatePlanStatusType = &quot;Active&quot; IsModifiable = &quot;true&quot; Start = &quot;2016-01-01&quot; End = &quot;2016-05-01&quot;&gt;
+            &lt;Commission Percent=&quot;10&quot;/&gt;
             &lt;BookingRules&gt;
               &lt;BookingRule Code = &quot;1 Noche&quot;&gt;
                 &lt;CancelPenalties&gt;
@@ -6306,14 +6401,28 @@
 </tr>
 
 <tr>
-<td>RatePlans/RatePlan/Description/Text</td>
+<td>RatePlan/Description/Text</td>
 <td>1</td>
 <td></td>
 <td>Description of rate.</td>
 </tr>
 
 <tr>
-<td>RatePlans/BookingRules</td>
+<td>RatePlan/Commission</td>
+<td>0..1</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>@Percent</td>
+<td>1</td>
+<td>Decimal</td>
+<td>Commission percentage applied</td>
+</tr>
+
+<tr>
+<td>RatePlan/BookingRules</td>
 <td>0..1</td>
 <td></td>
 <td>Present if exists booking rules for the given RatePlan.</td>
@@ -6807,6 +6916,48 @@
 <td>1</td>
 <td>String</td>
 <td>Room description.</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/AdditionalDetails</td>
+<td>0..1</td>
+<td></td>
+<td>Rate plan additional details</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/AdditionalDetails/AdditionalDetail</td>
+<td>0..n</td>
+<td></td>
+<td>List of additional details</td>
+</tr>
+
+<tr>
+<td>@Code</td>
+<td>1</td>
+<td>String</td>
+<td>Trading partner code associated with the detail</td>
+</tr>
+
+<tr>
+<td>@Type</td>
+<td>1</td>
+<td>String</td>
+<td>Define the information. Only allowed &ldquo;39&rdquo; (Contract/negotiated booking information)</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription</td>
+<td>1</td>
+<td></td>
+<td>Details Description</td>
+</tr>
+
+<tr>
+<td>RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription/Text</td>
+<td>1</td>
+<td>String</td>
+<td>Description. If additional details type is &ldquo;39&rdquo;, the name of the trading partner for this rate.</td>
 </tr>
 
 <tr>
