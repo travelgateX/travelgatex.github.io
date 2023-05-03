@@ -44,14 +44,13 @@ How to create an agency Considerations It is an incremental load, so bear in min
       <description>
         
         
-        What is the meaning of office? xxxx
+        What is the meaning of office? An office is a lower level than an agency. An agency can have several offices.
 
 How to create an office 
 Considerations It is an incremental load, so bear in mind these considerations:
- If an agency exists then it is updated.
- If an agency does not exist then it is created.
- Existing agencies that are not referenced are not removed.
- If an existing agency has to be removed from system then you have to contact with TravelgateX.
+ If an office exists then it is updated.
+ If an office does not exist then it is created.
+ Existing offices that are not referenced are not removed.
         
           [...]
         
@@ -69,10 +68,11 @@ Considerations It is an incremental load, so bear in mind these considerations:
         
         How to add a hotel 
 Considerations It is an incremental load, so bear in mind these considerations:
- If a meal plan exists then it is updated.
- If a meal plan does not exist then it is created.
- Existing meal plans that are not referenced are not removed.
- If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+ If a hotel exists then it is updated.
+ If a hotel does not exist then it is created.
+ Existing hotels that are not referenced are not removed.
+ If an existing hotel has to be removed from system then you have to contact with TravelgateX.
+ If there is any problem with a hotel&amp;rsquo;s information then it is omitted (and logged) but the load continues.
         
           [...]
         
@@ -89,11 +89,10 @@ Considerations It is an incremental load, so bear in mind these considerations:
         
         
         How to add extra info to a hotel Considerations It is an incremental load, so bear in mind these considerations:
- If a hotels exists then it is updated.
- If a hotel does not exist then it is created.
- Existing hotel that are not referenced are not removed.
- If an existing hotel has to be removed from system then you have to contact with TravelgateX.
- If there is any problem with a hotel&amp;rsquo;s information then it is omitted (and logged) but the load continues.
+ If a hotel info exists then it is updated.
+ If a hotel info does not exist then it is created.
+ Existing hotels info that are not referenced are not removed.
+ If an existing hotel info has to be removed from system then you have to contact with TravelgateX.
         
           [...]
         
@@ -146,12 +145,13 @@ Considerations It is an incremental load, so bear in mind these considerations:
       <description>
         
         
-        How to add a provider 
+        How to add a room 
 Considerations It is an incremental load, so bear in mind these considerations:
- If a meal plan exists then it is updated.
- If a meal plan does not exist then it is created.
- Existing meal plans that are not referenced are not removed.
- If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+ If a room exists then it is updated.
+ If a room does not exist then it is created.
+ Existing rooms that are not referenced are not removed.
+ If an existing room has to be removed from system then you have to contact with TravelgateX.
+ If there is any problem with a room&amp;rsquo;s information then it is omitted (and logged) but the load continues.
         
           [...]
         
@@ -169,7 +169,7 @@ Considerations It is an incremental load, so bear in mind these considerations:
         
         How to add a provider 
 Considerations It is an incremental load, so bear in mind these considerations:
- If a meal plan exists then it is updated. If a meal plan does not exist then it is created. Existing meal plans that are not referenced are not removed. If an existing meal plan has to be removed from system then you have to contact with TravelgateX. If there is any problem with a meal plan&amp;rsquo;s information then it is omitted (and logged) but the load continues.
+ If a provider exists then it is updated. If a provider does not exist then it is created. Existing providers that are not referenced are not removed. If an existing provider has to be removed from system then you have to contact with TravelgateX. If there is any problem with a provider&amp;rsquo;s information then it is omitted (and logged) but the load continues.
         
           [...]
         
