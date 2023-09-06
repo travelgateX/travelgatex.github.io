@@ -192,16 +192,16 @@ What it does The safety margin plugin discards those options that have a commiss
     </item>
     
     <item>
-      <title>Connectiontypesbuyers: Vcc Gen</title>
-      <link>https://travelgatex.com/connectiontypesbuyers/hotel-x/plugins/vcc_gen/</link>
+      <title>Connectiontypesbuyers: Virtual Credit Card</title>
+      <link>https://travelgatex.com/connectiontypesbuyers/hotel-x/plugins/vcc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://travelgatex.com/connectiontypesbuyers/hotel-x/plugins/vcc_gen/</guid>
+      <guid>https://travelgatex.com/connectiontypesbuyers/hotel-x/plugins/vcc/</guid>
       <description>
         
         
-        Vcc Gen is an optional plugin that adds the possibility to create a virtual credit card at Book step, in order to pay the reservation&amp;rsquo;s import with it.
-What it does The Vcc Gen plugin creates a virtual credit card with an activation and expiration date chosen by the client. The client must also send the token for the virtual credit card. The service will return the information of the newly created payment card in the response, even if the Book step has failed.
+        VCC is an optional plugin that adds the possibility to:  - Create a virtual credit card: Generate a virtual credit card during the booking operation, allowing payment of the reservation amount using this card. (VccGen)  - Cancel a virtual credit card: Cancel a virtual credit card as part of the cancellation operation. (VccCan)
+What does VCC Generator? The VCC generator plugin empowers clients to generate virtual credit cards featuring activation and expiration dates of their choosing.
         
           [...]
         
